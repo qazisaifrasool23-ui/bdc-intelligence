@@ -312,8 +312,10 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:14px;heigh
               <div class="kcard"><div class="klbl">Implied Recovery</div><div class="kval kink" style="font-size:18px;" id="k9">—</div></div>
             </div>
             <div class="cgrid">
-              <div class="ccard"><div class="ctitle">Non-Accrual % at Cost — All Funds</div><div id="chart-na"></div></div>
-              <div class="ccard"><div class="ctitle">PIK % of Income — All Funds</div><div id="chart-pik"></div></div>
+              <div class="ccard"><div id="chart-nav"></div></div>
+              <div class="ccard"><div id="chart-na-trend"></div></div>
+              <div class="ccard"><div id="chart-pik-trend"></div></div>
+              <div class="ccard"><div id="chart-lev-trend"></div></div>
             </div>
             <div class="acard">
               <div class="ahdr">
@@ -640,8 +642,7 @@ function loadF(ticker) {
   document.getElementById('dd-sent').textContent=sl(f.sent);
   document.getElementById('dd-q').textContent=f.q;
   // Charts
-  renderBar('chart-na',FUNDS,'na_c',ticker,'pct');
-  renderBar('chart-pik',FUNDS,'pik',ticker,'pct');
+  renderTrendCharts(ticker);
   // Percentiles
   const vals={na:FUNDS.map(x=>x.na_c),pik:FUNDS.map(x=>x.pik),lev:FUNDS.map(x=>x.lev),cov:FUNDS.map(x=>x.cov)};
   document.getElementById('pna').innerHTML=pct(f.na_c,vals.na);
@@ -781,6 +782,93 @@ function renderCTable() {
   h+='</div>';
   document.getElementById('ctable').innerHTML=h;
 }
+
+// ── TREND CHARTS ──────────────────────────────────────────────────────────────
+function renderTrendCharts(ticker) {
+  const f = FM[ticker];
+  if (!f || !f.hist) return;
+  const h = f.hist;
+
+  renderLineSVG('chart-nav', h.quarters, h.nav, '$', '#1A6EF2', 'NAV per Share');
+  renderLineSVG('chart-na-trend', h.quarters, h.na_c, '%', '#D93025', 'Non-Accrual % at Cost');
+  renderLineSVG('chart-pik-trend', h.quarters, h.pik, '%', '#D97706', 'PIK % of Income');
+  renderLineSVG('chart-lev-trend', h.quarters, h.lev, 'x', '#7C3AED', 'Leverage Ratio');
+}
+
+function renderLineSVG(elId, quarters, values, unit, color, label) {
+  const el = document.getElementById(elId);
+  if (!el) return;
+
+  // Filter out nulls
+  const pts = quarters.map((q,i) => ({q, v: values[i]})).filter(p => p.v !== null && p.v !== undefined);
+  if (pts.length < 2) { el.innerHTML = '<div style="display:flex;align-items:center;justify-content:center;height:90px;font-size:11px;color:var(--ink4);">Insufficient data</div>'; return; }
+
+  const vals = pts.map(p => p.v);
+  const minV = Math.min(...vals);
+  const maxV = Math.max(...vals);
+  const range = maxV - minV || 1;
+  const pad = range * 0.15;
+  const lo = minV - pad, hi = maxV + pad;
+
+  const W = 300, H = 90, lpad = 42, rpad = 8, tpad = 10, bpad = 20;
+  const cw = W - lpad - rpad;
+  const ch = H - tpad - bpad;
+
+  const x = (i) => lpad + (i / (pts.length - 1)) * cw;
+  const y = (v) => tpad + ch - ((v - lo) / (hi - lo)) * ch;
+
+  // Trend direction
+  const trend = vals[vals.length-1] > vals[0];
+  const trendColor = (unit === '$') ? (trend ? '#0E9E60' : '#D93025') : (trend ? '#D93025' : '#0E9E60');
+  const trendLabel = (unit === '$') ? (trend ? '▲ Rising' : '▼ Declining') : (trend ? '↑ Rising' : '↓ Improving');
+
+  // Build polyline points
+  const polyPts = pts.map((p,i) => `${x(i).toFixed(1)},${y(p.v).toFixed(1)}`).join(' ');
+  const areaPts = pts.map((p,i) => `${x(i).toFixed(1)},${y(p.v).toFixed(1)}`).join(' ') +
+    ` ${x(pts.length-1).toFixed(1)},${(tpad+ch).toFixed(1)} ${lpad},${(tpad+ch).toFixed(1)}`;
+
+  // Y axis labels (3 lines)
+  const yLabels = [hi, (hi+lo)/2, lo].map((v,i) => {
+    const yp = tpad + (i/2)*ch;
+    const lbl = unit === '$' ? '$'+v.toFixed(2) : unit === 'x' ? v.toFixed(2)+'×' : v.toFixed(1)+'%';
+    return `<text x="${lpad-3}" y="${yp+3}" fill="#B0BACC" font-size="7.5" font-family="Geist Mono,monospace" text-anchor="end">${lbl}</text>`;
+  }).join('');
+
+  // X axis labels (first and last)
+  const xLabels = `
+    <text x="${lpad}" y="${H-4}" fill="#B0BACC" font-size="7.5" font-family="Geist Mono,monospace">${pts[0].q}</text>
+    <text x="${W-rpad}" y="${H-4}" fill="#B0BACC" font-size="7.5" font-family="Geist Mono,monospace" text-anchor="end">${pts[pts.length-1].q}</text>`;
+
+  // Latest value badge
+  const latestV = vals[vals.length-1];
+  const latestFmt = unit === '$' ? '$'+latestV.toFixed(2) : unit === 'x' ? latestV.toFixed(2)+'×' : latestV.toFixed(1)+'%';
+
+  el.innerHTML = `
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;">
+      <div style="font-size:11px;font-weight:600;color:var(--ink2);">${label}</div>
+      <div style="display:flex;align-items:center;gap:6px;">
+        <span style="font-family:var(--mono);font-size:13px;font-weight:600;color:var(--ink);">${latestFmt}</span>
+        <span style="font-size:10px;font-weight:600;color:${trendColor};background:${trendColor}18;padding:2px 7px;border-radius:10px;">${trendLabel}</span>
+      </div>
+    </div>
+    <svg viewBox="0 0 ${W} ${H}" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:90px;">
+      <defs>
+        <linearGradient id="grad-${elId}" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="${color}" stop-opacity="0.12"/>
+          <stop offset="100%" stop-color="${color}" stop-opacity="0"/>
+        </linearGradient>
+      </defs>
+      <line x1="${lpad}" y1="${tpad}" x2="${W-rpad}" y2="${tpad}" stroke="#E2E5EB" stroke-width="0.5"/>
+      <line x1="${lpad}" y1="${tpad+ch/2}" x2="${W-rpad}" y2="${tpad+ch/2}" stroke="#E2E5EB" stroke-width="0.5"/>
+      <line x1="${lpad}" y1="${tpad+ch}" x2="${W-rpad}" y2="${tpad+ch}" stroke="#E2E5EB" stroke-width="0.5"/>
+      ${yLabels}
+      <polygon points="${areaPts}" fill="url(#grad-${elId})"/>
+      <polyline points="${polyPts}" fill="none" stroke="${color}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="${x(pts.length-1).toFixed(1)}" cy="${y(latestV).toFixed(1)}" r="3.5" fill="${color}"/>
+      ${xLabels}
+    </svg>`;
+}
+
 </script>
 </body>
 </html>
