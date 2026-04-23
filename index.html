@@ -1,0 +1,1980 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BDC Intelligence.AI — Private Credit Analytics</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@300;400;500;600&family=Geist:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --bg:       #F7F8FA;
+  --surface:  #FFFFFF;
+  --surface2: #F0F2F5;
+  --surface3: #E8EBF0;
+  --border:   #E2E5EB;
+  --border2:  #CDD2DB;
+  --ink:      #0F1923;
+  --ink2:     #3D4D5C;
+  --ink3:     #7A8899;
+  --ink4:     #B0BACC;
+  --blue:     #1A6EF2;
+  --blue-l:   #EBF2FF;
+  --blue-b:   #D0E4FF;
+  --green:    #0E9E60;
+  --green-l:  #E6F7EF;
+  --red:      #D93025;
+  --red-l:    #FDECEA;
+  --amber:    #D97706;
+  --amber-l:  #FEF3C7;
+  --purple:   #7C3AED;
+  --purple-l: #F5F0FF;
+  --mono:     'Geist Mono', 'IBM Plex Mono', monospace;
+  --sans:     'Geist', 'Inter', sans-serif;
+  --radius:   8px;
+  --radius2:  12px;
+  --shadow:   0 1px 3px rgba(0,0,0,0.08), 0 1px 2px rgba(0,0,0,0.04);
+  --shadow2:  0 4px 12px rgba(0,0,0,0.08), 0 2px 4px rgba(0,0,0,0.04);
+}
+
+* { margin:0; padding:0; box-sizing:border-box; }
+
+body {
+  font-family: var(--sans);
+  background: var(--bg);
+  color: var(--ink);
+  font-size: 13px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── LAYOUT ───────────────────────────────────────── */
+.app { display:grid; grid-template-columns:220px 1fr; min-height:100vh; }
+
+/* ── SIDEBAR ──────────────────────────────────────── */
+.sidebar {
+  background: var(--surface);
+  border-right: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Logo */
+.logo {
+  padding: 20px 16px 16px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-mark {
+  width: 30px;
+  height: 30px;
+  background: var(--ink);
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.logo-mark svg { width: 16px; height: 16px; }
+
+.logo-text {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--ink);
+  letter-spacing: -0.3px;
+}
+
+.logo-tag {
+  font-size: 10px;
+  color: var(--ink4);
+  margin-top: 1px;
+  letter-spacing: 0.02em;
+}
+
+/* Search */
+.sidebar-search {
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--border);
+}
+
+.search-input {
+  width: 100%;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 6px 10px;
+  font-family: var(--sans);
+  font-size: 12px;
+  color: var(--ink);
+  outline: none;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.search-input::placeholder { color: var(--ink4); }
+.search-input:focus { border-color: var(--blue); box-shadow: 0 0 0 3px var(--blue-l); }
+
+/* Nav sections */
+.nav-section { padding: 8px 0; border-bottom: 1px solid var(--border); }
+.nav-label {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--ink4);
+  padding: 4px 14px 6px;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  cursor: pointer;
+  border-radius: 0;
+  transition: background 0.1s;
+  font-size: 13px;
+  color: var(--ink2);
+  position: relative;
+}
+
+.nav-item:hover { background: var(--bg); color: var(--ink); }
+
+.nav-item.active {
+  background: var(--blue-l);
+  color: var(--blue);
+  font-weight: 500;
+}
+
+.nav-item.active::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 2px;
+  background: var(--blue);
+  border-radius: 0 2px 2px 0;
+}
+
+.nav-icon { font-size: 14px; width: 16px; text-align: center; flex-shrink: 0; }
+.nav-badge { margin-left:auto; font-size:10px; font-weight:600; background:var(--red-l); color:var(--red); padding:1px 6px; border-radius:10px; }
+.nav-badge.blue { background:var(--blue-l); color:var(--blue); }
+
+/* Fund list */
+.fund-list { flex: 1; overflow-y: auto; padding: 8px 0; }
+.fund-list::-webkit-scrollbar { width: 4px; }
+.fund-list::-webkit-scrollbar-track { background: transparent; }
+.fund-list::-webkit-scrollbar-thumb { background: var(--border2); border-radius: 2px; }
+
+.fund-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 14px;
+  cursor: pointer;
+  transition: background 0.1s;
+}
+
+.fund-item:hover { background: var(--bg); }
+.fund-item.active { background: var(--blue-l); }
+
+.fi-left .fi-ticker {
+  font-family: var(--mono);
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--ink);
+}
+
+.fi-left .fi-name { font-size: 11px; color: var(--ink3); margin-top: 1px; }
+
+.grade-badge {
+  font-size: 10px;
+  font-weight: 600;
+  padding: 2px 7px;
+  border-radius: 4px;
+  letter-spacing: 0.02em;
+  font-family: var(--mono);
+}
+
+.gb-a { background: var(--green-l); color: var(--green); }
+.gb-b { background: var(--blue-l); color: var(--blue); }
+.gb-c { background: var(--amber-l); color: var(--amber); }
+.gb-d { background: var(--red-l); color: var(--red); }
+
+/* ── MAIN ─────────────────────────────────────────── */
+.main { display: flex; flex-direction: column; min-height: 100vh; }
+
+/* Top bar */
+.topbar {
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  padding: 0 24px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.page-tabs { display: flex; gap: 2px; }
+
+.page-tab {
+  padding: 6px 14px;
+  border-radius: var(--radius);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--ink3);
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.page-tab:hover { background: var(--bg); color: var(--ink2); }
+.page-tab.active { background: var(--surface2); color: var(--ink); }
+
+.topbar-right {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.live-badge {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--green);
+  background: var(--green-l);
+  padding: 3px 10px;
+  border-radius: 20px;
+}
+
+.live-dot { width: 5px; height: 5px; border-radius: 50%; background: var(--green); animation: pulse 2s infinite; }
+@keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:0.5;transform:scale(0.8)} }
+
+.icon-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: var(--surface);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 14px;
+  color: var(--ink3);
+  transition: all 0.15s;
+}
+
+.icon-btn:hover { background: var(--bg); color: var(--ink); border-color: var(--border2); }
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius);
+  background: var(--ink);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+  letter-spacing: 0.02em;
+}
+
+/* Content area */
+.content { flex: 1; padding: 24px; }
+
+.view { display: none; }
+.view.active { display: block; }
+
+/* ── ALERT STRIP ─────────────────────────── */
+.alert-strip {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.alert-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius2);
+  padding: 14px 16px;
+  cursor: pointer;
+  transition: all 0.15s;
+  box-shadow: var(--shadow);
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.alert-card:hover { box-shadow: var(--shadow2); transform: translateY(-1px); }
+
+.alert-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  flex-shrink: 0;
+}
+
+.ai-red { background: var(--red-l); }
+.ai-amber { background: var(--amber-l); }
+.ai-blue { background: var(--blue-l); }
+
+.alert-body .alert-title {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 3px;
+}
+
+.alert-body .alert-desc { font-size: 11px; color: var(--ink3); line-height: 1.4; }
+
+/* ── SECTION ─────────────────────────────── */
+.section-hdr {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.section-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--ink);
+  letter-spacing: -0.2px;
+}
+
+.section-meta { font-size: 12px; color: var(--ink3); }
+
+.btn-group { display: flex; gap: 4px; }
+
+.seg-btn {
+  padding: 5px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--ink3);
+  border: 1px solid var(--border);
+  background: var(--surface);
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.seg-btn:hover { color: var(--ink); border-color: var(--border2); }
+.seg-btn.active { background: var(--ink); color: white; border-color: var(--ink); }
+
+/* ── DATA TABLE ──────────────────────────── */
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius2);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+
+.card-header {
+  padding: 14px 20px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--surface);
+}
+
+.card-title { font-size: 13px; font-weight: 600; color: var(--ink); }
+.card-meta { font-size: 12px; color: var(--ink3); }
+
+table.dt {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table.dt thead tr {
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+}
+
+table.dt th {
+  padding: 8px 16px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--ink3);
+  text-align: right;
+  white-space: nowrap;
+}
+
+table.dt th:first-child,
+table.dt th:nth-child(2) { text-align: left; }
+
+table.dt tbody tr {
+  border-bottom: 1px solid var(--border);
+  cursor: pointer;
+  transition: background 0.1s;
+}
+
+table.dt tbody tr:last-child { border-bottom: none; }
+table.dt tbody tr:hover { background: var(--bg); }
+table.dt tbody tr.sel { background: var(--blue-l); }
+
+table.dt td {
+  padding: 10px 16px;
+  text-align: right;
+  font-size: 12px;
+  color: var(--ink2);
+  white-space: nowrap;
+}
+
+table.dt td:first-child,
+table.dt td:nth-child(2) { text-align: left; }
+
+.td-ticker {
+  font-family: var(--mono);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.td-name { font-size: 12px; color: var(--ink2); max-width: 180px; }
+.td-mono { font-family: var(--mono); font-size: 12px; }
+
+.val-pos { color: var(--green); font-weight: 500; }
+.val-neg { color: var(--red); font-weight: 500; }
+.val-warn { color: var(--amber); font-weight: 500; }
+.val-blue { color: var(--blue); font-weight: 500; }
+.val-muted { color: var(--ink4); }
+
+/* Inline sparkline */
+.spark { vertical-align: middle; }
+
+/* ── DEEP DIVE ───────────────────────────── */
+.dd-top {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius2);
+  padding: 20px;
+  margin-bottom: 16px;
+  box-shadow: var(--shadow);
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 20px;
+  align-items: start;
+}
+
+.dd-fund-name {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--ink);
+  letter-spacing: -0.4px;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.tag {
+  font-size: 11px;
+  font-weight: 500;
+  padding: 2px 8px;
+  border-radius: 4px;
+  background: var(--surface2);
+  color: var(--ink3);
+  border: 1px solid var(--border);
+  letter-spacing: 0.02em;
+}
+
+.dd-meta-row { font-size: 12px; color: var(--ink3); display: flex; gap: 16px; flex-wrap: wrap; }
+.dd-meta-row span { color: var(--ink2); font-weight: 500; }
+
+.dd-right-block { display: flex; gap: 16px; align-items: flex-start; }
+
+.dd-price-block { text-align: right; }
+.dd-price { font-size: 28px; font-weight: 700; color: var(--ink); letter-spacing: -1px; font-family: var(--mono); }
+.dd-change { font-size: 12px; font-weight: 500; margin-top: 2px; }
+.dd-change.neg { color: var(--red); }
+.dd-change.pos { color: var(--green); }
+
+.grade-block {
+  width: 56px;
+  height: 56px;
+  border-radius: var(--radius2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.grade-block.gb-d { background: var(--red-l); border: 1px solid rgba(217,48,37,0.2); }
+.grade-block.gb-a { background: var(--green-l); border: 1px solid rgba(14,158,96,0.2); }
+.grade-block.gb-b { background: var(--blue-l); border: 1px solid rgba(26,110,242,0.2); }
+
+.gb-letter { font-size: 24px; font-weight: 700; line-height: 1; }
+.gb-d .gb-letter { color: var(--red); }
+.gb-a .gb-letter { color: var(--green); }
+.gb-b .gb-letter { color: var(--blue); }
+.gb-sub { font-size: 9px; font-weight: 600; letter-spacing: 0.08em; margin-top: 2px; color: var(--ink4); }
+
+/* KPI strip */
+.kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.kpi-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius2);
+  padding: 16px;
+  box-shadow: var(--shadow);
+  transition: box-shadow 0.15s;
+}
+
+.kpi-card:hover { box-shadow: var(--shadow2); }
+
+.kpi-label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--ink3);
+  margin-bottom: 8px;
+}
+
+.kpi-value {
+  font-family: var(--mono);
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  line-height: 1;
+  margin-bottom: 6px;
+}
+
+.kv-red { color: var(--red); }
+.kv-amber { color: var(--amber); }
+.kv-green { color: var(--green); }
+.kv-blue { color: var(--blue); }
+.kv-ink { color: var(--ink); }
+
+.kpi-sub { font-size: 11px; color: var(--ink3); }
+.kpi-sub.ks-neg { color: var(--red); }
+.kpi-sub.ks-pos { color: var(--green); }
+
+/* Charts grid */
+.chart-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.chart-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius2);
+  padding: 16px;
+  box-shadow: var(--shadow);
+}
+
+.chart-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.chart-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--ink2);
+}
+
+.stat-chip {
+  font-size: 10px;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 20px;
+  letter-spacing: 0.03em;
+}
+
+.sc-red { background: var(--red-l); color: var(--red); }
+.sc-amber { background: var(--amber-l); color: var(--amber); }
+.sc-green { background: var(--green-l); color: var(--green); }
+.sc-blue { background: var(--blue-l); color: var(--blue); }
+
+.chart-svg { width: 100%; height: 90px; }
+
+/* AI Analysis */
+.analysis-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius2);
+  padding: 20px;
+  box-shadow: var(--shadow);
+  margin-bottom: 16px;
+}
+
+.analysis-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.analysis-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.ai-chip {
+  font-size: 10px;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 4px;
+  background: var(--purple-l);
+  color: var(--purple);
+  letter-spacing: 0.04em;
+}
+
+.sentiment-pill {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px 12px;
+  border-radius: 20px;
+  background: var(--amber-l);
+  color: var(--amber);
+  border: 1px solid rgba(217,119,6,0.2);
+}
+
+.s-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--amber); }
+
+.analysis-text {
+  font-size: 13px;
+  color: var(--ink2);
+  line-height: 1.7;
+  margin-bottom: 14px;
+  font-family: var(--sans);
+}
+
+.flag-row { display: flex; flex-wrap: wrap; gap: 6px; }
+
+.flag {
+  font-size: 11px;
+  font-weight: 500;
+  padding: 3px 10px;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+  color: var(--ink3);
+  background: var(--bg);
+}
+
+.flag.f-red { background: var(--red-l); color: var(--red); border-color: rgba(217,48,37,0.2); }
+.flag.f-amber { background: var(--amber-l); color: var(--amber); border-color: rgba(217,119,6,0.2); }
+
+/* ── SCREENER ────────────────────────────── */
+.screener-layout {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 16px;
+}
+
+.filter-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius2);
+  padding: 16px;
+  box-shadow: var(--shadow);
+  height: fit-content;
+  position: sticky;
+  top: 76px;
+}
+
+.filter-section { margin-bottom: 18px; }
+
+.filter-label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--ink3);
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filter-label b { color: var(--blue); font-weight: 600; font-size: 12px; }
+
+input[type=range] {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 3px;
+  border-radius: 2px;
+  background: var(--surface3);
+  outline: none;
+  margin: 6px 0 2px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--blue);
+  cursor: pointer;
+  border: 2px solid white;
+  box-shadow: 0 0 0 1px var(--blue);
+}
+
+.chip-row { display: flex; gap: 4px; flex-wrap: wrap; margin-top: 4px; }
+
+.chip {
+  font-size: 11px;
+  font-weight: 500;
+  padding: 4px 10px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  color: var(--ink3);
+  cursor: pointer;
+  transition: all 0.12s;
+  background: var(--surface);
+}
+
+.chip:hover { border-color: var(--blue); color: var(--blue); }
+.chip.active { background: var(--blue); color: white; border-color: var(--blue); }
+
+.quick-btn {
+  display: block;
+  width: 100%;
+  text-align: left;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--ink2);
+  padding: 8px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.12s;
+  margin-bottom: 4px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+}
+
+.quick-btn:hover { background: var(--bg); border-color: var(--border2); color: var(--ink); }
+.quick-btn span { font-size: 10px; display: block; color: var(--ink3); margin-top: 1px; font-weight: 400; }
+
+/* ── COMPARE ─────────────────────────────── */
+.compare-grid { display: grid; grid-template-columns: 140px repeat(3, 1fr); border-radius: var(--radius2); overflow: hidden; border: 1px solid var(--border); box-shadow: var(--shadow); }
+
+.cmp-col-header {
+  padding: 14px 16px;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  border-right: 1px solid var(--border);
+}
+
+.cmp-ticker { font-family: var(--mono); font-size: 14px; font-weight: 600; color: var(--ink); margin-bottom: 2px; }
+.cmp-name { font-size: 11px; color: var(--ink3); }
+
+.cmp-label-col .cmp-col-header { background: var(--bg); }
+.cmp-label-col .cmp-row-cell { background: var(--bg); font-weight: 500; color: var(--ink3); font-size: 11px; }
+
+.cmp-row-cell {
+  padding: 9px 16px;
+  border-bottom: 1px solid var(--border);
+  border-right: 1px solid var(--border);
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--ink2);
+  background: var(--surface);
+}
+
+.cmp-row-cell:last-child { border-right: none; }
+
+.highlighted-col .cmp-col-header { background: var(--red-l); border-top: 3px solid var(--red); }
+.highlighted-col .cmp-row-cell { background: rgba(217,48,37,0.02); }
+
+.good-col .cmp-col-header { background: var(--green-l); border-top: 3px solid var(--green); }
+
+/* ── RIGHT RAIL ──────────────────────────── */
+.right-rail {
+  width: 260px;
+  flex-shrink: 0;
+}
+
+/* ── AI QUERY BOX ────────────────────────── */
+.ai-box {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius2);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  margin-bottom: 16px;
+}
+
+.ai-header {
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--border);
+  background: var(--purple-l);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.ai-header-text { font-size: 12px; font-weight: 600; color: var(--purple); }
+
+.ai-input-wrap {
+  padding: 10px;
+}
+
+.ai-input {
+  width: 100%;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 8px 10px;
+  font-family: var(--sans);
+  font-size: 12px;
+  color: var(--ink);
+  outline: none;
+  transition: all 0.15s;
+  resize: none;
+}
+
+.ai-input::placeholder { color: var(--ink4); }
+.ai-input:focus { border-color: var(--purple); box-shadow: 0 0 0 3px var(--purple-l); }
+
+.ai-examples { padding: 0 10px 10px; }
+
+.ai-example {
+  font-size: 11px;
+  color: var(--blue);
+  padding: 5px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.1s;
+  display: block;
+  margin-bottom: 2px;
+}
+
+.ai-example:hover { background: var(--blue-l); }
+.ai-example::before { content: '→ '; }
+
+/* Stat panel */
+.stat-panel {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius2);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  margin-bottom: 16px;
+}
+
+.stat-panel-header {
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--border);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--ink);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stat-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 14px;
+  border-bottom: 1px solid var(--border);
+  transition: background 0.1s;
+}
+
+.stat-row:last-child { border-bottom: none; }
+.stat-row:hover { background: var(--bg); }
+
+.sr-label { font-size: 12px; color: var(--ink3); }
+.sr-value { font-family: var(--mono); font-size: 12px; font-weight: 500; color: var(--ink); }
+.sr-value.sv-green { color: var(--green); }
+.sr-value.sv-red { color: var(--red); }
+.sr-value.sv-amber { color: var(--amber); }
+
+/* Watchlist */
+.wl-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 9px 14px;
+  border-bottom: 1px solid var(--border);
+  cursor: pointer;
+  transition: background 0.1s;
+}
+
+.wl-item:last-child { border-bottom: none; }
+.wl-item:hover { background: var(--bg); }
+
+.wl-left .wl-ticker { font-family: var(--mono); font-size: 13px; font-weight: 600; color: var(--ink); }
+.wl-left .wl-sub { font-size: 10px; color: var(--ink4); margin-top: 1px; letter-spacing: 0.02em; }
+.wl-pnav { font-family: var(--mono); font-size: 12px; font-weight: 600; }
+.wl-pos { color: var(--green); }
+.wl-neg { color: var(--amber); }
+
+/* Grade adjuster */
+.adj-panel {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius2);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.adj-row { padding: 10px 14px; border-bottom: 1px solid var(--border); }
+.adj-row:last-child { border-bottom: none; }
+.adj-top { display: flex; justify-content: space-between; margin-bottom: 5px; }
+.adj-lbl { font-size: 12px; color: var(--ink2); }
+.adj-pct { font-family: var(--mono); font-size: 12px; font-weight: 600; color: var(--blue); }
+.adj-note { padding: 8px 14px; font-size: 10px; color: var(--ink4); letter-spacing: 0.03em; text-align: center; border-top: 1px solid var(--border); }
+
+/* Layout helper for content + right rail */
+.content-with-rail { display: grid; grid-template-columns: 1fr 260px; gap: 20px; align-items: start; }
+
+/* Divider */
+.divider { height: 1px; background: var(--border); margin: 20px 0; }
+
+/* Responsive chart label */
+.q-labels { display: flex; justify-content: space-between; margin-top: 4px; }
+.q-label { font-family: var(--mono); font-size: 9px; color: var(--ink4); }
+</style>
+</head>
+<body>
+
+<div id="auth-wall" style="display:flex;align-items:center;justify-content:center;min-height:100vh;background:#F7F8FA;">
+  <div style="background:white;border:1px solid #E2E5EB;border-radius:16px;padding:40px;width:380px;box-shadow:0 4px 24px rgba(0,0,0,0.08);text-align:center;">
+    <div style="font-size:28px;font-weight:700;color:#0F1923;letter-spacing:-0.5px;margin-bottom:6px;">BDC Intelligence<span style="color:#1A6EF2;">.AI</span></div>
+    <div style="font-size:13px;color:#7A8899;margin-bottom:6px;">Private Credit Analytics Platform</div>
+    <div style="display:inline-block;background:#EBF2FF;color:#1A6EF2;font-size:11px;font-weight:600;padding:3px 12px;border-radius:20px;margin-bottom:28px;">BETA — Selected Access Only</div>
+    <input id="pw-input" type="password" placeholder="Enter beta access code"
+      style="width:100%;padding:10px 14px;border:1px solid #E2E5EB;border-radius:8px;font-family:inherit;font-size:13px;outline:none;margin-bottom:12px;box-sizing:border-box;"
+      onkeydown="if(event.key==='Enter')tryLogin()"
+      onfocus="this.style.borderColor='#1A6EF2';this.style.boxShadow='0 0 0 3px #EBF2FF'"
+      onblur="this.style.borderColor='#E2E5EB';this.style.boxShadow='none'">
+    <div id="pw-error" style="display:none;color:#D93025;font-size:12px;margin-bottom:8px;">Incorrect access code.</div>
+    <button onclick="tryLogin()" style="width:100%;padding:10px;background:#1A6EF2;color:white;border:none;border-radius:8px;font-family:inherit;font-size:13px;font-weight:600;cursor:pointer;">Access Platform →</button>
+    <div style="font-size:11px;color:#B0BACC;margin-top:20px;line-height:1.6;">45 publicly traded BDCs · SEC EDGAR filings</div>
+  </div>
+</div>
+<div id="main-app" class="app" style="display:none;">
+
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+    <div class="logo">
+      <div class="logo-mark">
+        <svg viewBox="0 0 16 16" fill="none">
+          <rect x="1" y="1" width="6" height="6" rx="1.5" fill="white"/>
+          <rect x="9" y="1" width="6" height="6" rx="1.5" fill="white" opacity="0.5"/>
+          <rect x="1" y="9" width="6" height="6" rx="1.5" fill="white" opacity="0.5"/>
+          <rect x="9" y="9" width="6" height="6" rx="1.5" fill="white" opacity="0.3"/>
+        </svg>
+      </div>
+      <div>
+        <div class="logo-text">Nexus</div>
+        <div class="logo-tag">BDC Credit Intelligence</div>
+      </div>
+    </div>
+
+    <div class="sidebar-search">
+      <input class="search-input" type="text" placeholder="Search funds...">
+    </div>
+
+    <div class="nav-section">
+      <div class="nav-label">Platform</div>
+      <div class="nav-item active" onclick="switchTab('universe')">
+        <span class="nav-icon">⊞</span> Universe
+      </div>
+      <div class="nav-item" onclick="switchTab('screener')">
+        <span class="nav-icon">⊟</span> Screener
+      </div>
+      <div class="nav-item" onclick="switchTab('compare')">
+        <span class="nav-icon">⊜</span> Compare
+        <span class="nav-badge blue">3</span>
+      </div>
+      <div class="nav-item">
+        <span class="nav-icon">⊡</span> Alerts
+        <span class="nav-badge">3</span>
+      </div>
+    </div>
+
+    <div class="nav-section">
+      <div class="nav-label">Watchlist</div>
+      <div class="nav-item" onclick="loadFund('TCPC',this)">
+        <span class="nav-icon">📍</span> TCPC
+      </div>
+      <div class="nav-item" onclick="loadFund('MRCC',this)">
+        <span class="nav-icon">📍</span> MRCC
+      </div>
+      <div class="nav-item" onclick="loadFund('MAIN',this)">
+        <span class="nav-icon">📍</span> MAIN
+      </div>
+      <div class="nav-item" onclick="loadFund('PSEC',this)">
+        <span class="nav-icon">📍</span> PSEC
+      </div>
+    </div>
+
+    <div class="fund-list" id="fund-list">
+      <div class="nav-label" style="padding:10px 14px 4px;">All Funds — 45</div>
+
+      <div class="fund-item active" onclick="loadFund('TCPC',this)">
+        <div class="fi-left"><div class="fi-ticker">TCPC</div><div class="fi-name">BlackRock TCP Capital</div></div>
+        <div class="grade-badge gb-d">D</div>
+      </div>
+      <div class="fund-item" onclick="loadFund('MRCC',this)">
+        <div class="fi-left"><div class="fi-ticker">MRCC</div><div class="fi-name">Monroe Capital BDC</div></div>
+        <div class="grade-badge gb-d">D-</div>
+      </div>
+      <div class="fund-item" onclick="loadFund('HRZN',this)">
+        <div class="fi-left"><div class="fi-ticker">HRZN</div><div class="fi-name">Horizon Technology</div></div>
+        <div class="grade-badge gb-d">D+</div>
+      </div>
+      <div class="fund-item" onclick="loadFund('PSEC',this)">
+        <div class="fi-left"><div class="fi-ticker">PSEC</div><div class="fi-name">Prospect Capital</div></div>
+        <div class="grade-badge gb-d">D</div>
+      </div>
+      <div class="fund-item" onclick="loadFund('FSK',this)">
+        <div class="fi-left"><div class="fi-ticker">FSK</div><div class="fi-name">FS KKR Capital</div></div>
+        <div class="grade-badge gb-c">C+</div>
+      </div>
+      <div class="fund-item" onclick="loadFund('CGBD',this)">
+        <div class="fi-left"><div class="fi-ticker">CGBD</div><div class="fi-name">Carlyle Secured Lend</div></div>
+        <div class="grade-badge gb-c">C</div>
+      </div>
+      <div class="fund-item" onclick="loadFund('ARCC',this)">
+        <div class="fi-left"><div class="fi-ticker">ARCC</div><div class="fi-name">Ares Capital Corp</div></div>
+        <div class="grade-badge gb-b">B+</div>
+      </div>
+      <div class="fund-item" onclick="loadFund('BXSL',this)">
+        <div class="fi-left"><div class="fi-ticker">BXSL</div><div class="fi-name">Blackstone Secured</div></div>
+        <div class="grade-badge gb-b">B+</div>
+      </div>
+      <div class="fund-item" onclick="loadFund('GBDC',this)">
+        <div class="fi-left"><div class="fi-ticker">GBDC</div><div class="fi-name">Golub Capital BDC</div></div>
+        <div class="grade-badge gb-b">B+</div>
+      </div>
+      <div class="fund-item" onclick="loadFund('HTGC',this)">
+        <div class="fi-left"><div class="fi-ticker">HTGC</div><div class="fi-name">Hercules Capital</div></div>
+        <div class="grade-badge gb-b">B</div>
+      </div>
+      <div class="fund-item" onclick="loadFund('KBDC',this)">
+        <div class="fi-left"><div class="fi-ticker">KBDC</div><div class="fi-name">Kayne Anderson BDC</div></div>
+        <div class="grade-badge gb-b">B</div>
+      </div>
+      <div class="fund-item" onclick="loadFund('OBDC',this)">
+        <div class="fi-left"><div class="fi-ticker">OBDC</div><div class="fi-name">Blue Owl Capital</div></div>
+        <div class="grade-badge gb-b">B</div>
+      </div>
+      <div class="fund-item" onclick="loadFund('CSWC',this)">
+        <div class="fi-left"><div class="fi-ticker">CSWC</div><div class="fi-name">Capital Southwest</div></div>
+        <div class="grade-badge gb-a">A-</div>
+      </div>
+      <div class="fund-item" onclick="loadFund('MAIN',this)">
+        <div class="fi-left"><div class="fi-ticker">MAIN</div><div class="fi-name">Main Street Capital</div></div>
+        <div class="grade-badge gb-a">A</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN -->
+  <div class="main">
+    <div class="topbar">
+      <div class="page-tabs">
+        <div class="page-tab active" onclick="switchTab('universe')">Universe</div>
+        <div class="page-tab" onclick="switchTab('deepdive')">Deep Dive — TCPC</div>
+        <div class="page-tab" onclick="switchTab('screener')">Screener</div>
+        <div class="page-tab" onclick="switchTab('compare')">Compare</div>
+      </div>
+      <div class="topbar-right">
+        <div class="live-badge"><div class="live-dot"></div>Live</div>
+        <div class="icon-btn" title="Notifications">🔔</div>
+        <div class="icon-btn" title="Export">↓</div>
+        <div class="avatar">QR</div>
+      </div>
+    </div>
+
+    <div class="content">
+
+      <!-- UNIVERSE VIEW -->
+      <div class="view active" id="tab-universe">
+        <div class="content-with-rail">
+          <div>
+            <div class="alert-strip" id="alert-strip">
+              <div class="alert-card">
+                <div class="alert-icon ai-red">⚠️</div>
+                <div class="alert-body">
+                  <div class="alert-title">3 Funds — Non-Accrual Rising</div>
+                  <div class="alert-desc">TCPC (9.7%), HRZN (8.9%), MRCC (7.6%) all increased more than 1pp quarter-over-quarter.</div>
+                </div>
+              </div>
+              <div class="alert-card">
+                <div class="alert-icon ai-amber">💡</div>
+                <div class="alert-body">
+                  <div class="alert-title">MRCC PIK at 24.7% — Highest in Universe</div>
+                  <div class="alert-desc">Nearly 1 in 4 income dollars is non-cash. Cash dividend coverage is at risk.</div>
+                </div>
+              </div>
+              <div class="alert-card">
+                <div class="alert-icon ai-blue">📋</div>
+                <div class="alert-body">
+                  <div class="alert-title">6 New Filings Processed</div>
+                  <div class="alert-desc">ARCC, BXSL, OBDC, GSBD, KBDC, CCAP Q4 2025 10-Qs extracted and updated.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="section-hdr">
+              <div class="section-title">BDC Universe — 45 Funds</div>
+              <div class="btn-group">
+                <div class="seg-btn active" onclick="filterUniverse(this,'all')">All</div>
+                <div class="seg-btn" onclick="filterUniverse(this,'external')">External</div>
+                <div class="seg-btn" onclick="filterUniverse(this,'internal')">Internal</div>
+                <div class="seg-btn" onclick="filterUniverse(this,'stressed')">⚠ Stressed</div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header">
+                <div class="card-title">All Funds</div>
+                <div class="card-meta">Sorted by credit risk · Updated Apr 22 2026</div>
+              </div>
+              <table class="dt">
+                <thead>
+                  <tr>
+                    <th>Ticker</th>
+                    <th>Fund</th>
+                    <th>Price</th>
+                    <th>P/NAV</th>
+                    <th>NAV/Sh</th>
+                    <th>PIK %</th>
+                    <th>NA% Cost</th>
+                    <th>NA% FV</th>
+                    <th>Leverage</th>
+                    <th>Yield</th>
+                    <th>NII Cov</th>
+                    <th>Trend</th>
+                    <th>Grade</th>
+                  </tr>
+                </thead>
+                <tbody id="universe-tbody"></tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- RIGHT RAIL -->
+          <div class="right-rail">
+            <div class="stat-panel">
+              <div class="stat-panel-header">Universe Pulse <span style="font-size:10px;color:var(--ink4);font-weight:400;">Apr 22, 2026</span></div>
+              <div class="stat-row"><div class="sr-label">Avg P/NAV</div><div class="sr-value">0.87×</div></div>
+              <div class="stat-row"><div class="sr-label">Avg PIK %</div><div class="sr-value sv-amber">8.4%</div></div>
+              <div class="stat-row"><div class="sr-label">Avg Non-Accrual</div><div class="sr-value sv-amber">3.2%</div></div>
+              <div class="stat-row"><div class="sr-label">Avg Leverage</div><div class="sr-value">1.24×</div></div>
+              <div class="stat-row"><div class="sr-label">A/B Grade Funds</div><div class="sr-value sv-green">24 / 45</div></div>
+              <div class="stat-row"><div class="sr-label">D/F Grade Funds</div><div class="sr-value sv-red">11 / 45</div></div>
+              <div class="stat-row"><div class="sr-label">Active Alerts</div><div class="sr-value sv-red">3</div></div>
+            </div>
+
+            <div class="stat-panel">
+              <div class="stat-panel-header">Watchlist</div>
+              <div class="wl-item" onclick="loadFund('TCPC',null)">
+                <div class="wl-left"><div class="wl-ticker">TCPC</div><div class="wl-sub">9.7% NON-ACCRUAL</div></div>
+                <div class="wl-pnav wl-neg">1.33×</div>
+              </div>
+              <div class="wl-item" onclick="loadFund('PSEC',null)">
+                <div class="wl-left"><div class="wl-ticker">PSEC</div><div class="wl-sub">57% DISCOUNT · ND</div></div>
+                <div class="wl-pnav wl-neg">0.43×</div>
+              </div>
+              <div class="wl-item" onclick="loadFund('MAIN',null)">
+                <div class="wl-left"><div class="wl-ticker">MAIN</div><div class="wl-sub">14 CONSEC RECORD NAV</div></div>
+                <div class="wl-pnav wl-pos">1.66×</div>
+              </div>
+              <div class="wl-item" onclick="loadFund('MRCC',null)">
+                <div class="wl-left"><div class="wl-ticker">MRCC</div><div class="wl-sub">24.7% PIK · MERGER</div></div>
+                <div class="wl-pnav wl-neg">1.12×</div>
+              </div>
+            </div>
+
+            <div class="adj-panel">
+              <div class="stat-panel-header">Grade Adjuster</div>
+              <div class="adj-row">
+                <div class="adj-top"><div class="adj-lbl">Credit Health</div><div class="adj-pct" id="g1">40%</div></div>
+                <input type="range" min="10" max="70" value="40" oninput="document.getElementById('g1').textContent=this.value+'%'">
+              </div>
+              <div class="adj-row">
+                <div class="adj-top"><div class="adj-lbl">Income Quality</div><div class="adj-pct" id="g2">25%</div></div>
+                <input type="range" min="5" max="60" value="25" oninput="document.getElementById('g2').textContent=this.value+'%'">
+              </div>
+              <div class="adj-row">
+                <div class="adj-top"><div class="adj-lbl">NAV Reliability</div><div class="adj-pct" id="g3">20%</div></div>
+                <input type="range" min="5" max="50" value="20" oninput="document.getElementById('g3').textContent=this.value+'%'">
+              </div>
+              <div class="adj-row">
+                <div class="adj-top"><div class="adj-lbl">Structure & Fees</div><div class="adj-pct" id="g4">15%</div></div>
+                <input type="range" min="5" max="40" value="15" oninput="document.getElementById('g4').textContent=this.value+'%'">
+              </div>
+              <div class="adj-note">GRADES RECALCULATE LIVE</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- DEEP DIVE VIEW -->
+      <div class="view" id="tab-deepdive">
+        <div class="content-with-rail">
+          <div>
+            <div class="dd-top">
+              <div>
+                <div class="dd-fund-name">
+                  BlackRock TCP Capital Corp
+                  <span class="tag">NASDAQ: TCPC</span>
+                  <span class="tag">External</span>
+                  <span class="tag">Q3 2025</span>
+                </div>
+                <div class="dd-meta-row">
+                  Manager: <span>BlackRock TCP Capital Mgmt LLC</span>
+                  &nbsp;·&nbsp; AUM: <span>$1.6B</span>
+                  &nbsp;·&nbsp; Inception: <span>Apr 2012</span>
+                  &nbsp;·&nbsp; Fee: <span>1.50% base / 20% incentive</span>
+                </div>
+              </div>
+              <div class="dd-right-block">
+                <div class="dd-price-block">
+                  <div class="dd-price">$9.41</div>
+                  <div class="dd-change neg">▼ $2.24 &nbsp; −19.2% YTD</div>
+                </div>
+                <div class="grade-block gb-d">
+                  <div class="gb-letter">D</div>
+                  <div class="gb-sub">GRADE</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="kpi-grid">
+              <div class="kpi-card">
+                <div class="kpi-label">P / NAV</div>
+                <div class="kpi-value kv-amber">1.33×</div>
+                <div class="kpi-sub">Peer avg 0.87× · premium despite stress</div>
+              </div>
+              <div class="kpi-card">
+                <div class="kpi-label">Non-Accrual % Cost</div>
+                <div class="kpi-value kv-red">9.7%</div>
+                <div class="kpi-sub ks-neg">↑ +2.1pp vs Q2 2025</div>
+              </div>
+              <div class="kpi-card">
+                <div class="kpi-label">PIK % of Income</div>
+                <div class="kpi-value kv-amber">9.5%</div>
+                <div class="kpi-sub ks-neg">↑ Trending higher each quarter</div>
+              </div>
+              <div class="kpi-card">
+                <div class="kpi-label">Leverage Ratio</div>
+                <div class="kpi-value kv-red">1.74×</div>
+                <div class="kpi-sub ks-neg">Highest in the universe</div>
+              </div>
+              <div class="kpi-card">
+                <div class="kpi-label">NII Coverage</div>
+                <div class="kpi-value kv-blue">1.02×</div>
+                <div class="kpi-sub">Barely covering dividend</div>
+              </div>
+            </div>
+
+            <div class="chart-grid">
+              <div class="chart-card">
+                <div class="chart-header">
+                  <div class="chart-label">NAV per Share — 8 Quarters</div>
+                  <div class="stat-chip sc-red">▼ Declining</div>
+                </div>
+                <svg class="chart-svg" viewBox="0 0 310 90">
+                  <defs>
+                    <linearGradient id="rg1" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="0%" stop-color="#D93025" stop-opacity="0.12"/>
+                      <stop offset="100%" stop-color="#D93025" stop-opacity="0"/>
+                    </linearGradient>
+                  </defs>
+                  <line x1="44" y1="12" x2="305" y2="12" stroke="#E2E5EB" stroke-width="1"/>
+                  <line x1="44" y1="38" x2="305" y2="38" stroke="#E2E5EB" stroke-width="1"/>
+                  <line x1="44" y1="64" x2="305" y2="64" stroke="#E2E5EB" stroke-width="1"/>
+                  <text x="40" y="15" fill="#B0BACC" font-size="8" font-family="Geist Mono" text-anchor="end">$15.20</text>
+                  <text x="40" y="41" fill="#B0BACC" font-size="8" font-family="Geist Mono" text-anchor="end">$13.20</text>
+                  <text x="40" y="67" fill="#B0BACC" font-size="8" font-family="Geist Mono" text-anchor="end">$11.20</text>
+                  <path d="M54,14 L90,17 L126,21 L162,26 L198,37 L234,58 L270,70 L300,76 L300,90 L54,90 Z" fill="url(#rg1)"/>
+                  <polyline points="54,14 90,17 126,21 162,26 198,37 234,58 270,70 300,76" fill="none" stroke="#D93025" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <circle cx="300" cy="76" r="3.5" fill="#D93025"/>
+                  <text x="54" y="88" fill="#B0BACC" font-size="8" font-family="Geist Mono">Q4'23</text>
+                  <text x="265" y="88" fill="#B0BACC" font-size="8" font-family="Geist Mono">Q3'25</text>
+                </svg>
+              </div>
+              <div class="chart-card">
+                <div class="chart-header">
+                  <div class="chart-label">Non-Accrual % at Cost — 8Q</div>
+                  <div class="stat-chip sc-red">↑ Rising</div>
+                </div>
+                <svg class="chart-svg" viewBox="0 0 310 90">
+                  <defs>
+                    <linearGradient id="ag1" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="0%" stop-color="#D97706" stop-opacity="0.12"/>
+                      <stop offset="100%" stop-color="#D97706" stop-opacity="0"/>
+                    </linearGradient>
+                  </defs>
+                  <line x1="44" y1="12" x2="305" y2="12" stroke="#E2E5EB" stroke-width="1"/>
+                  <line x1="44" y1="38" x2="305" y2="38" stroke="#E2E5EB" stroke-width="1"/>
+                  <line x1="44" y1="64" x2="305" y2="64" stroke="#E2E5EB" stroke-width="1"/>
+                  <text x="40" y="15" fill="#B0BACC" font-size="8" font-family="Geist Mono" text-anchor="end">12%</text>
+                  <text x="40" y="41" fill="#B0BACC" font-size="8" font-family="Geist Mono" text-anchor="end">6%</text>
+                  <text x="40" y="67" fill="#B0BACC" font-size="8" font-family="Geist Mono" text-anchor="end">0%</text>
+                  <path d="M54,72 L90,70 L126,65 L162,57 L198,41 L234,24 L270,15 L300,12 L300,90 L54,90 Z" fill="url(#ag1)"/>
+                  <polyline points="54,72 90,70 126,65 162,57 198,41 234,24 270,15 300,12" fill="none" stroke="#D97706" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <circle cx="300" cy="12" r="3.5" fill="#D97706"/>
+                  <text x="54" y="88" fill="#B0BACC" font-size="8" font-family="Geist Mono">Q4'23</text>
+                  <text x="265" y="88" fill="#B0BACC" font-size="8" font-family="Geist Mono">Q3'25</text>
+                </svg>
+              </div>
+              <div class="chart-card">
+                <div class="chart-header">
+                  <div class="chart-label">PIK % of Total Income</div>
+                  <div class="stat-chip sc-amber">⚠ Elevated</div>
+                </div>
+                <svg class="chart-svg" viewBox="0 0 310 90">
+                  <line x1="44" y1="12" x2="305" y2="12" stroke="#E2E5EB" stroke-width="1"/>
+                  <line x1="44" y1="38" x2="305" y2="38" stroke="#E2E5EB" stroke-width="1"/>
+                  <line x1="44" y1="64" x2="305" y2="64" stroke="#E2E5EB" stroke-width="1"/>
+                  <line x1="44" y1="28" x2="305" y2="28" stroke="#D93025" stroke-width="1" stroke-dasharray="4,3" opacity="0.4"/>
+                  <text x="248" y="25" fill="#D93025" font-size="7" font-family="Geist Mono" opacity="0.6">10% limit</text>
+                  <text x="40" y="15" fill="#B0BACC" font-size="8" font-family="Geist Mono" text-anchor="end">15%</text>
+                  <text x="40" y="41" fill="#B0BACC" font-size="8" font-family="Geist Mono" text-anchor="end">7.5%</text>
+                  <text x="40" y="67" fill="#B0BACC" font-size="8" font-family="Geist Mono" text-anchor="end">0%</text>
+                  <polyline points="54,64 90,61 126,55 162,48 198,41 234,34 270,30 300,28" fill="none" stroke="#1A6EF2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <circle cx="300" cy="28" r="3.5" fill="#1A6EF2"/>
+                  <text x="54" y="88" fill="#B0BACC" font-size="8" font-family="Geist Mono">Q4'23</text>
+                  <text x="265" y="88" fill="#B0BACC" font-size="8" font-family="Geist Mono">Q3'25</text>
+                </svg>
+              </div>
+              <div class="chart-card">
+                <div class="chart-header">
+                  <div class="chart-label">Leverage Ratio — 8 Quarters</div>
+                  <div class="stat-chip sc-red">Universe Max</div>
+                </div>
+                <svg class="chart-svg" viewBox="0 0 310 90">
+                  <line x1="44" y1="12" x2="305" y2="12" stroke="#E2E5EB" stroke-width="1"/>
+                  <line x1="44" y1="38" x2="305" y2="38" stroke="#E2E5EB" stroke-width="1"/>
+                  <line x1="44" y1="64" x2="305" y2="64" stroke="#E2E5EB" stroke-width="1"/>
+                  <line x1="44" y1="34" x2="305" y2="34" stroke="#D97706" stroke-width="1" stroke-dasharray="4,3" opacity="0.5"/>
+                  <text x="242" y="31" fill="#D97706" font-size="7" font-family="Geist Mono" opacity="0.7">1.5× target</text>
+                  <text x="40" y="15" fill="#B0BACC" font-size="8" font-family="Geist Mono" text-anchor="end">2.0×</text>
+                  <text x="40" y="41" fill="#B0BACC" font-size="8" font-family="Geist Mono" text-anchor="end">1.5×</text>
+                  <text x="40" y="67" fill="#B0BACC" font-size="8" font-family="Geist Mono" text-anchor="end">1.0×</text>
+                  <polyline points="54,58 90,54 126,49 162,43 198,37 234,28 270,21 300,16" fill="none" stroke="#D93025" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <circle cx="300" cy="16" r="3.5" fill="#D93025"/>
+                  <text x="54" y="88" fill="#B0BACC" font-size="8" font-family="Geist Mono">Q4'23</text>
+                  <text x="265" y="88" fill="#B0BACC" font-size="8" font-family="Geist Mono">Q3'25</text>
+                </svg>
+              </div>
+            </div>
+
+            <div class="analysis-card">
+              <div class="analysis-header">
+                <div class="analysis-title">
+                  <span class="ai-chip">AI</span>
+                  MD&A Intelligence — Q3 2025
+                </div>
+                <div class="sentiment-pill">
+                  <div class="s-dot"></div>
+                  Cautious
+                </div>
+              </div>
+              <div class="analysis-text">
+                Management disclosed six portfolio companies experienced significant valuation declines totaling $47M in realized and unrealized losses. Three software sector companies toggled to PIK status, citing liquidity constraints amid elevated interest burden. Management flagged "heightened monitoring" of four additional technology-adjacent credits and acknowledged the leverage ratio has exceeded internal targets, with plans to reduce through anticipated Q4 repayments. Risk factor section added a new disclosure on software sector concentration not present in Q2 2025.
+              </div>
+              <div class="flag-row">
+                <div class="flag f-red">6 Companies Impaired</div>
+                <div class="flag f-red">PIK Toggles Disclosed</div>
+                <div class="flag f-red">New Risk Factor Added</div>
+                <div class="flag f-amber">Leverage Above Target</div>
+                <div class="flag f-amber">Software Stress Flagged</div>
+                <div class="flag">Q4 Deleveraging Planned</div>
+                <div class="flag">No Dividend Cut Yet</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- RIGHT RAIL -->
+          <div class="right-rail">
+            <div class="ai-box">
+              <div class="ai-header">
+                <span style="font-size:14px;">✦</span>
+                <div class="ai-header-text">Ask Nexus AI</div>
+              </div>
+              <div class="ai-input-wrap">
+                <textarea class="ai-input" rows="2" placeholder="Ask anything about this fund or the BDC universe..."></textarea>
+              </div>
+              <div class="ai-examples">
+                <div class="ai-example" onclick="setQuery(this)">Why is TCPC trading at a premium?</div>
+                <div class="ai-example" onclick="setQuery(this)">Compare TCPC vs ARCC credit quality</div>
+                <div class="ai-example" onclick="setQuery(this)">Which funds have rising PIK trends?</div>
+                <div class="ai-example" onclick="setQuery(this)">What did management say about software?</div>
+              </div>
+            </div>
+
+            <div class="stat-panel">
+              <div class="stat-panel-header">Peer Comparison</div>
+              <div class="stat-row"><div class="sr-label">P/NAV vs Peers</div><div class="sr-value sv-red">97th pctile</div></div>
+              <div class="stat-row"><div class="sr-label">Non-Accrual vs Peers</div><div class="sr-value sv-red">99th pctile</div></div>
+              <div class="stat-row"><div class="sr-label">Leverage vs Peers</div><div class="sr-value sv-red">99th pctile</div></div>
+              <div class="stat-row"><div class="sr-label">PIK % vs Peers</div><div class="sr-value sv-red">82nd pctile</div></div>
+              <div class="stat-row"><div class="sr-label">NII Coverage vs Peers</div><div class="sr-value sv-amber">44th pctile</div></div>
+              <div class="stat-row"><div class="sr-label">Div Yield vs Peers</div><div class="sr-value sv-green">78th pctile</div></div>
+            </div>
+
+            <div class="adj-panel">
+              <div class="stat-panel-header">Grade Adjuster</div>
+              <div class="adj-row">
+                <div class="adj-top"><div class="adj-lbl">Credit Health</div><div class="adj-pct" id="dd-g1">40%</div></div>
+                <input type="range" min="10" max="70" value="40" oninput="document.getElementById('dd-g1').textContent=this.value+'%'">
+              </div>
+              <div class="adj-row">
+                <div class="adj-top"><div class="adj-lbl">Income Quality</div><div class="adj-pct" id="dd-g2">25%</div></div>
+                <input type="range" min="5" max="60" value="25" oninput="document.getElementById('dd-g2').textContent=this.value+'%'">
+              </div>
+              <div class="adj-row">
+                <div class="adj-top"><div class="adj-lbl">NAV Reliability</div><div class="adj-pct" id="dd-g3">20%</div></div>
+                <input type="range" min="5" max="50" value="20" oninput="document.getElementById('dd-g3').textContent=this.value+'%'">
+              </div>
+              <div class="adj-row">
+                <div class="adj-top"><div class="adj-lbl">Structure & Fees</div><div class="adj-pct" id="dd-g4">15%</div></div>
+                <input type="range" min="5" max="40" value="15" oninput="document.getElementById('dd-g4').textContent=this.value+'%'">
+              </div>
+              <div class="adj-note">GRADES RECALCULATE LIVE</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SCREENER VIEW -->
+      <div class="view" id="tab-screener">
+        <div class="screener-layout">
+          <div class="filter-card">
+            <div style="font-size:13px;font-weight:600;color:var(--ink);margin-bottom:16px;">Filter Criteria</div>
+            <div class="filter-section">
+              <div class="filter-label">P/NAV Max <b id="pnav-v">≤ 1.0×</b></div>
+              <input type="range" min="30" max="200" value="100" oninput="document.getElementById('pnav-v').textContent='≤ '+(this.value/100).toFixed(1)+'×'">
+            </div>
+            <div class="filter-section">
+              <div class="filter-label">PIK % Max <b id="pik-v">≤ 10%</b></div>
+              <input type="range" min="0" max="30" value="10" oninput="document.getElementById('pik-v').textContent='≤ '+this.value+'%'">
+            </div>
+            <div class="filter-section">
+              <div class="filter-label">Non-Accrual Max <b id="na-v">≤ 3%</b></div>
+              <input type="range" min="0" max="15" value="3" oninput="document.getElementById('na-v').textContent='≤ '+this.value+'%'">
+            </div>
+            <div class="filter-section">
+              <div class="filter-label">Div Yield Min <b id="yld-v">≥ 9%</b></div>
+              <input type="range" min="0" max="20" value="9" oninput="document.getElementById('yld-v').textContent='≥ '+this.value+'%'">
+            </div>
+            <div class="filter-section">
+              <div class="filter-label">Minimum Grade</div>
+              <div class="chip-row">
+                <div class="chip">A</div>
+                <div class="chip active">B</div>
+                <div class="chip">C</div>
+                <div class="chip">Any</div>
+              </div>
+            </div>
+            <div class="filter-section">
+              <div class="filter-label">Management</div>
+              <div class="chip-row">
+                <div class="chip active">All</div>
+                <div class="chip">External</div>
+                <div class="chip">Internal</div>
+              </div>
+            </div>
+            <div style="border-top:1px solid var(--border);padding-top:14px;margin-top:4px;">
+              <div style="font-size:11px;font-weight:600;color:var(--ink3);letter-spacing:0.04em;text-transform:uppercase;margin-bottom:8px;">Quick Screens</div>
+              <div class="quick-btn">Clean Income<span>PIK &lt;5% · NA &lt;2% · NII cov &gt;1.1×</span></div>
+              <div class="quick-btn">Deep Value<span>P/NAV &lt;0.75× · Grade B or better</span></div>
+              <div class="quick-btn">Internal Managers<span>MAIN, CSWC, RAND, PFX only</span></div>
+              <div class="quick-btn" style="color:var(--red);border-color:rgba(217,48,37,0.2);">Danger Zone<span style="color:var(--ink3);">PIK &gt;15% OR Non-Accrual &gt;7%</span></div>
+            </div>
+          </div>
+
+          <div>
+            <div class="section-hdr">
+              <div>
+                <div class="section-title">12 Funds Match</div>
+                <div class="section-meta" style="margin-top:2px;">Based on current filter settings</div>
+              </div>
+              <div class="btn-group">
+                <div class="seg-btn">Export CSV</div>
+                <div class="seg-btn">Save Screen</div>
+              </div>
+            </div>
+            <div class="card">
+              <table class="dt">
+                <thead>
+                  <tr>
+                    <th>Ticker</th><th>Fund</th><th>P/NAV</th><th>PIK%</th><th>NA%</th><th>Yield</th><th>NII Cov</th><th>Leverage</th><th>Trend</th><th>Grade</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="sel"><td class="td-ticker">ARCC</td><td class="td-name">Ares Capital Corp</td><td class="td-mono">0.95×</td><td class="td-mono val-warn">15.5%</td><td class="td-mono val-pos">1.8%</td><td class="td-mono">9.8%</td><td class="td-mono val-pos">1.05×</td><td class="td-mono val-pos">1.12×</td><td><svg class="spark" width="56" height="16" viewBox="0 0 56 16"><polyline points="0,13 18,10 36,8 56,6" fill="none" stroke="#0E9E60" stroke-width="1.5" stroke-linecap="round"/></svg></td><td><div class="grade-badge gb-b">B+</div></td></tr>
+                  <tr><td class="td-ticker">BXSL</td><td class="td-name">Blackstone Secured Lending</td><td class="td-mono">0.91×</td><td class="td-mono">8.2%</td><td class="td-mono val-pos">0.1%</td><td class="td-mono">10.9%</td><td class="td-mono val-pos">1.07×</td><td class="td-mono val-pos">1.10×</td><td><svg class="spark" width="56" height="16" viewBox="0 0 56 16"><polyline points="0,11 18,10 36,9 56,8" fill="none" stroke="#0E9E60" stroke-width="1.5" stroke-linecap="round"/></svg></td><td><div class="grade-badge gb-b">B+</div></td></tr>
+                  <tr><td class="td-ticker">GBDC</td><td class="td-name">Golub Capital BDC</td><td class="td-mono">0.91×</td><td class="td-mono val-pos">7.0%</td><td class="td-mono val-pos">1.3%</td><td class="td-mono">10.7%</td><td class="td-mono val-pos">1.09×</td><td class="td-mono">1.27×</td><td><svg class="spark" width="56" height="16" viewBox="0 0 56 16"><polyline points="0,12 18,10 36,9 56,7" fill="none" stroke="#0E9E60" stroke-width="1.5" stroke-linecap="round"/></svg></td><td><div class="grade-badge gb-b">B+</div></td></tr>
+                  <tr><td class="td-ticker">CSWC</td><td class="td-name">Capital Southwest Corp</td><td class="td-mono val-warn">1.36×</td><td class="td-mono">7.5%</td><td class="td-mono">3.5%</td><td class="td-mono">9.4%</td><td class="td-mono val-pos">1.12×</td><td class="td-mono val-pos">0.89×</td><td><svg class="spark" width="56" height="16" viewBox="0 0 56 16"><polyline points="0,14 18,11 36,8 56,4" fill="none" stroke="#0E9E60" stroke-width="1.5" stroke-linecap="round"/></svg></td><td><div class="grade-badge gb-a">A-</div></td></tr>
+                  <tr><td class="td-ticker">KBDC</td><td class="td-name">Kayne Anderson BDC</td><td class="td-mono">1.06×</td><td class="td-mono val-pos">7.4%</td><td class="td-mono">2.5%</td><td class="td-mono">10.2%</td><td class="td-mono val-pos">1.08×</td><td class="td-mono">1.02×</td><td><svg class="spark" width="56" height="16" viewBox="0 0 56 16"><polyline points="0,9 18,9 36,8 56,8" fill="none" stroke="#1A6EF2" stroke-width="1.5" stroke-linecap="round"/></svg></td><td><div class="grade-badge gb-b">B</div></td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- COMPARE VIEW -->
+      <div class="view" id="tab-compare">
+        <div class="section-hdr">
+          <div class="section-title">Side-by-Side Comparison</div>
+          <div class="btn-group">
+            <div class="seg-btn active">ARCC</div>
+            <div class="seg-btn active">TCPC</div>
+            <div class="seg-btn active">MAIN</div>
+            <div class="seg-btn">+ Add Fund</div>
+          </div>
+        </div>
+
+        <div class="compare-grid">
+          <div class="cmp-label-col">
+            <div class="cmp-col-header" style="background:var(--bg);">
+              <div style="font-size:11px;color:var(--ink4);font-weight:500;">Metric</div>
+            </div>
+            <div class="cmp-row-cell">Price</div>
+            <div class="cmp-row-cell">P/NAV</div>
+            <div class="cmp-row-cell">NAV / Share</div>
+            <div class="cmp-row-cell">PIK %</div>
+            <div class="cmp-row-cell">Non-Accrual %</div>
+            <div class="cmp-row-cell">Leverage</div>
+            <div class="cmp-row-cell">Div Yield</div>
+            <div class="cmp-row-cell">NII Coverage</div>
+            <div class="cmp-row-cell">Mgmt Fee</div>
+            <div class="cmp-row-cell">AUM</div>
+            <div class="cmp-row-cell">Portfolio Cos</div>
+            <div class="cmp-row-cell">First Lien %</div>
+            <div class="cmp-row-cell">Sentiment</div>
+            <div class="cmp-row-cell">Grade</div>
+          </div>
+
+          <div>
+            <div class="cmp-col-header good-col">
+              <div class="cmp-ticker">ARCC <div class="grade-badge gb-b" style="display:inline-block;font-size:9px;">B+</div></div>
+              <div class="cmp-name">Ares Capital Corporation</div>
+            </div>
+            <div class="cmp-row-cell">$21.18</div>
+            <div class="cmp-row-cell">0.95×</div>
+            <div class="cmp-row-cell">$22.29</div>
+            <div class="cmp-row-cell val-warn">15.5%</div>
+            <div class="cmp-row-cell val-pos">1.8%</div>
+            <div class="cmp-row-cell val-pos">1.12×</div>
+            <div class="cmp-row-cell">9.8%</div>
+            <div class="cmp-row-cell val-pos">1.05×</div>
+            <div class="cmp-row-cell">1.50%</div>
+            <div class="cmp-row-cell">$29.5B</div>
+            <div class="cmp-row-cell">603</div>
+            <div class="cmp-row-cell val-pos">64%</div>
+            <div class="cmp-row-cell val-blue">Neutral</div>
+            <div class="cmp-row-cell"><div class="grade-badge gb-b">B+</div></div>
+          </div>
+
+          <div class="highlighted-col">
+            <div class="cmp-col-header">
+              <div class="cmp-ticker">TCPC <div class="grade-badge gb-d" style="display:inline-block;font-size:9px;">D</div></div>
+              <div class="cmp-name">BlackRock TCP Capital</div>
+            </div>
+            <div class="cmp-row-cell">$9.41</div>
+            <div class="cmp-row-cell val-warn">1.33×</div>
+            <div class="cmp-row-cell">$7.08</div>
+            <div class="cmp-row-cell val-warn">9.5%</div>
+            <div class="cmp-row-cell val-neg">9.7%</div>
+            <div class="cmp-row-cell val-neg">1.74×</div>
+            <div class="cmp-row-cell">14.2%</div>
+            <div class="cmp-row-cell val-warn">1.02×</div>
+            <div class="cmp-row-cell">1.50%</div>
+            <div class="cmp-row-cell">$1.6B</div>
+            <div class="cmp-row-cell">102</div>
+            <div class="cmp-row-cell">71%</div>
+            <div class="cmp-row-cell val-warn">Cautious</div>
+            <div class="cmp-row-cell"><div class="grade-badge gb-d">D</div></div>
+          </div>
+
+          <div>
+            <div class="cmp-col-header good-col">
+              <div class="cmp-ticker">MAIN <div class="grade-badge gb-a" style="display:inline-block;font-size:9px;">A</div></div>
+              <div class="cmp-name">Main Street Capital Corp</div>
+            </div>
+            <div class="cmp-row-cell">$60.14</div>
+            <div class="cmp-row-cell val-warn">1.66×</div>
+            <div class="cmp-row-cell">$36.23</div>
+            <div class="cmp-row-cell val-pos">3.0%</div>
+            <div class="cmp-row-cell">3.3%</div>
+            <div class="cmp-row-cell val-pos">0.90×</div>
+            <div class="cmp-row-cell">6.9%</div>
+            <div class="cmp-row-cell val-pos">1.19×</div>
+            <div class="cmp-row-cell val-pos">0% (internal)</div>
+            <div class="cmp-row-cell">$5.0B</div>
+            <div class="cmp-row-cell">243</div>
+            <div class="cmp-row-cell val-pos">77%</div>
+            <div class="cmp-row-cell val-pos">Confident</div>
+            <div class="cmp-row-cell"><div class="grade-badge gb-a">A</div></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script>
+
+// ── PASSWORD ─────────────────────────────────────────────────────────────────
+const BETA_PASSWORD = 'bdcbeta2026';
+
+function checkPassword() {
+  const stored = sessionStorage.getItem('bdc_auth');
+  if (stored === BETA_PASSWORD) { showApp(); return; }
+  document.getElementById('auth-wall').style.display = 'flex';
+  document.getElementById('main-app').style.display = 'none';
+}
+
+function tryLogin() {
+  const pw = document.getElementById('pw-input').value;
+  if (pw === BETA_PASSWORD) {
+    sessionStorage.setItem('bdc_auth', pw);
+    showApp();
+  } else {
+    document.getElementById('pw-error').style.display = 'block';
+    document.getElementById('pw-input').value = '';
+    document.getElementById('pw-input').focus();
+  }
+}
+
+function showApp() {
+  document.getElementById('auth-wall').style.display = 'none';
+  document.getElementById('main-app').style.display = 'grid';
+  loadData();
+}
+
+document.addEventListener('DOMContentLoaded', checkPassword);
+
+// ── STATE ─────────────────────────────────────────────────────────────────────
+let FUND_DATA = {};
+let PRICES = {};
+let FUNDS_LOADED = false;
+
+// ── DATA LOADING ──────────────────────────────────────────────────────────────
+async function loadData() {
+  try {
+    // Load filing data
+    const dr = await fetch('bdc_data.json?v=' + Date.now());
+    const funds = await dr.json();
+    funds.forEach(f => { FUND_DATA[f.t] = f; });
+    FUNDS_LOADED = true;
+    renderUniverse(funds);
+    updateUniverseStats(funds);
+    renderSidebar(funds);
+    renderAlerts(funds);
+    
+    // Load prices separately
+    const pr = await fetch('bdc_prices.json?v=' + Date.now());
+    const priceData = await pr.json();
+    PRICES = priceData.prices || {};
+    applyPrices(priceData.updated);
+    
+    // Init screener and default deep dive
+    runScreener();
+    const defaultFund = funds.find(f => f.t === 'TCPC') || funds[0];
+    if (defaultFund) loadFund(defaultFund.t, null);
+    
+  } catch(e) {
+    console.error('Data load failed:', e);
+    document.getElementById('price-status').textContent = 'Error loading data';
+  }
+}
+
+// ── RENDER UNIVERSE TABLE ─────────────────────────────────────────────────────
+function renderUniverse(funds) {
+  const sorted = [...funds].sort((a,b) => (b.na_c||0) - (a.na_c||0));
+  const tbody = document.getElementById('universe-tbody');
+  if (!tbody) return;
+  tbody.innerHTML = sorted.map(f => {
+    const g = f.g;
+    const gcls = {A:'gb-a',B:'gb-b',C:'gb-c',D:'gb-d',F:'gb-d'}[g] || 'gb-b';
+    return `<tr onclick="loadFundFromRow('${f.t}',this)" style="cursor:pointer;">
+      <td class="td-ticker">${f.t}</td>
+      <td><div class="grade-badge ${gcls}">${g}</div></td>
+      <td class="td-mono price-cell" data-ticker="${f.t}">—</td>
+      <td class="td-mono">${f.nav ? '$'+f.nav.toFixed(2) : 'N/A'}</td>
+      <td class="td-mono pnav-cell" data-nav="${f.nav||0}" data-ticker="${f.t}">—</td>
+      <td class="td-mono ${naCol(f.na_c)}">${f.na_c !== null ? f.na_c.toFixed(1)+'%' : 'N/A'}</td>
+      <td class="td-mono ${pikCol(f.pik)}">${f.pik !== null ? f.pik.toFixed(1)+'%' : 'N/A'}</td>
+      <td class="td-mono ${levCol(f.lev)}">${f.lev !== null ? f.lev.toFixed(2)+'×' : 'N/A'}</td>
+      <td class="td-mono ${covCol(f.cov)}">${f.cov !== null ? f.cov.toFixed(2)+'×' : 'N/A'}</td>
+      <td style="padding:10px 16px;font-size:11px;color:#7A8899;text-align:right;">${f.q}</td>
+    </tr>`;
+  }).join('');
+}
+
+// ── RENDER SIDEBAR ────────────────────────────────────────────────────────────
+function renderSidebar(funds) {
+  const el = document.getElementById('fund-list');
+  if (!el) return;
+  const sorted = [...funds].sort((a,b) => a.t.localeCompare(b.t));
+  el.innerHTML = sorted.map(f => {
+    const gcls = {A:'gb-a',B:'gb-b',C:'gb-c',D:'gb-d',F:'gb-d'}[f.g] || 'gb-b';
+    return `<div class="fund-item" onclick="loadFund('${f.t}',this)">
+      <div class="fi-left"><div class="fi-ticker">${f.t}</div></div>
+      <div class="grade-badge ${gcls}">${f.g}</div>
+    </div>`;
+  }).join('');
+}
+
+// ── RENDER ALERTS ─────────────────────────────────────────────────────────────
+function renderAlerts(funds) {
+  const highNA = funds.filter(f => (f.na_c||0) > 7).map(f => f.t);
+  const highPIK = funds.filter(f => (f.pik||0) > 15).map(f => f.t);
+  const lowCov = funds.filter(f => (f.cov||1) < 0.95).map(f => f.t);
+  const strip = document.getElementById('alert-strip');
+  if (!strip) return;
+  let html = '';
+  if (highNA.length) html += `<div class="alert-card"><div class="alert-icon ai-red">⚠️</div><div class="alert-body"><div class="alert-title">${highNA.length} Funds — Non-Accrual Above 7%</div><div class="alert-desc">${highNA.slice(0,5).join(', ')} showing elevated credit stress.</div></div></div>`;
+  if (highPIK.length) html += `<div class="alert-card"><div class="alert-icon ai-amber">💡</div><div class="alert-body"><div class="alert-title">${highPIK.length} Funds — PIK Above 15%</div><div class="alert-desc">${highPIK.slice(0,5).join(', ')} — high non-cash income.</div></div></div>`;
+  if (lowCov.length) html += `<div class="alert-card"><div class="alert-icon ai-blue">📋</div><div class="alert-body"><div class="alert-title">${lowCov.length} Funds — NII Coverage Below 0.95×</div><div class="alert-desc">${lowCov.slice(0,5).join(', ')} — dividend risk.</div></div></div>`;
+  strip.innerHTML = html;
+}
+
+// ── UPDATE UNIVERSE STATS ─────────────────────────────────────────────────────
+function updateUniverseStats(funds) {
+  const naVals = funds.filter(f => f.na_c !== null).map(f => f.na_c);
+  const pikVals = funds.filter(f => f.pik !== null).map(f => f.pik);
+  const levVals = funds.filter(f => f.lev !== null).map(f => f.lev);
+  const avg = arr => arr.length ? (arr.reduce((a,b)=>a+b,0)/arr.length).toFixed(1) : 'N/A';
+  const ab = funds.filter(f => ['A','B'].includes(f.g)).length;
+  const df = funds.filter(f => ['D','F'].includes(f.g)).length;
+  const set = (id, v) => { const el = document.getElementById(id); if(el) el.textContent = v; };
+  set('stat-avg-na', avg(naVals) + '%');
+  set('stat-avg-pik', avg(pikVals) + '%');
+  set('stat-avg-lev', parseFloat(avg(levVals)).toFixed(2) + '×');
+  set('stat-ab', ab + ' / ' + funds.length);
+  set('stat-df', df + ' / ' + funds.length);
+  set('stat-total', funds.length);
+}
+
+// ── APPLY PRICES ──────────────────────────────────────────────────────────────
+function applyPrices(updated) {
+  document.querySelectorAll('.price-cell').forEach(cell => {
+    const p = PRICES[cell.dataset.ticker];
+    cell.textContent = p ? '$' + p.toFixed(2) : '—';
+  });
+  document.querySelectorAll('.pnav-cell').forEach(cell => {
+    const p = PRICES[cell.dataset.ticker];
+    const nav = parseFloat(cell.dataset.nav);
+    if (p && nav > 0) {
+      const pnav = (p/nav).toFixed(2);
+      cell.textContent = pnav + '×';
+      cell.className = 'td-mono ' + (pnav>1.2?'val-warn':pnav<0.8?'val-neg':'');
+    } else { cell.textContent = '—'; }
+  });
+  const st = document.getElementById('price-status');
+  if (st) st.textContent = updated && updated !== 'not yet' ? 'Prices: ' + updated : 'Prices not yet loaded';
+  updateDDPrice(document.querySelector('.page-tab.active')?.textContent?.replace('Deep Dive — ','')?.trim());
+}
+
+function updateDDPrice(ticker) {
+  if (!ticker || !PRICES[ticker]) return;
+  const f = FUND_DATA[ticker];
+  const p = PRICES[ticker];
+  const priceEl = document.getElementById('dd-price');
+  const pnavEl = document.getElementById('dd-pnav');
+  if (priceEl) priceEl.textContent = '$' + p.toFixed(2);
+  if (pnavEl && f?.nav) pnavEl.textContent = 'P/NAV: ' + (p/f.nav).toFixed(2) + '×';
+}
+
+// ── COLOR HELPERS ─────────────────────────────────────────────────────────────
+function naCol(v) { if(v===null||v===undefined)return 'val-muted'; return v>7?'val-neg':v>3?'val-warn':'val-pos'; }
+function pikCol(v) { if(v===null||v===undefined)return 'val-muted'; return v>15?'val-neg':v>8?'val-warn':'val-pos'; }
+function levCol(v) { if(v===null||v===undefined)return 'val-muted'; return v>2.0?'val-neg':v>1.6?'val-warn':'val-pos'; }
+function covCol(v) { if(v===null||v===undefined)return 'val-muted'; return v<0.95?'val-neg':v<1.05?'val-warn':'val-pos'; }
+function sl(s) {
+  if(s===null||s===undefined)return 'N/A';
+  if(s>=4.5)return '🟢 Confident'; if(s>=3.5)return '🔵 Neutral';
+  if(s>=2.5)return '🟡 Cautious'; return '🔴 Bearish';
+}
+
+// ── TAB SWITCHING ─────────────────────────────────────────────────────────────
+function switchTab(tab) {
+  document.querySelectorAll('.page-tab').forEach((t,i) => {
+    t.classList.toggle('active',['universe','deepdive','screener','compare'][i]===tab);
+  });
+  document.querySelectorAll('.view').forEach(v => v.classList.remove('active'));
+  const el = document.getElementById('tab-'+tab);
+  if(el) el.classList.add('active');
+}
+
+// ── FUND DEEP DIVE ────────────────────────────────────────────────────────────
+function loadFund(ticker, el) {
+  if(el) { document.querySelectorAll('.fund-item').forEach(f=>f.classList.remove('active')); el.classList.add('active'); }
+  switchTab('deepdive');
+  const f = FUND_DATA[ticker];
+  if(!f) return;
+  document.querySelectorAll('.page-tab')[1].textContent = 'Deep Dive — ' + ticker;
+  const gcls = {A:'gb-a',B:'gb-b',C:'gb-c',D:'gb-d',F:'gb-d'}[f.g]||'gb-b';
+  const nameEl = document.getElementById('dd-name');
+  if(nameEl) nameEl.innerHTML = ticker + ' <span class="tag">' + f.q + '</span>';
+  const metaEl = document.getElementById('dd-meta');
+  if(metaEl) metaEl.innerHTML = 'AUM: ' + fmtMn(f.net) + ' &nbsp;·&nbsp; Portfolio Cos: ' + (f.ncos||'N/A') + ' &nbsp;·&nbsp; Sentiment: ' + sl(f.sent);
+  const gb = document.getElementById('dd-grade-block');
+  const gl = document.getElementById('dd-grade-letter');
+  if(gb) gb.className = 'grade-block ' + gcls;
+  if(gl) gl.textContent = f.g;
+  updateDDPrice(ticker);
+
+  // KPIs
+  const kpis = [
+    ['Non-Accrual % Cost', f.na_c!==null?f.na_c.toFixed(1)+'%':'N/A', naCol(f.na_c), f.na_c>7?'↑ High risk':f.na_c>3?'Elevated — watch':'Well controlled'],
+    ['Non-Accrual % FV', f.na_f!==null?f.na_f.toFixed(1)+'%':'N/A', naCol(f.na_f), 'Fair value markdown'],
+    ['PIK % of Income', f.pik!==null?f.pik.toFixed(1)+'%':'N/A', pikCol(f.pik), f.pik>15?'🔴 Cash income concern':f.pik>8?'🟡 Elevated':'✅ Cash income healthy'],
+    ['Leverage Ratio', f.lev!==null?f.lev.toFixed(2)+'×':'N/A', levCol(f.lev), f.lev>2.0?'🔴 Above 2.0× regulatory comfort':f.lev>1.6?'🟡 Elevated':'✅ Conservative'],
+    ['NII Coverage', f.cov!==null?f.cov.toFixed(2)+'×':'N/A', covCol(f.cov), f.cov<0.95?'🔴 Dividend at risk':f.cov<1.05?'🟡 Below 1.05×':'✅ Dividend well covered'],
+  ];
+  const cards = document.querySelectorAll('#tab-deepdive .kpi-card');
+  kpis.forEach((k,i) => {
+    if(cards[i]) {
+      const lbl=cards[i].querySelector('.kpi-label'); const val=cards[i].querySelector('.kpi-value'); const sub=cards[i].querySelector('.kpi-sub');
+      if(lbl)lbl.textContent=k[0]; if(val){val.textContent=k[1];val.className='kpi-value '+k[2];} if(sub)sub.textContent=k[3];
+    }
+  });
+
+  // Secondary KPIs
+  const sec = document.querySelectorAll('#dd-secondary .kpi-card');
+  const secData = [
+    ['NAV / Share', f.nav!==null?'$'+f.nav.toFixed(2):'N/A'],
+    ['NII / Share', f.nii!==null?'$'+f.nii.toFixed(2):'N/A'],
+    ['Div / Share (Qtr)', f.div!==null?'$'+f.div.toFixed(2):'N/A'],
+    ['Wtd Avg Yield', f.yld!==null?f.yld.toFixed(1)+'%':'N/A'],
+    ['Implied Recovery', f.irr!==null?f.irr.toFixed(1)+'%':'N/A'],
+  ];
+  sec.forEach((c,i) => {
+    if(secData[i]) {
+      const lbl=c.querySelector('.kpi-label'); const val=c.querySelector('.kpi-value');
+      if(lbl)lbl.textContent=secData[i][0]; if(val){val.textContent=secData[i][1];val.style.fontSize='18px';}
+    }
+  });
+
+  // MDA
+  const mdaEl=document.getElementById('dd-mda'); if(mdaEl)mdaEl.textContent=f.mda||'MD&A summary not available.';
+  const sentEl=document.getElementById('dd-sentiment'); if(sentEl)sentEl.textContent=sl(f.sent);
+  const qEl=document.getElementById('dd-quarter'); if(qEl)qEl.textContent=f.q;
+}
+
+function loadFundFromRow(ticker, rowEl) {
+  document.querySelectorAll('.dt tbody tr').forEach(r=>r.classList.remove('sel'));
+  rowEl.classList.add('sel');
+  loadFund(ticker, null);
+}
+
+function fmtMn(v) {
+  if(!v)return 'N/A';
+  if(v>=1000)return '$'+(v/1000).toFixed(1)+'B';
+  return '$'+Math.round(v)+'M';
+}
+
+// ── SCREENER ──────────────────────────────────────────────────────────────────
+function runScreener() {
+  if(!FUNDS_LOADED)return;
+  const maxNA = parseFloat(document.getElementById('scr-na')?.value||20);
+  const maxPIK = parseFloat(document.getElementById('scr-pik')?.value||30);
+  const maxLev = parseFloat(document.getElementById('scr-lev')?.value||3.5);
+  const minCov = parseFloat(document.getElementById('scr-cov')?.value||0);
+  const minGrade = document.getElementById('scr-grade')?.value||'Any';
+  const gradeOrder = ['A','B','C','D','F'];
+  const results = Object.values(FUND_DATA).filter(f => {
+    if((f.na_c||0)>maxNA)return false;
+    if((f.pik||0)>maxPIK)return false;
+    if((f.lev||1.5)>maxLev)return false;
+    if((f.cov||1)<minCov)return false;
+    if(minGrade!=='Any'){ const allowed=gradeOrder.slice(gradeOrder.indexOf(minGrade)); if(!allowed.includes(f.g))return false; }
+    return true;
+  });
+  const tbody=document.getElementById('screener-results');
+  const cnt=document.getElementById('screener-count');
+  if(cnt)cnt.textContent=results.length+' funds match';
+  if(!tbody)return;
+  tbody.innerHTML = results.map(f=>{
+    const gcls={A:'gb-a',B:'gb-b',C:'gb-c',D:'gb-d',F:'gb-d'}[f.g]||'gb-b';
+    return `<tr onclick="loadFund('${f.t}',null)" style="cursor:pointer;">
+      <td class="td-ticker">${f.t}</td>
+      <td><div class="grade-badge ${gcls}">${f.g}</div></td>
+      <td class="td-mono ${naCol(f.na_c)}">${f.na_c!==null?f.na_c.toFixed(1)+'%':'N/A'}</td>
+      <td class="td-mono ${pikCol(f.pik)}">${f.pik!==null?f.pik.toFixed(1)+'%':'N/A'}</td>
+      <td class="td-mono ${levCol(f.lev)}">${f.lev!==null?f.lev.toFixed(2)+'×':'N/A'}</td>
+      <td class="td-mono ${covCol(f.cov)}">${f.cov!==null?f.cov.toFixed(2)+'×':'N/A'}</td>
+      <td class="td-mono">${f.nav!==null?'$'+f.nav.toFixed(2):'N/A'}</td>
+      <td class="td-mono price-cell" data-ticker="${f.t}">—</td>
+    </tr>`;
+  }).join('');
+  applyPrices(null);
+}
+
+function quickScreen(type) {
+  if(type==='clean'){ document.getElementById('scr-na').value=2; document.getElementById('scr-pik').value=5; document.getElementById('scr-cov').value=1.1; document.getElementById('scr-grade').value='B'; }
+  else if(type==='danger'){ document.getElementById('scr-na').value=20; document.getElementById('scr-pik').value=30; document.getElementById('scr-cov').value=0; document.getElementById('scr-grade').value='Any'; }
+  else if(type==='value'){ document.getElementById('scr-na').value=5; document.getElementById('scr-grade').value='B'; }
+  runScreener();
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.chip').forEach(c => {
+    c.addEventListener('click', function() {
+      this.parentElement.querySelectorAll('.chip').forEach(x=>x.classList.remove('active'));
+      this.classList.add('active');
+    });
+  });
+  document.querySelectorAll('.seg-btn').forEach(b => {
+    b.addEventListener('click', function() {
+      this.closest('.btn-group')?.querySelectorAll('.seg-btn').forEach(x=>x.classList.remove('active'));
+      this.classList.add('active');
+    });
+  });
+});
+
+</script>
+</body>
+</html>
