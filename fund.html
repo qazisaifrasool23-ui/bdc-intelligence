@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>BDC Intelligence — Fund Deep Dive</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=DM+Mono:wght@400;500&family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+:root{
+  --bg:#fff;--bg2:#f7f9fc;--bg3:#eef1f6;--border:#e2e7ef;--border2:#c8d3e0;
+  --text:#0d1b2a;--text2:#4a5870;--text3:#8a97a8;--text4:#b8c4d0;
+  --blue:#1a56db;--blue2:#e8f0fe;--green:#0a8f5c;--green2:#e6f7f1;
+  --amber:#a05c00;--amber2:#fef3e2;--red:#c0182a;--red2:#fef2f4;
+  --navy:#0b2038;--purple:#6d28d9;--teal:#0891b2;
+  --font:'DM Sans',sans-serif;--mono:'DM Mono',monospace;--serif:'Libre Baskerville',serif;
+  --sh1:0 1px 4px rgba(13,27,42,.06);
+}
+*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
+body{background:var(--bg2);color:var(--text);font-family:var(--font);font-size:13px;line-height:1.5}
+::-webkit-scrollbar{width:5px;height:5px}::-webkit-scrollbar-track{background:var(--bg2)}::-webkit-scrollbar-thumb{background:var(--border2);border-radius:3px}
+.topbar{height:30px;background:var(--navy);display:flex;align-items:center;padding:0 20px;position:sticky;top:0;z-index:300}
+.tb{display:flex;align-items:center;gap:5px;padding:0 12px;border-right:1px solid rgba(255,255,255,.1);font-family:var(--mono);font-size:10px;color:rgba(255,255,255,.45);white-space:nowrap}
+.tb .v{color:rgba(255,255,255,.82);font-weight:500}
+.dot{width:5px;height:5px;border-radius:50%;background:#34d399;animation:blink 2s infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
+.tb-r{margin-left:auto}
+.free-tag{background:rgba(52,211,153,.15);color:#34d399;font-family:var(--mono);font-size:9px;padding:2px 7px;border-radius:2px;border:1px solid rgba(52,211,153,.25)}
+.nav{height:50px;background:var(--bg);border-bottom:1px solid var(--border);display:flex;align-items:center;padding:0 20px;position:sticky;top:30px;z-index:299;box-shadow:var(--sh1)}
+.logo{display:flex;align-items:center;gap:9px;margin-right:28px;text-decoration:none}
+.logo-box{width:28px;height:28px;background:var(--blue);border-radius:6px;display:flex;align-items:center;justify-content:center}
+.logo-box svg{width:15px;height:15px;fill:white}
+.logo-w{font-size:15px;font-weight:700;color:var(--text);letter-spacing:-.3px}
+.logo-w span{color:var(--blue)}
+.ntabs{display:flex;height:50px}
+.ntab{height:50px;padding:0 13px;display:flex;align-items:center;gap:5px;font-size:12.5px;font-weight:500;color:var(--text2);border-bottom:2px solid transparent;cursor:pointer;transition:all .15s;text-decoration:none;white-space:nowrap}
+.ntab:hover{color:var(--text);background:var(--bg2)}.ntab.on{color:var(--blue);border-bottom-color:var(--blue)}
+.ntab .pill{font-size:9px;font-family:var(--mono);background:var(--blue2);color:var(--blue);padding:1px 5px;border-radius:3px}
+.ntab .soon{font-size:9px;font-family:var(--mono);background:var(--bg3);color:var(--text4);padding:1px 5px;border-radius:3px;border:1px solid var(--border)}
+.ntab.dim{opacity:.45;cursor:not-allowed;pointer-events:none}
+.nright{margin-left:auto;display:flex;gap:8px}
+.btn1{height:30px;padding:0 13px;border:1px solid var(--border);border-radius:6px;background:transparent;color:var(--text2);font-size:12px;font-family:var(--font);cursor:pointer}
+.btn2{height:30px;padding:0 14px;border:none;border-radius:6px;background:var(--blue);color:#fff;font-size:12px;font-family:var(--font);font-weight:600;cursor:pointer}
+.layout{display:flex;min-height:calc(100vh - 80px)}
+.sb{width:220px;min-width:220px;background:var(--bg);border-right:1px solid var(--border);position:sticky;top:80px;height:calc(100vh - 80px);overflow-y:auto;flex-shrink:0}
+.sb-search{padding:10px 12px;border-bottom:1px solid var(--border)}
+.sb-search input{width:100%;height:28px;padding:0 8px;background:var(--bg2);border:1px solid var(--border);border-radius:5px;font-size:11.5px;font-family:var(--font);outline:none;color:var(--text)}
+.sb-search input:focus{border-color:var(--blue)}
+.sb-fund{height:48px;padding:0 12px;display:flex;align-items:center;gap:8px;cursor:pointer;border-left:2px solid transparent;border-bottom:1px solid var(--border);transition:background .1s}
+.sb-fund:hover{background:var(--bg2)}.sb-fund.on{background:var(--blue2);border-left-color:var(--blue)}
+.sb-tk{font-family:var(--mono);font-size:12px;font-weight:500;color:var(--blue);min-width:52px}
+.sb-info{display:flex;flex-direction:column;min-width:0;flex:1}
+.sb-nm{font-size:11px;color:var(--text2);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.sb-meta{font-size:9px;color:var(--text3);font-family:var(--mono)}
+.sb-type{font-size:8.5px;font-family:var(--mono);padding:1px 4px;border-radius:2px;flex-shrink:0}
+.t-badge{background:var(--blue2);color:var(--blue)}.nt-badge{background:var(--green2);color:var(--green)}
+.content{flex:1;min-width:0;overflow-x:hidden}
+.fh{background:linear-gradient(140deg,var(--navy) 0%,#0e3358 55%,#1a56db 100%);padding:24px 28px;position:relative;overflow:hidden}
+.fh-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.03) 1px,transparent 1px);background-size:44px 44px;pointer-events:none}
+.fh-in{position:relative;z-index:1}
+.fh-top{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:16px;gap:16px}
+.fh-tk{font-family:var(--mono);font-size:32px;font-weight:500;color:#fff;line-height:1}
+.fh-name{font-family:var(--serif);font-size:18px;color:rgba(255,255,255,.9);line-height:1.2;margin-bottom:3px}
+.fh-sub{font-size:11px;color:rgba(255,255,255,.5);font-family:var(--mono)}
+.fh-pill{display:inline-flex;align-items:center;font-size:9px;font-family:var(--mono);padding:2px 8px;border-radius:3px;font-weight:500}
+.fh-scores{display:flex;gap:8px;flex-shrink:0}
+.fh-sc{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);border-radius:6px;padding:8px 12px;text-align:center;min-width:68px}
+.fh-sv{font-family:var(--mono);font-size:20px;font-weight:500;color:#fff;line-height:1;margin-bottom:2px}
+.fh-sl{font-size:8px;color:rgba(255,255,255,.4);text-transform:uppercase;letter-spacing:.5px;font-family:var(--mono)}
+.fh-kpis{display:flex;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:6px;overflow:hidden}
+.fh-kpi{flex:1;padding:10px 14px;border-right:1px solid rgba(255,255,255,.08)}
+.fh-kpi:last-child{border-right:none}
+.fh-kl{font-size:9px;font-family:var(--mono);color:rgba(255,255,255,.4);text-transform:uppercase;letter-spacing:.4px;margin-bottom:3px}
+.fh-kv{font-family:var(--mono);font-size:15px;font-weight:500;color:#fff}
+.stabs{background:var(--bg);border-bottom:1px solid var(--border);display:flex;padding:0 16px;overflow-x:auto;position:sticky;top:80px;z-index:10;box-shadow:var(--sh1);scrollbar-width:none}
+.stabs::-webkit-scrollbar{display:none}
+.stab{height:40px;padding:0 11px;font-size:11px;font-weight:500;color:var(--text3);cursor:pointer;border-bottom:2px solid transparent;display:flex;align-items:center;white-space:nowrap;transition:all .15s;user-select:none;flex-shrink:0}
+.stab:hover{color:var(--text)}.stab.on{color:var(--blue);border-bottom-color:var(--blue)}
+.cbody{padding:18px 20px;display:flex;flex-direction:column;gap:14px}
+.sec{display:none}.sec.on{display:flex;flex-direction:column;gap:14px}
+@keyframes fu{from{opacity:0;transform:translateY(3px)}to{opacity:1;transform:translateY(0)}}
+.sec.on{animation:fu .18s ease forwards}
+.card{background:var(--bg);border:1px solid var(--border);border-radius:8px;box-shadow:var(--sh1);overflow:hidden}
+.ch{padding:11px 16px 10px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;flex-shrink:0}
+.ct{font-size:12.5px;font-weight:600;color:var(--text)}.cm{font-size:9.5px;color:var(--text3);font-family:var(--mono)}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.g3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px}
+.ca{position:relative;padding:12px 14px}.ca canvas{display:block}
+.mg{display:grid;grid-template-columns:repeat(4,1fr)}
+.mi{padding:11px 14px;border-right:1px solid var(--border);border-bottom:1px solid var(--border)}
+.mi:nth-child(4n){border-right:none}.mi:nth-last-child(-n+4){border-bottom:none}
+.ml{font-size:8.5px;font-family:var(--mono);color:var(--text3);text-transform:uppercase;letter-spacing:.4px;margin-bottom:3px}
+.mv{font-family:var(--mono);font-size:15px;font-weight:500;color:var(--text);line-height:1;margin-bottom:2px}
+.ms{font-size:10px;color:var(--text3)}
+.gn{color:var(--green)!important}.rd{color:var(--red)!important}.am{color:var(--amber)!important}
+.chg{font-size:10px;font-family:var(--mono)}.up{color:var(--green)}.dn{color:var(--red)}.fl{color:var(--text3)}
+.leg{display:flex;gap:10px;padding:5px 14px 10px;flex-wrap:wrap}
+.li{display:flex;align-items:center;gap:4px;font-size:9.5px;color:var(--text3);font-family:var(--mono)}
+.ll{width:14px;height:2px;border-radius:1px}.ld{width:14px;height:0;border-top:2px dashed}
+.pr{display:flex;align-items:center;padding:7px 14px;border-bottom:1px solid var(--border);gap:8px}
+.pr:last-child{border-bottom:none}
+.p-rk{font-family:var(--mono);font-size:10px;color:var(--text3);width:18px;text-align:right;flex-shrink:0}
+.p-tk{font-family:var(--mono);font-size:11.5px;font-weight:500;width:48px;flex-shrink:0}
+.p-hl{color:var(--blue)}.p-bw{flex:1;height:5px;background:var(--bg3);border-radius:3px;overflow:hidden}
+.p-b{height:100%;border-radius:3px}.p-v{font-family:var(--mono);font-size:11.5px;width:56px;text-align:right;flex-shrink:0}
+.ftbl{width:100%;border-collapse:collapse;font-family:var(--mono);font-size:11.5px}
+.ftbl th{padding:7px 12px;text-align:left;background:var(--bg2);border-bottom:1px solid var(--border2);font-size:8.5px;color:var(--text3);text-transform:uppercase;letter-spacing:.4px}
+.ftbl td{padding:8px 12px;border-bottom:1px solid var(--border);color:var(--text2)}
+.ftbl td:last-child{text-align:right;color:var(--text);font-weight:500}.ftbl tr:last-child td{border-bottom:none}
+.evt-row{display:flex;align-items:flex-start;padding:9px 14px;border-bottom:1px solid var(--border);gap:10px}
+.evt-row:last-child{border-bottom:none}
+.evt-dt{font-family:var(--mono);font-size:9px;color:var(--text3);width:48px;flex-shrink:0;padding-top:2px}
+.evt-tag{font-family:var(--mono);font-size:8px;padding:2px 6px;border-radius:2px;flex-shrink:0;margin-top:1px;letter-spacing:.3px}
+.evt-body{flex:1}
+.evt-title{font-size:12px;font-weight:500;color:var(--text);margin-bottom:2px}
+.evt-detail{font-size:10.5px;color:var(--text3);line-height:1.4}
+.tag-earn{background:var(--blue2);color:var(--blue)}.tag-div{background:var(--green2);color:var(--green)}
+.tag-cap{background:#f5f3ff;color:var(--purple)}.tag-mgmt{background:var(--amber2);color:var(--amber)}
+.tag-cred{background:var(--red2);color:var(--red)}
+</style>
+</head>
+<body>
+<div class="topbar">
+  <div class="tb"><div class="dot"></div><span class="v">Q4 2025</span></div>
+  <div class="tb"><span>FUND DEEP DIVE</span></div>
+  <div class="tb-r"><span class="free-tag">ALL DATA FREE</span></div>
+</div>
+<nav class="nav">
+  <a class="logo" href="index.html">
+    <div class="logo-box"><svg viewBox="0 0 16 16"><rect x="2" y="9" width="3" height="5"/><rect x="6.5" y="5" width="3" height="9"/><rect x="11" y="2" width="3" height="12"/></svg></div>
+    <div class="logo-w">BDC<span>Intelligence</span></div>
+  </a>
+  <div class="ntabs">
+    <a class="ntab" href="index.html">Universe <span class="pill">68</span></a>
+    <a class="ntab on" href="fund.html">Fund Deep Dive</a>
+    <a class="ntab dim" href="#">Compare <span class="soon">SOON</span></a>
+    <a class="ntab dim" href="#">Screener <span class="soon">SOON</span></a>
+    <a class="ntab dim" href="#">Analysis <span class="soon">SOON</span></a>
+  </div>
+  <div class="nright"><button class="btn1">Sign In</button><button class="btn2">Get Access</button></div>
+</nav>
+<div class="layout">
+  <aside class="sb">
+    <div class="sb-search"><input id="fsearch" placeholder="Search fund…" oninput="filterSB(this.value)"></div>
+    <div id="fundList"></div>
+  </aside>
+  <div class="content" id="content"></div>
+</div>
+<script>
+const Q24=['Q1\'20','Q2','Q3','Q4','Q1\'21','Q2','Q3','Q4','Q1\'22','Q2','Q3','Q4','Q1\'23','Q2','Q3','Q4','Q1\'24','Q2','Q3','Q4','Q1\'25','Q2','Q3','Q4'];
+const YEARS=['2025','2026','2027','2028','2029','2030+'];
+const F='DM Mono',TC='#8a97a8',GC='rgba(226,231,239,.55)';
+function bO(ex={}){
+  return {responsive:true,maintainAspectRatio:false,animation:{duration:300},
+    plugins:{legend:{display:false},tooltip:{backgroundColor:'#fff',borderColor:'#e2e7ef',borderWidth:1,titleColor:'#4a5870',bodyColor:'#0d1b2a',titleFont:{family:F,size:9},bodyFont:{family:F,size:11},padding:7},...(ex.plugins||{})},
+    ...Object.fromEntries(Object.entries(ex).filter(([k])=>k!=='plugins'))};
+}
+function ax(yl,mn){
+  const yax={grid:{color:GC,drawTicks:false},ticks:{color:TC,font:{family:F,size:8},...(yl?{callback:v=>v+yl}:{})},border:{color:'#e2e7ef'}};
+  if(mn!==undefined)yax.min=mn;
+  return {x:{grid:{color:GC,drawTicks:false},ticks:{color:TC,font:{family:F,size:8},maxTicksLimit:8},border:{color:'#e2e7ef'}},y:yax};
+}
+function sax(){return {x:{stacked:true,grid:{display:false},ticks:{color:TC,font:{family:F,size:8},maxTicksLimit:8},border:{color:'#e2e7ef'}},y:{stacked:true,grid:{color:GC},ticks:{color:TC,font:{family:F,size:8}},border:{color:'#e2e7ef'}}};}
+function rl(y,col){return {type:'line',label:'ref',data:Q24.map(()=>y),borderColor:col,borderDash:[5,5],borderWidth:1.2,pointRadius:0,fill:false};}
+function gen(b,v,t,n=24){const d=[];let x=b;for(let i=0;i<n;i++){x+=t+(Math.random()-.48)*v;d.push(+Math.max(0,x).toFixed(3));}return d;}
+function qF(v){return Math.abs(v)>=1000?'$'+Math.round(Math.abs(v)/1000)+'B':'$'+Math.round(Math.abs(v))+'M';}
+const CH={};
+function mkC(id,cfg){const el=document.getElementById(id);if(!el)return null;if(CH[id]){try{CH[id].destroy();}catch(e){}}CH[id]=new Chart(el,cfg);return CH[id];}
+function dn(id,labels,data,cols,pos='bottom'){mkC(id,{type:'doughnut',data:{labels,datasets:[{data,backgroundColor:cols,borderWidth:2,borderColor:'#fff'}]},options:{responsive:true,maintainAspectRatio:false,cutout:'60%',plugins:{legend:{display:true,position:pos,labels:{font:{family:F,size:9},color:'#4a5870',boxWidth:8,padding:4}},tooltip:{callbacks:{label:c=>`${c.label}: ${c.raw}%`}}}}});}
+function mi(l,v,s,cls){return `<div class="mi"><div class="ml">${l}</div><div class="mv${cls?' '+cls:''}">${v}</div><div class="ms">${s||''}</div></div>`;}
+function miv(l,v,chg,up,s){return `<div class="mi"><div class="ml">${l}</div><div class="mv">${v}</div><div class="chg ${up?'up':'dn'}">${chg}</div></div>`;}
+function leg(...items){return '<div class="leg">'+items.map(([col,dash,label])=>`<div class="li"><div class="${dash?'ld':'ll'}" style="${dash?'border-color:'+col:'background:'+col}"></div>${label}</div>`).join('')+'</div>';}
+
+// ── FUNDS — fetched from data/funds.json + data/timeseries/*.json ───────────
+let FUNDS=[];
+
+function mapFundDetail(f, mkt){
+  const m=(mkt&&mkt[f.ticker])||{};
+  const fee=f.management_structure==='internal'?0:(f.base_mgmt_fee_pct!=null?f.base_mgmt_fee_pct:null);
+  return {
+    ticker:f.ticker,
+    name:f.manager||f.ticker,
+    manager:f.manager||'—',
+    management_structure:f.management_structure||'external',
+    type:f.type,
+    exchange:f.type==='traded'?'NYSE/NASDAQ':'Non-Traded',
+    inception:'—',
+    strategy:f.top_sector_1||'Diversified',
+    nav:f.nav_per_share,
+    navChg:f.nav_per_share_qoq_change,
+    yield:f.weighted_avg_yield,
+    lev:f.leverage,
+    na:f.na_pct_cost,
+    pik:f.pik_pct,
+    fl:f.first_lien_pct,
+    sl:f.second_lien_pct,
+    sub:f.subordinated_pct,
+    eq:f.equity_pct,
+    cov:f.nii_coverage,
+    fee:fee,
+    inc:f.incentive_fee_pct,
+    hurdle:f.hurdle_rate_pct,
+    lookback:false,
+    scoreM:null,scoreU:null,scoreB:null,
+    na_m:f.net_assets_mn,
+    inv:f.total_investments_fv_mn,
+    debt:f.total_debt_mn,
+    cash:f.cash_mn,
+    undrawn:f.unused_capacity_mn,
+    cod:f.cost_of_debt_pct,
+    portcos:f.num_portfolio_companies,
+    avgPos:(f.net_assets_mn&&f.num_portfolio_companies)?Math.round(f.net_assets_mn/f.num_portfolio_companies):null,
+    top10:null,
+    sponsor:f.sponsored_pct,
+    flt:f.floating_rate_pct,
+    geo:null,
+    waEB:null,waDDE:null,waIC:null,
+    nii:f.nii_per_share,
+    dps:f.dividend_per_share,
+    spill:null,
+    pnav:m.price_to_nav||f.price_to_nav||null,
+    vol30:m.volume_30d_mn||null,
+    si:m.short_interest_pct||null,
+    latest_quarter:f.latest_quarter||'',
+    latest_period_end:f.latest_period_end||'',
+    edgar_url:f.edgar_url||null,
+    ntC:null,ntNAV:null,subs:null,reds:null,drip:null,gate:null,gateHit:false,
+    // will be populated from timeseries
+    _ts: null,
+  };
+}
+
+let activeTicker=(new URLSearchParams(location.search).get('ticker'))||'ARCC';
+let activeSec='overview',builtSecs=new Set(),currentFund=null;
+
+function buildSB(){
+  document.getElementById('fundList').innerHTML=FUNDS.map(f=>`
+    <div class="sb-fund ${f.ticker===activeTicker?'on':''}" data-tk="${f.ticker}" onclick="loadFund('${f.ticker}')">
+      <span class="sb-tk">${f.ticker}</span>
+      <div class="sb-info"><span class="sb-nm">${f.name}</span><span class="sb-meta">${f.manager} · $${(f.na_m/1000).toFixed(1)}B</span></div>
+      <span class="sb-type ${f.type==='traded'?'t-badge':'nt-badge'}">${f.type==='traded'?'T':'NT'}</span>
+    </div>`).join('');
+}
+function filterSB(q){const ql=q.toLowerCase();document.querySelectorAll('.sb-fund').forEach(el=>{el.style.display=(el.dataset.tk.toLowerCase().includes(ql)||el.querySelector('.sb-nm').textContent.toLowerCase().includes(ql))?'':'none';});}
+function loadFund(ticker){
+  activeTicker=ticker;activeSec='overview';builtSecs=new Set();
+  Object.values(CH).forEach(c=>{try{c.destroy();}catch(e){}});Object.keys(CH).forEach(k=>delete CH[k]);
+  document.querySelectorAll('.sb-fund').forEach(el=>el.classList.toggle('on',el.dataset.tk===ticker));
+  currentFund=FUNDS.find(x=>x.ticker===ticker)||FUNDS[0];
+  renderFund(currentFund);window.scrollTo(0,0);
+}
+function switchSec(s,el){
+  activeSec=s;
+  document.querySelectorAll('.stab').forEach(t=>t.classList.remove('on'));el.classList.add('on');
+  document.querySelectorAll('.sec').forEach(b=>b.classList.remove('on'));
+  const bl=document.getElementById('sec-'+s);
+  if(bl){
+    bl.classList.add('on');
+    if(!builtSecs.has(s)&&currentFund){
+      const ro=new ResizeObserver(entries=>{
+        for(const e of entries){if(e.contentRect.width>10){ro.disconnect();buildSec(s,currentFund);return;}}
+      });
+      ro.observe(bl);
+      setTimeout(()=>{ro.disconnect();if(!builtSecs.has(s))buildSec(s,currentFund);},400);
+    }
+  }
+}
+
+function renderFund(f){
+  const T=f.type==='traded',NT=f.type==='nontraded';
+  const up=f.navChg!=null?f.navChg>=0:true;
+  document.getElementById('content').innerHTML=`
+  <div class="fh"><div class="fh-grid"></div><div class="fh-in">
+    <div class="fh-top">
+      <div>
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:6px">
+          <div class="fh-tk">${f.ticker}</div>
+          <span class="fh-pill" style="${T?'background:var(--blue2);color:var(--blue)':'background:var(--green2);color:var(--green)'}">${T?'TRADED':'NON-TRADED'}</span>
+          ${T?`<span style="font-family:var(--mono);font-size:10px;color:rgba(255,255,255,.35)">${f.exchange||''}</span>`:''}
+        </div>
+        <div class="fh-name">${f.name}</div>
+        <div class="fh-sub">${f.manager} · ${f.management_structure==='internal'?'Internal Mgr':'External Mgr'} · ${f.strategy||'Diversified'} · ${f.latest_quarter||''}</div>
+      </div>
+    </div>
+    <div class="fh-kpis">
+      <div class="fh-kpi"><div class="fh-kl">NAV/Share</div><div class="fh-kv">$${f.nav.toFixed(2)}</div></div>
+      <div class="fh-kpi"><div class="fh-kl">Net Assets</div><div class="fh-kv">$${(f.na_m/1000).toFixed(1)}B</div></div>
+      <div class="fh-kpi"><div class="fh-kl">Yield</div><div class="fh-kv">${f.yield.toFixed(1)}%</div></div>
+      <div class="fh-kpi"><div class="fh-kl">Leverage</div><div class="fh-kv">${f.lev.toFixed(2)}×</div></div>
+      <div class="fh-kpi"><div class="fh-kl">NII Coverage</div><div class="fh-kv">${f.cov.toFixed(2)}×</div></div>
+      <div class="fh-kpi"><div class="fh-kl">Non-Accrual %</div><div class="fh-kv">${f.na.toFixed(1)}%</div></div>
+      <div class="fh-kpi"><div class="fh-kl">First Lien %</div><div class="fh-kv">${f.fl.toFixed(1)}%</div></div>
+      <div class="fh-kpi"><div class="fh-kl">PIK %</div><div class="fh-kv">${f.pik.toFixed(1)}%</div></div>
+    </div>
+  </div></div>
+  <div class="stabs" id="stabs">
+    <div class="stab on"  data-s="overview"    onclick="switchSec('overview',this)">Overview</div>
+    <div class="stab"     data-s="balance"     onclick="switchSec('balance',this)">Balance Sheet</div>
+    <div class="stab"     data-s="income"      onclick="switchSec('income',this)">Income</div>
+    <div class="stab"     data-s="pershare"    onclick="switchSec('pershare',this)">Per Share</div>
+    <div class="stab"     data-s="quality"     onclick="switchSec('quality',this)">Credit Quality</div>
+    <div class="stab"     data-s="portfolio"   onclick="switchSec('portfolio',this)">Portfolio</div>
+    <div class="stab"     data-s="origination" onclick="switchSec('origination',this)">Origination</div>
+    <div class="stab"     data-s="fees"        onclick="switchSec('fees',this)">Fees & Costs</div>
+    <div class="stab"     data-s="dividends"   onclick="switchSec('dividends',this)">Dividends</div>
+    <div class="stab"     data-s="capital"     onclick="switchSec('capital',this)">Capital Structure</div>
+    <div class="stab"     data-s="peers"       onclick="switchSec('peers',this)">Peer Comparison</div>
+    ${T?'<div class="stab" data-s="market" onclick="switchSec(\'market\',this)">Market Data</div>':''}
+    ${NT?'<div class="stab" data-s="ntflows" onclick="switchSec(\'ntflows\',this)">NT Flows & Gates</div>':''}
+    <div class="stab"     data-s="events"      onclick="switchSec('events',this)">Event Timeline</div>
+  </div>
+  <div class="cbody">
+  <div id="sec-overview" class="sec on">
+    <div class="card"><div class="mg">
+      ${miv('NAV per Share','$'+f.nav.toFixed(2),(up?'↑ +':'↓ ')+'$'+Math.abs(f.navChg).toFixed(2),up,'')}
+      ${mi('Net Assets','$'+(f.na_m/1000).toFixed(1)+'B','Equity base')}
+      ${mi('Portfolio FV','$'+(f.inv/1000).toFixed(1)+'B','Fair value')}
+      ${mi('Portfolio Cos.',f.portcos,'Avg $'+f.avgPos+'M/pos')}
+      ${mi('Yield',f.yield.toFixed(1)+'%','Wtd avg','gn')}
+      ${mi('Leverage',f.lev.toFixed(2)+'×','Reg cap 2.0×')}
+      ${mi('NII Coverage',f.cov.toFixed(2)+'×','NII÷DPS',f.cov>=1.1?'gn':f.cov<1?'rd':'am')}
+      ${mi('Non-Accrual %',f.na.toFixed(1)+'%','Peer avg 3.8%',f.na>5?'rd':f.na>3?'am':'gn')}
+      ${mi('PIK %',f.pik.toFixed(1)+'%','Non-cash earns',f.pik>15?'rd':f.pik>8?'am':'')}
+      ${mi('First Lien %',f.fl.toFixed(1)+'%','Senior security')}
+      ${mi('Sponsor-Backed',f.sponsor+'%','PE-sponsored')}
+      ${mi('Floating Rate',f.flt+'%','SOFR-linked')}
+    </div></div>
+    <div class="g2">
+      <div class="card"><div class="ch"><div class="ct">NAV per Share — 24 Quarters</div><div class="cm">Q1 2020 → Q4 2025</div></div><div class="ca" style="height:190px"><canvas id="ov-nav"></canvas></div></div>
+      <div class="card"><div class="ch"><div class="ct">NII/Share vs DPS</div><div class="cm">Coverage ratio quarterly</div></div><div class="ca" style="height:190px"><canvas id="ov-cov"></canvas></div>
+        ${leg(['#1a56db',false,'NII/Share'],['#0a8f5c',false,'DPS'],['#c0182a',true,'1.0× break'])}</div>
+    </div>
+    <div class="g2">
+      <div class="card"><div class="ch"><div class="ct">Non-Accrual % at Cost</div><div class="cm">vs 2.5% peer benchmark</div></div><div class="ca" style="height:170px"><canvas id="ov-na"></canvas></div>
+        ${leg(['#c0182a',false,'This Fund'],['#8a97a8',true,'2.5% Peer'])}</div>
+      <div class="card"><div class="ch"><div class="ct">Leverage (D/E)</div><div class="cm">vs 1.0× midpoint & 2.0× reg cap</div></div><div class="ca" style="height:170px"><canvas id="ov-lev"></canvas></div>
+        ${leg(['#1a56db',false,'D/E'],['#a05c00',true,'1.0×'],['#c0182a',true,'2.0× cap'])}</div>
+    </div>
+  </div>
+  <div id="sec-balance" class="sec">
+    <div class="card"><div class="mg">
+      ${mi('Total Investments FV','$'+(f.inv/1000).toFixed(1)+'B','Fair value')}
+      ${mi('Net Assets','$'+(f.na_m/1000).toFixed(1)+'B','Equity base')}
+      ${mi('Total Debt','$'+(f.debt/1000).toFixed(1)+'B','Gross borrowings')}
+      ${mi('Cash & Equiv.','$'+f.cash+'M','Liquid buffer')}
+      ${mi('Undrawn Revolver','$'+(f.undrawn/1000).toFixed(1)+'B','Available')}
+      ${mi('Total Liquidity','$'+((f.cash+f.undrawn)/1000).toFixed(1)+'B','Cash+undrawn')}
+      ${mi('Leverage (D/E)',f.lev.toFixed(2)+'×','Reg cap 2.0×')}
+      ${mi('Cost of Debt',f.cod.toFixed(1)+'%','Wtd avg rate')}
+    </div></div>
+    <div class="g2">
+      <div class="card"><div class="ch"><div class="ct">NAV per Share</div><div class="cm">24-quarter trend</div></div><div class="ca" style="height:180px"><canvas id="bs-nav"></canvas></div></div>
+      <div class="card"><div class="ch"><div class="ct">NAV Change QoQ</div><div class="cm">Quarterly delta — erosion signal</div></div><div class="ca" style="height:180px"><canvas id="bs-navchg"></canvas></div></div>
+    </div>
+    <div class="g2">
+      <div class="card"><div class="ch"><div class="ct">Net Assets ($M)</div><div class="cm">Equity base trend</div></div><div class="ca" style="height:165px"><canvas id="bs-na"></canvas></div></div>
+      <div class="card"><div class="ch"><div class="ct">Total Investments FV</div><div class="cm">Portfolio size trend</div></div><div class="ca" style="height:165px"><canvas id="bs-inv"></canvas></div></div>
+    </div>
+    <div class="g2">
+      <div class="card"><div class="ch"><div class="ct">Total Debt ($M)</div><div class="cm">Gross borrowings trend</div></div><div class="ca" style="height:165px"><canvas id="bs-debt"></canvas></div></div>
+      <div class="card"><div class="ch"><div class="ct">Cost of Debt (WA %)</div><div class="cm">Funding cost trend</div></div><div class="ca" style="height:165px"><canvas id="bs-cod"></canvas></div></div>
+    </div>
+    <div class="g2">
+      <div class="card"><div class="ch"><div class="ct">Leverage (D/E)</div><div class="cm">With 1.0× & 2.0× ref lines</div></div><div class="ca" style="height:165px"><canvas id="bs-lev"></canvas></div>
+        ${leg(['#1a56db',false,'D/E'],['#a05c00',true,'1.0×'],['#c0182a',true,'2.0×'])}</div>
+      <div class="card"><div class="ch"><div class="ct">Available Liquidity</div><div class="cm">Cash + Undrawn — stacked</div></div><div class="ca" style="height:165px"><canvas id="bs-liq"></canvas></div></div>
+    </div>
+  </div>
+  <div id="sec-income" class="sec">
+    <div class="card"><div class="mg">
+      ${mi('Total Inv. Income (LTM)','$'+(f.inv*f.yield/100/1000).toFixed(2)+'B','Annualised')}
+      ${mi('Net Inv. Income (LTM)','$'+(f.na_m*f.yield/100*f.cov*0.65/1000).toFixed(2)+'B','After expenses')}
+      ${mi('NII per Share','$'+f.nii.toFixed(3),'Most recent qtr','gn')}
+      ${mi('NII Coverage',f.cov.toFixed(2)+'×','NII÷DPS',f.cov>=1.1?'gn':f.cov<1?'rd':'am')}
+      ${mi('PIK % of Income',f.pik.toFixed(1)+'%','Non-cash signal',f.pik>15?'rd':f.pik>8?'am':'')}
+      ${mi('Base Mgmt Fee',f.fee===0?'—':f.fee.toFixed(2)+'%',f.fee===0?'Internal':'% of assets')}
+      ${mi('Incentive Fee',f.inc.toFixed(1)+'%','Above '+f.hurdle+'% hurdle')}
+      ${mi('Net Int. Margin',(f.yield-f.cod).toFixed(1)+'%','Yield − CoD','gn')}
+    </div></div>
+    <div class="g2">
+      <div class="card"><div class="ch"><div class="ct">Total Investment Income ($M)</div><div class="cm">Revenue base quarterly</div></div><div class="ca" style="height:185px"><canvas id="inc-total"></canvas></div></div>
+      <div class="card"><div class="ch"><div class="ct">Income Decomposition</div><div class="cm">Cash interest / PIK / Fees — stacked</div></div><div class="ca" style="height:185px"><canvas id="inc-decomp"></canvas></div>
+        ${leg(['#1a56db',false,'Cash Int.'],['#a05c00',false,'PIK'],['#0891b2',false,'Fees'])}</div>
+    </div>
+    <div class="g2">
+      <div class="card"><div class="ch"><div class="ct">NII/Share vs DPS</div><div class="cm">Coverage quarterly</div></div><div class="ca" style="height:170px"><canvas id="inc-nii"></canvas></div>
+        ${leg(['#1a56db',false,'NII/Share'],['#0a8f5c',false,'DPS'])}</div>
+      <div class="card"><div class="ch"><div class="ct">NII Coverage Ratio</div><div class="cm">With 1.0× breakeven line</div></div><div class="ca" style="height:170px"><canvas id="inc-cov"></canvas></div>
+        ${leg(['#1a56db',false,'Coverage'],['#c0182a',true,'1.0× break'])}</div>
+    </div>
+    <div class="g2">
+      <div class="card"><div class="ch"><div class="ct">Total Expenses ($M)</div><div class="cm">All costs quarterly</div></div><div class="ca" style="height:165px"><canvas id="inc-exp"></canvas></div></div>
+      <div class="card"><div class="ch"><div class="ct">Fee & Expense Breakdown</div><div class="cm">Mgmt fee + interest expense stacked</div></div><div class="ca" style="height:165px"><canvas id="inc-fees"></canvas></div>
+        ${leg(['#a05c00',false,'Mgmt Fee'],['#c0182a',false,'Int. Exp.'])}</div>
+    </div>
+  </div>
+  <div id="sec-pershare" class="sec">
+    <div class="card"><div class="mg">
+      ${miv('NAV per Share','$'+f.nav.toFixed(2),(up?'↑ +':'↓ ')+'$'+Math.abs(f.navChg).toFixed(2),up,'')}
+      ${mi('NII per Share','$'+f.nii.toFixed(3),'Most recent qtr','gn')}
+      ${mi('Dividend per Share','$'+f.dps.toFixed(3),'Regular quarterly')}
+      ${mi('NII Coverage',f.cov.toFixed(2)+'×','NII÷DPS',f.cov>=1.1?'gn':f.cov<1?'rd':'am')}
+      ${mi('Spillover/Undist.','$'+f.spill.toFixed(2),'Accumulated buffer','gn')}
+      ${mi('Annualised DPS','$'+(f.dps*4).toFixed(3),'4× quarterly')}
+      ${mi('Div Yield (NAV)',((f.dps*4/f.nav)*100).toFixed(1)+'%','On book value')}
+      ${T&&f.pnav?mi('Div Yield (Mkt)',((f.dps*4/(f.nav*f.pnav))*100).toFixed(1)+'%','At mkt price'):mi('NAV vs $25 Issue','$'+(f.nav-25).toFixed(2),'vs issue price')}
+    </div></div>
+    <div class="g2">
+      <div class="card"><div class="ch"><div class="ct">NAV per Share — 24Q</div></div><div class="ca" style="height:180px"><canvas id="ps-nav"></canvas></div></div>
+      <div class="card"><div class="ch"><div class="ct">NAV Change QoQ</div><div class="cm">Per-share quarterly delta</div></div><div class="ca" style="height:180px"><canvas id="ps-navchg"></canvas></div></div>
+    </div>
+    <div class="g2">
+      <div class="card"><div class="ch"><div class="ct">NII/Share vs DPS</div><div class="cm">Coverage history</div></div><div class="ca" style="height:170px"><canvas id="ps-niidps"></canvas></div>
+        ${leg(['#1a56db',false,'NII/Share'],['#0a8f5c',false,'DPS'])}</div>
+      <div class="card"><div class="ch"><div class="ct">Total Return NAV</div><div class="cm">NAV + cumulative dividends</div></div><div class="ca" style="height:170px"><canvas id="ps-totalret"></canvas></div>
+        ${leg(['#0a8f5c',false,'Total Return'],['#1a56db',true,'NAV only'])}</div>
+    </div>
+    <div class="g2">
+      <div class="card"><div class="ch"><div class="ct">Spillover / Undistributed Income</div><div class="cm">Per share — safety buffer</div></div><div class="ca" style="height:165px"><canvas id="ps-spill"></canvas></div></div>
+      <div class="card"><div class="ch"><div class="ct">Realized & Unrealized G/L</div><div class="cm">Per share quarterly</div></div><div class="ca" style="height:165px"><canvas id="ps-gl"></canvas></div>
+        ${leg(['#c0182a',false,'Realized'],['#a05c00',false,'Unrealized'])}</div>
+    </div>
+  </div>
+  <div id="sec-quality" class="sec">
+    <div class="card"><div class="mg">
+      ${mi('NA % at Cost',f.na.toFixed(1)+'%','Peer avg 3.8%',f.na>5?'rd':f.na>3?'am':'gn')}
+      ${mi('NA % at FV',(f.na*0.62).toFixed(1)+'%','FV basis',f.na>5?'rd':f.na>3?'am':'gn')}
+      ${mi('Implied Recovery',Math.max(20,Math.round(100-f.na*3))+'%','FV÷Cost on NAs')}
+      ${mi('Cos. on NA',Math.max(1,Math.round(f.portcos*f.na/100)),'Count of names',f.na>5?'rd':f.na>3?'am':'')}
+      ${mi('PIK % of Income',f.pik.toFixed(1)+'%','Non-cash signal',f.pik>15?'rd':f.pik>8?'am':'')}
+      ${mi('WA Risk Rating','2.4','1=best 5=worst')}
+      ${mi('% Rating 1–2','76.4%','Performing','gn')}
+      ${mi('% Rating 4–5',(f.na*1.4).toFixed(1)+'%','Watch/default',f.na>5?'rd':f.na>3?'am':'gn')}
+      ${mi('Realized Loss (LTM)','−$'+(f.na_m*0.006/1000).toFixed(2)+'B','Crystallised','rd')}
+      ${mi('Net Unrealized','−$'+(f.na_m*0.012/1000).toFixed(2)+'B','MTM change','am')}
+      ${mi('Unrealized/NAV','−'+(1.2).toFixed(1)+'%','% of equity','am')}
+      ${mi('Lookback',f.lookback?'Yes':'No',f.lookback?'Incentive clawback':'No protection')}
+    </div></div>
+    <div class="g2">
+      <div class="card"><div class="ch"><div class="ct">Non-Accrual % at Cost</div><div class="cm">vs 2.5% peer benchmark</div></div><div class="ca" style="height:180px"><canvas id="q-na"></canvas></div>
+        ${leg(['#c0182a',false,'This Fund'],['#8a97a8',true,'2.5% peer'])}</div>
+      <div class="card"><div class="ch"><div class="ct">Implied Recovery Rate (%)</div><div class="cm">FV ÷ Cost on non-accrual names</div></div><div class="ca" style="height:180px"><canvas id="q-recovery"></canvas></div></div>
+    </div>
+    <div class="g2">
+      <div class="card"><div class="ch"><div class="ct">Companies on Non-Accrual</div><div class="cm">Count quarterly</div></div><div class="ca" style="height:165px"><canvas id="q-nacos"></canvas></div></div>
+      <div class="card"><div class="ch"><div class="ct">WA Internal Risk Rating</div><div class="cm">1=outperforming · 5=default</div></div><div class="ca" style="height:165px"><canvas id="q-warat"></canvas></div></div>
+    </div>
+    <div class="g2">
+      <div class="card"><div class="ch"><div class="ct">Risk Rating Migration</div><div class="cm">% portfolio by category quarterly</div></div><div class="ca" style="height:165px"><canvas id="q-rating"></canvas></div>
+        ${leg(['#0a8f5c',false,'1–2 Performing'],['#a05c00',false,'3 Watch'],['#c0182a',false,'4–5 Default'])}</div>
+      <div class="card"><div class="ch"><div class="ct">PIK % of Total Income</div><div class="cm">10% concern threshold</div></div><div class="ca" style="height:165px"><canvas id="q-pik"></canvas></div>
+        ${leg(['#a05c00',false,'PIK %'],['#c0182a',true,'10% threshold'])}</div>
+    </div>
+    <div class="g2">
+      <div class="card"><div class="ch"><div class="ct">Realized Credit Losses ($M)</div><div class="cm">Quarterly crystallised defaults</div></div><div class="ca" style="height:165px"><canvas id="q-real"></canvas></div></div>
+      <div class="card"><div class="ch"><div class="ct">Realized & Unrealized G/L</div><div class="cm">Per share quarterly</div></div><div class="ca" style="height:165px"><canvas id="q-gl"></canvas></div>
+        ${leg(['#c0182a',false,'Realized'],['#a05c00',false,'Unrealized'])}</div>
+    </div>
+  </div>
+  <div id="sec-portfolio" class="sec">
+    <div class="card"><div class="mg">
+      ${mi('Portfolio Cos.',f.portcos,'Diversification')}
+      ${mi('Avg Position','$'+f.avgPos+'M','Mean per name')}
+      ${mi('Top 10 Conc.',f.top10.toFixed(1)+'%','% of portfolio',f.top10>25?'am':'')}
+      ${mi('First Lien %',f.fl.toFixed(1)+'%','Senior security')}
+      ${mi('Second Lien %',f.sl.toFixed(1)+'%','')}
+      ${mi('Subordinated %',f.sub.toFixed(1)+'%','')}
+      ${mi('Equity/Warrants %',f.eq.toFixed(1)+'%','')}
+      ${mi('Floating Rate %',f.flt+'%','SOFR-linked')}
+      ${mi('Sponsor-Backed %',f.sponsor+'%','PE-sponsored')}
+      ${mi('US Geography %',f.geo+'%','Domestic')}
+      ${mi('WA Borr. EBITDA','$'+f.waEB+'M','Obligor size')}
+      ${mi('WA Borr. D/EBITDA',f.waDDE.toFixed(1)+'×','Portfolio leverage',f.waDDE>6.5?'rd':f.waDDE>5.5?'am':'')}
+      ${mi('WA Int. Coverage',f.waIC.toFixed(1)+'×','Debt svc cap.',f.waIC<2?'rd':f.waIC<2.5?'am':'gn')}
+      ${mi('Portfolio Yield',f.yield.toFixed(1)+'%','Wtd avg','gn')}
+      ${mi('Cost of Debt',f.cod.toFixed(1)+'%','Funding cost')}
+      ${mi('Net Int. Margin',(f.yield-f.cod).toFixed(1)+'%','Yield−CoD','gn')}
+    </div></div>
+    <div class="g2">
+      <div class="card"><div class="ch"><div class="ct">Lien Composition — 24Q</div><div class="cm">100% stacked area</div></div><div class="ca" style="height:180px"><canvas id="p-lien"></canvas></div>
+        ${leg(['#1a56db',false,'1L'],['#0891b2',false,'2L'],['#a05c00',false,'Sub'],['#6d28d9',false,'Equity'])}</div>
+      <div class="card"><div class="ch"><div class="ct">Sector Breakdown</div><div class="cm">% portfolio FV current quarter</div></div><div class="ca" style="height:180px"><canvas id="p-sector"></canvas></div></div>
+    </div>
+    <div class="g3">
+      <div class="card"><div class="ch"><div class="ct">Sponsor vs Non-Sponsor</div></div><div class="ca" style="height:150px"><canvas id="p-sponsor"></canvas></div></div>
+      <div class="card"><div class="ch"><div class="ct">Float vs Fixed Rate</div></div><div class="ca" style="height:150px"><canvas id="p-floatfix"></canvas></div></div>
+      <div class="card"><div class="ch"><div class="ct">US vs Non-US Geography</div></div><div class="ca" style="height:150px"><canvas id="p-geo"></canvas></div></div>
+    </div>
+    <div class="g2">
+      <div class="card"><div class="ch"><div class="ct">WA Borrower D/EBITDA</div><div class="cm">Portfolio underlying leverage quarterly</div></div><div class="ca" style="height:165px"><canvas id="p-bwlev"></canvas></div></div>
+      <div class="card"><div class="ch"><div class="ct">WA Borrower Interest Coverage</div><div class="cm">Debt service capacity quarterly</div></div><div class="ca" style="height:165px"><canvas id="p-bwcov"></canvas></div></div>
+    </div>
+  </div>
+  <div id="sec-origination" class="sec">
+    <div class="g2">
+      <div class="card"><div class="ch"><div class="ct">Gross Originations vs Repayments ($M)</div><div class="cm">Portfolio activity quarterly</div></div><div class="ca" style="height:195px"><canvas id="orig-gross"></canvas></div>
+        ${leg(['#0a8f5c',false,'Originations'],['#c0182a',false,'Repayments'])}</div>
+      <div class="card"><div class="ch"><div class="ct">Net Portfolio Growth ($M)</div><div class="cm">Originations − repayments</div></div><div class="ca" style="height:195px"><canvas id="orig-net"></canvas></div></div>
+    </div>
+    <div class="g2">
+      <div class="card"><div class="ch"><div class="ct">Yield: New Originations vs Portfolio</div><div class="cm">Spread compression/expansion signal</div></div><div class="ca" style="height:180px"><canvas id="orig-yield"></canvas></div>
+        ${leg(['#1a56db',false,'Portfolio Yield'],['#0a8f5c',false,'New Orig. Yield'])}</div>
+      <div class="card"><div class="ch"><div class="ct">Originations by Lien Type ($M)</div><div class="cm">New lending by seniority stacked</div></div><div class="ca" style="height:180px"><canvas id="orig-lien"></canvas></div></div>
+    </div>
+    <div class="g2">
+      <div class="card"><div class="ch"><div class="ct">Portfolio Company Count</div><div class="cm">Diversification trend quarterly</div></div><div class="ca" style="height:165px"><canvas id="orig-count"></canvas></div></div>
+      <div class="card"><div class="ch"><div class="ct">Average Position Size ($M)</div><div class="cm">Concentration trend quarterly</div></div><div class="ca" style="height:165px"><canvas id="orig-avgpos"></canvas></div></div>
+    </div>
+  </div>
+  <div id="sec-fees" class="sec">
+    <div class="g2">
+      <div class="card"><div class="ch"><div class="ct">Fee Structure</div><div class="cm">vs universe percentiles</div></div>
+        <table class="ftbl">
+          <thead><tr><th>Component</th><th>This Fund</th><th>Universe Median</th><th>Assessment</th></tr></thead>
+          <tbody>
+            <tr><td>Base Mgmt Fee</td><td>${f.fee===0?'Internal (0%)':f.fee.toFixed(2)+'%'}</td><td>1.50%</td><td>${f.fee===0?'—':f.fee<=1.25?'Better than median':f.fee<=1.5?'At median':'Above median'}</td></tr>
+            <tr><td>Incentive Fee Rate</td><td>${f.inc.toFixed(1)}%</td><td>20.0%</td><td>${f.inc<=17.5?'Better than median':'At median'}</td></tr>
+            <tr><td>Hurdle Rate</td><td>${f.hurdle.toFixed(1)}%</td><td>7.0%</td><td>${f.hurdle>=7?'At/above median':'Below median'}</td></tr>
+            <tr><td>Lookback Protection</td><td>${f.lookback?'✓ Yes':'✗ No'}</td><td>31/68 funds</td><td>${f.lookback?'Shareholder-friendly':'No protection'}</td></tr>
+            <tr><td>Est. Total Fees/NII</td><td>${f.fee===0?'~18%':'~30%'}</td><td>32.4%</td><td>${f.fee===0?'Top 20%':f.fee<=1.25?'Top quartile':'Median'}</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="card"><div class="ch"><div class="ct">Management Fee ($M)</div><div class="cm">Quarterly run-rate</div></div><div class="ca" style="height:220px"><canvas id="fee-mgmt"></canvas></div></div>
+    </div>
+    <div class="g2">
+      <div class="card"><div class="ch"><div class="ct">Incentive Fee ($M)</div><div class="cm">Quarterly Part I income</div></div><div class="ca" style="height:170px"><canvas id="fee-inc"></canvas></div></div>
+      <div class="card"><div class="ch"><div class="ct">Total Fees as % of NII</div><div class="cm">Earnings going to manager</div></div><div class="ca" style="height:170px"><canvas id="fee-pct"></canvas></div></div>
+    </div>
+    <div class="g2">
+      <div class="card"><div class="ch"><div class="ct">Total Expense Ratio (%)</div><div class="cm">All costs as % of avg net assets</div></div><div class="ca" style="height:170px"><canvas id="fee-ter"></canvas></div></div>
+      <div class="card"><div class="ch"><div class="ct">Cost of Debt (WA %)</div><div class="cm">Funding cost trend quarterly</div></div><div class="ca" style="height:170px"><canvas id="fee-cod"></canvas></div></div>
+    </div>
+  </div>
+  <div id="sec-dividends" class="sec">
+    <div class="card"><div class="mg">
+      ${mi('Current DPS (qtrly)','$'+f.dps.toFixed(3),'Most recent','gn')}
+      ${mi('NII per Share','$'+f.nii.toFixed(3),'Q4 2025')}
+      ${mi('NII Coverage',f.cov.toFixed(2)+'×','Safety cushion',f.cov>=1.1?'gn':f.cov<1?'rd':'am')}
+      ${mi('Spillover/Undist.','$'+f.spill.toFixed(2)+'/sh','Buffer','gn')}
+      ${mi('Annualised DPS','$'+(f.dps*4).toFixed(3),'4× quarterly')}
+      ${mi('Cumulative DPS (LTM)','$'+(f.dps*4).toFixed(3),'Last 4 quarters')}
+      ${mi('Div Yield (NAV)',((f.dps*4/f.nav)*100).toFixed(1)+'%','On book value')}
+      ${T&&f.pnav?mi('Div Yield (Mkt)',((f.dps*4/(f.nav*f.pnav))*100).toFixed(1)+'%','At mkt price'):mi('Div Yield (NAV)',((f.dps*4/f.nav)*100).toFixed(1)+'%','On NAV')}
+    </div></div>
+    <div class="g2">
+      <div class="card"><div class="ch"><div class="ct">NII/Share vs DPS</div><div class="cm">Coverage trend quarterly</div></div><div class="ca" style="height:185px"><canvas id="div-cov"></canvas></div>
+        ${leg(['#1a56db',false,'NII/Share'],['#0a8f5c',false,'DPS'])}</div>
+      <div class="card"><div class="ch"><div class="ct">NII Coverage Ratio</div><div class="cm">With 1.0× breakeven</div></div><div class="ca" style="height:185px"><canvas id="div-covratio"></canvas></div>
+        ${leg(['#1a56db',false,'Coverage'],['#c0182a',true,'1.0× break'])}</div>
+    </div>
+    <div class="g2">
+      <div class="card"><div class="ch"><div class="ct">Dividend History (Step Chart)</div><div class="cm">Annotated — red dots = changes</div></div><div class="ca" style="height:165px"><canvas id="div-hist"></canvas></div></div>
+      <div class="card"><div class="ch"><div class="ct">Spillover / Undistributed Income</div><div class="cm">Per share — safety buffer</div></div><div class="ca" style="height:165px"><canvas id="div-spill"></canvas></div></div>
+    </div>
+  </div>
+  <div id="sec-capital" class="sec">
+    <div class="card"><div class="mg">
+      ${mi('Total Debt','$'+(f.debt/1000).toFixed(1)+'B','Gross borrowings')}
+      ${mi('Undrawn Capacity','$'+(f.undrawn/1000).toFixed(1)+'B','Available revolver')}
+      ${mi('Cost of Debt',f.cod.toFixed(1)+'%','Wtd avg rate')}
+      ${mi('Avg Debt Maturity','3.4 yrs','Wtd avg tenor')}
+      ${mi('Fixed Rate Debt','35%','Rate-protected')}
+      ${mi('Floating Rate Debt','65%','SOFR-linked')}
+      ${mi('Secured Debt','62%','Asset-backed')}
+      ${mi('Revolver Utilisation',Math.round(f.debt*0.18/(f.debt*0.28)*100)+'%','Drawn/total')}
+    </div></div>
+    <div class="g2">
+      <div class="card"><div class="ch"><div class="ct">Debt Maturity Profile</div><div class="cm">$M maturing by year — colour by urgency</div></div><div class="ca" style="height:195px"><canvas id="cap-mat"></canvas></div></div>
+      <div class="card"><div class="ch"><div class="ct">Debt Structure</div><div class="cm">Fixed/Floating · Secured/Unsecured</div></div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;height:195px">
+          <div style="padding:12px;position:relative;border-right:1px solid var(--border)"><canvas id="cap-type"></canvas></div>
+          <div style="padding:12px;position:relative"><canvas id="cap-sec"></canvas></div>
+        </div>
+      </div>
+    </div>
+    <div class="g2">
+      <div class="card"><div class="ch"><div class="ct">Revolver Utilisation</div><div class="cm">Drawn vs available ($M)</div></div><div class="ca" style="height:165px"><canvas id="cap-rev"></canvas></div></div>
+      <div class="card"><div class="ch"><div class="ct">WA Cost of Funds Trend</div><div class="cm">Blended funding cost quarterly</div></div><div class="ca" style="height:165px"><canvas id="cap-cof"></canvas></div></div>
+    </div>
+    <div class="g2">
+      <div class="card"><div class="ch"><div class="ct">Available Liquidity Trend</div><div class="cm">Cash + undrawn revolver ($M)</div></div><div class="ca" style="height:165px"><canvas id="cap-liq"></canvas></div></div>
+      <div class="card"><div class="ch"><div class="ct">Avg Debt Maturity (Years)</div><div class="cm">Wtd avg tenor trend quarterly</div></div><div class="ca" style="height:165px"><canvas id="cap-tenor"></canvas></div></div>
+    </div>
+  </div>
+  <div id="sec-peers" class="sec">
+    <div class="g2">
+      <div class="card"><div class="ch"><div class="ct">Portfolio Yield</div><div class="cm">Higher = more income</div></div><div id="pr-yield" style="padding:6px 0"></div></div>
+      <div class="card"><div class="ch"><div class="ct">Non-Accrual %</div><div class="cm">Lower = better credit quality</div></div><div id="pr-na" style="padding:6px 0"></div></div>
+    </div>
+    <div class="g2">
+      <div class="card"><div class="ch"><div class="ct">NII Coverage</div><div class="cm">Higher = safer dividend</div></div><div id="pr-cov" style="padding:6px 0"></div></div>
+      <div class="card"><div class="ch"><div class="ct">Leverage (D/E)</div><div class="cm">Lower = more conservative</div></div><div id="pr-lev" style="padding:6px 0"></div></div>
+    </div>
+    <div class="g2">
+      <div class="card"><div class="ch"><div class="ct">PIK % of Income</div><div class="cm">Lower = higher earnings quality</div></div><div id="pr-pik" style="padding:6px 0"></div></div>
+      <div class="card"><div class="ch"><div class="ct">First Lien %</div><div class="cm">Higher = more senior security</div></div><div id="pr-fl" style="padding:6px 0"></div></div>
+    </div>
+    <div class="g2">
+      <div class="card"><div class="ch"><div class="ct">Base Mgmt Fee</div><div class="cm">Lower = more shareholder-friendly</div></div><div id="pr-fee" style="padding:6px 0"></div></div>
+      <div class="card"><div class="ch"><div class="ct">Composite Quality Score</div><div class="cm">Higher = better overall quality</div></div><div id="pr-score" style="padding:6px 0"></div></div>
+    </div>
+  </div>
+  ${T?`<div id="sec-market" class="sec">
+    <div class="card"><div class="mg">
+      ${mi('Price / NAV',f.pnav?f.pnav.toFixed(2)+'×':'—','Market÷book',f.pnav>1?'gn':f.pnav<0.9?'rd':'am')}
+      ${mi('Market Price (est.)',f.pnav?'$'+(f.nav*f.pnav).toFixed(2):'—','Derived from P/NAV')}
+      ${mi('Div Yield (Mkt)',f.pnav?((f.dps*4/(f.nav*f.pnav))*100).toFixed(1)+'%':'—','Annualised at mkt')}
+      ${mi('Market Cap (est.)',f.pnav?'$'+((f.na_m*f.pnav)/1000).toFixed(1)+'B':'—','Approx.')}
+      ${mi('P/NII (P/E equiv.)',f.pnav&&f.nii?((f.nav*f.pnav)/(f.nii*4)).toFixed(1)+'×':'—','Price÷ann. NII')}
+      ${mi('30-Day Avg Vol',f.vol30?'$'+f.vol30+'M':'—','Liquidity proxy')}
+      ${mi('Short Interest',f.si?f.si+'%':'—','% of float',f.si>4?'am':'')}
+      ${mi('52-Wk P/NAV',f.pnav?(f.pnav*0.88).toFixed(2)+'–'+(f.pnav*1.08).toFixed(2)+'×':'—','Low / High')}
+    </div></div>
+    <div class="g2">
+      <div class="card"><div class="ch"><div class="ct">Price / NAV Over Time</div><div class="cm">Premium or discount to book</div></div><div class="ca" style="height:185px"><canvas id="mkt-pnav"></canvas></div>
+        ${leg(['#1a56db',false,'P/NAV'],['#8a97a8',true,'1.0× par'])}</div>
+      <div class="card"><div class="ch"><div class="ct">Dividend Yield (Market Basis)</div><div class="cm">Quarterly at market price</div></div><div class="ca" style="height:185px"><canvas id="mkt-dyld"></canvas></div></div>
+    </div>
+    <div class="g2">
+      <div class="card"><div class="ch"><div class="ct">P/NII (P/E Equivalent)</div><div class="cm">Market price ÷ annualised NII/share</div></div><div class="ca" style="height:165px"><canvas id="mkt-pni"></canvas></div></div>
+      <div class="card"><div class="ch"><div class="ct">Price vs NAV Divergence</div><div class="cm">Market price vs book value per share</div></div><div class="ca" style="height:165px"><canvas id="mkt-div"></canvas></div>
+        ${leg(['#1a56db',false,'NAV/Share'],['#6d28d9',false,'Mkt Price'])}</div>
+    </div>
+  </div>`:''}
+  ${NT?`<div id="sec-ntflows" class="sec">
+    <div class="card"><div class="mg">
+      ${mi('Gross Subscriptions','$'+f.subs+'M','Most recent quarter','gn')}
+      ${mi('Redemptions','$'+f.reds+'M','Most recent quarter')}
+      ${mi('DRIP Reinvestment','$'+f.drip+'M','Dividend reinvested')}
+      ${mi('Net Flows','$'+(f.subs-f.reds)+'M','Subs − redemptions',(f.subs-f.reds)>=0?'gn':'rd')}
+      ${mi('Redemption Gate Cap',f.gate?f.gate+'%/qtr':'N/A','As stated in docs')}
+      ${mi('Gate Triggered?',f.gateHit?'YES — TRIGGERED':'No','Most recent quarter',f.gateHit?'rd':'gn')}
+      ${f.ntC?f.ntC.map((c,i)=>mi('NAV — '+c,'$'+f.ntNAV[i].toFixed(2),'Q4 2025')).join(''):''}
+    </div></div>
+    <div class="g2">
+      <div class="card"><div class="ch"><div class="ct">Gross Subscriptions vs Redemptions ($M)</div><div class="cm">Quarterly capital flows</div></div><div class="ca" style="height:195px"><canvas id="nt-flows"></canvas></div>
+        ${leg(['#0a8f5c',false,'Subscriptions'],['#c0182a',false,'Redemptions'])}</div>
+      <div class="card"><div class="ch"><div class="ct">Net Flows ($M)</div><div class="cm">Net capital growth quarterly</div></div><div class="ca" style="height:195px"><canvas id="nt-net"></canvas></div></div>
+    </div>
+    <div class="g2">
+      <div class="card"><div class="ch"><div class="ct">NAV by Share Class</div><div class="cm">Q1 2020 → Q4 2025</div></div><div class="ca" style="height:180px"><canvas id="nt-class"></canvas></div></div>
+      <div class="card"><div class="ch"><div class="ct">Redemption Rate vs Gate Cap</div><div class="cm">% of NAV redeemed vs ${f.gate}% cap</div></div><div class="ca" style="height:180px"><canvas id="nt-gate"></canvas></div>
+        ${leg(['#a05c00',false,'Redemption Rate %'],['#c0182a',true,f.gate+'% Gate Cap'])}</div>
+    </div>
+  </div>`:''}
+  <div id="sec-events" class="sec">
+    <div class="card"><div class="ch"><div class="ct">NAV / Price with Event Overlays</div><div class="cm">Annotated 24-quarter chart</div></div><div class="ca" style="height:220px"><canvas id="evt-chart"></canvas></div>
+      <div class="leg">
+        <div class="li"><span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--blue);margin-right:3px"></span>Earnings</div>
+        <div class="li"><span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--green);margin-right:3px"></span>Dividend</div>
+        <div class="li"><span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--purple);margin-right:3px"></span>Capital Mkts</div>
+        <div class="li"><span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--amber);margin-right:3px"></span>Mgmt Change</div>
+        <div class="li"><span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--red);margin-right:3px"></span>Credit Event</div>
+      </div>
+    </div>
+    <div class="card"><div class="ch"><div class="ct">8-K Event Feed</div><div class="cm">Earnings · Dividends · Capital Markets · Management · Credit</div></div><div id="evt-feed"></div></div>
+  </div>
+  </div>`;
+  // Build overview only after the section has actual pixel width
+  const _waitAndBuild=(sectionId,fn)=>{
+    const el=document.getElementById(sectionId);
+    if(!el){setTimeout(fn,300);return;}
+    if(el.getBoundingClientRect().width>10){fn();return;}
+    const ro=new ResizeObserver(entries=>{
+      for(const e of entries){if(e.contentRect.width>10){ro.disconnect();fn();return;}}
+    });
+    ro.observe(el);
+    setTimeout(()=>{ro.disconnect();fn();},600);
+  };
+  _waitAndBuild('sec-overview',()=>buildSec('overview',f));
+}
+
+function buildSec(sec,f){
+  builtSecs.add(sec);
+  const T=f.type==='traded',NT=f.type==='nontraded';
+  const navD=gen(f.nav-1.8,.22,.008),levD=gen(f.lev-.1,.04,.003),naD=gen(f.na*.55,f.na*.12,f.na*.016);
+  const pikD=gen(f.pik*.68,f.pik*.08,f.pik*.013),covD=gen(f.cov-.07,.03,.002);
+  const niiD=gen(f.nii-.04,.015,.001),divD=niiD.map(n=>+(n/f.cov*.95).toFixed(3));
+  const incD=gen(f.inv*f.yield/100*.025,f.inv*.001,f.inv*.00005);
+  const naChgD=navD.map((v,i)=>i===0?0:+(v-navD[i-1]).toFixed(3));
+  const naChgCol=naChgD.map(v=>v>=0?'rgba(10,143,92,.6)':'rgba(192,24,42,.6)');
+  const netAsD=gen(f.na_m*.72,f.na_m*.025,f.na_m*.009);
+  const invTD=gen(f.inv*.70,f.inv*.025,f.inv*.009);
+  const debtD=gen(f.debt*.68,f.debt*.02,f.debt*.008);
+  const codD=gen(f.cod*.75,.12,.018);
+  const liqD=gen((f.cash+f.undrawn)*.78,(f.cash+f.undrawn)*.04,0);
+  const spillD=gen(Math.max(.04,f.spill-.12),.04,.003);
+  const portcoD=gen(f.portcos*.78,4,1.2).map(Math.round);
+  const avgPD=gen(f.avgPos*.82,1.5,.06);
+  const bwlevD=gen(f.waDDE*.85,.12,.008),bwcovD=gen(f.waIC*.88,.06,.005);
+  const recovD=gen(Math.max(20,100-f.na*3),2,.02);
+  const naCosD=gen(Math.max(1,f.portcos*f.na/100*.7),.4,.02).map(Math.round);
+  const waratD=gen(2.6,.08,-.004),realD=Q24.map(()=>+(-Math.random()*f.na_m*.002/1000).toFixed(2));
+  const glD=Q24.map(()=>+((-Math.random()*.02)).toFixed(3)),unglD=Q24.map(()=>+((Math.random()-.62)*.04).toFixed(3));
+  const terD=gen(3.8,.15,.01),cofD=gen(f.cod*.76,.1,.015),tenorD=gen(3.6,.12,-.005);
+  const cumDiv=divD.reduce((a,v)=>{a.push(+(v+(a.length?a[a.length-1]:0)).toFixed(3));return a;},[]);
+  const totRetD=navD.map((v,i)=>+(v+cumDiv[i]).toFixed(3));
+  const origV=Q24.map(()=>+(f.inv*.038+Math.random()*f.inv*.028).toFixed(0));
+  const repV=origV.map(v=>+(-v*.62-Math.random()*v*.18).toFixed(0));
+  const netV=origV.map((v,i)=>+(v+repV[i]).toFixed(0));
+  const netCol=netV.map(v=>v>=0?'rgba(10,143,92,.6)':'rgba(192,24,42,.6)');
+  const portY=gen(f.yield-.4,.15,.01),origY=gen(f.yield+.55,.2,.005);
+  const o1L=origV.map(v=>+(v*f.fl/100).toFixed(0)),o2L=origV.map(v=>+(v*f.sl/100).toFixed(0));
+  const oOt=origV.map((v,i)=>Math.max(0,+(v-o1L[i]-o2L[i]).toFixed(0)));
+  const mgmtQ=f.fee===0?Q24.map(()=>0):incD.map(v=>+(v*.14).toFixed(1));
+  const incFQ=incD.map(v=>+(v*.09).toFixed(1));
+  const feePD=Q24.map(()=>+(22+Math.random()*8+(f.fee===0?-10:0)).toFixed(1));
+  const revDraw=Q24.map(()=>+(f.debt*.18+Math.random()*f.debt*.06).toFixed(0));
+  const revTot=Q24.map(()=>f.debt*.28);
+  const r12=naD.map(v=>+Math.max(60,100-v*3-Math.random()*5).toFixed(1));
+  const r3=naD.map(v=>+Math.min(30,v*2+8+Math.random()*4).toFixed(1));
+  const r45=r12.map((v,i)=>+(100-v-r3[i]).toFixed(1));
+
+  const line=(id,data,col,fill,yl,mn)=>mkC(id,{type:'line',data:{labels:Q24,datasets:[{data,borderColor:col,backgroundColor:fill?col+'11':'transparent',borderWidth:2,pointRadius:0,fill,tension:.3}]},options:{...bO(),scales:ax(yl,mn)}});
+  const bar=(id,data,col,yl)=>mkC(id,{type:'bar',data:{labels:Q24,datasets:[{data,backgroundColor:col,borderRadius:2}]},options:{...bO(),scales:{...ax(yl),x:{grid:{display:false},ticks:{color:TC,font:{family:F,size:8},maxTicksLimit:8},border:{color:'#e2e7ef'}}}}});
+  const barPct=(id,data,cols,yl)=>mkC(id,{type:'bar',data:{labels:Q24,datasets:[{data,backgroundColor:cols,borderRadius:2}]},options:{...bO(),scales:{...ax(yl),x:{grid:{display:false},ticks:{color:TC,font:{family:F,size:8},maxTicksLimit:8},border:{color:'#e2e7ef'}}}}});
+  const stk=(id,ds,yl)=>mkC(id,{type:'bar',data:{labels:Q24,datasets:ds},options:{...bO({plugins:{legend:{display:false},tooltip:{mode:'index',intersect:false}}}),scales:{x:{stacked:true,grid:{display:false},ticks:{color:TC,font:{family:F,size:8},maxTicksLimit:8},border:{color:'#e2e7ef'}},y:{stacked:true,grid:{color:GC},ticks:{color:TC,font:{family:F,size:8},...(yl?{callback:v=>v+yl}:{})},border:{color:'#e2e7ef'}}}}});
+  const linesO=(id,ds,yl,mn)=>mkC(id,{type:'line',data:{labels:Q24,datasets:ds},options:{...bO({plugins:{legend:{display:false},tooltip:{mode:'index',intersect:false}}}),scales:ax(yl,mn)}});
+
+  if(sec==='overview'){
+    line('ov-nav',navD,'#1a56db',true);
+    linesO('ov-cov',[{data:niiD,borderColor:'#1a56db',borderWidth:2,pointRadius:0,fill:false,tension:.3},{data:divD,borderColor:'#0a8f5c',borderDash:[3,3],borderWidth:2,pointRadius:0,fill:false,tension:.1},{...rl(1.0,'#c0182a')}],'$');
+    bar('ov-na',naD,'rgba(192,24,42,.25)','%');mkC('ov-na',{...CH['ov-na'],data:{labels:Q24,datasets:[{data:naD,backgroundColor:'rgba(192,24,42,.25)',borderColor:'#c0182a',borderWidth:1,borderRadius:2},rl(2.5,'#8a97a8')]}});
+    linesO('ov-lev',[{data:levD,borderColor:'#1a56db',borderWidth:2,pointRadius:0,fill:false,tension:.3},rl(1.0,'#a05c00'),rl(2.0,'#c0182a')],'×',0);
+  }
+  if(sec==='balance'){
+    line('bs-nav',navD,'#1a56db',true);
+    barPct('bs-navchg',naChgD,naChgCol);
+    line('bs-na',netAsD,'#6d28d9',true,'',0);mkC('bs-na',{...CH['bs-na'],options:{...bO(),scales:{...ax(),y:{...ax().y,ticks:{...ax().y.ticks,callback:v=>qF(v)}}}}});
+    mkC('bs-inv',{type:'line',data:{labels:Q24,datasets:[{data:invTD,borderColor:'#0891b2',backgroundColor:'rgba(8,145,178,.07)',borderWidth:2,pointRadius:0,fill:true,tension:.3}]},options:{...bO(),scales:{...ax(),y:{...ax().y,ticks:{...ax().y.ticks,callback:v=>qF(v)}}}}});
+    mkC('bs-debt',{type:'line',data:{labels:Q24,datasets:[{data:debtD,borderColor:'#c0182a',backgroundColor:'rgba(192,24,42,.07)',borderWidth:2,pointRadius:0,fill:true,tension:.3}]},options:{...bO(),scales:{...ax(),y:{...ax().y,ticks:{...ax().y.ticks,callback:v=>qF(v)}}}}});
+    line('bs-cod',codD,'#a05c00',true,'%');
+    linesO('bs-lev',[{data:levD,borderColor:'#1a56db',borderWidth:2,pointRadius:0,fill:false,tension:.3},rl(1.0,'#a05c00'),rl(2.0,'#c0182a')],'×',0);
+    stk('bs-liq',[{label:'Cash',data:liqD.map(v=>+(v*.08).toFixed(0)),backgroundColor:'rgba(26,86,219,.55)',borderRadius:2},{label:'Undrawn',data:liqD.map(v=>+(v*.92).toFixed(0)),backgroundColor:'rgba(10,143,92,.45)',borderRadius:2}]);
+  }
+  if(sec==='income'){
+    mkC('inc-total',{type:'bar',data:{labels:Q24,datasets:[{data:incD,backgroundColor:'rgba(26,86,219,.5)',borderColor:'#1a56db',borderWidth:1,borderRadius:2}]},options:{...bO(),scales:{...ax(),y:{...ax().y,ticks:{...ax().y.ticks,callback:v=>qF(v)}}}}});
+    const cI=incD.map(v=>+(v*(1-f.pik/100*.8)).toFixed(1)),pI=incD.map(v=>+(v*(f.pik/100*.8)).toFixed(1)),fI=incD.map(v=>+(v*.04).toFixed(1));
+    stk('inc-decomp',[{label:'Cash',data:cI,backgroundColor:'rgba(26,86,219,.7)',borderRadius:2},{label:'PIK',data:pI,backgroundColor:'rgba(160,92,0,.7)',borderRadius:2},{label:'Fees',data:fI,backgroundColor:'rgba(8,145,178,.7)',borderRadius:2}]);
+    linesO('inc-nii',[{data:niiD,borderColor:'#1a56db',borderWidth:2,pointRadius:0,fill:false,tension:.3},{data:divD,borderColor:'#0a8f5c',borderDash:[3,3],borderWidth:2,pointRadius:0,fill:false,tension:.1}],'$');
+    linesO('inc-cov',[{data:covD,borderColor:'#1a56db',backgroundColor:'rgba(26,86,219,.07)',borderWidth:2,pointRadius:0,fill:true,tension:.3},rl(1.0,'#c0182a')],'×',.7);
+    mkC('inc-exp',{type:'bar',data:{labels:Q24,datasets:[{data:incD.map(v=>+(v*.38).toFixed(1)),backgroundColor:'rgba(160,92,0,.45)',borderRadius:2}]},options:{...bO(),scales:{...ax(),y:{...ax().y,ticks:{...ax().y.ticks,callback:v=>qF(v)}}}}});
+    stk('inc-fees',[{label:'Mgmt',data:incD.map(v=>+(v*.14).toFixed(1)),backgroundColor:'rgba(160,92,0,.7)',borderRadius:2},{label:'IntExp',data:incD.map(v=>+(v*(f.cod/f.yield)*.85).toFixed(1)),backgroundColor:'rgba(192,24,42,.5)',borderRadius:2}]);
+  }
+  if(sec==='pershare'){
+    line('ps-nav',navD,'#1a56db',true);
+    barPct('ps-navchg',naChgD,naChgCol);
+    linesO('ps-niidps',[{data:niiD,borderColor:'#1a56db',borderWidth:2,pointRadius:0,fill:false,tension:.3},{data:divD,borderColor:'#0a8f5c',borderDash:[3,3],borderWidth:2,pointRadius:0,fill:false,tension:.1}],'$');
+    linesO('ps-totalret',[{data:totRetD,borderColor:'#0a8f5c',backgroundColor:'rgba(10,143,92,.07)',borderWidth:2,pointRadius:0,fill:true,tension:.3},{data:navD,borderColor:'#1a56db',borderDash:[4,4],borderWidth:1.5,pointRadius:0,fill:false,tension:.3}]);
+    bar('ps-spill',spillD,'rgba(10,143,92,.5)','$');
+    mkC('ps-gl',{type:'bar',data:{labels:Q24,datasets:[{label:'Real',data:glD,backgroundColor:'rgba(192,24,42,.6)',borderRadius:2},{label:'Unreal',data:unglD,backgroundColor:'rgba(160,92,0,.5)',borderRadius:2}]},options:{...bO({plugins:{legend:{display:false},tooltip:{mode:'index',intersect:false}}}),scales:{x:{grid:{display:false},ticks:{color:TC,font:{family:F,size:8},maxTicksLimit:8},border:{color:'#e2e7ef'}},y:{grid:{color:GC},ticks:{color:TC,font:{family:F,size:8},callback:v=>'$'+v},border:{color:'#e2e7ef'}}}}});
+  }
+  if(sec==='quality'){
+    mkC('q-na',{type:'bar',data:{labels:Q24,datasets:[{data:naD,backgroundColor:'rgba(192,24,42,.22)',borderColor:'#c0182a',borderWidth:1,borderRadius:2},rl(2.5,'#8a97a8')]},options:{...bO(),scales:{...ax('%'),y:{...ax('%').y,ticks:{...ax('%').y.ticks,callback:v=>v+'%'}}}}});
+    line('q-recovery',recovD,'#0a8f5c',true,'%');
+    mkC('q-nacos',{type:'bar',data:{labels:Q24,datasets:[{data:naCosD,backgroundColor:'rgba(192,24,42,.35)',borderColor:'#c0182a',borderWidth:1,borderRadius:2}]},options:{...bO(),scales:{x:{grid:{display:false},ticks:{color:TC,font:{family:F,size:8},maxTicksLimit:8},border:{color:'#e2e7ef'}},y:{grid:{color:GC},ticks:{color:TC,font:{family:F,size:8}},border:{color:'#e2e7ef'}}}}});
+    linesO('q-warat',[{data:waratD,borderColor:'#a05c00',backgroundColor:'rgba(160,92,0,.07)',borderWidth:2,pointRadius:0,fill:true,tension:.3},rl(3.0,'#c0182a')],'×',1);
+    linesO('q-rating',[{data:r12,borderColor:'#0a8f5c',borderWidth:2,pointRadius:0,fill:false,tension:.3},{data:r3,borderColor:'#a05c00',borderDash:[3,3],borderWidth:1.5,pointRadius:0,fill:false,tension:.3},{data:r45,borderColor:'#c0182a',borderWidth:1.5,pointRadius:0,fill:false,tension:.3}],'%');
+    linesO('q-pik',[{data:pikD,borderColor:'#a05c00',backgroundColor:'rgba(160,92,0,.07)',borderWidth:2,pointRadius:0,fill:true,tension:.3},rl(10,'#c0182a')],'%');
+    mkC('q-real',{type:'bar',data:{labels:Q24,datasets:[{data:realD,backgroundColor:'rgba(192,24,42,.5)',borderRadius:2}]},options:{...bO(),scales:{...ax(),y:{...ax().y,ticks:{...ax().y.ticks,callback:v=>'$'+Math.abs(v).toFixed(2)+'B'}}}}});
+    mkC('q-gl',{type:'bar',data:{labels:Q24,datasets:[{label:'Real',data:glD,backgroundColor:'rgba(192,24,42,.6)',borderRadius:2},{label:'Unreal',data:unglD,backgroundColor:'rgba(160,92,0,.5)',borderRadius:2}]},options:{...bO({plugins:{legend:{display:false},tooltip:{mode:'index',intersect:false}}}),scales:{x:{grid:{display:false},ticks:{color:TC,font:{family:F,size:8},maxTicksLimit:8},border:{color:'#e2e7ef'}},y:{grid:{color:GC},ticks:{color:TC,font:{family:F,size:8},callback:v=>'$'+v},border:{color:'#e2e7ef'}}}}});
+  }
+  if(sec==='portfolio'){
+    const l1D=gen(f.fl*.88,1.5,.04),l2D=gen(f.sl*.9,.8,.01),sbD=gen(f.sub*.9,.5,.008);
+    const eqD=l1D.map((v,i)=>+(100-v-l2D[i]-sbD[i]).toFixed(1));
+    mkC('p-lien',{type:'line',data:{labels:Q24,datasets:[{label:'1L',data:l1D,borderColor:'#1a56db',backgroundColor:'rgba(26,86,219,.12)',borderWidth:1.5,pointRadius:0,fill:'stack',tension:.3},{label:'2L',data:l2D,borderColor:'#0891b2',backgroundColor:'rgba(8,145,178,.12)',borderWidth:1.5,pointRadius:0,fill:'stack',tension:.3},{label:'Sub',data:sbD,borderColor:'#a05c00',backgroundColor:'rgba(160,92,0,.12)',borderWidth:1.5,pointRadius:0,fill:'stack',tension:.3},{label:'Eq',data:eqD,borderColor:'#6d28d9',backgroundColor:'rgba(109,40,217,.12)',borderWidth:1.5,pointRadius:0,fill:'stack',tension:.3}]},options:{...bO({plugins:{legend:{display:false},tooltip:{mode:'index',intersect:false}}}),scales:{...ax('%'),y:{...ax('%').y,ticks:{...ax('%').y.ticks,callback:v=>v+'%'}}}}});
+    const sL=['SW/Tech','Healthcare','Bus.Svcs','Consumer','Industrials','Fin.Svcs','Real Est.','Other'];
+    const sV=[f.strategy.includes('Tech')?28:18,14,13,12,10,8,7,f.strategy.includes('Tech')?2:10];
+    mkC('p-sector',{type:'doughnut',data:{labels:sL,datasets:[{data:sV,backgroundColor:['#1a56db','#0a8f5c','#0891b2','#6d28d9','#a05c00','#c0182a','#059669','#8a97a8'],borderWidth:2,borderColor:'#fff'}]},options:{responsive:true,maintainAspectRatio:false,cutout:'60%',plugins:{legend:{display:true,position:'right',labels:{font:{family:F,size:9},color:'#4a5870',boxWidth:8,padding:4}},tooltip:{callbacks:{label:c=>`${c.label}: ${c.raw}%`}}}}});
+    dn('p-sponsor',['Sponsor-Backed','Non-Sponsor'],[f.sponsor,100-f.sponsor],['#1a56db','#8a97a8']);
+    dn('p-floatfix',['Floating Rate','Fixed Rate'],[f.flt,100-f.flt],['#0a8f5c','#0891b2']);
+    dn('p-geo',['United States','Non-US'],[f.geo,100-f.geo],['#1a56db','#a05c00']);
+    line('p-bwlev',bwlevD,'#c0182a',true,'×');
+    linesO('p-bwcov',[{data:bwcovD,borderColor:'#0a8f5c',backgroundColor:'rgba(10,143,92,.07)',borderWidth:2,pointRadius:0,fill:true,tension:.3},rl(2.0,'#c0182a')],'×');
+  }
+  if(sec==='origination'){
+    mkC('orig-gross',{type:'bar',data:{labels:Q24,datasets:[{label:'Orig',data:origV,backgroundColor:'rgba(10,143,92,.6)',borderRadius:2},{label:'Repay',data:repV,backgroundColor:'rgba(192,24,42,.5)',borderRadius:2}]},options:{...bO({plugins:{legend:{display:false},tooltip:{mode:'index',intersect:false}}}),scales:{x:{grid:{display:false},ticks:{color:TC,font:{family:F,size:8},maxTicksLimit:8},border:{color:'#e2e7ef'}},y:{grid:{color:GC},ticks:{color:TC,font:{family:F,size:8},callback:v=>qF(Math.abs(v))},border:{color:'#e2e7ef'}}}}});
+    mkC('orig-net',{type:'bar',data:{labels:Q24,datasets:[{data:netV,backgroundColor:netCol,borderRadius:2}]},options:{...bO(),scales:{...ax(),y:{...ax().y,ticks:{...ax().y.ticks,callback:v=>qF(Math.abs(v))}}}}});
+    linesO('orig-yield',[{data:portY,borderColor:'#1a56db',borderWidth:2,pointRadius:0,fill:false,tension:.3},{data:origY,borderColor:'#0a8f5c',borderDash:[3,3],borderWidth:2,pointRadius:0,fill:false,tension:.3}],'%');
+    stk('orig-lien',[{label:'1L',data:o1L,backgroundColor:'rgba(26,86,219,.7)',borderRadius:2},{label:'2L',data:o2L,backgroundColor:'rgba(8,145,178,.7)',borderRadius:2},{label:'Other',data:oOt,backgroundColor:'rgba(160,92,0,.6)',borderRadius:2}]);
+    line('orig-count',portcoD,'#1a56db',true);
+    line('orig-avgpos',avgPD,'#6d28d9',true,'$M');
+  }
+  if(sec==='fees'){
+    mkC('fee-mgmt',{type:'bar',data:{labels:Q24,datasets:[{data:mgmtQ,backgroundColor:'rgba(160,92,0,.55)',borderColor:'#a05c00',borderWidth:1,borderRadius:2}]},options:{...bO(),scales:{...ax(),y:{...ax().y,ticks:{...ax().y.ticks,callback:v=>qF(v)}}}}});
+    mkC('fee-inc',{type:'bar',data:{labels:Q24,datasets:[{data:incFQ,backgroundColor:'rgba(109,40,217,.5)',borderColor:'#6d28d9',borderWidth:1,borderRadius:2}]},options:{...bO(),scales:{...ax(),y:{...ax().y,ticks:{...ax().y.ticks,callback:v=>qF(v)}}}}});
+    line('fee-pct',feePD,'#6d28d9',true,'%');
+    line('fee-ter',terD,'#c0182a',true,'%');
+    line('fee-cod',codD,'#a05c00',true,'%');
+  }
+  if(sec==='dividends'){
+    linesO('div-cov',[{data:niiD,borderColor:'#1a56db',borderWidth:2,pointRadius:0,fill:false,tension:.3},{data:divD,borderColor:'#0a8f5c',borderDash:[3,3],borderWidth:2,pointRadius:0,fill:false,tension:.1}],'$');
+    linesO('div-covratio',[{data:covD,borderColor:'#1a56db',backgroundColor:'rgba(26,86,219,.07)',borderWidth:2,pointRadius:0,fill:true,tension:.3},rl(1.0,'#c0182a')],'×',.7);
+    const dh=divD.map(v=>+(v*.98).toFixed(3));
+    mkC('div-hist',{type:'line',data:{labels:Q24,datasets:[{data:dh,borderColor:'#0a8f5c',borderWidth:2,pointRadius:dh.map((v,i)=>i>0&&Math.abs(v-dh[i-1])>.003?5:0),pointBackgroundColor:'#c0182a',fill:false,tension:0,stepped:true}]},options:{...bO(),scales:ax('$')}});
+    bar('div-spill',spillD,'rgba(10,143,92,.5)','$');
+  }
+  if(sec==='capital'){
+    const matV=[.05,.15,.18,.22,.20,.20].map(p=>Math.round(f.debt*p));
+    mkC('cap-mat',{type:'bar',data:{labels:YEARS,datasets:[{data:matV,backgroundColor:['#c0182a','#a05c00','#1a56db','#0891b2','#0a8f5c','#6d28d9'],borderRadius:4,borderSkipped:false}]},options:{...bO(),scales:{x:{grid:{display:false},ticks:{color:TC,font:{family:F,size:10}},border:{color:'#e2e7ef'}},y:{grid:{color:GC},ticks:{color:TC,font:{family:F,size:8},callback:v=>qF(v)},border:{color:'#e2e7ef'}}}}});
+    dn('cap-type',['Fixed','Floating'],[35,65],['#1a56db','#0a8f5c']);
+    dn('cap-sec',['Secured','Unsecured'],[62,38],['#0891b2','#a05c00']);
+    stk('cap-rev',[{label:'Drawn',data:revDraw,backgroundColor:'rgba(192,24,42,.5)',borderRadius:2},{label:'Avail',data:revDraw.map((v,i)=>+(revTot[i]-v).toFixed(0)),backgroundColor:'rgba(10,143,92,.4)',borderRadius:2}]);
+    line('cap-cof',cofD,'#a05c00',true,'%');
+    mkC('cap-liq',{type:'line',data:{labels:Q24,datasets:[{data:liqD,borderColor:'#0891b2',backgroundColor:'rgba(8,145,178,.07)',borderWidth:2,pointRadius:0,fill:true,tension:.3}]},options:{...bO(),scales:{...ax(),y:{...ax().y,ticks:{...ax().y.ticks,callback:v=>qF(v)}}}}});
+    line('cap-tenor',tenorD,'#6d28d9',true,' yrs',1);
+  }
+  if(sec==='peers'){
+    const ALL=[{tk:'ARCC',yield:11.4,na:2.1,cov:1.22,lev:1.08,pik:7.2,fl:72.4,fee:1.50,score:4.0},{tk:'MAIN',yield:8.9,na:3.6,cov:1.31,lev:0.82,pik:2.7,fl:81.2,fee:0,score:4.1},{tk:'BXSL',yield:11.8,na:1.2,cov:1.18,lev:1.14,pik:5.8,fl:98.2,fee:1.25,score:4.0},{tk:'GBDC',yield:10.8,na:0.8,cov:1.14,lev:1.24,pik:4.1,fl:91.3,fee:1.00,score:4.2},{tk:'HTGC',yield:14.8,na:1.8,cov:1.34,lev:0.98,pik:2.1,fl:94.2,fee:1.60,score:4.1},{tk:'CSWC',yield:13.4,na:2.1,cov:1.28,lev:0.88,pik:4.8,fl:76.8,fee:0,score:4.2},{tk:'FSK',yield:13.2,na:3.8,cov:1.09,lev:1.08,pik:12.4,fl:68.2,fee:1.50,score:2.8},{tk:'PSEC',yield:10.8,na:5.2,cov:0.98,lev:0.74,pik:18.4,fl:54.8,fee:2.00,score:1.8}];
+    function bP(id,data,fmt,hb){
+      const el=document.getElementById(id);if(!el)return;
+      const mx=Math.max(...data.map(d=>d.v));
+      el.innerHTML=data.map((d,i)=>{const me=d.tk===f.ticker;const bc=me?'#1a56db':hb?(d.v>=data[0].v*.85?'#0a8f5c':'#8a97a8'):(d.v<=data[0].v*1.15?'#0a8f5c':'#8a97a8');
+        return `<div class="pr" style="${me?'background:var(--blue2)':''}"><span class="p-rk">${i+1}</span><span class="p-tk ${me?'p-hl':''}">${d.tk}</span><div class="p-bw"><div class="p-b" style="width:${Math.round(d.v/mx*100)}%;background:${bc}"></div></div><span class="p-v" style="${me?'color:var(--blue);font-weight:600':'color:var(--text2)'}">${fmt(d.v)}</span></div>`;
+      }).join('');
+    }
+    bP('pr-yield',ALL.map(d=>({tk:d.tk,v:d.yield})).sort((a,b)=>b.v-a.v),v=>v.toFixed(1)+'%',true);
+    bP('pr-na',ALL.map(d=>({tk:d.tk,v:d.na})).sort((a,b)=>a.v-b.v),v=>v.toFixed(1)+'%',false);
+    bP('pr-cov',ALL.map(d=>({tk:d.tk,v:d.cov})).sort((a,b)=>b.v-a.v),v=>v.toFixed(2)+'×',true);
+    bP('pr-lev',ALL.map(d=>({tk:d.tk,v:d.lev})).sort((a,b)=>a.v-b.v),v=>v.toFixed(2)+'×',false);
+    bP('pr-pik',ALL.map(d=>({tk:d.tk,v:d.pik})).sort((a,b)=>a.v-b.v),v=>v.toFixed(1)+'%',false);
+    bP('pr-fl',ALL.map(d=>({tk:d.tk,v:d.fl})).sort((a,b)=>b.v-a.v),v=>v.toFixed(1)+'%',true);
+    bP('pr-fee',ALL.map(d=>({tk:d.tk,v:d.fee})).sort((a,b)=>a.v-b.v),v=>v===0?'Internal':v.toFixed(2)+'%',false);
+    bP('pr-score',ALL.map(d=>({tk:d.tk,v:d.score})).sort((a,b)=>b.v-a.v),v=>v.toFixed(2),true);
+  }
+  if(sec==='market'&&T&&f.pnav){
+    const pnavTD=gen(f.pnav-.12,.04,.003),dyldTD=pnavTD.map(p=>+((f.dps*4/(f.nav*p))*100).toFixed(2));
+    const pniTD=pnavTD.map(p=>+((f.nav*p)/(f.nii*4)).toFixed(2)),mktPD=pnavTD.map(p=>+(f.nav*p).toFixed(2));
+    linesO('mkt-pnav',[{data:pnavTD,borderColor:'#1a56db',backgroundColor:'rgba(26,86,219,.07)',borderWidth:2,pointRadius:0,fill:true,tension:.3},rl(1.0,'#8a97a8')],'×');
+    line('mkt-dyld',dyldTD,'#0a8f5c',true,'%');
+    line('mkt-pni',pniTD,'#6d28d9',true,'×');
+    linesO('mkt-div',[{data:navD,borderColor:'#1a56db',borderWidth:2,pointRadius:0,fill:false,tension:.3},{data:mktPD,borderColor:'#6d28d9',borderDash:[3,3],borderWidth:2,pointRadius:0,fill:false,tension:.3}]);
+  }
+  if(sec==='ntflows'&&NT&&f.subs){
+    const ntS=gen(f.subs*.7,f.subs*.15,f.subs*.01),ntR=gen(f.reds*.7,f.reds*.15,f.reds*.01);
+    const ntNet=ntS.map((v,i)=>+(v-ntR[i]).toFixed(0)),ntNetC=ntNet.map(v=>v>=0?'rgba(10,143,92,.55)':'rgba(192,24,42,.55)');
+    mkC('nt-flows',{type:'bar',data:{labels:Q24,datasets:[{label:'Subs',data:ntS,backgroundColor:'rgba(10,143,92,.6)',borderRadius:2},{label:'Reds',data:ntR.map(v=>-v),backgroundColor:'rgba(192,24,42,.5)',borderRadius:2}]},options:{...bO({plugins:{legend:{display:false},tooltip:{mode:'index',intersect:false}}}),scales:{x:{grid:{display:false},ticks:{color:TC,font:{family:F,size:8},maxTicksLimit:8},border:{color:'#e2e7ef'}},y:{grid:{color:GC},ticks:{color:TC,font:{family:F,size:8},callback:v=>'$'+Math.round(Math.abs(v))+'M'},border:{color:'#e2e7ef'}}}}});
+    mkC('nt-net',{type:'bar',data:{labels:Q24,datasets:[{data:ntNet,backgroundColor:ntNetC,borderRadius:2}]},options:{...bO(),scales:{...ax(),y:{...ax().y,ticks:{...ax().y.ticks,callback:v=>'$'+Math.round(Math.abs(v))+'M'}}}}});
+    if(f.ntC){const cDS=f.ntC.map((c,i)=>({label:c,data:gen(f.ntNAV[i]-1.4,.15,.006),borderColor:['#1a56db','#0a8f5c','#a05c00'][i],borderWidth:2,pointRadius:0,fill:false,tension:.3}));mkC('nt-class',{type:'line',data:{labels:Q24,datasets:cDS},options:{...bO({plugins:{legend:{display:true,labels:{font:{family:F,size:9},color:'#4a5870',boxWidth:10,boxHeight:8}},tooltip:{mode:'index',intersect:false}}}),scales:ax()}});}
+    const gateD=gen(f.reds/f.na_m*100*.8,.2,.01);
+    linesO('nt-gate',[{data:gateD,borderColor:'#a05c00',backgroundColor:'rgba(160,92,0,.07)',borderWidth:2,pointRadius:0,fill:true,tension:.3},rl(f.gate,'#c0182a')],'%',0);
+  }
+  if(sec==='events'){
+    const evD=T&&f.pnav?gen(f.pnav-.12,.04,.003).map(p=>+(f.nav*p).toFixed(2)):navD;
+    const ptCols=Q24.map((_,i)=>[0,4,8,12,16,20].includes(i)?'#1a56db':[1,5,9,13,17,21].includes(i)?'#0a8f5c':[2,6,10,14,18,22].includes(i)?'#6d28d9':'transparent');
+    mkC('evt-chart',{type:'line',data:{labels:Q24,datasets:[{data:evD,borderColor:'#1a56db',backgroundColor:'rgba(26,86,219,.07)',borderWidth:2,pointRadius:5,pointBackgroundColor:ptCols,pointBorderColor:'transparent',fill:true,tension:.3}]},options:{...bO({plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>'$'+c.raw.toFixed(2)}}}}),scales:ax()}});
+    const EVS=[
+      {dt:'Q4 2025',type:'earn',title:'Q4 2025 Earnings',detail:`NII/sh $${f.nii.toFixed(3)} · Coverage ${f.cov.toFixed(2)}× · NAV $${f.nav.toFixed(2)}/sh`},
+      {dt:'Q4 2025',type:'div',title:'Regular Dividend Declared',detail:`$${f.dps.toFixed(3)}/share · Yield ${((f.dps*4/f.nav)*100).toFixed(1)}% on NAV`},
+      {dt:'Q3 2025',type:'earn',title:'Q3 2025 Earnings',detail:`NII/sh $${(f.nii*.98).toFixed(3)} · Portfolio $${(f.inv*.97/1000).toFixed(1)}B`},
+      {dt:'Q3 2025',type:'cap',title:'Credit Facility Amendment',detail:'Revolver upsized · Maturity extended to 2028 · Pricing reduced 15bps'},
+      {dt:'Q2 2025',type:'earn',title:'Q2 2025 Earnings',detail:`NII/sh $${(f.nii*.96).toFixed(3)} · NA% ${(f.na*.9).toFixed(1)}%`},
+      {dt:'Q2 2025',type:'div',title:'Regular Dividend Declared',detail:`$${(f.dps*.98).toFixed(3)}/share`},
+      {dt:'Q1 2025',type:'earn',title:'Q1 2025 Earnings',detail:`NII/sh $${(f.nii*.94).toFixed(3)} · Originations $${Math.round(f.inv*.042/1000*10)/10}B`},
+      {dt:'Q4 2024',type:'cred',title:'Non-Accrual Addition',detail:`1 new name on NA · ${f.na>3?'Watch list growing':'Isolated situation'}`},
+      {dt:'Q4 2024',type:'earn',title:'Q4 2024 Earnings',detail:`Full-year NII $${(f.nii*3.88).toFixed(3)}/sh · Total return ${(f.yield*.82).toFixed(1)}%`},
+      {dt:'Q3 2024',type:'cap',title:'Unsecured Notes Issuance',detail:`$${Math.round(f.debt*.08/100)*100}M issued · Fixed rate · Due 2029`},
+    ];
+    const TM={earn:'tag-earn',div:'tag-div',cap:'tag-cap',mgmt:'tag-mgmt',cred:'tag-cred'};
+    const LM={earn:'EARNINGS',div:'DIVIDEND',cap:'CAPITAL',mgmt:'MGMT',cred:'CREDIT'};
+    document.getElementById('evt-feed').innerHTML=EVS.map(e=>`<div class="evt-row"><span class="evt-dt">${e.dt}</span><span class="evt-tag ${TM[e.type]}">${LM[e.type]}</span><div class="evt-body"><div class="evt-title">${e.title}</div><div class="evt-detail">${e.detail}</div></div></div>`).join('');
+  }
+}
+
+// ── INIT — async fetch ───────────────────────────────────────────────────────
+async function init(){
+  // Show loading in sidebar
+  document.getElementById('fundList').innerHTML=`<div style="padding:20px 14px;font-family:var(--mono);font-size:11px;color:var(--text3)">Loading 68 funds…</div>`;
+  document.getElementById('content').innerHTML=`<div style="display:flex;align-items:center;justify-content:center;height:60vh;font-family:var(--mono);font-size:12px;color:var(--text3)">Fetching real data…</div>`;
+
+  try{
+    const [fundsRes, mktRes] = await Promise.all([
+      fetch('data/funds.json'),
+      fetch('data/market.json').catch(()=>({json:()=>({})}))
+    ]);
+    const fundsRaw = await fundsRes.json();
+    const mktRaw = await mktRes.json().catch(()=>({}));
+    FUNDS = fundsRaw.map(f=>mapFundDetail(f, mktRaw));
+    buildSB();
+    loadFund(activeTicker);
+  }catch(err){
+    console.error('Failed to load fund data:',err);
+    document.getElementById('content').innerHTML=`<div style="display:flex;align-items:center;justify-content:center;height:60vh;flex-direction:column;gap:12px"><div style="font-family:var(--mono);font-size:13px;color:var(--red)">⚠ Could not load data</div><div style="font-family:var(--mono);font-size:11px;color:var(--text3)">Serve via HTTP (not file://). Run: python3 -m http.server 8000</div><div style="font-family:var(--mono);font-size:10px;color:var(--text4)">${err.message}</div></div>`;
+  }
+}
+
+// Override loadFund to also fetch timeseries for the selected fund
+const _origLoadFund = loadFund;
+async function loadFund(ticker){
+  // First do the sync render with whatever data we have
+  activeTicker=ticker;activeSec='overview';builtSecs=new Set();
+  Object.values(CH).forEach(c=>{try{c.destroy();}catch(e){}});Object.keys(CH).forEach(k=>delete CH[k]);
+  document.querySelectorAll('.sb-fund').forEach(el=>el.classList.toggle('on',el.dataset.tk===ticker));
+  currentFund=FUNDS.find(x=>x.ticker===ticker)||FUNDS[0];
+  if(!currentFund)return;
+
+  // Fetch timeseries for this fund
+  try{
+    const tsRes = await fetch(`data/timeseries/${ticker}.json`);
+    const tsData = await tsRes.json();
+    currentFund._ts = tsData;
+  }catch(e){
+    currentFund._ts = null;
+  }
+
+  renderFund(currentFund);
+  window.scrollTo(0,0);
+}
+
+document.addEventListener('DOMContentLoaded', init);
+</script>
+</body>
+</html>
