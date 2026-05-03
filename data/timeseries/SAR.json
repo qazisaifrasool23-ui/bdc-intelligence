@@ -41,7 +41,7 @@
     "cash_income_pct": 84.9,
     "origination_velocity_pct": 32789.796,
     "cumulative_dividends_paid": 1.65,
-    "data_quality_score": 66.7
+    "data_quality_score": 67.5
   },
   {
     "quarter": "Q4 2019",
@@ -82,7 +82,7 @@
     "liquidity_pct_of_portfolio": 1.54,
     "avg_position_size_mn": 1.67,
     "cumulative_dividends_paid": 1.65,
-    "data_quality_score": 52.8
+    "data_quality_score": 54.1
   },
   {
     "quarter": "Q2 2020",
@@ -126,7 +126,10 @@
     "cash_income_pct": 89.42,
     "origination_velocity_pct": 8124735.417,
     "cumulative_dividends_paid": 2.19,
-    "data_quality_score": 82.1
+    "data_quality_score": 83.7,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1377936/000119312520189621/d944424d10q.htm",
+    "filing_type": "10-Q",
+    "management_fee_mn": 2160.528
   },
   {
     "quarter": "Q3 2020",
@@ -169,7 +172,26 @@
     "cash_income_mn": 13315.814,
     "cash_income_pct": 93.23,
     "cumulative_dividends_paid": 3.0,
-    "data_quality_score": 78.9
+    "data_quality_score": 81.4,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1377936/000121390020030481/s126975_10q.htm",
+    "filing_type": "10-Q",
+    "management_fee_mn": 2209.052,
+    "significant_8k_filings": [
+      {
+        "date": "2020-10-16",
+        "type": "officer_director_change",
+        "description": "Items: 5.02",
+        "url": "https://www.sec.gov/Archives/edgar/data/1377936/000121390020031788/0001213900-20-031788-index.htm",
+        "impact": "neutral"
+      },
+      {
+        "date": "2020-10-07",
+        "type": "earnings_release",
+        "description": "Items: 2.02, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1377936/000121390020030483/0001213900-20-030483-index.htm",
+        "impact": "neutral"
+      }
+    ]
   },
   {
     "quarter": "Q4 2020",
@@ -211,7 +233,19 @@
     "avg_position_size_mn": 1.441,
     "nav_per_share_yoy_growth_pct": -70.672,
     "cumulative_dividends_paid": 3.0,
-    "data_quality_score": 54.1
+    "data_quality_score": 59.5,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1377936/000121390021000658/f10q1120_saratogainvestment.htm",
+    "filing_type": "10-Q",
+    "management_fee_mn": 2324.564,
+    "significant_8k_filings": [
+      {
+        "date": "2021-01-06",
+        "type": "earnings_release",
+        "description": "Items: 2.02, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1377936/000121390021000657/0001213900-21-000657-index.htm",
+        "impact": "neutral"
+      }
+    ]
   },
   {
     "quarter": "Q2 2021",
@@ -252,7 +286,42 @@
     "cash_income_mn": 16432.585,
     "cash_income_pct": 97.72,
     "cumulative_dividends_paid": 3.43,
-    "data_quality_score": 72.2
+    "data_quality_score": 74.4,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1377936/000121390021035984/f10q0521_saratogainvestment.htm",
+    "filing_type": "10-Q",
+    "management_fee_mn": 2758.908,
+    "weighted_avg_interest_rate": 6.37,
+    "debt_revolver_mn": null,
+    "significant_8k_filings": [
+      {
+        "date": "2021-08-02",
+        "type": "material_agreement",
+        "description": "Items: 1.01, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1377936/000121390021039813/0001213900-21-039813-index.htm",
+        "impact": "neutral"
+      },
+      {
+        "date": "2021-07-28",
+        "type": "material_agreement_termination",
+        "description": "Items: 1.02",
+        "url": "https://www.sec.gov/Archives/edgar/data/1377936/000121390021039081/0001213900-21-039081-index.htm",
+        "impact": "neutral"
+      },
+      {
+        "date": "2021-07-20",
+        "type": "material_agreement",
+        "description": "Items: 1.01, 2.03, 8.01, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1377936/000121390021037733/0001213900-21-037733-index.htm",
+        "impact": "neutral"
+      },
+      {
+        "date": "2021-07-07",
+        "type": "earnings_release",
+        "description": "Items: 2.02, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1377936/000121390021035962/0001213900-21-035962-index.htm",
+        "impact": "neutral"
+      }
+    ]
   },
   {
     "quarter": "Q3 2021",
@@ -298,7 +367,33 @@
     "nii_per_share_yoy_growth_pct": 56.25,
     "nav_per_share_yoy_growth_pct": 16.169,
     "cumulative_dividends_paid": 4.82,
-    "data_quality_score": 80.5
+    "data_quality_score": 82.6,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1377936/000121390021051424/f10q0821_saratogainvest.htm",
+    "filing_type": "10-Q",
+    "management_fee_mn": 3002.097,
+    "significant_8k_filings": [
+      {
+        "date": "2021-10-28",
+        "type": "material_agreement",
+        "description": "Items: 1.01, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1377936/000121390021055127/0001213900-21-055127-index.htm",
+        "impact": "neutral"
+      },
+      {
+        "date": "2021-10-07",
+        "type": "material_agreement",
+        "description": "Items: 1.01, 2.03, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1377936/000121390021051747/0001213900-21-051747-index.htm",
+        "impact": "neutral"
+      },
+      {
+        "date": "2021-10-05",
+        "type": "earnings_release",
+        "description": "Items: 2.02, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1377936/000121390021051430/0001213900-21-051430-index.htm",
+        "impact": "neutral"
+      }
+    ]
   },
   {
     "quarter": "Q4 2021",
@@ -339,7 +434,28 @@
     "fixed_rate_pct": 96.0,
     "nav_per_share_yoy_growth_pct": 9.277,
     "cumulative_dividends_paid": 4.82,
-    "data_quality_score": 52.8
+    "data_quality_score": 58.1,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1377936/000121390022000714/f10q1121_saratogainvest.htm",
+    "filing_type": "10-Q",
+    "management_fee_mn": 2923.676,
+    "weighted_avg_interest_rate": 4.94,
+    "debt_revolver_mn": null,
+    "significant_8k_filings": [
+      {
+        "date": "2022-01-19",
+        "type": "material_agreement",
+        "description": "Items: 1.01, 2.03, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1377936/000121390022002669/0001213900-22-002669-index.htm",
+        "impact": "neutral"
+      },
+      {
+        "date": "2022-01-05",
+        "type": "earnings_release",
+        "description": "Items: 2.02, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1377936/000121390022000717/0001213900-22-000717-index.htm",
+        "impact": "neutral"
+      }
+    ]
   },
   {
     "quarter": "Q2 2022",
@@ -386,7 +502,19 @@
     "nav_per_share_yoy_growth_pct": 286.658,
     "origination_velocity_pct": 10921105.618,
     "cumulative_dividends_paid": 5.35,
-    "data_quality_score": 88.1
+    "data_quality_score": 89.4,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1377936/000121390022037605/f10q0522_saratoga.htm",
+    "filing_type": "10-Q",
+    "management_fee_mn": 3802.063,
+    "significant_8k_filings": [
+      {
+        "date": "2022-07-06",
+        "type": "earnings_release",
+        "description": "Items: 2.02, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1377936/000121390022037607/0001213900-22-037607-index.htm",
+        "impact": "neutral"
+      }
+    ]
   },
   {
     "quarter": "Q3 2022",
@@ -434,7 +562,33 @@
     "nii_per_share_yoy_growth_pct": -74.182,
     "origination_velocity_pct": 6616.162,
     "cumulative_dividends_paid": 6.95,
-    "data_quality_score": 88.4
+    "data_quality_score": 89.6,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1377936/000121390022061816/f10q0822_saratogainvest.htm",
+    "filing_type": "10-Q",
+    "management_fee_mn": 4104.105,
+    "significant_8k_filings": [
+      {
+        "date": "2022-10-27",
+        "type": "material_agreement",
+        "description": "Items: 1.01, 2.03, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1377936/000121390022066744/0001213900-22-066744-index.htm",
+        "impact": "neutral"
+      },
+      {
+        "date": "2022-10-20",
+        "type": "material_agreement",
+        "description": "Items: 1.01, 2.03, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1377936/000121390022065242/0001213900-22-065242-index.htm",
+        "impact": "neutral"
+      },
+      {
+        "date": "2022-10-04",
+        "type": "earnings_release",
+        "description": "Items: 2.02, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1377936/000121390022061821/0001213900-22-061821-index.htm",
+        "impact": "neutral"
+      }
+    ]
   },
   {
     "quarter": "Q4 2022",
@@ -477,7 +631,28 @@
     "nii_per_share_yoy_growth_pct": -57.6,
     "nav_per_share_yoy_growth_pct": 0.034,
     "cumulative_dividends_paid": 7.63,
-    "data_quality_score": 65.8
+    "data_quality_score": 68.9,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1377936/000121390023002013/f10q1122_saratogainvest.htm",
+    "filing_type": "10-Q",
+    "management_fee_mn": 4258.821,
+    "weighted_avg_interest_rate": 7.19,
+    "debt_revolver_mn": null,
+    "significant_8k_filings": [
+      {
+        "date": "2023-02-02",
+        "type": "material_agreement",
+        "description": "Items: 1.01, 2.03, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1377936/000121390023006966/0001213900-23-006966-index.htm",
+        "impact": "neutral"
+      },
+      {
+        "date": "2023-01-10",
+        "type": "earnings_release",
+        "description": "Items: 2.02, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1377936/000121390023002015/0001213900-23-002015-index.htm",
+        "impact": "neutral"
+      }
+    ]
   },
   {
     "quarter": "Q2 2023",
@@ -523,7 +698,33 @@
     "cash_income_pct": 91.49,
     "nav_per_share_yoy_growth_pct": -2.898,
     "cumulative_dividends_paid": 8.32,
-    "data_quality_score": 85.4
+    "data_quality_score": 87.0,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1377936/000121390023055832/f10q0523_saratogainvest.htm",
+    "filing_type": "10-Q",
+    "management_fee_mn": 4564.189,
+    "significant_8k_filings": [
+      {
+        "date": "2023-07-19",
+        "type": "material_agreement",
+        "description": "Items: 1.01, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1377936/000121390023058189/0001213900-23-058189-index.htm",
+        "impact": "neutral"
+      },
+      {
+        "date": "2023-07-10",
+        "type": "material_agreement",
+        "description": "Items: 1.01, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1377936/000121390023055855/0001213900-23-055855-index.htm",
+        "impact": "neutral"
+      },
+      {
+        "date": "2023-07-10",
+        "type": "earnings_release",
+        "description": "Items: 2.02, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1377936/000121390023055814/0001213900-23-055814-index.htm",
+        "impact": "neutral"
+      }
+    ]
   },
   {
     "quarter": "Q3 2023",
@@ -572,7 +773,19 @@
     "nav_per_share_yoy_growth_pct": -4.427,
     "origination_velocity_pct": 1869.565,
     "cumulative_dividends_paid": 10.42,
-    "data_quality_score": 88.6
+    "data_quality_score": 89.8,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1377936/000121390023081272/f10q0823_saratoga.htm",
+    "filing_type": "10-Q",
+    "management_fee_mn": 4840.899,
+    "significant_8k_filings": [
+      {
+        "date": "2023-10-10",
+        "type": "earnings_release",
+        "description": "Items: 2.02, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1377936/000121390023081271/0001213900-23-081271-index.htm",
+        "impact": "neutral"
+      }
+    ]
   },
   {
     "quarter": "Q4 2023",
@@ -615,7 +828,19 @@
     "nii_per_share_yoy_growth_pct": -63.85,
     "nav_per_share_yoy_growth_pct": -4.0,
     "cumulative_dividends_paid": 11.14,
-    "data_quality_score": 65.8
+    "data_quality_score": 69.8,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1377936/000121390024002282/f10q1123_saratoga.htm",
+    "filing_type": "10-Q",
+    "management_fee_mn": 4857.059,
+    "significant_8k_filings": [
+      {
+        "date": "2024-01-09",
+        "type": "earnings_release",
+        "description": "Items: 2.02, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1377936/000121390024002285/0001213900-24-002285-index.htm",
+        "impact": "neutral"
+      }
+    ]
   },
   {
     "quarter": "Q2 2024",
@@ -664,7 +889,19 @@
     "nav_per_share_yoy_growth_pct": -7.985,
     "origination_velocity_pct": 3509023.214,
     "cumulative_dividends_paid": 11.87,
-    "data_quality_score": 81.8
+    "data_quality_score": 83.7,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1377936/000121390024060116/ea0208311-10q_saratoga.htm",
+    "filing_type": "10-Q",
+    "management_fee_mn": 4982.58,
+    "significant_8k_filings": [
+      {
+        "date": "2024-07-09",
+        "type": "earnings_release",
+        "description": "Items: 2.02, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1377936/000121390024060123/0001213900-24-060123-index.htm",
+        "impact": "neutral"
+      }
+    ]
   },
   {
     "quarter": "Q3 2024",
@@ -711,7 +948,19 @@
     "nii_per_share_yoy_growth_pct": 142.222,
     "nav_per_share_yoy_growth_pct": -5.372,
     "cumulative_dividends_paid": 14.08,
-    "data_quality_score": 85.7
+    "data_quality_score": 87.2,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1377936/000121390024086270/ea0215310-10q_saratoga.htm",
+    "filing_type": "10-Q",
+    "management_fee_mn": 4766.0,
+    "significant_8k_filings": [
+      {
+        "date": "2024-10-08",
+        "type": "earnings_release",
+        "description": "Items: 2.02, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1377936/000121390024086277/0001213900-24-086277-index.htm",
+        "impact": "neutral"
+      }
+    ]
   },
   {
     "quarter": "Q4 2024",
@@ -753,7 +1002,19 @@
     "fixed_rate_pct": 93.0,
     "nav_per_share_yoy_growth_pct": -5.689,
     "cumulative_dividends_paid": 14.82,
-    "data_quality_score": 56.8
+    "data_quality_score": 61.9,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1377936/000121390025002065/ea0225626-10q_saratoga.htm",
+    "filing_type": "10-Q",
+    "management_fee_mn": 4412.0,
+    "significant_8k_filings": [
+      {
+        "date": "2025-01-08",
+        "type": "earnings_release",
+        "description": "Items: 2.02, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1377936/000121390025002073/0001213900-25-002073-index.htm",
+        "impact": "neutral"
+      }
+    ]
   },
   {
     "quarter": "Q2 2025",
@@ -802,7 +1063,19 @@
     "nav_per_share_yoy_growth_pct": -5.9,
     "origination_velocity_pct": 5059137.374,
     "cumulative_dividends_paid": 16.06,
-    "data_quality_score": 88.6
+    "data_quality_score": 89.8,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1377936/000121390025062051/ea0246449-10q_saratoga.htm",
+    "filing_type": "10-Q",
+    "management_fee_mn": 4333.332,
+    "significant_8k_filings": [
+      {
+        "date": "2025-07-08",
+        "type": "earnings_release",
+        "description": "Items: 2.02, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1377936/000121390025062058/0001213900-25-062058-index.htm",
+        "impact": "neutral"
+      }
+    ]
   },
   {
     "quarter": "Q3 2025",
@@ -852,6 +1125,25 @@
     "nav_per_share_yoy_growth_pct": -4.693,
     "origination_velocity_pct": 2174.757,
     "cumulative_dividends_paid": 18.8,
-    "data_quality_score": 91.1
+    "data_quality_score": 92.0,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1377936/000121390025097022/ea0258170-10q_saratoga.htm",
+    "filing_type": "10-Q",
+    "management_fee_mn": 4374.324,
+    "significant_8k_filings": [
+      {
+        "date": "2025-11-07",
+        "type": "material_agreement",
+        "description": "Items: 1.01, 1.02, 2.03, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1377936/000121390025107282/0001213900-25-107282-index.htm",
+        "impact": "neutral"
+      },
+      {
+        "date": "2025-10-07",
+        "type": "earnings_release",
+        "description": "Items: 2.02, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1377936/000121390025097029/0001213900-25-097029-index.htm",
+        "impact": "neutral"
+      }
+    ]
   }
 ]

@@ -37,7 +37,7 @@
     "total_return_index": 20.61,
     "avg_position_size_mn": 1.237,
     "fixed_rate_pct": 1.4,
-    "data_quality_score": 45.7
+    "data_quality_score": 47.2
   },
   {
     "quarter": "Q1 2020",
@@ -80,7 +80,7 @@
     "fixed_rate_pct": 2.0,
     "origination_velocity_pct": 545.438,
     "cumulative_dividends_paid": 0.53,
-    "data_quality_score": 76.3
+    "data_quality_score": 76.9
   },
   {
     "quarter": "Q2 2020",
@@ -125,7 +125,7 @@
     "fixed_rate_pct": 1.9,
     "origination_velocity_pct": 1088.04,
     "cumulative_dividends_paid": 1.51,
-    "data_quality_score": 75.0
+    "data_quality_score": 75.6
   },
   {
     "quarter": "Q3 2020",
@@ -170,7 +170,7 @@
     "fixed_rate_pct": 1.9,
     "origination_velocity_pct": 1369.273,
     "cumulative_dividends_paid": 2.95,
-    "data_quality_score": 82.5
+    "data_quality_score": 82.9
   },
   {
     "quarter": "Q4 2020",
@@ -215,7 +215,7 @@
     "nav_per_share_yoy_growth_pct": -4.755,
     "origination_velocity_pct": 24.969,
     "cumulative_dividends_paid": 2.95,
-    "data_quality_score": 67.5
+    "data_quality_score": 68.3
   },
   {
     "quarter": "Q1 2021",
@@ -261,7 +261,7 @@
     "nav_per_share_yoy_growth_pct": 7.618,
     "origination_velocity_pct": 268.224,
     "cumulative_dividends_paid": 3.43,
-    "data_quality_score": 82.9
+    "data_quality_score": 83.3
   },
   {
     "quarter": "Q2 2021",
@@ -308,7 +308,7 @@
     "nav_per_share_yoy_growth_pct": 6.312,
     "origination_velocity_pct": 773.334,
     "cumulative_dividends_paid": 4.39,
-    "data_quality_score": 78.6
+    "data_quality_score": 79.1
   },
   {
     "quarter": "Q3 2021",
@@ -355,7 +355,25 @@
     "nav_per_share_yoy_growth_pct": 5.605,
     "origination_velocity_pct": 1290.492,
     "cumulative_dividends_paid": 5.84,
-    "data_quality_score": 83.3
+    "data_quality_score": 84.8,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1866633/000186663321000004/ccs-20210930.htm",
+    "filing_type": "10-Q",
+    "significant_8k_filings": [
+      {
+        "date": "2021-11-09",
+        "type": "earnings_release",
+        "description": "Items: 2.02, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1866633/000119312521324431/0001193125-21-324431-index.htm",
+        "impact": "neutral"
+      },
+      {
+        "date": "2021-10-08",
+        "type": "material_agreement",
+        "description": "Items: 1.01, 2.01, 2.03, 3.03, 5.01, 5.02, 5.03, 5.05, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1866633/000119312521294817/0001193125-21-294817-index.htm",
+        "impact": "neutral"
+      }
+    ]
   },
   {
     "quarter": "Q4 2021",
@@ -400,7 +418,18 @@
     "nav_per_share_yoy_growth_pct": 4.228,
     "origination_velocity_pct": 14.004,
     "cumulative_dividends_paid": 5.84,
-    "data_quality_score": 72.5
+    "data_quality_score": 75.0,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1866633/000186663322000021/ccs-20211231.htm",
+    "filing_type": "10-K",
+    "significant_8k_filings": [
+      {
+        "date": "2022-01-07",
+        "type": "officer_director_change",
+        "description": "Items: 5.02",
+        "url": "https://www.sec.gov/Archives/edgar/data/1866633/000186663322000002/0001866633-22-000002-index.htm",
+        "impact": "neutral"
+      }
+    ]
   },
   {
     "quarter": "Q1 2022",
@@ -446,7 +475,9 @@
     "nav_per_share_yoy_growth_pct": 1.205,
     "origination_velocity_pct": 94.791,
     "cumulative_dividends_paid": 6.44,
-    "data_quality_score": 82.9
+    "data_quality_score": 84.1,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1866633/000186663322000033/ccs-20220331.htm",
+    "filing_type": "10-Q"
   },
   {
     "quarter": "Q2 2022",
@@ -493,7 +524,18 @@
     "nav_per_share_yoy_growth_pct": -2.029,
     "origination_velocity_pct": 502.764,
     "cumulative_dividends_paid": 7.52,
-    "data_quality_score": 78.6
+    "data_quality_score": 80.4,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1866633/000186663322000045/ccs-20220630.htm",
+    "filing_type": "10-Q",
+    "significant_8k_filings": [
+      {
+        "date": "2022-08-09",
+        "type": "earnings_release",
+        "description": "Items: 2.02, 7.01, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1866633/000186663322000044/0001866633-22-000044-index.htm",
+        "impact": "neutral"
+      }
+    ]
   },
   {
     "quarter": "Q3 2022",
@@ -540,7 +582,18 @@
     "nav_per_share_yoy_growth_pct": -2.359,
     "origination_velocity_pct": 872.359,
     "cumulative_dividends_paid": 9.11,
-    "data_quality_score": 83.3
+    "data_quality_score": 84.8,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1866633/000186663322000050/ccs-20220930.htm",
+    "filing_type": "10-Q",
+    "significant_8k_filings": [
+      {
+        "date": "2022-11-10",
+        "type": "earnings_release",
+        "description": "Items: 2.02, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1866633/000186663322000047/0001866633-22-000047-index.htm",
+        "impact": "neutral"
+      }
+    ]
   },
   {
     "quarter": "Q4 2022",
@@ -586,7 +639,9 @@
     "nav_per_share_yoy_growth_pct": -3.617,
     "origination_velocity_pct": 8.545,
     "cumulative_dividends_paid": 9.11,
-    "data_quality_score": 75.6
+    "data_quality_score": 77.3,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1866633/000186663323000019/ccs-20221231.htm",
+    "filing_type": "10-K"
   },
   {
     "quarter": "Q1 2023",
@@ -632,7 +687,18 @@
     "nav_per_share_yoy_growth_pct": -2.232,
     "origination_velocity_pct": 1.523,
     "cumulative_dividends_paid": 9.62,
-    "data_quality_score": 82.9
+    "data_quality_score": 84.4,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1866633/000186663323000023/ccs-20230331.htm",
+    "filing_type": "10-Q",
+    "significant_8k_filings": [
+      {
+        "date": "2023-05-09",
+        "type": "earnings_release",
+        "description": "Items: 2.02, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1866633/000186663323000021/0001866633-23-000021-index.htm",
+        "impact": "neutral"
+      }
+    ]
   },
   {
     "quarter": "Q2 2023",
@@ -679,7 +745,18 @@
     "nav_per_share_yoy_growth_pct": -2.323,
     "origination_velocity_pct": 2.979,
     "cumulative_dividends_paid": 10.13,
-    "data_quality_score": 83.3
+    "data_quality_score": 84.8,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1866633/000186663323000036/ccs-20230630.htm",
+    "filing_type": "10-Q",
+    "significant_8k_filings": [
+      {
+        "date": "2023-08-08",
+        "type": "earnings_release",
+        "description": "Items: 2.02, 7.01, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1866633/000186663323000034/0001866633-23-000034-index.htm",
+        "impact": "neutral"
+      }
+    ]
   },
   {
     "quarter": "Q3 2023",
@@ -726,7 +803,18 @@
     "nav_per_share_yoy_growth_pct": -1.862,
     "origination_velocity_pct": 5.029,
     "cumulative_dividends_paid": 10.64,
-    "data_quality_score": 83.3
+    "data_quality_score": 84.8,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1866633/000186663323000040/ccs-20230930.htm",
+    "filing_type": "10-Q",
+    "significant_8k_filings": [
+      {
+        "date": "2023-11-09",
+        "type": "earnings_release",
+        "description": "Items: 2.02, 5.02, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1866633/000186663323000039/0001866633-23-000039-index.htm",
+        "impact": "neutral"
+      }
+    ]
   },
   {
     "quarter": "Q4 2023",
@@ -772,7 +860,9 @@
     "nav_per_share_yoy_growth_pct": -0.609,
     "origination_velocity_pct": 0.812,
     "cumulative_dividends_paid": 10.64,
-    "data_quality_score": 75.6
+    "data_quality_score": 77.3,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1866633/000186663324000004/ccs-20231231.htm",
+    "filing_type": "10-K"
   },
   {
     "quarter": "Q1 2024",
@@ -818,7 +908,18 @@
     "nav_per_share_yoy_growth_pct": 0.507,
     "origination_velocity_pct": 4.078,
     "cumulative_dividends_paid": 11.15,
-    "data_quality_score": 87.8
+    "data_quality_score": 88.9,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1866633/000186663324000009/ccs-20240331.htm",
+    "filing_type": "10-Q",
+    "significant_8k_filings": [
+      {
+        "date": "2024-05-08",
+        "type": "earnings_release",
+        "description": "Items: 2.02, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1866633/000186663324000007/0001866633-24-000007-index.htm",
+        "impact": "neutral"
+      }
+    ]
   },
   {
     "quarter": "Q2 2024",
@@ -867,7 +968,18 @@
     "nav_per_share_yoy_growth_pct": 2.172,
     "origination_velocity_pct": 7.166,
     "cumulative_dividends_paid": 11.66,
-    "data_quality_score": 90.9
+    "data_quality_score": 91.7,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1866633/000186663324000021/ccs-20240630.htm",
+    "filing_type": "10-Q",
+    "significant_8k_filings": [
+      {
+        "date": "2024-08-08",
+        "type": "earnings_release",
+        "description": "Items: 2.02, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1866633/000186663324000019/0001866633-24-000019-index.htm",
+        "impact": "neutral"
+      }
+    ]
   },
   {
     "quarter": "Q3 2024",
@@ -916,7 +1028,18 @@
     "nav_per_share_yoy_growth_pct": 1.333,
     "origination_velocity_pct": 13.853,
     "cumulative_dividends_paid": 12.17,
-    "data_quality_score": 84.1
+    "data_quality_score": 85.4,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1866633/000186663324000033/ccs-20240930.htm",
+    "filing_type": "10-Q",
+    "significant_8k_filings": [
+      {
+        "date": "2024-11-07",
+        "type": "earnings_release",
+        "description": "Items: 2.02, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1866633/000186663324000032/0001866633-24-000032-index.htm",
+        "impact": "neutral"
+      }
+    ]
   },
   {
     "quarter": "Q4 2024",
@@ -964,7 +1087,9 @@
     "nav_per_share_yoy_growth_pct": -0.867,
     "origination_velocity_pct": 5.002,
     "cumulative_dividends_paid": 12.17,
-    "data_quality_score": 81.4
+    "data_quality_score": 82.6,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1866633/000186663325000004/ccs-20241231.htm",
+    "filing_type": "10-K"
   },
   {
     "quarter": "Q1 2025",
@@ -1011,7 +1136,18 @@
     "nav_per_share_yoy_growth_pct": -2.928,
     "origination_velocity_pct": 11.681,
     "cumulative_dividends_paid": 12.66,
-    "data_quality_score": 88.1
+    "data_quality_score": 89.1,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1866633/000186663325000010/ccs-20250331.htm",
+    "filing_type": "10-Q",
+    "significant_8k_filings": [
+      {
+        "date": "2025-05-07",
+        "type": "earnings_release",
+        "description": "Items: 2.02, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1866633/000186663325000007/0001866633-25-000007-index.htm",
+        "impact": "neutral"
+      }
+    ]
   },
   {
     "quarter": "Q2 2025",
@@ -1059,7 +1195,25 @@
     "nav_per_share_yoy_growth_pct": -3.34,
     "origination_velocity_pct": 28.644,
     "cumulative_dividends_paid": 13.15,
-    "data_quality_score": 86.0
+    "data_quality_score": 87.2,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1866633/000186663325000019/ccs-20250630.htm",
+    "filing_type": "10-Q",
+    "significant_8k_filings": [
+      {
+        "date": "2025-08-07",
+        "type": "earnings_release",
+        "description": "Items: 2.02, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1866633/000186663325000017/0001866633-25-000017-index.htm",
+        "impact": "neutral"
+      },
+      {
+        "date": "2025-07-14",
+        "type": "material_agreement",
+        "description": "Items: 1.01, 2.03",
+        "url": "https://www.sec.gov/Archives/edgar/data/1866633/000186663325000015/0001866633-25-000015-index.htm",
+        "impact": "neutral"
+      }
+    ]
   },
   {
     "quarter": "Q3 2025",
@@ -1107,7 +1261,18 @@
     "nav_per_share_yoy_growth_pct": -3.694,
     "origination_velocity_pct": 37.127,
     "cumulative_dividends_paid": 13.64,
-    "data_quality_score": 86.0
+    "data_quality_score": 87.2,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1866633/000186663325000025/ccs-20250930.htm",
+    "filing_type": "10-Q",
+    "significant_8k_filings": [
+      {
+        "date": "2025-11-05",
+        "type": "earnings_release",
+        "description": "Items: 2.02, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1866633/000186663325000023/0001866633-25-000023-index.htm",
+        "impact": "neutral"
+      }
+    ]
   },
   {
     "quarter": "Q4 2025",
@@ -1156,6 +1321,17 @@
     "nav_per_share_yoy_growth_pct": -3.139,
     "origination_velocity_pct": 17.231,
     "cumulative_dividends_paid": 13.64,
-    "data_quality_score": 81.8
+    "data_quality_score": 83.3,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1866633/000186663326000004/ccs-20251231.htm",
+    "filing_type": "10-K",
+    "significant_8k_filings": [
+      {
+        "date": "2026-02-10",
+        "type": "earnings_release",
+        "description": "Items: 2.02, 5.02, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1866633/000186663326000002/0001866633-26-000002-index.htm",
+        "impact": "neutral"
+      }
+    ]
   }
 ]

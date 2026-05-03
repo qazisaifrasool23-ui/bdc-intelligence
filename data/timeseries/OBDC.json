@@ -41,7 +41,41 @@
     "cash_income_pct": 98.31,
     "origination_velocity_pct": 12.261,
     "cumulative_dividends_paid": 0.39,
-    "data_quality_score": 79.5
+    "data_quality_score": 82.2,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1655888/000156459020021247/owl-10q_20200331.htm",
+    "filing_type": "10-Q",
+    "interest_expense_mn": 33.957,
+    "management_fee_mn": 33.79,
+    "significant_8k_filings": [
+      {
+        "date": "2020-05-08",
+        "type": "material_agreement",
+        "description": "Items: 1.01, 2.03, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1655888/000110465920058900/0001104659-20-058900-index.htm",
+        "impact": "neutral"
+      },
+      {
+        "date": "2020-05-05",
+        "type": "earnings_release",
+        "description": "Items: 2.02, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1655888/000156459020021281/0001564590-20-021281-index.htm",
+        "impact": "neutral"
+      },
+      {
+        "date": "2020-04-02",
+        "type": "earnings_release",
+        "description": "Items: 2.02, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1655888/000110465920042439/0001104659-20-042439-index.htm",
+        "impact": "neutral"
+      },
+      {
+        "date": "2020-04-01",
+        "type": "material_agreement",
+        "description": "Items: 1.01, 7.01, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1655888/000110465920041850/0001104659-20-041850-index.htm",
+        "impact": "neutral"
+      }
+    ]
   },
   {
     "quarter": "Q2 2020",
@@ -86,7 +120,41 @@
     "cash_income_pct": 96.24,
     "origination_velocity_pct": 17.826,
     "cumulative_dividends_paid": 0.78,
-    "data_quality_score": 85.0
+    "data_quality_score": 87.0,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1655888/000156459020036199/owl-10q_20200630.htm",
+    "filing_type": "10-Q",
+    "interest_expense_mn": 39.185,
+    "management_fee_mn": 34.602,
+    "significant_8k_filings": [
+      {
+        "date": "2020-08-05",
+        "type": "earnings_release",
+        "description": "Items: 2.02, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1655888/000156459020036192/0001564590-20-036192-index.htm",
+        "impact": "neutral"
+      },
+      {
+        "date": "2020-07-23",
+        "type": "material_agreement",
+        "description": "Items: 1.01, 2.03, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1655888/000110465920085981/0001104659-20-085981-index.htm",
+        "impact": "neutral"
+      },
+      {
+        "date": "2020-07-13",
+        "type": "earnings_release",
+        "description": "Items: 2.02",
+        "url": "https://www.sec.gov/Archives/edgar/data/1655888/000110465920082943/0001104659-20-082943-index.htm",
+        "impact": "neutral"
+      },
+      {
+        "date": "2020-07-07",
+        "type": "earnings_release",
+        "description": "Items: 2.02, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1655888/000110465920081568/0001104659-20-081568-index.htm",
+        "impact": "neutral"
+      }
+    ]
   },
   {
     "quarter": "Q3 2020",
@@ -131,7 +199,27 @@
     "cash_income_pct": 95.84,
     "origination_velocity_pct": 23.339,
     "cumulative_dividends_paid": 1.17,
-    "data_quality_score": 85.0
+    "data_quality_score": 87.0,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1655888/000156459020050454/owl-10q_20200930.htm",
+    "filing_type": "10-Q",
+    "interest_expense_mn": 37.391,
+    "management_fee_mn": 36.46,
+    "significant_8k_filings": [
+      {
+        "date": "2020-11-04",
+        "type": "earnings_release",
+        "description": "Items: 2.02, 8.01, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1655888/000156459020050532/0001564590-20-050532-index.htm",
+        "impact": "neutral"
+      },
+      {
+        "date": "2020-10-05",
+        "type": "earnings_release",
+        "description": "Items: 2.02, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1655888/000110465920111986/0001104659-20-111986-index.htm",
+        "impact": "neutral"
+      }
+    ]
   },
   {
     "quarter": "Q4 2020",
@@ -174,7 +262,20 @@
     "avg_position_size_mn": 91.838,
     "origination_velocity_pct": -10.925,
     "cumulative_dividends_paid": 1.17,
-    "data_quality_score": 63.2
+    "data_quality_score": 68.2,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1655888/000156459021007640/owl-10k_20201231.htm",
+    "filing_type": "10-K",
+    "management_fee_mn": 3.0,
+    "incentive_fee_mn": 1.6,
+    "significant_8k_filings": [
+      {
+        "date": "2021-01-13",
+        "type": "earnings_release",
+        "description": "Items: 2.02, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1655888/000110465921003668/0001104659-21-003668-index.htm",
+        "impact": "neutral"
+      }
+    ]
   },
   {
     "quarter": "Q1 2021",
@@ -220,7 +321,56 @@
     "nav_per_share_yoy_growth_pct": 5.181,
     "origination_velocity_pct": 8.912,
     "cumulative_dividends_paid": 1.48,
-    "data_quality_score": 85.4
+    "data_quality_score": 87.5,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1655888/000156459021024043/owl-10q_20210331.htm",
+    "filing_type": "10-Q",
+    "interest_expense_mn": 48.076,
+    "management_fee_mn": 42.11,
+    "incentive_fee_mn": 21.776,
+    "significant_8k_filings": [
+      {
+        "date": "2021-05-07",
+        "type": "material_agreement",
+        "description": "Items: 1.01, 2.03, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1655888/000110465921063116/0001104659-21-063116-index.htm",
+        "impact": "neutral"
+      },
+      {
+        "date": "2021-05-05",
+        "type": "earnings_release",
+        "description": "Items: 2.02, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1655888/000156459021024170/0001564590-21-024170-index.htm",
+        "impact": "neutral"
+      },
+      {
+        "date": "2021-04-26",
+        "type": "material_agreement",
+        "description": "Items: 1.01, 2.03, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1655888/000110465921054946/0001104659-21-054946-index.htm",
+        "impact": "neutral"
+      },
+      {
+        "date": "2021-04-19",
+        "type": "earnings_release",
+        "description": "Items: 2.02",
+        "url": "https://www.sec.gov/Archives/edgar/data/1655888/000110465921051634/0001104659-21-051634-index.htm",
+        "impact": "neutral"
+      },
+      {
+        "date": "2021-04-12",
+        "type": "material_agreement",
+        "description": "Items: 1.01, 2.03",
+        "url": "https://www.sec.gov/Archives/edgar/data/1655888/000110465921049390/0001104659-21-049390-index.htm",
+        "impact": "neutral"
+      },
+      {
+        "date": "2021-04-06",
+        "type": "earnings_release",
+        "description": "Items: 2.02, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1655888/000110465921046758/0001104659-21-046758-index.htm",
+        "impact": "neutral"
+      }
+    ]
   },
   {
     "quarter": "Q2 2021",
@@ -267,7 +417,41 @@
     "nav_per_share_yoy_growth_pct": 2.617,
     "origination_velocity_pct": 22.424,
     "cumulative_dividends_paid": 1.79,
-    "data_quality_score": 85.7
+    "data_quality_score": 87.5,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1655888/000095017021000801/orcci_10q_2021-06-30.htm",
+    "filing_type": "10-Q",
+    "interest_expense_mn": 54.445,
+    "management_fee_mn": 44.007,
+    "significant_8k_filings": [
+      {
+        "date": "2021-08-04",
+        "type": "earnings_release",
+        "description": "Items: 2.02, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1655888/000156459021040885/0001564590-21-040885-index.htm",
+        "impact": "neutral"
+      },
+      {
+        "date": "2021-07-14",
+        "type": "material_agreement",
+        "description": "Items: 1.01, 2.03, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1655888/000110465921092151/0001104659-21-092151-index.htm",
+        "impact": "neutral"
+      },
+      {
+        "date": "2021-07-07",
+        "type": "earnings_release",
+        "description": "Items: 2.02, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1655888/000110465921089766/0001104659-21-089766-index.htm",
+        "impact": "neutral"
+      },
+      {
+        "date": "2021-07-06",
+        "type": "material_agreement",
+        "description": "Items: 1.01, 2.03, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1655888/000110465921089083/0001104659-21-089083-index.htm",
+        "impact": "neutral"
+      }
+    ]
   },
   {
     "quarter": "Q3 2021",
@@ -314,7 +498,27 @@
     "nav_per_share_yoy_growth_pct": 1.909,
     "origination_velocity_pct": 44.155,
     "cumulative_dividends_paid": 2.1,
-    "data_quality_score": 85.7
+    "data_quality_score": 87.5,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1655888/000095017021002848/orcci_10q_2021-09-30.htm",
+    "filing_type": "10-Q",
+    "interest_expense_mn": 56.516,
+    "management_fee_mn": 45.586,
+    "significant_8k_filings": [
+      {
+        "date": "2021-11-03",
+        "type": "earnings_release",
+        "description": "Items: 2.02, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1655888/000156459021054046/0001564590-21-054046-index.htm",
+        "impact": "neutral"
+      },
+      {
+        "date": "2021-10-05",
+        "type": "earnings_release",
+        "description": "Items: 2.02, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1655888/000119312521292072/0001193125-21-292072-index.htm",
+        "impact": "neutral"
+      }
+    ]
   },
   {
     "quarter": "Q4 2021",
@@ -359,7 +563,27 @@
     "nav_per_share_yoy_growth_pct": 0.0,
     "origination_velocity_pct": -14.864,
     "cumulative_dividends_paid": 2.41,
-    "data_quality_score": 72.5
+    "data_quality_score": 76.1,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1655888/000095017022001814/orcci_10k_2021-12-31.htm",
+    "filing_type": "10-K",
+    "management_fee_mn": 3.0,
+    "incentive_fee_mn": 1.4,
+    "significant_8k_filings": [
+      {
+        "date": "2022-01-26",
+        "type": "officer_director_change",
+        "description": "Items: 5.02",
+        "url": "https://www.sec.gov/Archives/edgar/data/1655888/000119312522017637/0001193125-22-017637-index.htm",
+        "impact": "neutral"
+      },
+      {
+        "date": "2022-01-12",
+        "type": "earnings_release",
+        "description": "Items: 2.02, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1655888/000119312522007295/0001193125-22-007295-index.htm",
+        "impact": "neutral"
+      }
+    ]
   },
   {
     "quarter": "Q1 2022",
@@ -406,7 +630,41 @@
     "nav_per_share_yoy_growth_pct": 0.405,
     "origination_velocity_pct": 5.301,
     "cumulative_dividends_paid": 2.72,
-    "data_quality_score": 85.7
+    "data_quality_score": 87.5,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1655888/000095017022007370/orcci_10q_2022-03-31.htm",
+    "filing_type": "10-Q",
+    "interest_expense_mn": 61.378,
+    "management_fee_mn": 47.413,
+    "significant_8k_filings": [
+      {
+        "date": "2022-05-05",
+        "type": "material_agreement",
+        "description": "Items: 1.01, 2.03, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1655888/000119312522142372/0001193125-22-142372-index.htm",
+        "impact": "neutral"
+      },
+      {
+        "date": "2022-05-04",
+        "type": "earnings_release",
+        "description": "Items: 2.02, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1655888/000156459022017906/0001564590-22-017906-index.htm",
+        "impact": "neutral"
+      },
+      {
+        "date": "2022-04-26",
+        "type": "material_agreement",
+        "description": "Items: 1.01, 2.03, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1655888/000119312522120398/0001193125-22-120398-index.htm",
+        "impact": "neutral"
+      },
+      {
+        "date": "2022-04-06",
+        "type": "earnings_release",
+        "description": "Items: 2.02, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1655888/000119312522097488/0001193125-22-097488-index.htm",
+        "impact": "neutral"
+      }
+    ]
   },
   {
     "quarter": "Q2 2022",
@@ -455,7 +713,34 @@
     "nav_per_share_yoy_growth_pct": -2.819,
     "origination_velocity_pct": 11.99,
     "cumulative_dividends_paid": 3.03,
-    "data_quality_score": 90.9
+    "data_quality_score": 92.0,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1655888/000165588822000016/orcc-20220630.htm",
+    "filing_type": "10-Q",
+    "interest_expense_mn": 67.347,
+    "management_fee_mn": 46.873,
+    "significant_8k_filings": [
+      {
+        "date": "2022-08-03",
+        "type": "earnings_release",
+        "description": "Items: 2.02",
+        "url": "https://www.sec.gov/Archives/edgar/data/1655888/000165588822000019/0001655888-22-000019-index.htm",
+        "impact": "neutral"
+      },
+      {
+        "date": "2022-07-28",
+        "type": "material_agreement",
+        "description": "Items: 1.01, 2.03, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1655888/000119312522204880/0001193125-22-204880-index.htm",
+        "impact": "neutral"
+      },
+      {
+        "date": "2022-07-06",
+        "type": "earnings_release",
+        "description": "Items: 2.02, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1655888/000119312522188623/0001193125-22-188623-index.htm",
+        "impact": "neutral"
+      }
+    ]
   },
   {
     "quarter": "Q3 2022",
@@ -504,7 +789,34 @@
     "nav_per_share_yoy_growth_pct": -0.669,
     "origination_velocity_pct": 14.65,
     "cumulative_dividends_paid": 3.34,
-    "data_quality_score": 90.9
+    "data_quality_score": 92.0,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1655888/000165588822000024/orcc-20220930.htm",
+    "filing_type": "10-Q",
+    "interest_expense_mn": 81.21,
+    "management_fee_mn": 46.886,
+    "significant_8k_filings": [
+      {
+        "date": "2022-11-02",
+        "type": "earnings_release",
+        "description": "Items: 2.02",
+        "url": "https://www.sec.gov/Archives/edgar/data/1655888/000165588822000026/0001655888-22-000026-index.htm",
+        "impact": "neutral"
+      },
+      {
+        "date": "2022-10-05",
+        "type": "earnings_release",
+        "description": "Items: 2.02, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1655888/000119312522258230/0001193125-22-258230-index.htm",
+        "impact": "neutral"
+      },
+      {
+        "date": "2022-10-05",
+        "type": "material_agreement_termination",
+        "description": "Items: 1.02",
+        "url": "https://www.sec.gov/Archives/edgar/data/1655888/000119312522258224/0001193125-22-258224-index.htm",
+        "impact": "neutral"
+      }
+    ]
   },
   {
     "quarter": "Q4 2022",
@@ -551,7 +863,20 @@
     "nav_per_share_yoy_growth_pct": 0.0,
     "origination_velocity_pct": -14.983,
     "cumulative_dividends_paid": 3.65,
-    "data_quality_score": 76.2
+    "data_quality_score": 79.2,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1655888/000165588823000012/orcc-20221231.htm",
+    "filing_type": "10-K",
+    "interest_expense_mn": 25182.0,
+    "management_fee_mn": 188.8,
+    "significant_8k_filings": [
+      {
+        "date": "2023-01-11",
+        "type": "earnings_release",
+        "description": "Items: 2.02, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1655888/000119312523006498/0001193125-23-006498-index.htm",
+        "impact": "neutral"
+      }
+    ]
   },
   {
     "quarter": "Q1 2023",
@@ -600,7 +925,34 @@
     "nav_per_share_yoy_growth_pct": 1.815,
     "origination_velocity_pct": 1.739,
     "cumulative_dividends_paid": 4.02,
-    "data_quality_score": 90.9
+    "data_quality_score": 92.0,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1655888/000165588823000019/orcc-20230331.htm",
+    "filing_type": "10-Q",
+    "interest_expense_mn": 103.955,
+    "management_fee_mn": 48.093,
+    "significant_8k_filings": [
+      {
+        "date": "2023-05-10",
+        "type": "earnings_release",
+        "description": "Items: 2.02, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1655888/000119312523140736/0001193125-23-140736-index.htm",
+        "impact": "neutral"
+      },
+      {
+        "date": "2023-04-19",
+        "type": "material_agreement",
+        "description": "Items: 1.01, 2.03, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1655888/000119312523106627/0001193125-23-106627-index.htm",
+        "impact": "neutral"
+      },
+      {
+        "date": "2023-04-05",
+        "type": "earnings_release",
+        "description": "Items: 2.02, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1655888/000119312523092333/0001193125-23-092333-index.htm",
+        "impact": "neutral"
+      }
+    ]
   },
   {
     "quarter": "Q2 2023",
@@ -649,7 +1001,48 @@
     "nav_per_share_yoy_growth_pct": 5.387,
     "origination_velocity_pct": 4.412,
     "cumulative_dividends_paid": 4.4,
-    "data_quality_score": 90.9
+    "data_quality_score": 92.0,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1655888/000165588823000024/obdc-20230630.htm",
+    "filing_type": "10-Q",
+    "interest_expense_mn": 110.017,
+    "management_fee_mn": 48.024,
+    "significant_8k_filings": [
+      {
+        "date": "2023-08-09",
+        "type": "earnings_release",
+        "description": "Items: 2.02, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1655888/000119312523207368/0001193125-23-207368-index.htm",
+        "impact": "neutral"
+      },
+      {
+        "date": "2023-07-19",
+        "type": "material_agreement",
+        "description": "Items: 1.01, 2.03, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1655888/000119312523189646/0001193125-23-189646-index.htm",
+        "impact": "neutral"
+      },
+      {
+        "date": "2023-07-10",
+        "type": "earnings_release",
+        "description": "Items: 2.02, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1655888/000119312523184648/0001193125-23-184648-index.htm",
+        "impact": "neutral"
+      },
+      {
+        "date": "2023-07-06",
+        "type": "material_agreement",
+        "description": "Items: 1.01, 8.01, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1655888/000119312523182372/0001193125-23-182372-index.htm",
+        "impact": "neutral"
+      },
+      {
+        "date": "2023-06-30",
+        "type": "material_agreement",
+        "description": "Items: 1.01, 2.03, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1655888/000119312523180483/0001193125-23-180483-index.htm",
+        "impact": "neutral"
+      }
+    ]
   },
   {
     "quarter": "Q3 2023",
@@ -698,7 +1091,27 @@
     "nav_per_share_yoy_growth_pct": 3.704,
     "origination_velocity_pct": 8.634,
     "cumulative_dividends_paid": 4.7867,
-    "data_quality_score": 90.9
+    "data_quality_score": 92.0,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1655888/000165588823000028/a02obdc-10qx09302023.htm",
+    "filing_type": "10-Q",
+    "interest_expense_mn": 110.445,
+    "management_fee_mn": 47.796,
+    "significant_8k_filings": [
+      {
+        "date": "2023-11-08",
+        "type": "earnings_release",
+        "description": "Items: 2.02, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1655888/000119312523273526/0001193125-23-273526-index.htm",
+        "impact": "neutral"
+      },
+      {
+        "date": "2023-10-06",
+        "type": "earnings_release",
+        "description": "Items: 2.02, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1655888/000119312523251914/0001193125-23-251914-index.htm",
+        "impact": "neutral"
+      }
+    ]
   },
   {
     "quarter": "Q4 2023",
@@ -744,7 +1157,41 @@
     "nav_per_share_yoy_growth_pct": 0.0,
     "origination_velocity_pct": 2.911,
     "cumulative_dividends_paid": 4.7867,
-    "data_quality_score": 70.7
+    "data_quality_score": 74.5,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1655888/000165588824000008/obdc-20231231.htm",
+    "filing_type": "10-K",
+    "interest_expense_mn": 52.148,
+    "management_fee_mn": 191.6,
+    "significant_8k_filings": [
+      {
+        "date": "2024-01-23",
+        "type": "material_agreement",
+        "description": "Items: 1.01, 8.01, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1655888/000119312524013021/0001193125-24-013021-index.htm",
+        "impact": "neutral"
+      },
+      {
+        "date": "2024-01-19",
+        "type": "material_agreement",
+        "description": "Items: 1.01, 2.03, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1655888/000119312524011274/0001193125-24-011274-index.htm",
+        "impact": "neutral"
+      },
+      {
+        "date": "2024-01-12",
+        "type": "earnings_release",
+        "description": "Items: 2.02, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1655888/000119312524006860/0001193125-24-006860-index.htm",
+        "impact": "neutral"
+      },
+      {
+        "date": "2024-01-09",
+        "type": "material_agreement",
+        "description": "Items: 1.01, 2.03, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1655888/000119312524005227/0001193125-24-005227-index.htm",
+        "impact": "neutral"
+      }
+    ]
   },
   {
     "quarter": "Q1 2024",
@@ -792,7 +1239,34 @@
     "nav_per_share_yoy_growth_pct": 2.112,
     "origination_velocity_pct": 8.347,
     "cumulative_dividends_paid": 5.2367,
-    "data_quality_score": 90.7
+    "data_quality_score": 91.8,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1655888/000165588824000014/obdc-20240331.htm",
+    "filing_type": "10-Q",
+    "interest_expense_mn": 119.129,
+    "management_fee_mn": 47.243,
+    "significant_8k_filings": [
+      {
+        "date": "2024-05-08",
+        "type": "earnings_release",
+        "description": "Items: 2.02, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1655888/000119312524134250/0001193125-24-134250-index.htm",
+        "impact": "neutral"
+      },
+      {
+        "date": "2024-04-16",
+        "type": "material_agreement",
+        "description": "Items: 1.01, 2.03, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1655888/000119312524097814/0001193125-24-097814-index.htm",
+        "impact": "neutral"
+      },
+      {
+        "date": "2024-04-08",
+        "type": "earnings_release",
+        "description": "Items: 2.02, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1655888/000119312524089048/0001193125-24-089048-index.htm",
+        "impact": "neutral"
+      }
+    ]
   },
   {
     "quarter": "Q2 2024",
@@ -841,7 +1315,41 @@
     "nav_per_share_yoy_growth_pct": 0.655,
     "origination_velocity_pct": 22.622,
     "cumulative_dividends_paid": 5.6717,
-    "data_quality_score": 90.9
+    "data_quality_score": 92.0,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1655888/000165588824000019/obdc-20240630.htm",
+    "filing_type": "10-Q",
+    "interest_expense_mn": 109.125,
+    "management_fee_mn": 48.005,
+    "significant_8k_filings": [
+      {
+        "date": "2024-08-13",
+        "type": "amendments_to_articles",
+        "description": "Items: 5.03, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1655888/000119312524199829/0001193125-24-199829-index.htm",
+        "impact": "neutral"
+      },
+      {
+        "date": "2024-08-07",
+        "type": "earnings_release",
+        "description": "Items: 2.02, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1655888/000119312524195932/0001193125-24-195932-index.htm",
+        "impact": "neutral"
+      },
+      {
+        "date": "2024-08-07",
+        "type": "material_agreement",
+        "description": "Items: 1.01, 7.01, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1655888/000119312524195906/0001193125-24-195906-index.htm",
+        "impact": "neutral"
+      },
+      {
+        "date": "2024-07-03",
+        "type": "earnings_release",
+        "description": "Items: 2.02, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1655888/000119312524174621/0001193125-24-174621-index.htm",
+        "impact": "neutral"
+      }
+    ]
   },
   {
     "quarter": "Q3 2024",
@@ -890,7 +1398,27 @@
     "nav_per_share_yoy_growth_pct": -0.779,
     "origination_velocity_pct": 27.965,
     "cumulative_dividends_paid": 6.105,
-    "data_quality_score": 88.6
+    "data_quality_score": 90.0,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1655888/000165588824000023/obdc-20240930.htm",
+    "filing_type": "10-Q",
+    "interest_expense_mn": 121.273,
+    "management_fee_mn": 49.264,
+    "significant_8k_filings": [
+      {
+        "date": "2024-11-06",
+        "type": "earnings_release",
+        "description": "Items: 2.02, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1655888/000119312524252064/0001193125-24-252064-index.htm",
+        "impact": "neutral"
+      },
+      {
+        "date": "2024-10-02",
+        "type": "earnings_release",
+        "description": "Items: 2.02, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1655888/000119312524230627/0001193125-24-230627-index.htm",
+        "impact": "neutral"
+      }
+    ]
   },
   {
     "quarter": "Q4 2024",
@@ -937,7 +1465,34 @@
     "nav_per_share_yoy_growth_pct": 0.0,
     "origination_velocity_pct": -225214000.0,
     "cumulative_dividends_paid": 6.625,
-    "data_quality_score": 73.8
+    "data_quality_score": 77.1,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1655888/000165588825000007/obdc-20241231.htm",
+    "filing_type": "10-K",
+    "interest_expense_mn": 464.9,
+    "management_fee_mn": 193.6,
+    "significant_8k_filings": [
+      {
+        "date": "2025-01-22",
+        "type": "earnings_release",
+        "description": "Items: 2.02, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1655888/000119312525009982/0001193125-25-009982-index.htm",
+        "impact": "neutral"
+      },
+      {
+        "date": "2025-01-16",
+        "type": "earnings_release",
+        "description": "Items: 2.02, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1655888/000119312525007423/0001193125-25-007423-index.htm",
+        "impact": "neutral"
+      },
+      {
+        "date": "2025-01-13",
+        "type": "material_agreement",
+        "description": "Items: 1.01, 2.01, 2.03, 7.01, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1655888/000162828025001250/0001628280-25-001250-index.htm",
+        "impact": "neutral"
+      }
+    ]
   },
   {
     "quarter": "Q1 2025",
@@ -986,7 +1541,62 @@
     "nav_per_share_yoy_growth_pct": -2.133,
     "origination_velocity_pct": 5.49,
     "cumulative_dividends_paid": 7.045,
-    "data_quality_score": 90.9
+    "data_quality_score": 92.0,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1655888/000165588825000012/obdc-20250331.htm",
+    "filing_type": "10-Q",
+    "interest_expense_mn": 148.532,
+    "management_fee_mn": 1.0,
+    "significant_8k_filings": [
+      {
+        "date": "2025-05-15",
+        "type": "material_agreement",
+        "description": "Items: 1.01, 8.01, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1655888/000162828025025895/0001628280-25-025895-index.htm",
+        "impact": "neutral"
+      },
+      {
+        "date": "2025-05-07",
+        "type": "earnings_release",
+        "description": "Items: 2.02, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1655888/000119312525114945/0001193125-25-114945-index.htm",
+        "impact": "neutral"
+      },
+      {
+        "date": "2025-04-22",
+        "type": "material_agreement",
+        "description": "Items: 1.01, 2.03, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1655888/000119312525089234/0001193125-25-089234-index.htm",
+        "impact": "neutral"
+      },
+      {
+        "date": "2025-04-11",
+        "type": "material_agreement",
+        "description": "Items: 1.01, 2.03, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1655888/000119312525079144/0001193125-25-079144-index.htm",
+        "impact": "neutral"
+      },
+      {
+        "date": "2025-04-09",
+        "type": "material_agreement",
+        "description": "Items: 1.01, 2.03, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1655888/000119312525076880/0001193125-25-076880-index.htm",
+        "impact": "neutral"
+      },
+      {
+        "date": "2025-04-03",
+        "type": "earnings_release",
+        "description": "Items: 2.02, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1655888/000119312525072406/0001193125-25-072406-index.htm",
+        "impact": "neutral"
+      },
+      {
+        "date": "2025-04-03",
+        "type": "material_agreement",
+        "description": "Items: 1.01, 2.03, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1655888/000119312525072405/0001193125-25-072405-index.htm",
+        "impact": "neutral"
+      }
+    ]
   },
   {
     "quarter": "Q2 2025",
@@ -1035,7 +1645,27 @@
     "nav_per_share_yoy_growth_pct": -2.148,
     "origination_velocity_pct": 10.28,
     "cumulative_dividends_paid": 7.445,
-    "data_quality_score": 90.9
+    "data_quality_score": 92.0,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1655888/000165588825000020/obdc-20250630.htm",
+    "filing_type": "10-Q",
+    "interest_expense_mn": 151.571,
+    "management_fee_mn": 1.0,
+    "significant_8k_filings": [
+      {
+        "date": "2025-08-06",
+        "type": "earnings_release",
+        "description": "Items: 2.02, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1655888/000119312525174536/0001193125-25-174536-index.htm",
+        "impact": "neutral"
+      },
+      {
+        "date": "2025-07-01",
+        "type": "earnings_release",
+        "description": "Items: 2.02, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1655888/000119312525153464/0001193125-25-153464-index.htm",
+        "impact": "neutral"
+      }
+    ]
   },
   {
     "quarter": "Q3 2025",
@@ -1084,7 +1714,34 @@
     "nav_per_share_yoy_growth_pct": -2.552,
     "origination_velocity_pct": 15.535,
     "cumulative_dividends_paid": 7.8417,
-    "data_quality_score": 90.9
+    "data_quality_score": 92.0,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1655888/000165588825000024/obdc-20250930.htm",
+    "filing_type": "10-Q",
+    "interest_expense_mn": 151.019,
+    "management_fee_mn": 1.0,
+    "significant_8k_filings": [
+      {
+        "date": "2025-11-05",
+        "type": "earnings_release",
+        "description": "Items: 2.02, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1655888/000119312525267192/0001193125-25-267192-index.htm",
+        "impact": "neutral"
+      },
+      {
+        "date": "2025-11-05",
+        "type": "material_agreement",
+        "description": "Items: 1.01, 7.01, 8.01, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1655888/000119312525267102/0001193125-25-267102-index.htm",
+        "impact": "neutral"
+      },
+      {
+        "date": "2025-10-01",
+        "type": "earnings_release",
+        "description": "Items: 2.02, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1655888/000119312525225925/0001193125-25-225925-index.htm",
+        "impact": "neutral"
+      }
+    ]
   },
   {
     "quarter": "Q4 2025",
@@ -1131,6 +1788,19 @@
     "cash_income_pct": 93.6,
     "nav_per_share_yoy_growth_pct": -0.733,
     "cumulative_dividends_paid": 8.2117,
-    "data_quality_score": 81.0
+    "data_quality_score": 81.2,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1655888/000165588826000010/obdc-20251231.htm",
+    "filing_type": "10-K",
+    "interest_expense_mn": null,
+    "management_fee_mn": 1.0,
+    "significant_8k_filings": [
+      {
+        "date": "2026-01-07",
+        "type": "earnings_release",
+        "description": "Items: 2.02, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1655888/000119312526005489/0001193125-26-005489-index.htm",
+        "impact": "neutral"
+      }
+    ]
   }
 ]

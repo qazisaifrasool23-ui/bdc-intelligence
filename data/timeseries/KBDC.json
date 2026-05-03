@@ -33,7 +33,9 @@
     "credit_facility_drawn_mn": null,
     "unused_capacity_mn": null,
     "price_to_nav": null,
-    "data_quality_score": 9.7
+    "data_quality_score": 17.6,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1747172/000119312521059867/d122096d10k.htm",
+    "filing_type": "10-K"
   },
   {
     "quarter": "Q1 2021",
@@ -74,7 +76,11 @@
     "total_return_index": 15.47,
     "avg_position_size_mn": 0.05,
     "origination_velocity_pct": 9373.563,
-    "data_quality_score": 52.8
+    "data_quality_score": 53.7,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390021026940/f10q0321_kayneanderson.htm",
+    "filing_type": "10-Q",
+    "interest_expense_mn": null,
+    "management_fee_mn": null
   },
   {
     "quarter": "Q2 2021",
@@ -115,7 +121,12 @@
     "avg_position_size_mn": 62.59,
     "origination_velocity_pct": 6.006,
     "cumulative_dividends_paid": 0.15,
-    "data_quality_score": 58.3
+    "data_quality_score": 64.3,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390021043026/f10q0621_kayneanderson.htm",
+    "filing_type": "10-Q",
+    "interest_expense_mn": 928.0,
+    "management_fee_mn": 422.0,
+    "weighted_avg_interest_rate": 5.25
   },
   {
     "quarter": "Q3 2021",
@@ -156,7 +167,19 @@
     "avg_position_size_mn": 142.171,
     "origination_velocity_pct": 0.026,
     "cumulative_dividends_paid": 0.2733,
-    "data_quality_score": 44.4
+    "data_quality_score": 51.2,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390021059234/f10q0921_kayneanderson.htm",
+    "filing_type": "10-Q",
+    "weighted_avg_interest_rate": 5.25,
+    "significant_8k_filings": [
+      {
+        "date": "2021-10-12",
+        "type": "officer_director_change",
+        "description": "Items: 5.02",
+        "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390021052415/0001213900-21-052415-index.htm",
+        "impact": "neutral"
+      }
+    ]
   },
   {
     "quarter": "Q4 2021",
@@ -197,7 +220,11 @@
     "avg_position_size_mn": 0.4,
     "origination_velocity_pct": 1349.894,
     "cumulative_dividends_paid": 0.2733,
-    "data_quality_score": 36.1
+    "data_quality_score": 43.9,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390022011623/f10k2021_kayneanderson.htm",
+    "filing_type": "10-K",
+    "management_fee_mn": 2.1,
+    "incentive_fee_mn": 0.1
   },
   {
     "quarter": "Q1 2022",
@@ -242,7 +269,12 @@
     "nav_per_share_yoy_growth_pct": 6.593,
     "origination_velocity_pct": 0.602,
     "cumulative_dividends_paid": 0.2733,
-    "data_quality_score": 65.0
+    "data_quality_score": 69.6,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390022027196/f10q0322_kayneanderson.htm",
+    "filing_type": "10-Q",
+    "interest_expense_mn": 2808.0,
+    "management_fee_mn": 1326.0,
+    "incentive_fee_mn": 955.0
   },
   {
     "quarter": "Q2 2022",
@@ -286,7 +318,12 @@
     "nav_per_share_yoy_growth_pct": 5.013,
     "origination_velocity_pct": 1.428,
     "cumulative_dividends_paid": 0.4033,
-    "data_quality_score": 66.7
+    "data_quality_score": 71.1,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390022047906/f10q0622_kayneand.htm",
+    "filing_type": "10-Q",
+    "interest_expense_mn": 3014.0,
+    "management_fee_mn": 1498.0,
+    "incentive_fee_mn": 775.0
   },
   {
     "quarter": "Q3 2022",
@@ -331,7 +368,21 @@
     "nii_per_share_yoy_growth_pct": -83.26,
     "origination_velocity_pct": 2.294,
     "cumulative_dividends_paid": 0.59,
-    "data_quality_score": 70.0
+    "data_quality_score": 74.5,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390022071987/f10q0922_kayneand.htm",
+    "filing_type": "10-Q",
+    "interest_expense_mn": 5504.0,
+    "management_fee_mn": 1908.0,
+    "incentive_fee_mn": 1230.0,
+    "significant_8k_filings": [
+      {
+        "date": "2022-11-14",
+        "type": "officer_director_change",
+        "description": "Items: 5.02",
+        "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390022071796/0001213900-22-071796-index.htm",
+        "impact": "neutral"
+      }
+    ]
   },
   {
     "quarter": "Q4 2022",
@@ -376,7 +427,20 @@
     "nav_per_share_yoy_growth_pct": 1.726,
     "origination_velocity_pct": -10.829,
     "cumulative_dividends_paid": 0.59,
-    "data_quality_score": 55.0
+    "data_quality_score": 60.9,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390023019300/f10k2022_kayneand.htm",
+    "filing_type": "10-K",
+    "management_fee_mn": 7.1,
+    "incentive_fee_mn": 4.7,
+    "significant_8k_filings": [
+      {
+        "date": "2023-01-27",
+        "type": "officer_director_change",
+        "description": "Items: 5.02, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390023005696/0001213900-23-005696-index.htm",
+        "impact": "neutral"
+      }
+    ]
   },
   {
     "quarter": "Q1 2023",
@@ -421,7 +485,12 @@
     "nav_per_share_yoy_growth_pct": 0.485,
     "origination_velocity_pct": 0.289,
     "cumulative_dividends_paid": 1.06,
-    "data_quality_score": 70.0
+    "data_quality_score": 73.9,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390023039591/f10q0323_kayneand.htm",
+    "filing_type": "10-Q",
+    "interest_expense_mn": 11523.0,
+    "management_fee_mn": 2685.0,
+    "incentive_fee_mn": 2138.0
   },
   {
     "quarter": "Q2 2023",
@@ -466,7 +535,21 @@
     "nav_per_share_yoy_growth_pct": 0.181,
     "origination_velocity_pct": 0.438,
     "cumulative_dividends_paid": 1.56,
-    "data_quality_score": 67.5
+    "data_quality_score": 72.3,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390023067086/f10q0623_kayneand.htm",
+    "filing_type": "10-Q",
+    "interest_expense_mn": 13002.0,
+    "management_fee_mn": 2848.0,
+    "incentive_fee_mn": 2420.0,
+    "significant_8k_filings": [
+      {
+        "date": "2023-07-05",
+        "type": "material_agreement",
+        "description": "Items: 1.01, 2.03, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390023054281/0001213900-23-054281-index.htm",
+        "impact": "neutral"
+      }
+    ]
   },
   {
     "quarter": "Q3 2023",
@@ -512,7 +595,12 @@
     "nav_per_share_yoy_growth_pct": -1.973,
     "origination_velocity_pct": 0.531,
     "cumulative_dividends_paid": 2.07,
-    "data_quality_score": 70.7
+    "data_quality_score": 74.5,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390023086801/f10q0923_kayneand.htm",
+    "filing_type": "10-Q",
+    "interest_expense_mn": 13871.0,
+    "management_fee_mn": 2905.0,
+    "incentive_fee_mn": 2371.0
   },
   {
     "quarter": "Q4 2023",
@@ -560,7 +648,11 @@
     "nav_per_share_yoy_growth_pct": -0.485,
     "origination_velocity_pct": -68.398,
     "cumulative_dividends_paid": 2.65,
-    "data_quality_score": 72.1
+    "data_quality_score": 75.0,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390024018465/f10k2023_kayneanderson.htm",
+    "filing_type": "10-K",
+    "management_fee_mn": 11.4,
+    "incentive_fee_mn": 9.4
   },
   {
     "quarter": "Q1 2024",
@@ -608,7 +700,15 @@
     "nav_per_share_yoy_growth_pct": 0.362,
     "origination_velocity_pct": 1.604,
     "cumulative_dividends_paid": 3.05,
-    "data_quality_score": 81.4
+    "data_quality_score": 82.7,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390024040973/ea0204433-10q_kayne.htm",
+    "filing_type": "10-Q",
+    "interest_expense_mn": 15656.0,
+    "management_fee_mn": 3522.0,
+    "incentive_fee_mn": 2631.0,
+    "weighted_avg_interest_rate": 7.68,
+    "debt_revolver_mn": null,
+    "debt_unsecured_notes_mn": 62.0
   },
   {
     "quarter": "Q2 2024",
@@ -654,7 +754,21 @@
     "nav_per_share_yoy_growth_pct": -0.06,
     "origination_velocity_pct": 1.297,
     "cumulative_dividends_paid": 3.45,
-    "data_quality_score": 75.6
+    "data_quality_score": 79.2,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390024068355/ea0210000-10q_kayne.htm",
+    "filing_type": "10-Q",
+    "interest_expense_mn": 13239.0,
+    "management_fee_mn": 4251.0,
+    "incentive_fee_mn": 4109.0,
+    "significant_8k_filings": [
+      {
+        "date": "2024-08-13",
+        "type": "earnings_release",
+        "description": "Items: 2.02, 7.01, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390024068393/0001213900-24-068393-index.htm",
+        "impact": "neutral"
+      }
+    ]
   },
   {
     "quarter": "Q3 2024",
@@ -702,7 +816,21 @@
     "nav_per_share_yoy_growth_pct": 1.829,
     "origination_velocity_pct": 1.387,
     "cumulative_dividends_paid": 3.85,
-    "data_quality_score": 81.4
+    "data_quality_score": 84.0,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390024097564/ea0218487-10q_kayne.htm",
+    "filing_type": "10-Q",
+    "interest_expense_mn": 16069.0,
+    "management_fee_mn": 4764.0,
+    "incentive_fee_mn": 5605.0,
+    "significant_8k_filings": [
+      {
+        "date": "2024-11-13",
+        "type": "earnings_release",
+        "description": "Items: 2.02, 7.01, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390024097598/0001213900-24-097598-index.htm",
+        "impact": "neutral"
+      }
+    ]
   },
   {
     "quarter": "Q4 2024",
@@ -747,7 +875,11 @@
     "nav_per_share_yoy_growth_pct": 1.705,
     "origination_velocity_pct": -124350.0,
     "cumulative_dividends_paid": 4.25,
-    "data_quality_score": 60.0
+    "data_quality_score": 64.4,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390025019408/ea0229205-10k_kayneanderson.htm",
+    "filing_type": "10-K",
+    "management_fee_mn": 17.5,
+    "incentive_fee_mn": 17.4
   },
   {
     "quarter": "Q1 2025",
@@ -795,7 +927,21 @@
     "nav_per_share_yoy_growth_pct": -0.722,
     "origination_velocity_pct": 1.063,
     "cumulative_dividends_paid": 4.75,
-    "data_quality_score": 81.4
+    "data_quality_score": 84.0,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390025042033/ea0238650-10q_kayne.htm",
+    "filing_type": "10-Q",
+    "interest_expense_mn": 17125.0,
+    "management_fee_mn": 5131.0,
+    "incentive_fee_mn": 4490.0,
+    "significant_8k_filings": [
+      {
+        "date": "2025-05-12",
+        "type": "earnings_release",
+        "description": "Items: 2.02, 7.01, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390025042074/0001213900-25-042074-index.htm",
+        "impact": "neutral"
+      }
+    ]
   },
   {
     "quarter": "Q2 2025",
@@ -843,7 +989,21 @@
     "nav_per_share_yoy_growth_pct": -1.207,
     "origination_velocity_pct": 0.846,
     "cumulative_dividends_paid": 5.25,
-    "data_quality_score": 81.4
+    "data_quality_score": 84.0,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390025074300/ea0249372-10q_kayne.htm",
+    "filing_type": "10-Q",
+    "interest_expense_mn": 18384.0,
+    "management_fee_mn": 5412.0,
+    "incentive_fee_mn": 4452.0,
+    "significant_8k_filings": [
+      {
+        "date": "2025-08-11",
+        "type": "earnings_release",
+        "description": "Items: 2.02, 7.01, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390025074348/0001213900-25-074348-index.htm",
+        "impact": "neutral"
+      }
+    ]
   },
   {
     "quarter": "Q3 2025",
@@ -892,7 +1052,21 @@
     "nav_per_share_yoy_growth_pct": -2.156,
     "origination_velocity_pct": 1.134,
     "cumulative_dividends_paid": 5.7167,
-    "data_quality_score": 84.1
+    "data_quality_score": 86.3,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390025108212/ea0261574-10q_kayne.htm",
+    "filing_type": "10-Q",
+    "interest_expense_mn": 20207.0,
+    "management_fee_mn": 5583.0,
+    "incentive_fee_mn": 4419.0,
+    "significant_8k_filings": [
+      {
+        "date": "2025-11-10",
+        "type": "earnings_release",
+        "description": "Items: 2.02, 5.02, 7.01, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390025108256/0001213900-25-108256-index.htm",
+        "impact": "neutral"
+      }
+    ]
   },
   {
     "quarter": "Q4 2025",
@@ -940,6 +1114,13 @@
     "nav_per_share_yoy_growth_pct": -2.156,
     "origination_velocity_pct": -1.619,
     "cumulative_dividends_paid": 5.7167,
-    "data_quality_score": 76.7
+    "data_quality_score": 78.4,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390026022392/ea0274005-10k_kayne.htm",
+    "filing_type": "10-K",
+    "management_fee_mn": 21.7,
+    "incentive_fee_mn": 17.3,
+    "weighted_avg_interest_rate": 6.35,
+    "debt_revolver_mn": null,
+    "debt_unsecured_notes_mn": 86.0
   }
 ]

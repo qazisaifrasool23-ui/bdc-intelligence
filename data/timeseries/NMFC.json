@@ -40,7 +40,20 @@
     "fixed_rate_pct": 99.7,
     "origination_velocity_pct": 5.781,
     "cumulative_dividends_paid": 0.34,
-    "data_quality_score": 76.3
+    "data_quality_score": 79.5,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1496099/000149609920000004/nmfc-033120x10q.htm",
+    "filing_type": "10-Q",
+    "management_fee_mn": 13.858,
+    "incentive_fee_mn": 7.826,
+    "significant_8k_filings": [
+      {
+        "date": "2020-05-06",
+        "type": "earnings_release",
+        "description": "Items: 2.02, 7.01, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1496099/000115752320000682/0001157523-20-000682-index.htm",
+        "impact": "neutral"
+      }
+    ]
   },
   {
     "quarter": "Q2 2020",
@@ -84,7 +97,20 @@
     "fixed_rate_pct": 99.7,
     "origination_velocity_pct": 7.619,
     "cumulative_dividends_paid": 0.66,
-    "data_quality_score": 79.5
+    "data_quality_score": 82.2,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1496099/000149609920000007/nmfc-063020x10q.htm",
+    "filing_type": "10-Q",
+    "management_fee_mn": 13.134,
+    "incentive_fee_mn": 6.896,
+    "significant_8k_filings": [
+      {
+        "date": "2020-08-05",
+        "type": "earnings_release",
+        "description": "Items: 2.02, 7.01, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1496099/000115752320001134/0001157523-20-001134-index.htm",
+        "impact": "neutral"
+      }
+    ]
   },
   {
     "quarter": "Q3 2020",
@@ -128,7 +154,27 @@
     "fixed_rate_pct": 99.7,
     "origination_velocity_pct": 8.946,
     "cumulative_dividends_paid": 0.9733,
-    "data_quality_score": 79.5
+    "data_quality_score": 82.2,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1496099/000149609920000010/nmfc-093020x10q.htm",
+    "filing_type": "10-Q",
+    "management_fee_mn": 12.877,
+    "incentive_fee_mn": 7.135,
+    "significant_8k_filings": [
+      {
+        "date": "2020-11-04",
+        "type": "earnings_release",
+        "description": "Items: 2.02, 7.01, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1496099/000115752320001433/0001157523-20-001433-index.htm",
+        "impact": "neutral"
+      },
+      {
+        "date": "2020-10-06",
+        "type": "material_agreement",
+        "description": "Items: 1.01, 2.03, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1496099/000110465920112330/0001104659-20-112330-index.htm",
+        "impact": "neutral"
+      }
+    ]
   },
   {
     "quarter": "Q4 2020",
@@ -171,7 +217,18 @@
     "fixed_rate_pct": 99.7,
     "origination_velocity_pct": -6.882,
     "cumulative_dividends_paid": 0.9733,
-    "data_quality_score": 63.2
+    "data_quality_score": 66.7,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1496099/000149609921000003/nmfc-12312020x10k.htm",
+    "filing_type": "10-K",
+    "significant_8k_filings": [
+      {
+        "date": "2021-02-01",
+        "type": "material_agreement",
+        "description": "Items: 1.01, 2.03, 7.01, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1496099/000110465921010247/0001104659-21-010247-index.htm",
+        "impact": "neutral"
+      }
+    ]
   },
   {
     "quarter": "Q1 2021",
@@ -216,7 +273,41 @@
     "nav_per_share_yoy_growth_pct": 0.0,
     "origination_velocity_pct": 7.387,
     "cumulative_dividends_paid": 1.2733,
-    "data_quality_score": 80.0
+    "data_quality_score": 82.6,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1496099/000149609921000006/nmfc-033121x10q.htm",
+    "filing_type": "10-Q",
+    "management_fee_mn": 13.42,
+    "incentive_fee_mn": 7.248,
+    "significant_8k_filings": [
+      {
+        "date": "2021-05-05",
+        "type": "earnings_release",
+        "description": "Items: 2.02, 7.01, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1496099/000115752321000602/0001157523-21-000602-index.htm",
+        "impact": "neutral"
+      },
+      {
+        "date": "2021-05-05",
+        "type": "material_agreement",
+        "description": "Items: 1.01, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1496099/000110465921061436/0001104659-21-061436-index.htm",
+        "impact": "neutral"
+      },
+      {
+        "date": "2021-04-26",
+        "type": "material_agreement",
+        "description": "Items: 1.01, 1.02, 2.03, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1496099/000110465921055005/0001104659-21-055005-index.htm",
+        "impact": "neutral"
+      },
+      {
+        "date": "2021-03-31",
+        "type": "material_agreement",
+        "description": "Items: 1.01, 2.03, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1496099/000110465921044866/0001104659-21-044866-index.htm",
+        "impact": "neutral"
+      }
+    ]
   },
   {
     "quarter": "Q2 2021",
@@ -262,7 +353,20 @@
     "nav_per_share_yoy_growth_pct": 0.0,
     "origination_velocity_pct": 9.696,
     "cumulative_dividends_paid": 1.5733,
-    "data_quality_score": 80.5
+    "data_quality_score": 83.0,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1496099/000149609921000011/nmfc-063021x10q.htm",
+    "filing_type": "10-Q",
+    "management_fee_mn": 13.725,
+    "incentive_fee_mn": 7.298,
+    "significant_8k_filings": [
+      {
+        "date": "2021-08-04",
+        "type": "earnings_release",
+        "description": "Items: 2.02, 7.01, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1496099/000115752321001001/0001157523-21-001001-index.htm",
+        "impact": "neutral"
+      }
+    ]
   },
   {
     "quarter": "Q3 2021",
@@ -308,7 +412,27 @@
     "nav_per_share_yoy_growth_pct": 0.0,
     "origination_velocity_pct": 25.54,
     "cumulative_dividends_paid": 1.8733,
-    "data_quality_score": 80.5
+    "data_quality_score": 83.0,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1496099/000149609921000015/nmfc-093021x10q.htm",
+    "filing_type": "10-Q",
+    "management_fee_mn": 13.74,
+    "incentive_fee_mn": 7.661,
+    "significant_8k_filings": [
+      {
+        "date": "2021-11-04",
+        "type": "material_agreement",
+        "description": "Items: 1.01, 2.02, 7.01, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1496099/000110465921133792/0001104659-21-133792-index.htm",
+        "impact": "neutral"
+      },
+      {
+        "date": "2021-11-03",
+        "type": "material_agreement",
+        "description": "Items: 1.01, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1496099/000110465921133593/0001104659-21-133593-index.htm",
+        "impact": "neutral"
+      }
+    ]
   },
   {
     "quarter": "Q4 2021",
@@ -354,7 +478,18 @@
     "nav_per_share_yoy_growth_pct": 0.0,
     "origination_velocity_pct": -136.557,
     "cumulative_dividends_paid": 2.1733,
-    "data_quality_score": 73.2
+    "data_quality_score": 75.6,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1496099/000149609922000002/nmfc-12312021x10k.htm",
+    "filing_type": "10-K",
+    "significant_8k_filings": [
+      {
+        "date": "2022-02-11",
+        "type": "officer_director_change",
+        "description": "Items: 5.02",
+        "url": "https://www.sec.gov/Archives/edgar/data/1496099/000110465922020573/0001104659-22-020573-index.htm",
+        "impact": "neutral"
+      }
+    ]
   },
   {
     "quarter": "Q1 2022",
@@ -400,7 +535,20 @@
     "nav_per_share_yoy_growth_pct": 0.0,
     "origination_velocity_pct": 4.724,
     "cumulative_dividends_paid": 2.4733,
-    "data_quality_score": 80.5
+    "data_quality_score": 83.0,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1496099/000149609922000004/nmfc-033122x10q.htm",
+    "filing_type": "10-Q",
+    "management_fee_mn": 11.553,
+    "incentive_fee_mn": 7.477,
+    "significant_8k_filings": [
+      {
+        "date": "2022-05-09",
+        "type": "earnings_release",
+        "description": "Items: 2.02, 7.01, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1496099/000115752322000589/0001157523-22-000589-index.htm",
+        "impact": "neutral"
+      }
+    ]
   },
   {
     "quarter": "Q2 2022",
@@ -446,7 +594,20 @@
     "nav_per_share_yoy_growth_pct": 0.0,
     "origination_velocity_pct": 12.035,
     "cumulative_dividends_paid": 2.7733,
-    "data_quality_score": 80.5
+    "data_quality_score": 83.0,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1496099/000149609922000007/nmfc-20220630.htm",
+    "filing_type": "10-Q",
+    "management_fee_mn": 11.77,
+    "incentive_fee_mn": 7.926,
+    "significant_8k_filings": [
+      {
+        "date": "2022-08-08",
+        "type": "earnings_release",
+        "description": "Items: 2.02, 7.01, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1496099/000115752322001076/0001157523-22-001076-index.htm",
+        "impact": "neutral"
+      }
+    ]
   },
   {
     "quarter": "Q3 2022",
@@ -492,7 +653,34 @@
     "nav_per_share_yoy_growth_pct": 0.0,
     "origination_velocity_pct": 16.163,
     "cumulative_dividends_paid": 3.0733,
-    "data_quality_score": 80.5
+    "data_quality_score": 78.7,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1496099/000149609922000014/nmfc-20220930.htm",
+    "filing_type": "10-Q",
+    "management_fee_mn": null,
+    "incentive_fee_mn": null,
+    "significant_8k_filings": [
+      {
+        "date": "2022-11-08",
+        "type": "earnings_release",
+        "description": "Items: 2.02, 5.02, 7.01, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1496099/000149609922000012/0001496099-22-000012-index.htm",
+        "impact": "neutral"
+      },
+      {
+        "date": "2022-11-02",
+        "type": "material_agreement",
+        "description": "Items: 1.01, 2.03, 8.01, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1496099/000110465922114035/0001104659-22-114035-index.htm",
+        "impact": "neutral"
+      },
+      {
+        "date": "2022-10-28",
+        "type": "material_agreement",
+        "description": "Items: 1.01, 2.02, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1496099/000110465922112241/0001104659-22-112241-index.htm",
+        "impact": "neutral"
+      }
+    ]
   },
   {
     "quarter": "Q4 2022",
@@ -538,7 +726,11 @@
     "nav_per_share_yoy_growth_pct": 0.0,
     "origination_velocity_pct": -155.072,
     "cumulative_dividends_paid": 3.3733,
-    "data_quality_score": 73.2
+    "data_quality_score": 76.1,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1496099/000149609923000003/nmfc-20221231.htm",
+    "filing_type": "10-K",
+    "management_fee_mn": 46.617,
+    "incentive_fee_mn": 29901.0
   },
   {
     "quarter": "Q1 2023",
@@ -584,7 +776,41 @@
     "nav_per_share_yoy_growth_pct": 0.0,
     "origination_velocity_pct": 2.857,
     "cumulative_dividends_paid": 3.6933,
-    "data_quality_score": 80.5
+    "data_quality_score": 78.7,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1496099/000149609923000009/nmfc-20230331.htm",
+    "filing_type": "10-Q",
+    "management_fee_mn": null,
+    "incentive_fee_mn": null,
+    "significant_8k_filings": [
+      {
+        "date": "2023-05-15",
+        "type": "delisting",
+        "description": "Items: 3.01, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1496099/000110465923060866/0001104659-23-060866-index.htm",
+        "impact": "neutral"
+      },
+      {
+        "date": "2023-05-08",
+        "type": "earnings_release",
+        "description": "Items: 2.02, 7.01, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1496099/000149609923000007/0001496099-23-000007-index.htm",
+        "impact": "neutral"
+      },
+      {
+        "date": "2023-05-04",
+        "type": "material_agreement",
+        "description": "Items: 1.01, 2.03, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1496099/000110465923056073/0001104659-23-056073-index.htm",
+        "impact": "neutral"
+      },
+      {
+        "date": "2023-04-28",
+        "type": "officer_director_change",
+        "description": "Items: 5.02, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1496099/000110465923053060/0001104659-23-053060-index.htm",
+        "impact": "neutral"
+      }
+    ]
   },
   {
     "quarter": "Q2 2023",
@@ -630,7 +856,41 @@
     "nav_per_share_yoy_growth_pct": 0.0,
     "origination_velocity_pct": 3.875,
     "cumulative_dividends_paid": 4.0133,
-    "data_quality_score": 80.5
+    "data_quality_score": 78.7,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1496099/000149609923000018/nmfc-20230630.htm",
+    "filing_type": "10-Q",
+    "management_fee_mn": null,
+    "incentive_fee_mn": null,
+    "significant_8k_filings": [
+      {
+        "date": "2023-08-09",
+        "type": "material_agreement",
+        "description": "Items: 1.01, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1496099/000110465923089327/0001104659-23-089327-index.htm",
+        "impact": "neutral"
+      },
+      {
+        "date": "2023-08-02",
+        "type": "earnings_release",
+        "description": "Items: 2.02, 7.01, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1496099/000149609923000017/0001496099-23-000017-index.htm",
+        "impact": "neutral"
+      },
+      {
+        "date": "2023-07-06",
+        "type": "material_agreement",
+        "description": "Items: 1.01, 2.03, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1496099/000110465923078820/0001104659-23-078820-index.htm",
+        "impact": "neutral"
+      },
+      {
+        "date": "2023-06-30",
+        "type": "officer_director_change",
+        "description": "Items: 5.02, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1496099/000110465923077117/0001104659-23-077117-index.htm",
+        "impact": "neutral"
+      }
+    ]
   },
   {
     "quarter": "Q3 2023",
@@ -676,7 +936,41 @@
     "nav_per_share_yoy_growth_pct": 0.0,
     "origination_velocity_pct": 4.436,
     "cumulative_dividends_paid": 4.3333,
-    "data_quality_score": 80.5
+    "data_quality_score": 78.7,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1496099/000149609923000028/nmfc-20230930.htm",
+    "filing_type": "10-Q",
+    "management_fee_mn": null,
+    "incentive_fee_mn": null,
+    "significant_8k_filings": [
+      {
+        "date": "2023-11-13",
+        "type": "material_agreement",
+        "description": "Items: 1.01, 2.03, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1496099/000162828023038649/0001628280-23-038649-index.htm",
+        "impact": "neutral"
+      },
+      {
+        "date": "2023-11-07",
+        "type": "material_agreement",
+        "description": "Items: 1.01, 2.03, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1496099/000162828023037431/0001628280-23-037431-index.htm",
+        "impact": "neutral"
+      },
+      {
+        "date": "2023-11-02",
+        "type": "earnings_release",
+        "description": "Items: 2.02, 7.01, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1496099/000149609923000026/0001496099-23-000026-index.htm",
+        "impact": "neutral"
+      },
+      {
+        "date": "2023-10-30",
+        "type": "material_agreement",
+        "description": "Items: 1.01, 2.03, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1496099/000110465923112587/0001104659-23-112587-index.htm",
+        "impact": "neutral"
+      }
+    ]
   },
   {
     "quarter": "Q4 2023",
@@ -724,7 +1018,41 @@
     "nav_per_share_yoy_growth_pct": 0.0,
     "origination_velocity_pct": -20.265,
     "cumulative_dividends_paid": 4.6533,
-    "data_quality_score": 76.7
+    "data_quality_score": 79.6,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1496099/000149609924000012/nmfc-20231231.htm",
+    "filing_type": "10-K",
+    "management_fee_mn": 45.61,
+    "incentive_fee_mn": 38.303,
+    "significant_8k_filings": [
+      {
+        "date": "2024-02-08",
+        "type": "material_agreement",
+        "description": "Items: 1.01, 2.03, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1496099/000110465924012311/0001104659-24-012311-index.htm",
+        "impact": "neutral"
+      },
+      {
+        "date": "2024-02-01",
+        "type": "material_agreement",
+        "description": "Items: 1.01, 2.03, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1496099/000162828024002942/0001628280-24-002942-index.htm",
+        "impact": "neutral"
+      },
+      {
+        "date": "2024-01-26",
+        "type": "material_agreement",
+        "description": "Items: 1.01, 2.03, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1496099/000162828024002377/0001628280-24-002377-index.htm",
+        "impact": "neutral"
+      },
+      {
+        "date": "2024-01-18",
+        "type": "earnings_release",
+        "description": "Items: 2.02, 7.01, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1496099/000110465924004666/0001104659-24-004666-index.htm",
+        "impact": "neutral"
+      }
+    ]
   },
   {
     "quarter": "Q1 2024",
@@ -772,7 +1100,27 @@
     "nav_per_share_yoy_growth_pct": 0.0,
     "origination_velocity_pct": 6.218,
     "cumulative_dividends_paid": 4.9733,
-    "data_quality_score": 86.0
+    "data_quality_score": 83.7,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1496099/000149609924000023/nmfc-20240331.htm",
+    "filing_type": "10-Q",
+    "management_fee_mn": null,
+    "incentive_fee_mn": null,
+    "significant_8k_filings": [
+      {
+        "date": "2024-05-01",
+        "type": "earnings_release",
+        "description": "Items: 2.02, 7.01, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1496099/000149609924000021/0001496099-24-000021-index.htm",
+        "impact": "neutral"
+      },
+      {
+        "date": "2024-04-15",
+        "type": "material_agreement",
+        "description": "Items: 1.01, 2.03, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1496099/000110465924047324/0001104659-24-047324-index.htm",
+        "impact": "neutral"
+      }
+    ]
   },
   {
     "quarter": "Q2 2024",
@@ -818,7 +1166,34 @@
     "nav_per_share_yoy_growth_pct": 0.0,
     "origination_velocity_pct": 19.657,
     "cumulative_dividends_paid": 5.2933,
-    "data_quality_score": 80.5
+    "data_quality_score": 78.7,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1496099/000149609924000034/nmfc-20240630.htm",
+    "filing_type": "10-Q",
+    "management_fee_mn": null,
+    "incentive_fee_mn": null,
+    "significant_8k_filings": [
+      {
+        "date": "2024-08-01",
+        "type": "material_agreement",
+        "description": "Items: 1.01, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1496099/000110465924084978/0001104659-24-084978-index.htm",
+        "impact": "neutral"
+      },
+      {
+        "date": "2024-07-31",
+        "type": "earnings_release",
+        "description": "Items: 2.02, 7.01, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1496099/000149609924000032/0001496099-24-000032-index.htm",
+        "impact": "neutral"
+      },
+      {
+        "date": "2024-07-09",
+        "type": "material_agreement",
+        "description": "Items: 1.01, 2.03, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1496099/000110465924078541/0001104659-24-078541-index.htm",
+        "impact": "neutral"
+      }
+    ]
   },
   {
     "quarter": "Q3 2024",
@@ -864,7 +1239,34 @@
     "nav_per_share_yoy_growth_pct": 0.0,
     "origination_velocity_pct": 23.663,
     "cumulative_dividends_paid": 5.6133,
-    "data_quality_score": 80.5
+    "data_quality_score": 78.7,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1496099/000149609924000040/nmfc-20240930.htm",
+    "filing_type": "10-Q",
+    "management_fee_mn": null,
+    "incentive_fee_mn": null,
+    "significant_8k_filings": [
+      {
+        "date": "2024-10-30",
+        "type": "earnings_release",
+        "description": "Items: 2.02, 7.01, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1496099/000149609924000038/0001496099-24-000038-index.htm",
+        "impact": "neutral"
+      },
+      {
+        "date": "2024-10-16",
+        "type": "material_agreement",
+        "description": "Items: 1.01, 2.03, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1496099/000110465924109173/0001104659-24-109173-index.htm",
+        "impact": "neutral"
+      },
+      {
+        "date": "2024-10-03",
+        "type": "material_agreement",
+        "description": "Items: 1.01, 1.02, 2.03, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1496099/000110465924105932/0001104659-24-105932-index.htm",
+        "impact": "neutral"
+      }
+    ]
   },
   {
     "quarter": "Q4 2024",
@@ -910,7 +1312,20 @@
     "nav_per_share_yoy_growth_pct": 0.0,
     "origination_velocity_pct": -212.422,
     "cumulative_dividends_paid": 5.9333,
-    "data_quality_score": 73.2
+    "data_quality_score": 76.6,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1496099/000149609925000010/nmfc-20241231.htm",
+    "filing_type": "10-K",
+    "management_fee_mn": 45.522,
+    "incentive_fee_mn": 36.385,
+    "significant_8k_filings": [
+      {
+        "date": "2025-02-04",
+        "type": "material_agreement",
+        "description": "Items: 1.01, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1496099/000158064225000763/0001580642-25-000763-index.htm",
+        "impact": "neutral"
+      }
+    ]
   },
   {
     "quarter": "Q1 2025",
@@ -956,7 +1371,27 @@
     "nav_per_share_yoy_growth_pct": 0.0,
     "origination_velocity_pct": 3.916,
     "cumulative_dividends_paid": 6.2533,
-    "data_quality_score": 80.5
+    "data_quality_score": 78.7,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1496099/000149609925000018/nmfc-20250331.htm",
+    "filing_type": "10-Q",
+    "management_fee_mn": null,
+    "incentive_fee_mn": null,
+    "significant_8k_filings": [
+      {
+        "date": "2025-05-05",
+        "type": "earnings_release",
+        "description": "Items: 2.02, 7.01, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1496099/000149609925000017/0001496099-25-000017-index.htm",
+        "impact": "neutral"
+      },
+      {
+        "date": "2025-04-02",
+        "type": "material_agreement",
+        "description": "Items: 1.01, 2.03, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1496099/000158064225002089/0001580642-25-002089-index.htm",
+        "impact": "neutral"
+      }
+    ]
   },
   {
     "quarter": "Q2 2025",
@@ -1002,7 +1437,20 @@
     "nav_per_share_yoy_growth_pct": 0.0,
     "origination_velocity_pct": 7.86,
     "cumulative_dividends_paid": 6.5733,
-    "data_quality_score": 80.5
+    "data_quality_score": 78.7,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1496099/000149609925000027/nmfc-20250630.htm",
+    "filing_type": "10-Q",
+    "management_fee_mn": null,
+    "incentive_fee_mn": null,
+    "significant_8k_filings": [
+      {
+        "date": "2025-08-04",
+        "type": "earnings_release",
+        "description": "Items: 2.02, 7.01, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1496099/000149609925000025/0001496099-25-000025-index.htm",
+        "impact": "neutral"
+      }
+    ]
   },
   {
     "quarter": "Q3 2025",
@@ -1048,7 +1496,27 @@
     "nav_per_share_yoy_growth_pct": 0.0,
     "origination_velocity_pct": 12.107,
     "cumulative_dividends_paid": 6.8933,
-    "data_quality_score": 80.5
+    "data_quality_score": 78.7,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1496099/000149609925000035/nmfc-20250930.htm",
+    "filing_type": "10-Q",
+    "management_fee_mn": null,
+    "incentive_fee_mn": null,
+    "significant_8k_filings": [
+      {
+        "date": "2025-11-03",
+        "type": "earnings_release",
+        "description": "Items: 2.02, 7.01, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1496099/000149609925000034/0001496099-25-000034-index.htm",
+        "impact": "neutral"
+      },
+      {
+        "date": "2025-10-29",
+        "type": "material_agreement",
+        "description": "Items: 1.01, 2.03, 8.01, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1496099/000158064225006814/0001580642-25-006814-index.htm",
+        "impact": "neutral"
+      }
+    ]
   },
   {
     "quarter": "Q4 2025",
@@ -1092,6 +1560,19 @@
     "nav_per_share_yoy_growth_pct": 0.0,
     "origination_velocity_pct": -10.909,
     "cumulative_dividends_paid": 6.8933,
-    "data_quality_score": 71.8
+    "data_quality_score": 75.6,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1496099/000149609926000008/nmfc-20251231.htm",
+    "filing_type": "10-K",
+    "management_fee_mn": 38.8,
+    "incentive_fee_mn": 30.7,
+    "significant_8k_filings": [
+      {
+        "date": "2026-01-16",
+        "type": "officer_director_change",
+        "description": "Items: 5.02, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/1496099/000158064226000287/0001580642-26-000287-index.htm",
+        "impact": "neutral"
+      }
+    ]
   }
 ]

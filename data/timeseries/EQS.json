@@ -35,7 +35,10 @@
     "price_to_nav": null,
     "total_return_index": 2.88,
     "avg_position_size_mn": 0.69,
-    "data_quality_score": 33.3
+    "data_quality_score": 37.8,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/878932/000167343120000016/f10q_equus03312020.htm",
+    "filing_type": "10-Q",
+    "interest_expense_mn": null
   },
   {
     "quarter": "Q2 2020",
@@ -73,7 +76,10 @@
     "price_to_nav": null,
     "total_return_index": 3.07,
     "avg_position_size_mn": 1.348,
-    "data_quality_score": 33.3
+    "data_quality_score": 37.8,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/878932/000132241020000004/f10q_equus06302020.htm",
+    "filing_type": "10-Q",
+    "interest_expense_mn": null
   },
   {
     "quarter": "Q3 2020",
@@ -111,7 +117,19 @@
     "price_to_nav": null,
     "total_return_index": 2.77,
     "avg_position_size_mn": 1.251,
-    "data_quality_score": 33.3
+    "data_quality_score": 39.5,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/878932/000132241020000028/f10q_equus09302020.htm",
+    "filing_type": "10-Q",
+    "interest_expense_mn": null,
+    "significant_8k_filings": [
+      {
+        "date": "2020-10-23",
+        "type": "officer_director_change",
+        "description": "Items: 5.02",
+        "url": "https://www.sec.gov/Archives/edgar/data/878932/000171254320000004/0001712543-20-000004-index.htm",
+        "impact": "neutral"
+      }
+    ]
   },
   {
     "quarter": "Q4 2020",
@@ -147,7 +165,10 @@
     "credit_facility_drawn_mn": null,
     "unused_capacity_mn": null,
     "price_to_nav": null,
-    "data_quality_score": 6.5
+    "data_quality_score": 17.1,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/878932/000132241021000035/f10k_equus12312020.htm",
+    "filing_type": "10-K",
+    "interest_expense_mn": 27.0
   },
   {
     "quarter": "Q1 2021",
@@ -186,7 +207,10 @@
     "total_return_index": 2.52,
     "avg_position_size_mn": 0.34,
     "nav_per_share_yoy_growth_pct": -12.5,
-    "data_quality_score": 32.4
+    "data_quality_score": 39.5,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/878932/000132241021000079/f10q_equus03312021.htm",
+    "filing_type": "10-Q",
+    "interest_expense_mn": 1.0
   },
   {
     "quarter": "Q2 2021",
@@ -225,7 +249,10 @@
     "total_return_index": 2.57,
     "avg_position_size_mn": 0.41,
     "nav_per_share_yoy_growth_pct": -16.287,
-    "data_quality_score": 35.3
+    "data_quality_score": 39.5,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/878932/000132241021000096/f10q_equus06302021.htm",
+    "filing_type": "10-Q",
+    "interest_expense_mn": null
   },
   {
     "quarter": "Q3 2021",
@@ -264,7 +291,10 @@
     "total_return_index": 2.68,
     "avg_position_size_mn": 0.462,
     "nav_per_share_yoy_growth_pct": -3.249,
-    "data_quality_score": 35.3
+    "data_quality_score": 39.5,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/878932/000132241021000136/f10q_equus09312021.htm",
+    "filing_type": "10-Q",
+    "interest_expense_mn": null
   },
   {
     "quarter": "Q4 2021",
@@ -300,7 +330,10 @@
     "credit_facility_drawn_mn": null,
     "unused_capacity_mn": null,
     "price_to_nav": null,
-    "data_quality_score": 6.5
+    "data_quality_score": 17.1,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/878932/000171254322000022/f10k_equus12312021.htm",
+    "filing_type": "10-K",
+    "interest_expense_mn": 3.0
   },
   {
     "quarter": "Q1 2022",
@@ -338,7 +371,9 @@
     "price_to_nav": null,
     "total_return_index": 2.77,
     "nav_per_share_yoy_growth_pct": 9.921,
-    "data_quality_score": 24.2
+    "data_quality_score": 30.6,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/878932/000171254322000064/f10q_equus03312022.htm",
+    "filing_type": "10-Q"
   },
   {
     "quarter": "Q2 2022",
@@ -376,7 +411,9 @@
     "price_to_nav": null,
     "total_return_index": 2.75,
     "nav_per_share_yoy_growth_pct": 7.004,
-    "data_quality_score": 27.3
+    "data_quality_score": 33.3,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/878932/000171254322000109/f10q_equus6302022.htm",
+    "filing_type": "10-Q"
   },
   {
     "quarter": "Q3 2022",
@@ -414,7 +451,9 @@
     "price_to_nav": null,
     "total_return_index": 2.68,
     "nav_per_share_yoy_growth_pct": 0.0,
-    "data_quality_score": 27.3
+    "data_quality_score": 33.3,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/878932/000171254322000179/f10q_equus09302022.htm",
+    "filing_type": "10-Q"
   },
   {
     "quarter": "Q4 2022",
@@ -450,7 +489,10 @@
     "credit_facility_drawn_mn": null,
     "unused_capacity_mn": null,
     "price_to_nav": null,
-    "data_quality_score": 0.0
+    "data_quality_score": 11.4,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/878932/000171254323000015/f10k_equus12312022.htm",
+    "filing_type": "10-K",
+    "interest_expense_mn": 4.0
   },
   {
     "quarter": "Q1 2023",
@@ -489,7 +531,10 @@
     "total_return_index": 2.52,
     "avg_position_size_mn": 0.745,
     "nav_per_share_yoy_growth_pct": -9.025,
-    "data_quality_score": 35.3
+    "data_quality_score": 42.1,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/878932/000171254323000026/f10q_equus03312023.htm",
+    "filing_type": "10-Q",
+    "interest_expense_mn": 1.0
   },
   {
     "quarter": "Q2 2023",
@@ -528,7 +573,10 @@
     "total_return_index": 2.96,
     "avg_position_size_mn": 1.055,
     "nav_per_share_yoy_growth_pct": 7.636,
-    "data_quality_score": 38.2
+    "data_quality_score": 42.1,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/878932/000171254323000053/f10q_equus06302023.htm",
+    "filing_type": "10-Q",
+    "interest_expense_mn": null
   },
   {
     "quarter": "Q3 2023",
@@ -567,7 +615,10 @@
     "total_return_index": 3.49,
     "avg_position_size_mn": 1.502,
     "nav_per_share_yoy_growth_pct": 30.224,
-    "data_quality_score": 38.2
+    "data_quality_score": 42.1,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/878932/000171254323000083/f10q_equus09302023.htm",
+    "filing_type": "10-Q",
+    "interest_expense_mn": null
   },
   {
     "quarter": "Q4 2023",
@@ -603,7 +654,10 @@
     "credit_facility_drawn_mn": null,
     "unused_capacity_mn": null,
     "price_to_nav": null,
-    "data_quality_score": 0.0
+    "data_quality_score": 11.4,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/878932/000171254324000005/f10k_equus12312023.htm",
+    "filing_type": "10-K",
+    "interest_expense_mn": 25.0
   },
   {
     "quarter": "Q1 2024",
@@ -642,7 +696,10 @@
     "total_return_index": 3.38,
     "avg_position_size_mn": 1.815,
     "nav_per_share_yoy_growth_pct": 34.127,
-    "data_quality_score": 35.3
+    "data_quality_score": 39.5,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/878932/000171254324000030/f10q_equus03312024.htm",
+    "filing_type": "10-Q",
+    "interest_expense_mn": null
   },
   {
     "quarter": "Q2 2024",
@@ -681,7 +738,10 @@
     "total_return_index": 3.66,
     "avg_position_size_mn": 2.022,
     "nav_per_share_yoy_growth_pct": 23.649,
-    "data_quality_score": 38.2
+    "data_quality_score": 42.1,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/878932/000171254324000057/f10q_equus06302024.htm",
+    "filing_type": "10-Q",
+    "interest_expense_mn": null
   },
   {
     "quarter": "Q3 2024",
@@ -720,7 +780,26 @@
     "total_return_index": 2.96,
     "avg_position_size_mn": 1.705,
     "nav_per_share_yoy_growth_pct": -15.186,
-    "data_quality_score": 38.2
+    "data_quality_score": 46.2,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/878932/000171254324000068/f10q_equus09302024.htm",
+    "filing_type": "10-Q",
+    "interest_expense_mn": 0.063,
+    "significant_8k_filings": [
+      {
+        "date": "2024-11-07",
+        "type": "delisting",
+        "description": "Items: 3.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/878932/000171254324000065/0001712543-24-000065-index.htm",
+        "impact": "neutral"
+      },
+      {
+        "date": "2024-10-22",
+        "type": "officer_director_change",
+        "description": "Items: 5.02",
+        "url": "https://www.sec.gov/Archives/edgar/data/878932/000171254324000063/0001712543-24-000063-index.htm",
+        "impact": "neutral"
+      }
+    ]
   },
   {
     "quarter": "Q4 2024",
@@ -756,7 +835,19 @@
     "credit_facility_drawn_mn": null,
     "unused_capacity_mn": null,
     "price_to_nav": null,
-    "data_quality_score": 0.0
+    "data_quality_score": 13.9,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/878932/000171254325000016/f10k_equus12312024.htm",
+    "filing_type": "10-K",
+    "interest_expense_mn": 138.0,
+    "significant_8k_filings": [
+      {
+        "date": "2025-01-06",
+        "type": "officer_director_change",
+        "description": "Items: 5.02, 8.01, 9.01",
+        "url": "https://www.sec.gov/Archives/edgar/data/878932/000171254325000002/0001712543-25-000002-index.htm",
+        "impact": "neutral"
+      }
+    ]
   },
   {
     "quarter": "Q1 2025",
@@ -795,7 +886,10 @@
     "total_return_index": 2.52,
     "avg_position_size_mn": 1.318,
     "nav_per_share_yoy_growth_pct": -25.444,
-    "data_quality_score": 41.2
+    "data_quality_score": 44.7,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/878932/000171254325000034/f10q_equus03312025.htm",
+    "filing_type": "10-Q",
+    "interest_expense_mn": null
   },
   {
     "quarter": "Q2 2025",
@@ -834,7 +928,10 @@
     "total_return_index": 2.51,
     "avg_position_size_mn": 1.339,
     "nav_per_share_yoy_growth_pct": -31.421,
-    "data_quality_score": 44.1
+    "data_quality_score": 50.0,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/878932/000171254325000061/f10q_equus06302025.htm",
+    "filing_type": "10-Q",
+    "interest_expense_mn": 0.051
   },
   {
     "quarter": "Q3 2025",
@@ -873,7 +970,10 @@
     "total_return_index": 1.9,
     "avg_position_size_mn": 1.078,
     "nav_per_share_yoy_growth_pct": -35.811,
-    "data_quality_score": 38.2
+    "data_quality_score": 44.7,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/878932/000087893225000007/f10q_equus09302025.htm",
+    "filing_type": "10-Q",
+    "interest_expense_mn": 0.412
   },
   {
     "quarter": "Q4 2025",
@@ -910,6 +1010,9 @@
     "unused_capacity_mn": null,
     "price_to_nav": null,
     "total_return_index": 1.9,
-    "data_quality_score": 25.0
+    "data_quality_score": 30.6,
+    "source_url": "https://www.sec.gov/Archives/edgar/data/878932/000171254326000024/f10k_equus212312025.htm",
+    "filing_type": "10-K",
+    "interest_expense_mn": null
   }
 ]
