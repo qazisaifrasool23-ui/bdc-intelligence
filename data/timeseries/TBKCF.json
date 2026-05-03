@@ -32,13 +32,20 @@
     "realized_gain_loss_3mo_mn": null,
     "credit_facility_drawn_mn": 300.0,
     "unused_capacity_mn": 20.0,
-    "price_to_nav": null
+    "price_to_nav": null,
+    "net_interest_spread": 0.3,
+    "total_return_index": 26.0,
+    "liquidity_pct_of_portfolio": 2.426,
+    "avg_position_size_mn": 24.25,
+    "fixed_rate_pct": 0.0,
+    "cumulative_dividends_paid": 0.75,
+    "data_quality_score": 45.9
   },
   {
     "quarter": "Q1 2023",
     "period_end": "2023-03-31",
     "nav_per_share": 25.67,
-    "nav_per_share_qoq_change": null,
+    "nav_per_share_qoq_change": 0.42,
     "net_assets_mn": 545.52,
     "total_investments_fv_mn": 884.633,
     "total_debt_mn": 383.1,
@@ -67,7 +74,13 @@
     "realized_gain_loss_3mo_mn": null,
     "credit_facility_drawn_mn": 300.0,
     "unused_capacity_mn": 65.0,
-    "price_to_nav": null
+    "price_to_nav": null,
+    "dividend_change_flag": -1,
+    "total_return_index": 26.6,
+    "liquidity_pct_of_portfolio": 7.348,
+    "avg_position_size_mn": 17.346,
+    "cumulative_dividends_paid": 0.93,
+    "data_quality_score": 61.1
   },
   {
     "quarter": "Q2 2023",
@@ -102,7 +115,13 @@
     "realized_gain_loss_3mo_mn": null,
     "credit_facility_drawn_mn": 300.0,
     "unused_capacity_mn": 91.4,
-    "price_to_nav": null
+    "price_to_nav": null,
+    "dividend_change_flag": 1,
+    "total_return_index": 27.04,
+    "liquidity_pct_of_portfolio": 9.285,
+    "avg_position_size_mn": 17.578,
+    "cumulative_dividends_paid": 1.29,
+    "data_quality_score": 61.1
   },
   {
     "quarter": "Q3 2023",
@@ -137,7 +156,13 @@
     "realized_gain_loss_3mo_mn": null,
     "credit_facility_drawn_mn": 300.0,
     "unused_capacity_mn": 117.0,
-    "price_to_nav": null
+    "price_to_nav": null,
+    "dividend_change_flag": 1,
+    "total_return_index": 27.52,
+    "liquidity_pct_of_portfolio": 9.65,
+    "avg_position_size_mn": 6.589,
+    "cumulative_dividends_paid": 1.72,
+    "data_quality_score": 61.1
   },
   {
     "quarter": "Q4 2023",
@@ -172,7 +197,14 @@
     "realized_gain_loss_3mo_mn": null,
     "credit_facility_drawn_mn": 300.0,
     "unused_capacity_mn": 150.0,
-    "price_to_nav": null
+    "price_to_nav": null,
+    "dividend_change_flag": 0,
+    "total_return_index": 27.56,
+    "liquidity_pct_of_portfolio": 10.726,
+    "avg_position_size_mn": 7.171,
+    "nav_per_share_yoy_growth_pct": 0.634,
+    "cumulative_dividends_paid": 2.15,
+    "data_quality_score": 51.4
   },
   {
     "quarter": "Q1 2024",
@@ -207,7 +239,15 @@
     "realized_gain_loss_3mo_mn": null,
     "credit_facility_drawn_mn": 300.0,
     "unused_capacity_mn": 205.0,
-    "price_to_nav": null
+    "price_to_nav": null,
+    "dividend_change_flag": 1,
+    "total_return_index": 28.24,
+    "liquidity_pct_of_portfolio": 11.2,
+    "avg_position_size_mn": 8.885,
+    "nii_per_share_yoy_growth_pct": 44.681,
+    "nav_per_share_yoy_growth_pct": -1.052,
+    "cumulative_dividends_paid": 2.84,
+    "data_quality_score": 63.2
   },
   {
     "quarter": "Q2 2024",
@@ -242,7 +282,17 @@
     "realized_gain_loss_3mo_mn": null,
     "credit_facility_drawn_mn": 300.0,
     "unused_capacity_mn": 202.0,
-    "price_to_nav": null
+    "price_to_nav": null,
+    "dividend_change_flag": 0,
+    "total_return_index": 28.98,
+    "liquidity_pct_of_portfolio": 8.644,
+    "avg_position_size_mn": 10.769,
+    "cash_income_mn": 111.649,
+    "cash_income_pct": 99.26,
+    "nii_per_share_yoy_growth_pct": 37.255,
+    "nav_per_share_yoy_growth_pct": -1.165,
+    "cumulative_dividends_paid": 3.53,
+    "data_quality_score": 67.5
   },
   {
     "quarter": "Q3 2024",
@@ -277,7 +327,17 @@
     "realized_gain_loss_3mo_mn": null,
     "credit_facility_drawn_mn": 500.0,
     "unused_capacity_mn": 260.1,
-    "price_to_nav": null
+    "price_to_nav": null,
+    "dividend_change_flag": 1,
+    "total_return_index": 29.6967,
+    "liquidity_pct_of_portfolio": 9.363,
+    "avg_position_size_mn": 12.292,
+    "cash_income_mn": 191.569,
+    "cash_income_pct": 99.4,
+    "nii_per_share_yoy_growth_pct": 24.561,
+    "nav_per_share_yoy_growth_pct": -1.279,
+    "cumulative_dividends_paid": 4.2267,
+    "data_quality_score": 70.0
   },
   {
     "quarter": "Q4 2024",
@@ -312,7 +372,14 @@
     "realized_gain_loss_3mo_mn": null,
     "credit_facility_drawn_mn": 500.0,
     "unused_capacity_mn": 251.3,
-    "price_to_nav": null
+    "price_to_nav": null,
+    "dividend_change_flag": 0,
+    "total_return_index": 30.2234,
+    "liquidity_pct_of_portfolio": 7.949,
+    "avg_position_size_mn": 13.509,
+    "nav_per_share_yoy_growth_pct": -0.433,
+    "cumulative_dividends_paid": 4.9234,
+    "data_quality_score": 54.1
   },
   {
     "quarter": "Q1 2025",
@@ -347,7 +414,18 @@
     "realized_gain_loss_3mo_mn": null,
     "credit_facility_drawn_mn": 500.0,
     "unused_capacity_mn": 297.0,
-    "price_to_nav": null
+    "price_to_nav": null,
+    "net_interest_spread": 2.65,
+    "dividend_change_flag": -1,
+    "total_return_index": 30.8834,
+    "liquidity_pct_of_portfolio": 8.775,
+    "avg_position_size_mn": 13.814,
+    "cash_income_mn": 87.886,
+    "cash_income_pct": 98.91,
+    "nii_per_share_yoy_growth_pct": -4.412,
+    "nav_per_share_yoy_growth_pct": -0.433,
+    "cumulative_dividends_paid": 5.5934,
+    "data_quality_score": 73.2
   },
   {
     "quarter": "Q2 2025",
@@ -382,7 +460,18 @@
     "realized_gain_loss_3mo_mn": null,
     "credit_facility_drawn_mn": 500.0,
     "unused_capacity_mn": 277.3,
-    "price_to_nav": null
+    "price_to_nav": null,
+    "net_interest_spread": 2.68,
+    "dividend_change_flag": -1,
+    "total_return_index": 31.5684,
+    "liquidity_pct_of_portfolio": 7.693,
+    "avg_position_size_mn": 14.593,
+    "cash_income_mn": 182.35,
+    "cash_income_pct": 98.67,
+    "nii_per_share_yoy_growth_pct": -7.143,
+    "nav_per_share_yoy_growth_pct": -0.55,
+    "cumulative_dividends_paid": 6.2584,
+    "data_quality_score": 73.2
   },
   {
     "quarter": "Q3 2025",
@@ -417,7 +506,18 @@
     "realized_gain_loss_3mo_mn": null,
     "credit_facility_drawn_mn": 500.0,
     "unused_capacity_mn": 274.2,
-    "price_to_nav": null
+    "price_to_nav": null,
+    "net_interest_spread": 2.36,
+    "dividend_change_flag": -1,
+    "total_return_index": 32.0717,
+    "liquidity_pct_of_portfolio": 7.03,
+    "avg_position_size_mn": 15.119,
+    "cash_income_mn": 285.118,
+    "cash_income_pct": 98.81,
+    "nii_per_share_yoy_growth_pct": -9.859,
+    "nav_per_share_yoy_growth_pct": -1.256,
+    "cumulative_dividends_paid": 6.9217,
+    "data_quality_score": 75.6
   },
   {
     "quarter": "Q4 2025",
@@ -452,6 +552,16 @@
     "realized_gain_loss_3mo_mn": null,
     "credit_facility_drawn_mn": 500.0,
     "unused_capacity_mn": 272.6,
-    "price_to_nav": null
+    "price_to_nav": null,
+    "net_interest_spread": -1.11,
+    "total_return_index": 32.1117,
+    "liquidity_pct_of_portfolio": 6.373,
+    "avg_position_size_mn": 16.142,
+    "fixed_rate_pct": 0.13,
+    "cash_income_mn": 397.638,
+    "cash_income_pct": 99.9,
+    "nav_per_share_yoy_growth_pct": -0.435,
+    "cumulative_dividends_paid": 6.9217,
+    "data_quality_score": 67.5
   }
 ]
