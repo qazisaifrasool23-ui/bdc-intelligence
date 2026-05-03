@@ -39,7 +39,8 @@
     "cash_income_pct": 97.3,
     "origination_velocity_pct": 349.782,
     "cumulative_dividends_paid": 0.21,
-    "data_quality_score": 65.8
+    "data_quality_score": 66.7,
+    "debt_revolver_mn": 66.9
   },
   {
     "quarter": "Q4 2019",
@@ -119,7 +120,7 @@
     "avg_position_size_mn": 0.239,
     "origination_velocity_pct": 629.394,
     "cumulative_dividends_paid": 0.42,
-    "data_quality_score": 60.5,
+    "data_quality_score": 62.2,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1143513/000119312520132386/d911144d10q.htm",
     "filing_type": "10-Q",
     "interest_expense_mn": 2.582,
@@ -140,7 +141,9 @@
         "url": "https://www.sec.gov/Archives/edgar/data/1143513/000117184320002616/0001171843-20-002616-index.htm",
         "impact": "neutral"
       }
-    ]
+    ],
+    "interest_coverage_ratio": 2.536,
+    "fee_as_pct_of_nii": 46.846
   },
   {
     "quarter": "Q2 2020",
@@ -182,7 +185,7 @@
     "avg_position_size_mn": 0.244,
     "origination_velocity_pct": 1091.312,
     "cumulative_dividends_paid": 0.4867,
-    "data_quality_score": 63.6,
+    "data_quality_score": 65.2,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1143513/000119312520202539/d901194d10q.htm",
     "filing_type": "10-Q",
     "interest_expense_mn": 2.472,
@@ -196,7 +199,9 @@
         "url": "https://www.sec.gov/Archives/edgar/data/1143513/000117184320005343/0001171843-20-005343-index.htm",
         "impact": "neutral"
       }
-    ]
+    ],
+    "interest_coverage_ratio": 2.461,
+    "fee_as_pct_of_nii": 51.882
   },
   {
     "quarter": "Q3 2020",
@@ -241,7 +246,7 @@
     "nii_per_share_yoy_growth_pct": -4.762,
     "origination_velocity_pct": 225.897,
     "cumulative_dividends_paid": 0.6867,
-    "data_quality_score": 63.6,
+    "data_quality_score": 64.4,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1143513/000119312520290152/d771405d10k.htm",
     "filing_type": "10-K",
     "significant_8k_filings": [
@@ -252,7 +257,8 @@
         "url": "https://www.sec.gov/Archives/edgar/data/1143513/000119312520290209/0001193125-20-290209-index.htm",
         "impact": "neutral"
       }
-    ]
+    ],
+    "debt_revolver_mn": 128.0
   },
   {
     "quarter": "Q4 2020",
@@ -355,7 +361,7 @@
     "nav_per_share_yoy_growth_pct": 16.023,
     "origination_velocity_pct": 784.633,
     "cumulative_dividends_paid": 0.605,
-    "data_quality_score": 75.0,
+    "data_quality_score": 76.0,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1143513/000119312521150008/d172091d10q.htm",
     "filing_type": "10-Q",
     "interest_expense_mn": 2.822,
@@ -390,7 +396,9 @@
         "url": "https://www.sec.gov/Archives/edgar/data/1143513/000119312521114691/0001193125-21-114691-index.htm",
         "impact": "neutral"
       }
-    ]
+    ],
+    "interest_coverage_ratio": 2.268,
+    "fee_as_pct_of_nii": 54.321
   },
   {
     "quarter": "Q2 2021",
@@ -436,7 +444,7 @@
     "nav_per_share_yoy_growth_pct": 17.194,
     "origination_velocity_pct": 1129.006,
     "cumulative_dividends_paid": 0.805,
-    "data_quality_score": 77.1,
+    "data_quality_score": 78.0,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1143513/000119312521234987/d203664d10q.htm",
     "filing_type": "10-Q",
     "interest_expense_mn": 3.057,
@@ -450,7 +458,9 @@
         "url": "https://www.sec.gov/Archives/edgar/data/1143513/000119312521234996/0001193125-21-234996-index.htm",
         "impact": "neutral"
       }
-    ]
+    ],
+    "interest_coverage_ratio": 2.16,
+    "fee_as_pct_of_nii": 55.83
   },
   {
     "quarter": "Q3 2021",
@@ -497,7 +507,7 @@
     "nav_per_share_yoy_growth_pct": 24.047,
     "origination_velocity_pct": 685.285,
     "cumulative_dividends_paid": 1.005,
-    "data_quality_score": 71.4,
+    "data_quality_score": 73.1,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1143513/000119312521329867/d234860d10k.htm",
     "filing_type": "10-K",
     "interest_expense_mn": 11.513,
@@ -518,7 +528,10 @@
         "url": "https://www.sec.gov/Archives/edgar/data/1143513/000119312521310506/0001193125-21-310506-index.htm",
         "impact": "neutral"
       }
-    ]
+    ],
+    "debt_revolver_mn": 50.5,
+    "interest_coverage_ratio": 0.796,
+    "fee_as_pct_of_nii": 157.424
   },
   {
     "quarter": "Q4 2021",
@@ -563,7 +576,7 @@
     "nav_per_share_yoy_growth_pct": -2.155,
     "origination_velocity_pct": -13.914,
     "cumulative_dividends_paid": 1.005,
-    "data_quality_score": 70.2,
+    "data_quality_score": 70.8,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1143513/000114351322000003/glad-20211231x10q.htm",
     "filing_type": "10-Q",
     "interest_expense_mn": 3.007,
@@ -584,7 +597,8 @@
         "url": "https://www.sec.gov/Archives/edgar/data/1143513/000119312522005155/0001193125-22-005155-index.htm",
         "impact": "neutral"
       }
-    ]
+    ],
+    "debt_revolver_mn": 53.9
   },
   {
     "quarter": "Q1 2022",
@@ -630,7 +644,7 @@
     "nav_per_share_yoy_growth_pct": 17.016,
     "origination_velocity_pct": 704.345,
     "cumulative_dividends_paid": 1.205,
-    "data_quality_score": 70.8,
+    "data_quality_score": 72.5,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1143513/000114351322000007/glad-2022331x10q.htm",
     "filing_type": "10-Q",
     "interest_expense_mn": 3.02,
@@ -651,7 +665,10 @@
         "url": "https://www.sec.gov/Archives/edgar/data/1143513/000119312522102947/0001193125-22-102947-index.htm",
         "impact": "neutral"
       }
-    ]
+    ],
+    "debt_revolver_mn": 17.4,
+    "interest_coverage_ratio": 2.879,
+    "fee_as_pct_of_nii": 51.179
   },
   {
     "quarter": "Q2 2022",
@@ -698,7 +715,7 @@
     "nav_per_share_yoy_growth_pct": 7.042,
     "origination_velocity_pct": 1370.067,
     "cumulative_dividends_paid": 1.405,
-    "data_quality_score": 71.4,
+    "data_quality_score": 73.1,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1143513/000114351322000009/glad-2022630x10q.htm",
     "filing_type": "10-Q",
     "interest_expense_mn": 3.15,
@@ -719,7 +736,10 @@
         "url": "https://www.sec.gov/Archives/edgar/data/1143513/000119312522203507/0001193125-22-203507-index.htm",
         "impact": "neutral"
       }
-    ]
+    ],
+    "debt_revolver_mn": 80.0,
+    "interest_coverage_ratio": 2.205,
+    "fee_as_pct_of_nii": 58.73
   },
   {
     "quarter": "Q3 2022",
@@ -766,7 +786,7 @@
     "nav_per_share_yoy_growth_pct": -4.025,
     "origination_velocity_pct": 69.348,
     "cumulative_dividends_paid": 1.615,
-    "data_quality_score": 71.4,
+    "data_quality_score": 73.1,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1143513/000114351322000017/glad-20220930.htm",
     "filing_type": "10-K",
     "interest_expense_mn": 12.966,
@@ -787,7 +807,10 @@
         "url": "https://www.sec.gov/Archives/edgar/data/1143513/000114351322000014/0001143513-22-000014-index.htm",
         "impact": "neutral"
       }
-    ]
+    ],
+    "debt_revolver_mn": 141.8,
+    "interest_coverage_ratio": 0.673,
+    "fee_as_pct_of_nii": 203.53
   },
   {
     "quarter": "Q4 2022",
@@ -833,14 +856,14 @@
     "nav_per_share_yoy_growth_pct": 3.414,
     "origination_velocity_pct": -20.535,
     "cumulative_dividends_paid": 1.24,
-    "data_quality_score": 74.0,
+    "data_quality_score": 76.0,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1143513/000114351323000003/glad-20221231.htm",
     "filing_type": "10-Q",
     "interest_expense_mn": 4629.0,
     "management_fee_mn": 2829.0,
     "incentive_fee_mn": 2181.0,
     "weighted_avg_interest_rate": 6.9,
-    "debt_revolver_mn": null,
+    "debt_revolver_mn": 108.4,
     "significant_8k_filings": [
       {
         "date": "2023-02-06",
@@ -896,7 +919,7 @@
     "nav_per_share_yoy_growth_pct": -3.161,
     "origination_velocity_pct": 376.781,
     "cumulative_dividends_paid": 1.47,
-    "data_quality_score": 72.5,
+    "data_quality_score": 73.6,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1143513/000114351323000006/glad-20230331.htm",
     "filing_type": "10-Q",
     "interest_expense_mn": 4909.0,
@@ -919,7 +942,9 @@
         "url": "https://www.sec.gov/Archives/edgar/data/1143513/000119312523102091/0001193125-23-102091-index.htm",
         "impact": "neutral"
       }
-    ]
+    ],
+    "interest_coverage_ratio": 0.002,
+    "fee_as_pct_of_nii": 55087.209
   },
   {
     "quarter": "Q2 2023",
@@ -966,7 +991,7 @@
     "nav_per_share_yoy_growth_pct": 1.645,
     "origination_velocity_pct": 648.819,
     "cumulative_dividends_paid": 1.71,
-    "data_quality_score": 72.5,
+    "data_quality_score": 73.6,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1143513/000114351323000010/glad-20230630.htm",
     "filing_type": "10-Q",
     "interest_expense_mn": 5553.0,
@@ -996,7 +1021,9 @@
         "url": "https://www.sec.gov/Archives/edgar/data/1143513/000119312523194606/0001193125-23-194606-index.htm",
         "impact": "neutral"
       }
-    ]
+    ],
+    "interest_coverage_ratio": 0.002,
+    "fee_as_pct_of_nii": 51601.576
   },
   {
     "quarter": "Q3 2023",
@@ -1043,7 +1070,7 @@
     "nav_per_share_yoy_growth_pct": 6.071,
     "origination_velocity_pct": 249.774,
     "cumulative_dividends_paid": 1.96,
-    "data_quality_score": 72.0,
+    "data_quality_score": 73.6,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1143513/000114351323000013/glad-20230930.htm",
     "filing_type": "10-K",
     "interest_expense_mn": 20847.0,
@@ -1065,7 +1092,10 @@
         "url": "https://www.sec.gov/Archives/edgar/data/1143513/000119312523253486/0001193125-23-253486-index.htm",
         "impact": "neutral"
       }
-    ]
+    ],
+    "debt_revolver_mn": 47.8,
+    "interest_coverage_ratio": 0.001,
+    "fee_as_pct_of_nii": 186467.236
   },
   {
     "quarter": "Q4 2023",
@@ -1110,7 +1140,7 @@
     "nav_per_share_yoy_growth_pct": 125.559,
     "origination_velocity_pct": -13.735,
     "cumulative_dividends_paid": 1.735,
-    "data_quality_score": 70.8,
+    "data_quality_score": 71.4,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1143513/000114351324000002/glad-20231231.htm",
     "filing_type": "10-Q",
     "interest_expense_mn": 5032.0,
@@ -1125,7 +1155,8 @@
         "url": "https://www.sec.gov/Archives/edgar/data/1143513/000119312524024095/0001193125-24-024095-index.htm",
         "impact": "neutral"
       }
-    ]
+    ],
+    "debt_revolver_mn": 85.0
   },
   {
     "quarter": "Q1 2024",
@@ -1172,7 +1203,7 @@
     "nav_per_share_yoy_growth_pct": 7.726,
     "origination_velocity_pct": 428.095,
     "cumulative_dividends_paid": 1.985,
-    "data_quality_score": 74.0,
+    "data_quality_score": 75.5,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1143513/000114351324000006/glad-20240331.htm",
     "filing_type": "10-Q",
     "interest_expense_mn": 5732.0,
@@ -1194,7 +1225,10 @@
         "url": "https://www.sec.gov/Archives/edgar/data/1143513/000119312524088457/0001193125-24-088457-index.htm",
         "impact": "neutral"
       }
-    ]
+    ],
+    "debt_revolver_mn": 117.2,
+    "interest_coverage_ratio": 0.002,
+    "fee_as_pct_of_nii": 56676.255
   },
   {
     "quarter": "Q2 2024",
@@ -1241,7 +1275,7 @@
     "nav_per_share_yoy_growth_pct": 117.691,
     "origination_velocity_pct": 580.482,
     "cumulative_dividends_paid": 2.485,
-    "data_quality_score": 74.0,
+    "data_quality_score": 75.5,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1143513/000114351324000008/glad-20240630.htm",
     "filing_type": "10-Q",
     "interest_expense_mn": 5509.0,
@@ -1263,7 +1297,10 @@
         "url": "https://www.sec.gov/Archives/edgar/data/1143513/000119312524195894/0001193125-24-195894-index.htm",
         "impact": "neutral"
       }
-    ]
+    ],
+    "debt_revolver_mn": 65.8,
+    "interest_coverage_ratio": 0.002,
+    "fee_as_pct_of_nii": 52731.381
   },
   {
     "quarter": "Q3 2024",
@@ -1309,7 +1346,7 @@
     "nav_per_share_yoy_growth_pct": 123.829,
     "origination_velocity_pct": 690.437,
     "cumulative_dividends_paid": 3.385,
-    "data_quality_score": 71.4,
+    "data_quality_score": 73.1,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1143513/000114351324000011/glad-20240930.htm",
     "filing_type": "10-K",
     "interest_expense_mn": 21715.0,
@@ -1324,7 +1361,10 @@
         "url": "https://www.sec.gov/Archives/edgar/data/1143513/000119312524257247/0001193125-24-257247-index.htm",
         "impact": "neutral"
       }
-    ]
+    ],
+    "debt_revolver_mn": 70.6,
+    "interest_coverage_ratio": 0.001,
+    "fee_as_pct_of_nii": 222906.272
   },
   {
     "quarter": "Q4 2024",
@@ -1369,7 +1409,7 @@
     "nav_per_share_yoy_growth_pct": 0.755,
     "origination_velocity_pct": -0.761,
     "cumulative_dividends_paid": 3.785,
-    "data_quality_score": 72.9,
+    "data_quality_score": 73.5,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1143513/000114351325000005/glad-20241231.htm",
     "filing_type": "10-Q",
     "interest_expense_mn": 4743.0,
@@ -1391,7 +1431,8 @@
         "url": "https://www.sec.gov/Archives/edgar/data/1143513/000119312525012200/0001193125-25-012200-index.htm",
         "impact": "neutral"
       }
-    ]
+    ],
+    "debt_revolver_mn": 61.5
   },
   {
     "quarter": "Q1 2025",
@@ -1438,7 +1479,7 @@
     "nav_per_share_yoy_growth_pct": 116.263,
     "origination_velocity_pct": 914.321,
     "cumulative_dividends_paid": 4.285,
-    "data_quality_score": 74.0,
+    "data_quality_score": 75.5,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1143513/000114351325000008/glad-20250331.htm",
     "filing_type": "10-Q",
     "interest_expense_mn": 5019.0,
@@ -1453,7 +1494,10 @@
         "url": "https://www.sec.gov/Archives/edgar/data/1143513/000119312525113835/0001193125-25-113835-index.htm",
         "impact": "neutral"
       }
-    ]
+    ],
+    "debt_revolver_mn": 25.1,
+    "interest_coverage_ratio": 0.002,
+    "fee_as_pct_of_nii": 52005.336
   },
   {
     "quarter": "Q2 2025",
@@ -1499,7 +1543,7 @@
     "nav_per_share_yoy_growth_pct": 5.302,
     "origination_velocity_pct": 1247.449,
     "cumulative_dividends_paid": 4.775,
-    "data_quality_score": 70.8,
+    "data_quality_score": 72.5,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1143513/000114351325000012/glad-20250630.htm",
     "filing_type": "10-Q",
     "interest_expense_mn": 4451.0,
@@ -1513,7 +1557,10 @@
         "url": "https://www.sec.gov/Archives/edgar/data/1143513/000119312525172664/0001193125-25-172664-index.htm",
         "impact": "neutral"
       }
-    ]
+    ],
+    "debt_revolver_mn": 27.5,
+    "interest_coverage_ratio": 0.003,
+    "fee_as_pct_of_nii": 52594.298
   },
   {
     "quarter": "Q3 2025",
@@ -1560,12 +1607,15 @@
     "nav_per_share_yoy_growth_pct": -1.767,
     "origination_velocity_pct": 404.57,
     "cumulative_dividends_paid": 4.795,
-    "data_quality_score": 73.5,
+    "data_quality_score": 75.0,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1143513/000114351325000015/glad-20250930.htm",
     "filing_type": "10-K",
     "interest_expense_mn": 19986.0,
     "management_fee_mn": 13910.0,
     "incentive_fee_mn": 10486.0,
-    "weighted_avg_interest_rate": 13.8
+    "weighted_avg_interest_rate": 13.8,
+    "debt_revolver_mn": 0.0,
+    "interest_coverage_ratio": 0.001,
+    "fee_as_pct_of_nii": 216660.746
   }
 ]

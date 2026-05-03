@@ -39,7 +39,7 @@
     "avg_position_size_mn": 0.033,
     "fixed_rate_pct": 4.9,
     "cumulative_dividends_paid": 0.47,
-    "data_quality_score": 71.7,
+    "data_quality_score": 72.9,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1508655/000156459020021239/tslx-10q_20200331.htm",
     "filing_type": "10-Q",
     "management_fee_mn": 8.165,
@@ -62,7 +62,9 @@
         "url": "https://www.sec.gov/Archives/edgar/data/1508655/000156459020017114/0001564590-20-017114-index.htm",
         "impact": "neutral"
       }
-    ]
+    ],
+    "fee_as_pct_of_nii": 0.045,
+    "expense_ratio_pct": 12153076.923
   },
   {
     "quarter": "Q2 2020",
@@ -104,7 +106,7 @@
     "avg_position_size_mn": 0.031,
     "fixed_rate_pct": 1.5,
     "cumulative_dividends_paid": 1.16,
-    "data_quality_score": 71.7,
+    "data_quality_score": 72.9,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1508655/000156459020036104/tslx-10q_20200630.htm",
     "filing_type": "10-Q",
     "management_fee_mn": 7.666,
@@ -127,7 +129,9 @@
         "url": "https://www.sec.gov/Archives/edgar/data/1508655/000119312520197415/0001193125-20-197415-index.htm",
         "impact": "neutral"
       }
-    ]
+    ],
+    "fee_as_pct_of_nii": 0.041,
+    "expense_ratio_pct": 11024074.074
   },
   {
     "quarter": "Q3 2020",
@@ -170,7 +174,7 @@
     "avg_position_size_mn": 0.033,
     "fixed_rate_pct": 1.2,
     "cumulative_dividends_paid": 1.7567,
-    "data_quality_score": 74.5,
+    "data_quality_score": 75.5,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1508655/000156459020050467/tslx-10q_20200930.htm",
     "filing_type": "10-Q",
     "management_fee_mn": 7.839,
@@ -186,7 +190,9 @@
         "url": "https://www.sec.gov/Archives/edgar/data/1508655/000156459020050473/0001564590-20-050473-index.htm",
         "impact": "neutral"
       }
-    ]
+    ],
+    "fee_as_pct_of_nii": 0.04,
+    "expense_ratio_pct": 9898947.368
   },
   {
     "quarter": "Q1 2021",
@@ -229,7 +235,7 @@
     "avg_position_size_mn": 0.034,
     "fixed_rate_pct": 0.8,
     "cumulative_dividends_paid": 3.4667,
-    "data_quality_score": 74.5,
+    "data_quality_score": 75.5,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1508655/000156459021023315/tslx-10q_20210331.htm",
     "filing_type": "10-Q",
     "management_fee_mn": 8.738,
@@ -245,7 +251,9 @@
         "url": "https://www.sec.gov/Archives/edgar/data/1508655/000156459021023325/0001564590-21-023325-index.htm",
         "impact": "neutral"
       }
-    ]
+    ],
+    "fee_as_pct_of_nii": 0.065,
+    "expense_ratio_pct": 11251092.437
   },
   {
     "quarter": "Q2 2021",
@@ -290,7 +298,7 @@
     "nii_per_share_yoy_growth_pct": -17.647,
     "nav_per_share_yoy_growth_pct": 8.221,
     "cumulative_dividends_paid": 4.5567,
-    "data_quality_score": 75.5,
+    "data_quality_score": 76.5,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1508655/000156459021040210/tslx-10q_20210630.htm",
     "filing_type": "10-Q",
     "management_fee_mn": 9.417,
@@ -306,7 +314,9 @@
         "url": "https://www.sec.gov/Archives/edgar/data/1508655/000156459021040218/0001564590-21-040218-index.htm",
         "impact": "neutral"
       }
-    ]
+    ],
+    "fee_as_pct_of_nii": 0.06,
+    "expense_ratio_pct": 11608196.721
   },
   {
     "quarter": "Q3 2021",
@@ -351,7 +361,7 @@
     "nii_per_share_yoy_growth_pct": -18.182,
     "nav_per_share_yoy_growth_pct": 6.841,
     "cumulative_dividends_paid": 5.4267,
-    "data_quality_score": 75.5,
+    "data_quality_score": 77.8,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1508655/000156459021053539/tslx-10q_20210930.htm",
     "filing_type": "10-Q",
     "management_fee_mn": 9.545,
@@ -367,7 +377,12 @@
         "url": "https://www.sec.gov/Archives/edgar/data/1508655/000156459021053550/0001564590-21-053550-index.htm",
         "impact": "neutral"
       }
-    ]
+    ],
+    "interest_expense_mn": 9.856,
+    "interest_coverage_ratio": 3700.284,
+    "fee_as_pct_of_nii": 0.049,
+    "expense_ratio_pct": 11099520.0,
+    "net_expense_ratio_pct": 11096366.08
   },
   {
     "quarter": "Q4 2021",
@@ -404,12 +419,14 @@
     "unused_capacity_mn": null,
     "price_to_nav": null,
     "cumulative_dividends_paid": 5.4267,
-    "data_quality_score": 23.7,
+    "data_quality_score": 27.5,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1508655/000156459022005558/tslx-10k_20211231.htm",
     "filing_type": "10-K",
     "weighted_avg_interest_rate": 2.3,
     "debt_revolver_mn": 1510.0,
-    "debt_unsecured_notes_mn": 4045.0
+    "debt_unsecured_notes_mn": 4045.0,
+    "management_fee_mn": 9.38,
+    "interest_expense_mn": 9.826
   },
   {
     "quarter": "Q1 2022",
@@ -453,7 +470,7 @@
     "nii_per_share_yoy_growth_pct": 2.174,
     "nav_per_share_yoy_growth_pct": 2.489,
     "cumulative_dividends_paid": 5.9467,
-    "data_quality_score": 72.9,
+    "data_quality_score": 75.5,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1508655/000156459022017420/tslx-10q_20220331.htm",
     "filing_type": "10-Q",
     "management_fee_mn": 9.33,
@@ -476,7 +493,12 @@
         "url": "https://www.sec.gov/Archives/edgar/data/1508655/000119312522133581/0001193125-22-133581-index.htm",
         "impact": "neutral"
       }
-    ]
+    ],
+    "interest_expense_mn": 9.602,
+    "interest_coverage_ratio": 3719.225,
+    "fee_as_pct_of_nii": 0.048,
+    "expense_ratio_pct": 9802187.5,
+    "net_expense_ratio_pct": 9799186.875
   },
   {
     "quarter": "Q2 2022",
@@ -523,7 +545,7 @@
     "nii_per_share_yoy_growth_pct": 21.429,
     "nav_per_share_yoy_growth_pct": -3.442,
     "cumulative_dividends_paid": 6.4317,
-    "data_quality_score": 78.4,
+    "data_quality_score": 80.4,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1508655/000095017022013859/tslx-10-q-20220630-non_x.htm",
     "filing_type": "10-Q",
     "management_fee_mn": 9.488,
@@ -546,7 +568,12 @@
         "url": "https://www.sec.gov/Archives/edgar/data/1508655/000119312522187202/0001193125-22-187202-index.htm",
         "impact": "neutral"
       }
-    ]
+    ],
+    "interest_expense_mn": 11.963,
+    "interest_coverage_ratio": 3412.355,
+    "fee_as_pct_of_nii": 0.04,
+    "expense_ratio_pct": 7202580.645,
+    "net_expense_ratio_pct": 7198721.613
   },
   {
     "quarter": "Q3 2022",
@@ -591,7 +618,7 @@
     "nii_per_share_yoy_growth_pct": 8.889,
     "nav_per_share_yoy_growth_pct": -4.773,
     "cumulative_dividends_paid": 6.895,
-    "data_quality_score": 77.6,
+    "data_quality_score": 79.6,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1508655/000095017022020830/tslx-20220930.htm",
     "filing_type": "10-Q",
     "management_fee_mn": 10330.0,
@@ -607,7 +634,12 @@
         "url": "https://www.sec.gov/Archives/edgar/data/1508655/000156459022036056/0001564590-22-036056-index.htm",
         "impact": "neutral"
       }
-    ]
+    ],
+    "interest_expense_mn": 18.851,
+    "interest_coverage_ratio": 1972.309,
+    "fee_as_pct_of_nii": 48.983,
+    "expense_ratio_pct": 12178045.113,
+    "net_expense_ratio_pct": 12172375.639
   },
   {
     "quarter": "Q4 2022",
@@ -696,7 +728,7 @@
     "nii_per_share_yoy_growth_pct": 12.766,
     "nav_per_share_yoy_growth_pct": -1.718,
     "cumulative_dividends_paid": 7.445,
-    "data_quality_score": 70.8,
+    "data_quality_score": 73.6,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1508655/000095017023018777/tslx-20230331.htm",
     "filing_type": "10-Q",
     "management_fee_mn": 10733.0,
@@ -712,7 +744,12 @@
         "url": "https://www.sec.gov/Archives/edgar/data/1508655/000156459023007071/0001564590-23-007071-index.htm",
         "impact": "neutral"
       }
-    ]
+    ],
+    "interest_expense_mn": 28.486,
+    "interest_coverage_ratio": 1507.302,
+    "fee_as_pct_of_nii": 47.078,
+    "expense_ratio_pct": 15709117.647,
+    "net_expense_ratio_pct": 15700739.412
   },
   {
     "quarter": "Q2 2023",
@@ -759,7 +796,7 @@
     "nii_per_share_yoy_growth_pct": 9.804,
     "nav_per_share_yoy_growth_pct": 2.889,
     "cumulative_dividends_paid": 7.97,
-    "data_quality_score": 76.5,
+    "data_quality_score": 78.6,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1508655/000095017023038066/tslx-20230630.htm",
     "filing_type": "10-Q",
     "management_fee_mn": 11410.0,
@@ -789,7 +826,12 @@
         "url": "https://www.sec.gov/Archives/edgar/data/1508655/000119312523187256/0001193125-23-187256-index.htm",
         "impact": "neutral"
       }
-    ]
+    ],
+    "interest_expense_mn": 32.442,
+    "interest_coverage_ratio": 1503.73,
+    "fee_as_pct_of_nii": 44.927,
+    "expense_ratio_pct": 15950410.959,
+    "net_expense_ratio_pct": 15941522.74
   },
   {
     "quarter": "Q3 2023",
@@ -834,7 +876,7 @@
     "nii_per_share_yoy_growth_pct": 14.286,
     "nav_per_share_yoy_growth_pct": 3.729,
     "cumulative_dividends_paid": 8.4933,
-    "data_quality_score": 73.5,
+    "data_quality_score": 75.9,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1508655/000095017023058321/tslx-20230930.htm",
     "filing_type": "10-Q",
     "management_fee_mn": 11928.0,
@@ -850,7 +892,12 @@
         "url": "https://www.sec.gov/Archives/edgar/data/1508655/000095017023058338/0000950170-23-058338-index.htm",
         "impact": "neutral"
       }
-    ]
+    ],
+    "interest_expense_mn": 35.042,
+    "interest_coverage_ratio": 1426.688,
+    "fee_as_pct_of_nii": 46.164,
+    "expense_ratio_pct": 17247516.779,
+    "net_expense_ratio_pct": 17238109.53
   },
   {
     "quarter": "Q4 2023",
@@ -949,7 +996,7 @@
     "nii_per_share_yoy_growth_pct": 11.321,
     "nav_per_share_yoy_growth_pct": 3.496,
     "cumulative_dividends_paid": 9.0333,
-    "data_quality_score": 73.5,
+    "data_quality_score": 75.9,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1508655/000095017024051235/tslx-20240331.htm",
     "filing_type": "10-Q",
     "management_fee_mn": 12597.0,
@@ -972,7 +1019,12 @@
         "url": "https://www.sec.gov/Archives/edgar/data/1508655/000119312524118156/0001193125-24-118156-index.htm",
         "impact": "neutral"
       }
-    ]
+    ],
+    "interest_expense_mn": 39.032,
+    "interest_coverage_ratio": 1341.515,
+    "fee_as_pct_of_nii": 44.928,
+    "expense_ratio_pct": 16447848.101,
+    "net_expense_ratio_pct": 16437966.582
   },
   {
     "quarter": "Q2 2024",
@@ -1018,7 +1070,7 @@
     "nii_per_share_yoy_growth_pct": 5.357,
     "nav_per_share_yoy_growth_pct": 2.688,
     "cumulative_dividends_paid": 9.5633,
-    "data_quality_score": 74.0,
+    "data_quality_score": 76.4,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1508655/000095017024088524/tslx-20240630.htm",
     "filing_type": "10-Q",
     "management_fee_mn": 12765.0,
@@ -1034,7 +1086,12 @@
         "url": "https://www.sec.gov/Archives/edgar/data/1508655/000095017024088547/0000950170-24-088547-index.htm",
         "impact": "neutral"
       }
-    ]
+    ],
+    "interest_expense_mn": 39.234,
+    "interest_coverage_ratio": 1405.49,
+    "fee_as_pct_of_nii": 43.848,
+    "expense_ratio_pct": 16435750.0,
+    "net_expense_ratio_pct": 16425941.5
   },
   {
     "quarter": "Q3 2024",
@@ -1080,7 +1137,7 @@
     "nii_per_share_yoy_growth_pct": 5.357,
     "nav_per_share_yoy_growth_pct": 0.884,
     "cumulative_dividends_paid": 10.09,
-    "data_quality_score": 74.0,
+    "data_quality_score": 75.0,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1508655/000095017024121434/tslx-20240930.htm",
     "filing_type": "10-Q",
     "management_fee_mn": 13029.0,
@@ -1096,7 +1153,9 @@
         "url": "https://www.sec.gov/Archives/edgar/data/1508655/000095017024121446/0000950170-24-121446-index.htm",
         "impact": "neutral"
       }
-    ]
+    ],
+    "fee_as_pct_of_nii": 44.067,
+    "expense_ratio_pct": 15982250.0
   },
   {
     "quarter": "Q4 2024",
@@ -1198,7 +1257,7 @@
     "nii_per_share_yoy_growth_pct": 5.085,
     "nav_per_share_yoy_growth_pct": -0.757,
     "cumulative_dividends_paid": 11.08,
-    "data_quality_score": 74.0,
+    "data_quality_score": 75.0,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1508655/000095017025061008/tslx-20250331.htm",
     "filing_type": "10-Q",
     "management_fee_mn": 13083.0,
@@ -1214,7 +1273,9 @@
         "url": "https://www.sec.gov/Archives/edgar/data/1508655/000095017025061026/0000950170-25-061026-index.htm",
         "impact": "neutral"
       }
-    ]
+    ],
+    "fee_as_pct_of_nii": 42.428,
+    "expense_ratio_pct": 14357500.0
   },
   {
     "quarter": "Q2 2025",
@@ -1260,7 +1321,7 @@
     "nii_per_share_yoy_growth_pct": -1.695,
     "nav_per_share_yoy_growth_pct": -0.116,
     "cumulative_dividends_paid": 11.605,
-    "data_quality_score": 74.0,
+    "data_quality_score": 75.0,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1508655/000095017025100204/tslx-20250630.htm",
     "filing_type": "10-Q",
     "management_fee_mn": 12918.0,
@@ -1283,7 +1344,9 @@
         "url": "https://www.sec.gov/Archives/edgar/data/1508655/000119312525155492/0001193125-25-155492-index.htm",
         "impact": "neutral"
       }
-    ]
+    ],
+    "fee_as_pct_of_nii": 47.221,
+    "expense_ratio_pct": 15600246.914
   },
   {
     "quarter": "Q3 2025",
@@ -1329,7 +1392,7 @@
     "nii_per_share_yoy_growth_pct": -3.39,
     "nav_per_share_yoy_growth_pct": 0.117,
     "cumulative_dividends_paid": 12.125,
-    "data_quality_score": 74.0,
+    "data_quality_score": 75.0,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1508655/000119312525264618/tslx-20250930.htm",
     "filing_type": "10-Q",
     "management_fee_mn": 13081.0,
@@ -1345,7 +1408,9 @@
         "url": "https://www.sec.gov/Archives/edgar/data/1508655/000119312525264683/0001193125-25-264683-index.htm",
         "impact": "neutral"
       }
-    ]
+    ],
+    "fee_as_pct_of_nii": 46.582,
+    "expense_ratio_pct": 14240493.827
   },
   {
     "quarter": "Q4 2025",
@@ -1389,7 +1454,7 @@
     "nii_per_share_yoy_growth_pct": -16.667,
     "nav_per_share_yoy_growth_pct": 0.293,
     "cumulative_dividends_paid": 12.585,
-    "data_quality_score": 73.5,
+    "data_quality_score": 75.5,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1508655/000119312526048664/tslx-20251231.htm",
     "filing_type": "10-K",
     "interest_expense_mn": 154.2,
@@ -1406,6 +1471,10 @@
         "url": "https://www.sec.gov/Archives/edgar/data/1508655/000119312526048683/0001193125-26-048683-index.htm",
         "impact": "neutral"
       }
-    ]
+    ],
+    "interest_coverage_ratio": 328.664,
+    "fee_as_pct_of_nii": 0.163,
+    "expense_ratio_pct": 14240493.827,
+    "net_expense_ratio_pct": 14202419.753
   }
 ]
