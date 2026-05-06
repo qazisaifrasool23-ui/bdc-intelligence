@@ -42,7 +42,10 @@
     "origination_velocity_pct": 6.672,
     "cumulative_dividends_paid": 0.33,
     "data_quality_score": 78.0,
-    "expense_ratio_pct": 8.232
+    "expense_ratio_pct": 8.232,
+    "debt_to_equity_ratio": 1.062,
+    "shares_outstanding": 132658200,
+    "pik_income_mn": 1.69
   },
   {
     "quarter": "Q4 2019",
@@ -82,7 +85,8 @@
     "avg_position_size_mn": 13.6,
     "fixed_rate_pct": 94.3,
     "cumulative_dividends_paid": 0.33,
-    "data_quality_score": 50.0
+    "data_quality_score": 50.0,
+    "debt_to_equity_ratio": 0.85
   },
   {
     "quarter": "Q1 2020",
@@ -165,7 +169,11 @@
     "interest_coverage_ratio": 1.482,
     "fee_as_pct_of_nii": 58.552,
     "expense_ratio_pct": 8.83,
-    "net_expense_ratio_pct": 4.423
+    "net_expense_ratio_pct": 4.423,
+    "debt_to_equity_ratio": 1.222,
+    "mgmt_fee_as_pct_of_assets": 1.41,
+    "shares_outstanding": 133788646,
+    "pik_income_mn": 2.314
   },
   {
     "quarter": "Q2 2020",
@@ -242,7 +250,11 @@
     "interest_coverage_ratio": 2.002,
     "fee_as_pct_of_nii": 49.954,
     "expense_ratio_pct": 6.492,
-    "net_expense_ratio_pct": 3.511
+    "net_expense_ratio_pct": 3.511,
+    "debt_to_equity_ratio": 0.85,
+    "mgmt_fee_as_pct_of_assets": 1.36,
+    "shares_outstanding": 167263345,
+    "pik_income_mn": 2.453
   },
   {
     "quarter": "Q3 2020",
@@ -318,7 +330,11 @@
         "impact": "neutral"
       }
     ],
-    "expense_ratio_pct": 5.739
+    "expense_ratio_pct": 5.739,
+    "debt_to_equity_ratio": 0.85,
+    "nav_per_share_yoy_pct": -12.36,
+    "shares_outstanding": 167259511,
+    "pik_income_mn": 4.82
   },
   {
     "quarter": "Q4 2020",
@@ -404,7 +420,10 @@
         "url": "https://www.sec.gov/Archives/edgar/data/1476765/000147676521000011/0001476765-21-000011-index.htm",
         "impact": "neutral"
       }
-    ]
+    ],
+    "debt_to_equity_ratio": 0.85,
+    "mgmt_fee_as_pct_of_assets": 5.61,
+    "shares_outstanding": 170025675
   },
   {
     "quarter": "Q1 2021",
@@ -497,7 +516,12 @@
     "interest_coverage_ratio": 2.49,
     "fee_as_pct_of_nii": 39.754,
     "expense_ratio_pct": 5.745,
-    "net_expense_ratio_pct": 3.154
+    "net_expense_ratio_pct": 3.154,
+    "debt_to_equity_ratio": 0.85,
+    "nav_per_share_yoy_pct": 1.64,
+    "mgmt_fee_as_pct_of_assets": 1.37,
+    "shares_outstanding": 168178331,
+    "pik_income_mn": 4.374
   },
   {
     "quarter": "Q2 2021",
@@ -604,7 +628,12 @@
     "interest_coverage_ratio": 2.781,
     "fee_as_pct_of_nii": 43.692,
     "expense_ratio_pct": 5.293,
-    "net_expense_ratio_pct": 2.918
+    "net_expense_ratio_pct": 2.918,
+    "debt_to_equity_ratio": 0.85,
+    "nav_per_share_yoy_pct": 7.19,
+    "mgmt_fee_as_pct_of_assets": 1.38,
+    "shares_outstanding": 169117530,
+    "pik_income_mn": 4.281
   },
   {
     "quarter": "Q3 2021",
@@ -692,7 +721,12 @@
       }
     ],
     "expense_ratio_pct": 6.409,
-    "total_assets_mn": 5164.915
+    "total_assets_mn": 5164.915,
+    "debt_to_equity_ratio": 1.102,
+    "equity_ratio": 0.5048,
+    "nav_per_share_yoy_pct": 4.52,
+    "shares_outstanding": 170028584,
+    "pik_income_mn": 3.515
   },
   {
     "quarter": "Q4 2021",
@@ -773,7 +807,12 @@
       }
     ],
     "interest_coverage_ratio": 2.511,
-    "fee_as_pct_of_nii": 46.622
+    "fee_as_pct_of_nii": 46.622,
+    "debt_to_equity_ratio": 1.233,
+    "nav_per_share_yoy_pct": -1.97,
+    "mgmt_fee_as_pct_of_assets": 5.0,
+    "shares_outstanding": 170865742,
+    "admin_fee_mn": 1.818
   },
   {
     "quarter": "Q1 2022",
@@ -859,7 +898,13 @@
     "interest_coverage_ratio": 2.254,
     "fee_as_pct_of_nii": 51.522,
     "expense_ratio_pct": 6.773,
-    "net_expense_ratio_pct": 3.834
+    "net_expense_ratio_pct": 3.834,
+    "debt_to_equity_ratio": 1.144,
+    "nav_per_share_yoy_pct": 3.3,
+    "mgmt_fee_as_pct_of_assets": 1.33,
+    "shares_outstanding": 170895670,
+    "admin_fee_mn": 1.64,
+    "pik_income_mn": 4.341
   },
   {
     "quarter": "Q2 2022",
@@ -952,7 +997,13 @@
     "interest_coverage_ratio": 2.317,
     "fee_as_pct_of_nii": 42.874,
     "expense_ratio_pct": 6.446,
-    "net_expense_ratio_pct": 2.847
+    "net_expense_ratio_pct": 2.847,
+    "debt_to_equity_ratio": 1.23,
+    "nav_per_share_yoy_pct": 0.53,
+    "mgmt_fee_as_pct_of_assets": 1.36,
+    "shares_outstanding": 170895670,
+    "admin_fee_mn": 1.98,
+    "pik_income_mn": 5.307
   },
   {
     "quarter": "Q3 2022",
@@ -1019,7 +1070,12 @@
       }
     ],
     "expense_ratio_pct": 11.619,
-    "total_assets_mn": 5681.224
+    "total_assets_mn": 5681.224,
+    "debt_to_equity_ratio": 1.254,
+    "equity_ratio": 0.4425,
+    "nav_per_share_yoy_pct": -3.6,
+    "shares_outstanding": 170895670,
+    "pik_income_mn": 7.857
   },
   {
     "quarter": "Q4 2022",
@@ -1100,7 +1156,13 @@
     ],
     "total_assets_mn": 5665.751,
     "interest_coverage_ratio": 1.865,
-    "fee_as_pct_of_nii": 54919.124
+    "fee_as_pct_of_nii": 54919.124,
+    "debt_to_equity_ratio": 1.25,
+    "equity_ratio": 0.4497,
+    "nav_per_share_yoy_pct": 0.87,
+    "mgmt_fee_as_pct_of_assets": 5237.31,
+    "shares_outstanding": 170895670,
+    "admin_fee_mn": 2.175
   },
   {
     "quarter": "Q1 2023",
@@ -1187,7 +1249,14 @@
     "fee_as_pct_of_nii": 41.555,
     "expense_ratio_pct": 12.212,
     "net_expense_ratio_pct": 6.426,
-    "total_assets_mn": 5671.75
+    "total_assets_mn": 5671.75,
+    "debt_to_equity_ratio": 1.263,
+    "equity_ratio": 0.4419,
+    "nav_per_share_yoy_pct": -4.04,
+    "mgmt_fee_as_pct_of_assets": 1.33,
+    "shares_outstanding": 170144126,
+    "admin_fee_mn": 1.958,
+    "pik_income_mn": 9.17
   },
   {
     "quarter": "Q2 2023",
@@ -1280,7 +1349,14 @@
     "interest_coverage_ratio": 3.6,
     "expense_ratio_pct": 12.869,
     "net_expense_ratio_pct": 6.591,
-    "total_assets_mn": 5736.835
+    "total_assets_mn": 5736.835,
+    "debt_to_equity_ratio": 1.28,
+    "equity_ratio": 0.4386,
+    "nav_per_share_yoy_pct": -2.05,
+    "mgmt_fee_as_pct_of_assets": 1.36,
+    "shares_outstanding": 169599992,
+    "admin_fee_mn": 2.049,
+    "pik_income_mn": 9.593
   },
   {
     "quarter": "Q3 2023",
@@ -1354,7 +1430,12 @@
       }
     ],
     "expense_ratio_pct": 12.596,
-    "total_assets_mn": 5733.472
+    "total_assets_mn": 5733.472,
+    "debt_to_equity_ratio": 1.223,
+    "equity_ratio": 0.4472,
+    "nav_per_share_yoy_pct": 2.18,
+    "shares_outstanding": 169594742,
+    "pik_income_mn": 11.798
   },
   {
     "quarter": "Q4 2023",
@@ -1452,7 +1533,13 @@
     ],
     "total_assets_mn": 5699.88,
     "interest_coverage_ratio": 2.022,
-    "fee_as_pct_of_nii": 41936.098
+    "fee_as_pct_of_nii": 41936.098,
+    "debt_to_equity_ratio": 1.169,
+    "equity_ratio": 0.7043,
+    "nav_per_share_yoy_pct": 1.13,
+    "mgmt_fee_as_pct_of_assets": 2503.88,
+    "shares_outstanding": 170585795,
+    "admin_fee_mn": 2.245
   },
   {
     "quarter": "Q1 2024",
@@ -1538,7 +1625,14 @@
     "expense_ratio_pct": 12.69,
     "net_expense_ratio_pct": 5.885,
     "total_assets_mn": 5942.626,
-    "interest_coverage_ratio": 1.974
+    "interest_coverage_ratio": 1.974,
+    "debt_to_equity_ratio": 1.291,
+    "equity_ratio": 0.4364,
+    "nav_per_share_yoy_pct": 2.65,
+    "mgmt_fee_as_pct_of_assets": 1.0,
+    "shares_outstanding": 171517307,
+    "admin_fee_mn": 2.145,
+    "pik_income_mn": 11.825
   },
   {
     "quarter": "Q2 2024",
@@ -1624,7 +1718,14 @@
     "expense_ratio_pct": 9.16,
     "net_expense_ratio_pct": 3.228,
     "total_assets_mn": 8477.205,
-    "interest_coverage_ratio": 1.544
+    "interest_coverage_ratio": 1.544,
+    "debt_to_equity_ratio": 1.091,
+    "equity_ratio": 0.4782,
+    "nav_per_share_yoy_pct": 3.3,
+    "mgmt_fee_as_pct_of_assets": 0.72,
+    "shares_outstanding": 264609056,
+    "admin_fee_mn": 2.09,
+    "pik_income_mn": 10.173
   },
   {
     "quarter": "Q3 2024",
@@ -1684,7 +1785,12 @@
       }
     ],
     "expense_ratio_pct": 12.404,
-    "total_assets_mn": 8705.978
+    "total_assets_mn": 8705.978,
+    "debt_to_equity_ratio": 1.242,
+    "equity_ratio": 0.4615,
+    "nav_per_share_yoy_pct": 0.67,
+    "shares_outstanding": 264277128,
+    "pik_income_mn": 11.013
   },
   {
     "quarter": "Q4 2024",
@@ -1760,7 +1866,13 @@
     ],
     "total_assets_mn": 9008.786,
     "interest_coverage_ratio": 1.207,
-    "fee_as_pct_of_nii": 41241.221
+    "fee_as_pct_of_nii": 41241.221,
+    "debt_to_equity_ratio": 1.254,
+    "equity_ratio": 0.4421,
+    "nav_per_share_yoy_pct": -1.45,
+    "mgmt_fee_as_pct_of_assets": 3615.33,
+    "shares_outstanding": 265498597,
+    "admin_fee_mn": 2.902
   },
   {
     "quarter": "Q1 2025",
@@ -1853,7 +1965,14 @@
     "expense_ratio_pct": 11.399,
     "net_expense_ratio_pct": 4.483,
     "total_assets_mn": 8949.865,
-    "interest_coverage_ratio": 1.411
+    "interest_coverage_ratio": 1.411,
+    "debt_to_equity_ratio": 1.213,
+    "equity_ratio": 0.4518,
+    "nav_per_share_yoy_pct": -0.53,
+    "mgmt_fee_as_pct_of_assets": 1.0,
+    "shares_outstanding": 268831114,
+    "admin_fee_mn": 3.185,
+    "pik_income_mn": 14.053
   },
   {
     "quarter": "Q2 2025",
@@ -1932,7 +2051,14 @@
     "expense_ratio_pct": 11.722,
     "net_expense_ratio_pct": 4.644,
     "total_assets_mn": 9236.513,
-    "interest_coverage_ratio": 1.432
+    "interest_coverage_ratio": 1.432,
+    "debt_to_equity_ratio": 1.312,
+    "equity_ratio": 0.4326,
+    "nav_per_share_yoy_pct": -2.09,
+    "mgmt_fee_as_pct_of_assets": 0.98,
+    "shares_outstanding": 266376416,
+    "admin_fee_mn": 3.142,
+    "pik_income_mn": 13.515
   },
   {
     "quarter": "Q3 2025",
@@ -1993,6 +2119,11 @@
       }
     ],
     "expense_ratio_pct": 11.383,
-    "total_assets_mn": 8978.299
+    "total_assets_mn": 8978.299,
+    "debt_to_equity_ratio": 1.275,
+    "equity_ratio": 0.4354,
+    "nav_per_share_yoy_pct": -1.92,
+    "shares_outstanding": 266008083,
+    "pik_income_mn": 14.511
   }
 ]
