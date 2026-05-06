@@ -143,6 +143,19 @@ period, the amendment is authoritative.
   "restructured and removed".
 - Recorded at cost basis.
 
+#### E3 `net_na_change_mn` *(derived)*
+- Formula: `na_dollar_amount_mn[Q] − na_dollar_amount_mn[Q-1]`.
+- Represents **net** change in non-accrual balance (at cost) during the
+  quarter. Positive = deterioration (more dollars on non-accrual);
+  negative = improvement (resolutions exceed additions); zero = no change.
+- Cannot be decomposed into gross additions and gross resolutions —
+  those components are not separately disclosed in public BDC filings
+  for this universe (see `PHASE3_NONACCRUAL_NOTE.md` for the
+  three-pass investigation).
+- Null when either the current or prior quarter `na_dollar_amount_mn`
+  is null.
+- Source tag: `derived`.
+
 ### Group F — Portfolio composition
 
 #### F1 `top_10_concentration_pct`

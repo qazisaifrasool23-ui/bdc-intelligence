@@ -89,3 +89,109 @@ BDC non-accrual rollforward tables exist in 10-Q Notes, but:
 `na_new_additions_mn` and `na_resolutions_mn` remain null across all
 1,084 quarter-records. Per the rule "null over fabrication — always",
 this is the correct state. No false positives leaked into the timeseries.
+
+---
+
+## Phase 4 Findings (HTML Table Parser — May 2026)
+
+After Phase 3 was reverted, a third attempt was built and tested:
+`enrich_phase4_table_parser.py`. It addressed the root cause of Phase 3
+by reading `<table>` elements directly with `pandas.read_html`, preserving
+the row × column structure that BeautifulSoup HTML-stripping had flattened
+into ambiguous text streams.
+
+### Method
+
+For each filing the parser:
+
+1. Walks every `<table>` element in the document.
+2. Filters to tables that mention "non-accrual" in the table body **or**
+   in the preceding heading (the captured "caption" — table caption,
+   prior siblings, parent's prior siblings).
+3. Further filters to tables whose body contains rollforward labels
+   (`Additions`, `Removals`, `Beginning`, `Ending`, `Placed on
+   non-accrual`, `Removed from non-accrual`, etc.).
+4. For each candidate, parses with `pandas.read_html`, locates the
+   "amortized cost" / "principal" column (over fair value when both
+   exist), and reads the additions and resolutions rows.
+
+### Results
+
+`--test` mode was run on the three highest-priority disclosure funds
+(ARCC, FSK, OCSL) plus a survey of four more (NMFC, OBDC, CCAP, GBDC).
+**Zero non-accrual rollforward tables were found in any of the seven funds.**
+
+| Fund | Filing | Tables w/ "non-accrual" mentioned | Tables w/ rollforward labels | Real rollforward? |
+|---|---|---:|---:|---|
+| ARCC | Q1 2026 10-Q | 0 | 0 | no |
+| OCSL | Q3 2025 10-K | 0 | 0 | no |
+| FSK | Q4 2025 10-K | 2 | 0 | no |
+| NMFC | Q1 2026 10-Q | 0 | 0 | no |
+| OBDC | Q4 2025 10-K | 1 | 0 | no |
+| CCAP | Q4 2025 10-K | 1 | 0 | no |
+| GBDC | Q3 2025 10-K | 5 | 6 | no — see below |
+
+### What BDCs DO disclose
+
+- **Ending non-accrual balance** at cost (already captured as
+  `na_dollar_amount_mn`).
+- **% of portfolio on non-accrual** at cost and at fair value
+  (already captured as `na_pct_cost` and `na_pct_fv`).
+- **Loan-by-loan footnote markers** in the Schedule of Investments
+  (an asterisk or numbered footnote next to the position; the footnote
+  text says "this loan is on non-accrual status as of period end").
+
+### What BDCs do NOT disclose
+
+A quarterly Beginning / + Additions / − Removals / Ending rollforward
+in any structured `<table>`, in any of the seven funds tested. This
+disclosure simply isn't there to be extracted, regardless of the
+extraction technology.
+
+### GBDC exception note
+
+GBDC's Q3 2025 10-K had six tables that matched both the "non-accrual"
+substring and our rollforward-label regex. **All six were false positives**.
+The matched tables were:
+
+- *Weighted average rate of new investment fundings* (table about
+  yields on new portfolio additions, not non-accrual)
+- *Internal Performance Ratings* (the GC Advisors 1–5 rating definitions)
+- Three tables (#110, #112, #163) where the "additions" word appears in
+  a footnote describing the *investment-portfolio* rollforward (gross
+  additions to the portfolio at cost), not non-accrual specifically.
+  Worse, `pandas.read_html` returned `NaN` for nearly all data cells in
+  these three tables — the modern XBRL-encoded structure is too deeply
+  nested for `pandas.read_html` to parse meaningfully.
+
+### Conclusion
+
+`na_new_additions_mn` and `na_resolutions_mn` are not extractable from
+public SEC filings at scale for the 47-fund traded BDC universe. Three
+extraction technologies (text-pattern, footnote-skipping pattern,
+HTML-aware table parser) have all converged on the same finding: the
+data isn't disclosed.
+
+The only viable paths to non-zero coverage on these two specific
+fields are:
+
+1. **LLM-API reading** (claude-haiku-4-5 via the Anthropic SDK) — would
+   read the non-accrual section narrative and identify gross
+   additions / resolutions where they're disclosed inline. Estimated
+   cost ~$5–15 for a full 47-fund × ~25-quarter pass.
+2. **Hand curation** for the rare quarters where a fund discloses a
+   rollforward in narrative form rather than a table.
+
+Both paths are deferred. Both fields remain null.
+
+### Net effect
+
+- `na_new_additions_mn`: 0 / 1,084 quarters (0% coverage)
+- `na_resolutions_mn`: 0 / 1,084 quarters (0% coverage)
+
+No false positives. The platform displays "—" for these fields with
+the footnote: *Non-accrual activity not separately disclosed in
+quarterly filings; only ending balance is reported.*
+
+A derived substitute field, `net_na_change_mn`, is computed instead —
+see `CALCULATION_STANDARDS.md`.

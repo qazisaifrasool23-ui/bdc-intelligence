@@ -11034,3 +11034,1037 @@ SAR,ALL,na_new_additions_mn,,phase3-attempt,meta,null,"Phase 3 attempted text-ba
 SAR,ALL,na_resolutions_mn,,phase3-attempt,meta,null,"Phase 3 attempted text-based rollforward extraction across all quarters; reverted because pattern-matched values were dates (e.g. 3/31/2024 -> 302.024) and footnote markers (1, 2). BeautifulSoup HTML stripping does not preserve table layout enough for safe pattern-based extraction of these fields. Realistic path: LLM-API reading or hand-curation per fund."
 MSDL,ALL,na_new_additions_mn,,phase3-attempt,meta,null,"Phase 3 attempted text-based rollforward extraction across all quarters; reverted because pattern-matched values were dates (e.g. 3/31/2024 -> 302.024) and footnote markers (1, 2). BeautifulSoup HTML stripping does not preserve table layout enough for safe pattern-based extraction of these fields. Realistic path: LLM-API reading or hand-curation per fund."
 MSDL,ALL,na_resolutions_mn,,phase3-attempt,meta,null,"Phase 3 attempted text-based rollforward extraction across all quarters; reverted because pattern-matched values were dates (e.g. 3/31/2024 -> 302.024) and footnote markers (1, 2). BeautifulSoup HTML stripping does not preserve table layout enough for safe pattern-based extraction of these fields. Realistic path: LLM-API reading or hand-curation per fund."
+ARCC,Q2 2020,net_na_change_mn,163.578,derived,computed,high,"na[445.47]→[609.048], delta=163.578"
+ARCC,Q3 2020,net_na_change_mn,123.21,derived,computed,high,"na[609.048]→[732.258], delta=123.21"
+ARCC,Q1 2021,net_na_change_mn,-223.101,derived,computed,high,"na[732.258]→[509.157], delta=-223.101"
+ARCC,Q2 2021,net_na_change_mn,-12.213,derived,computed,high,"na[509.157]→[496.944], delta=-12.213"
+ARCC,Q3 2021,net_na_change_mn,-196.435,derived,computed,high,"na[496.944]→[300.509], delta=-196.435"
+ARCC,Q1 2022,net_na_change_mn,-66.677,derived,computed,high,"na[300.509]→[233.832], delta=-66.677"
+ARCC,Q2 2022,net_na_change_mn,-64.472,derived,computed,high,"na[233.832]→[169.36], delta=-64.472"
+ARCC,Q3 2022,net_na_change_mn,2.392,derived,computed,high,"na[169.36]→[171.752], delta=2.392"
+ARCC,Q1 2023,net_na_change_mn,192.558,derived,computed,high,"na[171.752]→[364.31], delta=192.558"
+ARCC,Q2 2023,net_na_change_mn,4.352,derived,computed,high,"na[364.31]→[368.662], delta=4.352"
+ARCC,Q3 2023,net_na_change_mn,3.026,derived,computed,high,"na[368.662]→[371.688], delta=3.026"
+ARCC,Q4 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (371.688) na_dollar_amount_mn is null
+ARCC,Q1 2024,net_na_change_mn,,derived,computed,null,either current (296.465) or prior (None) na_dollar_amount_mn is null
+ARCC,Q2 2024,net_na_change_mn,24.726,derived,computed,high,"na[296.465]→[321.191], delta=24.726"
+ARCC,Q3 2024,net_na_change_mn,11.258,derived,computed,high,"na[321.191]→[332.449], delta=11.258"
+ARCC,Q4 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (332.449) na_dollar_amount_mn is null
+ARCC,Q1 2025,net_na_change_mn,,derived,computed,null,either current (455.226) or prior (None) na_dollar_amount_mn is null
+ARCC,Q2 2025,net_na_change_mn,13.651,derived,computed,high,"na[455.226]→[468.877], delta=13.651"
+ARCC,Q3 2025,net_na_change_mn,16.762,derived,computed,high,"na[468.877]→[485.639], delta=16.762"
+ARCC,Q4 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (485.639) na_dollar_amount_mn is null
+ARCC,Q1 2026,net_na_change_mn,,derived,computed,null,either current (554.508) or prior (None) na_dollar_amount_mn is null
+OBDC,Q2 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+OBDC,Q3 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+OBDC,Q4 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+OBDC,Q1 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+OBDC,Q2 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+OBDC,Q3 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+OBDC,Q4 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+OBDC,Q1 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+OBDC,Q2 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+OBDC,Q3 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+OBDC,Q4 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+OBDC,Q1 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+OBDC,Q2 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+OBDC,Q3 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+OBDC,Q4 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+OBDC,Q1 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+OBDC,Q2 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+OBDC,Q3 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+OBDC,Q4 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+OBDC,Q1 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+OBDC,Q2 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+OBDC,Q3 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+OBDC,Q4 2025,net_na_change_mn,,derived,computed,null,either current (219.937) or prior (None) na_dollar_amount_mn is null
+BXSL,Q2 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+BXSL,Q3 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+BXSL,Q4 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+BXSL,Q1 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+BXSL,Q2 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+BXSL,Q3 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+BXSL,Q4 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+BXSL,Q1 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+BXSL,Q2 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+BXSL,Q3 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+BXSL,Q4 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+BXSL,Q1 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+BXSL,Q2 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+BXSL,Q3 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+BXSL,Q4 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+BXSL,Q1 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+BXSL,Q2 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+BXSL,Q3 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+BXSL,Q4 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+BXSL,Q1 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+BXSL,Q2 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+BXSL,Q3 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+BXSL,Q4 2025,net_na_change_mn,,derived,computed,null,either current (13.933) or prior (None) na_dollar_amount_mn is null
+FSK,Q2 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+FSK,Q3 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+FSK,Q4 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+FSK,Q1 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+FSK,Q2 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+FSK,Q3 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+FSK,Q4 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+FSK,Q1 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+FSK,Q2 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+FSK,Q3 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+FSK,Q4 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+FSK,Q1 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+FSK,Q2 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+FSK,Q3 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+FSK,Q4 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+FSK,Q1 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+FSK,Q2 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+FSK,Q3 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+FSK,Q4 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+FSK,Q1 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+FSK,Q2 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+FSK,Q3 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+FSK,Q4 2025,net_na_change_mn,,derived,computed,null,either current (407.102) or prior (None) na_dollar_amount_mn is null
+PSEC,Q1 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+PSEC,Q3 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+PSEC,Q1 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+PSEC,Q3 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+PSEC,Q4 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+PSEC,Q1 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+PSEC,Q3 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+PSEC,Q4 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+PSEC,Q1 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+PSEC,Q3 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+PSEC,Q4 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+PSEC,Q1 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+PSEC,Q3 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+PSEC,Q4 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+PSEC,Q1 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+PSEC,Q3 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GBDC,Q4 2019,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GBDC,Q1 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GBDC,Q2 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GBDC,Q3 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GBDC,Q4 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GBDC,Q1 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GBDC,Q2 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GBDC,Q3 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GBDC,Q4 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GBDC,Q1 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GBDC,Q2 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GBDC,Q3 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GBDC,Q4 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GBDC,Q1 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GBDC,Q2 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GBDC,Q3 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GBDC,Q4 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GBDC,Q1 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GBDC,Q2 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GBDC,Q3 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GBDC,Q4 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GBDC,Q1 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GBDC,Q2 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GBDC,Q3 2025,net_na_change_mn,,derived,computed,null,either current (115.622) or prior (None) na_dollar_amount_mn is null
+MAIN,Q2 2020,net_na_change_mn,2.247,derived,computed,high,"na[113.892]→[116.139], delta=2.247"
+MAIN,Q3 2020,net_na_change_mn,67.371,derived,computed,high,"na[116.139]→[183.51], delta=67.371"
+MAIN,Q4 2020,net_na_change_mn,-175.496,derived,computed,high,"na[183.51]→[8.014], delta=-175.496"
+MAIN,Q1 2021,net_na_change_mn,73.19,derived,computed,high,"na[8.014]→[81.204], delta=73.19"
+MAIN,Q2 2021,net_na_change_mn,34.715,derived,computed,high,"na[81.204]→[115.919], delta=34.715"
+MAIN,Q3 2021,net_na_change_mn,-6.82,derived,computed,high,"na[115.919]→[109.099], delta=-6.82"
+MAIN,Q4 2021,net_na_change_mn,-99.56,derived,computed,high,"na[109.099]→[9.539], delta=-99.56"
+MAIN,Q1 2022,net_na_change_mn,104.874,derived,computed,high,"na[9.539]→[114.413], delta=104.874"
+MAIN,Q2 2022,net_na_change_mn,4.556,derived,computed,high,"na[114.413]→[118.969], delta=4.556"
+MAIN,Q3 2022,net_na_change_mn,17.547,derived,computed,high,"na[118.969]→[136.516], delta=17.547"
+MAIN,Q4 2022,net_na_change_mn,-122.572,derived,computed,high,"na[136.516]→[13.944], delta=-122.572"
+MAIN,Q1 2023,net_na_change_mn,107.583,derived,computed,high,"na[13.944]→[121.527], delta=107.583"
+MAIN,Q2 2023,net_na_change_mn,-57.901,derived,computed,high,"na[121.527]→[63.626], delta=-57.901"
+MAIN,Q3 2023,net_na_change_mn,54.155,derived,computed,high,"na[63.626]→[117.781], delta=54.155"
+MAIN,Q4 2023,net_na_change_mn,-106.272,derived,computed,high,"na[117.781]→[11.509], delta=-106.272"
+MAIN,Q1 2024,net_na_change_mn,67.442,derived,computed,high,"na[11.509]→[78.951], delta=67.442"
+MAIN,Q2 2024,net_na_change_mn,69.156,derived,computed,high,"na[78.951]→[148.107], delta=69.156"
+MAIN,Q3 2024,net_na_change_mn,18.259,derived,computed,high,"na[148.107]→[166.366], delta=18.259"
+MAIN,Q4 2024,net_na_change_mn,-147.43,derived,computed,high,"na[166.366]→[18.936], delta=-147.43"
+MAIN,Q1 2025,net_na_change_mn,174.372,derived,computed,high,"na[18.936]→[193.308], delta=174.372"
+MAIN,Q2 2025,net_na_change_mn,24.327,derived,computed,high,"na[193.308]→[217.635], delta=24.327"
+MAIN,Q3 2025,net_na_change_mn,-61.18,derived,computed,high,"na[217.635]→[156.455], delta=-61.18"
+MAIN,Q4 2025,net_na_change_mn,-94.682,derived,computed,high,"na[156.455]→[61.773], delta=-94.682"
+HTGC,Q2 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+HTGC,Q3 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+HTGC,Q4 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+HTGC,Q1 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+HTGC,Q2 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+HTGC,Q3 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+HTGC,Q4 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+HTGC,Q1 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+HTGC,Q2 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+HTGC,Q3 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+HTGC,Q4 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+HTGC,Q1 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+HTGC,Q2 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+HTGC,Q3 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+HTGC,Q4 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+HTGC,Q1 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+HTGC,Q2 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+HTGC,Q3 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+HTGC,Q4 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+HTGC,Q1 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+HTGC,Q2 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+HTGC,Q3 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+HTGC,Q4 2025,net_na_change_mn,,derived,computed,null,either current (51.49) or prior (None) na_dollar_amount_mn is null
+GSBD,Q2 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GSBD,Q3 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GSBD,Q4 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GSBD,Q1 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GSBD,Q2 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GSBD,Q3 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GSBD,Q4 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GSBD,Q1 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GSBD,Q2 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GSBD,Q3 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GSBD,Q4 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GSBD,Q1 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GSBD,Q2 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GSBD,Q3 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GSBD,Q4 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GSBD,Q1 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GSBD,Q2 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GSBD,Q3 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GSBD,Q4 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GSBD,Q1 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GSBD,Q2 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GSBD,Q3 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GSBD,Q4 2025,net_na_change_mn,,derived,computed,null,either current (82.888) or prior (None) na_dollar_amount_mn is null
+MSIF,Q2 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+MSIF,Q3 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+MSIF,Q4 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+MSIF,Q1 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+MSIF,Q2 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+MSIF,Q3 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+MSIF,Q4 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+MSIF,Q1 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+MSIF,Q2 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+MSIF,Q3 2022,net_na_change_mn,,derived,computed,null,either current (0.063) or prior (None) na_dollar_amount_mn is null
+MSIF,Q4 2022,net_na_change_mn,0.168,derived,computed,high,"na[0.063]→[0.231], delta=0.168"
+MSIF,Q1 2023,net_na_change_mn,-0.147,derived,computed,high,"na[0.231]→[0.084], delta=-0.147"
+MSIF,Q2 2023,net_na_change_mn,0.005,derived,computed,high,"na[0.084]→[0.089], delta=0.005"
+MSIF,Q3 2023,net_na_change_mn,0.194,derived,computed,high,"na[0.089]→[0.283], delta=0.194"
+MSIF,Q4 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (0.283) na_dollar_amount_mn is null
+MSIF,Q1 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+MSIF,Q2 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+MSIF,Q3 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+MSIF,Q4 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+MSIF,Q1 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+MSIF,Q2 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+MSIF,Q3 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+MSIF,Q4 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+OCSL,Q4 2019,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+OCSL,Q1 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+OCSL,Q2 2020,net_na_change_mn,,derived,computed,null,either current (20.295) or prior (None) na_dollar_amount_mn is null
+OCSL,Q3 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (20.295) na_dollar_amount_mn is null
+OCSL,Q4 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+OCSL,Q1 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+OCSL,Q2 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+OCSL,Q3 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+OCSL,Q4 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+OCSL,Q1 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+OCSL,Q2 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+OCSL,Q3 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+OCSL,Q4 2022,net_na_change_mn,,derived,computed,null,either current (73.059) or prior (None) na_dollar_amount_mn is null
+OCSL,Q1 2023,net_na_change_mn,9.95,derived,computed,high,"na[73.059]→[83.009], delta=9.95"
+OCSL,Q2 2023,net_na_change_mn,35.657,derived,computed,high,"na[83.009]→[118.666], delta=35.657"
+OCSL,Q3 2023,net_na_change_mn,69.411,derived,computed,high,"na[118.666]→[188.077], delta=69.411"
+OCSL,Q4 2023,net_na_change_mn,-33.976,derived,computed,high,"na[188.077]→[154.101], delta=-33.976"
+OCSL,Q1 2024,net_na_change_mn,-14.619,derived,computed,high,"na[154.101]→[139.482], delta=-14.619"
+OCSL,Q2 2024,net_na_change_mn,48.215,derived,computed,high,"na[139.482]→[187.697], delta=48.215"
+OCSL,Q3 2024,net_na_change_mn,-35.313,derived,computed,high,"na[187.697]→[152.384], delta=-35.313"
+OCSL,Q4 2024,net_na_change_mn,47.499,derived,computed,high,"na[152.384]→[199.883], delta=47.499"
+OCSL,Q1 2025,net_na_change_mn,36.8,derived,computed,high,"na[199.883]→[236.683], delta=36.8"
+OCSL,Q2 2025,net_na_change_mn,-37.852,derived,computed,high,"na[236.683]→[198.831], delta=-37.852"
+OCSL,Q3 2025,net_na_change_mn,9.752,derived,computed,high,"na[198.831]→[208.583], delta=9.752"
+MFIC,Q4 2019,net_na_change_mn,,derived,computed,null,either current (None) or prior (1.37) na_dollar_amount_mn is null
+MFIC,Q2 2020,net_na_change_mn,,derived,computed,null,either current (3.457) or prior (None) na_dollar_amount_mn is null
+MFIC,Q3 2020,net_na_change_mn,-0.413,derived,computed,high,"na[3.457]→[3.044], delta=-0.413"
+MFIC,Q4 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (3.044) na_dollar_amount_mn is null
+MFIC,Q2 2021,net_na_change_mn,,derived,computed,null,either current (2.831) or prior (None) na_dollar_amount_mn is null
+MFIC,Q3 2021,net_na_change_mn,-2.061,derived,computed,high,"na[2.831]→[0.77], delta=-2.061"
+MFIC,Q4 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (0.77) na_dollar_amount_mn is null
+MFIC,Q2 2022,net_na_change_mn,,derived,computed,null,either current (0.534) or prior (None) na_dollar_amount_mn is null
+MFIC,Q3 2022,net_na_change_mn,0.526,derived,computed,high,"na[0.534]→[1.06], delta=0.526"
+MFIC,Q4 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (1.06) na_dollar_amount_mn is null
+MFIC,Q1 2023,net_na_change_mn,,derived,computed,null,either current (12.788) or prior (None) na_dollar_amount_mn is null
+MFIC,Q2 2023,net_na_change_mn,-12.102,derived,computed,high,"na[12.788]→[0.686], delta=-12.102"
+MFIC,Q3 2023,net_na_change_mn,0.2,derived,computed,high,"na[0.686]→[0.886], delta=0.2"
+MFIC,Q4 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (0.886) na_dollar_amount_mn is null
+MFIC,Q1 2024,net_na_change_mn,,derived,computed,null,either current (11.509) or prior (None) na_dollar_amount_mn is null
+MFIC,Q2 2024,net_na_change_mn,15.345,derived,computed,high,"na[11.509]→[26.854], delta=15.345"
+MFIC,Q3 2024,net_na_change_mn,2.557,derived,computed,high,"na[26.854]→[29.411], delta=2.557"
+MFIC,Q4 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (29.411) na_dollar_amount_mn is null
+MFIC,Q1 2025,net_na_change_mn,,derived,computed,null,either current (21.739) or prior (None) na_dollar_amount_mn is null
+MFIC,Q2 2025,net_na_change_mn,-19.464,derived,computed,high,"na[21.739]→[2.275], delta=-19.464"
+MFIC,Q3 2025,net_na_change_mn,1.358,derived,computed,high,"na[2.275]→[3.633], delta=1.358"
+MFIC,Q4 2025,net_na_change_mn,0.001,derived,computed,high,"na[3.633]→[3.634], delta=0.001"
+NMFC,Q2 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+NMFC,Q3 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+NMFC,Q4 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+NMFC,Q1 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+NMFC,Q2 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+NMFC,Q3 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+NMFC,Q4 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+NMFC,Q1 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+NMFC,Q2 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+NMFC,Q3 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+NMFC,Q4 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+NMFC,Q1 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+NMFC,Q2 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+NMFC,Q3 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+NMFC,Q4 2023,net_na_change_mn,,derived,computed,null,either current (1.762) or prior (None) na_dollar_amount_mn is null
+NMFC,Q1 2024,net_na_change_mn,12.471,derived,computed,high,"na[1.762]→[14.233], delta=12.471"
+NMFC,Q2 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (14.233) na_dollar_amount_mn is null
+NMFC,Q3 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+NMFC,Q4 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+NMFC,Q1 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+NMFC,Q2 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+NMFC,Q3 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+NMFC,Q4 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+CGBD,Q2 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+CGBD,Q3 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+CGBD,Q1 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+CGBD,Q2 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+CGBD,Q3 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+CGBD,Q4 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+CGBD,Q1 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+CGBD,Q2 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+CGBD,Q3 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+CGBD,Q4 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+CGBD,Q1 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+CGBD,Q2 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+CGBD,Q3 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+CGBD,Q4 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+CGBD,Q1 2024,net_na_change_mn,,derived,computed,null,either current (3.659) or prior (None) na_dollar_amount_mn is null
+CGBD,Q2 2024,net_na_change_mn,46.271,derived,computed,high,"na[3.659]→[49.93], delta=46.271"
+CGBD,Q3 2024,net_na_change_mn,-28.839,derived,computed,high,"na[49.93]→[21.091], delta=-28.839"
+CGBD,Q4 2024,net_na_change_mn,-18.765,derived,computed,high,"na[21.091]→[2.326], delta=-18.765"
+CGBD,Q1 2025,net_na_change_mn,47.702,derived,computed,high,"na[2.326]→[50.028], delta=47.702"
+CGBD,Q2 2025,net_na_change_mn,20.965,derived,computed,high,"na[50.028]→[70.993], delta=20.965"
+CGBD,Q3 2025,net_na_change_mn,-31.918,derived,computed,high,"na[70.993]→[39.075], delta=-31.918"
+CGBD,Q4 2025,net_na_change_mn,4.884,derived,computed,high,"na[39.075]→[43.959], delta=4.884"
+BBDC,Q2 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+BBDC,Q3 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+BBDC,Q4 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+BBDC,Q1 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+BBDC,Q2 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+BBDC,Q3 2021,net_na_change_mn,,derived,computed,null,either current (9.915) or prior (None) na_dollar_amount_mn is null
+BBDC,Q4 2021,net_na_change_mn,,derived,computed,null,"computed change=-9.911 but upstream values look units-bugged (net_assets=0.74, inv_fv prior=1652.4829 cur=0.14); nulled"
+BBDC,Q1 2022,net_na_change_mn,,derived,computed,null,"computed change=72.099 but upstream values look units-bugged (net_assets=1317.56, inv_fv prior=0.14 cur=2403.425); nulled"
+BBDC,Q2 2022,net_na_change_mn,-2.82,derived,computed,high,"na[72.103]→[69.283], delta=-2.82"
+BBDC,Q3 2022,net_na_change_mn,-3.973,derived,computed,high,"na[69.283]→[65.31], delta=-3.973"
+BBDC,Q4 2022,net_na_change_mn,-56.764,derived,computed,high,"na[65.31]→[8.546], delta=-56.764"
+BBDC,Q1 2023,net_na_change_mn,88.586,derived,computed,high,"na[8.546]→[97.132], delta=88.586"
+BBDC,Q2 2023,net_na_change_mn,-47.012,derived,computed,high,"na[97.132]→[50.12], delta=-47.012"
+BBDC,Q3 2023,net_na_change_mn,48.224,derived,computed,high,"na[50.12]→[98.344], delta=48.224"
+BBDC,Q4 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (98.344) na_dollar_amount_mn is null
+BBDC,Q1 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+BBDC,Q2 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+BBDC,Q3 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+BBDC,Q4 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+BBDC,Q1 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+BBDC,Q2 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+BBDC,Q3 2025,net_na_change_mn,,derived,computed,null,either current (27.899) or prior (None) na_dollar_amount_mn is null
+BBDC,Q4 2025,net_na_change_mn,190.225,derived,computed,high,"na[27.899]→[218.124], delta=190.225"
+BCSF,Q2 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+BCSF,Q3 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+BCSF,Q4 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+BCSF,Q1 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+BCSF,Q2 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+BCSF,Q3 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+BCSF,Q4 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+BCSF,Q1 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+BCSF,Q2 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+BCSF,Q3 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+BCSF,Q4 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+BCSF,Q1 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+BCSF,Q2 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+BCSF,Q3 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+BCSF,Q4 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+BCSF,Q1 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+BCSF,Q2 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+BCSF,Q3 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+BCSF,Q4 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+BCSF,Q1 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+BCSF,Q2 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+BCSF,Q3 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+BCSF,Q4 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+PFLT,Q4 2019,net_na_change_mn,,derived,computed,null,either current (2.005) or prior (None) na_dollar_amount_mn is null
+PFLT,Q1 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (2.005) na_dollar_amount_mn is null
+PFLT,Q2 2020,net_na_change_mn,,derived,computed,null,either current (500.841) or prior (None) na_dollar_amount_mn is null
+PFLT,Q3 2020,net_na_change_mn,,derived,computed,null,"computed change=-23.971 but upstream values look units-bugged (net_assets=0.49, inv_fv prior=22765.518 cur=20733.491); nulled"
+PFLT,Q4 2020,net_na_change_mn,,derived,computed,null,"computed change=-476.855 but upstream values look units-bugged (net_assets=0.49, inv_fv prior=20733.491 cur=0.56); nulled"
+PFLT,Q1 2021,net_na_change_mn,,derived,computed,null,"computed change=602.471 but upstream values look units-bugged (net_assets=0.49, inv_fv prior=0.56 cur=19435.021); nulled"
+PFLT,Q2 2021,net_na_change_mn,,derived,computed,null,"computed change=-602.457 but upstream values look units-bugged (net_assets=0.5, inv_fv prior=19435.021 cur=1.04); nulled"
+PFLT,Q3 2021,net_na_change_mn,,derived,computed,null,"computed change=0.005 but upstream values look units-bugged (net_assets=0.5, inv_fv prior=1.04 cur=1.18); nulled"
+PFLT,Q4 2021,net_na_change_mn,,derived,computed,null,"computed change=20.343 but upstream values look units-bugged (net_assets=527.09, inv_fv prior=1.18 cur=754.722); nulled"
+PFLT,Q1 2022,net_na_change_mn,9.438,derived,computed,high,"na[20.377]→[29.815], delta=9.438"
+PFLT,Q2 2022,net_na_change_mn,-18.777,derived,computed,high,"na[29.815]→[11.038], delta=-18.777"
+PFLT,Q3 2022,net_na_change_mn,11.401,derived,computed,high,"na[11.038]→[22.439], delta=11.401"
+PFLT,Q4 2022,net_na_change_mn,-8.897,derived,computed,high,"na[22.439]→[13.542], delta=-8.897"
+PFLT,Q1 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (13.542) na_dollar_amount_mn is null
+PFLT,Q2 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+PFLT,Q3 2023,net_na_change_mn,,derived,computed,null,either current (13.542) or prior (None) na_dollar_amount_mn is null
+PFLT,Q4 2023,net_na_change_mn,-7.524,derived,computed,high,"na[13.542]→[6.018], delta=-7.524"
+PFLT,Q1 2024,net_na_change_mn,0.0,derived,computed,high,"na[6.018]→[6.018], delta=0.0"
+PFLT,Q2 2024,net_na_change_mn,16.551,derived,computed,high,"na[6.018]→[22.569], delta=16.551"
+PFLT,Q3 2024,net_na_change_mn,-16.551,derived,computed,high,"na[22.569]→[6.018], delta=-16.551"
+PFLT,Q4 2024,net_na_change_mn,-1.679,derived,computed,high,"na[6.018]→[4.339], delta=-1.679"
+PFLT,Q1 2025,net_na_change_mn,28.763,derived,computed,high,"na[4.339]→[33.102], delta=28.763"
+PFLT,Q2 2025,net_na_change_mn,-8.554,derived,computed,high,"na[33.102]→[24.548], delta=-8.554"
+PFLT,Q3 2025,net_na_change_mn,-11.13,derived,computed,high,"na[24.548]→[13.418], delta=-11.13"
+TRIN,Q2 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+TRIN,Q3 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+TRIN,Q1 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+TRIN,Q2 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+TRIN,Q3 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+TRIN,Q4 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+TRIN,Q1 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+TRIN,Q2 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+TRIN,Q3 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+TRIN,Q4 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+TRIN,Q1 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+TRIN,Q2 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+TRIN,Q3 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+TRIN,Q4 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+TRIN,Q1 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+TRIN,Q2 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+TRIN,Q3 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+TRIN,Q4 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+TRIN,Q1 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+TRIN,Q2 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+TRIN,Q3 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+TRIN,Q4 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+CSWC,Q4 2019,net_na_change_mn,,derived,computed,null,either current (1.179) or prior (None) na_dollar_amount_mn is null
+CSWC,Q2 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (1.179) na_dollar_amount_mn is null
+CSWC,Q3 2020,net_na_change_mn,,derived,computed,null,either current (37.629) or prior (None) na_dollar_amount_mn is null
+CSWC,Q4 2020,net_na_change_mn,-33.681,derived,computed,high,"na[37.629]→[3.948], delta=-33.681"
+CSWC,Q2 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (3.948) na_dollar_amount_mn is null
+CSWC,Q3 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+CSWC,Q4 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+CSWC,Q2 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+CSWC,Q3 2022,net_na_change_mn,,derived,computed,null,either current (16.236) or prior (None) na_dollar_amount_mn is null
+CSWC,Q4 2022,net_na_change_mn,-14.685,derived,computed,high,"na[16.236]→[1.551], delta=-14.685"
+CSWC,Q2 2023,net_na_change_mn,30.625,derived,computed,high,"na[1.551]→[32.176], delta=30.625"
+CSWC,Q3 2023,net_na_change_mn,6.181,derived,computed,high,"na[32.176]→[38.357], delta=6.181"
+CSWC,Q4 2023,net_na_change_mn,-31.41,derived,computed,high,"na[38.357]→[6.947], delta=-31.41"
+CSWC,Q2 2024,net_na_change_mn,50.932,derived,computed,high,"na[6.947]→[57.879], delta=50.932"
+CSWC,Q3 2024,net_na_change_mn,31.212,derived,computed,high,"na[57.879]→[89.091], delta=31.212"
+CSWC,Q4 2024,net_na_change_mn,-81.936,derived,computed,high,"na[89.091]→[7.155], delta=-81.936"
+CSWC,Q2 2025,net_na_change_mn,39.604,derived,computed,high,"na[7.155]→[46.759], delta=39.604"
+CSWC,Q3 2025,net_na_change_mn,-16.291,derived,computed,high,"na[46.759]→[30.468], delta=-16.291"
+SLRC,Q2 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+SLRC,Q3 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+SLRC,Q4 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+SLRC,Q1 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+SLRC,Q2 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+SLRC,Q3 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+SLRC,Q4 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+SLRC,Q1 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+SLRC,Q2 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+SLRC,Q3 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+SLRC,Q4 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+SLRC,Q1 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+SLRC,Q2 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+SLRC,Q3 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+SLRC,Q4 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+SLRC,Q1 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+SLRC,Q2 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+SLRC,Q3 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+SLRC,Q4 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+SLRC,Q1 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+SLRC,Q2 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+SLRC,Q3 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+SLRC,Q4 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+OBDE,Q1 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+OBDE,Q2 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+OBDE,Q3 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+OBDE,Q4 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+OBDE,Q1 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+OBDE,Q2 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+OBDE,Q3 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+OBDE,Q4 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+OBDE,Q1 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+OBDE,Q2 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+OBDE,Q3 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+OBDE,Q4 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+OBDE,Q1 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+OBDE,Q2 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+OBDE,Q3 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+OBDE,Q4 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+OBDE,Q1 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+OBDE,Q2 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+OBDE,Q3 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+OBDE,Q4 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+OBDE,Q1 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+OBDE,Q2 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+OBDE,Q3 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+OBDE,Q4 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+CION,Q2 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+CION,Q3 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+CION,Q4 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+CION,Q1 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+CION,Q2 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+CION,Q3 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+CION,Q4 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+CION,Q1 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+CION,Q2 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+CION,Q3 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+CION,Q4 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+CION,Q1 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+CION,Q2 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+CION,Q3 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+CION,Q4 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+CION,Q1 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+CION,Q2 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+CION,Q3 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+CION,Q4 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+CION,Q1 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+CION,Q2 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+CION,Q3 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+CION,Q4 2025,net_na_change_mn,,derived,computed,null,either current (34.383) or prior (None) na_dollar_amount_mn is null
+TCPC,Q2 2020,net_na_change_mn,,derived,computed,null,either current (25.721) or prior (None) na_dollar_amount_mn is null
+TCPC,Q3 2020,net_na_change_mn,-6.176,derived,computed,high,"na[25.721]→[19.545], delta=-6.176"
+TCPC,Q1 2021,net_na_change_mn,-5.662,derived,computed,high,"na[19.545]→[13.883], delta=-5.662"
+TCPC,Q2 2021,net_na_change_mn,-1.101,derived,computed,high,"na[13.883]→[12.782], delta=-1.101"
+TCPC,Q3 2021,net_na_change_mn,18.851,derived,computed,high,"na[12.782]→[31.633], delta=18.851"
+TCPC,Q4 2021,net_na_change_mn,-0.334,derived,computed,high,"na[31.633]→[31.299], delta=-0.334"
+TCPC,Q1 2022,net_na_change_mn,-15.137,derived,computed,high,"na[31.299]→[16.162], delta=-15.137"
+TCPC,Q2 2022,net_na_change_mn,-7.178,derived,computed,high,"na[16.162]→[8.984], delta=-7.178"
+TCPC,Q3 2022,net_na_change_mn,-0.64,derived,computed,high,"na[8.984]→[8.344], delta=-0.64"
+TCPC,Q4 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (8.344) na_dollar_amount_mn is null
+TCPC,Q1 2023,net_na_change_mn,,derived,computed,null,either current (8.489) or prior (None) na_dollar_amount_mn is null
+TCPC,Q2 2023,net_na_change_mn,-0.071,derived,computed,high,"na[8.489]→[8.418], delta=-0.071"
+TCPC,Q3 2023,net_na_change_mn,19.665,derived,computed,high,"na[8.418]→[28.083], delta=19.665"
+TCPC,Q4 2023,net_na_change_mn,33.018,derived,computed,high,"na[28.083]→[61.101], delta=33.018"
+TCPC,Q1 2024,net_na_change_mn,19.397,derived,computed,high,"na[61.101]→[80.498], delta=19.397"
+TCPC,Q2 2024,net_na_change_mn,145.464,derived,computed,high,"na[80.498]→[225.962], delta=145.464"
+TCPC,Q3 2024,net_na_change_mn,-34.286,derived,computed,high,"na[225.962]→[191.676], delta=-34.286"
+TCPC,Q4 2024,net_na_change_mn,99.091,derived,computed,high,"na[191.676]→[290.767], delta=99.091"
+TCPC,Q1 2025,net_na_change_mn,-43.279,derived,computed,high,"na[290.767]→[247.488], delta=-43.279"
+TCPC,Q2 2025,net_na_change_mn,-43.187,derived,computed,high,"na[247.488]→[204.301], delta=-43.187"
+TCPC,Q3 2025,net_na_change_mn,-78.65,derived,computed,high,"na[204.301]→[125.651], delta=-78.65"
+TCPC,Q4 2025,net_na_change_mn,-62.826,derived,computed,high,"na[125.651]→[62.825], delta=-62.826"
+CCAP,Q2 2020,net_na_change_mn,0.114,derived,computed,high,"na[0.64]→[0.754], delta=0.114"
+CCAP,Q3 2020,net_na_change_mn,-0.044,derived,computed,high,"na[0.754]→[0.71], delta=-0.044"
+CCAP,Q4 2020,net_na_change_mn,-0.692,derived,computed,high,"na[0.71]→[0.018], delta=-0.692"
+CCAP,Q1 2021,net_na_change_mn,0.332,derived,computed,high,"na[0.018]→[0.35], delta=0.332"
+CCAP,Q2 2021,net_na_change_mn,0.031,derived,computed,high,"na[0.35]→[0.381], delta=0.031"
+CCAP,Q3 2021,net_na_change_mn,0.001,derived,computed,high,"na[0.381]→[0.382], delta=0.001"
+CCAP,Q4 2021,net_na_change_mn,-0.362,derived,computed,high,"na[0.382]→[0.02], delta=-0.362"
+CCAP,Q1 2022,net_na_change_mn,0.349,derived,computed,high,"na[0.02]→[0.369], delta=0.349"
+CCAP,Q2 2022,net_na_change_mn,-0.021,derived,computed,high,"na[0.369]→[0.348], delta=-0.021"
+CCAP,Q3 2022,net_na_change_mn,-0.348,derived,computed,high,"na[0.348]→[0.0], delta=-0.348"
+CCAP,Q4 2022,net_na_change_mn,0.025,derived,computed,high,"na[0.0]→[0.025], delta=0.025"
+CCAP,Q1 2023,net_na_change_mn,1.036,derived,computed,high,"na[0.025]→[1.061], delta=1.036"
+CCAP,Q2 2023,net_na_change_mn,-0.033,derived,computed,high,"na[1.061]→[1.028], delta=-0.033"
+CCAP,Q3 2023,net_na_change_mn,0.079,derived,computed,high,"na[1.028]→[1.107], delta=0.079"
+CCAP,Q4 2023,net_na_change_mn,-1.075,derived,computed,high,"na[1.107]→[0.032], delta=-1.075"
+CCAP,Q1 2024,net_na_change_mn,0.774,derived,computed,high,"na[0.032]→[0.806], delta=0.774"
+CCAP,Q2 2024,net_na_change_mn,-0.023,derived,computed,high,"na[0.806]→[0.783], delta=-0.023"
+CCAP,Q3 2024,net_na_change_mn,0.095,derived,computed,high,"na[0.783]→[0.878], delta=0.095"
+CCAP,Q4 2024,net_na_change_mn,-0.843,derived,computed,high,"na[0.878]→[0.035], delta=-0.843"
+CCAP,Q1 2025,net_na_change_mn,1.44,derived,computed,high,"na[0.035]→[1.475], delta=1.44"
+CCAP,Q2 2025,net_na_change_mn,0.202,derived,computed,high,"na[1.475]→[1.677], delta=0.202"
+CCAP,Q3 2025,net_na_change_mn,-0.312,derived,computed,high,"na[1.677]→[1.365], delta=-0.312"
+CCAP,Q4 2025,net_na_change_mn,0.0,derived,computed,high,"na[1.365]→[1.365], delta=0.0"
+FDUS,Q2 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+FDUS,Q3 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+FDUS,Q1 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+FDUS,Q2 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+FDUS,Q3 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+FDUS,Q1 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+FDUS,Q2 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+FDUS,Q3 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+FDUS,Q4 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+FDUS,Q1 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+FDUS,Q2 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+FDUS,Q3 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+FDUS,Q4 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+FDUS,Q1 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+FDUS,Q2 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+FDUS,Q3 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+FDUS,Q4 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+FDUS,Q1 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+FDUS,Q2 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+FDUS,Q3 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+FDUS,Q4 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GAIN,Q4 2019,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GAIN,Q2 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GAIN,Q3 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GAIN,Q4 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GAIN,Q2 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GAIN,Q3 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GAIN,Q4 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GAIN,Q2 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GAIN,Q3 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GAIN,Q4 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GAIN,Q2 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GAIN,Q3 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GAIN,Q4 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GAIN,Q2 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GAIN,Q3 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GAIN,Q4 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GAIN,Q2 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GAIN,Q3 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GLAD,Q4 2019,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GLAD,Q1 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GLAD,Q2 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GLAD,Q3 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GLAD,Q4 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GLAD,Q1 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GLAD,Q2 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GLAD,Q3 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GLAD,Q4 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GLAD,Q1 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GLAD,Q2 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GLAD,Q3 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GLAD,Q4 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GLAD,Q1 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GLAD,Q2 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GLAD,Q3 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GLAD,Q4 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GLAD,Q1 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GLAD,Q2 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GLAD,Q3 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GLAD,Q4 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GLAD,Q1 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GLAD,Q2 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GLAD,Q3 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+RWAY,Q2 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+RWAY,Q3 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+RWAY,Q1 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+RWAY,Q2 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+RWAY,Q3 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+RWAY,Q4 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+RWAY,Q1 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+RWAY,Q2 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+RWAY,Q3 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+RWAY,Q4 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+RWAY,Q1 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+RWAY,Q2 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+RWAY,Q3 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+RWAY,Q4 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+RWAY,Q1 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+RWAY,Q2 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+RWAY,Q3 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+RWAY,Q4 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+RWAY,Q1 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+RWAY,Q2 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+RWAY,Q3 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+RWAY,Q4 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+PNNT,Q4 2019,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+PNNT,Q1 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+PNNT,Q2 2020,net_na_change_mn,,derived,computed,null,either current (635.191) or prior (None) na_dollar_amount_mn is null
+PNNT,Q3 2020,net_na_change_mn,,derived,computed,null,"computed change=282.7 but upstream values look units-bugged (net_assets=0.59, inv_fv prior=25407.629 cur=18732.46); nulled"
+PNNT,Q4 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (917.891) na_dollar_amount_mn is null
+PNNT,Q1 2021,net_na_change_mn,,derived,computed,null,either current (942.425) or prior (None) na_dollar_amount_mn is null
+PNNT,Q2 2021,net_na_change_mn,,derived,computed,null,"computed change=-942.369 but upstream values look units-bugged (net_assets=0.64, inv_fv prior=19233.155 cur=1.15); nulled"
+PNNT,Q3 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (0.056) na_dollar_amount_mn is null
+PNNT,Q4 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+PNNT,Q1 2022,net_na_change_mn,,derived,computed,null,either current (42.488) or prior (None) na_dollar_amount_mn is null
+PNNT,Q2 2022,net_na_change_mn,-30.655,derived,computed,high,"na[42.488]→[11.833], delta=-30.655"
+PNNT,Q3 2022,net_na_change_mn,24.982,derived,computed,high,"na[11.833]→[36.815], delta=24.982"
+PNNT,Q4 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (36.815) na_dollar_amount_mn is null
+PNNT,Q1 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+PNNT,Q2 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+PNNT,Q3 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+PNNT,Q4 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+PNNT,Q1 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+PNNT,Q2 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+PNNT,Q3 2024,net_na_change_mn,,derived,computed,null,either current (59.487) or prior (None) na_dollar_amount_mn is null
+PNNT,Q4 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (59.487) na_dollar_amount_mn is null
+PNNT,Q1 2025,net_na_change_mn,,derived,computed,null,either current (22.135) or prior (None) na_dollar_amount_mn is null
+PNNT,Q2 2025,net_na_change_mn,9.54,derived,computed,high,"na[22.135]→[31.675], delta=9.54"
+PNNT,Q3 2025,net_na_change_mn,-4.72,derived,computed,high,"na[31.675]→[26.955], delta=-4.72"
+TPVG,Q2 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+TPVG,Q3 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+TPVG,Q4 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+TPVG,Q1 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+TPVG,Q2 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+TPVG,Q3 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+TPVG,Q4 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+TPVG,Q1 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+TPVG,Q2 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+TPVG,Q3 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+TPVG,Q4 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+TPVG,Q1 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+TPVG,Q2 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+TPVG,Q3 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+TPVG,Q4 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+TPVG,Q1 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+TPVG,Q2 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+TPVG,Q3 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+TPVG,Q4 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+TPVG,Q1 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+TPVG,Q2 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+TPVG,Q3 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+TPVG,Q4 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+HRZN,Q2 2020,net_na_change_mn,6.809,derived,computed,high,"na[12.444]→[19.253], delta=6.809"
+HRZN,Q3 2020,net_na_change_mn,12.888,derived,computed,high,"na[19.253]→[32.141], delta=12.888"
+HRZN,Q4 2020,net_na_change_mn,-30.488,derived,computed,high,"na[32.141]→[1.653], delta=-30.488"
+HRZN,Q1 2021,net_na_change_mn,11.572,derived,computed,high,"na[1.653]→[13.225], delta=11.572"
+HRZN,Q2 2021,net_na_change_mn,-0.091,derived,computed,high,"na[13.225]→[13.134], delta=-0.091"
+HRZN,Q3 2021,net_na_change_mn,-10.329,derived,computed,high,"na[13.134]→[2.805], delta=-10.329"
+HRZN,Q4 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (2.805) na_dollar_amount_mn is null
+HRZN,Q1 2022,net_na_change_mn,,derived,computed,null,either current (11.588) or prior (None) na_dollar_amount_mn is null
+HRZN,Q2 2022,net_na_change_mn,2.33,derived,computed,high,"na[11.588]→[13.918], delta=2.33"
+HRZN,Q3 2022,net_na_change_mn,-2.907,derived,computed,high,"na[13.918]→[11.011], delta=-2.907"
+HRZN,Q4 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (11.011) na_dollar_amount_mn is null
+HRZN,Q1 2023,net_na_change_mn,,derived,computed,null,either current (19.408) or prior (None) na_dollar_amount_mn is null
+HRZN,Q2 2023,net_na_change_mn,4.906,derived,computed,high,"na[19.408]→[24.314], delta=4.906"
+HRZN,Q3 2023,net_na_change_mn,18.861,derived,computed,high,"na[24.314]→[43.175], delta=18.861"
+HRZN,Q4 2023,net_na_change_mn,-32.293,derived,computed,high,"na[43.175]→[10.882], delta=-32.293"
+HRZN,Q1 2024,net_na_change_mn,,derived,computed,null,"computed change=86.371 but upstream values look units-bugged (net_assets=332.12, inv_fv prior=113.475 cur=765.173); nulled"
+HRZN,Q2 2024,net_na_change_mn,20.702,derived,computed,high,"na[97.253]→[117.955], delta=20.702"
+HRZN,Q3 2024,net_na_change_mn,-67.069,derived,computed,high,"na[117.955]→[50.886], delta=-67.069"
+HRZN,Q4 2024,net_na_change_mn,-44.931,derived,computed,high,"na[50.886]→[5.955], delta=-44.931"
+HRZN,Q1 2025,net_na_change_mn,58.32,derived,computed,high,"na[5.955]→[64.275], delta=58.32"
+HRZN,Q2 2025,net_na_change_mn,15.158,derived,computed,high,"na[64.275]→[79.433], delta=15.158"
+HRZN,Q3 2025,net_na_change_mn,-17.058,derived,computed,high,"na[79.433]→[62.375], delta=-17.058"
+HRZN,Q4 2025,net_na_change_mn,-34.312,derived,computed,high,"na[62.375]→[28.063], delta=-34.312"
+SCM,Q2 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+SCM,Q3 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+SCM,Q1 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+SCM,Q2 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+SCM,Q3 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+SCM,Q4 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+SCM,Q1 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+SCM,Q2 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+SCM,Q3 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+SCM,Q4 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+SCM,Q1 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+SCM,Q2 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+SCM,Q3 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+SCM,Q4 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+SCM,Q1 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+SCM,Q2 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+SCM,Q3 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+SCM,Q4 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+SCM,Q1 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+SCM,Q2 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+SCM,Q3 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+SCM,Q4 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+WHF,Q2 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+WHF,Q3 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+WHF,Q1 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+WHF,Q2 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+WHF,Q3 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+WHF,Q4 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+WHF,Q1 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+WHF,Q2 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+WHF,Q3 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+WHF,Q4 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+WHF,Q1 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+WHF,Q2 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+WHF,Q3 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+WHF,Q4 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+WHF,Q1 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+WHF,Q2 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+WHF,Q3 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+WHF,Q4 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+WHF,Q1 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+WHF,Q2 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+WHF,Q3 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+WHF,Q4 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+BCIC,Q2 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+BCIC,Q3 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+BCIC,Q4 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+BCIC,Q1 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+BCIC,Q2 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+BCIC,Q3 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+BCIC,Q4 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+BCIC,Q1 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+BCIC,Q2 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+BCIC,Q3 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+BCIC,Q4 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+BCIC,Q1 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+BCIC,Q2 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+BCIC,Q3 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+BCIC,Q4 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+BCIC,Q1 2024,net_na_change_mn,,derived,computed,null,either current (18.374) or prior (None) na_dollar_amount_mn is null
+BCIC,Q2 2024,net_na_change_mn,7.028,derived,computed,high,"na[18.374]→[25.402], delta=7.028"
+BCIC,Q3 2024,net_na_change_mn,-0.263,derived,computed,high,"na[25.402]→[25.139], delta=-0.263"
+BCIC,Q4 2024,net_na_change_mn,-22.804,derived,computed,high,"na[25.139]→[2.335], delta=-22.804"
+BCIC,Q1 2025,net_na_change_mn,23.245,derived,computed,high,"na[2.335]→[25.58], delta=23.245"
+BCIC,Q2 2025,net_na_change_mn,-0.767,derived,computed,high,"na[25.58]→[24.813], delta=-0.767"
+BCIC,Q3 2025,net_na_change_mn,14.197,derived,computed,high,"na[24.813]→[39.01], delta=14.197"
+BCIC,Q4 2025,net_na_change_mn,42.805,derived,computed,high,"na[39.01]→[81.815], delta=42.805"
+MRCC,Q2 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+MRCC,Q3 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+MRCC,Q4 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+MRCC,Q1 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+MRCC,Q2 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+MRCC,Q3 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+MRCC,Q4 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+MRCC,Q1 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+MRCC,Q2 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+MRCC,Q3 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+MRCC,Q4 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+MRCC,Q1 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+MRCC,Q2 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+MRCC,Q3 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+MRCC,Q4 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+MRCC,Q1 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+MRCC,Q2 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+MRCC,Q3 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+MRCC,Q4 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+MRCC,Q1 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+MRCC,Q2 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+MRCC,Q3 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+MRCC,Q4 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+OXSQ,Q2 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+OXSQ,Q3 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+OXSQ,Q4 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+OXSQ,Q1 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+OXSQ,Q2 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+OXSQ,Q3 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+OXSQ,Q4 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+OXSQ,Q1 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+OXSQ,Q2 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+OXSQ,Q3 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+OXSQ,Q4 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+OXSQ,Q1 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+OXSQ,Q2 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+OXSQ,Q3 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+OXSQ,Q4 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+OXSQ,Q1 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+OXSQ,Q2 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+OXSQ,Q3 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+OXSQ,Q4 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+OXSQ,Q1 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+OXSQ,Q2 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+OXSQ,Q3 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+OXSQ,Q4 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+PFX,Q1 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+PFX,Q2 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+PFX,Q3 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+PFX,Q4 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+PFX,Q1 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+PFX,Q2 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+PFX,Q3 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+PFX,Q4 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+PFX,Q1 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+PFX,Q2 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+PFX,Q3 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+PFX,Q4 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+PFX,Q1 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+PFX,Q2 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+PFX,Q3 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+PFX,Q4 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+PFX,Q1 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+PFX,Q2 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+PFX,Q3 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+PFX,Q4 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+PFX,Q1 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+PFX,Q2 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+PFX,Q3 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+PFX,Q4 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GECC,Q2 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GECC,Q3 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GECC,Q1 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GECC,Q2 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GECC,Q3 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GECC,Q4 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GECC,Q1 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GECC,Q2 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GECC,Q3 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GECC,Q4 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GECC,Q1 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GECC,Q2 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GECC,Q3 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GECC,Q4 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GECC,Q1 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GECC,Q2 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GECC,Q3 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GECC,Q4 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GECC,Q1 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GECC,Q2 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GECC,Q3 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+GECC,Q4 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+OFS,Q2 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+OFS,Q3 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+OFS,Q4 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+OFS,Q1 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+OFS,Q2 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+OFS,Q3 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+OFS,Q4 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+OFS,Q1 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+OFS,Q2 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+OFS,Q3 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+OFS,Q4 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+OFS,Q1 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+OFS,Q2 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+OFS,Q3 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+OFS,Q4 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+OFS,Q1 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+OFS,Q2 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+OFS,Q3 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+OFS,Q4 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+OFS,Q1 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+OFS,Q2 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+OFS,Q3 2025,net_na_change_mn,,derived,computed,null,either current (24.801) or prior (None) na_dollar_amount_mn is null
+OFS,Q4 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (24.801) na_dollar_amount_mn is null
+ICMB,Q4 2019,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+ICMB,Q1 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+ICMB,Q3 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+ICMB,Q4 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+ICMB,Q1 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+ICMB,Q3 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+ICMB,Q4 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+ICMB,Q1 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+ICMB,Q3 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+ICMB,Q4 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+ICMB,Q1 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+ICMB,Q3 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+ICMB,Q4 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+ICMB,Q1 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+ICMB,Q3 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+ICMB,Q1 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+ICMB,Q2 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+ICMB,Q3 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+ICMB,Q4 2025,net_na_change_mn,,derived,computed,null,either current (6.804) or prior (None) na_dollar_amount_mn is null
+RAND,Q2 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+RAND,Q3 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+RAND,Q1 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+RAND,Q2 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+RAND,Q3 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+RAND,Q4 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+RAND,Q1 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+RAND,Q2 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+RAND,Q3 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+RAND,Q4 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+RAND,Q1 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+RAND,Q2 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+RAND,Q3 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+RAND,Q4 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+RAND,Q1 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+RAND,Q2 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+RAND,Q3 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+RAND,Q4 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+RAND,Q1 2025,net_na_change_mn,,derived,computed,null,either current (0.0) or prior (None) na_dollar_amount_mn is null
+RAND,Q2 2025,net_na_change_mn,,derived,computed,null,"computed change=0.006 but upstream values look units-bugged (net_assets=56.714, inv_fv prior=0.082 cur=61.277); nulled"
+RAND,Q3 2025,net_na_change_mn,-0.001,derived,computed,high,"na[0.006]→[0.005], delta=-0.001"
+RAND,Q4 2025,net_na_change_mn,0.011,derived,computed,high,"na[0.005]→[0.016], delta=0.011"
+SSSS,Q2 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+SSSS,Q3 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+SSSS,Q4 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+SSSS,Q1 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+SSSS,Q2 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+SSSS,Q3 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+SSSS,Q4 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+SSSS,Q1 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+SSSS,Q2 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+SSSS,Q3 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+SSSS,Q4 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+SSSS,Q1 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+SSSS,Q2 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+SSSS,Q3 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+SSSS,Q4 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+SSSS,Q1 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+SSSS,Q2 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+SSSS,Q3 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+SSSS,Q4 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+SSSS,Q1 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+SSSS,Q2 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+SSSS,Q3 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+SSSS,Q4 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+EQS,Q2 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+EQS,Q3 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+EQS,Q4 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+EQS,Q1 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+EQS,Q2 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+EQS,Q3 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+EQS,Q4 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+EQS,Q1 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+EQS,Q2 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+EQS,Q3 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+EQS,Q4 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+EQS,Q1 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+EQS,Q2 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+EQS,Q3 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+EQS,Q4 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+EQS,Q1 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+EQS,Q2 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+EQS,Q3 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+EQS,Q4 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+EQS,Q1 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+EQS,Q2 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+EQS,Q3 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+EQS,Q4 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+TSLX,Q2 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+TSLX,Q3 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+TSLX,Q1 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+TSLX,Q2 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+TSLX,Q3 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+TSLX,Q4 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+TSLX,Q1 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+TSLX,Q2 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+TSLX,Q3 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+TSLX,Q4 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+TSLX,Q1 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+TSLX,Q2 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+TSLX,Q3 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+TSLX,Q4 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+TSLX,Q1 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+TSLX,Q2 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+TSLX,Q3 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+TSLX,Q4 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+TSLX,Q1 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+TSLX,Q2 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+TSLX,Q3 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+TSLX,Q4 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+KBDC,Q1 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+KBDC,Q2 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+KBDC,Q3 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+KBDC,Q4 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+KBDC,Q1 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+KBDC,Q2 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+KBDC,Q3 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+KBDC,Q4 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+KBDC,Q1 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+KBDC,Q2 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+KBDC,Q3 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+KBDC,Q4 2023,net_na_change_mn,,derived,computed,null,either current (0.644) or prior (None) na_dollar_amount_mn is null
+KBDC,Q1 2024,net_na_change_mn,185.332,derived,computed,high,"na[0.644]→[185.976], delta=185.332"
+KBDC,Q2 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (185.976) na_dollar_amount_mn is null
+KBDC,Q3 2024,net_na_change_mn,,derived,computed,null,either current (578.19) or prior (None) na_dollar_amount_mn is null
+KBDC,Q4 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (578.19) na_dollar_amount_mn is null
+KBDC,Q1 2025,net_na_change_mn,,derived,computed,null,either current (883.92) or prior (None) na_dollar_amount_mn is null
+KBDC,Q2 2025,net_na_change_mn,32.848,derived,computed,high,"na[883.92]→[916.768], delta=32.848"
+KBDC,Q3 2025,net_na_change_mn,-57.546,derived,computed,high,"na[916.768]→[859.222], delta=-57.546"
+KBDC,Q4 2025,net_na_change_mn,,derived,computed,null,"computed change=675.103 but upstream values look units-bugged (net_assets=1109.931, inv_fv prior=2285.278 cur=2223.83); nulled"
+SAR,Q4 2019,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+SAR,Q2 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+SAR,Q3 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+SAR,Q4 2020,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+SAR,Q2 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+SAR,Q3 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+SAR,Q4 2021,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+SAR,Q2 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+SAR,Q3 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+SAR,Q4 2022,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+SAR,Q2 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+SAR,Q3 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+SAR,Q4 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+SAR,Q2 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+SAR,Q3 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+SAR,Q4 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+SAR,Q2 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+SAR,Q3 2025,net_na_change_mn,,derived,computed,null,either current (0.1) or prior (None) na_dollar_amount_mn is null
+MSDL,Q1 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+MSDL,Q2 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+MSDL,Q3 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+MSDL,Q4 2023,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+MSDL,Q1 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+MSDL,Q2 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+MSDL,Q3 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+MSDL,Q4 2024,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+MSDL,Q1 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+MSDL,Q2 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+MSDL,Q3 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+MSDL,Q4 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
