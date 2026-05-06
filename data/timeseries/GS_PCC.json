@@ -41,9 +41,10 @@
     "cash_income_pct": 97.45,
     "origination_velocity_pct": 107.546,
     "cumulative_dividends_paid": 0.295,
-    "data_quality_score": 71.4,
+    "data_quality_score": 72.1,
     "management_fee_mn": 1.046,
-    "expense_ratio_pct": 4879.748
+    "expense_ratio_pct": 4879.748,
+    "total_assets_mn": 705.261
   },
   {
     "quarter": "Q3 2023",
@@ -88,9 +89,10 @@
     "cash_income_pct": 97.45,
     "origination_velocity_pct": 105.363,
     "cumulative_dividends_paid": 0.7017,
-    "data_quality_score": 79.1,
+    "data_quality_score": 79.5,
     "management_fee_mn": 2.68,
-    "expense_ratio_pct": 3482.395
+    "expense_ratio_pct": 3482.395,
+    "total_assets_mn": 1393.597
   },
   {
     "quarter": "Q4 2023",
@@ -104,9 +106,9 @@
     "nii_per_share": null,
     "dividend_per_share": null,
     "nii_coverage": null,
-    "total_investment_income_mn": null,
+    "total_investment_income_mn": 45.901,
     "net_investment_income_mn": 83.548,
-    "total_expenses_mn": null,
+    "total_expenses_mn": 16.358,
     "pik_pct": null,
     "weighted_avg_yield": 9.4,
     "cost_of_debt_pct": null,
@@ -130,8 +132,10 @@
     "liquidity_pct_of_portfolio": 53.225,
     "avg_position_size_mn": 39.736,
     "cumulative_dividends_paid": 0.7017,
-    "data_quality_score": 51.4,
-    "management_fee_mn": 4.336
+    "data_quality_score": 59.0,
+    "management_fee_mn": 4.336,
+    "total_assets_mn": 1905.9,
+    "expense_ratio_pct": 4.113
   },
   {
     "quarter": "Q1 2024",
@@ -175,9 +179,10 @@
     "cash_income_pct": 98.48,
     "origination_velocity_pct": 39.76,
     "cumulative_dividends_paid": 1.3317,
-    "data_quality_score": 78.6,
+    "data_quality_score": 79.1,
     "management_fee_mn": 6.445,
-    "expense_ratio_pct": 4.258
+    "expense_ratio_pct": 4.258,
+    "total_assets_mn": 3059.972
   },
   {
     "quarter": "Q2 2024",
@@ -224,9 +229,10 @@
     "nav_per_share_yoy_growth_pct": 0.357,
     "origination_velocity_pct": 59.122,
     "cumulative_dividends_paid": 1.9617,
-    "data_quality_score": 82.2,
+    "data_quality_score": 82.6,
     "management_fee_mn": 8.631,
-    "expense_ratio_pct": 4.655
+    "expense_ratio_pct": 4.655,
+    "total_assets_mn": 4245.571
   },
   {
     "quarter": "Q3 2024",
@@ -273,12 +279,13 @@
     "nav_per_share_yoy_growth_pct": 0.238,
     "origination_velocity_pct": 74.426,
     "cumulative_dividends_paid": 2.5917,
-    "data_quality_score": 81.2,
+    "data_quality_score": 81.6,
     "management_fee_mn": 11.147,
     "interest_expense_mn": 22.882,
     "interest_coverage_ratio": 12.973,
     "expense_ratio_pct": 4.912,
-    "net_expense_ratio_pct": 2.565
+    "net_expense_ratio_pct": 2.565,
+    "total_assets_mn": 5624.537
   },
   {
     "quarter": "Q4 2024",
@@ -292,9 +299,9 @@
     "nii_per_share": 0.64,
     "dividend_per_share": null,
     "nii_coverage": null,
-    "total_investment_income_mn": null,
+    "total_investment_income_mn": 162.638,
     "net_investment_income_mn": 459.488,
-    "total_expenses_mn": null,
+    "total_expenses_mn": 65.373,
     "pik_pct": null,
     "weighted_avg_yield": 7.5,
     "cost_of_debt_pct": null,
@@ -321,10 +328,13 @@
     "nav_per_share_yoy_growth_pct": 0.079,
     "origination_velocity_pct": 10.214,
     "cumulative_dividends_paid": 2.5917,
-    "data_quality_score": 61.9,
+    "data_quality_score": 68.9,
     "management_fee_mn": 14.087,
     "interest_expense_mn": 34.956,
-    "interest_coverage_ratio": 13.145
+    "interest_coverage_ratio": 13.145,
+    "total_assets_mn": 7954.251,
+    "expense_ratio_pct": 5.33,
+    "net_expense_ratio_pct": 2.48
   },
   {
     "quarter": "Q1 2025",
@@ -370,9 +380,10 @@
     "nav_per_share_yoy_growth_pct": -0.829,
     "origination_velocity_pct": 16.431,
     "cumulative_dividends_paid": 3.1717,
-    "data_quality_score": 81.8,
+    "data_quality_score": 82.2,
     "management_fee_mn": 18.202,
-    "expense_ratio_pct": 5.006
+    "expense_ratio_pct": 5.006,
+    "total_assets_mn": 8716.823
   },
   {
     "quarter": "Q2 2025",
@@ -419,9 +430,10 @@
     "nav_per_share_yoy_growth_pct": -0.948,
     "origination_velocity_pct": 32.135,
     "cumulative_dividends_paid": 3.7417,
-    "data_quality_score": 82.2,
+    "data_quality_score": 82.6,
     "management_fee_mn": 21.356,
-    "expense_ratio_pct": 5.165
+    "expense_ratio_pct": 5.165,
+    "total_assets_mn": 10157.169
   },
   {
     "quarter": "Q3 2025",
@@ -468,12 +480,13 @@
     "nav_per_share_yoy_growth_pct": -0.989,
     "origination_velocity_pct": 47.412,
     "cumulative_dividends_paid": 4.3117,
-    "data_quality_score": 83.3,
+    "data_quality_score": 83.7,
     "management_fee_mn": 23.893,
     "interest_expense_mn": 58.714,
     "interest_coverage_ratio": 11.375,
     "expense_ratio_pct": 5.485,
-    "net_expense_ratio_pct": 2.53
+    "net_expense_ratio_pct": 2.53,
+    "total_assets_mn": 12389.992
   },
   {
     "quarter": "Q4 2025",
@@ -487,9 +500,9 @@
     "nii_per_share": 0.57,
     "dividend_per_share": null,
     "nii_coverage": null,
-    "total_investment_income_mn": null,
+    "total_investment_income_mn": 315.186,
     "net_investment_income_mn": 983.052,
-    "total_expenses_mn": null,
+    "total_expenses_mn": 144.936,
     "pik_pct": 0.0,
     "weighted_avg_yield": 6.4,
     "cost_of_debt_pct": null,
@@ -518,9 +531,12 @@
     "nav_per_share_yoy_growth_pct": -0.912,
     "origination_velocity_pct": 0.67,
     "cumulative_dividends_paid": 4.3117,
-    "data_quality_score": 72.7,
+    "data_quality_score": 78.7,
     "management_fee_mn": 26.609,
     "interest_expense_mn": 86.604,
-    "interest_coverage_ratio": 11.351
+    "interest_coverage_ratio": 11.351,
+    "total_assets_mn": 16314.857,
+    "expense_ratio_pct": 6.71,
+    "net_expense_ratio_pct": 2.7
   }
 ]

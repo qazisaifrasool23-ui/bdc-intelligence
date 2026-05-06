@@ -12,8 +12,8 @@
     "dividend_per_share": 0.33,
     "nii_coverage": 1.242,
     "total_investment_income_mn": 11.355,
-    "net_investment_income_mn": null,
-    "total_expenses_mn": null,
+    "net_investment_income_mn": 32.198,
+    "total_expenses_mn": 19.499,
     "pik_pct": null,
     "weighted_avg_yield": 9.33,
     "cost_of_debt_pct": 6.37,
@@ -37,10 +37,15 @@
     "total_return_index": 25.42,
     "avg_position_size_mn": 2.305,
     "cumulative_dividends_paid": 0.33,
-    "data_quality_score": 51.3,
+    "data_quality_score": 61.4,
     "management_fee_mn": 3.538,
     "incentive_fee_mn": 4.311,
-    "interest_expense_mn": 10.533
+    "interest_expense_mn": 10.533,
+    "total_assets_mn": 2230.953,
+    "interest_coverage_ratio": 3.057,
+    "fee_as_pct_of_nii": 24.377,
+    "expense_ratio_pct": 12.235,
+    "net_expense_ratio_pct": 5.626
   },
   {
     "quarter": "Q1 2025",
@@ -84,12 +89,13 @@
     "cash_income_pct": 99.53,
     "origination_velocity_pct": 33.097,
     "cumulative_dividends_paid": 0.94,
-    "data_quality_score": 73.3,
+    "data_quality_score": 73.9,
     "management_fee_mn": 4.121,
     "incentive_fee_mn": 4.632,
     "debt_revolver_mn": 464.908,
     "fee_as_pct_of_nii": 47.991,
-    "expense_ratio_pct": 6.181
+    "expense_ratio_pct": 6.181,
+    "total_assets_mn": 2687.9
   },
   {
     "quarter": "Q2 2025",
@@ -133,12 +139,13 @@
     "cash_income_pct": 99.51,
     "origination_velocity_pct": 48.912,
     "cumulative_dividends_paid": 1.565,
-    "data_quality_score": 71.1,
+    "data_quality_score": 71.7,
     "management_fee_mn": 4.855,
     "incentive_fee_mn": 5.706,
     "debt_revolver_mn": 275.208,
     "fee_as_pct_of_nii": 55.011,
-    "expense_ratio_pct": 8.856
+    "expense_ratio_pct": 8.856,
+    "total_assets_mn": 3240.462
   },
   {
     "quarter": "Q3 2025",
@@ -183,11 +190,12 @@
     "cash_income_pct": 99.47,
     "origination_velocity_pct": 59.169,
     "cumulative_dividends_paid": 2.1983,
-    "data_quality_score": 77.8,
+    "data_quality_score": 78.3,
     "management_fee_mn": 5.615,
     "incentive_fee_mn": 6.265,
     "fee_as_pct_of_nii": 67.561,
-    "expense_ratio_pct": 9.565
+    "expense_ratio_pct": 9.565,
+    "total_assets_mn": 3637.626
   },
   {
     "quarter": "Q4 2025",
@@ -202,8 +210,8 @@
     "dividend_per_share": 2.52,
     "nii_coverage": 1.032,
     "total_investment_income_mn": 121.257,
-    "net_investment_income_mn": null,
-    "total_expenses_mn": null,
+    "net_investment_income_mn": 48.157,
+    "total_expenses_mn": 43.394,
     "pik_pct": 0.74,
     "weighted_avg_yield": 9.2,
     "cost_of_debt_pct": 5.98,
@@ -236,10 +244,15 @@
     "nav_per_share_yoy_growth_pct": 0.359,
     "origination_velocity_pct": 39.44,
     "cumulative_dividends_paid": 4.7183,
-    "data_quality_score": 85.7,
+    "data_quality_score": 90.7,
     "management_fee_mn": 6.209,
     "incentive_fee_mn": 6.919,
     "interest_expense_mn": 28.82,
-    "debt_revolver_mn": 475.732
+    "debt_revolver_mn": 475.732,
+    "total_assets_mn": 4312.296,
+    "interest_coverage_ratio": 1.671,
+    "fee_as_pct_of_nii": 27.261,
+    "expense_ratio_pct": 23.678,
+    "net_expense_ratio_pct": 7.952
   }
 ]

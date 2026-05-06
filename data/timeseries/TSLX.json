@@ -390,15 +390,15 @@
     "nav_per_share": null,
     "nav_per_share_qoq_change": null,
     "net_assets_mn": 9.3913,
-    "total_investments_fv_mn": null,
-    "total_debt_mn": null,
+    "total_investments_fv_mn": 2521.593,
+    "total_debt_mn": 1185.964,
     "leverage": null,
     "nii_per_share": null,
     "dividend_per_share": null,
     "nii_coverage": null,
-    "total_investment_income_mn": null,
+    "total_investment_income_mn": 46.191,
     "net_investment_income_mn": null,
-    "total_expenses_mn": null,
+    "total_expenses_mn": 32.477,
     "pik_pct": null,
     "weighted_avg_yield": null,
     "cost_of_debt_pct": null,
@@ -419,14 +419,17 @@
     "unused_capacity_mn": null,
     "price_to_nav": null,
     "cumulative_dividends_paid": 5.4267,
-    "data_quality_score": 27.5,
+    "data_quality_score": 41.9,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1508655/000156459022005558/tslx-10k_20211231.htm",
     "filing_type": "10-K",
     "weighted_avg_interest_rate": 2.3,
     "debt_revolver_mn": 1510.0,
     "debt_unsecured_notes_mn": 4045.0,
     "management_fee_mn": 9.38,
-    "interest_expense_mn": 9.826
+    "interest_expense_mn": 9.826,
+    "total_assets_mn": 2551.857,
+    "expense_ratio_pct": 1383.28,
+    "net_expense_ratio_pct": 964.765
   },
   {
     "quarter": "Q1 2022",
@@ -618,7 +621,7 @@
     "nii_per_share_yoy_growth_pct": 8.889,
     "nav_per_share_yoy_growth_pct": -4.773,
     "cumulative_dividends_paid": 6.895,
-    "data_quality_score": 79.6,
+    "data_quality_score": 80.0,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1508655/000095017022020830/tslx-20220930.htm",
     "filing_type": "10-Q",
     "management_fee_mn": 10330.0,
@@ -639,7 +642,8 @@
     "interest_coverage_ratio": 1972.309,
     "fee_as_pct_of_nii": 48.983,
     "expense_ratio_pct": 12178045.113,
-    "net_expense_ratio_pct": 12172375.639
+    "net_expense_ratio_pct": 12172375.639,
+    "total_assets_mn": 2859.721
   },
   {
     "quarter": "Q4 2022",
@@ -647,15 +651,15 @@
     "nav_per_share": null,
     "nav_per_share_qoq_change": null,
     "net_assets_mn": 7.0488,
-    "total_investments_fv_mn": null,
-    "total_debt_mn": null,
+    "total_investments_fv_mn": 2787.925,
+    "total_debt_mn": 1441.796,
     "leverage": null,
     "nii_per_share": null,
     "dividend_per_share": null,
     "nii_coverage": null,
-    "total_investment_income_mn": null,
+    "total_investment_income_mn": 52.613,
     "net_investment_income_mn": null,
-    "total_expenses_mn": null,
+    "total_expenses_mn": 46.597,
     "pik_pct": null,
     "weighted_avg_yield": null,
     "cost_of_debt_pct": null,
@@ -676,7 +680,7 @@
     "unused_capacity_mn": null,
     "price_to_nav": null,
     "cumulative_dividends_paid": 6.895,
-    "data_quality_score": 26.8,
+    "data_quality_score": 40.9,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1508655/000095017023003042/tslx-20221231.htm",
     "filing_type": "10-K",
     "interest_expense_mn": 38.8,
@@ -684,7 +688,10 @@
     "incentive_fee_mn": 31.0,
     "weighted_avg_interest_rate": 3.9,
     "debt_revolver_mn": 1585.0,
-    "debt_unsecured_notes_mn": 25.0
+    "debt_unsecured_notes_mn": 25.0,
+    "total_assets_mn": 2836.947,
+    "expense_ratio_pct": 2644.252,
+    "net_expense_ratio_pct": 442.458
   },
   {
     "quarter": "Q1 2023",
@@ -728,7 +735,7 @@
     "nii_per_share_yoy_growth_pct": 12.766,
     "nav_per_share_yoy_growth_pct": -1.718,
     "cumulative_dividends_paid": 7.445,
-    "data_quality_score": 73.6,
+    "data_quality_score": 74.1,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1508655/000095017023018777/tslx-20230331.htm",
     "filing_type": "10-Q",
     "management_fee_mn": 10733.0,
@@ -749,7 +756,8 @@
     "interest_coverage_ratio": 1507.302,
     "fee_as_pct_of_nii": 47.078,
     "expense_ratio_pct": 15709117.647,
-    "net_expense_ratio_pct": 15700739.412
+    "net_expense_ratio_pct": 15700739.412,
+    "total_assets_mn": 2972.68
   },
   {
     "quarter": "Q2 2023",
@@ -796,7 +804,7 @@
     "nii_per_share_yoy_growth_pct": 9.804,
     "nav_per_share_yoy_growth_pct": 2.889,
     "cumulative_dividends_paid": 7.97,
-    "data_quality_score": 78.6,
+    "data_quality_score": 78.9,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1508655/000095017023038066/tslx-20230630.htm",
     "filing_type": "10-Q",
     "management_fee_mn": 11410.0,
@@ -831,7 +839,8 @@
     "interest_coverage_ratio": 1503.73,
     "fee_as_pct_of_nii": 44.927,
     "expense_ratio_pct": 15950410.959,
-    "net_expense_ratio_pct": 15941522.74
+    "net_expense_ratio_pct": 15941522.74,
+    "total_assets_mn": 3141.169
   },
   {
     "quarter": "Q3 2023",
@@ -876,7 +885,7 @@
     "nii_per_share_yoy_growth_pct": 14.286,
     "nav_per_share_yoy_growth_pct": 3.729,
     "cumulative_dividends_paid": 8.4933,
-    "data_quality_score": 75.9,
+    "data_quality_score": 76.4,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1508655/000095017023058321/tslx-20230930.htm",
     "filing_type": "10-Q",
     "management_fee_mn": 11928.0,
@@ -897,23 +906,24 @@
     "interest_coverage_ratio": 1426.688,
     "fee_as_pct_of_nii": 46.164,
     "expense_ratio_pct": 17247516.779,
-    "net_expense_ratio_pct": 17238109.53
+    "net_expense_ratio_pct": 17238109.53,
+    "total_assets_mn": 3174.075
   },
   {
     "quarter": "Q4 2023",
     "period_end": "2023-12-31",
     "nav_per_share": null,
     "nav_per_share_qoq_change": null,
-    "net_assets_mn": null,
-    "total_investments_fv_mn": null,
-    "total_debt_mn": null,
+    "net_assets_mn": 1496.375,
+    "total_investments_fv_mn": 3283.065,
+    "total_debt_mn": 1780.307,
     "leverage": null,
     "nii_per_share": null,
     "dividend_per_share": null,
     "nii_coverage": null,
-    "total_investment_income_mn": null,
+    "total_investment_income_mn": 54.684,
     "net_investment_income_mn": null,
-    "total_expenses_mn": null,
+    "total_expenses_mn": 64.617,
     "pik_pct": null,
     "weighted_avg_yield": null,
     "cost_of_debt_pct": null,
@@ -934,7 +944,7 @@
     "unused_capacity_mn": null,
     "price_to_nav": null,
     "cumulative_dividends_paid": 8.4933,
-    "data_quality_score": 26.2,
+    "data_quality_score": 42.2,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1508655/000095017024015845/tslx-20231231.htm",
     "filing_type": "10-K",
     "interest_expense_mn": 63.0,
@@ -951,7 +961,10 @@
         "url": "https://www.sec.gov/Archives/edgar/data/1508655/000119312524008558/0001193125-24-008558-index.htm",
         "impact": "neutral"
       }
-    ]
+    ],
+    "total_assets_mn": 3343.808,
+    "expense_ratio_pct": 17.273,
+    "net_expense_ratio_pct": 0.432
   },
   {
     "quarter": "Q1 2024",
@@ -996,7 +1009,7 @@
     "nii_per_share_yoy_growth_pct": 11.321,
     "nav_per_share_yoy_growth_pct": 3.496,
     "cumulative_dividends_paid": 9.0333,
-    "data_quality_score": 75.9,
+    "data_quality_score": 76.4,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1508655/000095017024051235/tslx-20240331.htm",
     "filing_type": "10-Q",
     "management_fee_mn": 12597.0,
@@ -1024,7 +1037,8 @@
     "interest_coverage_ratio": 1341.515,
     "fee_as_pct_of_nii": 44.928,
     "expense_ratio_pct": 16447848.101,
-    "net_expense_ratio_pct": 16437966.582
+    "net_expense_ratio_pct": 16437966.582,
+    "total_assets_mn": 3452.022
   },
   {
     "quarter": "Q2 2024",
@@ -1070,7 +1084,7 @@
     "nii_per_share_yoy_growth_pct": 5.357,
     "nav_per_share_yoy_growth_pct": 2.688,
     "cumulative_dividends_paid": 9.5633,
-    "data_quality_score": 76.4,
+    "data_quality_score": 76.8,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1508655/000095017024088524/tslx-20240630.htm",
     "filing_type": "10-Q",
     "management_fee_mn": 12765.0,
@@ -1091,7 +1105,8 @@
     "interest_coverage_ratio": 1405.49,
     "fee_as_pct_of_nii": 43.848,
     "expense_ratio_pct": 16435750.0,
-    "net_expense_ratio_pct": 16425941.5
+    "net_expense_ratio_pct": 16425941.5,
+    "total_assets_mn": 3386.951
   },
   {
     "quarter": "Q3 2024",
@@ -1137,7 +1152,7 @@
     "nii_per_share_yoy_growth_pct": 5.357,
     "nav_per_share_yoy_growth_pct": 0.884,
     "cumulative_dividends_paid": 10.09,
-    "data_quality_score": 75.0,
+    "data_quality_score": 75.5,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1508655/000095017024121434/tslx-20240930.htm",
     "filing_type": "10-Q",
     "management_fee_mn": 13029.0,
@@ -1155,23 +1170,24 @@
       }
     ],
     "fee_as_pct_of_nii": 44.067,
-    "expense_ratio_pct": 15982250.0
+    "expense_ratio_pct": 15982250.0,
+    "total_assets_mn": 3529.864
   },
   {
     "quarter": "Q4 2024",
     "period_end": "2024-12-31",
     "nav_per_share": 17.09,
     "nav_per_share_qoq_change": -0.03,
-    "net_assets_mn": null,
-    "total_investments_fv_mn": null,
-    "total_debt_mn": null,
+    "net_assets_mn": 1607.529,
+    "total_investments_fv_mn": 3518.412,
+    "total_debt_mn": 1901.142,
     "leverage": null,
     "nii_per_share": 0.06,
     "dividend_per_share": 0.46,
     "nii_coverage": 0.13,
-    "total_investment_income_mn": null,
-    "net_investment_income_mn": null,
-    "total_expenses_mn": null,
+    "total_investment_income_mn": 57.585,
+    "net_investment_income_mn": 58.755,
+    "total_expenses_mn": 65.391,
     "pik_pct": null,
     "weighted_avg_yield": null,
     "cost_of_debt_pct": null,
@@ -1194,7 +1210,7 @@
     "dividend_change_flag": -1,
     "total_return_index": 27.64,
     "cumulative_dividends_paid": 10.55,
-    "data_quality_score": 45.5,
+    "data_quality_score": 63.3,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1508655/000095017025019845/tslx-20241231.htm",
     "filing_type": "10-K",
     "interest_expense_mn": 133.7,
@@ -1211,7 +1227,12 @@
         "url": "https://www.sec.gov/Archives/edgar/data/1508655/000095017025019865/0000950170-25-019865-index.htm",
         "impact": "neutral"
       }
-    ]
+    ],
+    "total_assets_mn": 3582.225,
+    "interest_coverage_ratio": 0.439,
+    "fee_as_pct_of_nii": 131.733,
+    "expense_ratio_pct": 16.271,
+    "net_expense_ratio_pct": -16.997
   },
   {
     "quarter": "Q1 2025",
@@ -1257,7 +1278,7 @@
     "nii_per_share_yoy_growth_pct": 5.085,
     "nav_per_share_yoy_growth_pct": -0.757,
     "cumulative_dividends_paid": 11.08,
-    "data_quality_score": 75.0,
+    "data_quality_score": 75.5,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1508655/000095017025061008/tslx-20250331.htm",
     "filing_type": "10-Q",
     "management_fee_mn": 13083.0,
@@ -1275,7 +1296,8 @@
       }
     ],
     "fee_as_pct_of_nii": 42.428,
-    "expense_ratio_pct": 14357500.0
+    "expense_ratio_pct": 14357500.0,
+    "total_assets_mn": 3498.5
   },
   {
     "quarter": "Q2 2025",
@@ -1321,7 +1343,7 @@
     "nii_per_share_yoy_growth_pct": -1.695,
     "nav_per_share_yoy_growth_pct": -0.116,
     "cumulative_dividends_paid": 11.605,
-    "data_quality_score": 75.0,
+    "data_quality_score": 75.5,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1508655/000095017025100204/tslx-20250630.htm",
     "filing_type": "10-Q",
     "management_fee_mn": 12918.0,
@@ -1346,7 +1368,8 @@
       }
     ],
     "fee_as_pct_of_nii": 47.221,
-    "expense_ratio_pct": 15600246.914
+    "expense_ratio_pct": 15600246.914,
+    "total_assets_mn": 3415.848
   },
   {
     "quarter": "Q3 2025",
@@ -1392,7 +1415,7 @@
     "nii_per_share_yoy_growth_pct": -3.39,
     "nav_per_share_yoy_growth_pct": 0.117,
     "cumulative_dividends_paid": 12.125,
-    "data_quality_score": 75.0,
+    "data_quality_score": 75.5,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1508655/000119312525264618/tslx-20250930.htm",
     "filing_type": "10-Q",
     "management_fee_mn": 13081.0,
@@ -1410,7 +1433,8 @@
       }
     ],
     "fee_as_pct_of_nii": 46.582,
-    "expense_ratio_pct": 14240493.827
+    "expense_ratio_pct": 14240493.827,
+    "total_assets_mn": 3509.261
   },
   {
     "quarter": "Q4 2025",
@@ -1454,7 +1478,7 @@
     "nii_per_share_yoy_growth_pct": -16.667,
     "nav_per_share_yoy_growth_pct": 0.293,
     "cumulative_dividends_paid": 12.585,
-    "data_quality_score": 75.5,
+    "data_quality_score": 75.9,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1508655/000119312526048664/tslx-20251231.htm",
     "filing_type": "10-K",
     "interest_expense_mn": 154.2,
@@ -1475,6 +1499,7 @@
     "interest_coverage_ratio": 328.664,
     "fee_as_pct_of_nii": 0.163,
     "expense_ratio_pct": 14240493.827,
-    "net_expense_ratio_pct": 14202419.753
+    "net_expense_ratio_pct": 14202419.753,
+    "total_assets_mn": 3421.655
   }
 ]
