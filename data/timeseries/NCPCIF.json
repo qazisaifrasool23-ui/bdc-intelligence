@@ -41,11 +41,15 @@
     "cash_income_pct": 96.25,
     "origination_velocity_pct": 5117.785,
     "cumulative_dividends_paid": 0.14,
-    "data_quality_score": 72.7,
+    "data_quality_score": 75.0,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1911066/000162828022021574/ncpif-20220630x10q.htm",
     "filing_type": "10-Q",
     "interest_expense_mn": 0.226,
-    "interest_coverage_ratio": 22.509
+    "interest_coverage_ratio": 22.509,
+    "management_fee_mn": 0.0,
+    "nav_i": 25.0,
+    "distribution_yield_pct": 6.62,
+    "cumulative_equity_raised_mn": 0.0
   },
   {
     "quarter": "Q3 2022",
@@ -90,7 +94,7 @@
     "cash_income_pct": 97.07,
     "origination_velocity_pct": 4879.229,
     "cumulative_dividends_paid": 0.56,
-    "data_quality_score": 76.1,
+    "data_quality_score": 78.4,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1911066/000162828022029775/ncpif-20220930x10q.htm",
     "filing_type": "10-Q",
     "interest_expense_mn": 0.226,
@@ -103,7 +107,12 @@
         "impact": "neutral"
       }
     ],
-    "interest_coverage_ratio": 23.637
+    "interest_coverage_ratio": 23.637,
+    "shares_outstanding": 10540040,
+    "management_fee_mn": 0.0,
+    "nav_i": 25.0,
+    "distribution_yield_pct": 20.26,
+    "cumulative_equity_raised_mn": 0.0
   },
   {
     "quarter": "Q4 2022",
@@ -143,7 +152,7 @@
     "avg_position_size_mn": 0.35,
     "fixed_rate_pct": 23.2,
     "cumulative_dividends_paid": 0.56,
-    "data_quality_score": 48.8,
+    "data_quality_score": 51.1,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1911066/000162828023007376/ncpif-20221231.htm",
     "filing_type": "10-K",
     "interest_expense_mn": 4.0,
@@ -158,7 +167,9 @@
     ],
     "debt_revolver_mn": 155.0,
     "debt_term_loan_mn": 154.353,
-    "total_assets_mn": 422.025
+    "total_assets_mn": 422.025,
+    "shares_outstanding": 10540040,
+    "cumulative_equity_raised_mn": 0.0
   },
   {
     "quarter": "Q1 2023",
@@ -202,7 +213,7 @@
     "cash_income_pct": 94.46,
     "origination_velocity_pct": 82.804,
     "cumulative_dividends_paid": 0.98,
-    "data_quality_score": 70.8,
+    "data_quality_score": 73.6,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1911066/000162828023016990/ncpif-20230331.htm",
     "filing_type": "10-Q",
     "significant_8k_filings": [
@@ -218,7 +229,12 @@
     "debt_revolver_mn": 135.5,
     "debt_term_loan_mn": 134.871,
     "interest_coverage_ratio": 2.913,
-    "total_assets_mn": 401.735
+    "total_assets_mn": 401.735,
+    "shares_outstanding": 10540040,
+    "management_fee_mn": 0.0,
+    "nav_i": 25.0,
+    "distribution_yield_pct": 20.45,
+    "cumulative_equity_raised_mn": 0.0
   },
   {
     "quarter": "Q2 2023",
@@ -265,7 +281,7 @@
     "nav_per_share_yoy_growth_pct": -2.879,
     "origination_velocity_pct": 89.502,
     "cumulative_dividends_paid": 1.4,
-    "data_quality_score": 74.1,
+    "data_quality_score": 76.3,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1911066/000162828023027564/ncpif-20230630.htm",
     "filing_type": "10-Q",
     "interest_expense_mn": 2.598,
@@ -276,7 +292,12 @@
     "interest_coverage_ratio": 3.068,
     "expense_ratio_pct": 5.805,
     "net_expense_ratio_pct": 1.917,
-    "total_assets_mn": 406.839
+    "total_assets_mn": 406.839,
+    "shares_outstanding": 10853142,
+    "nav_i": 25.0,
+    "nav_per_share_yoy_pct": -2.88,
+    "distribution_yield_pct": 20.46,
+    "cumulative_equity_raised_mn": 0.0
   },
   {
     "quarter": "Q3 2023",
@@ -323,7 +344,7 @@
     "nav_per_share_yoy_growth_pct": -1.085,
     "origination_velocity_pct": 98.906,
     "cumulative_dividends_paid": 1.82,
-    "data_quality_score": 74.1,
+    "data_quality_score": 77.0,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1911066/000162828023035967/ncpif-20230930.htm",
     "filing_type": "10-Q",
     "interest_expense_mn": 4.0,
@@ -334,7 +355,14 @@
     "interest_coverage_ratio": 2.187,
     "expense_ratio_pct": 7.173,
     "net_expense_ratio_pct": 1.877,
-    "total_assets_mn": 461.65
+    "total_assets_mn": 461.65,
+    "shares_outstanding": 12279386,
+    "nav_s": 24.61,
+    "nav_d": 24.61,
+    "nav_i": 25.0,
+    "nav_per_share_yoy_pct": -1.09,
+    "distribution_yield_pct": 20.48,
+    "cumulative_equity_raised_mn": 0.0
   },
   {
     "quarter": "Q4 2023",
@@ -378,7 +406,7 @@
     "nav_per_share_yoy_growth_pct": -0.04,
     "origination_velocity_pct": 120.052,
     "cumulative_dividends_paid": 2.07,
-    "data_quality_score": 64.0,
+    "data_quality_score": 66.0,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1911066/000162828024008070/ncpif-20231231.htm",
     "filing_type": "10-K",
     "interest_expense_mn": 5.0,
@@ -388,7 +416,10 @@
     "debt_term_loan_mn": 165.001,
     "debt_maturing_1yr_mn": 0.0,
     "debt_maturing_4yr_plus_mn": 0.0,
-    "total_assets_mn": 529.643
+    "total_assets_mn": 529.643,
+    "nav_per_share_yoy_pct": -0.04,
+    "distribution_yield_pct": 12.15,
+    "cumulative_equity_raised_mn": 0.0
   },
   {
     "quarter": "Q1 2024",
@@ -434,7 +465,7 @@
     "nav_per_share_yoy_growth_pct": -0.284,
     "origination_velocity_pct": 26.874,
     "cumulative_dividends_paid": 2.49,
-    "data_quality_score": 74.1,
+    "data_quality_score": 76.7,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1911066/000162828024022649/ncpif-20240331.htm",
     "filing_type": "10-Q",
     "management_fee_mn": 5.0,
@@ -446,7 +477,13 @@
     "fee_as_pct_of_nii": 80.199,
     "expense_ratio_pct": 5.231,
     "net_expense_ratio_pct": 2.688,
-    "total_assets_mn": 648.517
+    "total_assets_mn": 648.517,
+    "nav_i": 25.0,
+    "equity_raised_mn": 122.3,
+    "redemption_fulfilled_mn": 24.62,
+    "nav_per_share_yoy_pct": -0.28,
+    "distribution_yield_pct": 20.5,
+    "cumulative_equity_raised_mn": 122.3
   },
   {
     "quarter": "Q2 2024",
@@ -492,7 +529,7 @@
     "nav_per_share_yoy_growth_pct": 0.041,
     "origination_velocity_pct": 61.288,
     "cumulative_dividends_paid": 2.91,
-    "data_quality_score": 74.5,
+    "data_quality_score": 76.7,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1911066/000162828024036317/ncpif-20240630.htm",
     "filing_type": "10-Q",
     "management_fee_mn": 5.0,
@@ -513,7 +550,12 @@
     "fee_as_pct_of_nii": 57.521,
     "expense_ratio_pct": 3.287,
     "net_expense_ratio_pct": 2.588,
-    "total_assets_mn": 961.027
+    "total_assets_mn": 961.027,
+    "nav_i": 25.0,
+    "redemption_fulfilled_mn": 24.62,
+    "nav_per_share_yoy_pct": 0.04,
+    "distribution_yield_pct": 20.45,
+    "cumulative_equity_raised_mn": 122.3
   },
   {
     "quarter": "Q3 2024",
@@ -523,7 +565,7 @@
     "net_assets_mn": 776.51,
     "total_investments_fv_mn": 1133.724,
     "total_debt_mn": 348.5,
-    "leverage": null,
+    "leverage": 0.449,
     "nii_per_share": 0.62,
     "dividend_per_share": 0.42,
     "nii_coverage": 1.476,
@@ -536,11 +578,11 @@
     "na_pct_cost": null,
     "na_pct_fv": null,
     "wtd_avg_risk_rating": 4.0,
-    "first_lien_pct": null,
+    "first_lien_pct": 89.84,
     "second_lien_pct": null,
     "subordinated_pct": null,
     "equity_pct": null,
-    "floating_rate_pct": null,
+    "floating_rate_pct": 9.46,
     "num_portfolio_companies": 78,
     "originations_mn": 763.86,
     "repayments_mn": 141.22,
@@ -560,7 +602,7 @@
     "nav_per_share_yoy_growth_pct": 0.366,
     "origination_velocity_pct": 67.376,
     "cumulative_dividends_paid": 3.33,
-    "data_quality_score": 79.3,
+    "data_quality_score": 85.7,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1911066/000162828024046755/ncpif-20240930.htm",
     "filing_type": "10-Q",
     "management_fee_mn": 5.0,
@@ -590,7 +632,12 @@
     "fee_as_pct_of_nii": 48.664,
     "expense_ratio_pct": 5.932,
     "net_expense_ratio_pct": 2.909,
-    "total_assets_mn": 1168.571
+    "total_assets_mn": 1168.571,
+    "nav_i": 25.0,
+    "redemption_fulfilled_mn": 24.62,
+    "nav_per_share_yoy_pct": 0.37,
+    "distribution_yield_pct": 20.4,
+    "cumulative_equity_raised_mn": 122.3
   },
   {
     "quarter": "Q4 2024",
@@ -613,11 +660,11 @@
     "na_pct_cost": 0.44,
     "na_pct_fv": 0.2,
     "wtd_avg_risk_rating": 4.1,
-    "first_lien_pct": null,
+    "first_lien_pct": 40.2,
     "second_lien_pct": null,
     "subordinated_pct": null,
     "equity_pct": null,
-    "floating_rate_pct": null,
+    "floating_rate_pct": 9.48,
     "num_portfolio_companies": 74,
     "originations_mn": 622.54,
     "repayments_mn": 29.33,
@@ -635,7 +682,7 @@
     "nav_per_share_yoy_growth_pct": 0.203,
     "origination_velocity_pct": 35.679,
     "cumulative_dividends_paid": 3.33,
-    "data_quality_score": 69.2,
+    "data_quality_score": 74.5,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1911066/000162828025010237/ncpif-20241231.htm",
     "filing_type": "10-K",
     "interest_expense_mn": 5.0,
@@ -668,7 +715,10 @@
     "debt_term_loan_mn": 905.647,
     "debt_maturing_1yr_mn": 0.0,
     "debt_maturing_4yr_plus_mn": 584.5,
-    "total_assets_mn": 1776.536
+    "total_assets_mn": 1776.536,
+    "redemption_fulfilled_mn": 24.62,
+    "nav_per_share_yoy_pct": 0.2,
+    "cumulative_equity_raised_mn": 122.3
   },
   {
     "quarter": "Q1 2025",
@@ -691,11 +741,11 @@
     "na_pct_cost": 0.2,
     "na_pct_fv": 0.75,
     "wtd_avg_risk_rating": 4.1,
-    "first_lien_pct": null,
+    "first_lien_pct": 6.25,
     "second_lien_pct": null,
     "subordinated_pct": null,
     "equity_pct": null,
-    "floating_rate_pct": null,
+    "floating_rate_pct": 8.67,
     "num_portfolio_companies": 76,
     "originations_mn": 239.3,
     "repayments_mn": 64.4,
@@ -716,7 +766,7 @@
     "nav_per_share_yoy_growth_pct": 0.0,
     "origination_velocity_pct": 12.64,
     "cumulative_dividends_paid": 3.88,
-    "data_quality_score": 84.7,
+    "data_quality_score": 89.2,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1911066/000162828025024375/ncpif-20250331.htm",
     "filing_type": "10-Q",
     "management_fee_mn": 5.0,
@@ -746,7 +796,13 @@
     "fee_as_pct_of_nii": 38.372,
     "expense_ratio_pct": 9.411,
     "net_expense_ratio_pct": 3.152,
-    "total_assets_mn": 1910.661
+    "total_assets_mn": 1910.661,
+    "nav_i": 25.0,
+    "equity_raised_mn": 86.4,
+    "redemption_fulfilled_mn": 24.64,
+    "nav_per_share_yoy_pct": 0.0,
+    "distribution_yield_pct": 26.85,
+    "cumulative_equity_raised_mn": 208.7
   },
   {
     "quarter": "Q2 2025",
@@ -769,11 +825,11 @@
     "na_pct_cost": 0.2,
     "na_pct_fv": 0.61,
     "wtd_avg_risk_rating": 4.1,
-    "first_lien_pct": null,
+    "first_lien_pct": 5.0,
     "second_lien_pct": null,
     "subordinated_pct": null,
     "equity_pct": null,
-    "floating_rate_pct": null,
+    "floating_rate_pct": 9.0,
     "num_portfolio_companies": 70,
     "originations_mn": 352.42,
     "repayments_mn": 159.72,
@@ -795,7 +851,7 @@
     "nav_per_share_yoy_growth_pct": -0.69,
     "origination_velocity_pct": 17.798,
     "cumulative_dividends_paid": 4.43,
-    "data_quality_score": 85.0,
+    "data_quality_score": 89.4,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1911066/000162828025039316/ncpif-20250630.htm",
     "filing_type": "10-Q",
     "management_fee_mn": 5.0,
@@ -825,7 +881,13 @@
     "fee_as_pct_of_nii": 39.202,
     "expense_ratio_pct": 8.582,
     "net_expense_ratio_pct": 2.827,
-    "total_assets_mn": 2013.773
+    "total_assets_mn": 2013.773,
+    "nav_i": 25.0,
+    "equity_raised_mn": 261.8,
+    "redemption_fulfilled_mn": 24.64,
+    "nav_per_share_yoy_pct": -0.69,
+    "distribution_yield_pct": 26.97,
+    "cumulative_equity_raised_mn": 470.5
   },
   {
     "quarter": "Q3 2025",
@@ -875,7 +937,7 @@
     "nav_per_share_yoy_growth_pct": -1.296,
     "origination_velocity_pct": 26.411,
     "cumulative_dividends_paid": 4.98,
-    "data_quality_score": 88.3,
+    "data_quality_score": 89.2,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1911066/000191106625000038/ncpif-20250930.htm",
     "filing_type": "10-Q",
     "management_fee_mn": 5.0,
@@ -889,7 +951,12 @@
     "fee_as_pct_of_nii": 40.254,
     "expense_ratio_pct": 6.975,
     "net_expense_ratio_pct": 2.735,
-    "total_assets_mn": 2051.198
+    "total_assets_mn": 2051.198,
+    "nav_i": 25.0,
+    "redemption_fulfilled_mn": 24.64,
+    "nav_per_share_yoy_pct": -1.3,
+    "distribution_yield_pct": 27.07,
+    "cumulative_equity_raised_mn": 470.5
   },
   {
     "quarter": "Q4 2025",
@@ -936,7 +1003,7 @@
     "nav_per_share_yoy_growth_pct": -1.981,
     "origination_velocity_pct": 15.442,
     "cumulative_dividends_paid": 4.98,
-    "data_quality_score": 80.8,
+    "data_quality_score": 82.5,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1911066/000191106626000012/ncpif-20251231.htm",
     "filing_type": "10-K",
     "management_fee_mn": 5.0,
@@ -945,6 +1012,11 @@
     "debt_revolver_mn": 795.5,
     "debt_term_loan_mn": 786.478,
     "debt_maturing_4yr_plus_mn": 707.0,
-    "total_assets_mn": 2226.562
+    "total_assets_mn": 2226.562,
+    "nav_i": 25.0,
+    "equity_raised_mn": 578.2,
+    "redemption_fulfilled_mn": 24.64,
+    "nav_per_share_yoy_pct": -1.98,
+    "cumulative_equity_raised_mn": 1048.7
   }
 ]

@@ -12068,3 +12068,745 @@ MSDL,Q1 2025,net_na_change_mn,,derived,computed,null,either current (None) or pr
 MSDL,Q2 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
 MSDL,Q3 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
 MSDL,Q4 2025,net_na_change_mn,,derived,computed,null,either current (None) or prior (None) na_dollar_amount_mn is null
+BCRED,Q3 2020,nav_per_share,25.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+BCRED,Q3 2020,nav_i,25.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+BCRED,Q4 2020,nav_per_share,25.0,10-K,quarterly,medium,anchor-pattern in 10-Q/10-K text
+BCRED,Q4 2020,nav_s,25.0,10-K,quarterly,medium,anchor-pattern in 10-Q/10-K text
+BCRED,Q4 2020,nav_i,25.0,10-K,quarterly,medium,anchor-pattern in 10-Q/10-K text
+BCRED,Q1 2021,nav_s,25.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+BCRED,Q1 2021,nav_i,25.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+BCRED,Q2 2021,nav_s,25.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+BCRED,Q2 2021,nav_i,25.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+BCRED,Q3 2021,nav_s,25.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+BCRED,Q3 2021,nav_i,25.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+BCRED,Q4 2021,shares_outstanding,495831116,XBRL,computed,high,us-gaap concept; cik=0001803498
+BCRED,Q1 2022,nav_s,25.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+BCRED,Q1 2022,nav_i,25.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+BCRED,Q1 2022,floating_rate_pct,2.56,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+BCRED,Q2 2022,nav_s,25.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+BCRED,Q2 2022,nav_i,25.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+BCRED,Q2 2022,floating_rate_pct,2.56,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+BCRED,Q3 2022,shares_outstanding,909121615,XBRL,computed,high,us-gaap concept; cik=0001803498
+BCRED,Q3 2022,nav_i,25.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+BCRED,Q3 2022,floating_rate_pct,7.49,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+BCRED,Q4 2022,shares_outstanding,922574582,XBRL,computed,high,us-gaap concept; cik=0001803498
+BCRED,Q1 2023,shares_outstanding,932609266,XBRL,computed,high,us-gaap concept; cik=0001803498
+BCRED,Q2 2023,shares_outstanding,957303603,XBRL,computed,high,us-gaap concept; cik=0001803498
+BCRED,Q3 2023,shares_outstanding,1036579877,XBRL,computed,high,us-gaap concept; cik=0001803498
+BCRED,Q4 2023,shares_outstanding,1123896870,XBRL,computed,high,us-gaap concept; cik=0001803498
+BCRED,Q1 2024,shares_outstanding,1216675450,XBRL,computed,high,us-gaap concept; cik=0001803498
+BCRED,Q1 2024,equity_raised_mn,2555.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+BCRED,Q1 2024,na_pct_cost,0.2,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+BCRED,Q2 2024,shares_outstanding,1332963664,XBRL,computed,high,us-gaap concept; cik=0001803498
+BCRED,Q2 2024,equity_raised_mn,5592.3,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+BCRED,Q2 2024,na_pct_cost,0.4,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+BCRED,Q3 2024,shares_outstanding,1429358181,XBRL,computed,high,us-gaap concept; cik=0001803498
+BCRED,Q3 2024,equity_raised_mn,8179.9,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+BCRED,Q3 2024,na_pct_cost,0.4,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+BCRED,Q4 2024,shares_outstanding,1528574321,XBRL,computed,high,us-gaap concept; cik=0001803498
+BCRED,Q1 2025,shares_outstanding,1655814859,XBRL,computed,high,us-gaap concept; cik=0001803498
+BCRED,Q1 2025,equity_raised_mn,3300.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+BCRED,Q1 2025,na_pct_cost,0.3,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+BCRED,Q2 2025,shares_outstanding,1760664147,XBRL,computed,high,us-gaap concept; cik=0001803498
+BCRED,Q2 2025,equity_raised_mn,6500.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+BCRED,Q2 2025,na_pct_cost,0.4,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+BCRED,Q3 2025,shares_outstanding,1872144651,XBRL,computed,high,us-gaap concept; cik=0001803498
+BCRED,Q3 2025,na_pct_cost,0.4,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+BCRED,Q4 2025,shares_outstanding,1920268571,XBRL,computed,high,us-gaap concept; cik=0001803498
+BCRED,Q4 2025,floating_rate_pct,5.35,10-K,quarterly,medium,anchor-pattern in 10-Q/10-K text
+HLEND,Q1 2022,nav_d,25.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+HLEND,Q1 2022,nav_i,25.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+HLEND,Q2 2022,nav_d,25.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+HLEND,Q2 2022,nav_i,25.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+HLEND,Q3 2022,nav_d,25.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+HLEND,Q3 2022,nav_i,25.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+HLEND,Q3 2022,floating_rate_pct,8.37,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+HLEND,Q4 2022,shares_outstanding,144699650,XBRL,computed,high,us-gaap concept; cik=0001838126
+HLEND,Q4 2022,nav_d,25.0,10-K,quarterly,medium,anchor-pattern in 10-Q/10-K text
+HLEND,Q4 2022,nav_i,25.0,10-K,quarterly,medium,anchor-pattern in 10-Q/10-K text
+HLEND,Q1 2023,shares_outstanding,151467608,XBRL,computed,high,us-gaap concept; cik=0001838126
+HLEND,Q1 2023,redemption_fulfilled_mn,24.4,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+HLEND,Q1 2023,floating_rate_pct,8.37,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+HLEND,Q2 2023,shares_outstanding,159094173,XBRL,computed,high,us-gaap concept; cik=0001838126
+HLEND,Q2 2023,redemption_fulfilled_mn,24.4,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+HLEND,Q2 2023,floating_rate_pct,8.37,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+HLEND,Q3 2023,shares_outstanding,182411877,XBRL,computed,high,us-gaap concept; cik=0001838126
+HLEND,Q3 2023,redemption_fulfilled_mn,24.4,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+HLEND,Q3 2023,floating_rate_pct,8.37,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+HLEND,Q4 2023,shares_outstanding,206889570,XBRL,computed,high,us-gaap concept; cik=0001838126
+HLEND,Q1 2024,shares_outstanding,246372791,XBRL,computed,high,us-gaap concept; cik=0001838126
+HLEND,Q1 2024,redemption_fulfilled_mn,25.36,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+HLEND,Q1 2024,floating_rate_pct,8.37,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+HLEND,Q2 2024,shares_outstanding,277761711,XBRL,computed,high,us-gaap concept; cik=0001838126
+HLEND,Q2 2024,redemption_fulfilled_mn,25.36,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+HLEND,Q2 2024,floating_rate_pct,8.37,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+HLEND,Q3 2024,shares_outstanding,308544258,XBRL,computed,high,us-gaap concept; cik=0001838126
+HLEND,Q3 2024,redemption_fulfilled_mn,25.36,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+HLEND,Q3 2024,floating_rate_pct,8.37,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+HLEND,Q4 2024,shares_outstanding,341366636,XBRL,computed,high,us-gaap concept; cik=0001838126
+HLEND,Q1 2025,shares_outstanding,378445196,XBRL,computed,high,us-gaap concept; cik=0001838126
+HLEND,Q1 2025,redemption_fulfilled_mn,25.47,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+HLEND,Q2 2025,shares_outstanding,423617904,XBRL,computed,high,us-gaap concept; cik=0001838126
+HLEND,Q2 2025,redemption_fulfilled_mn,25.47,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+HLEND,Q3 2025,shares_outstanding,463690115,XBRL,computed,high,us-gaap concept; cik=0001838126
+HLEND,Q3 2025,redemption_fulfilled_mn,25.47,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+HLEND,Q4 2025,shares_outstanding,493104572,XBRL,computed,high,us-gaap concept; cik=0001838126
+APCIF,Q4 2021,nav_per_share,25.0,10-K,quarterly,medium,anchor-pattern in 10-Q/10-K text
+APCIF,Q4 2021,nav_s,25.04,10-K,quarterly,medium,anchor-pattern in 10-Q/10-K text
+APCIF,Q4 2021,nav_i,25.04,10-K,quarterly,medium,anchor-pattern in 10-Q/10-K text
+APCIF,Q4 2021,num_portfolio_companies,150,10-K,quarterly,medium,anchor-pattern in 10-Q/10-K text
+APCIF,Q1 2022,net_investment_income_mn,15.877,XBRL,computed,high,us-gaap concept; cik=0001837532
+APCIF,Q1 2022,total_expenses_mn,10.751,XBRL,computed,high,us-gaap concept; cik=0001837532
+APCIF,Q1 2022,interest_expense_mn,3.51,XBRL,computed,high,us-gaap concept; cik=0001837532
+APCIF,Q1 2022,management_fee_mn,2.335,XBRL,computed,high,us-gaap concept; cik=0001837532
+APCIF,Q1 2022,incentive_fee_mn,1.366,XBRL,computed,high,us-gaap concept; cik=0001837532
+APCIF,Q1 2022,nav_per_share,24.71,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+APCIF,Q1 2022,nav_s,24.71,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+APCIF,Q1 2022,nav_i,25.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+APCIF,Q1 2022,num_portfolio_companies,649,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+APCIF,Q2 2022,net_investment_income_mn,34.42,XBRL,computed,high,us-gaap concept; cik=0001837532
+APCIF,Q2 2022,total_expenses_mn,23.501,XBRL,computed,high,us-gaap concept; cik=0001837532
+APCIF,Q2 2022,interest_expense_mn,11.176,XBRL,computed,high,us-gaap concept; cik=0001837532
+APCIF,Q2 2022,management_fee_mn,5.895,XBRL,computed,high,us-gaap concept; cik=0001837532
+APCIF,Q2 2022,incentive_fee_mn,3.375,XBRL,computed,high,us-gaap concept; cik=0001837532
+APCIF,Q2 2022,nav_per_share,22.87,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+APCIF,Q2 2022,nav_s,22.87,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+APCIF,Q2 2022,nav_d,22.87,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+APCIF,Q2 2022,nav_i,25.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+APCIF,Q2 2022,floating_rate_pct,5.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+APCIF,Q2 2022,num_portfolio_companies,384,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+APCIF,Q3 2022,net_investment_income_mn,41.162,XBRL,computed,high,us-gaap concept; cik=0001837532
+APCIF,Q3 2022,total_expenses_mn,38.058,XBRL,computed,high,us-gaap concept; cik=0001837532
+APCIF,Q3 2022,interest_expense_mn,22.956,XBRL,computed,high,us-gaap concept; cik=0001837532
+APCIF,Q3 2022,management_fee_mn,5.979,XBRL,computed,high,us-gaap concept; cik=0001837532
+APCIF,Q3 2022,incentive_fee_mn,5.884,XBRL,computed,high,us-gaap concept; cik=0001837532
+APCIF,Q3 2022,nav_per_share,22.97,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+APCIF,Q3 2022,nav_s,22.97,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+APCIF,Q3 2022,nav_d,22.97,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+APCIF,Q3 2022,nav_i,25.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+APCIF,Q3 2022,floating_rate_pct,5.2,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+APCIF,Q3 2022,num_portfolio_companies,910,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+APCIF,Q4 2022,total_assets_mn,4506.22,XBRL,computed,high,us-gaap concept; cik=0001837532
+APCIF,Q4 2022,total_investments_fv_mn,4308.892,XBRL,computed,high,us-gaap concept; cik=0001837532
+APCIF,Q4 2022,total_debt_mn,2172.62,XBRL,computed,high,us-gaap concept; cik=0001837532
+APCIF,Q4 2022,shares_outstanding,92877753,XBRL,computed,high,us-gaap concept; cik=0001837532
+APCIF,Q4 2022,net_investment_income_mn,56.406,XBRL,computed,high,us-gaap concept; cik=0001837532
+APCIF,Q4 2022,total_expenses_mn,50.283,XBRL,computed,high,us-gaap concept; cik=0001837532
+APCIF,Q4 2022,interest_expense_mn,32.008,XBRL,computed,high,us-gaap concept; cik=0001837532
+APCIF,Q4 2022,management_fee_mn,6.72,XBRL,computed,high,us-gaap concept; cik=0001837532
+APCIF,Q4 2022,incentive_fee_mn,8.135,XBRL,computed,high,us-gaap concept; cik=0001837532
+APCIF,Q4 2022,nav_per_share,23.2,10-K,quarterly,medium,anchor-pattern in 10-Q/10-K text
+APCIF,Q4 2022,nav_s,23.2,10-K,quarterly,medium,anchor-pattern in 10-Q/10-K text
+APCIF,Q4 2022,nav_d,23.2,10-K,quarterly,medium,anchor-pattern in 10-Q/10-K text
+APCIF,Q4 2022,nav_i,25.0,10-K,quarterly,medium,anchor-pattern in 10-Q/10-K text
+APCIF,Q4 2022,floating_rate_pct,5.5,10-K,quarterly,medium,anchor-pattern in 10-Q/10-K text
+APCIF,Q4 2022,num_portfolio_companies,190,10-K,quarterly,medium,anchor-pattern in 10-Q/10-K text
+APCIF,Q1 2023,total_assets_mn,4516.898,XBRL,computed,high,us-gaap concept; cik=0001837532
+APCIF,Q1 2023,total_investments_fv_mn,4252.936,XBRL,computed,high,us-gaap concept; cik=0001837532
+APCIF,Q1 2023,total_debt_mn,1994.654,XBRL,computed,high,us-gaap concept; cik=0001837532
+APCIF,Q1 2023,shares_outstanding,95950219,XBRL,computed,high,us-gaap concept; cik=0001837532
+APCIF,Q1 2023,net_investment_income_mn,59.318,XBRL,computed,high,us-gaap concept; cik=0001837532
+APCIF,Q1 2023,total_expenses_mn,57.633,XBRL,computed,high,us-gaap concept; cik=0001837532
+APCIF,Q1 2023,interest_expense_mn,38.201,XBRL,computed,high,us-gaap concept; cik=0001837532
+APCIF,Q1 2023,management_fee_mn,7.115,XBRL,computed,high,us-gaap concept; cik=0001837532
+APCIF,Q1 2023,incentive_fee_mn,8.562,XBRL,computed,high,us-gaap concept; cik=0001837532
+APCIF,Q1 2023,nav_per_share,23.82,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+APCIF,Q1 2023,nav_d,23.82,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+APCIF,Q1 2023,nav_i,25.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+APCIF,Q1 2023,floating_rate_pct,4.02,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+APCIF,Q1 2023,num_portfolio_companies,649,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+APCIF,Q2 2023,total_assets_mn,5067.123,XBRL,computed,high,us-gaap concept; cik=0001837532
+APCIF,Q2 2023,total_investments_fv_mn,4770.043,XBRL,computed,high,us-gaap concept; cik=0001837532
+APCIF,Q2 2023,total_debt_mn,2174.577,XBRL,computed,high,us-gaap concept; cik=0001837532
+APCIF,Q2 2023,shares_outstanding,109008824,XBRL,computed,high,us-gaap concept; cik=0001837532
+APCIF,Q2 2023,net_investment_income_mn,69.383,XBRL,computed,high,us-gaap concept; cik=0001837532
+APCIF,Q2 2023,total_expenses_mn,59.34,XBRL,computed,high,us-gaap concept; cik=0001837532
+APCIF,Q2 2023,interest_expense_mn,37.485,XBRL,computed,high,us-gaap concept; cik=0001837532
+APCIF,Q2 2023,management_fee_mn,8.035,XBRL,computed,high,us-gaap concept; cik=0001837532
+APCIF,Q2 2023,incentive_fee_mn,10.026,XBRL,computed,high,us-gaap concept; cik=0001837532
+APCIF,Q2 2023,nav_per_share,24.18,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+APCIF,Q2 2023,nav_d,24.18,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+APCIF,Q2 2023,nav_i,25.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+APCIF,Q2 2023,floating_rate_pct,4.02,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+APCIF,Q2 2023,num_portfolio_companies,384,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+APCIF,Q3 2023,total_assets_mn,5823.64,XBRL,computed,high,us-gaap concept; cik=0001837532
+APCIF,Q3 2023,total_investments_fv_mn,5287.232,XBRL,computed,high,us-gaap concept; cik=0001837532
+APCIF,Q3 2023,total_debt_mn,2370.656,XBRL,computed,high,us-gaap concept; cik=0001837532
+APCIF,Q3 2023,shares_outstanding,131959664,XBRL,computed,high,us-gaap concept; cik=0001837532
+APCIF,Q3 2023,net_investment_income_mn,79.567,XBRL,computed,high,us-gaap concept; cik=0001837532
+APCIF,Q3 2023,total_expenses_mn,67.052,XBRL,computed,high,us-gaap concept; cik=0001837532
+APCIF,Q3 2023,interest_expense_mn,40.655,XBRL,computed,high,us-gaap concept; cik=0001837532
+APCIF,Q3 2023,management_fee_mn,9.543,XBRL,computed,high,us-gaap concept; cik=0001837532
+APCIF,Q3 2023,incentive_fee_mn,11.529,XBRL,computed,high,us-gaap concept; cik=0001837532
+APCIF,Q3 2023,nav_per_share,24.55,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+APCIF,Q3 2023,nav_d,24.55,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+APCIF,Q3 2023,nav_i,25.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+APCIF,Q3 2023,floating_rate_pct,4.02,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+APCIF,Q3 2023,num_portfolio_companies,910,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+APCIF,Q4 2023,total_assets_mn,7153.867,XBRL,computed,high,us-gaap concept; cik=0001837532
+APCIF,Q4 2023,total_investments_fv_mn,6719.588,XBRL,computed,high,us-gaap concept; cik=0001837532
+APCIF,Q4 2023,total_debt_mn,2639.099,XBRL,computed,high,us-gaap concept; cik=0001837532
+APCIF,Q4 2023,shares_outstanding,167451987,XBRL,computed,high,us-gaap concept; cik=0001837532
+APCIF,Q4 2023,net_investment_income_mn,101.062,XBRL,computed,high,us-gaap concept; cik=0001837532
+APCIF,Q4 2023,total_expenses_mn,89.044,XBRL,computed,high,us-gaap concept; cik=0001837532
+APCIF,Q4 2023,interest_expense_mn,56.329,XBRL,computed,high,us-gaap concept; cik=0001837532
+APCIF,Q4 2023,management_fee_mn,12.061,XBRL,computed,high,us-gaap concept; cik=0001837532
+APCIF,Q4 2023,incentive_fee_mn,14.673,XBRL,computed,high,us-gaap concept; cik=0001837532
+APCIF,Q1 2024,total_assets_mn,8897.493,XBRL,computed,high,us-gaap concept; cik=0001837532
+APCIF,Q1 2024,total_investments_fv_mn,8474.656,XBRL,computed,high,us-gaap concept; cik=0001837532
+APCIF,Q1 2024,total_debt_mn,2933.032,XBRL,computed,high,us-gaap concept; cik=0001837532
+APCIF,Q1 2024,shares_outstanding,214668934,XBRL,computed,high,us-gaap concept; cik=0001837532
+APCIF,Q1 2024,net_investment_income_mn,128.39,XBRL,computed,high,us-gaap concept; cik=0001837532
+APCIF,Q1 2024,total_expenses_mn,96.305,XBRL,computed,high,us-gaap concept; cik=0001837532
+APCIF,Q1 2024,interest_expense_mn,55.036,XBRL,computed,high,us-gaap concept; cik=0001837532
+APCIF,Q1 2024,management_fee_mn,15.337,XBRL,computed,high,us-gaap concept; cik=0001837532
+APCIF,Q1 2024,incentive_fee_mn,19.876,XBRL,computed,high,us-gaap concept; cik=0001837532
+APCIF,Q2 2024,shares_outstanding,276090298,XBRL,computed,high,us-gaap concept; cik=0001837532
+APCIF,Q3 2024,shares_outstanding,327858334,XBRL,computed,high,us-gaap concept; cik=0001837532
+APCIF,Q3 2024,nav_d,24.94,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+APCIF,Q3 2024,floating_rate_pct,5.2,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+APCIF,Q4 2024,shares_outstanding,384043002,XBRL,computed,high,us-gaap concept; cik=0001837532
+APCIF,Q4 2024,nav_i,25.0,10-K,quarterly,medium,anchor-pattern in 10-Q/10-K text
+APCIF,Q4 2024,floating_rate_pct,4.02,10-K,quarterly,medium,anchor-pattern in 10-Q/10-K text
+APCIF,Q1 2025,shares_outstanding,461289931,XBRL,computed,high,us-gaap concept; cik=0001837532
+APCIF,Q1 2025,nav_d,24.65,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+APCIF,Q1 2025,floating_rate_pct,4.02,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+APCIF,Q2 2025,shares_outstanding,534094204,XBRL,computed,high,us-gaap concept; cik=0001837532
+APCIF,Q2 2025,nav_d,24.6,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+APCIF,Q2 2025,floating_rate_pct,6.55,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+APCIF,Q3 2025,shares_outstanding,581849974,XBRL,computed,high,us-gaap concept; cik=0001837532
+APCIF,Q3 2025,nav_d,24.52,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+APCIF,Q3 2025,floating_rate_pct,6.7,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+APCIF,Q4 2025,nav_d,24.4,10-K,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OCIC,Q4 2020,floating_rate_pct,6.9,10-K,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OCIC,Q1 2021,nav_s,10.35,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OCIC,Q1 2021,nav_d,10.35,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OCIC,Q1 2021,nav_i,10.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OCIC,Q1 2021,floating_rate_pct,4.7,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OCIC,Q2 2021,nav_s,10.35,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OCIC,Q2 2021,nav_d,10.35,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OCIC,Q2 2021,nav_i,10.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OCIC,Q2 2021,first_lien_pct,3.75,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OCIC,Q2 2021,floating_rate_pct,5.2,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OCIC,Q3 2021,nav_s,10.35,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OCIC,Q3 2021,nav_d,10.35,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OCIC,Q3 2021,nav_i,10.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OCIC,Q3 2021,equity_raised_mn,164.9,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OCIC,Q3 2021,redemption_fulfilled_mn,55.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OCIC,Q3 2021,first_lien_pct,5.75,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OCIC,Q3 2021,floating_rate_pct,5.6,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OCIC,Q4 2021,equity_raised_mn,568.5,10-K,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OCIC,Q4 2021,redemption_fulfilled_mn,55.0,10-K,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OCIC,Q4 2021,floating_rate_pct,5.8,10-K,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OCIC,Q1 2022,nav_s,10.35,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OCIC,Q1 2022,nav_d,10.35,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OCIC,Q1 2022,nav_i,10.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OCIC,Q1 2022,redemption_fulfilled_mn,55.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OCIC,Q1 2022,floating_rate_pct,5.2,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OCIC,Q2 2022,nav_s,10.35,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OCIC,Q2 2022,nav_d,10.35,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OCIC,Q2 2022,nav_i,10.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OCIC,Q2 2022,redemption_fulfilled_mn,55.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OCIC,Q2 2022,first_lien_pct,5.5,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OCIC,Q3 2022,nav_s,10.35,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OCIC,Q3 2022,nav_d,10.35,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OCIC,Q3 2022,nav_i,10.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OCIC,Q3 2022,equity_raised_mn,1730.9,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OCIC,Q3 2022,redemption_fulfilled_mn,55.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OCIC,Q3 2022,first_lien_pct,5.5,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OCIC,Q4 2022,equity_raised_mn,1850.3,10-K,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OCIC,Q4 2022,redemption_fulfilled_mn,55.0,10-K,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OCIC,Q1 2023,nav_i,10.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OCIC,Q1 2023,equity_raised_mn,2000.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OCIC,Q2 2023,nav_i,10.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OCIC,Q2 2023,equity_raised_mn,3326.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OCIC,Q3 2023,nav_i,10.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OCIC,Q4 2023,nav_i,10.0,10-K,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OCIC,Q4 2023,equity_raised_mn,300.0,10-K,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OCIC,Q4 2023,redemption_fulfilled_mn,55.0,10-K,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OCIC,Q1 2024,nav_i,10.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OCIC,Q2 2024,nav_i,10.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OCIC,Q3 2024,nav_i,10.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OCIC,Q4 2024,equity_raised_mn,600.0,10-K,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OCIC,Q4 2024,redemption_fulfilled_mn,6001.0,10-K,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OCIC,Q3 2025,equity_raised_mn,6400.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OSCF,Q4 2021,nav_per_share,25.07,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OSCF,Q4 2021,nav_i,25.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OSCF,Q1 2022,management_fee_mn,0.0,XBRL,computed,high,us-gaap concept; cik=0001872371
+OSCF,Q1 2022,nav_i,25.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OSCF,Q2 2022,shares_outstanding,11301000,XBRL,computed,high,us-gaap concept; cik=0001872371
+OSCF,Q2 2022,equity_raised_mn,90.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OSCF,Q3 2022,equity_raised_mn,177.6,10-K,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OSCF,Q4 2022,shares_outstanding,21242000,XBRL,computed,high,us-gaap concept; cik=0001872371
+OSCF,Q4 2022,equity_raised_mn,95.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OSCF,Q2 2023,shares_outstanding,43219000,XBRL,computed,high,us-gaap concept; cik=0001872371
+OSCF,Q2 2023,equity_raised_mn,250.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OSCF,Q3 2023,shares_outstanding,64896000,XBRL,computed,high,us-gaap concept; cik=0001872371
+OSCF,Q3 2023,equity_raised_mn,177.6,10-K,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OSCF,Q4 2023,shares_outstanding,84898000,XBRL,computed,high,us-gaap concept; cik=0001872371
+OSCF,Q4 2023,floating_rate_pct,8.4,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OSCF,Q1 2024,shares_outstanding,104627000,XBRL,computed,high,us-gaap concept; cik=0001872371
+OSCF,Q1 2024,floating_rate_pct,8.4,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OSCF,Q2 2024,shares_outstanding,122364000,XBRL,computed,high,us-gaap concept; cik=0001872371
+OSCF,Q2 2024,floating_rate_pct,8.4,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OSCF,Q3 2024,shares_outstanding,134288000,XBRL,computed,high,us-gaap concept; cik=0001872371
+OSCF,Q3 2024,equity_raised_mn,177.6,10-K,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OSCF,Q3 2024,floating_rate_pct,8.4,10-K,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OSCF,Q4 2024,shares_outstanding,145073000,XBRL,computed,high,us-gaap concept; cik=0001872371
+OSCF,Q4 2024,floating_rate_pct,6.5,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OSCF,Q1 2025,shares_outstanding,162226000,XBRL,computed,high,us-gaap concept; cik=0001872371
+OSCF,Q1 2025,equity_raised_mn,195.5,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OSCF,Q1 2025,floating_rate_pct,8.4,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OSCF,Q2 2025,shares_outstanding,182204000,XBRL,computed,high,us-gaap concept; cik=0001872371
+OSCF,Q2 2025,equity_raised_mn,543.9,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OSCF,Q2 2025,floating_rate_pct,8.4,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OSCF,Q3 2025,shares_outstanding,196721000,XBRL,computed,high,us-gaap concept; cik=0001872371
+OSCF,Q4 2025,total_assets_mn,7750.352,XBRL,computed,high,us-gaap concept; cik=0001872371
+OSCF,Q4 2025,net_assets_mn,4663.563,XBRL,computed,high,us-gaap concept; cik=0001872371
+OSCF,Q4 2025,total_investments_fv_mn,7433.861,XBRL,computed,high,us-gaap concept; cik=0001872371
+OSCF,Q4 2025,total_debt_mn,2755.6,XBRL,computed,high,us-gaap concept; cik=0001872371
+OSCF,Q4 2025,shares_outstanding,203377000,XBRL,computed,high,us-gaap concept; cik=0001872371
+OSCF,Q4 2025,net_investment_income_mn,102.293,XBRL,computed,high,us-gaap concept; cik=0001872371
+OSCF,Q4 2025,interest_expense_mn,46.453,XBRL,computed,high,us-gaap concept; cik=0001872371
+OSCF,Q4 2025,management_fee_mn,14.922,XBRL,computed,high,us-gaap concept; cik=0001872371
+OSCF,Q4 2025,equity_raised_mn,14.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OSCF,Q4 2025,weighted_avg_yield,9.1,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OSCF,Q4 2025,floating_rate_pct,8.4,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OSCF,Q4 2025,num_portfolio_companies,167,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+GCRED,Q2 2023,shares_outstanding,18876660,XBRL,computed,high,us-gaap concept; cik=0001920145
+GCRED,Q2 2023,equity_raised_mn,0.52,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+GCRED,Q2 2023,drip_mn,0.17,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+GCRED,Q2 2023,weighted_avg_yield,12.6,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+GCRED,Q3 2023,shares_outstanding,42847652,XBRL,computed,high,us-gaap concept; cik=0001920145
+GCRED,Q3 2023,equity_raised_mn,0.52,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+GCRED,Q3 2023,weighted_avg_yield,12.1,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+GCRED,Q4 2023,shares_outstanding,63140236,XBRL,computed,high,us-gaap concept; cik=0001920145
+GCRED,Q4 2023,drip_mn,0.17,10-K,quarterly,medium,anchor-pattern in 10-Q/10-K text
+GCRED,Q4 2023,weighted_avg_yield,12.0,10-K,quarterly,medium,anchor-pattern in 10-Q/10-K text
+GCRED,Q1 2024,shares_outstanding,91177249,XBRL,computed,high,us-gaap concept; cik=0001920145
+GCRED,Q1 2024,equity_raised_mn,0.52,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+GCRED,Q1 2024,weighted_avg_yield,11.6,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+GCRED,Q1 2024,na_pct_cost,9.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+GCRED,Q1 2024,na_pct_fv,9.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+GCRED,Q2 2024,shares_outstanding,120352179,XBRL,computed,high,us-gaap concept; cik=0001920145
+GCRED,Q2 2024,equity_raised_mn,0.52,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+GCRED,Q2 2024,weighted_avg_yield,11.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+GCRED,Q2 2024,na_pct_cost,11.1,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+GCRED,Q2 2024,na_pct_fv,11.1,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+GCRED,Q3 2024,shares_outstanding,154147833,XBRL,computed,high,us-gaap concept; cik=0001920145
+GCRED,Q3 2024,equity_raised_mn,0.52,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+GCRED,Q3 2024,weighted_avg_yield,10.2,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+GCRED,Q3 2024,na_pct_cost,10.3,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+GCRED,Q3 2024,na_pct_fv,10.3,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+GCRED,Q4 2024,shares_outstanding,194480997,XBRL,computed,high,us-gaap concept; cik=0001920145
+GCRED,Q1 2025,shares_outstanding,244701031,XBRL,computed,high,us-gaap concept; cik=0001920145
+GCRED,Q1 2025,weighted_avg_yield,9.3,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+GCRED,Q1 2025,na_pct_cost,9.3,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+GCRED,Q1 2025,na_pct_fv,9.3,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+GCRED,Q2 2025,shares_outstanding,279279667,XBRL,computed,high,us-gaap concept; cik=0001920145
+GCRED,Q2 2025,weighted_avg_yield,9.1,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+GCRED,Q2 2025,na_pct_cost,9.1,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+GCRED,Q2 2025,na_pct_fv,9.1,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+GCRED,Q3 2025,shares_outstanding,317407689,XBRL,computed,high,us-gaap concept; cik=0001920145
+GCRED,Q3 2025,na_pct_cost,8.8,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+GCRED,Q3 2025,na_pct_fv,8.8,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+GCRED,Q4 2025,total_assets_mn,16314.857,XBRL,computed,high,us-gaap concept; cik=0001920145
+GCRED,Q4 2025,net_assets_mn,8640.506,XBRL,computed,high,us-gaap concept; cik=0001920145
+GCRED,Q4 2025,total_investments_fv_mn,15674.51,XBRL,computed,high,us-gaap concept; cik=0001920145
+GCRED,Q4 2025,total_debt_mn,7061.721,XBRL,computed,high,us-gaap concept; cik=0001920145
+GCRED,Q4 2025,shares_outstanding,345702942,XBRL,computed,high,us-gaap concept; cik=0001920145
+GCRED,Q4 2025,total_investment_income_mn,315.186,XBRL,computed,high,us-gaap concept; cik=0001920145
+GCRED,Q4 2025,net_investment_income_mn,199.306,XBRL,computed,high,us-gaap concept; cik=0001920145
+GCRED,Q4 2025,total_expenses_mn,144.936,XBRL,computed,high,us-gaap concept; cik=0001920145
+GCRED,Q4 2025,interest_expense_mn,86.604,XBRL,computed,high,us-gaap concept; cik=0001920145
+GCRED,Q4 2025,management_fee_mn,26.609,XBRL,computed,high,us-gaap concept; cik=0001920145
+GCRED,Q4 2025,equity_raised_mn,1100.0,10-K,quarterly,medium,anchor-pattern in 10-Q/10-K text
+GCRED,Q4 2025,weighted_avg_yield,8.4,10-K,quarterly,medium,anchor-pattern in 10-Q/10-K text
+GCRED,Q4 2025,first_lien_pct,1.9,10-K,quarterly,medium,anchor-pattern in 10-Q/10-K text
+GCRED,Q4 2025,num_portfolio_companies,184,10-K,quarterly,medium,anchor-pattern in 10-Q/10-K text
+GCRED,Q4 2025,na_pct_cost,6.4,10-K,quarterly,medium,anchor-pattern in 10-Q/10-K text
+GCRED,Q4 2025,na_pct_fv,6.4,10-K,quarterly,medium,anchor-pattern in 10-Q/10-K text
+BLKR_PCF,Q2 2022,floating_rate_pct,78.1,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+BLKR_PCF,Q3 2022,cost_of_debt_pct,4.24,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+BLKR_PCF,Q3 2022,floating_rate_pct,83.5,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+BLKR_PCF,Q4 2022,shares_outstanding,4948576,XBRL,computed,high,us-gaap concept; cik=0001902649
+BLKR_PCF,Q4 2022,cost_of_debt_pct,5.08,10-K,quarterly,medium,anchor-pattern in 10-Q/10-K text
+BLKR_PCF,Q4 2022,floating_rate_pct,83.6,10-K,quarterly,medium,anchor-pattern in 10-Q/10-K text
+BLKR_PCF,Q1 2023,shares_outstanding,5905404,XBRL,computed,high,us-gaap concept; cik=0001902649
+BLKR_PCF,Q1 2023,cost_of_debt_pct,6.35,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+BLKR_PCF,Q1 2023,floating_rate_pct,85.3,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+BLKR_PCF,Q2 2023,shares_outstanding,6568807,XBRL,computed,high,us-gaap concept; cik=0001902649
+BLKR_PCF,Q2 2023,cost_of_debt_pct,6.59,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+BLKR_PCF,Q2 2023,floating_rate_pct,86.6,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+BLKR_PCF,Q3 2023,shares_outstanding,7798773,XBRL,computed,high,us-gaap concept; cik=0001902649
+BLKR_PCF,Q3 2023,cost_of_debt_pct,6.8,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+BLKR_PCF,Q3 2023,floating_rate_pct,89.9,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+BLKR_PCF,Q4 2023,shares_outstanding,9608484,XBRL,computed,high,us-gaap concept; cik=0001902649
+BLKR_PCF,Q4 2023,redemption_gate_active,False,10-K,quarterly,medium,anchor-pattern in 10-Q/10-K text
+BLKR_PCF,Q4 2023,cost_of_debt_pct,7.01,10-K,quarterly,medium,anchor-pattern in 10-Q/10-K text
+BLKR_PCF,Q1 2024,shares_outstanding,11183432,XBRL,computed,high,us-gaap concept; cik=0001902649
+BLKR_PCF,Q1 2024,cost_of_debt_pct,7.43,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+BLKR_PCF,Q1 2024,floating_rate_pct,91.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+BLKR_PCF,Q2 2024,shares_outstanding,14140203,XBRL,computed,high,us-gaap concept; cik=0001902649
+BLKR_PCF,Q2 2024,nav_s,25.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+BLKR_PCF,Q2 2024,cost_of_debt_pct,7.42,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+BLKR_PCF,Q2 2024,floating_rate_pct,93.1,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+BLKR_PCF,Q3 2024,shares_outstanding,21366044,XBRL,computed,high,us-gaap concept; cik=0001902649
+BLKR_PCF,Q3 2024,nav_s,25.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+BLKR_PCF,Q3 2024,cost_of_debt_pct,7.4,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+BLKR_PCF,Q3 2024,floating_rate_pct,82.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+BLKR_PCF,Q4 2024,shares_outstanding,26269689,XBRL,computed,high,us-gaap concept; cik=0001902649
+BLKR_PCF,Q4 2024,nav_s,25.0,10-K,quarterly,medium,anchor-pattern in 10-Q/10-K text
+BLKR_PCF,Q4 2024,cost_of_debt_pct,7.15,10-K,quarterly,medium,anchor-pattern in 10-Q/10-K text
+BLKR_PCF,Q1 2025,shares_outstanding,31398523,XBRL,computed,high,us-gaap concept; cik=0001902649
+BLKR_PCF,Q1 2025,nav_s,25.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+BLKR_PCF,Q1 2025,cost_of_debt_pct,6.61,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+BLKR_PCF,Q1 2025,floating_rate_pct,70.7,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+BLKR_PCF,Q2 2025,shares_outstanding,37532875,XBRL,computed,high,us-gaap concept; cik=0001902649
+BLKR_PCF,Q2 2025,nav_s,25.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+BLKR_PCF,Q2 2025,floating_rate_pct,78.1,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+BLKR_PCF,Q3 2025,shares_outstanding,52041649,XBRL,computed,high,us-gaap concept; cik=0001902649
+BLKR_PCF,Q3 2025,nav_s,25.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+BLKR_PCF,Q3 2025,floating_rate_pct,80.2,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+BLKR_PCF,Q4 2025,shares_outstanding,65915332,XBRL,computed,high,us-gaap concept; cik=0001902649
+BLKR_PCF,Q4 2025,cost_of_debt_pct,6.25,10-K,quarterly,medium,anchor-pattern in 10-Q/10-K text
+KKR_FSIT,Q2 2023,shares_outstanding,3232725,XBRL,computed,high,us-gaap concept; cik=0001930679
+KKR_FSIT,Q2 2023,interest_expense_mn,0.0,XBRL,computed,high,us-gaap concept; cik=0001930679
+KKR_FSIT,Q3 2023,shares_outstanding,8457385,XBRL,computed,high,us-gaap concept; cik=0001930679
+KKR_FSIT,Q4 2023,shares_outstanding,8457385,XBRL,computed,high,us-gaap concept; cik=0001930679
+KKR_FSIT,Q1 2024,shares_outstanding,10028030,XBRL,computed,high,us-gaap concept; cik=0001930679
+KKR_FSIT,Q2 2024,shares_outstanding,13255282,XBRL,computed,high,us-gaap concept; cik=0001930679
+KKR_FSIT,Q3 2024,shares_outstanding,20862875,XBRL,computed,high,us-gaap concept; cik=0001930679
+KKR_FSIT,Q4 2024,shares_outstanding,28051771,XBRL,computed,high,us-gaap concept; cik=0001930679
+KKR_FSIT,Q1 2025,shares_outstanding,33251680,XBRL,computed,high,us-gaap concept; cik=0001930679
+KKR_FSIT,Q2 2025,shares_outstanding,38328674,XBRL,computed,high,us-gaap concept; cik=0001930679
+KKR_FSIT,Q3 2025,shares_outstanding,47002485,XBRL,computed,high,us-gaap concept; cik=0001930679
+KKR_FSIT,Q4 2025,shares_outstanding,51837481,XBRL,computed,high,us-gaap concept; cik=0001930679
+BAIN_PC,Q4 2022,nav_i,25.0,10-K,quarterly,medium,anchor-pattern in 10-Q/10-K text
+BAIN_PC,Q4 2022,equity_raised_mn,5000.0,10-K,quarterly,medium,anchor-pattern in 10-Q/10-K text
+BAIN_PC,Q1 2023,interest_expense_mn,0.0,XBRL,computed,high,us-gaap concept; cik=0001899017
+BAIN_PC,Q1 2023,management_fee_mn,0.0,XBRL,computed,high,us-gaap concept; cik=0001899017
+BAIN_PC,Q1 2023,nav_s,25.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+BAIN_PC,Q1 2023,nav_d,25.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+BAIN_PC,Q1 2023,nav_i,25.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+BAIN_PC,Q2 2023,interest_expense_mn,0.0,XBRL,computed,high,us-gaap concept; cik=0001899017
+BAIN_PC,Q2 2023,management_fee_mn,0.0,XBRL,computed,high,us-gaap concept; cik=0001899017
+BAIN_PC,Q2 2023,nav_s,25.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+BAIN_PC,Q2 2023,nav_d,25.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+BAIN_PC,Q2 2023,nav_i,25.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+BAIN_PC,Q3 2023,interest_expense_mn,0.0,XBRL,computed,high,us-gaap concept; cik=0001899017
+BAIN_PC,Q3 2023,management_fee_mn,0.0,XBRL,computed,high,us-gaap concept; cik=0001899017
+BAIN_PC,Q3 2023,nav_s,25.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+BAIN_PC,Q3 2023,nav_d,25.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+BAIN_PC,Q3 2023,nav_i,25.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+BAIN_PC,Q4 2023,shares_outstanding,4431245,XBRL,computed,high,us-gaap concept; cik=0001899017
+BAIN_PC,Q4 2023,nav_i,25.0,10-K,quarterly,medium,anchor-pattern in 10-Q/10-K text
+BAIN_PC,Q4 2023,first_lien_pct,6.5,10-K,quarterly,medium,anchor-pattern in 10-Q/10-K text
+BAIN_PC,Q4 2023,floating_rate_pct,100.0,10-K,quarterly,medium,anchor-pattern in 10-Q/10-K text
+BAIN_PC,Q1 2024,shares_outstanding,5495496,XBRL,computed,high,us-gaap concept; cik=0001899017
+BAIN_PC,Q1 2024,first_lien_pct,6.68,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+BAIN_PC,Q1 2024,floating_rate_pct,100.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+BAIN_PC,Q2 2024,shares_outstanding,6432555,XBRL,computed,high,us-gaap concept; cik=0001899017
+BAIN_PC,Q2 2024,first_lien_pct,6.5,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+BAIN_PC,Q2 2024,floating_rate_pct,94.8,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+BAIN_PC,Q3 2024,shares_outstanding,10354167,XBRL,computed,high,us-gaap concept; cik=0001899017
+BAIN_PC,Q3 2024,first_lien_pct,6.5,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+BAIN_PC,Q3 2024,floating_rate_pct,95.6,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+BAIN_PC,Q4 2024,shares_outstanding,13988959,XBRL,computed,high,us-gaap concept; cik=0001899017
+BAIN_PC,Q4 2024,first_lien_pct,6.5,10-K,quarterly,medium,anchor-pattern in 10-Q/10-K text
+BAIN_PC,Q4 2024,floating_rate_pct,98.2,10-K,quarterly,medium,anchor-pattern in 10-Q/10-K text
+BAIN_PC,Q1 2025,shares_outstanding,17872129,XBRL,computed,high,us-gaap concept; cik=0001899017
+BAIN_PC,Q1 2025,floating_rate_pct,94.7,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+BAIN_PC,Q2 2025,shares_outstanding,25049292,XBRL,computed,high,us-gaap concept; cik=0001899017
+BAIN_PC,Q2 2025,management_fee_mn,2.107,XBRL,computed,high,us-gaap concept; cik=0001899017
+BAIN_PC,Q2 2025,incentive_fee_mn,2.725,XBRL,computed,high,us-gaap concept; cik=0001899017
+BAIN_PC,Q2 2025,equity_raised_mn,13.7,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+BAIN_PC,Q2 2025,floating_rate_pct,5.92,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+BAIN_PC,Q3 2025,shares_outstanding,29429825,XBRL,computed,high,us-gaap concept; cik=0001899017
+BAIN_PC,Q3 2025,management_fee_mn,2.578,XBRL,computed,high,us-gaap concept; cik=0001899017
+BAIN_PC,Q3 2025,equity_raised_mn,11.4,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+BAIN_PC,Q4 2025,shares_outstanding,35671560,XBRL,computed,high,us-gaap concept; cik=0001899017
+FID_PCF,Q4 2022,nav_i,25.0,10-K,quarterly,medium,anchor-pattern in 10-Q/10-K text
+FID_PCF,Q1 2023,first_lien_pct,6.75,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+FID_PCF,Q2 2023,redemption_fulfilled_mn,25.32,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+FID_PCF,Q2 2023,first_lien_pct,6.25,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+FID_PCF,Q3 2023,redemption_fulfilled_mn,25.32,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+FID_PCF,Q3 2023,first_lien_pct,6.5,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+FID_PCF,Q4 2023,shares_outstanding,15724395,XBRL,computed,high,us-gaap concept; cik=0001920453
+FID_PCF,Q4 2023,nav_s,25.54,10-K,quarterly,medium,anchor-pattern in 10-Q/10-K text
+FID_PCF,Q4 2023,nav_d,25.54,10-K,quarterly,medium,anchor-pattern in 10-Q/10-K text
+FID_PCF,Q4 2023,nav_i,25.0,10-K,quarterly,medium,anchor-pattern in 10-Q/10-K text
+FID_PCF,Q4 2023,first_lien_pct,6.0,10-K,quarterly,medium,anchor-pattern in 10-Q/10-K text
+FID_PCF,Q1 2024,shares_outstanding,19225569,XBRL,computed,high,us-gaap concept; cik=0001920453
+FID_PCF,Q1 2024,redemption_fulfilled_mn,25.78,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+FID_PCF,Q1 2024,first_lien_pct,6.25,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+FID_PCF,Q2 2024,shares_outstanding,22690013,XBRL,computed,high,us-gaap concept; cik=0001920453
+FID_PCF,Q2 2024,redemption_fulfilled_mn,25.78,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+FID_PCF,Q2 2024,first_lien_pct,3.75,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+FID_PCF,Q3 2024,shares_outstanding,26223156,XBRL,computed,high,us-gaap concept; cik=0001920453
+FID_PCF,Q3 2024,redemption_fulfilled_mn,25.78,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+FID_PCF,Q4 2024,shares_outstanding,30097549,XBRL,computed,high,us-gaap concept; cik=0001920453
+FID_PCF,Q4 2024,nav_d,25.54,10-K,quarterly,medium,anchor-pattern in 10-Q/10-K text
+FID_PCF,Q4 2024,nav_i,25.0,10-K,quarterly,medium,anchor-pattern in 10-Q/10-K text
+FID_PCF,Q4 2024,redemption_fulfilled_mn,25.78,10-K,quarterly,medium,anchor-pattern in 10-Q/10-K text
+FID_PCF,Q1 2025,shares_outstanding,35741983,XBRL,computed,high,us-gaap concept; cik=0001920453
+FID_PCF,Q1 2025,redemption_fulfilled_mn,25.54,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+FID_PCF,Q2 2025,shares_outstanding,40931723,XBRL,computed,high,us-gaap concept; cik=0001920453
+FID_PCF,Q2 2025,redemption_fulfilled_mn,25.54,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+FID_PCF,Q3 2025,shares_outstanding,46059314,XBRL,computed,high,us-gaap concept; cik=0001920453
+FID_PCF,Q3 2025,redemption_fulfilled_mn,25.54,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+FID_PCF,Q4 2025,shares_outstanding,50834149,XBRL,computed,high,us-gaap concept; cik=0001920453
+FID_PCF,Q4 2025,redemption_fulfilled_mn,25.54,10-K,quarterly,medium,anchor-pattern in 10-Q/10-K text
+ANT_PCF,Q1 2024,total_assets_mn,507.113,XBRL,computed,high,us-gaap concept; cik=0001993402
+ANT_PCF,Q1 2024,net_assets_mn,301.543,XBRL,computed,high,us-gaap concept; cik=0001993402
+ANT_PCF,Q1 2024,total_investments_fv_mn,479.854,XBRL,computed,high,us-gaap concept; cik=0001993402
+ANT_PCF,Q1 2024,total_debt_mn,193.535,XBRL,computed,high,us-gaap concept; cik=0001993402
+ANT_PCF,Q1 2024,shares_outstanding,12001000,XBRL,computed,high,us-gaap concept; cik=0001993402
+ANT_PCF,Q1 2024,net_investment_income_mn,7.343,XBRL,computed,high,us-gaap concept; cik=0001993402
+ANT_PCF,Q1 2024,total_expenses_mn,4.574,XBRL,computed,high,us-gaap concept; cik=0001993402
+ANT_PCF,Q1 2024,interest_expense_mn,2.951,XBRL,computed,high,us-gaap concept; cik=0001993402
+ANT_PCF,Q1 2024,management_fee_mn,0.0,XBRL,computed,high,us-gaap concept; cik=0001993402
+ANT_PCF,Q1 2024,incentive_fee_mn,0.918,XBRL,computed,high,us-gaap concept; cik=0001993402
+ANT_PCF,Q1 2024,nav_per_share,25.13,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+ANT_PCF,Q1 2024,weighted_avg_yield,10.97,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+ANT_PCF,Q1 2024,num_portfolio_companies,251,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+ANT_PCF,Q2 2024,total_assets_mn,1100.277,XBRL,computed,high,us-gaap concept; cik=0001993402
+ANT_PCF,Q2 2024,net_assets_mn,548.554,XBRL,computed,high,us-gaap concept; cik=0001993402
+ANT_PCF,Q2 2024,total_investments_fv_mn,1031.913,XBRL,computed,high,us-gaap concept; cik=0001993402
+ANT_PCF,Q2 2024,total_debt_mn,336.989,XBRL,computed,high,us-gaap concept; cik=0001993402
+ANT_PCF,Q2 2024,shares_outstanding,21596404,XBRL,computed,high,us-gaap concept; cik=0001993402
+ANT_PCF,Q2 2024,net_investment_income_mn,18.639,XBRL,computed,high,us-gaap concept; cik=0001993402
+ANT_PCF,Q2 2024,total_expenses_mn,7.439,XBRL,computed,high,us-gaap concept; cik=0001993402
+ANT_PCF,Q2 2024,interest_expense_mn,3.382,XBRL,computed,high,us-gaap concept; cik=0001993402
+ANT_PCF,Q2 2024,management_fee_mn,0.843,XBRL,computed,high,us-gaap concept; cik=0001993402
+ANT_PCF,Q2 2024,incentive_fee_mn,2.33,XBRL,computed,high,us-gaap concept; cik=0001993402
+ANT_PCF,Q2 2024,nav_per_share,25.4,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+ANT_PCF,Q2 2024,weighted_avg_yield,10.33,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+ANT_PCF,Q2 2024,num_portfolio_companies,316,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+ANT_PCF,Q3 2024,total_assets_mn,1632.631,XBRL,computed,high,us-gaap concept; cik=0001993402
+ANT_PCF,Q3 2024,net_assets_mn,1032.436,XBRL,computed,high,us-gaap concept; cik=0001993402
+ANT_PCF,Q3 2024,total_debt_mn,470.896,XBRL,computed,high,us-gaap concept; cik=0001993402
+ANT_PCF,Q3 2024,shares_outstanding,40524412,XBRL,computed,high,us-gaap concept; cik=0001993402
+ANT_PCF,Q3 2024,net_investment_income_mn,30.888,XBRL,computed,high,us-gaap concept; cik=0001993402
+ANT_PCF,Q3 2024,total_expenses_mn,12.31,XBRL,computed,high,us-gaap concept; cik=0001993402
+ANT_PCF,Q3 2024,interest_expense_mn,5.21,XBRL,computed,high,us-gaap concept; cik=0001993402
+ANT_PCF,Q3 2024,management_fee_mn,2.446,XBRL,computed,high,us-gaap concept; cik=0001993402
+ANT_PCF,Q3 2024,incentive_fee_mn,3.864,XBRL,computed,high,us-gaap concept; cik=0001993402
+ANT_PCF,Q3 2024,nav_per_share,25.48,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+ANT_PCF,Q3 2024,weighted_avg_yield,9.62,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+ANT_PCF,Q3 2024,num_portfolio_companies,339,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+ANT_PCF,Q4 2024,shares_outstanding,48823039,XBRL,computed,high,us-gaap concept; cik=0001993402
+ANT_PCF,Q1 2025,shares_outstanding,57501883,XBRL,computed,high,us-gaap concept; cik=0001993402
+ANT_PCF,Q1 2025,na_pct_fv,0.47,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+ANT_PCF,Q2 2025,shares_outstanding,66537877,XBRL,computed,high,us-gaap concept; cik=0001993402
+ANT_PCF,Q3 2025,floating_rate_pct,5.76,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+ANT_PCF,Q4 2025,shares_outstanding,48823039,XBRL,computed,high,us-gaap concept; cik=0001993402
+OBTIC,Q4 2021,nav_per_share,10.0,10-K,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OBTIC,Q4 2021,first_lien_pct,6.5,10-K,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OBTIC,Q1 2022,nav_per_share,10.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OBTIC,Q1 2022,first_lien_pct,5.5,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OBTIC,Q2 2022,nav_s,10.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OBTIC,Q2 2022,nav_d,10.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OBTIC,Q2 2022,nav_i,10.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OBTIC,Q2 2022,floating_rate_pct,6.1,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OBTIC,Q3 2022,nav_s,10.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OBTIC,Q3 2022,nav_d,10.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OBTIC,Q3 2022,nav_i,10.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OBTIC,Q3 2022,equity_raised_mn,86.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OBTIC,Q3 2022,floating_rate_pct,6.2,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OBTIC,Q4 2022,equity_raised_mn,107.2,10-K,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OBTIC,Q4 2022,floating_rate_pct,6.2,10-K,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OBTIC,Q1 2023,nav_s,10.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OBTIC,Q1 2023,nav_d,10.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OBTIC,Q1 2023,nav_i,10.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OBTIC,Q2 2023,nav_s,10.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OBTIC,Q2 2023,nav_d,10.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OBTIC,Q2 2023,nav_i,10.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OBTIC,Q3 2023,nav_s,10.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OBTIC,Q3 2023,nav_d,10.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OBTIC,Q3 2023,nav_i,10.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OBTIC,Q4 2023,equity_raised_mn,403.4,10-K,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OBTIC,Q1 2024,nav_s,10.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OBTIC,Q1 2024,nav_d,10.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OBTIC,Q1 2024,nav_i,10.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OBTIC,Q2 2024,nav_s,10.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OBTIC,Q2 2024,nav_d,10.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OBTIC,Q2 2024,nav_i,10.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OBTIC,Q2 2024,equity_raised_mn,572.9,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OBTIC,Q3 2024,nav_s,10.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OBTIC,Q3 2024,nav_d,10.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OBTIC,Q3 2024,nav_i,10.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OBTIC,Q3 2024,equity_raised_mn,671.8,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OBTIC,Q4 2024,equity_raised_mn,781.7,10-K,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OBTIC,Q1 2025,nav_i,10.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OBTIC,Q1 2025,equity_raised_mn,818.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OBTIC,Q1 2025,floating_rate_pct,5.2,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OBTIC,Q2 2025,nav_i,10.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OBTIC,Q2 2025,equity_raised_mn,883.4,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OBTIC,Q3 2025,nav_i,10.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OBTIC,Q3 2025,equity_raised_mn,935.1,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OBTIC,Q4 2025,nav_s,10.38,10-K,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OBTIC,Q4 2025,nav_d,10.38,10-K,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OBTIC,Q4 2025,nav_i,10.38,10-K,quarterly,medium,anchor-pattern in 10-Q/10-K text
+OBTIC,Q4 2025,equity_raised_mn,8.6,10-K,quarterly,medium,anchor-pattern in 10-Q/10-K text
+ADS,Q1 2020,nav_per_share,8.58,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+ADS,Q1 2020,first_lien_pct,96.11,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+ADS,Q1 2020,num_portfolio_companies,12,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+ADS,Q2 2020,nav_per_share,8.69,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+ADS,Q2 2020,first_lien_pct,96.29,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+ADS,Q2 2020,num_portfolio_companies,6,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+ADS,Q3 2020,nav_per_share,9.12,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+ADS,Q3 2020,first_lien_pct,96.08,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+ADS,Q3 2020,num_portfolio_companies,7,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+ADS,Q4 2020,net_assets_mn,222.36,XBRL,computed,high,us-gaap concept; cik=0001634452
+ADS,Q4 2020,shares_outstanding,23775222,XBRL,computed,high,us-gaap concept; cik=0001634452
+ADS,Q4 2020,nav_per_share,8.58,10-K,quarterly,medium,anchor-pattern in 10-Q/10-K text
+ADS,Q4 2020,first_lien_pct,96.08,10-K,quarterly,medium,anchor-pattern in 10-Q/10-K text
+ADS,Q4 2020,num_portfolio_companies,47,10-K,quarterly,medium,anchor-pattern in 10-Q/10-K text
+ADS,Q1 2021,nav_per_share,9.43,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+ADS,Q1 2021,first_lien_pct,96.22,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+ADS,Q1 2021,num_portfolio_companies,12,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+ADS,Q2 2021,nav_per_share,9.65,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+ADS,Q2 2021,first_lien_pct,96.57,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+ADS,Q2 2021,num_portfolio_companies,16,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+ADS,Q3 2021,net_assets_mn,278.729,XBRL,computed,high,us-gaap concept; cik=0001634452
+ADS,Q3 2021,shares_outstanding,28561167,XBRL,computed,high,us-gaap concept; cik=0001634452
+ADS,Q3 2021,total_investment_income_mn,13.576,XBRL,computed,high,us-gaap concept; cik=0001634452
+ADS,Q3 2021,net_investment_income_mn,4.947,XBRL,computed,high,us-gaap concept; cik=0001634452
+ADS,Q3 2021,total_expenses_mn,8.628,XBRL,computed,high,us-gaap concept; cik=0001634452
+ADS,Q3 2021,interest_expense_mn,3.798,XBRL,computed,high,us-gaap concept; cik=0001634452
+ADS,Q3 2021,management_fee_mn,2.633,XBRL,computed,high,us-gaap concept; cik=0001634452
+ADS,Q3 2021,incentive_fee_mn,0.877,XBRL,computed,high,us-gaap concept; cik=0001634452
+ADS,Q3 2021,nav_per_share,9.76,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+ADS,Q3 2021,first_lien_pct,90.3,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+ADS,Q3 2021,num_portfolio_companies,24,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+ADS,Q4 2021,shares_outstanding,35343949,XBRL,computed,high,us-gaap concept; cik=0001634452
+ADS,Q4 2021,first_lien_pct,96.92,10-K,quarterly,medium,anchor-pattern in 10-Q/10-K text
+ADS,Q1 2022,shares_outstanding,38544494,XBRL,computed,high,us-gaap concept; cik=0001634452
+ADS,Q1 2022,first_lien_pct,90.91,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+ADS,Q2 2022,shares_outstanding,44047129,XBRL,computed,high,us-gaap concept; cik=0001634452
+ADS,Q3 2022,shares_outstanding,46082537,XBRL,computed,high,us-gaap concept; cik=0001634452
+ADS,Q3 2022,first_lien_pct,93.91,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+ADS,Q4 2022,shares_outstanding,50228088,XBRL,computed,high,us-gaap concept; cik=0001634452
+ADS,Q1 2023,shares_outstanding,49895174,XBRL,computed,high,us-gaap concept; cik=0001634452
+ADS,Q1 2023,first_lien_pct,92.36,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+ADS,Q2 2023,shares_outstanding,52816794,XBRL,computed,high,us-gaap concept; cik=0001634452
+ADS,Q2 2023,first_lien_pct,91.94,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+ADS,Q2 2023,floating_rate_pct,1.83,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+ADS,Q3 2023,shares_outstanding,54193205,XBRL,computed,high,us-gaap concept; cik=0001634452
+ADS,Q3 2023,first_lien_pct,90.22,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+ADS,Q3 2023,floating_rate_pct,1.83,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+ADS,Q4 2023,shares_outstanding,54364707,XBRL,computed,high,us-gaap concept; cik=0001634452
+ADS,Q1 2024,shares_outstanding,56653056,XBRL,computed,high,us-gaap concept; cik=0001634452
+ADS,Q1 2024,first_lien_pct,93.53,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+ADS,Q2 2024,shares_outstanding,58978899,XBRL,computed,high,us-gaap concept; cik=0001634452
+ADS,Q2 2024,first_lien_pct,93.5,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+ADS,Q3 2024,shares_outstanding,62434770,XBRL,computed,high,us-gaap concept; cik=0001634452
+ADS,Q3 2024,first_lien_pct,90.66,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+ADS,Q4 2024,shares_outstanding,63702963,XBRL,computed,high,us-gaap concept; cik=0001634452
+ADS,Q4 2024,floating_rate_pct,1.4,10-K,quarterly,medium,anchor-pattern in 10-Q/10-K text
+ADS,Q1 2025,shares_outstanding,68529857,XBRL,computed,high,us-gaap concept; cik=0001634452
+ADS,Q1 2025,first_lien_pct,91.37,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+ADS,Q1 2025,floating_rate_pct,1.4,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+ADS,Q2 2025,shares_outstanding,68473064,XBRL,computed,high,us-gaap concept; cik=0001634452
+ADS,Q2 2025,first_lien_pct,94.49,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+ADS,Q2 2025,floating_rate_pct,1.4,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+ADS,Q3 2025,shares_outstanding,73253029,XBRL,computed,high,us-gaap concept; cik=0001634452
+ADS,Q3 2025,first_lien_pct,94.19,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+NCPCIF,Q2 2022,management_fee_mn,0.0,XBRL,computed,high,us-gaap concept; cik=0001911066
+NCPCIF,Q2 2022,nav_i,25.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+NCPCIF,Q3 2022,shares_outstanding,10540040,XBRL,computed,high,us-gaap concept; cik=0001911066
+NCPCIF,Q3 2022,management_fee_mn,0.0,XBRL,computed,high,us-gaap concept; cik=0001911066
+NCPCIF,Q3 2022,nav_i,25.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+NCPCIF,Q4 2022,shares_outstanding,10540040,XBRL,computed,high,us-gaap concept; cik=0001911066
+NCPCIF,Q1 2023,shares_outstanding,10540040,XBRL,computed,high,us-gaap concept; cik=0001911066
+NCPCIF,Q1 2023,management_fee_mn,0.0,XBRL,computed,high,us-gaap concept; cik=0001911066
+NCPCIF,Q1 2023,nav_i,25.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+NCPCIF,Q2 2023,shares_outstanding,10853142,XBRL,computed,high,us-gaap concept; cik=0001911066
+NCPCIF,Q2 2023,nav_i,25.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+NCPCIF,Q3 2023,shares_outstanding,12279386,XBRL,computed,high,us-gaap concept; cik=0001911066
+NCPCIF,Q3 2023,nav_s,24.61,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+NCPCIF,Q3 2023,nav_d,24.61,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+NCPCIF,Q3 2023,nav_i,25.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+NCPCIF,Q1 2024,nav_i,25.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+NCPCIF,Q1 2024,equity_raised_mn,122.3,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+NCPCIF,Q1 2024,redemption_fulfilled_mn,24.62,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+NCPCIF,Q2 2024,nav_i,25.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+NCPCIF,Q2 2024,redemption_fulfilled_mn,24.62,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+NCPCIF,Q3 2024,nav_i,25.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+NCPCIF,Q3 2024,redemption_fulfilled_mn,24.62,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+NCPCIF,Q3 2024,first_lien_pct,89.84,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+NCPCIF,Q3 2024,floating_rate_pct,9.46,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+NCPCIF,Q4 2024,redemption_fulfilled_mn,24.62,10-K,quarterly,medium,anchor-pattern in 10-Q/10-K text
+NCPCIF,Q4 2024,first_lien_pct,40.2,10-K,quarterly,medium,anchor-pattern in 10-Q/10-K text
+NCPCIF,Q4 2024,floating_rate_pct,9.48,10-K,quarterly,medium,anchor-pattern in 10-Q/10-K text
+NCPCIF,Q1 2025,nav_i,25.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+NCPCIF,Q1 2025,equity_raised_mn,86.4,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+NCPCIF,Q1 2025,redemption_fulfilled_mn,24.64,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+NCPCIF,Q1 2025,first_lien_pct,6.25,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+NCPCIF,Q1 2025,floating_rate_pct,8.67,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+NCPCIF,Q2 2025,nav_i,25.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+NCPCIF,Q2 2025,equity_raised_mn,261.8,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+NCPCIF,Q2 2025,redemption_fulfilled_mn,24.64,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+NCPCIF,Q2 2025,first_lien_pct,5.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+NCPCIF,Q2 2025,floating_rate_pct,9.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+NCPCIF,Q3 2025,nav_i,25.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+NCPCIF,Q3 2025,redemption_fulfilled_mn,24.64,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+NCPCIF,Q4 2025,nav_i,25.0,10-K,quarterly,medium,anchor-pattern in 10-Q/10-K text
+NCPCIF,Q4 2025,equity_raised_mn,578.2,10-K,quarterly,medium,anchor-pattern in 10-Q/10-K text
+NCPCIF,Q4 2025,redemption_fulfilled_mn,24.64,10-K,quarterly,medium,anchor-pattern in 10-Q/10-K text
+LPCL,Q1 2025,shares_outstanding,2280000,XBRL,computed,high,us-gaap concept; cik=0002041841
+LPCL,Q1 2025,na_pct_cost,0.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+LPCL,Q2 2025,na_pct_cost,0.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+LPCL,Q3 2025,shares_outstanding,4595017,XBRL,computed,high,us-gaap concept; cik=0002041841
+LPCL,Q4 2025,shares_outstanding,5073629,XBRL,computed,high,us-gaap concept; cik=0002041841
+TBKCF,Q4 2022,shares_outstanding,2000000,XBRL,computed,high,us-gaap concept; cik=0001901164
+TBKCF,Q1 2023,shares_outstanding,2000000,XBRL,computed,high,us-gaap concept; cik=0001901164
+TBKCF,Q1 2023,management_fee_mn,0.0,XBRL,computed,high,us-gaap concept; cik=0001901164
+TBKCF,Q2 2023,shares_outstanding,11449456,XBRL,computed,high,us-gaap concept; cik=0001901164
+TBKCF,Q2 2023,management_fee_mn,0.0,XBRL,computed,high,us-gaap concept; cik=0001901164
+TBKCF,Q2 2023,weighted_avg_yield,12.0,10-Q/A,quarterly,medium,anchor-pattern in 10-Q/10-K text
+TBKCF,Q2 2023,first_lien_pct,5.75,10-Q/A,quarterly,medium,anchor-pattern in 10-Q/10-K text
+TBKCF,Q3 2023,shares_outstanding,17979816,XBRL,computed,high,us-gaap concept; cik=0001901164
+TBKCF,Q3 2023,weighted_avg_yield,12.4,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+TBKCF,Q4 2023,shares_outstanding,25158870,XBRL,computed,high,us-gaap concept; cik=0001901164
+TBKCF,Q4 2023,weighted_avg_yield,12.7,10-K,quarterly,medium,anchor-pattern in 10-Q/10-K text
+TBKCF,Q1 2024,shares_outstanding,29645450,XBRL,computed,high,us-gaap concept; cik=0001901164
+TBKCF,Q1 2024,drip_mn,999.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+TBKCF,Q1 2024,weighted_avg_yield,12.7,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+TBKCF,Q2 2024,shares_outstanding,35815699,XBRL,computed,high,us-gaap concept; cik=0001901164
+TBKCF,Q2 2024,weighted_avg_yield,12.5,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+TBKCF,Q3 2024,shares_outstanding,38796477,XBRL,computed,high,us-gaap concept; cik=0001901164
+TBKCF,Q3 2024,weighted_avg_yield,11.6,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+TBKCF,Q4 2024,shares_outstanding,43472573,XBRL,computed,high,us-gaap concept; cik=0001901164
+TBKCF,Q4 2024,weighted_avg_yield,10.9,10-K,quarterly,medium,anchor-pattern in 10-Q/10-K text
+TBKCF,Q1 2025,shares_outstanding,45976757,XBRL,computed,high,us-gaap concept; cik=0001901164
+TBKCF,Q2 2025,shares_outstanding,51752976,XBRL,computed,high,us-gaap concept; cik=0001901164
+TBKCF,Q3 2025,shares_outstanding,55723978,XBRL,computed,high,us-gaap concept; cik=0001901164
+TBKCF,Q4 2025,shares_outstanding,59072291,XBRL,computed,high,us-gaap concept; cik=0001901164
+MSIF,Q1 2020,drip_mn,22.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+MSIF,Q1 2020,first_lien_pct,6.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+MSIF,Q2 2020,drip_mn,22.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+MSIF,Q2 2020,first_lien_pct,6.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+MSIF,Q3 2020,drip_mn,22.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+MSIF,Q3 2020,first_lien_pct,6.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+MSIF,Q4 2020,drip_mn,6.6,10-K,quarterly,medium,anchor-pattern in 10-Q/10-K text
+MSIF,Q4 2020,first_lien_pct,79.5,10-K,quarterly,medium,anchor-pattern in 10-Q/10-K text
+MSIF,Q1 2021,first_lien_pct,6.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+MSIF,Q2 2021,first_lien_pct,6.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+MSIF,Q3 2021,first_lien_pct,6.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+MSIF,Q4 2021,drip_mn,7.9,10-K,quarterly,medium,anchor-pattern in 10-Q/10-K text
+MSIF,Q4 2021,first_lien_pct,87.2,10-K,quarterly,medium,anchor-pattern in 10-Q/10-K text
+MSIF,Q1 2022,first_lien_pct,6.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+MSIF,Q2 2022,first_lien_pct,6.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+MSIF,Q3 2022,first_lien_pct,6.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+MSIF,Q4 2022,drip_mn,7.82,10-K,quarterly,medium,anchor-pattern in 10-Q/10-K text
+MSIF,Q4 2022,first_lien_pct,88.5,10-K,quarterly,medium,anchor-pattern in 10-Q/10-K text
+MSIF,Q1 2023,first_lien_pct,6.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+MSIF,Q2 2023,first_lien_pct,6.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+MSIF,Q3 2023,first_lien_pct,6.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+MSIF,Q4 2023,drip_mn,26.9,10-K,quarterly,medium,anchor-pattern in 10-Q/10-K text
+MSIF,Q4 2023,first_lien_pct,86.5,10-K,quarterly,medium,anchor-pattern in 10-Q/10-K text
+MSIF,Q1 2024,first_lien_pct,6.0,10-Q,quarterly,medium,anchor-pattern in 10-Q/10-K text
+MSIF,Q4 2024,drip_mn,25.0,10-K,quarterly,medium,anchor-pattern in 10-Q/10-K text
+MSIF,Q4 2025,drip_mn,13.8,10-K,quarterly,medium,anchor-pattern in 10-Q/10-K text
