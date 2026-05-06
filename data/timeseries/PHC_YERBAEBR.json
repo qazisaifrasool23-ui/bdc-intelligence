@@ -10,7 +10,11 @@
     "total_expenses_mn": 3.152,
     "cumulative_dividends_paid": 0.0,
     "cumulative_equity_raised_mn": 0.0,
-    "data_quality_score": 100.0
+    "data_quality_score": 100.0,
+    "data_status": "scaffold_only",
+    "scaffold_reason": "XBRL empty and filing text too sparse for extraction",
+    "extraction_attempted": "2026-05-06",
+    "rerun_when": "next 10-Q filing after 2026-06-30"
   },
   {
     "quarter": "Q3 2024",
@@ -23,7 +27,11 @@
     "equity_raised_mn": 8.2,
     "cumulative_dividends_paid": 0.0,
     "cumulative_equity_raised_mn": 8.2,
-    "data_quality_score": 100.0
+    "data_quality_score": 100.0,
+    "data_status": "scaffold_only",
+    "scaffold_reason": "XBRL empty and filing text too sparse for extraction",
+    "extraction_attempted": "2026-05-06",
+    "rerun_when": "next 10-Q filing after 2026-06-30"
   },
   {
     "quarter": "Q4 2024",
@@ -37,7 +45,11 @@
     "equity_raised_mn": 8.4,
     "cumulative_dividends_paid": 0.0,
     "cumulative_equity_raised_mn": 16.6,
-    "data_quality_score": 100.0
+    "data_quality_score": 100.0,
+    "data_status": "scaffold_only",
+    "scaffold_reason": "XBRL empty and filing text too sparse for extraction",
+    "extraction_attempted": "2026-05-06",
+    "rerun_when": "next 10-Q filing after 2026-06-30"
   },
   {
     "quarter": "Q1 2025",
@@ -52,6 +64,10 @@
     "interest_expense_mn": 0.135,
     "cumulative_dividends_paid": 0.0,
     "cumulative_equity_raised_mn": 16.6,
-    "data_quality_score": 100.0
+    "data_quality_score": 100.0,
+    "data_status": "scaffold_only",
+    "scaffold_reason": "XBRL empty and filing text too sparse for extraction",
+    "extraction_attempted": "2026-05-06",
+    "rerun_when": "next 10-Q filing after 2026-06-30"
   }
 ]

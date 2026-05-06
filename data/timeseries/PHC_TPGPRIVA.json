@@ -6,7 +6,11 @@
     "source_url": "https://www.sec.gov/Archives/edgar/data/2050260/000205026025000051/tpop-20250331.htm",
     "cumulative_dividends_paid": 0.0,
     "cumulative_equity_raised_mn": 0.0,
-    "data_quality_score": 100.0
+    "data_quality_score": 100.0,
+    "data_status": "scaffold_only",
+    "scaffold_reason": "XBRL empty and filing text too sparse for extraction",
+    "extraction_attempted": "2026-05-06",
+    "rerun_when": "next 10-Q filing after 2026-06-30"
   },
   {
     "quarter": "Q2 2025",
@@ -19,7 +23,11 @@
     "avg_position_size_mn": 0.09,
     "cumulative_dividends_paid": 0.0,
     "cumulative_equity_raised_mn": 0.0,
-    "data_quality_score": 100.0
+    "data_quality_score": 100.0,
+    "data_status": "scaffold_only",
+    "scaffold_reason": "XBRL empty and filing text too sparse for extraction",
+    "extraction_attempted": "2026-05-06",
+    "rerun_when": "next 10-Q filing after 2026-06-30"
   },
   {
     "quarter": "Q3 2025",
@@ -33,7 +41,11 @@
     "avg_position_size_mn": 0.293,
     "cumulative_dividends_paid": 0.0,
     "cumulative_equity_raised_mn": 0.0,
-    "data_quality_score": 100.0
+    "data_quality_score": 100.0,
+    "data_status": "scaffold_only",
+    "scaffold_reason": "XBRL empty and filing text too sparse for extraction",
+    "extraction_attempted": "2026-05-06",
+    "rerun_when": "next 10-Q filing after 2026-06-30"
   },
   {
     "quarter": "Q4 2025",
@@ -44,6 +56,10 @@
     "num_portfolio_companies": 2025,
     "cumulative_dividends_paid": 0.0,
     "cumulative_equity_raised_mn": 0.0,
-    "data_quality_score": 100.0
+    "data_quality_score": 100.0,
+    "data_status": "scaffold_only",
+    "scaffold_reason": "XBRL empty and filing text too sparse for extraction",
+    "extraction_attempted": "2026-05-06",
+    "rerun_when": "next 10-Q filing after 2026-06-30"
   }
 ]
