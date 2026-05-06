@@ -1,0 +1,925 @@
+{
+  "last_updated": "2026-05-06T10:48:30Z",
+  "phase_a_known": [
+    {
+      "ticker": "BCRED",
+      "cik": "0001803498",
+      "fund_name": "Blackstone Private Credit Fund"
+    },
+    {
+      "ticker": "HLEND",
+      "cik": "0001838126",
+      "fund_name": "HPS Corporate Lending Fund"
+    },
+    {
+      "ticker": "APCIF",
+      "cik": "0001837532",
+      "fund_name": "Apollo Debt Solutions BDC"
+    },
+    {
+      "ticker": "OCIC",
+      "cik": "0001812554",
+      "fund_name": "Owl Rock Core Income Corp"
+    },
+    {
+      "ticker": "OSCF",
+      "cik": "0001872371",
+      "fund_name": "Oaktree Strategic Credit Fund"
+    },
+    {
+      "ticker": "GCRED",
+      "cik": "0001920145",
+      "fund_name": "Goldman Sachs Private Credit Corp"
+    },
+    {
+      "ticker": "BLKR_PCF",
+      "cik": "0001902649",
+      "fund_name": "BlackRock Private Credit Fund"
+    },
+    {
+      "ticker": "KKR_FSIT",
+      "cik": "0001930679",
+      "fund_name": "KKR FS Income Trust"
+    },
+    {
+      "ticker": "BAIN_PC",
+      "cik": "0001899017",
+      "fund_name": "Bain Capital Private Credit"
+    },
+    {
+      "ticker": "FID_PCF",
+      "cik": "0001920453",
+      "fund_name": "Fidelity Private Credit Fund"
+    },
+    {
+      "ticker": "ANT_PCF",
+      "cik": "0001993402",
+      "fund_name": "Antares Strategic Credit Fund"
+    },
+    {
+      "ticker": "OBTIC",
+      "cik": "0001869453",
+      "fund_name": "Owl Rock / Blue Owl Technology Income Corp"
+    },
+    {
+      "ticker": "ADS",
+      "cik": "0001634452",
+      "fund_name": "AB Private Credit Investors Corp"
+    },
+    {
+      "ticker": "NCPCIF",
+      "cik": "0001911066",
+      "fund_name": "Nuveen Churchill Private Capital"
+    },
+    {
+      "ticker": "LPCL",
+      "cik": "0002041841",
+      "fund_name": "Lord Abbett Private Credit Fund"
+    },
+    {
+      "ticker": "TBKCF",
+      "cik": "0001901164",
+      "fund_name": "T. Rowe Price OHA Select Credit Fund"
+    },
+    {
+      "ticker": "MSIF",
+      "cik": "0001535778",
+      "fund_name": "MSC Income Fund"
+    }
+  ],
+  "phase_b_new_candidates": [
+    {
+      "cik": "0001817825",
+      "fund_name": "Steele Creek Capital Corp",
+      "sic": "",
+      "first_search": "\"business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0001975736",
+      "fund_name": "KKR FS Income Trust Select",
+      "sic": "",
+      "first_search": "\"business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0001859919",
+      "fund_name": "Barings Private Credit Corp",
+      "sic": "",
+      "first_search": "\"business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0002031283",
+      "fund_name": "Stone Point Credit Income Fund",
+      "sic": "",
+      "first_search": "\"business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0001890107",
+      "fund_name": "First Eagle Private Credit Fund",
+      "sic": "",
+      "first_search": "\"business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0001899996",
+      "fund_name": "Fidelity Private Credit Co LLC",
+      "sic": "",
+      "first_search": "\"business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0002025369",
+      "fund_name": "Third Point Private Capital Partners",
+      "sic": "",
+      "first_search": "\"business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0001901612",
+      "fund_name": "Golub Capital BDC 4, Inc.",
+      "sic": "",
+      "first_search": "\"business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0002027537",
+      "fund_name": "Goldman Sachs Real Estate Finance Trust Inc",
+      "sic": "6798",
+      "first_search": "\"business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0001901606",
+      "fund_name": "Golub Capital Direct Lending Unlevered Corp",
+      "sic": "",
+      "first_search": "\"business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0001865174",
+      "fund_name": "Goldman Sachs Middle Market Lending Corp. II",
+      "sic": "",
+      "first_search": "\"business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0001674760",
+      "fund_name": "Silver Capital Holdings LLC",
+      "sic": "",
+      "first_search": "\"business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0001772704",
+      "fund_name": "Goldman Sachs Private Middle Market Credit II LLC",
+      "sic": "",
+      "first_search": "\"business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0001959604",
+      "fund_name": "Jefferies Credit Partners BDC Inc.",
+      "sic": "",
+      "first_search": "\"business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0002049733",
+      "fund_name": "Blackstone Private Real Estate Credit & Income Fund",
+      "sic": "",
+      "first_search": "\"business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0002031750",
+      "fund_name": "Ares Core Infrastructure Fund",
+      "sic": "",
+      "first_search": "\"business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0001925309",
+      "fund_name": "Sixth Street Lending Partners",
+      "sic": "",
+      "first_search": "\"business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0001930087",
+      "fund_name": "Golub Capital Private Credit Fund",
+      "sic": "",
+      "first_search": "\"business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0001868878",
+      "fund_name": "GOLUB CAPITAL DIRECT LENDING CORP",
+      "sic": "",
+      "first_search": "\"business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0001950572",
+      "fund_name": "BIP Ventures Evergreen BDC",
+      "sic": "",
+      "first_search": "\"business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0001786835",
+      "fund_name": "Star Mountain Lower Middle-Market Capital Corp",
+      "sic": "",
+      "first_search": "\"business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0001959568",
+      "fund_name": "Senior Credit Investments, LLC",
+      "sic": "",
+      "first_search": "\"business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0001987221",
+      "fund_name": "AMG Comvest Senior Lending Fund",
+      "sic": "",
+      "first_search": "\"business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0001512931",
+      "fund_name": "MONROE CAPITAL Corp",
+      "sic": "",
+      "first_search": "\"business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0001948056",
+      "fund_name": "KKR Infrastructure Conglomerate LLC",
+      "sic": "6799",
+      "first_search": "\"business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0001957845",
+      "fund_name": "KKR Private Equity Conglomerate LLC",
+      "sic": "6199",
+      "first_search": "\"business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0001633858",
+      "fund_name": "Audax Credit BDC Inc.",
+      "sic": "",
+      "first_search": "\"business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0002018545",
+      "fund_name": "Franklin BSP Real Estate Debt BDC",
+      "sic": "",
+      "first_search": "\"business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0002012839",
+      "fund_name": "KKR Enhanced US Direct Lending Fund-L Inc.",
+      "sic": "",
+      "first_search": "\"business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0001702510",
+      "fund_name": "Carlyle Credit Solutions, Inc.",
+      "sic": "",
+      "first_search": "\"business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0001944831",
+      "fund_name": "Willow Tree Capital Corp",
+      "sic": "",
+      "first_search": "\"business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0001918712",
+      "fund_name": "ARES STRATEGIC INCOME FUND",
+      "sic": "",
+      "first_search": "\"business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0001849089",
+      "fund_name": "Lafayette Square USA, Inc.",
+      "sic": "",
+      "first_search": "\"business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0001982701",
+      "fund_name": "AB Private Lending Fund",
+      "sic": "",
+      "first_search": "\"business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0002089126",
+      "fund_name": "PennantPark Private Income Fund",
+      "sic": "",
+      "first_search": "\"business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0002017636",
+      "fund_name": "CCS IX Portfolio Holdings, LLC",
+      "sic": "",
+      "first_search": "\"business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0001988280",
+      "fund_name": "Manulife Private Credit Fund",
+      "sic": "",
+      "first_search": "\"business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0002071136",
+      "fund_name": "Nuveen Churchill BDC V",
+      "sic": "",
+      "first_search": "\"business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0001989817",
+      "fund_name": "HPS Corporate Capital Solutions Fund",
+      "sic": "",
+      "first_search": "\"business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0001978133",
+      "fund_name": "YERBAE BRANDS CORP.",
+      "sic": "2080",
+      "first_search": "\"business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0001825384",
+      "fund_name": "Stone Point Credit Corp",
+      "sic": "",
+      "first_search": "\"business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0001521945",
+      "fund_name": "Prospect Floating Rate & Alternative Income Fund, Inc.",
+      "sic": "",
+      "first_search": "\"business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0001919369",
+      "fund_name": "VISTA CREDIT STRATEGIC LENDING CORP.",
+      "sic": "",
+      "first_search": "\"business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0001588272",
+      "fund_name": "NexPoint Capital, Inc.",
+      "sic": "",
+      "first_search": "\"business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0001999538",
+      "fund_name": "X1 Capital Inc.",
+      "sic": "",
+      "first_search": "\"business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0001849894",
+      "fund_name": "MSD Investment Corp.",
+      "sic": "",
+      "first_search": "\"business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0002020354",
+      "fund_name": "West Bay BDC LLC",
+      "sic": "",
+      "first_search": "\"business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0001998387",
+      "fund_name": "5C Lending Partners Corp.",
+      "sic": "",
+      "first_search": "\"business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0002082559",
+      "fund_name": "Golub Capital Private Income Fund I",
+      "sic": "",
+      "first_search": "\"business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0002082557",
+      "fund_name": "Golub Capital Private Income Fund S",
+      "sic": "",
+      "first_search": "\"business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0001860424",
+      "fund_name": "Onex Direct Lending BDC Fund",
+      "sic": "",
+      "first_search": "\"business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0001655887",
+      "fund_name": "Blue Owl Capital Corp II",
+      "sic": "",
+      "first_search": "\"business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0000793171",
+      "fund_name": "Vitro Biopharma, Inc.",
+      "sic": "2836",
+      "first_search": "\"business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0001807427",
+      "fund_name": "Blue Owl Capital Corp III",
+      "sic": "",
+      "first_search": "\"business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0001965934",
+      "fund_name": "Overland Advantage",
+      "sic": "",
+      "first_search": "\"business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0002045370",
+      "fund_name": "Remora Capital Corp",
+      "sic": "",
+      "first_search": "\"business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0002035713",
+      "fund_name": "Crestline Lending Solutions, LLC",
+      "sic": "",
+      "first_search": "\"elected to be regulated as a business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0002043133",
+      "fund_name": "TCW Steel City Senior Lending BDC",
+      "sic": "",
+      "first_search": "\"elected to be regulated as a business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0002027033",
+      "fund_name": "Eagle Point Trinity Senior Secured Lending Co",
+      "sic": "",
+      "first_search": "\"elected to be regulated as a business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0001950803",
+      "fund_name": "Stepstone Private Credit Fund LLC",
+      "sic": "",
+      "first_search": "\"elected to be regulated as a business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0002077250",
+      "fund_name": "Stone Point Credit Income Fund - Select",
+      "sic": "",
+      "first_search": "\"elected to be regulated as a business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0001985375",
+      "fund_name": "Muzinich Corporate Lending Income Fund, Inc.",
+      "sic": "",
+      "first_search": "\"elected to be regulated as a business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0001779523",
+      "fund_name": "Muzinich BDC, Inc.",
+      "sic": "",
+      "first_search": "\"elected to be regulated as a business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0002061670",
+      "fund_name": "Monroe Capital Enhanced Corporate Lending Fund",
+      "sic": "",
+      "first_search": "\"elected to be regulated as a business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0001646614",
+      "fund_name": "Silver Point Specialty Lending Fund",
+      "sic": "",
+      "first_search": "\"elected to be regulated as a business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0001922947",
+      "fund_name": "Wellings Real Estate Income Fund",
+      "sic": "",
+      "first_search": "\"elected to be regulated as a business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0002037804",
+      "fund_name": "New Mountain Private Credit Fund",
+      "sic": "",
+      "first_search": "\"elected to be regulated as a business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0001913724",
+      "fund_name": "TPG Twin Brook Capital Income Fund",
+      "sic": "",
+      "first_search": "\"elected to be regulated as a business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0001766037",
+      "fund_name": "NMF SLF I, Inc.",
+      "sic": "",
+      "first_search": "\"elected to be regulated as a business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0001976719",
+      "fund_name": "New Mountain Guardian IV Income Fund, L.L.C.",
+      "sic": "",
+      "first_search": "\"elected to be regulated as a business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0001925531",
+      "fund_name": "New Mountain Guardian IV BDC, L.L.C.",
+      "sic": "",
+      "first_search": "\"elected to be regulated as a business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0001841514",
+      "fund_name": "Commonwealth Credit Partners BDC I, Inc.",
+      "sic": "",
+      "first_search": "\"elected to be regulated as a business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0001577134",
+      "fund_name": "Terra Income Fund 6, LLC",
+      "sic": "6798",
+      "first_search": "\"elected to be regulated as a business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0001603480",
+      "fund_name": "TCW Direct Lending LLC",
+      "sic": "",
+      "first_search": "\"elected to be regulated as a business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0002052153",
+      "fund_name": "Apollo Origination II",
+      "sic": "",
+      "first_search": "\"elected to be regulated as a business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0002043759",
+      "fund_name": "LAGO Evergreen Credit",
+      "sic": "",
+      "first_search": "\"elected to be regulated as a business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0001742313",
+      "fund_name": "Monroe Capital Income Plus Corp",
+      "sic": "",
+      "first_search": "\"elected to be regulated as a business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0001743415",
+      "fund_name": "SCP Private Credit Income BDC LLC",
+      "sic": "",
+      "first_search": "\"elected to be regulated as a business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0001932591",
+      "fund_name": "SLR Private Credit BDC II LLC",
+      "sic": "",
+      "first_search": "\"elected to be regulated as a business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0001832148",
+      "fund_name": "SLR HC BDC LLC",
+      "sic": "",
+      "first_search": "\"elected to be regulated as a business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0002052152",
+      "fund_name": "Apollo Origination II",
+      "sic": "",
+      "first_search": "\"elected to be regulated as a business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0002012139",
+      "fund_name": "Fortress Private Lending Fund",
+      "sic": "",
+      "first_search": "\"elected to be regulated as a business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0002011498",
+      "fund_name": "AGL Private Credit Income Fund",
+      "sic": "",
+      "first_search": "\"elected to be regulated as a business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0001948368",
+      "fund_name": "Phillip Street Middle Market Lending Fund LLC",
+      "sic": "",
+      "first_search": "\"elected to be regulated as a business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0002006758",
+      "fund_name": "Middle Market Apollo Institutional Private Lending",
+      "sic": "",
+      "first_search": "\"elected to be regulated as a business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0001850787",
+      "fund_name": "Kayne DL 2021, Inc.",
+      "sic": "",
+      "first_search": "\"non-traded\" \"business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0002066337",
+      "fund_name": "CNL Strategic Residential Credit, Inc.",
+      "sic": "6798",
+      "first_search": "\"non-traded\" \"business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0001726548",
+      "fund_name": "BC Partners Lending Corp",
+      "sic": "",
+      "first_search": "\"non-traded\" \"business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0001684682",
+      "fund_name": "CNL Strategic Capital, LLC",
+      "sic": "6282",
+      "first_search": "\"non-traded\" \"business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0001851277",
+      "fund_name": "Carlyle Secured Lending III",
+      "sic": "",
+      "first_search": "\"non-traded\" \"business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0001938649",
+      "fund_name": "Partners Group Lending Fund, LLC",
+      "sic": "",
+      "first_search": "\"non-traded\" \"business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0001889668",
+      "fund_name": "Blue Owl Technology Finance Corp. II",
+      "sic": "",
+      "first_search": "\"non-traded\" \"business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0001501729",
+      "fund_name": "FS Specialty Lending Fund",
+      "sic": "",
+      "first_search": "\"non-traded\" \"business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0001954360",
+      "fund_name": "Crescent Private Credit Income Corp",
+      "sic": "",
+      "first_search": "\"non-traded\" \"business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0001851322",
+      "fund_name": "North Haven Private Income Fund LLC",
+      "sic": "",
+      "first_search": "\"non-traded\" \"business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0001976336",
+      "fund_name": "Antares Private Credit Fund",
+      "sic": "",
+      "first_search": "\"non-traded\" \"business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0001571329",
+      "fund_name": "Logan Ridge Finance Corp.",
+      "sic": "",
+      "first_search": "\"interval fund\" \"business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0001661306",
+      "fund_name": "Hancock Park Corporate Income, Inc.",
+      "sic": "",
+      "first_search": "\"interval fund\" \"business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0002026738",
+      "fund_name": "FORTRESS CREDIT REALTY INCOME TRUST",
+      "sic": "6798",
+      "first_search": "\"Class S shares\" \"Class I shares\" \"business development\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0001882850",
+      "fund_name": "Apollo Realty Income Solutions, Inc.",
+      "sic": "6798",
+      "first_search": "\"Class S shares\" \"Class I shares\" \"business development\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0001944366",
+      "fund_name": "Blue Owl Real Estate Net Lease Trust",
+      "sic": "6500",
+      "first_search": "\"Class S shares\" \"Class I shares\" \"business development\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0001868516",
+      "fund_name": "StratCap Digital Infrastructure REIT, Inc.",
+      "sic": "6798",
+      "first_search": "\"Class S shares\" \"Class I shares\" \"business development\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0001966394",
+      "fund_name": "Fortress Net Lease REIT",
+      "sic": "6798",
+      "first_search": "\"Class S shares\" \"Class I shares\" \"business development\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0001893262",
+      "fund_name": "J.P. Morgan Real Estate Income Trust, Inc.",
+      "sic": "6798",
+      "first_search": "\"Class S shares\" \"Class I shares\" \"business development\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0002069692",
+      "fund_name": "Blue Owl Digital Infrastructure Trust",
+      "sic": "6798",
+      "first_search": "\"Class S shares\" \"Class I shares\" \"business development\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0001711799",
+      "fund_name": "Nuveen Global Cities REIT, Inc.",
+      "sic": "6798",
+      "first_search": "\"Class S shares\" \"Class I shares\" \"business development\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0001911321",
+      "fund_name": "Kennedy Lewis Capital Co",
+      "sic": "",
+      "first_search": "\"Class S shares\" \"Class I shares\" \"business development\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0002026448",
+      "fund_name": "Principal Credit Real Estate Income Trust",
+      "sic": "6798",
+      "first_search": "\"Class S shares\" \"Class I shares\" \"business development\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0001946997",
+      "fund_name": "EQT Exeter Real Estate Income Trust, Inc.",
+      "sic": "6798",
+      "first_search": "\"Class S shares\" \"Class I shares\" \"business development\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0001983514",
+      "fund_name": "LGAM Private Credit LLC",
+      "sic": "",
+      "first_search": "\"perpetual-life\" \"business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0001973476",
+      "fund_name": "North Haven Private Income Fund A LLC",
+      "sic": "",
+      "first_search": "\"perpetual-life\" \"business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0002008748",
+      "fund_name": "Lord Abbett Private Credit Fund",
+      "sic": "",
+      "first_search": "\"perpetual-life\" \"business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0002061174",
+      "fund_name": "Sound Point Direct Lending BDC",
+      "sic": "",
+      "first_search": "\"perpetual-life\" \"business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0002065397",
+      "fund_name": "Antares Strategic Credit Fund II LLC",
+      "sic": "",
+      "first_search": "\"perpetual-life\" \"business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0002033695",
+      "fund_name": "New Mountain Net Lease Trust",
+      "sic": "6798",
+      "first_search": "\"perpetual-life\" \"business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0001825265",
+      "fund_name": "TCW Direct Lending VIII LLC",
+      "sic": "",
+      "first_search": "\"perpetual-life\" \"business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0001905824",
+      "fund_name": "PIMCO Capital Solutions BDC Corp.",
+      "sic": "",
+      "first_search": "\"perpetual-life\" \"business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0002050260",
+      "fund_name": "TPG Private Equity Opportunities, L.P.",
+      "sic": "6221",
+      "first_search": "\"perpetual-life\" \"business development company\"",
+      "status": "candidate"
+    },
+    {
+      "cik": "0002035428",
+      "fund_name": "Franklin BSP Real Estate Debt, Inc.",
+      "sic": "6798",
+      "first_search": "\"perpetual-life\" \"business development company\"",
+      "status": "candidate"
+    }
+  ]
+}
