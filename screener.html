@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Screener — BDC Intelligence</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+:root{
+  --bg:#f2f4f7;
+  /* FactSet chart palette */
+  --c1:#2E75B6;--c1a:rgba(46,117,182,.08);
+  --c2:#70AD47;--c2a:rgba(112,173,71,.08);
+  --c3:#C00000;--c3a:rgba(192,0,0,.07);
+  --c4:#E07B00;--c4a:rgba(224,123,0,.08);
+  --c5:#264478;--c5a:rgba(38,68,120,.08);
+  --c6:#5B9BD5;--c6a:rgba(91,155,213,.08);
+  --cref:#A5A5A5;--bg2:#ffffff;--bg3:#f0f2f5;--bg4:#e8eaed;
+  --card:#ffffff;--card2:#ffffff;--border:#e2e6ea;--border2:#ced4da;
+  --text:#1a1d23;--text2:#3d4f63;--text3:#6c7a8d;--text4:#adb5bd;
+  --blue:#2E75B6;--blue2:#eef2fd;--blue3:#dce7fb;
+  --green:#70AD47;--green2:#e6f5f0;
+  --amber:#E07B00;--amber2:#fff3e0;
+  --red:#C00000;--red2:#fdf2f3;
+  --purple:#6d28d9;--purple2:#f3f0ff;
+  --mono:"Roboto Mono",monospace;
+  --sans:"Roboto",sans-serif;
+  --serif:"Roboto",sans-serif;
+  --sh:0 1px 3px rgba(0,0,0,.08),0 0 0 1px rgba(0,0,0,.04);
+  --glow:0 0 20px rgba(24,71,194,.12);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:var(--sans);font-size:13px;line-height:1.5;overflow-x:hidden}
+::-webkit-scrollbar{width:3px;height:3px}
+::-webkit-scrollbar-thumb{background:var(--border2);border-radius:2px}
+
+/* ── TOPBAR ── */
+.topbar{height:32px;background:#06172e;border-bottom:1px solid rgba(255,255,255,.08);display:flex;align-items:center;padding:0 20px;gap:0}
+.tbi{display:flex;align-items:center;gap:6px;padding:0 14px;border-right:1px solid rgba(255,255,255,.12);font-family:var(--mono);font-size:9px;color:rgba(255,255,255,.65);height:32px}
+.tbi .v{color:rgba(255,255,255,.95);font-weight:500}
+.pulse{width:6px;height:6px;border-radius:50%;background:var(--green);box-shadow:0 0 6px var(--green);animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1;box-shadow:0 0 6px var(--green)}50%{opacity:.4;box-shadow:0 0 2px var(--green)}}
+.tbar-right{margin-left:auto;display:flex;align-items:center;gap:8px}
+.live-badge{background:rgba(10,124,82,.1);border:1px solid rgba(10,124,82,.2);color:var(--green);font-family:var(--mono);font-size:8px;padding:2px 8px;border-radius:2px;letter-spacing:.8px}
+
+/* ── NAVBAR ── */
+.navbar{height:52px;background:#ffffff;border-bottom:1px solid var(--border);display:flex;align-items:center;padding:0 20px;position:sticky;top:0;z-index:200}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;margin-right:32px}
+.logo-mark{width:30px;height:30px;background:var(--blue);border-radius:8px;display:flex;align-items:center;justify-content:center}
+.logo-mark svg{width:16px;height:16px;fill:#fff}
+.logo-text{font-family:var(--sans);font-size:15px;font-weight:700;color:var(--text);letter-spacing:-.3px}
+.logo-text span{color:var(--blue)}
+.nav-links{display:flex;height:52px}
+.nav-link{height:52px;padding:0 14px;display:flex;align-items:center;font-size:12px;font-weight:500;color:var(--text3);border-bottom:2px solid transparent;text-decoration:none;transition:all .15s;white-space:nowrap}
+.nav-link:hover{color:var(--text2)}.nav-link.on{color:var(--blue);border-bottom-color:var(--blue)}
+.nav-pill{font-size:8px;font-family:var(--mono);background:var(--blue2);color:var(--blue);padding:2px 6px;border-radius:3px;margin-left:5px;border:1px solid rgba(24,71,194,.2)}
+.nav-soon{font-size:8px;font-family:var(--mono);background:var(--bg3);color:var(--text4);padding:2px 6px;border-radius:3px;margin-left:5px}
+.nav-right{margin-left:auto;display:flex;gap:8px}
+.btn-outline{height:28px;padding:0 14px;border:1px solid var(--border2);border-radius:6px;background:transparent;color:var(--text2);font-size:11px;font-family:var(--sans);cursor:pointer;transition:all .15s}
+.btn-outline:hover{border-color:var(--blue);color:var(--blue)}
+.btn-primary{height:28px;padding:0 16px;border:none;border-radius:6px;background:var(--blue);color:#fff;font-size:11px;font-family:var(--sans);font-weight:600;cursor:pointer;transition:all .15s}
+.btn-primary:hover{background:#2d6fff;box-shadow:var(--glow)}
+
+/* ── HERO ── */
+.hero{background:linear-gradient(135deg,#06172e 0%,#0c2d5e 50%,#2E75B6 100%);border-bottom:1px solid var(--border);position:relative;overflow:hidden}
+.hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:48px 48px;pointer-events:none}
+.hero-glow{position:absolute;top:-100px;right:-100px;width:500px;height:500px;background:radial-gradient(circle,rgba(24,71,194,.15) 0%,transparent 70%);pointer-events:none}
+.hero-body{position:relative;z-index:1;padding:28px 28px 0}
+.hero-top{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:20px}
+.fund-ticker{font-family:var(--mono);font-size:48px;font-weight:500;color:#fff;line-height:1;letter-spacing:-2px;margin-bottom:4px}
+.fund-name{font-family:var(--serif);font-style:italic;font-size:22px;color:rgba(255,255,255,.88);margin-bottom:8px;font-weight:300}
+.fund-meta{display:flex;gap:10px;flex-wrap:wrap;font-family:var(--mono);font-size:9px;color:rgba(255,255,255,.7)}
+.fund-meta span{display:flex;align-items:center;gap:4px}
+.fund-meta span::before{content:"·";color:var(--border2)}
+.fund-meta span:first-child::before{display:none}
+.badges{display:flex;gap:6px;margin-top:12px}
+.badge{display:inline-flex;align-items:center;font-size:8.5px;font-family:var(--mono);padding:3px 9px;border-radius:3px;font-weight:500;letter-spacing:.4px}
+.badge-blue{background:rgba(24,71,194,.12);color:var(--blue);border:1px solid rgba(24,71,194,.2)}
+.badge-green{background:rgba(10,124,82,.1);color:var(--green);border:1px solid rgba(10,124,82,.15)}
+.badge-gray{background:rgba(255,255,255,.05);color:var(--text3);border:1px solid var(--border)}
+.hero-kpis{display:grid;grid-template-columns:repeat(8,1fr);border-top:1px solid rgba(255,255,255,.1);margin-top:20px}
+.kpi{padding:14px 16px;border-right:1px solid rgba(255,255,255,.08)}
+.kpi:last-child{border-right:none}
+.kpi-label{font-family:var(--mono);font-size:8px;color:rgba(255,255,255,.6);text-transform:uppercase;letter-spacing:.6px;margin-bottom:6px}
+.kpi-value{font-family:var(--mono);font-size:18px;font-weight:500;color:#fff;line-height:1;margin-bottom:3px}
+.kpi-value.up{color:var(--green)}.kpi-value.dn{color:var(--red)}.kpi-value.am{color:var(--amber)}
+.kpi-sub{font-size:9px;color:rgba(255,255,255,.55);font-family:var(--mono)}
+
+/* ── TABS ── */
+.tabs{background:var(--bg2);border-bottom:1px solid var(--border);display:flex;padding:0 20px;overflow-x:auto;position:sticky;top:52px;z-index:100;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tab{height:42px;padding:0 14px;font-size:11.5px;font-weight:500;color:var(--text3);cursor:pointer;border-bottom:2px solid transparent;display:flex;align-items:center;white-space:nowrap;transition:all .15s;user-select:none;flex-shrink:0;font-family:var(--sans)}
+.tab:hover{color:var(--text2)}.tab.on{color:var(--blue);border-bottom-color:var(--blue)}
+
+/* ── CONTENT ── */
+.content{padding:20px 24px;min-height:calc(100vh - 200px)}
+.sec{display:none}.sec.on{display:block;animation:fadeUp .2s ease}
+@keyframes fadeUp{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
+
+/* ── CARDS ── */
+.card{background:var(--card);border:1px solid var(--border);border-radius:10px;box-shadow:var(--sh);overflow:visible;margin-bottom:16px}
+.ch{padding:12px 18px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;background:var(--card2)}
+.ct{font-size:12.5px;font-weight:600;color:var(--text);font-family:var(--sans)}
+.cs{font-size:9.5px;color:var(--text3);font-family:var(--mono)}
+.cw{position:relative;padding:12px 16px 14px;overflow:visible}
+
+/* ── GRIDS ── */
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}
+.g3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;margin-bottom:16px}
+.g4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:16px}
+
+/* ── METRIC GRID ── */
+.mg{display:grid;grid-template-columns:repeat(4,1fr)}
+.mgi{padding:14px 18px;border-right:1px solid var(--border);border-bottom:1px solid var(--border);transition:background .15s}
+.mgi:hover{background:var(--bg3)}
+.mgi:nth-child(4n){border-right:none}
+.mgi:nth-last-child(-n+4){border-bottom:none}
+.mgl{font-size:8px;font-family:var(--mono);color:var(--text3);text-transform:uppercase;letter-spacing:.6px;margin-bottom:6px}
+.mgv{font-family:var(--mono);font-size:17px;font-weight:500;color:var(--text);line-height:1;margin-bottom:3px}
+.mgn{font-size:9.5px;color:var(--text3);font-family:var(--mono)}
+.gn{color:var(--green)!important}.rd{color:var(--red)!important}.am{color:var(--amber)!important}.bl{color:var(--blue)!important}
+
+/* ── CHART LEGEND ── */
+.leg{display:flex;gap:14px;padding:4px 16px 12px;flex-wrap:wrap}
+.li{display:flex;align-items:center;gap:5px;font-size:9.5px;color:var(--text3);font-family:var(--mono)}
+.ll{width:18px;height:2px;border-radius:1px;flex-shrink:0}
+.ld{width:18px;height:0;border-top:2px dashed;flex-shrink:0}
+.ldot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
+
+/* ── TIME SELECTOR ── */
+.tsbar{display:flex;gap:3px;align-items:center}
+.tsbtn{height:22px;padding:0 9px;border:1px solid var(--border);border-radius:4px;background:transparent;color:var(--text3);font-size:9.5px;font-family:var(--mono);cursor:pointer;transition:all .12s}
+.tsbtn:hover{border-color:var(--blue);color:var(--text2)}
+.tsbtn.on{background:var(--blue);border-color:var(--blue);color:#fff;font-weight:500}
+.regime-btn{height:22px;padding:0 9px;border:1px solid var(--border);border-radius:4px;background:transparent;color:var(--text3);font-size:9.5px;font-family:var(--mono);cursor:pointer;transition:all .12s;margin-left:6px}
+.regime-btn:hover{border-color:var(--text3);color:var(--text2)}
+.regime-btn.on{background:rgba(71,85,105,.1);border-color:rgba(71,85,105,.4);color:rgba(71,85,105,.9);font-weight:500}
+
+/* ── LOLLIPOP ── */
+.lpop-row{display:flex;align-items:center;padding:7px 0;gap:10px}
+.lpop-row.me{background:rgba(24,71,194,.06);border-radius:6px;padding:7px 10px;margin:0 -10px}
+.lpop-rank{font-family:var(--mono);font-size:9px;color:var(--text4);width:14px;flex-shrink:0;text-align:right}
+.lpop-tk{font-family:var(--mono);font-size:11.5px;font-weight:500;width:48px;flex-shrink:0}
+.lpop-bar{flex:1;position:relative;height:28px}
+.lpop-track{position:absolute;top:50%;left:0;right:0;height:4px;background:var(--bg3);border-radius:2px;transform:translateY(-50%)}
+.lpop-fill{position:absolute;top:50%;left:0;height:4px;background:rgba(24,71,194,.25);border-radius:2px;transform:translateY(-50%)}
+.lpop-dot{position:absolute;top:50%;transform:translate(-50%,-50%);border-radius:50%;border:2px solid var(--bg);z-index:2}
+.lpop-val{font-family:var(--mono);font-size:12.5px;font-weight:500;width:58px;text-align:right;flex-shrink:0}
+
+/* ── TABLES ── */
+.dtbl{width:100%;border-collapse:collapse;font-family:var(--mono);font-size:11.5px}
+.dtbl th{padding:9px 14px;text-align:left;background:var(--bg3);border-bottom:1px solid var(--border2);font-size:8.5px;color:var(--text3);text-transform:uppercase;letter-spacing:.4px}
+.dtbl th:not(:first-child){text-align:right}
+.dtbl td{padding:9px 14px;border-bottom:1px solid var(--border);color:var(--text2)}
+.dtbl td:not(:first-child){text-align:right;color:var(--text)}
+.dtbl tr:last-child td{border-bottom:none}
+.dtbl tr:hover td{background:var(--bg3)}
+
+/* ── SIGNAL BADGES ── */
+.sig{display:inline-flex;align-items:center;font-size:9px;font-family:var(--mono);padding:2px 8px;border-radius:3px;font-weight:500;letter-spacing:.2px}
+.sg{background:rgba(112,173,71,.1);color:var(--green);border:1px solid rgba(112,173,71,.2)}
+.sr{background:rgba(192,0,0,.1);color:var(--red);border:1px solid rgba(192,0,0,.2)}
+.sa{background:rgba(224,123,0,.1);color:var(--amber);border:1px solid rgba(224,123,0,.2)}
+.sb{background:rgba(46,117,182,.1);color:var(--blue);border:1px solid rgba(46,117,182,.2)}
+.sp{background:rgba(109,40,217,.1);color:var(--purple);border:1px solid rgba(109,40,217,.2)}
+
+/* ── EVENT FEED ── */
+.evt{display:flex;padding:12px 18px;border-bottom:1px solid var(--border);gap:12px;transition:background .15s}
+.evt:hover{background:var(--bg3)}.evt:last-child{border-bottom:none}
+.evt-dt{font-family:var(--mono);font-size:9px;color:var(--text3);width:52px;flex-shrink:0;padding-top:2px}
+.evt-tag{font-family:var(--mono);font-size:7.5px;padding:3px 7px;border-radius:2px;flex-shrink:0;margin-top:1px;letter-spacing:.4px;font-weight:600}
+.ee{background:rgba(24,71,194,.12);color:var(--blue);border:1px solid rgba(24,71,194,.2)}
+.ed{background:rgba(10,124,82,.1);color:var(--green);border:1px solid rgba(10,124,82,.15)}
+.ec{background:rgba(109,40,217,.1);color:var(--purple);border:1px solid rgba(109,40,217,.2)}
+.er{background:rgba(184,20,31,.1);color:var(--red);border:1px solid rgba(184,20,31,.2)}
+.evt-title{font-size:12px;font-weight:600;color:var(--text);margin-bottom:3px;font-family:var(--sans)}
+.evt-detail{font-size:10.5px;color:var(--text3);line-height:1.5;font-family:var(--mono)}
+
+/* ── TOOLTIP ── */
+.tip-i{display:inline-flex;align-items:center;justify-content:center;width:13px;height:13px;border-radius:50%;border:1px solid var(--border2);color:var(--text3);font-size:9px;font-family:Georgia,serif;font-style:italic;cursor:help;position:relative;vertical-align:middle;margin-left:3px;transition:all .12s}
+.tip-i:hover{border-color:var(--blue);color:var(--blue)}.tip-i:hover .tip-b{display:block}
+.tip-b{display:none;position:absolute;bottom:18px;left:50%;transform:translateX(-50%);background:#0a0e1a;color:var(--text);font-size:11px;font-family:var(--sans);font-style:normal;padding:10px 13px;border-radius:8px;white-space:normal;z-index:9999;min-width:200px;max-width:260px;line-height:1.5;box-shadow:0 8px 32px rgba(0,0,0,.6);border:1px solid var(--border2)}
+.tip-b::after{content:"";position:absolute;top:100%;left:50%;transform:translateX(-50%);border:5px solid transparent;border-top-color:#0a0e1a}
+.tip-b strong{display:block;font-family:var(--mono);font-size:9px;margin-bottom:4px;color:var(--blue);font-weight:500}
+
+/* ── WARN ── */
+.warn{display:flex;align-items:center;gap:10px;padding:10px 16px;background:rgba(154,82,0,.06);border:1px solid rgba(154,82,0,.15);border-radius:8px;font-size:11px;color:var(--amber);margin-bottom:16px;font-family:var(--mono)}
+
+/* ── MATURITY LADDER ── */
+.mat-bar{display:flex;align-items:flex-end;gap:8px;height:120px;padding:0 4px}
+.mat-col{display:flex;flex-direction:column;align-items:center;flex:1;gap:4px}
+.mat-fill{background:var(--blue);border-radius:4px 4px 0 0;width:100%;transition:height .4s ease;min-height:4px;position:relative}
+.mat-fill:hover{filter:brightness(1.2)}
+.mat-label{font-family:var(--mono);font-size:8.5px;color:var(--text3);text-align:center}
+.mat-value{font-family:var(--mono);font-size:10px;color:var(--text);font-weight:500;text-align:center}
+
+/* ── SECTOR BAR ── */
+.sec-bar{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.sec-name{font-size:11px;color:var(--text2);width:160px;flex-shrink:0;font-family:var(--sans)}
+.sec-track{flex:1;height:5px;background:var(--bg3);border-radius:3px;overflow:hidden}
+.sec-fill{height:100%;border-radius:3px;transition:width .5s ease}
+.sec-val{font-family:var(--mono);font-size:11px;font-weight:500;color:var(--text);width:36px;text-align:right;flex-shrink:0}
+
+/* ── DEBT DONUT LEGEND ── */
+.dleg{display:grid;grid-template-columns:1fr 1fr;gap:6px 16px;padding:12px 16px}
+.dleg-item{display:flex;align-items:center;gap:7px;font-family:var(--mono);font-size:10.5px;color:var(--text2)}
+.dleg-dot{width:10px;height:10px;border-radius:2px;flex-shrink:0}
+
+/* ── PEER RADAR ── */
+.radar-wrap{position:relative;padding:16px}
+
+/* ── MARKET KPI ── */
+.mkt-kpi-grid{display:grid;grid-template-columns:repeat(4,1fr)}
+.mkt-kpi{padding:14px 18px;border-right:1px solid var(--border);border-bottom:1px solid var(--border);transition:background .15s}
+.mkt-kpi:hover{background:var(--bg3)}
+.mkt-kpi:nth-child(4n){border-right:none}
+.mkt-kpi:nth-last-child(-n+4){border-bottom:none}
+.mkt-kpi-label{font-size:8px;font-family:var(--mono);color:var(--text3);text-transform:uppercase;letter-spacing:.6px;margin-bottom:6px}
+.mkt-kpi-value{font-family:var(--mono);font-size:17px;font-weight:500;color:var(--text);line-height:1;margin-bottom:3px}
+.mkt-kpi-note{font-size:9.5px;color:var(--text3);font-family:var(--mono)}
+
+/* ── SCROLLABLE ── */
+.scroll-x{overflow-x:auto;scrollbar-width:thin}
+.evt-link{color:var(--text);text-decoration:none;border-bottom:1px dotted var(--border2);transition:color .15s}
+.evt-link:hover{color:var(--blue)}
+.kpi-tip{display:inline-flex;align-items:center;justify-content:center;width:13px;height:13px;border-radius:50%;border:1px solid var(--border2);color:var(--text3);font-size:8.5px;font-style:italic;font-family:Georgia,"Times New Roman",serif;cursor:help;margin-left:4px;vertical-align:middle;transition:all .15s;position:relative;font-weight:400;letter-spacing:0}
+.kpi-tip:hover{border-color:var(--blue);color:var(--blue)}
+.kpi-tip[title]:hover::after{content:attr(title);position:absolute;bottom:18px;left:50%;transform:translateX(-50%);background:#06172e;color:#fff;font-size:10.5px;font-family:"Roboto",sans-serif;font-style:normal;padding:8px 12px;border-radius:6px;white-space:normal;z-index:9999;min-width:200px;max-width:260px;line-height:1.5;box-shadow:0 4px 18px rgba(0,0,0,.2);border:1px solid rgba(255,255,255,.08);pointer-events:none}
+.kpi-tip[title]:hover::before{content:"";position:absolute;top:100%;left:50%;transform:translateX(-50%);border:5px solid transparent;border-top-color:#06172e;pointer-events:none}
+
+</style>
+<style>
+/* Site-wide additions */
+.page-hero{background:linear-gradient(135deg,#06172e 0%,#0c2d5e 55%,#2E75B6 100%);padding:36px 28px 32px;position:relative;overflow:hidden}
+.ph-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:48px 48px;pointer-events:none}
+.ph-body{position:relative;z-index:1}
+.ph-title{font-size:26px;font-weight:700;color:#fff;letter-spacing:-.3px;margin-bottom:6px}
+.ph-sub{font-family:var(--mono);font-size:10px;color:rgba(255,255,255,.5);line-height:1.7}
+.sec{padding:28px 28px}
+.sec-alt{padding:28px 28px;background:var(--bg3)}
+.sec-t{font-size:14px;font-weight:600;color:var(--text);margin-bottom:3px}
+.sec-s{font-family:var(--mono);font-size:9.5px;color:var(--text3);margin-bottom:18px;line-height:1.6}
+/* Fund search in navbar */
+.ns-wrap{position:relative;width:200px}
+.ns-inp{width:100%;height:30px;border:1px solid rgba(255,255,255,.15);border-radius:6px;padding:0 10px 0 28px;font-family:var(--mono);font-size:9.5px;color:#fff;background:rgba(255,255,255,.08);outline:none;transition:all .15s}
+.ns-inp:focus{border-color:rgba(255,255,255,.35);background:rgba(255,255,255,.12)}
+.ns-inp::placeholder{color:rgba(255,255,255,.35)}
+.ns-icon{position:absolute;left:8px;top:50%;transform:translateY(-50%);color:rgba(255,255,255,.4);pointer-events:none}
+.ns-dd{position:absolute;top:calc(100% + 4px);left:0;right:0;background:#fff;border:1px solid var(--border);border-radius:8px;box-shadow:0 8px 24px rgba(0,0,0,.12);z-index:999;max-height:300px;overflow-y:auto;display:none}
+.ns-dd.open{display:block}
+.ns-item{padding:8px 12px;cursor:pointer;display:flex;align-items:center;gap:8px;border-bottom:1px solid var(--border);transition:background .1s}
+.ns-item:last-child{border-bottom:none}
+.ns-item:hover{background:var(--bg3)}
+.ns-tk{font-family:var(--mono);font-size:10px;font-weight:600;color:var(--blue);min-width:40px}
+.ns-name{font-size:10px;color:var(--text3);flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+/* Pill */
+.pill{display:inline-block;font-size:8px;padding:2px 7px;border-radius:4px;font-weight:500;font-family:var(--mono)}
+.pill-g{background:rgba(112,173,71,.12);color:#70AD47;border:1px solid rgba(112,173,71,.2)}
+.pill-a{background:rgba(224,123,0,.1);color:#E07B00;border:1px solid rgba(224,123,0,.18)}
+.pill-r{background:rgba(192,0,0,.09);color:#C00000;border:1px solid rgba(192,0,0,.15)}
+.pill-b{background:rgba(46,117,182,.1);color:#2E75B6;border:1px solid rgba(46,117,182,.2)}
+/* Stat row */
+.stat-row{display:grid;gap:0;border:1px solid var(--border);border-radius:10px;overflow:hidden;background:var(--card);box-shadow:var(--sh)}
+.stat-cell{padding:18px 22px;border-right:1px solid var(--border)}
+.stat-cell:last-child{border-right:none}
+.stat-val{font-family:var(--mono);font-size:28px;font-weight:600;line-height:1;margin-bottom:5px}
+.stat-val.r{color:var(--red)}.stat-val.a{color:var(--amber)}.stat-val.b{color:var(--blue)}.stat-val.g{color:var(--green)}
+.stat-lbl{font-family:var(--mono);font-size:8px;color:var(--text3);text-transform:uppercase;letter-spacing:.5px;margin-bottom:6px}
+.stat-note{font-family:var(--mono);font-size:9px;color:var(--text3);line-height:1.5}
+/* Article cards */
+.art-grid{display:grid;gap:16px}
+.art-card{background:var(--card);border:1px solid var(--border);border-radius:10px;overflow:hidden;display:block;text-decoration:none;transition:box-shadow .2s,transform .15s}
+.art-card:hover{box-shadow:0 6px 24px rgba(0,0,0,.09);transform:translateY(-1px)}
+.art-card-accent{height:3px}
+.art-card-body{padding:18px 20px}
+.art-card-tag{font-family:var(--mono);font-size:8px;color:var(--text3);text-transform:uppercase;letter-spacing:1px;margin-bottom:7px}
+.art-card-title{font-size:13px;font-weight:600;color:var(--text);margin-bottom:6px;line-height:1.4}
+.art-card-desc{font-family:var(--mono);font-size:9.5px;color:var(--text3);line-height:1.6;margin-bottom:10px}
+.art-card-meta{font-family:var(--mono);font-size:8.5px;color:var(--text4)}
+/* Team */
+.team-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.team-card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:28px;text-align:center}
+.team-av{width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg,#2E75B6,#264478);margin:0 auto 14px;display:flex;align-items:center;justify-content:center;font-size:24px;font-weight:700;color:#fff;font-family:var(--mono)}
+.team-name{font-size:14px;font-weight:600;color:var(--text);margin-bottom:3px}
+.team-role{font-family:var(--mono);font-size:8.5px;color:var(--blue);text-transform:uppercase;letter-spacing:.5px;margin-bottom:10px}
+.team-bio{font-family:var(--mono);font-size:9px;color:var(--text3);line-height:1.65}
+/* Screener */
+.scr-layout{display:grid;grid-template-columns:240px 1fr;gap:16px;align-items:start}
+.filter-panel{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:18px;position:sticky;top:54px}
+.fp-sec{margin-bottom:16px;padding-bottom:16px;border-bottom:1px solid var(--border)}
+.fp-sec:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0}
+.fp-lbl{font-family:var(--mono);font-size:8px;color:var(--text3);text-transform:uppercase;letter-spacing:.5px;margin-bottom:8px}
+.fp-row{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.fp-inp{height:28px;width:100%;border:1px solid var(--border);border-radius:5px;padding:0 8px;font-family:var(--mono);font-size:9.5px;color:var(--text);background:var(--card);outline:none}
+.fp-inp:focus{border-color:var(--blue)}
+.fp-chk{display:flex;align-items:center;gap:6px;margin-bottom:5px;cursor:pointer;font-family:var(--mono);font-size:9.5px;color:var(--text2)}
+.fp-chk input{width:13px;height:13px;accent-color:var(--blue)}
+.fp-apply{width:100%;height:32px;background:var(--blue);color:#fff;border:none;border-radius:6px;font-family:var(--mono);font-size:9.5px;font-weight:500;cursor:pointer;margin-top:12px}
+.fp-reset{width:100%;height:28px;background:transparent;color:var(--text3);border:1px solid var(--border);border-radius:5px;font-family:var(--mono);font-size:9px;cursor:pointer;margin-top:5px}
+/* Heatmap */
+.hm-grid{display:grid;grid-template-columns:repeat(10,1fr);gap:5px}
+/* Universal table */
+.u-tbl{width:100%;border-collapse:collapse}
+.u-tbl thead tr{background:var(--bg3)}
+.u-tbl th{padding:8px 10px;text-align:right;font-size:8px;color:var(--text3);text-transform:uppercase;letter-spacing:.5px;border-bottom:1px solid var(--border2);white-space:nowrap;font-family:var(--mono);cursor:pointer;user-select:none}
+.u-tbl th:first-child,.u-tbl th:nth-child(2){text-align:left}
+.u-tbl th:hover{color:var(--blue)}
+.u-tbl td{padding:8px 10px;border-bottom:1px solid var(--border);text-align:right;color:var(--text2);font-size:10.5px;font-family:var(--mono)}
+.u-tbl td:first-child,.u-tbl td:nth-child(2){text-align:left}
+.u-tbl tr:last-child td{border-bottom:none}
+.u-tbl tr:hover td{background:rgba(46,117,182,.025)}
+/* Compare */
+.cmp-pickers{display:grid;grid-template-columns:1fr auto 1fr;gap:16px;align-items:center;margin-bottom:24px}
+.cmp-vs{text-align:center;font-family:var(--mono);font-size:12px;font-weight:600;color:var(--text3)}
+/* Site footer */
+.site-footer{background:#0c1824;padding:16px 28px;display:flex;align-items:center;justify-content:space-between}
+.sf-brand{font-family:var(--mono);font-size:10px;color:rgba(255,255,255,.22);letter-spacing:.4px}
+.sf-links{display:flex;gap:20px}
+.sf-link{font-family:var(--mono);font-size:9px;color:rgba(255,255,255,.28);text-decoration:none}
+.sf-link:hover{color:rgba(255,255,255,.6)}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="tbi"><div class="pulse"></div><span class="v">Q3-Q4 2025</span><span>Latest Data</span></div>
+  <div class="tbi"><span class="v">68 Funds</span><span>BDC Universe</span></div>
+  <div class="tbi"><span class="v">$228B</span><span>Total AUM</span></div>
+  <div class="tbi"><span class="v">Real SEC XBRL</span><span>Filing Data</span></div>
+  <div class="tbar-right tbi"><span class="live-badge">BETA</span></div>
+</div>
+<nav class="navbar">
+  <a class="logo" href="index.html">
+    <div class="logo-mark"><svg viewBox="0 0 16 16"><rect x="2" y="9" width="3" height="5"/><rect x="6.5" y="5" width="3" height="9"/><rect x="11" y="2" width="3" height="12"/></svg></div>
+    <div class="logo-text">BDC<span>Intelligence</span></div>
+  </a>
+  <div class="nav-links"><a class="nav-link" href="index.html">Universe</a><a class="nav-link" href="fund.html">Funds</a><a class="nav-link" href="analysis.html">Analysis</a><a class="nav-link on" href="screener.html">Screener</a><a class="nav-link" href="compare.html">Compare</a><a class="nav-link" href="news.html">News</a><a class="nav-link" href="weekly.html">Weekly</a><a class="nav-link" href="team.html">Team</a></div>
+  <div class="nav-right">
+    <div class="ns-wrap">
+      <svg class="ns-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input class="ns-inp" id="ns" placeholder="Find fund..." autocomplete="off" oninput="nsSearch(this.value)" onblur="setTimeout(function(){var d=document.getElementById('ns-dd');if(d)d.classList.remove('open');},200)">
+      <div class="ns-dd" id="ns-dd"></div>
+    </div>
+  </div>
+</nav>
+<div class="page-hero">
+  <div class="ph-grid"></div>
+  <div class="ph-body">
+    <div class="ph-title">Fund Screener</div>
+    <div class="ph-sub">Filter all 68 BDCs by any combination of metrics &middot; Results rank by EQS by default &middot; Click any fund to open its deep dive</div>
+  </div>
+</div>
+
+<div class="sec">
+<div style="display:grid;grid-template-columns:240px 1fr;gap:16px;align-items:start">
+
+  <!-- FILTER PANEL -->
+  <div style="background:var(--card);border:1px solid var(--border);border-radius:10px;padding:18px;position:sticky;top:54px">
+    <div style="font-size:12px;font-weight:600;color:var(--text);margin-bottom:16px;font-family:var(--sans)">Filter Funds</div>
+
+    <div class="fp-sec">
+      <div class="fp-lbl">Fund Type</div>
+      <label class="fp-chk"><input type="checkbox" id="f-traded" checked onchange="runScreen()"> Traded BDCs (45)</label>
+      <label class="fp-chk"><input type="checkbox" id="f-nontraded" checked onchange="runScreen()"> Non-Traded (23)</label>
+    </div>
+
+    <div class="fp-sec">
+      <div class="fp-lbl">NII Coverage</div>
+      <div class="fp-row">
+        <input class="fp-inp" id="cov-min" placeholder="Min (e.g. 0.9)" type="number" step="0.1" oninput="runScreen()">
+        <input class="fp-inp" id="cov-max" placeholder="Max (e.g. 1.5)" type="number" step="0.1" oninput="runScreen()">
+      </div>
+    </div>
+
+    <div class="fp-sec">
+      <div class="fp-lbl">Non-Accrual %</div>
+      <div class="fp-row">
+        <input class="fp-inp" id="na-min" placeholder="Min" type="number" step="0.5" oninput="runScreen()">
+        <input class="fp-inp" id="na-max" placeholder="Max (e.g. 3)" type="number" step="0.5" oninput="runScreen()">
+      </div>
+    </div>
+
+    <div class="fp-sec">
+      <div class="fp-lbl">PIK % of Income</div>
+      <div class="fp-row">
+        <input class="fp-inp" id="pik-min" placeholder="Min" type="number" step="1" oninput="runScreen()">
+        <input class="fp-inp" id="pik-max" placeholder="Max (e.g. 8)" type="number" step="1" oninput="runScreen()">
+      </div>
+    </div>
+
+    <div class="fp-sec">
+      <div class="fp-lbl">EQS Score</div>
+      <div class="fp-row">
+        <input class="fp-inp" id="eqs-min" placeholder="Min (e.g. 3)" type="number" step="0.5" oninput="runScreen()">
+        <input class="fp-inp" id="eqs-max" placeholder="Max" type="number" step="0.5" oninput="runScreen()">
+      </div>
+    </div>
+
+    <div class="fp-sec">
+      <div class="fp-lbl">AUM ($B)</div>
+      <div class="fp-row">
+        <input class="fp-inp" id="aum-min" placeholder="Min" type="number" step="1" oninput="runScreen()">
+        <input class="fp-inp" id="aum-max" placeholder="Max" type="number" step="5" oninput="runScreen()">
+      </div>
+    </div>
+
+    <div class="fp-sec">
+      <div class="fp-lbl">Leverage (D/E)</div>
+      <div class="fp-row">
+        <input class="fp-inp" id="lev-min" placeholder="Min" type="number" step="0.1" oninput="runScreen()">
+        <input class="fp-inp" id="lev-max" placeholder="Max (e.g. 1.5)" type="number" step="0.1" oninput="runScreen()">
+      </div>
+    </div>
+
+    <button class="fp-reset" onclick="resetFilters()">Reset All Filters</button>
+    <div style="font-family:var(--mono);font-size:8.5px;color:var(--text4);margin-top:12px;line-height:1.5" id="scr-count">Showing all 68 funds</div>
+  </div>
+
+  <!-- RESULTS -->
+  <div>
+    <div class="card" style="overflow:hidden">
+      <div style="padding:12px 16px;border-bottom:1px solid var(--border);background:var(--bg3);display:flex;align-items:center;justify-content:space-between">
+        <span style="font-family:var(--mono);font-size:9px;color:var(--text3)">Ranked by EQS score (highest first)</span>
+        <span id="scr-result-ct" style="font-family:var(--mono);font-size:9px;color:var(--blue);font-weight:500">68 funds</span>
+      </div>
+      <div style="overflow-x:auto">
+        <table class="u-tbl">
+          <thead><tr>
+            <th>Rank</th><th>Ticker</th><th>Fund Name</th><th>Type</th>
+            <th>AUM</th><th>NII Cov</th><th>Non-Accrual</th><th>PIK %</th><th>Lev</th><th>EQS</th><th>Action</th>
+          </tr></thead>
+          <tbody id="scr-body"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<div class="site-footer">
+  <div class="sf-brand">BDC Intelligence &middot; 68 Funds &middot; Real SEC XBRL Data &middot; Not investment advice</div>
+  <div class="sf-links">
+    <a class="sf-link" href="index.html">Universe</a>
+    <a class="sf-link" href="weekly.html">Weekly</a>
+    <a class="sf-link" href="team.html">Team</a>
+    <a class="sf-link" href="team.html#methodology">Methodology</a>
+  </div>
+</div>
+<script>
+
+var FUNDS=[{"tk": "BCRED", "name": "Blackstone Private Credit Fund", "type": "nontraded", "aum": 54.2, "eqs": 3.45}, {"tk": "OBDC", "name": "Blue Owl Capital Corp", "type": "traded", "aum": 18.0, "eqs": 2.8}, {"tk": "FSK", "name": "FS KKR Capital", "type": "traded", "aum": 15.0, "eqs": 2.8}, {"tk": "ARCC", "name": "Ares Capital Corp", "type": "traded", "aum": 13.7, "eqs": 2.9}, {"tk": "HLEND", "name": "HPS Corporate Lending Fund", "type": "nontraded", "aum": 12.4, "eqs": null}, {"tk": "GBDC", "name": "Golub Capital BDC", "type": "traded", "aum": 8.0, "eqs": 3.9}, {"tk": "OBDE", "name": "Blue Owl Capital Corp III", "type": "nontraded", "aum": 7.2, "eqs": null}, {"tk": "GSBD", "name": "Goldman Sachs BDC", "type": "traded", "aum": 7.0, "eqs": 2.85}, {"tk": "BXSL", "name": "Blackstone Secured Lending", "type": "traded", "aum": 6.3, "eqs": 4.1}, {"tk": "GCRED", "name": "Goldman Sachs Private Credit", "type": "nontraded", "aum": 5.8, "eqs": null}, {"tk": "MAIN", "name": "Main Street Capital", "type": "traded", "aum": 5.5, "eqs": 4.0}, {"tk": "KKR_FSIT", "name": "KKR FS Income Trust", "type": "nontraded", "aum": 4.9, "eqs": null}, {"tk": "HTGC", "name": "Hercules Capital", "type": "traded", "aum": 4.5, "eqs": 2.3}, {"tk": "NMFC", "name": "New Mountain Finance", "type": "traded", "aum": 4.0, "eqs": 4.0}, {"tk": "BAIN_PC", "name": "Bain Capital Private Credit", "type": "nontraded", "aum": 3.8, "eqs": null}, {"tk": "OCSL", "name": "Oaktree Specialty Lending", "type": "traded", "aum": 3.5, "eqs": 3.3}, {"tk": "PSEC", "name": "Prospect Capital", "type": "traded", "aum": 3.4, "eqs": 2.8}, {"tk": "TCPC", "name": "BlackRock TCP Capital", "type": "traded", "aum": 3.2, "eqs": 2.65}, {"tk": "BLKR_PCF", "name": "BlackRock Private Credit Fund", "type": "nontraded", "aum": 3.2, "eqs": null}, {"tk": "OSCF", "name": "Oaktree Strategic Credit Fund", "type": "nontraded", "aum": 2.9, "eqs": null}, {"tk": "APCIF", "name": "Apollo Debt Solutions BDC", "type": "nontraded", "aum": 2.6, "eqs": null}, {"tk": "BBDC", "name": "Barings BDC", "type": "traded", "aum": 2.5, "eqs": 4.4}, {"tk": "SLRC", "name": "SLR Investment", "type": "traded", "aum": 2.5, "eqs": 3.7}, {"tk": "TRIN", "name": "Trinity Capital", "type": "traded", "aum": 2.5, "eqs": 4.1}, {"tk": "FID_PCF", "name": "Fidelity Private Credit Fund", "type": "nontraded", "aum": 2.2, "eqs": null}, {"tk": "CCAP", "name": "Crescent Capital BDC", "type": "traded", "aum": 2.0, "eqs": 2.7}, {"tk": "CGBD", "name": "TCG BDC", "type": "traded", "aum": 2.0, "eqs": 2.75}, {"tk": "PFLT", "name": "PennantPark Float Rate", "type": "traded", "aum": 2.0, "eqs": 2.9}, {"tk": "CSWC", "name": "Capital Southwest", "type": "traded", "aum": 1.8, "eqs": 3.0}, {"tk": "KBDC", "name": "Kayne Anderson BDC", "type": "traded", "aum": 1.8, "eqs": 2.5}, {"tk": "OCIC", "name": "Owl Rock Core Income Corp", "type": "nontraded", "aum": 1.8, "eqs": null}, {"tk": "BCSF", "name": "Barings Capital Investment", "type": "traded", "aum": 1.5, "eqs": 1.2}, {"tk": "PNNT", "name": "PennantPark Investment", "type": "traded", "aum": 1.5, "eqs": 2.7}, {"tk": "ANT_PCF", "name": "Antares Strategic Credit Fund", "type": "nontraded", "aum": 1.4, "eqs": null}, {"tk": "FDUS", "name": "Fidus Investment", "type": "traded", "aum": 1.2, "eqs": 3.2}, {"tk": "NCPCIF", "name": "Nuveen Churchill Private Capital", "type": "nontraded", "aum": 1.2, "eqs": null}, {"tk": "ADS", "name": "AB Private Credit Investors", "type": "nontraded", "aum": 1.1, "eqs": null}, {"tk": "GAIN", "name": "Gladstone Investment", "type": "traded", "aum": 1.0, "eqs": 1.9}, {"tk": "WHF", "name": "WhiteHorse Finance", "type": "traded", "aum": 1.0, "eqs": 4.2}, {"tk": "SAR", "name": "Saratoga Investment", "type": "traded", "aum": 0.9, "eqs": 5.0}, {"tk": "LPCL", "name": "Lord Abbett Private Credit", "type": "nontraded", "aum": 0.9, "eqs": null}, {"tk": "GLAD", "name": "Gladstone Capital", "type": "traded", "aum": 0.8, "eqs": 2.15}, {"tk": "TPVG", "name": "TriplePoint Venture Growth", "type": "traded", "aum": 0.8, "eqs": 2.45}, {"tk": "OBTIC", "name": "Blue Owl Tech Income Corp", "type": "nontraded", "aum": 0.8, "eqs": null}, {"tk": "HRZN", "name": "Horizon Technology Finance", "type": "traded", "aum": 0.7, "eqs": 3.05}, {"tk": "TBKCF", "name": "T. Rowe Price OHA Select Credit", "type": "nontraded", "aum": 0.7, "eqs": null}, {"tk": "GS_PCC", "name": "Goldman Sachs Private Credit II", "type": "nontraded", "aum": 0.6, "eqs": null}, {"tk": "MRCC", "name": "Monroe Capital BDC", "type": "traded", "aum": 0.5, "eqs": 1.7}, {"tk": "OXSQ", "name": "Oxford Square Capital", "type": "traded", "aum": 0.4, "eqs": 1.7}, {"tk": "ICMB", "name": "Harvest Capital Credit", "type": "traded", "aum": 0.3, "eqs": 3.0}, {"tk": "BCIC", "name": "Blue Owl Credit Corp II", "type": "traded", "aum": 0.0, "eqs": 2.55}, {"tk": "CION", "name": "CION Investment Corp", "type": "traded", "aum": 0.0, "eqs": 2.8}, {"tk": "GECC", "name": "Great Elm Capital", "type": "traded", "aum": 0.0, "eqs": 2.75}, {"tk": "MFIC", "name": "MidCap Financial Investment", "type": "traded", "aum": 0.0, "eqs": 3.7}, {"tk": "MSIF", "name": "Morgan Stanley Income", "type": "traded", "aum": 0.0, "eqs": 3.5}, {"tk": "OFS", "name": "OFS Capital", "type": "traded", "aum": 0.0, "eqs": 3.0}, {"tk": "PFX", "name": "PhenixFIN", "type": "traded", "aum": 0.0, "eqs": 4.1}, {"tk": "RAND", "name": "Rand Capital", "type": "traded", "aum": 0.0, "eqs": 3.3}, {"tk": "RWAY", "name": "Runway Growth Finance", "type": "traded", "aum": 0.0, "eqs": 3.25}, {"tk": "SCM", "name": "Stellus Capital Mgmt", "type": "traded", "aum": 0.0, "eqs": 4.6}, {"tk": "SSSS", "name": "SuRo Capital", "type": "traded", "aum": 0.0, "eqs": 4.1}, {"tk": "TSLX", "name": "Sixth Street Specialty Lending", "type": "traded", "aum": 0.0, "eqs": 3.4}];
+function nsSearch(q){
+  var dd=document.getElementById('ns-dd');
+  if(!q){dd.classList.remove('open');return;}
+  q=q.toLowerCase();
+  var m=FUNDS.filter(function(f){return f.tk.toLowerCase().includes(q)||f.name.toLowerCase().includes(q);}).slice(0,7);
+  if(!m.length){dd.classList.remove('open');return;}
+  dd.innerHTML=m.map(function(f){
+    var ec=f.eqs>=4?'pill-g':f.eqs>=3?'pill-a':'pill-r';
+    return '<div class="ns-item" onclick="location.href=\'fund.html?ticker='+f.tk+'\'">' +
+      '<span class="ns-tk">'+f.tk+'</span><span class="ns-name">'+f.name+'</span>'+
+      (f.eqs?'<span class="pill '+ec+'" style="font-size:8px">'+f.eqs.toFixed(1)+'</span>':'')+'</div>';
+  }).join('');
+  dd.classList.add('open');
+}
+var ALL_FUNDS = [{"tk": "OBDC", "name": "Blue Owl Capital Corp", "mgr": "Blue Owl", "nav": 14.89, "cov": 1.008, "na": 3.2, "pik": 6.4, "lev": 1.0, "aum": 18.0, "yld": 10.3, "fl1": 4.5, "flt": 97.4, "price": 12.82, "pnav": 0.84, "eqs": 2.8, "qtr": "Q3 2025", "type": "traded"}, {"tk": "FSK", "name": "FS KKR Capital", "mgr": "FS/KKR Advisors", "nav": 21.99, "cov": 0.886, "na": 0.0, "pik": 14.5, "lev": 1.83, "aum": 15.0, "yld": 10.6, "fl1": 10.3, "flt": 2.8, "price": 15.06, "pnav": 0.68, "eqs": 2.8, "qtr": "Q3 2025", "type": "traded"}, {"tk": "ARCC", "name": "Ares Capital Corp", "mgr": "Ares Management", "nav": 20.01, "cov": 1.049, "na": 5.45, "pik": 15.5, "lev": 1.0, "aum": 13.7, "yld": 10.0, "fl1": 9.3, "flt": 1.8, "price": 18.94, "pnav": 0.95, "eqs": 2.9, "qtr": "Q3 2025", "type": "traded"}, {"tk": "GBDC", "name": "Golub Capital BDC", "mgr": "Golub Capital", "nav": 14.84, "cov": 1.0, "na": 1.3, "pik": 7.0, "lev": 1.25, "aum": 8.0, "yld": 9.7, "fl1": 0.0, "flt": 1.6, "price": 13.55, "pnav": 0.879, "eqs": 3.9, "qtr": "Q4 2025", "type": "traded"}, {"tk": "GSBD", "name": "Goldman Sachs BDC", "mgr": "Goldman Sachs AM", "nav": 12.75, "cov": 0.784, "na": 2.5, "pik": 8.2, "lev": 2.06, "aum": 7.0, "yld": 10.1, "fl1": 10.1, "flt": 99.4, "price": 10.81, "pnav": 0.75, "eqs": 2.85, "qtr": "Q3 2025", "type": "traded"}, {"tk": "BXSL", "name": "Blackstone Secured Lending", "mgr": "Blackstone Credit", "nav": 27.15, "cov": 1.065, "na": 0.1, "pik": 8.2, "lev": 2.17, "aum": 6.3, "yld": 9.3, "fl1": 6.0, "flt": 1.5, "price": 24.6, "pnav": 0.906, "eqs": 4.1, "qtr": "Q3 2025", "type": "traded"}, {"tk": "MAIN", "name": "Main Street Capital", "mgr": "Main Street Capital", "nav": 32.78, "cov": 1.268, "na": 4.34, "pik": 0.0, "lev": 0.74, "aum": 5.5, "yld": 12.7, "fl1": 6.0, "flt": 64.0, "price": 55.2, "pnav": 1.656, "eqs": 4.0, "qtr": "Q3 2025", "type": "traded"}, {"tk": "HTGC", "name": "Hercules Capital", "mgr": "Hercules Capital", "nav": 12.05, "cov": 1.043, "na": 1.2, "pik": 10.5, "lev": 1.84, "aum": 4.5, "yld": 12.5, "fl1": 72.4, "flt": 97.8, "price": 17.4, "pnav": 1.435, "eqs": 2.3, "qtr": "Q3 2025", "type": "traded"}, {"tk": "NMFC", "name": "New Mountain Finance", "mgr": "New Mountain Capital", "nav": 12.06, "cov": 3.0, "na": 2.1, "pik": 9.4, "lev": 2.45, "aum": 4.0, "yld": 10.4, "fl1": 5.2, "flt": 85.5, "price": 11.44, "pnav": 0.828, "eqs": 4.0, "qtr": "Q3 2025", "type": "traded"}, {"tk": "OCSL", "name": "Oaktree Specialty Lending", "mgr": "Oaktree Capital", "nav": 16.3, "cov": 1.05, "na": 6.5, "pik": 6.2, "lev": 0.48, "aum": 3.5, "yld": 7.5, "fl1": 5.0, "flt": 90.8, "price": 14.85, "pnav": 0.78, "eqs": 3.3, "qtr": "Q4 2025", "type": "traded"}, {"tk": "PSEC", "name": "Prospect Capital", "mgr": "Prospect Capital Mgmt", "nav": 6.21, "cov": 1.357, "na": 0.0, "pik": 8.6, "lev": 1.05, "aum": 3.4, "yld": 0.0, "fl1": 12.5, "flt": 7.5, "price": 2.64, "pnav": 0.425, "eqs": 2.8, "qtr": "Q4 2025", "type": "traded"}, {"tk": "TCPC", "name": "BlackRock TCP Capital", "mgr": "BlackRock", "nav": 8.71, "cov": 1.172, "na": 7.0, "pik": 9.5, "lev": 2.45, "aum": 3.2, "yld": 11.5, "fl1": 1.0, "flt": 5.8, "price": 9.42, "pnav": 0.796, "eqs": 2.65, "qtr": "Q3 2025", "type": "traded"}, {"tk": "BBDC", "name": "Barings BDC", "mgr": "Barings LLC", "nav": 11.1, "cov": 1.231, "na": 1.8, "pik": 7.2, "lev": 2.0, "aum": 2.5, "yld": 8.6, "fl1": 5.8, "flt": 8.0, "price": 8.49, "pnav": 0.831, "eqs": 4.4, "qtr": "Q3 2025", "type": "traded"}, {"tk": "SLRC", "name": "SLR Investment", "mgr": "SLR Capital Partners", "nav": 18.21, "cov": 2.927, "na": 0.48, "pik": 9.3, "lev": 2.55, "aum": 2.5, "yld": 0.0, "fl1": 1.0, "flt": 16.6, "price": 16.35, "pnav": 0.909, "eqs": 3.7, "qtr": "Q3 2025", "type": "traded"}, {"tk": "TRIN", "name": "Trinity Capital", "mgr": "Trinity Capital", "nav": 13.31, "cov": 0.0, "na": 2.5, "pik": 0.9, "lev": 2.0, "aum": 2.5, "yld": 0.0, "fl1": 47.0, "flt": 2.9, "price": 13.0, "pnav": 0.914, "eqs": 4.1, "qtr": "Q3 2025", "type": "traded"}, {"tk": "CCAP", "name": "Crescent Capital BDC", "mgr": "Crescent Capital", "nav": 19.28, "cov": 0.326, "na": 3.3, "pik": 0.7, "lev": 1.57, "aum": 2.0, "yld": 10.4, "fl1": 8.8, "flt": 97.4, "price": 18.45, "pnav": 0.884, "eqs": 2.7, "qtr": "Q3 2025", "type": "traded"}, {"tk": "CGBD", "name": "TCG BDC", "mgr": "Carlyle Secured", "nav": 16.64, "cov": 0.95, "na": 1.6, "pik": 9.7, "lev": 3.2, "aum": 2.0, "yld": 10.1, "fl1": 82.9, "flt": 99.4, "price": 14.4, "pnav": 0.86, "eqs": 2.75, "qtr": "Q3 2025", "type": "traded"}, {"tk": "PFLT", "name": "PennantPark Float Rate", "mgr": "PennantPark", "nav": 10.49, "cov": 0.878, "na": 0.5, "pik": 8.2, "lev": 1.57, "aum": 2.0, "yld": 9.9, "fl1": 8.8, "flt": 1.5, "price": 11.09, "pnav": 0.976, "eqs": 2.9, "qtr": "Q4 2025", "type": "traded"}, {"tk": "CSWC", "name": "Capital Southwest", "mgr": "Capital Southwest", "nav": 16.75, "cov": 0.312, "na": 3.23, "pik": 7.5, "lev": 2.13, "aum": 1.8, "yld": 12.1, "fl1": 16.8, "flt": 95.0, "price": 22.8, "pnav": 1.365, "eqs": 3.0, "qtr": "Q4 2025", "type": "traded"}, {"tk": "KBDC", "name": "Kayne Anderson BDC", "mgr": "Kayne Anderson", "nav": 16.34, "cov": 0.307, "na": 2.5, "pik": 7.4, "lev": 1.25, "aum": 1.8, "yld": 10.7, "fl1": 8.8, "flt": 2.3, "price": 17.3, "pnav": 0.919, "eqs": 2.5, "qtr": "Q3 2025", "type": "traded"}, {"tk": "BCSF", "name": "Barings Capital Investment", "mgr": "Barings LLC", "nav": 17.4, "cov": 0.333, "na": 5.11, "pik": 11.1, "lev": 0.25, "aum": 1.5, "yld": 9.9, "fl1": 5.6, "flt": 2.2, "price": 17.1, "pnav": 0.837, "eqs": 1.2, "qtr": "Q3 2025", "type": "traded"}, {"tk": "PNNT", "name": "PennantPark Investment", "mgr": "PennantPark", "nav": 7.0, "cov": 0.458, "na": 1.3, "pik": 8.5, "lev": 4.9, "aum": 1.5, "yld": 10.9, "fl1": 8.5, "flt": 3.2, "price": 5.8, "pnav": 0.806, "eqs": 2.7, "qtr": "Q4 2025", "type": "traded"}, {"tk": "FDUS", "name": "Fidus Investment", "mgr": "Fidus Investment Advisors", "nav": 19.56, "cov": 0.86, "na": 2.8, "pik": 8.5, "lev": 1.0, "aum": 1.2, "yld": 13.0, "fl1": 6.2, "flt": 0.0, "price": 19.75, "pnav": 0.982, "eqs": 3.2, "qtr": "Q3 2025", "type": "traded"}, {"tk": "GAIN", "name": "Gladstone Investment", "mgr": "Gladstone Mgmt", "nav": 14.95, "cov": 0.24, "na": 5.4, "pik": 10.2, "lev": 1.1, "aum": 1.0, "yld": 12.9, "fl1": 68.5, "flt": 0.0, "price": 17.2, "pnav": 1.156, "eqs": 1.9, "qtr": "Q4 2025", "type": "traded"}, {"tk": "WHF", "name": "WhiteHorse Finance", "mgr": "WhiteHorse Advisers", "nav": 11.41, "cov": 2.154, "na": 5.2, "pik": 2.4, "lev": 1.0, "aum": 1.0, "yld": 9.9, "fl1": 1.0, "flt": 0.0, "price": 14.1, "pnav": 0.923, "eqs": 4.2, "qtr": "Q3 2025", "type": "traded"}, {"tk": "SAR", "name": "Saratoga Investment", "mgr": "Saratoga Investment Mgmt", "nav": 25.59, "cov": 1.566, "na": 0.4, "pik": 2.3, "lev": 2.9, "aum": 0.9, "yld": 9.7, "fl1": 8.1, "flt": 98.7, "price": 27.9, "pnav": 1.017, "eqs": 5.0, "qtr": "Q4 2025", "type": "traded"}, {"tk": "GLAD", "name": "Gladstone Capital", "mgr": "Gladstone Mgmt", "nav": 21.13, "cov": 1.19, "na": 3.4, "pik": 9.4, "lev": 1.14, "aum": 0.8, "yld": 12.2, "fl1": 31.8, "flt": 0.0, "price": 13.2, "pnav": 0.619, "eqs": 2.15, "qtr": "Q4 2025", "type": "traded"}, {"tk": "TPVG", "name": "TriplePoint Venture Growth", "mgr": "TriplePoint Advisors", "nav": 8.79, "cov": 1.13, "na": 5.9, "pik": 21.2, "lev": 1.0, "aum": 0.8, "yld": 14.0, "fl1": 0.0, "flt": 3.2, "price": 7.2, "pnav": 0.735, "eqs": 2.45, "qtr": "Q3 2025", "type": "traded"}, {"tk": "HRZN", "name": "Horizon Technology Finance", "mgr": "Horizon Technology Finance", "nav": 7.12, "cov": 0.97, "na": 8.9, "pik": 0.0, "lev": 1.85, "aum": 0.7, "yld": 0.0, "fl1": 0.0, "flt": 100.0, "price": 7.8, "pnav": 0.796, "eqs": 3.05, "qtr": "Q3 2025", "type": "traded"}, {"tk": "MRCC", "name": "Monroe Capital BDC", "mgr": "Monroe Capital", "nav": 7.99, "cov": 0.107, "na": 7.6, "pik": 24.7, "lev": 1.0, "aum": 0.5, "yld": 10.4, "fl1": 0.0, "flt": 0.0, "price": 8.6, "pnav": 0.776, "eqs": 1.7, "qtr": "Q3 2025", "type": "traded"}, {"tk": "OXSQ", "name": "Oxford Square Capital", "mgr": "Oxford Lane Capital", "nav": 1.95, "cov": 0.667, "na": 4.8, "pik": 23.5, "lev": 1.98, "aum": 0.4, "yld": 14.6, "fl1": 8.0, "flt": 0.0, "price": 2.41, "pnav": 0.772, "eqs": 1.7, "qtr": "Q3 2025", "type": "traded"}, {"tk": "ICMB", "name": "Harvest Capital Credit", "mgr": "Harvest Capital", "nav": 5.04, "cov": 0.857, "na": 3.3, "pik": 7.8, "lev": 2.9, "aum": 0.3, "yld": 0.0, "fl1": 5.0, "flt": 98.5, "price": 4.3, "pnav": 0.843, "eqs": 3.0, "qtr": "Q3 2025", "type": "traded"}, {"tk": "BCIC", "name": "Blue Owl Credit Corp II", "mgr": "Blue Owl", "nav": 17.55, "cov": 0.0, "na": 6.3, "pik": 14.3, "lev": 0.28, "aum": 0.0, "yld": 13.8, "fl1": 5.5, "flt": 84.1, "price": 0.0, "pnav": 0.0, "eqs": 2.55, "qtr": "Q3 2025", "type": "traded"}, {"tk": "CION", "name": "CION Investment Corp", "mgr": "CION Investment Mgmt", "nav": 14.86, "cov": 0.0, "na": 3.84, "pik": 0.0, "lev": 1.0, "aum": 0.0, "yld": 0.0, "fl1": 14.4, "flt": 3.2, "price": 0.0, "pnav": 0.0, "eqs": 2.8, "qtr": "Q3 2025", "type": "traded"}, {"tk": "GECC", "name": "Great Elm Capital", "mgr": "Great Elm Capital", "nav": 10.01, "cov": 0.982, "na": 0.0, "pik": 0.0, "lev": 0.98, "aum": 0.0, "yld": 12.8, "fl1": 0.0, "flt": 0.0, "price": 0.0, "pnav": 0.0, "eqs": 2.75, "qtr": "Q3 2025", "type": "traded"}, {"tk": "MFIC", "name": "MidCap Financial Investment", "mgr": "Apollo Investment", "nav": 14.66, "cov": 0.0, "na": 4.4, "pik": 4.6, "lev": 1.4, "aum": 0.0, "yld": 10.2, "fl1": 1.0, "flt": 2.4, "price": 0.0, "pnav": 0.0, "eqs": 3.7, "qtr": "Q3 2025", "type": "traded"}, {"tk": "MSIF", "name": "Morgan Stanley Income", "mgr": "Morgan Stanley AM", "nav": 20.41, "cov": 3.06, "na": 0.0, "pik": 0.0, "lev": 2.08, "aum": 0.0, "yld": 9.7, "fl1": 8.2, "flt": 2.4, "price": 0.0, "pnav": 0.0, "eqs": 3.5, "qtr": "Q3 2025", "type": "traded"}, {"tk": "OFS", "name": "OFS Capital", "mgr": "OFS Capital", "nav": 10.17, "cov": 0.647, "na": 11.49, "pik": 4.0, "lev": 1.73, "aum": 0.0, "yld": 11.8, "fl1": 9.9, "flt": 0.0, "price": 0.0, "pnav": 0.0, "eqs": 3.0, "qtr": "Q3 2025", "type": "traded"}, {"tk": "PFX", "name": "PhenixFIN", "mgr": "PhenixFIN", "nav": 77.92, "cov": 0.0, "na": 0.0, "pik": 0.0, "lev": 1.97, "aum": 0.0, "yld": 12.5, "fl1": 6.5, "flt": 12.9, "price": 0.0, "pnav": 0.0, "eqs": 4.1, "qtr": "Q4 2025", "type": "traded"}, {"tk": "RAND", "name": "Rand Capital", "mgr": "Rand Capital", "nav": 18.06, "cov": 0.0, "na": 10.2, "pik": 0.0, "lev": 1.02, "aum": 0.0, "yld": 0.0, "fl1": 0.0, "flt": 0.0, "price": 0.0, "pnav": 0.0, "eqs": 3.3, "qtr": "Q3 2025", "type": "traded"}, {"tk": "RWAY", "name": "Runway Growth Finance", "mgr": "Runway Growth Finance", "nav": 13.55, "cov": 1.303, "na": 10.68, "pik": 11.5, "lev": 1.97, "aum": 0.0, "yld": 0.0, "fl1": 0.0, "flt": 96.3, "price": 0.0, "pnav": 0.0, "eqs": 3.25, "qtr": "Q3 2025", "type": "traded"}, {"tk": "SCM", "name": "Stellus Capital Mgmt", "mgr": "Stellus Capital", "nav": 11.41, "cov": 2.154, "na": 0.0, "pik": 2.4, "lev": 1.0, "aum": 0.0, "yld": 9.9, "fl1": 1.0, "flt": 0.0, "price": 0.0, "pnav": 0.0, "eqs": 4.6, "qtr": "Q3 2025", "type": "traded"}, {"tk": "SSSS", "name": "SuRo Capital", "mgr": "SuRo Capital", "nav": 9.23, "cov": 0.0, "na": 0.0, "pik": 0.0, "lev": 1.33, "aum": 0.0, "yld": 0.0, "fl1": 0.0, "flt": 0.0, "price": 0.0, "pnav": 0.0, "eqs": 4.1, "qtr": "Q3 2025", "type": "traded"}, {"tk": "TSLX", "name": "Sixth Street Specialty Lending", "mgr": "Sixth Street", "nav": 17.14, "cov": 1.09, "na": 0.15, "pik": 0.0, "lev": 1.0, "aum": 0.0, "yld": 11.4, "fl1": 0.0, "flt": 96.3, "price": 0.0, "pnav": 0.0, "eqs": 3.4, "qtr": "Q3 2025", "type": "traded"}, {"tk": "BCRED", "name": "Blackstone Private Credit Fund", "mgr": "Blackstone Credit", "aum": 54.2, "nav": 28.01, "cov": 1.03, "na": 1.0, "pik": 4.2, "lev": 0.57, "yld": 9.1, "eqs": 3.45, "qtr": "Q1 2026", "type": "nontraded", "gate": true, "free": true}, {"tk": "HLEND", "name": "HPS Corporate Lending Fund", "mgr": "HPS Investment Partners", "aum": 12.4, "nav": null, "cov": null, "na": null, "pik": null, "lev": null, "yld": null, "eqs": null, "qtr": "Q3 2025", "type": "nontraded", "gate": false, "free": false}, {"tk": "OBDE", "name": "Blue Owl Capital Corp III", "mgr": "Blue Owl", "aum": 7.2, "nav": null, "cov": null, "na": null, "pik": null, "lev": null, "yld": null, "eqs": null, "qtr": "Q3 2025", "type": "nontraded", "gate": false, "free": false}, {"tk": "GCRED", "name": "Goldman Sachs Private Credit", "mgr": "Goldman Sachs AM", "aum": 5.8, "nav": null, "cov": null, "na": null, "pik": null, "lev": null, "yld": null, "eqs": null, "qtr": "Q3 2025", "type": "nontraded", "gate": false, "free": false}, {"tk": "KKR_FSIT", "name": "KKR FS Income Trust", "mgr": "KKR", "aum": 4.9, "nav": null, "cov": null, "na": null, "pik": null, "lev": null, "yld": null, "eqs": null, "qtr": "Q3 2025", "type": "nontraded", "gate": false, "free": false}, {"tk": "BAIN_PC", "name": "Bain Capital Private Credit", "mgr": "Bain Capital", "aum": 3.8, "nav": null, "cov": null, "na": null, "pik": null, "lev": null, "yld": null, "eqs": null, "qtr": "Q3 2025", "type": "nontraded", "gate": false, "free": false}, {"tk": "BLKR_PCF", "name": "BlackRock Private Credit Fund", "mgr": "BlackRock", "aum": 3.2, "nav": null, "cov": null, "na": null, "pik": null, "lev": null, "yld": null, "eqs": null, "qtr": "Q3 2025", "type": "nontraded", "gate": false, "free": false}, {"tk": "OSCF", "name": "Oaktree Strategic Credit Fund", "mgr": "Oaktree Capital", "aum": 2.9, "nav": null, "cov": null, "na": null, "pik": null, "lev": null, "yld": null, "eqs": null, "qtr": "Q3 2025", "type": "nontraded", "gate": false, "free": false}, {"tk": "APCIF", "name": "Apollo Debt Solutions BDC", "mgr": "Apollo Global", "aum": 2.6, "nav": null, "cov": null, "na": null, "pik": null, "lev": null, "yld": null, "eqs": null, "qtr": "Q3 2025", "type": "nontraded", "gate": false, "free": false}, {"tk": "FID_PCF", "name": "Fidelity Private Credit Fund", "mgr": "Fidelity", "aum": 2.2, "nav": null, "cov": null, "na": null, "pik": null, "lev": null, "yld": null, "eqs": null, "qtr": "Q3 2025", "type": "nontraded", "gate": false, "free": false}, {"tk": "OCIC", "name": "Owl Rock Core Income Corp", "mgr": "Blue Owl", "aum": 1.8, "nav": null, "cov": null, "na": null, "pik": null, "lev": null, "yld": null, "eqs": null, "qtr": "Q3 2025", "type": "nontraded", "gate": false, "free": false}, {"tk": "ANT_PCF", "name": "Antares Strategic Credit Fund", "mgr": "Antares Capital", "aum": 1.4, "nav": null, "cov": null, "na": null, "pik": null, "lev": null, "yld": null, "eqs": null, "qtr": "Q3 2025", "type": "nontraded", "gate": false, "free": false}, {"tk": "NCPCIF", "name": "Nuveen Churchill Private Capital", "mgr": "Nuveen", "aum": 1.2, "nav": null, "cov": null, "na": null, "pik": null, "lev": null, "yld": null, "eqs": null, "qtr": "Q3 2025", "type": "nontraded", "gate": false, "free": false}, {"tk": "ADS", "name": "AB Private Credit Investors", "mgr": "AllianceBernstein", "aum": 1.1, "nav": null, "cov": null, "na": null, "pik": null, "lev": null, "yld": null, "eqs": null, "qtr": "Q3 2025", "type": "nontraded", "gate": false, "free": false}, {"tk": "LPCL", "name": "Lord Abbett Private Credit", "mgr": "Lord Abbett", "aum": 0.9, "nav": null, "cov": null, "na": null, "pik": null, "lev": null, "yld": null, "eqs": null, "qtr": "Q3 2025", "type": "nontraded", "gate": false, "free": false}, {"tk": "OBTIC", "name": "Blue Owl Tech Income Corp", "mgr": "Blue Owl", "aum": 0.8, "nav": null, "cov": null, "na": null, "pik": null, "lev": null, "yld": null, "eqs": null, "qtr": "Q3 2025", "type": "nontraded", "gate": false, "free": false}, {"tk": "TBKCF", "name": "T. Rowe Price OHA Select Credit", "mgr": "T. Rowe Price / OHA", "aum": 0.7, "nav": null, "cov": null, "na": null, "pik": null, "lev": null, "yld": null, "eqs": null, "qtr": "Q3 2025", "type": "nontraded", "gate": false, "free": false}, {"tk": "GS_PCC", "name": "Goldman Sachs Private Credit II", "mgr": "Goldman Sachs AM", "aum": 0.6, "nav": null, "cov": null, "na": null, "pik": null, "lev": null, "yld": null, "eqs": null, "qtr": "Q3 2025", "type": "nontraded", "gate": false, "free": false}];
+
+function pill(v,cls){return '<span class="pill pill-'+cls+'" style="font-size:8px">'+v+'</span>';}
+function eqsPill(e){if(!e)return'<span style="color:var(--text4);font-family:var(--mono)">--</span>';var c=e>=4?'g':e>=3?'a':'r';return pill(e.toFixed(1),c);}
+function covPill(v){if(!v)return'--';var c=v>=1.1?'g':v>=1.0?'a':'r';return pill(v.toFixed(2)+'x',c);}
+function naPill(v){if(!v)return'--';var c=v<2.5?'g':'r';return pill(v.toFixed(2)+'%',c);}
+function pikPill(v){if(!v)return'--';var c=v<6?'g':v<10?'a':'r';return pill(v.toFixed(1)+'%',c);}
+
+function runScreen(){
+  var traded=document.getElementById('f-traded').checked;
+  var nontraded=document.getElementById('f-nontraded').checked;
+  function gv(id){var v=parseFloat(document.getElementById(id).value);return isNaN(v)?null:v;}
+  var covMin=gv('cov-min'),covMax=gv('cov-max'),naMin=gv('na-min'),naMax=gv('na-max');
+  var pikMin=gv('pik-min'),pikMax=gv('pik-max'),eqsMin=gv('eqs-min'),eqsMax=gv('eqs-max');
+  var aumMin=gv('aum-min'),aumMax=gv('aum-max'),levMin=gv('lev-min'),levMax=gv('lev-max');
+  function inRange(v,mn,mx){return (mn===null||v>=mn)&&(mx===null||v<=mx);}
+  var results=ALL_FUNDS.filter(function(f){
+    if(!traded&&f.type==='traded')return false;
+    if(!nontraded&&f.type!=='traded')return false;
+    if(f.cov&&!inRange(f.cov,covMin,covMax))return false;
+    if(f.na&&!inRange(f.na,naMin,naMax))return false;
+    if(f.pik&&!inRange(f.pik,pikMin,pikMax))return false;
+    if(f.eqs&&!inRange(f.eqs,eqsMin,eqsMax))return false;
+    if(f.aum&&!inRange(f.aum,aumMin,aumMax))return false;
+    if(f.lev&&!inRange(f.lev,levMin,levMax))return false;
+    return true;
+  }).sort(function(a,b){return (b.eqs||0)-(a.eqs||0);});
+  var tbody=document.getElementById('scr-body');
+  tbody.innerHTML=results.map(function(f,i){
+    return '<tr style="cursor:pointer" onclick="location.href=\'fund.html?ticker='+f.tk+'\'">' +
+      '<td style="color:var(--text4)">'+(i+1)+'</td>' +
+      '<td style="font-weight:600;color:var(--blue);font-family:var(--mono)">'+f.tk+'</td>' +
+      '<td style="font-size:9.5px;color:var(--text3);max-width:160px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">'+f.name+'</td>' +
+      '<td><span class="pill '+(f.type==='traded'?'pill-b':'pill-a')+'" style="font-size:8px">'+(f.type==='traded'?'Traded':'Non-Traded')+'</span></td>' +
+      '<td>'+(f.aum?'$'+f.aum.toFixed(1)+'B':'--')+'</td>' +
+      '<td>'+covPill(f.cov)+'</td><td>'+naPill(f.na)+'</td><td>'+pikPill(f.pik)+'</td>' +
+      '<td style="font-family:var(--mono)">'+(f.lev?f.lev.toFixed(2)+'x':'--')+'</td>' +
+      '<td>'+eqsPill(f.eqs)+'</td>' +
+      '<td><a href="fund.html?ticker='+f.tk+'" style="font-family:var(--mono);font-size:9px;padding:3px 9px;border-radius:4px;background:var(--blue);color:#fff;text-decoration:none">View</a></td>' +
+      '</tr>';
+  }).join('');
+  document.getElementById('scr-result-ct').textContent=results.length+' funds';
+  document.getElementById('scr-count').textContent='Showing '+results.length+' of 68 funds';
+}
+
+function resetFilters(){
+  ['cov-min','cov-max','na-min','na-max','pik-min','pik-max','eqs-min','eqs-max','aum-min','aum-max','lev-min','lev-max'].forEach(function(id){document.getElementById(id).value='';});
+  document.getElementById('f-traded').checked=true;
+  document.getElementById('f-nontraded').checked=true;
+  runScreen();
+}
+
+document.addEventListener('DOMContentLoaded',runScreen);
+</script>
+</body></html>
