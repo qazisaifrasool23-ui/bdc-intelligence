@@ -39,7 +39,8 @@
     "cumulative_dividends_paid": 0.0,
     "total_return_index": 18.9883,
     "cumulative_equity_raised_mn": 0.0,
-    "data_quality_score": 100.0
+    "data_quality_score": 100.0,
+    "nav_per_share_qoq_change": -0.7627
   },
   {
     "quarter": "Q3 2022",
@@ -59,7 +60,8 @@
     "cumulative_dividends_paid": 0.0,
     "total_return_index": 18.7435,
     "cumulative_equity_raised_mn": 0.0,
-    "data_quality_score": 100.0
+    "data_quality_score": 100.0,
+    "nav_per_share_qoq_change": -0.2448
   },
   {
     "quarter": "Q4 2022",
@@ -85,7 +87,8 @@
     "cumulative_dividends_paid": 0.0,
     "total_return_index": 18.5922,
     "cumulative_equity_raised_mn": 0.0,
-    "data_quality_score": 100.0
+    "data_quality_score": 100.0,
+    "nav_per_share_qoq_change": -0.1513
   },
   {
     "quarter": "Q1 2023",
@@ -110,7 +113,9 @@
     "cumulative_dividends_paid": 0.0,
     "total_return_index": 18.7074,
     "cumulative_equity_raised_mn": 0.0,
-    "data_quality_score": 100.0
+    "data_quality_score": 100.0,
+    "nav_per_share_qoq_change": 0.1152,
+    "nav_per_share_yoy_growth_pct": -5.2838
   },
   {
     "quarter": "Q2 2023",
@@ -135,7 +140,9 @@
     "cumulative_dividends_paid": 0.0,
     "total_return_index": 18.8532,
     "cumulative_equity_raised_mn": 0.0,
-    "data_quality_score": 100.0
+    "data_quality_score": 100.0,
+    "nav_per_share_qoq_change": 0.1458,
+    "nav_per_share_yoy_growth_pct": -0.7115
   },
   {
     "quarter": "Q3 2023",
@@ -162,7 +169,9 @@
     "cumulative_equity_raised_mn": 0.0,
     "data_quality_score": 100.0,
     "drip_mn": 19.0,
-    "weighted_avg_yield": 12.3
+    "weighted_avg_yield": 12.3,
+    "nav_per_share_qoq_change": 0.2316,
+    "nav_per_share_yoy_growth_pct": 1.8209
   },
   {
     "quarter": "Q4 2023",
@@ -190,7 +199,10 @@
     "total_return_index": 19.1059,
     "cumulative_equity_raised_mn": 0.0,
     "data_quality_score": 100.0,
-    "drip_mn": 19.0
+    "drip_mn": 19.0,
+    "nav_per_share_qoq_change": 0.0211,
+    "nav_per_share_yoy_growth_pct": 2.763,
+    "fixed_rate_pct": 91.08
   },
   {
     "quarter": "Q1 2024",
@@ -217,7 +229,11 @@
     "total_return_index": 19.0519,
     "cumulative_equity_raised_mn": 0.0,
     "data_quality_score": 100.0,
-    "drip_mn": 90.0
+    "drip_mn": 90.0,
+    "nav_per_share_qoq_change": -0.054,
+    "nav_per_share_yoy_growth_pct": 1.8415,
+    "fixed_rate_pct": 91.9,
+    "na_dollar_amount_mn": 22.9681
   },
   {
     "quarter": "Q2 2024",
@@ -243,7 +259,12 @@
     "total_return_index": 19.0708,
     "cumulative_equity_raised_mn": 0.0,
     "data_quality_score": 100.0,
-    "drip_mn": 90.0
+    "drip_mn": 90.0,
+    "nav_per_share_qoq_change": 0.0189,
+    "nav_per_share_yoy_growth_pct": 1.1542,
+    "fixed_rate_pct": 91.9,
+    "na_dollar_amount_mn": 21.9887,
+    "net_na_change_mn": -0.9794
   },
   {
     "quarter": "Q3 2024",
@@ -271,7 +292,12 @@
     "total_return_index": 18.9957,
     "cumulative_equity_raised_mn": 0.0,
     "data_quality_score": 100.0,
-    "drip_mn": 90.0
+    "drip_mn": 90.0,
+    "nav_per_share_qoq_change": -0.0751,
+    "nav_per_share_yoy_growth_pct": -0.4669,
+    "fixed_rate_pct": 91.9,
+    "na_dollar_amount_mn": 34.192,
+    "net_na_change_mn": 12.2033
   },
   {
     "quarter": "Q4 2024",
@@ -300,7 +326,12 @@
     "data_quality_score": 100.0,
     "drip_mn": 90.0,
     "num_portfolio_companies": 128,
-    "avg_position_size_mn": 47.492
+    "avg_position_size_mn": 47.492,
+    "nav_per_share_qoq_change": -0.0335,
+    "nav_per_share_yoy_growth_pct": -0.7521,
+    "fixed_rate_pct": 91.9,
+    "na_dollar_amount_mn": 30.3951,
+    "net_na_change_mn": -3.7969
   },
   {
     "quarter": "Q1 2025",
@@ -325,7 +356,10 @@
     "total_return_index": 18.8151,
     "cumulative_equity_raised_mn": 0.0,
     "data_quality_score": 100.0,
-    "drip_mn": 514.0
+    "drip_mn": 514.0,
+    "nav_per_share_qoq_change": -0.1471,
+    "nav_per_share_yoy_growth_pct": -1.2429,
+    "fixed_rate_pct": 91.9
   },
   {
     "quarter": "Q2 2025",
@@ -350,7 +384,10 @@
     "total_return_index": 18.7653,
     "cumulative_equity_raised_mn": 0.0,
     "data_quality_score": 100.0,
-    "drip_mn": 514.0
+    "drip_mn": 514.0,
+    "nav_per_share_qoq_change": -0.0498,
+    "nav_per_share_yoy_growth_pct": -1.6019,
+    "fixed_rate_pct": 91.9
   },
   {
     "quarter": "Q3 2025",
@@ -377,7 +414,10 @@
     "total_return_index": 18.6986,
     "cumulative_equity_raised_mn": 0.0,
     "data_quality_score": 100.0,
-    "drip_mn": 514.0
+    "drip_mn": 514.0,
+    "nav_per_share_qoq_change": -0.0667,
+    "nav_per_share_yoy_growth_pct": -1.564,
+    "fixed_rate_pct": 91.9
   },
   {
     "quarter": "Q4 2025",
@@ -404,6 +444,12 @@
     "data_quality_score": 100.0,
     "drip_mn": 514.0,
     "num_portfolio_companies": 181,
-    "avg_position_size_mn": 36.523
+    "avg_position_size_mn": 36.523,
+    "nav_per_share_qoq_change": -0.1331,
+    "nav_per_share_yoy_growth_pct": -2.0921,
+    "fixed_rate_pct": 91.9,
+    "second_lien_pct": 6.75,
+    "equity_pct": 0.5,
+    "pik_pct": 12.2
   }
 ]

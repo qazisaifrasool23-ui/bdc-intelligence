@@ -22,7 +22,8 @@
     "data_status": "scaffold_only",
     "scaffold_reason": "XBRL empty and filing text too sparse for extraction",
     "extraction_attempted": "2026-05-06",
-    "rerun_when": "next 10-Q filing after 2026-06-30"
+    "rerun_when": "next 10-Q filing after 2026-06-30",
+    "na_dollar_amount_mn": 0.0
   },
   {
     "quarter": "Q4 2024",
@@ -43,7 +44,9 @@
     "data_status": "scaffold_only",
     "scaffold_reason": "XBRL empty and filing text too sparse for extraction",
     "extraction_attempted": "2026-05-06",
-    "rerun_when": "next 10-Q filing after 2026-06-30"
+    "rerun_when": "next 10-Q filing after 2026-06-30",
+    "na_dollar_amount_mn": 0.0,
+    "net_na_change_mn": 0.0
   },
   {
     "quarter": "Q1 2025",
@@ -68,7 +71,9 @@
     "data_status": "scaffold_only",
     "scaffold_reason": "XBRL empty and filing text too sparse for extraction",
     "extraction_attempted": "2026-05-06",
-    "rerun_when": "next 10-Q filing after 2026-06-30"
+    "rerun_when": "next 10-Q filing after 2026-06-30",
+    "na_dollar_amount_mn": 0.0,
+    "net_na_change_mn": 0.0
   },
   {
     "quarter": "Q2 2025",
@@ -91,7 +96,8 @@
     "data_status": "scaffold_only",
     "scaffold_reason": "XBRL empty and filing text too sparse for extraction",
     "extraction_attempted": "2026-05-06",
-    "rerun_when": "next 10-Q filing after 2026-06-30"
+    "rerun_when": "next 10-Q filing after 2026-06-30",
+    "nav_per_share_qoq_change": -0.09
   },
   {
     "quarter": "Q3 2025",
@@ -117,7 +123,9 @@
     "data_status": "scaffold_only",
     "scaffold_reason": "XBRL empty and filing text too sparse for extraction",
     "extraction_attempted": "2026-05-06",
-    "rerun_when": "next 10-Q filing after 2026-06-30"
+    "rerun_when": "next 10-Q filing after 2026-06-30",
+    "nav_per_share_qoq_change": 0.08,
+    "nav_per_share_yoy_growth_pct": -0.0792
   },
   {
     "quarter": "Q4 2025",
@@ -143,6 +151,8 @@
     "data_status": "scaffold_only",
     "scaffold_reason": "XBRL empty and filing text too sparse for extraction",
     "extraction_attempted": "2026-05-06",
-    "rerun_when": "next 10-Q filing after 2026-06-30"
+    "rerun_when": "next 10-Q filing after 2026-06-30",
+    "nav_per_share_qoq_change": -0.11,
+    "redemption_gate_active": 1
   }
 ]

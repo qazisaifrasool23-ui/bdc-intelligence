@@ -19,7 +19,8 @@
     "cumulative_dividends_paid": 0.0,
     "total_return_index": 19.8,
     "cumulative_equity_raised_mn": 0.0,
-    "data_quality_score": 100.0
+    "data_quality_score": 100.0,
+    "expense_ratio_pct": 0.4825
   },
   {
     "quarter": "Q2 2023",
@@ -41,7 +42,9 @@
     "cumulative_dividends_paid": 0.0,
     "total_return_index": 20.06,
     "cumulative_equity_raised_mn": 0.0,
-    "data_quality_score": 100.0
+    "data_quality_score": 100.0,
+    "nav_per_share_qoq_change": 0.26,
+    "expense_ratio_pct": 1.003
   },
   {
     "quarter": "Q3 2023",
@@ -63,7 +66,9 @@
     "cumulative_dividends_paid": 0.0,
     "total_return_index": 20.39,
     "cumulative_equity_raised_mn": 0.0,
-    "data_quality_score": 100.0
+    "data_quality_score": 100.0,
+    "nav_per_share_qoq_change": 0.33,
+    "expense_ratio_pct": 2.2659
   },
   {
     "quarter": "Q4 2023",
@@ -89,7 +94,10 @@
     "cumulative_dividends_paid": 0.0,
     "total_return_index": 20.55,
     "cumulative_equity_raised_mn": 73.0,
-    "data_quality_score": 100.0
+    "data_quality_score": 100.0,
+    "nav_per_share_qoq_change": 0.16,
+    "fixed_rate_pct": 90.18,
+    "expense_ratio_pct": 3.0192
   },
   {
     "quarter": "Q1 2024",
@@ -112,7 +120,10 @@
     "cumulative_dividends_paid": 0.0,
     "total_return_index": 20.58,
     "cumulative_equity_raised_mn": 73.0,
-    "data_quality_score": 100.0
+    "data_quality_score": 100.0,
+    "nav_per_share_qoq_change": 0.03,
+    "nav_per_share_yoy_growth_pct": 3.9394,
+    "expense_ratio_pct": 3.2744
   },
   {
     "quarter": "Q2 2024",
@@ -134,7 +145,10 @@
     "cumulative_dividends_paid": 0.0,
     "total_return_index": 20.48,
     "cumulative_equity_raised_mn": 73.0,
-    "data_quality_score": 100.0
+    "data_quality_score": 100.0,
+    "nav_per_share_qoq_change": -0.1,
+    "nav_per_share_yoy_growth_pct": 2.0937,
+    "expense_ratio_pct": 2.6647
   },
   {
     "quarter": "Q3 2024",
@@ -156,7 +170,10 @@
     "cumulative_dividends_paid": 0.0,
     "total_return_index": 20.37,
     "cumulative_equity_raised_mn": 73.0,
-    "data_quality_score": 100.0
+    "data_quality_score": 100.0,
+    "nav_per_share_qoq_change": -0.11,
+    "nav_per_share_yoy_growth_pct": -0.0981,
+    "expense_ratio_pct": 2.421
   },
   {
     "quarter": "Q4 2024",
@@ -179,7 +196,10 @@
     "cumulative_dividends_paid": 0.0,
     "total_return_index": 20.72,
     "cumulative_equity_raised_mn": 73.0,
-    "data_quality_score": 100.0
+    "data_quality_score": 100.0,
+    "nav_per_share_qoq_change": 0.35,
+    "nav_per_share_yoy_growth_pct": 0.8273,
+    "expense_ratio_pct": 2.4267
   },
   {
     "quarter": "Q1 2025",
@@ -201,7 +221,10 @@
     "cumulative_dividends_paid": 0.0,
     "total_return_index": 20.07,
     "cumulative_equity_raised_mn": 78.0,
-    "data_quality_score": 100.0
+    "data_quality_score": 100.0,
+    "nav_per_share_qoq_change": -0.65,
+    "nav_per_share_yoy_growth_pct": -2.4781,
+    "expense_ratio_pct": 2.0984
   },
   {
     "quarter": "Q2 2025",
@@ -223,7 +246,9 @@
     "cumulative_dividends_paid": 0.0,
     "total_return_index": 20.19,
     "cumulative_equity_raised_mn": 78.0,
-    "data_quality_score": 100.0
+    "data_quality_score": 100.0,
+    "nav_per_share_qoq_change": 0.12,
+    "nav_per_share_yoy_growth_pct": -1.416
   },
   {
     "quarter": "Q3 2025",
@@ -245,7 +270,9 @@
     "cumulative_dividends_paid": 0.0,
     "total_return_index": 20.26,
     "cumulative_equity_raised_mn": 78.0,
-    "data_quality_score": 100.0
+    "data_quality_score": 100.0,
+    "nav_per_share_qoq_change": 0.07,
+    "nav_per_share_yoy_growth_pct": -0.54
   },
   {
     "quarter": "Q4 2025",
@@ -265,6 +292,11 @@
     "cumulative_dividends_paid": 0.0,
     "total_return_index": 20.37,
     "cumulative_equity_raised_mn": 78.0,
-    "data_quality_score": 100.0
+    "data_quality_score": 100.0,
+    "nav_per_share_qoq_change": 0.11,
+    "nav_per_share_yoy_growth_pct": -1.6892,
+    "second_lien_pct": 4.75,
+    "pik_pct": 9.8,
+    "redemption_gate_active": 1
   }
 ]

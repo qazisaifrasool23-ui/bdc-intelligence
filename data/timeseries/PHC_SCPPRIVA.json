@@ -54,7 +54,8 @@
     "data_status": "scaffold_only",
     "scaffold_reason": "XBRL empty and filing text too sparse for extraction",
     "extraction_attempted": "2026-05-06",
-    "rerun_when": "next 10-Q filing after 2026-06-30"
+    "rerun_when": "next 10-Q filing after 2026-06-30",
+    "fixed_rate_pct": 15.0
   },
   {
     "quarter": "Q1 2021",
@@ -114,7 +115,8 @@
     "data_status": "scaffold_only",
     "scaffold_reason": "XBRL empty and filing text too sparse for extraction",
     "extraction_attempted": "2026-05-06",
-    "rerun_when": "next 10-Q filing after 2026-06-30"
+    "rerun_when": "next 10-Q filing after 2026-06-30",
+    "fixed_rate_pct": 15.0
   },
   {
     "quarter": "Q1 2022",
@@ -267,7 +269,8 @@
     "data_status": "scaffold_only",
     "scaffold_reason": "XBRL empty and filing text too sparse for extraction",
     "extraction_attempted": "2026-05-06",
-    "rerun_when": "next 10-Q filing after 2026-06-30"
+    "rerun_when": "next 10-Q filing after 2026-06-30",
+    "fixed_rate_pct": 15.0
   },
   {
     "quarter": "Q1 2024",
@@ -348,7 +351,8 @@
     "data_status": "scaffold_only",
     "scaffold_reason": "XBRL empty and filing text too sparse for extraction",
     "extraction_attempted": "2026-05-06",
-    "rerun_when": "next 10-Q filing after 2026-06-30"
+    "rerun_when": "next 10-Q filing after 2026-06-30",
+    "fixed_rate_pct": 15.0
   },
   {
     "quarter": "Q1 2025",
@@ -430,7 +434,8 @@
     "data_status": "scaffold_only",
     "scaffold_reason": "XBRL empty and filing text too sparse for extraction",
     "extraction_attempted": "2026-05-06",
-    "rerun_when": "next 10-Q filing after 2026-06-30"
+    "rerun_when": "next 10-Q filing after 2026-06-30",
+    "fixed_rate_pct": 15.0
   },
   {
     "quarter": "Q1 2026",
@@ -450,6 +455,7 @@
     "data_status": "scaffold_only",
     "scaffold_reason": "XBRL empty and filing text too sparse for extraction",
     "extraction_attempted": "2026-05-06",
-    "rerun_when": "next 10-Q filing after 2026-06-30"
+    "rerun_when": "next 10-Q filing after 2026-06-30",
+    "equity_pct": 1.3
   }
 ]

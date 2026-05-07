@@ -53,7 +53,8 @@
     "data_status": "scaffold_only",
     "scaffold_reason": "XBRL empty and filing text too sparse for extraction",
     "extraction_attempted": "2026-05-06",
-    "rerun_when": "next 10-Q filing after 2026-06-30"
+    "rerun_when": "next 10-Q filing after 2026-06-30",
+    "nav_per_share_qoq_change": -0.56
   },
   {
     "quarter": "Q4 2024",
@@ -136,7 +137,9 @@
     "data_status": "scaffold_only",
     "scaffold_reason": "XBRL empty and filing text too sparse for extraction",
     "extraction_attempted": "2026-05-06",
-    "rerun_when": "next 10-Q filing after 2026-06-30"
+    "rerun_when": "next 10-Q filing after 2026-06-30",
+    "nav_per_share_qoq_change": -0.11,
+    "nav_per_share_yoy_growth_pct": -1.6368
   },
   {
     "quarter": "Q3 2025",
@@ -165,7 +168,9 @@
     "data_status": "scaffold_only",
     "scaffold_reason": "XBRL empty and filing text too sparse for extraction",
     "extraction_attempted": "2026-05-06",
-    "rerun_when": "next 10-Q filing after 2026-06-30"
+    "rerun_when": "next 10-Q filing after 2026-06-30",
+    "nav_per_share_qoq_change": 0.06,
+    "nav_per_share_yoy_growth_pct": 0.7968
   },
   {
     "quarter": "Q4 2025",
@@ -188,6 +193,7 @@
     "data_status": "scaffold_only",
     "scaffold_reason": "XBRL empty and filing text too sparse for extraction",
     "extraction_attempted": "2026-05-06",
-    "rerun_when": "next 10-Q filing after 2026-06-30"
+    "rerun_when": "next 10-Q filing after 2026-06-30",
+    "redemption_gate_active": 1
   }
 ]

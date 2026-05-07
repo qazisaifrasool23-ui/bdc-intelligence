@@ -218,6 +218,10 @@
     "data_status": "scaffold_only",
     "scaffold_reason": "XBRL empty and filing text too sparse for extraction",
     "extraction_attempted": "2026-05-06",
-    "rerun_when": "next 10-Q filing after 2026-06-30"
+    "rerun_when": "next 10-Q filing after 2026-06-30",
+    "subordinated_pct": 10.0,
+    "unused_capacity_mn": 175.0,
+    "liquidity_pct_of_portfolio": 55.7023,
+    "redemption_gate_active": 1
   }
 ]

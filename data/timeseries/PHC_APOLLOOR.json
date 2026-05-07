@@ -21,7 +21,8 @@
     "data_quality_score": 100.0,
     "total_debt_mn": 588.709,
     "incentive_fee_mn": 1.107,
-    "leverage": 1.157
+    "leverage": 1.157,
+    "expense_ratio_pct": 0.1976
   },
   {
     "quarter": "Q2 2025",
@@ -44,7 +45,9 @@
     "cumulative_equity_raised_mn": 0.0,
     "data_quality_score": 100.0,
     "total_debt_mn": 616.705,
-    "leverage": 1.185
+    "leverage": 1.185,
+    "nav_per_share_qoq_change": 0.57,
+    "expense_ratio_pct": 0.3154
   },
   {
     "quarter": "Q3 2025",
@@ -67,7 +70,9 @@
     "cumulative_equity_raised_mn": 0.0,
     "data_quality_score": 100.0,
     "total_debt_mn": 679.076,
-    "leverage": 1.154
+    "leverage": 1.154,
+    "nav_per_share_qoq_change": 0.63,
+    "expense_ratio_pct": 0.3275
   },
   {
     "quarter": "Q4 2025",
@@ -91,6 +96,10 @@
     "cumulative_equity_raised_mn": 0.0,
     "data_quality_score": 100.0,
     "total_debt_mn": 811.249,
-    "leverage": 1.206
+    "leverage": 1.206,
+    "nav_per_share_qoq_change": -1.09,
+    "expense_ratio_pct": 0.2557,
+    "equity_pct": 11.6,
+    "weighted_avg_yield": 8.7
   }
 ]
