@@ -1,9 +1,9 @@
 {
   "run_at": "2026-05-07T18:37:54",
-  "completed_at": "2026-05-07T18:48:13",
-  "processed": 70,
+  "completed_at": "2026-05-07T19:28:41",
+  "processed": 86,
   "updated_jsons": 20,
-  "failed": 24,
+  "failed": 14,
   "results": {
     "PHC_ABPRIVAT": {
       "date": "2026-03-25",
@@ -844,21 +844,201 @@
         "redemption_rate_pct": 5,
         "redemption_fulfillment_pct": null
       }
+    },
+    "ADS": {
+      "date": "2026-03-26",
+      "form": "10-K",
+      "fields": {
+        "redemption_gate_active": null,
+        "redemption_requests_mn": null,
+        "redemption_fulfilled_mn": null,
+        "redemption_backlog_mn": null,
+        "redemption_rate_pct": null,
+        "redemption_fulfillment_pct": null
+      }
+    },
+    "ANT_PCF": {
+      "date": "2026-03-19",
+      "form": "10-K",
+      "fields": {
+        "redemption_gate_active": null,
+        "redemption_requests_mn": null,
+        "redemption_fulfilled_mn": null,
+        "redemption_backlog_mn": null,
+        "redemption_rate_pct": 7.5,
+        "redemption_fulfillment_pct": null
+      }
+    },
+    "APCIF": {
+      "date": "2026-03-11",
+      "form": "10-K",
+      "fields": {
+        "redemption_gate_active": null,
+        "redemption_requests_mn": null,
+        "redemption_fulfilled_mn": null,
+        "redemption_backlog_mn": null,
+        "redemption_rate_pct": null,
+        "redemption_fulfillment_pct": null
+      }
+    },
+    "BAIN_PC": {
+      "date": "2026-03-12",
+      "form": "10-K",
+      "fields": {
+        "redemption_gate_active": null,
+        "redemption_requests_mn": null,
+        "redemption_fulfilled_mn": null,
+        "redemption_backlog_mn": null,
+        "redemption_rate_pct": null,
+        "redemption_fulfillment_pct": null
+      }
+    },
+    "BCRED": {
+      "date": "2026-03-13",
+      "form": "10-K",
+      "fields": {
+        "redemption_gate_active": null,
+        "redemption_requests_mn": null,
+        "redemption_fulfilled_mn": null,
+        "redemption_backlog_mn": null,
+        "redemption_rate_pct": null,
+        "redemption_fulfillment_pct": null
+      }
+    },
+    "BLKR_PCF": {
+      "date": "2026-05-07",
+      "form": "10-Q",
+      "fields": {
+        "redemption_gate_active": null,
+        "redemption_requests_mn": null,
+        "redemption_fulfilled_mn": null,
+        "redemption_backlog_mn": null,
+        "redemption_rate_pct": null,
+        "redemption_fulfillment_pct": null
+      }
+    },
+    "FID_PCF": {
+      "date": "2026-03-23",
+      "form": "10-K",
+      "fields": {
+        "redemption_gate_active": null,
+        "redemption_requests_mn": null,
+        "redemption_fulfilled_mn": null,
+        "redemption_backlog_mn": null,
+        "redemption_rate_pct": null,
+        "redemption_fulfillment_pct": null
+      }
+    },
+    "GCRED": {
+      "date": "2026-03-03",
+      "form": "10-K",
+      "fields": {
+        "redemption_gate_active": null,
+        "redemption_requests_mn": null,
+        "redemption_fulfilled_mn": null,
+        "redemption_backlog_mn": null,
+        "redemption_rate_pct": null,
+        "redemption_fulfillment_pct": null
+      }
+    },
+    "HLEND": {
+      "date": "2026-03-20",
+      "form": "10-K",
+      "fields": {
+        "redemption_gate_active": null,
+        "redemption_requests_mn": null,
+        "redemption_fulfilled_mn": null,
+        "redemption_backlog_mn": null,
+        "redemption_rate_pct": null,
+        "redemption_fulfillment_pct": null
+      }
+    },
+    "KKR_FSIT": {
+      "date": "2026-03-12",
+      "form": "10-K",
+      "fields": {
+        "redemption_gate_active": null,
+        "redemption_requests_mn": null,
+        "redemption_fulfilled_mn": null,
+        "redemption_backlog_mn": null,
+        "redemption_rate_pct": null,
+        "redemption_fulfillment_pct": null
+      }
+    },
+    "LPCL": {
+      "date": "2026-03-20",
+      "form": "10-K",
+      "fields": {
+        "redemption_gate_active": 0,
+        "redemption_requests_mn": null,
+        "redemption_fulfilled_mn": null,
+        "redemption_backlog_mn": null,
+        "redemption_rate_pct": 5,
+        "redemption_fulfillment_pct": null
+      }
+    },
+    "NCPCIF": {
+      "date": "2026-03-06",
+      "form": "10-K",
+      "fields": {
+        "redemption_gate_active": 1,
+        "redemption_requests_mn": null,
+        "redemption_fulfilled_mn": null,
+        "redemption_backlog_mn": null,
+        "redemption_rate_pct": null,
+        "redemption_fulfillment_pct": null
+      }
+    },
+    "OBTIC": {
+      "date": "2026-03-03",
+      "form": "10-K",
+      "fields": {
+        "redemption_gate_active": null,
+        "redemption_requests_mn": null,
+        "redemption_fulfilled_mn": null,
+        "redemption_backlog_mn": null,
+        "redemption_rate_pct": null,
+        "redemption_fulfillment_pct": null
+      }
+    },
+    "OCIC": {
+      "date": "2026-03-03",
+      "form": "10-K",
+      "fields": {
+        "redemption_gate_active": null,
+        "redemption_requests_mn": null,
+        "redemption_fulfilled_mn": null,
+        "redemption_backlog_mn": null,
+        "redemption_rate_pct": null,
+        "redemption_fulfillment_pct": null
+      }
+    },
+    "OSCF": {
+      "date": "2026-02-12",
+      "form": "10-Q",
+      "fields": {
+        "redemption_gate_active": null,
+        "redemption_requests_mn": null,
+        "redemption_fulfilled_mn": 191.101,
+        "redemption_backlog_mn": null,
+        "redemption_rate_pct": null,
+        "redemption_fulfillment_pct": null
+      }
+    },
+    "TBKCF": {
+      "date": "2026-05-06",
+      "form": "10-Q",
+      "fields": {
+        "redemption_gate_active": null,
+        "redemption_requests_mn": null,
+        "redemption_fulfilled_mn": 5.232,
+        "redemption_backlog_mn": null,
+        "redemption_rate_pct": null,
+        "redemption_fulfillment_pct": null
+      }
     }
   },
   "failures": [
-    {
-      "ticker": "ADS",
-      "reason": "no_cik"
-    },
-    {
-      "ticker": "ANT_PCF",
-      "reason": "no_cik"
-    },
-    {
-      "ticker": "APCIF",
-      "reason": "no_cik"
-    },
     {
       "ticker": "ASCF",
       "reason": "no_cik"
@@ -872,27 +1052,7 @@
       "reason": "no_cik"
     },
     {
-      "ticker": "BAIN_PC",
-      "reason": "no_cik"
-    },
-    {
-      "ticker": "BCRED",
-      "reason": "no_cik"
-    },
-    {
-      "ticker": "BLKR_PCF",
-      "reason": "no_cik"
-    },
-    {
       "ticker": "CCSI",
-      "reason": "no_cik"
-    },
-    {
-      "ticker": "FID_PCF",
-      "reason": "no_cik"
-    },
-    {
-      "ticker": "GCRED",
       "reason": "no_cik"
     },
     {
@@ -900,40 +1060,8 @@
       "reason": "no_cik"
     },
     {
-      "ticker": "HLEND",
-      "reason": "no_cik"
-    },
-    {
-      "ticker": "KKR_FSIT",
-      "reason": "no_cik"
-    },
-    {
-      "ticker": "LPCL",
-      "reason": "no_cik"
-    },
-    {
       "ticker": "MRCC_NT",
       "reason": "llm_failed"
-    },
-    {
-      "ticker": "NCPCIF",
-      "reason": "no_cik"
-    },
-    {
-      "ticker": "OBTIC",
-      "reason": "no_cik"
-    },
-    {
-      "ticker": "OCIC",
-      "reason": "no_cik"
-    },
-    {
-      "ticker": "OSCF",
-      "reason": "no_cik"
-    },
-    {
-      "ticker": "TBKCF",
-      "reason": "no_cik"
     },
     {
       "ticker": "TROW_OHA",
@@ -942,6 +1070,30 @@
     {
       "ticker": "PHC_5CLENDIN",
       "reason": "llm_failed"
+    },
+    {
+      "ticker": "ASCF",
+      "reason": "still_no_cik"
+    },
+    {
+      "ticker": "ASCFI",
+      "reason": "still_no_cik"
+    },
+    {
+      "ticker": "ASIF",
+      "reason": "still_no_cik"
+    },
+    {
+      "ticker": "CCSI",
+      "reason": "still_no_cik"
+    },
+    {
+      "ticker": "GS_PCC",
+      "reason": "still_no_cik"
+    },
+    {
+      "ticker": "TROW_OHA",
+      "reason": "still_no_cik"
     }
   ]
 }
