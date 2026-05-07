@@ -95,7 +95,11 @@
       "first_search": "\"business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_STEELECR",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": true,
+      "audit_reason": "",
+      "sic_description": "",
+      "entity_name": "Steele Creek Capital Corp"
     },
     {
       "cik": "0001975736",
@@ -104,7 +108,11 @@
       "first_search": "\"business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_KKRFSINC",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": false,
+      "audit_reason": "name pattern: KKR FS Income Trust Select",
+      "sic_description": "",
+      "entity_name": "KKR FS Income Trust Select"
     },
     {
       "cik": "0001859919",
@@ -113,7 +121,11 @@
       "first_search": "\"business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_BARINGSP",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": true,
+      "audit_reason": "",
+      "sic_description": "",
+      "entity_name": "Barings Private Credit Corp"
     },
     {
       "cik": "0002031283",
@@ -122,7 +134,11 @@
       "first_search": "\"business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_STONEPOI",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": true,
+      "audit_reason": "",
+      "sic_description": "",
+      "entity_name": "Stone Point Credit Income Fund - Select"
     },
     {
       "cik": "0001890107",
@@ -131,7 +147,11 @@
       "first_search": "\"business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_FIRSTEAG",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": true,
+      "audit_reason": "",
+      "sic_description": "",
+      "entity_name": "First Eagle Private Credit Fund"
     },
     {
       "cik": "0001899996",
@@ -140,7 +160,11 @@
       "first_search": "\"business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_FIDELITY",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": true,
+      "audit_reason": "",
+      "sic_description": "",
+      "entity_name": "Fidelity Private Credit Co LLC"
     },
     {
       "cik": "0002025369",
@@ -149,7 +173,11 @@
       "first_search": "\"business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_THIRDPOI",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": true,
+      "audit_reason": "",
+      "sic_description": "",
+      "entity_name": "Third Point Private Capital Partners"
     },
     {
       "cik": "0001901612",
@@ -158,16 +186,24 @@
       "first_search": "\"business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_GOLUBCAP",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": true,
+      "audit_reason": "",
+      "sic_description": "",
+      "entity_name": "Golub Capital Private Income Fund S"
     },
     {
       "cik": "0002027537",
       "fund_name": "Goldman Sachs Real Estate Finance Trust Inc",
-      "sic": "6798",
+      "sic": "",
       "first_search": "\"business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_GOLDMANS",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": true,
+      "audit_reason": "",
+      "sic_description": "",
+      "entity_name": "Goldman Sachs Private Middle Market Credit II LLC"
     },
     {
       "cik": "0001901606",
@@ -176,7 +212,11 @@
       "first_search": "\"business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_GOLUBCAP",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": true,
+      "audit_reason": "",
+      "sic_description": "",
+      "entity_name": "Golub Capital Private Income Fund S"
     },
     {
       "cik": "0001865174",
@@ -185,7 +225,11 @@
       "first_search": "\"business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_GOLDMANS",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": true,
+      "audit_reason": "",
+      "sic_description": "",
+      "entity_name": "Goldman Sachs Private Middle Market Credit II LLC"
     },
     {
       "cik": "0001674760",
@@ -194,7 +238,11 @@
       "first_search": "\"business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_SILVERCA",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": true,
+      "audit_reason": "",
+      "sic_description": "",
+      "entity_name": "Silver Capital Holdings LLC"
     },
     {
       "cik": "0001772704",
@@ -203,7 +251,11 @@
       "first_search": "\"business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_GOLDMANS",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": true,
+      "audit_reason": "",
+      "sic_description": "",
+      "entity_name": "Goldman Sachs Private Middle Market Credit II LLC"
     },
     {
       "cik": "0001959604",
@@ -212,7 +264,11 @@
       "first_search": "\"business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_JEFFERIE",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": true,
+      "audit_reason": "",
+      "sic_description": "",
+      "entity_name": "Jefferies Credit Partners BDC Inc."
     },
     {
       "cik": "0002049733",
@@ -221,7 +277,11 @@
       "first_search": "\"business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_BLACKSTO",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": false,
+      "audit_reason": "name pattern: Blackstone Private Real Estate Credit & Income Fund",
+      "sic_description": "",
+      "entity_name": "Blackstone Private Real Estate Credit & Income Fund"
     },
     {
       "cik": "0002031750",
@@ -230,7 +290,11 @@
       "first_search": "\"business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_ARESCORE",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": false,
+      "audit_reason": "name pattern: Ares Core Infrastructure Fund",
+      "sic_description": "",
+      "entity_name": "Ares Core Infrastructure Fund"
     },
     {
       "cik": "0001925309",
@@ -239,7 +303,11 @@
       "first_search": "\"business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_SIXTHSTR",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": true,
+      "audit_reason": "",
+      "sic_description": "",
+      "entity_name": "Sixth Street Lending Partners"
     },
     {
       "cik": "0001930087",
@@ -248,7 +316,11 @@
       "first_search": "\"business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_GOLUBCAP",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": true,
+      "audit_reason": "",
+      "sic_description": "",
+      "entity_name": "Golub Capital Private Income Fund S"
     },
     {
       "cik": "0001868878",
@@ -257,7 +329,11 @@
       "first_search": "\"business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_GOLUBCAP",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": true,
+      "audit_reason": "",
+      "sic_description": "",
+      "entity_name": "Golub Capital Private Income Fund S"
     },
     {
       "cik": "0001950572",
@@ -266,7 +342,11 @@
       "first_search": "\"business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_BIPVENTU",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": true,
+      "audit_reason": "",
+      "sic_description": "",
+      "entity_name": "BIP Ventures Evergreen BDC"
     },
     {
       "cik": "0001786835",
@@ -275,7 +355,11 @@
       "first_search": "\"business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_STARMOUN",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": true,
+      "audit_reason": "",
+      "sic_description": "",
+      "entity_name": "Star Mountain Lower Middle-Market Capital Corp"
     },
     {
       "cik": "0001959568",
@@ -284,7 +368,11 @@
       "first_search": "\"business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_SENIORCR",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": true,
+      "audit_reason": "",
+      "sic_description": "",
+      "entity_name": "Senior Credit Investments, LLC"
     },
     {
       "cik": "0001987221",
@@ -293,7 +381,11 @@
       "first_search": "\"business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_AMGCOMVE",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": true,
+      "audit_reason": "",
+      "sic_description": "",
+      "entity_name": "AMG Comvest Senior Lending Fund"
     },
     {
       "cik": "0001512931",
@@ -302,7 +394,11 @@
       "first_search": "\"business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_MONROECA",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": true,
+      "audit_reason": "",
+      "sic_description": "",
+      "entity_name": "Monroe Capital Income Plus Corp"
     },
     {
       "cik": "0001948056",
@@ -311,7 +407,11 @@
       "first_search": "\"business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_KKRINFRA",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": false,
+      "audit_reason": "name pattern: KKR Infrastructure Conglomerate LLC",
+      "sic_description": "Investors, NEC",
+      "entity_name": "KKR Infrastructure Conglomerate LLC"
     },
     {
       "cik": "0001957845",
@@ -320,7 +420,11 @@
       "first_search": "\"business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_KKRPRIVA",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": false,
+      "audit_reason": "SIC 6199: Finance Services",
+      "sic_description": "Finance Services",
+      "entity_name": "KKR Private Equity Conglomerate LLC"
     },
     {
       "cik": "0001633858",
@@ -329,16 +433,24 @@
       "first_search": "\"business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_AUDAXCRE",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": true,
+      "audit_reason": "",
+      "sic_description": "",
+      "entity_name": "Audax Credit BDC Inc."
     },
     {
       "cik": "0002018545",
       "fund_name": "Franklin BSP Real Estate Debt BDC",
-      "sic": "",
+      "sic": "6798",
       "first_search": "\"business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_FRANKLIN",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": false,
+      "audit_reason": "SIC 6798: Real Estate Investment Trusts",
+      "sic_description": "Real Estate Investment Trusts",
+      "entity_name": "Franklin BSP Real Estate Debt, Inc."
     },
     {
       "cik": "0002012839",
@@ -347,7 +459,11 @@
       "first_search": "\"business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_KKRENHAN",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": true,
+      "audit_reason": "",
+      "sic_description": "",
+      "entity_name": "KKR Enhanced US Direct Lending Fund-L Inc."
     },
     {
       "cik": "0001702510",
@@ -356,7 +472,11 @@
       "first_search": "\"business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_CARLYLEC",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": true,
+      "audit_reason": "",
+      "sic_description": "",
+      "entity_name": "Carlyle Credit Solutions, Inc."
     },
     {
       "cik": "0001944831",
@@ -365,7 +485,11 @@
       "first_search": "\"business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_WILLOWTR",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": true,
+      "audit_reason": "",
+      "sic_description": "",
+      "entity_name": "Willow Tree Capital Corp"
     },
     {
       "cik": "0001918712",
@@ -374,7 +498,11 @@
       "first_search": "\"business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_ARESSTRA",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": false,
+      "audit_reason": "duplicate of ASIF (same CIK)",
+      "sic_description": "",
+      "entity_name": "ARES STRATEGIC INCOME FUND"
     },
     {
       "cik": "0001849089",
@@ -383,7 +511,11 @@
       "first_search": "\"business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_LAFAYETT",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": true,
+      "audit_reason": "",
+      "sic_description": "",
+      "entity_name": "Lafayette Square USA, Inc."
     },
     {
       "cik": "0001982701",
@@ -392,7 +524,11 @@
       "first_search": "\"business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_ABPRIVAT",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": true,
+      "audit_reason": "",
+      "sic_description": "",
+      "entity_name": "AB Private Lending Fund"
     },
     {
       "cik": "0002089126",
@@ -401,7 +537,11 @@
       "first_search": "\"business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_PENNANTP",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": true,
+      "audit_reason": "",
+      "sic_description": "",
+      "entity_name": "PennantPark Private Income Fund"
     },
     {
       "cik": "0002017636",
@@ -410,7 +550,11 @@
       "first_search": "\"business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_CCSIXPOR",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": false,
+      "audit_reason": "manual: confirmed non-BDC operating company / SPV",
+      "sic_description": "",
+      "entity_name": "CCS IX Portfolio Holdings, LLC"
     },
     {
       "cik": "0001988280",
@@ -419,7 +563,11 @@
       "first_search": "\"business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_MANULIFE",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": true,
+      "audit_reason": "",
+      "sic_description": "",
+      "entity_name": "Manulife Private Credit Fund"
     },
     {
       "cik": "0002071136",
@@ -428,7 +576,11 @@
       "first_search": "\"business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_NUVEENCH",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": true,
+      "audit_reason": "",
+      "sic_description": "",
+      "entity_name": "Nuveen Churchill BDC V"
     },
     {
       "cik": "0001989817",
@@ -437,7 +589,11 @@
       "first_search": "\"business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_HPSCORPO",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": true,
+      "audit_reason": "restored: name pattern was over-broad; this IS a BDC",
+      "sic_description": "",
+      "entity_name": "HPS Corporate Capital Solutions Fund"
     },
     {
       "cik": "0001978133",
@@ -446,7 +602,11 @@
       "first_search": "\"business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_YERBAEBR",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": false,
+      "audit_reason": "name pattern: YERBAE BRANDS CORP.",
+      "sic_description": "Beverages",
+      "entity_name": "YERBAE BRANDS CORP."
     },
     {
       "cik": "0001825384",
@@ -455,7 +615,11 @@
       "first_search": "\"business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_STONEPOI",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": true,
+      "audit_reason": "",
+      "sic_description": "",
+      "entity_name": "Stone Point Credit Income Fund - Select"
     },
     {
       "cik": "0001521945",
@@ -464,7 +628,11 @@
       "first_search": "\"business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_PROSPECT",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": true,
+      "audit_reason": "",
+      "sic_description": "",
+      "entity_name": "Prospect Floating Rate & Alternative Income Fund, Inc."
     },
     {
       "cik": "0001919369",
@@ -473,7 +641,11 @@
       "first_search": "\"business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_VISTACRE",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": true,
+      "audit_reason": "",
+      "sic_description": "",
+      "entity_name": "VISTA CREDIT STRATEGIC LENDING CORP."
     },
     {
       "cik": "0001588272",
@@ -482,7 +654,11 @@
       "first_search": "\"business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_NEXPOINT",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": true,
+      "audit_reason": "",
+      "sic_description": "",
+      "entity_name": "NexPoint Capital, Inc."
     },
     {
       "cik": "0001999538",
@@ -491,7 +667,11 @@
       "first_search": "\"business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_X1CAPITA",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": false,
+      "audit_reason": "manual: confirmed non-BDC operating company / SPV",
+      "sic_description": "",
+      "entity_name": "X1 Capital Inc."
     },
     {
       "cik": "0001849894",
@@ -500,7 +680,11 @@
       "first_search": "\"business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_MSDINVES",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": true,
+      "audit_reason": "",
+      "sic_description": "",
+      "entity_name": "MSD Investment Corp."
     },
     {
       "cik": "0002020354",
@@ -509,7 +693,11 @@
       "first_search": "\"business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_WESTBAYB",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": true,
+      "audit_reason": "",
+      "sic_description": "",
+      "entity_name": "West Bay BDC LLC"
     },
     {
       "cik": "0001998387",
@@ -518,7 +706,11 @@
       "first_search": "\"business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_5CLENDIN",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": true,
+      "audit_reason": "",
+      "sic_description": "",
+      "entity_name": "5C Lending Partners Corp."
     },
     {
       "cik": "0002082559",
@@ -527,7 +719,11 @@
       "first_search": "\"business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_GOLUBCAP",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": true,
+      "audit_reason": "",
+      "sic_description": "",
+      "entity_name": "Golub Capital Private Income Fund S"
     },
     {
       "cik": "0002082557",
@@ -536,7 +732,11 @@
       "first_search": "\"business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_GOLUBCAP",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": true,
+      "audit_reason": "",
+      "sic_description": "",
+      "entity_name": "Golub Capital Private Income Fund S"
     },
     {
       "cik": "0001860424",
@@ -545,7 +745,11 @@
       "first_search": "\"business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_ONEXDIRE",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": true,
+      "audit_reason": "",
+      "sic_description": "",
+      "entity_name": "Onex Direct Lending BDC Fund"
     },
     {
       "cik": "0001655887",
@@ -554,7 +758,11 @@
       "first_search": "\"business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_BLUEOWLC",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": true,
+      "audit_reason": "",
+      "sic_description": "",
+      "entity_name": "Blue Owl Capital Corp III"
     },
     {
       "cik": "0000793171",
@@ -563,7 +771,11 @@
       "first_search": "\"business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_VITROBIO",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": false,
+      "audit_reason": "SIC 2836: Biological Products, (No Diagnostic Substances)",
+      "sic_description": "Biological Products, (No Diagnostic Substances)",
+      "entity_name": "Vitro Biopharma, Inc."
     },
     {
       "cik": "0001807427",
@@ -572,7 +784,11 @@
       "first_search": "\"business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_BLUEOWLC",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": true,
+      "audit_reason": "",
+      "sic_description": "",
+      "entity_name": "Blue Owl Capital Corp III"
     },
     {
       "cik": "0001965934",
@@ -581,7 +797,11 @@
       "first_search": "\"business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_OVERLAND",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": true,
+      "audit_reason": "",
+      "sic_description": "",
+      "entity_name": "Overland Advantage"
     },
     {
       "cik": "0002045370",
@@ -590,7 +810,11 @@
       "first_search": "\"business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_REMORACA",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": true,
+      "audit_reason": "",
+      "sic_description": "",
+      "entity_name": "Remora Capital Corp"
     },
     {
       "cik": "0002035713",
@@ -599,7 +823,11 @@
       "first_search": "\"elected to be regulated as a business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_CRESTLIN",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": true,
+      "audit_reason": "",
+      "sic_description": "",
+      "entity_name": "Crestline Lending Solutions, LLC"
     },
     {
       "cik": "0002043133",
@@ -608,7 +836,11 @@
       "first_search": "\"elected to be regulated as a business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_TCWSTEEL",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": true,
+      "audit_reason": "",
+      "sic_description": "",
+      "entity_name": "TCW Steel City Senior Lending BDC"
     },
     {
       "cik": "0002027033",
@@ -617,7 +849,11 @@
       "first_search": "\"elected to be regulated as a business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_EAGLEPOI",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": true,
+      "audit_reason": "",
+      "sic_description": "",
+      "entity_name": "Eagle Point Trinity Senior Secured Lending Co"
     },
     {
       "cik": "0001950803",
@@ -626,7 +862,11 @@
       "first_search": "\"elected to be regulated as a business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_STEPSTON",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": true,
+      "audit_reason": "",
+      "sic_description": "",
+      "entity_name": "Stepstone Private Credit Fund LLC"
     },
     {
       "cik": "0002077250",
@@ -635,7 +875,11 @@
       "first_search": "\"elected to be regulated as a business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_STONEPOI",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": true,
+      "audit_reason": "",
+      "sic_description": "",
+      "entity_name": "Stone Point Credit Income Fund - Select"
     },
     {
       "cik": "0001985375",
@@ -644,7 +888,11 @@
       "first_search": "\"elected to be regulated as a business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_MUZINICH",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": true,
+      "audit_reason": "",
+      "sic_description": "",
+      "entity_name": "Muzinich BDC, Inc."
     },
     {
       "cik": "0001779523",
@@ -653,7 +901,11 @@
       "first_search": "\"elected to be regulated as a business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_MUZINICH",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": true,
+      "audit_reason": "",
+      "sic_description": "",
+      "entity_name": "Muzinich BDC, Inc."
     },
     {
       "cik": "0002061670",
@@ -662,7 +914,11 @@
       "first_search": "\"elected to be regulated as a business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_MONROECA",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": true,
+      "audit_reason": "",
+      "sic_description": "",
+      "entity_name": "Monroe Capital Income Plus Corp"
     },
     {
       "cik": "0001646614",
@@ -671,7 +927,11 @@
       "first_search": "\"elected to be regulated as a business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_SILVERPO",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": true,
+      "audit_reason": "",
+      "sic_description": "",
+      "entity_name": "Silver Point Specialty Lending Fund"
     },
     {
       "cik": "0001922947",
@@ -680,16 +940,24 @@
       "first_search": "\"elected to be regulated as a business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_WELLINGS",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": false,
+      "audit_reason": "name pattern: Wellings Real Estate Income Fund",
+      "sic_description": "",
+      "entity_name": "Wellings Real Estate Income Fund"
     },
     {
       "cik": "0002037804",
       "fund_name": "New Mountain Private Credit Fund",
-      "sic": "",
+      "sic": "6798",
       "first_search": "\"elected to be regulated as a business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_NEWMOUNT",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": false,
+      "audit_reason": "SIC 6798: Real Estate Investment Trusts",
+      "sic_description": "Real Estate Investment Trusts",
+      "entity_name": "New Mountain Net Lease Trust"
     },
     {
       "cik": "0001913724",
@@ -698,7 +966,11 @@
       "first_search": "\"elected to be regulated as a business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_TPGTWINB",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": true,
+      "audit_reason": "",
+      "sic_description": "",
+      "entity_name": "TPG Twin Brook Capital Income Fund"
     },
     {
       "cik": "0001766037",
@@ -707,25 +979,37 @@
       "first_search": "\"elected to be regulated as a business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_NMFSLFII",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": true,
+      "audit_reason": "",
+      "sic_description": "",
+      "entity_name": "NMF SLF I, Inc."
     },
     {
       "cik": "0001976719",
       "fund_name": "New Mountain Guardian IV Income Fund, L.L.C.",
-      "sic": "",
+      "sic": "6798",
       "first_search": "\"elected to be regulated as a business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_NEWMOUNT",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": false,
+      "audit_reason": "SIC 6798: Real Estate Investment Trusts",
+      "sic_description": "Real Estate Investment Trusts",
+      "entity_name": "New Mountain Net Lease Trust"
     },
     {
       "cik": "0001925531",
       "fund_name": "New Mountain Guardian IV BDC, L.L.C.",
-      "sic": "",
+      "sic": "6798",
       "first_search": "\"elected to be regulated as a business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_NEWMOUNT",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": false,
+      "audit_reason": "SIC 6798: Real Estate Investment Trusts",
+      "sic_description": "Real Estate Investment Trusts",
+      "entity_name": "New Mountain Net Lease Trust"
     },
     {
       "cik": "0001841514",
@@ -734,7 +1018,11 @@
       "first_search": "\"elected to be regulated as a business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_COMMONWE",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": true,
+      "audit_reason": "",
+      "sic_description": "",
+      "entity_name": "Commonwealth Credit Partners BDC I, Inc."
     },
     {
       "cik": "0001577134",
@@ -743,7 +1031,11 @@
       "first_search": "\"elected to be regulated as a business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_TERRAINC",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": false,
+      "audit_reason": "SIC 6798: Real Estate Investment Trusts",
+      "sic_description": "Real Estate Investment Trusts",
+      "entity_name": "Terra Income Fund 6, LLC"
     },
     {
       "cik": "0001603480",
@@ -752,7 +1044,11 @@
       "first_search": "\"elected to be regulated as a business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_TCWDIREC",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": true,
+      "audit_reason": "",
+      "sic_description": "",
+      "entity_name": "TCW Direct Lending VIII LLC"
     },
     {
       "cik": "0002052153",
@@ -761,7 +1057,11 @@
       "first_search": "\"elected to be regulated as a business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_APOLLOOR",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": true,
+      "audit_reason": "",
+      "sic_description": "",
+      "entity_name": "Apollo Origination II"
     },
     {
       "cik": "0002043759",
@@ -770,7 +1070,11 @@
       "first_search": "\"elected to be regulated as a business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_LAGOEVER",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": true,
+      "audit_reason": "",
+      "sic_description": "",
+      "entity_name": "LAGO Evergreen Credit"
     },
     {
       "cik": "0001742313",
@@ -779,7 +1083,11 @@
       "first_search": "\"elected to be regulated as a business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_MONROECA",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": true,
+      "audit_reason": "",
+      "sic_description": "",
+      "entity_name": "Monroe Capital Income Plus Corp"
     },
     {
       "cik": "0001743415",
@@ -788,7 +1096,11 @@
       "first_search": "\"elected to be regulated as a business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_SCPPRIVA",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": true,
+      "audit_reason": "",
+      "sic_description": "",
+      "entity_name": "SCP Private Credit Income BDC LLC"
     },
     {
       "cik": "0001932591",
@@ -797,7 +1109,11 @@
       "first_search": "\"elected to be regulated as a business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_SLRPRIVA",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": true,
+      "audit_reason": "",
+      "sic_description": "",
+      "entity_name": "SLR Private Credit BDC II LLC"
     },
     {
       "cik": "0001832148",
@@ -806,7 +1122,11 @@
       "first_search": "\"elected to be regulated as a business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_SLRHCBDC",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": true,
+      "audit_reason": "",
+      "sic_description": "",
+      "entity_name": "SLR HC BDC LLC"
     },
     {
       "cik": "0002052152",
@@ -815,16 +1135,24 @@
       "first_search": "\"elected to be regulated as a business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_APOLLOOR",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": true,
+      "audit_reason": "",
+      "sic_description": "",
+      "entity_name": "Apollo Origination II"
     },
     {
       "cik": "0002012139",
       "fund_name": "Fortress Private Lending Fund",
-      "sic": "",
+      "sic": "6798",
       "first_search": "\"elected to be regulated as a business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_FORTRESS",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": false,
+      "audit_reason": "SIC 6798: Real Estate Investment Trusts",
+      "sic_description": "Real Estate Investment Trusts",
+      "entity_name": "Fortress Net Lease REIT"
     },
     {
       "cik": "0002011498",
@@ -833,7 +1161,11 @@
       "first_search": "\"elected to be regulated as a business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_AGLPRIVA",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": true,
+      "audit_reason": "",
+      "sic_description": "",
+      "entity_name": "AGL Private Credit Income Fund"
     },
     {
       "cik": "0001948368",
@@ -842,7 +1174,11 @@
       "first_search": "\"elected to be regulated as a business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_PHILLIPS",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": true,
+      "audit_reason": "",
+      "sic_description": "",
+      "entity_name": "Phillip Street Middle Market Lending Fund LLC"
     },
     {
       "cik": "0002006758",
@@ -851,7 +1187,11 @@
       "first_search": "\"elected to be regulated as a business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_MIDDLEMA",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": true,
+      "audit_reason": "",
+      "sic_description": "",
+      "entity_name": "Middle Market Apollo Institutional Private Lending"
     },
     {
       "cik": "0001850787",
@@ -860,16 +1200,24 @@
       "first_search": "\"non-traded\" \"business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_KAYNEDL2",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": true,
+      "audit_reason": "",
+      "sic_description": "",
+      "entity_name": "Kayne DL 2021, Inc."
     },
     {
       "cik": "0002066337",
       "fund_name": "CNL Strategic Residential Credit, Inc.",
-      "sic": "6798",
+      "sic": "6282",
       "first_search": "\"non-traded\" \"business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_CNLSTRAT",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": true,
+      "audit_reason": "",
+      "sic_description": "Investment Advice",
+      "entity_name": "CNL Strategic Capital, LLC"
     },
     {
       "cik": "0001726548",
@@ -878,7 +1226,11 @@
       "first_search": "\"non-traded\" \"business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_BCPARTNE",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": true,
+      "audit_reason": "",
+      "sic_description": "",
+      "entity_name": "BC Partners Lending Corp"
     },
     {
       "cik": "0001684682",
@@ -887,7 +1239,11 @@
       "first_search": "\"non-traded\" \"business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_CNLSTRAT",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": true,
+      "audit_reason": "",
+      "sic_description": "Investment Advice",
+      "entity_name": "CNL Strategic Capital, LLC"
     },
     {
       "cik": "0001851277",
@@ -896,7 +1252,11 @@
       "first_search": "\"non-traded\" \"business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_CARLYLES",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": true,
+      "audit_reason": "",
+      "sic_description": "",
+      "entity_name": "Carlyle Secured Lending III"
     },
     {
       "cik": "0001938649",
@@ -905,7 +1265,11 @@
       "first_search": "\"non-traded\" \"business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_PARTNERS",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": true,
+      "audit_reason": "",
+      "sic_description": "",
+      "entity_name": "Partners Group Lending Fund, LLC"
     },
     {
       "cik": "0001889668",
@@ -914,7 +1278,11 @@
       "first_search": "\"non-traded\" \"business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_BLUEOWLT",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": true,
+      "audit_reason": "",
+      "sic_description": "",
+      "entity_name": "Blue Owl Technology Finance Corp. II"
     },
     {
       "cik": "0001501729",
@@ -923,7 +1291,11 @@
       "first_search": "\"non-traded\" \"business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_FSSPECIA",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": true,
+      "audit_reason": "",
+      "sic_description": "",
+      "entity_name": "FS Specialty Lending Fund"
     },
     {
       "cik": "0001954360",
@@ -932,7 +1304,11 @@
       "first_search": "\"non-traded\" \"business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_CRESCENT",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": true,
+      "audit_reason": "",
+      "sic_description": "",
+      "entity_name": "Crescent Private Credit Income Corp"
     },
     {
       "cik": "0001851322",
@@ -941,7 +1317,11 @@
       "first_search": "\"non-traded\" \"business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_NORTHHAV",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": true,
+      "audit_reason": "",
+      "sic_description": "",
+      "entity_name": "North Haven Private Income Fund A LLC"
     },
     {
       "cik": "0001976336",
@@ -950,7 +1330,11 @@
       "first_search": "\"non-traded\" \"business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_ANTARESP",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": true,
+      "audit_reason": "",
+      "sic_description": "",
+      "entity_name": "Antares Private Credit Fund"
     },
     {
       "cik": "0001571329",
@@ -959,7 +1343,11 @@
       "first_search": "\"interval fund\" \"business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_LOGANRID",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": true,
+      "audit_reason": "",
+      "sic_description": "",
+      "entity_name": "Logan Ridge Finance Corp."
     },
     {
       "cik": "0001661306",
@@ -968,7 +1356,11 @@
       "first_search": "\"interval fund\" \"business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_HANCOCKP",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": true,
+      "audit_reason": "",
+      "sic_description": "",
+      "entity_name": "Hancock Park Corporate Income, Inc."
     },
     {
       "cik": "0002026738",
@@ -977,7 +1369,11 @@
       "first_search": "\"Class S shares\" \"Class I shares\" \"business development\"",
       "status": "candidate",
       "derived_ticker": "PHC_FORTRESS",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": false,
+      "audit_reason": "SIC 6798: Real Estate Investment Trusts",
+      "sic_description": "Real Estate Investment Trusts",
+      "entity_name": "Fortress Net Lease REIT"
     },
     {
       "cik": "0001882850",
@@ -986,7 +1382,11 @@
       "first_search": "\"Class S shares\" \"Class I shares\" \"business development\"",
       "status": "candidate",
       "derived_ticker": "PHC_APOLLORE",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": false,
+      "audit_reason": "SIC 6798: Real Estate Investment Trusts",
+      "sic_description": "Real Estate Investment Trusts",
+      "entity_name": "Apollo Realty Income Solutions, Inc."
     },
     {
       "cik": "0001944366",
@@ -995,7 +1395,11 @@
       "first_search": "\"Class S shares\" \"Class I shares\" \"business development\"",
       "status": "candidate",
       "derived_ticker": "PHC_BLUEOWLR",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": false,
+      "audit_reason": "SIC 6500: Real Estate",
+      "sic_description": "Real Estate",
+      "entity_name": "Blue Owl Real Estate Net Lease Trust"
     },
     {
       "cik": "0001868516",
@@ -1004,7 +1408,11 @@
       "first_search": "\"Class S shares\" \"Class I shares\" \"business development\"",
       "status": "candidate",
       "derived_ticker": "PHC_STRATCAP",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": false,
+      "audit_reason": "SIC 6798: Real Estate Investment Trusts",
+      "sic_description": "Real Estate Investment Trusts",
+      "entity_name": "StratCap Digital Infrastructure REIT, Inc."
     },
     {
       "cik": "0001966394",
@@ -1013,7 +1421,11 @@
       "first_search": "\"Class S shares\" \"Class I shares\" \"business development\"",
       "status": "candidate",
       "derived_ticker": "PHC_FORTRESS",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": false,
+      "audit_reason": "SIC 6798: Real Estate Investment Trusts",
+      "sic_description": "Real Estate Investment Trusts",
+      "entity_name": "Fortress Net Lease REIT"
     },
     {
       "cik": "0001893262",
@@ -1022,7 +1434,11 @@
       "first_search": "\"Class S shares\" \"Class I shares\" \"business development\"",
       "status": "candidate",
       "derived_ticker": "PHC_JPMORGAN",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": false,
+      "audit_reason": "SIC 6798: Real Estate Investment Trusts",
+      "sic_description": "Real Estate Investment Trusts",
+      "entity_name": "J.P. Morgan Real Estate Income Trust, Inc."
     },
     {
       "cik": "0002069692",
@@ -1031,7 +1447,11 @@
       "first_search": "\"Class S shares\" \"Class I shares\" \"business development\"",
       "status": "candidate",
       "derived_ticker": "PHC_BLUEOWLD",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": false,
+      "audit_reason": "SIC 6798: Real Estate Investment Trusts",
+      "sic_description": "Real Estate Investment Trusts",
+      "entity_name": "Blue Owl Digital Infrastructure Trust"
     },
     {
       "cik": "0001711799",
@@ -1040,7 +1460,11 @@
       "first_search": "\"Class S shares\" \"Class I shares\" \"business development\"",
       "status": "candidate",
       "derived_ticker": "PHC_NUVEENGL",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": false,
+      "audit_reason": "SIC 6798: Real Estate Investment Trusts",
+      "sic_description": "Real Estate Investment Trusts",
+      "entity_name": "Nuveen Global Cities REIT, Inc."
     },
     {
       "cik": "0001911321",
@@ -1049,7 +1473,11 @@
       "first_search": "\"Class S shares\" \"Class I shares\" \"business development\"",
       "status": "candidate",
       "derived_ticker": "PHC_KENNEDYL",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": true,
+      "audit_reason": "",
+      "sic_description": "",
+      "entity_name": "Kennedy Lewis Capital Co"
     },
     {
       "cik": "0002026448",
@@ -1058,7 +1486,11 @@
       "first_search": "\"Class S shares\" \"Class I shares\" \"business development\"",
       "status": "candidate",
       "derived_ticker": "PHC_PRINCIPA",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": false,
+      "audit_reason": "SIC 6798: Real Estate Investment Trusts",
+      "sic_description": "Real Estate Investment Trusts",
+      "entity_name": "Principal Credit Real Estate Income Trust"
     },
     {
       "cik": "0001946997",
@@ -1067,7 +1499,11 @@
       "first_search": "\"Class S shares\" \"Class I shares\" \"business development\"",
       "status": "candidate",
       "derived_ticker": "PHC_EQTEXETE",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": false,
+      "audit_reason": "SIC 6798: Real Estate Investment Trusts",
+      "sic_description": "Real Estate Investment Trusts",
+      "entity_name": "EQT Exeter Real Estate Income Trust, Inc."
     },
     {
       "cik": "0001983514",
@@ -1076,7 +1512,11 @@
       "first_search": "\"perpetual-life\" \"business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_LGAMPRIV",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": true,
+      "audit_reason": "",
+      "sic_description": "",
+      "entity_name": "LGAM Private Credit LLC"
     },
     {
       "cik": "0001973476",
@@ -1085,7 +1525,11 @@
       "first_search": "\"perpetual-life\" \"business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_NORTHHAV",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": true,
+      "audit_reason": "",
+      "sic_description": "",
+      "entity_name": "North Haven Private Income Fund A LLC"
     },
     {
       "cik": "0002008748",
@@ -1094,7 +1538,11 @@
       "first_search": "\"perpetual-life\" \"business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_LORDABBE",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": true,
+      "audit_reason": "",
+      "sic_description": "",
+      "entity_name": "Lord Abbett Private Credit Fund"
     },
     {
       "cik": "0002061174",
@@ -1103,7 +1551,11 @@
       "first_search": "\"perpetual-life\" \"business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_SOUNDPOI",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": true,
+      "audit_reason": "",
+      "sic_description": "",
+      "entity_name": "Sound Point Direct Lending BDC"
     },
     {
       "cik": "0002065397",
@@ -1112,7 +1564,11 @@
       "first_search": "\"perpetual-life\" \"business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_ANTARESS",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": true,
+      "audit_reason": "",
+      "sic_description": "",
+      "entity_name": "Antares Strategic Credit Fund II LLC"
     },
     {
       "cik": "0002033695",
@@ -1121,7 +1577,11 @@
       "first_search": "\"perpetual-life\" \"business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_NEWMOUNT",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": false,
+      "audit_reason": "SIC 6798: Real Estate Investment Trusts",
+      "sic_description": "Real Estate Investment Trusts",
+      "entity_name": "New Mountain Net Lease Trust"
     },
     {
       "cik": "0001825265",
@@ -1130,7 +1590,11 @@
       "first_search": "\"perpetual-life\" \"business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_TCWDIREC",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": true,
+      "audit_reason": "",
+      "sic_description": "",
+      "entity_name": "TCW Direct Lending VIII LLC"
     },
     {
       "cik": "0001905824",
@@ -1139,7 +1603,11 @@
       "first_search": "\"perpetual-life\" \"business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_PIMCOCAP",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": true,
+      "audit_reason": "restored: name pattern was over-broad; this IS a BDC",
+      "sic_description": "",
+      "entity_name": "PIMCO Capital Solutions BDC Corp."
     },
     {
       "cik": "0002050260",
@@ -1148,7 +1616,11 @@
       "first_search": "\"perpetual-life\" \"business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_TPGPRIVA",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": false,
+      "audit_reason": "name pattern: TPG Private Equity Opportunities, L.P.",
+      "sic_description": "Commodity Contracts Brokers & Dealers",
+      "entity_name": "TPG Private Equity Opportunities, L.P."
     },
     {
       "cik": "0002035428",
@@ -1157,7 +1629,11 @@
       "first_search": "\"perpetual-life\" \"business development company\"",
       "status": "candidate",
       "derived_ticker": "PHC_FRANKLIN",
-      "system_generated": true
+      "system_generated": true,
+      "is_bdc": false,
+      "audit_reason": "SIC 6798: Real Estate Investment Trusts",
+      "sic_description": "Real Estate Investment Trusts",
+      "entity_name": "Franklin BSP Real Estate Debt, Inc."
     }
   ]
 }
