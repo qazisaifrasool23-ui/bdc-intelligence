@@ -18,7 +18,8 @@
     "total_return_index": 14.97,
     "cumulative_equity_raised_mn": 0.0,
     "data_quality_score": 100.0,
-    "fixed_rate_pct": 94.2
+    "fixed_rate_pct": 94.2,
+    "interest_coverage_ratio": 132.0
   },
   {
     "quarter": "Q4 2021",
@@ -56,7 +57,8 @@
     "cumulative_equity_raised_mn": 0.0,
     "data_quality_score": 100.0,
     "nav_per_share_qoq_change": 0.0,
-    "fixed_rate_pct": 94.3
+    "fixed_rate_pct": 94.3,
+    "interest_coverage_ratio": 27.3611
   },
   {
     "quarter": "Q2 2022",
@@ -78,7 +80,8 @@
     "cumulative_equity_raised_mn": 0.0,
     "data_quality_score": 100.0,
     "nav_per_share_qoq_change": 0.0,
-    "fixed_rate_pct": 94.1
+    "fixed_rate_pct": 94.1,
+    "interest_coverage_ratio": 18.4
   },
   {
     "quarter": "Q3 2022",
@@ -128,7 +131,8 @@
     "nav_per_share_yoy_pct": 0.0,
     "nav_per_share_qoq_change": 0.0,
     "nav_per_share_yoy_growth_pct": 0.0,
-    "fixed_rate_pct": 93.5
+    "fixed_rate_pct": 93.5,
+    "interest_coverage_ratio": 2.0221
   },
   {
     "quarter": "Q1 2023",
@@ -158,7 +162,9 @@
     "nav_per_share_yoy_pct": 0.0,
     "nav_per_share_qoq_change": 0.0,
     "nav_per_share_yoy_growth_pct": 0.0,
-    "fixed_rate_pct": 92.8
+    "fixed_rate_pct": 92.8,
+    "interest_coverage_ratio": 1.9786,
+    "nii_per_share_yoy_growth_pct": 81.1652
   },
   {
     "quarter": "Q2 2023",
@@ -188,7 +194,9 @@
     "equity_raised_mn": 42.2,
     "nav_per_share_qoq_change": 0.0,
     "nav_per_share_yoy_growth_pct": 0.0,
-    "fixed_rate_pct": 93.5
+    "fixed_rate_pct": 93.5,
+    "interest_coverage_ratio": 1.9699,
+    "nii_per_share_yoy_growth_pct": 940.619
   },
   {
     "quarter": "Q3 2023",
@@ -218,7 +226,8 @@
     "nii_per_share": 1.3922,
     "nav_per_share_qoq_change": 0.0,
     "nav_per_share_yoy_growth_pct": 0.0,
-    "fixed_rate_pct": 94.0
+    "fixed_rate_pct": 94.0,
+    "interest_coverage_ratio": 1.581
   },
   {
     "quarter": "Q4 2023",
@@ -250,7 +259,9 @@
     "nav_i": 25.0,
     "nav_per_share_qoq_change": 0.0,
     "nav_per_share_yoy_growth_pct": 0.0,
-    "fixed_rate_pct": 94.1
+    "fixed_rate_pct": 94.1,
+    "interest_coverage_ratio": 1.6003,
+    "nii_per_share_yoy_growth_pct": 5.612
   },
   {
     "quarter": "Q1 2024",
@@ -282,7 +293,9 @@
     "nav_i": 25.0,
     "nav_per_share_qoq_change": 0.0,
     "nav_per_share_yoy_growth_pct": 0.0,
-    "fixed_rate_pct": 94.4
+    "fixed_rate_pct": 94.4,
+    "interest_coverage_ratio": 1.6317,
+    "nii_per_share_yoy_growth_pct": 7.4449
   },
   {
     "quarter": "Q2 2024",
@@ -317,7 +330,9 @@
     "nav_per_share_qoq_change": 0.0,
     "nav_per_share_yoy_growth_pct": 0.0,
     "fixed_rate_pct": 94.6,
-    "na_dollar_amount_mn": 4.5218
+    "na_dollar_amount_mn": 4.5218,
+    "interest_coverage_ratio": 1.1884,
+    "nii_per_share_yoy_growth_pct": -28.5502
   },
   {
     "quarter": "Q3 2024",
@@ -378,7 +393,9 @@
     "nav_per_share_qoq_change": 0.0,
     "nav_per_share_yoy_growth_pct": 0.0,
     "fixed_rate_pct": 95.0,
-    "na_dollar_amount_mn": 6.1307
+    "na_dollar_amount_mn": 6.1307,
+    "interest_coverage_ratio": 0.4999,
+    "nii_per_share_yoy_growth_pct": -13.1762
   },
   {
     "quarter": "Q1 2025",
@@ -414,7 +431,9 @@
     "nav_per_share_yoy_growth_pct": 0.0,
     "fixed_rate_pct": 94.4,
     "na_dollar_amount_mn": 4.9301,
-    "net_na_change_mn": -1.2006
+    "net_na_change_mn": -1.2006,
+    "interest_coverage_ratio": 0.5694,
+    "nii_per_share_yoy_growth_pct": -22.5707
   },
   {
     "quarter": "Q2 2025",
@@ -450,7 +469,9 @@
     "nav_per_share_yoy_growth_pct": 0.0,
     "fixed_rate_pct": 95.1,
     "na_dollar_amount_mn": 3.791,
-    "net_na_change_mn": -1.1391
+    "net_na_change_mn": -1.1391,
+    "interest_coverage_ratio": 0.4407,
+    "nii_per_share_yoy_growth_pct": -9.4173
   },
   {
     "quarter": "Q3 2025",
@@ -510,6 +531,8 @@
     "na_dollar_amount_mn": 2.3822,
     "subordinated_pct": 8.5,
     "originations_mn": 128.6,
-    "origination_velocity_pct": 10.9972
+    "origination_velocity_pct": 10.9972,
+    "interest_coverage_ratio": 0.3812,
+    "nii_per_share_yoy_growth_pct": 6.8402
   }
 ]

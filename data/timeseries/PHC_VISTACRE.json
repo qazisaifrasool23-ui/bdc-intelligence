@@ -56,7 +56,8 @@
     "total_return_index": 19.65,
     "cumulative_equity_raised_mn": 78.0,
     "data_quality_score": 100.0,
-    "nav_per_share_qoq_change": 0.05
+    "nav_per_share_qoq_change": 0.05,
+    "interest_coverage_ratio": 0.0498
   },
   {
     "quarter": "Q2 2024",
@@ -79,7 +80,8 @@
     "total_return_index": 19.67,
     "cumulative_equity_raised_mn": 78.0,
     "data_quality_score": 100.0,
-    "nav_per_share_qoq_change": 0.02
+    "nav_per_share_qoq_change": 0.02,
+    "interest_coverage_ratio": 0.5777
   },
   {
     "quarter": "Q3 2024",
@@ -102,7 +104,8 @@
     "total_return_index": 19.62,
     "cumulative_equity_raised_mn": 78.0,
     "data_quality_score": 100.0,
-    "nav_per_share_qoq_change": -0.05
+    "nav_per_share_qoq_change": -0.05,
+    "interest_coverage_ratio": 0.7564
   },
   {
     "quarter": "Q4 2024",
@@ -129,7 +132,8 @@
     "cumulative_equity_raised_mn": 78.0,
     "data_quality_score": 100.0,
     "nav_per_share_qoq_change": 0.18,
-    "nav_per_share_yoy_growth_pct": 1.0204
+    "nav_per_share_yoy_growth_pct": 1.0204,
+    "interest_coverage_ratio": 0.8612
   },
   {
     "quarter": "Q1 2025",
@@ -154,7 +158,9 @@
     "cumulative_equity_raised_mn": 78.0,
     "data_quality_score": 100.0,
     "nav_per_share_qoq_change": -0.21,
-    "nav_per_share_yoy_growth_pct": -0.3053
+    "nav_per_share_yoy_growth_pct": -0.3053,
+    "interest_coverage_ratio": 1.1169,
+    "nii_per_share_yoy_growth_pct": 2739.2308
   },
   {
     "quarter": "Q2 2025",
@@ -179,7 +185,9 @@
     "cumulative_equity_raised_mn": 78.0,
     "data_quality_score": 100.0,
     "nav_per_share_qoq_change": 0.07,
-    "nav_per_share_yoy_growth_pct": -0.0508
+    "nav_per_share_yoy_growth_pct": -0.0508,
+    "interest_coverage_ratio": 1.2046,
+    "nii_per_share_yoy_growth_pct": 52.4987
   },
   {
     "quarter": "Q3 2025",
@@ -204,7 +212,9 @@
     "cumulative_equity_raised_mn": 78.0,
     "data_quality_score": 100.0,
     "nav_per_share_qoq_change": -0.01,
-    "nav_per_share_yoy_growth_pct": 0.1529
+    "nav_per_share_yoy_growth_pct": 0.1529,
+    "interest_coverage_ratio": 1.5128,
+    "nii_per_share_yoy_growth_pct": 44.3458
   },
   {
     "quarter": "Q4 2025",
@@ -252,6 +262,8 @@
     "redemption_current_status": {
       "rate_pct": 5.0,
       "gate_active": 0
-    }
+    },
+    "interest_coverage_ratio": 1.3902,
+    "nii_per_share_yoy_growth_pct": 17.7147
   }
 ]

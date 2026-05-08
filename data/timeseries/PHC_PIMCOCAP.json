@@ -88,7 +88,8 @@
     "data_quality_score": 100.0,
     "nav_per_share_qoq_change": 0.11,
     "fixed_rate_pct": 94.78,
-    "expense_ratio_pct": 0.2056
+    "expense_ratio_pct": 0.2056,
+    "interest_coverage_ratio": 847.75
   },
   {
     "quarter": "Q3 2023",
@@ -117,7 +118,8 @@
     "nav_per_share_qoq_change": -0.25,
     "nav_per_share_yoy_growth_pct": -6.9138,
     "fixed_rate_pct": 95.61,
-    "expense_ratio_pct": 0.2378
+    "expense_ratio_pct": 0.2378,
+    "interest_coverage_ratio": 102.2063
   },
   {
     "quarter": "Q4 2023",
@@ -146,7 +148,8 @@
     "nav_per_share_qoq_change": -0.54,
     "nav_per_share_yoy_growth_pct": -4.9946,
     "fixed_rate_pct": 95.61,
-    "expense_ratio_pct": 0.3436
+    "expense_ratio_pct": 0.3436,
+    "interest_coverage_ratio": 13.2506
   },
   {
     "quarter": "Q1 2024",
@@ -175,7 +178,9 @@
     "nav_per_share_qoq_change": 0.3,
     "nav_per_share_yoy_growth_pct": -4.0297,
     "fixed_rate_pct": 94.67,
-    "expense_ratio_pct": 0.313
+    "expense_ratio_pct": 0.313,
+    "interest_coverage_ratio": 24.5023,
+    "nii_per_share_yoy_growth_pct": 7.4859
   },
   {
     "quarter": "Q2 2024",
@@ -203,7 +208,8 @@
     "nav_per_share_qoq_change": 0.05,
     "nav_per_share_yoy_growth_pct": -4.6122,
     "fixed_rate_pct": 94.65,
-    "expense_ratio_pct": 0.3913
+    "expense_ratio_pct": 0.3913,
+    "nii_per_share_yoy_growth_pct": -9.0603
   },
   {
     "quarter": "Q3 2024",
@@ -233,7 +239,8 @@
     "nav_per_share_qoq_change": 0.07,
     "nav_per_share_yoy_growth_pct": -1.2917,
     "fixed_rate_pct": 94.65,
-    "expense_ratio_pct": 0.9465
+    "expense_ratio_pct": 0.9465,
+    "nii_per_share_yoy_growth_pct": -26.183
   },
   {
     "quarter": "Q4 2024",
@@ -263,7 +270,8 @@
     "nav_per_share_qoq_change": -0.46,
     "nav_per_share_yoy_growth_pct": -0.4571,
     "fixed_rate_pct": 95.67,
-    "expense_ratio_pct": 0.8159
+    "expense_ratio_pct": 0.8159,
+    "nii_per_share_yoy_growth_pct": -6.7723
   },
   {
     "quarter": "Q1 2025",
@@ -293,7 +301,8 @@
     "nav_per_share_qoq_change": 0.12,
     "nav_per_share_yoy_growth_pct": -2.4309,
     "fixed_rate_pct": 95.67,
-    "expense_ratio_pct": 0.6377
+    "expense_ratio_pct": 0.6377,
+    "nii_per_share_yoy_growth_pct": -13.7681
   },
   {
     "quarter": "Q2 2025",
@@ -323,7 +332,8 @@
     "nav_per_share_qoq_change": 0.07,
     "nav_per_share_yoy_growth_pct": -2.1978,
     "fixed_rate_pct": 95.68,
-    "expense_ratio_pct": 0.7991
+    "expense_ratio_pct": 0.7991,
+    "nii_per_share_yoy_growth_pct": -28.4479
   },
   {
     "quarter": "Q3 2025",
@@ -353,7 +363,8 @@
     "nav_per_share_qoq_change": -0.23,
     "nav_per_share_yoy_growth_pct": -5.4526,
     "fixed_rate_pct": 95.78,
-    "expense_ratio_pct": 0.803
+    "expense_ratio_pct": 0.803,
+    "nii_per_share_yoy_growth_pct": -2.4573
   },
   {
     "quarter": "Q4 2025",
@@ -407,6 +418,10 @@
     "redemption_current_status": {
       "rate_pct": 5.0,
       "gate_active": 0
-    }
+    },
+    "pik_income_mn": 1.2335,
+    "cash_income_mn": 3.8635,
+    "cash_income_pct": 75.8,
+    "nii_per_share_yoy_growth_pct": 4.0701
   }
 ]

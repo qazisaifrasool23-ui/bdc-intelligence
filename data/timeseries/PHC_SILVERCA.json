@@ -158,7 +158,8 @@
     "cumulative_equity_raised_mn": 0.0,
     "implied_recovery_rate_pct": 100.0,
     "data_quality_score": 100.0,
-    "expense_ratio_pct": 0.9912
+    "expense_ratio_pct": 0.9912,
+    "interest_coverage_ratio": 3.6517
   },
   {
     "quarter": "Q4 2022",
@@ -190,7 +191,8 @@
     "implied_recovery_rate_pct": 100.0,
     "data_quality_score": 100.0,
     "na_dollar_amount_mn": 55.2273,
-    "expense_ratio_pct": 0.5602
+    "expense_ratio_pct": 0.5602,
+    "interest_coverage_ratio": 5.0076
   },
   {
     "quarter": "Q1 2023",
@@ -224,7 +226,8 @@
     "nav_per_share_qoq_change": 0.6439,
     "na_dollar_amount_mn": 58.7216,
     "net_na_change_mn": 3.4943,
-    "expense_ratio_pct": 1.5145
+    "expense_ratio_pct": 1.5145,
+    "interest_coverage_ratio": 3.8503
   },
   {
     "quarter": "Q2 2023",
@@ -256,7 +259,8 @@
     "nav_per_share_qoq_change": 1.1428,
     "na_dollar_amount_mn": 61.7019,
     "net_na_change_mn": 2.9803,
-    "expense_ratio_pct": 1.6484
+    "expense_ratio_pct": 1.6484,
+    "interest_coverage_ratio": 3.9126
   },
   {
     "quarter": "Q3 2023",
@@ -285,7 +289,8 @@
     "implied_recovery_rate_pct": 100.0,
     "data_quality_score": 100.0,
     "nav_per_share_qoq_change": -0.1055,
-    "expense_ratio_pct": 1.9472
+    "expense_ratio_pct": 1.9472,
+    "interest_coverage_ratio": 4.4982
   },
   {
     "quarter": "Q4 2023",
@@ -318,7 +323,9 @@
     "data_quality_score": 100.0,
     "nav_per_share_qoq_change": -1.5199,
     "nav_per_share_yoy_growth_pct": 0.4271,
-    "expense_ratio_pct": 1.5456
+    "expense_ratio_pct": 1.5456,
+    "interest_coverage_ratio": 5.582,
+    "nii_per_share_yoy_growth_pct": -33.6225
   },
   {
     "quarter": "Q1 2024",
@@ -346,7 +353,9 @@
     "data_quality_score": 100.0,
     "nav_per_share_qoq_change": 0.6093,
     "nav_per_share_yoy_growth_pct": 0.3299,
-    "expense_ratio_pct": 1.0516
+    "expense_ratio_pct": 1.0516,
+    "interest_coverage_ratio": 11.3274,
+    "nii_per_share_yoy_growth_pct": 7.3975
   },
   {
     "quarter": "Q2 2024",
@@ -369,7 +378,8 @@
     "data_quality_score": 100.0,
     "nav_per_share_qoq_change": -4.1344,
     "nav_per_share_yoy_growth_pct": -13.0227,
-    "expense_ratio_pct": -0.3098
+    "expense_ratio_pct": -0.3098,
+    "nii_per_share_yoy_growth_pct": 21.1173
   },
   {
     "quarter": "Q3 2024",
@@ -393,7 +403,8 @@
     "data_quality_score": 100.0,
     "nav_per_share_qoq_change": -9.3408,
     "nav_per_share_yoy_growth_pct": -36.4709,
-    "expense_ratio_pct": 0.8379
+    "expense_ratio_pct": 0.8379,
+    "nii_per_share_yoy_growth_pct": -23.147
   },
   {
     "quarter": "Q4 2024",
@@ -420,7 +431,9 @@
     "cumulative_equity_raised_mn": 0.0,
     "data_quality_score": 100.0,
     "nav_per_share_qoq_change": -1.5645,
-    "nav_per_share_yoy_growth_pct": -38.0501
+    "nav_per_share_yoy_growth_pct": -38.0501,
+    "interest_coverage_ratio": 16.3869,
+    "nii_per_share_yoy_growth_pct": -4.3055
   },
   {
     "quarter": "Q1 2025",
@@ -450,7 +463,9 @@
     "data_quality_score": 100.0,
     "nav_per_share_qoq_change": 0.4742,
     "nav_per_share_yoy_growth_pct": -37.7991,
-    "expense_ratio_pct": 1.973
+    "expense_ratio_pct": 1.973,
+    "interest_coverage_ratio": 2.2292,
+    "nii_per_share_yoy_growth_pct": -34.0671
   },
   {
     "quarter": "Q2 2025",
@@ -477,7 +492,9 @@
     "data_quality_score": 100.0,
     "nav_per_share_qoq_change": -2.9612,
     "nav_per_share_yoy_growth_pct": -38.9316,
-    "expense_ratio_pct": 2.2102
+    "expense_ratio_pct": 2.2102,
+    "interest_coverage_ratio": 1.6215,
+    "nii_per_share_yoy_growth_pct": -60.5892
   },
   {
     "quarter": "Q3 2025",
@@ -504,7 +521,9 @@
     "data_quality_score": 100.0,
     "nav_per_share_qoq_change": -0.0883,
     "nav_per_share_yoy_growth_pct": -16.5203,
-    "expense_ratio_pct": 1.4966
+    "expense_ratio_pct": 1.4966,
+    "interest_coverage_ratio": 2.5943,
+    "nii_per_share_yoy_growth_pct": -32.7638
   },
   {
     "quarter": "Q4 2025",
@@ -536,6 +555,8 @@
     "expense_ratio_pct": 1.5147,
     "second_lien_pct": 0.0,
     "subordinated_pct": 15.0,
-    "redemption_history": []
+    "redemption_history": [],
+    "interest_coverage_ratio": 1.7571,
+    "nii_per_share_yoy_growth_pct": -65.9433
   }
 ]

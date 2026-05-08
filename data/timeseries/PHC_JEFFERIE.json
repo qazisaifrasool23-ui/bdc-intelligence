@@ -65,7 +65,8 @@
     "scaffold_reason": "XBRL empty and filing text too sparse for extraction",
     "extraction_attempted": "2026-05-06",
     "rerun_when": "next 10-Q filing after 2026-06-30",
-    "nav_per_share_qoq_change": 0.2
+    "nav_per_share_qoq_change": 0.2,
+    "interest_coverage_ratio": 1.3259
   },
   {
     "quarter": "Q2 2024",
@@ -95,7 +96,8 @@
     "scaffold_reason": "XBRL empty and filing text too sparse for extraction",
     "extraction_attempted": "2026-05-06",
     "rerun_when": "next 10-Q filing after 2026-06-30",
-    "nav_per_share_qoq_change": 0.12
+    "nav_per_share_qoq_change": 0.12,
+    "interest_coverage_ratio": 1.4197
   },
   {
     "quarter": "Q3 2024",
@@ -127,7 +129,8 @@
     "extraction_attempted": "2026-05-06",
     "rerun_when": "next 10-Q filing after 2026-06-30",
     "nav_per_share_qoq_change": -0.07,
-    "nav_per_share_yoy_growth_pct": 50.0
+    "nav_per_share_yoy_growth_pct": 50.0,
+    "interest_coverage_ratio": 1.2417
   },
   {
     "quarter": "Q4 2024",
@@ -159,7 +162,8 @@
     "extraction_attempted": "2026-05-06",
     "rerun_when": "next 10-Q filing after 2026-06-30",
     "nav_per_share_qoq_change": -0.4,
-    "nav_per_share_yoy_growth_pct": -1.0169
+    "nav_per_share_yoy_growth_pct": -1.0169,
+    "interest_coverage_ratio": 1.2931
   },
   {
     "quarter": "Q1 2025",
@@ -191,7 +195,9 @@
     "extraction_attempted": "2026-05-06",
     "rerun_when": "next 10-Q filing after 2026-06-30",
     "nav_per_share_qoq_change": -0.05,
-    "nav_per_share_yoy_growth_pct": -2.6756
+    "nav_per_share_yoy_growth_pct": -2.6756,
+    "interest_coverage_ratio": 1.1386,
+    "nii_per_share_yoy_growth_pct": 1.569
   },
   {
     "quarter": "Q2 2025",
@@ -228,7 +234,9 @@
     "redemption_requests_mn": 0.143,
     "redemption_fulfilled_mn": 0.143,
     "redemption_backlog_mn": 0.0,
-    "redemption_fulfillment_pct": 100.0
+    "redemption_fulfillment_pct": 100.0,
+    "interest_coverage_ratio": 1.1085,
+    "nii_per_share_yoy_growth_pct": -27.5634
   },
   {
     "quarter": "Q3 2025",
@@ -266,7 +274,9 @@
     "redemption_requests_mn": 0.297,
     "redemption_fulfilled_mn": 0.297,
     "redemption_backlog_mn": 0.0,
-    "redemption_fulfillment_pct": 100.0
+    "redemption_fulfillment_pct": 100.0,
+    "interest_coverage_ratio": 1.138,
+    "nii_per_share_yoy_growth_pct": -27.0501
   },
   {
     "quarter": "Q4 2025",
@@ -334,6 +344,8 @@
     "redemption_current_status": {
       "rate_pct": 5.0,
       "gate_active": 0
-    }
+    },
+    "interest_coverage_ratio": 1.2451,
+    "nii_per_share_yoy_growth_pct": -19.8139
   }
 ]

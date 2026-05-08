@@ -136,7 +136,8 @@
     "cumulative_dividends_paid": 0.0,
     "cumulative_equity_raised_mn": 0.0,
     "data_quality_score": 100.0,
-    "fixed_rate_pct": 91.63
+    "fixed_rate_pct": 91.63,
+    "interest_coverage_ratio": 2021.0
   },
   {
     "quarter": "Q4 2022",
@@ -223,7 +224,8 @@
     "nii_per_share": 25.8071,
     "avg_position_size_mn": 18.932,
     "fixed_rate_pct": 92.55,
-    "expense_ratio_pct": 0.5166
+    "expense_ratio_pct": 0.5166,
+    "interest_coverage_ratio": 20.2977
   },
   {
     "quarter": "Q4 2023",
@@ -245,7 +247,8 @@
     "floating_rate_pct": 7.45,
     "nii_per_share": 29.9643,
     "fixed_rate_pct": 92.55,
-    "expense_ratio_pct": 0.5797
+    "expense_ratio_pct": 0.5797,
+    "interest_coverage_ratio": 48.7212
   },
   {
     "quarter": "Q1 2024",
@@ -268,7 +271,9 @@
     "shares_outstanding": 169101,
     "nii_per_share": 1.1354,
     "fixed_rate_pct": 100.0,
-    "expense_ratio_pct": 2.1532
+    "expense_ratio_pct": 2.1532,
+    "interest_coverage_ratio": 0.2297,
+    "nii_per_share_yoy_growth_pct": -93.3616
   },
   {
     "quarter": "Q2 2024",
@@ -292,7 +297,8 @@
     "shares_outstanding": 169101,
     "nii_per_share": 2.9154,
     "fixed_rate_pct": 96.22,
-    "expense_ratio_pct": 1.1975
+    "expense_ratio_pct": 1.1975,
+    "nii_per_share_yoy_growth_pct": -87.8944
   },
   {
     "quarter": "Q3 2024",
@@ -316,7 +322,8 @@
     "shares_outstanding": 169101,
     "nii_per_share": 3.4831,
     "fixed_rate_pct": 96.28,
-    "expense_ratio_pct": 1.0994
+    "expense_ratio_pct": 1.0994,
+    "nii_per_share_yoy_growth_pct": -86.5033
   },
   {
     "quarter": "Q4 2024",
@@ -339,7 +346,8 @@
     "shares_outstanding": 169101,
     "nii_per_share": 6.2211,
     "fixed_rate_pct": 95.98,
-    "expense_ratio_pct": 0.6245
+    "expense_ratio_pct": 0.6245,
+    "nii_per_share_yoy_growth_pct": -79.2383
   },
   {
     "quarter": "Q1 2025",
@@ -362,7 +370,8 @@
     "shares_outstanding": 169101,
     "nii_per_share": 7.191,
     "fixed_rate_pct": 96.75,
-    "expense_ratio_pct": 0.6426
+    "expense_ratio_pct": 0.6426,
+    "nii_per_share_yoy_growth_pct": 533.3451
   },
   {
     "quarter": "Q2 2025",
@@ -386,7 +395,8 @@
     "total_investment_income_mn": 1.544,
     "nii_per_share": 7.8592,
     "fixed_rate_pct": 97.19,
-    "expense_ratio_pct": 0.7046
+    "expense_ratio_pct": 0.7046,
+    "nii_per_share_yoy_growth_pct": 169.5754
   },
   {
     "quarter": "Q3 2025",
@@ -409,7 +419,8 @@
     "total_investment_income_mn": 0.435,
     "nii_per_share": 8.2732,
     "fixed_rate_pct": 97.52,
-    "expense_ratio_pct": 0.7543
+    "expense_ratio_pct": 0.7543,
+    "nii_per_share_yoy_growth_pct": 137.524
   },
   {
     "quarter": "Q4 2025",
@@ -436,6 +447,7 @@
     "fixed_rate_pct": 97.81,
     "na_dollar_amount_mn": 20.5126,
     "expense_ratio_pct": 0.5003,
-    "redemption_gate_active": 1
+    "redemption_gate_active": 1,
+    "nii_per_share_yoy_growth_pct": 38.2135
   }
 ]
