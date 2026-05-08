@@ -469,6 +469,11 @@
     "nav_per_share_yoy_pct": -1.77,
     "cumulative_equity_raised_mn": 0.0,
     "redemption_gate_active": 0,
-    "redemption_rate_pct": 5
+    "redemption_rate_pct": 5,
+    "redemption_history": [],
+    "redemption_current_status": {
+      "rate_pct": 5.0,
+      "gate_active": 0
+    }
   }
 ]

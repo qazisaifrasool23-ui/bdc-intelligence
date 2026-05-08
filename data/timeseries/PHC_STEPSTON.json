@@ -287,6 +287,27 @@
     "nav_per_share_qoq_change": -0.0151,
     "nav_per_share_yoy_growth_pct": -63.2077,
     "expense_ratio_pct": 1.6678,
-    "redemption_gate_active": 1
+    "redemption_gate_active": 0,
+    "redemption_rate_pct": 5.0,
+    "redemption_requests_mn": 0.142,
+    "redemption_fulfilled_mn": 0.142,
+    "redemption_backlog_mn": 0.0,
+    "redemption_fulfillment_pct": 100.0,
+    "redemption_history": [
+      {
+        "quarter": "Q4 2025",
+        "expiration_date": "2025-12-02",
+        "rate_pct": 5.0,
+        "gate_active": 0,
+        "requests_mn": 0.142,
+        "fulfilled_mn": 0.142,
+        "backlog_mn": 0.0,
+        "fulfillment_pct": 100.0
+      }
+    ],
+    "redemption_current_status": {
+      "rate_pct": 5.0,
+      "gate_active": 0
+    }
   }
 ]

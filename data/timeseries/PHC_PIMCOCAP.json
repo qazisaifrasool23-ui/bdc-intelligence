@@ -385,6 +385,28 @@
     "fixed_rate_pct": 96.31,
     "expense_ratio_pct": 0.5729,
     "weighted_avg_yield": 10.0,
-    "pik_pct": 24.2
+    "pik_pct": 24.2,
+    "redemption_rate_pct": 5.0,
+    "redemption_gate_active": 0,
+    "redemption_requests_mn": 25.0,
+    "redemption_fulfilled_mn": 25.0,
+    "redemption_backlog_mn": 0.0,
+    "redemption_fulfillment_pct": 100.0,
+    "redemption_history": [
+      {
+        "quarter": "Q4 2025",
+        "expiration_date": "2025-12-31",
+        "rate_pct": 5.0,
+        "gate_active": 0,
+        "requests_mn": 25.0,
+        "fulfilled_mn": 25.0,
+        "backlog_mn": 0.0,
+        "fulfillment_pct": 100.0
+      }
+    ],
+    "redemption_current_status": {
+      "rate_pct": 5.0,
+      "gate_active": 0
+    }
   }
 ]

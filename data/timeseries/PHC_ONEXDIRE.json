@@ -362,7 +362,13 @@
     "data_quality_score": 100.0,
     "nav_per_share_qoq_change": -0.5127,
     "nav_per_share_yoy_growth_pct": -6.0755,
-    "expense_ratio_pct": 2.4723
+    "expense_ratio_pct": 2.4723,
+    "redemption_rate_pct": 5.0,
+    "redemption_gate_active": 0,
+    "redemption_requests_mn": 13.46,
+    "redemption_fulfilled_mn": 13.46,
+    "redemption_backlog_mn": 0.0,
+    "redemption_fulfillment_pct": 100.0
   },
   {
     "quarter": "Q2 2025",
@@ -446,10 +452,36 @@
     "expense_ratio_pct": 2.5739,
     "weighted_avg_yield": 9.29,
     "redemption_gate_active": 1,
-    "redemption_requests_mn": 30.57,
-    "redemption_fulfilled_mn": 10.55,
-    "redemption_backlog_mn": 20.02,
-    "redemption_rate_pct": 5,
-    "redemption_fulfillment_pct": 34.5
+    "redemption_requests_mn": 37.82,
+    "redemption_fulfilled_mn": 9.7,
+    "redemption_backlog_mn": 28.12,
+    "redemption_rate_pct": 5.0,
+    "redemption_fulfillment_pct": 25.66,
+    "redemption_history": [
+      {
+        "quarter": "Q1 2025",
+        "expiration_date": "2025-02-07",
+        "rate_pct": 5.0,
+        "gate_active": 0,
+        "requests_mn": 13.46,
+        "fulfilled_mn": 13.46,
+        "backlog_mn": 0.0,
+        "fulfillment_pct": 100.0
+      },
+      {
+        "quarter": "Q1 2026",
+        "expiration_date": "2026-02-06",
+        "rate_pct": 5.0,
+        "gate_active": 1,
+        "requests_mn": 37.82,
+        "fulfilled_mn": 9.7,
+        "backlog_mn": 28.12,
+        "fulfillment_pct": 25.66
+      }
+    ],
+    "redemption_current_status": {
+      "rate_pct": 5.0,
+      "gate_active": 1
+    }
   }
 ]

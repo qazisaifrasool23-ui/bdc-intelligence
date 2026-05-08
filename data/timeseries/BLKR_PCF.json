@@ -661,7 +661,13 @@
     "nav_per_share_yoy_pct": -2.24,
     "net_interest_spread": 2.69,
     "distribution_yield_pct": 33.91,
-    "cumulative_equity_raised_mn": 0.0
+    "cumulative_equity_raised_mn": 0.0,
+    "redemption_rate_pct": 5.0,
+    "redemption_gate_active": 0,
+    "redemption_requests_mn": 3.4,
+    "redemption_fulfilled_mn": 3.4,
+    "redemption_backlog_mn": 0.0,
+    "redemption_fulfillment_pct": 100.0
   },
   {
     "quarter": "Q2 2025",
@@ -837,6 +843,38 @@
     "shares_outstanding": 65915332,
     "nav_per_share_yoy_pct": -3.39,
     "net_interest_spread": 2.55,
-    "cumulative_equity_raised_mn": 0.0
+    "cumulative_equity_raised_mn": 0.0,
+    "redemption_rate_pct": 5.0,
+    "redemption_gate_active": 0,
+    "redemption_requests_mn": 69.53,
+    "redemption_fulfilled_mn": 69.53,
+    "redemption_backlog_mn": 0.0,
+    "redemption_fulfillment_pct": 100.0,
+    "redemption_history": [
+      {
+        "quarter": "Q1 2025",
+        "expiration_date": "2025-02-28",
+        "rate_pct": 5.0,
+        "gate_active": 0,
+        "requests_mn": 3.4,
+        "fulfilled_mn": 3.4,
+        "backlog_mn": 0.0,
+        "fulfillment_pct": 100.0
+      },
+      {
+        "quarter": "Q1 2026",
+        "expiration_date": "2026-02-27",
+        "rate_pct": 5.0,
+        "gate_active": 0,
+        "requests_mn": 69.53,
+        "fulfilled_mn": 69.53,
+        "backlog_mn": 0.0,
+        "fulfillment_pct": 100.0
+      }
+    ],
+    "redemption_current_status": {
+      "rate_pct": 5.0,
+      "gate_active": 0
+    }
   }
 ]

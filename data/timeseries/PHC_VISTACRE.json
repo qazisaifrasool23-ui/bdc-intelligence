@@ -220,7 +220,7 @@
     "management_fee_mn": 2.098,
     "incentive_fee_mn": 2.973,
     "nav_per_share": 19.8,
-    "redemption_gate_active": true,
+    "redemption_gate_active": 0,
     "weighted_avg_yield": 10.5,
     "first_lien_pct": 4.75,
     "nii_per_share": 0.3276,
@@ -232,6 +232,26 @@
     "nav_per_share_qoq_change": 0.15,
     "nav_per_share_yoy_growth_pct": 0.0,
     "equity_pct": 19.0,
-    "redemption_rate_pct": 5.0
+    "redemption_rate_pct": 5.0,
+    "redemption_requests_mn": 15.365,
+    "redemption_fulfilled_mn": 15.365,
+    "redemption_backlog_mn": 0.0,
+    "redemption_fulfillment_pct": 100.0,
+    "redemption_history": [
+      {
+        "quarter": "Q1 2026",
+        "expiration_date": "2026-01-22",
+        "rate_pct": 5.0,
+        "gate_active": 0,
+        "requests_mn": 15.365,
+        "fulfilled_mn": 15.365,
+        "backlog_mn": 0.0,
+        "fulfillment_pct": 100.0
+      }
+    ],
+    "redemption_current_status": {
+      "rate_pct": 5.0,
+      "gate_active": 0
+    }
   }
 ]

@@ -1038,7 +1038,13 @@
     "implied_recovery_rate_pct": 33.33,
     "nav_i": 25.25,
     "nav_s": 25.25,
-    "nav_d": 25.25
+    "nav_d": 25.25,
+    "redemption_rate_pct": 5.0,
+    "redemption_gate_active": 0,
+    "redemption_requests_mn": 581.04,
+    "redemption_fulfilled_mn": 581.04,
+    "redemption_backlog_mn": 0.0,
+    "redemption_fulfillment_pct": 100.0
   },
   {
     "quarter": "Q2 2025",
@@ -1096,7 +1102,13 @@
     "implied_recovery_rate_pct": 50.0,
     "nav_i": 25.17,
     "nav_s": 25.17,
-    "nav_d": 25.17
+    "nav_d": 25.17,
+    "redemption_rate_pct": 5.0,
+    "redemption_gate_active": 0,
+    "redemption_requests_mn": 1095.99,
+    "redemption_fulfilled_mn": 1095.99,
+    "redemption_backlog_mn": 0.0,
+    "redemption_fulfillment_pct": 100.0
   },
   {
     "quarter": "Q3 2025",
@@ -1154,7 +1166,13 @@
     "implied_recovery_rate_pct": 50.0,
     "nav_i": 24.97,
     "nav_s": 24.97,
-    "nav_d": 24.97
+    "nav_d": 24.97,
+    "redemption_rate_pct": 5.0,
+    "redemption_gate_active": 0,
+    "redemption_requests_mn": 793.65,
+    "redemption_fulfilled_mn": 793.65,
+    "redemption_backlog_mn": 0.0,
+    "redemption_fulfillment_pct": 100.0
   },
   {
     "quarter": "Q4 2025",
@@ -1210,6 +1228,58 @@
     "cumulative_equity_raised_mn": 26127.2,
     "nav_i": 24.79,
     "nav_s": 24.79,
-    "nav_d": 24.79
+    "nav_d": 24.79,
+    "redemption_rate_pct": 5.0,
+    "redemption_gate_active": 0,
+    "redemption_requests_mn": 2107.51,
+    "redemption_fulfilled_mn": 2107.51,
+    "redemption_backlog_mn": 0.0,
+    "redemption_fulfillment_pct": 100.0,
+    "redemption_history": [
+      {
+        "quarter": "Q1 2025",
+        "expiration_date": "2025-03-03",
+        "rate_pct": 5.0,
+        "gate_active": 0,
+        "requests_mn": 581.04,
+        "fulfilled_mn": 581.04,
+        "backlog_mn": 0.0,
+        "fulfillment_pct": 100.0
+      },
+      {
+        "quarter": "Q2 2025",
+        "expiration_date": "2025-05-30",
+        "rate_pct": 5.0,
+        "gate_active": 0,
+        "requests_mn": 1095.99,
+        "fulfilled_mn": 1095.99,
+        "backlog_mn": 0.0,
+        "fulfillment_pct": 100.0
+      },
+      {
+        "quarter": "Q3 2025",
+        "expiration_date": "2025-08-29",
+        "rate_pct": 5.0,
+        "gate_active": 0,
+        "requests_mn": 793.65,
+        "fulfilled_mn": 793.65,
+        "backlog_mn": 0.0,
+        "fulfillment_pct": 100.0
+      },
+      {
+        "quarter": "Q4 2025",
+        "expiration_date": "2025-12-02",
+        "rate_pct": 5.0,
+        "gate_active": 0,
+        "requests_mn": 2107.51,
+        "fulfilled_mn": 2107.51,
+        "backlog_mn": 0.0,
+        "fulfillment_pct": 100.0
+      }
+    ],
+    "redemption_current_status": {
+      "rate_pct": 5.0,
+      "gate_active": 0
+    }
   }
 ]

@@ -233,7 +233,13 @@
     "nav_per_share_qoq_change": -0.054,
     "nav_per_share_yoy_growth_pct": 1.8415,
     "fixed_rate_pct": 91.9,
-    "na_dollar_amount_mn": 22.9681
+    "na_dollar_amount_mn": 22.9681,
+    "redemption_rate_pct": 5.0,
+    "redemption_gate_active": 0,
+    "redemption_requests_mn": 28.707,
+    "redemption_fulfilled_mn": 28.707,
+    "redemption_backlog_mn": 0.0,
+    "redemption_fulfillment_pct": 100.0
   },
   {
     "quarter": "Q2 2024",
@@ -264,7 +270,13 @@
     "nav_per_share_yoy_growth_pct": 1.1542,
     "fixed_rate_pct": 91.9,
     "na_dollar_amount_mn": 21.9887,
-    "net_na_change_mn": -0.9794
+    "net_na_change_mn": -0.9794,
+    "redemption_rate_pct": 5.0,
+    "redemption_gate_active": 0,
+    "redemption_requests_mn": 52.219,
+    "redemption_fulfilled_mn": 52.219,
+    "redemption_backlog_mn": 0.0,
+    "redemption_fulfillment_pct": 100.0
   },
   {
     "quarter": "Q3 2024",
@@ -297,7 +309,13 @@
     "nav_per_share_yoy_growth_pct": -0.4669,
     "fixed_rate_pct": 91.9,
     "na_dollar_amount_mn": 34.192,
-    "net_na_change_mn": 12.2033
+    "net_na_change_mn": 12.2033,
+    "redemption_rate_pct": 5.0,
+    "redemption_gate_active": 0,
+    "redemption_requests_mn": 37.636,
+    "redemption_fulfilled_mn": 37.636,
+    "redemption_backlog_mn": 0.0,
+    "redemption_fulfillment_pct": 100.0
   },
   {
     "quarter": "Q4 2024",
@@ -311,7 +329,7 @@
     "shares_outstanding": 172510464,
     "net_investment_income_mn": 73.93,
     "management_fee_mn": 10.087,
-    "redemption_gate_active": true,
+    "redemption_gate_active": 0,
     "weighted_avg_yield": 10.2,
     "first_lien_pct": 98.6,
     "floating_rate_pct": 8.1,
@@ -331,7 +349,12 @@
     "nav_per_share_yoy_growth_pct": -0.7521,
     "fixed_rate_pct": 91.9,
     "na_dollar_amount_mn": 30.3951,
-    "net_na_change_mn": -3.7969
+    "net_na_change_mn": -3.7969,
+    "redemption_rate_pct": 5.0,
+    "redemption_requests_mn": 55.792,
+    "redemption_fulfilled_mn": 55.792,
+    "redemption_backlog_mn": 0.0,
+    "redemption_fulfillment_pct": 100.0
   },
   {
     "quarter": "Q1 2025",
@@ -359,7 +382,13 @@
     "drip_mn": 514.0,
     "nav_per_share_qoq_change": -0.1471,
     "nav_per_share_yoy_growth_pct": -1.2429,
-    "fixed_rate_pct": 91.9
+    "fixed_rate_pct": 91.9,
+    "redemption_rate_pct": 5.0,
+    "redemption_gate_active": 0,
+    "redemption_requests_mn": 65.29,
+    "redemption_fulfilled_mn": 65.29,
+    "redemption_backlog_mn": 0.0,
+    "redemption_fulfillment_pct": 100.0
   },
   {
     "quarter": "Q2 2025",
@@ -387,7 +416,13 @@
     "drip_mn": 514.0,
     "nav_per_share_qoq_change": -0.0498,
     "nav_per_share_yoy_growth_pct": -1.6019,
-    "fixed_rate_pct": 91.9
+    "fixed_rate_pct": 91.9,
+    "redemption_rate_pct": 5.0,
+    "redemption_gate_active": 0,
+    "redemption_requests_mn": 107.041,
+    "redemption_fulfilled_mn": 107.041,
+    "redemption_backlog_mn": 0.0,
+    "redemption_fulfillment_pct": 100.0
   },
   {
     "quarter": "Q3 2025",
@@ -417,7 +452,13 @@
     "drip_mn": 514.0,
     "nav_per_share_qoq_change": -0.0667,
     "nav_per_share_yoy_growth_pct": -1.564,
-    "fixed_rate_pct": 91.9
+    "fixed_rate_pct": 91.9,
+    "redemption_rate_pct": 5.0,
+    "redemption_gate_active": 0,
+    "redemption_requests_mn": 107.961,
+    "redemption_fulfilled_mn": 107.961,
+    "redemption_backlog_mn": 0.0,
+    "redemption_fulfillment_pct": 100.0
   },
   {
     "quarter": "Q4 2025",
@@ -450,6 +491,98 @@
     "fixed_rate_pct": 91.9,
     "second_lien_pct": 6.75,
     "equity_pct": 0.5,
-    "pik_pct": 12.2
+    "pik_pct": 12.2,
+    "redemption_rate_pct": 5.0,
+    "redemption_gate_active": 0,
+    "redemption_requests_mn": 181.587,
+    "redemption_fulfilled_mn": 181.587,
+    "redemption_backlog_mn": 0.0,
+    "redemption_fulfillment_pct": 100.0,
+    "redemption_history": [
+      {
+        "quarter": "Q1 2024",
+        "expiration_date": "2024-03-31",
+        "rate_pct": 5.0,
+        "gate_active": 0,
+        "requests_mn": 28.707,
+        "fulfilled_mn": 28.707,
+        "backlog_mn": 0.0,
+        "fulfillment_pct": 100.0
+      },
+      {
+        "quarter": "Q2 2024",
+        "expiration_date": "2024-06-30",
+        "rate_pct": 5.0,
+        "gate_active": 0,
+        "requests_mn": 52.219,
+        "fulfilled_mn": 52.219,
+        "backlog_mn": 0.0,
+        "fulfillment_pct": 100.0
+      },
+      {
+        "quarter": "Q3 2024",
+        "expiration_date": "2024-09-30",
+        "rate_pct": 5.0,
+        "gate_active": 0,
+        "requests_mn": 37.636,
+        "fulfilled_mn": 37.636,
+        "backlog_mn": 0.0,
+        "fulfillment_pct": 100.0
+      },
+      {
+        "quarter": "Q4 2024",
+        "expiration_date": "2024-12-31",
+        "rate_pct": 5.0,
+        "gate_active": 0,
+        "requests_mn": 55.792,
+        "fulfilled_mn": 55.792,
+        "backlog_mn": 0.0,
+        "fulfillment_pct": 100.0
+      },
+      {
+        "quarter": "Q1 2025",
+        "expiration_date": "2025-03-31",
+        "rate_pct": 5.0,
+        "gate_active": 0,
+        "requests_mn": 65.29,
+        "fulfilled_mn": 65.29,
+        "backlog_mn": 0.0,
+        "fulfillment_pct": 100.0
+      },
+      {
+        "quarter": "Q2 2025",
+        "expiration_date": "2025-06-30",
+        "rate_pct": 5.0,
+        "gate_active": 0,
+        "requests_mn": 107.041,
+        "fulfilled_mn": 107.041,
+        "backlog_mn": 0.0,
+        "fulfillment_pct": 100.0
+      },
+      {
+        "quarter": "Q3 2025",
+        "expiration_date": "2025-09-30",
+        "rate_pct": 5.0,
+        "gate_active": 0,
+        "requests_mn": 107.961,
+        "fulfilled_mn": 107.961,
+        "backlog_mn": 0.0,
+        "fulfillment_pct": 100.0
+      },
+      {
+        "quarter": "Q4 2025",
+        "expiration_date": "2025-12-31",
+        "rate_pct": 5.0,
+        "gate_active": 0,
+        "requests_mn": 181.587,
+        "fulfilled_mn": 181.587,
+        "backlog_mn": 0.0,
+        "fulfillment_pct": 100.0
+      }
+    ],
+    "redemption_current_status": {
+      "rate_pct": 5.0,
+      "gate_active": 0
+    }
   }
 ]
