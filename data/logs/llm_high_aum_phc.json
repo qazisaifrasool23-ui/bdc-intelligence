@@ -1,0 +1,212 @@
+{
+  "started_at": "2026-05-08T12:30:40",
+  "candidates": 21,
+  "results": [
+    {
+      "ticker": "PHC_MSDINVES",
+      "status": "llm_error",
+      "error": "[Errno 2] No such file or directory: 'claude'"
+    },
+    {
+      "ticker": "PHC_BLUEOWLT",
+      "status": "ok",
+      "form": "10-K",
+      "date": "2025-03-04",
+      "fields_before": 31,
+      "fields_after": 31,
+      "llm_filled": [],
+      "derive_cascade": 0
+    },
+    {
+      "ticker": "PHC_TPGTWINB",
+      "status": "ok",
+      "form": "10-K",
+      "date": "2026-03-16",
+      "fields_before": 32,
+      "fields_after": 32,
+      "llm_filled": [],
+      "derive_cascade": 0
+    },
+    {
+      "ticker": "PHC_STEPSTON",
+      "status": "ok",
+      "form": "10-K",
+      "date": "2026-03-27",
+      "fields_before": 32,
+      "fields_after": 32,
+      "llm_filled": [],
+      "derive_cascade": 0
+    },
+    {
+      "ticker": "PHC_FSSPECIA",
+      "status": "ok",
+      "form": "10-Q",
+      "date": "2025-08-14",
+      "fields_before": 24,
+      "fields_after": 24,
+      "llm_filled": [],
+      "derive_cascade": 0
+    },
+    {
+      "ticker": "PHC_CNLSTRAT",
+      "status": "ok",
+      "form": "10-K",
+      "date": "2026-03-30",
+      "fields_before": 26,
+      "fields_after": 26,
+      "llm_filled": [],
+      "derive_cascade": 0
+    },
+    {
+      "ticker": "PHC_HPSCORPO",
+      "status": "ok",
+      "form": "10-K",
+      "date": "2026-03-24",
+      "fields_before": 33,
+      "fields_after": 33,
+      "llm_filled": [],
+      "derive_cascade": 0
+    },
+    {
+      "ticker": "PHC_GOLUBCAP",
+      "status": "ok",
+      "form": "10-Q",
+      "date": "2026-05-07",
+      "fields_before": 37,
+      "fields_after": 37,
+      "llm_filled": [],
+      "derive_cascade": 0
+    },
+    {
+      "ticker": "PHC_NMFSLFII",
+      "status": "ok",
+      "form": "10-K",
+      "date": "2026-03-04",
+      "fields_before": 25,
+      "fields_after": 25,
+      "llm_filled": [],
+      "derive_cascade": 0
+    },
+    {
+      "ticker": "PHC_BLUEOWLC",
+      "status": "ok",
+      "form": "10-K",
+      "date": "2026-03-05",
+      "fields_before": 35,
+      "fields_after": 35,
+      "llm_filled": [],
+      "derive_cascade": 0
+    },
+    {
+      "ticker": "PHC_VISTACRE",
+      "status": "ok",
+      "form": "10-Q",
+      "date": "2026-05-08",
+      "fields_before": 33,
+      "fields_after": 33,
+      "llm_filled": [],
+      "derive_cascade": 0
+    },
+    {
+      "ticker": "PHC_FIDELITY",
+      "status": "ok",
+      "form": "10-K",
+      "date": "2026-03-23",
+      "fields_before": 32,
+      "fields_after": 32,
+      "llm_filled": [],
+      "derive_cascade": 0
+    },
+    {
+      "ticker": "PHC_ANTARESP",
+      "status": "ok",
+      "form": "10-K",
+      "date": "2026-03-19",
+      "fields_before": 29,
+      "fields_after": 29,
+      "llm_filled": [],
+      "derive_cascade": 0
+    },
+    {
+      "ticker": "PHC_OVERLAND",
+      "status": "ok",
+      "form": "10-K",
+      "date": "2026-03-20",
+      "fields_before": 22,
+      "fields_after": 22,
+      "llm_filled": [],
+      "derive_cascade": 0
+    },
+    {
+      "ticker": "PHC_KKRENHAN",
+      "status": "ok",
+      "form": "10-K",
+      "date": "2026-03-20",
+      "fields_before": 13,
+      "fields_after": 13,
+      "llm_filled": [],
+      "derive_cascade": 0
+    },
+    {
+      "ticker": "PHC_KENNEDYL",
+      "status": "ok",
+      "form": "10-K",
+      "date": "2026-03-31",
+      "fields_before": 30,
+      "fields_after": 30,
+      "llm_filled": [],
+      "derive_cascade": 0
+    },
+    {
+      "ticker": "PHC_APOLLOOR",
+      "status": "ok",
+      "form": "10-K",
+      "date": "2026-03-13",
+      "fields_before": 25,
+      "fields_after": 25,
+      "llm_filled": [],
+      "derive_cascade": 0
+    },
+    {
+      "ticker": "PHC_SILVERPO",
+      "status": "ok",
+      "form": "10-K",
+      "date": "2026-03-18",
+      "fields_before": 34,
+      "fields_after": 34,
+      "llm_filled": [],
+      "derive_cascade": 0
+    },
+    {
+      "ticker": "PHC_COMMONWE",
+      "status": "ok",
+      "form": "10-K",
+      "date": "2026-03-12",
+      "fields_before": 21,
+      "fields_after": 21,
+      "llm_filled": [],
+      "derive_cascade": 0
+    },
+    {
+      "ticker": "PHC_PARTNERS",
+      "status": "ok",
+      "form": "10-K",
+      "date": "2026-03-26",
+      "fields_before": 17,
+      "fields_after": 17,
+      "llm_filled": [],
+      "derive_cascade": 0
+    },
+    {
+      "ticker": "PHC_AGLPRIVA",
+      "status": "ok",
+      "form": "10-K",
+      "date": "2026-03-12",
+      "fields_before": 29,
+      "fields_after": 29,
+      "llm_filled": [],
+      "derive_cascade": 0
+    }
+  ],
+  "completed_at": "2026-05-08T12:33:55"
+}
