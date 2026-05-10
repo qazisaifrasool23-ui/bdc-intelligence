@@ -741,7 +741,7 @@ function yS(sfx,mn){
   if(mn!==undefined)o.min=mn;return o;
 }
 var TT={backgroundColor:"#ffffff",borderColor:"#e2e6ea",borderWidth:1,titleColor:TC,bodyColor:"#1a1d23",titleFont:{family:F,size:8},bodyFont:{family:F,size:11},padding:11,mode:"index",intersect:false};
-function bO(){return {responsive:true,maintainAspectRatio:false,animation:{duration:350},layout:{padding:{top:8}},plugins:{legend:{display:false},tooltip:TT}};}
+function bO(){return {responsive:true,maintainAspectRatio:false,animation:{duration:350},layout:{padding:{top:8}},interaction:{mode:"index",intersect:false},plugins:{legend:{display:false},tooltip:{backgroundColor:"#ffffff",borderColor:"#e2e6ea",borderWidth:1,titleColor:"#6c7a8d",bodyColor:"#1a1d23",titleFont:{family:F,size:8},bodyFont:{family:F,size:11},padding:11,mode:"index",intersect:false,position:"nearest"}}};}
 if(typeof Chart !== "undefined"){
   Chart.defaults.plugins.tooltip.position="nearest";
   Chart.defaults.interaction={mode:"index",intersect:false};

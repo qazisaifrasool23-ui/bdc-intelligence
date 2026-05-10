@@ -858,6 +858,7 @@ function refreshHeroRank(ticker) {
     /* Refresh hero KPIs and rank with real data */
     if(typeof refreshHeroKPIs === "function") refreshHeroKPIs(ticker);
     if(typeof refreshHeroRank === "function") refreshHeroRank(ticker);
+    window.FUND_FM = window.parent && window.parent.FM ? window.parent.FM : {};
   }
 
   fetch("data/timeseries/"+ticker+".json")
@@ -907,7 +908,7 @@ function yS(sfx,mn){
 }
 function ySdollar(){return {grid:{color:"rgba(226,231,239,.35)",drawTicks:false},ticks:{color:TC,font:{family:F,size:7.5},callback:function(v){return "$"+v;}},border:{color:"#e2e6ea"}};}
 var TT={backgroundColor:"#ffffff",borderColor:"#e2e6ea",borderWidth:1,titleColor:"#6c7a8d",bodyColor:"#1a1d23",titleFont:{family:F,size:8},bodyFont:{family:F,size:11},padding:11,mode:"index",intersect:false};
-function bO(){return {responsive:true,maintainAspectRatio:false,animation:{duration:350},layout:{padding:{top:8}},plugins:{legend:{display:false},tooltip:{...TT,position:"nearest"}}};}
+function bO(){return {responsive:true,maintainAspectRatio:false,animation:{duration:350},layout:{padding:{top:8}},interaction:{mode:"index",intersect:false},plugins:{legend:{display:false},tooltip:{backgroundColor:"#ffffff",borderColor:"#e2e6ea",borderWidth:1,titleColor:"#6c7a8d",bodyColor:"#1a1d23",titleFont:{family:F,size:8},bodyFont:{family:F,size:11},padding:11,mode:"index",intersect:false,position:"nearest"}}};}
 function mk(id,cfg){var el=document.getElementById(id);if(!el)return;if(charts[id]){try{charts[id].destroy();}catch(e){}}charts[id]=new Chart(el,cfg);}
 function rl(y,col,dash){return {type:"line",data:Q.map(function(){return y;}),borderColor:col,borderDash:dash||[5,4],borderWidth:1.2,pointRadius:0,fill:false,label:"ref"};}
 function line(id,data,col,fill,sfx,mn){mk(id,{type:"line",data:{labels:Q,datasets:[{data:data,borderColor:col,backgroundColor:fill?col.replace(/[\d.]+\)$/,".08)").replace(/^#/,"rgba(").replace(/([\da-f]{2})([\da-f]{2})([\da-f]{2})$/i,function(m,r,g,b){return parseInt(r,16)+","+parseInt(g,16)+","+parseInt(b,16)+","})+"0.08)":col+"00",borderWidth:2,pointRadius:0,fill:!!fill,tension:.35}]},options:{...bO(),scales:{x:xS,y:yS(sfx||"",mn)}}});}
@@ -1381,126 +1382,160 @@ function buildCapital(){
 
 // ── PEER COMPARISON ───────────────────────────────────────────────────────────
 function buildPeers(){
-  var PEERS=[
-    {tk:"ARCC",yield_:9.1,na:1.8,cov:1.15,lev:1.0,pik:4.9,fl:60.8,nim:4.3,cod:4.8,exp:2.9,vel:10.6,spill:.24,aum:14.3},
-    {tk:"MAIN",yield_:8.9,na:3.6,cov:1.31,lev:0.82,pik:2.7,fl:81.2,nim:5.0,cod:3.9,exp:2.1,vel:6.4,spill:.18,aum:4.8},
-    {tk:"BXSL",yield_:11.8,na:1.2,cov:1.18,lev:1.14,pik:5.8,fl:98.2,nim:6.6,cod:5.2,exp:3.1,vel:14.2,spill:.12,aum:9.7},
-    {tk:"OBDC",yield_:11.2,na:1.8,cov:1.16,lev:1.19,pik:6.3,fl:85.4,nim:5.8,cod:5.4,exp:3.4,vel:10.8,spill:.15,aum:12.8},
-    {tk:"GBDC",yield_:10.8,na:0.8,cov:1.14,lev:1.24,pik:4.1,fl:91.3,nim:6.4,cod:4.4,exp:2.6,vel:9.1,spill:.20,aum:3.2},
-    {tk:"HTGC",yield_:14.8,na:1.8,cov:1.34,lev:0.98,pik:2.1,fl:94.2,nim:10.6,cod:4.2,exp:3.8,vel:18.4,spill:.32,aum:2.8},
-    {tk:"FSK", yield_:13.2,na:3.8,cov:1.09,lev:1.08,pik:12.4,fl:68.2,nim:7.8,cod:5.4,exp:4.1,vel:12.4,spill:.08,aum:14.6},
-    {tk:"GSBD",yield_:12.1,na:2.1,cov:1.12,lev:1.08,pik:7.2,fl:89.3,nim:6.8,cod:5.3,exp:3.2,vel:11.2,spill:.14,aum:8.2},
-  ];
-  var arcc=PEERS[0];
+  /* Build PEERS dynamically from FM data passed via URL */
+  var FM_DATA = window.FUND_FM || {};
 
-  // Two radar metric sets
-  var radarMs1=[
-    {k:"na",   l:"Low Non-Accrual",  hi:false,mn:0,  mx:6,   fmt:function(v){return v.toFixed(2)+"%";}},
-    {k:"pik",  l:"Low PIK %",        hi:false,mn:0,  mx:15,  fmt:function(v){return v.toFixed(2)+"%";}},
-    {k:"cov",  l:"NII Coverage",     hi:true, mn:.9, mx:1.5, fmt:function(v){return v.toFixed(2)+"x";}},
-    {k:"lev",  l:"Low Leverage",     hi:false,mn:.7, mx:1.4, fmt:function(v){return v.toFixed(2)+"x";}},
-    {k:"nim",  l:"Net Int. Margin",  hi:true, mn:3,  mx:11,  fmt:function(v){return v.toFixed(2)+"%";}},
-    {k:"fl",   l:"First Lien %",     hi:true, mn:50, mx:100, fmt:function(v){return v.toFixed(1)+"%";}},
-  ];
-  var radarMs2=[
-    {k:"yield_",l:"Portfolio Yield",  hi:true, mn:8,  mx:16, fmt:function(v){return v.toFixed(2)+"%";}},
-    {k:"cod",   l:"Low Cost of Debt", hi:false,mn:3,  mx:7,  fmt:function(v){return v.toFixed(2)+"%";}},
-    {k:"exp",   l:"Low Expenses",     hi:false,mn:1,  mx:5,  fmt:function(v){return v.toFixed(2)+"%";}},
-    {k:"vel",   l:"Orig. Velocity",   hi:true, mn:5,  mx:20, fmt:function(v){return v.toFixed(1)+"%";}},
-    {k:"spill", l:"Spillover/sh",     hi:true, mn:0,  mx:.5, fmt:function(v){return "$"+v.toFixed(2);}},
-    {k:"aum",   l:"Scale ($ Billions)", hi:true,mn:0, mx:20, fmt:function(v){return "$"+v.toFixed(1)+"B";}},
-  ];
+  /* Current fund data from L object */
+  var curFund = {
+    tk:     ticker,
+    name:   typeof fundName !== "undefined" ? fundName : ticker,
+    yield_: L.weighted_avg_yield || null,
+    na:     L.na_pct_cost || null,
+    cov:    L.nii_coverage || null,
+    lev:    L.leverage || null,
+    pik:    L.pik_pct || null,
+    fl:     L.first_lien_pct || null,
+    nim:    L.net_interest_spread || null,
+    cod:    L.cost_of_debt_pct || null,
+    exp:    L.expense_ratio_pct || null,
+    aum:    L.net_assets_mn ? L.net_assets_mn/1000 : null
+  };
 
-  var norm=function(v,m){var r=(v-m.mn)/(m.mx-m.mn)*100;return m.hi?Math.min(100,Math.max(0,r)):Math.min(100,Math.max(0,100-r));};
+  /* Suggested peers from FM — top traded BDCs by AUM */
+  var suggestedTickers = ["ARCC","OBDC","FSK","BXSL","GBDC","HTGC","MAIN","GSBD","NMFC","CCAP","PFLT","TCPC","CSWC","KBDC","MFIC"];
+  var allPeers = suggestedTickers
+    .filter(function(tk){ return tk !== ticker && FM_DATA[tk]; })
+    .map(function(tk){
+      var m = FM_DATA[tk] || {};
+      return {
+        tk:     tk,
+        name:   m.name || tk,
+        yield_: m.yld || null,
+        na:     m.na  || null,
+        cov:    m.cov || null,
+        lev:    m.lev || null,
+        pik:    m.pik || null,
+        fl:     m.fl1 || null,
+        nim:    null,
+        cod:    null,
+        exp:    null,
+        aum:    m.aum || null
+      };
+    }).slice(0, 12);
 
-  function mkRadar(id,metrics,peers,arccP){
-    var rest=peers.filter(function(p){return p.tk!=="ARCC";});
-    var aV=metrics.map(function(m){return norm(arccP[m.k],m);});
-    var mV=metrics.map(function(m){
-      var s=rest.map(function(p){return norm(p[m.k],m);}).sort(function(a,b){return a-b;});
-      var mid=Math.floor(s.length/2);
-      return s.length%2?s[mid]:(s[mid-1]+s[mid])/2;
+  /* Selected peers (default: first 5) */
+  if(!window._selectedPeers || window._selectedPeers.ticker !== ticker) {
+    window._selectedPeers = {
+      ticker: ticker,
+      selected: allPeers.slice(0,5).map(function(p){return p.tk;})
+    };
+  }
+
+  var el = document.getElementById("peers-content");
+  if(!el) return;
+
+  /* Build peer selector UI */
+  var selectorHtml = '<div style="margin-bottom:16px">'
+    + '<div style="font-family:var(--mono,\'Roboto Mono\');font-size:9px;color:#6c7a8d;text-transform:uppercase;letter-spacing:.8px;margin-bottom:8px">Select up to 6 peers to compare</div>'
+    + '<div id="peer-chips" style="display:flex;flex-wrap:wrap;gap:6px;">';
+
+  allPeers.forEach(function(p){
+    var sel = window._selectedPeers.selected.indexOf(p.tk) >= 0;
+    selectorHtml += '<button onclick="togglePeer(\''+p.tk+'\')" id="chip-'+p.tk+'" style="'
+      + 'font-family:\'Roboto Mono\',monospace;font-size:9px;padding:4px 10px;border-radius:4px;cursor:pointer;border:1px solid;transition:all .15s;'
+      + (sel ? 'background:#2E75B6;color:#fff;border-color:#2E75B6;' : 'background:#fff;color:#6c7a8d;border-color:#e2e6ea;')
+      + '">' + p.tk + '</button>';
+  });
+
+  selectorHtml += '</div></div>';
+
+  /* Build comparison table */
+  function buildTable(){
+    var selected = [curFund].concat(
+      allPeers.filter(function(p){ return window._selectedPeers.selected.indexOf(p.tk) >= 0; })
+    );
+
+    var cols = [
+      {k:"aum",   l:"AUM ($B)",    fmt:function(v){return v!=null?"$"+v.toFixed(1)+"B":"—";}},
+      {k:"yield_",l:"Yield",       fmt:function(v){return v!=null?v.toFixed(1)+"%":"—";}},
+      {k:"cov",   l:"Coverage",    fmt:function(v){return v!=null?v.toFixed(2)+"x":"—";}},
+      {k:"na",    l:"Non-Accrual", fmt:function(v){return v!=null?v.toFixed(2)+"%":"—";}},
+      {k:"pik",   l:"PIK %",       fmt:function(v){return v!=null?v.toFixed(1)+"%":"—";}},
+      {k:"lev",   l:"Leverage",    fmt:function(v){return v!=null?v.toFixed(2)+"x":"—";}},
+      {k:"fl",    l:"1st Lien %",  fmt:function(v){return v!=null?v.toFixed(1)+"%":"—";}},
+    ];
+
+    var tbl = '<div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse;font-family:\'Roboto Mono\',monospace;font-size:10px;">'
+      + '<thead><tr style="border-bottom:2px solid #e2e6ea;">'
+      + '<th style="text-align:left;padding:8px 10px;font-size:8px;color:#6c7a8d;text-transform:uppercase;">Fund</th>';
+    cols.forEach(function(c){ tbl += '<th style="text-align:right;padding:8px 10px;font-size:8px;color:#6c7a8d;text-transform:uppercase;">'+c.l+'</th>'; });
+    tbl += '</tr></thead><tbody>';
+
+    selected.forEach(function(p, idx){
+      var isMe = p.tk === ticker;
+      var rowStyle = isMe
+        ? 'background:rgba(46,117,182,.06);font-weight:600;border-bottom:1px solid #e2e6ea;'
+        : 'border-bottom:1px solid #f0f2f5;';
+      tbl += '<tr style="'+rowStyle+'">'
+        + '<td style="padding:8px 10px;color:'+(isMe?'#2E75B6':'#1a1d23')+';">'
+        + (isMe?'<b>':'')+p.tk+(isMe?'</b>':'')+' <span style="font-size:8.5px;color:#adb5bd;">'+(p.name||'').substring(0,20)+'</span>'
+        + '</td>';
+      cols.forEach(function(c){
+        var v = p[c.k];
+        tbl += '<td style="text-align:right;padding:8px 10px;color:#3d4f63;">'+c.fmt(v)+'</td>';
+      });
+      tbl += '</tr>';
     });
-    mk(id,{type:"radar",data:{labels:metrics.map(function(m){return m.l;}),datasets:[
-      {label:"ARCC",data:aV,borderColor:"#2E75B6",backgroundColor:"rgba(46,117,182,.08)",borderWidth:2.5,pointBackgroundColor:"#2E75B6",pointRadius:5},
-      {label:"Peer Median",data:mV,borderColor:"rgba(165,165,165,.7)",backgroundColor:"rgba(90,112,144,.05)",borderWidth:1.5,borderDash:[4,3],pointBackgroundColor:"rgba(165,165,165,.7)",pointRadius:3},
-    ]},options:{responsive:true,maintainAspectRatio:false,
-      plugins:{legend:{display:false},tooltip:{backgroundColor:"#ffffff",borderColor:"#e2e6ea",borderWidth:1,titleColor:"#6c7a8d",bodyColor:"#1a1d23",titleFont:{family:F,size:9},bodyFont:{family:F,size:11},padding:10,
-        callbacks:{
-          title:function(ctx){return metrics[ctx[0].dataIndex].l;},
-          label:function(c){
-            var m=metrics[c.dataIndex];
-            if(c.datasetIndex===0){return "ARCC: "+m.fmt(arccP[m.k]);}
-            var rest2=peers.filter(function(p){return p.tk!=="ARCC";});
-            var vals=rest2.map(function(p){return p[m.k];}).sort(function(a,b){return a-b;});
-            var med=vals[Math.floor(vals.length/2)];
-            return "Peer Median: "+m.fmt(med);
-          }
-        }
-      }},
-      scales:{r:{min:0,max:100,ticks:{display:false},grid:{color:"rgba(226,231,239,.9)"},pointLabels:{font:{family:F,size:9.5},color:"#3d4f63"},angleLines:{color:"rgba(226,231,239,.9)"}}}}});
+
+    tbl += '</tbody></table></div>';
+    return tbl;
   }
 
-  function lollipop(id,sorted,vfn,ffn){
-    var el=document.getElementById(id);if(!el)return;
-    var vals=sorted.map(vfn).filter(function(v){return v!=null;});
-    if(!vals.length)return;
-    var mn=Math.min.apply(null,vals),mx=Math.max.apply(null,vals),rng=mx-mn||1;
-    el.innerHTML=sorted.map(function(p,i){
-      var v=vfn(p);if(v==null)return "";
-      var me=p.tk==="ARCC";
-      var pct=((v-mn)/rng*72+14);
-      var dc=me?"#2E75B6":i===0?"#70AD47":i<3?"#5B9BD5":"#5a7090";
-      return "<div class='lpop-row"+(me?" me":"")+"'>"
-        +"<span class='lpop-rank'>"+(i+1)+"</span>"
-        +"<span class='lpop-tk' style='color:"+(me?"#2E75B6":"var(--text2)")+"'>"+p.tk+"</span>"
-        +"<div class='lpop-bar'><div class='lpop-track'></div><div class='lpop-fill' style='width:"+pct+"%'></div>"
-        +"<div class='lpop-dot' style='left:"+pct+"%;width:"+(me?20:13)+"px;height:"+(me?20:13)+"px;background:"+dc+";box-shadow:"+(me?"0 0 0 3px rgba(24,71,194,.3)":"0 1px 4px rgba(0,0,0,.2)")+"'></div></div>"
-        +"<span class='lpop-val' style='color:"+(me?"#2E75B6":"var(--text)")+"'>"+ffn(v)+"</span>"
-        +"</div>";
-    }).join("");
-  }
-
-  document.getElementById("peers-content").innerHTML=
-    "<div style='margin-bottom:14px;padding:10px 16px;background:var(--bg3);border:1px solid var(--border);border-radius:8px;font-size:11.5px;color:var(--text2)'>"
-    +"<strong style='color:var(--text)'>Peer selection:</strong> 8 large diversified traded BDCs · Q1 2026 · <span style='color:var(--blue);font-weight:600'>ARCC highlighted</span></div>"
-    +"<div class='g2' style='margin-bottom:16px'>"
-    +"<div class='card'><div class='ch'><span class='ct'>Credit & Safety Profile</span><span class='cs'>Non-Accrual · PIK · Coverage · Leverage · Net Margin · First Lien</span></div><div class='cw' style='height:280px'><canvas id='pr-radar'></canvas></div>"
-    +"<div class='leg' style='justify-content:center;padding-bottom:14px'><div class='li'><div class='ll' style='background:var(--blue)'></div>ARCC</div><div class='li'><div class='ll' style='background:var(--text4)'></div>Peer Median</div></div></div>"
-    +"<div class='card'><div class='ch'><span class='ct'>Portfolio & Returns Profile</span><span class='cs'>Yield · Cost of Debt · Expenses · Origination · Spillover · Scale</span></div><div class='cw' style='height:280px'><canvas id='pr-radar2'></canvas></div>"
-    +"<div class='leg' style='justify-content:center;padding-bottom:14px'><div class='li'><div class='ll' style='background:var(--blue)'></div>ARCC</div><div class='li'><div class='ll' style='background:var(--text4)'></div>Peer Median</div></div></div></div>"
-    +"<div class='g2' style='margin-bottom:16px'>"
-    +"<div class='card'><div class='ch'><span class='ct'>Portfolio Yield (%)</span></div><div id='lp-yield' style='padding:12px 18px 10px'></div></div>"
-    +"<div class='card'><div class='ch'><span class='ct'>Non-Accrual % at Cost</span></div><div id='lp-na' style='padding:12px 18px 10px'></div></div></div>"
-    +"<div class='g2' style='margin-bottom:16px'>"
-    +"<div class='card'><div class='ch'><span class='ct'>NII Coverage Ratio</span></div><div id='lp-cov' style='padding:12px 18px 10px'></div></div>"
-    +"<div class='card'><div class='ch'><span class='ct'>Leverage (D/E)</span></div><div id='lp-lev' style='padding:12px 18px 10px'></div></div></div>"
-    +"<div class='g2' style='margin-bottom:16px'>"
-    +"<div class='card'><div class='ch'><span class='ct'>PIK % of Income</span></div><div id='lp-pik' style='padding:12px 18px 10px'></div></div>"
-    +"<div class='card'><div class='ch'><span class='ct'>First Lien %</span></div><div id='lp-fl' style='padding:12px 18px 10px'></div></div></div>"
-    +"<div class='g2' style='margin-bottom:16px'>"
-    +"<div class='card'><div class='ch'><span class='ct'>Net Interest Margin</span></div><div id='lp-nim' style='padding:12px 18px 10px'></div></div>"
-    +"<div class='card'><div class='ch'><span class='ct'>Cost of Debt</span></div><div id='lp-cod' style='padding:12px 18px 10px'></div></div></div>"
-    +"<div class='g2'>"
-    +"<div class='card'><div class='ch'><span class='ct'>Spillover per Share</span></div><div id='lp-spill' style='padding:12px 18px 10px'></div></div>"
-    +"<div class='card'><div class='ch'><span class='ct'>Net Assets (Scale)</span></div><div id='lp-aum' style='padding:12px 18px 10px'></div></div></div>";
-
-  setTimeout(function(){
-    mkRadar("pr-radar",  radarMs1, PEERS, arcc);
-    mkRadar("pr-radar2", radarMs2, PEERS, arcc);
-    lollipop("lp-yield",PEERS.slice().sort(function(a,b){return b.yield_-a.yield_;}),function(p){return p.yield_;},function(v){return v.toFixed(1)+"%";});
-    lollipop("lp-na",PEERS.slice().sort(function(a,b){return a.na-b.na;}),function(p){return p.na;},function(v){return v.toFixed(1)+"%";});
-    lollipop("lp-cov",PEERS.slice().sort(function(a,b){return b.cov-a.cov;}),function(p){return p.cov;},function(v){return v.toFixed(2)+"x";});
-    lollipop("lp-lev",PEERS.slice().sort(function(a,b){return a.lev-b.lev;}),function(p){return p.lev;},function(v){return v.toFixed(2)+"x";});
-    lollipop("lp-pik",PEERS.slice().sort(function(a,b){return a.pik-b.pik;}),function(p){return p.pik;},function(v){return v.toFixed(1)+"%";});
-    lollipop("lp-fl",PEERS.slice().sort(function(a,b){return b.fl-a.fl;}),function(p){return p.fl;},function(v){return v.toFixed(1)+"%";});
-    lollipop("lp-nim",PEERS.slice().sort(function(a,b){return b.nim-a.nim;}),function(p){return p.nim;},function(v){return v.toFixed(1)+"%";});
-    lollipop("lp-cod",PEERS.slice().sort(function(a,b){return a.cod-b.cod;}),function(p){return p.cod;},function(v){return v.toFixed(1)+"%";});
-    lollipop("lp-spill",PEERS.slice().sort(function(a,b){return b.spill-a.spill;}),function(p){return p.spill;},function(v){return "$"+v.toFixed(2);});
-    lollipop("lp-aum",PEERS.slice().sort(function(a,b){return b.aum-a.aum;}),function(p){return p.aum;},function(v){return "$"+v.toFixed(1)+"B";});
-    injectTimeBars("peers");
-  },150);
+  el.innerHTML = selectorHtml + '<div id="peers-table">' + buildTable() + '</div>';
 }
+
+/* Toggle peer selection */
+window.togglePeer = function(tk) {
+  if(!window._selectedPeers) return;
+  var sel = window._selectedPeers.selected;
+  var idx = sel.indexOf(tk);
+  if(idx >= 0) {
+    sel.splice(idx, 1);
+  } else {
+    if(sel.length >= 6) {
+      alert("Maximum 6 peers selected. Deselect one first.");
+      return;
+    }
+    sel.push(tk);
+  }
+  /* Update chip style */
+  var chip = document.getElementById("chip-"+tk);
+  if(chip) {
+    var active = sel.indexOf(tk) >= 0;
+    chip.style.background = active ? "#2E75B6" : "#fff";
+    chip.style.color = active ? "#fff" : "#6c7a8d";
+    chip.style.borderColor = active ? "#2E75B6" : "#e2e6ea";
+  }
+  /* Rebuild table */
+  var tblEl = document.getElementById("peers-table");
+  if(tblEl) {
+    var FM_DATA = window.FUND_FM || {};
+    var suggestedTickers = ["ARCC","OBDC","FSK","BXSL","GBDC","HTGC","MAIN","GSBD","NMFC","CCAP","PFLT","TCPC","CSWC","KBDC","MFIC"];
+    var allPeers = suggestedTickers.filter(function(t){ return t !== ticker && FM_DATA[t]; }).map(function(t){
+      var m=FM_DATA[t]||{};
+      return {tk:t,name:m.name||t,yield_:m.yld||null,na:m.na||null,cov:m.cov||null,lev:m.lev||null,pik:m.pik||null,fl:m.fl1||null,nim:null,cod:null,exp:null,aum:m.aum||null};
+    }).slice(0,12);
+    var curFund={tk:ticker,name:typeof fundName!=="undefined"?fundName:ticker,yield_:L.weighted_avg_yield||null,na:L.na_pct_cost||null,cov:L.nii_coverage||null,lev:L.leverage||null,pik:L.pik_pct||null,fl:L.first_lien_pct||null,nim:L.net_interest_spread||null,cod:L.cost_of_debt_pct||null,exp:L.expense_ratio_pct||null,aum:L.net_assets_mn?L.net_assets_mn/1000:null};
+    var selected=[curFund].concat(allPeers.filter(function(p){return window._selectedPeers.selected.indexOf(p.tk)>=0;}));
+    var cols=[{k:"aum",l:"AUM ($B)",fmt:function(v){return v!=null?"$"+v.toFixed(1)+"B":"—";}},{k:"yield_",l:"Yield",fmt:function(v){return v!=null?v.toFixed(1)+"%":"—";}},{k:"cov",l:"Coverage",fmt:function(v){return v!=null?v.toFixed(2)+"x":"—";}},{k:"na",l:"Non-Accrual",fmt:function(v){return v!=null?v.toFixed(2)+"%":"—";}},{k:"pik",l:"PIK %",fmt:function(v){return v!=null?v.toFixed(1)+"%":"—";}},{k:"lev",l:"Leverage",fmt:function(v){return v!=null?v.toFixed(2)+"x":"—";}},{k:"fl",l:"1st Lien %",fmt:function(v){return v!=null?v.toFixed(1)+"%":"—";}}];
+    var tbl='<div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse;font-family:\'Roboto Mono\',monospace;font-size:10px;"><thead><tr style="border-bottom:2px solid #e2e6ea;"><th style="text-align:left;padding:8px 10px;font-size:8px;color:#6c7a8d;text-transform:uppercase;">Fund</th>';
+    cols.forEach(function(c){tbl+='<th style="text-align:right;padding:8px 10px;font-size:8px;color:#6c7a8d;text-transform:uppercase;">'+c.l+'</th>';});
+    tbl+='</tr></thead><tbody>';
+    selected.forEach(function(p){var isMe=p.tk===ticker;var rs=isMe?'background:rgba(46,117,182,.06);font-weight:600;border-bottom:1px solid #e2e6ea;':'border-bottom:1px solid #f0f2f5;';tbl+='<tr style="'+rs+'"><td style="padding:8px 10px;color:'+(isMe?'#2E75B6':'#1a1d23')+';">'+(isMe?'<b>':'')+p.tk+(isMe?'</b>':'')+' <span style="font-size:8.5px;color:#adb5bd;">'+(p.name||'').substring(0,20)+'</span></td>';cols.forEach(function(c){tbl+='<td style="text-align:right;padding:8px 10px;color:#3d4f63;">'+c.fmt(p[c.k])+'</td>';});tbl+='</tr>';});
+    tbl+='</tbody></table></div>';
+    tblEl.innerHTML = tbl;
+  }
+};
 
 // ── MARKET DATA ───────────────────────────────────────────────────────────────
 
