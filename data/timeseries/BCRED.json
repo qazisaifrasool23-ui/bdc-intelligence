@@ -1191,7 +1191,7 @@
     "total_expenses_mn": null,
     "pik_pct": 5.55,
     "weighted_avg_yield": 9.2,
-    "cost_of_debt_pct": null,
+    "cost_of_debt_pct": 6.22,
     "na_pct_cost": 0.0,
     "na_pct_fv": 0.0,
     "wtd_avg_risk_rating": null,
@@ -1280,6 +1280,7 @@
     "redemption_current_status": {
       "rate_pct": 5.0,
       "gate_active": 0
-    }
+    },
+    "net_interest_spread": 2.98
   }
 ]
