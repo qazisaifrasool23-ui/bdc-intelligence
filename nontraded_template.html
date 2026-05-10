@@ -1170,71 +1170,114 @@ function buildFees(){
 
 // ── PEER COMPARISON ────────────────────────────────────────────────────────────
 function buildPeers(){
-  var PEERS=[
-    {tk:"BCRED",nav:28.01,na:1.0,cov:1.03,yield_:9.1,fl:92.8,flt:98.0,pik:4.2,lev:0.57,aum:54.2,drip:62.0,load:3.5,red_gate:true},
-    {tk:"ARDC",nav:25.80,na:1.8,cov:1.12,yield_:9.8,fl:88.2,flt:95.4,pik:5.8,lev:0.72,aum:12.8,drip:48.0,load:3.5,red_gate:false},
-    {tk:"BXSL",nav:27.12,na:1.2,cov:1.18,yield_:11.8,fl:98.2,flt:98.2,pik:5.8,lev:1.14,aum:9.7,drip:42.0,load:0,red_gate:false},
-    {tk:"OBDE",nav:15.42,na:2.1,cov:1.14,yield_:10.8,fl:89.4,flt:94.8,pik:6.4,lev:0.84,aum:8.4,drip:38.0,load:3.0,red_gate:false},
-    {tk:"PIMCO",nav:31.20,na:0.8,cov:1.08,yield_:9.4,fl:91.2,flt:96.8,pik:3.8,lev:0.62,aum:7.2,drip:55.0,load:0,red_gate:false},
-    {tk:"KKRC",nav:21.45,na:1.4,cov:1.16,yield_:10.2,fl:86.4,flt:94.2,pik:5.2,lev:0.78,aum:6.8,drip:44.0,load:3.5,red_gate:false},
-  ];
-  var arcc=PEERS[0];
-
-  var radarMs1=[
-    {k:"na",   l:"Low Non-Accrual %",hi:false,mn:0,  mx:4,  fmt:function(v){return v.toFixed(2)+"%";}},
-    {k:"pik",  l:"Low PIK %",        hi:false,mn:0,  mx:10, fmt:function(v){return v.toFixed(1)+"%";}},
-    {k:"cov",  l:"NII Coverage",     hi:true, mn:.9, mx:1.3,fmt:function(v){return v.toFixed(2)+"x";}},
-    {k:"lev",  l:"Low Leverage",     hi:false,mn:.3, mx:1.0,fmt:function(v){return v.toFixed(2)+"x";}},
-    {k:"fl",   l:"1st Lien %",       hi:true, mn:80, mx:100,fmt:function(v){return v.toFixed(1)+"%";}},
-    {k:"flt",  l:"Floating Rate %",  hi:true, mn:90, mx:100,fmt:function(v){return v.toFixed(1)+"%";}},
-  ];
-  var radarMs2=[
-    {k:"yield_",l:"Portfolio Yield", hi:true, mn:8,  mx:13, fmt:function(v){return v.toFixed(1)+"%";}},
-    {k:"drip",  l:"DRIP Rate",       hi:true, mn:30, mx:70, fmt:function(v){return v.toFixed(1)+"%";}},
-    {k:"aum",   l:"Scale (AUM $B)",  hi:true, mn:0,  mx:60, fmt:function(v){return "$"+v.toFixed(1)+"B";}},
-    {k:"load",  l:"Low Sales Load",  hi:false,mn:0,  mx:5,  fmt:function(v){return v.toFixed(1)+"%";}},
-    {k:"na",    l:"Low Non-Accrual", hi:false,mn:0,  mx:3,  fmt:function(v){return v.toFixed(2)+"%";}},
-    {k:"cov",   l:"NII Coverage",    hi:true, mn:.9, mx:1.3,fmt:function(v){return v.toFixed(2)+"x";}},
-  ];
-
-  var norm=function(v,m){var r=(v-m.mn)/(m.mx-m.mn)*100;return m.hi?Math.min(100,Math.max(0,r)):Math.min(100,Math.max(0,100-r));};
-
-  function mkRadar(id,metrics,peers,ap){
-    var rest=peers.filter(function(p){return p.tk!=="BCRED";});
-    var aV=metrics.map(function(m){return norm(ap[m.k],m);});
-    var mV=metrics.map(function(m){var s=rest.map(function(p){return norm(p[m.k],m);}).sort(function(a,b){return a-b;});var mid=Math.floor(s.length/2);return s.length%2?s[mid]:(s[mid-1]+s[mid])/2;});
-    mk(id,{type:"radar",data:{labels:metrics.map(function(m){return m.l;}),datasets:[
-      {label:"BCRED",data:aV,borderColor:"#2E75B6",backgroundColor:"rgba(46,117,182,.08)",borderWidth:2.5,pointBackgroundColor:"#2E75B6",pointRadius:5},
-      {label:"Peer Median",data:mV,borderColor:"rgba(165,165,165,.7)",backgroundColor:"rgba(90,112,144,.05)",borderWidth:1.5,borderDash:[4,3],pointBackgroundColor:"rgba(165,165,165,.7)",pointRadius:3},
-    ]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:{backgroundColor:"#fff",borderColor:"#e2e6ea",borderWidth:1,titleColor:TC,bodyColor:"#1a1d23",titleFont:{family:F,size:9},bodyFont:{family:F,size:11},padding:10,callbacks:{title:function(ctx){return metrics[ctx[0].dataIndex].l;},label:function(c){var m=metrics[c.dataIndex];if(c.datasetIndex===0)return "BCRED: "+m.fmt(arcc[m.k]);var rest2=peers.filter(function(p){return p.tk!=="BCRED";});var vals=rest2.map(function(p){return p[m.k];}).sort(function(a,b){return a-b;});return "Peer Median: "+m.fmt(vals[Math.floor(vals.length/2)]);} }}},scales:{r:{min:0,max:100,ticks:{display:false},grid:{color:"rgba(226,231,239,.9)"},pointLabels:{font:{family:F,size:9.5},color:"#3d4f63"},angleLines:{color:"rgba(226,231,239,.9)"}}}}});
+  var FM_DATA={};
+  try{FM_DATA=window.parent&&window.parent.FM?window.parent.FM:{};}catch(e){}
+  var curFund={
+    tk:ticker,
+    yield_:L.weighted_avg_yield||null,na:L.na_pct_cost||null,
+    cov:L.nii_coverage||null,lev:L.leverage||null,pik:L.pik_pct||null,
+    fl:L.first_lien_pct||null,nim:L.net_interest_spread||null,
+    cod:L.cost_of_debt_pct||null,exp:L.expense_ratio_pct||null,
+    spill:L.spillover_per_share||null,
+    aum:L.net_assets_mn?L.net_assets_mn/1000:(L.net_assets?L.net_assets/1000:null)
+  };
+  var fundType=(FM_DATA[ticker]||{}).fund_type||"traded";
+  var peerPool=Object.values(FM_DATA)
+    .filter(function(m){return m.tk!==ticker&&(m.fund_type||"traded")===fundType;})
+    .sort(function(a,b){return (b.aum||0)-(a.aum||0);})
+    .slice(0,14)
+    .map(function(m){return {tk:m.tk,name:m.name||m.tk,yield_:m.yld||null,na:m.na||null,cov:m.cov||null,lev:m.lev||null,pik:m.pik||null,fl:m.fl1||null,nim:null,cod:null,exp:null,spill:null,aum:m.aum||null};});
+  if(!peerPool.length){
+    peerPool=[
+      {tk:"OBDC",name:"Blue Owl Capital Corp",yield_:11.2,na:3.2,cov:1.008,lev:1.0,pik:6.4,fl:85.4,nim:null,cod:null,exp:null,spill:null,aum:18.0},
+      {tk:"FSK",name:"FS KKR Capital",yield_:13.2,na:5.1,cov:1.02,lev:1.08,pik:12.4,fl:68.2,nim:null,cod:null,exp:null,spill:null,aum:14.6},
+      {tk:"BXSL",name:"Blackstone Secured Lending",yield_:11.8,na:1.2,cov:1.18,lev:1.14,pik:5.8,fl:98.2,nim:null,cod:null,exp:null,spill:null,aum:9.7},
+      {tk:"GBDC",name:"Golub Capital BDC",yield_:10.8,na:0.8,cov:1.14,lev:1.24,pik:4.1,fl:91.3,nim:null,cod:null,exp:null,spill:null,aum:3.2},
+      {tk:"HTGC",name:"Hercules Capital",yield_:14.8,na:1.8,cov:1.34,lev:0.98,pik:2.1,fl:94.2,nim:null,cod:null,exp:null,spill:null,aum:2.8},
+      {tk:"MAIN",name:"Main Street Capital",yield_:8.9,na:3.6,cov:1.31,lev:0.82,pik:2.7,fl:81.2,nim:null,cod:null,exp:null,spill:null,aum:4.8},
+    ];
   }
-
-  function lollipop(id,sorted,vfn,ffn){var el=document.getElementById(id);if(!el)return;var vals=sorted.map(vfn).filter(function(v){return v!=null;});if(!vals.length)return;var mn=Math.min.apply(null,vals),mx=Math.max.apply(null,vals),rng=mx-mn||1;el.innerHTML=sorted.map(function(p,i){var v=vfn(p);if(v==null)return "";var me=p.tk==="BCRED";var pct=((v-mn)/rng*72+14);var dc=me?"#2E75B6":i===0?"#70AD47":"#5a7090";return "<div class='lpop-row"+(me?" me":"")+"'><span class='lpop-rank'>"+(i+1)+"</span><span class='lpop-tk' style='color:"+(me?"#2E75B6":"var(--text2)")+"'>"+p.tk+(p.red_gate?"<span style='font-size:8px;color:var(--red)'>⚠</span>":"")+"</span><div class='lpop-bar'><div class='lpop-track'></div><div class='lpop-fill' style='width:"+pct+"%'></div><div class='lpop-dot' style='left:"+pct+"%;width:"+(me?18:12)+"px;height:"+(me?18:12)+"px;background:"+dc+";box-shadow:"+(me?"0 0 0 3px rgba(24,71,194,.25)":"0 1px 4px rgba(0,0,0,.15)")+"'></div></div><span class='lpop-val' style='color:"+(me?"#2E75B6":"var(--text)")+"'>"+ffn(v)+"</span></div>";}).join("");}
-
-  document.getElementById("peers-content").innerHTML=
-    "<div style='margin-bottom:14px;padding:10px 16px;background:var(--bg3);border:1px solid var(--border);border-radius:8px;font-size:11.5px;color:var(--text2)'><strong style='color:var(--text)'>Peer set:</strong> 6 large non-traded & interval BDCs · Q1 2026 · <span style='color:var(--blue);font-weight:600'>BCRED highlighted</span> · <span style='color:var(--red)'>⚠ = redemption gate active</span></div>"
-    +"<div class='g2' style='margin-bottom:16px'>"
-    +"<div class='card'><div class='ch'><span class='ct'>Credit & Safety Profile</span><span class='cs'>Non-Accrual · PIK · Coverage · Leverage · First Lien · Floating</span></div><div class='cw' style='height:280px'><canvas id='pr-radar'></canvas></div><div class='leg' style='justify-content:center;padding-bottom:14px'><div class='li'><div class='ll' style='background:var(--blue)'></div>BCRED</div><div class='li'><div class='ll' style='background:var(--text4)'></div>Peer Median</div></div></div>"
-    +"<div class='card'><div class='ch'><span class='ct'>Platform & Returns Profile</span><span class='cs'>Yield · DRIP · AUM · Load · Non-Accrual · Coverage</span></div><div class='cw' style='height:280px'><canvas id='pr-radar2'></canvas></div><div class='leg' style='justify-content:center;padding-bottom:14px'><div class='li'><div class='ll' style='background:var(--blue)'></div>BCRED</div><div class='li'><div class='ll' style='background:var(--text4)'></div>Peer Median</div></div></div></div>"
-    +"<div class='g2' style='margin-bottom:16px'><div class='card'><div class='ch'><span class='ct'>Portfolio Yield (%)</span></div><div id='lp-yield' style='padding:12px 18px 10px'></div></div><div class='card'><div class='ch'><span class='ct'>Non-Accrual % at Cost</span></div><div id='lp-na' style='padding:12px 18px 10px'></div></div></div>"
-    +"<div class='g2' style='margin-bottom:16px'><div class='card'><div class='ch'><span class='ct'>NII Coverage Ratio</span></div><div id='lp-cov' style='padding:12px 18px 10px'></div></div><div class='card'><div class='ch'><span class='ct'>DRIP Participation Rate (%)</span></div><div id='lp-drip' style='padding:12px 18px 10px'></div></div></div>"
-    +"<div class='g2'><div class='card'><div class='ch'><span class='ct'>Net Assets (Scale)</span></div><div id='lp-aum' style='padding:12px 18px 10px'></div></div><div class='card'><div class='ch'><span class='ct'>Sales Load % (Class S/Equiv.)</span></div><div id='lp-load' style='padding:12px 18px 10px'></div></div></div>";
-
-  setTimeout(function(){
-    mkRadar("pr-radar",  radarMs1,PEERS,arcc);
-    mkRadar("pr-radar2", radarMs2,PEERS,arcc);
-    lollipop("lp-yield",PEERS.slice().sort(function(a,b){return b.yield_-a.yield_;}),function(p){return p.yield_;},function(v){return v.toFixed(1)+"%";});
-    lollipop("lp-na",PEERS.slice().sort(function(a,b){return a.na-b.na;}),function(p){return p.na;},function(v){return v.toFixed(2)+"%";});
-    lollipop("lp-cov",PEERS.slice().sort(function(a,b){return b.cov-a.cov;}),function(p){return p.cov;},function(v){return v.toFixed(2)+"×";});
-    lollipop("lp-drip",PEERS.slice().sort(function(a,b){return b.drip-a.drip;}),function(p){return p.drip;},function(v){return v.toFixed(1)+"%";});
-    lollipop("lp-aum",PEERS.slice().sort(function(a,b){return b.aum-a.aum;}),function(p){return p.aum;},function(v){return "$"+v.toFixed(1)+"B";});
-    lollipop("lp-load",PEERS.slice().sort(function(a,b){return a.load-b.load;}),function(p){return p.load;},function(v){return v.toFixed(1)+"%";});
-    lollipop("lp-nav", PEERS.slice().sort(function(a,b){return b.nav-a.nav;}),function(p){return p.nav;},function(v){return "$"+v.toFixed(2);});
-    lollipop("lp-pik", PEERS.slice().sort(function(a,b){return a.pik-b.pik;}),function(p){return p.pik;},function(v){return v.toFixed(1)+"%";});
-    lollipop("lp-lev", PEERS.slice().sort(function(a,b){return a.lev-b.lev;}),function(p){return p.lev;},function(v){return v.toFixed(2)+"x";});
-    lollipop("lp-flt", PEERS.slice().sort(function(a,b){return b.flt-a.flt;}),function(p){return p.flt;},function(v){return v.toFixed(1)+"%";});
-    injectTimeBars("peers");
-  },150);
+  if(!window._peerState||window._peerState.ticker!==ticker){
+    window._peerState={ticker:ticker,selected:peerPool.slice(0,5).map(function(p){return p.tk;})};
+  }
+  var el=document.getElementById("peers-content");
+  if(!el)return;
+  var chips='<div style="margin-bottom:18px"><div style="font-family:\'Roboto Mono\',monospace;font-size:8px;text-transform:uppercase;letter-spacing:.8px;color:var(--text3);margin-bottom:8px">Select up to 6 peers to compare</div><div style="display:flex;flex-wrap:wrap;gap:6px;">';
+  peerPool.forEach(function(p){
+    var sel=window._peerState.selected.indexOf(p.tk)>=0;
+    chips+='<button onclick="window._togglePeer(\''+p.tk+'\')" id="peer-chip-'+p.tk+'" style="font-family:\'Roboto Mono\',monospace;font-size:9px;padding:4px 10px;border-radius:4px;cursor:pointer;border:1px solid;transition:all .15s;background:'+(sel?'var(--blue)':'#fff')+';color:'+(sel?'#fff':'var(--text3)')+';border-color:'+(sel?'var(--blue)':'var(--border)')+'">'+p.tk+'</button>';
+  });
+  chips+='</div></div><div id="peers-viz"></div>';
+  el.innerHTML=chips;
+  window._renderPeers=function(){
+    var sel=window._peerState.selected;
+    var peers=[curFund].concat(peerPool.filter(function(p){return sel.indexOf(p.tk)>=0;}));
+    var viz=document.getElementById("peers-viz");
+    if(!viz)return;
+    var cols=[
+      {k:"aum",l:"AUM",fmt:function(v){return v!=null?"$"+v.toFixed(1)+"B":"--";}},
+      {k:"yield_",l:"Yield",fmt:function(v){return v!=null?v.toFixed(1)+"%":"--";}},
+      {k:"cov",l:"Coverage",fmt:function(v){return v!=null?v.toFixed(2)+"x":"--";}},
+      {k:"na",l:"Non-Accrual",fmt:function(v){return v!=null?v.toFixed(2)+"%":"--";}},
+      {k:"pik",l:"PIK %",fmt:function(v){return v!=null?v.toFixed(1)+"%":"--";}},
+      {k:"lev",l:"Leverage",fmt:function(v){return v!=null?v.toFixed(2)+"x":"--";}},
+      {k:"fl",l:"1st Lien",fmt:function(v){return v!=null?v.toFixed(1)+"%":"--";}}
+    ];
+    var tbl='<div style="overflow-x:auto;margin-bottom:24px"><table style="width:100%;border-collapse:collapse;font-family:\'Roboto Mono\',monospace;font-size:10px"><thead><tr style="border-bottom:2px solid var(--border)">';
+    tbl+='<th style="text-align:left;padding:8px 10px;font-size:8px;color:var(--text3);text-transform:uppercase">Fund</th>';
+    cols.forEach(function(c){tbl+='<th style="text-align:right;padding:8px 10px;font-size:8px;color:var(--text3);text-transform:uppercase">'+c.l+'</th>';});
+    tbl+='</tr></thead><tbody>';
+    peers.forEach(function(p){
+      var isMe=p.tk===ticker;
+      tbl+='<tr style="border-bottom:1px solid var(--border);'+(isMe?'background:rgba(46,117,182,.06);font-weight:600;':'')+'"><td style="padding:8px 10px;color:'+(isMe?'var(--blue)':'var(--text)')+';">'+(isMe?'<b>':'')+p.tk+(isMe?'</b>':'')+' <span style="font-size:8px;color:var(--text4)">'+(p.name||'').substring(0,22)+'</span></td>';
+      cols.forEach(function(c){tbl+='<td style="text-align:right;padding:8px 10px;color:var(--text2)">'+c.fmt(p[c.k])+'</td>';});
+      tbl+='</tr>';
+    });
+    tbl+='</tbody></table></div>';
+    var metrics=[
+      {k:"yield_",l:"Portfolio Yield",hi:true,fmt:function(v){return v.toFixed(1)+"%";}},
+      {k:"na",l:"Non-Accrual %",hi:false,fmt:function(v){return v.toFixed(2)+"%";}},
+      {k:"cov",l:"NII Coverage",hi:true,fmt:function(v){return v.toFixed(2)+"x";}},
+      {k:"lev",l:"Leverage",hi:false,fmt:function(v){return v.toFixed(2)+"x";}},
+      {k:"pik",l:"PIK %",hi:false,fmt:function(v){return v.toFixed(1)+"%";}},
+      {k:"aum",l:"Net Assets",hi:true,fmt:function(v){return "$"+v.toFixed(1)+"B";}}
+    ];
+    var lpHtml='<div class="g2">';
+    metrics.forEach(function(m){
+      lpHtml+='<div class="card"><div class="ch"><span class="ct">'+m.l+'</span></div><div id="lp-dyn-'+m.k+'"></div></div>';
+    });
+    lpHtml+='</div>';
+    viz.innerHTML=tbl+lpHtml;
+    metrics.forEach(function(m){
+      var sorted=peers.filter(function(p){return p[m.k]!=null;}).slice();
+      sorted.sort(function(a,b){return m.hi?(b[m.k]-a[m.k]):(a[m.k]-b[m.k]);});
+      var el2=document.getElementById("lp-dyn-"+m.k);
+      if(!el2||!sorted.length)return;
+      var vals=sorted.map(function(p){return p[m.k];});
+      var mn=Math.min.apply(null,vals),mx=Math.max.apply(null,vals),rng=mx-mn||1;
+      el2.innerHTML=sorted.map(function(p,i){
+        var v=p[m.k],me=p.tk===ticker;
+        var pct=((v-mn)/rng*70+12);
+        var dc=me?"var(--blue)":i===0?"var(--green)":"var(--text4)";
+        return "<div style='display:flex;align-items:center;gap:8px;padding:5px 0;border-bottom:1px solid var(--border)'>"
+          +"<span style='font-family:\"Roboto Mono\",monospace;font-size:8px;color:var(--text3);min-width:16px;text-align:right'>"+(i+1)+"</span>"
+          +"<span style='font-family:\"Roboto Mono\",monospace;font-size:9.5px;font-weight:"+(me?700:400)+";color:"+(me?"var(--blue)":"var(--text2)")+";min-width:50px'>"+p.tk+"</span>"
+          +"<div style='flex:1;height:4px;background:var(--border);border-radius:2px'><div style='height:4px;width:"+pct+"%;background:"+dc+";border-radius:2px'></div></div>"
+          +"<span style='font-family:\"Roboto Mono\",monospace;font-size:9px;color:"+(me?"var(--blue)":"var(--text2)")+";min-width:52px;text-align:right'>"+m.fmt(v)+"</span>"
+          +"</div>";
+      }).join("");
+    });
+  };
+  window._togglePeer=function(tk){
+    var sel=window._peerState.selected;
+    var idx=sel.indexOf(tk);
+    if(idx>=0){sel.splice(idx,1);}
+    else{if(sel.length>=6)return;sel.push(tk);}
+    var chip=document.getElementById("peer-chip-"+tk);
+    if(chip){var a=sel.indexOf(tk)>=0;chip.style.background=a?"var(--blue)":"#fff";chip.style.color=a?"#fff":"var(--text3)";chip.style.borderColor=a?"var(--blue)":"var(--border)";}
+    window._renderPeers();
+  };
+  window._renderPeers();
 }
 
 // ── EVENT TIMELINE ─────────────────────────────────────────────────────────────
