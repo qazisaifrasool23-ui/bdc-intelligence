@@ -580,8 +580,6 @@ function refreshHeroRank(ticker) {
   var qtr     = decodeURIComponent(p.get("qtr")  || "");
   var aum     = p.get("aum")  || "";
   var gate    = p.get("gate") === "1";
-  var internal= p.get("internal") === "1";
-  var mgmtType= internal ? "Internally Managed" : "Externally Managed";
 
   function setHero(latestQtr) {
     var q = latestQtr || qtr || "Latest Filing";
@@ -592,7 +590,7 @@ function refreshHeroRank(ticker) {
     document.querySelectorAll(".fund-name").forEach(function(e){e.textContent=ticker;});
     /* fund-meta = manager + last reported quarter */
     document.querySelectorAll(".fund-meta").forEach(function(e){
-      e.innerHTML="<span>"+mgmtType+"</span><span>"+(mgr||"Manager")+"</span>"+(q?"<span>"+qLabel+"</span>":"");
+      e.innerHTML="<span>"+(mgr||"Manager")+"</span>"+(q?"<span>"+qLabel+"</span>":"");
     });
     /* badges = NON-TRADED + gate if active */
     document.querySelectorAll(".badges").forEach(function(e){
@@ -1236,23 +1234,49 @@ function buildPeers(){
 
 // ── EVENT TIMELINE ─────────────────────────────────────────────────────────────
 
-/* Override buildPeers to highlight current ticker */
+/* Dynamic peers: rebuild PEERS array with current fund highlighted */
 var _origBuildPeers = buildPeers;
 buildPeers = function() {
+  /* Inject current fund as first peer so it shows highlighted */
+  if(typeof ticker !== "undefined" && typeof L !== "undefined") {
+    /* Update the first entry in PEERS to match current fund */
+    var curPeer = {
+      tk:     ticker,
+      yield_: L.weighted_avg_yield || L.yield_ || null,
+      na:     L.na_pct_cost || L.na_cost || null,
+      cov:    L.nii_coverage || L.cov || null,
+      lev:    L.leverage || L.lev || null,
+      pik:    L.pik_pct || null,
+      fl:     L.first_lien_pct || L.fl || null,
+      nim:    L.net_interest_spread || L.spread || null,
+      cod:    L.cost_of_debt_pct || L.cod || null,
+      exp:    L.expense_ratio_pct || null,
+      vel:    L.origination_velocity_pct || null,
+      spill:  L.spillover_per_share || L.spillover || null,
+      aum:    (L.net_assets_mn ? L.net_assets_mn/1000 : null) || (L.net_assets ? L.net_assets/1000 : null)
+    };
+    /* Replace first PEERS entry with current fund data */
+    if(PEERS && PEERS.length > 0) {
+      PEERS[0] = curPeer;
+    }
+  }
   _origBuildPeers();
-  /* After peers renders, fix the highlighted row from ARCC to current ticker */
+  /* After peers renders, highlight current ticker row */
   if(typeof ticker === "undefined") return;
-  var table = document.querySelector("#sec-peers table, [id*='peers'] table");
-  if(!table) return;
-  var rows = table.querySelectorAll("tr");
-  rows.forEach(function(row) {
-    var cells = row.querySelectorAll("td");
-    if(!cells.length) return;
-    var tk = cells[0] ? cells[0].textContent.trim().split(" ")[0] : "";
-    var isMe = tk === ticker;
-    row.style.background = isMe ? "rgba(46,117,182,.06)" : "";
-    row.style.fontWeight = isMe ? "600" : "";
-    if(cells[0]) cells[0].style.color = isMe ? "var(--blue)" : "";
+  var tables = document.querySelectorAll("table");
+  tables.forEach(function(table) {
+    var rows = table.querySelectorAll("tr");
+    rows.forEach(function(row) {
+      var cells = row.querySelectorAll("td");
+      if(!cells.length) return;
+      var tk = cells[0] ? cells[0].textContent.trim().split(/\s/)[0] : "";
+      var isMe = tk === ticker;
+      if(isMe) {
+        row.style.background = "rgba(46,117,182,.08)";
+        row.style.fontWeight = "600";
+        if(cells[0]) cells[0].style.color = "var(--blue)";
+      }
+    });
   });
 };
 
