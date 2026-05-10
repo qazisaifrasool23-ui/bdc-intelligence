@@ -1,0 +1,678 @@
+{
+  "completed_at": "2026-05-09T22:19:32",
+  "processed": 19,
+  "failed": [
+    {
+      "ticker": "ADS",
+      "reason": "no_nav_8k",
+      "n_8ks": 10
+    },
+    {
+      "ticker": "ANT_PCF",
+      "reason": "no_nav_8k",
+      "n_8ks": 8
+    },
+    {
+      "ticker": "APCIF",
+      "reason": "no_nav_8k",
+      "n_8ks": 19
+    },
+    {
+      "ticker": "GCRED",
+      "reason": "no_nav_8k",
+      "n_8ks": 20
+    },
+    {
+      "ticker": "KKR_FSIT",
+      "reason": "no_nav_8k",
+      "n_8ks": 13
+    },
+    {
+      "ticker": "LPCL",
+      "reason": "no_nav_8k",
+      "n_8ks": 7
+    },
+    {
+      "ticker": "MRCC_NT",
+      "reason": "no_nav_8k",
+      "n_8ks": 11
+    },
+    {
+      "ticker": "OSCF",
+      "reason": "no_nav_8k",
+      "n_8ks": 7
+    },
+    {
+      "ticker": "LPART",
+      "reason": "no_nav_8k",
+      "n_8ks": 4
+    },
+    {
+      "ticker": "APLEN",
+      "reason": "no_nav_8k",
+      "n_8ks": 9
+    },
+    {
+      "ticker": "APCI",
+      "reason": "no_nav_8k",
+      "n_8ks": 5
+    },
+    {
+      "ticker": "ACSL",
+      "reason": "no_nav_8k",
+      "n_8ks": 10
+    },
+    {
+      "ticker": "ASCI",
+      "reason": "no_nav_8k",
+      "n_8ks": 8
+    },
+    {
+      "ticker": "AOII",
+      "reason": "no_nav_8k",
+      "n_8ks": 3
+    },
+    {
+      "ticker": "ACBDC",
+      "reason": "no_nav_8k",
+      "n_8ks": 3
+    },
+    {
+      "ticker": "BPCC",
+      "reason": "no_nav_8k",
+      "n_8ks": 8
+    },
+    {
+      "ticker": "BPLEN",
+      "reason": "no_nav_8k",
+      "n_8ks": 3
+    },
+    {
+      "ticker": "BVEB",
+      "reason": "no_nav_8k",
+      "n_8ks": 5
+    },
+    {
+      "ticker": "BOCA",
+      "reason": "no_nav_8k",
+      "n_8ks": 8
+    },
+    {
+      "ticker": "BOTFI",
+      "reason": "no_8ks"
+    },
+    {
+      "ticker": "CSLI",
+      "reason": "no_8ks"
+    },
+    {
+      "ticker": "CCPBI",
+      "reason": "no_8ks"
+    },
+    {
+      "ticker": "CLSOL",
+      "reason": "no_nav_8k",
+      "n_8ks": 5
+    },
+    {
+      "ticker": "EPTSS",
+      "reason": "no_nav_8k",
+      "n_8ks": 6
+    },
+    {
+      "ticker": "FPCRE",
+      "reason": "no_nav_8k",
+      "n_8ks": 3
+    },
+    {
+      "ticker": "FSLEN",
+      "reason": "no_8ks"
+    },
+    {
+      "ticker": "GCB",
+      "reason": "no_nav_8k",
+      "n_8ks": 8
+    },
+    {
+      "ticker": "HPCI",
+      "reason": "no_nav_8k",
+      "n_8ks": 14
+    },
+    {
+      "ticker": "JCPB",
+      "reason": "no_nav_8k",
+      "n_8ks": 13
+    },
+    {
+      "ticker": "KAYN",
+      "reason": "no_8ks"
+    },
+    {
+      "ticker": "KEUDL",
+      "reason": "no_nav_8k",
+      "n_8ks": 10
+    },
+    {
+      "ticker": "LSUSA",
+      "reason": "no_nav_8k",
+      "n_8ks": 5
+    },
+    {
+      "ticker": "LECRE",
+      "reason": "no_nav_8k",
+      "n_8ks": 5
+    },
+    {
+      "ticker": "LPCRE",
+      "reason": "no_nav_8k",
+      "n_8ks": 8
+    },
+    {
+      "ticker": "LRFIN",
+      "reason": "no_8ks"
+    },
+    {
+      "ticker": "LAPC",
+      "reason": "no_nav_8k",
+      "n_8ks": 8
+    },
+    {
+      "ticker": "MPCRE",
+      "reason": "no_nav_8k",
+      "n_8ks": 4
+    },
+    {
+      "ticker": "MMAIP",
+      "reason": "no_nav_8k",
+      "n_8ks": 1
+    },
+    {
+      "ticker": "MINVE",
+      "reason": "no_nav_8k",
+      "n_8ks": 6
+    },
+    {
+      "ticker": "MCLI",
+      "reason": "no_nav_8k",
+      "n_8ks": 5
+    },
+    {
+      "ticker": "NCAPI",
+      "reason": "no_nav_8k",
+      "n_8ks": 9
+    },
+    {
+      "ticker": "NSI",
+      "reason": "no_nav_8k",
+      "n_8ks": 3
+    },
+    {
+      "ticker": "NHPIF",
+      "reason": "no_nav_8k",
+      "n_8ks": 8
+    },
+    {
+      "ticker": "NCBV",
+      "reason": "no_nav_8k",
+      "n_8ks": 3
+    },
+    {
+      "ticker": "ODLB",
+      "reason": "no_nav_8k",
+      "n_8ks": 3
+    },
+    {
+      "ticker": "OADVA",
+      "reason": "no_nav_8k",
+      "n_8ks": 5
+    },
+    {
+      "ticker": "PPINC",
+      "reason": "no_nav_8k",
+      "n_8ks": 5
+    },
+    {
+      "ticker": "PSMML",
+      "reason": "no_nav_8k",
+      "n_8ks": 7
+    },
+    {
+      "ticker": "PCSB",
+      "reason": "no_8ks"
+    },
+    {
+      "ticker": "PFRAI",
+      "reason": "no_nav_8k",
+      "n_8ks": 7
+    },
+    {
+      "ticker": "RCAPI",
+      "reason": "no_nav_8k",
+      "n_8ks": 10
+    },
+    {
+      "ticker": "SPCIB",
+      "reason": "no_8ks"
+    },
+    {
+      "ticker": "SCINV",
+      "reason": "no_nav_8k",
+      "n_8ks": 9
+    },
+    {
+      "ticker": "SCHOL",
+      "reason": "no_nav_8k",
+      "n_8ks": 2
+    },
+    {
+      "ticker": "SPSL",
+      "reason": "no_nav_8k",
+      "n_8ks": 9
+    },
+    {
+      "ticker": "SSLP",
+      "reason": "no_nav_8k",
+      "n_8ks": 1
+    },
+    {
+      "ticker": "SHBDC",
+      "reason": "no_nav_8k",
+      "n_8ks": 2
+    },
+    {
+      "ticker": "SPCBI",
+      "reason": "no_nav_8k",
+      "n_8ks": 1
+    },
+    {
+      "ticker": "SPDLB",
+      "reason": "no_nav_8k",
+      "n_8ks": 1
+    },
+    {
+      "ticker": "SMLM",
+      "reason": "no_nav_8k",
+      "n_8ks": 2
+    },
+    {
+      "ticker": "SCCAP",
+      "reason": "no_nav_8k",
+      "n_8ks": 4
+    },
+    {
+      "ticker": "SPCRE",
+      "reason": "no_nav_8k",
+      "n_8ks": 8
+    },
+    {
+      "ticker": "SPCI",
+      "reason": "no_nav_8k",
+      "n_8ks": 9
+    },
+    {
+      "ticker": "TDLEN",
+      "reason": "no_8ks"
+    },
+    {
+      "ticker": "TSCSL",
+      "reason": "no_nav_8k",
+      "n_8ks": 1
+    },
+    {
+      "ticker": "TPPCP",
+      "reason": "no_nav_8k",
+      "n_8ks": 1
+    },
+    {
+      "ticker": "WBBDC",
+      "reason": "no_nav_8k",
+      "n_8ks": 5
+    },
+    {
+      "ticker": "WTCAP",
+      "reason": "no_nav_8k",
+      "n_8ks": 4
+    }
+  ],
+  "results": {
+    "BAIN_PC": {
+      "filing_date": "2026-04-29",
+      "accession": "0001193125-26-192114",
+      "extracted": {
+        "nav_s": null,
+        "nav_d": null,
+        "nav_i": 25.83,
+        "nav_t": null,
+        "nav_w": null,
+        "nav_f": null,
+        "nav_date": "2026-03-31"
+      },
+      "filled": [
+        "nav_i"
+      ],
+      "spread_filled": 0
+    },
+    "BCRED": {
+      "filing_date": "2026-04-29",
+      "accession": "0001803498-26-000026",
+      "extracted": {
+        "nav_s": null,
+        "nav_d": null,
+        "nav_i": null,
+        "nav_t": null,
+        "nav_w": null,
+        "nav_f": null,
+        "nav_date": null
+      },
+      "filled": [],
+      "spread_filled": 0
+    },
+    "BLKR_PCF": {
+      "filing_date": "2026-04-24",
+      "accession": "0001140361-26-016760",
+      "extracted": {
+        "nav_s": 23.52,
+        "nav_d": 23.52,
+        "nav_i": 23.52,
+        "nav_t": null,
+        "nav_w": null,
+        "nav_f": null,
+        "nav_date": "2026-03-31"
+      },
+      "filled": [
+        "nav_s",
+        "nav_d",
+        "nav_i"
+      ],
+      "spread_filled": 0
+    },
+    "FID_PCF": {
+      "filing_date": "2026-04-24",
+      "accession": "0001193125-26-177159",
+      "extracted": {
+        "nav_s": 24.93,
+        "nav_d": 24.95,
+        "nav_i": 24.95,
+        "nav_t": null,
+        "nav_w": null,
+        "nav_f": null,
+        "nav_date": "2026-03-31"
+      },
+      "filled": [
+        "nav_s",
+        "nav_d",
+        "nav_i"
+      ],
+      "spread_filled": 0
+    },
+    "HLEND": {
+      "filing_date": "2026-04-27",
+      "accession": "0001628280-26-027600",
+      "extracted": {
+        "nav_s": 24.79,
+        "nav_d": 24.79,
+        "nav_i": 24.79,
+        "nav_t": null,
+        "nav_w": null,
+        "nav_f": 24.79,
+        "nav_date": "2026-03-31"
+      },
+      "filled": [
+        "nav_s",
+        "nav_d",
+        "nav_i",
+        "nav_f"
+      ],
+      "spread_filled": 0
+    },
+    "NCPCIF": {
+      "filing_date": "2026-04-29",
+      "accession": "0001911066-26-000044",
+      "extracted": {
+        "nav_s": 23.94,
+        "nav_d": 24.02,
+        "nav_i": 24.02,
+        "nav_t": null,
+        "nav_w": null,
+        "nav_f": null,
+        "nav_date": "2026-03-31"
+      },
+      "filled": [
+        "nav_s",
+        "nav_d"
+      ],
+      "spread_filled": 0
+    },
+    "OBTIC": {
+      "filing_date": "2026-04-23",
+      "accession": "0001869453-26-000024",
+      "extracted": {
+        "nav_s": 9.82,
+        "nav_d": 9.82,
+        "nav_i": 9.82,
+        "nav_t": null,
+        "nav_w": null,
+        "nav_f": null,
+        "nav_date": "2026-03-31"
+      },
+      "filled": [],
+      "spread_filled": 0
+    },
+    "OCIC": {
+      "filing_date": "2026-04-23",
+      "accession": "0001812554-26-000017",
+      "extracted": {
+        "nav_s": 9.08,
+        "nav_d": 9.09,
+        "nav_i": 9.11,
+        "nav_t": null,
+        "nav_w": null,
+        "nav_f": null,
+        "nav_date": "2026-03-31"
+      },
+      "filled": [
+        "nav_s",
+        "nav_d",
+        "nav_i"
+      ],
+      "spread_filled": 0
+    },
+    "TBKCF": {
+      "filing_date": "2026-04-28",
+      "accession": "0001140361-26-017478",
+      "extracted": {
+        "nav_s": 26.15,
+        "nav_d": 26.15,
+        "nav_i": 26.15,
+        "nav_t": null,
+        "nav_w": null,
+        "nav_f": null,
+        "nav_date": "2026-03-31"
+      },
+      "filled": [
+        "nav_s",
+        "nav_d",
+        "nav_i"
+      ],
+      "spread_filled": 0
+    },
+    "APCRE": {
+      "filing_date": "2026-05-01",
+      "accession": "0001193125-26-201728",
+      "extracted": {
+        "nav_s": null,
+        "nav_d": null,
+        "nav_i": 24.57,
+        "nav_t": null,
+        "nav_w": null,
+        "nav_f": null,
+        "nav_date": "2026-03-31"
+      },
+      "filled": [
+        "nav_i"
+      ],
+      "spread_filled": 0
+    },
+    "CCSO": {
+      "filing_date": "2026-04-27",
+      "accession": "0001702510-26-000034",
+      "extracted": {
+        "nav_s": null,
+        "nav_d": null,
+        "nav_i": 18.39,
+        "nav_t": null,
+        "nav_w": null,
+        "nav_f": null,
+        "nav_date": "2026-03-31"
+      },
+      "filled": [
+        "nav_i"
+      ],
+      "spread_filled": 0
+    },
+    "CSRC": {
+      "filing_date": "2026-04-28",
+      "accession": "0001999371-26-009265",
+      "extracted": {
+        "nav_s": null,
+        "nav_d": null,
+        "nav_i": null,
+        "nav_t": null,
+        "nav_w": null,
+        "nav_f": null,
+        "nav_date": "2026-03-31"
+      },
+      "filled": [],
+      "spread_filled": 0
+    },
+    "CPCI": {
+      "filing_date": "2026-04-28",
+      "accession": "0001193125-26-186926",
+      "extracted": {
+        "nav_s": 26.27,
+        "nav_d": 26.27,
+        "nav_i": 26.27,
+        "nav_t": null,
+        "nav_w": null,
+        "nav_f": null,
+        "nav_date": "2026-03-31"
+      },
+      "filled": [
+        "nav_s",
+        "nav_d"
+      ],
+      "spread_filled": 0
+    },
+    "FEPC": {
+      "filing_date": "2026-04-23",
+      "accession": "0001193125-26-173956",
+      "extracted": {
+        "nav_s": null,
+        "nav_d": 23.95,
+        "nav_i": 23.95,
+        "nav_t": null,
+        "nav_w": null,
+        "nav_f": null,
+        "nav_date": "2026-03-31"
+      },
+      "filled": [
+        "nav_d",
+        "nav_i"
+      ],
+      "spread_filled": 0
+    },
+    "HCCS": {
+      "filing_date": "2026-04-27",
+      "accession": "0001628280-26-027619",
+      "extracted": {
+        "nav_s": 26.88,
+        "nav_d": 26.88,
+        "nav_i": 26.88,
+        "nav_t": null,
+        "nav_w": null,
+        "nav_f": null,
+        "nav_date": "2026-03-31"
+      },
+      "filled": [
+        "nav_s",
+        "nav_d",
+        "nav_i"
+      ],
+      "spread_filled": 0
+    },
+    "KLCAP": {
+      "filing_date": "2026-05-04",
+      "accession": "0001911321-26-000013",
+      "extracted": {
+        "nav_s": 19.94,
+        "nav_d": 19.97,
+        "nav_i": 19.97,
+        "nav_t": null,
+        "nav_w": null,
+        "nav_f": null,
+        "nav_date": "2026-03-31"
+      },
+      "filled": [
+        "nav_s",
+        "nav_d",
+        "nav_i"
+      ],
+      "spread_filled": 0
+    },
+    "PGLEN": {
+      "filing_date": "2026-05-04",
+      "accession": "0001398344-26-008196",
+      "extracted": {
+        "nav_s": null,
+        "nav_d": null,
+        "nav_i": 1.4964,
+        "nav_t": null,
+        "nav_w": null,
+        "nav_f": null,
+        "nav_date": "2026-03-31"
+      },
+      "filled": [
+        "nav_i"
+      ],
+      "spread_filled": 0
+    },
+    "TBCI": {
+      "filing_date": "2026-04-29",
+      "accession": "0001913724-26-000012",
+      "extracted": {
+        "nav_s": 25.2181,
+        "nav_d": 25.2181,
+        "nav_i": 25.2181,
+        "nav_t": null,
+        "nav_w": null,
+        "nav_f": null,
+        "nav_date": "2026-03-31"
+      },
+      "filled": [
+        "nav_s",
+        "nav_d",
+        "nav_i"
+      ],
+      "spread_filled": 0
+    },
+    "VCSL": {
+      "filing_date": "2026-04-27",
+      "accession": "0001193125-26-179951",
+      "extracted": {
+        "nav_s": 19.29,
+        "nav_d": null,
+        "nav_i": 19.29,
+        "nav_t": null,
+        "nav_w": null,
+        "nav_f": null,
+        "nav_date": "2026-03-31"
+      },
+      "filled": [
+        "nav_s",
+        "nav_i"
+      ],
+      "spread_filled": 0
+    }
+  },
+  "net_spread_cells_filled": 0
+}
