@@ -580,6 +580,8 @@ function refreshHeroRank(ticker) {
   var qtr     = decodeURIComponent(p.get("qtr")  || "");
   var aum     = p.get("aum")  || "";
   var gate    = p.get("gate") === "1";
+  var internal= p.get("internal") === "1";
+  var mgmtType= internal ? "Internally Managed" : "Externally Managed";
 
   function setHero(latestQtr) {
     var q = latestQtr || qtr || "Latest Filing";
@@ -590,7 +592,7 @@ function refreshHeroRank(ticker) {
     document.querySelectorAll(".fund-name").forEach(function(e){e.textContent=ticker;});
     /* fund-meta = manager + last reported quarter */
     document.querySelectorAll(".fund-meta").forEach(function(e){
-      e.innerHTML="<span>"+(mgr||"Manager")+"</span>"+(q?"<span>"+qLabel+"</span>":"");
+      e.innerHTML="<span>"+mgmtType+"</span><span>"+(mgr||"Manager")+"</span>"+(q?"<span>"+qLabel+"</span>":"");
     });
     /* badges = NON-TRADED + gate if active */
     document.querySelectorAll(".badges").forEach(function(e){
