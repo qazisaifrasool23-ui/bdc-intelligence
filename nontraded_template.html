@@ -281,11 +281,11 @@ body{background:var(--bg);color:var(--text);font-family:var(--sans);font-size:13
     <div class="sc-div"></div>
     <div class="sc-item"><div class="sc-label">Class I (Inst.)</div><div class="sc-value" id="sc-i">—</div></div>
     <div class="sc-div"></div>
-    <div class="sc-item"><div class="sc-label">Class T (Advisory)</div><div class="sc-value" id="sc-t">—</div></div>
+    <div class="sc-item"><div class="sc-label">Dist. Yield</div><div class="sc-value" id="sc-t">—</div></div>
     <div class="sc-div"></div>
     <div class="sc-item"><div class="sc-label">Net Spread</div><div class="sc-value" id="sc-spread">—</div></div>
     <div class="sc-div"></div>
-    <div class="sc-item"><div class="sc-label">DRIP Rate</div><div class="sc-value" id="sc-drip">—</div></div>
+    <div class="sc-item"><div class="sc-label">Net Spread</div><div class="sc-value" id="sc-drip">—</div></div>
     <div class="sc-div"></div>
     <div class="sc-item"><div class="sc-label">Queue Backlog</div><div class="sc-value rd" id="sc-backlog">—</div></div>
   </div>
@@ -583,23 +583,27 @@ function refreshHeroRank(ticker) {
 
   function setHero(latestQtr) {
     var q = latestQtr || qtr || "Latest Filing";
-    document.querySelectorAll(".fund-ticker").forEach(function(e){e.textContent=ticker;});
-    document.querySelectorAll(".fund-name").forEach(function(e){e.textContent=fundName;});
+    var qLabel = q !== "Latest Filing" ? "Last reported " + q : "Latest Filing";
+    /* fund-ticker = fund NAME (largest font) */
+    document.querySelectorAll(".fund-ticker").forEach(function(e){e.textContent=fundName;});
+    /* fund-name = ticker (smaller) */
+    document.querySelectorAll(".fund-name").forEach(function(e){e.textContent=ticker;});
+    /* fund-meta = manager + last reported quarter */
     document.querySelectorAll(".fund-meta").forEach(function(e){
-      e.innerHTML="<span>"+mgr+"</span><span>Non-Traded BDC</span>"+(q?"<span>"+q+"</span>":"");
+      e.innerHTML="<span>"+(mgr||"Manager")+"</span>"+(q?"<span>"+qLabel+"</span>":"");
     });
+    /* badges = NON-TRADED + gate if active */
     document.querySelectorAll(".badges").forEach(function(e){
       e.innerHTML="<span class='badge badge-orange'>NON-TRADED</span>"+
-        (gate?"<span class='badge badge-red'>GATE ACTIVE</span>":"")+
-        "<span class='badge badge-gray'>"+q+"</span>";
+        (gate?"<span class='badge badge-red'>GATE ACTIVE</span>":"");
     });
     document.querySelectorAll(".live-badge").forEach(function(e){e.textContent="NON-TRADED BDC";});
     var vs=document.querySelectorAll(".topbar .v");
-    if(vs[0]) vs[0].textContent=q;
+    if(vs[0]) vs[0].textContent=qLabel;
     if(vs[1]) vs[1].textContent=ticker;
     if(vs[2]) vs[2].textContent=aum?"$"+aum+"B":"--";
     if(vs[3]) vs[3].textContent="Loading...";
-    document.title=ticker+" - BDC Intelligence";
+    document.title=fundName+" ("+ticker+") - BDC Intelligence";
   }
   setHero(qtr);
 
@@ -689,7 +693,7 @@ function refreshHeroRank(ticker) {
     setEl("sc-s",  L.nav_s  !=null ? "$"+parseFloat(L.nav_s).toFixed(2)  : "$--");
     setEl("sc-d",  L.nav_d  !=null ? "$"+parseFloat(L.nav_d).toFixed(2)  : "$--");
     setEl("sc-i",  L.nav_i  !=null ? "$"+parseFloat(L.nav_i).toFixed(2)  : "$--");
-    setEl("sc-t",  L.nav_t  !=null ? "$"+parseFloat(L.nav_t).toFixed(2)  : "$--");
+    setEl("sc-t",  L.dist_yield!=null ? parseFloat(L.dist_yield).toFixed(2)+"%" : (L.yld!=null ? parseFloat(L.yld).toFixed(2)+"%" : "--"));
     setEl("sc-spread", L.spread   !=null ? parseFloat(L.spread).toFixed(2)+"%"   : "--");
     setEl("sc-drip",   L.drip_rate!=null ? parseFloat(L.drip_rate).toFixed(1)+"%" : "--");
     /* Redemption KPIs in overview tab */

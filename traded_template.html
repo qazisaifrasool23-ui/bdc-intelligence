@@ -708,22 +708,27 @@ function refreshHeroRank(ticker) {
   /* update hero immediately with URL params - before fetch */
   function setHero(latestQtr) {
     var q = latestQtr || qtr || "Latest Filing";
-    document.querySelectorAll(".fund-ticker").forEach(function(e){e.textContent=ticker;});
-    document.querySelectorAll(".fund-name").forEach(function(e){e.textContent=fundName;});
+    var qLabel = q !== "Latest Filing" ? "Last reported " + q : "Latest Filing";
+    /* fund-ticker = fund NAME (largest font) */
+    document.querySelectorAll(".fund-ticker").forEach(function(e){e.textContent=fundName;});
+    /* fund-name = ticker (smaller) */
+    document.querySelectorAll(".fund-name").forEach(function(e){e.textContent=ticker;});
+    /* fund-meta = manager only + last reported quarter */
     document.querySelectorAll(".fund-meta").forEach(function(e){
-      e.innerHTML="<span>"+mgr+"</span><span>NASDAQ / NYSE Listed</span>"+(q?"<span>"+q+"</span>":"");
+      e.innerHTML="<span>"+(mgr||"Manager")+"</span>"+(q?"<span>"+qLabel+"</span>":"");
     });
+    /* badges = TRADED only */
     document.querySelectorAll(".badges").forEach(function(e){
-      e.innerHTML="<span class='badge badge-blue'>TRADED</span><span class='badge badge-gray'>"+q+"</span>";
+      e.innerHTML="<span class='badge badge-blue'>TRADED</span>";
     });
     document.querySelectorAll(".live-badge").forEach(function(e){e.textContent="TRADED BDC";});
     /* topbar */
     var vs=document.querySelectorAll(".topbar .v");
-    if(vs[0]) vs[0].textContent=q;
+    if(vs[0]) vs[0].textContent=qLabel;
     if(vs[1]) vs[1].textContent=ticker;
     if(vs[2]) vs[2].textContent=aum?"$"+aum+"B":"--";
     if(vs[3]) vs[3].textContent="Loading...";
-    document.title=ticker+" - BDC Intelligence";
+    document.title=fundName+" ("+ticker+") - BDC Intelligence";
   }
   setHero(qtr);
 
