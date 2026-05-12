@@ -308,7 +308,6 @@ body{background:var(--bg);color:var(--text);font-family:var(--sans);font-size:13
   <div class="tab" onclick="showTab('capital',this)">Capital Raising</div>
   <div class="tab" onclick="showTab('redemption',this)">Redemptions <span class="tab-warn">GATE</span></div>
   <div class="tab" onclick="showTab('fees',this)">Fees & Share Classes</div>
-  <div class="tab" onclick="showTab('peers',this)">Peer Comparison</div>
   <div class="tab" onclick="showTab('events',this)">Event Timeline</div>
   <div style="margin-left:auto;display:flex;align-items:center;padding:0 16px;border-left:1px solid var(--border)">
     <button id="regime-toggle" class="regime-btn" onclick="toggleRegimes()" title="Toggle macro regime bands: COVID Stress · Rate Hike Cycle · Rate Plateau — shown as subtle strips at base of each chart">Regimes ⓘ</button>
@@ -478,7 +477,7 @@ body{background:var(--bg);color:var(--text);font-family:var(--sans);font-size:13
 </div>
 
 <!-- PEER COMPARISON -->
-<div id="sec-peers" class="sec">
+<div id="sec-peers" class="sec" style="display:none">
 <div id="peers-content"></div>
 </div>
 
