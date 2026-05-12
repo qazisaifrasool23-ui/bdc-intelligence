@@ -393,7 +393,11 @@
     "unused_capacity_mn": 1965.361,
     "shares_outstanding_avg": 141179301.0,
     "dividends_paid_mn": 51.995,
-    "liquidity_pct": 26.717679
+    "liquidity_pct": 26.717679,
+    "pik_income_mn": 14.746,
+    "originations_mn": 812.814,
+    "repayments_mn": 750.523,
+    "incentive_fee_mn": 18.309
   },
   {
     "quarter": "Q2 2025",
@@ -429,7 +433,9 @@
     "total_liabilities_mn": 4445.084,
     "unused_capacity_mn": 1635.687,
     "shares_outstanding_avg": 141881062.0,
-    "liquidity_pct": 21.790284
+    "liquidity_pct": 21.790284,
+    "pik_income_mn": 16.542,
+    "incentive_fee_mn": 21.268
   },
   {
     "quarter": "Q3 2025",
@@ -465,7 +471,9 @@
     "total_liabilities_mn": 4843.921,
     "unused_capacity_mn": 586.837,
     "shares_outstanding_avg": 142632179.0,
-    "liquidity_pct": 7.597508
+    "liquidity_pct": 7.597508,
+    "pik_income_mn": 18.969,
+    "incentive_fee_mn": 19.251
   },
   {
     "quarter": "Q4 2025",
@@ -512,6 +520,7 @@
     "mgmt_fee_pct_of_assets": 0.673638,
     "cash_mn": 454.681,
     "total_liabilities_mn": 4520.813,
-    "shares_outstanding_avg": 143370950.0
+    "shares_outstanding_avg": 143370950.0,
+    "equity_pct": 2.3
   }
 ]

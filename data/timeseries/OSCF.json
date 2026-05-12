@@ -762,7 +762,8 @@
     "mgmt_fee_pct_of_assets": 0.230349,
     "net_na_change_mn": 0.448,
     "cash_mn": 334.753,
-    "total_liabilities_mn": 2181.025
+    "total_liabilities_mn": 2181.025,
+    "pik_income_mn": 2.695
   },
   {
     "quarter": "Q1 2025",
@@ -795,7 +796,7 @@
     "repayments_mn": 793.88,
     "net_unrealized_gains_mn": -30.91,
     "realized_gain_loss_3mo_mn": null,
-    "credit_facility_drawn_mn": null,
+    "credit_facility_drawn_mn": 1290.5,
     "unused_capacity_mn": null,
     "price_to_nav": null,
     "net_interest_spread": 2.93,
@@ -829,7 +830,8 @@
     "mgmt_fee_pct_of_assets": 0.303706,
     "net_na_change_mn": 6.619,
     "cash_mn": 247.367,
-    "total_liabilities_mn": 2406.539
+    "total_liabilities_mn": 2406.539,
+    "pik_income_mn": 2.499
   },
   {
     "quarter": "Q2 2025",
@@ -862,7 +864,7 @@
     "repayments_mn": 1208.85,
     "net_unrealized_gains_mn": 16.79,
     "realized_gain_loss_3mo_mn": null,
-    "credit_facility_drawn_mn": null,
+    "credit_facility_drawn_mn": 1638.9,
     "unused_capacity_mn": null,
     "price_to_nav": null,
     "net_interest_spread": 3.08,
@@ -896,7 +898,8 @@
     "mgmt_fee_pct_of_assets": 0.316475,
     "net_na_change_mn": 1.083,
     "cash_mn": 423.229,
-    "total_liabilities_mn": 2781.436
+    "total_liabilities_mn": 2781.436,
+    "pik_income_mn": 2.287
   },
   {
     "quarter": "Q3 2025",
@@ -1019,6 +1022,9 @@
     "mgmt_fee_pct_of_assets": 0.31997,
     "nav_per_share_qoq_change": 0.0006,
     "cash_mn": 133.144,
-    "total_liabilities_mn": 3086.789
+    "total_liabilities_mn": 3086.789,
+    "originations_mn": 825.682,
+    "repayments_mn": 281.18,
+    "credit_facility_drawn_mn": 1604.4
   }
 ]
