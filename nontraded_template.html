@@ -931,11 +931,11 @@ function buildOverview(){
     mi("Redemption Gate",(L.red_gate?"ACTIVE":"INACTIVE"),"Q4 2024 triggered",L.red_gate?"rd":"gn","Redemption Gate — activated when quarterly redemption requests exceed 2.0% of NAV. When active, only the cap amount is fulfilled and the rest is queued."),
     mi("Queue Backlog",fmtM(L.red_backlog),"Unfulfilled requests",L.red_backlog>0?"rd":"gn","Redemption Queue Backlog ($M) — the cumulative unfulfilled redemption requests. Investors who requested redemption must wait until the gate is lifted."),
   ].join("");
-  multiLine("ov-nav",[{data:NAV,borderColor:"#2E75B6",backgroundColor:"rgba(46,117,182,.08)",borderWidth:2,pointRadius:0,fill:true,tension:.35}],"$");
-  multiLine("ov-ret",[{data:TOT_RET,borderColor:"#70AD47",backgroundColor:"rgba(112,173,71,.08)",borderWidth:2,pointRadius:0,fill:true,tension:.35,label:"Total"},{data:NAV,borderColor:"#2E75B6",borderDash:[4,3],borderWidth:1.5,pointRadius:0,fill:false,tension:.35,label:"NAV"}],"$");
-  multiLine("ov-na",[{data:NA_M,borderColor:"#2E75B6",backgroundColor:"rgba(46,117,182,.08)",borderWidth:2,pointRadius:0,fill:true,tension:.35}],"M");
-  multiLine("ov-raise",[{data:EQ_RAISE,borderColor:"#70AD47",backgroundColor:"rgba(112,173,71,.08)",borderWidth:2,pointRadius:0,fill:true,tension:.35}],"M");
-  multiLine("ov-cov",[{data:COV,borderColor:"#2E75B6",backgroundColor:"rgba(46,117,182,.08)",borderWidth:2,pointRadius:0,fill:true,tension:.35},rl(1.0,"rgba(192,0,0,.5)")],"×",.8);
+  multiLine("ov-nav",[{data:NAV,borderColor:"#2E75B6",backgroundColor:"rgba(46,117,182,.08)",borderWidth:2,pointRadius:0,fill:true,spanGaps:true,tension:.35}],"$");
+  multiLine("ov-ret",[{data:TOT_RET,borderColor:"#70AD47",backgroundColor:"rgba(112,173,71,.08)",borderWidth:2,pointRadius:0,fill:true,spanGaps:true,tension:.35,label:"Total"},{data:NAV,borderColor:"#2E75B6",borderDash:[4,3],borderWidth:1.5,pointRadius:0,fill:false,spanGaps:true,tension:.35,label:"NAV"}],"$");
+  multiLine("ov-na",[{data:NA_M,borderColor:"#2E75B6",backgroundColor:"rgba(46,117,182,.08)",borderWidth:2,pointRadius:0,fill:true,spanGaps:true,tension:.35}],"M");
+  multiLine("ov-raise",[{data:EQ_RAISE,borderColor:"#70AD47",backgroundColor:"rgba(112,173,71,.08)",borderWidth:2,pointRadius:0,fill:true,spanGaps:true,tension:.35}],"M");
+  multiLine("ov-cov",[{data:COV,borderColor:"#2E75B6",backgroundColor:"rgba(46,117,182,.08)",borderWidth:2,pointRadius:0,fill:true,spanGaps:true,tension:.35},rl(1.0,"rgba(192,0,0,.5)")],"×",.8);
   mk("ov-red",{type:"bar",data:{labels:Q,datasets:[{data:RED_REQ,backgroundColor:RED_GATE.map(function(g){return g?"rgba(192,0,0,.5)":"rgba(192,0,0,.3)";}),label:"Requested",borderRadius:2},{data:RED_FUL,backgroundColor:"rgba(112,173,71,.65)",label:"Fulfilled",borderRadius:2}]},options:{...bO(),scales:{x:{...xS,grid:{display:false}},y:yS("M")}}});
   setTimeout(function(){injectTimeBars("overview");trendBadge('ov-nav',NAV);trendBadge('ov-cov',COV);trendBadge('ov-raise',EQ_RAISE);},150);buildWaterfall();buildRetDecomp();
 }
@@ -952,10 +952,10 @@ function buildBalance(){
     mi("Leverage",fmt(L.lev,2,"×"),"D/E ratio","","Leverage Ratio — total debt divided by net assets. Non-traded BDCs typically target 0.5–1.0× given NAV stability requirement."),
     mi("Shares (B)",fmt(L.portcos/1000,1)+"B","Approx outstanding","",""),
   ].join("");
-  multiLine("bs-stack",[{data:NA_M,borderColor:"#2E75B6",backgroundColor:"rgba(46,117,182,.08)",borderWidth:2,pointRadius:0,fill:true,tension:.35,label:"Net Assets"},{data:DEBT,borderColor:"#C00000",backgroundColor:"rgba(184,20,31,.07)",borderWidth:2,pointRadius:0,fill:true,tension:.35,label:"Debt"}],"M");
-  multiLine("bs-inv",[{data:INV,borderColor:"#70AD47",backgroundColor:"rgba(112,173,71,.08)",borderWidth:2,pointRadius:0,fill:true,tension:.35}],"M");
-  multiLine("bs-navclass",[{data:NAV_I,borderColor:"#2E75B6",borderWidth:2.5,pointRadius:0,fill:false,tension:.35,label:"Class I"},{data:NAV_D,borderColor:"#70AD47",borderDash:[4,3],borderWidth:1.5,pointRadius:0,fill:false,tension:.35,label:"Class D"},{data:NAV_S,borderColor:"#E07B00",borderDash:[4,3],borderWidth:1.5,pointRadius:0,fill:false,tension:.35,label:"Class S"},{data:NAV_T,borderColor:"#C00000",borderDash:[4,3],borderWidth:1.5,pointRadius:0,fill:false,tension:.35,label:"Class T"}],"$");
-  multiLine("bs-lev",[{data:LEV,borderColor:"#2E75B6",backgroundColor:"rgba(46,117,182,.08)",borderWidth:2,pointRadius:0,fill:true,tension:.35},rl(1.0,"rgba(154,82,0,.5)"),rl(2.0,"rgba(184,20,31,.4)")],"×",0);
+  multiLine("bs-stack",[{data:NA_M,borderColor:"#2E75B6",backgroundColor:"rgba(46,117,182,.08)",borderWidth:2,pointRadius:0,fill:true,spanGaps:true,tension:.35,label:"Net Assets"},{data:DEBT,borderColor:"#C00000",backgroundColor:"rgba(184,20,31,.07)",borderWidth:2,pointRadius:0,fill:true,spanGaps:true,tension:.35,label:"Debt"}],"M");
+  multiLine("bs-inv",[{data:INV,borderColor:"#70AD47",backgroundColor:"rgba(112,173,71,.08)",borderWidth:2,pointRadius:0,fill:true,spanGaps:true,tension:.35}],"M");
+  multiLine("bs-navclass",[{data:NAV_I,borderColor:"#2E75B6",borderWidth:2.5,pointRadius:0,fill:false,spanGaps:true,tension:.35,label:"Class I"},{data:NAV_D,borderColor:"#70AD47",borderDash:[4,3],borderWidth:1.5,pointRadius:0,fill:false,spanGaps:true,tension:.35,label:"Class D"},{data:NAV_S,borderColor:"#E07B00",borderDash:[4,3],borderWidth:1.5,pointRadius:0,fill:false,spanGaps:true,tension:.35,label:"Class S"},{data:NAV_T,borderColor:"#C00000",borderDash:[4,3],borderWidth:1.5,pointRadius:0,fill:false,spanGaps:true,tension:.35,label:"Class T"}],"$");
+  multiLine("bs-lev",[{data:LEV,borderColor:"#2E75B6",backgroundColor:"rgba(46,117,182,.08)",borderWidth:2,pointRadius:0,fill:true,spanGaps:true,tension:.35},rl(1.0,"rgba(154,82,0,.5)"),rl(2.0,"rgba(184,20,31,.4)")],"×",0);
   setTimeout(function(){injectTimeBars("balance");trendBadge('bs-stack',NA_M);trendBadge('bs-lev',LEV);},150);
 }
 
@@ -971,12 +971,12 @@ function buildIncome(){
     mi("Total Expenses","$"+Math.round(L.exp).toLocaleString()+"M","Quarterly run-rate","","Total Expenses ($M) — interest, management fee, incentive fee, admin costs."),
     mi("Mgmt Fee","$"+Math.round(L.mgmt_fee).toLocaleString()+"M","1.25% of NAV ann.","","Management Fee ($M) — base fee paid to Blackstone Credit & Insurance, the external manager."),
   ].join("");
-  multiLine("inc-tii",[{data:TII,borderColor:"#2E75B6",backgroundColor:"rgba(46,117,182,.08)",borderWidth:2,pointRadius:0,fill:true,tension:.35}],"M");
+  multiLine("inc-tii",[{data:TII,borderColor:"#2E75B6",backgroundColor:"rgba(46,117,182,.08)",borderWidth:2,pointRadius:0,fill:true,spanGaps:true,tension:.35}],"M");
   stackedBar("inc-decomp",[{label:"Cash",data:CASH_INC,backgroundColor:"rgba(46,117,182,.75)",borderRadius:2},{label:"PIK",data:PIK_MN,backgroundColor:"rgba(154,82,0,.6)",borderRadius:2}],"M");
-  multiLine("inc-cov",[{data:COV,borderColor:"#2E75B6",backgroundColor:"rgba(46,117,182,.08)",borderWidth:2,pointRadius:0,fill:true,tension:.35},rl(1.0,"rgba(192,0,0,.5)")],"×",.8);
-  multiLine("inc-pik",[{data:PIK_PCT,borderColor:"#E07B00",backgroundColor:"rgba(224,123,0,.07)",borderWidth:2,pointRadius:0,fill:true,tension:.35},rl(10,"rgba(184,20,31,.4)")],"%" ,0);
+  multiLine("inc-cov",[{data:COV,borderColor:"#2E75B6",backgroundColor:"rgba(46,117,182,.08)",borderWidth:2,pointRadius:0,fill:true,spanGaps:true,tension:.35},rl(1.0,"rgba(192,0,0,.5)")],"×",.8);
+  multiLine("inc-pik",[{data:PIK_PCT,borderColor:"#E07B00",backgroundColor:"rgba(224,123,0,.07)",borderWidth:2,pointRadius:0,fill:true,spanGaps:true,tension:.35},rl(10,"rgba(184,20,31,.4)")],"%" ,0);
   stackedBar("inc-exp",[{label:"Interest",data:INT_EXP,backgroundColor:"rgba(46,117,182,.75)",borderRadius:2},{label:"Mgmt",data:MGMT_FEE,backgroundColor:"rgba(109,40,217,.6)",borderRadius:2},{label:"Incentive",data:INC_FEE,backgroundColor:"rgba(154,82,0,.6)",borderRadius:2},{label:"Admin",data:ADMIN_FEE,backgroundColor:"rgba(165,165,165,.5)",borderRadius:2}],"M");
-  multiLine("inc-spread",[{data:YLD,borderColor:"#2E75B6",borderWidth:2,pointRadius:0,fill:false,tension:.35,label:"Yield"},{data:COD,borderColor:"#C00000",borderWidth:2,pointRadius:0,fill:false,tension:.35,label:"CoD"},{data:SPREAD,borderColor:"#70AD47",backgroundColor:"rgba(112,173,71,.08)",borderWidth:2,pointRadius:0,fill:true,tension:.35,label:"Spread"}],"%");
+  multiLine("inc-spread",[{data:YLD,borderColor:"#2E75B6",borderWidth:2,pointRadius:0,fill:false,spanGaps:true,tension:.35,label:"Yield"},{data:COD,borderColor:"#C00000",borderWidth:2,pointRadius:0,fill:false,spanGaps:true,tension:.35,label:"CoD"},{data:SPREAD,borderColor:"#70AD47",backgroundColor:"rgba(112,173,71,.08)",borderWidth:2,pointRadius:0,fill:true,spanGaps:true,tension:.35,label:"Spread"}],"%");
   setTimeout(function(){injectTimeBars("income");},150);buildEQS();
 }
 
@@ -992,12 +992,12 @@ function buildDividends(){
     mi("DRIP Rate",fmt(L.drip_rate,1,"%"),"Reinvestment rate","gn","DRIP Participation Rate — % of distributions reinvested rather than paid in cash. High DRIP indicates sticky, income-committed investor base."),
     mi("DRIP Reinvested",fmtM(L.drip_mn),"This quarter","gn","DRIP Reinvestment ($M) — distributions reinvested as new shares this quarter. Acts as a non-cash capital raise."),
   ].join("");
-  mk("div-hist",{type:"line",data:{labels:Q,datasets:[{data:DPS,borderColor:"#70AD47",borderWidth:2,fill:false,tension:0,stepped:true,pointRadius:0}]},options:{...bO(),scales:{x:xS,y:{...yS("$",.25)}}}});
-  multiLine("div-yield",[{data:DIST_YIELD,borderColor:"#70AD47",backgroundColor:"rgba(112,173,71,.08)",borderWidth:2,pointRadius:0,fill:true,tension:.35},rl(5.0,"rgba(154,82,0,.45)")],"%" ,0);
-  multiLine("div-drip",[{data:DRIP_MN,borderColor:"#70AD47",backgroundColor:"rgba(112,173,71,.08)",borderWidth:2,pointRadius:0,fill:true,tension:.35}],"M");
-  multiLine("div-driprate",[{data:DRIP_RATE,borderColor:"#70AD47",backgroundColor:"rgba(112,173,71,.08)",borderWidth:2,pointRadius:0,fill:true,tension:.35},rl(60,"rgba(154,82,0,.45)")],"%" ,0);
-  multiLine("div-cum",[{data:CUM_DIV,borderColor:"#70AD47",backgroundColor:"rgba(112,173,71,.08)",borderWidth:2,pointRadius:0,fill:true,tension:.35}],"$");
-  multiLine("div-ret",[{data:TOT_RET,borderColor:"#70AD47",backgroundColor:"rgba(112,173,71,.08)",borderWidth:2,pointRadius:0,fill:true,tension:.35,label:"Total"},{data:NAV,borderColor:"#2E75B6",borderDash:[4,3],borderWidth:1.5,pointRadius:0,fill:false,tension:.35,label:"NAV"}],"$");
+  mk("div-hist",{type:"line",data:{labels:Q,datasets:[{data:DPS,borderColor:"#70AD47",borderWidth:2,fill:false,spanGaps:true,tension:0,stepped:true,pointRadius:0}]},options:{...bO(),scales:{x:xS,y:{...yS("$",.25)}}}});
+  multiLine("div-yield",[{data:DIST_YIELD,borderColor:"#70AD47",backgroundColor:"rgba(112,173,71,.08)",borderWidth:2,pointRadius:0,fill:true,spanGaps:true,tension:.35},rl(5.0,"rgba(154,82,0,.45)")],"%" ,0);
+  multiLine("div-drip",[{data:DRIP_MN,borderColor:"#70AD47",backgroundColor:"rgba(112,173,71,.08)",borderWidth:2,pointRadius:0,fill:true,spanGaps:true,tension:.35}],"M");
+  multiLine("div-driprate",[{data:DRIP_RATE,borderColor:"#70AD47",backgroundColor:"rgba(112,173,71,.08)",borderWidth:2,pointRadius:0,fill:true,spanGaps:true,tension:.35},rl(60,"rgba(154,82,0,.45)")],"%" ,0);
+  multiLine("div-cum",[{data:CUM_DIV,borderColor:"#70AD47",backgroundColor:"rgba(112,173,71,.08)",borderWidth:2,pointRadius:0,fill:true,spanGaps:true,tension:.35}],"$");
+  multiLine("div-ret",[{data:TOT_RET,borderColor:"#70AD47",backgroundColor:"rgba(112,173,71,.08)",borderWidth:2,pointRadius:0,fill:true,spanGaps:true,tension:.35,label:"Total"},{data:NAV,borderColor:"#2E75B6",borderDash:[4,3],borderWidth:1.5,pointRadius:0,fill:false,spanGaps:true,tension:.35,label:"NAV"}],"$");
   setTimeout(function(){injectTimeBars("dividends");},150);buildDivSafety();
 }
 
@@ -1013,11 +1013,11 @@ function buildCredit(){
     mi("Net Spread",fmt(L.spread,2,"%"),"Yield minus CoD","gn","Net Interest Spread — the core earnings margin. BCRED targets 4–5% sustainable spread."),
     mi("First Lien %",fmt(L.fl1,2,"%"),"Senior secured","gn","First Lien % — % of portfolio in senior secured loans. BCRED's 92.8% is high relative to peers, reflecting the Blackstone credit underwriting standard."),
   ].join("");
-  multiLine("cr-na",[{data:NA_COST,borderColor:"#C00000",backgroundColor:"rgba(184,20,31,.07)",borderWidth:2,pointRadius:0,fill:true,tension:.35},{data:NA_FV,borderColor:"#E07B00",borderDash:[4,3],borderWidth:1.5,pointRadius:0,fill:false,tension:.35},rl(2.5,"rgba(165,165,165,.7)"),rl(1.3,"rgba(112,173,71,.5)",[3,3])],"%" ,0);
-  multiLine("cr-pik",[{data:PIK_PCT,borderColor:"#E07B00",backgroundColor:"rgba(224,123,0,.07)",borderWidth:2,pointRadius:0,fill:true,tension:.35},rl(10,"rgba(184,20,31,.4)")],"%" ,0);
+  multiLine("cr-na",[{data:NA_COST,borderColor:"#C00000",backgroundColor:"rgba(184,20,31,.07)",borderWidth:2,pointRadius:0,fill:true,spanGaps:true,tension:.35},{data:NA_FV,borderColor:"#E07B00",borderDash:[4,3],borderWidth:1.5,pointRadius:0,fill:false,spanGaps:true,tension:.35},rl(2.5,"rgba(165,165,165,.7)"),rl(1.3,"rgba(112,173,71,.5)",[3,3])],"%" ,0);
+  multiLine("cr-pik",[{data:PIK_PCT,borderColor:"#E07B00",backgroundColor:"rgba(224,123,0,.07)",borderWidth:2,pointRadius:0,fill:true,spanGaps:true,tension:.35},rl(10,"rgba(184,20,31,.4)")],"%" ,0);
   var PEER_YIELD=Q.map(function(){return 10.2;});
-  multiLine("cr-yield",[{data:YLD,borderColor:"#2E75B6",backgroundColor:"rgba(46,117,182,.08)",borderWidth:2,pointRadius:0,fill:true,tension:.35},rl(10.2,"rgba(165,165,165,.7)")],"%" ,0);
-  multiLine("cr-rec",[{data:IMP_REC,borderColor:"#264478",backgroundColor:"rgba(38,68,120,.07)",borderWidth:2,pointRadius:0,fill:true,tension:.35}],"%" ,0);
+  multiLine("cr-yield",[{data:YLD,borderColor:"#2E75B6",backgroundColor:"rgba(46,117,182,.08)",borderWidth:2,pointRadius:0,fill:true,spanGaps:true,tension:.35},rl(10.2,"rgba(165,165,165,.7)")],"%" ,0);
+  multiLine("cr-rec",[{data:IMP_REC,borderColor:"#264478",backgroundColor:"rgba(38,68,120,.07)",borderWidth:2,pointRadius:0,fill:true,spanGaps:true,tension:.35}],"%" ,0);
   setTimeout(function(){injectTimeBars("credit");trendBadge('cr-na',NA_COST);trendBadge('cr-pik',PIK_PCT);trendBadge('cr-rec',IMP_REC);},150);
 }
 
@@ -1033,11 +1033,11 @@ function buildPortfolio(){
     mi("Gross Originations",fmtM(L.orig),"New commitments","","Gross Originations ($M) — total new investment commitments funded this quarter."),
     mi("Repayments",fmtM(L.repay),"Principal repaid","","Repayments ($M) — total principal repaid by portfolio companies. Must be redeployed to maintain income."),
   ].join("");
-  multiLine("pf-cos",[{data:PORTCOS,borderColor:"#2E75B6",backgroundColor:"rgba(46,117,182,.08)",borderWidth:2,pointRadius:0,fill:true,tension:.35}],"");
-  multiLine("pf-pos",[{data:AVG_POS,borderColor:"#70AD47",backgroundColor:"rgba(112,173,71,.08)",borderWidth:2,pointRadius:0,fill:true,tension:.35}],"M");
-  multiLine("pf-fl",[{data:FL1,borderColor:"#2E75B6",backgroundColor:"rgba(46,117,182,.08)",borderWidth:2,pointRadius:0,fill:true,tension:.35},rl(90,"rgba(154,82,0,.4)")],"%" ,0);
-  multiLine("pf-flt",[{data:FLT,borderColor:"#70AD47",backgroundColor:"rgba(112,173,71,.07)",borderWidth:2,pointRadius:0,fill:true,tension:.35}],"%" ,0);
-  mk("pf-orig",{type:"bar",data:{labels:Q,datasets:[{data:ORIG,backgroundColor:"rgba(112,173,71,.65)",borderRadius:2,label:"Originations"},{label:"4Q Avg",data:rolling4(ORIG),type:"line",borderColor:"#70AD47",borderWidth:2.5,pointRadius:0,fill:false,tension:.4,order:0},{data:REPAY.map(function(v){return v!=null?-v:null;}),backgroundColor:"rgba(192,0,0,.45)",borderRadius:2,label:"Repayments"}]},options:{...bO(),scales:{x:{...xS,grid:{display:false}},y:yS("M")}}});
+  multiLine("pf-cos",[{data:PORTCOS,borderColor:"#2E75B6",backgroundColor:"rgba(46,117,182,.08)",borderWidth:2,pointRadius:0,fill:true,spanGaps:true,tension:.35}],"");
+  multiLine("pf-pos",[{data:AVG_POS,borderColor:"#70AD47",backgroundColor:"rgba(112,173,71,.08)",borderWidth:2,pointRadius:0,fill:true,spanGaps:true,tension:.35}],"M");
+  multiLine("pf-fl",[{data:FL1,borderColor:"#2E75B6",backgroundColor:"rgba(46,117,182,.08)",borderWidth:2,pointRadius:0,fill:true,spanGaps:true,tension:.35},rl(90,"rgba(154,82,0,.4)")],"%" ,0);
+  multiLine("pf-flt",[{data:FLT,borderColor:"#70AD47",backgroundColor:"rgba(112,173,71,.07)",borderWidth:2,pointRadius:0,fill:true,spanGaps:true,tension:.35}],"%" ,0);
+  mk("pf-orig",{type:"bar",data:{labels:Q,datasets:[{data:ORIG,backgroundColor:"rgba(112,173,71,.65)",borderRadius:2,label:"Originations"},{label:"4Q Avg",data:rolling4(ORIG),type:"line",borderColor:"#70AD47",borderWidth:2.5,pointRadius:0,fill:false,spanGaps:true,tension:.4,order:0},{data:REPAY.map(function(v){return v!=null?-v:null;}),backgroundColor:"rgba(192,0,0,.45)",borderRadius:2,label:"Repayments"}]},options:{...bO(),scales:{x:{...xS,grid:{display:false}},y:yS("M")}}});
   var secs=[["Software & Technology","24.1%","#2E75B6"],["Financial Services","14.2%","#5B9BD5"],["Health Care","12.8%","#70AD47"],["Consumer Discretionary","9.4%","#264478"],["Capital Goods","8.1%","#E07B00"],["Professional Services","7.2%","#C00000"],["Media & Entertainment","5.8%","#4f46e5"],["Other Industries","18.4%","#64748b"]];
   document.getElementById("pf-sectors").innerHTML=secs.map(function(s){return "<div class='sec-bar'><div class='sec-name'>"+s[0]+"</div><div class='sec-track'><div class='sec-fill' style='width:"+s[1]+";background:"+s[2]+"'></div></div><div class='sec-val'>"+s[1]+"</div></div>";}).join("");
   setTimeout(function(){injectTimeBars("portfolio");trendBadge('pf-cos',PORTCOS);trendBadge('pf-fl',FL1);},150);
@@ -1055,13 +1055,13 @@ function buildCapital(){
     mi("Leverage",fmt(L.lev,2,"×"),"D/E","","Leverage — equity multiplied by debt to grow the portfolio. Non-traded BDCs typically target 0.5–0.9×."),
     mi("Net Originations",fmtM(L.net_orig),"Portfolio growth","gn","Net Originations ($M) — the capital deployment pace versus repayments."),
   ].join("");
-  multiLine("cap-raise",[{data:EQ_RAISE,borderColor:"#70AD47",backgroundColor:"rgba(112,173,71,.08)",borderWidth:2,pointRadius:0,fill:true,tension:.35}],"M");
-  multiLine("cap-cum",[{data:CUM_EQ,borderColor:"#2E75B6",backgroundColor:"rgba(46,117,182,.08)",borderWidth:2,pointRadius:0,fill:true,tension:.35}],"M");
-  multiLine("cap-drip",[{data:DRIP_MN,borderColor:"#70AD47",backgroundColor:"rgba(112,173,71,.08)",borderWidth:2,pointRadius:0,fill:true,tension:.35}],"M");
+  multiLine("cap-raise",[{data:EQ_RAISE,borderColor:"#70AD47",backgroundColor:"rgba(112,173,71,.08)",borderWidth:2,pointRadius:0,fill:true,spanGaps:true,tension:.35}],"M");
+  multiLine("cap-cum",[{data:CUM_EQ,borderColor:"#2E75B6",backgroundColor:"rgba(46,117,182,.08)",borderWidth:2,pointRadius:0,fill:true,spanGaps:true,tension:.35}],"M");
+  multiLine("cap-drip",[{data:DRIP_MN,borderColor:"#70AD47",backgroundColor:"rgba(112,173,71,.08)",borderWidth:2,pointRadius:0,fill:true,spanGaps:true,tension:.35}],"M");
   var TOTAL_CAP=EQ_RAISE.map(function(v,i){return (v||0)+(DRIP_MN[i]||0);});
   stackedBar("cap-total",[{label:"New Equity",data:EQ_RAISE,backgroundColor:"rgba(46,117,182,.65)",borderRadius:2},{label:"DRIP",data:DRIP_MN,backgroundColor:"rgba(112,173,71,.65)",borderRadius:2}],"M");
-  multiLine("cap-nav-vs-raise",[{data:NA_M,borderColor:"#2E75B6",backgroundColor:"rgba(46,117,182,.08)",borderWidth:2,pointRadius:0,fill:true,tension:.35,label:"Net Assets"},{data:CUM_EQ,borderColor:"#70AD47",borderDash:[4,3],borderWidth:1.8,pointRadius:0,fill:false,tension:.35,label:"Cum Equity"}],"M");
-  multiLine("cap-driprate",[{data:DRIP_RATE,borderColor:"#70AD47",backgroundColor:"rgba(112,173,71,.08)",borderWidth:2,pointRadius:0,fill:true,tension:.35},rl(60,"rgba(154,82,0,.4)")],"%" ,0);
+  multiLine("cap-nav-vs-raise",[{data:NA_M,borderColor:"#2E75B6",backgroundColor:"rgba(46,117,182,.08)",borderWidth:2,pointRadius:0,fill:true,spanGaps:true,tension:.35,label:"Net Assets"},{data:CUM_EQ,borderColor:"#70AD47",borderDash:[4,3],borderWidth:1.8,pointRadius:0,fill:false,spanGaps:true,tension:.35,label:"Cum Equity"}],"M");
+  multiLine("cap-driprate",[{data:DRIP_RATE,borderColor:"#70AD47",backgroundColor:"rgba(112,173,71,.08)",borderWidth:2,pointRadius:0,fill:true,spanGaps:true,tension:.35},rl(60,"rgba(154,82,0,.4)")],"%" ,0);
   setTimeout(function(){injectTimeBars("capital");},150);buildRateLev();
 }
 
@@ -1110,8 +1110,8 @@ function buildRedemption(){
     +"<div style='font-size:10px;color:var(--text3);font-family:var(--mono)'>At current cap rate</div></div></div>";
 
   var RED_PCT=RED_REQ.map(function(v,i){return NA_M[i]?+(v/NA_M[i]*100).toFixed(2):null;});
-  multiLine("red-backlog",[{data:RED_BACKLOG,borderColor:"#C00000",backgroundColor:"rgba(192,0,0,.07)",borderWidth:2,pointRadius:RED_GATE.map(function(g){return g?6:0;}),pointBackgroundColor:"#C00000",fill:true,tension:.35}],"M");
-  multiLine("red-pct",[{data:RED_PCT,borderColor:"#C00000",backgroundColor:"rgba(184,20,31,.07)",borderWidth:2,pointRadius:0,fill:true,tension:.35},rl(2.0,"rgba(154,82,0,.5)")],"%" ,0);
+  multiLine("red-backlog",[{data:RED_BACKLOG,borderColor:"#C00000",backgroundColor:"rgba(192,0,0,.07)",borderWidth:2,pointRadius:RED_GATE.map(function(g){return g?6:0;}),pointBackgroundColor:"#C00000",fill:true,spanGaps:true,tension:.35}],"M");
+  multiLine("red-pct",[{data:RED_PCT,borderColor:"#C00000",backgroundColor:"rgba(184,20,31,.07)",borderWidth:2,pointRadius:0,fill:true,spanGaps:true,tension:.35},rl(2.0,"rgba(154,82,0,.5)")],"%" ,0);
 
   document.getElementById("red-explainer").innerHTML=
     "<div style='display:grid;grid-template-columns:1fr 1fr;gap:24px'>"
@@ -1162,8 +1162,8 @@ function buildFees(){
     mi("Incentive Fee ($M)","$"+Math.round(L.inc_fee).toLocaleString()+"M","Quarterly","",""),
   ].join("");
 
-  multiLine("fee-mgmt",[{data:MGMT_FEE,borderColor:"#264478",backgroundColor:"rgba(38,68,120,.07)",borderWidth:2,pointRadius:0,fill:true,tension:.35}],"M");
-  multiLine("fee-inc",[{data:INC_FEE,borderColor:"#E07B00",backgroundColor:"rgba(224,123,0,.07)",borderWidth:2,pointRadius:0,fill:true,tension:.35}],"M");
+  multiLine("fee-mgmt",[{data:MGMT_FEE,borderColor:"#264478",backgroundColor:"rgba(38,68,120,.07)",borderWidth:2,pointRadius:0,fill:true,spanGaps:true,tension:.35}],"M");
+  multiLine("fee-inc",[{data:INC_FEE,borderColor:"#E07B00",backgroundColor:"rgba(224,123,0,.07)",borderWidth:2,pointRadius:0,fill:true,spanGaps:true,tension:.35}],"M");
   setTimeout(function(){injectTimeBars("fees");},150);buildFeeDrag();
 }
 
@@ -1397,7 +1397,7 @@ function buildEvents(){
     var el=document.getElementById("evt-nav");if(!el)return;
     if(charts["evt-nav"]){try{charts["evt-nav"].destroy();}catch(x){}}
     charts["evt-nav"]=new Chart(el,{type:"line",data:{labels:qS,datasets:[
-      {data:navS,borderColor:"#2E75B6",backgroundColor:"rgba(46,117,182,.08)",borderWidth:2,pointRadius:pR,pointBackgroundColor:pC,pointBorderColor:pC,pointBorderWidth:2,pointHoverRadius:14,pointHoverBackgroundColor:pC,pointHoverBorderColor:"#fff",pointHoverBorderWidth:2,fill:true,tension:.35,label:"NAV/sh"},
+      {data:navS,borderColor:"#2E75B6",backgroundColor:"rgba(46,117,182,.08)",borderWidth:2,pointRadius:pR,pointBackgroundColor:pC,pointBorderColor:pC,pointBorderWidth:2,pointHoverRadius:14,pointHoverBackgroundColor:pC,pointHoverBorderColor:"#fff",pointHoverBorderWidth:2,fill:true,spanGaps:true,tension:.35,label:"NAV/sh"},
     ]},options:{responsive:true,maintainAspectRatio:false,animation:{duration:350},
       plugins:{legend:{display:false},tooltip:{backgroundColor:"#0b1929",borderColor:"rgba(255,255,255,.1)",borderWidth:1,titleColor:"rgba(255,255,255,.65)",bodyColor:"#fff",titleFont:{family:F,size:9},bodyFont:{family:F,size:11},padding:13,mode:"index",intersect:false,
         callbacks:{
@@ -1448,7 +1448,7 @@ function buildWaterfall(){try{
     {label:"NII",data:wN,backgroundColor:"rgba(112,173,71,.7)",borderRadius:2,stack:"b"},
     {label:"Dist",data:wD,backgroundColor:"rgba(192,0,0,.55)",borderRadius:2,stack:"b"},
     {label:"Residual",data:wR,backgroundColor:"rgba(38,68,120,.55)",borderRadius:2,stack:"b"},
-    {label:"NAV",data:wC,type:"line",borderColor:"#1a1d23",borderWidth:1.5,pointRadius:0,fill:false,tension:0,yAxisID:"y2"},
+    {label:"NAV",data:wC,type:"line",borderColor:"#1a1d23",borderWidth:1.5,pointRadius:0,fill:false,spanGaps:true,tension:0,yAxisID:"y2"},
   ]},options:{responsive:true,maintainAspectRatio:false,animation:{duration:350},
     plugins:{legend:{display:false},tooltip:{backgroundColor:"#fff",borderColor:"#e2e6ea",borderWidth:1,titleColor:TC,bodyColor:"#1a1d23",titleFont:{family:F,size:8},bodyFont:{family:F,size:11},padding:10,callbacks:{title:function(c){return c[0].label;},label:function(c){var v=c.raw;if(!v)return null;var lb=["NII Earned","Distributions","Residual","Closing NAV"];return (lb[c.datasetIndex]||"")+": $"+Math.abs(v).toFixed(c.datasetIndex===3?2:3);}}}},
     scales:{x:{...xS,stacked:true,grid:{display:false}},y:{...yS("$"),stacked:true},y2:{position:"right",grid:{display:false},ticks:{color:TC,font:{family:F,size:10},callback:function(v){return "$"+v.toFixed(2);}},border:{color:"#e2e6ea"}}}}});
@@ -1460,9 +1460,9 @@ function buildRetDecomp(){try{
   for(var i=0;i<Q.length;i++){cumD+=(DPS[i]||0);cC.push(+((NAV[i]||base)-base).toFixed(3));cI.push(+cumD.toFixed(3));}
   var lC=cC[cC.length-1],lI=cI[cI.length-1],tot=lC+lI,ip=Math.round(lI/tot*100);
   mk("ov-retdecomp",{type:"line",data:{labels:Q,datasets:[
-    {label:"Income",data:cI,borderColor:"#70AD47",backgroundColor:"rgba(112,173,71,.1)",borderWidth:2,pointRadius:0,fill:true,tension:.35},
-    {label:"Capital",data:cC.map(function(v){return v>=0?v:null;}),borderColor:"#2E75B6",backgroundColor:"rgba(46,117,182,.07)",borderWidth:2,pointRadius:0,fill:true,tension:.35},
-    {label:"Loss",data:cC.map(function(v){return v<0?v:null;}),borderColor:"rgba(192,0,0,.5)",backgroundColor:"rgba(192,0,0,.06)",borderWidth:1.5,pointRadius:0,fill:true,tension:.35},
+    {label:"Income",data:cI,borderColor:"#70AD47",backgroundColor:"rgba(112,173,71,.1)",borderWidth:2,pointRadius:0,fill:true,spanGaps:true,tension:.35},
+    {label:"Capital",data:cC.map(function(v){return v>=0?v:null;}),borderColor:"#2E75B6",backgroundColor:"rgba(46,117,182,.07)",borderWidth:2,pointRadius:0,fill:true,spanGaps:true,tension:.35},
+    {label:"Loss",data:cC.map(function(v){return v<0?v:null;}),borderColor:"rgba(192,0,0,.5)",backgroundColor:"rgba(192,0,0,.06)",borderWidth:1.5,pointRadius:0,fill:true,spanGaps:true,tension:.35},
   ]},options:{...bO(),scales:{x:xS,y:yS("$")}}});
   var ann=document.getElementById("ov-retann");
   if(ann)ann.innerHTML="Since Q1 2020: <strong style='color:#70AD47'>$"+lI.toFixed(2)+"/sh income ("+ip+"%)</strong> + <strong style='color:#2E75B6'>$"+Math.max(0,lC).toFixed(2)+"/sh capital ("+(100-ip)+"%)</strong> = <strong>$"+tot.toFixed(2)+"/sh total return</strong>";
@@ -1491,7 +1491,7 @@ function buildEQS(){try{
   setTimeout(function(){
     var dc=eq.map(function(v){return v>=4?"rgba(112,173,71,.9)":v>=3?"rgba(224,123,0,.9)":"rgba(192,0,0,.9)";});
     mk("eqs-c",{type:"line",data:{labels:Q,datasets:[
-      {data:eq,borderColor:"#2E75B6",backgroundColor:"rgba(46,117,182,.06)",borderWidth:2.5,pointRadius:5,pointBackgroundColor:dc,pointBorderColor:"#fff",pointBorderWidth:1.5,fill:true,tension:.3,label:"EQS"},
+      {data:eq,borderColor:"#2E75B6",backgroundColor:"rgba(46,117,182,.06)",borderWidth:2.5,pointRadius:5,pointBackgroundColor:dc,pointBorderColor:"#fff",pointBorderWidth:1.5,fill:true,spanGaps:true,tension:.3,label:"EQS"},
       {data:Q.map(function(){return 3;}),borderColor:"rgba(165,165,165,.5)",borderDash:[4,3],borderWidth:1,pointRadius:0,fill:false,label:"ref"},
       {data:Q.map(function(){return 4;}),borderColor:"rgba(112,173,71,.35)",borderDash:[4,3],borderWidth:1,pointRadius:0,fill:false,label:"ref"},
     ]},options:{...bO(),scales:{x:xS,y:{...yS(""),min:1,max:5,ticks:{color:TC,font:{family:F,size:10},callback:function(v){return v.toFixed(1);}}}}}});
@@ -1538,9 +1538,9 @@ function buildFeeDrag(){try{
     +"<div style='font-family:var(--mono);font-size:28px;font-weight:700;color:#E07B00'>"+dp+"%</div></div>"
     +"</div></div></div>";
   setTimeout(function(){mk("fd-c",{type:"line",data:{labels:Q,datasets:[
-    {label:"Gross",data:cn,borderColor:"#2E75B6",backgroundColor:"rgba(46,117,182,.06)",borderWidth:2,pointRadius:0,fill:true,tension:.35},
-    {label:"Investor",data:ci,borderColor:"#70AD47",backgroundColor:"rgba(112,173,71,.08)",borderWidth:2.5,pointRadius:0,fill:true,tension:.35},
-    {label:"Fees",data:cf,borderColor:"#C00000",backgroundColor:"rgba(192,0,0,.05)",borderWidth:1.5,borderDash:[4,3],pointRadius:0,fill:false,tension:.35},
+    {label:"Gross",data:cn,borderColor:"#2E75B6",backgroundColor:"rgba(46,117,182,.06)",borderWidth:2,pointRadius:0,fill:true,spanGaps:true,tension:.35},
+    {label:"Investor",data:ci,borderColor:"#70AD47",backgroundColor:"rgba(112,173,71,.08)",borderWidth:2.5,pointRadius:0,fill:true,spanGaps:true,tension:.35},
+    {label:"Fees",data:cf,borderColor:"#C00000",backgroundColor:"rgba(192,0,0,.05)",borderWidth:1.5,borderDash:[4,3],pointRadius:0,fill:false,spanGaps:true,tension:.35},
   ]},options:{...bO(),scales:{x:xS,y:yS("M")}}});},100);
 }catch(e){console.warn("feeDrag",e);}}
 

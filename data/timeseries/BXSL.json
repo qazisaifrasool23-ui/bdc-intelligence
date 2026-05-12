@@ -42,7 +42,7 @@
     "cash_income_pct": 96.76,
     "origination_velocity_pct": 1457.36,
     "cumulative_dividends_paid": 0.5,
-    "data_quality_score": 84.3,
+    "data_quality_score": 86.21,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1736035/000173603520000007/bgsl-20200331x10q.htm",
     "filing_type": "10-Q",
     "interest_expense_mn": 16.071,
@@ -56,7 +56,8 @@
     "debt_to_equity_ratio": 1.013,
     "mgmt_fee_as_pct_of_assets": 32.61,
     "shares_outstanding": 81259633,
-    "pik_income_mn": 2.598
+    "pik_income_mn": 2.598,
+    "mgmt_fee_pct_of_assets": 0.369018
   },
   {
     "quarter": "Q2 2020",
@@ -103,7 +104,7 @@
     "cash_income_pct": 96.75,
     "origination_velocity_pct": 1983.575,
     "cumulative_dividends_paid": 1.0,
-    "data_quality_score": 92.6,
+    "data_quality_score": 93.65,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1736035/000173603520000014/bgsl-20200630x10q.htm",
     "filing_type": "10-Q",
     "interest_expense_mn": 14.441,
@@ -127,7 +128,9 @@
     "mgmt_fee_as_pct_of_assets": 36.74,
     "shares_outstanding": 96331926,
     "pik_income_mn": 2.638,
-    "new_investment_count": 70
+    "new_investment_count": 70,
+    "liquidity_pct": 80.0897,
+    "mgmt_fee_pct_of_assets": 0.326766
   },
   {
     "quarter": "Q3 2020",
@@ -174,7 +177,7 @@
     "cash_income_pct": 98.6,
     "origination_velocity_pct": 2778.884,
     "cumulative_dividends_paid": 1.5,
-    "data_quality_score": 90.7,
+    "data_quality_score": 92.06,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1736035/000173603520000017/bgsl-20200930x10q.htm",
     "filing_type": "10-Q",
     "interest_expense_mn": 14.766,
@@ -205,7 +208,9 @@
     "mgmt_fee_as_pct_of_assets": 37.58,
     "shares_outstanding": 102003212,
     "pik_income_mn": 1.282,
-    "new_investment_count": 97
+    "new_investment_count": 97,
+    "liquidity_pct": 70.961473,
+    "mgmt_fee_pct_of_assets": 0.338699
   },
   {
     "quarter": "Q4 2020",
@@ -250,7 +255,7 @@
     "fixed_rate_pct": 12.0,
     "origination_velocity_pct": -26.087,
     "cumulative_dividends_paid": 2.0,
-    "data_quality_score": 76.6,
+    "data_quality_score": 79.63,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1736035/000173603521000004/bxsl-20201231x10k.htm",
     "filing_type": "10-K",
     "interest_expense_mn": 65.949,
@@ -259,7 +264,9 @@
     "unencumbered_assets_mn": 19.0,
     "debt_to_equity_ratio": 0.765,
     "mgmt_fee_as_pct_of_assets": 4.29,
-    "shares_outstanding": 129661586
+    "shares_outstanding": 129661586,
+    "liquidity_pct": 5.961991,
+    "mgmt_fee_pct_of_assets": 1.005995
   },
   {
     "quarter": "Q1 2021",
@@ -308,7 +315,7 @@
     "nav_per_share_yoy_growth_pct": 17.248,
     "origination_velocity_pct": 19.012,
     "cumulative_dividends_paid": 2.5,
-    "data_quality_score": 92.7,
+    "data_quality_score": 93.75,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1736035/000173603521000007/bxsl-20210331x10q.htm",
     "filing_type": "10-Q",
     "interest_expense_mn": 21.146,
@@ -331,7 +338,9 @@
     "nav_per_share_yoy_pct": 17.25,
     "mgmt_fee_as_pct_of_assets": 0.77,
     "shares_outstanding": 130113459,
-    "pik_income_mn": 1.921
+    "pik_income_mn": 1.921,
+    "liquidity_pct": 4.817403,
+    "mgmt_fee_pct_of_assets": 0.351114
   },
   {
     "quarter": "Q2 2021",
@@ -380,7 +389,7 @@
     "nav_per_share_yoy_growth_pct": 9.459,
     "origination_velocity_pct": 35.861,
     "cumulative_dividends_paid": 3.0,
-    "data_quality_score": 92.7,
+    "data_quality_score": 93.85,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1736035/000173603521000012/bxsl-20210630x10q.htm",
     "filing_type": "10-Q",
     "interest_expense_mn": 27.167,
@@ -411,7 +420,9 @@
     "mgmt_fee_as_pct_of_assets": 0.72,
     "shares_outstanding": 144332562,
     "pik_income_mn": 0.365,
-    "new_investment_count": 44
+    "new_investment_count": 44,
+    "liquidity_pct": 7.997809,
+    "mgmt_fee_pct_of_assets": 0.354762
   },
   {
     "quarter": "Q3 2021",
@@ -460,7 +471,7 @@
     "nav_per_share_yoy_growth_pct": 4.978,
     "origination_velocity_pct": 54.294,
     "cumulative_dividends_paid": 3.5,
-    "data_quality_score": 92.7,
+    "data_quality_score": 93.85,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1736035/000173603521000014/bxsl-20210930x10q.htm",
     "filing_type": "10-Q",
     "interest_expense_mn": 32.74,
@@ -491,7 +502,9 @@
     "mgmt_fee_as_pct_of_assets": 0.75,
     "shares_outstanding": 158389951,
     "admin_fee_mn": 0.5,
-    "pik_income_mn": 1.001
+    "pik_income_mn": 1.001,
+    "liquidity_pct": 3.972372,
+    "mgmt_fee_pct_of_assets": 0.372847
   },
   {
     "quarter": "Q4 2021",
@@ -538,7 +551,7 @@
     "nav_per_share_yoy_growth_pct": 4.246,
     "origination_velocity_pct": -25.592,
     "cumulative_dividends_paid": 4.0,
-    "data_quality_score": 84.6,
+    "data_quality_score": 87.1,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1736035/000173603522000006/bxsl-20211231x10k.htm",
     "filing_type": "10-K",
     "interest_expense_mn": 120.469,
@@ -561,7 +574,9 @@
     "nav_per_share_yoy_pct": 4.25,
     "mgmt_fee_as_pct_of_assets": 4.48,
     "shares_outstanding": 169274033,
-    "admin_fee_mn": 0.747
+    "admin_fee_mn": 0.747,
+    "liquidity_pct": 16.411675,
+    "mgmt_fee_pct_of_assets": 1.403064
   },
   {
     "quarter": "Q1 2022",
@@ -610,7 +625,7 @@
     "nav_per_share_yoy_growth_pct": 2.23,
     "origination_velocity_pct": 2.91,
     "cumulative_dividends_paid": 4.78,
-    "data_quality_score": 90.9,
+    "data_quality_score": 92.42,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1736035/000173603522000013/bxsl-20220331x10q.htm",
     "filing_type": "10-Q",
     "interest_expense_mn": 40.301,
@@ -642,7 +657,9 @@
     "shares_outstanding": 169691412,
     "admin_fee_mn": 0.84,
     "pik_income_mn": 8.686,
-    "avg_ebitda_mn": 128.0
+    "avg_ebitda_mn": 128.0,
+    "liquidity_pct": 10.27265,
+    "mgmt_fee_pct_of_assets": 0.578186
   },
   {
     "quarter": "Q2 2022",
@@ -691,7 +708,7 @@
     "nav_per_share_yoy_growth_pct": -0.116,
     "origination_velocity_pct": 5.936,
     "cumulative_dividends_paid": 5.535,
-    "data_quality_score": 90.9,
+    "data_quality_score": 92.42,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1736035/000173603522000018/bxsl-20220630.htm",
     "filing_type": "10-Q",
     "interest_expense_mn": 45.084,
@@ -737,7 +754,9 @@
     "shares_outstanding": 168243901,
     "admin_fee_mn": 0.349,
     "pik_income_mn": 10.808,
-    "avg_ebitda_mn": 149.3
+    "avg_ebitda_mn": 149.3,
+    "liquidity_pct": 11.447806,
+    "mgmt_fee_pct_of_assets": 0.068885
   },
   {
     "quarter": "Q3 2022",
@@ -786,7 +805,7 @@
     "nav_per_share_yoy_growth_pct": -1.491,
     "origination_velocity_pct": 8.513,
     "cumulative_dividends_paid": 6.305,
-    "data_quality_score": 91.1,
+    "data_quality_score": 92.65,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1736035/000173603522000023/bxsl-20220930.htm",
     "filing_type": "10-Q",
     "interest_expense_mn": 55.347,
@@ -813,7 +832,9 @@
     "shares_outstanding": 161823803,
     "admin_fee_mn": 0.687,
     "pik_income_mn": 10.931,
-    "avg_ebitda_mn": 162.4
+    "avg_ebitda_mn": 162.4,
+    "liquidity_pct": 8.064532,
+    "mgmt_fee_pct_of_assets": 0.071968
   },
   {
     "quarter": "Q4 2022",
@@ -859,7 +880,7 @@
     "nav_per_share_yoy_growth_pct": -1.294,
     "origination_velocity_pct": -7.581,
     "cumulative_dividends_paid": 6.305,
-    "data_quality_score": 80.4,
+    "data_quality_score": 83.61,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1736035/000173603523000008/bxsl-20221231.htm",
     "filing_type": "10-K",
     "interest_expense_mn": 203.579,
@@ -882,7 +903,9 @@
     "nav_per_share_yoy_pct": -1.29,
     "mgmt_fee_as_pct_of_assets": 4.17,
     "shares_outstanding": 160362861,
-    "admin_fee_mn": 0.796
+    "admin_fee_mn": 0.796,
+    "liquidity_pct": 6.961223,
+    "mgmt_fee_pct_of_assets": 2.445317
   },
   {
     "quarter": "Q1 2023",
@@ -930,7 +953,7 @@
     "nav_per_share_yoy_growth_pct": -0.115,
     "origination_velocity_pct": 1.196,
     "cumulative_dividends_paid": 7.005,
-    "data_quality_score": 92.9,
+    "data_quality_score": 94.2,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1736035/000173603523000013/bxsl-20230331.htm",
     "filing_type": "10-Q",
     "interest_expense_mn": 66.728,
@@ -966,7 +989,9 @@
     "admin_fee_mn": 0.378,
     "pik_income_mn": 9.829,
     "avg_ebitda_mn": 178.9,
-    "new_investment_count": 126
+    "new_investment_count": 126,
+    "liquidity_pct": 6.365325,
+    "mgmt_fee_pct_of_assets": 0.071591
   },
   {
     "quarter": "Q2 2023",
@@ -1015,7 +1040,7 @@
     "nav_per_share_yoy_growth_pct": 1.584,
     "origination_velocity_pct": 2.351,
     "cumulative_dividends_paid": 7.705,
-    "data_quality_score": 92.9,
+    "data_quality_score": 94.12,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1736035/000173603523000018/bxsl-20230630.htm",
     "filing_type": "10-Q",
     "interest_expense_mn": 66.148,
@@ -1056,7 +1081,9 @@
     "shares_outstanding": 165417269,
     "admin_fee_mn": 0.675,
     "pik_income_mn": 11.266,
-    "avg_ebitda_mn": 182.9
+    "avg_ebitda_mn": 182.9,
+    "liquidity_pct": 6.447146,
+    "mgmt_fee_pct_of_assets": 0.068961
   },
   {
     "quarter": "Q3 2023",
@@ -1105,7 +1132,7 @@
     "nav_per_share_yoy_growth_pct": 3.028,
     "origination_velocity_pct": 6.472,
     "cumulative_dividends_paid": 8.4283,
-    "data_quality_score": 88.9,
+    "data_quality_score": 91.04,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1736035/000173603523000023/bxsl-20230930.htm",
     "filing_type": "10-Q",
     "interest_expense_mn": 65.253,
@@ -1138,7 +1165,9 @@
     "admin_fee_mn": 0.544,
     "pik_income_mn": 10.677,
     "avg_ebitda_mn": 185.5,
-    "new_investment_count": 140
+    "new_investment_count": 140,
+    "liquidity_pct": 8.290866,
+    "mgmt_fee_pct_of_assets": 0.065181
   },
   {
     "quarter": "Q4 2023",
@@ -1185,7 +1214,7 @@
     "nav_per_share_yoy_growth_pct": 2.815,
     "origination_velocity_pct": 5.605,
     "cumulative_dividends_paid": 9.1516,
-    "data_quality_score": 86.3,
+    "data_quality_score": 88.52,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1736035/000173603524000006/bxsl-20231231.htm",
     "filing_type": "10-K",
     "interest_expense_mn": 266.42,
@@ -1199,7 +1228,9 @@
     "nav_per_share_yoy_pct": 2.82,
     "mgmt_fee_as_pct_of_assets": 4.06,
     "shares_outstanding": 185782408,
-    "admin_fee_mn": 0.652
+    "admin_fee_mn": 0.652,
+    "liquidity_pct": 7.064289,
+    "mgmt_fee_pct_of_assets": 1.981446
   },
   {
     "quarter": "Q1 2024",
@@ -1247,7 +1278,7 @@
     "nav_per_share_yoy_growth_pct": 2.95,
     "origination_velocity_pct": 6.954,
     "cumulative_dividends_paid": 9.9216,
-    "data_quality_score": 88.9,
+    "data_quality_score": 91.04,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1736035/000173603524000017/bxsl-20240331.htm",
     "filing_type": "10-Q",
     "interest_expense_mn": 66.72,
@@ -1281,7 +1312,9 @@
     "admin_fee_mn": 0.677,
     "pik_income_mn": 20.456,
     "avg_ebitda_mn": 193.1,
-    "new_investment_count": 100
+    "new_investment_count": 100,
+    "liquidity_pct": 7.485458,
+    "mgmt_fee_pct_of_assets": 0.058188
   },
   {
     "quarter": "Q2 2024",
@@ -1329,7 +1362,7 @@
     "nav_per_share_yoy_growth_pct": 3.384,
     "origination_velocity_pct": 14.227,
     "cumulative_dividends_paid": 10.6916,
-    "data_quality_score": 90.6,
+    "data_quality_score": 92.42,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1736035/000173603524000026/bxsl-20240630.htm",
     "filing_type": "10-Q",
     "interest_expense_mn": 78.841,
@@ -1355,7 +1388,9 @@
     "admin_fee_mn": 0.765,
     "pik_income_mn": 22.862,
     "avg_ebitda_mn": 206.2,
-    "new_investment_count": 106
+    "new_investment_count": 106,
+    "liquidity_pct": 11.85732,
+    "mgmt_fee_pct_of_assets": 0.055611
   },
   {
     "quarter": "Q3 2024",
@@ -1403,7 +1438,7 @@
     "nav_per_share_yoy_growth_pct": 2.751,
     "origination_velocity_pct": 21.371,
     "cumulative_dividends_paid": 11.4616,
-    "data_quality_score": 90.6,
+    "data_quality_score": 92.31,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1736035/000173603524000035/bxsl-20240930.htm",
     "filing_type": "10-Q",
     "interest_expense_mn": 88.191,
@@ -1428,7 +1463,9 @@
     "shares_outstanding": 209034336,
     "admin_fee_mn": 0.525,
     "pik_income_mn": 21.211,
-    "avg_ebitda_mn": 194.1
+    "avg_ebitda_mn": 194.1,
+    "liquidity_pct": 14.396509,
+    "mgmt_fee_pct_of_assets": 0.052625
   },
   {
     "quarter": "Q4 2024",
@@ -1474,7 +1511,7 @@
     "nav_per_share_yoy_growth_pct": 2.738,
     "origination_velocity_pct": -9.714,
     "cumulative_dividends_paid": 12.2316,
-    "data_quality_score": 84.3,
+    "data_quality_score": 86.89,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1736035/000173603525000008/bxsl-20241231.htm",
     "filing_type": "10-K",
     "interest_expense_mn": 326.133,
@@ -1497,7 +1534,9 @@
     "nav_per_share_yoy_pct": 2.74,
     "mgmt_fee_as_pct_of_assets": 4.7,
     "shares_outstanding": 221892184,
-    "admin_fee_mn": 0.677
+    "admin_fee_mn": 0.677,
+    "liquidity_pct": 12.956708,
+    "mgmt_fee_pct_of_assets": 1.919125
   },
   {
     "quarter": "Q1 2025",
@@ -1545,7 +1584,7 @@
     "nav_per_share_yoy_growth_pct": 1.935,
     "origination_velocity_pct": 5.321,
     "cumulative_dividends_paid": 13.0016,
-    "data_quality_score": 90.2,
+    "data_quality_score": 92.19,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1736035/000173603525000013/bxsl-20250331.htm",
     "filing_type": "10-Q",
     "interest_expense_mn": 92.976,
@@ -1569,7 +1608,9 @@
     "admin_fee_mn": 0.966,
     "pik_income_mn": 21.359,
     "avg_ebitda_mn": 210.0,
-    "new_investment_count": 159
+    "new_investment_count": 159,
+    "liquidity_pct": 8.624745,
+    "mgmt_fee_pct_of_assets": 0.04807
   },
   {
     "quarter": "Q2 2025",
@@ -1617,7 +1658,7 @@
     "nav_per_share_yoy_growth_pct": 0.515,
     "origination_velocity_pct": 9.152,
     "cumulative_dividends_paid": 13.7716,
-    "data_quality_score": 90.2,
+    "data_quality_score": 92.06,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1736035/000173603525000018/bxsl-20250630.htm",
     "filing_type": "10-Q",
     "interest_expense_mn": 92.285,
@@ -1647,7 +1688,9 @@
     "shares_outstanding": 230055444,
     "admin_fee_mn": 0.744,
     "pik_income_mn": 22.171,
-    "avg_ebitda_mn": 219.0
+    "avg_ebitda_mn": 219.0,
+    "liquidity_pct": 9.088597,
+    "mgmt_fee_pct_of_assets": 0.047708
   },
   {
     "quarter": "Q3 2025",
@@ -1695,7 +1738,7 @@
     "nav_per_share_yoy_growth_pct": -0.44,
     "origination_velocity_pct": 15.985,
     "cumulative_dividends_paid": 14.5416,
-    "data_quality_score": 88.2,
+    "data_quality_score": 90.48,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1736035/000173603525000021/bxsl-20250930.htm",
     "filing_type": "10-Q",
     "interest_expense_mn": 94.691,
@@ -1718,7 +1761,9 @@
     "shares_outstanding": 230957158,
     "admin_fee_mn": 0.766,
     "pik_income_mn": 29.509,
-    "avg_ebitda_mn": 221.0
+    "avg_ebitda_mn": 221.0,
+    "liquidity_pct": 9.871169,
+    "mgmt_fee_pct_of_assets": 0.04785
   },
   {
     "quarter": "Q4 2025",
@@ -1768,7 +1813,7 @@
     "nav_per_share_yoy_growth_pct": -0.876,
     "origination_velocity_pct": -6.222,
     "cumulative_dividends_paid": 15.3116,
-    "data_quality_score": 90.6,
+    "data_quality_score": 92.42,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1736035/000173603526000004/bxsl-20251231.htm",
     "filing_type": "10-K",
     "interest_expense_mn": 381.641,
@@ -1784,6 +1829,8 @@
     "admin_fee_mn": 1.018,
     "pik_income_mn": 29.402,
     "avg_ebitda_mn": 219.0,
-    "avg_interest_coverage_borrower": 2.0
+    "avg_interest_coverage_borrower": 2.0,
+    "liquidity_pct": 10.389228,
+    "mgmt_fee_pct_of_assets": 2.23302
   }
 ]

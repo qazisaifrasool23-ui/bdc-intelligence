@@ -45,7 +45,9 @@
     "data_quality_score": 100.0,
     "nav_per_share_qoq_change": 0.416,
     "fixed_rate_pct": 95.13,
-    "interest_coverage_ratio": 1.2952
+    "interest_coverage_ratio": 1.2952,
+    "fee_as_pct_of_nii": 33.222925,
+    "mgmt_fee_pct_of_assets": 0.30063
   },
   {
     "quarter": "Q2 2023",
@@ -74,7 +76,9 @@
     "data_quality_score": 100.0,
     "nav_per_share_qoq_change": 0.08,
     "fixed_rate_pct": 94.91,
-    "interest_coverage_ratio": 1.3202
+    "interest_coverage_ratio": 1.3202,
+    "fee_as_pct_of_nii": 28.999764,
+    "mgmt_fee_pct_of_assets": 0.296547
   },
   {
     "quarter": "Q3 2023",
@@ -103,7 +107,9 @@
     "data_quality_score": 100.0,
     "nav_per_share_qoq_change": 0.05,
     "fixed_rate_pct": 94.68,
-    "interest_coverage_ratio": 1.5086
+    "interest_coverage_ratio": 1.5086,
+    "fee_as_pct_of_nii": 23.603289,
+    "mgmt_fee_pct_of_assets": 0.281337
   },
   {
     "quarter": "Q4 2023",
@@ -135,7 +141,9 @@
     "nav_per_share_qoq_change": -0.39,
     "nav_per_share_yoy_growth_pct": 0.6177,
     "fixed_rate_pct": 0.0,
-    "interest_coverage_ratio": 1.4171
+    "interest_coverage_ratio": 1.4171,
+    "fee_as_pct_of_nii": 26.072792,
+    "mgmt_fee_pct_of_assets": 0.291419
   },
   {
     "quarter": "Q1 2024",
@@ -174,7 +182,9 @@
     "redemption_backlog_mn": 0.0,
     "redemption_fulfillment_pct": 100.0,
     "interest_coverage_ratio": 1.6434,
-    "nii_per_share_yoy_growth_pct": 31.25
+    "nii_per_share_yoy_growth_pct": 31.25,
+    "fee_as_pct_of_nii": 24.524662,
+    "mgmt_fee_pct_of_assets": 0.252389
   },
   {
     "quarter": "Q2 2024",
@@ -210,7 +220,9 @@
     "redemption_fulfilled_mn": 0.0,
     "redemption_backlog_mn": 0.0,
     "redemption_fulfillment_pct": 100.0,
-    "nii_per_share_yoy_growth_pct": 21.3465
+    "nii_per_share_yoy_growth_pct": 21.3465,
+    "fee_as_pct_of_nii": 24.620714,
+    "mgmt_fee_pct_of_assets": 0.268271
   },
   {
     "quarter": "Q3 2024",
@@ -246,7 +258,9 @@
     "redemption_fulfilled_mn": 0.969,
     "redemption_backlog_mn": 0.0,
     "redemption_fulfillment_pct": 100.0,
-    "nii_per_share_yoy_growth_pct": 7.8891
+    "nii_per_share_yoy_growth_pct": 7.8891,
+    "fee_as_pct_of_nii": 24.862799,
+    "mgmt_fee_pct_of_assets": 0.29253
   },
   {
     "quarter": "Q4 2024",
@@ -282,7 +296,9 @@
     "redemption_fulfilled_mn": 0.827,
     "redemption_backlog_mn": 0.0,
     "redemption_fulfillment_pct": 100.0,
-    "nii_per_share_yoy_growth_pct": 2.9925
+    "nii_per_share_yoy_growth_pct": 2.9925,
+    "fee_as_pct_of_nii": 25.613364,
+    "mgmt_fee_pct_of_assets": 0.2971
   },
   {
     "quarter": "Q1 2025",
@@ -318,7 +334,9 @@
     "redemption_fulfilled_mn": 6.564,
     "redemption_backlog_mn": 0.0,
     "redemption_fulfillment_pct": 100.0,
-    "nii_per_share_yoy_growth_pct": 1.739
+    "nii_per_share_yoy_growth_pct": 1.739,
+    "fee_as_pct_of_nii": 25.729846,
+    "mgmt_fee_pct_of_assets": 0.284752
   },
   {
     "quarter": "Q2 2025",
@@ -354,7 +372,8 @@
     "redemption_fulfilled_mn": 31.53,
     "redemption_backlog_mn": 0.0,
     "redemption_fulfillment_pct": 100.0,
-    "nii_per_share_yoy_growth_pct": -6.0442
+    "nii_per_share_yoy_growth_pct": -6.0442,
+    "mgmt_fee_pct_of_assets": 0.291436
   },
   {
     "quarter": "Q3 2025",
@@ -389,7 +408,8 @@
     "redemption_fulfilled_mn": 6.315,
     "redemption_backlog_mn": 0.0,
     "redemption_fulfillment_pct": 100.0,
-    "nii_per_share_yoy_growth_pct": -12.0537
+    "nii_per_share_yoy_growth_pct": -12.0537,
+    "mgmt_fee_pct_of_assets": 0.29506
   },
   {
     "quarter": "Q4 2025",
@@ -512,6 +532,7 @@
     "nav_s": 25.2181,
     "nav_d": 25.2181,
     "nav_i": 25.2181,
-    "nav_date": "2026-03-31"
+    "nav_date": "2026-03-31",
+    "mgmt_fee_pct_of_assets": 0.288441
   }
 ]

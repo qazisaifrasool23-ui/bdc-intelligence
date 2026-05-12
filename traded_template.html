@@ -910,7 +910,7 @@ var TT={backgroundColor:"#ffffff",borderColor:"#e2e6ea",borderWidth:1,titleColor
 function bO(){return {responsive:true,maintainAspectRatio:false,animation:{duration:350},layout:{padding:{top:8}},interaction:{mode:"index",intersect:false},plugins:{legend:{display:false},tooltip:{backgroundColor:"#ffffff",borderColor:"#e2e6ea",borderWidth:1,titleColor:"#6c7a8d",bodyColor:"#1a1d23",titleFont:{family:F,size:8},bodyFont:{family:F,size:11},padding:11,mode:"index",intersect:false,position:"nearest"}}};}
 function mk(id,cfg){var el=document.getElementById(id);if(!el)return;if(charts[id]){try{charts[id].destroy();}catch(e){}}charts[id]=new Chart(el,cfg);}
 function rl(y,col,dash){return {type:"line",data:Q.map(function(){return y;}),borderColor:col,borderDash:dash||[5,4],borderWidth:1.2,pointRadius:0,fill:false,label:"ref"};}
-function line(id,data,col,fill,sfx,mn){mk(id,{type:"line",data:{labels:Q,datasets:[{data:data,borderColor:col,backgroundColor:fill?col.replace(/[\d.]+\)$/,".08)").replace(/^#/,"rgba(").replace(/([\da-f]{2})([\da-f]{2})([\da-f]{2})$/i,function(m,r,g,b){return parseInt(r,16)+","+parseInt(g,16)+","+parseInt(b,16)+","})+"0.08)":col+"00",borderWidth:2,pointRadius:0,fill:!!fill,tension:.35}]},options:{...bO(),scales:{x:xS,y:yS(sfx||"",mn)}}});}
+function line(id,data,col,fill,sfx,mn){mk(id,{type:"line",data:{labels:Q,datasets:[{data:data,borderColor:col,backgroundColor:fill?col.replace(/[\d.]+\)$/,".08)").replace(/^#/,"rgba(").replace(/([\da-f]{2})([\da-f]{2})([\da-f]{2})$/i,function(m,r,g,b){return parseInt(r,16)+","+parseInt(g,16)+","+parseInt(b,16)+","})+"0.08)":col+"00",borderWidth:2,pointRadius:0,fill:!!fill,spanGaps:true,tension:.35}]},options:{...bO(),scales:{x:xS,y:yS(sfx||"",mn)}}});}
 function barColors(id,data,col_p,col_n,sfx){var cols=data.map(function(v){return v==null?"transparent":v>=0?col_p:col_n;});mk(id,{type:"bar",data:{labels:Q,datasets:[{data:data,backgroundColor:cols,borderRadius:3}]},options:{...bO(),scales:{x:{...xS,grid:{display:false}},y:yS(sfx||"")}}});}
 function multiLine(id,datasets,sfx,mn){mk(id,{type:"line",data:{labels:Q,datasets:datasets},options:{...bO(),scales:{x:xS,y:yS(sfx||"",mn)}}});}
 function stackedBar(id,datasets,sfx){mk(id,{type:"bar",data:{labels:Q,datasets:datasets},options:{...bO(),scales:{x:{...xS,stacked:true,grid:{display:false}},y:{...yS(sfx||""),stacked:true}}}});}
@@ -1054,27 +1054,27 @@ function buildOverview(){
     mi("PIK % Income",fmt(L.pik_pct,2,"%"),"Non-cash earnings",L.pik_pct>10?"am":"","PIK (Payment-in-Kind) % — share of investment income that is non-cash. PIK loans accrue interest as additional principal rather than cash payments. Rising PIK can signal borrower stress."),
     mi("Interest Coverage",fmt(L.interest_coverage_ratio,2,"×"),"NII÷Interest exp","gn","Interest Coverage Ratio — Net Investment Income divided by Interest Expense. Measures how comfortably the fund covers its debt service. Above 2.0× is considered safe."),
   ].join("");
-  multiLine("ov-nav",[{data:NAV,borderColor:"#2E75B6",backgroundColor:"rgba(46,117,182,.08)",borderWidth:2,pointRadius:0,fill:true,tension:.35}],"$");
+  multiLine("ov-nav",[{data:NAV,borderColor:"#2E75B6",backgroundColor:"rgba(46,117,182,.08)",borderWidth:2,pointRadius:0,fill:true,spanGaps:true,tension:.35}],"$");
   multiLine("ov-ret",[
-    {data:TOT_RET,borderColor:"#70AD47",backgroundColor:"rgba(112,173,71,.08)",borderWidth:2,pointRadius:0,fill:true,tension:.35,label:"Total Return"},
-    {data:NAV,borderColor:"#2E75B6",borderDash:[4,3],borderWidth:1.5,pointRadius:0,fill:false,tension:.35,label:"NAV Only"},
+    {data:TOT_RET,borderColor:"#70AD47",backgroundColor:"rgba(112,173,71,.08)",borderWidth:2,pointRadius:0,fill:true,spanGaps:true,tension:.35,label:"Total Return"},
+    {data:NAV,borderColor:"#2E75B6",borderDash:[4,3],borderWidth:1.5,pointRadius:0,fill:false,spanGaps:true,tension:.35,label:"NAV Only"},
   ],"$");
   multiLine("ov-niidps",[
-    {data:NII,borderColor:"#2E75B6",borderWidth:2,pointRadius:0,fill:false,tension:.35,label:"NII/sh"},
-    {data:DPS,borderColor:"#70AD47",borderDash:[4,3],borderWidth:2,pointRadius:0,fill:false,tension:.1,label:"DPS"},
+    {data:NII,borderColor:"#2E75B6",borderWidth:2,pointRadius:0,fill:false,spanGaps:true,tension:.35,label:"NII/sh"},
+    {data:DPS,borderColor:"#70AD47",borderDash:[4,3],borderWidth:2,pointRadius:0,fill:false,spanGaps:true,tension:.1,label:"DPS"},
     rl(1.0,"rgba(192,0,0,.5)"),
   ],"$");
   multiLine("ov-spread",[
-    {data:YLD,borderColor:"#2E75B6",borderWidth:2,pointRadius:0,fill:false,tension:.35,label:"Yield"},
-    {data:COD,borderColor:"#C00000",borderWidth:2,pointRadius:0,fill:false,tension:.35,label:"CoD"},
-    {data:SPREAD,borderColor:"#70AD47",backgroundColor:"rgba(112,173,71,.08)",borderWidth:2,pointRadius:0,fill:true,tension:.35,label:"Spread"},
+    {data:YLD,borderColor:"#2E75B6",borderWidth:2,pointRadius:0,fill:false,spanGaps:true,tension:.35,label:"Yield"},
+    {data:COD,borderColor:"#C00000",borderWidth:2,pointRadius:0,fill:false,spanGaps:true,tension:.35,label:"CoD"},
+    {data:SPREAD,borderColor:"#70AD47",backgroundColor:"rgba(112,173,71,.08)",borderWidth:2,pointRadius:0,fill:true,spanGaps:true,tension:.35,label:"Spread"},
   ],"%");
   multiLine("ov-na",[
-    {data:NA_COST,borderColor:"#C00000",backgroundColor:"rgba(192,0,0,.07)",borderWidth:2,pointRadius:0,fill:true,tension:.35},
+    {data:NA_COST,borderColor:"#C00000",backgroundColor:"rgba(192,0,0,.07)",borderWidth:2,pointRadius:0,fill:true,spanGaps:true,tension:.35},
     rl(2.5,"rgba(90,112,144,.6)"),
   ],"%",0);
   multiLine("ov-pik",[
-    {data:PIK_PCT,borderColor:"#E07B00",backgroundColor:"rgba(224,123,0,.08)",borderWidth:2,pointRadius:0,fill:true,tension:.35},
+    {data:PIK_PCT,borderColor:"#E07B00",backgroundColor:"rgba(224,123,0,.08)",borderWidth:2,pointRadius:0,fill:true,spanGaps:true,tension:.35},
     rl(10,"rgba(192,0,0,.5)"),
   ],"%",0);
   setTimeout(function(){injectTimeBars('overview');trendBadge('ov-nav',NAV);trendBadge('ov-na',NA_COST);trendBadge('ov-pik',PIK_PCT);trendBadge('ov-cov',COV);},150);buildWaterfall();buildRetDecomp();}
@@ -1092,18 +1092,18 @@ function buildBalance(){
     mi("Liquidity",fmt(L.liquidity_pct_of_portfolio,2,"%"),"Undrawn / Portfolio FV","gn","Liquidity % of Portfolio — undrawn credit facility capacity as a percentage of total portfolio fair value. Measures dry powder for new investments."),
   ].join("");
   multiLine("bs-stack",[
-    {data:NA_M,borderColor:"#2E75B6",backgroundColor:"rgba(46,117,182,.08)",borderWidth:2,pointRadius:0,fill:true,tension:.35,label:"Net Assets"},
-    {data:DEBT,borderColor:"#C00000",backgroundColor:"rgba(192,0,0,.07)",borderWidth:2,pointRadius:0,fill:true,tension:.35,label:"Total Debt"},
+    {data:NA_M,borderColor:"#2E75B6",backgroundColor:"rgba(46,117,182,.08)",borderWidth:2,pointRadius:0,fill:true,spanGaps:true,tension:.35,label:"Net Assets"},
+    {data:DEBT,borderColor:"#C00000",backgroundColor:"rgba(192,0,0,.07)",borderWidth:2,pointRadius:0,fill:true,spanGaps:true,tension:.35,label:"Total Debt"},
   ],"M");
-  multiLine("bs-inv",[{data:INV,borderColor:"#70AD47",backgroundColor:"rgba(112,173,71,.08)",borderWidth:2,pointRadius:0,fill:true,tension:.35}],"M");
-  multiLine("bs-nav",[{data:NAV,borderColor:"#2E75B6",backgroundColor:"rgba(46,117,182,.08)",borderWidth:2,pointRadius:0,fill:true,tension:.35}],"$");
+  multiLine("bs-inv",[{data:INV,borderColor:"#70AD47",backgroundColor:"rgba(112,173,71,.08)",borderWidth:2,pointRadius:0,fill:true,spanGaps:true,tension:.35}],"M");
+  multiLine("bs-nav",[{data:NAV,borderColor:"#2E75B6",backgroundColor:"rgba(46,117,182,.08)",borderWidth:2,pointRadius:0,fill:true,spanGaps:true,tension:.35}],"$");
   barColors("bs-navchg",NAV_CHG,"rgba(10,124,82,.6)","rgba(184,20,31,.6)","$");
   stackedBar("bs-liq",[
     {label:"Drawn",data:DRAWN,backgroundColor:"rgba(192,0,0,.5)",borderRadius:2},
     {label:"Available",data:UNDRAWN,backgroundColor:"rgba(10,124,82,.45)",borderRadius:2},
   ],"M");
   multiLine("bs-lev",[
-    {data:LEV,borderColor:"#2E75B6",backgroundColor:"rgba(46,117,182,.08)",borderWidth:2,pointRadius:0,fill:true,tension:.35},
+    {data:LEV,borderColor:"#2E75B6",backgroundColor:"rgba(46,117,182,.08)",borderWidth:2,pointRadius:0,fill:true,spanGaps:true,tension:.35},
     rl(1.0,"rgba(154,82,0,.6)"),rl(2.0,"rgba(192,0,0,.5)"),
   ],"×",0);
 
@@ -1121,17 +1121,17 @@ function buildIncome(){
     mi("Int. Coverage",fmt(L.interest_coverage_ratio,2,"×"),"NII÷Interest exp","gn","Interest Coverage Ratio — NII divided by interest expense. Measures solvency cushion. Above 2.0× is considered prudent for a leveraged vehicle."),
     mi("Expense Ratio",fmt(L.expense_ratio_pct,2,"%"),"Ann. total ÷ net assets","","Expense Ratio (annualised) — total quarterly expenses × 4 divided by net assets. Includes interest expense. Net expense ratio (ex-interest) is a better fee efficiency measure."),
   ].join("");
-  multiLine("inc-tii",[{data:TII,borderColor:"#2E75B6",backgroundColor:"rgba(46,117,182,.08)",borderWidth:2,pointRadius:0,fill:true,tension:.35}],"M");
+  multiLine("inc-tii",[{data:TII,borderColor:"#2E75B6",backgroundColor:"rgba(46,117,182,.08)",borderWidth:2,pointRadius:0,fill:true,spanGaps:true,tension:.35}],"M");
   stackedBar("inc-decomp",[
     {label:"Cash",data:CASH_INC,backgroundColor:"rgba(46,117,182,.75)",borderRadius:2},
     {label:"PIK",data:PIK_MN,backgroundColor:"rgba(224,123,0,.65)",borderRadius:2},
   ],"M");
   multiLine("inc-cov",[
-    {data:COV,borderColor:"#2E75B6",backgroundColor:"rgba(46,117,182,.08)",borderWidth:2,pointRadius:0,fill:true,tension:.35},
+    {data:COV,borderColor:"#2E75B6",backgroundColor:"rgba(46,117,182,.08)",borderWidth:2,pointRadius:0,fill:true,spanGaps:true,tension:.35},
     rl(1.0,"rgba(192,0,0,.5)"),
   ],"×",.5);
   multiLine("inc-intcov",[
-    {data:INT_COV,borderColor:"#264478",backgroundColor:"rgba(38,68,120,.07)",borderWidth:2,pointRadius:0,fill:true,tension:.35},
+    {data:INT_COV,borderColor:"#264478",backgroundColor:"rgba(38,68,120,.07)",borderWidth:2,pointRadius:0,fill:true,spanGaps:true,tension:.35},
     rl(2.0,"rgba(154,82,0,.6)"),
   ],"×",0);
   stackedBar("inc-exp",[
@@ -1141,8 +1141,8 @@ function buildIncome(){
     {label:"Admin",data:ADMIN_FEE,backgroundColor:"rgba(45,64,96,.8)",borderRadius:2},
   ],"M");
   multiLine("inc-expratio",[
-    {data:EXP_RATIO,borderColor:"#C00000",backgroundColor:"rgba(192,0,0,.07)",borderWidth:2,pointRadius:0,fill:true,tension:.35,label:"Total"},
-    {data:NET_EXP_RATIO,borderColor:"#2E75B6",borderDash:[4,3],borderWidth:1.5,pointRadius:0,fill:false,tension:.35,label:"Net"},
+    {data:EXP_RATIO,borderColor:"#C00000",backgroundColor:"rgba(192,0,0,.07)",borderWidth:2,pointRadius:0,fill:true,spanGaps:true,tension:.35,label:"Total"},
+    {data:NET_EXP_RATIO,borderColor:"#2E75B6",borderDash:[4,3],borderWidth:1.5,pointRadius:0,fill:false,spanGaps:true,tension:.35,label:"Net"},
   ],"%");
 
   setTimeout(function(){injectTimeBars('income');trendBadge('inc-tii',TII);trendBadge('inc-cov',COV);trendBadge('inc-pik',PIK_PCT);trendBadge('inc-spread',SPREAD);},150);buildEQS();}
@@ -1159,16 +1159,16 @@ function buildPerShare(){
     mi("Spillover/sh","$"+fmt(L.spillover_per_share,2),"Undistributed NII","gn","Spillover Income per Share — undistributed NII carried forward from prior periods. Acts as a buffer allowing the dividend to be maintained even if a quarter's NII dips below DPS."),
     mi("NII YoY Growth",fmt(L.nii_per_share_yoy_growth_pct,2,"%"),"Year-over-year","gn","NII per Share — Year-over-Year Growth. Measures earnings momentum. Positive trend signals improving profitability."),
   ].join("");
-  multiLine("ps-nav",[{data:NAV,borderColor:"#2E75B6",backgroundColor:"rgba(46,117,182,.08)",borderWidth:2,pointRadius:0,fill:true,tension:.35}],"$");
+  multiLine("ps-nav",[{data:NAV,borderColor:"#2E75B6",backgroundColor:"rgba(46,117,182,.08)",borderWidth:2,pointRadius:0,fill:true,spanGaps:true,tension:.35}],"$");
   multiLine("ps-ret",[
-    {data:TOT_RET,borderColor:"#70AD47",backgroundColor:"rgba(112,173,71,.08)",borderWidth:2,pointRadius:0,fill:true,tension:.35,label:"Total Return"},
-    {data:NAV,borderColor:"#2E75B6",borderDash:[4,3],borderWidth:1.5,pointRadius:0,fill:false,tension:.35,label:"NAV Only"},
+    {data:TOT_RET,borderColor:"#70AD47",backgroundColor:"rgba(112,173,71,.08)",borderWidth:2,pointRadius:0,fill:true,spanGaps:true,tension:.35,label:"Total Return"},
+    {data:NAV,borderColor:"#2E75B6",borderDash:[4,3],borderWidth:1.5,pointRadius:0,fill:false,spanGaps:true,tension:.35,label:"NAV Only"},
   ],"$");
   multiLine("ps-niidps",[
-    {data:NII,borderColor:"#2E75B6",borderWidth:2,pointRadius:0,fill:false,tension:.35,label:"NII/sh"},
-    {data:DPS,borderColor:"#70AD47",borderDash:[4,3],borderWidth:2,pointRadius:0,fill:false,tension:.1,label:"DPS"},
+    {data:NII,borderColor:"#2E75B6",borderWidth:2,pointRadius:0,fill:false,spanGaps:true,tension:.35,label:"NII/sh"},
+    {data:DPS,borderColor:"#70AD47",borderDash:[4,3],borderWidth:2,pointRadius:0,fill:false,spanGaps:true,tension:.1,label:"DPS"},
   ],"$");
-  multiLine("ps-spill",[{data:SPILLOVER,borderColor:"#70AD47",backgroundColor:"rgba(112,173,71,.08)",borderWidth:2,pointRadius:0,fill:true,tension:.35}],"$");
+  multiLine("ps-spill",[{data:SPILLOVER,borderColor:"#70AD47",backgroundColor:"rgba(112,173,71,.08)",borderWidth:2,pointRadius:0,fill:true,spanGaps:true,tension:.35}],"$");
   barColors("ps-niiyoy",NII_YOY,"rgba(10,124,82,.6)","rgba(184,20,31,.6)","%");
   barColors("ps-unreal",UNREAL,"rgba(10,124,82,.6)","rgba(184,20,31,.6)","M");
 
@@ -1187,26 +1187,26 @@ function buildCredit(){
     mi("NA Resolutions",fmtMm(L.na_resolutions_mn),"Resolved this quarter","gn","Non-Accrual Resolutions ($ Millions) — positions removed from non-accrual (via repayment, sale, or write-off) during the quarter. Higher resolutions relative to additions is positive."),
   ].join("");
   multiLine("cr-na",[
-    {data:NA_COST,borderColor:"#C00000",backgroundColor:"rgba(192,0,0,.07)",borderWidth:2,pointRadius:0,fill:true,tension:.35,label:"At Cost"},
-    {data:NA_FV,borderColor:"#E07B00",borderDash:[4,3],borderWidth:1.8,pointRadius:0,fill:false,tension:.35,label:"At FV"},
+    {data:NA_COST,borderColor:"#C00000",backgroundColor:"rgba(192,0,0,.07)",borderWidth:2,pointRadius:0,fill:true,spanGaps:true,tension:.35,label:"At Cost"},
+    {data:NA_FV,borderColor:"#E07B00",borderDash:[4,3],borderWidth:1.8,pointRadius:0,fill:false,spanGaps:true,tension:.35,label:"At FV"},
     rl(2.5,"rgba(165,165,165,.7)"),
   ],"%",0);
   mk("cr-naflow",{type:"bar",data:{labels:Q,datasets:[
     {label:"Additions",data:NA_ADD,backgroundColor:"rgba(192,0,0,.55)",borderRadius:3},
     {label:"Resolutions",data:NA_RES.map(function(v){return v!=null?-v:null;}),backgroundColor:"rgba(112,173,71,.65)",borderRadius:3},
   ]},options:{...bO(),scales:{x:{...xS,stacked:false,grid:{display:false}},y:yS("M")}}});
-  multiLine("cr-rec",[{data:IMP_REC,borderColor:"#264478",backgroundColor:"rgba(38,68,120,.08)",borderWidth:2,pointRadius:0,fill:true,tension:.35}],"%",0);
+  multiLine("cr-rec",[{data:IMP_REC,borderColor:"#264478",backgroundColor:"rgba(38,68,120,.08)",borderWidth:2,pointRadius:0,fill:true,spanGaps:true,tension:.35}],"%",0);
   multiLine("cr-risk",[
-    {data:RISK_RAT,borderColor:"#2E75B6",backgroundColor:"rgba(46,117,182,.08)",borderWidth:2,pointRadius:0,fill:true,tension:.35},
+    {data:RISK_RAT,borderColor:"#2E75B6",backgroundColor:"rgba(46,117,182,.08)",borderWidth:2,pointRadius:0,fill:true,spanGaps:true,tension:.35},
     rl(3.0,"rgba(154,82,0,.5)"),
   ],"",1);
   multiLine("cr-pik",[
-    {data:PIK_PCT,borderColor:"#E07B00",backgroundColor:"rgba(224,123,0,.08)",borderWidth:2,pointRadius:0,fill:true,tension:.35},
+    {data:PIK_PCT,borderColor:"#E07B00",backgroundColor:"rgba(224,123,0,.08)",borderWidth:2,pointRadius:0,fill:true,spanGaps:true,tension:.35},
     rl(10,"rgba(192,0,0,.5)"),
   ],"%",0);
   mk("cr-bor",{type:"line",data:{labels:Q,datasets:[
-    {data:AVG_LEV_BOR,borderColor:"#264478",backgroundColor:"rgba(38,68,120,.07)",borderWidth:2,pointRadius:0,fill:true,tension:.35,label:"Avg Leverage",yAxisID:"y"},
-    {data:AVG_IC_BOR,borderColor:"#2E75B6",borderDash:[4,3],borderWidth:1.8,pointRadius:0,fill:false,tension:.35,label:"Avg IC",yAxisID:"y2"},
+    {data:AVG_LEV_BOR,borderColor:"#264478",backgroundColor:"rgba(38,68,120,.07)",borderWidth:2,pointRadius:0,fill:true,spanGaps:true,tension:.35,label:"Avg Leverage",yAxisID:"y"},
+    {data:AVG_IC_BOR,borderColor:"#2E75B6",borderDash:[4,3],borderWidth:1.8,pointRadius:0,fill:false,spanGaps:true,tension:.35,label:"Avg IC",yAxisID:"y2"},
   ]},options:{...bO(),scales:{x:xS,y:{...yS("×",0)},y2:{position:"right",grid:{display:false},ticks:{color:TC,font:{family:F,size:7.5}},border:{color:"#e2e6ea"}}}}});
   document.getElementById("cr-table").innerHTML='<table class="dtbl"><thead><tr><th>Metric</th><th>ARCC Q1 2026</th><th>Universe Median</th><th>Peer Rank</th><th>Signal</th></tr></thead><tbody>'
     +'<tr><td>Non-Accrual % (cost)</td><td>1.8%</td><td>3.2%</td><td>#2 / 38</td><td><span class="sig sg">✓ Best Quartile</span></td></tr>'
@@ -1232,16 +1232,16 @@ function buildPortfolio(){
     mi("US Geography %",fmt(L.geographic_us_pct,2,"%"),"Domestic exposure","","US Geography % — percentage of portfolio investments in US-domiciled companies. Higher concentration = lower FX and cross-border legal risk."),
   ].join("");
   mk("pf-lien",{type:"line",data:{labels:Q,datasets:[
-    {data:FL,borderColor:"#2E75B6",backgroundColor:"rgba(24,71,194,.15)",borderWidth:1.5,pointRadius:0,fill:"stack",tension:.3,label:"1L"},
-    {data:SL,borderColor:"#5B9BD5",backgroundColor:"rgba(91,155,213,.08)",borderWidth:1.5,pointRadius:0,fill:"stack",tension:.3,label:"2L"},
-    {data:SUB,borderColor:"#E07B00",backgroundColor:"rgba(154,82,0,.15)",borderWidth:1.5,pointRadius:0,fill:"stack",tension:.3,label:"Sub"},
-    {data:EQ_,borderColor:"#264478",backgroundColor:"rgba(109,40,217,.15)",borderWidth:1.5,pointRadius:0,fill:"stack",tension:.3,label:"Eq"},
+    {data:FL,borderColor:"#2E75B6",backgroundColor:"rgba(24,71,194,.15)",borderWidth:1.5,pointRadius:0,fill:"stack",spanGaps:true,tension:.3,label:"1L"},
+    {data:SL,borderColor:"#5B9BD5",backgroundColor:"rgba(91,155,213,.08)",borderWidth:1.5,pointRadius:0,fill:"stack",spanGaps:true,tension:.3,label:"2L"},
+    {data:SUB,borderColor:"#E07B00",backgroundColor:"rgba(154,82,0,.15)",borderWidth:1.5,pointRadius:0,fill:"stack",spanGaps:true,tension:.3,label:"Sub"},
+    {data:EQ_,borderColor:"#264478",backgroundColor:"rgba(109,40,217,.15)",borderWidth:1.5,pointRadius:0,fill:"stack",spanGaps:true,tension:.3,label:"Eq"},
   ]},options:{...bO(),scales:{x:xS,y:yS("%")}}});
   doughnut("pf-now",["1st Lien","2nd Lien","Subordinated","Equity"],[last(FL),last(SL),last(SUB),last(EQ_)],["#2E75B6","#5B9BD5","#E07B00","#264478"]);
-  multiLine("pf-cos",[{data:PORTCOS,borderColor:"#2E75B6",backgroundColor:"rgba(46,117,182,.08)",borderWidth:2,pointRadius:0,fill:true,tension:.35}],"");
-  multiLine("pf-pos",[{data:AVG_POS,borderColor:"#70AD47",backgroundColor:"rgba(112,173,71,.08)",borderWidth:2,pointRadius:0,fill:true,tension:.35}],"M");
-  multiLine("pf-top10",[{data:TOP10,borderColor:"#264478",backgroundColor:"rgba(38,68,120,.08)",borderWidth:2,pointRadius:0,fill:true,tension:.35},rl(20,"rgba(154,82,0,.5)")],"%" ,0);
-  multiLine("pf-flt",[{data:FLT,borderColor:"#70AD47",backgroundColor:"rgba(112,173,71,.08)",borderWidth:2,pointRadius:0,fill:true,tension:.35},rl(90,"rgba(165,165,165,.7)")],"%" ,0);
+  multiLine("pf-cos",[{data:PORTCOS,borderColor:"#2E75B6",backgroundColor:"rgba(46,117,182,.08)",borderWidth:2,pointRadius:0,fill:true,spanGaps:true,tension:.35}],"");
+  multiLine("pf-pos",[{data:AVG_POS,borderColor:"#70AD47",backgroundColor:"rgba(112,173,71,.08)",borderWidth:2,pointRadius:0,fill:true,spanGaps:true,tension:.35}],"M");
+  multiLine("pf-top10",[{data:TOP10,borderColor:"#264478",backgroundColor:"rgba(38,68,120,.08)",borderWidth:2,pointRadius:0,fill:true,spanGaps:true,tension:.35},rl(20,"rgba(154,82,0,.5)")],"%" ,0);
+  multiLine("pf-flt",[{data:FLT,borderColor:"#70AD47",backgroundColor:"rgba(112,173,71,.08)",borderWidth:2,pointRadius:0,fill:true,spanGaps:true,tension:.35},rl(90,"rgba(165,165,165,.7)")],"%" ,0);
   var secs=[["Software & Technology","21.7%","#2E75B6"],["Financial Services","12.4%","#5B9BD5"],["Health Care","11.3%","#70AD47"],["Consumer Discretionary","8.2%","#264478"],["Capital Goods","7.8%","#E07B00"],["Professional Services","6.4%","#C00000"],["Media & Entertainment","5.8%","#6366f1"],["Other Industries","26.4%","#2d4060"]];
   document.getElementById("pf-sectors").innerHTML=secs.map(function(s){return "<div class='sec-bar'><div class='sec-name'>"+s[0]+"</div><div class='sec-track'><div class='sec-fill' style='width:"+s[1]+";background:"+s[2]+"'></div></div><div class='sec-val'>"+s[1]+"</div></div>";}).join("");
 
@@ -1260,17 +1260,17 @@ function buildOrigination(){
     mi("Portfolio Yield",fmt(L.weighted_avg_yield,2,"%"),"Existing portfolio","","Weighted Average Portfolio Yield — the blended contractual yield across all current investments. The primary driver of investment income."),
   ].join("");
   mk("or-gross",{type:"bar",data:{labels:Q,datasets:[
-    {label:"Originations",data:ORIG,backgroundColor:"rgba(112,173,71,.65)",borderRadius:2},{label:"4Q Avg",data:rolling4(ORIG),type:"line",borderColor:"#70AD47",borderWidth:2.5,pointRadius:0,fill:false,tension:.4,order:0},
+    {label:"Originations",data:ORIG,backgroundColor:"rgba(112,173,71,.65)",borderRadius:2},{label:"4Q Avg",data:rolling4(ORIG),type:"line",borderColor:"#70AD47",borderWidth:2.5,pointRadius:0,fill:false,spanGaps:true,tension:.4,order:0},
     {label:"Repayments",data:REPAY.map(function(v){return v!=null?-v:null;}),backgroundColor:"rgba(192,0,0,.45)",borderRadius:2},
   ]},options:{...bO(),scales:{x:{...xS,grid:{display:false}},y:{...yS("M"),ticks:{...yS("M").ticks,callback:function(v){return "$"+Math.abs(v)+"M";}}}}}});
   barColors("or-net",NET_ORIG,"rgba(10,124,82,.6)","rgba(184,20,31,.6)","M");
-  multiLine("or-vel",[{data:ORIG_VEL,borderColor:"#2E75B6",backgroundColor:"rgba(46,117,182,.08)",borderWidth:2,pointRadius:0,fill:true,tension:.35}],"%");
+  multiLine("or-vel",[{data:ORIG_VEL,borderColor:"#2E75B6",backgroundColor:"rgba(46,117,182,.08)",borderWidth:2,pointRadius:0,fill:true,spanGaps:true,tension:.35}],"%");
   multiLine("or-yld",[
-    {data:YLD,borderColor:"#2E75B6",borderWidth:2,pointRadius:0,fill:false,tension:.35,label:"Portfolio Yield"},
-    {data:YLD_NEW,borderColor:"#70AD47",borderDash:[4,3],borderWidth:1.8,pointRadius:0,fill:false,tension:.35,label:"New Inv Yield"},
+    {data:YLD,borderColor:"#2E75B6",borderWidth:2,pointRadius:0,fill:false,spanGaps:true,tension:.35,label:"Portfolio Yield"},
+    {data:YLD_NEW,borderColor:"#70AD47",borderDash:[4,3],borderWidth:1.8,pointRadius:0,fill:false,spanGaps:true,tension:.35,label:"New Inv Yield"},
   ],"%");
-  multiLine("or-new",[{data:NEW_INV,borderColor:"#70AD47",backgroundColor:"rgba(112,173,71,.08)",borderWidth:2,pointRadius:0,fill:true,tension:.35}],"");
-  multiLine("or-exit",[{data:EXITS,borderColor:"#264478",backgroundColor:"rgba(38,68,120,.08)",borderWidth:2,pointRadius:0,fill:true,tension:.35}],"");
+  multiLine("or-new",[{data:NEW_INV,borderColor:"#70AD47",backgroundColor:"rgba(112,173,71,.08)",borderWidth:2,pointRadius:0,fill:true,spanGaps:true,tension:.35}],"");
+  multiLine("or-exit",[{data:EXITS,borderColor:"#264478",backgroundColor:"rgba(38,68,120,.08)",borderWidth:2,pointRadius:0,fill:true,spanGaps:true,tension:.35}],"");
 
   setTimeout(function(){injectTimeBars('origination');trendBadge('or-net',NET_ORIG);trendBadge('or-vel',ORIG_VEL);},150);}
 
@@ -1289,9 +1289,9 @@ function buildFees(){
     {label:"Incentive",data:INC_FEE,backgroundColor:"rgba(224,123,0,.65)",borderRadius:2},
     {label:"Admin",data:ADMIN_FEE,backgroundColor:"rgba(45,64,96,.8)",borderRadius:2},
   ],"M");
-  multiLine("fee-cod",[{data:COD,borderColor:"#C00000",backgroundColor:"rgba(192,0,0,.07)",borderWidth:2,pointRadius:0,fill:true,tension:.35}],"%");
-  multiLine("fee-mgmt",[{data:MGMT_FEE,borderColor:"#264478",backgroundColor:"rgba(38,68,120,.08)",borderWidth:2,pointRadius:0,fill:true,tension:.35}],"M");
-  multiLine("fee-inc",[{data:INC_FEE,borderColor:"#E07B00",backgroundColor:"rgba(224,123,0,.08)",borderWidth:2,pointRadius:0,fill:true,tension:.35}],"M");
+  multiLine("fee-cod",[{data:COD,borderColor:"#C00000",backgroundColor:"rgba(192,0,0,.07)",borderWidth:2,pointRadius:0,fill:true,spanGaps:true,tension:.35}],"%");
+  multiLine("fee-mgmt",[{data:MGMT_FEE,borderColor:"#264478",backgroundColor:"rgba(38,68,120,.08)",borderWidth:2,pointRadius:0,fill:true,spanGaps:true,tension:.35}],"M");
+  multiLine("fee-inc",[{data:INC_FEE,borderColor:"#E07B00",backgroundColor:"rgba(224,123,0,.08)",borderWidth:2,pointRadius:0,fill:true,spanGaps:true,tension:.35}],"M");
 
   setTimeout(function(){injectTimeBars('fees');trendBadge('fee-mgmt',MGMT_FEE);trendBadge('fee-inc',INC_FEE);},150);buildFeeDrag();}
 
@@ -1311,18 +1311,18 @@ function buildDividends(){
     data:DPS,borderColor:"#70AD47",borderWidth:2,
     pointRadius:DPS.map(function(v,i){return i>0&&DPS[i-1]!=null&&Math.abs(v-DPS[i-1])>.001?6:0;}),
     pointBackgroundColor:"#C00000",pointBorderColor:"#111827",pointBorderWidth:2,
-    fill:false,tension:0,stepped:true
+    fill:false,spanGaps:true,tension:0,stepped:true
   }]},options:{...bO(),scales:{x:xS,y:{...yS("$",.3)}}}});
   multiLine("div-cov",[
-    {data:COV,borderColor:"#2E75B6",backgroundColor:"rgba(46,117,182,.08)",borderWidth:2,pointRadius:0,fill:true,tension:.35},
+    {data:COV,borderColor:"#2E75B6",backgroundColor:"rgba(46,117,182,.08)",borderWidth:2,pointRadius:0,fill:true,spanGaps:true,tension:.35},
     rl(1.0,"rgba(192,0,0,.5)"),
   ],"×",.5);
   multiLine("div-niidps",[
-    {data:NII,borderColor:"#2E75B6",borderWidth:2,pointRadius:0,fill:false,tension:.35,label:"NII/sh"},
-    {data:DPS,borderColor:"#70AD47",borderDash:[4,3],borderWidth:2,pointRadius:0,fill:false,tension:.1,label:"DPS"},
+    {data:NII,borderColor:"#2E75B6",borderWidth:2,pointRadius:0,fill:false,spanGaps:true,tension:.35,label:"NII/sh"},
+    {data:DPS,borderColor:"#70AD47",borderDash:[4,3],borderWidth:2,pointRadius:0,fill:false,spanGaps:true,tension:.1,label:"DPS"},
   ],"$");
-  multiLine("div-cum",[{data:CUM_DIV,borderColor:"#70AD47",backgroundColor:"rgba(112,173,71,.08)",borderWidth:2,pointRadius:0,fill:true,tension:.35}],"$");
-  multiLine("div-spill",[{data:SPILLOVER,borderColor:"#70AD47",backgroundColor:"rgba(112,173,71,.08)",borderWidth:2,pointRadius:0,fill:true,tension:.35}],"$");
+  multiLine("div-cum",[{data:CUM_DIV,borderColor:"#70AD47",backgroundColor:"rgba(112,173,71,.08)",borderWidth:2,pointRadius:0,fill:true,spanGaps:true,tension:.35}],"$");
+  multiLine("div-spill",[{data:SPILLOVER,borderColor:"#70AD47",backgroundColor:"rgba(112,173,71,.08)",borderWidth:2,pointRadius:0,fill:true,spanGaps:true,tension:.35}],"$");
   barColors("div-flag",DIV_FLAG,"rgba(10,124,82,.6)","rgba(184,20,31,.6)","");
 
   setTimeout(function(){injectTimeBars('dividends');trendBadge('div-cov',COV);trendBadge('div-cum',CUM_DIV);trendBadge('div-spill',SPILLOVER);},150);buildDivSafety();}
@@ -1340,8 +1340,8 @@ function buildCapital(){
     mi("Available Capacity",fmtM(L.unused_capacity_mn),"Undrawn revolver","gn","Available Capacity ($) — undrawn credit facility capacity. Represents dry powder for new investments and a liquidity buffer against unexpected repayments or drawdowns."),
   ].join("");
   multiLine("cap-stack",[
-    {data:DEBT,borderColor:"#C00000",backgroundColor:"rgba(192,0,0,.07)",borderWidth:2,pointRadius:0,fill:true,tension:.35,label:"Debt"},
-    {data:NA_M,borderColor:"#2E75B6",backgroundColor:"rgba(46,117,182,.08)",borderWidth:2,pointRadius:0,fill:true,tension:.35,label:"Net Assets"},
+    {data:DEBT,borderColor:"#C00000",backgroundColor:"rgba(192,0,0,.07)",borderWidth:2,pointRadius:0,fill:true,spanGaps:true,tension:.35,label:"Debt"},
+    {data:NA_M,borderColor:"#2E75B6",backgroundColor:"rgba(46,117,182,.08)",borderWidth:2,pointRadius:0,fill:true,spanGaps:true,tension:.35,label:"Net Assets"},
   ],"M");
   // Debt maturity ladder
   var mat=[last(DEBT_MAT_1Y),last(DEBT_MAT_2Y),last(DEBT_MAT_3Y),last(DEBT_MAT_4YP)];
@@ -1357,15 +1357,15 @@ function buildCapital(){
     +"<div style='margin-top:10px;padding-top:10px;border-top:1px solid var(--border);font-family:var(--mono);font-size:9.5px;color:var(--text3)'>Wtd. avg. maturity: <span style='color:var(--text);font-weight:500'>"+fmt(L.debt_maturity_weighted_avg_yrs,1," years")+"</span></div>";
   doughnut("cap-comp",["Revolver","Unsecured Notes","Other"],[last(DEBT_REV),last(DEBT_NOTES),last(DEBT_MAT_4YP)-last(DEBT_NOTES)],["#2E75B6","#264478","#E07B00"]);
   multiLine("cap-fixflt",[
-    {data:DEBT_FLOAT_P,borderColor:"#2E75B6",backgroundColor:"rgba(46,117,182,.08)",borderWidth:2,pointRadius:0,fill:true,tension:.35,label:"Floating"},
-    {data:DEBT_FIXED_P,borderColor:"#264478",backgroundColor:"rgba(38,68,120,.08)",borderWidth:2,pointRadius:0,fill:true,tension:.35,label:"Fixed"},
+    {data:DEBT_FLOAT_P,borderColor:"#2E75B6",backgroundColor:"rgba(46,117,182,.08)",borderWidth:2,pointRadius:0,fill:true,spanGaps:true,tension:.35,label:"Floating"},
+    {data:DEBT_FIXED_P,borderColor:"#264478",backgroundColor:"rgba(38,68,120,.08)",borderWidth:2,pointRadius:0,fill:true,spanGaps:true,tension:.35,label:"Fixed"},
   ],"%",0);
   multiLine("cap-lev",[
-    {data:LEV,borderColor:"#2E75B6",backgroundColor:"rgba(46,117,182,.08)",borderWidth:2,pointRadius:0,fill:true,tension:.35},
+    {data:LEV,borderColor:"#2E75B6",backgroundColor:"rgba(46,117,182,.08)",borderWidth:2,pointRadius:0,fill:true,spanGaps:true,tension:.35},
     rl(1.0,"rgba(154,82,0,.5)"),rl(2.0,"rgba(192,0,0,.5)"),
   ],"×",0);
   multiLine("cap-intcov",[
-    {data:INT_COV,borderColor:"#264478",backgroundColor:"rgba(38,68,120,.07)",borderWidth:2,pointRadius:0,fill:true,tension:.35},
+    {data:INT_COV,borderColor:"#264478",backgroundColor:"rgba(38,68,120,.07)",borderWidth:2,pointRadius:0,fill:true,spanGaps:true,tension:.35},
     rl(2.0,"rgba(154,82,0,.5)"),
   ],"×",0);
   stackedBar("cap-liq",[
@@ -1373,8 +1373,8 @@ function buildCapital(){
     {label:"Available",data:UNDRAWN,backgroundColor:"rgba(10,124,82,.45)",borderRadius:2},
   ],"M");
   multiLine("cap-rate",[
-    {data:COD,borderColor:"#C00000",borderWidth:2,pointRadius:0,fill:false,tension:.35,label:"CoD"},
-    {data:WTD_INT,borderColor:"#E07B00",borderDash:[4,3],borderWidth:1.8,pointRadius:0,fill:false,tension:.35,label:"Wtd Int Rate"},
+    {data:COD,borderColor:"#C00000",borderWidth:2,pointRadius:0,fill:false,spanGaps:true,tension:.35,label:"CoD"},
+    {data:WTD_INT,borderColor:"#E07B00",borderDash:[4,3],borderWidth:1.8,pointRadius:0,fill:false,spanGaps:true,tension:.35,label:"Wtd Int Rate"},
   ],"%");
 
   setTimeout(function(){injectTimeBars('capital');trendBadge('cap-lev',LEV);},150);buildRateLev();}
@@ -1660,26 +1660,26 @@ function buildMarket(){
   var SPX_PCT=SPX.map(function(v){return v!=null?+(v-100).toFixed(1):null;});
   var BDC_PCT=BDC.map(function(v){return v!=null?+(v-100).toFixed(1):null;});
   mk("m1",{type:"line",data:{labels:Q,datasets:[
-    {data:TR_PCT,borderColor:"#2E75B6",backgroundColor:"rgba(46,117,182,.08)",borderWidth:2.5,pointRadius:0,fill:true,tension:.35,label:"ARCC"},
-    {data:SPX_PCT,borderColor:"rgba(90,112,144,.6)",borderDash:[4,3],borderWidth:1.5,pointRadius:0,fill:false,tension:.35,label:"S&P 500"},
-    {data:BDC_PCT,borderColor:"rgba(10,124,82,.5)",borderDash:[4,3],borderWidth:1.5,pointRadius:0,fill:false,tension:.35,label:"BDC Index"},
+    {data:TR_PCT,borderColor:"#2E75B6",backgroundColor:"rgba(46,117,182,.08)",borderWidth:2.5,pointRadius:0,fill:true,spanGaps:true,tension:.35,label:"ARCC"},
+    {data:SPX_PCT,borderColor:"rgba(90,112,144,.6)",borderDash:[4,3],borderWidth:1.5,pointRadius:0,fill:false,spanGaps:true,tension:.35,label:"S&P 500"},
+    {data:BDC_PCT,borderColor:"rgba(10,124,82,.5)",borderDash:[4,3],borderWidth:1.5,pointRadius:0,fill:false,spanGaps:true,tension:.35,label:"BDC Index"},
   ]},options:{responsive:true,maintainAspectRatio:false,animation:{duration:400},
     plugins:{
       legend:{display:true,position:"top",labels:{font:{family:F,size:9},color:TC,boxWidth:12,boxHeight:8,padding:10}},
       tooltip:{backgroundColor:"#fff",borderColor:"#e2e6ea",borderWidth:1,titleColor:"#6c7a8d",bodyColor:"#1a1d23",titleFont:{family:F,size:9},bodyFont:{family:F,size:11},mode:"index",intersect:false,
         callbacks:{label:function(c){var sign=c.raw>=0?"+":"";return c.dataset.label+": "+sign+c.raw.toFixed(1)+"%";}}}},
     scales:{x:xS,y:{grid:{color:"rgba(226,231,239,.45)",drawTicks:false},ticks:{color:TC,font:{family:F,size:10},callback:function(v){return (v>=0?"+":"")+v.toFixed(0)+"%";}},border:{color:"#e2e6ea"}}}}});
-  mk("m2",{type:"line",data:{labels:Q,datasets:[{data:PNAV,borderColor:"#2E75B6",backgroundColor:"rgba(46,117,182,.08)",borderWidth:2,pointRadius:0,fill:true,tension:.35},mRef(1.0,"rgba(165,165,165,.7)"),mRef(0.9,"rgba(184,20,31,.4)")]},options:{...o,scales:{x:xS,y:yS("×")}}});
-  mk("m3",{type:"line",data:{labels:Q,datasets:[{data:NAV,borderColor:"#2E75B6",borderDash:[4,3],borderWidth:1.8,pointRadius:0,fill:false,tension:.35,label:"NAV/sh"},{data:MKT,borderColor:"#264478",backgroundColor:"rgba(38,68,120,.06)",borderWidth:2,pointRadius:0,fill:false,tension:.35,label:"Mkt Price"}]},options:{...o,scales:{x:xS,y:yS("$")}}});
-  mk("m4",{type:"line",data:{labels:Q,datasets:[{data:DYLD,borderColor:"#70AD47",backgroundColor:"rgba(112,173,71,.08)",borderWidth:2,pointRadius:0,fill:true,tension:.35},mRef(10,"rgba(154,82,0,.5)")]},options:{...o,scales:{x:xS,y:yS("%")}}});
-  mk("m5",{type:"line",data:{labels:Q,datasets:[{data:PNII,borderColor:"#264478",backgroundColor:"rgba(38,68,120,.07)",borderWidth:2,pointRadius:0,fill:true,tension:.35},mRef(9,"rgba(154,82,0,.5)")]},options:{...o,scales:{x:xS,y:yS("×")}}});
+  mk("m2",{type:"line",data:{labels:Q,datasets:[{data:PNAV,borderColor:"#2E75B6",backgroundColor:"rgba(46,117,182,.08)",borderWidth:2,pointRadius:0,fill:true,spanGaps:true,tension:.35},mRef(1.0,"rgba(165,165,165,.7)"),mRef(0.9,"rgba(184,20,31,.4)")]},options:{...o,scales:{x:xS,y:yS("×")}}});
+  mk("m3",{type:"line",data:{labels:Q,datasets:[{data:NAV,borderColor:"#2E75B6",borderDash:[4,3],borderWidth:1.8,pointRadius:0,fill:false,spanGaps:true,tension:.35,label:"NAV/sh"},{data:MKT,borderColor:"#264478",backgroundColor:"rgba(38,68,120,.06)",borderWidth:2,pointRadius:0,fill:false,spanGaps:true,tension:.35,label:"Mkt Price"}]},options:{...o,scales:{x:xS,y:yS("$")}}});
+  mk("m4",{type:"line",data:{labels:Q,datasets:[{data:DYLD,borderColor:"#70AD47",backgroundColor:"rgba(112,173,71,.08)",borderWidth:2,pointRadius:0,fill:true,spanGaps:true,tension:.35},mRef(10,"rgba(154,82,0,.5)")]},options:{...o,scales:{x:xS,y:yS("%")}}});
+  mk("m5",{type:"line",data:{labels:Q,datasets:[{data:PNII,borderColor:"#264478",backgroundColor:"rgba(38,68,120,.07)",borderWidth:2,pointRadius:0,fill:true,spanGaps:true,tension:.35},mRef(9,"rgba(154,82,0,.5)")]},options:{...o,scales:{x:xS,y:yS("×")}}});
   var pc=PREM.map(function(v){return v>=0?"rgba(112,173,71,.65)":"rgba(192,0,0,.55)";});
   mk("m6",{type:"bar",data:{labels:Q,datasets:[{data:PREM,backgroundColor:pc,borderRadius:3}]},options:{...o,scales:{x:{...xS,grid:{display:false}},y:yS("%")}}});
   mk("m7",{type:"bar",data:{labels:Q,datasets:[{data:VOL,backgroundColor:"rgba(24,71,194,.5)",borderRadius:3}]},options:{...o,scales:{x:{...xS,grid:{display:false}},y:yS("M")}}});
-  mk("m8",{type:"line",data:{labels:Q,datasets:[{data:SI,borderColor:"#C00000",backgroundColor:"rgba(192,0,0,.07)",borderWidth:2,pointRadius:0,fill:true,tension:.35},mRef(5,"rgba(154,82,0,.5)")]},options:{...o,scales:{x:xS,y:{...yS("%"),min:0}}}});
-  mk("m9",{type:"line",data:{labels:Q,datasets:[{data:INST,borderColor:"#70AD47",backgroundColor:"rgba(112,173,71,.08)",borderWidth:2,pointRadius:0,fill:true,tension:.35}]},options:{...o,scales:{x:xS,y:yS("%")}}});
-  mk("m10",{type:"line",data:{labels:Q,datasets:[{data:IV,borderColor:"#E07B00",backgroundColor:"rgba(224,123,0,.08)",borderWidth:2,pointRadius:0,fill:true,tension:.35,label:"Implied"},{data:V90,borderColor:"#2E75B6",borderDash:[4,3],borderWidth:1.5,pointRadius:0,fill:false,tension:.35,label:"Realised"}]},options:{...o,scales:{x:xS,y:yS("%")}}});
-  mk("m11",{type:"line",data:{labels:Q,datasets:[{data:DRAW,borderColor:"#C00000",backgroundColor:"rgba(192,0,0,.07)",borderWidth:2,pointRadius:0,fill:true,tension:.35},mRef(0,"rgba(90,112,144,.3)")]},options:{...o,scales:{x:xS,y:yS("%")}}});
+  mk("m8",{type:"line",data:{labels:Q,datasets:[{data:SI,borderColor:"#C00000",backgroundColor:"rgba(192,0,0,.07)",borderWidth:2,pointRadius:0,fill:true,spanGaps:true,tension:.35},mRef(5,"rgba(154,82,0,.5)")]},options:{...o,scales:{x:xS,y:{...yS("%"),min:0}}}});
+  mk("m9",{type:"line",data:{labels:Q,datasets:[{data:INST,borderColor:"#70AD47",backgroundColor:"rgba(112,173,71,.08)",borderWidth:2,pointRadius:0,fill:true,spanGaps:true,tension:.35}]},options:{...o,scales:{x:xS,y:yS("%")}}});
+  mk("m10",{type:"line",data:{labels:Q,datasets:[{data:IV,borderColor:"#E07B00",backgroundColor:"rgba(224,123,0,.08)",borderWidth:2,pointRadius:0,fill:true,spanGaps:true,tension:.35,label:"Implied"},{data:V90,borderColor:"#2E75B6",borderDash:[4,3],borderWidth:1.5,pointRadius:0,fill:false,spanGaps:true,tension:.35,label:"Realised"}]},options:{...o,scales:{x:xS,y:yS("%")}}});
+  mk("m11",{type:"line",data:{labels:Q,datasets:[{data:DRAW,borderColor:"#C00000",backgroundColor:"rgba(192,0,0,.07)",borderWidth:2,pointRadius:0,fill:true,spanGaps:true,tension:.35},mRef(0,"rgba(90,112,144,.3)")]},options:{...o,scales:{x:xS,y:yS("%")}}});
   var ec=EARN.map(function(v){return v===null?"transparent":v>=0?"rgba(10,124,82,.6)":"rgba(184,20,31,.6)";});
   mk("m12",{type:"bar",data:{labels:Q,datasets:[{data:EARN,backgroundColor:ec,borderRadius:3}]},options:{...o,scales:{x:{...xS,grid:{display:false}},y:yS("%")}}});
 
@@ -1748,8 +1748,8 @@ function buildEvents(){
        pointHoverBackgroundColor:pC,
        pointHoverBorderColor:"#fff",
        pointHoverBorderWidth:2,
-       fill:true,tension:.35,label:"NAV/sh"},
-      {data:mktS,borderColor:"#264478",borderDash:[4,3],borderWidth:1.5,pointRadius:0,fill:false,tension:.35,label:"Mkt Price"},
+       fill:true,spanGaps:true,tension:.35,label:"NAV/sh"},
+      {data:mktS,borderColor:"#264478",borderDash:[4,3],borderWidth:1.5,pointRadius:0,fill:false,spanGaps:true,tension:.35,label:"Mkt Price"},
     ]},options:{responsive:true,maintainAspectRatio:false,animation:{duration:350},
       plugins:{legend:{display:false},tooltip:{backgroundColor:"#0b1929",borderColor:"rgba(255,255,255,.1)",borderWidth:1,titleColor:"rgba(255,255,255,.65)",bodyColor:"#fff",titleFont:{family:F,size:9},bodyFont:{family:F,size:11},padding:13,mode:"index",intersect:false,
         callbacks:{
@@ -1823,7 +1823,7 @@ function buildWaterfall(){try{
     {label:"Dist",data:wD,backgroundColor:"rgba(192,0,0,.5)",borderRadius:2,stack:"b"},
     {label:"Gain",data:wG,backgroundColor:"rgba(46,117,182,.65)",borderRadius:2,stack:"b"},
     {label:"Loss",data:wLo,backgroundColor:"rgba(224,123,0,.55)",borderRadius:2,stack:"b"},
-    {label:"NAV",data:wC,type:"line",borderColor:"#1a1d23",borderWidth:1.5,pointRadius:0,fill:false,tension:0,yAxisID:"y2"},
+    {label:"NAV",data:wC,type:"line",borderColor:"#1a1d23",borderWidth:1.5,pointRadius:0,fill:false,spanGaps:true,tension:0,yAxisID:"y2"},
   ]},options:{responsive:true,maintainAspectRatio:false,animation:{duration:350},
     plugins:{legend:{display:false},tooltip:{backgroundColor:"#fff",borderColor:"#e2e6ea",borderWidth:1,titleColor:TC,bodyColor:"#1a1d23",titleFont:{family:F,size:8},bodyFont:{family:F,size:11},padding:10,callbacks:{title:function(c){return c[0].label;},label:function(c){var v=c.raw;if(!v)return null;var lb=["NII Earned","Distributions","Unrealized+","Unrealized-","Closing NAV"];return (lb[c.datasetIndex]||"")+": $"+Math.abs(v).toFixed(c.datasetIndex===4?2:3);}}}},
     scales:{x:{...xS,stacked:true,grid:{display:false}},y:{...yS("$"),stacked:true},y2:{position:"right",grid:{display:false},ticks:{color:TC,font:{family:F,size:10},callback:function(v){return "$"+v.toFixed(2);}},border:{color:"#e2e6ea"}}}}});
@@ -1835,9 +1835,9 @@ function buildRetDecomp(){try{
   for(var i=0;i<Q.length;i++){cumD+=(DPS[i]||0);cC.push(+((NAV[i]||base)-base).toFixed(3));cI.push(+cumD.toFixed(3));}
   var lC=cC[cC.length-1],lI=cI[cI.length-1],tot=lC+lI,ip=Math.round(lI/tot*100);
   mk("ov-retdecomp",{type:"line",data:{labels:Q,datasets:[
-    {label:"Income",data:cI,borderColor:"#70AD47",backgroundColor:"rgba(112,173,71,.08)",borderWidth:2,pointRadius:0,fill:true,tension:.35},
-    {label:"Capital",data:cC.map(function(v){return v>=0?v:null;}),borderColor:"#2E75B6",backgroundColor:"rgba(46,117,182,.08)",borderWidth:2,pointRadius:0,fill:true,tension:.35},
-    {label:"Loss",data:cC.map(function(v){return v<0?v:null;}),borderColor:"rgba(192,0,0,.5)",backgroundColor:"rgba(192,0,0,.06)",borderWidth:1.5,pointRadius:0,fill:true,tension:.35},
+    {label:"Income",data:cI,borderColor:"#70AD47",backgroundColor:"rgba(112,173,71,.08)",borderWidth:2,pointRadius:0,fill:true,spanGaps:true,tension:.35},
+    {label:"Capital",data:cC.map(function(v){return v>=0?v:null;}),borderColor:"#2E75B6",backgroundColor:"rgba(46,117,182,.08)",borderWidth:2,pointRadius:0,fill:true,spanGaps:true,tension:.35},
+    {label:"Loss",data:cC.map(function(v){return v<0?v:null;}),borderColor:"rgba(192,0,0,.5)",backgroundColor:"rgba(192,0,0,.06)",borderWidth:1.5,pointRadius:0,fill:true,spanGaps:true,tension:.35},
   ]},options:{...bO(),scales:{x:xS,y:yS("$")}}});
   var ann=document.getElementById("ov-retann");
   if(ann)ann.innerHTML="Since Q1 2020: <strong style='color:var(--green)'>$"+lI.toFixed(2)+"/sh income ("+ip+"%)</strong> + <strong style='color:var(--blue)'>$"+Math.max(0,lC).toFixed(2)+"/sh capital ("+(100-ip)+"%)</strong> = <strong>$"+tot.toFixed(2)+"/sh total return</strong>";
@@ -1866,7 +1866,7 @@ function buildEQS(){try{
   setTimeout(function(){
     var dc=eq.map(function(v){return v>=4?"rgba(112,173,71,.9)":v>=3?"rgba(224,123,0,.9)":"rgba(192,0,0,.9)";});
     mk("eqs-c",{type:"line",data:{labels:Q,datasets:[
-      {data:eq,borderColor:"#2E75B6",backgroundColor:"rgba(46,117,182,.08)",borderWidth:2.5,pointRadius:5,pointBackgroundColor:dc,pointBorderColor:"#fff",pointBorderWidth:1.5,fill:true,tension:.3,label:"EQS"},
+      {data:eq,borderColor:"#2E75B6",backgroundColor:"rgba(46,117,182,.08)",borderWidth:2.5,pointRadius:5,pointBackgroundColor:dc,pointBorderColor:"#fff",pointBorderWidth:1.5,fill:true,spanGaps:true,tension:.3,label:"EQS"},
       {data:Q.map(function(){return 3;}),borderColor:"rgba(154,82,0,.4)",borderDash:[4,3],borderWidth:1,pointRadius:0,fill:false,label:"ref"},
       {data:Q.map(function(){return 4;}),borderColor:"rgba(10,124,82,.3)",borderDash:[4,3],borderWidth:1,pointRadius:0,fill:false,label:"ref"},
     ]},options:{...bO(),scales:{x:xS,y:{...yS(""),min:1,max:5,ticks:{color:TC,font:{family:F,size:10},callback:function(v){return v.toFixed(1);}}}}}});
@@ -1942,9 +1942,9 @@ function buildFeeDrag(){try{
     +"</div></div></div>";
   setTimeout(function(){
     mk("fd-c",{type:"line",data:{labels:Q,datasets:[
-      {label:"Gross NII",data:cn,borderColor:"#2E75B6",backgroundColor:"rgba(46,117,182,.08)",borderWidth:2,pointRadius:0,fill:true,tension:.35},
-      {label:"Investor NII",data:ci,borderColor:"#70AD47",backgroundColor:"rgba(112,173,71,.08)",borderWidth:2.5,pointRadius:0,fill:true,tension:.35},
-      {label:"Fees",data:cf,borderColor:"#C00000",backgroundColor:"rgba(192,0,0,.05)",borderWidth:1.5,borderDash:[4,3],pointRadius:0,fill:false,tension:.35},
+      {label:"Gross NII",data:cn,borderColor:"#2E75B6",backgroundColor:"rgba(46,117,182,.08)",borderWidth:2,pointRadius:0,fill:true,spanGaps:true,tension:.35},
+      {label:"Investor NII",data:ci,borderColor:"#70AD47",backgroundColor:"rgba(112,173,71,.08)",borderWidth:2.5,pointRadius:0,fill:true,spanGaps:true,tension:.35},
+      {label:"Fees",data:cf,borderColor:"#C00000",backgroundColor:"rgba(192,0,0,.05)",borderWidth:1.5,borderDash:[4,3],pointRadius:0,fill:false,spanGaps:true,tension:.35},
     ]},options:{...bO(),scales:{x:xS,y:yS("M")}}});
     trendBadge("fd-c",ci);
   },100);

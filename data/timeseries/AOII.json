@@ -22,7 +22,9 @@
     "total_debt_mn": 588.709,
     "incentive_fee_mn": 1.107,
     "leverage": 1.157,
-    "expense_ratio_pct": 0.1976
+    "expense_ratio_pct": 0.1976,
+    "fee_as_pct_of_nii": 20.920553,
+    "mgmt_fee_pct_of_assets": 0.118269
   },
   {
     "quarter": "Q2 2025",
@@ -47,7 +49,8 @@
     "total_debt_mn": 616.705,
     "leverage": 1.185,
     "nav_per_share_qoq_change": 0.57,
-    "expense_ratio_pct": 0.3154
+    "expense_ratio_pct": 0.3154,
+    "mgmt_fee_pct_of_assets": 0.185674
   },
   {
     "quarter": "Q3 2025",
@@ -72,7 +75,8 @@
     "total_debt_mn": 679.076,
     "leverage": 1.154,
     "nav_per_share_qoq_change": 0.63,
-    "expense_ratio_pct": 0.3275
+    "expense_ratio_pct": 0.3275,
+    "mgmt_fee_pct_of_assets": 0.1715
   },
   {
     "quarter": "Q4 2025",
@@ -104,6 +108,7 @@
     "pik_pct": 2.6,
     "na_pct_cost": 0.0,
     "na_pct_fv": 0.0,
-    "na_dollar_amount_mn": 0.0
+    "na_dollar_amount_mn": 0.0,
+    "mgmt_fee_pct_of_assets": 0.170445
   }
 ]

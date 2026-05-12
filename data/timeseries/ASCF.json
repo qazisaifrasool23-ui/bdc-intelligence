@@ -41,7 +41,8 @@
     "cash_income_pct": 99.53,
     "origination_velocity_pct": 103.506,
     "cumulative_dividends_paid": 0.53,
-    "data_quality_score": 69.2
+    "data_quality_score": 72.09,
+    "expense_ratio_pct": 1.51688
   },
   {
     "quarter": "Q2 2024",
@@ -86,7 +87,8 @@
     "cash_income_pct": 99.63,
     "origination_velocity_pct": 119.058,
     "cumulative_dividends_paid": 1.11,
-    "data_quality_score": 72.5
+    "data_quality_score": 75.0,
+    "expense_ratio_pct": 1.356121
   },
   {
     "quarter": "Q3 2024",
@@ -131,7 +133,9 @@
     "cash_income_pct": 99.55,
     "origination_velocity_pct": 112.33,
     "cumulative_dividends_paid": 1.7133,
-    "data_quality_score": 75.0
+    "data_quality_score": 77.78,
+    "expense_ratio_pct": 1.192321,
+    "liquidity_pct": 5.247835
   },
   {
     "quarter": "Q4 2024",
@@ -175,7 +179,8 @@
     "avg_position_size_mn": 6.161,
     "origination_velocity_pct": 51.4,
     "cumulative_dividends_paid": 4.1833,
-    "data_quality_score": 66.7
+    "data_quality_score": 69.77,
+    "liquidity_pct": 11.815207
   },
   {
     "quarter": "Q1 2025",
@@ -222,7 +227,10 @@
     "nav_per_share_yoy_growth_pct": 1.154,
     "origination_velocity_pct": 32.537,
     "cumulative_dividends_paid": 4.7833,
-    "data_quality_score": 76.2
+    "data_quality_score": 79.17,
+    "expense_ratio_pct": 1.676586,
+    "liquidity_pct": 15.740898,
+    "nav_per_share_yoy_pct": 1.153999
   },
   {
     "quarter": "Q2 2025",
@@ -269,7 +277,10 @@
     "nav_per_share_yoy_growth_pct": 0.157,
     "origination_velocity_pct": 46.107,
     "cumulative_dividends_paid": 5.3833,
-    "data_quality_score": 76.2
+    "data_quality_score": 79.17,
+    "expense_ratio_pct": 1.891573,
+    "liquidity_pct": 17.729081,
+    "nav_per_share_yoy_pct": 0.15748
   },
   {
     "quarter": "Q3 2025",
@@ -318,7 +329,10 @@
     "nav_per_share_yoy_growth_pct": -0.118,
     "origination_velocity_pct": 54.794,
     "cumulative_dividends_paid": 5.98,
-    "data_quality_score": 81.8
+    "data_quality_score": 84.0,
+    "expense_ratio_pct": 1.96914,
+    "liquidity_pct": 1.544904,
+    "nav_per_share_yoy_pct": -0.117739
   },
   {
     "quarter": "Q4 2025",
@@ -367,6 +381,8 @@
     "nav_per_share_yoy_growth_pct": -0.431,
     "origination_velocity_pct": 35.117,
     "cumulative_dividends_paid": 8.37,
-    "data_quality_score": 81.8
+    "data_quality_score": 83.67,
+    "liquidity_pct": 14.610807,
+    "nav_per_share_yoy_pct": -0.430866
   }
 ]

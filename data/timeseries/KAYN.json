@@ -55,7 +55,8 @@
     "data_quality_score": 100.0,
     "fixed_rate_pct": 94.1,
     "expense_ratio_pct": 0.7184,
-    "interest_coverage_ratio": 2.0
+    "interest_coverage_ratio": 2.0,
+    "mgmt_fee_pct_of_assets": 0.076472
   },
   {
     "quarter": "Q2 2022",
@@ -75,7 +76,8 @@
     "data_quality_score": 100.0,
     "fixed_rate_pct": 93.7,
     "expense_ratio_pct": 0.6458,
-    "interest_coverage_ratio": 6.5854
+    "interest_coverage_ratio": 6.5854,
+    "mgmt_fee_pct_of_assets": 0.108259
   },
   {
     "quarter": "Q3 2022",
@@ -99,7 +101,8 @@
     "data_quality_score": 100.0,
     "fixed_rate_pct": 93.8,
     "expense_ratio_pct": 0.7077,
-    "interest_coverage_ratio": 17.4762
+    "interest_coverage_ratio": 17.4762,
+    "mgmt_fee_pct_of_assets": 0.164147
   },
   {
     "quarter": "Q4 2022",
@@ -124,7 +127,8 @@
     "data_quality_score": 100.0,
     "fixed_rate_pct": 93.8,
     "expense_ratio_pct": 0.4306,
-    "interest_coverage_ratio": 15.7632
+    "interest_coverage_ratio": 15.7632,
+    "mgmt_fee_pct_of_assets": 0.147298
   },
   {
     "quarter": "Q1 2023",
@@ -147,7 +151,8 @@
     "data_quality_score": 100.0,
     "fixed_rate_pct": 93.6,
     "expense_ratio_pct": 0.4154,
-    "interest_coverage_ratio": 26.5405
+    "interest_coverage_ratio": 26.5405,
+    "mgmt_fee_pct_of_assets": 0.165991
   },
   {
     "quarter": "Q2 2023",
@@ -170,7 +175,8 @@
     "data_quality_score": 100.0,
     "fixed_rate_pct": 93.1,
     "expense_ratio_pct": 0.3566,
-    "interest_coverage_ratio": 110.1212
+    "interest_coverage_ratio": 110.1212,
+    "mgmt_fee_pct_of_assets": 0.186747
   },
   {
     "quarter": "Q3 2023",
@@ -194,7 +200,8 @@
     "data_quality_score": 100.0,
     "fixed_rate_pct": 94.2,
     "expense_ratio_pct": 0.3316,
-    "interest_coverage_ratio": 115.6389
+    "interest_coverage_ratio": 115.6389,
+    "mgmt_fee_pct_of_assets": 0.163956
   },
   {
     "quarter": "Q4 2023",
@@ -218,7 +225,8 @@
     "data_quality_score": 100.0,
     "fixed_rate_pct": 93.8,
     "expense_ratio_pct": 0.3083,
-    "interest_coverage_ratio": 142.6471
+    "interest_coverage_ratio": 142.6471,
+    "mgmt_fee_pct_of_assets": 0.165808
   },
   {
     "quarter": "Q1 2024",
@@ -240,7 +248,8 @@
     "cumulative_equity_raised_mn": 0.0,
     "data_quality_score": 100.0,
     "expense_ratio_pct": 0.2956,
-    "interest_coverage_ratio": 123.9565
+    "interest_coverage_ratio": 123.9565,
+    "mgmt_fee_pct_of_assets": 0.16315
   },
   {
     "quarter": "Q2 2024",
@@ -260,7 +269,8 @@
     "cumulative_dividends_paid": 0.0,
     "cumulative_equity_raised_mn": 0.0,
     "data_quality_score": 100.0,
-    "expense_ratio_pct": 0.3091
+    "expense_ratio_pct": 0.3091,
+    "mgmt_fee_pct_of_assets": 0.179229
   },
   {
     "quarter": "Q3 2024",
@@ -280,7 +290,8 @@
     "cumulative_dividends_paid": 0.0,
     "cumulative_equity_raised_mn": 0.0,
     "data_quality_score": 100.0,
-    "expense_ratio_pct": 0.2845
+    "expense_ratio_pct": 0.2845,
+    "mgmt_fee_pct_of_assets": 0.181029
   },
   {
     "quarter": "Q4 2024",
@@ -301,7 +312,8 @@
     "cumulative_dividends_paid": 0.0,
     "cumulative_equity_raised_mn": 0.0,
     "data_quality_score": 100.0,
-    "expense_ratio_pct": 0.28
+    "expense_ratio_pct": 0.28,
+    "mgmt_fee_pct_of_assets": 0.176164
   },
   {
     "quarter": "Q1 2025",
@@ -321,7 +333,8 @@
     "cumulative_dividends_paid": 0.0,
     "cumulative_equity_raised_mn": 0.0,
     "data_quality_score": 100.0,
-    "expense_ratio_pct": 0.2901
+    "expense_ratio_pct": 0.2901,
+    "mgmt_fee_pct_of_assets": 0.174732
   },
   {
     "quarter": "Q2 2025",
@@ -341,7 +354,8 @@
     "cumulative_dividends_paid": 0.0,
     "cumulative_equity_raised_mn": 0.0,
     "data_quality_score": 100.0,
-    "expense_ratio_pct": 0.2763
+    "expense_ratio_pct": 0.2763,
+    "mgmt_fee_pct_of_assets": 0.178331
   },
   {
     "quarter": "Q3 2025",
@@ -361,7 +375,8 @@
     "cumulative_dividends_paid": 0.0,
     "cumulative_equity_raised_mn": 0.0,
     "data_quality_score": 100.0,
-    "expense_ratio_pct": 0.2538
+    "expense_ratio_pct": 0.2538,
+    "mgmt_fee_pct_of_assets": 0.174891
   },
   {
     "quarter": "Q4 2025",
@@ -386,6 +401,7 @@
     "originations_mn": 3.0,
     "repayments_mn": 3.0,
     "net_originations_mn": 0.0,
-    "origination_velocity_pct": 0.8569
+    "origination_velocity_pct": 0.8569,
+    "mgmt_fee_pct_of_assets": 0.175091
   }
 ]

@@ -41,7 +41,7 @@
     "cash_income_pct": 96.87,
     "origination_velocity_pct": 27.645,
     "cumulative_dividends_paid": 1.25,
-    "data_quality_score": 78.0,
+    "data_quality_score": 80.43,
     "expense_ratio_pct": 10.401,
     "debt_to_equity_ratio": 0.922,
     "pik_income_mn": 0.5,
@@ -89,10 +89,11 @@
     "na_dollar_amount_mn": 1.179,
     "implied_recovery_rate_pct": 15.789,
     "cumulative_dividends_paid": 1.25,
-    "data_quality_score": 55.0,
+    "data_quality_score": 60.87,
     "debt_to_equity_ratio": 1.149,
     "shares_outstanding": 17992069,
-    "new_investment_count": 71
+    "new_investment_count": 71,
+    "liquidity_pct": 270.152646
   },
   {
     "quarter": "Q2 2020",
@@ -136,7 +137,7 @@
     "cash_income_pct": 94.07,
     "origination_velocity_pct": 6.431,
     "cumulative_dividends_paid": 1.76,
-    "data_quality_score": 78.3,
+    "data_quality_score": 81.13,
     "source_url": "https://www.sec.gov/Archives/edgar/data/17313/000001731320000079/cswc6302010q.htm",
     "filing_type": "10-Q",
     "weighted_avg_interest_rate": 3.68,
@@ -209,7 +210,7 @@
     "cash_income_pct": 89.77,
     "origination_velocity_pct": 23.17,
     "cumulative_dividends_paid": 2.27,
-    "data_quality_score": 85.7,
+    "data_quality_score": 87.5,
     "source_url": "https://www.sec.gov/Archives/edgar/data/17313/000001731320000105/cswc9302010q.htm",
     "filing_type": "10-Q",
     "weighted_avg_interest_rate": 2.86,
@@ -272,7 +273,7 @@
     "na_dollar_amount_mn": 3.948,
     "implied_recovery_rate_pct": 43.103,
     "cumulative_dividends_paid": 2.27,
-    "data_quality_score": 57.8,
+    "data_quality_score": 64.15,
     "source_url": "https://www.sec.gov/Archives/edgar/data/17313/000001731321000006/cswc12312010q.htm",
     "filing_type": "10-Q",
     "weighted_avg_interest_rate": 2.91,
@@ -290,7 +291,8 @@
     "shares_outstanding": 21002498,
     "spillover_per_share": 1.44,
     "new_investment_count": 72,
-    "net_na_change_mn": -33.681
+    "net_na_change_mn": -33.681,
+    "liquidity_pct": 23.801828
   },
   {
     "quarter": "Q2 2021",
@@ -334,7 +336,7 @@
     "cash_income_pct": 90.52,
     "origination_velocity_pct": 13.433,
     "cumulative_dividends_paid": 2.8,
-    "data_quality_score": 80.0,
+    "data_quality_score": 82.35,
     "source_url": "https://www.sec.gov/Archives/edgar/data/17313/000001731321000107/cswc6302110q.htm",
     "filing_type": "10-Q",
     "weighted_avg_interest_rate": 2.71,
@@ -405,7 +407,7 @@
     "nii_per_share_yoy_growth_pct": 27.5,
     "origination_velocity_pct": 46.771,
     "cumulative_dividends_paid": 3.28,
-    "data_quality_score": 84.6,
+    "data_quality_score": 86.67,
     "source_url": "https://www.sec.gov/Archives/edgar/data/17313/000001731321000169/cswc9302110q.htm",
     "filing_type": "10-Q",
     "weighted_avg_interest_rate": 2.58,
@@ -441,7 +443,8 @@
     "shares_outstanding": 23341000,
     "pik_income_mn": 2.048,
     "spillover_per_share": 0.92,
-    "spillover_months_coverage": 5.75
+    "spillover_months_coverage": 5.75,
+    "liquidity_pct": 10.458903
   },
   {
     "quarter": "Q4 2021",
@@ -482,7 +485,7 @@
     "avg_position_size_mn": 1.126,
     "fixed_rate_pct": 0.0,
     "cumulative_dividends_paid": 3.28,
-    "data_quality_score": 52.3,
+    "data_quality_score": 58.0,
     "source_url": "https://www.sec.gov/Archives/edgar/data/17313/000001731322000010/cswc12312110q.htm",
     "filing_type": "10-Q",
     "weighted_avg_interest_rate": 2.37,
@@ -500,7 +503,8 @@
     "interest_coverage_ratio": 2.543,
     "debt_to_equity_ratio": 1.314,
     "shares_outstanding": 23926000,
-    "spillover_per_share": 0.92
+    "spillover_per_share": 0.92,
+    "liquidity_pct": 80.885483
   },
   {
     "quarter": "Q2 2022",
@@ -545,7 +549,7 @@
     "cash_income_pct": 96.41,
     "origination_velocity_pct": 13.407,
     "cumulative_dividends_paid": 3.78,
-    "data_quality_score": 84.0,
+    "data_quality_score": 86.21,
     "source_url": "https://www.sec.gov/Archives/edgar/data/17313/000001731322000068/cswc-20220630.htm",
     "filing_type": "10-Q",
     "weighted_avg_interest_rate": 3.16,
@@ -581,7 +585,8 @@
     "shares_outstanding": 27391000,
     "pik_income_mn": 0.809,
     "spillover_per_share": 0.47,
-    "spillover_months_coverage": 2.82
+    "spillover_months_coverage": 2.82,
+    "liquidity_pct": 1.96694
   },
   {
     "quarter": "Q3 2022",
@@ -630,7 +635,7 @@
     "nii_per_share_yoy_growth_pct": 33.333,
     "origination_velocity_pct": 29.611,
     "cumulative_dividends_paid": 4.35,
-    "data_quality_score": 89.1,
+    "data_quality_score": 90.62,
     "source_url": "https://www.sec.gov/Archives/edgar/data/17313/000001731322000097/cswc-20220930.htm",
     "filing_type": "10-Q",
     "weighted_avg_interest_rate": 4.46,
@@ -661,7 +666,8 @@
     "shares_outstanding": 28782062,
     "pik_income_mn": 2.077,
     "spillover_per_share": 0.47,
-    "spillover_months_coverage": 2.47
+    "spillover_months_coverage": 2.47,
+    "liquidity_pct": 28.843368
   },
   {
     "quarter": "Q4 2022",
@@ -704,7 +710,7 @@
     "na_dollar_amount_mn": 1.551,
     "implied_recovery_rate_pct": 76.923,
     "cumulative_dividends_paid": 4.35,
-    "data_quality_score": 68.1,
+    "data_quality_score": 72.73,
     "source_url": "https://www.sec.gov/Archives/edgar/data/17313/000001731323000006/cswc-20221231.htm",
     "filing_type": "10-Q",
     "weighted_avg_interest_rate": 6.02,
@@ -725,7 +731,8 @@
     "equity_ratio": 0.4911,
     "shares_outstanding": 34559034,
     "spillover_per_share": 0.47,
-    "net_na_change_mn": -14.685
+    "net_na_change_mn": -14.685,
+    "liquidity_pct": 16.764459
   },
   {
     "quarter": "Q2 2023",
@@ -772,7 +779,7 @@
     "cash_income_pct": 95.05,
     "origination_velocity_pct": 8.089,
     "cumulative_dividends_paid": 4.94,
-    "data_quality_score": 88.7,
+    "data_quality_score": 90.62,
     "source_url": "https://www.sec.gov/Archives/edgar/data/17313/000001731323000082/cswc-20230630.htm",
     "filing_type": "10-Q",
     "weighted_avg_interest_rate": 7.36,
@@ -812,7 +819,8 @@
     "spillover_per_share": 0.45,
     "spillover_months_coverage": 2.29,
     "exit_count": 23,
-    "net_na_change_mn": 30.625
+    "net_na_change_mn": 30.625,
+    "liquidity_pct": 20.178318
   },
   {
     "quarter": "Q3 2023",
@@ -861,7 +869,7 @@
     "nii_per_share_yoy_growth_pct": 44.0,
     "origination_velocity_pct": 23.202,
     "cumulative_dividends_paid": 5.5533,
-    "data_quality_score": 89.1,
+    "data_quality_score": 90.91,
     "source_url": "https://www.sec.gov/Archives/edgar/data/17313/000001731323000125/cswc-20230930.htm",
     "filing_type": "10-Q",
     "weighted_avg_interest_rate": 7.7,
@@ -894,7 +902,8 @@
     "spillover_per_share": 0.45,
     "spillover_months_coverage": 2.2,
     "exit_count": 23,
-    "net_na_change_mn": 6.181
+    "net_na_change_mn": 6.181,
+    "liquidity_pct": 12.43881
   },
   {
     "quarter": "Q4 2023",
@@ -937,7 +946,7 @@
     "na_dollar_amount_mn": 6.947,
     "implied_recovery_rate_pct": 41.026,
     "cumulative_dividends_paid": 5.5533,
-    "data_quality_score": 68.1,
+    "data_quality_score": 73.21,
     "source_url": "https://www.sec.gov/Archives/edgar/data/17313/000001731324000006/cswc-20231231.htm",
     "filing_type": "10-Q",
     "weighted_avg_interest_rate": 7.88,
@@ -959,7 +968,8 @@
     "shares_outstanding": 42981139,
     "spillover_per_share": 0.45,
     "exit_count": 23,
-    "net_na_change_mn": -31.41
+    "net_na_change_mn": -31.41,
+    "liquidity_pct": 109.018441
   },
   {
     "quarter": "Q2 2024",
@@ -1006,7 +1016,7 @@
     "cash_income_pct": 93.01,
     "origination_velocity_pct": 6.148,
     "cumulative_dividends_paid": 6.1833,
-    "data_quality_score": 88.9,
+    "data_quality_score": 90.77,
     "source_url": "https://www.sec.gov/Archives/edgar/data/17313/000001731324000058/cswc-20240630.htm",
     "filing_type": "10-Q",
     "weighted_avg_interest_rate": 7.79,
@@ -1040,7 +1050,8 @@
     "spillover_per_share": 0.64,
     "spillover_months_coverage": 3.05,
     "exit_count": 24,
-    "net_na_change_mn": 50.932
+    "net_na_change_mn": 50.932,
+    "liquidity_pct": 19.823756
   },
   {
     "quarter": "Q3 2024",
@@ -1089,7 +1100,7 @@
     "nii_per_share_yoy_growth_pct": -4.478,
     "origination_velocity_pct": 27.251,
     "cumulative_dividends_paid": 6.8166,
-    "data_quality_score": 88.7,
+    "data_quality_score": 90.62,
     "source_url": "https://www.sec.gov/Archives/edgar/data/17313/000001731324000097/cswc-20240930.htm",
     "filing_type": "10-Q",
     "weighted_avg_interest_rate": 7.77,
@@ -1127,7 +1138,8 @@
     "spillover_per_share": 0.64,
     "spillover_months_coverage": 3.03,
     "exit_count": 24,
-    "net_na_change_mn": 31.212
+    "net_na_change_mn": 31.212,
+    "liquidity_pct": 17.171721
   },
   {
     "quarter": "Q4 2024",
@@ -1170,7 +1182,7 @@
     "na_dollar_amount_mn": 7.155,
     "implied_recovery_rate_pct": 51.429,
     "cumulative_dividends_paid": 6.8166,
-    "data_quality_score": 66.7,
+    "data_quality_score": 71.93,
     "source_url": "https://www.sec.gov/Archives/edgar/data/17313/000001731325000012/cswc-20241231.htm",
     "filing_type": "10-Q",
     "weighted_avg_interest_rate": 7.2,
@@ -1200,7 +1212,8 @@
     "shares_outstanding": 50051332,
     "spillover_per_share": 0.64,
     "exit_count": 24,
-    "net_na_change_mn": -81.936
+    "net_na_change_mn": -81.936,
+    "liquidity_pct": 121.89455
   },
   {
     "quarter": "Q2 2025",
@@ -1247,7 +1260,7 @@
     "cash_income_pct": 93.72,
     "origination_velocity_pct": 5.275,
     "cumulative_dividends_paid": 7.4566,
-    "data_quality_score": 86.5,
+    "data_quality_score": 88.71,
     "source_url": "https://www.sec.gov/Archives/edgar/data/17313/000001731325000076/cswc-20250630.htm",
     "filing_type": "10-Q",
     "weighted_avg_interest_rate": 6.73,
@@ -1278,7 +1291,8 @@
     "pik_income_mn": 3.513,
     "spillover_per_share": 0.79,
     "spillover_months_coverage": 3.7,
-    "net_na_change_mn": 39.604
+    "net_na_change_mn": 39.604,
+    "liquidity_pct": 17.192697
   },
   {
     "quarter": "Q3 2025",
@@ -1327,7 +1341,7 @@
     "nii_per_share_yoy_growth_pct": -7.246,
     "origination_velocity_pct": 25.831,
     "cumulative_dividends_paid": 8.0966,
-    "data_quality_score": 87.3,
+    "data_quality_score": 89.23,
     "source_url": "https://www.sec.gov/Archives/edgar/data/17313/000001731325000146/cswc-20250930.htm",
     "filing_type": "10-Q",
     "weighted_avg_interest_rate": 6.79,
@@ -1359,6 +1373,7 @@
     "pik_income_mn": 3.755,
     "spillover_per_share": 0.79,
     "spillover_months_coverage": 3.7,
-    "net_na_change_mn": -16.291
+    "net_na_change_mn": -16.291,
+    "liquidity_pct": 7.650763
   }
 ]

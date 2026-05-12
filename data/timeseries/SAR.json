@@ -41,7 +41,7 @@
     "cash_income_pct": 84.9,
     "origination_velocity_pct": 32789.796,
     "cumulative_dividends_paid": 1.65,
-    "data_quality_score": 68.3,
+    "data_quality_score": 71.74,
     "expense_ratio_pct": 13637.327,
     "debt_to_equity_ratio": 1.037,
     "shares_outstanding": 11153360,
@@ -86,9 +86,10 @@
     "liquidity_pct_of_portfolio": 1.54,
     "avg_position_size_mn": 1.67,
     "cumulative_dividends_paid": 1.65,
-    "data_quality_score": 54.1,
+    "data_quality_score": 59.52,
     "debt_to_equity_ratio": 0.745,
-    "shares_outstanding": 11215997
+    "shares_outstanding": 11215997,
+    "liquidity_pct": 1.53983
   },
   {
     "quarter": "Q2 2020",
@@ -132,14 +133,15 @@
     "cash_income_pct": 89.42,
     "origination_velocity_pct": 8124735.417,
     "cumulative_dividends_paid": 2.19,
-    "data_quality_score": 84.1,
+    "data_quality_score": 86.0,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1377936/000119312520189621/d944424d10q.htm",
     "filing_type": "10-Q",
     "management_fee_mn": 2160.528,
     "expense_ratio_pct": 6112610.0,
     "debt_to_equity_ratio": 0.825,
     "mgmt_fee_as_pct_of_assets": 1800440.0,
-    "pik_income_mn": 1406.838
+    "pik_income_mn": 1406.838,
+    "mgmt_fee_pct_of_assets": 771617.142857
   },
   {
     "quarter": "Q3 2020",
@@ -182,7 +184,7 @@
     "cash_income_mn": 13315.814,
     "cash_income_pct": 93.23,
     "cumulative_dividends_paid": 3.0,
-    "data_quality_score": 81.8,
+    "data_quality_score": 84.0,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1377936/000121390020030481/s126975_10q.htm",
     "filing_type": "10-Q",
     "management_fee_mn": 2209.052,
@@ -205,7 +207,8 @@
     "expense_ratio_pct": 13082206.667,
     "debt_to_equity_ratio": 0.954,
     "mgmt_fee_as_pct_of_assets": 1606583.27,
-    "pik_income_mn": 966.943
+    "pik_income_mn": 966.943,
+    "mgmt_fee_pct_of_assets": 736350.666667
   },
   {
     "quarter": "Q4 2020",
@@ -247,7 +250,7 @@
     "avg_position_size_mn": 1.441,
     "nav_per_share_yoy_growth_pct": -70.672,
     "cumulative_dividends_paid": 3.0,
-    "data_quality_score": 59.5,
+    "data_quality_score": 66.0,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1377936/000121390021000658/f10q1120_saratogainvestment.htm",
     "filing_type": "10-Q",
     "management_fee_mn": 2324.564,
@@ -263,7 +266,9 @@
     "debt_to_equity_ratio": 0.5,
     "nav_per_share_yoy_pct": -70.67,
     "mgmt_fee_as_pct_of_assets": 16128.8,
-    "shares_outstanding": 40995418
+    "shares_outstanding": 40995418,
+    "liquidity_pct": 3.12229,
+    "mgmt_fee_pct_of_assets": 764.191646
   },
   {
     "quarter": "Q2 2021",
@@ -304,7 +309,7 @@
     "cash_income_mn": 16432.585,
     "cash_income_pct": 97.72,
     "cumulative_dividends_paid": 3.43,
-    "data_quality_score": 75.0,
+    "data_quality_score": 78.0,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1377936/000121390021035984/f10q0521_saratogainvestment.htm",
     "filing_type": "10-Q",
     "management_fee_mn": 2758.908,
@@ -343,7 +348,8 @@
     "expense_ratio_pct": 17825068.75,
     "debt_to_equity_ratio": 1.212,
     "mgmt_fee_as_pct_of_assets": 1622887.06,
-    "pik_income_mn": 383.405
+    "pik_income_mn": 383.405,
+    "mgmt_fee_pct_of_assets": 862158.75
   },
   {
     "quarter": "Q3 2021",
@@ -389,7 +395,7 @@
     "nii_per_share_yoy_growth_pct": 56.25,
     "nav_per_share_yoy_growth_pct": 16.169,
     "cumulative_dividends_paid": 4.82,
-    "data_quality_score": 83.0,
+    "data_quality_score": 85.45,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1377936/000121390021051424/f10q0821_saratogainvest.htm",
     "filing_type": "10-Q",
     "management_fee_mn": 3002.097,
@@ -421,7 +427,8 @@
     "nav_per_share_yoy_pct": 16.17,
     "mgmt_fee_as_pct_of_assets": 1819452.73,
     "shares_outstanding": 11111142,
-    "pik_income_mn": 714.541
+    "pik_income_mn": 714.541,
+    "mgmt_fee_pct_of_assets": 926.252962
   },
   {
     "quarter": "Q4 2021",
@@ -462,7 +469,7 @@
     "fixed_rate_pct": 96.0,
     "nav_per_share_yoy_growth_pct": 9.277,
     "cumulative_dividends_paid": 4.82,
-    "data_quality_score": 58.1,
+    "data_quality_score": 68.52,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1377936/000121390022000714/f10q1121_saratogainvest.htm",
     "filing_type": "10-Q",
     "management_fee_mn": 2923.676,
@@ -489,7 +496,10 @@
     "equity_ratio": 0.391,
     "nav_per_share_yoy_pct": 9.28,
     "mgmt_fee_as_pct_of_assets": 1430.43,
-    "shares_outstanding": 11680941
+    "shares_outstanding": 11680941,
+    "avg_position_size_mn": 18.168156,
+    "liquidity_pct": 4.58678,
+    "mgmt_fee_pct_of_assets": 853.373886
   },
   {
     "quarter": "Q2 2022",
@@ -536,7 +546,7 @@
     "nav_per_share_yoy_growth_pct": 286.658,
     "origination_velocity_pct": 10921105.618,
     "cumulative_dividends_paid": 5.35,
-    "data_quality_score": 89.6,
+    "data_quality_score": 91.23,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1377936/000121390022037605/f10q0522_saratoga.htm",
     "filing_type": "10-Q",
     "management_fee_mn": 3802.063,
@@ -554,7 +564,9 @@
     "nav_per_share_yoy_pct": 286.66,
     "mgmt_fee_as_pct_of_assets": 1708792.36,
     "shares_outstanding": 12033322,
-    "pik_income_mn": 2644.965
+    "pik_income_mn": 2644.965,
+    "liquidity_pct": 741.573034,
+    "mgmt_fee_pct_of_assets": 1101.293898
   },
   {
     "quarter": "Q3 2022",
@@ -602,7 +614,7 @@
     "nii_per_share_yoy_growth_pct": -74.182,
     "origination_velocity_pct": 6616.162,
     "cumulative_dividends_paid": 6.95,
-    "data_quality_score": 89.8,
+    "data_quality_score": 93.22,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1377936/000121390022061816/f10q0822_saratogainvest.htm",
     "filing_type": "10-Q",
     "management_fee_mn": 4104.105,
@@ -635,7 +647,9 @@
     "equity_ratio": 0.3466,
     "mgmt_fee_as_pct_of_assets": 1719.6,
     "shares_outstanding": 11900212,
-    "pik_income_mn": 1081.789
+    "pik_income_mn": 1081.789,
+    "liquidity_pct": 2.618722,
+    "mgmt_fee_pct_of_assets": 1217.066068
   },
   {
     "quarter": "Q4 2022",
@@ -678,7 +692,7 @@
     "nii_per_share_yoy_growth_pct": -57.6,
     "nav_per_share_yoy_growth_pct": 0.034,
     "cumulative_dividends_paid": 7.63,
-    "data_quality_score": 68.9,
+    "data_quality_score": 78.95,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1377936/000121390023002013/f10q1122_saratogainvest.htm",
     "filing_type": "10-Q",
     "management_fee_mn": 4258.821,
@@ -705,7 +719,11 @@
     "equity_ratio": 0.3232,
     "nav_per_share_yoy_pct": 0.03,
     "mgmt_fee_as_pct_of_assets": 1734.69,
-    "shares_outstanding": 11890500
+    "shares_outstanding": 11890500,
+    "origination_velocity_pct": 9.143327,
+    "avg_position_size_mn": 20.04151,
+    "liquidity_pct": 3.166896,
+    "mgmt_fee_pct_of_assets": 1268.397148
   },
   {
     "quarter": "Q2 2023",
@@ -751,7 +769,7 @@
     "cash_income_pct": 91.49,
     "nav_per_share_yoy_growth_pct": -2.898,
     "cumulative_dividends_paid": 8.32,
-    "data_quality_score": 87.2,
+    "data_quality_score": 91.38,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1377936/000121390023055832/f10q0523_saratogainvest.htm",
     "filing_type": "10-Q",
     "management_fee_mn": 4564.189,
@@ -785,7 +803,9 @@
     "nav_per_share_yoy_pct": -2.9,
     "mgmt_fee_as_pct_of_assets": 1684.05,
     "shares_outstanding": 11979781,
-    "pik_income_mn": 2947.187
+    "pik_income_mn": 2947.187,
+    "liquidity_pct": 2.767277,
+    "mgmt_fee_pct_of_assets": 1352.548666
   },
   {
     "quarter": "Q3 2023",
@@ -834,7 +854,7 @@
     "nav_per_share_yoy_growth_pct": -4.427,
     "origination_velocity_pct": 1869.565,
     "cumulative_dividends_paid": 10.42,
-    "data_quality_score": 90.0,
+    "data_quality_score": 93.44,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1377936/000121390023081272/f10q0823_saratoga.htm",
     "filing_type": "10-Q",
     "management_fee_mn": 4840.899,
@@ -854,7 +874,9 @@
     "nav_per_share_yoy_pct": -4.43,
     "mgmt_fee_as_pct_of_assets": 1762.02,
     "shares_outstanding": 13114977,
-    "pik_income_mn": 2765.5
+    "pik_income_mn": 2765.5,
+    "liquidity_pct": 2.729891,
+    "mgmt_fee_pct_of_assets": 1336.973147
   },
   {
     "quarter": "Q4 2023",
@@ -897,7 +919,7 @@
     "nii_per_share_yoy_growth_pct": -63.85,
     "nav_per_share_yoy_growth_pct": -4.0,
     "cumulative_dividends_paid": 11.14,
-    "data_quality_score": 69.8,
+    "data_quality_score": 80.0,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1377936/000121390024002282/f10q1123_saratoga.htm",
     "filing_type": "10-Q",
     "management_fee_mn": 4857.059,
@@ -915,7 +937,11 @@
     "equity_ratio": 0.3069,
     "nav_per_share_yoy_pct": -4.0,
     "mgmt_fee_as_pct_of_assets": 1743.95,
-    "shares_outstanding": 13653476
+    "shares_outstanding": 13653476,
+    "origination_velocity_pct": 9.316969,
+    "avg_position_size_mn": 20.255255,
+    "liquidity_pct": 2.854478,
+    "mgmt_fee_pct_of_assets": 1350.837832
   },
   {
     "quarter": "Q2 2024",
@@ -964,7 +990,7 @@
     "nav_per_share_yoy_growth_pct": -7.985,
     "origination_velocity_pct": 3509023.214,
     "cumulative_dividends_paid": 11.87,
-    "data_quality_score": 84.0,
+    "data_quality_score": 86.89,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1377936/000121390024060116/ea0208311-10q_saratoga.htm",
     "filing_type": "10-Q",
     "management_fee_mn": 4982.58,
@@ -984,7 +1010,9 @@
     "nav_per_share_yoy_pct": -7.98,
     "mgmt_fee_as_pct_of_assets": 1819.19,
     "shares_outstanding": 13745769,
-    "pik_income_mn": 765.827
+    "pik_income_mn": 765.827,
+    "liquidity_pct": 2.966522,
+    "mgmt_fee_pct_of_assets": 1354.495657
   },
   {
     "quarter": "Q3 2024",
@@ -1031,7 +1059,7 @@
     "nii_per_share_yoy_growth_pct": 142.222,
     "nav_per_share_yoy_growth_pct": -5.372,
     "cumulative_dividends_paid": 14.08,
-    "data_quality_score": 87.5,
+    "data_quality_score": 89.83,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1377936/000121390024086270/ea0215310-10q_saratoga.htm",
     "filing_type": "10-Q",
     "management_fee_mn": 4766.0,
@@ -1051,7 +1079,9 @@
     "nav_per_share_yoy_pct": -5.37,
     "mgmt_fee_as_pct_of_assets": 1831.82,
     "shares_outstanding": 13800768,
-    "pik_income_mn": 4416.66
+    "pik_income_mn": 4416.66,
+    "liquidity_pct": 3.122865,
+    "mgmt_fee_pct_of_assets": 1280.996845
   },
   {
     "quarter": "Q4 2024",
@@ -1093,7 +1123,7 @@
     "fixed_rate_pct": 93.0,
     "nav_per_share_yoy_growth_pct": -5.689,
     "cumulative_dividends_paid": 14.82,
-    "data_quality_score": 61.9,
+    "data_quality_score": 72.55,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1377936/000121390025002065/ea0225626-10q_saratoga.htm",
     "filing_type": "10-Q",
     "management_fee_mn": 4412.0,
@@ -1110,7 +1140,9 @@
     "debt_to_equity_ratio": 0.5,
     "equity_ratio": 0.3073,
     "nav_per_share_yoy_pct": -5.69,
-    "shares_outstanding": 14346373
+    "shares_outstanding": 14346373,
+    "origination_velocity_pct": 22.541388,
+    "mgmt_fee_pct_of_assets": 1176.953898
   },
   {
     "quarter": "Q2 2025",
@@ -1159,7 +1191,7 @@
     "nav_per_share_yoy_growth_pct": -5.9,
     "origination_velocity_pct": 5059137.374,
     "cumulative_dividends_paid": 16.06,
-    "data_quality_score": 90.0,
+    "data_quality_score": 93.44,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1377936/000121390025062051/ea0246449-10q_saratoga.htm",
     "filing_type": "10-Q",
     "management_fee_mn": 4333.332,
@@ -1179,7 +1211,9 @@
     "nav_per_share_yoy_pct": -5.9,
     "mgmt_fee_as_pct_of_assets": 1750841.21,
     "shares_outstanding": 15668131,
-    "pik_income_mn": 1237.803
+    "pik_income_mn": 1237.803,
+    "liquidity_pct": 3282.828283,
+    "mgmt_fee_pct_of_assets": 1093.257041
   },
   {
     "quarter": "Q3 2025",
@@ -1229,7 +1263,7 @@
     "nav_per_share_yoy_growth_pct": -4.693,
     "origination_velocity_pct": 2174.757,
     "cumulative_dividends_paid": 18.8,
-    "data_quality_score": 92.2,
+    "data_quality_score": 95.16,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1377936/000121390025097022/ea0258170-10q_saratoga.htm",
     "filing_type": "10-Q",
     "management_fee_mn": 4374.324,
@@ -1256,6 +1290,8 @@
     "nav_per_share_yoy_pct": -4.69,
     "mgmt_fee_as_pct_of_assets": 1698766.6,
     "shares_outstanding": 16103948,
-    "pik_income_mn": 1246.834
+    "pik_income_mn": 1246.834,
+    "liquidity_pct": 1699.029126,
+    "mgmt_fee_pct_of_assets": 1065.60877
   }
 ]
