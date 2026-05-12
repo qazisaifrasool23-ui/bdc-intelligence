@@ -10,7 +10,10 @@
     "data_status": "scaffold_only",
     "scaffold_reason": "XBRL empty and filing text too sparse for extraction",
     "extraction_attempted": "2026-05-06",
-    "rerun_when": "next 10-Q filing after 2026-06-30"
+    "rerun_when": "next 10-Q filing after 2026-06-30",
+    "total_assets_mn": 0.001,
+    "cash_mn": 0.001,
+    "total_liabilities_mn": 0.0
   },
   {
     "quarter": "Q4 2023",
@@ -30,7 +33,17 @@
     "data_status": "scaffold_only",
     "scaffold_reason": "XBRL empty and filing text too sparse for extraction",
     "extraction_attempted": "2026-05-06",
-    "rerun_when": "next 10-Q filing after 2026-06-30"
+    "rerun_when": "next 10-Q filing after 2026-06-30",
+    "cash_mn": 39.094,
+    "total_liabilities_mn": 68.98,
+    "credit_facility_limit_mn": 200.0,
+    "unused_capacity_mn": 0.079,
+    "nav_per_share": 1834.62,
+    "shares_outstanding": 44576.0,
+    "shares_outstanding_avg": 30180.0,
+    "liquidity_pct": 0.073909,
+    "net_assets_mn": 81.780021,
+    "total_return_index": 1834.62
   },
   {
     "quarter": "Q1 2024",
@@ -57,7 +70,20 @@
     "extraction_attempted": "2026-05-06",
     "rerun_when": "next 10-Q filing after 2026-06-30",
     "interest_coverage_ratio": 1.1876,
-    "fee_as_pct_of_nii": 23.237598
+    "fee_as_pct_of_nii": 23.237598,
+    "cash_mn": 29.512,
+    "total_liabilities_mn": 71.72,
+    "credit_facility_limit_mn": 200.0,
+    "unused_capacity_mn": 1.552,
+    "nav_per_share": 1859.46,
+    "dividends_paid_mn": 0.0,
+    "shares_outstanding": 44576.0,
+    "nii_per_share": 30.51,
+    "shares_outstanding_avg": 44576.0,
+    "liquidity_pct": 1.317912,
+    "net_assets_mn": 82.887289,
+    "total_return_index": 1859.46,
+    "nav_per_share_qoq_change": 24.84
   },
   {
     "quarter": "Q2 2024",
@@ -82,7 +108,19 @@
     "scaffold_reason": "XBRL empty and filing text too sparse for extraction",
     "extraction_attempted": "2026-05-06",
     "rerun_when": "next 10-Q filing after 2026-06-30",
-    "interest_coverage_ratio": 1.0596
+    "interest_coverage_ratio": 1.0596,
+    "cash_mn": 15.794,
+    "total_liabilities_mn": 95.12,
+    "credit_facility_limit_mn": 200.0,
+    "unused_capacity_mn": 1.0,
+    "nav_per_share": 1864.36,
+    "shares_outstanding": 44576.0,
+    "nii_per_share": 42.06,
+    "shares_outstanding_avg": 44576.0,
+    "liquidity_pct": 0.646651,
+    "net_assets_mn": 83.105711,
+    "total_return_index": 1864.36,
+    "nav_per_share_qoq_change": 4.9
   },
   {
     "quarter": "Q3 2024",
@@ -107,7 +145,19 @@
     "scaffold_reason": "XBRL empty and filing text too sparse for extraction",
     "extraction_attempted": "2026-05-06",
     "rerun_when": "next 10-Q filing after 2026-06-30",
-    "interest_coverage_ratio": 1.0906
+    "interest_coverage_ratio": 1.0906,
+    "cash_mn": 12.659,
+    "total_liabilities_mn": 164.437,
+    "credit_facility_limit_mn": 200.0,
+    "unused_capacity_mn": 1.28,
+    "nav_per_share": 1856.08,
+    "shares_outstanding": 63363.0,
+    "nii_per_share": 27.64,
+    "shares_outstanding_avg": 48147.0,
+    "liquidity_pct": 0.494069,
+    "net_assets_mn": 117.606797,
+    "total_return_index": 1856.08,
+    "nav_per_share_qoq_change": -8.28
   },
   {
     "quarter": "Q4 2024",
@@ -132,7 +182,19 @@
     "scaffold_reason": "XBRL empty and filing text too sparse for extraction",
     "extraction_attempted": "2026-05-06",
     "rerun_when": "next 10-Q filing after 2026-06-30",
-    "interest_coverage_ratio": 1.3178
+    "interest_coverage_ratio": 1.3178,
+    "cash_mn": 2.162,
+    "total_liabilities_mn": 178.867,
+    "credit_facility_limit_mn": 300.0,
+    "unused_capacity_mn": 11.535,
+    "nav_per_share": 1810.37,
+    "shares_outstanding": 85248.0,
+    "shares_outstanding_avg": 54851.0,
+    "liquidity_pct": 3.620198,
+    "net_assets_mn": 154.330422,
+    "total_return_index": 1810.37,
+    "nav_per_share_qoq_change": -45.71,
+    "nav_per_share_yoy_pct": -1.3218
   },
   {
     "quarter": "Q1 2025",
@@ -157,7 +219,21 @@
     "scaffold_reason": "XBRL empty and filing text too sparse for extraction",
     "extraction_attempted": "2026-05-06",
     "rerun_when": "next 10-Q filing after 2026-06-30",
-    "interest_coverage_ratio": 1.3002
+    "interest_coverage_ratio": 1.3002,
+    "cash_mn": 7.322,
+    "total_liabilities_mn": 201.001,
+    "credit_facility_limit_mn": 375.0,
+    "unused_capacity_mn": 94.692,
+    "nav_per_share": 1803.92,
+    "dividends_paid_mn": 5.024,
+    "shares_outstanding": 97607.0,
+    "nii_per_share": 42.25,
+    "shares_outstanding_avg": 93119.0,
+    "liquidity_pct": 26.658784,
+    "net_assets_mn": 176.075219,
+    "total_return_index": 1803.92,
+    "nav_per_share_qoq_change": -6.45,
+    "nav_per_share_yoy_pct": -2.986889
   },
   {
     "quarter": "Q2 2025",
@@ -182,7 +258,20 @@
     "scaffold_reason": "XBRL empty and filing text too sparse for extraction",
     "extraction_attempted": "2026-05-06",
     "rerun_when": "next 10-Q filing after 2026-06-30",
-    "interest_coverage_ratio": 1.0723
+    "interest_coverage_ratio": 1.0723,
+    "cash_mn": 3.628,
+    "total_liabilities_mn": 266.795,
+    "credit_facility_limit_mn": 475.0,
+    "unused_capacity_mn": 66.115,
+    "nav_per_share": 1797.8,
+    "shares_outstanding": 97607.0,
+    "nii_per_share": 40.05,
+    "shares_outstanding_avg": 95375.0,
+    "liquidity_pct": 15.636012,
+    "net_assets_mn": 175.477865,
+    "total_return_index": 1797.8,
+    "nav_per_share_qoq_change": -6.12,
+    "nav_per_share_yoy_pct": -3.570126
   },
   {
     "quarter": "Q3 2025",
@@ -209,7 +298,18 @@
     "scaffold_reason": "XBRL empty and filing text too sparse for extraction",
     "extraction_attempted": "2026-05-06",
     "rerun_when": "next 10-Q filing after 2026-06-30",
-    "interest_coverage_ratio": 0.8931
+    "interest_coverage_ratio": 0.8931,
+    "cash_mn": 4.208,
+    "total_liabilities_mn": 307.163,
+    "credit_facility_limit_mn": 475.0,
+    "unused_capacity_mn": 63.514,
+    "nav_per_share": 1790.25,
+    "shares_outstanding_avg": 96261.0,
+    "liquidity_pct": 12.911344,
+    "net_assets_mn": 207.259033,
+    "total_return_index": 1790.25,
+    "nav_per_share_qoq_change": -7.55,
+    "nav_per_share_yoy_pct": -3.546722
   },
   {
     "quarter": "Q4 2025",
@@ -239,6 +339,17 @@
     "redemption_gate_active": 0,
     "redemption_rate_pct": 5,
     "redemption_history": [],
-    "interest_coverage_ratio": 1.0304
+    "interest_coverage_ratio": 1.0304,
+    "cash_mn": 4.894,
+    "total_liabilities_mn": 339.627,
+    "credit_facility_limit_mn": 475.0,
+    "unused_capacity_mn": 48.559,
+    "nav_per_share": 1787.98,
+    "shares_outstanding_avg": 101217.0,
+    "liquidity_pct": 8.898039,
+    "net_assets_mn": 232.002921,
+    "total_return_index": 1787.98,
+    "nav_per_share_qoq_change": -2.27,
+    "nav_per_share_yoy_pct": -1.236764
   }
 ]

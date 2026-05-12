@@ -402,7 +402,7 @@
     "nav_per_share_yoy_growth_pct": -27.451,
     "origination_velocity_pct": 2235.047,
     "cumulative_dividends_paid": 1.05,
-    "data_quality_score": 76.56,
+    "data_quality_score": 77.27,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1675033/000156459021054728/gecc-10q_20210930.htm",
     "filing_type": "10-Q",
     "interest_expense_mn": 3.147,
@@ -430,12 +430,14 @@
     "shares_outstanding": 4484278,
     "admin_fee_mn": 0.175,
     "pik_income_mn": 1.933,
-    "mgmt_fee_pct_of_assets": 0.88111
+    "mgmt_fee_pct_of_assets": 0.88111,
+    "cash_mn": 20.609,
+    "shares_outstanding_avg": 3935008.0
   },
   {
     "quarter": "Q4 2021",
     "period_end": "2021-12-31",
-    "nav_per_share": null,
+    "nav_per_share": 16.63,
     "nav_per_share_qoq_change": 12.93,
     "net_assets_mn": 74.56,
     "total_investments_fv_mn": 25.254,
@@ -472,7 +474,7 @@
     "nii_per_share_yoy_growth_pct": 1455.556,
     "origination_velocity_pct": -169.359,
     "cumulative_dividends_paid": 1.35,
-    "data_quality_score": 70.0,
+    "data_quality_score": 73.85,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1675033/000156459022008636/gecc-10k_20211231.htm",
     "filing_type": "10-K",
     "interest_expense_mn": 10428.0,
@@ -500,7 +502,12 @@
     "admin_fee_mn": 0.162,
     "debt_fixed_pct": 30.99,
     "debt_floating_pct": 69.01,
-    "mgmt_fee_pct_of_assets": 4267.703863
+    "mgmt_fee_pct_of_assets": 4267.703863,
+    "cash_mn": 9.132,
+    "total_liabilities_mn": 351.758,
+    "shares_outstanding_avg": 4073454.0,
+    "total_return_index": 17.98,
+    "nav_per_share_yoy_pct": 200.723327
   },
   {
     "quarter": "Q1 2022",
@@ -511,9 +518,9 @@
     "total_investments_fv_mn": 5.558,
     "total_debt_mn": 142.29,
     "leverage": 3.557,
-    "nii_per_share": null,
+    "nii_per_share": 1.12,
     "dividend_per_share": 0.6,
-    "nii_coverage": null,
+    "nii_coverage": 1.866667,
     "total_investment_income_mn": 5.558,
     "net_investment_income_mn": 5.954,
     "total_expenses_mn": 0.497,
@@ -545,7 +552,7 @@
     "nav_per_share_yoy_growth_pct": 287.147,
     "origination_velocity_pct": 455.919,
     "cumulative_dividends_paid": 1.95,
-    "data_quality_score": 70.0,
+    "data_quality_score": 74.6,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1675033/000095017022009130/gecc-10q-q122.htm",
     "filing_type": "10-Q",
     "interest_expense_mn": null,
@@ -577,7 +584,10 @@
     "admin_fee_mn": 0.221,
     "pik_income_mn": 0.586,
     "debt_fixed_pct": 42.17,
-    "debt_floating_pct": 57.83
+    "debt_floating_pct": 57.83,
+    "cash_mn": 8.517,
+    "dividends_paid_mn": 2.761,
+    "shares_outstanding_avg": 4558451.0
   },
   {
     "quarter": "Q2 2022",
@@ -588,9 +598,9 @@
     "total_investments_fv_mn": 5.513,
     "total_debt_mn": 142.57,
     "leverage": 2.55,
-    "nii_per_share": null,
+    "nii_per_share": -0.87,
     "dividend_per_share": 0.525,
-    "nii_coverage": null,
+    "nii_coverage": -1.657143,
     "total_investment_income_mn": 5.513,
     "net_investment_income_mn": 1.188,
     "total_expenses_mn": 4.325,
@@ -622,7 +632,7 @@
     "nav_per_share_yoy_growth_pct": 229.231,
     "origination_velocity_pct": 1220.388,
     "cumulative_dividends_paid": 2.475,
-    "data_quality_score": 75.38,
+    "data_quality_score": 79.1,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1675033/000095017022014482/gecc-10q-2q22.htm",
     "filing_type": "10-Q",
     "interest_expense_mn": 2.667,
@@ -659,7 +669,9 @@
     "pik_income_mn": 1.791,
     "debt_fixed_pct": 42.08,
     "debt_floating_pct": 57.92,
-    "mgmt_fee_pct_of_assets": 0.789878
+    "mgmt_fee_pct_of_assets": 0.789878,
+    "cash_mn": 1.728,
+    "shares_outstanding_avg": 4878439.0
   },
   {
     "quarter": "Q3 2022",
@@ -670,9 +682,9 @@
     "total_investments_fv_mn": 6.033,
     "total_debt_mn": 142.86,
     "leverage": 2.069,
-    "nii_per_share": null,
+    "nii_per_share": 0.18,
     "dividend_per_share": 0.5,
-    "nii_coverage": null,
+    "nii_coverage": 0.36,
     "total_investment_income_mn": 6.033,
     "net_investment_income_mn": 1.062,
     "total_expenses_mn": 4.949,
@@ -704,7 +716,7 @@
     "nav_per_share_yoy_growth_pct": 239.459,
     "origination_velocity_pct": 1812.531,
     "cumulative_dividends_paid": 2.975,
-    "data_quality_score": 74.24,
+    "data_quality_score": 78.26,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1675033/000095017022021549/gecc-20220930.htm",
     "filing_type": "10-Q",
     "interest_expense_mn": 2.671,
@@ -735,7 +747,10 @@
     "pik_income_mn": 1.847,
     "debt_fixed_pct": 42.0,
     "debt_floating_pct": 58.0,
-    "mgmt_fee_pct_of_assets": 0.841709
+    "mgmt_fee_pct_of_assets": 0.841709,
+    "cash_mn": 1.502,
+    "total_liabilities_mn": 197.612,
+    "shares_outstanding_avg": 5796255.0
   },
   {
     "quarter": "Q4 2022",
@@ -776,7 +791,7 @@
     "avg_position_size_mn": 0.582,
     "origination_velocity_pct": -214.949,
     "cumulative_dividends_paid": 2.975,
-    "data_quality_score": 70.0,
+    "data_quality_score": 71.88,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1675033/000095017023005683/gecc-20221231.htm",
     "filing_type": "10-K",
     "interest_expense_mn": 10690.0,
@@ -797,7 +812,11 @@
     "admin_fee_mn": 0.234,
     "debt_fixed_pct": 43.31,
     "debt_floating_pct": 56.69,
-    "mgmt_fee_pct_of_assets": 3779.035491
+    "mgmt_fee_pct_of_assets": 3779.035491,
+    "cash_mn": 0.587,
+    "total_liabilities_mn": 225.303,
+    "shares_outstanding_avg": 6251391.0,
+    "nav_per_share_yoy_pct": -32.892363
   },
   {
     "quarter": "Q1 2023",
@@ -808,9 +827,9 @@
     "total_investments_fv_mn": 1675.033,
     "total_debt_mn": 143.44,
     "leverage": 2.478,
-    "nii_per_share": null,
+    "nii_per_share": 1.07,
     "dividend_per_share": 0.35,
-    "nii_coverage": null,
+    "nii_coverage": 3.057143,
     "total_investment_income_mn": 8.41,
     "net_investment_income_mn": 2.839,
     "total_expenses_mn": 5.543,
@@ -841,7 +860,7 @@
     "nav_per_share_yoy_growth_pct": -21.116,
     "origination_velocity_pct": 3.006,
     "cumulative_dividends_paid": 3.325,
-    "data_quality_score": 75.38,
+    "data_quality_score": 79.71,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1675033/000095017023017436/gecc-20230331.htm",
     "filing_type": "10-Q",
     "interest_expense_mn": 2.821,
@@ -872,7 +891,11 @@
     "pik_income_mn": 0.74,
     "debt_fixed_pct": 41.83,
     "debt_floating_pct": 58.17,
-    "mgmt_fee_pct_of_assets": 0.962241
+    "mgmt_fee_pct_of_assets": 0.962241,
+    "cash_mn": 1.641,
+    "total_liabilities_mn": 223.757,
+    "dividends_paid_mn": 2.661,
+    "shares_outstanding_avg": 7601958.0
   },
   {
     "quarter": "Q2 2023",
@@ -883,9 +906,9 @@
     "total_investments_fv_mn": 1675.033,
     "total_debt_mn": 143.72,
     "leverage": 2.473,
-    "nii_per_share": null,
+    "nii_per_share": 0.68,
     "dividend_per_share": 0.35,
-    "nii_coverage": null,
+    "nii_coverage": 1.942857,
     "total_investment_income_mn": 8.977,
     "net_investment_income_mn": 3.368,
     "total_expenses_mn": 5.609,
@@ -917,7 +940,7 @@
     "nav_per_share_yoy_growth_pct": -4.907,
     "origination_velocity_pct": 4.065,
     "cumulative_dividends_paid": 3.675,
-    "data_quality_score": 75.76,
+    "data_quality_score": 79.71,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1675033/000095017023037546/gecc-20230630.htm",
     "filing_type": "10-Q",
     "interest_expense_mn": 2.769,
@@ -948,7 +971,10 @@
     "pik_income_mn": 0.823,
     "debt_fixed_pct": 41.75,
     "debt_floating_pct": 58.25,
-    "mgmt_fee_pct_of_assets": 0.952073
+    "mgmt_fee_pct_of_assets": 0.952073,
+    "cash_mn": 3.352,
+    "total_liabilities_mn": 229.627,
+    "shares_outstanding_avg": 7601958.0
   },
   {
     "quarter": "Q3 2023",
@@ -959,9 +985,9 @@
     "total_investments_fv_mn": 1675.033,
     "total_debt_mn": 139.97,
     "leverage": 1.515,
-    "nii_per_share": null,
+    "nii_per_share": 1.02,
     "dividend_per_share": 0.35,
-    "nii_coverage": null,
+    "nii_coverage": 2.914286,
     "total_investment_income_mn": 9.276,
     "net_investment_income_mn": 3.052,
     "total_expenses_mn": 6.185,
@@ -993,7 +1019,7 @@
     "nav_per_share_yoy_growth_pct": 2.548,
     "origination_velocity_pct": 9.035,
     "cumulative_dividends_paid": 4.025,
-    "data_quality_score": 74.24,
+    "data_quality_score": 78.26,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1675033/000095017023057727/gecc-20230930.htm",
     "filing_type": "10-Q",
     "interest_expense_mn": 3.344,
@@ -1024,7 +1050,10 @@
     "pik_income_mn": 0.785,
     "debt_fixed_pct": 64.3,
     "debt_floating_pct": 35.7,
-    "mgmt_fee_pct_of_assets": 0.917815
+    "mgmt_fee_pct_of_assets": 0.917815,
+    "cash_mn": 1.78,
+    "total_liabilities_mn": 148.382,
+    "shares_outstanding_avg": 7601958.0
   },
   {
     "quarter": "Q4 2023",
@@ -1067,7 +1096,7 @@
     "nav_per_share_yoy_growth_pct": 16.398,
     "origination_velocity_pct": -2.951,
     "cumulative_dividends_paid": 4.375,
-    "data_quality_score": 73.44,
+    "data_quality_score": 74.63,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1675033/000095017024022642/gecc-20231231.htm",
     "filing_type": "10-K",
     "interest_expense_mn": 11742.0,
@@ -1098,7 +1127,10 @@
     "admin_fee_mn": 0.466,
     "debt_fixed_pct": 65.62,
     "debt_floating_pct": 34.38,
-    "mgmt_fee_pct_of_assets": 3584.160421
+    "mgmt_fee_pct_of_assets": 3584.160421,
+    "cash_mn": 0.953,
+    "total_liabilities_mn": 148.086,
+    "shares_outstanding_avg": 7601958.0
   },
   {
     "quarter": "Q1 2024",
@@ -1143,7 +1175,7 @@
     "nav_per_share_yoy_growth_pct": 5.808,
     "origination_velocity_pct": 3.398,
     "cumulative_dividends_paid": 4.725,
-    "data_quality_score": 83.33,
+    "data_quality_score": 84.29,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1675033/000095017024052100/gecc-20240331.htm",
     "filing_type": "10-Q",
     "interest_expense_mn": 2.807,
@@ -1188,7 +1220,11 @@
     "pik_income_mn": 0.863,
     "debt_fixed_pct": 64.07,
     "debt_floating_pct": 35.93,
-    "mgmt_fee_pct_of_assets": 0.791246
+    "mgmt_fee_pct_of_assets": 0.791246,
+    "cash_mn": 0.334,
+    "total_liabilities_mn": 160.332,
+    "dividends_paid_mn": 4.068,
+    "shares_outstanding_avg": 8659344.0
   },
   {
     "quarter": "Q2 2024",
@@ -1233,7 +1269,7 @@
     "nav_per_share_yoy_growth_pct": -1.229,
     "origination_velocity_pct": 9.89,
     "cumulative_dividends_paid": 5.075,
-    "data_quality_score": 83.58,
+    "data_quality_score": 84.29,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1675033/000095017024089240/gecc-20240630.htm",
     "filing_type": "10-Q",
     "interest_expense_mn": 3.473,
@@ -1272,7 +1308,10 @@
     "pik_income_mn": 0.811,
     "debt_fixed_pct": 51.8,
     "debt_floating_pct": 48.2,
-    "mgmt_fee_pct_of_assets": 0.847552
+    "mgmt_fee_pct_of_assets": 0.847552,
+    "cash_mn": 2.575,
+    "total_liabilities_mn": 200.51,
+    "shares_outstanding_avg": 9105190.0
   },
   {
     "quarter": "Q3 2024",
@@ -1317,7 +1356,7 @@
     "nav_per_share_yoy_growth_pct": -6.522,
     "origination_velocity_pct": 13.086,
     "cumulative_dividends_paid": 5.425,
-    "data_quality_score": 79.1,
+    "data_quality_score": 80.0,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1675033/000095017024119231/gecc-20240930.htm",
     "filing_type": "10-Q",
     "interest_expense_mn": 4.21,
@@ -1349,7 +1388,10 @@
     "pik_income_mn": 0.826,
     "debt_fixed_pct": 39.14,
     "debt_floating_pct": 60.86,
-    "mgmt_fee_pct_of_assets": 0.954462
+    "mgmt_fee_pct_of_assets": 0.954462,
+    "cash_mn": 0.305,
+    "total_liabilities_mn": 301.2,
+    "shares_outstanding_avg": 9556695.0
   },
   {
     "quarter": "Q4 2024",
@@ -1392,7 +1434,7 @@
     "nav_per_share_yoy_growth_pct": -9.238,
     "origination_velocity_pct": -6.374,
     "cumulative_dividends_paid": 5.775,
-    "data_quality_score": 73.02,
+    "data_quality_score": 74.24,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1675033/000095017025036517/gecc-20241231.htm",
     "filing_type": "10-K",
     "interest_expense_mn": 14882.0,
@@ -1414,7 +1456,10 @@
     "admin_fee_mn": 0.22,
     "debt_fixed_pct": 47.45,
     "debt_floating_pct": 52.55,
-    "mgmt_fee_pct_of_assets": 3273.822643
+    "mgmt_fee_pct_of_assets": 3273.822643,
+    "cash_mn": 0.0,
+    "total_liabilities_mn": 205.915,
+    "shares_outstanding_avg": 9844014.0
   },
   {
     "quarter": "Q1 2025",
@@ -1460,7 +1505,7 @@
     "nav_per_share_yoy_growth_pct": -8.831,
     "origination_velocity_pct": 2.853,
     "cumulative_dividends_paid": 6.145,
-    "data_quality_score": 79.41,
+    "data_quality_score": 80.56,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1675033/000095017025063636/gecc-20250331.htm",
     "filing_type": "10-Q",
     "interest_expense_mn": 4.251,
@@ -1492,7 +1537,11 @@
     "pik_income_mn": 0.785,
     "debt_fixed_pct": 44.72,
     "debt_floating_pct": 55.28,
-    "mgmt_fee_pct_of_assets": 0.961524
+    "mgmt_fee_pct_of_assets": 0.961524,
+    "cash_mn": 1.273,
+    "total_liabilities_mn": 218.535,
+    "dividends_paid_mn": 4.848,
+    "shares_outstanding_avg": 11544415.0
   },
   {
     "quarter": "Q2 2025",
@@ -1538,7 +1587,7 @@
     "nav_per_share_yoy_growth_pct": 0.332,
     "origination_velocity_pct": 197.31,
     "cumulative_dividends_paid": 6.515,
-    "data_quality_score": 79.41,
+    "data_quality_score": 80.28,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1675033/000095017025102075/gecc-20250630.htm",
     "filing_type": "10-Q",
     "interest_expense_mn": 4.318,
@@ -1577,7 +1626,10 @@
     "pik_income_mn": 0.818,
     "debt_fixed_pct": 44.62,
     "debt_floating_pct": 55.38,
-    "mgmt_fee_pct_of_assets": 0.912662
+    "mgmt_fee_pct_of_assets": 0.912662,
+    "cash_mn": 0.96,
+    "total_liabilities_mn": 269.294,
+    "shares_outstanding_avg": 11550739.0
   },
   {
     "quarter": "Q3 2025",
@@ -1623,7 +1675,7 @@
     "nav_per_share_yoy_growth_pct": -16.86,
     "origination_velocity_pct": 1374.836,
     "cumulative_dividends_paid": 6.885,
-    "data_quality_score": 77.61,
+    "data_quality_score": 78.26,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1675033/000119312525264873/gecc-20250930.htm",
     "filing_type": "10-Q",
     "interest_expense_mn": 5.485,
@@ -1661,7 +1713,9 @@
     "pik_income_mn": 1.04,
     "debt_fixed_pct": 42.46,
     "debt_floating_pct": 57.54,
-    "mgmt_fee_pct_of_assets": 0.894361
+    "mgmt_fee_pct_of_assets": 0.894361,
+    "total_liabilities_mn": 279.951,
+    "shares_outstanding_avg": 11808363.0
   },
   {
     "quarter": "Q4 2025",
@@ -1704,7 +1758,7 @@
     "nav_per_share_yoy_growth_pct": -15.098,
     "origination_velocity_pct": -377.35,
     "cumulative_dividends_paid": 7.235,
-    "data_quality_score": 71.43,
+    "data_quality_score": 72.73,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1675033/000119312526085697/gecc-20251231.htm",
     "filing_type": "10-K",
     "interest_expense_mn": 4.351,
@@ -1726,6 +1780,9 @@
     "admin_fee_mn": 0.376,
     "debt_fixed_pct": 47.54,
     "debt_floating_pct": 52.46,
-    "mgmt_fee_pct_of_assets": 0.845111
+    "mgmt_fee_pct_of_assets": 0.845111,
+    "cash_mn": 1.834,
+    "total_liabilities_mn": 227.829,
+    "shares_outstanding_avg": 12360314.0
   }
 ]

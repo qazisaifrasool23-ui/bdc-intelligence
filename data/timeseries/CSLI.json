@@ -25,7 +25,10 @@
     "total_return_index": 20.0,
     "cumulative_equity_raised_mn": 3200.0,
     "data_quality_score": 100.0,
-    "nav_per_share_qoq_change": 0.0
+    "nav_per_share_qoq_change": 0.0,
+    "shares_outstanding": 5000.0,
+    "net_assets_mn": -0.628,
+    "shares_outstanding_avg": 5000.0
   },
   {
     "quarter": "Q1 2022",
@@ -44,7 +47,9 @@
     "total_return_index": 20.13,
     "cumulative_equity_raised_mn": 3200.0,
     "data_quality_score": 100.0,
-    "nav_per_share_qoq_change": 0.13
+    "nav_per_share_qoq_change": 0.13,
+    "dividends_paid_mn": 0.0,
+    "shares_outstanding_avg": 13400.0
   },
   {
     "quarter": "Q2 2022",
@@ -65,7 +70,8 @@
     "cumulative_equity_raised_mn": 3200.0,
     "data_quality_score": 100.0,
     "nav_per_share_qoq_change": -0.23,
-    "interest_coverage_ratio": 2.4145
+    "interest_coverage_ratio": 2.4145,
+    "shares_outstanding_avg": 395713.0
   },
   {
     "quarter": "Q3 2022",
@@ -88,7 +94,8 @@
     "data_quality_score": 100.0,
     "nav_per_share_qoq_change": 0.1,
     "nav_per_share_yoy_growth_pct": 0.0,
-    "interest_coverage_ratio": 2.4196
+    "interest_coverage_ratio": 2.4196,
+    "shares_outstanding_avg": 1055359.0
   },
   {
     "quarter": "Q4 2022",
@@ -117,7 +124,9 @@
     "data_quality_score": 100.0,
     "nav_per_share_qoq_change": 0.0,
     "nav_per_share_yoy_growth_pct": 0.0,
-    "interest_coverage_ratio": 1.275
+    "interest_coverage_ratio": 1.275,
+    "total_liabilities_mn": 103.505,
+    "shares_outstanding_avg": 1756118.0
   },
   {
     "quarter": "Q1 2023",
@@ -145,7 +154,10 @@
     "nav_per_share_qoq_change": -0.31,
     "nav_per_share_yoy_growth_pct": -2.1858,
     "interest_coverage_ratio": 1.5019,
-    "nii_per_share_yoy_growth_pct": -51.7883
+    "nii_per_share_yoy_growth_pct": -51.7883,
+    "total_liabilities_mn": 132.382,
+    "dividends_paid_mn": 0.601,
+    "shares_outstanding_avg": 5665083.0
   },
   {
     "quarter": "Q2 2023",
@@ -173,7 +185,9 @@
     "nav_per_share_qoq_change": 0.0,
     "nav_per_share_yoy_growth_pct": -1.0553,
     "interest_coverage_ratio": 1.7507,
-    "nii_per_share_yoy_growth_pct": 229.5913
+    "nii_per_share_yoy_growth_pct": 229.5913,
+    "total_liabilities_mn": 139.575,
+    "shares_outstanding_avg": 6316443.0
   },
   {
     "quarter": "Q3 2023",
@@ -201,7 +215,9 @@
     "nav_per_share_qoq_change": 125.13,
     "nav_per_share_yoy_growth_pct": 624.1,
     "interest_coverage_ratio": 1.5751,
-    "nii_per_share_yoy_growth_pct": 32.1284
+    "nii_per_share_yoy_growth_pct": 32.1284,
+    "total_liabilities_mn": 146.195,
+    "shares_outstanding_avg": 6576260.0
   },
   {
     "quarter": "Q4 2023",
@@ -231,7 +247,9 @@
     "nav_per_share_qoq_change": -123.746,
     "nav_per_share_yoy_growth_pct": 5.37,
     "interest_coverage_ratio": 1.8748,
-    "nii_per_share_yoy_growth_pct": 34.7685
+    "nii_per_share_yoy_growth_pct": 34.7685,
+    "total_liabilities_mn": 160.543,
+    "shares_outstanding_avg": 7012218.0
   },
   {
     "quarter": "Q1 2024",
@@ -261,7 +279,10 @@
     "nav_per_share_qoq_change": -0.004,
     "nav_per_share_yoy_growth_pct": 7.0086,
     "interest_coverage_ratio": 2.2587,
-    "nii_per_share_yoy_growth_pct": 17.3423
+    "nii_per_share_yoy_growth_pct": 17.3423,
+    "total_liabilities_mn": 158.278,
+    "dividends_paid_mn": 2.465,
+    "shares_outstanding_avg": 9799475.0
   },
   {
     "quarter": "Q2 2024",
@@ -295,7 +316,9 @@
     "nav_per_share_yoy_growth_pct": 7.0086,
     "na_dollar_amount_mn": 44.962,
     "interest_coverage_ratio": 1.8893,
-    "nii_per_share_yoy_growth_pct": -12.444
+    "nii_per_share_yoy_growth_pct": -12.444,
+    "total_liabilities_mn": 170.232,
+    "shares_outstanding_avg": 10350534.0
   },
   {
     "quarter": "Q3 2024",
@@ -332,6 +355,8 @@
     "second_lien_pct": 0.75,
     "redemption_history": [],
     "interest_coverage_ratio": 2.0716,
-    "nii_per_share_yoy_growth_pct": 5.0297
+    "nii_per_share_yoy_growth_pct": 5.0297,
+    "total_liabilities_mn": 166.979,
+    "shares_outstanding_avg": 10798902.0
   }
 ]

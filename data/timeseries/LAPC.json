@@ -24,7 +24,14 @@
     "extraction_attempted": "2026-05-06",
     "rerun_when": "next 10-Q filing after 2026-06-30",
     "na_dollar_amount_mn": 0.0,
-    "net_assets_mn": 128.281211
+    "net_assets_mn": 128.281211,
+    "cash_mn": 3.996,
+    "short_term_debt_mn": 189.583,
+    "interest_expense_mn": 3.56,
+    "total_liabilities_mn": 191.949,
+    "credit_facility_limit_mn": 300.0,
+    "expense_ratio_pct": 0.055347,
+    "interest_coverage_ratio": 1.038202
   },
   {
     "quarter": "Q4 2024",
@@ -47,7 +54,15 @@
     "extraction_attempted": "2026-05-06",
     "rerun_when": "next 10-Q filing after 2026-06-30",
     "na_dollar_amount_mn": 0.0,
-    "net_na_change_mn": 0.0
+    "net_na_change_mn": 0.0,
+    "cash_mn": 113.767,
+    "short_term_debt_mn": 382.23,
+    "total_liabilities_mn": 388.433,
+    "credit_facility_limit_mn": 600.0,
+    "nav_per_share": 25.22,
+    "net_assets_mn": 203.553293,
+    "total_return_index": 25.22,
+    "nav_per_share_qoq_change": -0.03
   },
   {
     "quarter": "Q1 2025",
@@ -77,7 +92,13 @@
     "net_na_change_mn": 0.0,
     "interest_coverage_ratio": 1.1654,
     "fee_as_pct_of_nii": 9.488837,
-    "net_assets_mn": 270.153665
+    "net_assets_mn": 270.153665,
+    "cash_mn": 95.324,
+    "short_term_debt_mn": 414.463,
+    "total_liabilities_mn": 422.469,
+    "credit_facility_limit_mn": 600.0,
+    "mgmt_fee_pct_of_assets": 0.222836,
+    "nav_per_share_qoq_change": 0.02
   },
   {
     "quarter": "Q2 2025",
@@ -104,7 +125,12 @@
     "nav_per_share_qoq_change": -0.09,
     "interest_coverage_ratio": 1.2081,
     "fee_as_pct_of_nii": 7.934669,
-    "net_assets_mn": 332.806127
+    "net_assets_mn": 332.806127,
+    "cash_mn": 7.782,
+    "short_term_debt_mn": 527.945,
+    "total_liabilities_mn": 538.411,
+    "credit_facility_limit_mn": 700.0,
+    "mgmt_fee_pct_of_assets": 0.229563
   },
   {
     "quarter": "Q3 2025",
@@ -136,7 +162,12 @@
     "interest_coverage_ratio": 1.3193,
     "nii_per_share_yoy_growth_pct": -7.6289,
     "fee_as_pct_of_nii": 9.612459,
-    "net_assets_mn": 419.501632
+    "net_assets_mn": 419.501632,
+    "cash_mn": 24.151,
+    "short_term_debt_mn": 548.416,
+    "total_liabilities_mn": 561.476,
+    "credit_facility_limit_mn": 700.0,
+    "mgmt_fee_pct_of_assets": 0.239332
   },
   {
     "quarter": "Q4 2025",
@@ -172,6 +203,11 @@
       "gate_active": 0
     },
     "interest_coverage_ratio": 1.5192,
-    "net_assets_mn": 528.052142
+    "net_assets_mn": 528.052142,
+    "cash_mn": 120.437,
+    "short_term_debt_mn": 797.05,
+    "total_liabilities_mn": 925.707,
+    "mgmt_fee_pct_of_assets": 0.229523,
+    "nav_per_share_yoy_pct": -0.396511
   }
 ]

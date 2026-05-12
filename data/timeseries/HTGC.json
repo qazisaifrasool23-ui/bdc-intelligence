@@ -215,13 +215,15 @@
     "fixed_rate_pct": 96.9,
     "origination_velocity_pct": -137330.409,
     "cumulative_dividends_paid": 1.09,
-    "data_quality_score": 57.78,
+    "data_quality_score": 59.57,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1280784/000156459021007594/htgc-10k_20201231.htm",
     "filing_type": "10-K",
     "debt_unsecured_notes_mn": 2030.0,
     "debt_to_equity_ratio": 1.0,
     "shares_outstanding": 114715808,
-    "top_10_concentration_pct": 27.9
+    "top_10_concentration_pct": 27.9,
+    "cash_mn": 198.282,
+    "shares_outstanding_avg": 111985000.0
   },
   {
     "quarter": "Q1 2021",
@@ -393,7 +395,7 @@
     "nav_per_share_yoy_growth_pct": 12.476,
     "origination_velocity_pct": 41.133,
     "cumulative_dividends_paid": 2.1933,
-    "data_quality_score": 79.25,
+    "data_quality_score": 80.0,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1280784/000095017021002472/htgc_q3_9.30.2021_10-q.htm",
     "filing_type": "10-Q",
     "significant_8k_filings": [
@@ -426,7 +428,9 @@
     "debt_to_equity_ratio": 1.053,
     "nav_per_share_yoy_pct": 12.48,
     "shares_outstanding": 115903813,
-    "top_10_concentration_pct": 30.5
+    "top_10_concentration_pct": 30.5,
+    "cash_mn": 235.851,
+    "shares_outstanding_avg": 114590000.0
   },
   {
     "quarter": "Q4 2021",
@@ -470,7 +474,7 @@
     "nav_per_share_yoy_growth_pct": -0.355,
     "origination_velocity_pct": -195.938,
     "cumulative_dividends_paid": 2.1933,
-    "data_quality_score": 76.36,
+    "data_quality_score": 77.59,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1280784/000095017022001628/htgc_10k_2021.htm",
     "filing_type": "10-K",
     "significant_8k_filings": [
@@ -505,7 +509,10 @@
     "equity_ratio": 0.5033,
     "nav_per_share_yoy_pct": -0.36,
     "shares_outstanding": 116619000,
-    "top_10_concentration_pct": 30.5
+    "top_10_concentration_pct": 30.5,
+    "cash_mn": 133.115,
+    "total_liabilities_mn": 1291.466,
+    "shares_outstanding_avg": 114742000.0
   },
   {
     "quarter": "Q1 2022",
@@ -548,7 +555,7 @@
     "nav_per_share_yoy_growth_pct": -4.754,
     "origination_velocity_pct": 13.563,
     "cumulative_dividends_paid": 2.6733,
-    "data_quality_score": 81.48,
+    "data_quality_score": 82.46,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1280784/000095017022007867/htgc_q1_3.31.2022_10-q.htm",
     "filing_type": "10-Q",
     "significant_8k_filings": [
@@ -569,7 +576,10 @@
     "shares_outstanding": 123239372,
     "spillover_per_share": 0.94,
     "top_10_concentration_pct": 29.0,
-    "spillover_months_coverage": 5.87
+    "spillover_months_coverage": 5.87,
+    "cash_mn": 59.33,
+    "dividends_paid_mn": 56.857,
+    "shares_outstanding_avg": 118296000.0
   },
   {
     "quarter": "Q2 2022",
@@ -613,7 +623,7 @@
     "nav_per_share_yoy_growth_pct": -10.931,
     "origination_velocity_pct": 29.082,
     "cumulative_dividends_paid": 3.1533,
-    "data_quality_score": 81.82,
+    "data_quality_score": 82.46,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1280784/000095017022013380/htgc_q2_6.30.2022_10-q.htm",
     "filing_type": "10-Q",
     "significant_8k_filings": [
@@ -634,7 +644,9 @@
     "shares_outstanding": 127300096,
     "spillover_per_share": 0.94,
     "top_10_concentration_pct": 29.0,
-    "spillover_months_coverage": 5.87
+    "spillover_months_coverage": 5.87,
+    "cash_mn": 115.309,
+    "shares_outstanding_avg": 121292000.0
   },
   {
     "quarter": "Q3 2022",
@@ -678,7 +690,7 @@
     "nav_per_share_yoy_growth_pct": -9.272,
     "origination_velocity_pct": 38.258,
     "cumulative_dividends_paid": 3.5233,
-    "data_quality_score": 82.46,
+    "data_quality_score": 83.33,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1280784/000095017022021225/htgc-20220930.htm",
     "filing_type": "10-Q",
     "significant_8k_filings": [
@@ -701,7 +713,10 @@
     "shares_outstanding": 130191000,
     "spillover_per_share": 0.94,
     "top_10_concentration_pct": 29.0,
-    "spillover_months_coverage": 7.62
+    "spillover_months_coverage": 7.62,
+    "cash_mn": 57.065,
+    "total_liabilities_mn": 1561.804,
+    "shares_outstanding_avg": 123379000.0
   },
   {
     "quarter": "Q4 2022",
@@ -744,7 +759,7 @@
     "nav_per_share_yoy_growth_pct": -6.15,
     "origination_velocity_pct": -240.942,
     "cumulative_dividends_paid": 3.5233,
-    "data_quality_score": 72.73,
+    "data_quality_score": 74.14,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1280784/000095017023003044/htgc-20221231.htm",
     "filing_type": "10-K",
     "significant_8k_filings": [
@@ -773,7 +788,10 @@
     "nav_per_share_yoy_pct": -6.15,
     "shares_outstanding": 133045000,
     "spillover_per_share": 0.94,
-    "top_10_concentration_pct": 29.0
+    "top_10_concentration_pct": 29.0,
+    "cash_mn": 15.797,
+    "total_liabilities_mn": 1627.396,
+    "shares_outstanding_avg": 125189000.0
   },
   {
     "quarter": "Q1 2023",
@@ -816,7 +834,7 @@
     "nav_per_share_yoy_growth_pct": 0.0,
     "origination_velocity_pct": 15.112,
     "cumulative_dividends_paid": 4.0033,
-    "data_quality_score": 78.57,
+    "data_quality_score": 80.0,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1280784/000095017023017892/htgc-20230331.htm",
     "filing_type": "10-Q",
     "significant_8k_filings": [
@@ -846,7 +864,11 @@
     "shares_outstanding": 138596000,
     "spillover_per_share": 0.8,
     "top_10_concentration_pct": 29.7,
-    "spillover_months_coverage": 5.0
+    "spillover_months_coverage": 5.0,
+    "cash_mn": 71.129,
+    "total_liabilities_mn": 1752.813,
+    "dividends_paid_mn": 63.834,
+    "shares_outstanding_avg": 135252000.0
   },
   {
     "quarter": "Q2 2023",
@@ -890,7 +912,7 @@
     "nav_per_share_yoy_growth_pct": 5.081,
     "origination_velocity_pct": 26.806,
     "cumulative_dividends_paid": 4.4833,
-    "data_quality_score": 78.95,
+    "data_quality_score": 80.0,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1280784/000095017023038010/htgc-20230630.htm",
     "filing_type": "10-Q",
     "significant_8k_filings": [
@@ -920,7 +942,10 @@
     "shares_outstanding": 144641000,
     "spillover_per_share": 0.8,
     "top_10_concentration_pct": 29.7,
-    "spillover_months_coverage": 5.0
+    "spillover_months_coverage": 5.0,
+    "cash_mn": 61.695,
+    "total_liabilities_mn": 1638.994,
+    "shares_outstanding_avg": 138338000.0
   },
   {
     "quarter": "Q3 2023",
@@ -965,7 +990,7 @@
     "nav_per_share_yoy_growth_pct": 4.394,
     "origination_velocity_pct": 39.035,
     "cumulative_dividends_paid": 4.9666,
-    "data_quality_score": 81.03,
+    "data_quality_score": 81.97,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1280784/000128078423000008/htgc-20230930.htm",
     "filing_type": "10-Q",
     "significant_8k_filings": [
@@ -988,7 +1013,10 @@
     "shares_outstanding": 151179000,
     "spillover_per_share": 0.8,
     "top_10_concentration_pct": 29.7,
-    "spillover_months_coverage": 4.97
+    "spillover_months_coverage": 4.97,
+    "cash_mn": 31.979,
+    "total_liabilities_mn": 1684.345,
+    "shares_outstanding_avg": 141222973.0
   },
   {
     "quarter": "Q4 2023",
@@ -1032,7 +1060,7 @@
     "nav_per_share_yoy_growth_pct": 8.547,
     "origination_velocity_pct": -30910.406,
     "cumulative_dividends_paid": 5.4499,
-    "data_quality_score": 73.68,
+    "data_quality_score": 75.0,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1280784/000128078424000007/htgc-20231231.htm",
     "filing_type": "10-K",
     "interest_expense_mn": 19.911,
@@ -1047,7 +1075,10 @@
     "shares_outstanding": 157758000,
     "spillover_per_share": 0.8,
     "top_10_concentration_pct": 29.7,
-    "spillover_months_coverage": 4.97
+    "spillover_months_coverage": 4.97,
+    "cash_mn": 98.899,
+    "total_liabilities_mn": 1614.22,
+    "shares_outstanding_avg": 144091000.0
   },
   {
     "quarter": "Q1 2024",
@@ -1092,7 +1123,7 @@
     "nav_per_share_yoy_growth_pct": 7.486,
     "origination_velocity_pct": 16.932,
     "cumulative_dividends_paid": 5.9299,
-    "data_quality_score": 81.36,
+    "data_quality_score": 82.54,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1280784/000128078424000014/htgc-20240331.htm",
     "filing_type": "10-Q",
     "significant_8k_filings": [
@@ -1116,7 +1147,11 @@
     "shares_outstanding": 162230000,
     "spillover_per_share": 0.96,
     "top_10_concentration_pct": 31.6,
-    "spillover_months_coverage": 6.0
+    "spillover_months_coverage": 6.0,
+    "cash_mn": 50.176,
+    "total_liabilities_mn": 1810.095,
+    "dividends_paid_mn": 74.251,
+    "shares_outstanding_avg": 157445000.0
   },
   {
     "quarter": "Q2 2024",
@@ -1161,7 +1196,7 @@
     "nav_per_share_yoy_growth_pct": 4.288,
     "origination_velocity_pct": 26.464,
     "cumulative_dividends_paid": 6.4149,
-    "data_quality_score": 80.0,
+    "data_quality_score": 81.03,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1280784/000128078424000020/htgc-20240630.htm",
     "filing_type": "10-Q",
     "significant_8k_filings": [
@@ -1181,7 +1216,10 @@
     "shares_outstanding": 162428000,
     "spillover_per_share": 0.96,
     "top_10_concentration_pct": 31.6,
-    "spillover_months_coverage": 5.94
+    "spillover_months_coverage": 5.94,
+    "cash_mn": 27.676,
+    "total_liabilities_mn": 1815.591,
+    "shares_outstanding_avg": 159096000.0
   },
   {
     "quarter": "Q3 2024",
@@ -1226,7 +1264,7 @@
     "nav_per_share_yoy_growth_pct": 4.3,
     "origination_velocity_pct": 32.689,
     "cumulative_dividends_paid": 6.8982,
-    "data_quality_score": 80.0,
+    "data_quality_score": 81.03,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1280784/000128078424000026/htgc-20240930.htm",
     "filing_type": "10-Q",
     "significant_8k_filings": [
@@ -1246,7 +1284,10 @@
     "shares_outstanding": 162505000,
     "spillover_per_share": 0.96,
     "top_10_concentration_pct": 31.6,
-    "spillover_months_coverage": 5.96
+    "spillover_months_coverage": 5.96,
+    "cash_mn": 38.904,
+    "total_liabilities_mn": 1804.549,
+    "shares_outstanding_avg": 159742000.0
   },
   {
     "quarter": "Q4 2024",
@@ -1289,7 +1330,7 @@
     "nav_per_share_yoy_growth_pct": 2.012,
     "origination_velocity_pct": -32731.148,
     "cumulative_dividends_paid": 6.8982,
-    "data_quality_score": 69.81,
+    "data_quality_score": 71.43,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1280784/000128078425000007/htgc-20241231.htm",
     "filing_type": "10-K",
     "significant_8k_filings": [
@@ -1316,7 +1357,10 @@
     "nav_per_share_yoy_pct": 2.01,
     "shares_outstanding": 170575000,
     "spillover_per_share": 0.96,
-    "top_10_concentration_pct": 31.6
+    "top_10_concentration_pct": 31.6,
+    "cash_mn": 42.679,
+    "total_liabilities_mn": 1842.01,
+    "shares_outstanding_avg": 161082000.0
   },
   {
     "quarter": "Q1 2025",
@@ -1360,7 +1404,7 @@
     "nav_per_share_yoy_growth_pct": -0.688,
     "origination_velocity_pct": 10.389,
     "cumulative_dividends_paid": 7.3682,
-    "data_quality_score": 80.0,
+    "data_quality_score": 81.36,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1280784/000128078425000022/htgc-20250331.htm",
     "filing_type": "10-Q",
     "significant_8k_filings": [
@@ -1381,7 +1425,11 @@
     "shares_outstanding": 173285000,
     "spillover_per_share": 0.82,
     "top_10_concentration_pct": 28.6,
-    "spillover_months_coverage": 5.23
+    "spillover_months_coverage": 5.23,
+    "cash_mn": 49.379,
+    "total_liabilities_mn": 2030.581,
+    "dividends_paid_mn": 78.873,
+    "shares_outstanding_avg": 171494000.0
   },
   {
     "quarter": "Q2 2025",
@@ -1426,7 +1474,7 @@
     "nav_per_share_yoy_growth_pct": 3.587,
     "origination_velocity_pct": 23.194,
     "cumulative_dividends_paid": 7.8432,
-    "data_quality_score": 80.0,
+    "data_quality_score": 81.03,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1280784/000128078425000032/htgc-20250630.htm",
     "filing_type": "10-Q",
     "significant_8k_filings": [
@@ -1446,7 +1494,10 @@
     "shares_outstanding": 181729000,
     "spillover_per_share": 0.82,
     "top_10_concentration_pct": 28.6,
-    "spillover_months_coverage": 5.18
+    "spillover_months_coverage": 5.18,
+    "cash_mn": 52.15,
+    "total_liabilities_mn": 2133.404,
+    "shares_outstanding_avg": 173231000.0
   },
   {
     "quarter": "Q3 2025",
@@ -1491,7 +1542,7 @@
     "nav_per_share_yoy_growth_pct": 5.702,
     "origination_velocity_pct": 31.341,
     "cumulative_dividends_paid": 8.2965,
-    "data_quality_score": 80.0,
+    "data_quality_score": 81.03,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1280784/000128078425000041/htgc-20250930.htm",
     "filing_type": "10-Q",
     "significant_8k_filings": [
@@ -1511,7 +1562,10 @@
     "shares_outstanding": 181776000,
     "spillover_per_share": 0.82,
     "top_10_concentration_pct": 28.6,
-    "spillover_months_coverage": 5.43
+    "spillover_months_coverage": 5.43,
+    "cash_mn": 29.274,
+    "total_liabilities_mn": 2220.302,
+    "shares_outstanding_avg": 175633000.0
   },
   {
     "quarter": "Q4 2025",
@@ -1558,7 +1612,7 @@
     "nav_per_share_yoy_growth_pct": 3.345,
     "origination_velocity_pct": -24.151,
     "cumulative_dividends_paid": 8.2965,
-    "data_quality_score": 81.36,
+    "data_quality_score": 82.26,
     "source_url": "https://www.sec.gov/Archives/edgar/data/1280784/000128078426000009/htgc-20251231.htm",
     "filing_type": "10-K",
     "significant_8k_filings": [
@@ -1594,6 +1648,9 @@
     "pik_income_mn": 1.726,
     "spillover_per_share": 0.82,
     "top_10_concentration_pct": 28.6,
-    "liquidity_pct": 4.078436
+    "liquidity_pct": 4.078436,
+    "cash_mn": 56.874,
+    "total_liabilities_mn": 2367.973,
+    "shares_outstanding_avg": 177392000.0
   }
 ]

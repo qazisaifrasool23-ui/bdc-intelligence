@@ -18,7 +18,10 @@
     "total_return_index": 25.254,
     "cumulative_equity_raised_mn": 0.0,
     "data_quality_score": 100.0,
-    "fixed_rate_pct": 0.0
+    "fixed_rate_pct": 0.0,
+    "total_liabilities_mn": 348.613,
+    "credit_facility_limit_mn": 800.0,
+    "shares_outstanding_avg": 8534410.0
   },
   {
     "quarter": "Q1 2023",
@@ -47,7 +50,10 @@
     "fixed_rate_pct": 95.13,
     "interest_coverage_ratio": 1.2952,
     "fee_as_pct_of_nii": 33.222925,
-    "mgmt_fee_pct_of_assets": 0.30063
+    "mgmt_fee_pct_of_assets": 0.30063,
+    "total_liabilities_mn": 399.681,
+    "credit_facility_limit_mn": 800.0,
+    "shares_outstanding_avg": 21046827.0
   },
   {
     "quarter": "Q2 2023",
@@ -78,7 +84,10 @@
     "fixed_rate_pct": 94.91,
     "interest_coverage_ratio": 1.3202,
     "fee_as_pct_of_nii": 28.999764,
-    "mgmt_fee_pct_of_assets": 0.296547
+    "mgmt_fee_pct_of_assets": 0.296547,
+    "total_liabilities_mn": 440.88,
+    "credit_facility_limit_mn": 800.0,
+    "shares_outstanding_avg": 21890401.0
   },
   {
     "quarter": "Q3 2023",
@@ -109,7 +118,10 @@
     "fixed_rate_pct": 94.68,
     "interest_coverage_ratio": 1.5086,
     "fee_as_pct_of_nii": 23.603289,
-    "mgmt_fee_pct_of_assets": 0.281337
+    "mgmt_fee_pct_of_assets": 0.281337,
+    "total_liabilities_mn": 576.523,
+    "credit_facility_limit_mn": 800.0,
+    "shares_outstanding_avg": 23231467.0
   },
   {
     "quarter": "Q4 2023",
@@ -143,7 +155,10 @@
     "fixed_rate_pct": 0.0,
     "interest_coverage_ratio": 1.4171,
     "fee_as_pct_of_nii": 26.072792,
-    "mgmt_fee_pct_of_assets": 0.291419
+    "mgmt_fee_pct_of_assets": 0.291419,
+    "total_liabilities_mn": 679.562,
+    "credit_facility_limit_mn": 1130.0,
+    "cash_mn": 62.706
   },
   {
     "quarter": "Q1 2024",
@@ -184,7 +199,9 @@
     "interest_coverage_ratio": 1.6434,
     "nii_per_share_yoy_growth_pct": 31.25,
     "fee_as_pct_of_nii": 24.524662,
-    "mgmt_fee_pct_of_assets": 0.252389
+    "mgmt_fee_pct_of_assets": 0.252389,
+    "total_liabilities_mn": 863.245,
+    "cash_mn": 61.116
   },
   {
     "quarter": "Q2 2024",
@@ -222,7 +239,8 @@
     "redemption_fulfillment_pct": 100.0,
     "nii_per_share_yoy_growth_pct": 21.3465,
     "fee_as_pct_of_nii": 24.620714,
-    "mgmt_fee_pct_of_assets": 0.268271
+    "mgmt_fee_pct_of_assets": 0.268271,
+    "total_liabilities_mn": 1264.134
   },
   {
     "quarter": "Q3 2024",
@@ -260,7 +278,8 @@
     "redemption_fulfillment_pct": 100.0,
     "nii_per_share_yoy_growth_pct": 7.8891,
     "fee_as_pct_of_nii": 24.862799,
-    "mgmt_fee_pct_of_assets": 0.29253
+    "mgmt_fee_pct_of_assets": 0.29253,
+    "total_liabilities_mn": 1507.657
   },
   {
     "quarter": "Q4 2024",
@@ -298,7 +317,9 @@
     "redemption_fulfillment_pct": 100.0,
     "nii_per_share_yoy_growth_pct": 2.9925,
     "fee_as_pct_of_nii": 25.613364,
-    "mgmt_fee_pct_of_assets": 0.2971
+    "mgmt_fee_pct_of_assets": 0.2971,
+    "total_liabilities_mn": 1825.256,
+    "cash_mn": 89.201
   },
   {
     "quarter": "Q1 2025",
@@ -336,7 +357,8 @@
     "redemption_fulfillment_pct": 100.0,
     "nii_per_share_yoy_growth_pct": 1.739,
     "fee_as_pct_of_nii": 25.729846,
-    "mgmt_fee_pct_of_assets": 0.284752
+    "mgmt_fee_pct_of_assets": 0.284752,
+    "total_liabilities_mn": 1778.766
   },
   {
     "quarter": "Q2 2025",
@@ -373,7 +395,8 @@
     "redemption_backlog_mn": 0.0,
     "redemption_fulfillment_pct": 100.0,
     "nii_per_share_yoy_growth_pct": -6.0442,
-    "mgmt_fee_pct_of_assets": 0.291436
+    "mgmt_fee_pct_of_assets": 0.291436,
+    "total_liabilities_mn": 1873.761
   },
   {
     "quarter": "Q3 2025",
@@ -409,7 +432,8 @@
     "redemption_backlog_mn": 0.0,
     "redemption_fulfillment_pct": 100.0,
     "nii_per_share_yoy_growth_pct": -12.0537,
-    "mgmt_fee_pct_of_assets": 0.29506
+    "mgmt_fee_pct_of_assets": 0.29506,
+    "total_liabilities_mn": 1970.498
   },
   {
     "quarter": "Q4 2025",
@@ -533,6 +557,8 @@
     "nav_d": 25.2181,
     "nav_i": 25.2181,
     "nav_date": "2026-03-31",
-    "mgmt_fee_pct_of_assets": 0.288441
+    "mgmt_fee_pct_of_assets": 0.288441,
+    "total_liabilities_mn": 2127.878,
+    "cash_mn": 98.929
   }
 ]

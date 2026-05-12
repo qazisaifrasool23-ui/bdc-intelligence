@@ -17,7 +17,13 @@
     "cumulative_equity_raised_mn": 0.0,
     "data_quality_score": 100.0,
     "fee_as_pct_of_nii": -0.0,
-    "mgmt_fee_pct_of_assets": 0.0
+    "mgmt_fee_pct_of_assets": 0.0,
+    "cash_mn": 3.448,
+    "shares_outstanding": 81000.0,
+    "nii_per_share": -0.99,
+    "interest_income_mn": 0.0,
+    "total_liabilities_mn": 1.096,
+    "shares_outstanding_avg": 13500.0
   },
   {
     "quarter": "Q4 2024",
@@ -37,7 +43,12 @@
     "cumulative_equity_raised_mn": 0.0,
     "data_quality_score": 100.0,
     "nav_per_share_qoq_change": -0.1,
-    "mgmt_fee_pct_of_assets": 0.006175
+    "mgmt_fee_pct_of_assets": 0.006175,
+    "cash_mn": 32.28,
+    "total_liabilities_mn": 1.728,
+    "shares_outstanding_avg": 235076.0,
+    "unused_capacity_mn": 0.0,
+    "total_debt_mn": 0.0
   },
   {
     "quarter": "Q1 2025",
@@ -64,7 +75,12 @@
     "nav_per_share_qoq_change": -0.04,
     "interest_coverage_ratio": -0.0449,
     "fee_as_pct_of_nii": -168.0,
-    "mgmt_fee_pct_of_assets": 0.058061
+    "mgmt_fee_pct_of_assets": 0.058061,
+    "cash_mn": 67.546,
+    "interest_income_mn": 0.981,
+    "total_liabilities_mn": 49.623,
+    "shares_outstanding_avg": 1350604.0,
+    "unused_capacity_mn": 102.4
   },
   {
     "quarter": "Q2 2025",
@@ -92,7 +108,12 @@
     "nav_per_share_qoq_change": -0.05,
     "interest_coverage_ratio": 0.0868,
     "fee_as_pct_of_nii": 158.888889,
-    "mgmt_fee_pct_of_assets": 0.117026
+    "mgmt_fee_pct_of_assets": 0.117026,
+    "cash_mn": 142.527,
+    "interest_income_mn": 2.658,
+    "total_liabilities_mn": 156.965,
+    "shares_outstanding_avg": 2163914.0,
+    "unused_capacity_mn": 61.2
   },
   {
     "quarter": "Q3 2025",
@@ -122,7 +143,12 @@
     "nav_per_share_yoy_growth_pct": 1.244,
     "interest_coverage_ratio": 0.42,
     "fee_as_pct_of_nii": 30.122592,
-    "mgmt_fee_pct_of_assets": 0.171538
+    "mgmt_fee_pct_of_assets": 0.171538,
+    "cash_mn": 189.195,
+    "interest_income_mn": 6.317,
+    "total_liabilities_mn": 310.919,
+    "shares_outstanding_avg": 3145024.0,
+    "unused_capacity_mn": 23.69
   },
   {
     "quarter": "Q4 2025",
@@ -154,6 +180,11 @@
     "weighted_avg_yield": 9.3,
     "interest_coverage_ratio": 0.7935,
     "nii_per_share_yoy_growth_pct": 1180.7547,
-    "mgmt_fee_pct_of_assets": 0.243674
+    "mgmt_fee_pct_of_assets": 0.243674,
+    "cash_mn": 137.048,
+    "total_liabilities_mn": 360.445,
+    "shares_outstanding_avg": 4408605.0,
+    "unused_capacity_mn": 198.032,
+    "credit_facility_limit_mn": 550.0
   }
 ]
