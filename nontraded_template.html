@@ -574,9 +574,9 @@ function refreshHeroRank(ticker) {
 
 (function(){
   var p=new URLSearchParams(window.location.search);
-  var ticker  = p.get("ticker") || "BCRED";
-  var fundName= decodeURIComponent(p.get("name") || ticker);
-  var mgr     = decodeURIComponent(p.get("mgr")  || "Manager");
+  window.ticker = p.get("ticker") || "BCRED"; var ticker = window.ticker;
+  window.fundName = decodeURIComponent(p.get("name") || ticker); var fundName = window.fundName;
+  window.mgr = decodeURIComponent(p.get("mgr")  || "Manager"); var mgr = window.mgr;
   var qtr     = decodeURIComponent(p.get("qtr")  || "");
   var aum     = p.get("aum")  || "";
   var gate    = p.get("gate") === "1";
