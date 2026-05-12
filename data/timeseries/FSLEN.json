@@ -382,7 +382,13 @@
     "mgmt_fee_pct_of_assets": 0.567174,
     "total_liabilities_mn": 459.909,
     "shares_outstanding_avg": 455506155.0,
-    "cash_mn": 316.02
+    "cash_mn": 316.02,
+    "first_lien_pct": 71.6,
+    "second_lien_pct": 5.1,
+    "equity_pct": 8.6,
+    "pik_income_mn": 3.999,
+    "total_debt_mn": 400.0,
+    "credit_facility_drawn_mn": 400.0
   },
   {
     "quarter": "Q3 2024",
@@ -409,7 +415,13 @@
     "mgmt_fee_pct_of_assets": 0.563605,
     "total_liabilities_mn": 431.331,
     "shares_outstanding_avg": 455506155.0,
-    "cash_mn": 235.083
+    "cash_mn": 235.083,
+    "first_lien_pct": 77.8,
+    "second_lien_pct": 5.3,
+    "equity_pct": 11.7,
+    "pik_income_mn": 3.034,
+    "total_debt_mn": 395.992,
+    "credit_facility_drawn_mn": 395.992
   },
   {
     "quarter": "Q4 2024",
@@ -464,7 +476,15 @@
     "mgmt_fee_pct_of_assets": 0.577929,
     "total_liabilities_mn": 418.688,
     "shares_outstanding_avg": 455506155.0,
-    "cash_mn": 95.016
+    "cash_mn": 95.016,
+    "first_lien_pct": 93.9,
+    "second_lien_pct": 3.3,
+    "equity_pct": 9.5,
+    "pik_income_mn": 3.245,
+    "originations_mn": 286.924,
+    "repayments_mn": 314.927,
+    "total_debt_mn": 400.0,
+    "credit_facility_drawn_mn": 400.0
   },
   {
     "quarter": "Q2 2025",
@@ -505,6 +525,9 @@
     "mgmt_fee_pct_of_assets": 0.575535,
     "total_liabilities_mn": 417.605,
     "shares_outstanding_avg": 75917730.0,
-    "cash_mn": 232.901
+    "cash_mn": 232.901,
+    "second_lien_pct": 3.4,
+    "equity_pct": 6.2,
+    "total_debt_mn": 397.542
   }
 ]

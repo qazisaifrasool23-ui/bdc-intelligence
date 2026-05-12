@@ -890,7 +890,8 @@
     "cash_mn": 68.94,
     "total_liabilities_mn": 1000.596,
     "credit_facility_limit_mn": 1106.0,
-    "liquidity_pct": 8.609497
+    "liquidity_pct": 8.609497,
+    "pik_income_mn": 1.544
   },
   {
     "quarter": "Q2 2025",
@@ -987,7 +988,8 @@
     "cash_mn": 125.514,
     "total_liabilities_mn": 927.255,
     "credit_facility_limit_mn": 1261.0,
-    "liquidity_pct": 18.50238
+    "liquidity_pct": 18.50238,
+    "pik_income_mn": 1.639
   },
   {
     "quarter": "Q3 2025",
@@ -1020,7 +1022,7 @@
     "repayments_mn": 249.23,
     "net_unrealized_gains_mn": 6.53,
     "realized_gain_loss_3mo_mn": null,
-    "credit_facility_drawn_mn": null,
+    "credit_facility_drawn_mn": 735.258,
     "unused_capacity_mn": 517.0,
     "price_to_nav": null,
     "net_interest_spread": 0.69,
