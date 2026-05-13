@@ -209,7 +209,11 @@
     "mgmt_fee_pct_of_assets": 0.292582,
     "cash_mn": 221.69,
     "total_liabilities_mn": 1183.895,
-    "shares_outstanding_avg": 83850367.0
+    "shares_outstanding_avg": 83850367.0,
+    "second_lien_pct": 1.21,
+    "equity_pct": 1.09,
+    "pik_income_mn": 1.585,
+    "incentive_fee_mn": 6.999
   },
   {
     "quarter": "Q4 2023",
@@ -245,7 +249,9 @@
     "nii_per_share_yoy_growth_pct": 0.8475,
     "mgmt_fee_pct_of_assets": 0.283324,
     "total_liabilities_mn": 1157.652,
-    "shares_outstanding_avg": 91230657.0
+    "shares_outstanding_avg": 91230657.0,
+    "second_lien_pct": 1.0,
+    "weighted_avg_yield": 11.8
   },
   {
     "quarter": "Q1 2024",
@@ -290,7 +296,13 @@
     "dividends_paid_mn": 61.611,
     "total_liabilities_mn": 1385.955,
     "shares_outstanding_avg": 135684002.0,
-    "nii_coverage": 0.873733
+    "nii_coverage": 0.873733,
+    "second_lien_pct": 0.29,
+    "equity_pct": 0.96,
+    "pik_income_mn": 2.6,
+    "originations_mn": 658.211,
+    "repayments_mn": 114.767,
+    "incentive_fee_mn": 8.811
   },
   {
     "quarter": "Q2 2024",
@@ -331,7 +343,9 @@
     "nii_per_share_yoy_growth_pct": 6.2156,
     "mgmt_fee_pct_of_assets": 0.300827,
     "total_liabilities_mn": 1609.396,
-    "shares_outstanding_avg": 145102751.0
+    "shares_outstanding_avg": 145102751.0,
+    "pik_income_mn": 2.813,
+    "incentive_fee_mn": 10.143
   },
   {
     "quarter": "Q3 2024",
@@ -374,7 +388,9 @@
     "nii_per_share_yoy_growth_pct": 4.7703,
     "mgmt_fee_pct_of_assets": 0.308152,
     "total_liabilities_mn": 2877.039,
-    "shares_outstanding_avg": 151422460.0
+    "shares_outstanding_avg": 151422460.0,
+    "pik_income_mn": 3.259,
+    "incentive_fee_mn": 12.045
   },
   {
     "quarter": "Q4 2024",
@@ -546,7 +562,9 @@
     "nii_per_share_yoy_growth_pct": -9.7175,
     "mgmt_fee_pct_of_assets": 0.317804,
     "total_liabilities_mn": 3454.306,
-    "shares_outstanding_avg": 185854627.0
+    "shares_outstanding_avg": 185854627.0,
+    "pik_income_mn": 4.384,
+    "incentive_fee_mn": 11.825
   },
   {
     "quarter": "Q4 2025",

@@ -442,11 +442,11 @@
     "pik_pct": 0.77,
     "weighted_avg_yield": 11.2,
     "cost_of_debt_pct": 7.58,
-    "na_pct_cost": null,
-    "na_pct_fv": null,
+    "na_pct_cost": 1.89,
+    "na_pct_fv": 1.0,
     "wtd_avg_risk_rating": null,
     "first_lien_pct": 92.36,
-    "second_lien_pct": null,
+    "second_lien_pct": 0.89,
     "subordinated_pct": null,
     "equity_pct": 99.0,
     "floating_rate_pct": null,
@@ -491,7 +491,8 @@
     "total_liabilities_mn": 802.214621,
     "credit_facility_limit_mn": 550.0,
     "dividends_paid_mn": 8.91253,
-    "shares_outstanding_avg": 50224389.0
+    "shares_outstanding_avg": 50224389.0,
+    "pik_income_mn": 3.55
   },
   {
     "quarter": "Q2 2023",
@@ -511,8 +512,8 @@
     "pik_pct": 2.17,
     "weighted_avg_yield": 11.4,
     "cost_of_debt_pct": 8.34,
-    "na_pct_cost": null,
-    "na_pct_fv": null,
+    "na_pct_cost": 1.83,
+    "na_pct_fv": 0.29,
     "wtd_avg_risk_rating": null,
     "first_lien_pct": 91.94,
     "second_lien_pct": null,
@@ -560,7 +561,8 @@
     "cash_mn": 76.104236,
     "total_liabilities_mn": 835.887777,
     "credit_facility_limit_mn": 431.0,
-    "shares_outstanding_avg": 51104578.0
+    "shares_outstanding_avg": 51104578.0,
+    "pik_income_mn": 0.66
   },
   {
     "quarter": "Q3 2023",
@@ -628,7 +630,8 @@
     "mgmt_fee_pct_of_assets": 0.161314,
     "cash_mn": 101.011905,
     "total_liabilities_mn": 871.106239,
-    "shares_outstanding_avg": 51686603.0
+    "shares_outstanding_avg": 51686603.0,
+    "pik_income_mn": 0.276379
   },
   {
     "quarter": "Q4 2023",
@@ -762,7 +765,8 @@
     "cash_mn": 57.806378,
     "total_liabilities_mn": 923.881683,
     "dividends_paid_mn": 5.740909,
-    "shares_outstanding_avg": 55172112.0
+    "shares_outstanding_avg": 55172112.0,
+    "pik_income_mn": 1.56
   },
   {
     "quarter": "Q2 2024",
@@ -831,7 +835,8 @@
     "net_na_change_mn": 2.558,
     "cash_mn": 67.423316,
     "total_liabilities_mn": 1002.84824,
-    "shares_outstanding_avg": 56191768.0
+    "shares_outstanding_avg": 56191768.0,
+    "pik_income_mn": 2.109355
   },
   {
     "quarter": "Q3 2024",

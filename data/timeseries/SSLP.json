@@ -126,7 +126,12 @@
     "total_liabilities_mn": 1156.951,
     "unused_capacity_mn": 929.479,
     "shares_outstanding_avg": 27469663.0,
-    "interest_income_mn": 49.239
+    "interest_income_mn": 49.239,
+    "pik_income_mn": 3.744,
+    "originations_mn": 523.565,
+    "repayments_mn": 32.451,
+    "incentive_fee_mn": 4.69,
+    "credit_facility_drawn_mn": 1120.521
   },
   {
     "quarter": "Q3 2023",
@@ -163,7 +168,12 @@
     "total_liabilities_mn": 1483.033,
     "unused_capacity_mn": 638.572,
     "shares_outstanding_avg": 30109493.0,
-    "interest_income_mn": 60.668
+    "interest_income_mn": 60.668,
+    "equity_pct": 1.48,
+    "pik_income_mn": 5.038,
+    "originations_mn": 285.997,
+    "repayments_mn": 32.389,
+    "incentive_fee_mn": 8.786
   },
   {
     "quarter": "Q4 2023",
@@ -197,7 +207,10 @@
     "cash_mn": 8.813,
     "total_liabilities_mn": 1321.198,
     "unused_capacity_mn": 971.485,
-    "shares_outstanding_avg": 34746777.0
+    "shares_outstanding_avg": 34746777.0,
+    "second_lien_pct": 2.6,
+    "equity_pct": 2.0,
+    "credit_facility_drawn_mn": 1248.0
   },
   {
     "quarter": "Q1 2024",
@@ -238,7 +251,11 @@
     "unused_capacity_mn": 1158.63,
     "shares_outstanding_avg": 69647897.0,
     "dividends_paid_mn": 21.808,
-    "liquidity_pct": 27.086211
+    "liquidity_pct": 27.086211,
+    "pik_income_mn": 5.545,
+    "originations_mn": 1298.865,
+    "repayments_mn": 11.026,
+    "incentive_fee_mn": 13.963
   },
   {
     "quarter": "Q2 2024",
@@ -279,7 +296,9 @@
     "unused_capacity_mn": 1037.932,
     "shares_outstanding_avg": 77232840.0,
     "interest_income_mn": 140.244,
-    "liquidity_pct": 20.733151
+    "liquidity_pct": 20.733151,
+    "pik_income_mn": 7.925,
+    "incentive_fee_mn": 15.368
   },
   {
     "quarter": "Q3 2024",
@@ -318,7 +337,9 @@
     "unused_capacity_mn": 733.338,
     "shares_outstanding_avg": 83485668.0,
     "interest_income_mn": 162.261,
-    "liquidity_pct": 12.373195
+    "liquidity_pct": 12.373195,
+    "pik_income_mn": 8.747,
+    "incentive_fee_mn": 18.277
   },
   {
     "quarter": "Q4 2024",
@@ -356,7 +377,9 @@
     "total_liabilities_mn": 4476.972,
     "unused_capacity_mn": 45.336,
     "shares_outstanding_avg": 90180335.0,
-    "liquidity_pct": 0.625818
+    "liquidity_pct": 0.625818,
+    "second_lien_pct": 1.3,
+    "equity_pct": 2.1
   },
   {
     "quarter": "Q1 2025",

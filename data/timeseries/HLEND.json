@@ -316,8 +316,8 @@
     "pik_pct": 3.78,
     "weighted_avg_yield": 12.0,
     "cost_of_debt_pct": 7.98,
-    "na_pct_cost": null,
-    "na_pct_fv": null,
+    "na_pct_cost": 0.03,
+    "na_pct_fv": 0.03,
     "wtd_avg_risk_rating": null,
     "first_lien_pct": 98.61,
     "second_lien_pct": 0.71,
@@ -362,7 +362,8 @@
     "liquidity_pct": 10.821796,
     "mgmt_fee_pct_of_assets": 0.306889,
     "cash_mn": 187.828,
-    "total_liabilities_mn": 3385.464
+    "total_liabilities_mn": 3385.464,
+    "pik_income_mn": 8.161
   },
   {
     "quarter": "Q3 2023",
@@ -382,8 +383,8 @@
     "pik_pct": 4.44,
     "weighted_avg_yield": 12.1,
     "cost_of_debt_pct": 8.37,
-    "na_pct_cost": null,
-    "na_pct_fv": null,
+    "na_pct_cost": 0.2,
+    "na_pct_fv": 0.19,
     "wtd_avg_risk_rating": null,
     "first_lien_pct": 98.42,
     "second_lien_pct": 0.84,
@@ -428,7 +429,8 @@
     "liquidity_pct": 9.763232,
     "mgmt_fee_pct_of_assets": 0.298052,
     "cash_mn": 205.888,
-    "total_liabilities_mn": 3529.949
+    "total_liabilities_mn": 3529.949,
+    "pik_income_mn": 10.393
   },
   {
     "quarter": "Q4 2023",
@@ -559,7 +561,8 @@
     "mgmt_fee_pct_of_assets": 0.293555,
     "net_na_change_mn": -5.422,
     "cash_mn": 300.662,
-    "total_liabilities_mn": 4166.375
+    "total_liabilities_mn": 4166.375,
+    "pik_income_mn": 18.03
   },
   {
     "quarter": "Q2 2024",
@@ -625,7 +628,8 @@
     "mgmt_fee_pct_of_assets": 0.299227,
     "net_na_change_mn": 19.426,
     "cash_mn": 351.13,
-    "total_liabilities_mn": 4567.956
+    "total_liabilities_mn": 4567.956,
+    "pik_income_mn": 16.91
   },
   {
     "quarter": "Q3 2024",
@@ -691,7 +695,8 @@
     "mgmt_fee_pct_of_assets": 0.304295,
     "net_na_change_mn": 3.298,
     "cash_mn": 228.003,
-    "total_liabilities_mn": 5886.003
+    "total_liabilities_mn": 5886.003,
+    "pik_income_mn": 17.916
   },
   {
     "quarter": "Q4 2024",

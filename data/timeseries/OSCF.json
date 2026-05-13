@@ -290,7 +290,7 @@
     "repayments_mn": 106.09,
     "net_unrealized_gains_mn": 8.05,
     "realized_gain_loss_3mo_mn": null,
-    "credit_facility_drawn_mn": null,
+    "credit_facility_drawn_mn": 150.0,
     "unused_capacity_mn": null,
     "price_to_nav": null,
     "net_originations_mn": 463.0,
@@ -318,7 +318,8 @@
     "mgmt_fee_pct_of_assets": 0.271777,
     "cash_mn": 74.925,
     "shares_outstanding": 30951.0,
-    "total_liabilities_mn": 278.417
+    "total_liabilities_mn": 278.417,
+    "pik_income_mn": 0.561
   },
   {
     "quarter": "Q2 2023",
@@ -351,8 +352,8 @@
     "repayments_mn": 193.45,
     "net_unrealized_gains_mn": 6.78,
     "realized_gain_loss_3mo_mn": null,
-    "credit_facility_drawn_mn": null,
-    "unused_capacity_mn": null,
+    "credit_facility_drawn_mn": 325.0,
+    "unused_capacity_mn": 125.0,
     "price_to_nav": null,
     "net_interest_spread": 9.2,
     "net_originations_mn": 832.29,
@@ -381,7 +382,8 @@
     "cumulative_equity_raised_mn": 612.6,
     "mgmt_fee_pct_of_assets": 0.27756,
     "cash_mn": 76.603,
-    "total_liabilities_mn": 392.635
+    "total_liabilities_mn": 392.635,
+    "pik_income_mn": 1.107
   },
   {
     "quarter": "Q3 2023",
@@ -499,7 +501,8 @@
     "mgmt_fee_pct_of_assets": 0.181902,
     "net_na_change_mn": -4.851,
     "cash_mn": 93.049,
-    "total_liabilities_mn": 1033.792
+    "total_liabilities_mn": 1033.792,
+    "pik_income_mn": 0.621
   },
   {
     "quarter": "Q1 2024",
@@ -565,7 +568,8 @@
     "mgmt_fee_pct_of_assets": 0.29311,
     "net_na_change_mn": 7.702,
     "cash_mn": 329.908,
-    "total_liabilities_mn": 1460.956
+    "total_liabilities_mn": 1460.956,
+    "pik_income_mn": 2.045
   },
   {
     "quarter": "Q2 2024",
@@ -631,7 +635,8 @@
     "mgmt_fee_pct_of_assets": 0.299717,
     "net_na_change_mn": 22.955,
     "cash_mn": 394.81,
-    "total_liabilities_mn": 1885.482
+    "total_liabilities_mn": 1885.482,
+    "pik_income_mn": 2.369
   },
   {
     "quarter": "Q3 2024",
@@ -1029,6 +1034,9 @@
     "repayments_mn": 281.18,
     "credit_facility_drawn_mn": 1604.4,
     "net_originations_mn": 544.502,
-    "origination_velocity_pct": 17.704961
+    "origination_velocity_pct": 17.704961,
+    "na_pct_cost": 0.3,
+    "pik_income_mn": 1.836,
+    "incentive_fee_mn": 13.648
   }
 ]
