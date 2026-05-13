@@ -23,10 +23,26 @@ FD   = ROOT/'data'/'universe'/'fund_directory.json'
 UA = 'BDC-Research/1.0 (qsaif2321@gmail.com)'
 SEC_SLEEP = 0.6
 LLM_SLEEP = 1.5
-MAX_FILINGS_PER_FUND = 6     # latest 6 filings (≈ 1.5 yrs of 10-Qs+10-K)
-TEXT_LIMIT = 15000
+MAX_FILINGS_PER_FUND = 5     # latest 5 filings
+TEXT_LIMIT = 40000           # cap on concatenated keyword windows
+WINDOW_BEFORE = 400
+WINDOW_AFTER  = 2200
+KEYWORDS = [
+    'non-accrual','non accrual','nonaccrual',
+    'weighted average yield','weighted-average yield','portfolio yield',
+    'first lien','senior secured','second lien',
+    'floating rate','floating-rate','fixed rate',
+    'incentive fee','management fee','base management fee',
+    'spillover','undistributed net investment','undistributed taxable',
+    'origination','repayment','portfolio activity',
+    'leverage','debt to equity','asset coverage',
+    'portfolio companies','number of portfolio',
+    'cost of debt','weighted average interest rate',
+    'credit facility','revolving credit','unfunded',
+    'PIK',
+]
 COMMIT_EVERY = 10            # commit & push every N funds
-CLAUDE_TIMEOUT = 120
+CLAUDE_TIMEOUT = 180
 
 HIGH_PRIORITY_FIELDS = [
     'na_pct_cost','na_pct_fv','floating_rate_pct','pik_pct','weighted_avg_yield',
@@ -75,13 +91,13 @@ def get_recent_filings(cik):
     forms = recent.get('form', [])
     accns = recent.get('accessionNumber', [])
     docs  = recent.get('primaryDocument', [])
-    pors  = recent.get('periodOfReport', [])
+    pors  = recent.get('reportDate', []) or recent.get('periodOfReport', [])
     fds   = recent.get('filingDate', [])
     out = []
     for i,form in enumerate(forms):
         if form not in ('10-Q','10-K'): continue
         out.append({
-            'form': form, 'accn': accns[i], 'primaryDoc': docs[i],
+            'form': form, 'accn': accns[i], 'primaryDoc': docs[i] if i<len(docs) else '',
             'periodOfReport': pors[i] if i<len(pors) else None,
             'filingDate': fds[i] if i<len(fds) else None,
         })
@@ -96,14 +112,51 @@ def strip_html(s):
     s = re.sub(r'\s+', ' ', s)
     return s
 
-LLM_PROMPT_TEMPLATE = """You are extracting financial data from an SEC filing for BDC ticker {ticker}, period ending {period}.
+def extract_keyword_windows(text, keywords=KEYWORDS, before=WINDOW_BEFORE, after=WINDOW_AFTER, cap=TEXT_LIMIT):
+    """Find each keyword in text, extract a window around each match, dedupe overlap, cap at `cap` chars."""
+    lower = text.lower()
+    spans = []
+    for kw in keywords:
+        start = 0
+        while True:
+            i = lower.find(kw.lower(), start)
+            if i < 0: break
+            s = max(0, i - before)
+            e = min(len(text), i + after)
+            spans.append((s,e))
+            start = i + len(kw)
+            if len(spans) > 200: break  # safety cap
+    if not spans: return text[:cap]
+    spans.sort()
+    merged = [spans[0]]
+    for s,e in spans[1:]:
+        ls,le = merged[-1]
+        if s <= le: merged[-1] = (ls, max(le,e))
+        else:       merged.append((s,e))
+    out = []
+    used = 0
+    for s,e in merged:
+        chunk = text[s:e]
+        if used + len(chunk) > cap:
+            chunk = chunk[: cap - used]
+            out.append(chunk)
+            break
+        out.append(chunk)
+        used += len(chunk)
+    return '\n…\n'.join(out)
 
-Filing text (truncated):
+LLM_PROMPT_TEMPLATE = """You are extracting financial data from an SEC filing for BDC ticker {ticker}, three-month period ending {period}.
+
+Filing excerpts (concatenated from sections containing relevant keywords):
 ---
 {text}
 ---
 
-Extract ONLY these fields from the filing. Return null if the value is not clearly stated for this period. Units: percentages as plain numbers (e.g. 1.8 for 1.8%), dollar amounts in millions, ratios as decimals, share counts as whole numbers.
+CRITICAL RULES:
+- Flow/income-statement values (originations_mn, repayments_mn, pik_income_mn, management_fee_mn, incentive_fee_mn) MUST be the THREE-MONTH (single quarter) value ending {period}. If only year-to-date is shown, return null — do not return YTD figures as quarterly.
+- Point-in-time values (na_pct_*, floating_rate_pct, first_lien_pct, num_portfolio_companies, total_debt_mn, leverage, credit_facility_drawn_mn, unused_capacity_mn, weighted_avg_yield, cost_of_debt_pct, spillover_per_share) should be AS OF {period}.
+- Return null whenever the value is not clearly stated FOR THIS QUARTER. Do not infer or estimate.
+- Units: percentages as plain numbers (1.8 for 1.8%), dollar amounts in millions of USD, ratios as decimals, counts as whole numbers.
 
 Respond with ONLY a valid JSON object, no prose, no markdown fences. Schema:
 {{
@@ -239,7 +292,7 @@ def process_fund(fund, ticker_map):
             text = strip_html(raw.decode('utf-8','ignore'))
         except:
             continue
-        text = text[:TEXT_LIMIT]
+        text = extract_keyword_windows(text)
 
         prompt = LLM_PROMPT_TEMPLATE.format(ticker=ticker, period=por, text=text)
         result = call_claude(prompt)

@@ -167,7 +167,9 @@
     "liquidity_pct": 14.942543,
     "pik_income_mn": 4.162,
     "originations_mn": 344.539,
-    "repayments_mn": 17.383
+    "repayments_mn": 17.383,
+    "net_originations_mn": 327.156,
+    "origination_velocity_pct": 42.50388
   },
   {
     "quarter": "Q2 2025",
@@ -255,7 +257,9 @@
     "na_pct_cost": 0.31,
     "na_pct_fv": 0.3,
     "second_lien_pct": 0.24,
-    "pik_income_mn": 6.9
+    "pik_income_mn": 6.9,
+    "na_dollar_amount_mn": 6.194408,
+    "implied_recovery_rate_pct": 96.774194
   },
   {
     "quarter": "Q4 2025",
@@ -374,6 +378,8 @@
     "liquidity_pct": 25.084293,
     "second_lien_pct": 0.36,
     "equity_pct": 11.26,
-    "num_portfolio_companies": 188.0
+    "num_portfolio_companies": 188.0,
+    "avg_position_size_mn": 11.584154,
+    "net_na_change_mn": 1.427992
   }
 ]

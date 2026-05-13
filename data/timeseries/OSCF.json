@@ -738,7 +738,7 @@
     "nii_per_share_yoy_growth_pct": -48.649,
     "nav_per_share_yoy_growth_pct": -0.423,
     "origination_velocity_pct": 37.345,
-    "data_quality_score": 88.24,
+    "data_quality_score": 88.73,
     "management_fee_mn": 10.462,
     "incentive_fee_mn": 10.749,
     "interest_expense_mn": 42.42,
@@ -763,7 +763,9 @@
     "net_na_change_mn": 0.448,
     "cash_mn": 334.753,
     "total_liabilities_mn": 2181.025,
-    "pik_income_mn": 2.695
+    "pik_income_mn": 2.695,
+    "cash_income_mn": 138.941,
+    "cash_income_pct": 98.097235
   },
   {
     "quarter": "Q1 2025",
@@ -810,7 +812,7 @@
     "nii_per_share_yoy_growth_pct": -10.526,
     "nav_per_share_yoy_growth_pct": -1.398,
     "origination_velocity_pct": 35.047,
-    "data_quality_score": 87.69,
+    "data_quality_score": 89.39,
     "management_fee_mn": 11.471,
     "incentive_fee_mn": 10.942,
     "interest_expense_mn": 41.977,
@@ -878,7 +880,7 @@
     "nii_per_share_yoy_growth_pct": -14.815,
     "nav_per_share_yoy_growth_pct": -1.657,
     "origination_velocity_pct": 46.797,
-    "data_quality_score": 87.69,
+    "data_quality_score": 89.39,
     "management_fee_mn": 13.345,
     "incentive_fee_mn": 12.243,
     "interest_expense_mn": 40.474,
@@ -1025,6 +1027,8 @@
     "total_liabilities_mn": 3086.789,
     "originations_mn": 825.682,
     "repayments_mn": 281.18,
-    "credit_facility_drawn_mn": 1604.4
+    "credit_facility_drawn_mn": 1604.4,
+    "net_originations_mn": 544.502,
+    "origination_velocity_pct": 17.704961
   }
 ]

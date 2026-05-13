@@ -562,7 +562,8 @@
     "shares_outstanding_avg": 59200911.0,
     "floating_rate_pct": 99.8,
     "second_lien_pct": 4.8,
-    "equity_pct": 3.9
+    "equity_pct": 3.9,
+    "fixed_rate_pct": 0.2
   },
   {
     "quarter": "Q1 2025",
@@ -613,7 +614,10 @@
     "equity_pct": 4.1,
     "pik_income_mn": 5.451,
     "originations_mn": 233.388,
-    "repayments_mn": 170.659
+    "repayments_mn": 170.659,
+    "net_originations_mn": 62.729,
+    "origination_velocity_pct": 15.638634,
+    "fixed_rate_pct": 0.2
   },
   {
     "quarter": "Q2 2025",
