@@ -1,0 +1,113 @@
+#!/usr/bin/env python3
+"""Pre-commit hook: validate fund_directory.json when it's staged.
+
+Runs locally, no network. Checks the STAGED version of the file (not
+the working copy) so a partial `git add -p` is still validated correctly.
+
+Failure modes (exit 1):
+  - duplicate CIKs across rows
+  - CIK present but not a 10-digit zero-padded string
+  - ticker collisions
+  - row missing required keys (ticker, display_name, fund_type)
+
+Install once:
+    git config core.hooksPath scripts/hooks
+"""
+import json, subprocess, sys, re
+from collections import Counter
+
+DIR_PATH = 'data/universe/fund_directory.json'
+REQUIRED_KEYS = ('ticker', 'display_name', 'fund_type')
+
+def staged_files():
+    out = subprocess.run(
+        ['git','diff','--cached','--name-only','--diff-filter=ACMR'],
+        capture_output=True, text=True, check=False,
+    )
+    return set(out.stdout.strip().splitlines())
+
+def staged_blob(path):
+    out = subprocess.run(
+        ['git','show', f':{path}'],
+        capture_output=True, text=True, check=False,
+    )
+    if out.returncode != 0:
+        return None
+    return out.stdout
+
+def main():
+    if DIR_PATH not in staged_files():
+        return 0
+    raw = staged_blob(DIR_PATH)
+    if raw is None:
+        print(f'pre-commit: could not read staged {DIR_PATH}', file=sys.stderr)
+        return 1
+    try:
+        data = json.loads(raw)
+    except Exception as e:
+        print(f'pre-commit: {DIR_PATH} is not valid JSON: {e}', file=sys.stderr)
+        return 1
+
+    funds = data.get('funds')
+    if not isinstance(funds, list):
+        print(f'pre-commit: {DIR_PATH} has no "funds" list', file=sys.stderr)
+        return 1
+
+    errors = []
+
+    # Required keys
+    for i, f in enumerate(funds):
+        for k in REQUIRED_KEYS:
+            if not f.get(k):
+                errors.append(f'row {i}: missing required key {k!r}')
+
+    # Ticker duplicates
+    tickers = [f.get('ticker') for f in funds if f.get('ticker')]
+    tdupes = {t:n for t,n in Counter(tickers).items() if n > 1}
+    for t,n in tdupes.items():
+        errors.append(f'duplicate ticker {t!r} appears {n}× in funds[]')
+
+    # CIK shape + duplicates
+    cik_re = re.compile(r'^\d{10}$')
+    bad_shape = []
+    for f in funds:
+        cik = f.get('cik')
+        if cik is None: continue
+        if not isinstance(cik, str) or not cik_re.match(cik):
+            bad_shape.append((f.get('ticker'), cik))
+    for tk, cik in bad_shape:
+        errors.append(f'{tk}: cik {cik!r} is not a 10-digit zero-padded string')
+
+    cik_counts = Counter()
+    for f in funds:
+        c = f.get('cik')
+        if c: cik_counts[c] += 1
+    cdupes = {c:n for c,n in cik_counts.items() if n > 1}
+    for c,n in cdupes.items():
+        owners = sorted(f.get('ticker') for f in funds if f.get('cik')==c)
+        errors.append(f'duplicate CIK {c} claimed by {n} rows: {owners}')
+
+    # Counts metadata sanity
+    total = data.get('total')
+    if isinstance(total, int) and total != len(funds):
+        errors.append(f'metadata total={total} but funds[] has {len(funds)} rows')
+    by_type = data.get('by_type') or {}
+    for typ in ('traded','nontraded'):
+        declared = by_type.get(typ)
+        actual = sum(1 for f in funds if f.get('fund_type')==typ)
+        if declared is not None and declared != actual:
+            errors.append(f'metadata by_type.{typ}={declared} but actual count is {actual}')
+
+    if errors:
+        print(f'pre-commit: {DIR_PATH} validation failed ({len(errors)} issue(s)):',
+              file=sys.stderr)
+        for e in errors:
+            print(f'  - {e}', file=sys.stderr)
+        print('\nUnstage the file (git restore --staged) or fix the issues, then re-commit.',
+              file=sys.stderr)
+        return 1
+
+    return 0
+
+if __name__ == '__main__':
+    sys.exit(main())
