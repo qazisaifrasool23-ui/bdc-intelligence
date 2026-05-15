@@ -302,7 +302,7 @@
     "nii_per_share_yoy_growth_pct": 25.0,
     "nav_per_share_yoy_growth_pct": -6.47,
     "origination_velocity_pct": 63.227,
-    "data_quality_score": 81.36,
+    "data_quality_score": 83.33,
     "management_fee_mn": 1.97,
     "incentive_fee_mn": 1.733,
     "interest_expense_mn": 3.574,
@@ -365,7 +365,7 @@
     "nii_per_share_yoy_growth_pct": 42.857,
     "nav_per_share_yoy_growth_pct": -0.97,
     "origination_velocity_pct": 80.188,
-    "data_quality_score": 83.61,
+    "data_quality_score": 87.3,
     "management_fee_mn": 2.817,
     "incentive_fee_mn": 2.835,
     "interest_expense_mn": 5.215,
@@ -383,7 +383,8 @@
     "mgmt_fee_pct_of_assets": 0.27756,
     "cash_mn": 76.603,
     "total_liabilities_mn": 392.635,
-    "pik_income_mn": 1.107
+    "pik_income_mn": 1.107,
+    "liquidity_pct": 9.771992
   },
   {
     "quarter": "Q3 2023",
@@ -485,7 +486,7 @@
     "nii_per_share_yoy_growth_pct": 1.37,
     "nav_per_share_yoy_growth_pct": 1.679,
     "origination_velocity_pct": 46.667,
-    "data_quality_score": 84.75,
+    "data_quality_score": 85.48,
     "management_fee_mn": 5.756,
     "incentive_fee_mn": 5.754,
     "interest_expense_mn": 17.74,
@@ -502,7 +503,9 @@
     "net_na_change_mn": -4.851,
     "cash_mn": 93.049,
     "total_liabilities_mn": 1033.792,
-    "pik_income_mn": 0.621
+    "pik_income_mn": 0.621,
+    "cash_income_mn": 70.973,
+    "cash_income_pct": 99.132609
   },
   {
     "quarter": "Q1 2024",
@@ -549,7 +552,7 @@
     "nii_per_share_yoy_growth_pct": 26.667,
     "nav_per_share_yoy_growth_pct": 0.811,
     "origination_velocity_pct": 55.718,
-    "data_quality_score": 89.06,
+    "data_quality_score": 89.23,
     "management_fee_mn": 7.242,
     "incentive_fee_mn": 7.98,
     "interest_expense_mn": 24.18,
@@ -616,7 +619,7 @@
     "nii_per_share_yoy_growth_pct": 8.0,
     "nav_per_share_yoy_growth_pct": 0.213,
     "origination_velocity_pct": 72.098,
-    "data_quality_score": 89.06,
+    "data_quality_score": 89.23,
     "management_fee_mn": 8.63,
     "incentive_fee_mn": 9.02,
     "interest_expense_mn": 31.703,
@@ -1037,6 +1040,9 @@
     "origination_velocity_pct": 17.704961,
     "na_pct_cost": 0.3,
     "pik_income_mn": 1.836,
-    "incentive_fee_mn": 13.648
+    "incentive_fee_mn": 13.648,
+    "na_dollar_amount_mn": 22.301583,
+    "fee_as_pct_of_nii": 27.929575,
+    "net_na_change_mn": 1.604583
   }
 ]

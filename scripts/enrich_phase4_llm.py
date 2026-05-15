@@ -22,24 +22,28 @@ FD   = ROOT/'data'/'universe'/'fund_directory.json'
 
 UA = 'BDC-Research/1.0 (qsaif2321@gmail.com)'
 SEC_SLEEP = 0.6
-LLM_SLEEP = 1.5
-MAX_FILINGS_PER_FUND = 5     # latest 5 filings
-TEXT_LIMIT = 40000           # cap on concatenated keyword windows
-WINDOW_BEFORE = 400
-WINDOW_AFTER  = 2200
+LLM_SLEEP = 1.0
+MAX_FILINGS_PER_FUND = 12    # 12 filings ≈ 3 years per fund
+TEXT_LIMIT = 60000           # cap on concatenated keyword windows
+WINDOW_BEFORE = 500
+WINDOW_AFTER  = 2800
 KEYWORDS = [
     'non-accrual','non accrual','nonaccrual',
-    'weighted average yield','weighted-average yield','portfolio yield',
-    'first lien','senior secured','second lien',
-    'floating rate','floating-rate','fixed rate',
-    'incentive fee','management fee','base management fee',
-    'spillover','undistributed net investment','undistributed taxable',
-    'origination','repayment','portfolio activity',
-    'leverage','debt to equity','asset coverage',
-    'portfolio companies','number of portfolio',
-    'cost of debt','weighted average interest rate',
-    'credit facility','revolving credit','unfunded',
-    'PIK',
+    'weighted average yield','weighted-average yield','portfolio yield','yield on debt',
+    'first lien','senior secured','second lien','subordinated',
+    'equity investment','equity securities',
+    'floating rate','floating-rate','fixed rate','fixed-rate',
+    'incentive fee','management fee','base management fee','capital gains fee',
+    'spillover','undistributed net investment','undistributed taxable','excise',
+    'origination','originated','new investment','purchases','deployments',
+    'repayment','sales and repay','principal repayment','prepayment',
+    'leverage','debt to equity','asset coverage','regulatory leverage',
+    'portfolio companies','number of portfolio','investment portfolio composition',
+    'cost of debt','weighted average interest rate','weighted-average interest rate',
+    'credit facility','revolving credit','unfunded commitment','borrowing capacity',
+    'PIK','payment-in-kind','payment in kind',
+    'schedule of investments','portfolio summary',
+    'borrowings','notes payable','term loan',
 ]
 COMMIT_EVERY = 10            # commit & push every N funds
 CLAUDE_TIMEOUT = 180
