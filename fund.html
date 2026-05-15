@@ -255,7 +255,7 @@ body{margin:0;padding:0;overflow-x:hidden}
 <body>
 <div id="frame-wrap"><iframe id="fund-frame" src="traded_template.html?ticker=ARCC" style="width:100%;height:100%;border:none"></iframe></div>
 <div id="overlay">
-<nav class="navbar nav-ov"><a class="logo" href="index.html"><div class="logo-mark"><svg viewBox="0 0 16 16"><rect x="2" y="9" width="3" height="5"/><rect x="6.5" y="5" width="3" height="9"/><rect x="11" y="2" width="3" height="12"/></svg></div><div class="logo-text">BDC<span>Intelligence</span></div></a><div class="nav-links"><a class="nav-link" href="index.html">Universe</a><a class="nav-link on" href="fund.html">Funds</a><a class="nav-link" href="analysis.html">Analysis</a><a class="nav-link" href="screener.html">Screener</a><a class="nav-link" href="compare.html">Compare</a><a class="nav-link" href="news.html">News</a><a class="nav-link" href="weekly.html">Weekly</a><a class="nav-link" href="team.html">Team</a></div><div class="nav-right" style="position:relative"><svg style="position:absolute;left:8px;top:50%;transform:translateY(-50%);color:rgba(255,255,255,.4);pointer-events:none" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg><input id="NS_INP" style="width:200px;height:30px;border:1px solid rgba(255,255,255,.15);border-radius:6px;padding:0 10px 0 28px;font-family:var(--mono);font-size:9.5px;color:#fff;background:rgba(255,255,255,.08);outline:none" placeholder="Find fund..." autocomplete="off"><div id="NS_DD" style="position:absolute;top:calc(100% + 4px);right:0;width:240px;background:#fff;border:1px solid var(--border);border-radius:8px;box-shadow:0 6px 20px rgba(0,0,0,.1);z-index:999;max-height:300px;overflow-y:auto;display:none"></div></div></nav>
+<nav class="navbar nav-ov"><a class="logo" href="index.html"><div class="logo-mark"><svg viewBox="0 0 16 16"><rect x="2" y="9" width="3" height="5"/><rect x="6.5" y="5" width="3" height="9"/><rect x="11" y="2" width="3" height="12"/></svg></div><div class="logo-text">BDC<span>Intelligence</span></div></a><div class="nav-links"><a class="nav-link" href="index.html">Universe</a><a class="nav-link on" href="fund.html">Funds</a><a class="nav-link" href="analysis.html">Analysis</a><a class="nav-link" href="screener.html">Screener</a><a class="nav-link" href="compare.html">Compare</a><a class="nav-link" href="news.html">News</a><a class="nav-link" href="weekly.html">Weekly</a><a class="nav-link" href="team.html">Team</a></div></nav>
 <div class="sel-ov"><div class="fp"><svg style="position:absolute;left:9px;top:50%;transform:translateY(-50%);color:var(--text3);pointer-events:none" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg><input class="fp-inp" id="FP_INP" placeholder="Search any fund..." autocomplete="off"><div class="fp-dd" id="FP_DD"></div></div><span style="font-family:var(--mono);font-size:9px;color:var(--text3)">Quick:</span><button class="qk" id="BTN_ARCC">ARCC</button><button class="qk" id="BTN_OBDC">OBDC</button><button class="qk" id="BTN_FSK">FSK</button><button class="qk" id="BTN_MAIN">MAIN</button><button class="qk" id="BTN_BCRED" style="background:var(--amber2);border-color:var(--amber);color:var(--amber)">BCRED</button><button class="qk" id="BTN_HLEND">HLEND</button><button class="qk" id="BTN_PSEC">PSEC</button><span id="COV_INFO" style="margin-left:auto;font-family:var(--mono);font-size:9px;color:var(--text3)"></span></div>
 </div>
 <script>
@@ -305,7 +305,6 @@ function fillDrop(dd,q,cb){
       loadFund(tk);
       dd.style.display="none";
       var fpI=document.getElementById("FP_INP");if(fpI)fpI.value="";
-      var nsI=document.getElementById("NS_INP");if(nsI)nsI.value="";
     }));
   });
   dd.style.display="block";
@@ -314,9 +313,6 @@ document.addEventListener("DOMContentLoaded",function(){
   var fpI=document.getElementById("FP_INP"),fpD=document.getElementById("FP_DD");
   fpI.addEventListener("input",function(){fillDrop(fpD,this.value,loadFund);});
   fpI.addEventListener("blur",function(){setTimeout(function(){fpD.style.display="none";},200);});
-  var nsI=document.getElementById("NS_INP"),nsD=document.getElementById("NS_DD");
-  nsI.addEventListener("input",function(){fillDrop(nsD,this.value,loadFund);});
-  nsI.addEventListener("blur",function(){setTimeout(function(){nsD.style.display="none";},200);});
   var btns=[["BTN_ARCC","ARCC"],["BTN_OBDC","OBDC"],["BTN_FSK","FSK"],["BTN_MAIN","MAIN"],
             ["BTN_BCRED","BCRED"],["BTN_HLEND","HLEND"],["BTN_PSEC","PSEC"]];
   btns.forEach(function(b){
