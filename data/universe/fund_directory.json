@@ -1,9 +1,9 @@
 {
-  "last_updated": "2026-05-10",
-  "total": 140,
+  "last_updated": "2026-05-15",
+  "total": 136,
   "by_type": {
-    "traded": 47,
-    "nontraded": 93
+    "traded": 46,
+    "nontraded": 90
   },
   "funds": [
     {
@@ -12,7 +12,16 @@
       "fund_type": "traded",
       "exchange": null,
       "manager": "Ares Management",
-      "real_ticker": "ARCC"
+      "real_ticker": "ARCC",
+      "cik": "0001287750",
+      "sec_name": "ARES CAPITAL CORP",
+      "sec_former_names": [],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "ticker_master",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "BBDC",
@@ -20,15 +29,22 @@
       "fund_type": "traded",
       "exchange": null,
       "manager": "Barings BDC",
-      "real_ticker": "BBDC"
-    },
-    {
-      "ticker": "BCIC",
-      "display_name": "BlackRock Capital Investment Corporation",
-      "fund_type": "traded",
-      "exchange": null,
-      "manager": "Blue Owl Credit",
-      "real_ticker": "BCIC"
+      "real_ticker": "BBDC",
+      "cik": "0001379785",
+      "sec_name": "Barings BDC, Inc.",
+      "sec_former_names": [
+        {
+          "name": "Triangle Capital CORP",
+          "from": "2006-11-03T05:00:00.000Z",
+          "to": "2018-08-02T04:00:00.000Z"
+        }
+      ],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "ticker_master",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "BCSF",
@@ -36,7 +52,22 @@
       "fund_type": "traded",
       "exchange": null,
       "manager": "Benefit Street Partners",
-      "real_ticker": "BCSF"
+      "real_ticker": "BCSF",
+      "cik": "0001655050",
+      "sec_name": "Bain Capital Specialty Finance, Inc.",
+      "sec_former_names": [
+        {
+          "name": "Sankaty Capital Corp",
+          "from": "2015-10-13T04:00:00.000Z",
+          "to": "2016-04-01T04:00:00.000Z"
+        }
+      ],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "ticker_master",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "OBDE",
@@ -44,7 +75,22 @@
       "fund_type": "traded",
       "exchange": null,
       "manager": "Blue Owl Capital Advisors LLC",
-      "real_ticker": "OBDE"
+      "real_ticker": "OBDE",
+      "cik": "0001807427",
+      "sec_name": "Blue Owl Capital Corp III",
+      "sec_former_names": [
+        {
+          "name": "Owl Rock Capital Corp III",
+          "from": "2020-06-04T00:00:00.000Z",
+          "to": "2023-07-06T00:00:00.000Z"
+        }
+      ],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "edgar_search",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "BXSL",
@@ -52,7 +98,22 @@
       "fund_type": "traded",
       "exchange": null,
       "manager": "Blackstone Credit",
-      "real_ticker": "BXSL"
+      "real_ticker": "BXSL",
+      "cik": "0001736035",
+      "sec_name": "Blackstone Secured Lending Fund",
+      "sec_former_names": [
+        {
+          "name": "Blackstone / GSO Secured Lending Fund",
+          "from": "2018-06-25T04:00:00.000Z",
+          "to": "2020-12-03T05:00:00.000Z"
+        }
+      ],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "ticker_master",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "CCAP",
@@ -60,7 +121,16 @@
       "fund_type": "traded",
       "exchange": null,
       "manager": "Crescent Capital",
-      "real_ticker": "CCAP"
+      "real_ticker": "CCAP",
+      "cik": "0001633336",
+      "sec_name": "Crescent Capital BDC, Inc.",
+      "sec_former_names": [],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "ticker_master",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "CGBD",
@@ -68,7 +138,27 @@
       "fund_type": "traded",
       "exchange": null,
       "manager": "TCG BDC",
-      "real_ticker": "CGBD"
+      "real_ticker": "CGBD",
+      "cik": "0001544206",
+      "sec_name": "Carlyle Secured Lending, Inc.",
+      "sec_former_names": [
+        {
+          "name": "TCG BDC, INC.",
+          "from": "2017-03-22T04:00:00.000Z",
+          "to": "2022-04-12T04:00:00.000Z"
+        },
+        {
+          "name": "Carlyle GMS Finance, Inc.",
+          "from": "2013-02-11T05:00:00.000Z",
+          "to": "2017-03-07T05:00:00.000Z"
+        }
+      ],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "ticker_master",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "CION",
@@ -76,7 +166,22 @@
       "fund_type": "traded",
       "exchange": null,
       "manager": "CION Investment",
-      "real_ticker": "CION"
+      "real_ticker": "CION",
+      "cik": "0001534254",
+      "sec_name": "CION Investment Corp",
+      "sec_former_names": [
+        {
+          "name": "C&#298;ON Investment Corp",
+          "from": "2011-12-20T05:00:00.000Z",
+          "to": "2011-12-20T05:00:00.000Z"
+        }
+      ],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "ticker_master",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "CSWC",
@@ -84,7 +189,16 @@
       "fund_type": "traded",
       "exchange": null,
       "manager": "Capital Southwest",
-      "real_ticker": "CSWC"
+      "real_ticker": "CSWC",
+      "cik": "0000017313",
+      "sec_name": "CAPITAL SOUTHWEST CORP",
+      "sec_former_names": [],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "0331",
+      "cik_status": "resolved",
+      "cik_source": "ticker_master",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "EQS",
@@ -92,7 +206,27 @@
       "fund_type": "traded",
       "exchange": null,
       "manager": "EQS",
-      "real_ticker": "EQS"
+      "real_ticker": "EQS",
+      "cik": "0000878932",
+      "sec_name": "EQUUS TOTAL RETURN, INC.",
+      "sec_former_names": [
+        {
+          "name": "EQUUS II INC",
+          "from": "1997-04-10T04:00:00.000Z",
+          "to": "2006-08-18T04:00:00.000Z"
+        },
+        {
+          "name": "EQUUS II INC ET AL",
+          "from": "1995-11-14T05:00:00.000Z",
+          "to": "1997-04-22T04:00:00.000Z"
+        }
+      ],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "ticker_master",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "FDUS",
@@ -100,7 +234,16 @@
       "fund_type": "traded",
       "exchange": null,
       "manager": "Fidus Investment",
-      "real_ticker": "FDUS"
+      "real_ticker": "FDUS",
+      "cik": "0001513363",
+      "sec_name": "FIDUS INVESTMENT Corp",
+      "sec_former_names": [],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "ticker_master",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "FSK",
@@ -108,7 +251,27 @@
       "fund_type": "traded",
       "exchange": null,
       "manager": "FS Investments",
-      "real_ticker": "FSK"
+      "real_ticker": "FSK",
+      "cik": "0001422183",
+      "sec_name": "FS KKR Capital Corp",
+      "sec_former_names": [
+        {
+          "name": "FS Investment CORP",
+          "from": "2008-06-19T04:00:00.000Z",
+          "to": "2018-12-06T05:00:00.000Z"
+        },
+        {
+          "name": "Franklin Square Investment CORP",
+          "from": "2008-02-25T05:00:00.000Z",
+          "to": "2008-04-29T04:00:00.000Z"
+        }
+      ],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "ticker_master",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "GAIN",
@@ -116,7 +279,16 @@
       "fund_type": "traded",
       "exchange": null,
       "manager": "Gladstone Investment",
-      "real_ticker": "GAIN"
+      "real_ticker": "GAIN",
+      "cik": "0001321741",
+      "sec_name": "GLADSTONE INVESTMENT CORPORATION\\DE",
+      "sec_former_names": [],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "0331",
+      "cik_status": "resolved",
+      "cik_source": "ticker_master",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "GBDC",
@@ -124,7 +296,27 @@
       "fund_type": "traded",
       "exchange": null,
       "manager": "Golub Capital",
-      "real_ticker": "GBDC"
+      "real_ticker": "GBDC",
+      "cik": "0001476765",
+      "sec_name": "GOLUB CAPITAL BDC, Inc.",
+      "sec_former_names": [
+        {
+          "name": "GOLUB CAPITAL INVESTMENT Corp",
+          "from": "2017-06-02T04:00:00.000Z",
+          "to": "2017-06-02T04:00:00.000Z"
+        },
+        {
+          "name": "Golub Capital BDC LLC",
+          "from": "2009-11-20T05:00:00.000Z",
+          "to": "2010-04-14T04:00:00.000Z"
+        }
+      ],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "0930",
+      "cik_status": "resolved",
+      "cik_source": "ticker_master",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "GECC",
@@ -132,7 +324,16 @@
       "fund_type": "traded",
       "exchange": null,
       "manager": "Great Elm Capital",
-      "real_ticker": "GECC"
+      "real_ticker": "GECC",
+      "cik": "0001675033",
+      "sec_name": "Great Elm Capital Corp.",
+      "sec_former_names": [],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "ticker_master",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "GLAD",
@@ -140,7 +341,16 @@
       "fund_type": "traded",
       "exchange": null,
       "manager": "Gladstone Capital",
-      "real_ticker": "GLAD"
+      "real_ticker": "GLAD",
+      "cik": "0001143513",
+      "sec_name": "GLADSTONE CAPITAL CORP",
+      "sec_former_names": [],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "0930",
+      "cik_status": "resolved",
+      "cik_source": "ticker_master",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "GSBD",
@@ -148,7 +358,22 @@
       "fund_type": "traded",
       "exchange": null,
       "manager": "Goldman Sachs BDC",
-      "real_ticker": "GSBD"
+      "real_ticker": "GSBD",
+      "cik": "0001572694",
+      "sec_name": "Goldman Sachs BDC, Inc.",
+      "sec_former_names": [
+        {
+          "name": "Goldman Sachs Liberty Harbor Capital, LLC",
+          "from": "2013-03-29T04:00:00.000Z",
+          "to": "2013-03-29T04:00:00.000Z"
+        }
+      ],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "ticker_master",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "HRZN",
@@ -156,7 +381,16 @@
       "fund_type": "traded",
       "exchange": null,
       "manager": "Horizon Technology",
-      "real_ticker": "HRZN"
+      "real_ticker": "HRZN",
+      "cik": "0001487428",
+      "sec_name": "Horizon Technology Finance Corp",
+      "sec_former_names": [],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "ticker_master",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "HTGC",
@@ -164,15 +398,45 @@
       "fund_type": "traded",
       "exchange": null,
       "manager": "Hercules Capital",
-      "real_ticker": "HTGC"
+      "real_ticker": "HTGC",
+      "cik": "0001280784",
+      "sec_name": "Hercules Capital, Inc.",
+      "sec_former_names": [
+        {
+          "name": "HERCULES TECHNOLOGY GROWTH CAPITAL INC",
+          "from": "2004-02-18T05:00:00.000Z",
+          "to": "2016-02-19T05:00:00.000Z"
+        }
+      ],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "ticker_master",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "ICMB",
-      "display_name": "Investcorp BDC Holdings, Inc.",
+      "display_name": "Investcorp Credit Management BDC, Inc.",
       "fund_type": "traded",
       "exchange": null,
       "manager": "Investcorp Credit",
-      "real_ticker": "ICMB"
+      "real_ticker": "ICMB",
+      "cik": "0001578348",
+      "sec_name": "Investcorp Credit Management BDC, Inc.",
+      "sec_former_names": [
+        {
+          "name": "CM Finance Inc",
+          "from": "2013-07-09T04:00:00.000Z",
+          "to": "2019-08-28T04:00:00.000Z"
+        }
+      ],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "user_rename_with_cik",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "KBDC",
@@ -180,7 +444,22 @@
       "fund_type": "traded",
       "exchange": null,
       "manager": "Kayne Anderson BDC",
-      "real_ticker": "KBDC"
+      "real_ticker": "KBDC",
+      "cik": "0001747172",
+      "sec_name": "Kayne Anderson BDC, Inc.",
+      "sec_former_names": [
+        {
+          "name": "Kayne Anderson BDC, LLC",
+          "from": "2018-08-15T04:00:00.000Z",
+          "to": "2021-02-05T05:00:00.000Z"
+        }
+      ],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "ticker_master",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "MAIN",
@@ -188,7 +467,16 @@
       "fund_type": "traded",
       "exchange": null,
       "manager": "Main Street Capital",
-      "real_ticker": "MAIN"
+      "real_ticker": "MAIN",
+      "cik": "0001396440",
+      "sec_name": "Main Street Capital CORP",
+      "sec_former_names": [],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "ticker_master",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "MFIC",
@@ -196,15 +484,55 @@
       "fund_type": "traded",
       "exchange": null,
       "manager": "MidOcean Credit",
-      "real_ticker": "MFIC"
+      "real_ticker": "MFIC",
+      "cik": "0001278752",
+      "sec_name": "MidCap Financial Investment Corp",
+      "sec_former_names": [
+        {
+          "name": "APOLLO INVESTMENT CORP",
+          "from": "2004-03-12T05:00:00.000Z",
+          "to": "2022-08-10T04:00:00.000Z"
+        },
+        {
+          "name": "APOLLO CAPITAL CORP",
+          "from": "2004-02-06T05:00:00.000Z",
+          "to": "2004-02-06T05:00:00.000Z"
+        }
+      ],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "ticker_master",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "MSDL",
       "display_name": "Morgan Stanley Direct Lending Fund",
       "fund_type": "traded",
       "exchange": null,
-      "manager": "Morgan Stanley Investment Management",
-      "real_ticker": "MSDL"
+      "manager": "Morgan Stanley Direct Lending Fund Advisers LLC",
+      "real_ticker": "MSDL",
+      "cik": "0001782524",
+      "sec_name": "Morgan Stanley Direct Lending Fund",
+      "sec_former_names": [
+        {
+          "name": "Morgan Stanley Direct Lending Fund LLC",
+          "from": "2019-09-26T04:00:00.000Z",
+          "to": "2019-11-25T05:00:00.000Z"
+        },
+        {
+          "name": "Morgan Stanley BDC LLC",
+          "from": "2019-08-09T04:00:00.000Z",
+          "to": "2019-08-09T04:00:00.000Z"
+        }
+      ],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "user_upsert",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "MRCC",
@@ -212,16 +540,16 @@
       "fund_type": "traded",
       "exchange": null,
       "manager": "Monroe Capital",
-      "real_ticker": "MRCC"
-    },
-    {
-      "ticker": "MSIF",
-      "display_name": "Morgan Stanley Investment Inc Fund",
-      "fund_type": "traded",
-      "exchange": null,
-      "manager": "MSIF",
-      "real_ticker": "MSIF",
-      "cik": "0001535778"
+      "real_ticker": "MRCC",
+      "cik": "0001512931",
+      "sec_name": "MONROE CAPITAL Corp",
+      "sec_former_names": [],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "edgar_search",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "NMFC",
@@ -229,7 +557,22 @@
       "fund_type": "traded",
       "exchange": null,
       "manager": "New Mountain Finance",
-      "real_ticker": "NMFC"
+      "real_ticker": "NMFC",
+      "cik": "0001496099",
+      "sec_name": "New Mountain Finance Corp",
+      "sec_former_names": [
+        {
+          "name": "New Mountain Guardian Corp",
+          "from": "2010-07-22T04:00:00.000Z",
+          "to": "2011-02-18T05:00:00.000Z"
+        }
+      ],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "ticker_master",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "OBDC",
@@ -237,7 +580,22 @@
       "fund_type": "traded",
       "exchange": null,
       "manager": "Blue Owl Capital",
-      "real_ticker": "OBDC"
+      "real_ticker": "OBDC",
+      "cik": "0001655888",
+      "sec_name": "Blue Owl Capital Corp",
+      "sec_former_names": [
+        {
+          "name": "Owl Rock Capital Corp",
+          "from": "2015-10-19T04:00:00.000Z",
+          "to": "2023-07-06T04:00:00.000Z"
+        }
+      ],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "ticker_master",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "OCSL",
@@ -245,7 +603,27 @@
       "fund_type": "traded",
       "exchange": null,
       "manager": "Oaktree Specialty",
-      "real_ticker": "OCSL"
+      "real_ticker": "OCSL",
+      "cik": "0001414932",
+      "sec_name": "Oaktree Specialty Lending Corp",
+      "sec_former_names": [
+        {
+          "name": "Fifth Street Finance Corp.",
+          "from": "2013-09-26T04:00:00.000Z",
+          "to": "2017-10-16T04:00:00.000Z"
+        },
+        {
+          "name": "Fifth Street Finance Corp",
+          "from": "2007-10-16T04:00:00.000Z",
+          "to": "2013-09-19T04:00:00.000Z"
+        }
+      ],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "0930",
+      "cik_status": "resolved",
+      "cik_source": "ticker_master",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "OFS",
@@ -253,7 +631,22 @@
       "fund_type": "traded",
       "exchange": null,
       "manager": "OFS Capital",
-      "real_ticker": "OFS"
+      "real_ticker": "OFS",
+      "cik": "0001487918",
+      "sec_name": "OFS Capital Corp",
+      "sec_former_names": [
+        {
+          "name": "OFS Capital, LLC",
+          "from": "2010-04-29T04:00:00.000Z",
+          "to": "2012-11-05T05:00:00.000Z"
+        }
+      ],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "ticker_master",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "OXSQ",
@@ -261,7 +654,32 @@
       "fund_type": "traded",
       "exchange": null,
       "manager": "Oxford Square",
-      "real_ticker": "OXSQ"
+      "real_ticker": "OXSQ",
+      "cik": "0001259429",
+      "sec_name": "Oxford Square Capital Corp.",
+      "sec_former_names": [
+        {
+          "name": "Oxford Street Capital Corp.",
+          "from": "2018-03-19T04:00:00.000Z",
+          "to": "2018-03-19T04:00:00.000Z"
+        },
+        {
+          "name": "TICC Capital Corp.",
+          "from": "2005-03-01T05:00:00.000Z",
+          "to": "2018-03-14T04:00:00.000Z"
+        },
+        {
+          "name": "TECHNOLOGY INVESTMENT CAPITAL CORP",
+          "from": "2003-09-23T04:00:00.000Z",
+          "to": "2007-12-03T05:00:00.000Z"
+        }
+      ],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "ticker_master",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "PFLT",
@@ -269,7 +687,22 @@
       "fund_type": "traded",
       "exchange": null,
       "manager": "PennantPark Floating",
-      "real_ticker": "PFLT"
+      "real_ticker": "PFLT",
+      "cik": "0001504619",
+      "sec_name": "PennantPark Floating Rate Capital Ltd.",
+      "sec_former_names": [
+        {
+          "name": "PennantPark Senior Floating Rate Fund Inc.",
+          "from": "2010-11-01T04:00:00.000Z",
+          "to": "2010-12-16T05:00:00.000Z"
+        }
+      ],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "0930",
+      "cik_status": "resolved",
+      "cik_source": "ticker_master",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "PFX",
@@ -277,7 +710,27 @@
       "fund_type": "traded",
       "exchange": null,
       "manager": "Palmer Square",
-      "real_ticker": "PFX"
+      "real_ticker": "PFX",
+      "cik": "0001490349",
+      "sec_name": "PhenixFIN Corp",
+      "sec_former_names": [
+        {
+          "name": "Medley Capital Corp",
+          "from": "2010-06-24T04:00:00.000Z",
+          "to": "2021-01-04T05:00:00.000Z"
+        },
+        {
+          "name": "Medley Capital BDC LLC",
+          "from": "2010-05-03T04:00:00.000Z",
+          "to": "2011-01-06T05:00:00.000Z"
+        }
+      ],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "0930",
+      "cik_status": "resolved",
+      "cik_source": "ticker_master",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "PNNT",
@@ -285,7 +738,22 @@
       "fund_type": "traded",
       "exchange": null,
       "manager": "PennantPark Investment",
-      "real_ticker": "PNNT"
+      "real_ticker": "PNNT",
+      "cik": "0001383414",
+      "sec_name": "PENNANTPARK INVESTMENT CORP",
+      "sec_former_names": [
+        {
+          "name": "Pennant Investment CORP",
+          "from": "2007-01-19T05:00:00.000Z",
+          "to": "2007-03-05T05:00:00.000Z"
+        }
+      ],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "0930",
+      "cik_status": "resolved",
+      "cik_source": "ticker_master",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "PSEC",
@@ -293,7 +761,27 @@
       "fund_type": "traded",
       "exchange": null,
       "manager": "Prospect Capital",
-      "real_ticker": "PSEC"
+      "real_ticker": "PSEC",
+      "cik": "0001287032",
+      "sec_name": "PROSPECT CAPITAL CORP",
+      "sec_former_names": [
+        {
+          "name": "PROSPECT ENERGY CORP",
+          "from": "2004-07-06T04:00:00.000Z",
+          "to": "2007-08-01T04:00:00.000Z"
+        },
+        {
+          "name": "PROSPECT STREET ENERGY CORP",
+          "from": "2004-04-16T04:00:00.000Z",
+          "to": "2004-06-08T04:00:00.000Z"
+        }
+      ],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "0630",
+      "cik_status": "resolved",
+      "cik_source": "ticker_master",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "RAND",
@@ -301,7 +789,16 @@
       "fund_type": "traded",
       "exchange": null,
       "manager": "Rand Capital",
-      "real_ticker": "RAND"
+      "real_ticker": "RAND",
+      "cik": "0000081955",
+      "sec_name": "RAND CAPITAL CORP",
+      "sec_former_names": [],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "ticker_master",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "RWAY",
@@ -309,7 +806,27 @@
       "fund_type": "traded",
       "exchange": null,
       "manager": "Runway Growth Finance",
-      "real_ticker": "RWAY"
+      "real_ticker": "RWAY",
+      "cik": "0001653384",
+      "sec_name": "Runway Growth Finance Corp.",
+      "sec_former_names": [
+        {
+          "name": "Runway Growth Credit Fund Inc.",
+          "from": "2017-06-14T04:00:00.000Z",
+          "to": "2021-08-20T04:00:00.000Z"
+        },
+        {
+          "name": "GSV Growth Credit Fund Inc.",
+          "from": "2015-12-09T05:00:00.000Z",
+          "to": "2017-05-08T04:00:00.000Z"
+        }
+      ],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "ticker_master",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "SAR",
@@ -317,7 +834,27 @@
       "fund_type": "traded",
       "exchange": null,
       "manager": "Saratoga Investment",
-      "real_ticker": "SAR"
+      "real_ticker": "SAR",
+      "cik": "0001377936",
+      "sec_name": "SARATOGA INVESTMENT CORP.",
+      "sec_former_names": [
+        {
+          "name": "GSC INVESTMENT CORP.",
+          "from": "2007-03-12T04:00:00.000Z",
+          "to": "2010-08-03T04:00:00.000Z"
+        },
+        {
+          "name": "GSC Investment LLC",
+          "from": "2006-10-18T04:00:00.000Z",
+          "to": "2007-03-21T04:00:00.000Z"
+        }
+      ],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "0228",
+      "cik_status": "resolved",
+      "cik_source": "ticker_master",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "SCM",
@@ -325,7 +862,16 @@
       "fund_type": "traded",
       "exchange": null,
       "manager": "Stellus Capital",
-      "real_ticker": "SCM"
+      "real_ticker": "SCM",
+      "cik": "0001551901",
+      "sec_name": "Stellus Capital Investment Corp",
+      "sec_former_names": [],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "ticker_master",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "SLRC",
@@ -333,7 +879,22 @@
       "fund_type": "traded",
       "exchange": null,
       "manager": "SLR Investment",
-      "real_ticker": "SLRC"
+      "real_ticker": "SLRC",
+      "cik": "0001418076",
+      "sec_name": "SLR Investment Corp.",
+      "sec_former_names": [
+        {
+          "name": "Solar Capital Ltd.",
+          "from": "2007-12-07T05:00:00.000Z",
+          "to": "2021-02-24T05:00:00.000Z"
+        }
+      ],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "ticker_master",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "SSSS",
@@ -341,7 +902,37 @@
       "fund_type": "traded",
       "exchange": null,
       "manager": "Harvest Small Cap",
-      "real_ticker": "SSSS"
+      "real_ticker": "SSSS",
+      "cik": "0001509470",
+      "sec_name": "SURO CAPITAL CORP.",
+      "sec_former_names": [
+        {
+          "name": "SUTTER ROCK CAPITAL CORP.",
+          "from": "2019-08-01T04:00:00.000Z",
+          "to": "2020-06-16T04:00:00.000Z"
+        },
+        {
+          "name": "GSV Capital Corp.",
+          "from": "2011-05-26T04:00:00.000Z",
+          "to": "2019-07-24T04:00:00.000Z"
+        },
+        {
+          "name": "NeXt Innovation Corp.",
+          "from": "2011-04-14T04:00:00.000Z",
+          "to": "2011-05-10T04:00:00.000Z"
+        },
+        {
+          "name": "NeXt BDC Capital Corp.",
+          "from": "2011-01-06T05:00:00.000Z",
+          "to": "2011-03-30T04:00:00.000Z"
+        }
+      ],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "ticker_master",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "TCPC",
@@ -349,7 +940,27 @@
       "fund_type": "traded",
       "exchange": null,
       "manager": "BlackRock TCP Capital",
-      "real_ticker": "TCPC"
+      "real_ticker": "TCPC",
+      "cik": "0001370755",
+      "sec_name": "BlackRock TCP Capital Corp.",
+      "sec_former_names": [
+        {
+          "name": "TCP Capital Corp.",
+          "from": "2011-05-26T04:00:00.000Z",
+          "to": "2018-06-20T04:00:00.000Z"
+        },
+        {
+          "name": "Special Value Continuation Fund, LLC",
+          "from": "2006-08-01T04:00:00.000Z",
+          "to": "2012-04-02T04:00:00.000Z"
+        }
+      ],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "ticker_master",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "TPVG",
@@ -357,7 +968,16 @@
       "fund_type": "traded",
       "exchange": null,
       "manager": "TriplePoint Venture",
-      "real_ticker": "TPVG"
+      "real_ticker": "TPVG",
+      "cik": "0001580345",
+      "sec_name": "TriplePoint Venture Growth BDC Corp.",
+      "sec_former_names": [],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "ticker_master",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "TRIN",
@@ -365,7 +985,22 @@
       "fund_type": "traded",
       "exchange": null,
       "manager": "Trinity Capital",
-      "real_ticker": "TRIN"
+      "real_ticker": "TRIN",
+      "cik": "0001786108",
+      "sec_name": "Trinity Capital Inc.",
+      "sec_former_names": [
+        {
+          "name": "Trinity Capital Inc.",
+          "from": "2020-01-16T05:00:00.000Z",
+          "to": "2026-05-12T04:00:00.000Z"
+        }
+      ],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "ticker_master",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "TSLX",
@@ -373,7 +1008,22 @@
       "fund_type": "traded",
       "exchange": null,
       "manager": "Sixth Street Specialty",
-      "real_ticker": "TSLX"
+      "real_ticker": "TSLX",
+      "cik": "0001508655",
+      "sec_name": "Sixth Street Specialty Lending, Inc.",
+      "sec_former_names": [
+        {
+          "name": "TPG Specialty Lending, Inc.",
+          "from": "2011-01-14T05:00:00.000Z",
+          "to": "2020-06-05T04:00:00.000Z"
+        }
+      ],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "ticker_master",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "WHF",
@@ -381,7 +1031,22 @@
       "fund_type": "traded",
       "exchange": null,
       "manager": "WhiteHorse Finance",
-      "real_ticker": "WHF"
+      "real_ticker": "WHF",
+      "cik": "0001552198",
+      "sec_name": "WhiteHorse Finance, Inc.",
+      "sec_former_names": [
+        {
+          "name": "WhiteHorse Finance, LLC",
+          "from": "2012-09-07T04:00:00.000Z",
+          "to": "2012-12-04T05:00:00.000Z"
+        }
+      ],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "ticker_master",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "ADS",
@@ -389,11 +1054,19 @@
       "fund_type": "nontraded",
       "exchange": null,
       "manager": "Apollo Global Management",
-      "cik": "0001634452",
+      "cik": "0001837532",
       "real_ticker": null,
       "latest_net_assets_mn": 11836.7,
       "field_coverage_pct": 80.4,
-      "nt_rank": 4
+      "nt_rank": 4,
+      "sec_name": "Apollo Debt Solutions BDC",
+      "sec_former_names": [],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "user_repoint",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "ANT_PCF",
@@ -401,11 +1074,19 @@
       "fund_type": "nontraded",
       "exchange": null,
       "manager": "Antares Capital Credit Advisers LLC",
-      "cik": "0001993402",
+      "cik": "0001976336",
       "real_ticker": null,
       "latest_net_assets_mn": 733.07,
       "field_coverage_pct": 91.4,
-      "nt_rank": 36
+      "nt_rank": 36,
+      "sec_name": "Antares Private Credit Fund",
+      "sec_former_names": [],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "user_repoint",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "APCIF",
@@ -413,11 +1094,15 @@
       "fund_type": "nontraded",
       "exchange": null,
       "manager": "Apollo Global Management",
-      "cik": "0001837532",
+      "cik": null,
       "real_ticker": null,
       "latest_net_assets_mn": 532.95,
       "field_coverage_pct": 82.7,
-      "nt_rank": 46
+      "nt_rank": 46,
+      "cik_status": "feeder_no_separate_filings",
+      "parent_cik": "0001837532",
+      "cik_source": "directory_preserved",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "ASCF",
@@ -429,7 +1114,10 @@
       "real_ticker": null,
       "latest_net_assets_mn": 2017.61,
       "field_coverage_pct": 82.2,
-      "nt_rank": 17
+      "nt_rank": 17,
+      "cik_status": "no_filer_confirmed",
+      "cik_source": "directory_preserved",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "ASCFI",
@@ -441,7 +1129,10 @@
       "real_ticker": null,
       "latest_net_assets_mn": 68.53,
       "field_coverage_pct": 71.8,
-      "nt_rank": 79
+      "nt_rank": 79,
+      "cik_status": "no_filer_confirmed",
+      "cik_source": "directory_preserved",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "ASIF",
@@ -449,11 +1140,19 @@
       "fund_type": "nontraded",
       "exchange": null,
       "manager": "Ares Capital Management LLC",
-      "cik": null,
+      "cik": "0001918712",
       "real_ticker": null,
       "latest_net_assets_mn": 808.36,
       "field_coverage_pct": 84.3,
-      "nt_rank": 34
+      "nt_rank": 34,
+      "sec_name": "ARES STRATEGIC INCOME FUND",
+      "sec_former_names": [],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "edgar_search",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "BAIN_PC",
@@ -465,7 +1164,15 @@
       "real_ticker": null,
       "latest_net_assets_mn": 926.66,
       "field_coverage_pct": 88.9,
-      "nt_rank": 33
+      "nt_rank": 33,
+      "sec_name": "Bain Capital Private Credit",
+      "sec_former_names": [],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "directory_preserved",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "BCRED",
@@ -477,7 +1184,15 @@
       "real_ticker": null,
       "latest_net_assets_mn": 47612.09,
       "field_coverage_pct": 86.5,
-      "nt_rank": 1
+      "nt_rank": 1,
+      "sec_name": "Blackstone Private Credit Fund",
+      "sec_former_names": [],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "directory_preserved",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "BLKR_PCF",
@@ -489,19 +1204,15 @@
       "real_ticker": null,
       "latest_net_assets_mn": 1578.73,
       "field_coverage_pct": 88.9,
-      "nt_rank": 22
-    },
-    {
-      "ticker": "CCSI",
-      "display_name": "Carlyle Credit Solutions, Inc.",
-      "fund_type": "nontraded",
-      "exchange": null,
-      "manager": "Carlyle Global Credit Investment Management LLC",
-      "cik": null,
-      "real_ticker": null,
-      "latest_net_assets_mn": 1765.624,
-      "field_coverage_pct": 87.3,
-      "nt_rank": 19
+      "nt_rank": 22,
+      "sec_name": "BlackRock Private Credit Fund",
+      "sec_former_names": [],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "directory_preserved",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "FID_PCF",
@@ -513,7 +1224,21 @@
       "real_ticker": null,
       "latest_net_assets_mn": 1275.84,
       "field_coverage_pct": 81.5,
-      "nt_rank": 27
+      "nt_rank": 27,
+      "sec_name": "Fidelity Private Credit Fund",
+      "sec_former_names": [
+        {
+          "name": "Fidelity Private Credit Trust",
+          "from": "2022-04-18T04:00:00.000Z",
+          "to": "2022-08-19T04:00:00.000Z"
+        }
+      ],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "directory_preserved",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "GCRED",
@@ -525,19 +1250,21 @@
       "real_ticker": null,
       "latest_net_assets_mn": 8640.506,
       "field_coverage_pct": 100.0,
-      "nt_rank": 6
-    },
-    {
-      "ticker": "GS_PCC",
-      "display_name": "Goldman Sachs Private Credit Corp",
-      "fund_type": "nontraded",
-      "exchange": null,
-      "manager": "Goldman Sachs Asset Management LP",
-      "cik": null,
-      "real_ticker": null,
-      "latest_net_assets_mn": 8640.51,
-      "field_coverage_pct": 78.7,
-      "nt_rank": 5
+      "nt_rank": 6,
+      "sec_name": "Goldman Sachs Private Credit Corp.",
+      "sec_former_names": [
+        {
+          "name": "Goldman Sachs Private Credit Fund LLC",
+          "from": "2022-05-27T04:00:00.000Z",
+          "to": "2023-04-05T04:00:00.000Z"
+        }
+      ],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "directory_preserved",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "HLEND",
@@ -549,7 +1276,15 @@
       "real_ticker": null,
       "latest_net_assets_mn": 12436.83,
       "field_coverage_pct": 84.3,
-      "nt_rank": 3
+      "nt_rank": 3,
+      "sec_name": "HPS Corporate Lending Fund",
+      "sec_former_names": [],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "directory_preserved",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "KKR_FSIT",
@@ -561,11 +1296,19 @@
       "real_ticker": null,
       "latest_net_assets_mn": 1542.161,
       "field_coverage_pct": 68.1,
-      "nt_rank": 23
+      "nt_rank": 23,
+      "sec_name": "KKR FS Income Trust",
+      "sec_former_names": [],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "directory_preserved",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "LPCL",
-      "display_name": "Lord Abbett Private Credit Fund",
+      "display_name": "Lord Abbett Private Credit Fund S",
       "fund_type": "nontraded",
       "exchange": null,
       "manager": "LGAM Investment Adviser LLC",
@@ -573,7 +1316,21 @@
       "real_ticker": null,
       "latest_net_assets_mn": 220.918,
       "field_coverage_pct": 78.8,
-      "nt_rank": 65
+      "nt_rank": 65,
+      "sec_name": "Lord Abbett Private Credit Fund S",
+      "sec_former_names": [
+        {
+          "name": "Lord Abbett Private Credit Fund A, LP",
+          "from": "2024-11-15T05:00:00.000Z",
+          "to": "2025-01-31T05:00:00.000Z"
+        }
+      ],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": null,
+      "cik_status": "resolved",
+      "cik_source": "user_repoint",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "MRCC_NT",
@@ -585,7 +1342,15 @@
       "real_ticker": null,
       "latest_net_assets_mn": 2830.579,
       "field_coverage_pct": 100.0,
-      "nt_rank": 14
+      "nt_rank": 14,
+      "sec_name": "Monroe Capital Income Plus Corp",
+      "sec_former_names": [],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "directory_preserved",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "NCPCIF",
@@ -597,11 +1362,19 @@
       "real_ticker": null,
       "latest_net_assets_mn": 1388.13,
       "field_coverage_pct": 82.5,
-      "nt_rank": 26
+      "nt_rank": 26,
+      "sec_name": "Nuveen Churchill Private Capital Income Fund",
+      "sec_former_names": [],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "directory_preserved",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "OBTIC",
-      "display_name": "Owl Rock BDC Tier I Capital Fund",
+      "display_name": "Blue Owl Technology Income Corp.",
       "fund_type": "nontraded",
       "exchange": null,
       "manager": "Blue Owl Capital",
@@ -609,11 +1382,25 @@
       "real_ticker": null,
       "latest_net_assets_mn": 3580.148,
       "field_coverage_pct": 80.4,
-      "nt_rank": 9
+      "nt_rank": 9,
+      "sec_name": "Blue Owl Technology Income Corp.",
+      "sec_former_names": [
+        {
+          "name": "Owl Rock Technology Income Corp.",
+          "from": "2021-06-25T04:00:00.000Z",
+          "to": "2023-07-06T04:00:00.000Z"
+        }
+      ],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "directory_preserved_realigned",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "OCIC",
-      "display_name": "Owl Rock Core Income Corp.",
+      "display_name": "Blue Owl Credit Income Corp.",
       "fund_type": "nontraded",
       "exchange": null,
       "manager": "Blue Owl Capital",
@@ -621,7 +1408,21 @@
       "real_ticker": null,
       "latest_net_assets_mn": 19760.27,
       "field_coverage_pct": 83.0,
-      "nt_rank": 2
+      "nt_rank": 2,
+      "sec_name": "Blue Owl Credit Income Corp.",
+      "sec_former_names": [
+        {
+          "name": "Owl Rock Core Income Corp.",
+          "from": "2020-05-29T04:00:00.000Z",
+          "to": "2023-07-06T04:00:00.000Z"
+        }
+      ],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "directory_preserved_renamed",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "OSCF",
@@ -629,11 +1430,14 @@
       "fund_type": "nontraded",
       "exchange": null,
       "manager": "Oaktree Fund Advisors LLC",
-      "cik": "0001872371",
+      "cik": null,
       "real_ticker": null,
       "latest_net_assets_mn": 4663.563,
       "field_coverage_pct": 100.0,
-      "nt_rank": 7
+      "nt_rank": 7,
+      "cik_status": "no_filer_confirmed",
+      "cik_source": "directory_preserved",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "TBKCF",
@@ -645,19 +1449,21 @@
       "real_ticker": null,
       "latest_net_assets_mn": 2384.89,
       "field_coverage_pct": 74.0,
-      "nt_rank": 15
-    },
-    {
-      "ticker": "TROW_OHA",
-      "display_name": "T. Rowe Price OHA Select Private Credit Fund",
-      "fund_type": "nontraded",
-      "exchange": null,
-      "manager": "OHA Private Credit Advisors LLC",
-      "cik": null,
-      "real_ticker": null,
-      "latest_net_assets_mn": 1588.25,
-      "field_coverage_pct": 81.2,
-      "nt_rank": 21
+      "nt_rank": 15,
+      "sec_name": "T. Rowe Price OHA Select Private Credit Fund",
+      "sec_former_names": [
+        {
+          "name": "T. Rowe Price OHA Private Credit Fund",
+          "from": "2022-04-12T04:00:00.000Z",
+          "to": "2023-03-16T04:00:00.000Z"
+        }
+      ],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "directory_preserved",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "LPART",
@@ -669,7 +1475,15 @@
       "latest_net_assets_mn": 241.306,
       "field_coverage_pct": 100.0,
       "nt_rank": 62,
-      "manager": "5C Investment Partners"
+      "manager": "5C Investment Partners",
+      "sec_name": "5C Lending Partners Corp.",
+      "sec_former_names": [],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "directory_preserved",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "APLEN",
@@ -681,7 +1495,15 @@
       "latest_net_assets_mn": null,
       "field_coverage_pct": 100.0,
       "nt_rank": 85,
-      "manager": "AllianceBernstein"
+      "manager": "AllianceBernstein",
+      "sec_name": "AB Private Lending Fund",
+      "sec_former_names": [],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "directory_preserved",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "APCI",
@@ -693,11 +1515,25 @@
       "latest_net_assets_mn": 532.953,
       "field_coverage_pct": 100.0,
       "nt_rank": 45,
-      "manager": "AGL Credit Management"
+      "manager": "AGL Credit Management",
+      "sec_name": "AGL Private Credit Income Fund",
+      "sec_former_names": [
+        {
+          "name": "AGL Private Credit Income Fund LP",
+          "from": "2024-02-16T05:00:00.000Z",
+          "to": "2024-08-08T04:00:00.000Z"
+        }
+      ],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "directory_preserved",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "ACSL",
-      "display_name": "AMG Comvest Senior Lending Fund",
+      "display_name": "John Hancock Comvest Private Income Fund",
       "fund_type": "nontraded",
       "exchange": null,
       "real_ticker": null,
@@ -705,19 +1541,46 @@
       "latest_net_assets_mn": 470.638,
       "field_coverage_pct": 100.0,
       "nt_rank": 48,
-      "manager": "John Hancock Comvest"
+      "manager": "John Hancock Comvest",
+      "sec_name": "John Hancock Comvest Private Income Fund",
+      "sec_former_names": [
+        {
+          "name": "AMG Comvest Senior Lending Fund",
+          "from": "2023-10-24T04:00:00.000Z",
+          "to": "2025-10-30T04:00:00.000Z"
+        },
+        {
+          "name": "Comvest Credit Partners BDC Fund, L.P.",
+          "from": "2023-08-16T04:00:00.000Z",
+          "to": "2023-10-23T04:00:00.000Z"
+        }
+      ],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "directory_preserved_renamed",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "APCRE",
-      "display_name": "Antares Private Credit Fund",
+      "display_name": "Antares Strategic Credit Fund",
       "fund_type": "nontraded",
       "exchange": null,
       "real_ticker": null,
-      "cik": "0001976336",
+      "cik": "0001993402",
       "latest_net_assets_mn": 733.068,
       "field_coverage_pct": 100.0,
       "nt_rank": 37,
-      "manager": "Antares Capital"
+      "manager": "Antares Capital",
+      "sec_name": "Antares Strategic Credit Fund",
+      "sec_former_names": [],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "user_repoint",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "ASCI",
@@ -729,7 +1592,15 @@
       "latest_net_assets_mn": 68.532,
       "field_coverage_pct": 100.0,
       "nt_rank": 78,
-      "manager": "Antares"
+      "manager": "Antares",
+      "sec_name": "Antares Strategic Credit Fund II LLC",
+      "sec_former_names": [],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "directory_preserved",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "AOII",
@@ -741,7 +1612,15 @@
       "latest_net_assets_mn": 672.944,
       "field_coverage_pct": 100.0,
       "nt_rank": 41,
-      "manager": "Apollo"
+      "manager": "Apollo",
+      "sec_name": "Apollo Origination II (UL) Capital Trust",
+      "sec_former_names": [],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "directory_preserved",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "ACBDC",
@@ -753,7 +1632,15 @@
       "latest_net_assets_mn": 418.555,
       "field_coverage_pct": 100.0,
       "nt_rank": 50,
-      "manager": "Audax"
+      "manager": "Audax",
+      "sec_name": "Audax Credit BDC Inc.",
+      "sec_former_names": [],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "directory_preserved",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "BPCC",
@@ -765,7 +1652,21 @@
       "latest_net_assets_mn": 2841.371,
       "field_coverage_pct": 100.0,
       "nt_rank": 13,
-      "manager": "Barings"
+      "manager": "Barings",
+      "sec_name": "Barings Private Credit Corp",
+      "sec_former_names": [
+        {
+          "name": "Barings Private Credit LLC",
+          "from": "2021-05-10T04:00:00.000Z",
+          "to": "2021-05-12T04:00:00.000Z"
+        }
+      ],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "directory_preserved",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "BPLEN",
@@ -777,7 +1678,15 @@
       "latest_net_assets_mn": 103.286,
       "field_coverage_pct": 100.0,
       "nt_rank": 73,
-      "manager": "BC Partners"
+      "manager": "BC Partners",
+      "sec_name": "BC Partners Lending Corp",
+      "sec_former_names": [],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": null,
+      "cik_status": "resolved",
+      "cik_source": "directory_preserved",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "BVEB",
@@ -789,7 +1698,26 @@
       "latest_net_assets_mn": null,
       "field_coverage_pct": 100.0,
       "nt_rank": 86,
-      "manager": "BIP Ventures"
+      "manager": "BIP Ventures",
+      "sec_name": "BIP Ventures Evergreen BDC",
+      "sec_former_names": [
+        {
+          "name": "BIP Evergreen Venture Fund",
+          "from": "2023-06-20T04:00:00.000Z",
+          "to": "2023-08-11T04:00:00.000Z"
+        },
+        {
+          "name": "Panoramic Evergreen Venture Fund",
+          "from": "2022-11-08T05:00:00.000Z",
+          "to": "2023-05-15T04:00:00.000Z"
+        }
+      ],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "directory_preserved",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "BOCA",
@@ -801,7 +1729,21 @@
       "latest_net_assets_mn": 950.39,
       "field_coverage_pct": 100.0,
       "nt_rank": 31,
-      "manager": "Blue Owl"
+      "manager": "Blue Owl",
+      "sec_name": "Blue Owl Capital Corp II",
+      "sec_former_names": [
+        {
+          "name": "Owl Rock Capital Corp II",
+          "from": "2015-10-19T04:00:00.000Z",
+          "to": "2023-07-06T04:00:00.000Z"
+        }
+      ],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "directory_preserved",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "BOTFI",
@@ -813,7 +1755,21 @@
       "latest_net_assets_mn": 2969.07,
       "field_coverage_pct": 100.0,
       "nt_rank": 12,
-      "manager": "Blue Owl"
+      "manager": "Blue Owl",
+      "sec_name": "Blue Owl Technology Finance Corp. II",
+      "sec_former_names": [
+        {
+          "name": "Owl Rock Technology Finance Corp. II",
+          "from": "2021-12-01T00:00:00.000Z",
+          "to": "2023-07-06T00:00:00.000Z"
+        }
+      ],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "directory_preserved",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "CCSO",
@@ -825,7 +1781,21 @@
       "latest_net_assets_mn": 1765.624,
       "field_coverage_pct": 100.0,
       "nt_rank": 20,
-      "manager": "Carlyle"
+      "manager": "Carlyle",
+      "sec_name": "Carlyle Credit Solutions, Inc.",
+      "sec_former_names": [
+        {
+          "name": "TCG BDC II, Inc.",
+          "from": "2017-07-10T04:00:00.000Z",
+          "to": "2022-03-29T04:00:00.000Z"
+        }
+      ],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "directory_preserved",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "CSLI",
@@ -837,19 +1807,15 @@
       "latest_net_assets_mn": 245.463,
       "field_coverage_pct": 100.0,
       "nt_rank": 61,
-      "manager": "Carlyle"
-    },
-    {
-      "ticker": "CSRC",
-      "display_name": "CNL Strategic Residential Credit, Inc.",
-      "fund_type": "nontraded",
-      "exchange": null,
-      "real_ticker": null,
-      "cik": "0002066337",
-      "latest_net_assets_mn": 1418.357,
-      "field_coverage_pct": 100.0,
-      "nt_rank": 25,
-      "manager": "CNL"
+      "manager": "Carlyle",
+      "sec_name": "Carlyle Secured Lending III",
+      "sec_former_names": [],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "directory_preserved",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "CCPBI",
@@ -861,7 +1827,15 @@
       "latest_net_assets_mn": 558.355,
       "field_coverage_pct": 100.0,
       "nt_rank": 43,
-      "manager": "Commonwealth"
+      "manager": "Commonwealth",
+      "sec_name": "Commonwealth Credit Partners BDC I, Inc.",
+      "sec_former_names": [],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "directory_preserved",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "CPCI",
@@ -873,7 +1847,15 @@
       "latest_net_assets_mn": 465.069,
       "field_coverage_pct": 100.0,
       "nt_rank": 49,
-      "manager": "Crescent Capital"
+      "manager": "Crescent Capital",
+      "sec_name": "Crescent Private Credit Income Corp",
+      "sec_former_names": [],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "directory_preserved",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "CLSOL",
@@ -885,7 +1867,15 @@
       "latest_net_assets_mn": 340.612,
       "field_coverage_pct": 100.0,
       "nt_rank": 56,
-      "manager": "Crestline"
+      "manager": "Crestline",
+      "sec_name": "Crestline Lending Solutions, LLC",
+      "sec_former_names": [],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "directory_preserved",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "EPTSS",
@@ -897,7 +1887,21 @@
       "latest_net_assets_mn": 61.599,
       "field_coverage_pct": 100.0,
       "nt_rank": 80,
-      "manager": "Eagle Point Credit"
+      "manager": "Eagle Point Credit",
+      "sec_name": "Eagle Point Trinity Senior Secured Lending Co",
+      "sec_former_names": [
+        {
+          "name": "EPT 16 LLC",
+          "from": "2024-06-28T04:00:00.000Z",
+          "to": "2025-08-28T04:00:00.000Z"
+        }
+      ],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "directory_preserved",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "FPCRE",
@@ -909,7 +1913,26 @@
       "latest_net_assets_mn": 782.714,
       "field_coverage_pct": 100.0,
       "nt_rank": 35,
-      "manager": "Fidelity"
+      "manager": "Fidelity",
+      "sec_name": "Fidelity Private Credit Co LLC",
+      "sec_former_names": [
+        {
+          "name": "Fidelity Private Credit Central Fund LLC",
+          "from": "2023-04-10T04:00:00.000Z",
+          "to": "2024-03-11T04:00:00.000Z"
+        },
+        {
+          "name": "Fidelity Direct Lending Fund, LP",
+          "from": "2021-12-17T05:00:00.000Z",
+          "to": "2022-12-28T05:00:00.000Z"
+        }
+      ],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "directory_preserved",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "FEPC",
@@ -921,7 +1944,15 @@
       "latest_net_assets_mn": 301.88,
       "field_coverage_pct": 100.0,
       "nt_rank": 59,
-      "manager": "First Eagle"
+      "manager": "First Eagle",
+      "sec_name": "First Eagle Private Credit Fund",
+      "sec_former_names": [],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "directory_preserved",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "FSLEN",
@@ -933,7 +1964,21 @@
       "latest_net_assets_mn": 1505.035,
       "field_coverage_pct": 100.0,
       "nt_rank": 24,
-      "manager": "FS Investments"
+      "manager": "FS Investments",
+      "sec_name": "FS Specialty Lending Fund",
+      "sec_former_names": [
+        {
+          "name": "FS Energy & Power Fund",
+          "from": "2010-09-30T00:00:00.000Z",
+          "to": "2023-09-21T00:00:00.000Z"
+        }
+      ],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "directory_preserved",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "GCB",
@@ -945,7 +1990,21 @@
       "latest_net_assets_mn": 1169.389,
       "field_coverage_pct": 100.0,
       "nt_rank": 29,
-      "manager": "Golub Capital"
+      "manager": "Golub Capital",
+      "sec_name": "Golub Capital BDC 4, Inc.",
+      "sec_former_names": [
+        {
+          "name": "Golub Capital BDC 4 LLC",
+          "from": "2022-03-31T04:00:00.000Z",
+          "to": "2022-03-31T04:00:00.000Z"
+        }
+      ],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "0930",
+      "cik_status": "resolved",
+      "cik_source": "directory_preserved",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "HPCI",
@@ -957,7 +2016,15 @@
       "latest_net_assets_mn": 11.519,
       "field_coverage_pct": 100.0,
       "nt_rank": 84,
-      "manager": "Churchill"
+      "manager": "Churchill",
+      "sec_name": "Hancock Park Corporate Income, Inc.",
+      "sec_former_names": [],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "directory_preserved",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "HCCS",
@@ -969,7 +2036,15 @@
       "latest_net_assets_mn": 1248.014,
       "field_coverage_pct": 100.0,
       "nt_rank": 28,
-      "manager": "HPS Investment Partners"
+      "manager": "HPS Investment Partners",
+      "sec_name": "HPS Corporate Capital Solutions Fund",
+      "sec_former_names": [],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "directory_preserved",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "JCPB",
@@ -981,7 +2056,15 @@
       "latest_net_assets_mn": null,
       "field_coverage_pct": 100.0,
       "nt_rank": 87,
-      "manager": "Jefferies Credit Partners"
+      "manager": "Jefferies Credit Partners",
+      "sec_name": "Jefferies Credit Partners BDC Inc.",
+      "sec_former_names": [],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "directory_preserved",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "KAYN",
@@ -993,7 +2076,15 @@
       "latest_net_assets_mn": 350.103,
       "field_coverage_pct": 100.0,
       "nt_rank": 55,
-      "manager": "Kayne Anderson"
+      "manager": "Kayne Anderson",
+      "sec_name": "Kayne DL 2021, Inc.",
+      "sec_former_names": [],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "directory_preserved",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "KLCAP",
@@ -1005,7 +2096,21 @@
       "latest_net_assets_mn": 706.768,
       "field_coverage_pct": 100.0,
       "nt_rank": 40,
-      "manager": "Kennedy Lewis"
+      "manager": "Kennedy Lewis",
+      "sec_name": "Kennedy Lewis Capital Co",
+      "sec_former_names": [
+        {
+          "name": "Tate Capital Co",
+          "from": "2022-02-16T05:00:00.000Z",
+          "to": "2022-11-17T05:00:00.000Z"
+        }
+      ],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "directory_preserved",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "KEUDL",
@@ -1017,7 +2122,21 @@
       "latest_net_assets_mn": 708.152,
       "field_coverage_pct": 100.0,
       "nt_rank": 39,
-      "manager": "KKR"
+      "manager": "KKR",
+      "sec_name": "KKR Enhanced US Direct Lending Fund-L Inc.",
+      "sec_former_names": [
+        {
+          "name": "KKR Enhanced US Direct Lending Fund-L",
+          "from": "2024-02-22T05:00:00.000Z",
+          "to": "2024-04-19T04:00:00.000Z"
+        }
+      ],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "directory_preserved",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "LSUSA",
@@ -1029,7 +2148,26 @@
       "latest_net_assets_mn": 411.329,
       "field_coverage_pct": 100.0,
       "nt_rank": 51,
-      "manager": "Lafayette Square"
+      "manager": "Lafayette Square",
+      "sec_name": "Lafayette Square USA, Inc.",
+      "sec_former_names": [
+        {
+          "name": "Lafayette Square Empire BDC, Inc.",
+          "from": "2021-11-05T04:00:00.000Z",
+          "to": "2022-05-11T04:00:00.000Z"
+        },
+        {
+          "name": "Lafayette Square Empire BDC, LLC",
+          "from": "2021-03-11T05:00:00.000Z",
+          "to": "2021-09-16T04:00:00.000Z"
+        }
+      ],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "directory_preserved",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "LECRE",
@@ -1041,7 +2179,15 @@
       "latest_net_assets_mn": 119.127,
       "field_coverage_pct": 100.0,
       "nt_rank": 71,
-      "manager": "LAGO"
+      "manager": "LAGO",
+      "sec_name": "LAGO Evergreen Credit",
+      "sec_former_names": [],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "directory_preserved",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "LPCRE",
@@ -1053,7 +2199,15 @@
       "latest_net_assets_mn": 220.918,
       "field_coverage_pct": 100.0,
       "nt_rank": 66,
-      "manager": "Morgan Stanley"
+      "manager": "Morgan Stanley",
+      "sec_name": "LGAM Private Credit LLC",
+      "sec_former_names": [],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "directory_preserved",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "LRFIN",
@@ -1065,7 +2219,21 @@
       "latest_net_assets_mn": 78.775,
       "field_coverage_pct": 100.0,
       "nt_rank": 76,
-      "manager": "Logan Ridge Finance"
+      "manager": "Logan Ridge Finance",
+      "sec_name": "Logan Ridge Finance Corp.",
+      "sec_former_names": [
+        {
+          "name": "Capitala Finance Corp.",
+          "from": "2013-04-10T00:00:00.000Z",
+          "to": "2021-07-01T00:00:00.000Z"
+        }
+      ],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "directory_preserved",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "LAPC",
@@ -1077,7 +2245,21 @@
       "latest_net_assets_mn": null,
       "field_coverage_pct": 100.0,
       "nt_rank": 88,
-      "manager": "Lord Abbett"
+      "manager": "Lord Abbett",
+      "sec_name": "Lord Abbett Private Credit Fund",
+      "sec_former_names": [
+        {
+          "name": "Lord Abbett Private Credit Fund 1, LP",
+          "from": "2024-02-28T05:00:00.000Z",
+          "to": "2024-08-05T04:00:00.000Z"
+        }
+      ],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "directory_preserved",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "MPCRE",
@@ -1089,11 +2271,19 @@
       "latest_net_assets_mn": null,
       "field_coverage_pct": 100.0,
       "nt_rank": 89,
-      "manager": "Manulife"
+      "manager": "Manulife",
+      "sec_name": "Manulife Private Credit Fund",
+      "sec_former_names": [],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "directory_preserved",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "MMAIP",
-      "display_name": "Middle Market Apollo Institutional Private Lending",
+      "display_name": "MidCap Apollo Institutional Private Lending",
       "fund_type": "nontraded",
       "exchange": null,
       "real_ticker": null,
@@ -1101,7 +2291,21 @@
       "latest_net_assets_mn": 396.754,
       "field_coverage_pct": 100.0,
       "nt_rank": 52,
-      "manager": "Apollo"
+      "manager": "Apollo",
+      "sec_name": "MidCap Apollo Institutional Private Lending",
+      "sec_former_names": [
+        {
+          "name": "Middle Market Apollo Institutional Private Lending",
+          "from": "2024-01-05T05:00:00.000Z",
+          "to": "2025-03-17T04:00:00.000Z"
+        }
+      ],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "directory_preserved_renamed",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "MINVE",
@@ -1113,7 +2317,26 @@
       "latest_net_assets_mn": 3278.352,
       "field_coverage_pct": 100.0,
       "nt_rank": 11,
-      "manager": "MSD Partners"
+      "manager": "MSD Partners",
+      "sec_name": "MSD Investment Corp.",
+      "sec_former_names": [
+        {
+          "name": "MSD Investment, LLC",
+          "from": "2021-11-18T05:00:00.000Z",
+          "to": "2021-12-29T05:00:00.000Z"
+        },
+        {
+          "name": "MSD Investment Corp., LLC",
+          "from": "2021-04-01T04:00:00.000Z",
+          "to": "2021-04-01T04:00:00.000Z"
+        }
+      ],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "directory_preserved",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "MCLI",
@@ -1125,7 +2348,21 @@
       "latest_net_assets_mn": 96.347,
       "field_coverage_pct": 100.0,
       "nt_rank": 74,
-      "manager": "Muzinich"
+      "manager": "Muzinich",
+      "sec_name": "Muzinich Corporate Lending Income Fund, Inc.",
+      "sec_former_names": [
+        {
+          "name": "Muzinich Direct Lending Income Fund, Inc.",
+          "from": "2023-07-17T04:00:00.000Z",
+          "to": "2023-07-17T04:00:00.000Z"
+        }
+      ],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "directory_preserved",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "NCAPI",
@@ -1137,7 +2374,21 @@
       "latest_net_assets_mn": 36.738,
       "field_coverage_pct": 100.0,
       "nt_rank": 82,
-      "manager": "NexPoint"
+      "manager": "NexPoint",
+      "sec_name": "NexPoint Capital, Inc.",
+      "sec_former_names": [
+        {
+          "name": "NexPoint Capital, LLC",
+          "from": "2013-10-03T04:00:00.000Z",
+          "to": "2014-05-20T04:00:00.000Z"
+        }
+      ],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "directory_preserved",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "NSI",
@@ -1149,7 +2400,21 @@
       "latest_net_assets_mn": 979.831,
       "field_coverage_pct": 100.0,
       "nt_rank": 30,
-      "manager": "New Mountain Finance"
+      "manager": "New Mountain Finance",
+      "sec_name": "NMF SLF I, Inc.",
+      "sec_former_names": [
+        {
+          "name": "NMF Senior Loan Fund I, Inc.",
+          "from": "2019-05-09T04:00:00.000Z",
+          "to": "2020-01-15T05:00:00.000Z"
+        }
+      ],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "directory_preserved",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "NHPIF",
@@ -1161,7 +2426,21 @@
       "latest_net_assets_mn": 3379.828,
       "field_coverage_pct": 100.0,
       "nt_rank": 10,
-      "manager": "Morgan Stanley"
+      "manager": "Morgan Stanley",
+      "sec_name": "North Haven Private Income Fund LLC",
+      "sec_former_names": [
+        {
+          "name": "Morgan Stanley Private Income Fund LLC",
+          "from": "2021-03-23T04:00:00.000Z",
+          "to": "2021-07-13T04:00:00.000Z"
+        }
+      ],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "directory_preserved",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "NCBV",
@@ -1173,7 +2452,15 @@
       "latest_net_assets_mn": 337.302,
       "field_coverage_pct": 100.0,
       "nt_rank": 57,
-      "manager": "Nuveen Churchill"
+      "manager": "Nuveen Churchill",
+      "sec_name": "Nuveen Churchill BDC V",
+      "sec_former_names": [],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "directory_preserved",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "ODLB",
@@ -1185,7 +2472,26 @@
       "latest_net_assets_mn": 194.102,
       "field_coverage_pct": 100.0,
       "nt_rank": 68,
-      "manager": "Onex"
+      "manager": "Onex",
+      "sec_name": "Onex Direct Lending BDC Fund",
+      "sec_former_names": [
+        {
+          "name": "Onex Falcon Direct Lending BDC Fund",
+          "from": "2021-08-30T04:00:00.000Z",
+          "to": "2024-02-13T05:00:00.000Z"
+        },
+        {
+          "name": "Onex Falcon BDC Fund",
+          "from": "2021-06-02T04:00:00.000Z",
+          "to": "2021-06-02T04:00:00.000Z"
+        }
+      ],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "directory_preserved",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "OADVA",
@@ -1197,7 +2503,15 @@
       "latest_net_assets_mn": 732.29,
       "field_coverage_pct": 100.0,
       "nt_rank": 38,
-      "manager": "Centerbridge"
+      "manager": "Centerbridge",
+      "sec_name": "Overland Advantage",
+      "sec_former_names": [],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "directory_preserved",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "PGLEN",
@@ -1209,7 +2523,21 @@
       "latest_net_assets_mn": 536.029,
       "field_coverage_pct": 100.0,
       "nt_rank": 44,
-      "manager": "Partners Group"
+      "manager": "Partners Group",
+      "sec_name": "Partners Group Lending Fund, LLC",
+      "sec_former_names": [
+        {
+          "name": "Partners Group Lending Fund, Inc.",
+          "from": "2022-07-28T04:00:00.000Z",
+          "to": "2023-01-10T05:00:00.000Z"
+        }
+      ],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": null,
+      "cik_status": "resolved",
+      "cik_source": "directory_preserved",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "PPINC",
@@ -1221,11 +2549,19 @@
       "latest_net_assets_mn": 73.562,
       "field_coverage_pct": 100.0,
       "nt_rank": 77,
-      "manager": "PennantPark"
+      "manager": "PennantPark",
+      "sec_name": "PennantPark Private Income Fund",
+      "sec_former_names": [],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "0930",
+      "cik_status": "resolved",
+      "cik_source": "directory_preserved",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "PSMML",
-      "display_name": "Phillip Street Middle Market Lending Fund LLC",
+      "display_name": "Phillip Street BDC LLC",
       "fund_type": "nontraded",
       "exchange": null,
       "real_ticker": null,
@@ -1233,7 +2569,21 @@
       "latest_net_assets_mn": 476.985,
       "field_coverage_pct": 100.0,
       "nt_rank": 47,
-      "manager": "Phillip Street"
+      "manager": "Phillip Street",
+      "sec_name": "Phillip Street BDC LLC",
+      "sec_former_names": [
+        {
+          "name": "Phillip Street Middle Market Lending Fund LLC",
+          "from": "2022-10-21T04:00:00.000Z",
+          "to": "2026-03-31T04:00:00.000Z"
+        }
+      ],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "directory_preserved_renamed",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "PCSB",
@@ -1245,7 +2595,15 @@
       "latest_net_assets_mn": 173.342,
       "field_coverage_pct": 100.0,
       "nt_rank": 70,
-      "manager": "PIMCO"
+      "manager": "PIMCO",
+      "sec_name": "PIMCO Capital Solutions BDC Corp.",
+      "sec_former_names": [],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "directory_preserved",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "PFRAI",
@@ -1257,7 +2615,36 @@
       "latest_net_assets_mn": 34.712,
       "field_coverage_pct": 100.0,
       "nt_rank": 83,
-      "manager": "Prospect Capital"
+      "manager": "Prospect Capital",
+      "sec_name": "Prospect Floating Rate & Alternative Income Fund, Inc.",
+      "sec_former_names": [
+        {
+          "name": "Prospect Sustainable Income Fund, Inc.",
+          "from": "2022-01-21T05:00:00.000Z",
+          "to": "2022-09-14T04:00:00.000Z"
+        },
+        {
+          "name": "Prospect Flexible Income Fund, Inc.",
+          "from": "2020-08-06T04:00:00.000Z",
+          "to": "2022-01-11T05:00:00.000Z"
+        },
+        {
+          "name": "TP Flexible Income Fund, Inc.",
+          "from": "2019-04-01T04:00:00.000Z",
+          "to": "2020-07-22T04:00:00.000Z"
+        },
+        {
+          "name": "Triton Pacific Investment Corporation, Inc.",
+          "from": "2011-06-13T04:00:00.000Z",
+          "to": "2019-03-29T04:00:00.000Z"
+        }
+      ],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "0630",
+      "cik_status": "resolved",
+      "cik_source": "directory_preserved",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "RCAPI",
@@ -1269,7 +2656,15 @@
       "latest_net_assets_mn": 177.057,
       "field_coverage_pct": 100.0,
       "nt_rank": 69,
-      "manager": "Remora Capital"
+      "manager": "Remora Capital",
+      "sec_name": "Remora Capital Corp",
+      "sec_former_names": [],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "directory_preserved",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "SPCIB",
@@ -1281,7 +2676,15 @@
       "latest_net_assets_mn": null,
       "field_coverage_pct": 100.0,
       "nt_rank": 90,
-      "manager": "SCP"
+      "manager": "SCP",
+      "sec_name": "SCP Private Credit Income BDC LLC",
+      "sec_former_names": [],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "directory_preserved",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "SCINV",
@@ -1293,7 +2696,15 @@
       "latest_net_assets_mn": null,
       "field_coverage_pct": 100.0,
       "nt_rank": 91,
-      "manager": "Senior Credit Investments"
+      "manager": "Senior Credit Investments",
+      "sec_name": "Senior Credit Investments, LLC",
+      "sec_former_names": [],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "directory_preserved",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "SCHOL",
@@ -1305,7 +2716,21 @@
       "latest_net_assets_mn": 319.403,
       "field_coverage_pct": 100.0,
       "nt_rank": 58,
-      "manager": "Silver Capital"
+      "manager": "Silver Capital",
+      "sec_name": "Silver Capital Holdings LLC",
+      "sec_former_names": [
+        {
+          "name": "Goldman Sachs Private Middle Market Credit LLC",
+          "from": "2016-05-19T04:00:00.000Z",
+          "to": "2024-12-18T05:00:00.000Z"
+        }
+      ],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "directory_preserved",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "SPSL",
@@ -1317,7 +2742,21 @@
       "latest_net_assets_mn": 593.835,
       "field_coverage_pct": 100.0,
       "nt_rank": 42,
-      "manager": "Silver Point Capital"
+      "manager": "Silver Point Capital",
+      "sec_name": "Silver Point Specialty Lending Fund",
+      "sec_former_names": [
+        {
+          "name": "Silver Point Specialty Credit Fund, L.P.",
+          "from": "2015-07-14T04:00:00.000Z",
+          "to": "2022-01-20T05:00:00.000Z"
+        }
+      ],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "directory_preserved",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "SSLP",
@@ -1329,7 +2768,15 @@
       "latest_net_assets_mn": 4170.488,
       "field_coverage_pct": 100.0,
       "nt_rank": 8,
-      "manager": "Sixth Street"
+      "manager": "Sixth Street",
+      "sec_name": "Sixth Street Lending Partners",
+      "sec_former_names": [],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "directory_preserved",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "SHBDC",
@@ -1341,7 +2788,15 @@
       "latest_net_assets_mn": null,
       "field_coverage_pct": 100.0,
       "nt_rank": 92,
-      "manager": "SLR Capital Partners"
+      "manager": "SLR Capital Partners",
+      "sec_name": "SLR HC BDC LLC",
+      "sec_former_names": [],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "directory_preserved",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "SPCBI",
@@ -1353,7 +2808,15 @@
       "latest_net_assets_mn": null,
       "field_coverage_pct": 100.0,
       "nt_rank": 93,
-      "manager": "SLR Capital Partners"
+      "manager": "SLR Capital Partners",
+      "sec_name": "SLR Private Credit BDC II LLC",
+      "sec_former_names": [],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "directory_preserved",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "SPDLB",
@@ -1365,7 +2828,15 @@
       "latest_net_assets_mn": 87.013,
       "field_coverage_pct": 100.0,
       "nt_rank": 75,
-      "manager": "Sound Point"
+      "manager": "Sound Point",
+      "sec_name": "Sound Point Direct Lending BDC",
+      "sec_former_names": [],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "directory_preserved",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "SMLM",
@@ -1377,7 +2848,21 @@
       "latest_net_assets_mn": 237.231,
       "field_coverage_pct": 100.0,
       "nt_rank": 63,
-      "manager": "Star Mountain Capital"
+      "manager": "Star Mountain Capital",
+      "sec_name": "Star Mountain Lower Middle-Market Capital Corp",
+      "sec_former_names": [
+        {
+          "name": "Star Mountain Credit Opportunities Fund, LP",
+          "from": "2019-09-09T00:00:00.000Z",
+          "to": "2021-09-07T00:00:00.000Z"
+        }
+      ],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "directory_preserved",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "SCCAP",
@@ -1389,7 +2874,21 @@
       "latest_net_assets_mn": 53.448,
       "field_coverage_pct": 100.0,
       "nt_rank": 81,
-      "manager": "Steele Creek Capital"
+      "manager": "Steele Creek Capital",
+      "sec_name": "Steele Creek Capital Corp",
+      "sec_former_names": [
+        {
+          "name": "MSC Capital LLC",
+          "from": "2020-07-31T04:00:00.000Z",
+          "to": "2020-10-07T04:00:00.000Z"
+        }
+      ],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "directory_preserved",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "SPCRE",
@@ -1401,7 +2900,15 @@
       "latest_net_assets_mn": 1864.467,
       "field_coverage_pct": 100.0,
       "nt_rank": 18,
-      "manager": "StepStone"
+      "manager": "StepStone",
+      "sec_name": "Stepstone Private Credit Fund LLC",
+      "sec_former_names": [],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "directory_preserved",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "SPCI",
@@ -1413,7 +2920,15 @@
       "latest_net_assets_mn": 280.199,
       "field_coverage_pct": 100.0,
       "nt_rank": 60,
-      "manager": "Stone Point Credit"
+      "manager": "Stone Point Credit",
+      "sec_name": "Stone Point Credit Income Fund",
+      "sec_former_names": [],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "directory_preserved",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "TDLEN",
@@ -1425,7 +2940,15 @@
       "latest_net_assets_mn": 232.983,
       "field_coverage_pct": 100.0,
       "nt_rank": 64,
-      "manager": "TCW"
+      "manager": "TCW",
+      "sec_name": "TCW Direct Lending LLC",
+      "sec_former_names": [],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "directory_preserved",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "TSCSL",
@@ -1437,7 +2960,21 @@
       "latest_net_assets_mn": 118.724,
       "field_coverage_pct": 100.0,
       "nt_rank": 72,
-      "manager": "TCW"
+      "manager": "TCW",
+      "sec_name": "TCW Steel City Senior Lending BDC",
+      "sec_former_names": [
+        {
+          "name": "TCW Steel City Perpetual Levered Fund LP",
+          "from": "2024-11-21T05:00:00.000Z",
+          "to": "2025-10-24T04:00:00.000Z"
+        }
+      ],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "directory_preserved",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "TPPCP",
@@ -1449,7 +2986,15 @@
       "latest_net_assets_mn": null,
       "field_coverage_pct": 100.0,
       "nt_rank": 94,
-      "manager": "Third Point"
+      "manager": "Third Point",
+      "sec_name": "Third Point Private Capital Partners",
+      "sec_former_names": [],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "directory_preserved",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "TBCI",
@@ -1461,7 +3006,21 @@
       "latest_net_assets_mn": 2384.89,
       "field_coverage_pct": 100.0,
       "nt_rank": 16,
-      "manager": "TPG Twin Brook"
+      "manager": "TPG Twin Brook",
+      "sec_name": "TPG Twin Brook Capital Income Fund",
+      "sec_former_names": [
+        {
+          "name": "AG Twin Brook Capital Income Fund",
+          "from": "2022-03-02T05:00:00.000Z",
+          "to": "2024-08-16T04:00:00.000Z"
+        }
+      ],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "directory_preserved",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "VCSL",
@@ -1473,7 +3032,15 @@
       "latest_net_assets_mn": 946.703,
       "field_coverage_pct": 100.0,
       "nt_rank": 32,
-      "manager": "Vista Credit Partners"
+      "manager": "Vista Credit Partners",
+      "sec_name": "VISTA CREDIT STRATEGIC LENDING CORP.",
+      "sec_former_names": [],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "directory_preserved",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "WBBDC",
@@ -1485,7 +3052,15 @@
       "latest_net_assets_mn": 205.07,
       "field_coverage_pct": 100.0,
       "nt_rank": 67,
-      "manager": "West Bay"
+      "manager": "West Bay",
+      "sec_name": "West Bay BDC LLC",
+      "sec_former_names": [],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "directory_preserved",
+      "cik_resolved_at": "2026-05-15"
     },
     {
       "ticker": "WTCAP",
@@ -1497,7 +3072,61 @@
       "latest_net_assets_mn": 387.644,
       "field_coverage_pct": 100.0,
       "nt_rank": 53,
-      "manager": "Willow Tree Capital"
+      "manager": "Willow Tree Capital",
+      "sec_name": "Willow Tree Capital Corp",
+      "sec_former_names": [],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "directory_preserved",
+      "cik_resolved_at": "2026-05-15"
+    },
+    {
+      "ticker": "MSIF",
+      "display_name": "MSC Income Fund, Inc.",
+      "fund_type": "traded",
+      "manager": "MSC Adviser I, LLC (Main Street Capital)",
+      "real_ticker": "MSIF",
+      "cik": "0001535778",
+      "exchange": null,
+      "sec_name": "MSC INCOME FUND, INC.",
+      "sec_former_names": [
+        {
+          "name": "HMS INCOME FUND, INC.",
+          "from": "2011-12-14T05:00:00.000Z",
+          "to": "2020-11-03T05:00:00.000Z"
+        }
+      ],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "user_add",
+      "cik_resolved_at": "2026-05-15"
+    },
+    {
+      "ticker": "ABPCIC",
+      "display_name": "AB Private Credit Investors Corp",
+      "fund_type": "nontraded",
+      "manager": "AllianceBernstein",
+      "real_ticker": null,
+      "cik": "0001634452",
+      "exchange": null,
+      "sec_name": "AB Private Credit Investors Corp",
+      "sec_former_names": [
+        {
+          "name": "AB Private Credit Corp",
+          "from": "2015-04-30T04:00:00.000Z",
+          "to": "2015-10-05T04:00:00.000Z"
+        }
+      ],
+      "sic": "",
+      "entity_type": "operating",
+      "fiscal_year_end": "1231",
+      "cik_status": "resolved",
+      "cik_source": "user_add",
+      "cik_resolved_at": "2026-05-15"
     }
   ]
 }
