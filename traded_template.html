@@ -69,8 +69,8 @@ body{background:var(--bg);color:var(--text);font-family:var(--sans);font-size:13
 .hero-glow{position:absolute;top:-100px;right:-100px;width:500px;height:500px;background:radial-gradient(circle,rgba(24,71,194,.15) 0%,transparent 70%);pointer-events:none}
 .hero-body{position:relative;z-index:1;padding:28px 28px 0}
 .hero-top{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:20px}
-.fund-ticker{font-family:var(--mono);font-size:48px;font-weight:500;color:#fff;line-height:1;letter-spacing:-2px;margin-bottom:4px}
-.fund-name{font-family:var(--serif);font-style:italic;font-size:22px;color:rgba(255,255,255,.88);margin-bottom:8px;font-weight:300}
+.fund-ticker{font-family:var(--mono);font-size:54px;font-weight:300;font-style:italic;color:#fff;line-height:1;letter-spacing:-2px;margin-bottom:6px}
+.fund-name{font-family:var(--serif);font-style:normal;font-size:22px;color:rgba(255,255,255,.92);margin-bottom:10px;font-weight:500}
 .fund-meta{display:flex;gap:10px;flex-wrap:wrap;font-family:var(--mono);font-size:9px;color:rgba(255,255,255,.7)}
 .fund-meta span{display:flex;align-items:center;gap:4px}
 .fund-meta span::before{content:"·";color:var(--border2)}
@@ -272,14 +272,11 @@ body{background:var(--bg);color:var(--text);font-family:var(--sans);font-size:13
         <div class="fund-ticker">ARCC</div>
         <div class="fund-name">Ares Capital Corporation</div>
         <div class="fund-meta">
-          <span>Ares Management</span><span>NASDAQ Listed</span>
-          <span>Inception Oct 2004</span><span>Diversified · Middle Market</span>
-          <span>External Manager</span>
+          <span>Traded</span>
+          <span>Ares Management</span>
+          <span>Last reported Q1 2026</span>
         </div>
-        <div class="badges">
-          <span class="badge badge-blue">TRADED</span>
-          <span class="badge badge-green"><span class="badge badge-gray">Q1 2026</span>
-        </div>
+        <div class="badges"></div>
       </div>
       <div style="text-align:right;flex-shrink:0">
         <div style="font-family:'Roboto Mono',monospace;font-size:8px;color:rgba(255,255,255,.5);text-transform:uppercase;letter-spacing:.7px;margin-bottom:6px;line-height:1.5">AUM Rank<br>Traded BDCs</div>
@@ -712,20 +709,21 @@ function refreshHeroRank(ticker) {
 
   /* update hero immediately with URL params - before fetch */
   function setHero(latestQtr) {
-    var q = latestQtr || qtr || "Latest Filing";
-    var qLabel = q !== "Latest Filing" ? "Last reported " + q : "Latest Filing";
-    /* fund-ticker = fund NAME (largest font) */
-    document.querySelectorAll(".fund-ticker").forEach(function(e){e.textContent=fundName;});
-    /* fund-name = ticker (smaller) */
-    document.querySelectorAll(".fund-name").forEach(function(e){e.textContent=ticker;});
-    /* fund-meta = manager only + last reported quarter */
+    var q = latestQtr || qtr || "";
+    var qLabel;
+    if (latestQtr === "__nofile__") qLabel = "No filings ingested yet";
+    else if (q) qLabel = "Last reported " + q;
+    else qLabel = "Latest filing pending";
+    /* Row 1: ticker (largest, light italic) */
+    document.querySelectorAll(".fund-ticker").forEach(function(e){e.textContent=ticker;});
+    /* Row 2: display_name (medium-weight) */
+    document.querySelectorAll(".fund-name").forEach(function(e){e.textContent=fundName;});
+    /* Row 3: fund type · manager · last reported */
     document.querySelectorAll(".fund-meta").forEach(function(e){
-      e.innerHTML="<span>"+(mgr||"Manager")+"</span>"+(q?"<span>"+qLabel+"</span>":"");
+      e.innerHTML="<span>Traded</span><span>"+(mgr||"Manager")+"</span><span>"+qLabel+"</span>";
     });
-    /* badges = TRADED only */
-    document.querySelectorAll(".badges").forEach(function(e){
-      e.innerHTML="<span class='badge badge-blue'>TRADED</span>";
-    });
+    /* badges row cleared — fund type now lives in fund-meta */
+    document.querySelectorAll(".badges").forEach(function(e){e.innerHTML="";});
     document.querySelectorAll(".live-badge").forEach(function(e){e.textContent="TRADED BDC";});
     /* topbar */
     var vs=document.querySelectorAll(".topbar .v");
@@ -863,7 +861,7 @@ function refreshHeroRank(ticker) {
   fetch("data/timeseries/"+ticker+".json")
     .then(function(r){if(!r.ok)throw new Error("HTTP "+r.status);return r.json();})
     .then(function(data){populate(data);rebuildL();updateUI(data);buildOverview();built["overview"]=true;})
-    .catch(function(err){console.warn("Fetch failed for "+ticker,err);populate([]);rebuildL();buildOverview();built["overview"]=true;});
+    .catch(function(err){console.warn("Fetch failed for "+ticker,err);populate([]);rebuildL();setHero("__nofile__");buildOverview();built["overview"]=true;});
 })();
 
 var charts={};var built={};

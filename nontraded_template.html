@@ -58,8 +58,8 @@ body{background:var(--bg);color:var(--text);font-family:var(--sans);font-size:13
 .hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:48px 48px;pointer-events:none}
 .hero-body{position:relative;z-index:1;padding:28px 28px 0}
 .hero-top{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:20px}
-.fund-ticker{font-family:var(--mono);font-size:42px;font-weight:500;color:#fff;line-height:1;letter-spacing:-1.5px;margin-bottom:4px}
-.fund-name{font-size:20px;color:rgba(255,255,255,.85);margin-bottom:8px;font-weight:300;font-style:italic}
+.fund-ticker{font-family:var(--mono);font-size:48px;font-weight:300;font-style:italic;color:#fff;line-height:1;letter-spacing:-1.5px;margin-bottom:6px}
+.fund-name{font-size:20px;color:rgba(255,255,255,.92);margin-bottom:10px;font-weight:500;font-style:normal}
 .fund-meta{display:flex;gap:10px;flex-wrap:wrap;font-family:var(--mono);font-size:9px;color:rgba(255,255,255,.6)}
 .fund-meta span::before{content:"·";margin-right:10px;color:rgba(255,255,255,.3)}
 .fund-meta span:first-child::before{display:none}
@@ -257,13 +257,11 @@ body{background:var(--bg);color:var(--text);font-family:var(--sans);font-size:13
         <div class="fund-ticker">BCRED</div>
         <div class="fund-name">Blackstone Private Credit Fund</div>
         <div class="fund-meta">
+          <span>Nontraded</span>
           <span>Blackstone Credit &amp; Insurance</span>
-          <span>Non-Traded · Interval Fund</span>
-          <span>Inception Jan 2020</span>
-          <span>Diversified · Upper Middle Market</span>
-          <span>External Manager</span>
+          <span>Last reported Q1 2026</span>
         </div>
-        <div class="badges"><span class="badge badge-amber">NON-TRADED</span><span class="badge badge-red">⚠ REDEMPTION GATE ACTIVE</span><span class="badge badge-gray">Q1 2026</span></div>
+        <div class="badges"><span class="badge badge-red">⚠ REDEMPTION GATE ACTIVE</span></div>
       </div>
       <div style="text-align:right;flex-shrink:0">
         <div style="font-family:'Roboto Mono',monospace;font-size:8px;color:rgba(255,255,255,.5);text-transform:uppercase;letter-spacing:.7px;margin-bottom:6px;line-height:1.5">AUM Rank<br>Non-Traded BDCs</div>
@@ -581,20 +579,23 @@ function refreshHeroRank(ticker) {
   var gate    = p.get("gate") === "1";
 
   function setHero(latestQtr) {
-    var q = latestQtr || qtr || "Latest Filing";
-    var qLabel = q !== "Latest Filing" ? "Last reported " + q : "Latest Filing";
-    /* fund-ticker = fund NAME (largest font) */
-    document.querySelectorAll(".fund-ticker").forEach(function(e){e.textContent=fundName;});
-    /* fund-name = ticker (smaller) */
-    document.querySelectorAll(".fund-name").forEach(function(e){e.textContent=ticker;});
-    /* fund-meta = manager + last reported quarter */
+    var q = latestQtr || qtr || "";
+    var qLabel;
+    if (latestQtr === "__nofile__") qLabel = "No filings ingested yet";
+    else if (q) qLabel = "Last reported " + q;
+    else qLabel = "Latest filing pending";
+    /* Row 1: ticker (largest, light italic) */
+    document.querySelectorAll(".fund-ticker").forEach(function(e){e.textContent=ticker;});
+    /* Row 2: display_name (medium-weight) */
+    document.querySelectorAll(".fund-name").forEach(function(e){e.textContent=fundName;});
+    /* Row 3: fund type · manager · last reported */
     document.querySelectorAll(".fund-meta").forEach(function(e){
-      e.innerHTML="<span>"+(mgr||"Manager")+"</span>"+(q?"<span>"+qLabel+"</span>":"");
+      e.innerHTML="<span>Nontraded</span><span>"+(mgr||"Manager")+"</span><span>"+qLabel+"</span>";
     });
-    /* badges = NON-TRADED + gate if active */
+    /* Badges row now carries only the redemption gate signal (if active);
+       fund-type chip moved into fund-meta row */
     document.querySelectorAll(".badges").forEach(function(e){
-      e.innerHTML="<span class='badge badge-orange'>NON-TRADED</span>"+
-        (gate?"<span class='badge badge-red'>GATE ACTIVE</span>":"");
+      e.innerHTML=gate?"<span class='badge badge-red'>⚠ REDEMPTION GATE ACTIVE</span>":"";
     });
     document.querySelectorAll(".live-badge").forEach(function(e){e.textContent="NON-TRADED BDC";});
     var vs=document.querySelectorAll(".topbar .v");
@@ -719,7 +720,7 @@ function refreshHeroRank(ticker) {
   fetch("data/timeseries/"+ticker+".json")
     .then(function(r){if(!r.ok)throw new Error("HTTP "+r.status);return r.json();})
     .then(function(data){populate(data);rebuildL();updateUI(data);buildOverview();built["overview"]=true;})
-    .catch(function(err){console.warn("Fetch failed for "+ticker,err);populate([]);rebuildL();buildOverview();built["overview"]=true;});
+    .catch(function(err){console.warn("Fetch failed for "+ticker,err);populate([]);rebuildL();setHero("__nofile__");buildOverview();built["overview"]=true;});
 })();
 
 var charts={};var built={};
