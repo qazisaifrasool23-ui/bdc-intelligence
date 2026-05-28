@@ -3,3 +3,9 @@ data/universe/_sec_cache/
 
 # Intermediate candidate file produced by scripts/apply_decisions.py
 data/universe/fund_directory.candidate.json
+
+# macOS Finder metadata
+.DS_Store
+
+# Local timestamped backups (git history is the source of truth)
+*.bak
