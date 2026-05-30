@@ -1,0 +1,40 @@
+name: Daily 8-K News Refresh
+
+on:
+  schedule:
+    # Run daily at 11:00 UTC (~7am ET — after most overnight SEC filings clear)
+    - cron: '0 11 * * *'
+  workflow_dispatch:  # also allow manual trigger from GitHub UI
+
+permissions:
+  contents: write  # needed to commit data/news/* back to the repo
+
+jobs:
+  fetch-news:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run news fetcher (incremental)
+        run: python scripts/fetch_news.py
+
+      - name: Commit and push if changed
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add data/news/
+          if git diff --staged --quiet; then
+            echo "No new 8-K filings today."
+          else
+            COUNT=$(git diff --staged --name-only data/news/ | grep -v _index.json | grep -v _state.json | wc -l)
+            git commit -m "Daily news refresh: $COUNT fund(s) updated"
+            git push
+          fi
