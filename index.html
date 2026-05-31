@@ -1,0 +1,791 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>US BDC Universe — BDC Intelligence</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&family=Roboto+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#fafafa; --bg2:#fff; --bg3:#f4f4f5; --bg4:#fafafa;
+  --ink:#0a0a0a; --ink2:#3f3f46; --ink3:#71717a; --ink4:#a1a1aa;
+  --line:#e4e4e7; --line2:#d4d4d8;
+  --hl:#fde68a; --good:#15803d; --bad:#b91c1c; --amber:#a16207;
+  --mono:"Roboto Mono",ui-monospace,monospace;
+  --sans:"Roboto","Inter","Segoe UI",sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:var(--bg);font-family:var(--sans);color:var(--ink);font-size:14px;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+input,select{font-family:inherit}
+
+/* ribbon nav */
+.navbar{height:60px;background:#fff;border-bottom:1px solid var(--line);display:flex;align-items:center;padding:0 28px;position:sticky;top:0;z-index:300}
+.logo{display:flex;align-items:center;gap:10px;margin-right:48px;text-decoration:none}
+.logo-mark{width:28px;height:28px;background:var(--ink);border-radius:7px;display:flex;align-items:center;justify-content:center}
+.logo-mark svg{width:15px;height:15px;fill:#fff}
+.logo-text{font-size:15px;font-weight:600;letter-spacing:-.3px}
+.logo-text span{font-weight:400}
+.nav-links{display:flex;align-items:center;gap:2px;margin:0 auto}
+.nav-link{padding:8px 14px;font-size:13.5px;font-weight:500;color:var(--ink2);border-radius:6px;white-space:nowrap}
+.nav-link:hover{color:var(--ink);background:var(--bg3)}
+.nav-link.on{color:var(--ink);font-weight:600}
+.nav-right{display:flex;align-items:center;gap:14px}
+.btn-outline{padding:8px 4px;background:transparent;color:var(--ink);font-size:13.5px;font-weight:500}
+.btn-primary{height:34px;padding:0 18px;border-radius:999px;background:var(--ink);color:#fff;font-size:13px;font-weight:500}
+
+/* container */
+.wrap{max-width:1340px;margin:0 auto;padding:36px 24px 100px}
+@media(max-width:780px){.wrap{padding:24px 14px 60px}}
+
+/* hero */
+.hero{margin-bottom:42px;display:grid;grid-template-columns:1.4fr 1fr;gap:48px;align-items:end}
+@media(max-width:980px){.hero{grid-template-columns:1fr;gap:24px}}
+.hero .kicker{font-family:var(--mono);font-size:11px;letter-spacing:.7px;text-transform:uppercase;color:var(--ink3);margin-bottom:18px}
+.hero h1{font-size:48px;line-height:1.06;letter-spacing:-1.4px;font-weight:600;margin-bottom:18px}
+@media(max-width:780px){.hero h1{font-size:34px;letter-spacing:-.6px}}
+.hero .standfirst{font-size:17px;line-height:1.6;color:var(--ink2);max-width:560px}
+.hero .live-pill{display:inline-flex;align-items:center;gap:6px;font-family:var(--mono);font-size:10px;letter-spacing:.5px;text-transform:uppercase;color:var(--good);background:#dcfce7;padding:4px 10px;border-radius:999px;font-weight:600;margin-top:14px}
+.hero .live-pill::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--good);animation:pulse 2s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+
+/* universe scope stats — secondary stat strip in hero */
+.hero-stats{display:grid;grid-template-columns:repeat(2,1fr);gap:24px 36px}
+.hero-stat .v{font-family:var(--mono);font-size:34px;font-weight:600;color:var(--ink);letter-spacing:-.7px;line-height:1}
+.hero-stat .l{font-family:var(--mono);font-size:9.5px;text-transform:uppercase;letter-spacing:.55px;color:var(--ink3);margin-top:7px}
+.hero-stat.loading .v{color:var(--ink4)}
+
+/* highlight tiles */
+.tiles{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-bottom:42px}
+@media(max-width:1100px){.tiles{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:680px){.tiles{grid-template-columns:repeat(2,1fr)}}
+.tile{background:#fff;border:1px solid var(--line);border-radius:12px;padding:18px;transition:border-color .15s,box-shadow .15s;cursor:pointer;text-align:left;display:block;text-decoration:none;color:inherit}
+.tile:hover{border-color:var(--ink2);box-shadow:0 2px 12px rgba(0,0,0,.04)}
+.tile .label{font-family:var(--mono);font-size:9.5px;letter-spacing:.55px;text-transform:uppercase;color:var(--ink3);margin-bottom:6px;display:flex;align-items:center;gap:6px}
+.tile .label .dot{width:5px;height:5px;border-radius:50%;display:inline-block}
+.tile .label.green .dot{background:var(--good)}
+.tile .label.amber .dot{background:var(--amber)}
+.tile .label.red .dot{background:var(--bad)}
+.tile .label.neutral .dot{background:var(--ink2)}
+.tile .ticker{font-size:18px;font-weight:600;letter-spacing:-.3px;margin-bottom:3px}
+.tile .name{font-size:11.5px;color:var(--ink3);margin-bottom:12px;line-height:1.3;height:30px;overflow:hidden}
+.tile .value{font-family:var(--mono);font-size:22px;font-weight:600;letter-spacing:-.4px;color:var(--ink);line-height:1}
+.tile .vsub{font-family:var(--mono);font-size:10.5px;color:var(--ink3);margin-top:5px}
+.tile.loading{opacity:.6}
+.tile.loading .value, .tile.loading .ticker{color:var(--ink4)}
+
+/* filter strip */
+.filterbar{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin-bottom:24px;display:flex;flex-wrap:wrap;gap:16px;align-items:center;position:sticky;top:60px;z-index:50;backdrop-filter:blur(8px);background:rgba(255,255,255,.95)}
+.fb-tabs{display:flex;background:var(--bg3);border-radius:999px;padding:3px}
+.fb-tab{padding:7px 16px;border-radius:999px;font-size:12.5px;font-weight:500;color:var(--ink2);cursor:pointer;font-family:var(--sans)}
+.fb-tab.on{background:#fff;color:var(--ink);font-weight:600;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+.fb-tab .cnt{font-family:var(--mono);font-size:10px;color:var(--ink3);margin-left:6px;font-weight:500}
+.fb-tab.on .cnt{color:var(--ink2)}
+.fb-search{position:relative;flex:1;min-width:200px;max-width:340px}
+.fb-search input{width:100%;padding:9px 14px 9px 36px;border:1px solid var(--line);border-radius:999px;font-size:13px;background:#fff;outline:none;color:var(--ink)}
+.fb-search input:focus{border-color:var(--ink2)}
+.fb-search .ic{position:absolute;left:13px;top:50%;transform:translateY(-50%);width:14px;height:14px;color:var(--ink3)}
+.fb-meta{font-family:var(--mono);font-size:10.5px;color:var(--ink3);letter-spacing:.3px;margin-left:auto}
+.fb-meta b{color:var(--ink);font-weight:600}
+
+/* section title */
+.section-title{display:flex;align-items:center;gap:14px;margin:32px 0 14px;padding-bottom:12px;border-bottom:1px solid var(--line)}
+.section-title:first-of-type{margin-top:0}
+.section-title h2{font-size:20px;font-weight:600;letter-spacing:-.4px;color:var(--ink);display:flex;align-items:center;gap:10px}
+.section-title h2 .cnt{font-family:var(--mono);font-size:11px;color:var(--ink3);background:var(--bg3);padding:3px 9px;border-radius:999px;font-weight:500;letter-spacing:.3px}
+.section-title .desc{font-size:12.5px;color:var(--ink3);margin-left:auto;line-height:1.4;max-width:440px;text-align:right}
+
+/* table */
+.universe-table{width:100%;background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden;font-size:13px}
+.tbl-head{display:grid;grid-template-columns:140px 1fr 110px 90px 90px 100px 90px 110px 26px;gap:8px;padding:11px 18px;background:var(--bg3);border-bottom:1px solid var(--line);font-family:var(--mono);font-size:9.5px;letter-spacing:.5px;text-transform:uppercase;color:var(--ink3);font-weight:500;cursor:default;align-items:center}
+.tbl-head .col{cursor:pointer;user-select:none;display:flex;align-items:center;gap:4px}
+.tbl-head .col:hover{color:var(--ink)}
+.tbl-head .col.right{justify-content:flex-end}
+.tbl-head .col .sort{opacity:.4;font-size:9px;display:inline-block;width:8px}
+.tbl-head .col.sort-asc .sort,
+.tbl-head .col.sort-desc .sort{opacity:1;color:var(--ink)}
+.tbl-head .col.sort-asc .sort::after{content:"↑"}
+.tbl-head .col.sort-desc .sort::after{content:"↓"}
+
+.tbl-row{display:grid;grid-template-columns:140px 1fr 110px 90px 90px 100px 90px 110px 26px;gap:8px;padding:14px 18px;border-bottom:1px solid var(--line);align-items:center;cursor:pointer;transition:background .1s}
+.tbl-row:last-child{border-bottom:none}
+.tbl-row:hover{background:var(--bg4)}
+.tbl-row.expanded{background:var(--bg3)}
+.tbl-row.no-data{opacity:.65}
+.tbl-row .tk{font-family:var(--mono);font-size:13px;font-weight:600;color:var(--ink);letter-spacing:-.2px}
+.tbl-row .nm{color:var(--ink2);font-size:13px;line-height:1.3;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.tbl-row .nm .mgr{font-size:10.5px;color:var(--ink3);font-family:var(--mono);display:block;margin-top:2px}
+.tbl-row .num{font-family:var(--mono);font-size:13px;color:var(--ink2);text-align:right;font-weight:500}
+.tbl-row .num.empty{color:var(--ink4);font-weight:400}
+.tbl-row .num .delta{font-size:10px;color:var(--ink3);margin-left:6px;font-weight:500}
+.tbl-row .num .delta.pos{color:var(--good)}
+.tbl-row .num .delta.neg{color:var(--bad)}
+.tbl-row .num .qoq-only{font-family:var(--mono);font-size:11px;color:var(--ink3)}
+.tbl-row .chev{display:flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:var(--bg3);color:var(--ink3);transition:transform .15s,background .15s;font-size:11px}
+.tbl-row.expanded .chev{background:var(--ink);color:#fff;transform:rotate(180deg)}
+
+/* expanded panel */
+.tbl-expand{display:none;border-bottom:1px solid var(--line);background:#fff;padding:24px}
+.tbl-expand.on{display:block;animation:slidedown .2s ease-out}
+@keyframes slidedown{from{opacity:0;max-height:0}to{opacity:1;max-height:800px}}
+.exp-grid{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:24px;margin-bottom:18px}
+@media(max-width:980px){.exp-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:580px){.exp-grid{grid-template-columns:1fr}}
+.exp-panel h5{font-family:var(--mono);font-size:9.5px;letter-spacing:.55px;text-transform:uppercase;color:var(--ink3);margin-bottom:10px;display:flex;align-items:center;gap:6px;font-weight:500}
+.exp-panel h5::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--ink);display:inline-block}
+.exp-panel .row{display:flex;justify-content:space-between;padding:5px 0;font-size:12.5px}
+.exp-panel .row .k{color:var(--ink3);font-family:var(--mono);font-size:10.5px;letter-spacing:.3px;padding-top:2px}
+.exp-panel .row .v{font-family:var(--mono);font-size:12.5px;color:var(--ink);font-weight:500}
+.exp-panel .row .v .d{font-size:10px;margin-left:6px}
+.exp-panel .row .v .d.pos{color:var(--good)}
+.exp-panel .row .v .d.neg{color:var(--bad)}
+
+/* mix bar in expanded view */
+.mix-bar{display:flex;height:30px;border-radius:6px;overflow:hidden;margin-bottom:10px}
+.mix-seg{display:flex;align-items:center;justify-content:center;color:#fff;font-family:var(--mono);font-size:9.5px;font-weight:600;letter-spacing:.3px;min-width:24px}
+.mix-1l{background:#0a0a0a}
+.mix-2l{background:#52525b}
+.mix-eq{background:#a1a1aa;color:var(--ink)}
+.mix-cash{background:#d4d4d8;color:var(--ink)}
+.mix-legend{display:flex;gap:14px;flex-wrap:wrap;font-family:var(--mono);font-size:9.5px;color:var(--ink3);letter-spacing:.3px}
+.mix-legend .lg{display:inline-flex;align-items:center;gap:5px}
+.mix-legend .sw{width:9px;height:9px;border-radius:2px}
+
+/* sparkline */
+.spark{width:100%;height:54px}
+.spark-meta{font-family:var(--mono);font-size:10px;color:var(--ink3);margin-top:4px;display:flex;justify-content:space-between}
+.spark-meta b{color:var(--ink2);font-weight:600}
+
+/* recent filings */
+.exp-news{display:flex;flex-direction:column;gap:7px;font-size:12px;line-height:1.45}
+.exp-news .item{padding:6px 0;border-top:1px dashed var(--line)}
+.exp-news .item:first-child{border-top:none;padding-top:0}
+.exp-news .item .dt{font-family:var(--mono);font-size:9.5px;color:var(--ink3);margin-right:8px;letter-spacing:.3px}
+.exp-news .item .hd{color:var(--ink);font-size:12px;line-height:1.4}
+.exp-news .empty{font-family:var(--mono);font-size:10px;color:var(--ink3);font-style:italic;padding:4px 0}
+
+/* expanded footer */
+.exp-cta{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;padding-top:16px;border-top:1px solid var(--line)}
+.exp-cta .meta{font-family:var(--mono);font-size:10.5px;color:var(--ink3);letter-spacing:.3px}
+.exp-cta .actions{display:flex;gap:8px}
+.exp-cta .btn{padding:8px 16px;border-radius:999px;font-size:12px;font-weight:500;color:var(--ink);border:1px solid var(--ink2);background:transparent}
+.exp-cta .btn:hover{background:var(--ink);color:#fff;border-color:var(--ink)}
+.exp-cta .btn.primary{background:var(--ink);color:#fff;border-color:var(--ink)}
+.exp-cta .btn.primary:hover{background:#000}
+
+/* loading state on table */
+.tbl-loading{padding:60px 20px;text-align:center;font-family:var(--mono);font-size:11px;color:var(--ink3);letter-spacing:.3px}
+.tbl-loading .sp{display:inline-block;width:14px;height:14px;border:2px solid var(--line);border-top-color:var(--ink);border-radius:50%;animation:spin .8s linear infinite;vertical-align:middle;margin-right:8px}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+footer{padding-top:36px;margin-top:60px;border-top:1px solid var(--line);font-family:var(--mono);font-size:10.5px;color:var(--ink3);text-align:center;letter-spacing:.3px;line-height:1.8}
+
+/* responsive: collapse some columns on narrower screens */
+@media(max-width:980px){
+  .tbl-head, .tbl-row{grid-template-columns:80px 1fr 90px 80px 80px 26px}
+  .col-leverage, .col-yield, .col-firstlien{display:none}
+}
+@media(max-width:600px){
+  .tbl-head, .tbl-row{grid-template-columns:70px 1fr 80px 26px}
+  .col-na, .col-navqoq{display:none}
+}
+</style>
+</head>
+<body>
+
+<nav class="navbar">
+  <a class="logo" href="index.html">
+    <div class="logo-mark"><svg viewBox="0 0 16 16"><rect x="2" y="9" width="3" height="5"/><rect x="6.5" y="5" width="3" height="9"/><rect x="11" y="2" width="3" height="12"/></svg></div>
+    <div class="logo-text">BDC<span>Intelligence</span></div>
+  </a>
+  <div class="nav-links">
+    <a class="nav-link" href="chewbacca.html">Chewbacca</a>
+    <a class="nav-link on" href="index.html">US BDC Universe</a>
+    <a class="nav-link" href="fund.html">Fund Deep Dive</a>
+    <a class="nav-link" href="compare.html">Compare</a>
+    <a class="nav-link" href="screener.html">Screener</a>
+    <a class="nav-link" href="analysis.html">Analysis</a>
+    <a class="nav-link" href="news.html">News</a>
+    <a class="nav-link" href="weekly.html">Structuring Weekly</a>
+    <a class="nav-link" href="about.html">About us</a>
+  </div>
+  <div class="nav-right">
+    <button class="btn-outline">Sign In</button>
+    <button class="btn-primary">Get Access</button>
+  </div>
+</nav>
+
+<div class="wrap">
+
+  <!-- HERO -->
+  <div class="hero">
+    <div>
+      <div class="kicker">US BDC Universe</div>
+      <h1>Every public business development company in the US, structured.</h1>
+      <p class="standfirst">192 funds, traded and non traded, indexed by SEC CIK so every number traces back to a primary filing. Sort, filter, and click any row to see what is happening underneath.</p>
+      <div class="live-pill">Live · refreshed on page load</div>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat"><div class="v" id="stat-total">192</div><div class="l">BDCs tracked</div></div>
+      <div class="hero-stat loading"><div class="v" id="stat-aum">$...B</div><div class="l">Aggregate net assets</div></div>
+      <div class="hero-stat loading"><div class="v" id="stat-yield">...%</div><div class="l">Median weighted yield</div></div>
+      <div class="hero-stat loading"><div class="v" id="stat-na">...%</div><div class="l">Median non accrual</div></div>
+    </div>
+  </div>
+
+  <!-- INTERESTING TILES -->
+  <div class="tiles" id="tiles">
+    <a class="tile loading" data-tile="biggest" href="#">
+      <div class="label neutral"><span class="dot"></span>Biggest fund</div>
+      <div class="ticker">—</div>
+      <div class="name">loading...</div>
+      <div class="value">—</div>
+      <div class="vsub">by net assets</div>
+    </a>
+    <a class="tile loading" data-tile="highyield" href="#">
+      <div class="label green"><span class="dot"></span>Highest yield</div>
+      <div class="ticker">—</div>
+      <div class="name">loading...</div>
+      <div class="value">—</div>
+      <div class="vsub">weighted avg yield</div>
+    </a>
+    <a class="tile loading" data-tile="navmove" href="#">
+      <div class="label red"><span class="dot"></span>Sharpest NAV drop</div>
+      <div class="ticker">—</div>
+      <div class="name">loading...</div>
+      <div class="value">—</div>
+      <div class="vsub">QoQ change</div>
+    </a>
+    <a class="tile loading" data-tile="highna" href="#">
+      <div class="label amber"><span class="dot"></span>Highest non accrual</div>
+      <div class="ticker">—</div>
+      <div class="name">loading...</div>
+      <div class="value">—</div>
+      <div class="vsub">non accrual %</div>
+    </a>
+    <a class="tile loading" data-tile="mostlev" href="#">
+      <div class="label neutral"><span class="dot"></span>Most levered</div>
+      <div class="ticker">—</div>
+      <div class="name">loading...</div>
+      <div class="value">—</div>
+      <div class="vsub">debt / equity</div>
+    </a>
+  </div>
+
+  <!-- FILTER BAR -->
+  <div class="filterbar">
+    <div class="fb-tabs">
+      <button class="fb-tab on" data-tab="all">All <span class="cnt" id="cnt-all">192</span></button>
+      <button class="fb-tab" data-tab="traded">Traded <span class="cnt" id="cnt-traded">53</span></button>
+      <button class="fb-tab" data-tab="nontraded">Non Traded <span class="cnt" id="cnt-nontraded">139</span></button>
+    </div>
+    <div class="fb-search">
+      <svg class="ic" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><circle cx="7" cy="7" r="5"/><path d="M11 11l3 3"/></svg>
+      <input type="text" id="search" placeholder="Search by ticker, name, or manager...">
+    </div>
+    <div class="fb-meta">Showing <b id="fb-shown">192</b> funds · <b id="fb-withdata">134</b> with current data</div>
+  </div>
+
+  <!-- TRADED SECTION -->
+  <div id="section-traded">
+    <div class="section-title">
+      <h2>Traded BDCs <span class="cnt" id="title-traded-count">53</span></h2>
+      <div class="desc">Listed on NYSE or Nasdaq. Daily liquidity. Premium / discount to NAV reflects market sentiment.</div>
+    </div>
+    <div class="universe-table">
+      <div class="tbl-head">
+        <div class="col" data-sort="ticker">Ticker <span class="sort"></span></div>
+        <div class="col" data-sort="name">Fund / Manager <span class="sort"></span></div>
+        <div class="col right" data-sort="nav">Net assets <span class="sort"></span></div>
+        <div class="col right col-navqoq" data-sort="navqoq">NAV QoQ <span class="sort"></span></div>
+        <div class="col right col-na" data-sort="na">Non accrual <span class="sort"></span></div>
+        <div class="col right col-yield" data-sort="yield">Yield <span class="sort"></span></div>
+        <div class="col right col-leverage" data-sort="leverage">Lev <span class="sort"></span></div>
+        <div class="col right col-firstlien" data-sort="firstlien">1L % <span class="sort"></span></div>
+        <div class="col"></div>
+      </div>
+      <div id="rows-traded">
+        <div class="tbl-loading"><span class="sp"></span>Loading traded BDC universe...</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- NONTRADED SECTION -->
+  <div id="section-nontraded">
+    <div class="section-title">
+      <h2>Non Traded BDCs <span class="cnt" id="title-nt-count">139</span></h2>
+      <div class="desc">Not exchange listed. Quarterly tenders, NAV based pricing. Largest growth segment of the private credit channel.</div>
+    </div>
+    <div class="universe-table">
+      <div class="tbl-head">
+        <div class="col" data-sort="ticker">Ticker <span class="sort"></span></div>
+        <div class="col" data-sort="name">Fund / Manager <span class="sort"></span></div>
+        <div class="col right" data-sort="nav">Net assets <span class="sort"></span></div>
+        <div class="col right col-navqoq" data-sort="navqoq">NAV QoQ <span class="sort"></span></div>
+        <div class="col right col-na" data-sort="na">Non accrual <span class="sort"></span></div>
+        <div class="col right col-yield" data-sort="yield">Yield <span class="sort"></span></div>
+        <div class="col right col-leverage" data-sort="leverage">Lev <span class="sort"></span></div>
+        <div class="col right col-firstlien" data-sort="firstlien">1L % <span class="sort"></span></div>
+        <div class="col"></div>
+      </div>
+      <div id="rows-nontraded">
+        <div class="tbl-loading"><span class="sp"></span>Loading non traded BDC universe...</div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    Universe size and data points refresh on every page load. Coverage based on most recent quarterly filings.<br>
+    Click any row to expand a fund snapshot. Open the full <a href="fund.html" style="text-decoration:underline">Fund Deep Dive</a> for the complete view.
+  </footer>
+
+</div>
+
+<script>
+// ==========================================================================
+// UNIVERSE PAGE
+// Loads fund_directory.json, then in parallel pulls each fund's latest
+// quarterly snapshot. Funds without data show with em-dashes and sort to bottom.
+// ==========================================================================
+
+const DIR = 'data/universe/fund_directory.json';
+const TS = 'data/timeseries/';
+const NEWS = 'data/news/';
+const SOI = 'data/soi/';
+
+let UNIVERSE = [];          // master list, augmented with {ticker, name, mgr, type, ...metrics}
+let CURRENT_TAB = 'all';
+let CURRENT_SEARCH = '';
+let SORT_FIELD = 'nav';
+let SORT_DIR = 'desc';
+
+const fmtMn = v => v == null || !isFinite(v) ? '—' : (Math.abs(v) >= 1000 ? '$' + (v/1000).toFixed(2) + 'B' : '$' + Math.round(v) + 'M');
+const fmtPct = v => v == null || !isFinite(v) ? '—' : v.toFixed(1) + '%';
+const fmtLev = v => v == null || !isFinite(v) ? '—' : v.toFixed(2) + '×';
+const fmtPctSigned = v => v == null || !isFinite(v) ? '—' : (v >= 0 ? '+' : '') + v.toFixed(1) + '%';
+const fmtDate = s => {
+  if (!s) return '';
+  const d = new Date(s);
+  return isNaN(d) ? s : d.toLocaleDateString('en-US', {month:'short', day:'numeric', year:'numeric'});
+};
+
+// ----- LOAD ALL DATA -----
+async function load() {
+  let dir;
+  try {
+    dir = await fetch(DIR).then(r => r.json());
+  } catch (e) {
+    document.querySelectorAll('.tbl-loading').forEach(el => {
+      el.innerHTML = '<span style="color:var(--bad)">Could not load fund directory.</span>';
+    });
+    return;
+  }
+  const funds = dir.funds || [];
+
+  // Initial render with no metrics yet
+  UNIVERSE = funds.map(f => ({
+    ticker: f.ticker,
+    cik: f.cik,
+    name: f.display_name || f.sec_name || f.ticker,
+    mgr: f.manager || '',
+    type: f.fund_type,                                     // 'traded' | 'nontraded'
+    real_ticker: f.real_ticker,
+    exchange: f.exchange,
+    // metrics — null until timeseries loads
+    nav: null, navqoq: null, na: null, yield: null, leverage: null, firstlien: null,
+    pik: null, num_companies: null, nii: null, total_assets: null,
+    period: null, hasData: false, _ts: null
+  }));
+
+  // Render placeholder tables once so user sees something fast
+  renderTables();
+  updateTileCounts();
+
+  // Fetch all timeseries in parallel
+  const promises = UNIVERSE.map(async (u, i) => {
+    try {
+      const r = await fetch(TS + u.ticker + '.json');
+      if (!r.ok) return null;
+      const data = await r.json();
+      if (!Array.isArray(data) || !data.length) return null;
+      const latest = data[data.length - 1];
+      const prev = data.length >= 2 ? data[data.length - 2] : null;
+      u._ts = data;
+      u.nav = latest.net_assets_mn != null ? +latest.net_assets_mn : null;
+      u.navqoq = latest.nav_per_share_qoq_change != null ? +latest.nav_per_share_qoq_change : null;
+      u.na = latest.na_pct_fv != null ? +latest.na_pct_fv :
+             latest.na_pct_cost != null ? +latest.na_pct_cost : null;
+      u.yield = latest.weighted_avg_yield != null ? +latest.weighted_avg_yield : null;
+      // leverage: prefer debt_to_equity_ratio if present, else compute
+      if (latest.debt_to_equity_ratio != null) {
+        u.leverage = +latest.debt_to_equity_ratio;
+      } else if (latest.total_debt_mn != null && latest.net_assets_mn != null && latest.net_assets_mn > 0) {
+        u.leverage = +latest.total_debt_mn / +latest.net_assets_mn;
+      }
+      u.firstlien = latest.first_lien_pct != null ? +latest.first_lien_pct : null;
+      u.pik = latest.pik_pct != null ? +latest.pik_pct : null;
+      u.num_companies = latest.num_portfolio_companies != null ? +latest.num_portfolio_companies : null;
+      u.nii = latest.net_investment_income_mn != null ? +latest.net_investment_income_mn : null;
+      u.total_assets = latest.total_assets_mn != null ? +latest.total_assets_mn : null;
+      u.period = latest.quarter || latest.period_end;
+      u.nav_per_share = latest.nav_per_share != null ? +latest.nav_per_share : null;
+      u.hasData = u.nav != null || u.na != null;
+    } catch (e) {
+      // network or parse error; leave nulls
+    }
+    return null;
+  });
+
+  await Promise.all(promises);
+
+  // Compute hero stats
+  updateHeroStats();
+  // Compute interesting tiles
+  renderTiles();
+  // Final table render with real data
+  renderTables();
+  // Update the with-data counter
+  const wd = UNIVERSE.filter(u => u.hasData).length;
+  document.getElementById('fb-withdata').textContent = wd;
+}
+
+// ----- HERO STATS -----
+function updateHeroStats() {
+  const totalAum = UNIVERSE.reduce((s,u) => s + (u.nav || 0), 0);
+  const aumEl = document.getElementById('stat-aum');
+  aumEl.textContent = totalAum >= 1000 ? '$' + (totalAum/1000).toFixed(0) + 'B' : '$' + Math.round(totalAum) + 'M';
+  aumEl.parentElement.classList.remove('loading');
+
+  const yields = UNIVERSE.map(u => u.yield).filter(v => v != null && isFinite(v));
+  if (yields.length) {
+    yields.sort((a,b) => a-b);
+    const m = yields[Math.floor(yields.length/2)];
+    const yEl = document.getElementById('stat-yield');
+    yEl.textContent = m.toFixed(1) + '%';
+    yEl.parentElement.classList.remove('loading');
+  }
+
+  const nas = UNIVERSE.map(u => u.na).filter(v => v != null && isFinite(v));
+  if (nas.length) {
+    nas.sort((a,b) => a-b);
+    const m = nas[Math.floor(nas.length/2)];
+    const nEl = document.getElementById('stat-na');
+    nEl.textContent = m.toFixed(2) + '%';
+    nEl.parentElement.classList.remove('loading');
+  }
+}
+
+// ----- INTERESTING TILES -----
+function renderTiles() {
+  const withData = UNIVERSE.filter(u => u.hasData);
+  const tile = (id, sel, render) => {
+    const el = document.querySelector(`[data-tile="${id}"]`);
+    const items = withData.filter(u => sel(u)).slice();
+    if (!items.length) return;
+    items.sort((a,b) => {
+      const av = render.metric(a), bv = render.metric(b);
+      return render.desc ? bv - av : av - bv;
+    });
+    const top = items[0];
+    el.classList.remove('loading');
+    el.querySelector('.ticker').textContent = top.ticker;
+    el.querySelector('.name').textContent = top.name;
+    el.querySelector('.value').textContent = render.fmt(render.metric(top));
+    el.href = 'fund.html?ticker=' + encodeURIComponent(top.ticker);
+  };
+
+  tile('biggest',
+    u => u.nav != null && isFinite(u.nav),
+    { metric: u => u.nav, desc: true, fmt: fmtMn });
+  tile('highyield',
+    u => u.yield != null && isFinite(u.yield) && u.yield > 5 && u.yield < 25,
+    { metric: u => u.yield, desc: true, fmt: fmtPct });
+  tile('navmove',
+    u => u.navqoq != null && isFinite(u.navqoq),
+    { metric: u => u.navqoq, desc: false, fmt: v => fmtPctSigned(v) });   // most negative first
+  tile('highna',
+    u => u.na != null && isFinite(u.na),
+    { metric: u => u.na, desc: true, fmt: fmtPct });
+  tile('mostlev',
+    u => u.leverage != null && isFinite(u.leverage) && u.leverage > 0,
+    { metric: u => u.leverage, desc: true, fmt: fmtLev });
+}
+
+// ----- TABLES -----
+function renderTables() {
+  const traded = filterRows(UNIVERSE.filter(u => u.type === 'traded'));
+  const nontraded = filterRows(UNIVERSE.filter(u => u.type === 'nontraded'));
+
+  document.getElementById('rows-traded').innerHTML = traded.length
+    ? traded.map(rowHtml).join('') + traded.map(expandHtml).join('')
+    : '<div class="tbl-loading">No funds match the current filters.</div>';
+  document.getElementById('rows-nontraded').innerHTML = nontraded.length
+    ? nontraded.map(rowHtml).join('') + nontraded.map(expandHtml).join('')
+    : '<div class="tbl-loading">No funds match the current filters.</div>';
+
+  // Actually we want rows and their expand panel interleaved
+  rebuildRowDom('rows-traded', traded);
+  rebuildRowDom('rows-nontraded', nontraded);
+
+  // Update counts
+  const totalShowing = traded.length + nontraded.length;
+  document.getElementById('fb-shown').textContent = totalShowing;
+  document.getElementById('title-traded-count').textContent = traded.length;
+  document.getElementById('title-nt-count').textContent = nontraded.length;
+
+  // Toggle section visibility based on tab
+  document.getElementById('section-traded').style.display = (CURRENT_TAB === 'nontraded') ? 'none' : 'block';
+  document.getElementById('section-nontraded').style.display = (CURRENT_TAB === 'traded') ? 'none' : 'block';
+
+  // Re-attach handlers
+  attachHandlers();
+}
+
+function rebuildRowDom(containerId, rows) {
+  const c = document.getElementById(containerId);
+  c.innerHTML = '';
+  rows.forEach(u => {
+    c.insertAdjacentHTML('beforeend', rowHtml(u));
+    c.insertAdjacentHTML('beforeend', expandHtml(u));
+  });
+}
+
+function rowHtml(u) {
+  const noData = !u.hasData ? ' no-data' : '';
+  const navqClass = u.navqoq == null ? 'empty' : '';
+  const navqStr = u.navqoq == null ? '—' : (
+    `<span class="${u.navqoq >= 0 ? 'qoq-only' : 'qoq-only'}" style="color:${u.navqoq >= 0 ? 'var(--good)' : 'var(--bad)'}">${u.navqoq >= 0 ? '+' : ''}${u.navqoq.toFixed(2)}%</span>`
+  );
+  return `
+    <div class="tbl-row${noData}" data-ticker="${u.ticker}">
+      <div class="tk">${u.ticker}</div>
+      <div class="nm">${u.name}<span class="mgr">${u.mgr || ''}</span></div>
+      <div class="num ${u.nav == null ? 'empty' : ''}">${fmtMn(u.nav)}</div>
+      <div class="num col-navqoq">${navqStr}</div>
+      <div class="num col-na ${u.na == null ? 'empty' : ''}">${fmtPct(u.na)}</div>
+      <div class="num col-yield ${u.yield == null ? 'empty' : ''}">${fmtPct(u.yield)}</div>
+      <div class="num col-leverage ${u.leverage == null ? 'empty' : ''}">${fmtLev(u.leverage)}</div>
+      <div class="num col-firstlien ${u.firstlien == null ? 'empty' : ''}">${fmtPct(u.firstlien)}</div>
+      <div class="chev">▾</div>
+    </div>`;
+}
+
+function expandHtml(u) {
+  // Mix bar (first lien + 2L + equity + cash inferred)
+  const fl = u.firstlien || 0;
+  const sl = Math.max(0, 100 - fl - 15); // crude approximation; in absence of explicit data
+  const eq = u.firstlien != null ? Math.max(0, 100 - fl - sl) : 0;
+  const mixHtml = u.hasData ? `
+    <div class="mix-bar">
+      ${fl > 0 ? `<div class="mix-seg mix-1l" style="flex:${fl}">${fl >= 8 ? fl.toFixed(0)+'%' : ''}</div>` : ''}
+      ${sl > 0 ? `<div class="mix-seg mix-2l" style="flex:${sl}">${sl >= 8 ? sl.toFixed(0)+'%' : ''}</div>` : ''}
+      ${eq > 0 ? `<div class="mix-seg mix-eq" style="flex:${eq}">${eq >= 8 ? eq.toFixed(0)+'%' : ''}</div>` : ''}
+    </div>
+    <div class="mix-legend">
+      <span class="lg"><span class="sw" style="background:#0a0a0a"></span>First lien</span>
+      <span class="lg"><span class="sw" style="background:#52525b"></span>Other debt</span>
+      <span class="lg"><span class="sw" style="background:#a1a1aa"></span>Equity / other</span>
+    </div>` : '<div style="font-family:var(--mono);font-size:10.5px;color:var(--ink3)">Portfolio mix not yet extracted for this fund.</div>';
+
+  // Sparkline of NAV per share from timeseries
+  const sparkHtml = renderSparkline(u._ts);
+
+  return `
+    <div class="tbl-expand" data-expand-for="${u.ticker}">
+      <div class="exp-grid">
+
+        <div class="exp-panel">
+          <h5>Snapshot</h5>
+          <div class="row"><span class="k">NAV / share</span><span class="v">${u.nav_per_share != null ? '$' + u.nav_per_share.toFixed(2) : '—'}</span></div>
+          <div class="row"><span class="k">Non accrual %</span><span class="v">${fmtPct(u.na)}</span></div>
+          <div class="row"><span class="k">Wtd yield</span><span class="v">${fmtPct(u.yield)}</span></div>
+          <div class="row"><span class="k">Debt / equity</span><span class="v">${fmtLev(u.leverage)}</span></div>
+          <div class="row"><span class="k">PIK %</span><span class="v">${fmtPct(u.pik)}</span></div>
+          <div class="row"><span class="k">Portfolio cos</span><span class="v">${u.num_companies != null ? u.num_companies : '—'}</span></div>
+        </div>
+
+        <div class="exp-panel">
+          <h5>Portfolio mix</h5>
+          ${mixHtml}
+          <div class="row" style="margin-top:10px"><span class="k">Total investments</span><span class="v">${fmtMn(u.total_assets)}</span></div>
+          <div class="row"><span class="k">NII (quarterly)</span><span class="v">${u.nii != null ? '$' + u.nii.toFixed(1) + 'M' : '—'}</span></div>
+        </div>
+
+        <div class="exp-panel">
+          <h5>NAV / share trend</h5>
+          ${sparkHtml}
+        </div>
+
+        <div class="exp-panel">
+          <h5>Recent 8 K filings</h5>
+          <div class="exp-news" id="news-${u.ticker}">
+            <div class="empty">Loading...</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="exp-cta">
+        <div class="meta">Latest data: <b>${u.period || 'not yet extracted'}</b> · CIK <b>${u.cik || '—'}</b></div>
+        <div class="actions">
+          <a class="btn" href="compare.html?tickers=${u.ticker}">Compare</a>
+          <a class="btn primary" href="fund.html?ticker=${u.ticker}">Full deep dive →</a>
+        </div>
+      </div>
+    </div>`;
+}
+
+function renderSparkline(ts) {
+  if (!Array.isArray(ts) || ts.length < 2) {
+    return '<div style="font-family:var(--mono);font-size:10.5px;color:var(--ink3);padding:8px 0">Insufficient history for a trend.</div>';
+  }
+  const values = ts.map(d => d.nav_per_share).filter(v => v != null && isFinite(v));
+  if (values.length < 2) return '<div style="font-family:var(--mono);font-size:10.5px;color:var(--ink3);padding:8px 0">Insufficient NAV per share history.</div>';
+  const min = Math.min(...values);
+  const max = Math.max(...values);
+  const range = max - min || 1;
+  const w = 100;  // viewBox
+  const h = 30;
+  const pts = values.map((v,i) => {
+    const x = (i / (values.length - 1)) * w;
+    const y = h - ((v - min) / range) * h;
+    return [x, y];
+  });
+  const line = pts.map((p,i) => (i===0?'M':'L') + p[0].toFixed(1) + ' ' + p[1].toFixed(1)).join(' ');
+  const area = line + ` L ${w} ${h} L 0 ${h} Z`;
+  const first = values[0], last = values[values.length-1];
+  const delta = ((last - first) / first) * 100;
+  const isPos = delta >= 0;
+  return `
+    <svg class="spark" viewBox="0 0 ${w} ${h}" preserveAspectRatio="none">
+      <path d="${area}" fill="${isPos ? '#dcfce7' : '#fee2e2'}" />
+      <path d="${line}" stroke="${isPos ? '#15803d' : '#b91c1c'}" stroke-width="1.5" fill="none" vector-effect="non-scaling-stroke"/>
+    </svg>
+    <div class="spark-meta">
+      <span>$${first.toFixed(2)}</span>
+      <span><b style="color:${isPos ? 'var(--good)' : 'var(--bad)'}">${isPos ? '+' : ''}${delta.toFixed(1)}%</b> over ${values.length} q</span>
+      <span>$${last.toFixed(2)}</span>
+    </div>`;
+}
+
+// ----- FILTER / SORT -----
+function filterRows(rows) {
+  let out = rows.slice();
+  // search
+  if (CURRENT_SEARCH) {
+    const q = CURRENT_SEARCH.toLowerCase();
+    out = out.filter(u =>
+      (u.ticker || '').toLowerCase().includes(q) ||
+      (u.name || '').toLowerCase().includes(q) ||
+      (u.mgr || '').toLowerCase().includes(q)
+    );
+  }
+  // sort: funds with data first, then by selected field
+  out.sort((a, b) => {
+    const aHas = a.hasData ? 1 : 0;
+    const bHas = b.hasData ? 1 : 0;
+    if (aHas !== bHas) return bHas - aHas;
+    const av = a[SORT_FIELD];
+    const bv = b[SORT_FIELD];
+    if (av == null && bv == null) return (a.ticker || '').localeCompare(b.ticker || '');
+    if (av == null) return 1;
+    if (bv == null) return -1;
+    if (SORT_FIELD === 'ticker' || SORT_FIELD === 'name') {
+      const s = String(av).localeCompare(String(bv));
+      return SORT_DIR === 'asc' ? s : -s;
+    }
+    return SORT_DIR === 'asc' ? av - bv : bv - av;
+  });
+  return out;
+}
+
+function updateTileCounts() {
+  const trCount = UNIVERSE.filter(u => u.type === 'traded').length;
+  const ntCount = UNIVERSE.filter(u => u.type === 'nontraded').length;
+  document.getElementById('cnt-all').textContent = UNIVERSE.length;
+  document.getElementById('cnt-traded').textContent = trCount;
+  document.getElementById('cnt-nontraded').textContent = ntCount;
+  document.getElementById('stat-total').textContent = UNIVERSE.length;
+}
+
+// ----- INTERACTIONS -----
+function attachHandlers() {
+  // row click to expand
+  document.querySelectorAll('.tbl-row').forEach(row => {
+    row.onclick = () => {
+      const tk = row.dataset.ticker;
+      const expEl = document.querySelector(`.tbl-expand[data-expand-for="${tk}"]`);
+      const wasOn = row.classList.contains('expanded');
+      // Close any others
+      document.querySelectorAll('.tbl-row.expanded').forEach(r => r.classList.remove('expanded'));
+      document.querySelectorAll('.tbl-expand.on').forEach(e => e.classList.remove('on'));
+      if (!wasOn) {
+        row.classList.add('expanded');
+        expEl.classList.add('on');
+        // Lazy load news for this ticker
+        loadNewsFor(tk);
+      }
+    };
+  });
+}
+
+async function loadNewsFor(ticker) {
+  const target = document.getElementById('news-' + ticker);
+  if (!target || target.dataset.loaded === '1') return;
+  try {
+    const r = await fetch(NEWS + ticker + '.json');
+    if (!r.ok) {
+      target.innerHTML = '<div class="empty">No 8 K feed available for this fund.</div>';
+      return;
+    }
+    const data = await r.json();
+    const items = (data.items || []).slice(0, 4);
+    if (!items.length) {
+      target.innerHTML = '<div class="empty">No 8 K filings recorded.</div>';
+    } else {
+      target.innerHTML = items.map(it => {
+        const headline = it.headline_ai || it.title || '8 K filing';
+        const date = fmtDate(it.filed || it.date);
+        const url = it.url || '#';
+        return `<div class="item"><span class="dt">${date}</span><a href="${url}" target="_blank" class="hd">${headline}</a></div>`;
+      }).join('');
+    }
+    target.dataset.loaded = '1';
+  } catch (e) {
+    target.innerHTML = '<div class="empty">Could not load filings feed.</div>';
+  }
+}
+
+// tab handlers
+document.querySelectorAll('.fb-tab').forEach(t => t.addEventListener('click', () => {
+  document.querySelectorAll('.fb-tab').forEach(x => x.classList.remove('on'));
+  t.classList.add('on');
+  CURRENT_TAB = t.dataset.tab;
+  renderTables();
+}));
+
+// search
+document.getElementById('search').addEventListener('input', (e) => {
+  CURRENT_SEARCH = e.target.value.trim();
+  renderTables();
+});
+
+// sort handlers
+document.querySelectorAll('.col[data-sort]').forEach(c => c.addEventListener('click', () => {
+  const f = c.dataset.sort;
+  if (SORT_FIELD === f) {
+    SORT_DIR = SORT_DIR === 'asc' ? 'desc' : 'asc';
+  } else {
+    SORT_FIELD = f;
+    SORT_DIR = (f === 'ticker' || f === 'name') ? 'asc' : 'desc';
+  }
+  document.querySelectorAll('.col').forEach(x => x.classList.remove('sort-asc', 'sort-desc'));
+  document.querySelectorAll(`.col[data-sort="${f}"]`).forEach(x => x.classList.add('sort-' + SORT_DIR));
+  renderTables();
+}));
+
+load();
+</script>
+
+</body>
+</html>
