@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Primers — Structuring Weekly</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&family=Roboto+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#fafafa; --bg2:#fff; --bg3:#f4f4f5;
+  --ink:#0a0a0a; --ink2:#3f3f46; --ink3:#71717a; --ink4:#a1a1aa;
+  --line:#e4e4e7; --line2:#d4d4d8;
+  --mono:"Roboto Mono",ui-monospace,monospace;
+  --sans:"Roboto","Inter","Segoe UI",sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:var(--bg);font-family:var(--sans);color:var(--ink);font-size:14px;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+
+.navbar{height:60px;background:#fff;border-bottom:1px solid var(--line);display:flex;align-items:center;padding:0 28px;position:sticky;top:0;z-index:300}
+.logo{display:flex;align-items:center;gap:10px;margin-right:48px;text-decoration:none}
+.logo-mark{width:28px;height:28px;background:var(--ink);border-radius:7px;display:flex;align-items:center;justify-content:center}
+.logo-mark svg{width:15px;height:15px;fill:#fff}
+.logo-text{font-size:15px;font-weight:600;color:var(--ink);letter-spacing:-.3px}
+.logo-text span{font-weight:400}
+.nav-links{display:flex;align-items:center;gap:2px;margin:0 auto}
+.nav-link{padding:8px 14px;font-size:13.5px;font-weight:500;color:var(--ink2);border-radius:6px;white-space:nowrap}
+.nav-link:hover{color:var(--ink);background:var(--bg3)}
+.nav-link.on{color:var(--ink);font-weight:600}
+.nav-right{display:flex;align-items:center;gap:14px}
+.btn-outline{padding:8px 4px;background:transparent;color:var(--ink);font-size:13.5px;font-weight:500}
+.btn-outline:hover{opacity:.65}
+.btn-primary{height:34px;padding:0 18px;border-radius:999px;background:var(--ink);color:#fff;font-size:13px;font-weight:500;letter-spacing:.1px}
+
+.wrap{max-width:1080px;margin:0 auto;padding:48px 28px 100px}
+@media(max-width:780px){.wrap{padding:24px 16px 60px}}
+
+.crumb{font-family:var(--mono);font-size:11px;color:var(--ink3);letter-spacing:.4px;margin-bottom:24px}
+.crumb a{color:var(--ink3)}
+.crumb a:hover{color:var(--ink);text-decoration:underline}
+
+.hero{margin-bottom:56px}
+.hero h1{font-size:42px;line-height:1.1;letter-spacing:-1.1px;color:var(--ink);font-weight:600;margin-bottom:16px;max-width:720px}
+@media(max-width:780px){.hero h1{font-size:30px}}
+.hero p{font-size:16px;line-height:1.65;color:var(--ink2);max-width:600px}
+
+.primer-list{display:grid;grid-template-columns:1fr;gap:16px}
+
+.primer-card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:28px;display:grid;grid-template-columns:80px 1fr auto;gap:24px;align-items:center;text-decoration:none;color:inherit;transition:border-color .15s,box-shadow .15s;position:relative}
+.primer-card:hover{border-color:var(--ink2);box-shadow:0 4px 16px rgba(0,0,0,.04)}
+@media(max-width:780px){.primer-card{grid-template-columns:1fr;gap:14px;padding:20px}}
+
+.primer-card .num{font-family:var(--mono);font-size:48px;font-weight:600;color:var(--ink3);letter-spacing:-1px;line-height:1;text-align:center}
+@media(max-width:780px){.primer-card .num{font-size:32px;text-align:left}}
+
+.primer-card .body{min-width:0}
+.primer-card .ptag{font-family:var(--mono);font-size:10px;letter-spacing:.5px;text-transform:uppercase;color:var(--ink3);margin-bottom:8px}
+.primer-card h3{font-size:22px;font-weight:600;letter-spacing:-.4px;color:var(--ink);margin-bottom:8px;line-height:1.2}
+.primer-card p{font-size:13.5px;line-height:1.6;color:var(--ink2);margin-bottom:12px;max-width:560px}
+.primer-card .meta{display:flex;flex-wrap:wrap;gap:14px;font-family:var(--mono);font-size:10px;letter-spacing:.4px;text-transform:uppercase;color:var(--ink3)}
+.primer-card .meta b{color:var(--ink2);font-weight:600}
+
+.primer-card .pgo{align-self:center;width:42px;height:42px;border-radius:50%;background:var(--bg3);display:flex;align-items:center;justify-content:center;color:var(--ink3);transition:background .15s,color .15s,transform .15s}
+.primer-card:hover .pgo{background:var(--ink);color:#fff;transform:translate(2px,-2px)}
+@media(max-width:780px){.primer-card .pgo{position:absolute;top:20px;right:20px}}
+
+footer{padding-top:36px;margin-top:60px;border-top:1px solid var(--line);font-family:var(--mono);font-size:10.5px;color:var(--ink3);text-align:center;letter-spacing:.3px;line-height:1.8}
+</style>
+</head>
+<body>
+
+<nav class="navbar">
+  <a class="logo" href="../../index.html">
+    <div class="logo-mark"><svg viewBox="0 0 16 16"><rect x="2" y="9" width="3" height="5"/><rect x="6.5" y="5" width="3" height="9"/><rect x="11" y="2" width="3" height="12"/></svg></div>
+    <div class="logo-text">BDC<span>Intelligence</span></div>
+  </a>
+  <div class="nav-links">
+    <a class="nav-link" href="../../chewbacca.html">Chewbacca</a>
+    <a class="nav-link" href="../../index.html">US BDC Universe</a>
+    <a class="nav-link" href="../../fund.html">Fund Deep Dive</a>
+    <a class="nav-link" href="../../compare.html">Compare</a>
+    <a class="nav-link" href="../../screener.html">Screener</a>
+    <a class="nav-link" href="../../analysis.html">Analysis</a>
+    <a class="nav-link" href="../../news.html">News</a>
+    <a class="nav-link on" href="../index.html">Structuring Weekly</a>
+    <a class="nav-link" href="../../about.html">About us</a>
+  </div>
+  <div class="nav-right">
+    <button class="btn-outline">Sign In</button>
+    <button class="btn-primary">Get Access</button>
+  </div>
+</nav>
+
+<div class="wrap">
+
+  <div class="crumb"><a href="../index.html">← Structuring Weekly</a></div>
+
+  <div class="hero">
+    <h1>Primers.</h1>
+    <p>Interactive explainers for the markets, instruments, and data that live underneath every Structuring Weekly issue. Built to be read in one sitting and remembered for years. Each primer assumes you are smart and busy. None of them waste your time.</p>
+  </div>
+
+  <div class="primer-list">
+
+    <a class="primer-card" href="private-credit.html">
+      <div class="num">01</div>
+      <div class="body">
+        <div class="ptag">Markets</div>
+        <h3>Private Credit Primer</h3>
+        <p>What private credit actually is, why it has tripled in five years, and how it differs from the syndicated loan market. Direct lending, mezz, special situations, unitranche, all explained with examples and a working capital structure you can manipulate.</p>
+        <div class="meta">
+          <span><b>14 min read</b></span>
+          <span><b>5 interactives</b></span>
+          <span><b>Updated 2026</b></span>
+        </div>
+      </div>
+      <div class="pgo">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11L11 3M11 3H5M11 3V9"/></svg>
+      </div>
+    </a>
+
+    <a class="primer-card" href="bdc.html">
+      <div class="num">02</div>
+      <div class="body">
+        <div class="ptag">Vehicles</div>
+        <h3>BDC Primer</h3>
+        <p>What a business development company actually is, how traded BDCs differ from non traded ones, why the 1940 Act matters, and how the typical balance sheet works. Plus the tax structure that explains why BDCs distribute almost everything.</p>
+        <div class="meta">
+          <span><b>11 min read</b></span>
+          <span><b>4 interactives</b></span>
+          <span><b>Updated 2026</b></span>
+        </div>
+      </div>
+      <div class="pgo">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11L11 3M11 3H5M11 3V9"/></svg>
+      </div>
+    </a>
+
+    <a class="primer-card" href="reading-the-data.html">
+      <div class="num">03</div>
+      <div class="body">
+        <div class="ptag">Reading the platform</div>
+        <h3>Reading the Data</h3>
+        <p>What a high or low number actually means across every metric on this platform. Non accrual at 2.3 percent, is that bad? Wtd avg yield at 11.8 percent, is that high? Each metric shown with the distribution across the universe so you know where any given fund sits.</p>
+        <div class="meta">
+          <span><b>9 min read</b></span>
+          <span><b>Live data</b></span>
+          <span><b>Reference layer</b></span>
+        </div>
+      </div>
+      <div class="pgo">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11L11 3M11 3H5M11 3V9"/></svg>
+      </div>
+    </a>
+
+    <a class="primer-card" href="leveraged-finance.html">
+      <div class="num">04</div>
+      <div class="body">
+        <div class="ptag">Instruments</div>
+        <h3>Leveraged Finance Primer</h3>
+        <p>The vocabulary and mechanics of leveraged loans, high yield bonds, and the capital stack underneath an LBO. Pricing, covenants, OID, call protection, and the way TLB markets actually clear. Walks through one stylized deal end to end.</p>
+        <div class="meta">
+          <span><b>16 min read</b></span>
+          <span><b>6 interactives</b></span>
+          <span><b>Updated 2026</b></span>
+        </div>
+      </div>
+      <div class="pgo">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11L11 3M11 3H5M11 3V9"/></svg>
+      </div>
+    </a>
+
+    <a class="primer-card" href="distressed-debt.html">
+      <div class="num">05</div>
+      <div class="body">
+        <div class="ptag">When things break</div>
+        <h3>Distressed Debt Primer</h3>
+        <p>What distressed actually means, the playbooks investors run, and the shape of a typical restructuring from non accrual through emergence. Priority waterfalls, DIP financing, drop down transactions, and the way the market thinks about recovery in 2026.</p>
+        <div class="meta">
+          <span><b>18 min read</b></span>
+          <span><b>5 interactives</b></span>
+          <span><b>Updated 2026</b></span>
+        </div>
+      </div>
+      <div class="pgo">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11L11 3M11 3H5M11 3V9"/></svg>
+      </div>
+    </a>
+
+  </div>
+
+  <footer>
+    Primers are part of Structuring Weekly. All written from primary documents and a decade of cumulative experience. Get the next primer in your inbox by subscribing on the <a href="../index.html" style="text-decoration:underline">Structuring Weekly homepage</a>.
+  </footer>
+
+</div>
+
+</body>
+</html>

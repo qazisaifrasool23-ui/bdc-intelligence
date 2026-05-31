@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Deal Deep Dives — Structuring Weekly</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&family=Roboto+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fafafa;--bg2:#fff;--bg3:#f4f4f5;--ink:#0a0a0a;--ink2:#3f3f46;--ink3:#71717a;--ink4:#a1a1aa;--line:#e4e4e7;--line2:#d4d4d8;--hl:#fde68a;--mono:"Roboto Mono",ui-monospace,monospace;--sans:"Roboto","Inter","Segoe UI",sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:var(--bg);font-family:var(--sans);color:var(--ink);font-size:14px;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+.navbar{height:60px;background:#fff;border-bottom:1px solid var(--line);display:flex;align-items:center;padding:0 28px;position:sticky;top:0;z-index:300}
+.logo{display:flex;align-items:center;gap:10px;margin-right:48px}
+.logo-mark{width:28px;height:28px;background:var(--ink);border-radius:7px;display:flex;align-items:center;justify-content:center}
+.logo-mark svg{width:15px;height:15px;fill:#fff}
+.logo-text{font-size:15px;font-weight:600;letter-spacing:-.3px}
+.logo-text span{font-weight:400}
+.nav-links{display:flex;align-items:center;gap:2px;margin:0 auto}
+.nav-link{padding:8px 14px;font-size:13.5px;font-weight:500;color:var(--ink2);border-radius:6px;white-space:nowrap}
+.nav-link:hover{color:var(--ink);background:var(--bg3)}
+.nav-link.on{color:var(--ink);font-weight:600}
+.nav-right{display:flex;align-items:center;gap:14px}
+.btn-outline{padding:8px 4px;background:transparent;color:var(--ink);font-size:13.5px;font-weight:500}
+.btn-primary{height:34px;padding:0 18px;border-radius:999px;background:var(--ink);color:#fff;font-size:13px;font-weight:500}
+
+.wrap{max-width:1080px;margin:0 auto;padding:48px 28px 100px}
+@media(max-width:780px){.wrap{padding:24px 16px 60px}}
+.crumb{font-family:var(--mono);font-size:11px;color:var(--ink3);letter-spacing:.4px;margin-bottom:24px}
+.crumb a{color:var(--ink3)}
+.crumb a:hover{color:var(--ink);text-decoration:underline}
+
+.hero{margin-bottom:48px}
+.hero h1{font-size:42px;line-height:1.1;letter-spacing:-1.1px;font-weight:600;margin-bottom:16px;max-width:780px}
+@media(max-width:780px){.hero h1{font-size:30px}}
+.hero p{font-size:16px;line-height:1.65;color:var(--ink2);max-width:680px}
+
+/* coming-soon banner */
+.coming-soon{background:linear-gradient(135deg,#0a0a0a 0%,#1f1f23 100%);color:#fff;border-radius:14px;padding:24px 28px;display:flex;justify-content:space-between;align-items:center;gap:24px;margin-bottom:56px;flex-wrap:wrap}
+.coming-soon .left{flex:1;min-width:260px}
+.coming-soon .left h3{font-size:20px;font-weight:600;letter-spacing:-.3px;margin-bottom:6px}
+.coming-soon .left p{font-size:13.5px;color:rgba(255,255,255,.7);line-height:1.6}
+.coming-soon .right{font-family:var(--mono);font-size:10.5px;letter-spacing:.6px;text-transform:uppercase;color:rgba(255,255,255,.5);text-align:right}
+.coming-soon .right b{display:block;font-size:24px;color:#fff;letter-spacing:-.5px;font-weight:600;margin-top:4px}
+
+/* category sections */
+.cat-section{margin-bottom:64px}
+.cat-section h2{font-size:13px;font-family:var(--mono);letter-spacing:.8px;text-transform:uppercase;color:var(--ink3);margin-bottom:8px;display:flex;align-items:center;gap:10px}
+.cat-section h2::after{content:"";flex:1;height:1px;background:var(--line)}
+.cat-section h2 b{color:var(--ink);font-weight:600}
+.cat-section .cat-desc{font-size:14px;color:var(--ink2);line-height:1.65;margin-bottom:22px;max-width:680px}
+
+.deal-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:780px){.deal-grid{grid-template-columns:1fr}}
+.deal-card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:22px;display:flex;flex-direction:column;gap:12px;position:relative;transition:border-color .15s,box-shadow .15s}
+.deal-card:hover{border-color:var(--ink2);box-shadow:0 2px 12px rgba(0,0,0,.04)}
+.deal-card .dtag{font-family:var(--mono);font-size:9.5px;letter-spacing:.5px;text-transform:uppercase;color:var(--ink3);font-weight:500}
+.deal-card .dname{font-size:17px;font-weight:600;letter-spacing:-.3px;line-height:1.25;color:var(--ink)}
+.deal-card .dmeta{display:flex;gap:14px;flex-wrap:wrap;font-family:var(--mono);font-size:10.5px;color:var(--ink3);letter-spacing:.3px}
+.deal-card .dmeta b{color:var(--ink2);font-weight:600}
+.deal-card .dwhy{font-size:13.5px;line-height:1.65;color:var(--ink2)}
+.deal-card .dwhy b{color:var(--ink);font-weight:600}
+.deal-card .dstatus{font-family:var(--mono);font-size:9.5px;letter-spacing:.4px;text-transform:uppercase;color:var(--ink3);padding:4px 10px;border-radius:999px;background:var(--bg3);align-self:flex-start;font-weight:500;margin-top:auto}
+
+/* "how BDCs invest" callout grid */
+.invest-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:14px}
+@media(max-width:780px){.invest-grid{grid-template-columns:1fr}}
+.invest-card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:18px}
+.invest-card .ih{font-size:14.5px;font-weight:600;letter-spacing:-.2px;margin-bottom:6px;display:flex;align-items:center;gap:8px}
+.invest-card .ih .ic{width:7px;height:7px;border-radius:50%;background:var(--ink);display:inline-block}
+.invest-card .id{font-size:12.5px;line-height:1.6;color:var(--ink2)}
+
+footer{padding-top:36px;margin-top:60px;border-top:1px solid var(--line);font-family:var(--mono);font-size:10.5px;color:var(--ink3);text-align:center;letter-spacing:.3px;line-height:1.8}
+</style>
+</head>
+<body>
+
+<nav class="navbar">
+  <a class="logo" href="../../index.html">
+    <div class="logo-mark"><svg viewBox="0 0 16 16"><rect x="2" y="9" width="3" height="5"/><rect x="6.5" y="5" width="3" height="9"/><rect x="11" y="2" width="3" height="12"/></svg></div>
+    <div class="logo-text">BDC<span>Intelligence</span></div>
+  </a>
+  <div class="nav-links">
+    <a class="nav-link" href="../../chewbacca.html">Chewbacca</a>
+    <a class="nav-link" href="../../index.html">US BDC Universe</a>
+    <a class="nav-link" href="../../fund.html">Fund Deep Dive</a>
+    <a class="nav-link" href="../../compare.html">Compare</a>
+    <a class="nav-link" href="../../screener.html">Screener</a>
+    <a class="nav-link" href="../../analysis.html">Analysis</a>
+    <a class="nav-link" href="../../news.html">News</a>
+    <a class="nav-link on" href="../index.html">Structuring Weekly</a>
+    <a class="nav-link" href="../../about.html">About us</a>
+  </div>
+  <div class="nav-right">
+    <button class="btn-outline">Sign In</button>
+    <button class="btn-primary">Get Access</button>
+  </div>
+</nav>
+
+<div class="wrap">
+
+  <div class="crumb"><a href="../index.html">← Structuring Weekly</a></div>
+
+  <div class="hero">
+    <h1>Deal Deep Dives.</h1>
+    <p>Long form teardowns of credit deals worth understanding. The capital structures that defined a cycle. The restructurings that taught the market a lesson. The private credit deals that changed how the asset class works. Below: the deals we plan to cover, grouped by what they teach.</p>
+  </div>
+
+  <div class="coming-soon">
+    <div class="left">
+      <h3>First teardowns dropping soon.</h3>
+      <p>Each deep dive will reconstruct the deal from primary documents (the indenture, the 8 K filings, the bankruptcy court docket where applicable) and walk through what an analyst should have seen at the time. Subscribe on the <a href="../index.html" style="color:#fff;text-decoration:underline">Structuring Weekly homepage</a> to get the first one in your inbox.</p>
+    </div>
+    <div class="right">First publication<b>Q3 2026</b></div>
+  </div>
+
+  <!-- Category 1: Public market restructurings -->
+  <section class="cat-section">
+    <h2><b>Public market restructurings.</b> The deals that taught the market what cov lite actually meant.</h2>
+    <p class="cat-desc">These are the famous moments where modern indenture loopholes were tested and either survived or collapsed in court. Anyone who lends in the syndicated market needs to know these stories. Every modern indenture review traces its DNA to one of these decisions.</p>
+    <div class="deal-grid">
+
+      <div class="deal-card">
+        <div class="dtag">Drop down · 2017</div>
+        <div class="dname">J Crew Group</div>
+        <div class="dmeta"><span>Sponsor: <b>TPG, Leonard Green</b></span><span>Outcome: <b>Filed 2020</b></span></div>
+        <div class="dwhy">The transaction that named the genre. J Crew moved its IP to an unrestricted subsidiary and raised $300M of new debt against it, leaving the existing TLB lenders with claims on the empty operating business. The structure held in court. <b>The case became the template for every later drop down.</b></div>
+        <div class="dstatus">Suggested for coverage</div>
+      </div>
+
+      <div class="deal-card">
+        <div class="dtag">Uptier · 2020</div>
+        <div class="dname">Serta Simmons Bedding</div>
+        <div class="dmeta"><span>Sponsor: <b>Advent</b></span><span>Outcome: <b>Litigation ongoing</b></span></div>
+        <div class="dwhy">Serta gave a subset of its first lien lenders the right to swap into a new super priority tranche, leaving the rest of the first lien holders subordinated. <b>The minority lenders are still in court arguing this was illegal.</b> Defines the modern uptier exchange and the limits of "open market purchase" language.</div>
+        <div class="dstatus">Suggested for coverage</div>
+      </div>
+
+      <div class="deal-card">
+        <div class="dtag">Chapter 11 · 2020</div>
+        <div class="dname">Hertz Global Holdings</div>
+        <div class="dmeta"><span>Type: <b>Retail bankruptcy</b></span><span>Outcome: <b>Equity recovered</b></span></div>
+        <div class="dwhy">The first major bankruptcy where retail equity holders ended up better off than most senior creditors. Pandemic collapse, surprise rental car shortage, then unusual recovery. <b>A case study in how bankruptcy outcomes can defy textbook predictions when the underlying business unexpectedly turns.</b></div>
+        <div class="dstatus">Suggested for coverage</div>
+      </div>
+
+      <div class="deal-card">
+        <div class="dtag">Chapter 11 · 2023</div>
+        <div class="dname">Envision Healthcare</div>
+        <div class="dmeta"><span>Sponsor: <b>KKR</b></span><span>Outcome: <b>Filed May 2023</b></span></div>
+        <div class="dwhy">The defining health services bankruptcy of the post COVID cycle. $7B+ of debt, complex out of court attempts, eventual Chapter 11. <b>The first lien holders took control of the equity; existing equity wiped out.</b> A template for how surprise medical billing regulation hit credit.</div>
+        <div class="dstatus">Suggested for coverage</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Category 2: Private credit deals worth knowing -->
+  <section class="cat-section">
+    <h2><b>Private credit, defining deals.</b> Where the asset class showed what it could and could not do.</h2>
+    <p class="cat-desc">These are private credit transactions that shaped the modern direct lending landscape. Some are landmarks of scale. Others are workouts that revealed how the asset class actually behaves in stress. All of them are visible to BDC analysts via the SOI exhibits of the funds involved.</p>
+    <div class="deal-grid">
+
+      <div class="deal-card">
+        <div class="dtag">Mega direct loan · 2021</div>
+        <div class="dname">Stripe acquisition financing (Bridge)</div>
+        <div class="dmeta"><span>Lenders: <b>Multiple direct</b></span><span>Size: <b>~$1B</b></span></div>
+        <div class="dwhy">One of the earliest examples of direct lenders winning a "trophy" deal away from the syndicated market for a high quality fintech borrower. <b>Marked the moment institutional appetite for direct lending hit critical mass for $1B+ tickets.</b> Set pricing benchmarks for similar later deals.</div>
+        <div class="dstatus">Suggested for coverage</div>
+      </div>
+
+      <div class="deal-card">
+        <div class="dtag">Unitranche · 2022</div>
+        <div class="dname">Athenahealth take private</div>
+        <div class="dmeta"><span>Sponsor: <b>Bain, Hellman &amp; Friedman</b></span><span>Size: <b>$17B EV</b></span></div>
+        <div class="dwhy">The largest unitranche financing in private credit history. Provided by a club of direct lenders including Ares, Blackstone, Sixth Street, others. <b>Demonstrated that private credit could now finance public to private transactions at scale historically reserved for the syndicated market.</b></div>
+        <div class="dstatus">Suggested for coverage</div>
+      </div>
+
+      <div class="deal-card">
+        <div class="dtag">Distressed / workout · 2024</div>
+        <div class="dname">Pluralsight</div>
+        <div class="dmeta"><span>Sponsor: <b>Vista Equity</b></span><span>Lenders: <b>Direct lenders</b></span></div>
+        <div class="dwhy">A direct lending workout where Vista Equity walked away from a software company while the direct lenders (Ares, Blue Owl, Goldman, others) absorbed the company. <b>The first highly visible case where a top tier sponsor handed the keys back, and the direct lenders had to operate the business directly.</b> Critical case study in 2026 cycle dynamics.</div>
+        <div class="dstatus">Suggested for coverage</div>
+      </div>
+
+      <div class="deal-card">
+        <div class="dtag">Recap · 2023</div>
+        <div class="dname">Veritas Capital portfolio companies</div>
+        <div class="dmeta"><span>Sponsor: <b>Veritas Capital</b></span><span>Lender: <b>Multiple BDCs</b></span></div>
+        <div class="dwhy">A sequence of dividend recap deals where Veritas extracted equity from defense and gov tech portfolio companies through layered direct loans. <b>Illustrates how sponsors use the BDC channel to recap portfolio companies without needing public market access.</b> Shows up in multiple BDC SOIs.</div>
+        <div class="dstatus">Suggested for coverage</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Category 3: BDC-specific deals -->
+  <section class="cat-section">
+    <h2><b>BDC milestones.</b> The corporate events that shaped the BDC universe itself.</h2>
+    <p class="cat-desc">Sometimes the most important credit story is about a BDC, not a borrower. Mergers, IPOs, dividend cuts, and new vehicle launches change the supply and demand dynamics of the entire BDC ecosystem. These are the BDC level events worth studying as case examples.</p>
+    <div class="deal-grid">
+
+      <div class="deal-card">
+        <div class="dtag">BDC merger · 2024</div>
+        <div class="dname">Owl Rock and Capital Corp merger (OBDC)</div>
+        <div class="dmeta"><span>Type: <b>Affiliated merger</b></span><span>Result: <b>$13B+ BDC</b></span></div>
+        <div class="dwhy">The 2024 combination of two affiliated Owl Rock BDCs into a single $13B+ vehicle (OBDC). <b>One of the largest BDC consolidations on record, set the template for size driven consolidation across the universe.</b> Tells the story of why "platform scale" matters in modern BDC management.</div>
+        <div class="dstatus">Suggested for coverage</div>
+      </div>
+
+      <div class="deal-card">
+        <div class="dtag">Non traded launch · 2022</div>
+        <div class="dname">BCRED (Blackstone Private Credit Fund)</div>
+        <div class="dmeta"><span>Manager: <b>Blackstone</b></span><span>AUM: <b>$50B+ in 2025</b></span></div>
+        <div class="dwhy">Possibly the most successful non traded BDC launch in history. Scaled from launch to $50B AUM in roughly four years. <b>Defines what a modern wealth channel BDC looks like in terms of fee economics, distribution mechanics, and quarterly tender behavior.</b></div>
+        <div class="dstatus">Suggested for coverage</div>
+      </div>
+
+      <div class="deal-card">
+        <div class="dtag">Dividend cut · 2024</div>
+        <div class="dname">FS KKR (FSK) repositioning</div>
+        <div class="dmeta"><span>Type: <b>Multi quarter cut</b></span><span>Outcome: <b>Stock response</b></span></div>
+        <div class="dwhy">FSK reduced its dividend through a series of steps in 2024 to align distributions with net investment income. <b>A textbook case of how dividend cuts get telegraphed, executed, and absorbed by the market.</b> Useful for understanding the dividend coverage signal in the screener.</div>
+        <div class="dstatus">Suggested for coverage</div>
+      </div>
+
+      <div class="deal-card">
+        <div class="dtag">IPO · 2025</div>
+        <div class="dname">Blue Owl Technology Income Corp</div>
+        <div class="dmeta"><span>Manager: <b>Blue Owl</b></span><span>Type: <b>Spinoff listing</b></span></div>
+        <div class="dwhy">A non traded BDC that converted to listed status via IPO, an increasingly common pathway for non traded vehicles seeking better liquidity. <b>Case study in the structural premium / discount dynamic of going from NAV based to market based pricing.</b></div>
+        <div class="dstatus">Suggested for coverage</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Section: How BDCs invest -->
+  <section class="cat-section">
+    <h2><b>How BDCs actually invest.</b> Reference layer.</h2>
+    <p class="cat-desc">Before any deal teardown, it helps to know the vehicles a BDC uses to put money to work. There are roughly seven distinct investment forms. Each behaves differently in stress and shows up differently in the SOI exhibit.</p>
+    <div class="invest-grid">
+      <div class="invest-card">
+        <div class="ih"><span class="ic"></span>Direct first lien</div>
+        <div class="id">Senior secured loans originated bilaterally with the borrower. The core asset of most BDCs. Senior position in the cap stack, first claim on collateral.</div>
+      </div>
+      <div class="invest-card">
+        <div class="ih"><span class="ic"></span>Second lien and sub</div>
+        <div class="id">Subordinated debt sitting below the first lien. Higher yield (12 to 15 percent) in exchange for lower recovery in default. Common in larger LBOs.</div>
+      </div>
+      <div class="invest-card">
+        <div class="ih"><span class="ic"></span>Unitranche</div>
+        <div class="id">Blended first and second lien in a single tranche. Single lender or small club. Borrower simplicity, lender blended yield. The growth product of the last decade.</div>
+      </div>
+      <div class="invest-card">
+        <div class="ih"><span class="ic"></span>Equity and warrants</div>
+        <div class="id">Direct equity stakes or warrant kickers attached to debt. Often acquired in workouts as part of restructured positions. Lumpy returns, mark to market.</div>
+      </div>
+      <div class="invest-card">
+        <div class="ih"><span class="ic"></span>JV / SLF structures</div>
+        <div class="id">Off balance sheet vehicles co invested with one or two partners. Hold loans the BDC originated. Levered inside the JV for higher yield on the BDC's invested capital.</div>
+      </div>
+      <div class="invest-card">
+        <div class="ih"><span class="ic"></span>Asset backed lending</div>
+        <div class="id">Loans collateralized by specific identifiable assets (equipment, receivables, real estate). Different recovery dynamics than corporate loans. Growing share of newer BDCs.</div>
+      </div>
+      <div class="invest-card">
+        <div class="ih"><span class="ic"></span>NAV loans</div>
+        <div class="id">Lending against the NAV of a private equity or private credit portfolio. Newer product, increasingly visible. Highly bespoke. Worth a primer of its own at some point.</div>
+      </div>
+      <div class="invest-card">
+        <div class="ih"><span class="ic"></span>Syndicated participations</div>
+        <div class="id">Some BDCs (especially older traded ones) participate in syndicated TLBs alongside their direct lending positions. Less common but still meaningful in 5 to 10 percent of portfolios.</div>
+      </div>
+      <div class="invest-card">
+        <div class="ih"><span class="ic"></span>Specialty (royalties, etc)</div>
+        <div class="id">Niche structures (royalty backed loans, pharmaceutical financing, music royalty rights). A handful of BDCs specialize. Usually a small portfolio percentage even for those.</div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    Deep dive teardowns coming through Q3 2026. Subscribe to <a href="../index.html" style="text-decoration:underline">Structuring Weekly</a> for the first issue.<br>
+    Every teardown grounded in primary documents. No invented facts. No anonymous sources. No takes without the structure underneath them.
+  </footer>
+
+</div>
+
+</body>
+</html>

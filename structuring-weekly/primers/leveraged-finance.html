@@ -1,0 +1,581 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Leveraged Finance Primer — Structuring Weekly</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&family=Roboto+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fafafa;--bg2:#fff;--bg3:#f4f4f5;--ink:#0a0a0a;--ink2:#3f3f46;--ink3:#71717a;--ink4:#a1a1aa;--line:#e4e4e7;--line2:#d4d4d8;--hl:#fde68a;--mono:"Roboto Mono",ui-monospace,monospace;--sans:"Roboto","Inter","Segoe UI",sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:var(--bg);font-family:var(--sans);color:var(--ink);font-size:15px;line-height:1.65;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+input,select{font-family:inherit}
+.navbar{height:60px;background:#fff;border-bottom:1px solid var(--line);display:flex;align-items:center;padding:0 28px;position:sticky;top:0;z-index:300}
+.logo{display:flex;align-items:center;gap:10px;margin-right:48px}
+.logo-mark{width:28px;height:28px;background:var(--ink);border-radius:7px;display:flex;align-items:center;justify-content:center}
+.logo-mark svg{width:15px;height:15px;fill:#fff}
+.logo-text{font-size:15px;font-weight:600;letter-spacing:-.3px}
+.logo-text span{font-weight:400}
+.nav-links{display:flex;align-items:center;gap:2px;margin:0 auto}
+.nav-link{padding:8px 14px;font-size:13.5px;font-weight:500;color:var(--ink2);border-radius:6px;white-space:nowrap}
+.nav-link:hover{color:var(--ink);background:var(--bg3)}
+.nav-link.on{color:var(--ink);font-weight:600}
+.nav-right{display:flex;align-items:center;gap:14px}
+.btn-outline{padding:8px 4px;background:transparent;color:var(--ink);font-size:13.5px;font-weight:500}
+.btn-primary{height:34px;padding:0 18px;border-radius:999px;background:var(--ink);color:#fff;font-size:13px;font-weight:500}
+
+.wrap{max-width:780px;margin:0 auto;padding:32px 28px 100px}
+@media(max-width:780px){.wrap{padding:20px 16px 60px}}
+.crumb{font-family:var(--mono);font-size:11px;color:var(--ink3);letter-spacing:.4px;margin-bottom:28px}
+.crumb a{color:var(--ink3)}
+.crumb a:hover{color:var(--ink);text-decoration:underline}
+.article-head{margin-bottom:48px;padding-bottom:32px;border-bottom:1px solid var(--line)}
+.article-head .kicker{font-family:var(--mono);font-size:11px;letter-spacing:.7px;text-transform:uppercase;color:var(--ink3);margin-bottom:18px}
+.article-head h1{font-size:46px;line-height:1.08;letter-spacing:-1.3px;font-weight:600;margin-bottom:18px}
+@media(max-width:780px){.article-head h1{font-size:34px;letter-spacing:-.7px}}
+.article-head .standfirst{font-size:18px;line-height:1.6;color:var(--ink2)}
+.article-head .meta{font-family:var(--mono);font-size:11px;color:var(--ink3);margin-top:24px;display:flex;gap:18px;flex-wrap:wrap}
+.article-head .meta b{color:var(--ink);font-weight:600}
+
+.article p{font-size:16px;line-height:1.75;color:var(--ink2);margin-bottom:20px}
+.article p b{color:var(--ink);font-weight:600}
+.article p i{color:var(--ink);font-style:italic}
+.article h2{font-size:26px;line-height:1.2;letter-spacing:-.6px;font-weight:600;margin:56px 0 18px}
+.article h2 .num{font-family:var(--mono);font-size:13px;color:var(--ink3);letter-spacing:.4px;font-weight:500;display:block;margin-bottom:6px}
+.article h3{font-size:18px;font-weight:600;letter-spacing:-.3px;margin:32px 0 12px}
+.article ul{margin:16px 0 24px 28px;color:var(--ink2)}
+.article ul li{margin-bottom:8px;line-height:1.7;font-size:16px}
+.article ul li b{color:var(--ink);font-weight:600}
+.article blockquote{margin:32px 0;padding:6px 0 6px 24px;border-left:3px solid var(--ink);font-size:18px;line-height:1.55;color:var(--ink);font-weight:500;font-style:italic}
+.hl{background:linear-gradient(180deg,transparent 60%,var(--hl) 60%);padding:0 2px}
+
+.ix{background:#fff;border:1px solid var(--line);border-radius:14px;padding:24px;margin:36px 0;position:relative}
+.ix .ix-label{font-family:var(--mono);font-size:9.5px;letter-spacing:.7px;text-transform:uppercase;color:var(--ink3);margin-bottom:6px;display:flex;align-items:center;gap:8px}
+.ix .ix-label::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--ink)}
+.ix h4{font-size:17px;font-weight:600;letter-spacing:-.3px;margin-bottom:6px}
+.ix .ix-hint{font-size:13px;color:var(--ink3);margin-bottom:18px}
+
+/* Pricing breakdown */
+.ix-price .ctrl-row{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;margin-bottom:18px}
+@media(max-width:580px){.ix-price .ctrl-row{grid-template-columns:1fr}}
+.ix-price .ctrl .row{display:flex;justify-content:space-between;margin-bottom:6px}
+.ix-price .ctrl .label{font-family:var(--mono);font-size:10px;letter-spacing:.5px;text-transform:uppercase;color:var(--ink3)}
+.ix-price .ctrl .val{font-family:var(--mono);font-size:15px;font-weight:600;color:var(--ink)}
+.ix-price input[type=range]{width:100%;-webkit-appearance:none;appearance:none;height:4px;background:var(--line);border-radius:2px;outline:none}
+.ix-price input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;width:16px;height:16px;border-radius:50%;background:var(--ink);cursor:pointer;border:3px solid #fff;box-shadow:0 0 0 1px var(--ink)}
+.ix-price .stack{display:flex;height:54px;border-radius:8px;overflow:hidden;margin-bottom:14px}
+.ix-price .stack .b{display:flex;align-items:center;justify-content:center;color:#fff;font-family:var(--mono);font-size:11px;font-weight:600;letter-spacing:.3px}
+.ix-price .stack .b.base{background:#3f3f46}
+.ix-price .stack .b.spread{background:#0a0a0a}
+.ix-price .stack .b.oid{background:#71717a;color:#fff}
+.ix-price .breakdown{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:6px}
+@media(max-width:580px){.ix-price .breakdown{grid-template-columns:1fr 1fr}}
+.ix-price .item{background:var(--bg3);border-radius:8px;padding:12px 14px}
+.ix-price .item .iv{font-family:var(--mono);font-size:18px;font-weight:600;color:var(--ink);letter-spacing:-.3px}
+.ix-price .item .il{font-family:var(--mono);font-size:9.5px;text-transform:uppercase;letter-spacing:.5px;color:var(--ink3);margin-top:4px}
+.ix-price .yld{background:var(--ink);color:#fff;border-radius:8px;padding:14px 16px;display:flex;justify-content:space-between;align-items:baseline}
+.ix-price .yld .yl{font-family:var(--mono);font-size:10px;letter-spacing:.5px;text-transform:uppercase;color:rgba(255,255,255,.6)}
+.ix-price .yld .yv{font-family:var(--mono);font-size:24px;font-weight:600;letter-spacing:-.5px}
+
+/* Cov-lite vs covenants */
+.ix-cov .toggle{display:flex;background:var(--bg3);border-radius:999px;padding:3px;margin-bottom:18px;max-width:340px}
+.ix-cov .toggle-btn{flex:1;padding:8px 16px;border-radius:999px;font-size:13px;font-weight:500;color:var(--ink2)}
+.ix-cov .toggle-btn.on{background:#fff;color:var(--ink);font-weight:600;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+.ix-cov .cov-rows{display:none}
+.ix-cov .cov-rows.on{display:block}
+.ix-cov .cov-row{display:grid;grid-template-columns:140px 1fr;gap:14px;padding:12px 0;border-top:1px solid var(--line);font-size:13.5px}
+.ix-cov .cov-row:first-child{border-top:none;padding-top:4px}
+.ix-cov .cov-row .k{font-family:var(--mono);font-size:10px;letter-spacing:.4px;text-transform:uppercase;color:var(--ink3);padding-top:2px}
+.ix-cov .cov-row .v{color:var(--ink2);line-height:1.5}
+.ix-cov .cov-row .v b{color:var(--ink);font-weight:600}
+
+/* Call protection over time */
+.ix-call .timeline{position:relative;margin:14px 0 26px;padding:14px 0 28px;border-radius:10px;background:var(--bg3)}
+.ix-call .tl-track{position:relative;height:46px;margin:6px 14px 0;background:#fff;border-radius:6px;border:1px solid var(--line)}
+.ix-call .tl-seg{position:absolute;top:0;bottom:0;display:flex;align-items:center;justify-content:center;color:#fff;font-family:var(--mono);font-size:10px;font-weight:600;letter-spacing:.3px;border-right:1px solid rgba(255,255,255,.3)}
+.ix-call .tl-seg:last-child{border-right:none}
+.ix-call .tl-seg.np{background:#0a0a0a}
+.ix-call .tl-seg.c102{background:#3f3f46}
+.ix-call .tl-seg.c101{background:#71717a}
+.ix-call .tl-seg.free{background:#a1a1aa;color:#0a0a0a}
+.ix-call .tl-labels{display:flex;justify-content:space-between;margin:6px 14px 0;font-family:var(--mono);font-size:9.5px;color:var(--ink3);letter-spacing:.3px}
+.ix-call .scenario{display:flex;gap:6px;margin-bottom:10px;flex-wrap:wrap}
+.ix-call .scenario .sb{padding:6px 14px;border-radius:999px;background:var(--bg3);font-size:12.5px;color:var(--ink2);font-weight:500;cursor:pointer}
+.ix-call .scenario .sb.on{background:var(--ink);color:#fff;font-weight:600}
+.ix-call .explain{font-size:13px;color:var(--ink2);line-height:1.6;margin-top:8px;padding:12px 14px;background:var(--bg3);border-radius:8px;border-left:3px solid var(--ink)}
+.ix-call .explain b{color:var(--ink);font-weight:600}
+
+/* Capital stack at leverage */
+.ix-stack .ctrl{margin-bottom:18px}
+.ix-stack .row{display:flex;justify-content:space-between;margin-bottom:6px}
+.ix-stack .label{font-family:var(--mono);font-size:10px;letter-spacing:.5px;text-transform:uppercase;color:var(--ink3)}
+.ix-stack .val{font-family:var(--mono);font-size:18px;font-weight:600;color:var(--ink);letter-spacing:-.3px}
+.ix-stack input[type=range]{width:100%;-webkit-appearance:none;appearance:none;height:4px;background:var(--line);border-radius:2px;outline:none}
+.ix-stack input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;width:16px;height:16px;border-radius:50%;background:var(--ink);cursor:pointer;border:3px solid #fff;box-shadow:0 0 0 1px var(--ink)}
+.ix-stack .waterfall{display:flex;flex-direction:column;gap:1px;border-radius:10px;overflow:hidden;margin-top:8px}
+.ix-stack .tier{padding:11px 14px;font-size:12.5px;color:#fff;display:flex;justify-content:space-between;align-items:center;transition:flex .25s}
+.ix-stack .tier.eq{background:#a1a1aa;color:var(--ink)}
+.ix-stack .tier.mez{background:#71717a}
+.ix-stack .tier.sub{background:#52525b}
+.ix-stack .tier.tlb{background:#3f3f46}
+.ix-stack .tier.rev{background:#0a0a0a}
+.ix-stack .tier .tk{font-family:var(--mono);font-size:10.5px;font-weight:600;letter-spacing:.4px;text-transform:uppercase}
+.ix-stack .tier .v{font-family:var(--mono);font-size:12.5px;font-weight:600}
+
+/* Secondary trading mechanic */
+.ix-sec .grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px}
+@media(max-width:580px){.ix-sec .grid{grid-template-columns:1fr}}
+.ix-sec .ctrl .row{display:flex;justify-content:space-between;margin-bottom:6px}
+.ix-sec .ctrl .label{font-family:var(--mono);font-size:10px;letter-spacing:.5px;text-transform:uppercase;color:var(--ink3)}
+.ix-sec .ctrl .val{font-family:var(--mono);font-size:17px;font-weight:600;color:var(--ink)}
+.ix-sec input[type=range]{width:100%;-webkit-appearance:none;appearance:none;height:4px;background:var(--line);border-radius:2px;outline:none}
+.ix-sec input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;width:16px;height:16px;border-radius:50%;background:var(--ink);cursor:pointer;border:3px solid #fff;box-shadow:0 0 0 1px var(--ink)}
+.ix-sec .result{background:var(--bg3);border-radius:10px;padding:18px;display:grid;grid-template-columns:repeat(3,1fr);gap:14px;text-align:center}
+@media(max-width:580px){.ix-sec .result{grid-template-columns:1fr 1fr}}
+.ix-sec .result .rv{font-family:var(--mono);font-size:20px;font-weight:600;color:var(--ink);letter-spacing:-.4px}
+.ix-sec .result .rl{font-family:var(--mono);font-size:9.5px;text-transform:uppercase;letter-spacing:.5px;color:var(--ink3);margin-top:4px}
+
+/* Blended yield */
+.ix-yld .row-flex{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:14px}
+@media(max-width:580px){.ix-yld .row-flex{grid-template-columns:1fr}}
+.ix-yld .col label{font-family:var(--mono);font-size:9.5px;letter-spacing:.5px;text-transform:uppercase;color:var(--ink3);display:block;margin-bottom:8px}
+.ix-yld .col .pair{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.ix-yld .col input{padding:8px 10px;border:1px solid var(--line);border-radius:6px;font-family:var(--mono);font-size:12.5px;font-weight:500;width:100%;background:#fff;outline:none}
+.ix-yld .col input:focus{border-color:var(--ink)}
+.ix-yld .col .iht{font-size:10px;color:var(--ink3);text-align:center;font-family:var(--mono);margin-top:4px}
+.ix-yld .out{background:var(--ink);color:#fff;border-radius:10px;padding:18px;display:flex;justify-content:space-between;align-items:baseline}
+.ix-yld .out .ol{font-family:var(--mono);font-size:11px;letter-spacing:.5px;text-transform:uppercase;color:rgba(255,255,255,.6)}
+.ix-yld .out .ov{font-family:var(--mono);font-size:30px;font-weight:600;letter-spacing:-.7px}
+
+.next-primer{margin-top:60px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:24px;display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap}
+.next-primer .np-meta{font-family:var(--mono);font-size:10px;letter-spacing:.5px;text-transform:uppercase;color:var(--ink3);margin-bottom:6px}
+.next-primer .np-h{font-size:18px;font-weight:600;letter-spacing:-.3px}
+.next-primer .np-btn{padding:10px 18px;border-radius:999px;background:var(--ink);color:#fff;font-size:13px;font-weight:500}
+
+footer{padding-top:36px;margin-top:60px;border-top:1px solid var(--line);font-family:var(--mono);font-size:10.5px;color:var(--ink3);text-align:center;letter-spacing:.3px;line-height:1.8}
+</style>
+</head>
+<body>
+
+<nav class="navbar">
+  <a class="logo" href="../../index.html">
+    <div class="logo-mark"><svg viewBox="0 0 16 16"><rect x="2" y="9" width="3" height="5"/><rect x="6.5" y="5" width="3" height="9"/><rect x="11" y="2" width="3" height="12"/></svg></div>
+    <div class="logo-text">BDC<span>Intelligence</span></div>
+  </a>
+  <div class="nav-links">
+    <a class="nav-link" href="../../chewbacca.html">Chewbacca</a>
+    <a class="nav-link" href="../../index.html">US BDC Universe</a>
+    <a class="nav-link" href="../../fund.html">Fund Deep Dive</a>
+    <a class="nav-link" href="../../compare.html">Compare</a>
+    <a class="nav-link" href="../../screener.html">Screener</a>
+    <a class="nav-link" href="../../analysis.html">Analysis</a>
+    <a class="nav-link" href="../../news.html">News</a>
+    <a class="nav-link on" href="../index.html">Structuring Weekly</a>
+    <a class="nav-link" href="../../about.html">About us</a>
+  </div>
+  <div class="nav-right">
+    <button class="btn-outline">Sign In</button>
+    <button class="btn-primary">Get Access</button>
+  </div>
+</nav>
+
+<div class="wrap">
+
+  <div class="crumb"><a href="../index.html">Structuring Weekly</a> <span style="opacity:.5;margin:0 8px">/</span> <a href="index.html">Primers</a> <span style="opacity:.5;margin:0 8px">/</span> Leveraged Finance</div>
+
+  <div class="article-head">
+    <div class="kicker">Primer 04 · Instruments</div>
+    <h1>Leveraged Finance, Mechanics and Vocabulary.</h1>
+    <p class="standfirst">The plumbing of how a leveraged buyout actually gets financed. Term loan B markets, high yield bonds, spreads and OID, call protection, covenants. Read this and the next time someone says "TLB priced at SOFR plus 425 with a 99 OID and 101 soft call for six months" you will hear an actual sentence.</p>
+    <div class="meta">
+      <span><b>16 min</b> read</span>
+      <span><b>6</b> interactives</span>
+      <span>Updated <b>2026</b></span>
+      <span>By <b>Qazi Rasool</b></span>
+    </div>
+  </div>
+
+  <div class="article">
+
+    <h2><span class="num">01</span>What leveraged finance is.</h2>
+
+    <p><b>Leveraged finance is the business of lending money to companies with significant existing debt</b>, typically used to fund leveraged buyouts, recapitalizations, refinancings, and acquisitions. The word "leveraged" is the operative one. These borrowers run with total debt to EBITDA ratios of four to seven times. They are rated below investment grade, usually BB or B. They pay a meaningful premium over investment grade credit. They are, in short, the engine of private equity.</p>
+
+    <p>The leveraged finance market splits into three main instrument types. <b>Leveraged loans</b> (syndicated and private), <b>high yield bonds</b>, and <b>mezzanine debt</b>. Each occupies a different rung in the capital structure with different economics, covenants, and investor bases.</p>
+
+    <h2><span class="num">02</span>The TLB and how it gets priced.</h2>
+
+    <p>The term loan B (TLB) is the dominant leveraged loan instrument in the US market. It is senior secured, floating rate, and syndicated to a broad investor base of CLOs, mutual funds, and prime brokerage clients. Pricing has three components, and the math is more subtle than it looks.</p>
+
+    <div class="ix ix-price">
+      <div class="ix-label">Interactive 01 of 06</div>
+      <h4>Build the TLB price.</h4>
+      <div class="ix-hint">A senior secured TLB has three pricing components. Adjust each to see how the all in yield to maturity changes for a five year hold.</div>
+      <div class="ctrl-row">
+        <div class="ctrl">
+          <div class="row"><span class="label">SOFR base rate</span><span class="val" id="p-sofr-v">5.00%</span></div>
+          <input type="range" id="p-sofr" min="0" max="7" value="5" step="0.25">
+        </div>
+        <div class="ctrl">
+          <div class="row"><span class="label">Credit spread</span><span class="val" id="p-spread-v">425 bps</span></div>
+          <input type="range" id="p-spread" min="200" max="800" value="425" step="25">
+        </div>
+        <div class="ctrl">
+          <div class="row"><span class="label">OID (cents below par)</span><span class="val" id="p-oid-v">100 bps</span></div>
+          <input type="range" id="p-oid" min="0" max="500" value="100" step="25">
+        </div>
+      </div>
+      <div class="stack">
+        <div class="b base" id="p-bar-base" style="flex:5">SOFR base</div>
+        <div class="b spread" id="p-bar-spread" style="flex:4.25">Spread</div>
+        <div class="b oid" id="p-bar-oid" style="flex:1">OID</div>
+      </div>
+      <div class="breakdown">
+        <div class="item"><div class="iv" id="p-coupon">9.25%</div><div class="il">Cash coupon (SOFR + spread)</div></div>
+        <div class="item"><div class="iv" id="p-oid-pct">1.00%</div><div class="il">OID priced into yield</div></div>
+        <div class="item"><div class="iv" id="p-yt5">9.45%</div><div class="il">5 year yield to maturity</div></div>
+      </div>
+      <div class="yld">
+        <span class="yl">All in yield</span>
+        <span class="yv" id="p-allin">10.25%</span>
+      </div>
+    </div>
+
+    <p>Three things to notice. <b>OID amortizes into the yield over the life of the loan.</b> A 100 basis point OID adds about 20 bps per year to the yield on a 5 year deal, more on a shorter one. <b>OID is the market's stress signal.</b> When demand is strong, TLBs price at par or even at a 99.5 OID. When demand is weak, you see 97 or 98 prints. The OID is the cleanest read on syndicate appetite. <b>The cash coupon and the yield are different things.</b> Quoting "SOFR plus 425" tells you the cash coupon. Quoting "SOFR plus 425, 99 OID, 5 year" tells you the yield. Lenders care about the yield.</p>
+
+    <h2><span class="num">03</span>Covenants. The thing that has nearly disappeared.</h2>
+
+    <p>Covenants are contractual promises a borrower makes to its lenders. Two kinds matter: <b>maintenance covenants</b> require the borrower to maintain certain financial ratios (typically a max leverage ratio, a min interest coverage ratio) tested every quarter. <b>Incurrence covenants</b> only get tested when the borrower wants to do something specific (issue more debt, make a restricted payment, pay a dividend).</p>
+
+    <p>The leveraged loan market over the last fifteen years has steadily eroded covenants. The endpoint of that erosion is the cov lite loan: no maintenance covenants at all, just incurrence covenants. Today over 90 percent of syndicated TLBs are cov lite. Direct lending is the meaningful exception. Most direct loans still have full maintenance covenants because the lender is sitting across the table and can demand them.</p>
+
+    <div class="ix ix-cov">
+      <div class="ix-label">Interactive 02 of 06</div>
+      <h4>Cov heavy vs cov lite vs full maintenance.</h4>
+      <div class="ix-hint">Three covenant regimes on the same hypothetical $500M TLB. Toggle to see what each lender can actually enforce.</div>
+      <div class="toggle">
+        <button class="toggle-btn on" data-cov="heavy">Cov heavy (rare today)</button>
+        <button class="toggle-btn" data-cov="lite">Cov lite (90%+ of TLBs)</button>
+        <button class="toggle-btn" data-cov="full">Full maintenance (direct lending)</button>
+      </div>
+      <div class="cov-rows on" id="cov-heavy">
+        <div class="cov-row"><div class="k">Max leverage</div><div class="v"><b>6.0x EBITDA, tested quarterly.</b> Stepping down by 0.25x per year. Breach triggers default.</div></div>
+        <div class="cov-row"><div class="k">Min interest coverage</div><div class="v"><b>2.0x, tested quarterly.</b> Breach gives lenders the right to call the loan.</div></div>
+        <div class="cov-row"><div class="k">Restricted payments</div><div class="v"><b>Strictly limited.</b> No dividends, no buybacks, no sponsor distributions without lender consent.</div></div>
+        <div class="cov-row"><div class="k">Restricted debt</div><div class="v"><b>Tight basket.</b> Additional debt only with leverage test compliance and lender approval over $25M.</div></div>
+        <div class="cov-row"><div class="k">Lender protection</div><div class="v"><b>Very high.</b> Early intervention rights, regular financial reporting, real teeth in distress scenarios.</div></div>
+      </div>
+      <div class="cov-rows" id="cov-lite">
+        <div class="cov-row"><div class="k">Max leverage</div><div class="v"><b>Incurrence only.</b> Only tested if the borrower wants to take a new action. No quarterly maintenance.</div></div>
+        <div class="cov-row"><div class="k">Min interest coverage</div><div class="v"><b>None.</b> The loan can be paying interest at 0.8x coverage with no lender remedy.</div></div>
+        <div class="cov-row"><div class="k">Restricted payments</div><div class="v"><b>Large baskets.</b> Sponsors can pull cash via restricted payments using "builder baskets" that grow with net income.</div></div>
+        <div class="cov-row"><div class="k">Restricted debt</div><div class="v"><b>Very generous.</b> $100M plus of new debt allowable without lender consent in most modern deals.</div></div>
+        <div class="cov-row"><div class="k">Lender protection</div><div class="v"><b>Low.</b> Lenders effectively wait for an actual payment default. Early intervention has been negotiated away.</div></div>
+      </div>
+      <div class="cov-rows" id="cov-full">
+        <div class="cov-row"><div class="k">Max leverage</div><div class="v"><b>5.5x EBITDA, tested quarterly.</b> Most direct lending deals also have a step down schedule (4.5x by year 3).</div></div>
+        <div class="cov-row"><div class="k">Min interest coverage</div><div class="v"><b>1.75x, tested quarterly.</b> Breach gives the direct lender immediate amendment leverage.</div></div>
+        <div class="cov-row"><div class="k">Restricted payments</div><div class="v"><b>Tightly controlled.</b> Sponsor distributions require leverage at or below 4.0x.</div></div>
+        <div class="cov-row"><div class="k">Restricted debt</div><div class="v"><b>Tight.</b> Additional debt typically capped at 0.5x leverage of existing terms.</div></div>
+        <div class="cov-row"><div class="k">Lender protection</div><div class="v"><b>High.</b> Direct relationship plus maintenance tests gives the lender real visibility and real remedies.</div></div>
+      </div>
+    </div>
+
+    <p>The disappearance of maintenance covenants in the syndicated market is the single biggest structural shift in leveraged finance over the last fifteen years. It is also one of the main reasons private credit has grown so fast. <span class="hl">When borrowers find that maintenance covenants are no longer available in the syndicated market, the ones who actually want or accept them go to direct lenders</span>, who happen to pay 200 to 400 bps more for the same credit risk in exchange.</p>
+
+    <h2><span class="num">04</span>Call protection.</h2>
+
+    <p>Call protection prevents the borrower from refinancing the loan too quickly. It exists because lenders priced the loan assuming a certain hold period; if the borrower refinances out at par six months later, the lender's actual yield was a small fraction of the underwriting yield. Call protection is the lender's compensation for taking that risk.</p>
+
+    <div class="ix ix-call">
+      <div class="ix-label">Interactive 03 of 06</div>
+      <h4>Call protection over the life of a loan.</h4>
+      <div class="ix-hint">Three scenarios for a 5 year TLB. The dark bands show when the borrower would have to pay a premium to refinance.</div>
+      <div class="scenario">
+        <button class="sb on" data-call="soft">Soft call: 101 / 6 mo (typical syndicated TLB)</button>
+        <button class="sb" data-call="hard">Hard call: 102 / 101 / 18 mo (direct lending)</button>
+        <button class="sb" data-call="np">Non call: 102 / 101 / 100, 24 mo (older deals)</button>
+      </div>
+      <div class="timeline">
+        <div class="tl-track" id="tl-track"></div>
+        <div class="tl-labels">
+          <span>Close</span><span>6 mo</span><span>12 mo</span><span>18 mo</span><span>24 mo</span><span>5 yr maturity</span>
+        </div>
+      </div>
+      <div class="explain" id="call-explain"></div>
+    </div>
+
+    <h2><span class="num">05</span>The capital stack in an LBO.</h2>
+
+    <p>When a sponsor buys a company in a leveraged buyout, the financing is built in layers. Senior loans at the top with first claim on collateral, layered tranches of mezzanine and subordinated debt below, sponsor equity at the bottom. Each layer pays a higher coupon than the one above because it takes more risk.</p>
+
+    <div class="ix ix-stack">
+      <div class="ix-label">Interactive 04 of 06</div>
+      <h4>The capital stack at varying total leverage.</h4>
+      <div class="ix-hint">Same $100M EBITDA company. Move the leverage slider and watch how the stack rebalances. Notice that the senior 1L attaches at the same level (4.5x EBITDA) regardless of total leverage.</div>
+      <div class="ctrl">
+        <div class="row"><span class="label">Total leverage</span><span class="val" id="s-lev-v">5.5×</span></div>
+        <input type="range" id="s-lev" min="3" max="8" value="5.5" step="0.1">
+      </div>
+      <div class="waterfall" id="s-waterfall"></div>
+    </div>
+
+    <p>Two things to internalize from this view. <b>Senior loans cap out at around 4.5x EBITDA</b>; senior lenders will not go higher because at that point recovery in default starts to drop materially. Anything beyond 4.5x has to be raised in junior tranches that pay 200 to 500 bps more. <b>Equity is the residual.</b> Sponsors do not pick the equity amount; it falls out of the math (enterprise value minus total debt equals equity).</p>
+
+    <h2><span class="num">06</span>How TLBs trade in the secondary.</h2>
+
+    <p>Once a TLB is closed and the loan is syndicated, the loan trades. Not heavily; the loan market is meaningfully less liquid than the bond market. But trades happen, marks move, and price action matters. A loan that closes at par and trades down to 92 cents tells you something. A loan that gets stuck at 95 in a healthy market is being treated as a credit concern.</p>
+
+    <div class="ix ix-sec">
+      <div class="ix-label">Interactive 05 of 06</div>
+      <h4>Secondary loan price to yield.</h4>
+      <div class="ix-hint">A loan with a 9 percent coupon trading below par. As price drops, the yield to maturity rises and the call option value falls. See how the relationship works on a 4 year remaining tenor.</div>
+      <div class="grid">
+        <div class="ctrl">
+          <div class="row"><span class="label">Secondary price</span><span class="val" id="sec-price-v">92.00</span></div>
+          <input type="range" id="sec-price" min="60" max="105" value="92" step="0.5">
+        </div>
+        <div class="ctrl">
+          <div class="row"><span class="label">Cash coupon</span><span class="val" id="sec-coupon-v">9.00%</span></div>
+          <input type="range" id="sec-coupon" min="5" max="14" value="9" step="0.25">
+        </div>
+      </div>
+      <div class="result">
+        <div><div class="rv" id="sec-ytm">11.40%</div><div class="rl">Yield to maturity</div></div>
+        <div><div class="rv" id="sec-cy">9.78%</div><div class="rl">Current yield</div></div>
+        <div><div class="rv" id="sec-loss">8.0pts</div><div class="rl">Premium to par</div></div>
+      </div>
+    </div>
+
+    <p>The yield to maturity rises faster than the current yield as price drops because the investor also gains the pull to par at maturity. A loan at 80 with a 9 percent coupon has an 11 percent current yield but a 14 to 15 percent yield to maturity. <span class="hl">When you see funds buying mid 80s paper in the secondary, they are betting on the pull to par.</span> They lose if the loan defaults before then.</p>
+
+    <h2><span class="num">07</span>Putting it together. The blended yield on a portfolio.</h2>
+
+    <p>Most credit funds hold dozens to hundreds of positions at different yields, coupons, and prices. The blended yield is the size weighted average. Useful when comparing two portfolios, useful when answering "what does the fund actually earn." Build one below.</p>
+
+    <div class="ix ix-yld">
+      <div class="ix-label">Interactive 06 of 06</div>
+      <h4>Blended portfolio yield calculator.</h4>
+      <div class="ix-hint">A three position portfolio. Adjust each position's size and yield to see the weighted blend. Sizes do not need to sum to 100, the calculator will weight by relative proportion.</div>
+      <div class="row-flex">
+        <div class="col">
+          <label>Position 1</label>
+          <div class="pair">
+            <input type="number" id="y-s1" value="40" step="1">
+            <input type="number" id="y-y1" value="9" step="0.25">
+          </div>
+          <div class="iht">size $M · yield %</div>
+        </div>
+        <div class="col">
+          <label>Position 2</label>
+          <div class="pair">
+            <input type="number" id="y-s2" value="35" step="1">
+            <input type="number" id="y-y2" value="11.5" step="0.25">
+          </div>
+          <div class="iht">size $M · yield %</div>
+        </div>
+        <div class="col">
+          <label>Position 3</label>
+          <div class="pair">
+            <input type="number" id="y-s3" value="25" step="1">
+            <input type="number" id="y-y3" value="14" step="0.25">
+          </div>
+          <div class="iht">size $M · yield %</div>
+        </div>
+      </div>
+      <div class="out">
+        <span class="ol">Blended portfolio yield</span>
+        <span class="ov" id="y-blended">10.85%</span>
+      </div>
+    </div>
+
+    <h2><span class="num">08</span>Words you can now translate.</h2>
+
+    <p>If you read this primer carefully you can now parse the following without help:</p>
+
+    <blockquote>"The deal is a $750M TLB at SOFR plus 450, 99.5 OID, 7 year tenor, 101 soft call for 6 months, cov lite. Pricing tightened 25 bps from initial talk."</blockquote>
+
+    <p>Translation. A 750 million dollar senior secured term loan, paying interest at SOFR (currently around 5 percent) plus 450 basis points, sold to investors at 99.5 cents on the dollar (50 bps of discount), maturing in 7 years, with a 1 percent call protection penalty that expires after 6 months. No financial maintenance covenants. The deal launched at SOFR plus 475 and the underwriters were able to bring it 25 bps tighter due to investor demand. Total yield to a buy and hold investor: roughly 9.6 percent at issue.</p>
+
+    <p>That is what leveraged finance vocabulary unlocks. The next primer covers what happens when the credit goes wrong.</p>
+
+  </div>
+
+  <a class="next-primer" href="distressed-debt.html">
+    <div>
+      <div class="np-meta">Next primer · 05</div>
+      <div class="np-h">Distressed Debt →</div>
+    </div>
+    <span class="np-btn">Read next</span>
+  </a>
+
+  <footer>
+    Primer written by Qazi Rasool. Reviewed by Sam Soukas. Updated 2026.<br>
+    Part of <a href="../index.html" style="text-decoration:underline">Structuring Weekly</a> · BDC Intelligence.
+  </footer>
+
+</div>
+
+<script>
+// IX1: TLB pricing breakdown
+const pSofr = document.getElementById('p-sofr');
+const pSpread = document.getElementById('p-spread');
+const pOid = document.getElementById('p-oid');
+function renderPrice() {
+  const sofr = parseFloat(pSofr.value);
+  const spread = parseFloat(pSpread.value) / 100;
+  const oid = parseFloat(pOid.value) / 100;
+  const coupon = sofr + spread;
+  // Approximate 5-yr YTM: coupon + OID/5 (since OID amortizes over the life)
+  const yt5 = coupon + (oid / 5);
+  document.getElementById('p-sofr-v').textContent = sofr.toFixed(2) + '%';
+  document.getElementById('p-spread-v').textContent = parseInt(pSpread.value) + ' bps';
+  document.getElementById('p-oid-v').textContent = parseInt(pOid.value) + ' bps';
+  document.getElementById('p-coupon').textContent = coupon.toFixed(2) + '%';
+  document.getElementById('p-oid-pct').textContent = oid.toFixed(2) + '%';
+  document.getElementById('p-yt5').textContent = yt5.toFixed(2) + '%';
+  document.getElementById('p-allin').textContent = yt5.toFixed(2) + '%';
+  // Visual stack proportions
+  document.getElementById('p-bar-base').style.flex = sofr || 0.5;
+  document.getElementById('p-bar-spread').style.flex = spread;
+  document.getElementById('p-bar-oid').style.flex = Math.max(oid, 0.1);
+}
+pSofr.addEventListener('input', renderPrice);
+pSpread.addEventListener('input', renderPrice);
+pOid.addEventListener('input', renderPrice);
+renderPrice();
+
+// IX2: Cov toggle
+document.querySelectorAll('.ix-cov .toggle-btn').forEach(b => b.addEventListener('click', () => {
+  document.querySelectorAll('.ix-cov .toggle-btn').forEach(x => x.classList.remove('on'));
+  document.querySelectorAll('.ix-cov .cov-rows').forEach(r => r.classList.remove('on'));
+  b.classList.add('on');
+  document.getElementById('cov-' + b.dataset.cov).classList.add('on');
+}));
+
+// IX3: Call protection
+const CALLS = {
+  soft: {
+    segs: [
+      { cls: 'c101', label: '101 soft', width: 10 },
+      { cls: 'free', label: 'Callable at par', width: 90 }
+    ],
+    explain: "<b>Soft call at 101 for 6 months.</b> The borrower can refinance any time after closing, but during the first six months must pay 1 percent above par. After month six, the loan is freely callable at par. This is the standard for syndicated TLBs in healthy markets. It barely protects lenders against repricing."
+  },
+  hard: {
+    segs: [
+      { cls: 'c102', label: '102 hard', width: 20 },
+      { cls: 'c101', label: '101', width: 10 },
+      { cls: 'free', label: 'Callable at par', width: 70 }
+    ],
+    explain: "<b>Hard call: 102 for 12 months, 101 for 6 months, then par.</b> Standard direct lending structure. The borrower has to pay a real premium to refinance during the first 18 months. This gives the lender meaningful yield protection and is one of the structural advantages direct lenders have over syndicated lenders."
+  },
+  np: {
+    segs: [
+      { cls: 'np', label: 'NC', width: 40 },
+      { cls: 'c102', label: '102', width: 20 },
+      { cls: 'c101', label: '101', width: 10 },
+      { cls: 'free', label: 'Par', width: 30 }
+    ],
+    explain: "<b>Non call for 2 years, then 102, 101, par.</b> The strongest call protection. Common in high yield bonds and in mezzanine debt. The lender is fully protected on yield for the first two years regardless of what happens to credit spreads. Borrowers accept this in exchange for tenor or pricing concessions."
+  }
+};
+function renderCall(key) {
+  const data = CALLS[key];
+  const tr = document.getElementById('tl-track');
+  let acc = 0;
+  tr.innerHTML = data.segs.map(s => {
+    const html = `<div class="tl-seg ${s.cls}" style="left:${acc}%;width:${s.width}%">${s.label}</div>`;
+    acc += s.width;
+    return html;
+  }).join('');
+  document.getElementById('call-explain').innerHTML = data.explain;
+}
+document.querySelectorAll('.ix-call .sb').forEach(b => b.addEventListener('click', () => {
+  document.querySelectorAll('.ix-call .sb').forEach(x => x.classList.remove('on'));
+  b.classList.add('on');
+  renderCall(b.dataset.call);
+}));
+renderCall('soft');
+
+// IX4: Capital stack at leverage
+const sLev = document.getElementById('s-lev');
+function renderStack() {
+  const lev = parseFloat(sLev.value);
+  const ebitda = 100;
+  const totalDebt = ebitda * lev;
+  const revolver = ebitda * 0.5;
+  const tlb1L = Math.min(totalDebt, ebitda * 4.5);
+  let remaining = Math.max(0, totalDebt - tlb1L);
+  const sub = Math.min(remaining, ebitda * 1.0);
+  remaining -= sub;
+  const mezz = remaining;
+  const evMult = (lev <= 5 ? 12 : lev <= 6 ? 11 : 10);
+  const ev = ebitda * evMult;
+  const equity = ev - totalDebt;
+  const tiers = [
+    { cls: 'rev', name: 'Revolver (commit)', v: revolver, pct: 100 * revolver / ev },
+    { cls: 'tlb', name: 'Senior 1L TLB', v: tlb1L, pct: 100 * tlb1L / ev },
+    { cls: 'sub', name: 'Subordinated', v: sub, pct: 100 * sub / ev },
+    { cls: 'mez', name: 'Mezzanine / PIK', v: mezz, pct: 100 * mezz / ev },
+    { cls: 'eq', name: 'Sponsor equity', v: equity, pct: 100 * equity / ev },
+  ].filter(t => t.v > 0.5);
+  document.getElementById('s-waterfall').innerHTML = tiers.map(t =>
+    `<div class="tier ${t.cls}" style="flex:${Math.max(t.pct, 4)}">
+      <span class="tk">${t.name}</span>
+      <span class="v">$${t.v.toFixed(0)}M · ${t.pct.toFixed(0)}%</span>
+    </div>`
+  ).join('');
+  document.getElementById('s-lev-v').textContent = lev.toFixed(1) + '×';
+}
+sLev.addEventListener('input', renderStack);
+renderStack();
+
+// IX5: Secondary loan price to yield
+const secPrice = document.getElementById('sec-price');
+const secCoupon = document.getElementById('sec-coupon');
+function renderSec() {
+  const price = parseFloat(secPrice.value);
+  const coupon = parseFloat(secCoupon.value);
+  const yearsLeft = 4;
+  // current yield: coupon/price * 100
+  const cy = coupon * 100 / price;
+  // Approximate YTM: ((coupon + (100-price)/years) / ((100+price)/2)) * 100
+  const ytm = ((coupon + (100 - price) / yearsLeft) / ((100 + price) / 2)) * 100;
+  const prem = price - 100;
+  document.getElementById('sec-price-v').textContent = price.toFixed(2);
+  document.getElementById('sec-coupon-v').textContent = coupon.toFixed(2) + '%';
+  document.getElementById('sec-ytm').textContent = ytm.toFixed(2) + '%';
+  document.getElementById('sec-cy').textContent = cy.toFixed(2) + '%';
+  document.getElementById('sec-loss').textContent = (prem >= 0 ? '+' : '') + prem.toFixed(1) + 'pts';
+}
+secPrice.addEventListener('input', renderSec);
+secCoupon.addEventListener('input', renderSec);
+renderSec();
+
+// IX6: Blended yield
+['y-s1','y-y1','y-s2','y-y2','y-s3','y-y3'].forEach(id => {
+  document.getElementById(id).addEventListener('input', renderBlended);
+});
+function renderBlended() {
+  const s1 = +document.getElementById('y-s1').value || 0;
+  const y1 = +document.getElementById('y-y1').value || 0;
+  const s2 = +document.getElementById('y-s2').value || 0;
+  const y2 = +document.getElementById('y-y2').value || 0;
+  const s3 = +document.getElementById('y-s3').value || 0;
+  const y3 = +document.getElementById('y-y3').value || 0;
+  const total = s1 + s2 + s3;
+  if (total <= 0) {
+    document.getElementById('y-blended').textContent = '—';
+    return;
+  }
+  const blended = (s1*y1 + s2*y2 + s3*y3) / total;
+  document.getElementById('y-blended').textContent = blended.toFixed(2) + '%';
+}
+renderBlended();
+</script>
+
+</body>
+</html>

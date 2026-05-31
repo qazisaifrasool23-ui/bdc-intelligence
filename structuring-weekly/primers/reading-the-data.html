@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Reading the Data — Structuring Weekly</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&family=Roboto+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fafafa;--bg2:#fff;--bg3:#f4f4f5;--ink:#0a0a0a;--ink2:#3f3f46;--ink3:#71717a;--ink4:#a1a1aa;--line:#e4e4e7;--line2:#d4d4d8;--hl:#fde68a;--good:#15803d;--bad:#b91c1c;--amber:#a16207;--mono:"Roboto Mono",ui-monospace,monospace;--sans:"Roboto","Inter","Segoe UI",sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:var(--bg);font-family:var(--sans);color:var(--ink);font-size:15px;line-height:1.65;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+input,select{font-family:inherit}
+.navbar{height:60px;background:#fff;border-bottom:1px solid var(--line);display:flex;align-items:center;padding:0 28px;position:sticky;top:0;z-index:300}
+.logo{display:flex;align-items:center;gap:10px;margin-right:48px}
+.logo-mark{width:28px;height:28px;background:var(--ink);border-radius:7px;display:flex;align-items:center;justify-content:center}
+.logo-mark svg{width:15px;height:15px;fill:#fff}
+.logo-text{font-size:15px;font-weight:600;letter-spacing:-.3px}
+.logo-text span{font-weight:400}
+.nav-links{display:flex;align-items:center;gap:2px;margin:0 auto}
+.nav-link{padding:8px 14px;font-size:13.5px;font-weight:500;color:var(--ink2);border-radius:6px;white-space:nowrap}
+.nav-link:hover{color:var(--ink);background:var(--bg3)}
+.nav-link.on{color:var(--ink);font-weight:600}
+.nav-right{display:flex;align-items:center;gap:14px}
+.btn-outline{padding:8px 4px;background:transparent;color:var(--ink);font-size:13.5px;font-weight:500}
+.btn-primary{height:34px;padding:0 18px;border-radius:999px;background:var(--ink);color:#fff;font-size:13px;font-weight:500}
+
+.wrap{max-width:880px;margin:0 auto;padding:32px 28px 100px}
+@media(max-width:780px){.wrap{padding:20px 16px 60px}}
+.crumb{font-family:var(--mono);font-size:11px;color:var(--ink3);letter-spacing:.4px;margin-bottom:28px}
+.crumb a{color:var(--ink3)}
+.crumb a:hover{color:var(--ink);text-decoration:underline}
+.article-head{margin-bottom:48px;padding-bottom:32px;border-bottom:1px solid var(--line)}
+.article-head .kicker{font-family:var(--mono);font-size:11px;letter-spacing:.7px;text-transform:uppercase;color:var(--ink3);margin-bottom:18px}
+.article-head h1{font-size:46px;line-height:1.08;letter-spacing:-1.3px;font-weight:600;margin-bottom:18px}
+@media(max-width:780px){.article-head h1{font-size:34px;letter-spacing:-.7px}}
+.article-head .standfirst{font-size:18px;line-height:1.6;color:var(--ink2)}
+.article-head .meta{font-family:var(--mono);font-size:11px;color:var(--ink3);margin-top:24px;display:flex;gap:18px;flex-wrap:wrap}
+.article-head .meta b{color:var(--ink);font-weight:600}
+
+.article p{font-size:16px;line-height:1.75;color:var(--ink2);margin-bottom:20px}
+.article p b{color:var(--ink);font-weight:600}
+.article p i{color:var(--ink);font-style:italic}
+.article h2{font-size:26px;line-height:1.2;letter-spacing:-.6px;font-weight:600;margin:56px 0 18px}
+.article h2 .num{font-family:var(--mono);font-size:13px;color:var(--ink3);letter-spacing:.4px;font-weight:500;display:block;margin-bottom:6px}
+.hl{background:linear-gradient(180deg,transparent 60%,var(--hl) 60%);padding:0 2px}
+.article blockquote{margin:32px 0;padding:6px 0 6px 24px;border-left:3px solid var(--ink);font-size:18px;line-height:1.55;color:var(--ink);font-weight:500;font-style:italic}
+
+/* Metric distribution card */
+.metric-card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:24px;margin:24px 0;position:relative}
+.metric-card .mc-head{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:6px;flex-wrap:wrap;gap:10px}
+.metric-card .mc-name{font-size:18px;font-weight:600;letter-spacing:-.3px}
+.metric-card .mc-better{font-family:var(--mono);font-size:9.5px;letter-spacing:.5px;text-transform:uppercase;padding:3px 10px;border-radius:999px;font-weight:500}
+.metric-card .mc-better.high{background:#dcfce7;color:#15803d}
+.metric-card .mc-better.low{background:#dcfce7;color:#15803d}
+.metric-card .mc-better.neutral{background:var(--bg3);color:var(--ink3)}
+.metric-card .mc-desc{font-size:13.5px;color:var(--ink2);margin-bottom:18px;line-height:1.6}
+.metric-card .dist-row{display:grid;grid-template-columns:1fr;gap:14px;margin-bottom:14px}
+.metric-card .dist-bar{height:38px;background:var(--bg3);border-radius:6px;position:relative;overflow:visible}
+.metric-card .dist-bar .seg{position:absolute;top:0;bottom:0;border-radius:6px}
+.metric-card .dist-bar .p25{background:#fee2e2}
+.metric-card .dist-bar .p50{background:#fef3c7}
+.metric-card .dist-bar .p75{background:#dcfce7}
+.metric-card .dist-bar .scale-labels{position:absolute;bottom:-22px;left:0;right:0;display:flex;justify-content:space-between;font-family:var(--mono);font-size:9.5px;color:var(--ink3);letter-spacing:.3px}
+.metric-card .legend-row{display:flex;gap:14px;flex-wrap:wrap;font-family:var(--mono);font-size:10.5px;color:var(--ink3);letter-spacing:.3px;margin:30px 0 14px}
+.metric-card .legend-row .lg{display:inline-flex;align-items:center;gap:6px}
+.metric-card .legend-row .sw{width:11px;height:11px;border-radius:3px}
+.metric-card .legend-row b{color:var(--ink);font-weight:600}
+.metric-card .reading-box{background:var(--bg3);border-radius:8px;padding:14px 16px;font-size:13px;line-height:1.6;color:var(--ink2);border-left:3px solid var(--ink)}
+.metric-card .reading-box b{color:var(--ink);font-weight:600}
+.metric-card .reading-box i{color:var(--ink);font-style:italic}
+
+.live-pill{display:inline-flex;align-items:center;gap:6px;font-family:var(--mono);font-size:10px;letter-spacing:.5px;text-transform:uppercase;color:var(--good);background:#dcfce7;padding:3px 9px;border-radius:999px;font-weight:600}
+.live-pill::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--good);animation:pulse 2s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+
+/* loading state */
+.mc-loading{padding:14px 0;font-family:var(--mono);font-size:11px;color:var(--ink3);letter-spacing:.3px;display:flex;align-items:center;gap:8px}
+.mc-loading .sp{display:inline-block;width:11px;height:11px;border:2px solid var(--line);border-top-color:var(--ink);border-radius:50%;animation:spin .8s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+.next-primer{margin-top:60px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:24px;display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap}
+.next-primer .np-meta{font-family:var(--mono);font-size:10px;letter-spacing:.5px;text-transform:uppercase;color:var(--ink3);margin-bottom:6px}
+.next-primer .np-h{font-size:18px;font-weight:600;letter-spacing:-.3px}
+.next-primer .np-btn{padding:10px 18px;border-radius:999px;background:var(--ink);color:#fff;font-size:13px;font-weight:500}
+
+footer{padding-top:36px;margin-top:60px;border-top:1px solid var(--line);font-family:var(--mono);font-size:10.5px;color:var(--ink3);text-align:center;letter-spacing:.3px;line-height:1.8}
+</style>
+</head>
+<body>
+
+<nav class="navbar">
+  <a class="logo" href="../../index.html">
+    <div class="logo-mark"><svg viewBox="0 0 16 16"><rect x="2" y="9" width="3" height="5"/><rect x="6.5" y="5" width="3" height="9"/><rect x="11" y="2" width="3" height="12"/></svg></div>
+    <div class="logo-text">BDC<span>Intelligence</span></div>
+  </a>
+  <div class="nav-links">
+    <a class="nav-link" href="../../chewbacca.html">Chewbacca</a>
+    <a class="nav-link" href="../../index.html">US BDC Universe</a>
+    <a class="nav-link" href="../../fund.html">Fund Deep Dive</a>
+    <a class="nav-link" href="../../compare.html">Compare</a>
+    <a class="nav-link" href="../../screener.html">Screener</a>
+    <a class="nav-link" href="../../analysis.html">Analysis</a>
+    <a class="nav-link" href="../../news.html">News</a>
+    <a class="nav-link on" href="../index.html">Structuring Weekly</a>
+    <a class="nav-link" href="../../about.html">About us</a>
+  </div>
+  <div class="nav-right">
+    <button class="btn-outline">Sign In</button>
+    <button class="btn-primary">Get Access</button>
+  </div>
+</nav>
+
+<div class="wrap">
+
+  <div class="crumb"><a href="../index.html">Structuring Weekly</a> <span style="opacity:.5;margin:0 8px">/</span> <a href="index.html">Primers</a> <span style="opacity:.5;margin:0 8px">/</span> Reading the Data</div>
+
+  <div class="article-head">
+    <div class="kicker">Primer 03 · Reading the platform</div>
+    <h1>Reading the Data.</h1>
+    <p class="standfirst">A non accrual percentage of 2.3 is either reassuring or alarming. The number alone tells you nothing. You need the distribution. This primer shows where every BDC sits on every metric, computed live from the platform, so you know in seconds whether any reading is high, normal, or worrying.</p>
+    <div class="meta">
+      <span><b>9 min</b> read</span>
+      <span><b>Live data</b> from the platform</span>
+      <span>Updated <b>every page load</b></span>
+      <span>By <b>Qazi Rasool</b></span>
+    </div>
+  </div>
+
+  <div class="article">
+
+    <h2><span class="num">01</span>Why a number without a distribution is useless.</h2>
+
+    <p>If someone tells you "the non accrual rate at fund X is 2.3 percent," what do you do with that? On its own, nothing. <span class="hl">You cannot tell whether 2.3 is high or low until you know what the rest of the universe looks like.</span> Maybe the median BDC sits at 1.8 percent and 2.3 is mild stress. Maybe the median is at 4.2 and 2.3 is excellent.</p>
+
+    <p>This is the problem this primer exists to solve. Every metric on this platform is shown below alongside its actual distribution across the 134 BDCs we cover, recomputed every time you load the page. You will see the median, the 25th percentile, the 75th percentile, and the practical bands that an experienced credit analyst would read each metric against.</p>
+
+    <p>The colored bands work like this:</p>
+
+    <div class="metric-card">
+      <div class="legend-row">
+        <span class="lg"><span class="sw" style="background:#dcfce7"></span><b>Healthy band.</b> Where you want a fund to sit.</span>
+        <span class="lg"><span class="sw" style="background:#fef3c7"></span><b>Watch band.</b> Worth a closer look but not alarming on its own.</span>
+        <span class="lg"><span class="sw" style="background:#fee2e2"></span><b>Risk band.</b> The fund is doing something different from peers. Could be skill, could be stress.</span>
+      </div>
+      <p style="font-size:13.5px;color:var(--ink2);margin:0;line-height:1.6">"Healthy" and "Risk" are not value judgments. A fund in the risk band is not necessarily in distress; it is just an outlier worth understanding. Higher leverage might be the manager's strategy. Lower yield might mean they are competing on quality. The point is to know.</p>
+    </div>
+
+    <h2><span class="num">02</span>The metrics, with their live distributions.</h2>
+
+    <p>What follows is every commonly used BDC metric, shown with its real distribution across the universe. Numbers below the bars are the 25th percentile, median, and 75th percentile, computed live from the latest quarterly data. <span class="live-pill">Live</span></p>
+
+    <!-- The metric cards. Distributions render on load via JS. -->
+
+    <div class="metric-card" data-metric="nav-per-share" data-field="nav_per_share" data-better="high" data-fmt="dollar">
+      <div class="mc-head">
+        <div class="mc-name">NAV per share</div>
+        <div class="mc-better high">Higher generally better</div>
+      </div>
+      <div class="mc-desc">Net asset value divided by shares outstanding. The simplest economic ownership measure. A rising NAV/share means the fund is creating value per dollar invested. A falling one means losses, dividend overpayment, or both.</div>
+      <div class="dist-row">
+        <div class="dist-bar"><div class="mc-loading"><span class="sp"></span>Computing distribution from universe...</div></div>
+      </div>
+      <div class="reading-box">
+        <b>How to read it.</b> The absolute number is less meaningful than the trend. A BDC trading at $20/share NAV is fine. A BDC whose NAV has fallen from $25 to $20 over four quarters is in trouble. Always compare NAV per share to its history before its peers.
+      </div>
+    </div>
+
+    <div class="metric-card" data-metric="na-cost" data-field="na_pct_cost" data-better="low" data-fmt="pct">
+      <div class="mc-head">
+        <div class="mc-name">Non accrual % (on cost)</div>
+        <div class="mc-better low">Lower is better</div>
+      </div>
+      <div class="mc-desc">The percentage of the loan book (by cost basis) where the borrower has stopped paying interest. The single most important credit indicator on a BDC balance sheet. Rising non accruals are the canonical signal of deteriorating portfolio health.</div>
+      <div class="dist-row">
+        <div class="dist-bar"><div class="mc-loading"><span class="sp"></span>Computing distribution from universe...</div></div>
+      </div>
+      <div class="reading-box">
+        <b>How to read it.</b> Anything under 2 percent is healthy. 2 to 4 percent is normal mid cycle. Above 4 percent suggests real stress in the book. Above 6 percent is a warning. Always cross check the "on cost" reading with "on fair value" because the gap between the two tells you how much the market has already marked down.
+      </div>
+    </div>
+
+    <div class="metric-card" data-metric="pik-pct" data-field="pik_pct" data-better="low" data-fmt="pct">
+      <div class="mc-head">
+        <div class="mc-name">PIK %</div>
+        <div class="mc-better low">Lower is better</div>
+      </div>
+      <div class="mc-desc">Percentage of income paid in kind rather than cash. PIK lets a borrower defer interest by issuing more debt. Common in mezz and some second lien deals by design. Rising PIK in a fund's overall book is often a leading indicator that borrowers are conserving cash.</div>
+      <div class="dist-row">
+        <div class="dist-bar"><div class="mc-loading"><span class="sp"></span>Computing distribution from universe...</div></div>
+      </div>
+      <div class="reading-box">
+        <b>How to read it.</b> Some PIK exposure is fine and expected, especially in mezz heavy funds. Under 5 percent is comfortable. 5 to 12 percent is a fund that has meaningful mezz or has been quietly accepting PIK toggles. Above 12 percent suggests the manager has been allowing borrowers to defer cash interest at material scale.
+      </div>
+    </div>
+
+    <div class="metric-card" data-metric="wtd-yield" data-field="weighted_avg_yield" data-better="neutral" data-fmt="pct">
+      <div class="mc-head">
+        <div class="mc-name">Weighted average yield</div>
+        <div class="mc-better neutral">Context matters</div>
+      </div>
+      <div class="mc-desc">Income generating yield of the loan portfolio. Reflects the all in coupon (base rate plus spread) the fund is collecting on its debt investments, weighted by position size.</div>
+      <div class="dist-row">
+        <div class="dist-bar"><div class="mc-loading"><span class="sp"></span>Computing distribution from universe...</div></div>
+      </div>
+      <div class="reading-box">
+        <b>How to read it.</b> The current SOFR base rate puts most BDC weighted yields between 10 and 13 percent. A fund above the high end of the range is reaching for yield, either via riskier credit or via subordinated tranches. A fund well below is either holding a lot of cash, has heavy first lien exposure to large investment grade adjacent borrowers, or has just refinanced into tighter spreads.
+      </div>
+    </div>
+
+    <div class="metric-card" data-metric="debt-equity" data-field="debt_to_equity_ratio" data-better="neutral" data-fmt="ratio">
+      <div class="mc-head">
+        <div class="mc-name">Debt to equity ratio</div>
+        <div class="mc-better neutral">Strategy dependent</div>
+      </div>
+      <div class="mc-desc">Total debt outstanding divided by net assets. The standard leverage measure for a BDC. Regulated cap is 2.0x (since the 2018 Small Business Credit Availability Act). Most large BDCs operate between 0.9x and 1.3x.</div>
+      <div class="dist-row">
+        <div class="dist-bar"><div class="mc-loading"><span class="sp"></span>Computing distribution from universe...</div></div>
+      </div>
+      <div class="reading-box">
+        <b>How to read it.</b> Below 0.7x is conservative, may indicate dry powder or risk aversion. 0.9 to 1.3x is the operating range for most large BDCs. 1.4x to 1.8x is aggressive but within the regulated framework. Above 1.8x means the fund is close to its statutory cap. <i>Leverage approaching the cap is a forced selling risk if the portfolio marks down.</i>
+      </div>
+    </div>
+
+    <div class="metric-card" data-metric="first-lien" data-field="first_lien_pct" data-better="high" data-fmt="pct">
+      <div class="mc-head">
+        <div class="mc-name">First lien %</div>
+        <div class="mc-better high">Higher is safer</div>
+      </div>
+      <div class="mc-desc">Share of the portfolio (at fair value) in first lien senior secured loans. The top of the capital structure. First lien debt has first claim on borrower collateral in default and historically recovers 70 to 90 cents on the dollar.</div>
+      <div class="dist-row">
+        <div class="dist-bar"><div class="mc-loading"><span class="sp"></span>Computing distribution from universe...</div></div>
+      </div>
+      <div class="reading-box">
+        <b>How to read it.</b> Above 80 percent is a senior secured focused strategy, the conservative end of BDC investing. 60 to 80 percent is the typical broad based BDC. Below 50 percent indicates a fund with meaningful exposure to second lien, mezz, or equity. Lower first lien is not automatically bad; it indicates higher target return and higher risk.
+      </div>
+    </div>
+
+  </div>
+
+  <h2><span class="num">03</span>How to use this in practice.</h2>
+
+  <p>Three habits worth building, in order:</p>
+
+  <p><b>First, never read a number in isolation.</b> Always check where it sits in the distribution. The platform shows this everywhere. Use it.</p>
+
+  <p><b>Second, watch the trend more than the level.</b> A fund whose non accrual % has moved from 1.5 to 3.5 over four quarters is more concerning than a fund stable at 4.0. Direction beats magnitude in credit work.</p>
+
+  <p><b>Third, when something is in the risk band, find out why.</b> Outliers exist for reasons. Sometimes the reason is skill (a unitranche specialist will have higher yields than a senior focused fund). Sometimes the reason is stress. The job is to know which.</p>
+
+  <blockquote>Distributions are how a credit analyst stops reading numbers as facts and starts reading them as positions.</blockquote>
+
+  <a class="next-primer" href="leveraged-finance.html">
+    <div>
+      <div class="np-meta">Next primer · 04</div>
+      <div class="np-h">Leveraged Finance →</div>
+    </div>
+    <span class="np-btn">Read next</span>
+  </a>
+
+  <footer>
+    Primer written by Qazi Rasool. Reviewed by Sam Soukas. Updated 2026.<br>
+    Part of <a href="../index.html" style="text-decoration:underline">Structuring Weekly</a> · BDC Intelligence.
+  </footer>
+
+</div>
+
+<script>
+// ====================================================================
+// Live distribution rendering for each metric card.
+// Reads from data/timeseries/{ticker}.json (same pattern as other pages).
+// 404s skip silently.
+// ====================================================================
+const DIR_PATH = '../../data/universe/fund_directory.json';
+const TS_PATH = '../../data/timeseries/';
+
+function pct(arr, p) {
+  if (!arr || !arr.length) return null;
+  const s = arr.slice().sort((a, b) => a - b);
+  const i = Math.floor((p / 100) * (s.length - 1));
+  return s[i];
+}
+
+function fmtVal(v, fmt) {
+  if (v == null) return '—';
+  if (fmt === 'pct') return v.toFixed(1) + '%';
+  if (fmt === 'dollar') return '$' + v.toFixed(2);
+  if (fmt === 'ratio') return v.toFixed(2) + '×';
+  return String(v);
+}
+
+async function loadDistributions() {
+  let directory;
+  try {
+    const r = await fetch(DIR_PATH);
+    if (!r.ok) throw new Error('dir ' + r.status);
+    directory = await r.json();
+  } catch (e) {
+    document.querySelectorAll('.mc-loading').forEach(el => {
+      el.innerHTML = '<span style="color:var(--bad)">Could not load distributions. Universe directory unavailable.</span>';
+    });
+    return;
+  }
+  const tickers = (directory.funds || []).map(f => f.ticker);
+
+  // Fetch all timeseries in parallel. 404s silently null.
+  const series = await Promise.all(tickers.map(tk =>
+    fetch(TS_PATH + tk + '.json')
+      .then(r => r.ok ? r.json() : null)
+      .catch(() => null)
+  ));
+
+  // For each metric card, gather the latest value across funds and render the distribution.
+  document.querySelectorAll('.metric-card[data-metric]').forEach(card => {
+    const field = card.dataset.field;
+    const better = card.dataset.better;
+    const fmt = card.dataset.fmt;
+    const values = [];
+    series.forEach(s => {
+      if (!Array.isArray(s) || !s.length) return;
+      const latest = s[s.length - 1];
+      const v = latest[field];
+      if (v != null && v !== '' && isFinite(parseFloat(v))) values.push(parseFloat(v));
+    });
+    renderDistBar(card, values, better, fmt);
+  });
+}
+
+function renderDistBar(card, values, better, fmt) {
+  const bar = card.querySelector('.dist-bar');
+  if (!values || !values.length) {
+    bar.innerHTML = '<div style="padding:14px 0;font-family:var(--mono);font-size:11px;color:var(--ink3)">No data available for this metric in the universe.</div>';
+    return;
+  }
+  const p25 = pct(values, 25);
+  const p50 = pct(values, 50);
+  const p75 = pct(values, 75);
+  const min = pct(values, 5);   // 5th pct as left edge to avoid extreme outliers
+  const max = pct(values, 95);  // 95th pct as right edge
+  const range = max - min || 1;
+
+  // Map to x-coordinates as fractions of [min, max]
+  const xP25 = ((p25 - min) / range) * 100;
+  const xP50 = ((p50 - min) / range) * 100;
+  const xP75 = ((p75 - min) / range) * 100;
+
+  // Color bands based on `better`:
+  //  - better='low': left is healthy(green), middle is watch(yellow), right is risk(red)
+  //  - better='high': mirror image
+  //  - better='neutral': middle band is healthy, both tails are watch
+  let leftFill, midFill, rightFill;
+  if (better === 'low') {
+    leftFill = '#dcfce7'; midFill = '#fef3c7'; rightFill = '#fee2e2';
+  } else if (better === 'high') {
+    leftFill = '#fee2e2'; midFill = '#fef3c7'; rightFill = '#dcfce7';
+  } else {
+    leftFill = '#fef3c7'; midFill = '#dcfce7'; rightFill = '#fef3c7';
+  }
+
+  bar.innerHTML = `
+    <div class="seg" style="background:${leftFill};left:0;width:${xP25}%"></div>
+    <div class="seg" style="background:${midFill};left:${xP25}%;width:${xP75 - xP25}%"></div>
+    <div class="seg" style="background:${rightFill};left:${xP75}%;width:${100 - xP75}%"></div>
+    <div style="position:absolute;left:${xP50}%;top:-4px;bottom:-4px;width:2px;background:#0a0a0a;"></div>
+    <div style="position:absolute;left:${xP50}%;top:-22px;transform:translateX(-50%);font-family:var(--mono);font-size:10px;font-weight:600;color:#0a0a0a;white-space:nowrap">median ${fmtVal(p50, fmt)}</div>
+    <div class="scale-labels">
+      <span>${fmtVal(p25, fmt)} <span style="opacity:.6">· p25</span></span>
+      <span style="opacity:.7">${values.length} funds</span>
+      <span><span style="opacity:.6">p75 ·</span> ${fmtVal(p75, fmt)}</span>
+    </div>
+  `;
+}
+
+loadDistributions();
+</script>
+
+</body>
+</html>

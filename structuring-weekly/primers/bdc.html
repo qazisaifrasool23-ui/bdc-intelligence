@@ -1,0 +1,431 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BDC Primer — Structuring Weekly</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&family=Roboto+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fafafa;--bg2:#fff;--bg3:#f4f4f5;--ink:#0a0a0a;--ink2:#3f3f46;--ink3:#71717a;--ink4:#a1a1aa;--line:#e4e4e7;--line2:#d4d4d8;--hl:#fde68a;--mono:"Roboto Mono",ui-monospace,monospace;--sans:"Roboto","Inter","Segoe UI",sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:var(--bg);font-family:var(--sans);color:var(--ink);font-size:15px;line-height:1.65;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+input,select{font-family:inherit}
+.navbar{height:60px;background:#fff;border-bottom:1px solid var(--line);display:flex;align-items:center;padding:0 28px;position:sticky;top:0;z-index:300}
+.logo{display:flex;align-items:center;gap:10px;margin-right:48px}
+.logo-mark{width:28px;height:28px;background:var(--ink);border-radius:7px;display:flex;align-items:center;justify-content:center}
+.logo-mark svg{width:15px;height:15px;fill:#fff}
+.logo-text{font-size:15px;font-weight:600;letter-spacing:-.3px}
+.logo-text span{font-weight:400}
+.nav-links{display:flex;align-items:center;gap:2px;margin:0 auto}
+.nav-link{padding:8px 14px;font-size:13.5px;font-weight:500;color:var(--ink2);border-radius:6px;white-space:nowrap}
+.nav-link:hover{color:var(--ink);background:var(--bg3)}
+.nav-link.on{color:var(--ink);font-weight:600}
+.nav-right{display:flex;align-items:center;gap:14px}
+.btn-outline{padding:8px 4px;background:transparent;color:var(--ink);font-size:13.5px;font-weight:500}
+.btn-primary{height:34px;padding:0 18px;border-radius:999px;background:var(--ink);color:#fff;font-size:13px;font-weight:500}
+
+.wrap{max-width:780px;margin:0 auto;padding:32px 28px 100px}
+@media(max-width:780px){.wrap{padding:20px 16px 60px}}
+.crumb{font-family:var(--mono);font-size:11px;color:var(--ink3);letter-spacing:.4px;margin-bottom:28px}
+.crumb a{color:var(--ink3)}
+.crumb a:hover{color:var(--ink);text-decoration:underline}
+.article-head{margin-bottom:48px;padding-bottom:32px;border-bottom:1px solid var(--line)}
+.article-head .kicker{font-family:var(--mono);font-size:11px;letter-spacing:.7px;text-transform:uppercase;color:var(--ink3);margin-bottom:18px}
+.article-head h1{font-size:46px;line-height:1.08;letter-spacing:-1.3px;font-weight:600;margin-bottom:18px}
+@media(max-width:780px){.article-head h1{font-size:34px;letter-spacing:-.7px}}
+.article-head .standfirst{font-size:18px;line-height:1.6;color:var(--ink2)}
+.article-head .meta{font-family:var(--mono);font-size:11px;color:var(--ink3);margin-top:24px;display:flex;gap:18px;flex-wrap:wrap}
+.article-head .meta b{color:var(--ink);font-weight:600}
+
+.article p{font-size:16px;line-height:1.75;color:var(--ink2);margin-bottom:20px}
+.article p b{color:var(--ink);font-weight:600}
+.article p i{color:var(--ink);font-style:italic}
+.article h2{font-size:26px;line-height:1.2;letter-spacing:-.6px;font-weight:600;margin:56px 0 18px}
+.article h2 .num{font-family:var(--mono);font-size:13px;color:var(--ink3);letter-spacing:.4px;font-weight:500;display:block;margin-bottom:6px}
+.article h3{font-size:18px;font-weight:600;letter-spacing:-.3px;margin:32px 0 12px}
+.article ul{margin:16px 0 24px 28px;color:var(--ink2)}
+.article ul li{margin-bottom:8px;line-height:1.7;font-size:16px}
+.article ul li b{color:var(--ink);font-weight:600}
+.article blockquote{margin:32px 0;padding:6px 0 6px 24px;border-left:3px solid var(--ink);font-size:18px;line-height:1.55;color:var(--ink);font-weight:500;font-style:italic}
+.hl{background:linear-gradient(180deg,transparent 60%,var(--hl) 60%);padding:0 2px}
+
+.ix{background:#fff;border:1px solid var(--line);border-radius:14px;padding:24px;margin:36px 0;position:relative}
+.ix .ix-label{font-family:var(--mono);font-size:9.5px;letter-spacing:.7px;text-transform:uppercase;color:var(--ink3);margin-bottom:6px;display:flex;align-items:center;gap:8px}
+.ix .ix-label::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--ink)}
+.ix h4{font-size:17px;font-weight:600;letter-spacing:-.3px;margin-bottom:6px}
+.ix .ix-hint{font-size:13px;color:var(--ink3);margin-bottom:18px}
+
+/* IX1: Traded vs Non-traded segmented */
+.ix-tnt .toggle{display:flex;background:var(--bg3);border-radius:999px;padding:3px;margin-bottom:18px;max-width:340px}
+.ix-tnt .toggle-btn{flex:1;padding:8px 16px;border-radius:999px;font-size:13px;font-weight:500;color:var(--ink2)}
+.ix-tnt .toggle-btn.on{background:#fff;color:var(--ink);font-weight:600;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+.ix-tnt .panel{display:none}
+.ix-tnt .panel.on{display:block;animation:fade .25s ease-out}
+@keyframes fade{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:translateY(0)}}
+.ix-tnt .key-row{display:grid;grid-template-columns:120px 1fr;gap:12px;padding:11px 0;border-top:1px solid var(--line);font-size:13.5px}
+.ix-tnt .key-row:first-child{border-top:none;padding-top:0}
+.ix-tnt .key-row .k{font-family:var(--mono);font-size:9.5px;letter-spacing:.4px;text-transform:uppercase;color:var(--ink3);padding-top:2px}
+.ix-tnt .key-row .v{color:var(--ink2);line-height:1.5}
+.ix-tnt .key-row .v b{color:var(--ink);font-weight:600}
+
+/* IX2: BDC Balance Sheet click-through */
+.ix-bs{}
+.ix-bs .bs-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:14px 0 16px}
+@media(max-width:580px){.ix-bs .bs-grid{grid-template-columns:1fr}}
+.ix-bs .bs-col{}
+.ix-bs .bs-col h5{font-family:var(--mono);font-size:10px;letter-spacing:.6px;text-transform:uppercase;color:var(--ink3);margin-bottom:8px;display:flex;align-items:center;gap:6px}
+.ix-bs .bs-col h5::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--ink)}
+.ix-bs .bs-item{background:var(--bg3);border:1px solid var(--line);border-radius:8px;padding:11px 14px;margin-bottom:6px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;transition:all .12s}
+.ix-bs .bs-item:hover{border-color:var(--ink2)}
+.ix-bs .bs-item.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.ix-bs .bs-item .nm{font-size:13px;font-weight:500}
+.ix-bs .bs-item .pct{font-family:var(--mono);font-size:11px;color:var(--ink3)}
+.ix-bs .bs-item.on .pct{color:rgba(255,255,255,.7)}
+.ix-bs .bs-detail{background:var(--bg3);border-radius:10px;padding:18px;margin-top:6px;min-height:110px}
+.ix-bs .bs-detail .h{font-size:15px;font-weight:600;margin-bottom:6px}
+.ix-bs .bs-detail .d{font-size:13px;line-height:1.6;color:var(--ink2)}
+
+/* IX3: RIC tax flow diagram */
+.ix-tax .flow{display:flex;flex-direction:column;gap:8px;margin:14px 0 18px}
+.ix-tax .flow-row{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:14px}
+@media(max-width:580px){.ix-tax .flow-row{grid-template-columns:1fr;gap:8px}}
+.ix-tax .node{background:var(--bg3);border-radius:10px;padding:14px 16px;font-size:13px;color:var(--ink2);position:relative}
+.ix-tax .node.tax{background:#fee2e2;color:#b91c1c}
+.ix-tax .node.ok{background:#dcfce7;color:#15803d}
+.ix-tax .node .h{font-size:14px;font-weight:600;color:var(--ink);margin-bottom:4px}
+.ix-tax .node.tax .h{color:#b91c1c}
+.ix-tax .node.ok .h{color:#15803d}
+.ix-tax .arrow{font-family:var(--mono);font-size:18px;color:var(--ink3);text-align:center}
+@media(max-width:580px){.ix-tax .arrow{transform:rotate(90deg)}}
+.ix-tax .compare-btn{display:flex;gap:6px;margin-bottom:14px;flex-wrap:wrap}
+.ix-tax .compare-btn .cb{padding:6px 14px;border-radius:999px;background:var(--bg3);font-size:12.5px;color:var(--ink2);font-weight:500;cursor:pointer}
+.ix-tax .compare-btn .cb.on{background:var(--ink);color:#fff;font-weight:600}
+
+/* IX4: Fee calculator */
+.ix-fee .controls{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:14px 0 18px}
+@media(max-width:580px){.ix-fee .controls{grid-template-columns:1fr}}
+.ix-fee .ctrl .row{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:6px}
+.ix-fee .ctrl .label{font-family:var(--mono);font-size:10px;letter-spacing:.5px;text-transform:uppercase;color:var(--ink3)}
+.ix-fee .ctrl .val{font-family:var(--mono);font-size:16px;font-weight:600;color:var(--ink)}
+.ix-fee input[type=range]{width:100%;-webkit-appearance:none;appearance:none;height:4px;background:var(--line);border-radius:2px;outline:none}
+.ix-fee input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;width:16px;height:16px;border-radius:50%;background:var(--ink);cursor:pointer;border:3px solid #fff;box-shadow:0 0 0 1px var(--ink)}
+.ix-fee .breakdown{background:var(--bg3);border-radius:10px;padding:18px;display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+@media(max-width:580px){.ix-fee .breakdown{grid-template-columns:1fr}}
+.ix-fee .breakdown .col h5{font-family:var(--mono);font-size:10px;letter-spacing:.5px;text-transform:uppercase;color:var(--ink3);margin-bottom:10px}
+.ix-fee .breakdown .col .line{display:flex;justify-content:space-between;font-size:13.5px;padding:5px 0;color:var(--ink2)}
+.ix-fee .breakdown .col .line.tot{border-top:1px solid var(--line);margin-top:5px;padding-top:9px;font-weight:600;color:var(--ink)}
+.ix-fee .breakdown .col .line b{font-family:var(--mono);font-weight:600;color:var(--ink)}
+
+.next-primer{margin-top:60px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:24px;display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap}
+.next-primer .np-meta{font-family:var(--mono);font-size:10px;letter-spacing:.5px;text-transform:uppercase;color:var(--ink3);margin-bottom:6px}
+.next-primer .np-h{font-size:18px;font-weight:600;letter-spacing:-.3px}
+.next-primer .np-btn{padding:10px 18px;border-radius:999px;background:var(--ink);color:#fff;font-size:13px;font-weight:500}
+
+footer{padding-top:36px;margin-top:60px;border-top:1px solid var(--line);font-family:var(--mono);font-size:10.5px;color:var(--ink3);text-align:center;letter-spacing:.3px;line-height:1.8}
+</style>
+</head>
+<body>
+
+<nav class="navbar">
+  <a class="logo" href="../../index.html">
+    <div class="logo-mark"><svg viewBox="0 0 16 16"><rect x="2" y="9" width="3" height="5"/><rect x="6.5" y="5" width="3" height="9"/><rect x="11" y="2" width="3" height="12"/></svg></div>
+    <div class="logo-text">BDC<span>Intelligence</span></div>
+  </a>
+  <div class="nav-links">
+    <a class="nav-link" href="../../chewbacca.html">Chewbacca</a>
+    <a class="nav-link" href="../../index.html">US BDC Universe</a>
+    <a class="nav-link" href="../../fund.html">Fund Deep Dive</a>
+    <a class="nav-link" href="../../compare.html">Compare</a>
+    <a class="nav-link" href="../../screener.html">Screener</a>
+    <a class="nav-link" href="../../analysis.html">Analysis</a>
+    <a class="nav-link" href="../../news.html">News</a>
+    <a class="nav-link on" href="../index.html">Structuring Weekly</a>
+    <a class="nav-link" href="../../about.html">About us</a>
+  </div>
+  <div class="nav-right">
+    <button class="btn-outline">Sign In</button>
+    <button class="btn-primary">Get Access</button>
+  </div>
+</nav>
+
+<div class="wrap">
+
+  <div class="crumb"><a href="../index.html">Structuring Weekly</a> <span style="opacity:.5;margin:0 8px">/</span> <a href="index.html">Primers</a> <span style="opacity:.5;margin:0 8px">/</span> BDC</div>
+
+  <div class="article-head">
+    <div class="kicker">Primer 02 · Vehicles</div>
+    <h1>The Business Development Company.</h1>
+    <p class="standfirst">A type of investment fund Congress invented in 1980, almost forgotten for thirty years, then resurrected in the 2010s as the canonical vehicle for private credit. This is what a BDC actually is, how it differs from a closed end fund or a mutual fund, and why it is structured the way it is.</p>
+    <div class="meta">
+      <span><b>11 min</b> read</span>
+      <span><b>4</b> interactives</span>
+      <span>Updated <b>2026</b></span>
+      <span>By <b>Qazi Rasool</b></span>
+    </div>
+  </div>
+
+  <div class="article">
+
+    <h2><span class="num">01</span>What a BDC is.</h2>
+
+    <p>A business development company is a <b>publicly registered closed end investment company</b> created by the Small Business Investment Incentive Act of 1980. Its purpose, in plain terms, was to channel public market capital into smaller US private companies that struggled to access traditional debt markets. Congress wanted a vehicle that retail investors could buy through a regular brokerage account, but that could lend to private middle market borrowers the way a bank or a PE fund does.</p>
+
+    <p>The structure is governed by the Investment Company Act of 1940 (the same act that governs mutual funds and closed end funds), but with a specific BDC carve out that imposes its own rules. <span class="hl">A BDC must invest at least 70% of its assets in "eligible portfolio companies"</span>, which broadly means private US operating companies. The remaining 30% can be cash, public debt, or other less restricted investments. This 70% test is the line that separates a BDC from a CLO equity fund or a syndicated loan fund.</p>
+
+    <h2><span class="num">02</span>Traded versus non traded.</h2>
+
+    <p>There are two flavors of BDC. They share the same regulatory structure but differ on almost everything else. Toggle below to see how the two compare on the dimensions that matter for an analyst.</p>
+
+    <div class="ix ix-tnt">
+      <div class="ix-label">Interactive 01 of 04</div>
+      <h4>Traded vs Non Traded BDC.</h4>
+      <div class="ix-hint">Both are BDCs. Both file with the SEC. Both have the same eligibility rules. Everything else is different.</div>
+      <div class="toggle">
+        <button class="toggle-btn on" data-panel="traded">Traded BDC</button>
+        <button class="toggle-btn" data-panel="nontraded">Non Traded BDC</button>
+      </div>
+
+      <div class="panel on" id="panel-traded">
+        <div class="key-row"><div class="k">Listing</div><div class="v">Listed on <b>NYSE or Nasdaq</b>. Real time price during market hours.</div></div>
+        <div class="key-row"><div class="k">Examples</div><div class="v">ARCC, OBDC, FSK, MAIN, BBDC, HTGC, BXSL, PSEC.</div></div>
+        <div class="key-row"><div class="k">Liquidity</div><div class="v"><b>Sell at any time</b> through your brokerage at prevailing market price.</div></div>
+        <div class="key-row"><div class="k">Premium / discount</div><div class="v">Share price can trade <b>well above or below NAV</b>. Reflects market sentiment, not fund mechanics.</div></div>
+        <div class="key-row"><div class="k">Capital raises</div><div class="v">Done through <b>follow on offerings</b>, ATMs, or rights offerings. Subject to dilution risk.</div></div>
+        <div class="key-row"><div class="k">Investor base</div><div class="v">Mix of <b>retail, institutional, and yield seeking funds</b>. Heavy retail dividend buyer base.</div></div>
+        <div class="key-row"><div class="k">Universe size</div><div class="v">Roughly <b>50 traded BDCs</b> in the US. Top 10 control roughly 70% of public BDC AUM.</div></div>
+      </div>
+
+      <div class="panel" id="panel-nontraded">
+        <div class="key-row"><div class="k">Listing</div><div class="v"><b>Not listed.</b> No public market for shares. NAV reported monthly or quarterly.</div></div>
+        <div class="key-row"><div class="k">Examples</div><div class="v">BCRED (Blackstone), HLEND (HPS), OTF (Owl Rock), and most large bank labeled BDCs.</div></div>
+        <div class="key-row"><div class="k">Liquidity</div><div class="v"><b>Quarterly tender offers only.</b> Typically capped at 5% of NAV per quarter. Can be gated in stress.</div></div>
+        <div class="key-row"><div class="k">Premium / discount</div><div class="v">Shares <b>always sold and repurchased at NAV</b>. No premium/discount mechanism.</div></div>
+        <div class="key-row"><div class="k">Capital raises</div><div class="v"><b>Continuous offering.</b> New investor money flows in monthly, often through wealth advisor channels.</div></div>
+        <div class="key-row"><div class="k">Investor base</div><div class="v">Largely <b>high net worth retail via RIAs and broker dealers</b>. Some institutional via feeder funds.</div></div>
+        <div class="key-row"><div class="k">Universe size</div><div class="v">Roughly <b>140+ non traded BDCs</b> as of 2025. Total AUM now exceeds the listed universe.</div></div>
+      </div>
+    </div>
+
+    <p>The two structures serve very different purposes. The traded BDC is built to give a public market investor access to private credit returns alongside daily liquidity. The non traded BDC is built to deliver private credit exposure to a wealth channel client who values NAV stability over daily mark to market. Both have legitimate audiences. Both have structural risks the other does not.</p>
+
+    <h2><span class="num">03</span>The balance sheet.</h2>
+
+    <p>A BDC's balance sheet is unusually simple. Click any line item below to see what it actually contains and how to read it.</p>
+
+    <div class="ix ix-bs">
+      <div class="ix-label">Interactive 02 of 04</div>
+      <h4>Anatomy of a BDC balance sheet.</h4>
+      <div class="ix-hint">Typical large BDC. Percentages are illustrative. Click any line to see what it actually represents.</div>
+      <div class="bs-grid">
+        <div class="bs-col">
+          <h5>Assets</h5>
+          <div class="bs-item on" data-line="first-lien"><div class="nm">First lien loans</div><div class="pct">65%</div></div>
+          <div class="bs-item" data-line="second-lien"><div class="nm">Second lien / sub</div><div class="pct">12%</div></div>
+          <div class="bs-item" data-line="equity-warrants"><div class="nm">Equity / warrants</div><div class="pct">8%</div></div>
+          <div class="bs-item" data-line="jv"><div class="nm">JV / SLF investments</div><div class="pct">10%</div></div>
+          <div class="bs-item" data-line="cash"><div class="nm">Cash &amp; equivalents</div><div class="pct">5%</div></div>
+        </div>
+        <div class="bs-col">
+          <h5>Liabilities + Equity</h5>
+          <div class="bs-item" data-line="credit-fac"><div class="nm">Credit facility</div><div class="pct">25%</div></div>
+          <div class="bs-item" data-line="unsecured"><div class="nm">Unsecured notes</div><div class="pct">22%</div></div>
+          <div class="bs-item" data-line="sba"><div class="nm">SBA debentures</div><div class="pct">3%</div></div>
+          <div class="bs-item" data-line="equity"><div class="nm">Common equity / NAV</div><div class="pct">50%</div></div>
+        </div>
+      </div>
+      <div class="bs-detail" id="bs-detail"></div>
+    </div>
+
+    <h2><span class="num">04</span>The tax structure that explains everything.</h2>
+
+    <p>If you read a BDC quarterly and wondered why they distribute almost everything they earn, the answer is one word: <b>RIC</b>. Most BDCs elect to be taxed as a Regulated Investment Company under Subchapter M of the Internal Revenue Code. The election is voluntary, but the benefit is enormous: a RIC pays no corporate income tax on income or capital gains that it distributes to shareholders. To qualify, the fund has to distribute at least 90% of its taxable income each year.</p>
+
+    <p>This single rule shapes everything about how a BDC operates. It is why distributions look enormous (10 percent or more dividend yields are common). It is why retained earnings are essentially zero. It is why a BDC cannot grow by reinvesting earnings the way a normal corporation does. It is why a BDC has to raise external equity capital every time it wants to grow.</p>
+
+    <div class="ix ix-tax">
+      <div class="ix-label">Interactive 03 of 04</div>
+      <h4>How the RIC tax election changes the math.</h4>
+      <div class="ix-hint">Same fund, same investment income. The tax election determines who gets the cash. Click to see both flows.</div>
+      <div class="compare-btn">
+        <button class="cb on" data-tax="ric">As a RIC (election made)</button>
+        <button class="cb" data-tax="cco">As a regular C corp (no election)</button>
+      </div>
+      <div class="flow" id="tax-flow"></div>
+    </div>
+
+    <p>The thing to understand: the RIC tax shield is a regulatory feature that exists in service of the BDC's stated purpose (channeling capital to small US private companies). Congress effectively said: <i>if you keep at least 70% of your assets invested in eligible portfolio companies AND distribute at least 90% of your income, we will not double tax you</i>. Without that bargain, the entire BDC asset class would not exist in its current form.</p>
+
+    <h2><span class="num">05</span>The fee structure.</h2>
+
+    <p>BDCs are almost always externally managed, meaning a separate investment adviser (the manager) runs the portfolio in exchange for a management fee and an incentive fee. The structure varies, but the typical economics look like this. Adjust the inputs to see how the fees compound on a $5B fund.</p>
+
+    <div class="ix ix-fee">
+      <div class="ix-label">Interactive 04 of 04</div>
+      <h4>BDC management fee calculator.</h4>
+      <div class="ix-hint">A typical large traded BDC: $5B in net assets, 1.0x leverage, gross investment yield of 11%. Adjust fee rates to see how manager economics compound.</div>
+      <div class="controls">
+        <div class="ctrl">
+          <div class="row"><span class="label">Base mgmt fee (% of total assets)</span><span class="val" id="fee-base-v">1.50%</span></div>
+          <input type="range" id="fee-base" min="0.5" max="2.0" value="1.5" step="0.05">
+        </div>
+        <div class="ctrl">
+          <div class="row"><span class="label">Incentive fee (% above hurdle)</span><span class="val" id="fee-inc-v">20%</span></div>
+          <input type="range" id="fee-inc" min="0" max="25" value="20" step="1">
+        </div>
+      </div>
+      <div class="breakdown" id="fee-breakdown"></div>
+    </div>
+
+    <p>Two things to notice. First, the base management fee is charged on <b>total assets</b>, not net assets, which means the manager earns the fee on the levered portion of the portfolio. Higher leverage equals more fee, which is why critics call this an incentive to over lever. Second, the incentive fee in most BDCs has a <b>hurdle rate</b> (usually 7 percent annually) and then a catch up provision such that the manager earns nothing below the hurdle and the full 20 percent of incremental income above it. The catch up is what turns a small move past 7 percent into a large fee.</p>
+
+    <h2><span class="num">06</span>What to actually look at.</h2>
+
+    <p>When you open a BDC quarterly report, the most useful metrics to read first, in order, are:</p>
+
+    <ul>
+      <li><b>Net asset value per share, sequential change.</b> Did it go up or down quarter over quarter? Most of the answer to "how is this fund doing" is in this single number.</li>
+      <li><b>Non accrual percentage on cost AND on fair value.</b> Cost shows you what fraction of the loan book has stopped paying. Fair value shows you how much economic value the market thinks is at risk.</li>
+      <li><b>NII coverage of the dividend.</b> A coverage ratio below 1.0 means the fund is paying out more than it earned. Sustained sub 1.0 coverage is the leading indicator of a dividend cut.</li>
+      <li><b>Investment activity, new originations versus repayments.</b> Tells you whether the manager is deploying capital or shrinking. Net deployment in a tough cycle is a sign of confidence.</li>
+      <li><b>PIK income as a percentage of total income.</b> PIK is "paid in kind", meaning the borrower pays interest in more debt rather than cash. Rising PIK percentages mean the underlying borrowers are conserving cash.</li>
+    </ul>
+
+    <blockquote>If you only learn one thing about BDCs, learn this: they are designed to give you an undiluted look at the underlying loan book every quarter, in detail, with line item disclosure. Almost no other asset class offers this level of transparency. The whole point of BDC Intelligence is to make that transparency usable.</blockquote>
+
+  </div>
+
+  <a class="next-primer" href="reading-the-data.html">
+    <div>
+      <div class="np-meta">Next primer · 03</div>
+      <div class="np-h">Reading the Data →</div>
+    </div>
+    <span class="np-btn">Read next</span>
+  </a>
+
+  <footer>
+    Primer written by Qazi Rasool. Reviewed by Sam Soukas. Updated 2026.<br>
+    Part of <a href="../index.html" style="text-decoration:underline">Structuring Weekly</a> · BDC Intelligence.
+  </footer>
+
+</div>
+
+<script>
+// IX1: Traded vs Non-traded toggle
+document.querySelectorAll('.ix-tnt .toggle-btn').forEach(btn => btn.addEventListener('click', () => {
+  document.querySelectorAll('.ix-tnt .toggle-btn').forEach(x => x.classList.remove('on'));
+  document.querySelectorAll('.ix-tnt .panel').forEach(p => p.classList.remove('on'));
+  btn.classList.add('on');
+  document.getElementById('panel-' + btn.dataset.panel).classList.add('on');
+}));
+
+// IX2: Balance sheet click-through
+const BS = {
+  'first-lien': { h: "First lien senior secured loans", d: "The dominant asset on most BDC balance sheets. First claim on borrower collateral. Typically yields SOFR + 525 to 700 bps. In a default, recovers higher than any other debt tranche, usually 70 to 90 cents on the dollar." },
+  'second-lien': { h: "Second lien and subordinated debt", d: "Sits below the senior loans in the capital stack. Higher yield (12 to 15 percent typically) for accepting subordination risk. Recovery rates in default fall to 30 to 60 cents." },
+  'equity-warrants': { h: "Equity positions and warrants", d: "Direct equity stakes, often acquired alongside debt as a kicker, or from converted bankrupt borrowers. Mark to market, no contractual cash yield. Returns lumpy: long stretches of zero then large gains on exits." },
+  'jv': { h: "JV / Senior Loan Funds (SLFs)", d: "Off balance sheet vehicles co invested with one or two partners (often insurance companies). Hold loans the BDC originated. Levered structures inside the JV produce higher yields. Common in larger BDCs as a fee leverage tool." },
+  'cash': { h: "Cash and short term equivalents", d: "Dry powder. Held for liquidity, working capital, and to fund new originations between portfolio repayments. Typically 3 to 8 percent of assets at any given time." },
+  'credit-fac': { h: "Senior secured credit facility", d: "Revolving credit from a bank syndicate. Secured by the loan portfolio. Typically priced at SOFR + 175 to 250 bps. The cheapest source of leverage available to a BDC." },
+  'unsecured': { h: "Unsecured notes (5 to 7 year)", d: "Public bonds issued by the BDC. Pay fixed coupons in the 4 to 7 percent range. Unsecured, so they sit junior to the credit facility. Used to extend maturities and reduce reliance on bank funding." },
+  'sba': { h: "SBA debentures", d: "Government guaranteed long term debt from the Small Business Administration. Only available to BDCs with an SBIC subsidiary. Very cheap (around 4 to 5 percent) but capped at $175M per SBIC license. Used by smaller BDCs like Saratoga and Capitala." },
+  'equity': { h: "Common equity / NAV", d: "Shareholders' net asset value. Equals total assets minus total liabilities. The denominator for the BDC's leverage ratio. The numerator the manager earns base fees on." }
+};
+function renderBs(line) {
+  const e = BS[line];
+  document.getElementById('bs-detail').innerHTML = `<div class="h">${e.h}</div><div class="d">${e.d}</div>`;
+}
+document.querySelectorAll('.ix-bs .bs-item').forEach(el => el.addEventListener('click', () => {
+  document.querySelectorAll('.ix-bs .bs-item').forEach(x => x.classList.remove('on'));
+  el.classList.add('on');
+  renderBs(el.dataset.line);
+}));
+renderBs('first-lien');
+
+// IX3: RIC tax flow
+const TAX = {
+  ric: [
+    { type: 'node', h: '$100 of investment income', d: 'Fund earns $100 from loans and equity gains during the year.' },
+    { type: 'arrow' },
+    { type: 'node ok', h: 'No corporate tax', d: 'RIC election means no entity-level tax on income that is distributed.' },
+    { type: 'arrow' },
+    { type: 'node', h: '$90 distributed to shareholders', d: 'BDC must distribute at least 90% to keep RIC status. Most distribute close to 100%.' },
+    { type: 'arrow' },
+    { type: 'node ok', h: 'Shareholders pay ordinary income tax on dividends', d: 'Tax happens once, at the investor level. Effective rate depends on the investor.' }
+  ],
+  cco: [
+    { type: 'node', h: '$100 of investment income', d: 'Same starting point. Fund earns $100 from loans and equity gains.' },
+    { type: 'arrow' },
+    { type: 'node tax', h: 'Corporate tax of 21%', d: 'Without RIC election, fund pays $21 in federal corporate income tax.' },
+    { type: 'arrow' },
+    { type: 'node', h: '$79 left to distribute', d: 'After tax, $79 remains for shareholders. Same 90% distribution rule would not apply.' },
+    { type: 'arrow' },
+    { type: 'node tax', h: 'Shareholders pay tax on dividends again', d: 'Same $79 taxed again at the investor level as a qualified or ordinary dividend.' }
+  ]
+};
+function renderTax(key) {
+  const flow = document.getElementById('tax-flow');
+  flow.innerHTML = '';
+  TAX[key].forEach(n => {
+    if (n.type === 'arrow') {
+      flow.innerHTML += '<div class="flow-row"><div></div><div class="arrow">↓</div><div></div></div>';
+    } else {
+      flow.innerHTML += `<div class="flow-row"><div></div><div class="node ${n.type.replace('node ','')}"><div class="h">${n.h}</div>${n.d}</div><div></div></div>`;
+    }
+  });
+}
+document.querySelectorAll('.ix-tax .cb').forEach(b => b.addEventListener('click', () => {
+  document.querySelectorAll('.ix-tax .cb').forEach(x => x.classList.remove('on'));
+  b.classList.add('on');
+  renderTax(b.dataset.tax);
+}));
+renderTax('ric');
+
+// IX4: Fee calculator
+const feeBase = document.getElementById('fee-base');
+const feeInc = document.getElementById('fee-inc');
+function renderFee() {
+  const base = parseFloat(feeBase.value);
+  const inc = parseFloat(feeInc.value);
+  const netAssets = 5000;       // $5B
+  const leverage = 1.0;
+  const totalAssets = netAssets * (1 + leverage);  // $10B
+  const grossYield = 0.11;      // 11% gross investment yield
+  const grossIncome = totalAssets * grossYield;    // $1.1B
+  const baseFee = totalAssets * (base / 100);
+  // Approximate the incentive fee: hurdle is 7% on net assets, anything above hurdle attracts the inc fee rate
+  const hurdleIncome = netAssets * 0.07;
+  const netCreditFacilityCost = totalAssets * 0.05 * (leverage / (1 + leverage));  // simplified financing cost
+  const preIncentiveNII = grossIncome - baseFee - netCreditFacilityCost;
+  const incentiveFee = Math.max(0, preIncentiveNII - hurdleIncome) * (inc / 100);
+  const postFeeNII = preIncentiveNII - incentiveFee;
+  document.getElementById('fee-base-v').textContent = base.toFixed(2) + '%';
+  document.getElementById('fee-inc-v').textContent = inc + '%';
+  document.getElementById('fee-breakdown').innerHTML = `
+    <div class="col">
+      <h5>Fund economics (annual, $M)</h5>
+      <div class="line">Gross investment income<b>$${grossIncome.toFixed(0)}M</b></div>
+      <div class="line">Less: financing cost<b>$${netCreditFacilityCost.toFixed(0)}M</b></div>
+      <div class="line">Less: base mgmt fee<b>$${baseFee.toFixed(0)}M</b></div>
+      <div class="line">Pre incentive NII<b>$${preIncentiveNII.toFixed(0)}M</b></div>
+      <div class="line">Less: incentive fee<b>$${incentiveFee.toFixed(0)}M</b></div>
+      <div class="line tot">Post fee NII to LPs<b>$${postFeeNII.toFixed(0)}M</b></div>
+    </div>
+    <div class="col">
+      <h5>Manager economics (annual, $M)</h5>
+      <div class="line">Base management fee<b>$${baseFee.toFixed(0)}M</b></div>
+      <div class="line">Incentive fee<b>$${incentiveFee.toFixed(0)}M</b></div>
+      <div class="line tot">Total to manager<b>$${(baseFee + incentiveFee).toFixed(0)}M</b></div>
+      <div class="line" style="margin-top:14px;font-size:12px;color:var(--ink3)">Mgmt as % of net assets<b>${(100*(baseFee+incentiveFee)/netAssets).toFixed(2)}%</b></div>
+      <div class="line" style="font-size:12px;color:var(--ink3)">Mgmt as % of NII<b>${(100*(baseFee+incentiveFee)/(preIncentiveNII+baseFee)).toFixed(0)}%</b></div>
+    </div>
+  `;
+}
+feeBase.addEventListener('input', renderFee);
+feeInc.addEventListener('input', renderFee);
+renderFee();
+</script>
+
+</body>
+</html>
