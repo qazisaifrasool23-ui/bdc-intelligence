@@ -1,11 +1,17 @@
 {
-  "generated": "2026-05-31T12:10:48Z",
+  "generated": "2026-06-01T16:36:26Z",
   "since": "2020-01-01",
   "total_funds": 192,
   "funds_with_news": 186,
-  "total_items": 9750,
-  "new_items_this_run": 0,
+  "total_items": 9751,
+  "new_items_this_run": 1,
   "funds": [
+    {
+      "ticker": "ACSL",
+      "count": 36,
+      "latest": "2026-06-01",
+      "new_this_run": 1
+    },
     {
       "ticker": "FDUS",
       "count": 60,
@@ -778,12 +784,6 @@
       "ticker": "CIK0002028686",
       "count": 8,
       "latest": "2026-05-04",
-      "new_this_run": 0
-    },
-    {
-      "ticker": "ACSL",
-      "count": 35,
-      "latest": "2026-05-01",
       "new_this_run": 0
     },
     {
