@@ -1,16 +1,28 @@
 {
-  "generated": "2026-06-04T13:57:56Z",
+  "generated": "2026-06-05T13:51:26Z",
   "since": "2020-01-01",
   "total_funds": 192,
   "funds_with_news": 186,
-  "total_items": 9777,
-  "new_items_this_run": 5,
+  "total_items": 9779,
+  "new_items_this_run": 2,
   "funds": [
+    {
+      "ticker": "NCAPI",
+      "count": 126,
+      "latest": "2026-06-04",
+      "new_this_run": 1
+    },
+    {
+      "ticker": "CIK0002033362",
+      "count": 15,
+      "latest": "2026-06-04",
+      "new_this_run": 1
+    },
     {
       "ticker": "FSK",
       "count": 156,
       "latest": "2026-06-03",
-      "new_this_run": 2
+      "new_this_run": 0
     },
     {
       "ticker": "KKR_FSIT",
@@ -22,19 +34,19 @@
       "ticker": "KEUDL",
       "count": 37,
       "latest": "2026-06-03",
-      "new_this_run": 1
+      "new_this_run": 0
     },
     {
       "ticker": "LAPC",
       "count": 29,
       "latest": "2026-06-03",
-      "new_this_run": 1
+      "new_this_run": 0
     },
     {
       "ticker": "PPINC",
       "count": 8,
       "latest": "2026-06-03",
-      "new_this_run": 1
+      "new_this_run": 0
     },
     {
       "ticker": "GAIN",
@@ -523,12 +535,6 @@
       "new_this_run": 0
     },
     {
-      "ticker": "NCAPI",
-      "count": 125,
-      "latest": "2026-05-21",
-      "new_this_run": 0
-    },
-    {
       "ticker": "PSBD",
       "count": 77,
       "latest": "2026-05-21",
@@ -675,12 +681,6 @@
     {
       "ticker": "CIK0001901606",
       "count": 48,
-      "latest": "2026-05-08",
-      "new_this_run": 0
-    },
-    {
-      "ticker": "CIK0002033362",
-      "count": 14,
       "latest": "2026-05-08",
       "new_this_run": 0
     },
