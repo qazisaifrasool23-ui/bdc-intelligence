@@ -1,11 +1,23 @@
 {
-  "generated": "2026-06-07T12:19:31Z",
+  "generated": "2026-06-08T14:47:07Z",
   "since": "2020-01-01",
   "total_funds": 192,
   "funds_with_news": 186,
-  "total_items": 9784,
-  "new_items_this_run": 0,
+  "total_items": 9786,
+  "new_items_this_run": 2,
   "funds": [
+    {
+      "ticker": "ARCC",
+      "count": 121,
+      "latest": "2026-06-08",
+      "new_this_run": 1
+    },
+    {
+      "ticker": "MINVE",
+      "count": 53,
+      "latest": "2026-06-08",
+      "new_this_run": 1
+    },
     {
       "ticker": "GLAD",
       "count": 94,
@@ -394,12 +406,6 @@
       "ticker": "CIK0002033382",
       "count": 4,
       "latest": "2026-05-27",
-      "new_this_run": 0
-    },
-    {
-      "ticker": "ARCC",
-      "count": 120,
-      "latest": "2026-05-26",
       "new_this_run": 0
     },
     {
@@ -1036,12 +1042,6 @@
       "ticker": "PIAC",
       "count": 14,
       "latest": "2025-12-18",
-      "new_this_run": 0
-    },
-    {
-      "ticker": "MINVE",
-      "count": 52,
-      "latest": "2025-12-16",
       "new_this_run": 0
     },
     {
