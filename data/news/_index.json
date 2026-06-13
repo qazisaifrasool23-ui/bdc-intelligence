@@ -1,14 +1,20 @@
 {
-  "generated": "2026-06-12T14:09:40Z",
+  "generated": "2026-06-13T12:23:28Z",
   "since": "2020-01-01",
   "total_funds": 192,
   "funds_with_news": 186,
-  "total_items": 9814,
-  "new_items_this_run": 13,
+  "total_items": 9818,
+  "new_items_this_run": 4,
   "funds": [
     {
       "ticker": "SSSS",
       "count": 99,
+      "latest": "2026-06-12",
+      "new_this_run": 0
+    },
+    {
+      "ticker": "TRIN",
+      "count": 103,
       "latest": "2026-06-12",
       "new_this_run": 1
     },
@@ -16,23 +22,41 @@
       "ticker": "BLKR_PCF",
       "count": 81,
       "latest": "2026-06-12",
-      "new_this_run": 1
+      "new_this_run": 0
     },
     {
       "ticker": "HLEND",
       "count": 129,
       "latest": "2026-06-12",
-      "new_this_run": 1
+      "new_this_run": 0
     },
     {
       "ticker": "NCPCIF",
       "count": 70,
       "latest": "2026-06-12",
-      "new_this_run": 1
+      "new_this_run": 0
     },
     {
       "ticker": "HCCS",
       "count": 43,
+      "latest": "2026-06-12",
+      "new_this_run": 0
+    },
+    {
+      "ticker": "MINVE",
+      "count": 55,
+      "latest": "2026-06-12",
+      "new_this_run": 1
+    },
+    {
+      "ticker": "RCAPI",
+      "count": 16,
+      "latest": "2026-06-12",
+      "new_this_run": 1
+    },
+    {
+      "ticker": "PSBD",
+      "count": 78,
       "latest": "2026-06-12",
       "new_this_run": 1
     },
@@ -40,43 +64,43 @@
       "ticker": "CGBD",
       "count": 96,
       "latest": "2026-06-11",
-      "new_this_run": 2
+      "new_this_run": 0
     },
     {
       "ticker": "FDUS",
       "count": 61,
       "latest": "2026-06-11",
-      "new_this_run": 1
+      "new_this_run": 0
     },
     {
       "ticker": "GAIN",
       "count": 95,
       "latest": "2026-06-11",
-      "new_this_run": 1
+      "new_this_run": 0
     },
     {
       "ticker": "MAIN",
       "count": 116,
       "latest": "2026-06-11",
-      "new_this_run": 1
+      "new_this_run": 0
     },
     {
       "ticker": "OCIC",
       "count": 166,
       "latest": "2026-06-11",
-      "new_this_run": 1
+      "new_this_run": 0
     },
     {
       "ticker": "CCSO",
       "count": 66,
       "latest": "2026-06-11",
-      "new_this_run": 1
+      "new_this_run": 0
     },
     {
       "ticker": "MSIF",
       "count": 86,
       "latest": "2026-06-11",
-      "new_this_run": 1
+      "new_this_run": 0
     },
     {
       "ticker": "OFS",
@@ -111,12 +135,6 @@
     {
       "ticker": "LSUSA",
       "count": 60,
-      "latest": "2026-06-09",
-      "new_this_run": 0
-    },
-    {
-      "ticker": "MINVE",
-      "count": 54,
       "latest": "2026-06-09",
       "new_this_run": 0
     },
@@ -255,12 +273,6 @@
     {
       "ticker": "PGLEN",
       "count": 8,
-      "latest": "2026-06-02",
-      "new_this_run": 0
-    },
-    {
-      "ticker": "RCAPI",
-      "count": 15,
       "latest": "2026-06-02",
       "new_this_run": 0
     },
@@ -589,12 +601,6 @@
       "new_this_run": 0
     },
     {
-      "ticker": "TRIN",
-      "count": 102,
-      "latest": "2026-05-21",
-      "new_this_run": 0
-    },
-    {
       "ticker": "BCRED",
       "count": 135,
       "latest": "2026-05-21",
@@ -609,12 +615,6 @@
     {
       "ticker": "FEPC",
       "count": 38,
-      "latest": "2026-05-21",
-      "new_this_run": 0
-    },
-    {
-      "ticker": "PSBD",
-      "count": 77,
       "latest": "2026-05-21",
       "new_this_run": 0
     },
