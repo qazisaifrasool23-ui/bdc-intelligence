@@ -1,11 +1,17 @@
 {
-  "generated": "2026-06-15T16:16:56Z",
+  "generated": "2026-06-16T15:51:35Z",
   "since": "2020-01-01",
   "total_funds": 192,
   "funds_with_news": 186,
-  "total_items": 9818,
-  "new_items_this_run": 0,
+  "total_items": 9819,
+  "new_items_this_run": 1,
   "funds": [
+    {
+      "ticker": "CIK0002031750",
+      "count": 41,
+      "latest": "2026-06-15",
+      "new_this_run": 1
+    },
     {
       "ticker": "SSSS",
       "count": 99,
@@ -207,12 +213,6 @@
     {
       "ticker": "OTF",
       "count": 83,
-      "latest": "2026-06-05",
-      "new_this_run": 0
-    },
-    {
-      "ticker": "CIK0002031750",
-      "count": 40,
       "latest": "2026-06-05",
       "new_this_run": 0
     },
