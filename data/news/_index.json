@@ -1,14 +1,32 @@
 {
-  "generated": "2026-06-17T14:26:11Z",
+  "generated": "2026-06-18T14:09:15Z",
   "since": "2020-01-01",
   "total_funds": 192,
   "funds_with_news": 186,
-  "total_items": 9824,
-  "new_items_this_run": 5,
+  "total_items": 9827,
+  "new_items_this_run": 3,
   "funds": [
+    {
+      "ticker": "OADVA",
+      "count": 24,
+      "latest": "2026-06-18",
+      "new_this_run": 1
+    },
+    {
+      "ticker": "LIEN",
+      "count": 52,
+      "latest": "2026-06-18",
+      "new_this_run": 1
+    },
     {
       "ticker": "SCM",
       "count": 32,
+      "latest": "2026-06-17",
+      "new_this_run": 0
+    },
+    {
+      "ticker": "LPART",
+      "count": 15,
       "latest": "2026-06-17",
       "new_this_run": 1
     },
@@ -16,25 +34,25 @@
       "ticker": "CIK0001901037",
       "count": 40,
       "latest": "2026-06-17",
-      "new_this_run": 1
+      "new_this_run": 0
     },
     {
       "ticker": "KBDC",
       "count": 56,
       "latest": "2026-06-16",
-      "new_this_run": 1
+      "new_this_run": 0
     },
     {
       "ticker": "MRCC_NT",
       "count": 111,
       "latest": "2026-06-16",
-      "new_this_run": 1
+      "new_this_run": 0
     },
     {
       "ticker": "KAYN",
       "count": 28,
       "latest": "2026-06-16",
-      "new_this_run": 1
+      "new_this_run": 0
     },
     {
       "ticker": "CIK0002031750",
@@ -685,12 +703,6 @@
       "new_this_run": 0
     },
     {
-      "ticker": "LIEN",
-      "count": 51,
-      "latest": "2026-05-14",
-      "new_this_run": 0
-    },
-    {
       "ticker": "CIK0001868878",
       "count": 69,
       "latest": "2026-05-14",
@@ -976,18 +988,6 @@
       "ticker": "CIK0002052152",
       "count": 6,
       "latest": "2026-03-24",
-      "new_this_run": 0
-    },
-    {
-      "ticker": "LPART",
-      "count": 14,
-      "latest": "2026-03-23",
-      "new_this_run": 0
-    },
-    {
-      "ticker": "OADVA",
-      "count": 23,
-      "latest": "2026-03-20",
       "new_this_run": 0
     },
     {
