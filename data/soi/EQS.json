@@ -1,0 +1,404 @@
+{
+  "ticker": "EQS",
+  "cik": "0000878932",
+  "snapshots": [
+    {
+      "period_end": "2022-03-31",
+      "captured": false,
+      "n_holdings": 0,
+      "holdings": [],
+      "filing_accession": null,
+      "filing_form": null
+    },
+    {
+      "period_end": "2022-06-30",
+      "captured": false,
+      "n_holdings": 0,
+      "holdings": [],
+      "filing_accession": null,
+      "filing_form": null
+    },
+    {
+      "period_end": "2022-09-30",
+      "captured": false,
+      "n_holdings": 0,
+      "holdings": [],
+      "filing_accession": null,
+      "filing_form": null
+    },
+    {
+      "period_end": "2022-12-31",
+      "captured": true,
+      "filing_accession": "0001096906-25-002133",
+      "filing_form": "10-K/A",
+      "n_holdings": 2,
+      "holdings": [
+        {
+          "company_name": "Energy Sectors",
+          "investment_type": null,
+          "maturity_date": null,
+          "acquisition_date": null,
+          "reference_rate": null,
+          "spread_pct": null,
+          "all_in_rate_pct": null,
+          "is_pik": false,
+          "pik_rate_pct": null,
+          "par_or_principal_mn": null,
+          "amortized_cost_mn": null,
+          "fair_value_mn": 0.0157,
+          "is_debt": false,
+          "is_equity": false,
+          "lien_group": null,
+          "control_relationship": null,
+          "is_non_accrual": false,
+          "mark_pct": null
+        },
+        {
+          "company_name": "Industry",
+          "investment_type": null,
+          "maturity_date": null,
+          "acquisition_date": null,
+          "reference_rate": null,
+          "spread_pct": null,
+          "all_in_rate_pct": null,
+          "is_pik": false,
+          "pik_rate_pct": null,
+          "par_or_principal_mn": null,
+          "amortized_cost_mn": null,
+          "fair_value_mn": 0.0157,
+          "is_debt": false,
+          "is_equity": false,
+          "lien_group": null,
+          "control_relationship": null,
+          "is_non_accrual": false,
+          "mark_pct": null
+        }
+      ]
+    },
+    {
+      "period_end": "2023-03-31",
+      "captured": true,
+      "filing_accession": "0001096906-25-002131",
+      "filing_form": "10-Q/A",
+      "n_holdings": 2,
+      "holdings": [
+        {
+          "company_name": "Energy Sectors",
+          "investment_type": null,
+          "maturity_date": null,
+          "acquisition_date": null,
+          "reference_rate": null,
+          "spread_pct": null,
+          "all_in_rate_pct": null,
+          "is_pik": false,
+          "pik_rate_pct": null,
+          "par_or_principal_mn": null,
+          "amortized_cost_mn": null,
+          "fair_value_mn": 15.65,
+          "is_debt": false,
+          "is_equity": false,
+          "lien_group": null,
+          "control_relationship": null,
+          "is_non_accrual": false,
+          "mark_pct": null
+        },
+        {
+          "company_name": "Industry",
+          "investment_type": null,
+          "maturity_date": null,
+          "acquisition_date": null,
+          "reference_rate": null,
+          "spread_pct": null,
+          "all_in_rate_pct": null,
+          "is_pik": false,
+          "pik_rate_pct": null,
+          "par_or_principal_mn": null,
+          "amortized_cost_mn": null,
+          "fair_value_mn": 15.65,
+          "is_debt": false,
+          "is_equity": false,
+          "lien_group": null,
+          "control_relationship": null,
+          "is_non_accrual": false,
+          "mark_pct": null
+        }
+      ]
+    },
+    {
+      "period_end": "2023-06-30",
+      "captured": false,
+      "n_holdings": 0,
+      "holdings": [],
+      "filing_accession": null,
+      "filing_form": null
+    },
+    {
+      "period_end": "2023-09-30",
+      "captured": false,
+      "n_holdings": 0,
+      "holdings": [],
+      "filing_accession": null,
+      "filing_form": null
+    },
+    {
+      "period_end": "2023-12-31",
+      "captured": true,
+      "filing_accession": "0001096906-25-002127",
+      "filing_form": "10-K/A",
+      "n_holdings": 1,
+      "holdings": [
+        {
+          "company_name": "Energy Sectors",
+          "investment_type": null,
+          "maturity_date": null,
+          "acquisition_date": null,
+          "reference_rate": null,
+          "spread_pct": null,
+          "all_in_rate_pct": null,
+          "is_pik": false,
+          "pik_rate_pct": null,
+          "par_or_principal_mn": null,
+          "amortized_cost_mn": null,
+          "fair_value_mn": 40.853,
+          "is_debt": false,
+          "is_equity": false,
+          "lien_group": null,
+          "control_relationship": null,
+          "is_non_accrual": false,
+          "mark_pct": null
+        }
+      ]
+    },
+    {
+      "period_end": "2024-03-31",
+      "captured": true,
+      "filing_accession": "0001096906-25-002103",
+      "filing_form": "10-Q/A",
+      "n_holdings": 2,
+      "holdings": [
+        {
+          "company_name": "Energy Sectors",
+          "investment_type": null,
+          "maturity_date": null,
+          "acquisition_date": null,
+          "reference_rate": null,
+          "spread_pct": null,
+          "all_in_rate_pct": null,
+          "is_pik": false,
+          "pik_rate_pct": null,
+          "par_or_principal_mn": null,
+          "amortized_cost_mn": null,
+          "fair_value_mn": 41.75,
+          "is_debt": false,
+          "is_equity": false,
+          "lien_group": null,
+          "control_relationship": null,
+          "is_non_accrual": false,
+          "mark_pct": null
+        },
+        {
+          "company_name": "Industry",
+          "investment_type": null,
+          "maturity_date": null,
+          "acquisition_date": null,
+          "reference_rate": null,
+          "spread_pct": null,
+          "all_in_rate_pct": null,
+          "is_pik": false,
+          "pik_rate_pct": null,
+          "par_or_principal_mn": null,
+          "amortized_cost_mn": null,
+          "fair_value_mn": 41.75,
+          "is_debt": false,
+          "is_equity": false,
+          "lien_group": null,
+          "control_relationship": null,
+          "is_non_accrual": false,
+          "mark_pct": null
+        }
+      ]
+    },
+    {
+      "period_end": "2024-06-30",
+      "captured": true,
+      "filing_accession": "0001096906-25-002101",
+      "filing_form": "10-Q/A",
+      "n_holdings": 1,
+      "holdings": [
+        {
+          "company_name": "Energy Sectors",
+          "investment_type": null,
+          "maturity_date": null,
+          "acquisition_date": null,
+          "reference_rate": null,
+          "spread_pct": null,
+          "all_in_rate_pct": null,
+          "is_pik": false,
+          "pik_rate_pct": null,
+          "par_or_principal_mn": null,
+          "amortized_cost_mn": null,
+          "fair_value_mn": 46.5,
+          "is_debt": false,
+          "is_equity": false,
+          "lien_group": null,
+          "control_relationship": null,
+          "is_non_accrual": false,
+          "mark_pct": null
+        }
+      ]
+    },
+    {
+      "period_end": "2024-09-30",
+      "captured": true,
+      "filing_accession": "0001096906-25-002099",
+      "filing_form": "10-Q/A",
+      "n_holdings": 1,
+      "holdings": [
+        {
+          "company_name": "Energy Sectors",
+          "investment_type": null,
+          "maturity_date": null,
+          "acquisition_date": null,
+          "reference_rate": null,
+          "spread_pct": null,
+          "all_in_rate_pct": null,
+          "is_pik": false,
+          "pik_rate_pct": null,
+          "par_or_principal_mn": null,
+          "amortized_cost_mn": null,
+          "fair_value_mn": 37.5,
+          "is_debt": false,
+          "is_equity": false,
+          "lien_group": null,
+          "control_relationship": null,
+          "is_non_accrual": false,
+          "mark_pct": null
+        }
+      ]
+    },
+    {
+      "period_end": "2024-12-31",
+      "captured": true,
+      "filing_accession": "0001096906-25-002097",
+      "filing_form": "10-K/A",
+      "n_holdings": 1,
+      "holdings": [
+        {
+          "company_name": "Energy Sectors",
+          "investment_type": null,
+          "maturity_date": null,
+          "acquisition_date": null,
+          "reference_rate": null,
+          "spread_pct": null,
+          "all_in_rate_pct": null,
+          "is_pik": false,
+          "pik_rate_pct": null,
+          "par_or_principal_mn": null,
+          "amortized_cost_mn": null,
+          "fair_value_mn": 27.5,
+          "is_debt": false,
+          "is_equity": false,
+          "lien_group": null,
+          "control_relationship": null,
+          "is_non_accrual": false,
+          "mark_pct": null
+        }
+      ]
+    },
+    {
+      "period_end": "2025-03-31",
+      "captured": true,
+      "filing_accession": "0001096906-25-002095",
+      "filing_form": "10-Q/A",
+      "n_holdings": 1,
+      "holdings": [
+        {
+          "company_name": "Energy Sectors",
+          "investment_type": null,
+          "maturity_date": null,
+          "acquisition_date": null,
+          "reference_rate": null,
+          "spread_pct": null,
+          "all_in_rate_pct": null,
+          "is_pik": false,
+          "pik_rate_pct": null,
+          "par_or_principal_mn": null,
+          "amortized_cost_mn": null,
+          "fair_value_mn": 27.158,
+          "is_debt": false,
+          "is_equity": false,
+          "lien_group": null,
+          "control_relationship": null,
+          "is_non_accrual": false,
+          "mark_pct": null
+        }
+      ]
+    },
+    {
+      "period_end": "2025-06-30",
+      "captured": true,
+      "filing_accession": "0001096906-25-002093",
+      "filing_form": "10-Q/A",
+      "n_holdings": 1,
+      "holdings": [
+        {
+          "company_name": "Energy Sectors",
+          "investment_type": null,
+          "maturity_date": null,
+          "acquisition_date": null,
+          "reference_rate": null,
+          "spread_pct": null,
+          "all_in_rate_pct": null,
+          "is_pik": false,
+          "pik_rate_pct": null,
+          "par_or_principal_mn": null,
+          "amortized_cost_mn": null,
+          "fair_value_mn": 22.85,
+          "is_debt": false,
+          "is_equity": false,
+          "lien_group": null,
+          "control_relationship": null,
+          "is_non_accrual": false,
+          "mark_pct": null
+        }
+      ]
+    },
+    {
+      "period_end": "2025-09-30",
+      "captured": true,
+      "filing_accession": "0001096906-25-002090",
+      "filing_form": "10-Q/A",
+      "n_holdings": 1,
+      "holdings": [
+        {
+          "company_name": "Energy Sectors",
+          "investment_type": null,
+          "maturity_date": null,
+          "acquisition_date": null,
+          "reference_rate": null,
+          "spread_pct": null,
+          "all_in_rate_pct": null,
+          "is_pik": false,
+          "pik_rate_pct": null,
+          "par_or_principal_mn": null,
+          "amortized_cost_mn": null,
+          "fair_value_mn": 22.85,
+          "is_debt": false,
+          "is_equity": false,
+          "lien_group": null,
+          "control_relationship": null,
+          "is_non_accrual": false,
+          "mark_pct": null
+        }
+      ]
+    },
+    {
+      "period_end": "2025-12-31",
+      "captured": false,
+      "n_holdings": 0,
+      "holdings": [],
+      "filing_accession": null,
+      "filing_form": null
+    }
+  ]
+}

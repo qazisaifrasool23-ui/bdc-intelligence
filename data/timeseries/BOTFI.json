@@ -11,7 +11,12 @@
     "total_return_index": 14.67,
     "cumulative_equity_raised_mn": 0.0,
     "data_quality_score": 100.0,
-    "shares_outstanding_avg": 187600.0
+    "shares_outstanding_avg": 187600.0,
+    "management_fee_mn": 0.394,
+    "net_investment_income_mn": -0.983,
+    "originations_mn": 0.0,
+    "repayments_mn": 0.0,
+    "special_dividend_per_share": null
   },
   {
     "quarter": "Q1 2022",
@@ -39,7 +44,12 @@
     "interest_coverage_ratio": -4.4318,
     "fee_as_pct_of_nii": -170.18315,
     "mgmt_fee_pct_of_assets": 0.729268,
-    "shares_outstanding_avg": 8089515.0
+    "shares_outstanding_avg": 8089515.0,
+    "total_investment_income_mn": 2.17,
+    "total_expenses_mn": 3.535,
+    "net_unrealized_gains_mn": 0.063,
+    "special_dividend_per_share": null,
+    "nii_mn": -1.365
   },
   {
     "quarter": "Q2 2022",
@@ -67,7 +77,13 @@
     "interest_coverage_ratio": 0.679,
     "fee_as_pct_of_nii": 256.767677,
     "mgmt_fee_pct_of_assets": 0.626237,
-    "shares_outstanding_avg": 15494408.0
+    "shares_outstanding_avg": 15494408.0,
+    "total_investment_income_mn": 8.715,
+    "total_expenses_mn": 7.23,
+    "originations_mn": 834.856,
+    "repayments_mn": 58.762,
+    "special_dividend_per_share": null,
+    "nii_mn": 1.485
   },
   {
     "quarter": "Q3 2022",
@@ -97,7 +113,15 @@
     "mgmt_fee_pct_of_assets": 0.702245,
     "dividend_per_share": 0.05,
     "shares_outstanding_avg": 25681701.0,
-    "nii_coverage": 3.358
+    "nii_coverage": 3.358,
+    "total_investment_income_mn": 30.798,
+    "total_expenses_mn": 18.88,
+    "originations_mn": 897.184,
+    "repayments_mn": 1.292,
+    "net_unrealized_gains_mn": -1.137,
+    "special_dividend_per_share": null,
+    "dividends_paid_mn": 1.2841,
+    "nii_mn": 11.918
   },
   {
     "quarter": "Q4 2022",
@@ -110,7 +134,7 @@
     "total_debt_mn": 1228.803,
     "shares_outstanding": 84656386,
     "net_investment_income_mn": 23.649,
-    "interest_expense_mn": 18.246,
+    "interest_expense_mn": null,
     "management_fee_mn": 8.986,
     "incentive_fee_mn": 2.622,
     "nav_per_share": 14.47,
@@ -138,7 +162,13 @@
     "unused_capacity_mn": 588.533,
     "shares_outstanding_avg": 37548440.0,
     "nii_coverage": 1.74625,
-    "liquidity_pct": 23.880093
+    "liquidity_pct": 23.880093,
+    "cost_of_debt_pct": 5.9394,
+    "originations_mn": 794.54,
+    "repayments_mn": 5.942,
+    "special_dividend_per_share": null,
+    "dividends_paid_mn": 6.0078,
+    "nii_mn": 23.649
   },
   {
     "quarter": "Q1 2023",
@@ -181,7 +211,16 @@
     "unused_capacity_mn": 591.307,
     "shares_outstanding_avg": 84737073.0,
     "nii_coverage": 1.511111,
-    "liquidity_pct": 21.126565
+    "liquidity_pct": 21.126565,
+    "total_investment_income_mn": 77.481,
+    "total_expenses_mn": 42.892,
+    "cost_of_debt_pct": 7.3897,
+    "net_unrealized_gains_mn": 13.945,
+    "originations_mn": 326.471,
+    "repayments_mn": 23.529,
+    "special_dividend_per_share": null,
+    "dividends_paid_mn": 11.793,
+    "nii_mn": 34.589
   },
   {
     "quarter": "Q2 2023",
@@ -224,7 +263,16 @@
     "unused_capacity_mn": 783.096,
     "shares_outstanding_avg": 90787707.0,
     "nii_coverage": 1.52625,
-    "liquidity_pct": 25.987659
+    "liquidity_pct": 25.987659,
+    "total_investment_income_mn": 87.473,
+    "total_expenses_mn": 49.01,
+    "cost_of_debt_pct": 8.0452,
+    "originations_mn": 231.738,
+    "repayments_mn": 22.03,
+    "net_unrealized_gains_mn": -10.437,
+    "special_dividend_per_share": null,
+    "dividends_paid_mn": 21.789,
+    "nii_mn": 38.463
   },
   {
     "quarter": "Q3 2023",
@@ -267,7 +315,16 @@
     "unused_capacity_mn": 722.075,
     "shares_outstanding_avg": 95860190.0,
     "nii_coverage": 1.292069,
-    "liquidity_pct": 21.336337
+    "liquidity_pct": 21.336337,
+    "total_investment_income_mn": 99.009,
+    "total_expenses_mn": 54.657,
+    "cost_of_debt_pct": 8.7281,
+    "originations_mn": 430.066,
+    "repayments_mn": 76.489,
+    "net_unrealized_gains_mn": 8.081,
+    "special_dividend_per_share": null,
+    "dividends_paid_mn": 27.7995,
+    "nii_mn": 44.352
   },
   {
     "quarter": "Q4 2023",
@@ -307,7 +364,12 @@
     "floating_rate_pct": 98.4,
     "second_lien_pct": 4.9,
     "equity_pct": 12.5,
-    "fixed_rate_pct": 1.6
+    "fixed_rate_pct": 1.6,
+    "cost_of_debt_pct": 8.4559,
+    "originations_mn": 450.138,
+    "repayments_mn": 65.879,
+    "special_dividend_per_share": null,
+    "nii_mn": 50.233
   },
   {
     "quarter": "Q1 2024",
@@ -348,7 +410,16 @@
     "total_liabilities_mn": 2002.818,
     "shares_outstanding_avg": 122155712.0,
     "nii_coverage": 1.261818,
-    "pik_income_mn": 13.739
+    "pik_income_mn": 13.739,
+    "total_investment_income_mn": 123.788,
+    "total_expenses_mn": 67.557,
+    "cost_of_debt_pct": 8.8476,
+    "net_unrealized_gains_mn": 15.021,
+    "originations_mn": 332.709,
+    "repayments_mn": 182.233,
+    "special_dividend_per_share": null,
+    "dividends_paid_mn": 30.94,
+    "nii_mn": 56.231
   },
   {
     "quarter": "Q2 2024",
@@ -389,7 +460,16 @@
     "total_liabilities_mn": 2446.461,
     "shares_outstanding_avg": 130027871.0,
     "nii_coverage": 1.183684,
-    "pik_income_mn": 16.823
+    "pik_income_mn": 16.823,
+    "total_investment_income_mn": 141.326,
+    "total_expenses_mn": 71.96,
+    "cost_of_debt_pct": 9.1412,
+    "originations_mn": 671.813,
+    "repayments_mn": 64.667,
+    "net_unrealized_gains_mn": -6.442,
+    "special_dividend_per_share": null,
+    "dividends_paid_mn": 49.4106,
+    "nii_mn": 69.366
   },
   {
     "quarter": "Q3 2024",
@@ -430,7 +510,16 @@
     "total_liabilities_mn": 2611.837,
     "shares_outstanding_avg": 138598295.0,
     "nii_coverage": 1.427241,
-    "pik_income_mn": 15.974
+    "pik_income_mn": 15.974,
+    "total_investment_income_mn": 152.271,
+    "total_expenses_mn": 79.849,
+    "cost_of_debt_pct": 9.1045,
+    "originations_mn": 568.616,
+    "repayments_mn": 135.009,
+    "net_unrealized_gains_mn": -6.376,
+    "special_dividend_per_share": null,
+    "dividends_paid_mn": 40.1935,
+    "nii_mn": 72.422
   },
   {
     "quarter": "Q4 2024",
@@ -465,12 +554,17 @@
     "redemption_history": [],
     "interest_coverage_ratio": 1.2396,
     "nii_per_share_yoy_growth_pct": -17.6623,
-    "cost_of_debt_pct": 8.3,
+    "cost_of_debt_pct": 8.6801,
     "fee_as_pct_of_nii": 34.017305,
     "mgmt_fee_pct_of_assets": 0.516795,
     "dividend_per_share": 0.3,
     "total_liabilities_mn": 2690.078,
     "shares_outstanding_avg": 148425703.0,
-    "nii_coverage": 1.162333
+    "nii_coverage": 1.162333,
+    "originations_mn": 518.848,
+    "repayments_mn": 223.772,
+    "special_dividend_per_share": null,
+    "dividends_paid_mn": 44.5277,
+    "nii_mn": 66.572
   }
 ]

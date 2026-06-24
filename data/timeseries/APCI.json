@@ -23,7 +23,11 @@
     "interest_income_mn": 0.0,
     "shares_outstanding_avg": 400.0,
     "expense_ratio_pct": 7620.0,
-    "mgmt_fee_pct_of_assets": 0.0
+    "mgmt_fee_pct_of_assets": 0.0,
+    "originations_mn": 0.0,
+    "repayments_mn": 0.0,
+    "special_dividend_per_share": null,
+    "nii_mn": 0.0
   },
   {
     "quarter": "Q3 2024",
@@ -50,7 +54,12 @@
     "interest_income_mn": 0.0,
     "shares_outstanding_avg": 400.0,
     "expense_ratio_pct": 7360.0,
-    "mgmt_fee_pct_of_assets": 0.0
+    "mgmt_fee_pct_of_assets": 0.0,
+    "originations_mn": 0.0,
+    "repayments_mn": 0.0,
+    "net_unrealized_gains_mn": 0.0,
+    "special_dividend_per_share": null,
+    "nii_mn": 0.0
   },
   {
     "quarter": "Q4 2024",
@@ -63,8 +72,8 @@
     "total_debt_mn": 391.196,
     "shares_outstanding": 8758495,
     "nav_per_share": 25.21,
-    "first_lien_pct": 100.0,
-    "num_portfolio_companies": 126,
+    "first_lien_pct": null,
+    "num_portfolio_companies": 23,
     "leverage": 1.772,
     "avg_position_size_mn": 3.755,
     "cumulative_dividends_paid": 0.0,
@@ -74,7 +83,26 @@
     "nav_per_share_qoq_change": 0.21,
     "total_liabilities_mn": 398.96,
     "cash_mn": 131.621,
-    "shares_outstanding_avg": 4252447.0
+    "shares_outstanding_avg": 4252447.0,
+    "management_fee_mn": 0.263,
+    "incentive_fee_mn": 0.365,
+    "net_investment_income_mn": 2.558,
+    "interest_expense_mn": 3.887,
+    "interest_income_mn": 7.388,
+    "total_expenses_mn": 11.164,
+    "weighted_avg_yield": 9.4191,
+    "pik_pct": 0.0,
+    "floating_rate_pct": 100.0,
+    "fixed_rate_pct": 0.0,
+    "weighted_avg_yield_pct": 9.4191,
+    "cost_of_debt_pct": 3.9745,
+    "originations_mn": 474.478,
+    "repayments_mn": 2.231,
+    "special_dividend_per_share": null,
+    "credit_facility_limit_mn": 850.0,
+    "credit_facility_drawn_mn": 391.196,
+    "unused_capacity_mn": 458.804,
+    "nii_mn": 2.558
   },
   {
     "quarter": "Q1 2025",
@@ -108,7 +136,12 @@
     "cash_mn": 123.647,
     "interest_income_mn": 13.533,
     "dividends_paid_mn": 2.497,
-    "shares_outstanding_avg": 8869231.0
+    "shares_outstanding_avg": 8869231.0,
+    "originations_mn": 146.581,
+    "repayments_mn": 25.328,
+    "net_unrealized_gains_mn": -1.342,
+    "special_dividend_per_share": null,
+    "nii_mn": 5.373
   },
   {
     "quarter": "Q2 2025",
@@ -145,7 +178,15 @@
     "total_liabilities_mn": 542.297,
     "cash_mn": 46.784,
     "interest_income_mn": 17.149,
-    "shares_outstanding_avg": 10124164.0
+    "shares_outstanding_avg": 10124164.0,
+    "cost_of_debt_pct": 6.1365,
+    "originations_mn": 248.869,
+    "repayments_mn": 6.743,
+    "special_dividend_per_share": null,
+    "credit_facility_limit_mn": 1200.0,
+    "credit_facility_drawn_mn": 524.6,
+    "unused_capacity_mn": 675.4,
+    "nii_mn": 7.58
   },
   {
     "quarter": "Q3 2025",
@@ -184,7 +225,16 @@
     "total_liabilities_mn": 676.892,
     "cash_mn": 6.661,
     "interest_income_mn": 23.179,
-    "shares_outstanding_avg": 11833733.0
+    "shares_outstanding_avg": 11833733.0,
+    "cost_of_debt_pct": 7.3909,
+    "originations_mn": 335.359,
+    "repayments_mn": 26.329,
+    "net_unrealized_gains_mn": -12.499,
+    "special_dividend_per_share": null,
+    "credit_facility_limit_mn": 1100.0,
+    "credit_facility_drawn_mn": 648.63,
+    "unused_capacity_mn": 451.37,
+    "nii_mn": 9.916
   },
   {
     "quarter": "Q4 2025",
@@ -203,7 +253,7 @@
     "management_fee_mn": 1.573,
     "incentive_fee_mn": 2.036,
     "nav_per_share": 23.4,
-    "first_lien_pct": 99.6,
+    "first_lien_pct": null,
     "leverage": 1.62,
     "nii_per_share": 0.6257,
     "nav_per_share_yoy_pct": -7.18,
@@ -218,14 +268,14 @@
     "redemption_history": [],
     "interest_coverage_ratio": 1.0747,
     "originations_mn": 130.311,
-    "repayments_mn": 235.83,
+    "repayments_mn": 52.37,
     "pik_income_mn": 0.497,
-    "pik_pct": 1.6,
+    "pik_pct": 5.26,
     "unused_capacity_mn": 581.546,
     "credit_facility_drawn_mn": 718.454,
     "na_pct_cost": 0.0,
     "na_pct_fv": 0.0,
-    "weighted_avg_yield": 8.6,
+    "weighted_avg_yield": 8.6752,
     "cash_income_mn": 31.005,
     "cash_income_pct": 98.4223,
     "net_originations_mn": -105.519,
@@ -237,6 +287,15 @@
     "mgmt_fee_pct_of_assets": 0.295148,
     "total_liabilities_mn": 893.042,
     "cash_mn": 3.328,
-    "shares_outstanding_avg": 14070760.0
+    "shares_outstanding_avg": 14070760.0,
+    "interest_income_mn": 84.482,
+    "floating_rate_pct": 100.0,
+    "fixed_rate_pct": 0.0,
+    "num_portfolio_companies": 59,
+    "weighted_avg_yield_pct": 8.6752,
+    "cost_of_debt_pct": 7.0175,
+    "special_dividend_per_share": null,
+    "credit_facility_limit_mn": 1300.0,
+    "nii_mn": 14.253
   }
 ]

@@ -255,3 +255,147 @@ extraction pipeline:
   median when both disclosed, per KBRA BDC Compendium Q3 2025.
 - **`top_10_concentration_pct`** — S&P Global BDC credit-analysis
   framework.
+
+---
+
+## SOI-Derived Portfolio Analytics
+
+**Added:** 2026-06-02  
+**Approved methodology choices (user-confirmed):**
+- Denominator for all lien/composition %s: **gross fair value of all investments** (not net of unfunded commitments)
+- Structured Finance categorization: **tranche-dependent** — if tranche is identifiable as senior/junior map accordingly, otherwise → Subordinated
+- Weighted average yield: **all-in rate on debt at fair value** (income yield basis)
+- Source data: `data/soi/<TICKER>.json` holdings snapshots
+
+---
+
+### Lien Group Categorization
+
+**Primary:** Use `lien_group` field on each holding directly when populated.
+
+**Inference from `investment_type` (applied only when `lien_group` is None):**
+
+| investment_type pattern (case-insensitive) | → Assigned group |
+|--------------------------------------------|------------------|
+| contains "first lien" | First Lien |
+| contains "first-lien" | First Lien |
+| "senior secured" without digit suffix | First Lien |
+| "senior secured 1" / "senior secured loans 1" / "senior secure 1" | First Lien |
+| "senior secured loans" (no suffix) | First Lien |
+| "one stop" / "unitranche" | First Lien |
+| "secured debt" | First Lien |
+| "secured loan" | First Lien |
+| "delayed draw term loan" / "revolver" / "revolving" | First Lien (senior revolvers are typically first-lien) |
+| "senior secured 2" / "senior secured loans 2" / "senior secure 2" | Second Lien |
+| "second lien" / "second-lien" | Second Lien |
+| "junior secured" | Second Lien |
+| contains "subordinat" | Subordinated |
+| contains "mezzanine" | Subordinated |
+| contains "unsecured" | Subordinated |
+| contains "structured" / "structured finance" / "structured credit" | Subordinated (tranche unknown) |
+| contains "equity" / "common stock" / "preferred stock" / "warrant" | Equity |
+| contains "lp interest" / "limited partnership" | Equity |
+| `is_equity = True` (regardless of investment_type) | Equity |
+| `is_debt = True` with no classifiable investment_type | **Unclassified** — not assigned to any bucket |
+
+**Numbers-only or sector-name investment_type values** (e.g. "One", "Two", "Healthcare") → Unclassified.
+
+**Confidence threshold:** Lien %s are only written when classified FV ≥ 50% of total portfolio FV. Below 50%, all four lien fields are left null for that quarter.
+
+---
+
+### Metric Formulas (SOI-derived)
+
+All computed per snapshot quarter from the holdings array in `data/soi/<TICKER>.json`.
+
+#### `first_lien_pct`
+```
+numerator   = Σ fair_value_mn for holdings where effective_lien_group = "First Lien"
+denominator = Σ fair_value_mn for ALL holdings (gross; unfunded commitments excluded)
+result      = numerator / denominator × 100
+units       = % (2 decimals)
+```
+
+#### `second_lien_pct`
+```
+numerator   = Σ fair_value_mn where effective_lien_group = "Second Lien"
+denominator = Σ fair_value_mn ALL holdings
+result      = numerator / denominator × 100
+```
+
+#### `subordinated_pct`
+```
+numerator   = Σ fair_value_mn where effective_lien_group in {"Subordinated", "Structured Finance"}
+denominator = Σ fair_value_mn ALL holdings
+result      = numerator / denominator × 100
+```
+
+#### `equity_pct`
+```
+numerator   = Σ fair_value_mn where effective_lien_group = "Equity" OR is_equity = True
+denominator = Σ fair_value_mn ALL holdings
+result      = numerator / denominator × 100
+```
+
+#### `weighted_avg_yield`
+```
+debt positions = holdings where is_debt = True AND all_in_rate_pct IS NOT NULL AND all_in_rate_pct > 0
+numerator      = Σ (fair_value_mn × all_in_rate_pct) across debt positions
+denominator    = Σ fair_value_mn across debt positions (same set)
+result         = numerator / denominator
+units          = % (2 decimals)
+notes          = Excludes non-accrual positions (is_non_accrual = True)
+              = Null if fewer than 5 debt positions have both FV and rate data
+```
+
+#### `pik_pct`
+```
+debt positions = holdings where is_debt = True AND fair_value_mn IS NOT NULL
+numerator      = Σ fair_value_mn where is_pik = True (across debt positions)
+denominator    = Σ fair_value_mn across all debt positions
+result         = numerator / denominator × 100
+units          = % (2 decimals)
+notes          = Measures % of debt portfolio FV that has PIK component
+```
+
+#### `floating_rate_pct`
+```
+debt positions = holdings where is_debt = True AND fair_value_mn IS NOT NULL
+floating       = positions where reference_rate IS NOT NULL
+                 AND reference_rate NOT IN {"Fixed", "fixed", "FIXED", "None"}
+                 AND reference_rate not blank
+numerator      = Σ fair_value_mn of floating positions
+denominator    = Σ fair_value_mn of ALL debt positions
+result         = numerator / denominator × 100
+units          = % (2 decimals)
+```
+
+#### `fixed_rate_pct`
+```
+= 100.0 - floating_rate_pct
+(only computed when floating_rate_pct is not null)
+```
+
+#### `num_portfolio_companies`
+```
+= count of distinct company_name values across all holdings in the snapshot
+  where company_name IS NOT NULL AND is_debt OR is_equity (exclude fund-level entries)
+units = integer
+```
+
+#### `nav_per_share` (derived — not SOI-sourced)
+```
+When nav_per_share is null but net_assets_mn and shares_outstanding are both populated:
+  nav_per_share = (net_assets_mn × 1,000,000) / shares_outstanding
+  units = $ per share (4 decimals)
+  source_tag = "derived"
+```
+
+---
+
+### Override Rules
+
+1. If a field is already populated in the timeseries from a filing-sourced value, **do not overwrite** with SOI-derived value unless the filing-sourced value is confirmed wrong.
+2. SOI-derived values are tagged `source = "SOI holdings computation"` in fill_log.md.
+3. Snapshots that have `total_fair_value_mn = null` or zero holdings are skipped.
+

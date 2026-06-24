@@ -1,0 +1,552 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Distressed Debt Primer — Structuring Weekly</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&family=Roboto+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fafafa;--bg2:#fff;--bg3:#f4f4f5;--ink:#0a0a0a;--ink2:#3f3f46;--ink3:#71717a;--ink4:#a1a1aa;--line:#e4e4e7;--line2:#d4d4d8;--hl:#fde68a;--mono:"Roboto Mono",ui-monospace,monospace;--sans:"Roboto","Inter","Segoe UI",sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:var(--bg);font-family:var(--sans);color:var(--ink);font-size:15px;line-height:1.65;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+input,select{font-family:inherit}
+.navbar{height:60px;background:#fff;border-bottom:1px solid var(--line);display:flex;align-items:center;padding:0 28px;position:sticky;top:0;z-index:300}
+.logo{display:flex;align-items:center;gap:10px;margin-right:48px}
+.logo-mark{width:28px;height:28px;background:var(--ink);border-radius:7px;display:flex;align-items:center;justify-content:center}
+.logo-mark svg{width:15px;height:15px;fill:#fff}
+.logo-text{font-size:15px;font-weight:600;letter-spacing:-.3px}
+.logo-text span{font-weight:400}
+.nav-links{display:flex;align-items:center;gap:2px;margin:0 auto}
+.nav-link{padding:8px 14px;font-size:13.5px;font-weight:500;color:var(--ink2);border-radius:6px;white-space:nowrap}
+.nav-link:hover{color:var(--ink);background:var(--bg3)}
+.nav-link.on{color:var(--ink);font-weight:600}
+.nav-right{display:flex;align-items:center;gap:14px}
+.btn-outline{padding:8px 4px;background:transparent;color:var(--ink);font-size:13.5px;font-weight:500}
+.btn-primary{height:34px;padding:0 18px;border-radius:999px;background:var(--ink);color:#fff;font-size:13px;font-weight:500}
+
+.wrap{max-width:780px;margin:0 auto;padding:32px 28px 100px}
+@media(max-width:780px){.wrap{padding:20px 16px 60px}}
+.crumb{font-family:var(--mono);font-size:11px;color:var(--ink3);letter-spacing:.4px;margin-bottom:28px}
+.crumb a{color:var(--ink3)}
+.crumb a:hover{color:var(--ink);text-decoration:underline}
+.article-head{margin-bottom:48px;padding-bottom:32px;border-bottom:1px solid var(--line)}
+.article-head .kicker{font-family:var(--mono);font-size:11px;letter-spacing:.7px;text-transform:uppercase;color:var(--ink3);margin-bottom:18px}
+.article-head h1{font-size:46px;line-height:1.08;letter-spacing:-1.3px;font-weight:600;margin-bottom:18px}
+@media(max-width:780px){.article-head h1{font-size:34px;letter-spacing:-.7px}}
+.article-head .standfirst{font-size:18px;line-height:1.6;color:var(--ink2)}
+.article-head .meta{font-family:var(--mono);font-size:11px;color:var(--ink3);margin-top:24px;display:flex;gap:18px;flex-wrap:wrap}
+.article-head .meta b{color:var(--ink);font-weight:600}
+
+.article p{font-size:16px;line-height:1.75;color:var(--ink2);margin-bottom:20px}
+.article p b{color:var(--ink);font-weight:600}
+.article p i{color:var(--ink);font-style:italic}
+.article h2{font-size:26px;line-height:1.2;letter-spacing:-.6px;font-weight:600;margin:56px 0 18px}
+.article h2 .num{font-family:var(--mono);font-size:13px;color:var(--ink3);letter-spacing:.4px;font-weight:500;display:block;margin-bottom:6px}
+.article h3{font-size:18px;font-weight:600;letter-spacing:-.3px;margin:32px 0 12px}
+.article ul{margin:16px 0 24px 28px;color:var(--ink2)}
+.article ul li{margin-bottom:8px;line-height:1.7;font-size:16px}
+.article ul li b{color:var(--ink);font-weight:600}
+.article blockquote{margin:32px 0;padding:6px 0 6px 24px;border-left:3px solid var(--ink);font-size:18px;line-height:1.55;color:var(--ink);font-weight:500;font-style:italic}
+.hl{background:linear-gradient(180deg,transparent 60%,var(--hl) 60%);padding:0 2px}
+
+.ix{background:#fff;border:1px solid var(--line);border-radius:14px;padding:24px;margin:36px 0;position:relative}
+.ix .ix-label{font-family:var(--mono);font-size:9.5px;letter-spacing:.7px;text-transform:uppercase;color:var(--ink3);margin-bottom:6px;display:flex;align-items:center;gap:8px}
+.ix .ix-label::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--ink)}
+.ix h4{font-size:17px;font-weight:600;letter-spacing:-.3px;margin-bottom:6px}
+.ix .ix-hint{font-size:13px;color:var(--ink3);margin-bottom:18px}
+
+/* IX1: Distressed price to yield calc */
+.ix-py .grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px}
+@media(max-width:580px){.ix-py .grid{grid-template-columns:1fr}}
+.ix-py .ctrl .row{display:flex;justify-content:space-between;margin-bottom:6px}
+.ix-py .ctrl .label{font-family:var(--mono);font-size:10px;letter-spacing:.5px;text-transform:uppercase;color:var(--ink3)}
+.ix-py .ctrl .val{font-family:var(--mono);font-size:17px;font-weight:600;color:var(--ink)}
+.ix-py input[type=range]{width:100%;-webkit-appearance:none;appearance:none;height:4px;background:var(--line);border-radius:2px;outline:none}
+.ix-py input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;width:16px;height:16px;border-radius:50%;background:var(--ink);cursor:pointer;border:3px solid #fff;box-shadow:0 0 0 1px var(--ink)}
+.ix-py .result{background:var(--ink);color:#fff;border-radius:10px;padding:18px;display:grid;grid-template-columns:1fr 1fr;gap:24px}
+@media(max-width:580px){.ix-py .result{grid-template-columns:1fr;gap:14px}}
+.ix-py .result .rv{font-family:var(--mono);font-size:24px;font-weight:600;letter-spacing:-.5px}
+.ix-py .result .rl{font-family:var(--mono);font-size:10px;letter-spacing:.5px;text-transform:uppercase;color:rgba(255,255,255,.6);margin-top:4px}
+
+/* IX2: Priority waterfall in default */
+.ix-wf .scenario-btn{display:flex;gap:6px;margin-bottom:14px;flex-wrap:wrap}
+.ix-wf .scenario-btn .sb{padding:6px 14px;border-radius:999px;background:var(--bg3);font-size:12.5px;color:var(--ink2);font-weight:500;cursor:pointer}
+.ix-wf .scenario-btn .sb.on{background:var(--ink);color:#fff;font-weight:600}
+.ix-wf .wf-stack{display:flex;flex-direction:column;gap:2px;border-radius:10px;overflow:hidden;margin-bottom:14px}
+.ix-wf .wf-tier{padding:14px 16px;font-size:13px;display:flex;justify-content:space-between;align-items:center;color:#fff}
+.ix-wf .wf-tier.tier-full{background:#15803d}
+.ix-wf .wf-tier.tier-partial{background:#ca8a04}
+.ix-wf .wf-tier.tier-zero{background:#b91c1c}
+.ix-wf .wf-tier .tk{font-family:var(--mono);font-size:11px;font-weight:600;letter-spacing:.4px;text-transform:uppercase}
+.ix-wf .wf-tier .rec{font-family:var(--mono);font-size:13px;font-weight:600}
+.ix-wf .wf-tier .ent{font-family:var(--mono);font-size:11px;opacity:.85;margin-top:2px}
+.ix-wf .legend{background:var(--bg3);border-radius:8px;padding:12px 14px;font-size:12.5px;color:var(--ink2);line-height:1.6}
+.ix-wf .legend b{color:var(--ink);font-weight:600}
+
+/* IX3: Restructuring timeline */
+.ix-tl .stages{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;margin:14px 0 18px}
+@media(max-width:580px){.ix-tl .stages{grid-template-columns:repeat(5,1fr)}}
+.ix-tl .stage{background:var(--bg3);border:1px solid var(--line);border-radius:8px;padding:10px 8px;text-align:center;cursor:pointer;transition:all .15s}
+.ix-tl .stage:hover{border-color:var(--ink2)}
+.ix-tl .stage.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.ix-tl .stage .nm{font-family:var(--mono);font-size:9px;font-weight:600;letter-spacing:.3px;text-transform:uppercase;margin-bottom:3px}
+.ix-tl .stage .tm{font-family:var(--mono);font-size:8.5px;color:var(--ink3)}
+.ix-tl .stage.on .tm{color:rgba(255,255,255,.6)}
+.ix-tl .stage-detail{background:var(--bg3);border-radius:10px;padding:18px;min-height:140px}
+.ix-tl .sd-h{font-size:15px;font-weight:600;margin-bottom:6px}
+.ix-tl .sd-d{font-size:13.5px;line-height:1.65;color:var(--ink2);margin-bottom:12px}
+.ix-tl .sd-flag{display:inline-block;font-family:var(--mono);font-size:10px;background:#fee2e2;color:#b91c1c;padding:4px 10px;border-radius:999px;letter-spacing:.4px;font-weight:600;margin-right:6px}
+.ix-tl .sd-flag.ok{background:#dcfce7;color:#15803d}
+.ix-tl .sd-flag.warn{background:#fef3c7;color:#a16207}
+
+/* IX4: DIP financing flow */
+.ix-dip .flow{display:flex;flex-direction:column;gap:6px;margin:14px 0 14px}
+.ix-dip .frow{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:14px}
+@media(max-width:580px){.ix-dip .frow{grid-template-columns:1fr}}
+.ix-dip .fnode{background:var(--bg3);border-radius:10px;padding:14px 16px;font-size:13px;color:var(--ink2)}
+.ix-dip .fnode.start{background:#fee2e2;color:#b91c1c}
+.ix-dip .fnode.end{background:#dcfce7;color:#15803d}
+.ix-dip .fnode .nh{font-size:14px;font-weight:600;color:var(--ink);margin-bottom:4px}
+.ix-dip .fnode.start .nh{color:#b91c1c}
+.ix-dip .fnode.end .nh{color:#15803d}
+.ix-dip .farrow{font-family:var(--mono);font-size:18px;color:var(--ink3);text-align:center}
+@media(max-width:580px){.ix-dip .farrow{transform:rotate(90deg)}}
+.ix-dip .dipnote{background:var(--ink);color:#fff;border-radius:10px;padding:14px 16px;font-size:13px;line-height:1.6;margin-top:8px}
+.ix-dip .dipnote b{color:#fff;font-weight:600}
+
+/* IX5: Drop-down transaction */
+.ix-dd .grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:14px 0 18px}
+@media(max-width:580px){.ix-dd .grid{grid-template-columns:1fr}}
+.ix-dd .side{background:var(--bg3);border-radius:10px;padding:16px}
+.ix-dd .side h5{font-family:var(--mono);font-size:10px;letter-spacing:.5px;text-transform:uppercase;color:var(--ink3);margin-bottom:10px;display:flex;align-items:center;gap:6px}
+.ix-dd .side h5::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--ink)}
+.ix-dd .side .ent{background:#fff;border:1px solid var(--line);border-radius:6px;padding:10px 12px;margin-bottom:6px;font-size:12.5px}
+.ix-dd .side .ent .nm{font-weight:600;margin-bottom:2px}
+.ix-dd .side .ent .as{font-family:var(--mono);font-size:10px;color:var(--ink3)}
+.ix-dd .side .ent.moved{background:#fef3c7;border-color:#ca8a04}
+.ix-dd .step-btn{display:flex;gap:6px;margin-bottom:14px;flex-wrap:wrap}
+.ix-dd .step-btn .sb{padding:6px 14px;border-radius:999px;background:var(--bg3);font-size:12.5px;color:var(--ink2);font-weight:500;cursor:pointer}
+.ix-dd .step-btn .sb.on{background:var(--ink);color:#fff;font-weight:600}
+.ix-dd .explain{background:var(--bg3);border-radius:8px;padding:12px 14px;font-size:13px;color:var(--ink2);line-height:1.6;border-left:3px solid var(--ink)}
+.ix-dd .explain b{color:var(--ink);font-weight:600}
+
+.next-primer{margin-top:60px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:24px;display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap}
+.next-primer .np-meta{font-family:var(--mono);font-size:10px;letter-spacing:.5px;text-transform:uppercase;color:var(--ink3);margin-bottom:6px}
+.next-primer .np-h{font-size:18px;font-weight:600;letter-spacing:-.3px}
+.next-primer .np-btn{padding:10px 18px;border-radius:999px;background:var(--ink);color:#fff;font-size:13px;font-weight:500}
+
+footer{padding-top:36px;margin-top:60px;border-top:1px solid var(--line);font-family:var(--mono);font-size:10.5px;color:var(--ink3);text-align:center;letter-spacing:.3px;line-height:1.8}
+</style>
+</head>
+<body>
+
+<nav class="navbar">
+  <a class="logo" href="../../index.html">
+    <div class="logo-mark"><svg viewBox="0 0 16 16"><rect x="2" y="9" width="3" height="5"/><rect x="6.5" y="5" width="3" height="9"/><rect x="11" y="2" width="3" height="12"/></svg></div>
+    <div class="logo-text">BDC<span>Intelligence</span></div>
+  </a>
+  <div class="nav-links">
+    <a class="nav-link" href="../../chewbacca.html">Chewbacca</a>
+    <a class="nav-link" href="../../index.html">US BDC Universe</a>
+    <a class="nav-link" href="../../fund.html">Fund Deep Dive</a>
+    <a class="nav-link" href="../../compare.html">Compare</a>
+    <a class="nav-link" href="../../screener.html">Screener</a>
+    <a class="nav-link" href="../../analysis.html">Analysis</a>
+    <a class="nav-link" href="../../news.html">News</a>
+    <a class="nav-link on" href="../index.html">Structuring Weekly</a>
+    <a class="nav-link" href="../../about.html">About us</a>
+  </div>
+  <div class="nav-right">
+    <button class="btn-outline">Sign In</button>
+    <button class="btn-primary">Get Access</button>
+  </div>
+</nav>
+
+<div class="wrap">
+
+  <div class="crumb"><a href="../index.html">Structuring Weekly</a> <span style="opacity:.5;margin:0 8px">/</span> <a href="index.html">Primers</a> <span style="opacity:.5;margin:0 8px">/</span> Distressed Debt</div>
+
+  <div class="article-head">
+    <div class="kicker">Primer 05 · When things break</div>
+    <h1>Distressed Debt, From Stress to Emergence.</h1>
+    <p class="standfirst">What happens when a leveraged borrower stops being able to pay its debt. The vocabulary of the workout. The waterfall in default. DIP financing and drop down transactions. The playbooks distressed funds run, and why the 2026 cycle looks different from 2008 or 2020.</p>
+    <div class="meta">
+      <span><b>18 min</b> read</span>
+      <span><b>5</b> interactives</span>
+      <span>Updated <b>2026</b></span>
+      <span>By <b>Qazi Rasool</b></span>
+    </div>
+  </div>
+
+  <div class="article">
+
+    <h2><span class="num">01</span>What "distressed" actually means.</h2>
+
+    <p><b>Distressed debt is debt of a company that the market believes will not be able to repay it on the original terms.</b> The signal is in the price. A loan trading at 80 cents on the dollar is stressed. A loan at 60 is distressed. A loan at 30 is generally trading on recovery, meaning the market expects the company will restructure and the holder will receive some combination of cash, new debt, and equity in the reorganized entity worth roughly 30 cents.</p>
+
+    <p>The conventional academic definition is <b>any debt yielding more than 1,000 basis points above the equivalent Treasury</b>. In practice, distressed funds use a price threshold (typically below 80 cents for loans, below 70 cents for bonds) plus their own judgment about the situation. Some companies have stressed paper without ever defaulting. Some default within months of trading at par.</p>
+
+    <h2><span class="num">02</span>From price to implied recovery.</h2>
+
+    <p>The most useful single calculation in distressed work is the relationship between secondary price, the assumed time to a restructuring event, and the implied recovery on the debt. If you can buy a loan at 50 cents and recover 75 cents in 18 months, you have made 50 percent gross before discounting for the time and the risk. Adjust the inputs below to see the math.</p>
+
+    <div class="ix ix-py">
+      <div class="ix-label">Interactive 01 of 05</div>
+      <h4>Distressed price to expected return.</h4>
+      <div class="ix-hint">A $100 face position. You buy at the secondary price below, with the expected recovery and time to restructuring shown.</div>
+      <div class="grid">
+        <div class="ctrl">
+          <div class="row"><span class="label">Secondary purchase price</span><span class="val" id="dy-price-v">50</span></div>
+          <input type="range" id="dy-price" min="20" max="90" value="50" step="1">
+        </div>
+        <div class="ctrl">
+          <div class="row"><span class="label">Expected recovery</span><span class="val" id="dy-rec-v">75</span></div>
+          <input type="range" id="dy-rec" min="20" max="100" value="75" step="1">
+        </div>
+      </div>
+      <div class="grid">
+        <div class="ctrl">
+          <div class="row"><span class="label">Time to restructuring (months)</span><span class="val" id="dy-tm-v">18</span></div>
+          <input type="range" id="dy-tm" min="3" max="36" value="18" step="1">
+        </div>
+        <div class="ctrl">
+          <div class="row"><span class="label">Implied default risk</span><span class="val" id="dy-prob-v">75%</span></div>
+          <input type="range" id="dy-prob" min="20" max="100" value="75" step="5">
+        </div>
+      </div>
+      <div class="result">
+        <div><div class="rv" id="dy-gross">+50%</div><div class="rl">Gross return on capital</div></div>
+        <div><div class="rv" id="dy-irr">+30%</div><div class="rl">Annualized IRR</div></div>
+      </div>
+    </div>
+
+    <p>Two truths fall out. <b>Time kills returns.</b> The same gross return spread over 36 months instead of 18 produces a dramatically lower IRR. <b>The recovery assumption is the entire deal.</b> Distressed investors spend most of their time understanding what the company is actually worth as a going concern, what the assets are worth in a liquidation, and which tranche they sit in. Everything else is detail.</p>
+
+    <h2><span class="num">03</span>The priority waterfall.</h2>
+
+    <p>When a company defaults and enters restructuring, the rules of the road are clear. Senior debt is paid first. Subordinated debt is paid next. Equity is paid last, often nothing. This is the priority waterfall, also called absolute priority rule. It is one of the most fundamental principles of bankruptcy law and the reason senior secured debt sits where it sits in the capital structure.</p>
+
+    <div class="ix ix-wf">
+      <div class="ix-label">Interactive 02 of 05</div>
+      <h4>The priority waterfall, three scenarios.</h4>
+      <div class="ix-hint">Same $1B face value capital stack. Different enterprise values at restructuring. See where each tranche lands.</div>
+      <div class="scenario-btn">
+        <button class="sb on" data-wf="bad">EV = $400M (deep distress)</button>
+        <button class="sb" data-wf="mid">EV = $700M (moderate)</button>
+        <button class="sb" data-wf="ok">EV = $1.1B (mild)</button>
+      </div>
+      <div class="wf-stack" id="wf-stack"></div>
+      <div class="legend">
+        <b>How to read it.</b> Senior secured debt gets paid first up to its face value. If anything is left, second lien is next. Then sub debt. Whatever is left, equity. In a deep distress scenario where the company is worth less than the senior debt face, second lien and below recover nothing.
+      </div>
+    </div>
+
+    <p>Two caveats. First, the priority waterfall applies <b>before</b> the restructuring plays out. Inside a Chapter 11, the waterfall is the starting point for negotiation, not the ending point. Junior creditors regularly negotiate small distributions ("tip") in exchange for not objecting to the plan. Second, modern indentures have created mechanisms by which senior debt can be primed by even more senior debt (drop down, uptier, J Crew, Serta) that effectively rewrite the priority waterfall mid restructuring. We will come back to this.</p>
+
+    <h2><span class="num">04</span>The shape of a restructuring.</h2>
+
+    <p>A typical restructuring runs through five stages, each with its own playbook for both the company and its creditors. The full process from first stress signal to emergence can take 9 to 36 months. Click any stage below to see what happens, who acts, and what to watch for.</p>
+
+    <div class="ix ix-tl">
+      <div class="ix-label">Interactive 03 of 05</div>
+      <h4>The restructuring timeline.</h4>
+      <div class="ix-hint">Each stage represents a phase of the workout. Click to see the actions, indicators, and risk signals.</div>
+      <div class="stages" id="tl-stages">
+        <div class="stage on" data-stage="stress"><div class="nm">Stress</div><div class="tm">months 1 to 6</div></div>
+        <div class="stage" data-stage="negotiation"><div class="nm">Negotiation</div><div class="tm">months 3 to 12</div></div>
+        <div class="stage" data-stage="filing"><div class="nm">Filing</div><div class="tm">day of filing</div></div>
+        <div class="stage" data-stage="court"><div class="nm">In court</div><div class="tm">months 6 to 18</div></div>
+        <div class="stage" data-stage="emerge"><div class="nm">Emergence</div><div class="tm">post plan</div></div>
+      </div>
+      <div class="stage-detail" id="tl-detail"></div>
+    </div>
+
+    <h2><span class="num">05</span>DIP financing.</h2>
+
+    <p>Debtor in possession financing is loans extended to a company that has filed for Chapter 11 bankruptcy. The new lender provides operating capital so the business can continue while it restructures. In exchange, DIP lenders get extraordinary protections: <b>super priority status</b> ahead of all pre petition debt, liens on assets not previously pledged, and aggressive covenants that effectively let the DIP lender drive the restructuring.</p>
+
+    <div class="ix ix-dip">
+      <div class="ix-label">Interactive 04 of 05</div>
+      <h4>How DIP financing changes the capital structure.</h4>
+      <div class="ix-hint">A simplified view of where DIP loans sit relative to pre petition debt and why DIP lending is so attractive for sophisticated credit funds.</div>
+      <div class="flow">
+        <div class="frow">
+          <div></div>
+          <div class="fnode start">
+            <div class="nh">Company files for Chapter 11</div>
+            Pre petition debt totals $1B. Cash flow has run out. Company needs operating capital to keep paying employees, vendors, rent.
+          </div>
+          <div></div>
+        </div>
+        <div class="farrow">↓</div>
+        <div class="frow">
+          <div></div>
+          <div class="fnode">
+            <div class="nh">DIP loan extended ($150M)</div>
+            A new lender (often the existing first lien holders) provides $150M of new money. Court approves the DIP order.
+          </div>
+          <div></div>
+        </div>
+        <div class="farrow">↓</div>
+        <div class="frow">
+          <div></div>
+          <div class="fnode">
+            <div class="nh">DIP gets super priority</div>
+            The new $150M sits <b>ahead of all pre petition debt</b>, including the original first lien. New liens on previously unencumbered assets. Effectively a priming loan.
+          </div>
+          <div></div>
+        </div>
+        <div class="farrow">↓</div>
+        <div class="frow">
+          <div></div>
+          <div class="fnode end">
+            <div class="nh">Plan of reorganization</div>
+            DIP lender has driven the restructuring. Pre petition debt is converted to new debt and equity. DIP is repaid first from the new financing on emergence.
+          </div>
+          <div></div>
+        </div>
+      </div>
+      <div class="dipnote">
+        <b>Why this matters for BDCs.</b> When a BDC borrower files for Chapter 11, the BDC's existing first lien position may be subordinated to a new DIP lender, who is often an outsider with no prior relationship with the borrower. Some larger BDCs (ARCC, OBDC, others) participate in their own borrowers' DIPs to maintain influence over the restructuring. This is one of the ways funds protect existing positions in default scenarios.
+      </div>
+    </div>
+
+    <h2><span class="num">06</span>The thing that broke the priority waterfall.</h2>
+
+    <p>Over the last decade, distressed practitioners have invented and re invented mechanisms by which existing senior lenders can be effectively primed by other senior lenders, without those lenders' consent. The most common modern forms are <b>drop down transactions</b> (J Crew, Travelport) and <b>uptier exchanges</b> (Serta Simmons). Each works by exploiting loopholes in indenture language that the syndicated market has historically accepted as standard.</p>
+
+    <div class="ix ix-dd">
+      <div class="ix-label">Interactive 05 of 05</div>
+      <h4>Anatomy of a drop down (J Crew style).</h4>
+      <div class="ix-hint">Step through how a sponsor can effectively prime existing first lien lenders by moving the company's most valuable asset to a new subsidiary and pledging it against new debt.</div>
+      <div class="step-btn">
+        <button class="sb on" data-step="0">Step 0: Starting position</button>
+        <button class="sb" data-step="1">Step 1: Create unrestricted sub</button>
+        <button class="sb" data-step="2">Step 2: Drop down the IP</button>
+        <button class="sb" data-step="3">Step 3: Issue new debt against IP</button>
+      </div>
+      <div class="grid">
+        <div class="side">
+          <h5>Borrower (restricted)</h5>
+          <div id="rb-assets"></div>
+        </div>
+        <div class="side">
+          <h5>Unrestricted subsidiary</h5>
+          <div id="ub-assets"></div>
+        </div>
+      </div>
+      <div class="explain" id="dd-explain"></div>
+    </div>
+
+    <p>This is the structural reason credit analysts in 2026 do not assume their first lien position is actually first. Every modern indenture review starts with checking for unrestricted subsidiary baskets, builder baskets, and other escape hatches that allow the sponsor to engineer outcomes that put new debt ahead of existing senior secured.</p>
+
+    <h2><span class="num">07</span>Distressed in 2026 looks different.</h2>
+
+    <p>The defining feature of the current distressed cycle is that it is mostly private. Defaults are happening in BDC portfolios, in direct lending funds, in private credit warehouses. The names are unfamiliar because the deals were never syndicated. The recovery rates are harder to estimate because there are no public secondary marks. The restructurings are happening out of court, in private workouts negotiated bilaterally between the direct lender and the sponsor.</p>
+
+    <p>What does this mean in practice?</p>
+
+    <ul>
+      <li><b>Marks lag reality more than they did in 2020.</b> Public defaults price in days. Private credit marks move quarterly. The gap between "we know this is going to fail" and "the fund has marked it" can be 6 to 12 months.</li>
+      <li><b>Recovery rates are bifurcating.</b> Direct lending deals with full maintenance covenants and tight controls recover well. Cov lite syndicated paper from 2020 to 2022 vintages recovers poorly.</li>
+      <li><b>The data is harder to get.</b> No 8 K filings on private workouts. No Reorg coverage on a private credit restructuring. The only signal often is the BDC's own SOI showing the position marked down quarter after quarter.</li>
+    </ul>
+
+    <p><span class="hl">This is precisely the gap BDC Intelligence is designed to close.</span> Watching marks across the universe at the line item level surfaces patterns that no other public data source captures. A borrower marked from 95 to 80 to 70 across three quarters by three different lenders is a real signal even when no public news has been printed.</p>
+
+    <blockquote>Distressed work in private credit is about reading the marks the way a doctor reads vital signs. Each individual reading is ambiguous. The trend is the diagnosis.</blockquote>
+
+    <h2><span class="num">08</span>You have made it through the primers.</h2>
+
+    <p>Across five primers you now have the vocabulary of private credit, the structure of BDCs, the reading of the data, the mechanics of leveraged finance, and the shape of distressed. The Structuring Weekly editions will assume this foundation. From here, the deep dives are where it all gets specific.</p>
+
+  </div>
+
+  <a class="next-primer" href="../deepdives/index.html">
+    <div>
+      <div class="np-meta">Next section</div>
+      <div class="np-h">Deal Deep Dives →</div>
+    </div>
+    <span class="np-btn">Explore</span>
+  </a>
+
+  <footer>
+    Primer written by Qazi Rasool. Reviewed by Sam Soukas. Updated 2026.<br>
+    Part of <a href="../index.html" style="text-decoration:underline">Structuring Weekly</a> · BDC Intelligence.
+  </footer>
+
+</div>
+
+<script>
+// IX1: Price to return
+const dyPrice = document.getElementById('dy-price');
+const dyRec = document.getElementById('dy-rec');
+const dyTm = document.getElementById('dy-tm');
+const dyProb = document.getElementById('dy-prob');
+function renderDy() {
+  const price = +dyPrice.value;
+  const rec = +dyRec.value;
+  const tm = +dyTm.value;
+  const prob = +dyProb.value / 100;
+  document.getElementById('dy-price-v').textContent = price;
+  document.getElementById('dy-rec-v').textContent = rec;
+  document.getElementById('dy-tm-v').textContent = tm;
+  document.getElementById('dy-prob-v').textContent = (prob*100).toFixed(0) + '%';
+  // Expected outcome weighted by probability
+  // If default doesn't happen we get back par + accrued coupon proxy. For simplicity we just price the gross from price->recovery.
+  const gross = ((rec - price) / price) * 100;
+  // Annualized IRR
+  const irr = (Math.pow(rec / price, 12 / tm) - 1) * 100;
+  document.getElementById('dy-gross').textContent = (gross >= 0 ? '+' : '') + gross.toFixed(0) + '%';
+  document.getElementById('dy-irr').textContent = (irr >= 0 ? '+' : '') + irr.toFixed(0) + '%';
+}
+[dyPrice, dyRec, dyTm, dyProb].forEach(el => el.addEventListener('input', renderDy));
+renderDy();
+
+// IX2: Priority waterfall
+const WF_DEBT = [
+  { name: 'Revolver / DIP', amount: 100 },
+  { name: 'Senior 1L TLB', amount: 500 },
+  { name: 'Senior 2L notes', amount: 200 },
+  { name: 'Subordinated', amount: 200 }
+];
+const WF_SCENARIOS = {
+  bad: 400,
+  mid: 700,
+  ok: 1100
+};
+function renderWf(scen) {
+  const ev = WF_SCENARIOS[scen];
+  let remaining = ev;
+  const tiers = WF_DEBT.map(t => {
+    const paid = Math.min(t.amount, remaining);
+    remaining -= paid;
+    const recovery = (paid / t.amount) * 100;
+    const cls = recovery >= 99.5 ? 'tier-full' : recovery > 0 ? 'tier-partial' : 'tier-zero';
+    return { ...t, paid, recovery, cls };
+  });
+  document.getElementById('wf-stack').innerHTML = tiers.map(t =>
+    `<div class="wf-tier ${t.cls}">
+      <div><div class="tk">${t.name}</div><div class="ent">$${t.amount}M face</div></div>
+      <div style="text-align:right"><div class="rec">${t.recovery.toFixed(0)}¢</div><div class="ent">$${t.paid.toFixed(0)}M recovered</div></div>
+    </div>`
+  ).join('');
+}
+document.querySelectorAll('.ix-wf .sb').forEach(b => b.addEventListener('click', () => {
+  document.querySelectorAll('.ix-wf .sb').forEach(x => x.classList.remove('on'));
+  b.classList.add('on');
+  renderWf(b.dataset.wf);
+}));
+renderWf('bad');
+
+// IX3: Restructuring timeline
+const STAGES = {
+  stress: {
+    h: "Stage 1. Stress.",
+    d: "Borrower begins missing earnings forecasts, drawing the revolver, and cutting capex. Marks on the loans start to drift below par into the 85 to 95 range. The market notices but no formal default has occurred.",
+    flags: [['warn','Mark below 90'],['warn','Revolver fully drawn'],['ok','Still paying interest']]
+  },
+  negotiation: {
+    h: "Stage 2. Negotiation.",
+    d: "The company hires advisors (Houlihan, Lazard, FTI, AlixPartners). Lender groups form (ad hoc senior lender group, ad hoc bondholder group). Bilateral discussions begin. Marks move below 70 into clear distress territory. Sometimes a deal gets done out of court here.",
+    flags: [['','Advisors hired'],['warn','Mark 60 to 75'],['warn','Forbearance requested']]
+  },
+  filing: {
+    h: "Stage 3. Filing.",
+    d: "The company files for Chapter 11. First day motions are heard. DIP financing is approved. The company stays in possession of its assets and continues to operate while the plan is negotiated.",
+    flags: [['','Chapter 11 filed'],['','DIP financing'],['','Equity worthless']]
+  },
+  court: {
+    h: "Stage 4. In court.",
+    d: "The plan of reorganization is negotiated and ultimately confirmed. Pre petition debt is exchanged for combinations of new debt, equity in the reorganized company, and sometimes warrants. This phase typically takes 6 to 18 months depending on complexity and creditor cooperation.",
+    flags: [['','Plan negotiation'],['','Disclosure statement'],['','Plan vote and confirmation']]
+  },
+  emerge: {
+    h: "Stage 5. Emergence.",
+    d: "The reorganized company exits Chapter 11. Distressed funds that bought debt cheap end up with new equity. The senior secured lenders end up with new debt, often at lower face value but performing. The unsecured creditors and old equity get warrants or nothing.",
+    flags: [['ok','New cap structure'],['ok','Reorg equity to creditors'],['','Recovery realized']]
+  }
+};
+function renderStage(key) {
+  const s = STAGES[key];
+  document.getElementById('tl-detail').innerHTML = `
+    <div class="sd-h">${s.h}</div>
+    <div class="sd-d">${s.d}</div>
+    <div>${s.flags.map(([cls, label]) => `<span class="sd-flag ${cls}">${label}</span>`).join('')}</div>
+  `;
+}
+document.querySelectorAll('.ix-tl .stage').forEach(el => el.addEventListener('click', () => {
+  document.querySelectorAll('.ix-tl .stage').forEach(x => x.classList.remove('on'));
+  el.classList.add('on');
+  renderStage(el.dataset.stage);
+}));
+renderStage('stress');
+
+// IX5: Drop-down transaction
+const DD_STEPS = {
+  '0': {
+    rb: [
+      { nm: 'Operating business', as: 'EBITDA $50M' },
+      { nm: 'IP and trademarks', as: 'Most valuable asset' },
+      { nm: 'Pledged: $400M 1L TLB', as: 'Existing senior debt' }
+    ],
+    ub: [],
+    explain: '<b>Starting state.</b> The borrower owns its operating business and its valuable IP. Existing first lien lenders have a security interest in the borrower\'s assets. Everything is conventional. The first lien lenders feel safe.'
+  },
+  '1': {
+    rb: [
+      { nm: 'Operating business', as: 'EBITDA $50M' },
+      { nm: 'IP and trademarks', as: 'Most valuable asset' },
+      { nm: 'Pledged: $400M 1L TLB', as: 'Existing senior debt' },
+      { nm: 'Investment in new sub', as: 'Net zero, just a shell' }
+    ],
+    ub: [
+      { nm: 'Newco (shell)', as: 'Created today' }
+    ],
+    explain: '<b>Step 1.</b> Sponsor creates a new unrestricted subsidiary. The indenture has an "unrestricted subsidiary basket" that allows for investments into entities that fall outside the existing security package. This is legal under modern cov lite indentures.'
+  },
+  '2': {
+    rb: [
+      { nm: 'Operating business', as: 'EBITDA $50M' },
+      { nm: 'Pledged: $400M 1L TLB', as: 'Now only secured by op business' },
+      { nm: 'Investment in new sub', as: 'Increased value due to IP transfer' }
+    ],
+    ub: [
+      { nm: 'IP and trademarks', as: 'Moved here from borrower', moved: true }
+    ],
+    explain: '<b>Step 2.</b> The IP is "dropped down" into the unrestricted subsidiary as a permitted investment. The existing first lien is now only secured by the operating business, not the IP. The first lien lenders have effectively lost their claim on the most valuable asset.'
+  },
+  '3': {
+    rb: [
+      { nm: 'Operating business', as: 'EBITDA $50M' },
+      { nm: 'Pledged: $400M 1L TLB', as: 'Now only on op business' }
+    ],
+    ub: [
+      { nm: 'IP and trademarks', as: 'Pledged to new $200M loan', moved: true },
+      { nm: 'New $200M loan', as: 'Senior secured by IP', moved: true }
+    ],
+    explain: '<b>Step 3.</b> The sub raises new senior secured debt against the IP. The existing $400M first lien is now junior to the new $200M loan with respect to the IP asset, even though the original loan was supposedly senior secured. Existing lenders\' recovery in default has been materially impaired. This is the J Crew transaction in a sentence.'
+  }
+};
+function renderDd(step) {
+  const data = DD_STEPS[step];
+  document.getElementById('rb-assets').innerHTML = data.rb.map(e =>
+    `<div class="ent ${e.moved ? 'moved' : ''}"><div class="nm">${e.nm}</div><div class="as">${e.as}</div></div>`
+  ).join('') || '<div style="font-size:12px;color:var(--ink3);font-style:italic">No remaining assets</div>';
+  document.getElementById('ub-assets').innerHTML = data.ub.map(e =>
+    `<div class="ent ${e.moved ? 'moved' : ''}"><div class="nm">${e.nm}</div><div class="as">${e.as}</div></div>`
+  ).join('') || '<div style="font-size:12px;color:var(--ink3);font-style:italic">Empty subsidiary</div>';
+  document.getElementById('dd-explain').innerHTML = data.explain;
+}
+document.querySelectorAll('.ix-dd .sb').forEach(b => b.addEventListener('click', () => {
+  document.querySelectorAll('.ix-dd .sb').forEach(x => x.classList.remove('on'));
+  b.classList.add('on');
+  renderDd(b.dataset.step);
+}));
+renderDd('0');
+</script>
+
+</body>
+</html>
