@@ -22,7 +22,8 @@
     "interest_coverage_ratio": 132.0,
     "fee_as_pct_of_nii": 14.393939,
     "mgmt_fee_pct_of_assets": 0.052359,
-    "special_dividend_per_share": null
+    "special_dividend_per_share": null,
+    "asset_coverage_ratio": null
   },
   {
     "quarter": "Q4 2021",
@@ -39,7 +40,8 @@
     "data_quality_score": 100.0,
     "nav_per_share_qoq_change": 0.03,
     "fixed_rate_pct": 94.2,
-    "special_dividend_per_share": null
+    "special_dividend_per_share": null,
+    "asset_coverage_ratio": null
   },
   {
     "quarter": "Q1 2022",
@@ -65,7 +67,8 @@
     "interest_coverage_ratio": 27.3611,
     "fee_as_pct_of_nii": 30.152284,
     "mgmt_fee_pct_of_assets": 0.322291,
-    "special_dividend_per_share": null
+    "special_dividend_per_share": null,
+    "asset_coverage_ratio": null
   },
   {
     "quarter": "Q2 2022",
@@ -98,7 +101,8 @@
     "originations_mn": 52.4038,
     "repayments_mn": 0.0,
     "special_dividend_per_share": null,
-    "nii_mn": 0.184
+    "nii_mn": 0.184,
+    "asset_coverage_ratio": null
   },
   {
     "quarter": "Q3 2022",
@@ -109,6 +113,7 @@
     "net_assets_mn": 69.426,
     "total_investments_fv_mn": 112.535,
     "total_debt_mn": 64.36,
+    "asset_coverage_ratio": 2.079,
     "shares_outstanding": 4628405,
     "nav_per_share": 15.0,
     "floating_rate_pct": 6.0,
@@ -169,7 +174,8 @@
     "repayments_mn": 3.305,
     "special_dividend_per_share": null,
     "dividends_paid_mn": 0.972,
-    "nii_mn": 2.289
+    "nii_mn": 2.289,
+    "asset_coverage_ratio": null
   },
   {
     "quarter": "Q1 2023",
@@ -180,6 +186,7 @@
     "net_assets_mn": 100.68,
     "total_investments_fv_mn": 198.435,
     "total_debt_mn": 107.053,
+    "asset_coverage_ratio": 1.94,
     "shares_outstanding": 6712031,
     "net_investment_income_mn": 3.047,
     "interest_expense_mn": 1.54,
@@ -225,6 +232,7 @@
     "net_assets_mn": 102.265,
     "total_investments_fv_mn": 226.77,
     "total_debt_mn": 127.9,
+    "asset_coverage_ratio": 1.8,
     "shares_outstanding": 6817641,
     "net_investment_income_mn": 3.668,
     "interest_expense_mn": 1.862,
@@ -270,6 +278,7 @@
     "net_assets_mn": 182.684,
     "total_investments_fv_mn": 318.915,
     "total_debt_mn": 175.924,
+    "asset_coverage_ratio": 2.038,
     "shares_outstanding": 12178965,
     "num_portfolio_companies": 144,
     "leverage": 0.963,
@@ -317,6 +326,7 @@
     "net_assets_mn": 322.022,
     "total_investments_fv_mn": 646.541,
     "total_debt_mn": 178.627,
+    "asset_coverage_ratio": 2.803,
     "shares_outstanding": 21468147,
     "net_investment_income_mn": 8.928,
     "interest_expense_mn": null,
@@ -365,6 +375,7 @@
     "net_assets_mn": 412.147,
     "total_investments_fv_mn": 821.23,
     "total_debt_mn": 388.273,
+    "asset_coverage_ratio": 2.061,
     "shares_outstanding": 27476502,
     "net_investment_income_mn": 13.403,
     "interest_expense_mn": 8.214,
@@ -412,6 +423,7 @@
     "net_assets_mn": 507.462,
     "total_investments_fv_mn": 1130.448,
     "total_debt_mn": 655.636,
+    "asset_coverage_ratio": 1.774,
     "shares_outstanding": 33830794,
     "net_investment_income_mn": 13.003,
     "interest_expense_mn": 10.942,
@@ -462,6 +474,7 @@
     "net_assets_mn": 650.202,
     "total_investments_fv_mn": 1311.001,
     "total_debt_mn": 684.114,
+    "asset_coverage_ratio": 1.95,
     "shares_outstanding": 43346830,
     "leverage": 1.052,
     "nav_per_share": 15.0,
@@ -505,6 +518,7 @@
     "net_assets_mn": 755.251,
     "total_investments_fv_mn": 1532.666,
     "total_debt_mn": 797.477,
+    "asset_coverage_ratio": 1.947,
     "shares_outstanding": 50350055,
     "net_investment_income_mn": 18.182,
     "management_fee_mn": 4.979,
@@ -556,6 +570,7 @@
     "net_assets_mn": 835.546,
     "total_investments_fv_mn": 1643.383,
     "total_debt_mn": 828.373,
+    "asset_coverage_ratio": 2.009,
     "shares_outstanding": 55703116,
     "net_investment_income_mn": 21.039,
     "management_fee_mn": 5.43,
@@ -607,6 +622,7 @@
     "net_assets_mn": 995.967,
     "total_investments_fv_mn": 1895.482,
     "total_debt_mn": 1186.232,
+    "asset_coverage_ratio": 1.84,
     "shares_outstanding": 66397771,
     "net_investment_income_mn": 23.121,
     "management_fee_mn": 6.085,
@@ -658,6 +674,7 @@
     "net_assets_mn": 1068.555,
     "total_investments_fv_mn": 2209.174,
     "total_debt_mn": 1181.274,
+    "asset_coverage_ratio": 1.905,
     "shares_outstanding": 71236993,
     "num_portfolio_companies": 502,
     "leverage": 1.105,
@@ -700,6 +717,7 @@
     "net_assets_mn": 1169.389,
     "total_investments_fv_mn": 2382.163,
     "total_debt_mn": 1312.64,
+    "asset_coverage_ratio": 1.891,
     "shares_outstanding": 77959284,
     "net_investment_income_mn": 30.076,
     "management_fee_mn": 8.104,

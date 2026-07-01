@@ -13,7 +13,8 @@
     "cumulative_equity_raised_mn": 0.0,
     "data_quality_score": 100.0,
     "fixed_rate_pct": 2.0,
-    "special_dividend_per_share": null
+    "special_dividend_per_share": null,
+    "asset_coverage_ratio": null
   },
   {
     "quarter": "Q2 2020",
@@ -30,7 +31,8 @@
     "data_quality_score": 100.0,
     "nav_per_share_qoq_change": 0.11,
     "fixed_rate_pct": 2.0,
-    "special_dividend_per_share": null
+    "special_dividend_per_share": null,
+    "asset_coverage_ratio": null
   },
   {
     "quarter": "Q3 2020",
@@ -47,7 +49,8 @@
     "data_quality_score": 100.0,
     "nav_per_share_qoq_change": 0.41,
     "fixed_rate_pct": 4.0,
-    "special_dividend_per_share": null
+    "special_dividend_per_share": null,
+    "asset_coverage_ratio": null
   },
   {
     "quarter": "Q4 2020",
@@ -67,7 +70,8 @@
     "fixed_rate_pct": 1.0,
     "shares_outstanding_avg": 2214984.0,
     "net_investment_income_mn": 2.188079,
-    "special_dividend_per_share": null
+    "special_dividend_per_share": null,
+    "asset_coverage_ratio": null
   },
   {
     "quarter": "Q1 2021",
@@ -86,7 +90,8 @@
     "nav_per_share_qoq_change": 0.12,
     "nav_per_share_yoy_growth_pct": 6.8966,
     "fixed_rate_pct": 3.0,
-    "special_dividend_per_share": null
+    "special_dividend_per_share": null,
+    "asset_coverage_ratio": null
   },
   {
     "quarter": "Q2 2021",
@@ -105,7 +110,8 @@
     "nav_per_share_qoq_change": 0.17,
     "nav_per_share_yoy_growth_pct": 7.3333,
     "fixed_rate_pct": 4.0,
-    "special_dividend_per_share": null
+    "special_dividend_per_share": null,
+    "asset_coverage_ratio": null
   },
   {
     "quarter": "Q3 2021",
@@ -124,7 +130,8 @@
     "nav_per_share_qoq_change": 0.1,
     "nav_per_share_yoy_growth_pct": 4.5931,
     "fixed_rate_pct": 3.0,
-    "special_dividend_per_share": null
+    "special_dividend_per_share": null,
+    "asset_coverage_ratio": null
   },
   {
     "quarter": "Q4 2021",
@@ -151,7 +158,8 @@
     "net_investment_income_mn": 2.247035,
     "net_unrealized_gains_mn": 1.1201,
     "originations_mn": 29.9037,
-    "special_dividend_per_share": null
+    "special_dividend_per_share": null,
+    "asset_coverage_ratio": null
   },
   {
     "quarter": "Q1 2022",
@@ -185,7 +193,8 @@
     "special_dividend_per_share": null,
     "interest_income_mn": 1.0779,
     "dividends_paid_mn": 0.5201,
-    "nii_mn": 0.355
+    "nii_mn": 0.355,
+    "asset_coverage_ratio": null
   },
   {
     "quarter": "Q2 2022",
@@ -220,7 +229,8 @@
     "originations_mn": 13.2509,
     "special_dividend_per_share": null,
     "interest_income_mn": 1.1912,
-    "nii_mn": 0.245
+    "nii_mn": 0.245,
+    "asset_coverage_ratio": null
   },
   {
     "quarter": "Q3 2022",
@@ -254,7 +264,8 @@
     "originations_mn": 6.9282,
     "special_dividend_per_share": null,
     "interest_income_mn": 1.4635,
-    "nii_mn": 0.416
+    "nii_mn": 0.416,
+    "asset_coverage_ratio": null
   },
   {
     "quarter": "Q4 2022",
@@ -290,6 +301,7 @@
     "shares_outstanding_avg": 2008980.0,
     "cash_mn": 0.973147,
     "total_debt_mn": 15.165,
+    "asset_coverage_ratio": 2.452,
     "leverage": 0.6888,
     "debt_to_equity_ratio": 0.6888,
     "cost_of_debt_pct": 13.0036,
@@ -331,6 +343,7 @@
     "total_liabilities_mn": 33.746374,
     "shares_outstanding_avg": 1993546.0,
     "total_debt_mn": 17.14,
+    "asset_coverage_ratio": 2.236,
     "leverage": 0.8089,
     "debt_to_equity_ratio": 0.8089,
     "total_investment_income_mn": 1.9116,
@@ -376,6 +389,7 @@
     "total_liabilities_mn": 32.078175,
     "shares_outstanding_avg": 1982244.0,
     "total_debt_mn": 15.74,
+    "asset_coverage_ratio": 2.313,
     "leverage": 0.7618,
     "debt_to_equity_ratio": 0.7618,
     "total_investment_income_mn": 2.0298,
@@ -422,6 +436,7 @@
     "total_liabilities_mn": 26.618002,
     "shares_outstanding_avg": 1965593.0,
     "total_debt_mn": 10.44,
+    "asset_coverage_ratio": 2.949,
     "leverage": 0.513,
     "debt_to_equity_ratio": 0.513,
     "total_investment_income_mn": 1.8019,
@@ -476,6 +491,7 @@
     "pik_pct": 8.64,
     "weighted_avg_yield_pct": 12.9301,
     "total_debt_mn": 7.665,
+    "asset_coverage_ratio": 3.511,
     "leverage": 0.3982,
     "debt_to_equity_ratio": 0.3982,
     "cost_of_debt_pct": 19.5305,
@@ -522,6 +538,7 @@
     "total_liabilities_mn": 23.147329,
     "shares_outstanding_avg": 1832927.0,
     "total_debt_mn": 6.865,
+    "asset_coverage_ratio": 3.733,
     "leverage": 0.366,
     "debt_to_equity_ratio": 0.366,
     "total_investment_income_mn": 1.6387,
@@ -567,6 +584,7 @@
     "cash_mn": 0.815084,
     "interest_expense_mn": 0.398553,
     "total_debt_mn": 6.065,
+    "asset_coverage_ratio": 4.031,
     "leverage": 0.3299,
     "debt_to_equity_ratio": 0.3299,
     "total_investment_income_mn": 1.5297,
@@ -611,6 +629,7 @@
     "cash_mn": 2.470786,
     "interest_expense_mn": 0.377659,
     "total_debt_mn": 5.665,
+    "asset_coverage_ratio": 3.988,
     "leverage": 0.3347,
     "debt_to_equity_ratio": 0.3347,
     "total_investment_income_mn": 1.4224,
@@ -663,6 +682,7 @@
     "fixed_rate_pct": 0.0,
     "weighted_avg_yield_pct": 11.7742,
     "total_debt_mn": 5.265,
+    "asset_coverage_ratio": 4.227,
     "leverage": 0.3099,
     "debt_to_equity_ratio": 0.3099,
     "net_unrealized_gains_mn": 0.5175,
@@ -714,6 +734,7 @@
     "cash_mn": 0.364456,
     "interest_expense_mn": 0.334244,
     "total_debt_mn": 4.265,
+    "asset_coverage_ratio": 4.734,
     "leverage": 0.2678,
     "debt_to_equity_ratio": 0.2678,
     "total_investment_income_mn": 1.2242,
@@ -758,6 +779,7 @@
     "cash_mn": 0.588069,
     "interest_expense_mn": 0.344141,
     "total_debt_mn": 4.015,
+    "asset_coverage_ratio": 4.785,
     "leverage": 0.2642,
     "debt_to_equity_ratio": 0.2642,
     "total_investment_income_mn": 1.2562,
@@ -801,6 +823,7 @@
     "cash_mn": 1.089063,
     "interest_expense_mn": 0.290697,
     "total_debt_mn": 2.15,
+    "asset_coverage_ratio": 7.358,
     "leverage": 0.1573,
     "debt_to_equity_ratio": 0.1573,
     "total_investment_income_mn": 1.1079,
@@ -885,6 +908,7 @@
     "fixed_rate_pct": 0.0,
     "weighted_avg_yield_pct": 10.5752,
     "total_debt_mn": 2.65,
+    "asset_coverage_ratio": 5.347,
     "leverage": 0.2301,
     "debt_to_equity_ratio": 0.2301,
     "net_unrealized_gains_mn": -1.818,

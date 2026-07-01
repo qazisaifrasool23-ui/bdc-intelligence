@@ -23,7 +23,8 @@
     "weighted_avg_yield_pct": 12.0,
     "mgmt_fee_pct_of_assets": 0.010597,
     "mgmt_fee_as_pct_of_nii": 0.173923,
-    "total_fees_mn": 0.3162
+    "total_fees_mn": 0.3162,
+    "asset_coverage_ratio": null
   },
   {
     "quarter": "Q2 2023",
@@ -52,7 +53,8 @@
     "weighted_avg_yield_pct": 12.0,
     "mgmt_fee_pct_of_assets": 0.011361,
     "mgmt_fee_as_pct_of_nii": 0.135568,
-    "total_fees_mn": 0.3454
+    "total_fees_mn": 0.3454,
+    "asset_coverage_ratio": null
   },
   {
     "quarter": "Q3 2023",
@@ -81,7 +83,8 @@
     "weighted_avg_yield_pct": 9.9622,
     "mgmt_fee_pct_of_assets": 0.011726,
     "mgmt_fee_as_pct_of_nii": 0.163638,
-    "total_fees_mn": 0.3492
+    "total_fees_mn": 0.3492,
+    "asset_coverage_ratio": null
   },
   {
     "quarter": "Q4 2023",
@@ -108,7 +111,8 @@
     "weighted_avg_yield_pct": 9.9591,
     "mgmt_fee_pct_of_assets": 0.0114,
     "mgmt_fee_as_pct_of_nii": 0.038212,
-    "total_fees_mn": 0.3382
+    "total_fees_mn": 0.3382,
+    "asset_coverage_ratio": null
   },
   {
     "quarter": "Q1 2024",
@@ -139,7 +143,8 @@
     "weighted_avg_yield_pct": 9.9562,
     "mgmt_fee_pct_of_assets": 0.011003,
     "mgmt_fee_as_pct_of_nii": null,
-    "total_fees_mn": 0.3446
+    "total_fees_mn": 0.3446,
+    "asset_coverage_ratio": null
   },
   {
     "quarter": "Q2 2024",
@@ -170,7 +175,8 @@
     "weighted_avg_yield_pct": 9.964,
     "mgmt_fee_pct_of_assets": 0.010921,
     "mgmt_fee_as_pct_of_nii": 0.161441,
-    "total_fees_mn": 0.3475
+    "total_fees_mn": 0.3475,
+    "asset_coverage_ratio": null
   },
   {
     "quarter": "Q3 2024",
@@ -199,7 +205,8 @@
     "weighted_avg_yield_pct": 7.8896,
     "mgmt_fee_pct_of_assets": 0.011303,
     "mgmt_fee_as_pct_of_nii": 17.461411,
-    "total_fees_mn": 0.3519
+    "total_fees_mn": 0.3519,
+    "asset_coverage_ratio": null
   },
   {
     "quarter": "Q4 2024",
@@ -219,6 +226,7 @@
     "floating_rate_pct": 0.0,
     "fixed_rate_pct": 100.0,
     "total_debt_mn": 0.0,
+    "asset_coverage_ratio": null,
     "leverage": 0.0,
     "debt_to_equity_ratio": 0.0,
     "total_investments_fv_mn": 275.2414,
@@ -250,6 +258,7 @@
     "net_investment_income_mn": 7.648421,
     "total_expenses_mn": 4.274581,
     "total_debt_mn": 0.0,
+    "asset_coverage_ratio": null,
     "leverage": 0.0,
     "debt_to_equity_ratio": 0.0,
     "total_investments_fv_mn": 289.2627,
@@ -285,6 +294,7 @@
     "management_fee_mn": 1.345331,
     "net_investment_income_mn": 7.664607,
     "total_debt_mn": 5.0,
+    "asset_coverage_ratio": null,
     "leverage": 0.0166,
     "debt_to_equity_ratio": 0.0166,
     "total_investments_fv_mn": 307.499,
@@ -322,6 +332,7 @@
     "management_fee_mn": 1.399845,
     "net_investment_income_mn": 9.491121,
     "total_debt_mn": 11.0,
+    "asset_coverage_ratio": null,
     "leverage": 0.0363,
     "debt_to_equity_ratio": 0.0363,
     "total_investments_fv_mn": 311.3935,
@@ -366,6 +377,7 @@
     "floating_rate_pct": 95.3199,
     "fixed_rate_pct": 4.6801,
     "total_debt_mn": 25.0,
+    "asset_coverage_ratio": null,
     "leverage": 0.0824,
     "debt_to_equity_ratio": 0.0824,
     "total_investments_fv_mn": 333.3118,
@@ -403,6 +415,7 @@
     "floating_rate_pct": 94.9528,
     "fixed_rate_pct": 5.0472,
     "total_debt_mn": 54.5,
+    "asset_coverage_ratio": null,
     "leverage": 0.1792,
     "debt_to_equity_ratio": 0.1792,
     "total_investments_fv_mn": 363.9667,

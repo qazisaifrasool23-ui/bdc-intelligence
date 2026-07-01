@@ -9,3 +9,6 @@ data/universe/fund_directory.candidate.json
 
 # Local timestamped backups (git history is the source of truth)
 *.bak
+
+# Local pre-modification backups of timeseries files
+data/timeseries/_backups/
