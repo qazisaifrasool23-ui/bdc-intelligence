@@ -12,7 +12,10 @@
     "implied_recovery_rate_pct": 100.0,
     "data_quality_score": 100.0,
     "special_dividend_per_share": null,
-    "asset_coverage_ratio": null
+    "asset_coverage_ratio": null,
+    "top_1_concentration_pct": null,
+    "top_5_concentration_pct": null,
+    "top_10_concentration_pct": null
   },
   {
     "quarter": "Q2 2020",
@@ -27,7 +30,10 @@
     "implied_recovery_rate_pct": 100.0,
     "data_quality_score": 100.0,
     "special_dividend_per_share": null,
-    "asset_coverage_ratio": null
+    "asset_coverage_ratio": null,
+    "top_1_concentration_pct": null,
+    "top_5_concentration_pct": null,
+    "top_10_concentration_pct": null
   },
   {
     "quarter": "Q3 2020",
@@ -42,7 +48,10 @@
     "implied_recovery_rate_pct": 100.0,
     "data_quality_score": 100.0,
     "special_dividend_per_share": null,
-    "asset_coverage_ratio": null
+    "asset_coverage_ratio": null,
+    "top_1_concentration_pct": null,
+    "top_5_concentration_pct": null,
+    "top_10_concentration_pct": null
   },
   {
     "quarter": "Q4 2020",
@@ -53,6 +62,9 @@
     "weighted_avg_yield": 8.1,
     "first_lien_pct": 10.5,
     "num_portfolio_companies": 52,
+    "top_1_concentration_pct": null,
+    "top_5_concentration_pct": null,
+    "top_10_concentration_pct": null,
     "na_pct_cost": 8.4,
     "na_pct_fv": 8.4,
     "cumulative_dividends_paid": 0.0,
@@ -75,7 +87,10 @@
     "cumulative_equity_raised_mn": 0.0,
     "data_quality_score": 100.0,
     "special_dividend_per_share": null,
-    "asset_coverage_ratio": null
+    "asset_coverage_ratio": null,
+    "top_1_concentration_pct": null,
+    "top_5_concentration_pct": null,
+    "top_10_concentration_pct": null
   },
   {
     "quarter": "Q2 2021",
@@ -87,7 +102,10 @@
     "cumulative_equity_raised_mn": 0.0,
     "data_quality_score": 100.0,
     "special_dividend_per_share": null,
-    "asset_coverage_ratio": null
+    "asset_coverage_ratio": null,
+    "top_1_concentration_pct": null,
+    "top_5_concentration_pct": null,
+    "top_10_concentration_pct": null
   },
   {
     "quarter": "Q3 2021",
@@ -99,7 +117,10 @@
     "cumulative_equity_raised_mn": 0.0,
     "data_quality_score": 100.0,
     "special_dividend_per_share": null,
-    "asset_coverage_ratio": null
+    "asset_coverage_ratio": null,
+    "top_1_concentration_pct": null,
+    "top_5_concentration_pct": null,
+    "top_10_concentration_pct": null
   },
   {
     "quarter": "Q4 2021",
@@ -110,6 +131,9 @@
     "weighted_avg_yield": 8.5,
     "first_lien_pct": 16.6,
     "num_portfolio_companies": 31,
+    "top_1_concentration_pct": null,
+    "top_5_concentration_pct": null,
+    "top_10_concentration_pct": null,
     "na_pct_cost": 8.6,
     "na_pct_fv": 8.6,
     "cumulative_dividends_paid": 0.0,
@@ -156,7 +180,10 @@
     "nav_per_share_qoq_change": -8.25,
     "special_dividend_per_share": null,
     "nii_mn": 11.406,
-    "asset_coverage_ratio": null
+    "asset_coverage_ratio": null,
+    "top_1_concentration_pct": null,
+    "top_5_concentration_pct": null,
+    "top_10_concentration_pct": null
   },
   {
     "quarter": "Q2 2022",
@@ -184,7 +211,10 @@
     "nav_per_share_qoq_change": -6.33,
     "special_dividend_per_share": null,
     "nii_mn": 11.089,
-    "asset_coverage_ratio": null
+    "asset_coverage_ratio": null,
+    "top_1_concentration_pct": null,
+    "top_5_concentration_pct": null,
+    "top_10_concentration_pct": null
   },
   {
     "quarter": "Q3 2022",
@@ -199,6 +229,9 @@
     "management_fee_mn": 1.586,
     "weighted_avg_yield": 10.4,
     "num_portfolio_companies": 2,
+    "top_1_concentration_pct": null,
+    "top_5_concentration_pct": null,
+    "top_10_concentration_pct": null,
     "na_pct_cost": 10.1,
     "na_pct_fv": 10.1,
     "cumulative_dividends_paid": 0.0,
@@ -238,6 +271,9 @@
     "weighted_avg_yield": 11.6,
     "first_lien_pct": 12.4,
     "num_portfolio_companies": 25,
+    "top_1_concentration_pct": null,
+    "top_5_concentration_pct": null,
+    "top_10_concentration_pct": null,
     "na_pct_cost": 10.6,
     "na_pct_fv": 10.6,
     "leverage": 0.362,
@@ -282,6 +318,9 @@
     "incentive_fee_mn": 1.214,
     "weighted_avg_yield": 11.8,
     "num_portfolio_companies": 2,
+    "top_1_concentration_pct": null,
+    "top_5_concentration_pct": null,
+    "top_10_concentration_pct": null,
     "na_pct_cost": 11.4,
     "na_pct_fv": 11.4,
     "leverage": 0.321,
@@ -320,6 +359,9 @@
     "total_investments_fv_mn": 518.503,
     "total_debt_mn": 120.764,
     "asset_coverage_ratio": 4.5,
+    "top_1_concentration_pct": null,
+    "top_5_concentration_pct": null,
+    "top_10_concentration_pct": null,
     "shares_outstanding": 10687877,
     "total_investment_income_mn": 17.931,
     "net_investment_income_mn": 10.963,
@@ -363,6 +405,9 @@
     "net_assets_mn": 421.579,
     "total_debt_mn": 81.919,
     "asset_coverage_ratio": 6.146,
+    "top_1_concentration_pct": null,
+    "top_5_concentration_pct": null,
+    "top_10_concentration_pct": null,
     "shares_outstanding": 10687877,
     "total_investment_income_mn": 18.303,
     "net_investment_income_mn": 10.094,
@@ -415,6 +460,9 @@
     "weighted_avg_yield": 12.6843,
     "first_lien_pct": null,
     "num_portfolio_companies": 35,
+    "top_1_concentration_pct": 12.4,
+    "top_5_concentration_pct": 40.96,
+    "top_10_concentration_pct": 65.91,
     "na_pct_cost": 12.6,
     "na_pct_fv": 12.6,
     "leverage": 0.156,
@@ -460,6 +508,9 @@
     "net_assets_mn": 411.847,
     "total_debt_mn": 26.863,
     "asset_coverage_ratio": 16.331,
+    "top_1_concentration_pct": null,
+    "top_5_concentration_pct": null,
+    "top_10_concentration_pct": null,
     "shares_outstanding": 10687877,
     "total_investment_income_mn": 16.372,
     "net_investment_income_mn": 12.041,
@@ -524,7 +575,10 @@
     "repayments_mn": 76.063,
     "special_dividend_per_share": null,
     "nii_mn": 13.278,
-    "asset_coverage_ratio": null
+    "asset_coverage_ratio": null,
+    "top_1_concentration_pct": null,
+    "top_5_concentration_pct": null,
+    "top_10_concentration_pct": null
   },
   {
     "quarter": "Q3 2024",
@@ -558,6 +612,9 @@
     "repayments_mn": 74.874,
     "total_debt_mn": 1.54,
     "asset_coverage_ratio": null,
+    "top_1_concentration_pct": null,
+    "top_5_concentration_pct": null,
+    "top_10_concentration_pct": null,
     "special_dividend_per_share": null,
     "nii_mn": 7.757
   },
@@ -578,6 +635,9 @@
     "weighted_avg_yield": 10.8764,
     "first_lien_pct": null,
     "num_portfolio_companies": 61,
+    "top_1_concentration_pct": 5.87,
+    "top_5_concentration_pct": 24.6,
+    "top_10_concentration_pct": 44.04,
     "leverage": 0.838,
     "nii_per_share": 0.9446,
     "nav_per_share": 23.4943,
@@ -618,6 +678,9 @@
     "net_assets_mn": 356.769,
     "total_debt_mn": 268.132,
     "asset_coverage_ratio": 2.331,
+    "top_1_concentration_pct": null,
+    "top_5_concentration_pct": null,
+    "top_10_concentration_pct": null,
     "shares_outstanding": 14884897,
     "total_investment_income_mn": 18.096,
     "net_investment_income_mn": 11.057,
@@ -662,6 +725,9 @@
     "net_assets_mn": 312.692,
     "total_debt_mn": 179.932,
     "asset_coverage_ratio": 2.738,
+    "top_1_concentration_pct": null,
+    "top_5_concentration_pct": null,
+    "top_10_concentration_pct": null,
     "shares_outstanding": 14884897,
     "total_investment_income_mn": 14.198,
     "net_investment_income_mn": 7.287,
@@ -701,6 +767,9 @@
     "net_assets_mn": 311.377,
     "total_debt_mn": 148.432,
     "asset_coverage_ratio": 3.098,
+    "top_1_concentration_pct": null,
+    "top_5_concentration_pct": null,
+    "top_10_concentration_pct": null,
     "shares_outstanding": 14884897,
     "total_investment_income_mn": 11.924,
     "net_investment_income_mn": 7.264,
@@ -749,6 +818,9 @@
     "weighted_avg_yield": 9.5407,
     "first_lien_pct": null,
     "num_portfolio_companies": 33,
+    "top_1_concentration_pct": 8.53,
+    "top_5_concentration_pct": 36.29,
+    "top_10_concentration_pct": 61.57,
     "leverage": 0.465,
     "nii_per_share": 0.3217,
     "nav_per_share": 21.4582,

@@ -21,6 +21,9 @@
     "repayments_mn": 0.125,
     "special_dividend_per_share": null,
     "num_portfolio_companies": 9,
+    "top_1_concentration_pct": null,
+    "top_5_concentration_pct": null,
+    "top_10_concentration_pct": null,
     "asset_coverage_ratio": null
   },
   {
@@ -45,6 +48,9 @@
     "repayments_mn": 0.187,
     "special_dividend_per_share": null,
     "num_portfolio_companies": 4,
+    "top_1_concentration_pct": null,
+    "top_5_concentration_pct": null,
+    "top_10_concentration_pct": null,
     "asset_coverage_ratio": null
   },
   {
@@ -65,6 +71,9 @@
     "floating_rate_pct": 100.0,
     "fixed_rate_pct": 0.0,
     "num_portfolio_companies": 124,
+    "top_1_concentration_pct": 8.42,
+    "top_5_concentration_pct": 27.48,
+    "top_10_concentration_pct": 45.1,
     "net_assets_mn": 138.559,
     "shares_outstanding": 9237273,
     "weighted_avg_yield_pct": 10.9645,
@@ -99,6 +108,9 @@
     "repayments_mn": 0.184,
     "special_dividend_per_share": null,
     "num_portfolio_companies": 29,
+    "top_1_concentration_pct": null,
+    "top_5_concentration_pct": null,
+    "top_10_concentration_pct": null,
     "dividends_paid_mn": 4.444,
     "asset_coverage_ratio": null
   },
@@ -124,6 +136,9 @@
     "repayments_mn": 0.914,
     "special_dividend_per_share": null,
     "num_portfolio_companies": 16,
+    "top_1_concentration_pct": null,
+    "top_5_concentration_pct": null,
+    "top_10_concentration_pct": null,
     "asset_coverage_ratio": null
   },
   {
@@ -148,6 +163,9 @@
     "repayments_mn": 0.982,
     "special_dividend_per_share": null,
     "num_portfolio_companies": 28,
+    "top_1_concentration_pct": null,
+    "top_5_concentration_pct": null,
+    "top_10_concentration_pct": null,
     "asset_coverage_ratio": null
   },
   {
@@ -168,6 +186,9 @@
     "floating_rate_pct": 100.0,
     "fixed_rate_pct": 0.0,
     "num_portfolio_companies": 256,
+    "top_1_concentration_pct": 3.13,
+    "top_5_concentration_pct": 11.73,
+    "top_10_concentration_pct": 20.82,
     "net_assets_mn": 306.194,
     "shares_outstanding": 20412978,
     "weighted_avg_yield_pct": 10.0635,
@@ -206,6 +227,9 @@
     "repayments_mn": 2.295,
     "special_dividend_per_share": null,
     "num_portfolio_companies": 23,
+    "top_1_concentration_pct": null,
+    "top_5_concentration_pct": null,
+    "top_10_concentration_pct": null,
     "dividends_paid_mn": 7.614
   },
   {
@@ -234,7 +258,10 @@
     "originations_mn": 25.491,
     "repayments_mn": 12.406,
     "special_dividend_per_share": null,
-    "num_portfolio_companies": 148
+    "num_portfolio_companies": 148,
+    "top_1_concentration_pct": null,
+    "top_5_concentration_pct": null,
+    "top_10_concentration_pct": null
   },
   {
     "quarter": "Q2 2025",
@@ -261,7 +288,10 @@
     "originations_mn": 24.783,
     "repayments_mn": 5.961,
     "special_dividend_per_share": null,
-    "num_portfolio_companies": 159
+    "num_portfolio_companies": 159,
+    "top_1_concentration_pct": null,
+    "top_5_concentration_pct": null,
+    "top_10_concentration_pct": null
   },
   {
     "quarter": "Q3 2025",
@@ -281,6 +311,9 @@
     "floating_rate_pct": 100.0,
     "fixed_rate_pct": 0.0,
     "num_portfolio_companies": 401,
+    "top_1_concentration_pct": 2.38,
+    "top_5_concentration_pct": 9.04,
+    "top_10_concentration_pct": 16.29,
     "net_assets_mn": 401.587,
     "shares_outstanding": 26772467,
     "weighted_avg_yield_pct": 8.9137,
@@ -319,6 +352,9 @@
     "repayments_mn": 14.867,
     "special_dividend_per_share": null,
     "num_portfolio_companies": 201,
+    "top_1_concentration_pct": null,
+    "top_5_concentration_pct": null,
+    "top_10_concentration_pct": null,
     "dividends_paid_mn": 7.62
   },
   {
@@ -343,6 +379,9 @@
     "floating_rate_pct": 100.0,
     "fixed_rate_pct": 0.0,
     "num_portfolio_companies": 206,
+    "top_1_concentration_pct": 2.43,
+    "top_5_concentration_pct": 9.47,
+    "top_10_concentration_pct": 17.01,
     "net_assets_mn": 400.28,
     "shares_outstanding": 26772467,
     "interest_expense_mn": 0.002,

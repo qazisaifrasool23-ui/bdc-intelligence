@@ -24,7 +24,10 @@
     "mgmt_fee_pct_of_assets": 0.010597,
     "mgmt_fee_as_pct_of_nii": 0.173923,
     "total_fees_mn": 0.3162,
-    "asset_coverage_ratio": null
+    "asset_coverage_ratio": null,
+    "top_1_concentration_pct": 19.46,
+    "top_5_concentration_pct": 70.7,
+    "top_10_concentration_pct": 95.69
   },
   {
     "quarter": "Q2 2023",
@@ -54,7 +57,10 @@
     "mgmt_fee_pct_of_assets": 0.011361,
     "mgmt_fee_as_pct_of_nii": 0.135568,
     "total_fees_mn": 0.3454,
-    "asset_coverage_ratio": null
+    "asset_coverage_ratio": null,
+    "top_1_concentration_pct": 37.84,
+    "top_5_concentration_pct": 93.09,
+    "top_10_concentration_pct": null
   },
   {
     "quarter": "Q3 2023",
@@ -84,7 +90,10 @@
     "mgmt_fee_pct_of_assets": 0.011726,
     "mgmt_fee_as_pct_of_nii": 0.163638,
     "total_fees_mn": 0.3492,
-    "asset_coverage_ratio": null
+    "asset_coverage_ratio": null,
+    "top_1_concentration_pct": 37.62,
+    "top_5_concentration_pct": 93.02,
+    "top_10_concentration_pct": null
   },
   {
     "quarter": "Q4 2023",
@@ -112,7 +121,10 @@
     "mgmt_fee_pct_of_assets": 0.0114,
     "mgmt_fee_as_pct_of_nii": 0.038212,
     "total_fees_mn": 0.3382,
-    "asset_coverage_ratio": null
+    "asset_coverage_ratio": null,
+    "top_1_concentration_pct": 38.11,
+    "top_5_concentration_pct": 94.54,
+    "top_10_concentration_pct": null
   },
   {
     "quarter": "Q1 2024",
@@ -144,7 +156,10 @@
     "mgmt_fee_pct_of_assets": 0.011003,
     "mgmt_fee_as_pct_of_nii": null,
     "total_fees_mn": 0.3446,
-    "asset_coverage_ratio": null
+    "asset_coverage_ratio": null,
+    "top_1_concentration_pct": 19.2,
+    "top_5_concentration_pct": 71.05,
+    "top_10_concentration_pct": 97.35
   },
   {
     "quarter": "Q2 2024",
@@ -176,7 +191,10 @@
     "mgmt_fee_pct_of_assets": 0.010921,
     "mgmt_fee_as_pct_of_nii": 0.161441,
     "total_fees_mn": 0.3475,
-    "asset_coverage_ratio": null
+    "asset_coverage_ratio": null,
+    "top_1_concentration_pct": 23.69,
+    "top_5_concentration_pct": 75.63,
+    "top_10_concentration_pct": 97.74
   },
   {
     "quarter": "Q3 2024",
@@ -196,6 +214,9 @@
     "originations_mn": 3.5663,
     "special_dividend_per_share": null,
     "num_portfolio_companies": 28,
+    "top_1_concentration_pct": 27.16,
+    "top_5_concentration_pct": 58.16,
+    "top_10_concentration_pct": 75.65,
     "interest_income_mn": 3.1759,
     "mgmt_fee_mn": 0.2534,
     "admin_fee_mn": 0.0985,
@@ -222,6 +243,9 @@
     "weighted_avg_yield": 15.1072,
     "pik_pct": 33.01,
     "num_portfolio_companies": 33,
+    "top_1_concentration_pct": 18.9,
+    "top_5_concentration_pct": 58.48,
+    "top_10_concentration_pct": 77.82,
     "weighted_avg_yield_pct": 15.1072,
     "floating_rate_pct": 0.0,
     "fixed_rate_pct": 100.0,
@@ -270,6 +294,9 @@
     "interest_expense_mn": 0.1454,
     "special_dividend_per_share": null,
     "num_portfolio_companies": 31,
+    "top_1_concentration_pct": 8.02,
+    "top_5_concentration_pct": 38.25,
+    "top_10_concentration_pct": 71.35,
     "interest_income_mn": 11.923,
     "credit_facility_drawn_mn": 0.0,
     "unused_capacity_mn": 100.0,
@@ -308,6 +335,9 @@
     "special_dividend_per_share": null,
     "cost_of_debt_pct": 24.104,
     "num_portfolio_companies": 31,
+    "top_1_concentration_pct": 16.8,
+    "top_5_concentration_pct": 52.33,
+    "top_10_concentration_pct": 71.51,
     "interest_income_mn": 13.08,
     "credit_facility_drawn_mn": 5.0,
     "unused_capacity_mn": 95.0,
@@ -346,6 +376,9 @@
     "special_dividend_per_share": null,
     "cost_of_debt_pct": 16.925,
     "num_portfolio_companies": 37,
+    "top_1_concentration_pct": 13.71,
+    "top_5_concentration_pct": 41.24,
+    "top_10_concentration_pct": 61.26,
     "interest_income_mn": 15.0706,
     "credit_facility_drawn_mn": 11.0,
     "unused_capacity_mn": 89.0,
@@ -373,6 +406,9 @@
     "weighted_avg_yield": 14.2643,
     "pik_pct": 23.88,
     "num_portfolio_companies": 50,
+    "top_1_concentration_pct": 12.68,
+    "top_5_concentration_pct": 37.84,
+    "top_10_concentration_pct": 57.22,
     "weighted_avg_yield_pct": 14.2643,
     "floating_rate_pct": 95.3199,
     "fixed_rate_pct": 4.6801,
@@ -411,6 +447,9 @@
     "weighted_avg_yield": 13.9996,
     "pik_pct": 26.3,
     "num_portfolio_companies": 53,
+    "top_1_concentration_pct": 10.53,
+    "top_5_concentration_pct": 37.27,
+    "top_10_concentration_pct": 56.17,
     "weighted_avg_yield_pct": 13.9996,
     "floating_rate_pct": 94.9528,
     "fixed_rate_pct": 5.0472,

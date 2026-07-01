@@ -11,7 +11,10 @@
     "management_fee_mn": 0.0,
     "interest_expense_mn": 0.0,
     "special_dividend_per_share": null,
-    "asset_coverage_ratio": null
+    "asset_coverage_ratio": null,
+    "top_1_concentration_pct": null,
+    "top_5_concentration_pct": null,
+    "top_10_concentration_pct": null
   },
   {
     "quarter": "Q3 2024",
@@ -35,6 +38,9 @@
     "repayments_mn": 0.0,
     "total_debt_mn": 206.971,
     "asset_coverage_ratio": null,
+    "top_1_concentration_pct": null,
+    "top_5_concentration_pct": null,
+    "top_10_concentration_pct": null,
     "special_dividend_per_share": null,
     "cost_of_debt_pct": 1.4649,
     "interest_income_mn": 0.079
@@ -55,6 +61,9 @@
     "subordinated_pct": 0.0,
     "equity_pct": 100.0,
     "num_portfolio_companies": 1,
+    "top_1_concentration_pct": 100.0,
+    "top_5_concentration_pct": 100.0,
+    "top_10_concentration_pct": null,
     "net_assets_mn": 156.453,
     "shares_outstanding": 6226600,
     "nav_per_share": 25.1266,
@@ -87,6 +96,9 @@
     "repayments_mn": 0.0,
     "total_debt_mn": 252.647,
     "asset_coverage_ratio": null,
+    "top_1_concentration_pct": null,
+    "top_5_concentration_pct": null,
+    "top_10_concentration_pct": null,
     "special_dividend_per_share": null,
     "cost_of_debt_pct": 6.9024,
     "interest_income_mn": 1.064
@@ -112,6 +124,9 @@
     "repayments_mn": 20.915,
     "total_debt_mn": 251.03,
     "asset_coverage_ratio": null,
+    "top_1_concentration_pct": null,
+    "top_5_concentration_pct": null,
+    "top_10_concentration_pct": null,
     "special_dividend_per_share": null,
     "cost_of_debt_pct": 8.264,
     "interest_income_mn": 3.193
@@ -137,6 +152,9 @@
     "repayments_mn": 17.1,
     "total_debt_mn": 428.203,
     "asset_coverage_ratio": null,
+    "top_1_concentration_pct": null,
+    "top_5_concentration_pct": null,
+    "top_10_concentration_pct": null,
     "special_dividend_per_share": null,
     "cost_of_debt_pct": 9.2646,
     "interest_income_mn": 6.158
@@ -161,6 +179,9 @@
     "floating_rate_pct": 100.0,
     "fixed_rate_pct": 0.0,
     "num_portfolio_companies": 61,
+    "top_1_concentration_pct": 24.15,
+    "top_5_concentration_pct": 74.64,
+    "top_10_concentration_pct": 86.94,
     "net_assets_mn": 2094.585,
     "shares_outstanding": 83633744,
     "interest_expense_mn": null,
@@ -195,6 +216,9 @@
     "repayments_mn": 40.513,
     "total_debt_mn": 1032.007,
     "asset_coverage_ratio": null,
+    "top_1_concentration_pct": null,
+    "top_5_concentration_pct": null,
+    "top_10_concentration_pct": null,
     "special_dividend_per_share": null,
     "cost_of_debt_pct": 6.439
   }

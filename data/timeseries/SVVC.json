@@ -22,7 +22,10 @@
     "mgmt_fee_as_pct_of_nii": null,
     "total_fees_mn": 0.2213,
     "price_to_nav": 5.0371,
-    "asset_coverage_ratio": null
+    "asset_coverage_ratio": null,
+    "top_1_concentration_pct": null,
+    "top_5_concentration_pct": null,
+    "top_10_concentration_pct": null
   },
   {
     "quarter": "Q2 2023",
@@ -47,7 +50,10 @@
     "mgmt_fee_as_pct_of_nii": null,
     "total_fees_mn": 0.1757,
     "price_to_nav": 0.3913,
-    "asset_coverage_ratio": null
+    "asset_coverage_ratio": null,
+    "top_1_concentration_pct": null,
+    "top_5_concentration_pct": null,
+    "top_10_concentration_pct": null
   },
   {
     "quarter": "Q3 2023",
@@ -72,7 +78,10 @@
     "mgmt_fee_as_pct_of_nii": 0.039295,
     "total_fees_mn": 0.103,
     "price_to_nav": 4.251,
-    "asset_coverage_ratio": null
+    "asset_coverage_ratio": null,
+    "top_1_concentration_pct": null,
+    "top_5_concentration_pct": null,
+    "top_10_concentration_pct": null
   },
   {
     "quarter": "Q4 2023",
@@ -101,7 +110,10 @@
     "mgmt_fee_as_pct_of_nii": 0.039479,
     "total_fees_mn": 0.0722,
     "price_to_nav": 1.619,
-    "asset_coverage_ratio": null
+    "asset_coverage_ratio": null,
+    "top_1_concentration_pct": 49.71,
+    "top_5_concentration_pct": 99.98,
+    "top_10_concentration_pct": null
   },
   {
     "quarter": "Q1 2024",
@@ -132,7 +144,10 @@
     "mgmt_fee_as_pct_of_nii": 0.01197,
     "total_fees_mn": 0.0627,
     "price_to_nav": 10.6557,
-    "asset_coverage_ratio": null
+    "asset_coverage_ratio": null,
+    "top_1_concentration_pct": 84.54,
+    "top_5_concentration_pct": 99.92,
+    "top_10_concentration_pct": null
   },
   {
     "quarter": "Q2 2024",
@@ -162,7 +177,10 @@
     "mgmt_fee_as_pct_of_nii": null,
     "total_fees_mn": 0.0562,
     "price_to_nav": 0.4739,
-    "asset_coverage_ratio": null
+    "asset_coverage_ratio": null,
+    "top_1_concentration_pct": 91.58,
+    "top_5_concentration_pct": 100.0,
+    "top_10_concentration_pct": null
   },
   {
     "quarter": "Q3 2024",
@@ -192,7 +210,10 @@
     "mgmt_fee_as_pct_of_nii": null,
     "total_fees_mn": 0.0464,
     "price_to_nav": 0.3125,
-    "asset_coverage_ratio": null
+    "asset_coverage_ratio": null,
+    "top_1_concentration_pct": 73.89,
+    "top_5_concentration_pct": 100.0,
+    "top_10_concentration_pct": null
   },
   {
     "quarter": "Q4 2024",
@@ -221,7 +242,10 @@
     "mgmt_fee_as_pct_of_nii": 0.004666,
     "total_fees_mn": 0.0382,
     "price_to_nav": 0.3899,
-    "asset_coverage_ratio": null
+    "asset_coverage_ratio": null,
+    "top_1_concentration_pct": 74.06,
+    "top_5_concentration_pct": 100.0,
+    "top_10_concentration_pct": null
   },
   {
     "quarter": "Q1 2025",
@@ -251,7 +275,10 @@
     "mgmt_fee_pct_of_assets": 0.018009,
     "mgmt_fee_as_pct_of_nii": null,
     "total_fees_mn": 0.0365,
-    "asset_coverage_ratio": null
+    "asset_coverage_ratio": null,
+    "top_1_concentration_pct": 68.51,
+    "top_5_concentration_pct": 100.0,
+    "top_10_concentration_pct": null
   },
   {
     "quarter": "Q2 2025",
@@ -278,7 +305,10 @@
     "mgmt_fee_as_pct_of_nii": null,
     "total_fees_mn": 0.0356,
     "price_to_nav": 0.5535,
-    "asset_coverage_ratio": null
+    "asset_coverage_ratio": null,
+    "top_1_concentration_pct": 69.84,
+    "top_5_concentration_pct": 99.65,
+    "top_10_concentration_pct": 99.81
   },
   {
     "quarter": "Q3 2025",
@@ -305,7 +335,10 @@
     "mgmt_fee_as_pct_of_nii": null,
     "total_fees_mn": 0.0334,
     "price_to_nav": 1.3953,
-    "asset_coverage_ratio": null
+    "asset_coverage_ratio": null,
+    "top_1_concentration_pct": 66.68,
+    "top_5_concentration_pct": 99.26,
+    "top_10_concentration_pct": 99.53
   },
   {
     "quarter": "Q4 2025",
@@ -322,6 +355,9 @@
     "subordinated_pct": 0.0,
     "equity_pct": 100.0,
     "num_portfolio_companies": 9,
+    "top_1_concentration_pct": 74.49,
+    "top_5_concentration_pct": 99.91,
+    "top_10_concentration_pct": null,
     "shares_outstanding": 6892540,
     "management_fee_mn": 0.003,
     "nav_per_share": -0.0341,
@@ -351,6 +387,9 @@
     "subordinated_pct": 0.0,
     "equity_pct": 100.0,
     "num_portfolio_companies": 5,
+    "top_1_concentration_pct": 98.36,
+    "top_5_concentration_pct": null,
+    "top_10_concentration_pct": null,
     "shares_outstanding": 6892540,
     "management_fee_mn": 0.001,
     "nav_per_share": -0.0644,
