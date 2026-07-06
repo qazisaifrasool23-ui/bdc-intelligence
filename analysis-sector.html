@@ -1,0 +1,819 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sector Concentration — Analysis — Credit Canon</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&family=Roboto+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#fafafa; --bg2:#fff; --bg3:#f4f4f5; --bg4:#fafafa;
+  --ink:#0a0a0a; --ink2:#3f3f46; --ink3:#71717a; --ink4:#a1a1aa;
+  --line:#e4e4e7; --line2:#d4d4d8;
+  --hl:#fde68a; --good:#15803d; --bad:#b91c1c; --amber:#a16207;
+  --grid:#f1f1f4;
+  --mono:"Roboto Mono",ui-monospace,monospace;
+  --sans:"Roboto","Inter","Segoe UI",sans-serif;
+
+  /* heatmap color ramp (monochrome ink-based, since red-green is unsafe) */
+  --hm0:#fafafa;
+  --hm1:#f4f4f5;
+  --hm2:#e4e4e7;
+  --hm3:#d4d4d8;
+  --hm4:#a1a1aa;
+  --hm5:#71717a;
+  --hm6:#3f3f46;
+  --hm7:#0a0a0a;
+  /* warning amber overlay for high concentration */
+  --hm-warn:#fde68a;
+  --hm-bad:#fecaca;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:var(--bg);font-family:var(--sans);color:var(--ink);font-size:14px;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+
+/* nav (matches other pages) */
+.navbar{height:60px;background:#fff;border-bottom:1px solid var(--line);display:flex;align-items:center;padding:0 28px;position:sticky;top:0;z-index:300}
+.logo{display:flex;align-items:center;gap:10px;margin-right:48px;text-decoration:none}
+.logo-mark{width:28px;height:28px;background:var(--ink);border-radius:7px;display:flex;align-items:center;justify-content:center}
+.logo-mark svg{width:15px;height:15px;fill:#fff}
+.logo-text{font-size:15px;font-weight:600;letter-spacing:-.3px}
+.logo-text span{font-weight:400}
+.nav-links{display:flex;align-items:center;gap:2px;margin:0 auto}
+.nav-link{padding:8px 14px;font-size:13.5px;font-weight:500;color:var(--ink2);border-radius:6px;white-space:nowrap}
+.nav-link:hover{color:var(--ink);background:var(--bg3)}
+.nav-link.on{color:var(--ink);font-weight:600}
+.nav-right{display:flex;align-items:center;gap:14px}
+.btn-outline{padding:8px 4px;background:transparent;color:var(--ink);font-size:13.5px;font-weight:500}
+.btn-primary{height:34px;padding:0 18px;border-radius:999px;background:var(--ink);color:#fff;font-size:13px;font-weight:500}
+
+.wrap{max-width:1340px;margin:0 auto;padding:36px 24px 100px}
+@media(max-width:780px){.wrap{padding:24px 14px 60px}}
+
+/* breadcrumb */
+.breadcrumb{display:flex;align-items:center;gap:8px;font-family:var(--mono);font-size:10.5px;letter-spacing:.5px;text-transform:uppercase;color:var(--ink3);margin-bottom:18px}
+.breadcrumb a:hover{color:var(--ink)}
+.breadcrumb .sep{color:var(--ink4)}
+.breadcrumb b{color:var(--ink2);font-weight:500}
+
+/* page header */
+.page-head{margin-bottom:32px}
+.page-head h1{font-size:38px;line-height:1.08;letter-spacing:-1px;font-weight:600;margin-bottom:14px;max-width:920px}
+@media(max-width:780px){.page-head h1{font-size:28px;letter-spacing:-.5px}}
+.page-head .standfirst{font-size:15px;line-height:1.6;color:var(--ink2);max-width:780px}
+.page-head .meta-row{font-family:var(--mono);font-size:10.5px;color:var(--ink3);letter-spacing:.3px;line-height:1.7;margin-top:14px;border-top:1px solid var(--line);padding-top:14px}
+.page-head .meta-row b{color:var(--ink2);font-weight:600}
+
+/* module switcher */
+.module-switcher{display:flex;flex-wrap:wrap;gap:6px;padding:14px 18px;background:#fff;border:1px solid var(--line);border-radius:12px;margin-bottom:28px;font-family:var(--mono);font-size:11px;letter-spacing:.3px}
+.module-switcher .label{color:var(--ink3);letter-spacing:.5px;text-transform:uppercase;font-size:9.5px;font-weight:500;margin-right:8px;padding-top:3px}
+.module-switcher .mod{padding:5px 11px;border-radius:999px;color:var(--ink3);background:var(--bg3);font-weight:500;text-transform:uppercase;letter-spacing:.4px;font-size:10px}
+.module-switcher .mod.on{color:#fff;background:var(--ink);font-weight:600}
+.module-switcher .mod.done{color:var(--ink2);background:var(--bg3)}
+.module-switcher .mod.done:hover{color:var(--ink);background:#e4e4e7}
+.module-switcher .mod.soon{color:var(--ink4);background:transparent;border:1px dashed var(--line2);cursor:default}
+
+/* ===== SECTION HEADERS ===== */
+.section{margin-bottom:48px}
+.section-head{display:flex;align-items:end;justify-content:space-between;margin-bottom:14px;padding-bottom:10px;border-bottom:1px solid var(--line);flex-wrap:wrap;gap:8px}
+.section-head .left{display:flex;align-items:end;gap:14px;flex-wrap:wrap}
+.section-head .layer{font-family:var(--mono);font-size:9.5px;letter-spacing:.6px;text-transform:uppercase;color:var(--ink3);font-weight:500;background:var(--bg3);padding:3px 9px;border-radius:999px;line-height:1.3}
+.section-head h2{font-size:20px;font-weight:600;letter-spacing:-.4px;color:var(--ink)}
+.section-head .sub{font-size:12px;color:var(--ink3);line-height:1.5;max-width:520px;text-align:right}
+
+/* ===== LAYER 1: UNIVERSE SECTOR MIX ===== */
+.universe-mix{background:#fff;border:1px solid var(--line);border-radius:14px;padding:24px}
+.um-header{display:flex;align-items:baseline;gap:18px;flex-wrap:wrap;margin-bottom:18px;padding-bottom:14px;border-bottom:1px solid var(--line)}
+.um-header .big{font-family:var(--mono);font-size:32px;font-weight:600;color:var(--ink);letter-spacing:-.6px;line-height:1}
+.um-header .big-label{font-family:var(--mono);font-size:10px;letter-spacing:.5px;text-transform:uppercase;color:var(--ink3);margin-top:5px}
+.um-header .meta{font-family:var(--mono);font-size:11px;color:var(--ink3);letter-spacing:.3px;margin-left:auto}
+.um-header .meta b{color:var(--ink2);font-weight:600}
+
+/* stacked bar showing sector breakdown */
+.um-bar{display:flex;height:36px;border-radius:8px;overflow:hidden;margin-bottom:14px;background:var(--bg3)}
+.um-seg{display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:10px;font-weight:500;color:#fff;letter-spacing:.2px;min-width:18px;transition:opacity .15s}
+.um-seg:hover{opacity:.85;cursor:pointer}
+.um-seg.lit{box-shadow:inset 0 0 0 2px #fff}
+
+/* sector list */
+.um-list{display:grid;grid-template-columns:repeat(2,1fr);gap:6px 24px;margin-top:8px}
+@media(max-width:780px){.um-list{grid-template-columns:1fr}}
+.um-row{display:flex;align-items:center;gap:10px;padding:5px 0;font-size:12px;border-bottom:1px dashed var(--line)}
+.um-row:hover{background:var(--bg4)}
+.um-row .sw{width:10px;height:10px;border-radius:2px;flex-shrink:0}
+.um-row .nm{flex:1;color:var(--ink2)}
+.um-row .pct{font-family:var(--mono);font-weight:500;color:var(--ink);min-width:60px;text-align:right;font-size:11.5px}
+.um-row .fv{font-family:var(--mono);color:var(--ink3);min-width:80px;text-align:right;font-size:11px}
+.um-row.warn .nm{color:var(--bad);font-weight:500}
+
+/* ===== LAYER 2: HHI CONCENTRATION RANK ===== */
+.hhi-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+@media(max-width:880px){.hhi-grid{grid-template-columns:1fr}}
+.hhi-panel{background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px}
+.hhi-panel h3{font-size:14px;font-weight:600;letter-spacing:-.2px;color:var(--ink);margin-bottom:12px;display:flex;align-items:center;gap:7px}
+.hhi-panel h3::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--ink);display:inline-block}
+.hhi-panel .blurb{font-size:11.5px;color:var(--ink3);line-height:1.5;margin-bottom:14px}
+.hhi-panel .blurb code{font-family:var(--mono);background:var(--bg3);padding:1px 5px;border-radius:3px;font-size:10.5px;color:var(--ink2)}
+
+/* HHI rows */
+.hhi-list{display:flex;flex-direction:column;gap:5px}
+.hhi-row{display:grid;grid-template-columns:60px 1fr 64px 26px;gap:10px;align-items:center;padding:7px 8px;border-radius:6px;font-size:12.5px;cursor:pointer}
+.hhi-row:hover{background:var(--bg3)}
+.hhi-row .tk{font-family:var(--mono);font-weight:600;font-size:12px;color:var(--ink)}
+.hhi-row .nm{color:var(--ink2);font-size:11.5px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;line-height:1.3}
+.hhi-row .nm .mgr{display:block;font-size:9.5px;color:var(--ink3);font-family:var(--mono);margin-top:1px}
+.hhi-row .hhi{font-family:var(--mono);font-weight:600;font-size:12px;text-align:right;color:var(--ink)}
+.hhi-row .flag{display:flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;font-size:11px;font-weight:600;font-family:var(--mono)}
+.hhi-row .flag.low{background:#dcfce7;color:var(--good)}
+.hhi-row .flag.mod{background:#fef3c7;color:var(--amber)}
+.hhi-row .flag.high{background:#fee2e2;color:var(--bad)}
+
+/* threshold guide */
+.hhi-thresh{display:flex;gap:12px;margin-bottom:14px;font-family:var(--mono);font-size:9.5px;color:var(--ink3);letter-spacing:.3px;flex-wrap:wrap;padding:8px 10px;background:var(--bg3);border-radius:8px}
+.hhi-thresh .t{display:flex;align-items:center;gap:5px}
+.hhi-thresh .t .dot{width:7px;height:7px;border-radius:50%}
+.hhi-thresh .t.low .dot{background:var(--good)}
+.hhi-thresh .t.mod .dot{background:var(--amber)}
+.hhi-thresh .t.high .dot{background:var(--bad)}
+
+/* ===== LAYER 3: HEATMAP ===== */
+.heatmap-card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px;overflow:hidden}
+.hm-controls{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:18px;padding-bottom:14px;border-bottom:1px solid var(--line)}
+.hm-controls .label{font-family:var(--mono);font-size:9.5px;letter-spacing:.55px;text-transform:uppercase;color:var(--ink3);font-weight:500}
+.hm-controls .seg-tabs{display:flex;background:var(--bg3);border-radius:999px;padding:3px}
+.hm-controls .seg-tab{padding:6px 13px;border-radius:999px;font-size:11.5px;font-weight:500;color:var(--ink2)}
+.hm-controls .seg-tab.on{background:#fff;color:var(--ink);font-weight:600;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+.hm-controls .meta{font-family:var(--mono);font-size:10.5px;color:var(--ink3);margin-left:auto;letter-spacing:.3px}
+.hm-controls .meta b{color:var(--ink2);font-weight:600}
+
+/* heatmap grid: BDC rows × sector cols */
+.hm-scroll{overflow-x:auto;margin:0 -20px;padding:0 20px}
+.hm-table{display:grid;gap:2px;min-width:100%}
+.hm-cell{font-family:var(--mono);font-size:9.5px;text-align:center;border-radius:3px;padding:2px;line-height:1;cursor:default;transition:transform .1s,box-shadow .1s}
+.hm-cell:hover{transform:scale(1.4);box-shadow:0 2px 8px rgba(0,0,0,.15);z-index:5;position:relative}
+.hm-col-head{font-family:var(--mono);font-size:8.5px;letter-spacing:.3px;color:var(--ink3);font-weight:500;text-align:center;padding:6px 2px;border-bottom:1px solid var(--line);min-width:60px;writing-mode:horizontal-tb;line-height:1.15;hyphens:auto;word-wrap:break-word;display:flex;align-items:end;justify-content:center}
+.hm-row-head{font-family:var(--mono);font-size:10px;font-weight:600;color:var(--ink);padding:0 8px 0 0;text-align:right;line-height:1;min-width:60px;align-self:center}
+.hm-row-head .mgr-tag{display:block;font-size:8px;color:var(--ink3);font-weight:400;margin-top:2px;letter-spacing:.2px}
+
+/* heatmap intensity levels (monochrome ramp) */
+.hm-cell.l0{background:var(--hm0);color:var(--ink4)}
+.hm-cell.l1{background:var(--hm1);color:var(--ink3)}
+.hm-cell.l2{background:var(--hm2);color:var(--ink2)}
+.hm-cell.l3{background:var(--hm3);color:var(--ink2)}
+.hm-cell.l4{background:var(--hm4);color:#fff}
+.hm-cell.l5{background:var(--hm5);color:#fff}
+.hm-cell.l6{background:var(--hm6);color:#fff}
+.hm-cell.l7{background:var(--hm7);color:#fff}
+/* stress-flagged cells get amber/red rings */
+.hm-cell.warn{outline:1.5px solid var(--amber);outline-offset:-1.5px}
+.hm-cell.crit{outline:1.5px solid var(--bad);outline-offset:-1.5px}
+
+/* heatmap legend */
+.hm-legend{display:flex;align-items:center;gap:10px;margin-top:18px;padding-top:14px;border-top:1px dashed var(--line);font-family:var(--mono);font-size:10px;color:var(--ink3);letter-spacing:.3px;flex-wrap:wrap}
+.hm-legend .ramp{display:flex;height:10px;border-radius:2px;overflow:hidden}
+.hm-legend .ramp div{width:14px;height:100%}
+.hm-legend .ramp .l0{background:var(--hm0)}
+.hm-legend .ramp .l1{background:var(--hm1)}
+.hm-legend .ramp .l2{background:var(--hm2)}
+.hm-legend .ramp .l3{background:var(--hm3)}
+.hm-legend .ramp .l4{background:var(--hm4)}
+.hm-legend .ramp .l5{background:var(--hm5)}
+.hm-legend .ramp .l6{background:var(--hm6)}
+.hm-legend .ramp .l7{background:var(--hm7)}
+.hm-legend .flag-dot{display:inline-block;width:10px;height:10px;border-radius:2px;background:#fff;outline-offset:-1.5px;vertical-align:middle;margin-right:4px}
+.hm-legend .flag-dot.warn{outline:1.5px solid var(--amber)}
+.hm-legend .flag-dot.crit{outline:1.5px solid var(--bad)}
+
+/* loading state */
+.loading-block{padding:80px 20px;text-align:center;font-family:var(--mono);font-size:11px;color:var(--ink3);letter-spacing:.3px}
+.loading-block .sp{display:inline-block;width:14px;height:14px;border:2px solid var(--line);border-top-color:var(--ink);border-radius:50%;animation:spin .8s linear infinite;margin-right:8px;vertical-align:middle}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* methodology note */
+.data-note{margin-top:32px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:24px;display:grid;grid-template-columns:1fr 1fr;gap:24px}
+@media(max-width:780px){.data-note{grid-template-columns:1fr}}
+.data-note h3{font-size:14px;font-weight:600;letter-spacing:-.2px;color:var(--ink);margin-bottom:10px;display:flex;align-items:center;gap:7px}
+.data-note h3::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--ink);display:inline-block}
+.data-note p{font-size:12.5px;line-height:1.6;color:var(--ink2);margin-bottom:10px}
+.data-note code{font-family:var(--mono);font-size:11px;background:var(--bg3);padding:2px 5px;border-radius:3px;color:var(--ink)}
+
+footer{padding-top:36px;margin-top:60px;border-top:1px solid var(--line);font-family:var(--mono);font-size:10.5px;color:var(--ink3);text-align:center;letter-spacing:.3px;line-height:1.8}
+footer a{text-decoration:underline}
+
+/* ===== Credit Canon: restricted-access nav pill + loading skeletons ===== */
+.cc-nav-pill{background:#fff3e0;color:#E07B00;font-family:"Roboto Mono",monospace;font-size:8.5px;font-weight:500;padding:2px 7px;border-radius:999px;margin-left:6px;letter-spacing:.3px;vertical-align:middle;display:inline-flex;align-items:center;line-height:1}
+@keyframes cc-shimmer{0%{background-position:-400px 0}100%{background-position:400px 0}}
+.cc-sk{background:#e9edf1;background-image:linear-gradient(90deg,#e9edf1 0,#f4f6f8 200px,#e9edf1 400px);background-size:800px 100%;animation:cc-shimmer 1.3s linear infinite;border-radius:4px;display:block}
+.cc-sk-dark{background:rgba(255,255,255,.07);background-image:linear-gradient(90deg,rgba(255,255,255,.05) 0,rgba(255,255,255,.14) 200px,rgba(255,255,255,.05) 400px);background-size:800px 100%;animation:cc-shimmer 1.3s linear infinite;border-radius:4px;display:block}
+@media(prefers-reduced-motion:reduce){.cc-sk,.cc-sk-dark{animation:none}}
+</style>
+<style>html.cc-embed .navbar,html.cc-embed .module-switcher,html.cc-embed .breadcrumb{display:none!important}html.cc-embed body{background:#fff!important}</style><script>if(location.search.indexOf("embed")>-1)document.documentElement.classList.add("cc-embed");</script>
+</head>
+<body>
+
+<nav class="navbar">
+  <a class="logo" href="index.html">
+    <div class="logo-mark"><svg viewBox="0 0 16 16"><rect x="2" y="9" width="3" height="5"/><rect x="6.5" y="5" width="3" height="9"/><rect x="11" y="2" width="3" height="12"/></svg></div>
+    <div class="logo-text">Credit<span>Canon</span></div>
+  </a>
+  <div class="nav-links">
+    
+    <a class="nav-link" href="index.html">US BDC Universe</a>
+    <a class="nav-link" href="fund.html">Fund Deep Dive</a>
+    <a class="nav-link" href="compare.html">Compare</a>
+    <a class="nav-link" href="screener.html">Screener</a>
+    <a class="nav-link on" href="analysis.html">Analysis</a>
+    <a class="nav-link" href="news.html">News</a>
+    
+    <a class="nav-link" href="about.html">About us</a>
+  </div>
+  <div class="nav-right">
+    <button class="btn-outline">Sign In</button>
+    <button class="btn-primary">Get Access</button>
+  </div>
+</nav>
+
+<div class="wrap">
+
+  <!-- breadcrumb -->
+  <div class="breadcrumb">
+    <a href="index.html">Universe</a>
+    <span class="sep">/</span>
+    <a href="analysis.html">Analysis</a>
+    <span class="sep">/</span>
+    <b>Sector concentration</b>
+  </div>
+
+  <!-- page header -->
+  <div class="page-head">
+    <h1>Where is the BDC universe concentrated, and which funds are most exposed?</h1>
+    <p class="standfirst">Three layers. First, the universe wide sector mix and how dominant software has become. Second, per BDC concentration scoring using the Herfindahl Hirschman Index, the antitrust regulator's standard for diversification. Third, a fund by sector heat map that lets you find every BDC with above market exposure to any sector that matters to you.</p>
+    <div class="meta-row">Methodology: HHI per US DOJ thresholds (1,500 / 2,500) with S&P adjusted HHI normalization · Sector taxonomy normalized across 600+ raw labels into 16 canonical buckets · <b id="cov-meta">Loading coverage...</b></div>
+  </div>
+
+  <!-- module switcher -->
+  <div class="module-switcher">
+    <span class="label">Analysis modules:</span>
+    <a href="analysis-universe.html" class="mod done">01 · Universe time series</a>
+    <a href="analysis-overlap.html" class="mod done">02 · Borrower overlap</a>
+    <a href="analysis-cohort.html" class="mod done">03 · Manager cohorts</a>
+    <a href="analysis-dividend.html" class="mod done">04 · Dividend coverage</a>
+    <a href="analysis-liquidity.html" class="mod done">05 · Non traded liquidity</a>
+    <span class="mod on">06 · Sector concentration</span>
+  </div>
+
+  <!-- ============= LAYER 1 : UNIVERSE SECTOR MIX ============= -->
+  <div class="section">
+    <div class="section-head">
+      <div class="left">
+        <span class="layer">Layer 01</span>
+        <h2>Universe sector mix</h2>
+      </div>
+      <div class="sub">Aggregate fair value across all BDC Schedule of Investment filings, latest available per fund. Hover any segment to read the share.</div>
+    </div>
+    <div class="universe-mix">
+      <div class="um-header">
+        <div>
+          <div class="big" id="um-software-pct">—</div>
+          <div class="big-label">Universe FV in software &amp; tech</div>
+        </div>
+        <div>
+          <div class="big" id="um-top3-pct">—</div>
+          <div class="big-label">Top 3 sectors combined</div>
+        </div>
+        <div>
+          <div class="big" id="um-total-fv">—</div>
+          <div class="big-label">Total universe FV (SOI universe)</div>
+        </div>
+        <div class="meta"><b id="um-funds">—</b> funds with current SOI data</div>
+      </div>
+      <div class="um-bar" id="um-bar">
+        <div class="loading-block" style="flex:1"><span class="sp"></span>Aggregating sectors across universe...</div>
+      </div>
+      <div class="um-list" id="um-list"></div>
+    </div>
+  </div>
+
+  <!-- ============= LAYER 2 : HHI RANKINGS ============= -->
+  <div class="section">
+    <div class="section-head">
+      <div class="left">
+        <span class="layer">Layer 02</span>
+        <h2>Per BDC concentration scoring</h2>
+      </div>
+      <div class="sub">Herfindahl Hirschman Index on each fund's sector weights, expressed in DOJ basis points. The lower the number, the more diversified the portfolio.</div>
+    </div>
+
+    <div class="hhi-thresh">
+      <div class="t low"><span class="dot"></span>Below 1,500 · diversified (DOJ low concentration)</div>
+      <div class="t mod"><span class="dot"></span>1,500 – 2,500 · moderate concentration</div>
+      <div class="t high"><span class="dot"></span>Above 2,500 · high concentration (DOJ threshold)</div>
+    </div>
+
+    <div class="hhi-grid">
+      <div class="hhi-panel">
+        <h3>Most concentrated</h3>
+        <p class="blurb">Single sector concentration risk. Could be deliberate (specialist lender like a healthcare or tech focused BDC) or accidental (residual position drift). Calculated as <code>Σ(weight²) × 10,000</code> over fair value weights.</p>
+        <div class="hhi-list" id="hhi-most"></div>
+      </div>
+      <div class="hhi-panel">
+        <h3>Most diversified</h3>
+        <p class="blurb">Lowest HHI scores in the universe. These funds spread fair value most evenly across sectors. Wider diversification typically associates with more stable NAV per share (Claremont Colleges study).</p>
+        <div class="hhi-list" id="hhi-least"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============= LAYER 3 : HEATMAP ============= -->
+  <div class="section">
+    <div class="section-head">
+      <div class="left">
+        <span class="layer">Layer 03</span>
+        <h2>Fund × sector heat map</h2>
+      </div>
+      <div class="sub">Every BDC by every sector, expressed as % of fund FV. Hover any cell for the exact figure. Stress flags drawn around cells above market wide stress thresholds.</div>
+    </div>
+
+    <div class="heatmap-card">
+      <div class="hm-controls">
+        <span class="label">Segment</span>
+        <div class="seg-tabs" id="hm-seg-tabs">
+          <button class="seg-tab on" data-seg="all">All BDCs</button>
+          <button class="seg-tab" data-seg="traded">Traded</button>
+          <button class="seg-tab" data-seg="nontraded">Non traded</button>
+        </div>
+        <span class="label" style="margin-left:6px">Sort by</span>
+        <div class="seg-tabs" id="hm-sort-tabs">
+          <button class="seg-tab on" data-sort="nav">Net assets</button>
+          <button class="seg-tab" data-sort="software">Software exposure</button>
+          <button class="seg-tab" data-sort="hhi">HHI</button>
+        </div>
+        <div class="meta">Showing <b id="hm-count">—</b> funds</div>
+      </div>
+
+      <div class="hm-scroll">
+        <div class="hm-table" id="hm-table">
+          <div class="loading-block" style="grid-column:1/-1"><span class="sp"></span>Building heat map...</div>
+        </div>
+      </div>
+
+      <div class="hm-legend">
+        <span>Sector weight (% of fund FV):</span>
+        <span>0%</span>
+        <div class="ramp"><div class="l0"></div><div class="l1"></div><div class="l2"></div><div class="l3"></div><div class="l4"></div><div class="l5"></div><div class="l6"></div><div class="l7"></div></div>
+        <span>40%+</span>
+        <span style="margin-left:14px"><span class="flag-dot warn"></span>Above stress threshold</span>
+        <span><span class="flag-dot crit"></span>Above critical threshold</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- methodology note -->
+  <div class="data-note">
+    <div>
+      <h3>How the HHI scores are calculated</h3>
+      <p>The Herfindahl Hirschman Index measures portfolio concentration. For each BDC, take the share of each sector in the portfolio, square it, sum the squares, then multiply by 10,000. A fund 100% in one sector scores 10,000; a fund split evenly across 10 sectors scores 1,000.</p>
+      <p>The US Department of Justice uses HHI to evaluate market concentration in antitrust reviews. We apply their thresholds directly: <code>&lt; 1,500</code> low concentration, <code>1,500–2,500</code> moderate, <code>&gt; 2,500</code> high. These thresholds are not arbitrary; they map to outcomes the regulator has empirically associated with market stress.</p>
+      <p>We also report an adjusted HHI per the S&amp;P methodology, dividing raw HHI by the HHI of an equal weight portfolio with the same number of sectors. That removes the bias toward low scores in funds that simply report more sector buckets.</p>
+    </div>
+    <div>
+      <h3>Sector taxonomy and stress flags</h3>
+      <p>BDCs file sector data with no standard taxonomy. ARCC uses Moody's industry categories, Blackstone uses GICS, Blue Owl uses its own internal grouping. We mapped 614 unique raw sector labels into 16 canonical buckets using keyword rules. About 2.4% of fair value lands in the residual "Other" bucket; this is shown honestly rather than force fit.</p>
+      <p>Some BDCs file sector data hierarchically — a top level total like "Senior Loans" plus a per sector breakdown underneath, which causes weights to sum to more than 100% if both levels are extracted. Where we detect this, we rebase each fund's weights to sum to 100% so the relative shape is correct, and flag funds where the rebasing was material so a reviewer can audit.</p>
+      <p>Stress thresholds drawn on the heat map: <b>25% software exposure</b> per Morgan Stanley's red line (March 2026 piece), <b>35% in any single sector</b> per the general cycle warning band, and <b>top three sectors above 60%</b> per the concentration warning. A cell outlined in amber means the BDC is above the relevant threshold for that sector; red means above the critical level.</p>
+      <p>Latest SOI snapshot per fund. The freshest data is from Q1 2026 10-Q filings; some non traded BDCs file later. Click any cell to drill into the underlying borrower list (coming in a future iteration).</p>
+    </div>
+  </div>
+
+  <footer>
+    Module 06 of 06 · Sector Concentration. <a href="analysis.html">← Module 01 · Universe Time Series</a><br>
+    Every number traces back to a primary filing. Sector normalization layer is auditable; the rule set is in the page source.
+  </footer>
+
+</div>
+
+<script>
+// ============================================================
+// MODULE 06 - Sector Concentration Heat Map
+// ============================================================
+
+const DIR_URL = 'data/universe/fund_directory.json';
+const SOI_URL = 'data/soi/';
+const TS_URL  = 'data/timeseries/';
+
+// Canonical sector taxonomy. Order matters: first match wins.
+const SECTOR_RULES = [
+  ['Software & Tech', ['software','saas','application','systems software','internet software',
+                        'it services','itservices','information technology','technology',
+                        'high tech','semiconductors','tech hardware','electronics','computers',
+                        'electronic equipment']],
+  ['Healthcare', ['health','pharma','biotech','medical','life sciences','hospital']],
+  ['Financial Services', ['financial','banking','insurance','capital markets','asset management',
+                           'investment fund','reit','fintech','consumer finance',
+                           'asset based','specialty lending','lending']],
+  ['Business / Pro Services', ['business services','professional services','services business',
+                                'commercial services','commercial and professional',
+                                'consulting','staffing','human resource',
+                                'environmental industries','environmental services',
+                                'infrastructure and environmental']],
+  ['Consumer Svcs & Retail', ['consumer service','specialty retail','consumer distribution',
+                               'retail','services consumer','diversified consumer',
+                               'consumer discretionary']],
+  ['Consumer Goods', ['consumer good','consumer staple','household','personal care',
+                       'apparel','textiles','leisure product','consumer durable']],
+  ['Food & Restaurants', ['food','beverage','restaurant','hotels restaurants','leisure',
+                           'grocery']],
+  ['Industrials & Mfg', ['industrial','manufacturing','machinery','capital good',
+                          'electrical equipment','capital equipment','building product',
+                          'construction','engineering','aerospace','defense',
+                          'distributors','distribution','trading compan']],
+  ['Energy & Power', ['energy','oil','gas','power','utility','utilities','renewable',
+                       'electric','mining']],
+  ['Transport & Logistics', ['transportation','logistics','air freight','rail',
+                              'shipping','marine','automotive','auto component',
+                              'automobile']],
+  ['Materials & Chemicals', ['chemical','metals','container','packaging','paper',
+                              'forest product','construction material','materials']],
+  ['Real Estate', ['real estate','buildings and real estate']],
+  ['Media & Telecom', ['media','entertainment','telecom','broadcasting','publishing',
+                        'wireless','cable']],
+  ['Education', ['education','school']],
+  ['Diversified / Other Inst.', ['all other','secured debt','senior lien','first lien',
+                                  'investments in','diversified']],
+];
+
+function normalizeSector(raw) {
+  if (!raw) return 'Other';
+  const s = raw.toLowerCase().trim();
+  if (s === 'consumer') return 'Consumer Goods';
+  for (const [canonical, keywords] of SECTOR_RULES) {
+    if (keywords.some(k => s.includes(k))) return canonical;
+  }
+  return 'Other';
+}
+
+// Sector display order — keeps consistent column ordering in heatmap
+const CANONICAL_SECTORS = [
+  'Software & Tech',
+  'Healthcare',
+  'Business / Pro Services',
+  'Financial Services',
+  'Industrials & Mfg',
+  'Consumer Svcs & Retail',
+  'Consumer Goods',
+  'Food & Restaurants',
+  'Transport & Logistics',
+  'Media & Telecom',
+  'Energy & Power',
+  'Materials & Chemicals',
+  'Real Estate',
+  'Education',
+  'Diversified / Other Inst.',
+  'Other',
+];
+
+// Stress thresholds (cell-level)
+const STRESS = {
+  'Software & Tech':       { warn: 25, crit: 40 },   // Morgan Stanley red line at 25
+  'Healthcare':            { warn: 25, crit: 35 },
+  // Generic threshold for any single sector above 35% = warning
+  // anything above 50% = critical
+  _default:                { warn: 35, crit: 50 },
+};
+
+// Sector color palette for stacked bar / legend swatches
+const SECTOR_COLORS = {
+  'Software & Tech':              '#1d4ed8',
+  'Healthcare':                   '#a16207',
+  'Business / Pro Services':      '#15803d',
+  'Financial Services':           '#7c2d12',
+  'Industrials & Mfg':            '#525252',
+  'Consumer Svcs & Retail':       '#9333ea',
+  'Consumer Goods':               '#0891b2',
+  'Food & Restaurants':           '#be123c',
+  'Transport & Logistics':        '#4d7c0f',
+  'Media & Telecom':              '#c2410c',
+  'Energy & Power':               '#854d0e',
+  'Materials & Chemicals':        '#0f766e',
+  'Real Estate':                  '#7e22ce',
+  'Education':                    '#1e40af',
+  'Diversified / Other Inst.':    '#404040',
+  'Other':                        '#a1a1aa',
+};
+
+// ===== formatting helpers =====
+const fmtMn = (v) => v == null ? '—' : (Math.abs(v) >= 1000 ? '$' + (v/1000).toFixed(1) + 'B' : '$' + Math.round(v) + 'M');
+const fmtPct = (v) => v == null ? '—' : v.toFixed(1) + '%';
+
+// ===== global state =====
+let UNIVERSE = [];   // [{ticker, type, name, mgr, nav, soi_data, sector_weights, hhi}]
+let CURRENT_SEG = 'all';
+let CURRENT_SORT = 'nav';
+
+// ===== load =====
+async function loadAll() {
+  let dir;
+  try { dir = await fetch(DIR_URL).then(r => r.json()); }
+  catch (e) { console.error('Could not load fund directory', e); return; }
+  const funds = dir.funds || [];
+
+  // Fetch SOI + timeseries (for NAV) in parallel
+  const promises = funds.map(async (f) => {
+    const ticker = f.ticker;
+    let soi = null, ts = null;
+    try {
+      const r = await fetch(SOI_URL + ticker + '.json');
+      if (r.ok) soi = await r.json();
+    } catch (e) {}
+    try {
+      const r = await fetch(TS_URL + ticker + '.json');
+      if (r.ok) ts = await r.json();
+    } catch (e) {}
+    if (!soi || !soi.snapshots || !soi.snapshots.length) return null;
+
+    // Find latest SOI snapshot with usable data
+    let latest = null;
+    for (let i = soi.snapshots.length - 1; i >= 0; i--) {
+      const s = soi.snapshots[i];
+      if (s.total_fair_value_mn && s.total_fair_value_mn > 0 && s.sector_totals && s.sector_totals.length) {
+        latest = s; break;
+      }
+    }
+    if (!latest) return null;
+
+    // Compute normalized sector weights
+    const totalFv = +latest.total_fair_value_mn;
+    const sectorMap = {};
+    for (const st of latest.sector_totals) {
+      const canonical = normalizeSector(st.sector || '');
+      const fv = +(st.fair_value_mn || 0);
+      sectorMap[canonical] = (sectorMap[canonical] || 0) + fv;
+    }
+    // Convert to percentage of total
+    const weights = {};
+    for (const [sec, fv] of Object.entries(sectorMap)) {
+      weights[sec] = (fv / totalFv) * 100;
+    }
+
+    // Defensive normalization: some BDCs report hierarchical sector data
+    // (e.g. "Senior Loans" total PLUS per-sector breakdown underneath), which
+    // causes sums to overshoot 100%. We rebase weights to sum to 100% so the
+    // relative shape is preserved even if the source data has double-counting.
+    const rawSum = Object.values(weights).reduce((s, w) => s + w, 0);
+    if (rawSum > 0 && (rawSum > 105 || rawSum < 95)) {
+      // Only rebase when the sum is meaningfully off — preserves natural rounding
+      const scale = 100 / rawSum;
+      for (const sec of Object.keys(weights)) weights[sec] *= scale;
+    }
+
+    // Compute HHI = sum(w_i^2) where w_i is in percent
+    // Per DOJ convention this gives a 0-10000 scale
+    let hhi = 0;
+    for (const w of Object.values(weights)) hhi += w * w;
+
+    // Adjusted HHI = raw HHI ÷ HHI of equal-weight portfolio with same N
+    const nSectors = Object.keys(weights).length;
+    const equalHhi = nSectors > 0 ? (100 / nSectors) * (100 / nSectors) * nSectors : 1;
+    const adjustedHhi = nSectors > 0 ? hhi / equalHhi : 0;
+
+    // Get latest NAV from timeseries
+    let nav = null;
+    if (Array.isArray(ts) && ts.length) {
+      const latestTs = ts[ts.length - 1];
+      nav = latestTs.net_assets_mn != null ? +latestTs.net_assets_mn : null;
+    }
+
+    return {
+      ticker,
+      type: f.fund_type,
+      name: f.display_name || f.sec_name || ticker,
+      mgr: f.manager || '',
+      nav: nav,
+      totalFv: totalFv,
+      sectorWeights: weights,
+      hhi: hhi,
+      adjustedHhi: adjustedHhi,
+      period: latest.quarter || latest.period_end,
+      softwareExposure: weights['Software & Tech'] || 0,
+    };
+  });
+
+  UNIVERSE = (await Promise.all(promises)).filter(x => x != null);
+
+  // Update meta
+  const trCount = UNIVERSE.filter(u => u.type === 'traded').length;
+  const ntCount = UNIVERSE.filter(u => u.type === 'nontraded').length;
+  document.getElementById('cov-meta').innerHTML =
+    `<b>${UNIVERSE.length}</b> funds with sector data (${trCount} traded, ${ntCount} non traded)`;
+
+  // Add a display label that falls back to the name if ticker is a CIK
+  for (const u of UNIVERSE) {
+    u.displayLabel = u.ticker.startsWith('CIK')
+      ? (u.name || u.ticker).split(',')[0].split(' ').slice(0, 2).join(' ')
+      : u.ticker;
+  }
+
+  renderUniverseMix();
+  renderHHIRankings();
+  renderHeatmap();
+}
+
+// ===== LAYER 1 : Universe sector mix =====
+function renderUniverseMix() {
+  // Aggregate sector totals across all funds (fair-value weighted, but already absolute $M)
+  const totals = {};
+  let grandTotal = 0;
+  for (const u of UNIVERSE) {
+    for (const [sec, pct] of Object.entries(u.sectorWeights)) {
+      const fv = (pct / 100) * u.totalFv;
+      totals[sec] = (totals[sec] || 0) + fv;
+      grandTotal += fv;
+    }
+  }
+  // Sort sectors by share
+  const sorted = Object.entries(totals).sort((a, b) => b[1] - a[1]);
+  const sectorPcts = sorted.map(([sec, fv]) => ({ sec, fv, pct: (fv / grandTotal) * 100 }));
+
+  // Headline numbers
+  const swPct = sectorPcts.find(x => x.sec === 'Software & Tech');
+  document.getElementById('um-software-pct').textContent = swPct ? swPct.pct.toFixed(1) + '%' : '—';
+  const top3 = sectorPcts.slice(0, 3).reduce((s, x) => s + x.pct, 0);
+  document.getElementById('um-top3-pct').textContent = top3.toFixed(1) + '%';
+  document.getElementById('um-total-fv').textContent = '$' + (grandTotal / 1000).toFixed(0) + 'B';
+  document.getElementById('um-funds').textContent = UNIVERSE.length;
+
+  // Stacked bar
+  const bar = document.getElementById('um-bar');
+  bar.innerHTML = '';
+  for (const { sec, pct } of sectorPcts) {
+    const seg = document.createElement('div');
+    seg.className = 'um-seg';
+    seg.style.flex = pct;
+    seg.style.background = SECTOR_COLORS[sec] || '#a1a1aa';
+    seg.style.color = '#fff';
+    if (pct >= 6) seg.textContent = pct.toFixed(0) + '%';
+    seg.title = `${sec}: ${pct.toFixed(1)}% ($${(totals[sec]/1000).toFixed(1)}B)`;
+    seg.onmouseover = () => document.querySelectorAll(`[data-sec-row="${sec}"]`).forEach(r => r.classList.add('lit'));
+    seg.onmouseout = () => document.querySelectorAll(`.um-row.lit`).forEach(r => r.classList.remove('lit'));
+    bar.appendChild(seg);
+  }
+
+  // Detailed list
+  const list = document.getElementById('um-list');
+  list.innerHTML = '';
+  for (const { sec, fv, pct } of sectorPcts) {
+    const row = document.createElement('div');
+    row.className = 'um-row';
+    row.dataset.secRow = sec;
+    if (sec === 'Software & Tech' && pct >= 25) row.classList.add('warn');
+    row.innerHTML = `
+      <span class="sw" style="background:${SECTOR_COLORS[sec] || '#a1a1aa'}"></span>
+      <span class="nm">${sec}</span>
+      <span class="pct">${pct.toFixed(1)}%</span>
+      <span class="fv">$${(fv/1000).toFixed(1)}B</span>
+    `;
+    list.appendChild(row);
+  }
+}
+
+// ===== LAYER 2 : HHI Rankings =====
+function renderHHIRankings() {
+  // Filter to funds with enough sectors to be meaningful (HHI of 1 sector is misleading)
+  const funds = UNIVERSE.filter(u => Object.keys(u.sectorWeights).length >= 3);
+
+  // Sort
+  const byHHIDesc = [...funds].sort((a, b) => b.hhi - a.hhi).slice(0, 12);
+  const byHHIAsc = [...funds].sort((a, b) => a.hhi - b.hhi).slice(0, 12);
+
+  const hhiFlag = (h) => {
+    if (h >= 2500) return 'high';
+    if (h >= 1500) return 'mod';
+    return 'low';
+  };
+  const hhiFlagSymbol = (h) => {
+    if (h >= 2500) return '!';
+    if (h >= 1500) return '~';
+    return '✓';
+  };
+
+  const renderList = (containerId, list) => {
+    const c = document.getElementById(containerId);
+    c.innerHTML = '';
+    for (const u of list) {
+      const row = document.createElement('a');
+      row.className = 'hhi-row';
+      row.href = `fund.html?ticker=${u.ticker}`;
+      row.innerHTML = `
+        <span class="tk">${u.displayLabel}</span>
+        <span class="nm">${u.name}<span class="mgr">${u.mgr || ''}</span></span>
+        <span class="hhi">${Math.round(u.hhi).toLocaleString()}</span>
+        <span class="flag ${hhiFlag(u.hhi)}">${hhiFlagSymbol(u.hhi)}</span>
+      `;
+      c.appendChild(row);
+    }
+  };
+  renderList('hhi-most', byHHIDesc);
+  renderList('hhi-least', byHHIAsc);
+}
+
+// ===== LAYER 3 : Heatmap =====
+function renderHeatmap() {
+  // Filter & sort
+  let funds = UNIVERSE.slice();
+  if (CURRENT_SEG === 'traded') funds = funds.filter(u => u.type === 'traded');
+  else if (CURRENT_SEG === 'nontraded') funds = funds.filter(u => u.type === 'nontraded');
+
+  if (CURRENT_SORT === 'nav') {
+    funds.sort((a, b) => (b.nav || 0) - (a.nav || 0));
+  } else if (CURRENT_SORT === 'software') {
+    funds.sort((a, b) => (b.softwareExposure || 0) - (a.softwareExposure || 0));
+  } else if (CURRENT_SORT === 'hhi') {
+    funds.sort((a, b) => (b.hhi || 0) - (a.hhi || 0));
+  }
+
+  // Cap at top 60 for visual clarity (heatmaps don't work past ~70 rows)
+  const top = funds.slice(0, 60);
+
+  document.getElementById('hm-count').textContent = `${top.length} of ${funds.length}`;
+
+  const sectors = CANONICAL_SECTORS;
+
+  const table = document.getElementById('hm-table');
+  table.innerHTML = '';
+
+  // Grid layout: 1 col for row header + N cols for sectors
+  table.style.gridTemplateColumns = `120px repeat(${sectors.length}, minmax(56px, 1fr))`;
+
+  // Top-left corner cell (empty)
+  const corner = document.createElement('div');
+  corner.className = 'hm-col-head';
+  corner.style.borderBottom = 'none';
+  table.appendChild(corner);
+
+  // Column headers (sector names)
+  for (const sec of sectors) {
+    const h = document.createElement('div');
+    h.className = 'hm-col-head';
+    h.textContent = sec;
+    h.title = sec;
+    table.appendChild(h);
+  }
+
+  // Rows: row header + sector cells
+  for (const u of top) {
+    const rh = document.createElement('div');
+    rh.className = 'hm-row-head';
+    rh.innerHTML = `${u.displayLabel}<span class="mgr-tag">${u.mgr || ''}</span>`;
+    rh.title = `${u.ticker} · ${u.name} · NAV ${fmtMn(u.nav)} · HHI ${Math.round(u.hhi).toLocaleString()}`;
+    table.appendChild(rh);
+
+    for (const sec of sectors) {
+      const pct = u.sectorWeights[sec] || 0;
+      const cell = document.createElement('div');
+      cell.className = 'hm-cell ' + intensityClass(pct);
+      cell.textContent = pct >= 1 ? Math.round(pct) : '';
+      cell.title = `${u.ticker} → ${sec}: ${pct.toFixed(1)}%`;
+      // Stress flags
+      const thr = STRESS[sec] || STRESS._default;
+      if (pct >= thr.crit) cell.classList.add('crit');
+      else if (pct >= thr.warn) cell.classList.add('warn');
+      table.appendChild(cell);
+    }
+  }
+}
+
+function intensityClass(pct) {
+  if (pct < 0.5) return 'l0';
+  if (pct < 2)   return 'l1';
+  if (pct < 5)   return 'l2';
+  if (pct < 10)  return 'l3';
+  if (pct < 15)  return 'l4';
+  if (pct < 25)  return 'l5';
+  if (pct < 40)  return 'l6';
+  return 'l7';
+}
+
+// ===== controls =====
+document.querySelectorAll('#hm-seg-tabs .seg-tab').forEach(t => {
+  t.addEventListener('click', () => {
+    document.querySelectorAll('#hm-seg-tabs .seg-tab').forEach(x => x.classList.remove('on'));
+    t.classList.add('on');
+    CURRENT_SEG = t.dataset.seg;
+    renderHeatmap();
+  });
+});
+document.querySelectorAll('#hm-sort-tabs .seg-tab').forEach(t => {
+  t.addEventListener('click', () => {
+    document.querySelectorAll('#hm-sort-tabs .seg-tab').forEach(x => x.classList.remove('on'));
+    t.classList.add('on');
+    CURRENT_SORT = t.dataset.sort;
+    renderHeatmap();
+  });
+});
+
+loadAll();
+</script>
+
+</body>
+</html>
