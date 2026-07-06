@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About us — Credit Canon</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{--ink:#141416;--paper:#faf9f7;--line:#e7e5e0;--muted:#6b6a66;--mono:'Roboto Mono',ui-monospace,monospace;--sans:'Inter',system-ui,sans-serif}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:var(--sans);color:var(--ink);background:var(--paper);-webkit-font-smoothing:antialiased}
+  a{color:inherit;text-decoration:none}
+  .navbar{background:#fff;border-bottom:.5px solid var(--line);padding:12px 22px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+  .logo{display:flex;align-items:center;gap:9px}
+  .logo-mark{width:24px;height:24px;background:var(--ink);border-radius:6px;display:flex;align-items:center;justify-content:center}
+  .logo-mark svg{width:14px;height:14px;fill:#fff}
+  .logo-text{font-family:var(--mono);font-size:17px;letter-spacing:-.5px}
+  .logo-text b{font-weight:500}.logo-text span{font-weight:400}
+  .nav-links{display:flex;align-items:center;gap:20px;font-size:13.5px;margin-left:14px}
+  .nav-links a{color:var(--muted)}
+  .nav-links a.on{color:var(--ink);font-weight:600}
+  .nav-right{display:flex;align-items:center;gap:9px;margin-left:auto}
+  .btn-ghost{font-size:13px;border:.5px solid #cbc9c2;padding:7px 14px;border-radius:999px;background:none;cursor:pointer}
+  .btn-primary{font-size:13px;background:var(--ink);color:#fff;padding:8px 16px;border-radius:999px;border:none;cursor:pointer}
+  .uc{min-height:70vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:40px 22px}
+  .uc-mark{width:52px;height:52px;background:var(--ink);border-radius:12px;display:flex;align-items:center;justify-content:center;margin-bottom:22px}
+  .uc-mark svg{width:28px;height:28px;fill:#fff}
+  .uc-kicker{font-family:var(--mono);font-size:12px;letter-spacing:1px;text-transform:uppercase;color:var(--muted);margin-bottom:12px}
+  .uc h1{font-size:34px;font-weight:600;letter-spacing:-.5px;margin-bottom:14px}
+  .uc p{font-size:15px;color:var(--muted);max-width:460px;line-height:1.6}
+  .uc-back{margin-top:26px;font-family:var(--mono);font-size:13px;color:var(--ink);border-bottom:1.5px solid var(--ink);padding-bottom:2px}
+</style>
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html" class="logo">
+      <span class="logo-mark"><svg viewBox="0 0 16 16"><rect x="2" y="9" width="3" height="5"/><rect x="6.5" y="5" width="3" height="9"/><rect x="11" y="2" width="3" height="12"/></svg></span>
+      <span class="logo-text"><b>Credit</b><span>Canon</span></span>
+    </a>
+    <div class="nav-links">
+      <a class="nav-link" href="index.html">US BDC Universe</a>
+      <a class="nav-link" href="fund.html">Fund Deep Dive</a>
+      <a class="nav-link" href="compare.html">Compare</a>
+      <a class="nav-link" href="screener.html">Screener</a>
+      <a class="nav-link" href="analysis.html">Analysis</a>
+      <a class="nav-link" href="news.html">News</a>
+      <a class="nav-link on" href="about.html">About us</a>
+    </div>
+    <div class="nav-right">
+      <button class="btn-ghost">Sign in</button>
+      <button class="btn-primary">Get access</button>
+    </div>
+  </nav>
+
+  <section class="uc">
+    <div class="uc-mark"><svg viewBox="0 0 16 16"><rect x="2" y="9" width="3" height="5"/><rect x="6.5" y="5" width="3" height="9"/><rect x="11" y="2" width="3" height="12"/></svg></div>
+    <div class="uc-kicker">About us</div>
+    <h1>Under construction</h1>
+    <p>We're still writing this one. Credit Canon is being built in the open, and the story behind it is coming soon.</p>
+    <a class="uc-back" href="index.html">← Back to the universe</a>
+  </section>
+</body>
+</html>
