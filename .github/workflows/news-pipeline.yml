@@ -47,6 +47,13 @@ jobs:
         run: python scrapers/build_stats.py
         continue-on-error: true
 
+      - name: Fill SEC CIKs (once / when needed)
+        env:
+          CC_REPO_ROOT: ${{ github.workspace }}
+          SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT }}
+        run: python scrapers/build_ciks.py
+        continue-on-error: true
+
       - name: Press releases (SEC filings)
         env:
           CC_REPO_ROOT: ${{ github.workspace }}
