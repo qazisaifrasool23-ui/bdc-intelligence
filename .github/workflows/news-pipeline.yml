@@ -1,0 +1,76 @@
+name: News pipeline
+
+# Runs every night. GitHub cron is UTC. 02:00 UTC = 9:00 PM US Eastern (winter);
+# during daylight time it lands at 10:00 PM ET. Adjust the hour if you want it
+# pinned to a different local time.
+on:
+  schedule:
+    - cron: "0 2 * * *"
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "press mode: base (full history) or incremental (nightly)"
+        required: true
+        default: "incremental"
+        type: choice
+        options: [incremental, base]
+      rebuild_stats:
+        description: "recompute universe stats"
+        required: false
+        default: "false"
+
+concurrency:
+  group: news-pipeline
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r scrapers/requirements.txt
+
+      - name: Universe stats (base or when requested)
+        if: ${{ github.event.inputs.mode == 'base' || github.event.inputs.rebuild_stats == 'true' || github.event_name == 'schedule' }}
+        env:
+          CC_REPO_ROOT: ${{ github.workspace }}
+        run: python scrapers/build_stats.py
+        continue-on-error: true
+
+      - name: Press releases (SEC filings)
+        env:
+          CC_REPO_ROOT: ${{ github.workspace }}
+          SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          CC_LLM_CALL_CAP: "400"
+        run: python scrapers/sec_press.py --mode "${{ github.event.inputs.mode || 'incremental' }}"
+
+      - name: News & opinion (web)
+        env:
+          CC_REPO_ROOT: ${{ github.workspace }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          CC_LLM_CALL_CAP: "150"
+        run: python scrapers/news_opinion.py
+        continue-on-error: true
+
+      - name: Commit updated data
+        run: |
+          git config user.name "creditcanon-bot"
+          git config user.email "bot@creditcanon.com"
+          git add data/news
+          if git diff --staged --quiet; then
+            echo "no news changes"
+          else
+            git commit -m "news: nightly refresh ($(date -u +%Y-%m-%dT%H:%MZ))"
+            git push
+          fi
