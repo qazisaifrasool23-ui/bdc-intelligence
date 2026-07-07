@@ -10,6 +10,7 @@ plain for a clean press feed.
 
 import os
 import re
+import time
 import json
 import argparse
 from datetime import datetime, timezone, timedelta
@@ -30,7 +31,7 @@ MONTHS_BACK = 6
 
 QUERIES = [
     "private credit", "business development company BDC", "direct lending",
-    "non-traded BDC redemptions", "private credit default", "BDC dividend",
+    "BDC dividend",
 ]
 BROWSER_UA = "Mozilla/5.0 (compatible; CreditCanonBot/1.0; +https://creditcanon.com)"
 
@@ -158,12 +159,26 @@ def verdict_for(llm, article, ground_truth):
         return "unclear", ""
 
 
+def gdelt_fetch(q):
+    """One GDELT call, honouring its ~1 request / 5s limit with a long 429 backoff."""
+    for attempt in range(5):
+        js = http_get(gdelt_url(q), timeout=40, retries=1, expect="json", headers={"User-Agent": BROWSER_UA})
+        if js is not None:
+            return js
+        wait = 6 + attempt * 6  # 6s, 12s, 18s ... GDELT is strict on rate
+        log.info("GDELT throttled on '%s' — waiting %ds", q, wait)
+        time.sleep(wait)
+    return None
+
+
 def collect():
     cand = {}
-    queries = QUERIES + ["%s BDC" % t for t in MARQUEE[:6]]
+    queries = QUERIES + ["%s BDC" % t for t in MARQUEE[:4]]
     gd_hits = 0
-    for q in queries:
-        js = http_get(gdelt_url(q), timeout=30, retries=3, expect="json", headers={"User-Agent": BROWSER_UA})
+    for i, q in enumerate(queries):
+        if i:
+            time.sleep(6)  # stay under GDELT's ~1 req / 5s ceiling
+        js = gdelt_fetch(q)
         for it in parse_gdelt(js):
             it["published"] = to_iso(it["pub"], "gdelt")
             if within_window(it["published"]):
