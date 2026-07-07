@@ -1,21 +1,11 @@
 """
-news_opinion.py — "News & opinion" feed with a data-alignment verdict.
+news_opinion.py — "News & opinion" feed.
 
-Source: Google News RSS (free, stable, no key, no blocking). It surfaces the
-headlines of LinkedIn/Medium/Bloomberg/trade press legitimately. Direct scraping
-of those sites is fragile and against their terms, so we don't.
-
-For each recent article (last 6 months) we ask the LLM whether the article's
-claims about private credit / BDCs point in the SAME direction as Credit Canon's
-own dataset, and attach a verdict ribbon: converges / diverges / mixed / unread.
-
-IMPORTANT framing (baked into the prompt): the verdict is "consistent with vs.
-diverges from OUR dataset" as an observation, and must name the point of
-difference. It is never a verdict on the publication's credibility.
-
-Output:
-    data/news/opinion/index.json  -> [{title, source, url, published, verdict, note}]
-    data/news/opinion/_state.json -> {last_run, seen: {url: true}}
+Primary source: GDELT Doc API (free, no key, built for server-side access and far
+more reliable from datacenter IPs than Google News RSS). Google News RSS is kept
+as a fallback. Collection needs no LLM; if ANTHROPIC_API_KEY is set, each article
+also gets a converges/diverges verdict vs. our dataset, otherwise it's stored
+plain for a clean press feed.
 """
 
 import os
@@ -23,7 +13,7 @@ import re
 import json
 import argparse
 from datetime import datetime, timezone, timedelta
-from urllib.parse import quote_plus
+from urllib.parse import quote_plus, quote
 from email.utils import parsedate_to_datetime
 import xml.etree.ElementTree as ET
 
@@ -39,14 +29,29 @@ MAX_ITEMS = 120
 MONTHS_BACK = 6
 
 QUERIES = [
-    "private credit",
-    "business development company BDC",
-    "direct lending private credit",
-    "non-traded BDC redemptions",
-    "private credit non-accrual",
-    "BDC NAV mark",
-    "private credit default",
+    "private credit", "business development company BDC", "direct lending",
+    "non-traded BDC redemptions", "private credit default", "BDC dividend",
 ]
+BROWSER_UA = "Mozilla/5.0 (compatible; CreditCanonBot/1.0; +https://creditcanon.com)"
+
+
+def gdelt_url(q):
+    phrase = '"%s"' % q if " " in q else q
+    return ("https://api.gdeltproject.org/api/v2/doc/doc?query=%s"
+            "&mode=artlist&maxrecords=75&format=json&timespan=%dmonths&sort=datedesc"
+            % (quote(phrase + " sourcelang:english"), MONTHS_BACK))
+
+
+def parse_gdelt(js):
+    items = []
+    arts = (js or {}).get("articles", []) if isinstance(js, dict) else []
+    for a in arts:
+        title, url = a.get("title"), a.get("url")
+        if not title or not url:
+            continue
+        items.append({"title": title.strip(), "url": url,
+                      "source": a.get("domain", ""), "pub": a.get("seendate", ""), "fmt": "gdelt"})
+    return items
 
 
 def rss_url(q):
@@ -57,58 +62,59 @@ def parse_rss(xml_text):
     items = []
     try:
         root = ET.fromstring(xml_text)
-    except Exception as e:
-        log.warning("rss parse error: %s", e)
+    except Exception:
         return items
     for it in root.iter("item"):
         def tx(tag):
             el = it.find(tag)
             return el.text if el is not None and el.text else ""
-        title = tx("title")
-        link = tx("link")
-        pub = tx("pubDate")
+        title, link, pub = tx("title"), tx("link"), tx("pubDate")
         src_el = it.find("source")
         source = src_el.text if src_el is not None and src_el.text else ""
         if not title or not link:
             continue
-        # strip trailing " - Source" that Google appends to titles
         clean = re.sub(r"\s+-\s+[^-]+$", "", title).strip()
-        items.append({"title": clean or title, "url": link, "source": source, "pub": pub})
+        items.append({"title": clean or title, "url": link, "source": source, "pub": pub, "fmt": "rss"})
     return items
 
 
-def within_window(pub):
+def to_iso(pub, fmt):
     try:
+        if fmt == "gdelt":
+            return datetime.strptime(pub[:15], "%Y%m%dT%H%M%S").replace(tzinfo=timezone.utc).isoformat()
         dt = parsedate_to_datetime(pub)
         if dt.tzinfo is None:
             dt = dt.replace(tzinfo=timezone.utc)
+        return dt.astimezone(timezone.utc).isoformat()
     except Exception:
-        return True  # keep if unparseable rather than silently drop
+        return ""
+
+
+def within_window(iso):
+    if not iso:
+        return True
+    try:
+        dt = datetime.fromisoformat(iso)
+    except Exception:
+        return True
     return dt >= datetime.now(timezone.utc) - timedelta(days=30 * MONTHS_BACK)
 
 
 def load_stats():
-    """Ground-truth facts for the LLM. Cheap counts/AUM always; deep stats if cached."""
     s = read_json(STATS_PATH, {})
     if not s:
         funds = load_funds()
         traded = sum(1 for f in funds if f["fund_type"] == "traded")
         aum = read_json(os.path.join(DATA_DIR, "aum_index.json"), {})
-        total_aum = 0
-        for v in (aum.get("funds", {}) or {}).values():
-            if isinstance(v, dict) and v.get("net_assets_mn"):
-                total_aum += v["net_assets_mn"]
-        s = {
-            "funds_total": len(funds),
-            "funds_traded": traded,
-            "funds_nontraded": len(funds) - traded,
-            "aum_bn": round(total_aum / 1000, 1) if total_aum else None,
-        }
+        total = sum(v["net_assets_mn"] for v in (aum.get("funds", {}) or {}).values()
+                    if isinstance(v, dict) and v.get("net_assets_mn"))
+        s = {"funds_total": len(funds), "funds_traded": traded,
+             "funds_nontraded": len(funds) - traded, "aum_bn": round(total / 1000, 1) if total else None}
     return s
 
 
 def stats_text(s):
-    lines = ["Credit Canon dataset (universe-scale, sourced from SEC filings):"]
+    lines = ["Credit Canon dataset (universe-scale, from SEC filings):"]
     if s.get("funds_total"):
         lines.append("- Coverage: %s BDCs (%s traded, %s non-traded)."
                      % (s.get("funds_total"), s.get("funds_traded"), s.get("funds_nontraded")))
@@ -117,54 +123,63 @@ def stats_text(s):
     for k, label in (("median_non_accrual", "median non-accrual rate"),
                      ("avg_pik", "average PIK share of income"),
                      ("median_yield", "median portfolio yield"),
-                     ("gates_active", "non-traded BDCs currently gating redemptions"),
-                     ("gates_total", "non-traded BDCs tracked for gate status")):
+                     ("gates_active", "non-traded BDCs currently gating redemptions")):
         if s.get(k) is not None:
             lines.append("- %s: %s." % (label, s[k]))
     return "\n".join(lines)
 
 
-def fetch_article_text(url):
-    raw = http_get(url, timeout=20, retries=2)
-    if not raw:
-        return ""
-    txt = re.sub(r"(?is)<(script|style|nav|header|footer).*?</\1>", " ", raw)
-    txt = re.sub(r"<[^>]+>", " ", txt)
-    txt = re.sub(r"\s+", " ", txt)
-    return txt[:5000]
-
-
 def verdict_for(llm, article, ground_truth):
-    """Return (verdict, note). verdict in converges/diverges/mixed/unread."""
     if not llm.available():
-        return "unread", "Awaiting analysis."
-    body = fetch_article_text(article["url"])
-    system = (
-        "You compare a news/opinion article about private credit or BDCs against a "
-        "reference dataset. Decide whether the article's directional claims are "
-        "CONSISTENT WITH or DIVERGE FROM the dataset. This is a statement about "
-        "agreement with our data, never a judgment of the publication's credibility. "
-        "Reply as strict JSON: {\"verdict\":\"converges|diverges|mixed|unclear\","
-        "\"note\":\"<=18 words naming the specific point of agreement or difference\"}."
-    )
-    prompt = (
-        "%s\n\nArticle title: %s\nSource: %s\n\nArticle text (may be truncated or "
-        "just a snippet):\n%s\n\nReturn only the JSON."
-        % (ground_truth, article["title"], article["source"], body or "(could not fetch full text; judge from the title)")
-    )
+        return "unread", ""
+    body = ""
+    raw = http_get(article["url"], timeout=20, retries=2, headers={"User-Agent": BROWSER_UA})
+    if raw:
+        body = re.sub(r"(?is)<(script|style|nav|header|footer).*?</\1>", " ", raw)
+        body = re.sub(r"<[^>]+>", " ", body)
+        body = re.sub(r"\s+", " ", body)[:5000]
+    system = ("You compare a news/opinion article about private credit or BDCs against a reference "
+              "dataset. Decide whether the article's directional claims are CONSISTENT WITH or DIVERGE "
+              "FROM the dataset. About agreement with our data, never a judgment of the publication. "
+              "Reply strict JSON: {\"verdict\":\"converges|diverges|mixed|unclear\",\"note\":\"<=18 words\"}.")
+    prompt = ("%s\n\nArticle title: %s\nSource: %s\n\nArticle text (may be truncated):\n%s\n\nReturn only the JSON."
+              % (ground_truth, article["title"], article["source"], body or "(title only)"))
     out = llm.complete(system, prompt, max_tokens=120)
     if not out:
-        return "unread", "Analysis unavailable."
+        return "unread", ""
     try:
         m = re.search(r"\{.*\}", out, re.S)
         obj = json.loads(m.group(0)) if m else {}
         v = str(obj.get("verdict", "unclear")).lower().strip()
         if v not in ("converges", "diverges", "mixed", "unclear"):
             v = "unclear"
-        note = str(obj.get("note", "")).strip()[:160] or "\u2014"
-        return v, note
+        return v, str(obj.get("note", "")).strip()[:160]
     except Exception:
-        return "unclear", "Could not parse analysis."
+        return "unclear", ""
+
+
+def collect():
+    cand = {}
+    queries = QUERIES + ["%s BDC" % t for t in MARQUEE[:6]]
+    gd_hits = 0
+    for q in queries:
+        js = http_get(gdelt_url(q), timeout=30, retries=3, expect="json", headers={"User-Agent": BROWSER_UA})
+        for it in parse_gdelt(js):
+            it["published"] = to_iso(it["pub"], "gdelt")
+            if within_window(it["published"]):
+                cand[it["url"]] = it
+                gd_hits += 1
+    log.info("GDELT returned %d articles", gd_hits)
+    if gd_hits < 20:
+        for q in QUERIES:
+            xml_text = http_get(rss_url(q), timeout=25, retries=2, headers={"User-Agent": BROWSER_UA})
+            if not xml_text:
+                continue
+            for it in parse_rss(xml_text):
+                it["published"] = to_iso(it["pub"], "rss")
+                if within_window(it["published"]):
+                    cand.setdefault(it["url"], it)
+    return cand
 
 
 def run():
@@ -174,48 +189,24 @@ def run():
     seen = state.get("seen", {})
     prior = read_json(INDEX_PATH, [])
     by_url = {a["url"]: a for a in prior}
-
     ground = stats_text(load_stats())
 
-    # Gather candidate articles across all queries (+ a few marquee-name queries).
-    candidates = {}
-    for q in QUERIES + ["%s BDC" % t for t in MARQUEE[:6]]:
-        xml_text = http_get(rss_url(q), timeout=25, retries=3)
-        if not xml_text:
-            continue
-        for it in parse_rss(xml_text):
-            if not within_window(it["pub"]):
-                continue
-            candidates[it["url"]] = it
-    log.info("collected %d candidate articles", len(candidates))
+    cand = collect()
+    log.info("collected %d unique candidate articles", len(cand))
 
     processed = 0
-    for url, it in candidates.items():
+    for url, it in cand.items():
         if url in seen:
             continue
         try:
             v, note = verdict_for(llm, it, ground)
-            pub_iso = it["pub"]
-            try:
-                pub_iso = parsedate_to_datetime(it["pub"]).astimezone(timezone.utc).isoformat()
-            except Exception:
-                pass
-            by_url[url] = {
-                "title": it["title"],
-                "source": it["source"],
-                "url": url,
-                "published": pub_iso,
-                "verdict": v,
-                "note": note,
-                "checked": now_iso(),
-            }
+            by_url[url] = {"title": it["title"], "source": it["source"], "url": url,
+                           "published": it.get("published", ""), "verdict": v, "note": note, "checked": now_iso()}
             seen[url] = True
             processed += 1
         except Exception as e:
             log.error("article failed (%s): %s", url, e)
-            continue
 
-    # Keep the most recent MAX_ITEMS; re-verdict of old items is skipped (seen).
     items = sorted(by_url.values(), key=lambda a: a.get("published", ""), reverse=True)[:MAX_ITEMS]
     atomic_write_json(INDEX_PATH, items)
     atomic_write_json(STATE_PATH, {"last_run": now_iso(), "seen": seen})
