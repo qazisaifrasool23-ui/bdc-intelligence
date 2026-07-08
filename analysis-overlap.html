@@ -1,0 +1,991 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Borrower Overlap · Analysis · Credit Canon</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&family=Roboto+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#fafafa; --bg2:#fff; --bg3:#f4f4f5; --bg4:#fafafa;
+  --ink:#0a0a0a; --ink2:#3f3f46; --ink3:#71717a; --ink4:#a1a1aa;
+  --line:#e4e4e7; --line2:#d4d4d8;
+  --hl:#fde68a; --good:#15803d; --bad:#b91c1c; --amber:#a16207;
+  --grid:#f1f1f4;
+  --mono:"Roboto Mono",ui-monospace,monospace;
+  --sans:"Roboto","Inter","Segoe UI",sans-serif;
+
+  /* heatmap intensity ramp · same monochrome scheme as Module 6 */
+  --hm0:#fafafa; --hm1:#f4f4f5; --hm2:#e4e4e7; --hm3:#d4d4d8;
+  --hm4:#a1a1aa; --hm5:#71717a; --hm6:#3f3f46; --hm7:#0a0a0a;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:var(--bg);font-family:var(--sans);color:var(--ink);font-size:14px;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+
+.navbar{height:60px;background:#fff;border-bottom:1px solid var(--line);display:flex;align-items:center;padding:0 28px;position:sticky;top:0;z-index:300}
+.logo{display:flex;align-items:center;gap:10px;margin-right:48px;text-decoration:none}
+.logo-mark{width:28px;height:28px;background:var(--ink);border-radius:7px;display:flex;align-items:center;justify-content:center}
+.logo-mark svg{width:15px;height:15px;fill:#fff}
+.logo-text{font-size:15px;font-weight:600;letter-spacing:-.3px}
+.logo-text span{font-weight:400}
+.nav-links{display:flex;align-items:center;gap:2px;margin:0 auto}
+.nav-link{padding:8px 14px;font-size:13.5px;font-weight:500;color:var(--ink2);border-radius:6px;white-space:nowrap}
+.nav-link:hover{color:var(--ink);background:var(--bg3)}
+.nav-link.on{color:var(--ink);font-weight:600}
+.nav-right{display:flex;align-items:center;gap:14px}
+.btn-outline{padding:8px 4px;background:transparent;color:var(--ink);font-size:13.5px;font-weight:500}
+.btn-primary{height:34px;padding:0 18px;border-radius:999px;background:var(--ink);color:#fff;font-size:13px;font-weight:500}
+
+.wrap{max-width:1340px;margin:0 auto;padding:36px 24px 100px}
+@media(max-width:780px){.wrap{padding:24px 14px 60px}}
+
+.breadcrumb{display:flex;align-items:center;gap:8px;font-family:var(--mono);font-size:10.5px;letter-spacing:.5px;text-transform:uppercase;color:var(--ink3);margin-bottom:18px}
+.breadcrumb a:hover{color:var(--ink)}
+.breadcrumb .sep{color:var(--ink4)}
+.breadcrumb b{color:var(--ink2);font-weight:500}
+
+.page-head{margin-bottom:32px}
+.page-head h1{font-size:38px;line-height:1.08;letter-spacing:-1px;font-weight:600;margin-bottom:14px;max-width:920px}
+@media(max-width:780px){.page-head h1{font-size:28px;letter-spacing:-.5px}}
+.page-head .standfirst{font-size:15px;line-height:1.6;color:var(--ink2);max-width:780px}
+.page-head .meta-row{font-family:var(--mono);font-size:10.5px;color:var(--ink3);letter-spacing:.3px;line-height:1.7;margin-top:14px;border-top:1px solid var(--line);padding-top:14px}
+.page-head .meta-row b{color:var(--ink2);font-weight:600}
+
+.module-switcher{display:flex;flex-wrap:wrap;gap:6px;padding:14px 18px;background:#fff;border:1px solid var(--line);border-radius:12px;margin-bottom:28px;font-family:var(--mono);font-size:11px;letter-spacing:.3px}
+.module-switcher .label{color:var(--ink3);letter-spacing:.5px;text-transform:uppercase;font-size:9.5px;font-weight:500;margin-right:8px;padding-top:3px}
+.module-switcher .mod{padding:5px 11px;border-radius:999px;color:var(--ink3);background:var(--bg3);font-weight:500;text-transform:uppercase;letter-spacing:.4px;font-size:10px}
+.module-switcher .mod.on{color:#fff;background:var(--ink);font-weight:600}
+.module-switcher .mod.done{color:var(--ink2);background:var(--bg3)}
+.module-switcher .mod.done:hover{color:var(--ink);background:#e4e4e7}
+.module-switcher .mod.soon{color:var(--ink4);background:transparent;border:1px dashed var(--line2);cursor:default}
+
+.section{margin-bottom:48px}
+.section-head{display:flex;align-items:end;justify-content:space-between;margin-bottom:14px;padding-bottom:10px;border-bottom:1px solid var(--line);flex-wrap:wrap;gap:8px}
+.section-head .left{display:flex;align-items:end;gap:14px;flex-wrap:wrap}
+.section-head .layer{font-family:var(--mono);font-size:9.5px;letter-spacing:.6px;text-transform:uppercase;color:var(--ink3);font-weight:500;background:var(--bg3);padding:3px 9px;border-radius:999px;line-height:1.3}
+.section-head h2{font-size:20px;font-weight:600;letter-spacing:-.4px;color:var(--ink)}
+.section-head .sub{font-size:12px;color:var(--ink3);line-height:1.5;max-width:520px;text-align:right}
+
+/* === LAYER 1: HEADLINE === */
+.pulse-card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:24px;margin-bottom:24px}
+.pulse-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-bottom:18px;padding-bottom:18px;border-bottom:1px solid var(--line)}
+@media(max-width:780px){.pulse-stats{grid-template-columns:repeat(2,1fr);gap:18px}}
+.pulse-stat .v{font-family:var(--mono);font-size:28px;font-weight:600;color:var(--ink);letter-spacing:-.5px;line-height:1.1}
+.pulse-stat .l{font-family:var(--mono);font-size:9.5px;letter-spacing:.5px;text-transform:uppercase;color:var(--ink3);margin-top:6px}
+.pulse-stat .sl{font-family:var(--mono);font-size:11px;color:var(--ink2);margin-top:4px}
+
+.top-pairs{margin-top:8px}
+.top-pairs h4{font-family:var(--mono);font-size:9.5px;letter-spacing:.5px;text-transform:uppercase;color:var(--ink3);font-weight:500;margin-bottom:10px;display:flex;justify-content:space-between}
+.top-pairs h4 span{color:var(--ink2)}
+.pair-list{display:grid;grid-template-columns:repeat(2,1fr);gap:6px 18px}
+@media(max-width:780px){.pair-list{grid-template-columns:1fr}}
+.pair-row{display:grid;grid-template-columns:1fr 70px;gap:8px;align-items:center;padding:7px 0;font-size:12px;border-bottom:1px dashed var(--line)}
+.pair-row .pair-names{display:flex;align-items:center;gap:8px;overflow:hidden}
+.pair-row .tk{font-family:var(--mono);font-weight:600;font-size:11.5px;color:var(--ink);white-space:nowrap}
+.pair-row .arrow{color:var(--ink4);font-family:var(--mono);font-size:10px}
+.pair-row .ov{font-family:var(--mono);font-size:12px;font-weight:600;text-align:right;color:var(--ink)}
+.pair-row .ov.cross{color:var(--bad)}  /* cross-platform pairs are the interesting story */
+.pair-row .sf{font-family:var(--mono);font-size:9px;color:var(--ink3);letter-spacing:.3px;text-transform:uppercase}
+
+/* === LAYER 2: HEATMAP === */
+.heatmap-card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px;overflow:hidden}
+.hm-controls{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:18px;padding-bottom:14px;border-bottom:1px solid var(--line)}
+.hm-controls .label{font-family:var(--mono);font-size:9.5px;letter-spacing:.55px;text-transform:uppercase;color:var(--ink3);font-weight:500}
+.hm-controls .tabs{display:flex;background:var(--bg3);border-radius:999px;padding:3px}
+.hm-controls .tab{padding:6px 13px;border-radius:999px;font-size:11.5px;font-weight:500;color:var(--ink2)}
+.hm-controls .tab.on{background:#fff;color:var(--ink);font-weight:600;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+.hm-controls .meta{font-family:var(--mono);font-size:10.5px;color:var(--ink3);margin-left:auto;letter-spacing:.3px}
+.hm-controls .meta b{color:var(--ink2);font-weight:600}
+
+.hm-scroll{overflow-x:auto;margin:0 -20px;padding:0 20px}
+.hm-table{display:grid;gap:1px;min-width:100%}
+.hm-cell{font-family:var(--mono);font-size:9px;text-align:center;border-radius:2px;padding:2px 1px;line-height:1;cursor:default;transition:transform .1s,box-shadow .1s;min-height:18px;display:flex;align-items:center;justify-content:center}
+.hm-cell:hover{transform:scale(1.5);box-shadow:0 2px 8px rgba(0,0,0,.18);z-index:5;position:relative}
+.hm-cell.diag{background:var(--ink);color:#fff}
+.hm-cell.self{background:transparent}
+.hm-col-head{font-family:var(--mono);font-size:8px;letter-spacing:.2px;color:var(--ink3);font-weight:500;padding:6px 1px;border-bottom:1px solid var(--line);min-height:54px;display:flex;align-items:end;justify-content:center;writing-mode:vertical-rl;transform:rotate(180deg);text-orientation:mixed;line-height:1.1;white-space:nowrap}
+.hm-row-head{font-family:var(--mono);font-size:10px;font-weight:600;color:var(--ink);padding:0 8px 0 0;text-align:right;line-height:1;display:flex;align-items:center;justify-content:flex-end}
+.hm-cell.l0{background:var(--hm0);color:var(--ink4)}
+.hm-cell.l1{background:var(--hm1);color:var(--ink3)}
+.hm-cell.l2{background:var(--hm2);color:var(--ink2)}
+.hm-cell.l3{background:var(--hm3);color:var(--ink2)}
+.hm-cell.l4{background:var(--hm4);color:#fff}
+.hm-cell.l5{background:var(--hm5);color:#fff}
+.hm-cell.l6{background:var(--hm6);color:#fff}
+.hm-cell.l7{background:var(--hm7);color:#fff}
+.hm-cell.cross{outline:1.5px solid var(--bad);outline-offset:-1.5px}
+
+.hm-legend{display:flex;align-items:center;gap:10px;margin-top:18px;padding-top:14px;border-top:1px dashed var(--line);font-family:var(--mono);font-size:10px;color:var(--ink3);letter-spacing:.3px;flex-wrap:wrap}
+.hm-legend .ramp{display:flex;height:10px;border-radius:2px;overflow:hidden}
+.hm-legend .ramp div{width:14px;height:100%}
+.hm-legend .ramp .l0{background:var(--hm0)} .hm-legend .ramp .l1{background:var(--hm1)} .hm-legend .ramp .l2{background:var(--hm2)} .hm-legend .ramp .l3{background:var(--hm3)} .hm-legend .ramp .l4{background:var(--hm4)} .hm-legend .ramp .l5{background:var(--hm5)} .hm-legend .ramp .l6{background:var(--hm6)} .hm-legend .ramp .l7{background:var(--hm7)}
+.hm-legend .flag-dot{display:inline-block;width:10px;height:10px;border-radius:2px;background:#fff;outline-offset:-1.5px;vertical-align:middle;margin-right:4px}
+.hm-legend .flag-dot.cross{outline:1.5px solid var(--bad)}
+
+/* === LAYER 3: DISPERSION TABLE === */
+.disp-card{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.disp-controls{display:flex;align-items:center;gap:14px;flex-wrap:wrap;padding:16px 22px;border-bottom:1px solid var(--line)}
+.disp-controls .label{font-family:var(--mono);font-size:9.5px;letter-spacing:.55px;text-transform:uppercase;color:var(--ink3);font-weight:500}
+.disp-controls .tabs{display:flex;background:var(--bg3);border-radius:999px;padding:3px}
+.disp-controls .tab{padding:6px 13px;border-radius:999px;font-size:11.5px;font-weight:500;color:var(--ink2)}
+.disp-controls .tab.on{background:#fff;color:var(--ink);font-weight:600;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+.disp-controls .meta{font-family:var(--mono);font-size:10.5px;color:var(--ink3);margin-left:auto;letter-spacing:.3px}
+.disp-controls .meta b{color:var(--ink2);font-weight:600}
+
+.disp-head{display:grid;grid-template-columns:1fr 70px 60px 60px 60px 60px 220px 26px;gap:12px;padding:11px 22px;background:var(--bg3);border-bottom:1px solid var(--line);font-family:var(--mono);font-size:9.5px;letter-spacing:.5px;text-transform:uppercase;color:var(--ink3);font-weight:500;align-items:center}
+.disp-head .col{cursor:pointer;user-select:none}
+.disp-head .col:hover{color:var(--ink)}
+.disp-head .col.right{text-align:right}
+
+.disp-row{display:grid;grid-template-columns:1fr 70px 60px 60px 60px 60px 220px 26px;gap:12px;padding:14px 22px;border-bottom:1px solid var(--line);align-items:center;cursor:pointer;transition:background .1s}
+.disp-row:last-child{border-bottom:none}
+.disp-row:hover{background:var(--bg4)}
+.disp-row.expanded{background:var(--bg3)}
+.disp-row .borrower{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.disp-row .borrower .nm{font-size:13px;font-weight:600;color:var(--ink);letter-spacing:-.2px;text-transform:capitalize}
+.disp-row .borrower .sub{font-family:var(--mono);font-size:9.5px;color:var(--ink3);letter-spacing:.2px;margin-top:2px}
+.disp-row .num{font-family:var(--mono);font-size:12.5px;color:var(--ink2);text-align:right;font-weight:500}
+.disp-row .num.std{font-weight:600;color:var(--ink)}
+.disp-row .num.std.high{color:var(--bad)}
+.disp-row .num.std.med{color:var(--amber)}
+.disp-row .range-bar{position:relative;height:24px;background:var(--bg3);border-radius:3px;overflow:hidden}
+.disp-row .range-bar .marks-line{position:absolute;top:50%;height:2px;background:var(--ink3);transform:translateY(-50%);border-radius:1px}
+.disp-row .range-bar .mark-dot{position:absolute;top:50%;transform:translate(-50%,-50%);width:7px;height:7px;border-radius:50%;background:var(--ink2);border:1.5px solid #fff;box-shadow:0 0 0 0.5px var(--ink2)}
+.disp-row .range-bar .mark-dot.outlier{background:var(--bad);box-shadow:0 0 0 0.5px var(--bad)}
+.disp-row .range-bar .scale-tick{position:absolute;top:0;bottom:0;width:1px;background:var(--line2)}
+.disp-row .range-bar .scale-label{position:absolute;font-family:var(--mono);font-size:7.5px;color:var(--ink3)}
+.disp-row .chev{display:flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:var(--bg3);color:var(--ink3);transition:transform .15s,background .15s;font-size:11px;justify-self:end}
+.disp-row.expanded .chev{background:var(--ink);color:#fff;transform:rotate(180deg)}
+
+.disp-expand{display:none;border-bottom:1px solid var(--line);background:#fff;padding:20px 22px 24px}
+.disp-expand.on{display:block;animation:slidedown .2s ease-out}
+@keyframes slidedown{from{opacity:0;max-height:0}to{opacity:1;max-height:1000px}}
+.exp-head{display:flex;align-items:baseline;gap:12px;margin-bottom:14px;padding-bottom:12px;border-bottom:1px solid var(--line)}
+.exp-head h4{font-size:14px;font-weight:600;letter-spacing:-.2px;color:var(--ink);text-transform:capitalize}
+.exp-head .nb{font-family:var(--mono);font-size:10px;color:var(--ink3);background:var(--bg3);padding:3px 9px;border-radius:999px}
+.exp-holders{display:grid;grid-template-columns:80px 1fr 70px 70px 70px 80px;gap:12px;padding:8px 0;border-bottom:1px dashed var(--line);align-items:center;font-size:12px}
+.exp-holders.heading{font-family:var(--mono);font-size:9.5px;color:var(--ink3);letter-spacing:.5px;text-transform:uppercase;font-weight:500;border-bottom:1px solid var(--line);padding-bottom:8px;margin-bottom:4px}
+.exp-holders .tk{font-family:var(--mono);font-weight:600;font-size:12px;color:var(--ink)}
+.exp-holders .nm{color:var(--ink2);font-size:11px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.exp-holders .num{font-family:var(--mono);font-size:12px;color:var(--ink2);text-align:right;font-weight:500}
+.exp-holders .num.outlier{color:var(--bad);font-weight:600}
+.exp-holders .badge-lien{font-family:var(--mono);font-size:9.5px;color:var(--ink3);letter-spacing:.3px;text-transform:uppercase}
+
+.exp-reason{padding:14px 16px;background:var(--bg3);border-radius:8px;font-size:12.5px;line-height:1.6;color:var(--ink2);margin-top:14px}
+.exp-reason h5{font-family:var(--mono);font-size:10px;letter-spacing:.5px;text-transform:uppercase;color:var(--ink3);font-weight:500;margin-bottom:8px}
+.exp-reason b{color:var(--ink);font-weight:600}
+.exp-reason b.weak{color:var(--bad)}
+
+.data-note{margin-top:32px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:24px;display:grid;grid-template-columns:1fr 1fr;gap:24px}
+@media(max-width:780px){.data-note{grid-template-columns:1fr}}
+.data-note h3{font-size:14px;font-weight:600;letter-spacing:-.2px;color:var(--ink);margin-bottom:10px;display:flex;align-items:center;gap:7px}
+.data-note h3::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--ink);display:inline-block}
+.data-note p{font-size:12.5px;line-height:1.6;color:var(--ink2);margin-bottom:10px}
+.data-note code{font-family:var(--mono);font-size:11px;background:var(--bg3);padding:2px 5px;border-radius:3px;color:var(--ink)}
+
+.loading-block{padding:60px 20px;text-align:center;font-family:var(--mono);font-size:11px;color:var(--ink3);letter-spacing:.3px}
+.loading-block .sp{display:inline-block;width:14px;height:14px;border:2px solid var(--line);border-top-color:var(--ink);border-radius:50%;animation:spin .8s linear infinite;margin-right:8px;vertical-align:middle}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+footer{padding-top:36px;margin-top:60px;border-top:1px solid var(--line);font-family:var(--mono);font-size:10.5px;color:var(--ink3);text-align:center;letter-spacing:.3px;line-height:1.8}
+footer a{text-decoration:underline}
+
+/* ===== Credit Canon: restricted-access nav pill + loading skeletons ===== */
+.cc-nav-pill{background:#fff3e0;color:#E07B00;font-family:"Roboto Mono",monospace;font-size:8.5px;font-weight:500;padding:2px 7px;border-radius:999px;margin-left:6px;letter-spacing:.3px;vertical-align:middle;display:inline-flex;align-items:center;line-height:1}
+@keyframes cc-shimmer{0%{background-position:-400px 0}100%{background-position:400px 0}}
+.cc-sk{background:#e9edf1;background-image:linear-gradient(90deg,#e9edf1 0,#f4f6f8 200px,#e9edf1 400px);background-size:800px 100%;animation:cc-shimmer 1.3s linear infinite;border-radius:4px;display:block}
+.cc-sk-dark{background:rgba(255,255,255,.07);background-image:linear-gradient(90deg,rgba(255,255,255,.05) 0,rgba(255,255,255,.14) 200px,rgba(255,255,255,.05) 400px);background-size:800px 100%;animation:cc-shimmer 1.3s linear infinite;border-radius:4px;display:block}
+@media(prefers-reduced-motion:reduce){.cc-sk,.cc-sk-dark{animation:none}}
+
+/* === STANDARD NAV (traded template benchmark) === */
+.navbar{height:64px;background:#f7f7f7;border-bottom:1px solid #ececec;display:flex;align-items:center;padding:0 28px;position:sticky;top:0;z-index:200;font-family:'Roboto',system-ui,sans-serif}
+.navbar .logo{display:flex;align-items:center;gap:10px;text-decoration:none;margin-right:48px}
+.navbar .logo-mark{width:28px;height:28px;background:#151515;border-radius:7px;display:flex;align-items:center;justify-content:center;padding:0}
+.navbar .logo-mark svg{width:15px;height:15px;fill:#fff}
+.navbar .logo-text{font-family:'Roboto',sans-serif;font-size:15px;font-weight:600;color:#151515;letter-spacing:-.3px}
+.navbar .logo-text span{color:#151515;font-weight:400}
+.navbar .nav-links{display:flex;align-items:center;gap:2px;margin:0 auto}
+.navbar .nav-link{position:relative;padding:8px 15px;font-size:13.5px;font-weight:500;font-style:normal;color:#3a3a3a;text-decoration:none;border-radius:6px;white-space:nowrap;transition:color .15s,background .15s;line-height:1;display:inline-flex;align-items:center}
+.navbar .nav-link:hover{color:#151515;background:rgba(0,0,0,.04)}
+.navbar .nav-link.on{color:#151515;font-weight:700;font-style:italic;background:transparent}
+.navbar .nav-gold{position:absolute;top:calc(50% + 10px);left:50%;transform:translateX(-50%);font-size:7px;font-family:'Roboto Mono',monospace;color:#8a6d1b;background:rgba(184,134,11,.14);padding:1px 5px;border-radius:3px;letter-spacing:.4px;text-transform:uppercase;font-weight:600;pointer-events:none;white-space:nowrap}
+</style>
+</head>
+<body>
+
+<nav class="navbar"><a class="logo" href="index.html"><div class="logo-mark"><svg viewBox="0 0 16 16"><rect x="2" y="9" width="3" height="5"/><rect x="6.5" y="5" width="3" height="9"/><rect x="11" y="2" width="3" height="12"/></svg></div><div class="logo-text">Credit<span>Canon</span></div></a><div class="nav-links"><a class="nav-link" href="index.html">US BDC Universe</a><a class="nav-link" href="fund.html">Fund Deep Dive</a><a class="nav-link" href="compare.html">Compare</a><a class="nav-link" href="screener.html">Screener</a><a class="nav-link" href="analysis.html">Analysis</a><a class="nav-link" href="stress.html">The Stress Desk<span class="nav-gold">Premium</span></a><a class="nav-link" href="news.html">News</a><a class="nav-link" href="about.html">About us</a></div></nav>
+
+<div class="wrap">
+
+  <div class="breadcrumb">
+    <a href="index.html">Universe</a>
+    <span class="sep">/</span>
+    <a href="analysis.html">Analysis</a>
+    <span class="sep">/</span>
+    <b>Borrower overlap &amp; mark dispersion</b>
+  </div>
+
+  <div class="page-head">
+    <h1>How much do BDC portfolios overlap, and where do they disagree on the marks?</h1>
+    <p class="standfirst">For every pair of BDCs, what fraction of portfolio is the same borrowers? And for every borrower held by multiple BDCs, how widely do those BDCs disagree on what the credit is worth? This module answers both questions in a single analytical surface. The cross platform overlaps reveal systemic concentration risk. The mark dispersion finds the credits where someone's valuation is wrong.</p>
+    <div class="meta-row">Methodology: Raymond James pairwise overlap formula · Borrower names normalized across 614 raw labels into canonical entities · Equity holdings excluded per institutional convention · <b id="cov-meta">Loading coverage...</b></div>
+  </div>
+
+  <div class="module-switcher">
+    <span class="label">Analysis modules:</span>
+    <a href="analysis.html" class="mod done">01 · Universe time series</a>
+    <span class="mod on">02 · Borrower overlap</span>
+    <a href="analysis-cohort.html" class="mod done">03 · Manager cohorts</a>
+    <a href="analysis-dividend.html" class="mod done">04 · Dividend coverage</a>
+    <a href="analysis-liquidity.html" class="mod done">05 · Non traded liquidity</a>
+    <a href="analysis-sector.html" class="mod done">06 · Sector concentration</a>
+  </div>
+
+  <!-- LAYER 1 : UNIVERSE OVERLAP SUMMARY -->
+  <div class="section">
+    <div class="section-head">
+      <div class="left">
+        <span class="layer">Layer 01</span>
+        <h2>The overlap picture</h2>
+      </div>
+      <div class="sub">How much portfolio overlap exists across the universe · and which BDC pairs are the most exposed to the same borrowers.</div>
+    </div>
+
+    <div class="pulse-card">
+      <div class="pulse-stats">
+        <div class="pulse-stat">
+          <div class="v" id="hl-borrowers">-</div>
+          <div class="l">Unique borrowers</div>
+          <div class="sl">after name normalization</div>
+        </div>
+        <div class="pulse-stat">
+          <div class="v" id="hl-shared">-</div>
+          <div class="l">Held by 2+ BDCs</div>
+          <div class="sl">the cross holding universe</div>
+        </div>
+        <div class="pulse-stat">
+          <div class="v" id="hl-shared5">-</div>
+          <div class="l">Held by 5+ BDCs</div>
+          <div class="sl">widely syndicated names</div>
+        </div>
+        <div class="pulse-stat">
+          <div class="v" id="hl-shared10">-</div>
+          <div class="l">Held by 10+ BDCs</div>
+          <div class="sl">universally syndicated</div>
+        </div>
+      </div>
+
+      <div class="top-pairs">
+        <h4>Top cross-platform overlapping pairs <span>(intra-platform pairs excluded · they are structural)</span></h4>
+        <div class="pair-list" id="top-pairs-list">
+          <div class="loading-block" style="grid-column:1/-1"><span class="sp"></span>Computing pairwise overlaps...</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- LAYER 2 : PAIRWISE HEATMAP -->
+  <div class="section">
+    <div class="section-head">
+      <div class="left">
+        <span class="layer">Layer 02</span>
+        <h2>Pairwise overlap matrix</h2>
+      </div>
+      <div class="sub">The top BDCs by NAV scored against each other. Each cell is the percentage of portfolio shared between the two funds.</div>
+    </div>
+
+    <div class="heatmap-card">
+      <div class="hm-controls">
+        <span class="label">Show</span>
+        <div class="tabs" id="hm-show-tabs">
+          <button class="tab on" data-show="top30">Top 30 by NAV</button>
+          <button class="tab" data-show="top20">Top 20</button>
+          <button class="tab" data-show="multifam">Multi vehicle platforms only</button>
+        </div>
+        <div class="meta">Showing <b id="hm-count">-</b> BDCs</div>
+      </div>
+
+      <div class="hm-scroll">
+        <div class="hm-table" id="hm-table">
+          <div class="loading-block" style="grid-column:1/-1"><span class="sp"></span>Building overlap matrix...</div>
+        </div>
+      </div>
+
+      <div class="hm-legend">
+        <span>Overlap (% of smaller portfolio shared):</span>
+        <span>0%</span>
+        <div class="ramp"><div class="l0"></div><div class="l1"></div><div class="l2"></div><div class="l3"></div><div class="l4"></div><div class="l5"></div><div class="l6"></div><div class="l7"></div></div>
+        <span>50%+</span>
+        <span style="margin-left:14px"><span class="flag-dot cross"></span>Cross platform pair</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- LAYER 3 : DISPERSION TABLE -->
+  <div class="section">
+    <div class="section-head">
+      <div class="left">
+        <span class="layer">Layer 03</span>
+        <h2>Mark dispersion · where the BDCs disagree</h2>
+      </div>
+      <div class="sub">For every borrower held by 2+ BDCs that report marks, the spread between the highest and lowest valuation. Wide spreads suggest one BDC is wrong.</div>
+    </div>
+
+    <div class="disp-card">
+      <div class="disp-controls">
+        <span class="label">Sort</span>
+        <div class="tabs" id="disp-sort-tabs">
+          <button class="tab on" data-sort="std">Most disputed (StD)</button>
+          <button class="tab" data-sort="range">Widest range</button>
+          <button class="tab" data-sort="bdcs">Most holders</button>
+        </div>
+        <span class="label" style="margin-left:6px">Holders</span>
+        <div class="tabs" id="disp-min-tabs">
+          <button class="tab on" data-min="3">3+ BDCs</button>
+          <button class="tab" data-min="2">2+ BDCs</button>
+          <button class="tab" data-min="5">5+ BDCs</button>
+        </div>
+        <div class="meta">Showing <b id="disp-count">-</b> borrowers</div>
+      </div>
+
+      <div class="disp-head">
+        <div class="col">Borrower</div>
+        <div class="col right"># BDCs</div>
+        <div class="col right">Min</div>
+        <div class="col right">Median</div>
+        <div class="col right">Max</div>
+        <div class="col right">StD</div>
+        <div class="col">Marks distribution</div>
+        <div class="col"></div>
+      </div>
+
+      <div id="disp-rows">
+        <div class="loading-block"><span class="sp"></span>Computing mark dispersion across the universe...</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="data-note">
+    <div>
+      <h3>How overlap is computed</h3>
+      <p>Per the Raymond James and PIMCO convention, pairwise overlap between two BDCs is the sum of <code>min(weight_A, weight_B)</code> across every shared borrower, where weight is the holding's fair value as a percent of the BDC's portfolio. The result is a number from 0% (no shared borrowers) to 100% (identical portfolios).</p>
+      <p>Borrower names are normalized across roughly 25,000 raw labels using lowercase, punctuation stripping, and trailing corporate suffix removal (Inc, LLC, Corp, Holdings, LP, etc). About 24,700 unique normalized entities result. Schedule of Investment section headings ("Non-Controlled Non-Affiliated Portfolio Investments") are filtered out as they're regulatory grouping labels, not real borrowers.</p>
+      <p>Equity holdings (warrants, preferred stock, common stock) are excluded from the overlap computation per Raymond James convention, because equity valuations behave differently from debt valuations. Debt instruments only · 1L, 2L, mezzanine, unsecured.</p>
+    </div>
+    <div>
+      <h3>What mark dispersion tells you</h3>
+      <p>When two BDCs hold the same debt of the same borrower and mark it at materially different values, one of them is wrong. The most likely error is at the lender that took its position via participation or syndication, since the lead arranger has better real time information on borrower performance.</p>
+      <p>The famous case is CION marking Isagenix at 98 while peers marked at 86 to 88 · a marker spread of roughly 10 points that CreditSights flagged six months before Isagenix went into restructuring. Once the company defaulted, the marks converged downward to roughly 60.</p>
+      <p>Marks outside the 30 to 130 range are excluded as data quality outliers. The dispersion metric is the population standard deviation across all BDCs reporting a mark for that borrower. We use the largest fair value position when the same BDC reports multiple holdings for the same borrower (e.g. a tranche split).</p>
+    </div>
+  </div>
+
+  <footer>
+    Module 02 of 06 · Borrower Overlap. <a href="analysis.html">← Module 01</a> · <a href="analysis-cohort.html">Module 03</a> · <a href="analysis-dividend.html">Module 04</a> · <a href="analysis-liquidity.html">Module 05</a> · <a href="analysis-sector.html">Module 06 →</a><br>
+    Every overlap and dispersion figure traces back to primary SOI filings. Name normalization layer is auditable; the rule set is in the page source.
+  </footer>
+
+</div>
+
+<script>
+// ============================================================
+// MODULE 02 - Borrower Overlap & Mark Dispersion
+// ============================================================
+
+const DIR_URL = 'data/universe/fund_directory.json';
+const SOI_URL = 'data/soi/';
+const TS_URL  = 'data/timeseries/';
+
+// ===== Name normalization =====
+const STOPS = new Set(['inc','llc','corp','corporation','company','co','holdings','holding','ltd','limited',
+                        'lp','llp','plc','sa','ag','gmbh','group','intermediate','parent','the','tco','llc.','inc.',
+                        'corp.','co.','ltd.','holdings.','holding.','ltd.','limited.','llp.','plc.']);
+function normalizeName(name) {
+  if (!name) return '';
+  let s = name.toLowerCase();
+  s = s.replace(/[.,&()'"/]/g, ' ').replace(/\s+/g, ' ').trim();
+  const tokens = s.split(' ');
+  while (tokens.length && STOPS.has(tokens[tokens.length-1])) tokens.pop();
+  return tokens.join(' ');
+}
+
+// SOI section headings we want to ignore
+function isSectionHeading(norm) {
+  if (!norm || norm.length < 3) return true;
+  if (/^(investments|portfolio|sub-?total|total|other|all)/.test(norm)) return true;
+  if (norm.includes('non-controlled') || norm.includes('non-affiliated')) return true;
+  if (norm.includes('non controlled') || norm.includes('non affiliated')) return true;
+  return false;
+}
+
+function isEquityLien(lien) {
+  if (!lien) return false;
+  const l = lien.toLowerCase();
+  return /equity|warrant|preferred|common|stock/.test(l);
+}
+
+// ===== Family taxonomy (subset, for cross-platform vs intra-platform classification) =====
+const FAMILY_RULES = [
+  ['Blackstone', ['blackstone','bcred','bxsl']],
+  ['Blue Owl',   ['blue owl','owl rock','obdc','obde','otic','otf','ocic','obtic','boca','botfi']],
+  ['Ares',       ['ares','antares','arcc','asif','apcrf','apcre','ascf','ascfi','asci','ant_pcf']],
+  ['Apollo',     ['apollo','aps lending','aps bdc','ads ',' aoii','apcif','mmaip']],
+  ['KKR / FS',   [' kkr','kkr ','fs kkr','fs-kkr','fsk ','fsk,','fs investments','fs specialty','fslen']],
+  ['Goldman',    ['goldman','gsbd','gcred']],
+  ['Morgan Stanley',['morgan stanley','msdl','north haven','lgam','nhpif','lpcre']],
+  ['BlackRock',  ['blackrock','tcpc','blkr_pcf']],
+  ['Carlyle',    ['carlyle','cgbd','ccso','csli']],
+  ['Golub',      ['golub','gbdc','gcb']],
+  ['HPS',        ['hps','hlend','hccs']],
+  ['Sixth Street',['sixth street','tslx','sslp']],
+  ['Oaktree',    ['oaktree','ocsl','oscf']],
+  ['Bain Capital',['bain capital','bcsf','bain_pc']],
+  ['TCW',        ['tcw']],
+  ['New Mountain',['new mountain','nmfc','nsi ','nmf slf']],
+  ['Crescent',   ['crescent']],
+  ['Stone Point',['stone point']],
+  ['Nuveen Churchill',['nuveen','churchill']],
+  ['PennantPark',['pennantpark']],
+  ['Gladstone',  ['gladstone']],
+  ['Investcorp', ['investcorp']],
+  ['Monroe Capital',['monroe capital']],
+  ['BC Partners',['bc partners','bplen']],
+  ['Stellus',    ['stellus']],
+  ['Barings',    ['barings']],
+  ['Hercules',   ['hercules']],
+  ['TriplePoint',['triplepoint','triple point','tpvg']],
+  ['Audax',      ['audax']],
+  ['Fortress',   ['fortress']],
+  ['Brightwood', ['brightwood']],
+  ['Silver Point',['silver point','spsl']],
+  ['MidCap',     ['midcap']],
+  ['Main Street',['main street','msif','main']],
+  ['WTI',        ['wti fund','wti,','wti ']],
+  ['T. Rowe Price OHA', ['t rowe','t. rowe','tbkcf','oha senior']],
+];
+function familyOf(fund) {
+  const tk = (fund.ticker || '').toLowerCase();
+  const nm = (fund.display_name || '').toLowerCase();
+  const mgr = (fund.manager || '').toLowerCase();
+  const blob = `${tk} ${nm} ${mgr}`;
+  for (const [fam, kws] of FAMILY_RULES) {
+    if (kws.some(k => blob.includes(k))) return fam;
+  }
+  return fund.ticker;  // its own one-fund family
+}
+
+// ===== STATE =====
+let PORTFOLIOS = {};      // ticker -> { holdings: [{norm, fv_mn, weight_pct, lien, raw, mark}], totalFv, label, family, nav, name }
+let OVERLAPS = [];        // [{a, b, overlap, nShared, crossPlatform}]
+let DISPERSION = [];      // [{norm, displayName, nBdcs, min, max, median, std, range, holders:[{bdc, mark, fv, lien, raw}]}]
+let HM_SHOW = 'top30';
+let DISP_SORT = 'std';
+let DISP_MIN = 3;
+
+// ===== LOAD =====
+async function loadAll() {
+  let dir;
+  try { dir = await fetch(DIR_URL).then(r => r.json()); }
+  catch (e) { return; }
+  const funds = dir.funds || [];
+
+  // Build ticker -> directory entry
+  const dirByTk = {};
+  for (const f of funds) dirByTk[f.ticker] = f;
+
+  // Fetch each SOI in parallel
+  const promises = funds.map(async (f) => {
+    try {
+      const r = await fetch(SOI_URL + f.ticker + '.json');
+      if (!r.ok) return null;
+      const data = await r.json();
+      const snaps = data.snapshots || [];
+      let latest = null;
+      for (let i = snaps.length - 1; i >= 0; i--) {
+        if (snaps[i].total_fair_value_mn && snaps[i].total_fair_value_mn > 0 && Array.isArray(snaps[i].holdings) && snaps[i].holdings.length) {
+          latest = snaps[i]; break;
+        }
+      }
+      if (!latest) return null;
+      const totalFv = +latest.total_fair_value_mn;
+      const holdings = [];
+      const seen = {};  // norm -> sum of fv (consolidate same-borrower entries within a BDC)
+      const markByNorm = {};   // norm -> best (largest-fv) mark
+      const fvForMark = {};
+      const lienByNorm = {};
+      const rawByNorm = {};
+      for (const h of latest.holdings) {
+        const raw = h.company_name || h.borrower || h.issuer;
+        if (!raw) continue;
+        const norm = normalizeName(raw);
+        if (isSectionHeading(norm)) continue;
+        const lien = h.lien_group || h.lien_class || h.investment_type || '';
+        if (isEquityLien(lien)) continue;
+        const fv = +(h.fair_value_mn || 0);
+        if (fv <= 0) continue;
+        seen[norm] = (seen[norm] || 0) + fv;
+        const mark = h.mark_pct;
+        if (mark != null && mark > 30 && mark < 130) {
+          if (!fvForMark[norm] || fv > fvForMark[norm]) {
+            markByNorm[norm] = +mark;
+            fvForMark[norm] = fv;
+            lienByNorm[norm] = lien;
+            rawByNorm[norm] = raw;
+          }
+        } else if (!rawByNorm[norm]) {
+          rawByNorm[norm] = raw;
+          lienByNorm[norm] = lien;
+        }
+      }
+      for (const [norm, fv] of Object.entries(seen)) {
+        holdings.push({
+          norm,
+          fv,
+          weight: (fv / totalFv) * 100,
+          mark: markByNorm[norm] ?? null,
+          lien: lienByNorm[norm] || '',
+          raw: rawByNorm[norm] || norm,
+        });
+      }
+      if (!holdings.length) return null;
+      const dirEntry = dirByTk[f.ticker] || f;
+      const family = familyOf(dirEntry);
+      const displayLabel = f.ticker.startsWith('CIK')
+        ? (dirEntry.display_name || f.ticker).split(',')[0].split(/\s+/).slice(0, 2).join(' ')
+        : f.ticker;
+      // Also fetch NAV from timeseries for ranking
+      let nav = null;
+      try {
+        const tsr = await fetch(TS_URL + f.ticker + '.json');
+        if (tsr.ok) {
+          const ts = await tsr.json();
+          if (Array.isArray(ts) && ts.length) {
+            nav = ts[ts.length-1].net_assets_mn ?? null;
+          }
+        }
+      } catch (e) {}
+      return {
+        ticker: f.ticker,
+        displayLabel,
+        name: dirEntry.display_name || f.ticker,
+        family,
+        type: f.fund_type,
+        nav,
+        totalFv,
+        holdings,
+      };
+    } catch (e) { return null; }
+  });
+  const portfolios = (await Promise.all(promises)).filter(x => x != null);
+
+  // Build PORTFOLIOS map
+  for (const p of portfolios) PORTFOLIOS[p.ticker] = p;
+
+  // Compute overlaps + dispersion
+  computeOverlaps();
+  computeDispersion();
+
+  // Render
+  renderHeadline();
+  renderHeatmap();
+  renderDispersion();
+}
+
+// ===== OVERLAP COMPUTATION =====
+function computeOverlaps() {
+  const tickers = Object.keys(PORTFOLIOS);
+  OVERLAPS = [];
+  // Index each portfolio as a map for fast lookup
+  const weightMaps = {};
+  for (const tk of tickers) {
+    const map = {};
+    for (const h of PORTFOLIOS[tk].holdings) map[h.norm] = h.weight;
+    weightMaps[tk] = map;
+  }
+  for (let i = 0; i < tickers.length; i++) {
+    const a = tickers[i];
+    const mapA = weightMaps[a];
+    const keysA = Object.keys(mapA);
+    for (let j = i + 1; j < tickers.length; j++) {
+      const b = tickers[j];
+      const mapB = weightMaps[b];
+      // Iterate over the smaller portfolio
+      let smaller, larger;
+      if (keysA.length <= Object.keys(mapB).length) { smaller = mapA; larger = mapB; }
+      else { smaller = mapB; larger = mapA; }
+      let overlap = 0, nShared = 0;
+      for (const k of Object.keys(smaller)) {
+        if (k in larger) {
+          overlap += Math.min(smaller[k], larger[k]);
+          nShared++;
+        }
+      }
+      if (overlap > 0.5) {  // only keep meaningful pairs
+        const famA = PORTFOLIOS[a].family;
+        const famB = PORTFOLIOS[b].family;
+        OVERLAPS.push({ a, b, overlap, nShared, crossPlatform: famA !== famB });
+      }
+    }
+  }
+}
+
+// ===== DISPERSION COMPUTATION =====
+function computeDispersion() {
+  // Collect marks by borrower (largest position per BDC)
+  const byBorrower = {};   // norm -> [{bdc, mark, fv, lien, raw, displayLabel}]
+  for (const [tk, p] of Object.entries(PORTFOLIOS)) {
+    for (const h of p.holdings) {
+      if (h.mark == null) continue;
+      if (!byBorrower[h.norm]) byBorrower[h.norm] = [];
+      byBorrower[h.norm].push({
+        bdc: tk,
+        displayLabel: p.displayLabel,
+        family: p.family,
+        mark: h.mark,
+        fv: h.fv,
+        lien: h.lien,
+        raw: h.raw,
+      });
+    }
+  }
+  DISPERSION = [];
+  for (const [norm, marks] of Object.entries(byBorrower)) {
+    if (marks.length < 2) continue;
+    // Get the largest-fv mark per unique BDC
+    const byBdc = {};
+    for (const m of marks) {
+      if (!byBdc[m.bdc] || m.fv > byBdc[m.bdc].fv) byBdc[m.bdc] = m;
+    }
+    const uniqueMarks = Object.values(byBdc);
+    if (uniqueMarks.length < 2) continue;
+    const markValues = uniqueMarks.map(m => m.mark);
+    const min = Math.min(...markValues);
+    const max = Math.max(...markValues);
+    if (max - min < 0.5) continue; // all the same essentially
+    const sorted = [...markValues].sort((a, b) => a - b);
+    const mid = Math.floor(sorted.length / 2);
+    const median = sorted.length % 2 === 0 ? (sorted[mid-1] + sorted[mid]) / 2 : sorted[mid];
+    const mean = markValues.reduce((s, v) => s + v, 0) / markValues.length;
+    const variance = markValues.reduce((s, v) => s + (v - mean) ** 2, 0) / markValues.length;
+    const std = Math.sqrt(variance);
+    // Find the outlier (furthest from median)
+    let outlier = null, maxDist = 0;
+    for (const m of uniqueMarks) {
+      const d = Math.abs(m.mark - median);
+      if (d > maxDist) { maxDist = d; outlier = m; }
+    }
+    // Display name: title-case the normalized name
+    const displayName = norm.replace(/\b\w/g, c => c.toUpperCase());
+    DISPERSION.push({
+      norm, displayName, nBdcs: uniqueMarks.length,
+      min, max, median, std, range: max - min,
+      holders: uniqueMarks.sort((a, b) => b.fv - a.fv),
+      outlier,
+    });
+  }
+}
+
+// ===== LAYER 1: HEADLINE =====
+function renderHeadline() {
+  // Universe stats
+  const allBorrowers = new Set();
+  const borrowerBdcs = {};
+  for (const p of Object.values(PORTFOLIOS)) {
+    for (const h of p.holdings) {
+      allBorrowers.add(h.norm);
+      if (!borrowerBdcs[h.norm]) borrowerBdcs[h.norm] = new Set();
+      borrowerBdcs[h.norm].add(p.ticker);
+    }
+  }
+  const shared2 = Object.values(borrowerBdcs).filter(s => s.size >= 2).length;
+  const shared5 = Object.values(borrowerBdcs).filter(s => s.size >= 5).length;
+  const shared10 = Object.values(borrowerBdcs).filter(s => s.size >= 10).length;
+
+  document.getElementById('hl-borrowers').textContent = allBorrowers.size.toLocaleString();
+  document.getElementById('hl-shared').textContent = shared2.toLocaleString();
+  document.getElementById('hl-shared5').textContent = shared5.toLocaleString();
+  document.getElementById('hl-shared10').textContent = shared10.toLocaleString();
+
+  document.getElementById('cov-meta').innerHTML =
+    `<b>${Object.keys(PORTFOLIOS).length}</b> BDCs with portfolio data · <b>${OVERLAPS.length.toLocaleString()}</b> pairwise overlaps computed · <b>${DISPERSION.length.toLocaleString()}</b> borrowers with mark dispersion`;
+
+  // Cross-platform overlapping pairs only
+  const crossPairs = OVERLAPS.filter(o => o.crossPlatform).sort((a, b) => b.overlap - a.overlap).slice(0, 14);
+  const list = document.getElementById('top-pairs-list');
+  list.innerHTML = '';
+  for (const pair of crossPairs) {
+    const pA = PORTFOLIOS[pair.a], pB = PORTFOLIOS[pair.b];
+    list.insertAdjacentHTML('beforeend', `
+      <div class="pair-row">
+        <div class="pair-names">
+          <span class="tk">${pA.displayLabel}</span><span class="arrow">↔</span><span class="tk">${pB.displayLabel}</span>
+          <span class="sf">${pair.nShared} shared</span>
+        </div>
+        <div class="ov cross">${pair.overlap.toFixed(1)}%</div>
+      </div>
+    `);
+  }
+}
+
+// ===== LAYER 2: HEATMAP =====
+function renderHeatmap() {
+  let tickers = Object.keys(PORTFOLIOS);
+  // Sort by NAV descending
+  tickers.sort((a, b) => (PORTFOLIOS[b].nav || 0) - (PORTFOLIOS[a].nav || 0));
+
+  let limit = 30;
+  if (HM_SHOW === 'top20') limit = 20;
+  else if (HM_SHOW === 'multifam') {
+    // Keep only BDCs that are in a multi-fund family
+    const famCounts = {};
+    for (const tk of Object.keys(PORTFOLIOS)) {
+      const fam = PORTFOLIOS[tk].family;
+      famCounts[fam] = (famCounts[fam] || 0) + 1;
+    }
+    tickers = tickers.filter(tk => famCounts[PORTFOLIOS[tk].family] > 1);
+    limit = Math.min(40, tickers.length);
+  }
+  const top = tickers.slice(0, limit);
+  document.getElementById('hm-count').textContent = top.length;
+
+  // Build overlap lookup
+  const ovLookup = {};
+  for (const o of OVERLAPS) {
+    ovLookup[o.a + '|' + o.b] = o;
+    ovLookup[o.b + '|' + o.a] = o;
+  }
+
+  const table = document.getElementById('hm-table');
+  table.innerHTML = '';
+  table.style.gridTemplateColumns = `90px repeat(${top.length}, minmax(30px, 1fr))`;
+
+  // Top-left corner
+  const corner = document.createElement('div');
+  corner.className = 'hm-col-head';
+  corner.style.borderBottom = 'none';
+  table.appendChild(corner);
+
+  // Column headers
+  for (const tk of top) {
+    const p = PORTFOLIOS[tk];
+    const h = document.createElement('div');
+    h.className = 'hm-col-head';
+    h.textContent = p.displayLabel;
+    h.title = `${p.displayLabel} · ${p.name} · NAV ${p.nav ? '$' + p.nav.toLocaleString() + 'M' : '-'}`;
+    table.appendChild(h);
+  }
+
+  // Rows
+  for (const tkRow of top) {
+    const pRow = PORTFOLIOS[tkRow];
+    const rh = document.createElement('div');
+    rh.className = 'hm-row-head';
+    rh.textContent = pRow.displayLabel;
+    rh.title = `${pRow.displayLabel} · ${pRow.name}`;
+    table.appendChild(rh);
+
+    for (const tkCol of top) {
+      const pCol = PORTFOLIOS[tkCol];
+      const cell = document.createElement('div');
+      if (tkRow === tkCol) {
+        cell.className = 'hm-cell self';
+        cell.textContent = '·';
+      } else {
+        const o = ovLookup[tkRow + '|' + tkCol];
+        const ov = o ? o.overlap : 0;
+        cell.className = 'hm-cell ' + intensityClass(ov);
+        if (o && o.crossPlatform && ov > 5) cell.classList.add('cross');
+        cell.textContent = ov >= 1 ? Math.round(ov) : '';
+        cell.title = `${pRow.displayLabel} ↔ ${pCol.displayLabel}: ${ov.toFixed(1)}% overlap${o ? ` (${o.nShared} shared borrowers${o.crossPlatform ? ', CROSS PLATFORM' : ', same platform'})` : ''}`;
+      }
+      table.appendChild(cell);
+    }
+  }
+}
+
+function intensityClass(pct) {
+  if (pct < 0.5) return 'l0';
+  if (pct < 2)   return 'l1';
+  if (pct < 5)   return 'l2';
+  if (pct < 10)  return 'l3';
+  if (pct < 20)  return 'l4';
+  if (pct < 35)  return 'l5';
+  if (pct < 50)  return 'l6';
+  return 'l7';
+}
+
+// ===== LAYER 3: DISPERSION TABLE =====
+function renderDispersion() {
+  let list = DISPERSION.filter(d => d.nBdcs >= DISP_MIN);
+  if (DISP_SORT === 'std') list.sort((a, b) => b.std - a.std);
+  else if (DISP_SORT === 'range') list.sort((a, b) => b.range - a.range);
+  else if (DISP_SORT === 'bdcs') list.sort((a, b) => b.nBdcs - a.nBdcs);
+
+  list = list.slice(0, 60);  // cap visible rows
+  document.getElementById('disp-count').textContent = list.length;
+
+  const c = document.getElementById('disp-rows');
+  c.innerHTML = '';
+  if (!list.length) {
+    c.innerHTML = '<div class="loading-block">No borrowers match this filter.</div>';
+    return;
+  }
+  for (const d of list) {
+    c.insertAdjacentHTML('beforeend', dispRowHtml(d));
+    c.insertAdjacentHTML('beforeend', dispExpandHtml(d));
+  }
+  attachDispHandlers();
+}
+
+function dispRowHtml(d) {
+  const stdCls = d.std >= 20 ? 'high' : d.std >= 10 ? 'med' : '';
+  const rangeBar = renderRangeBar(d);
+  return `
+    <div class="disp-row" data-norm="${escapeAttr(d.norm)}">
+      <div class="borrower">
+        <div class="nm">${escapeHtml(d.displayName)}</div>
+        <div class="sub">${d.outlier ? `outlier ${d.outlier.displayLabel} @ ${d.outlier.mark.toFixed(0)}` : ''}</div>
+      </div>
+      <div class="num">${d.nBdcs}</div>
+      <div class="num">${d.min.toFixed(1)}</div>
+      <div class="num">${d.median.toFixed(1)}</div>
+      <div class="num">${d.max.toFixed(1)}</div>
+      <div class="num std ${stdCls}">${d.std.toFixed(1)}</div>
+      <div class="range-bar">${rangeBar}</div>
+      <div class="chev">▾</div>
+    </div>`;
+}
+
+function renderRangeBar(d) {
+  // Scale 30-110 (covers most realistic mark range)
+  const lo = 30, hi = 110;
+  const scale = (v) => ((v - lo) / (hi - lo)) * 100;
+  const ticks = [60, 80, 100];
+  const tickHtml = ticks.map(t => `<div class="scale-tick" style="left:${scale(t)}%"></div><div class="scale-label" style="left:${scale(t)}%;top:0;transform:translateX(-50%)">${t}</div>`).join('');
+  // Line from min to max
+  const lineLeft = scale(d.min);
+  const lineWidth = scale(d.max) - scale(d.min);
+  const dotHtml = d.holders.map(m => {
+    const isOutlier = d.outlier && m.bdc === d.outlier.bdc && d.std >= 10;
+    return `<div class="mark-dot${isOutlier ? ' outlier' : ''}" style="left:${scale(m.mark)}%" title="${m.displayLabel}: mark ${m.mark.toFixed(1)}"></div>`;
+  }).join('');
+  return `
+    ${tickHtml}
+    <div class="marks-line" style="left:${lineLeft}%;width:${lineWidth}%"></div>
+    ${dotHtml}
+  `;
+}
+
+function dispExpandHtml(d) {
+  const holderHtml = d.holders.map(h => {
+    const isOutlier = d.outlier && h.bdc === d.outlier.bdc && d.std >= 10;
+    return `
+      <div class="exp-holders">
+        <span class="tk">${h.displayLabel}</span>
+        <span class="nm">${escapeHtml(h.raw || '')}</span>
+        <span class="num">$${h.fv.toFixed(1)}M</span>
+        <span class="num ${isOutlier ? 'outlier' : ''}">${h.mark.toFixed(1)}</span>
+        <span class="num">${(h.mark - d.median >= 0 ? '+' : '')}${(h.mark - d.median).toFixed(1)}</span>
+        <span class="badge-lien">${escapeHtml((h.lien || '').slice(0, 18))}</span>
+      </div>`;
+  }).join('');
+  const reason = buildDispersionReason(d);
+  return `
+    <div class="disp-expand" data-expand-for="${escapeAttr(d.norm)}">
+      <div class="exp-head">
+        <h4>${escapeHtml(d.displayName)}</h4>
+        <span class="nb">${d.nBdcs} BDCs reporting · spread ${d.range.toFixed(1)} pts · std ${d.std.toFixed(1)}</span>
+      </div>
+      <div class="exp-holders heading">
+        <span>BDC</span>
+        <span>Position name</span>
+        <span class="num">Fair value</span>
+        <span class="num">Mark</span>
+        <span class="num">vs median</span>
+        <span>Lien</span>
+      </div>
+      ${holderHtml}
+      <div class="exp-reason">
+        <h5>Read of the dispersion</h5>
+        ${reason}
+      </div>
+    </div>`;
+}
+
+function buildDispersionReason(d) {
+  const parts = [];
+  if (d.std >= 20) {
+    parts.push(`<p>This is a <b class="weak">severe mark disagreement</b>. Standard deviation of ${d.std.toFixed(1)} points across ${d.nBdcs} BDCs holding the same borrower means at least one fund is materially mismarking this credit.</p>`);
+  } else if (d.std >= 10) {
+    parts.push(`<p>This is a <b>meaningful mark disagreement</b>. ${d.std.toFixed(1)} points of standard deviation across ${d.nBdcs} BDCs is wider than the typical noise band of 3 to 5 points for stable credits.</p>`);
+  } else {
+    parts.push(`<p>This is a <b>mild disagreement</b>. Marks span ${d.range.toFixed(1)} points but ${d.nBdcs} BDCs sit reasonably close to the median of ${d.median.toFixed(1)}.</p>`);
+  }
+  if (d.outlier && d.std >= 10) {
+    const dist = Math.abs(d.outlier.mark - d.median);
+    const direction = d.outlier.mark > d.median ? 'higher' : 'lower';
+    parts.push(`<p>The outlier is <b>${d.outlier.displayLabel} at mark ${d.outlier.mark.toFixed(1)}</b>, ${dist.toFixed(1)} points ${direction} than the median. Worth checking the lien priority (${d.outlier.lien || 'unknown'}) and the position size ($${d.outlier.fv.toFixed(1)}M) to assess whether this is a tranche difference or a marking difference.</p>`);
+  }
+  if (d.median < 70) {
+    parts.push(`<p>The median mark of ${d.median.toFixed(1)} suggests the credit is already <b class="weak">stressed</b> at the universe level. Mark dispersion in stressed credits often widens as lenders disagree about recovery prospects.</p>`);
+  }
+  return parts.join('');
+}
+
+function attachDispHandlers() {
+  document.querySelectorAll('.disp-row').forEach(row => {
+    row.onclick = (e) => {
+      if (e.target.closest('.disp-expand')) return;
+      const norm = row.dataset.norm;
+      const expEl = document.querySelector(`.disp-expand[data-expand-for="${CSS.escape(norm)}"]`);
+      const was = row.classList.contains('expanded');
+      document.querySelectorAll('.disp-row.expanded').forEach(r => r.classList.remove('expanded'));
+      document.querySelectorAll('.disp-expand.on').forEach(e => e.classList.remove('on'));
+      if (!was) {
+        row.classList.add('expanded');
+        if (expEl) expEl.classList.add('on');
+      }
+    };
+  });
+}
+
+function escapeHtml(s) {
+  return String(s || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+}
+function escapeAttr(s) {
+  return String(s || '').replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+}
+
+// ===== HANDLERS =====
+document.querySelectorAll('#hm-show-tabs .tab').forEach(t => {
+  t.addEventListener('click', () => {
+    document.querySelectorAll('#hm-show-tabs .tab').forEach(x => x.classList.remove('on'));
+    t.classList.add('on');
+    HM_SHOW = t.dataset.show;
+    renderHeatmap();
+  });
+});
+document.querySelectorAll('#disp-sort-tabs .tab').forEach(t => {
+  t.addEventListener('click', () => {
+    document.querySelectorAll('#disp-sort-tabs .tab').forEach(x => x.classList.remove('on'));
+    t.classList.add('on');
+    DISP_SORT = t.dataset.sort;
+    renderDispersion();
+  });
+});
+document.querySelectorAll('#disp-min-tabs .tab').forEach(t => {
+  t.addEventListener('click', () => {
+    document.querySelectorAll('#disp-min-tabs .tab').forEach(x => x.classList.remove('on'));
+    t.classList.add('on');
+    DISP_MIN = +t.dataset.min;
+    renderDispersion();
+  });
+});
+
+loadAll();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,912 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Universe Time Series · Analysis · Credit Canon</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&family=Roboto+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#fafafa; --bg2:#fff; --bg3:#f4f4f5; --bg4:#fafafa;
+  --ink:#0a0a0a; --ink2:#3f3f46; --ink3:#71717a; --ink4:#a1a1aa;
+  --line:#e4e4e7; --line2:#d4d4d8;
+  --hl:#fde68a; --good:#15803d; --bad:#b91c1c; --amber:#a16207;
+  --traded:#1d4ed8;     /* dark blue line for traded BDCs */
+  --nontraded:#7c2d12;  /* dark amber for non-traded */
+  --grid:#f1f1f4;       /* chart gridlines */
+  --mono:"Roboto Mono",ui-monospace,monospace;
+  --sans:"Roboto","Inter","Segoe UI",sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:var(--bg);font-family:var(--sans);color:var(--ink);font-size:14px;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+
+/* ribbon nav (matches other pages) */
+.navbar{height:60px;background:#fff;border-bottom:1px solid var(--line);display:flex;align-items:center;padding:0 28px;position:sticky;top:0;z-index:300}
+.logo{display:flex;align-items:center;gap:10px;margin-right:48px;text-decoration:none}
+.logo-mark{width:28px;height:28px;background:var(--ink);border-radius:7px;display:flex;align-items:center;justify-content:center}
+.logo-mark svg{width:15px;height:15px;fill:#fff}
+.logo-text{font-size:15px;font-weight:600;letter-spacing:-.3px}
+.logo-text span{font-weight:400}
+.nav-links{display:flex;align-items:center;gap:2px;margin:0 auto}
+.nav-link{padding:8px 14px;font-size:13.5px;font-weight:500;color:var(--ink2);border-radius:6px;white-space:nowrap}
+.nav-link:hover{color:var(--ink);background:var(--bg3)}
+.nav-link.on{color:var(--ink);font-weight:600}
+.nav-right{display:flex;align-items:center;gap:14px}
+.btn-outline{padding:8px 4px;background:transparent;color:var(--ink);font-size:13.5px;font-weight:500}
+.btn-primary{height:34px;padding:0 18px;border-radius:999px;background:var(--ink);color:#fff;font-size:13px;font-weight:500}
+
+/* container */
+.wrap{max-width:1340px;margin:0 auto;padding:36px 24px 100px}
+@media(max-width:780px){.wrap{padding:24px 14px 60px}}
+
+/* breadcrumb / module tabs */
+.breadcrumb{display:flex;align-items:center;gap:8px;font-family:var(--mono);font-size:10.5px;letter-spacing:.5px;text-transform:uppercase;color:var(--ink3);margin-bottom:18px}
+.breadcrumb a:hover{color:var(--ink)}
+.breadcrumb .sep{color:var(--ink4)}
+.breadcrumb b{color:var(--ink2);font-weight:500}
+
+/* page header */
+.page-head{display:grid;grid-template-columns:1.4fr 1fr;gap:48px;margin-bottom:36px;align-items:end}
+@media(max-width:980px){.page-head{grid-template-columns:1fr;gap:20px}}
+.page-head h1{font-size:38px;line-height:1.08;letter-spacing:-1px;font-weight:600;margin-bottom:14px}
+@media(max-width:780px){.page-head h1{font-size:28px;letter-spacing:-.5px}}
+.page-head .standfirst{font-size:15px;line-height:1.6;color:var(--ink2);max-width:620px}
+.page-head .meta-row{font-family:var(--mono);font-size:10.5px;color:var(--ink3);letter-spacing:.3px;line-height:1.7;margin-top:14px;border-top:1px solid var(--line);padding-top:14px}
+.page-head .meta-row b{color:var(--ink2);font-weight:600}
+
+/* module switcher (other modules placeholder) */
+.module-switcher{display:flex;flex-wrap:wrap;gap:6px;padding:14px 18px;background:#fff;border:1px solid var(--line);border-radius:12px;margin-bottom:28px;font-family:var(--mono);font-size:11px;letter-spacing:.3px}
+.module-switcher .label{color:var(--ink3);letter-spacing:.5px;text-transform:uppercase;font-size:9.5px;font-weight:500;margin-right:8px;padding-top:3px}
+.module-switcher .mod{padding:5px 11px;border-radius:999px;color:var(--ink3);background:var(--bg3);font-weight:500;text-transform:uppercase;letter-spacing:.4px;font-size:10px}
+.module-switcher .mod.on{color:#fff;background:var(--ink);font-weight:600}
+.module-switcher .mod.done{color:var(--ink2);background:var(--bg3)}
+.module-switcher .mod.done:hover{color:var(--ink);background:#e4e4e7}
+.module-switcher .mod:not(.on):hover{color:var(--ink2)}
+.module-switcher .mod.soon{color:var(--ink4);background:transparent;border:1px dashed var(--line2);cursor:default}
+
+/* === GLOBAL CONTROL BAR === */
+.controlbar{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin-bottom:24px;display:flex;flex-wrap:wrap;gap:18px;align-items:center;position:sticky;top:60px;z-index:50;backdrop-filter:blur(8px);background:rgba(255,255,255,.95)}
+.cb-group{display:flex;align-items:center;gap:8px}
+.cb-label{font-family:var(--mono);font-size:9.5px;letter-spacing:.55px;text-transform:uppercase;color:var(--ink3);font-weight:500;padding-right:2px}
+.cb-tabs{display:flex;background:var(--bg3);border-radius:999px;padding:3px}
+.cb-tab{padding:6px 13px;border-radius:999px;font-size:12px;font-weight:500;color:var(--ink2);font-family:var(--sans);letter-spacing:-.1px}
+.cb-tab.on{background:#fff;color:var(--ink);font-weight:600;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+.cb-meta{font-family:var(--mono);font-size:10.5px;color:var(--ink3);letter-spacing:.3px;margin-left:auto}
+.cb-meta b{color:var(--ink);font-weight:600}
+
+/* === CHART GRID (2x3) === */
+.chart-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:18px}
+@media(max-width:1100px){.chart-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:680px){.chart-grid{grid-template-columns:1fr}}
+
+/* individual chart card */
+.chart-card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px 20px 14px;position:relative;transition:border-color .15s,box-shadow .15s}
+.chart-card:hover{border-color:var(--ink2)}
+.chart-card.warning{border-left:3px solid var(--bad)}
+.chart-card.attention{border-left:3px solid var(--amber)}
+
+.chart-head{margin-bottom:8px}
+.chart-tagline{font-family:var(--mono);font-size:9.5px;letter-spacing:.55px;text-transform:uppercase;color:var(--ink3);margin-bottom:5px;font-weight:500;display:flex;align-items:center;gap:7px}
+.chart-tagline .ttl-dot{width:5px;height:5px;border-radius:50%;background:var(--ink);display:inline-block}
+.chart-tagline.warn .ttl-dot{background:var(--bad)}
+.chart-tagline.amber .ttl-dot{background:var(--amber)}
+.chart-title{font-size:16px;font-weight:600;letter-spacing:-.3px;color:var(--ink);margin-bottom:4px}
+.chart-sub{font-size:12px;color:var(--ink3);line-height:1.4;margin-bottom:14px}
+
+/* big number summary */
+.chart-summary{display:flex;align-items:baseline;gap:14px;margin-bottom:14px;padding-bottom:12px;border-bottom:1px solid var(--line)}
+.chart-summary .latest{font-family:var(--mono);font-size:26px;font-weight:600;color:var(--ink);letter-spacing:-.4px;line-height:1}
+.chart-summary .latest-lbl{font-family:var(--mono);font-size:9px;letter-spacing:.5px;text-transform:uppercase;color:var(--ink3);margin-top:3px}
+.chart-summary .delta{font-family:var(--mono);font-size:12px;font-weight:500;padding:3px 8px;border-radius:999px;background:var(--bg3);color:var(--ink2)}
+.chart-summary .delta.pos{background:#dcfce7;color:var(--good)}
+.chart-summary .delta.neg{background:#fee2e2;color:var(--bad)}
+.chart-summary .delta-lbl{font-family:var(--mono);font-size:9px;color:var(--ink3);letter-spacing:.3px;text-transform:uppercase}
+
+/* svg chart */
+.chart-svg{width:100%;height:160px;display:block}
+.chart-svg .axis-line{stroke:var(--line2);stroke-width:.6}
+.chart-svg .grid-line{stroke:var(--grid);stroke-width:.6;stroke-dasharray:none}
+.chart-svg .axis-label{font-family:var(--mono);font-size:8.5px;fill:var(--ink3);letter-spacing:.2px}
+.chart-svg .axis-tick{font-family:var(--mono);font-size:8.5px;fill:var(--ink3)}
+.chart-svg .data-line{fill:none;stroke-width:1.8;vector-effect:non-scaling-stroke}
+.chart-svg .data-line.traded{stroke:var(--traded)}
+.chart-svg .data-line.nontraded{stroke:var(--nontraded)}
+.chart-svg .data-line.combined{stroke:var(--ink)}
+.chart-svg .data-point{fill:#fff;stroke-width:1.5}
+.chart-svg .data-point.traded{stroke:var(--traded)}
+.chart-svg .data-point.nontraded{stroke:var(--nontraded)}
+.chart-svg .annot-line{stroke:var(--ink4);stroke-width:.6;stroke-dasharray:2 2}
+.chart-svg .annot-label{font-family:var(--mono);font-size:7.5px;fill:var(--ink3);letter-spacing:.2px}
+.chart-svg .threshold-line{stroke:var(--bad);stroke-width:.8;stroke-dasharray:3 2;opacity:.5}
+
+/* chart legend + meta footer */
+.chart-meta{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-top:10px;padding-top:10px;border-top:1px dashed var(--line);font-family:var(--mono);font-size:9px;color:var(--ink3);letter-spacing:.3px}
+.chart-legend{display:flex;gap:14px;flex-wrap:wrap}
+.chart-legend .lg{display:flex;align-items:center;gap:5px}
+.chart-legend .sw{width:14px;height:2.5px;display:inline-block;border-radius:1px}
+.chart-legend .sw.traded{background:var(--traded)}
+.chart-legend .sw.nontraded{background:var(--nontraded)}
+.chart-legend .sw.combined{background:var(--ink)}
+.chart-source{color:var(--ink4);text-align:right;line-height:1.4}
+.chart-source b{color:var(--ink3);font-weight:500}
+
+/* loading */
+.chart-loading{display:flex;align-items:center;justify-content:center;height:160px;font-family:var(--mono);font-size:10.5px;color:var(--ink3)}
+.chart-loading .sp{display:inline-block;width:14px;height:14px;border:2px solid var(--line);border-top-color:var(--ink);border-radius:50%;animation:spin .8s linear infinite;margin-right:8px}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* === DATA NOTE BOX === */
+.data-note{margin-top:32px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:24px;display:grid;grid-template-columns:1fr 1fr;gap:24px}
+@media(max-width:780px){.data-note{grid-template-columns:1fr}}
+.data-note h3{font-size:14px;font-weight:600;letter-spacing:-.2px;color:var(--ink);margin-bottom:10px;display:flex;align-items:center;gap:7px}
+.data-note h3::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--ink);display:inline-block}
+.data-note p{font-size:12.5px;line-height:1.6;color:var(--ink2);margin-bottom:10px}
+.data-note ul{list-style:none;padding-left:0;margin-bottom:10px}
+.data-note ul li{font-size:12px;line-height:1.6;color:var(--ink2);padding-left:14px;position:relative}
+.data-note ul li::before{content:"·";position:absolute;left:4px;color:var(--ink3)}
+.data-note code{font-family:var(--mono);font-size:11px;background:var(--bg3);padding:2px 5px;border-radius:3px;color:var(--ink}
+
+footer{padding-top:36px;margin-top:60px;border-top:1px solid var(--line);font-family:var(--mono);font-size:10.5px;color:var(--ink3);text-align:center;letter-spacing:.3px;line-height:1.8}
+footer a{text-decoration:underline}
+
+/* ===== Credit Canon: restricted-access nav pill + loading skeletons ===== */
+.cc-nav-pill{background:#fff3e0;color:#E07B00;font-family:"Roboto Mono",monospace;font-size:8.5px;font-weight:500;padding:2px 7px;border-radius:999px;margin-left:6px;letter-spacing:.3px;vertical-align:middle;display:inline-flex;align-items:center;line-height:1}
+@keyframes cc-shimmer{0%{background-position:-400px 0}100%{background-position:400px 0}}
+.cc-sk{background:#e9edf1;background-image:linear-gradient(90deg,#e9edf1 0,#f4f6f8 200px,#e9edf1 400px);background-size:800px 100%;animation:cc-shimmer 1.3s linear infinite;border-radius:4px;display:block}
+.cc-sk-dark{background:rgba(255,255,255,.07);background-image:linear-gradient(90deg,rgba(255,255,255,.05) 0,rgba(255,255,255,.14) 200px,rgba(255,255,255,.05) 400px);background-size:800px 100%;animation:cc-shimmer 1.3s linear infinite;border-radius:4px;display:block}
+@media(prefers-reduced-motion:reduce){.cc-sk,.cc-sk-dark{animation:none}}
+
+/* === STANDARD NAV (traded template benchmark) === */
+.navbar{height:64px;background:#f7f7f7;border-bottom:1px solid #ececec;display:flex;align-items:center;padding:0 28px;position:sticky;top:0;z-index:200;font-family:'Roboto',system-ui,sans-serif}
+.navbar .logo{display:flex;align-items:center;gap:10px;text-decoration:none;margin-right:48px}
+.navbar .logo-mark{width:28px;height:28px;background:#151515;border-radius:7px;display:flex;align-items:center;justify-content:center;padding:0}
+.navbar .logo-mark svg{width:15px;height:15px;fill:#fff}
+.navbar .logo-text{font-family:'Roboto',sans-serif;font-size:15px;font-weight:600;color:#151515;letter-spacing:-.3px}
+.navbar .logo-text span{color:#151515;font-weight:400}
+.navbar .nav-links{display:flex;align-items:center;gap:2px;margin:0 auto}
+.navbar .nav-link{position:relative;padding:8px 15px;font-size:13.5px;font-weight:500;font-style:normal;color:#3a3a3a;text-decoration:none;border-radius:6px;white-space:nowrap;transition:color .15s,background .15s;line-height:1;display:inline-flex;align-items:center}
+.navbar .nav-link:hover{color:#151515;background:rgba(0,0,0,.04)}
+.navbar .nav-link.on{color:#151515;font-weight:700;font-style:italic;background:transparent}
+.navbar .nav-gold{position:absolute;top:calc(50% + 10px);left:50%;transform:translateX(-50%);font-size:7px;font-family:'Roboto Mono',monospace;color:#8a6d1b;background:rgba(184,134,11,.14);padding:1px 5px;border-radius:3px;letter-spacing:.4px;text-transform:uppercase;font-weight:600;pointer-events:none;white-space:nowrap}
+</style>
+</head>
+<body>
+
+<nav class="navbar"><a class="logo" href="index.html"><div class="logo-mark"><svg viewBox="0 0 16 16"><rect x="2" y="9" width="3" height="5"/><rect x="6.5" y="5" width="3" height="9"/><rect x="11" y="2" width="3" height="12"/></svg></div><div class="logo-text">Credit<span>Canon</span></div></a><div class="nav-links"><a class="nav-link" href="index.html">US BDC Universe</a><a class="nav-link" href="fund.html">Fund Deep Dive</a><a class="nav-link" href="compare.html">Compare</a><a class="nav-link" href="screener.html">Screener</a><a class="nav-link on" href="analysis.html">Analysis</a><a class="nav-link" href="stress.html">The Stress Desk<span class="nav-gold">Premium</span></a><a class="nav-link" href="news.html">News</a><a class="nav-link" href="about.html">About us</a></div></nav>
+
+<div class="wrap">
+
+  <!-- Breadcrumb -->
+  <div class="breadcrumb">
+    <a href="index.html">Universe</a>
+    <span class="sep">/</span>
+    <b>Analysis</b>
+    <span class="sep">/</span>
+    <span>Universe time series</span>
+  </div>
+
+  <!-- Page header -->
+  <div class="page-head">
+    <div>
+      <h1>The state of the BDC universe, quarter by quarter.</h1>
+      <p class="standfirst">Six metrics that define the credit profile of business development companies, tracked across the universe back to 2020. Median across all reporting funds, with an asset weighted toggle for capital weighted readings. Traded BDCs and perpetual non traded BDCs separated, because their portfolios behave differently and combining them hides the signal.</p>
+      <div class="meta-row">Methodology follows KBRA's quarterly compendium convention · Sources cited per chart · <b id="universe-coverage">Loading coverage...</b></div>
+    </div>
+  </div>
+
+  <!-- Module switcher -->
+  <div class="module-switcher">
+    <span class="label">Analysis modules:</span>
+    <span class="mod on">01 · Universe time series</span>
+    <a href="analysis-overlap.html" class="mod done">02 · Borrower overlap</a>
+    <a href="analysis-cohort.html" class="mod done">03 · Manager cohorts</a>
+    <a href="analysis-dividend.html" class="mod done">04 · Dividend coverage</a>
+    <a href="analysis-liquidity.html" class="mod done">05 · Non traded liquidity</a>
+    <a href="analysis-sector.html" class="mod done">06 · Sector concentration</a>
+  </div>
+
+  <!-- Control bar -->
+  <div class="controlbar">
+    <div class="cb-group">
+      <span class="cb-label">Aggregation</span>
+      <div class="cb-tabs" id="aggregation-tabs">
+        <button class="cb-tab on" data-agg="median">Median</button>
+        <button class="cb-tab" data-agg="weighted">Asset weighted</button>
+      </div>
+    </div>
+    <div class="cb-group">
+      <span class="cb-label">Segment</span>
+      <div class="cb-tabs" id="segment-tabs">
+        <button class="cb-tab on" data-seg="split">Traded vs non traded</button>
+        <button class="cb-tab" data-seg="combined">Combined</button>
+      </div>
+    </div>
+    <div class="cb-meta">Period: <b id="period-meta">Q1 2020 – Q4 2025</b></div>
+  </div>
+
+  <!-- Chart grid -->
+  <div class="chart-grid">
+
+    <!-- 1. Non-accrual % (FV) -->
+    <div class="chart-card warning" id="card-na">
+      <div class="chart-head">
+        <div class="chart-tagline warn"><span class="ttl-dot"></span>Credit stress</div>
+        <div class="chart-title">Non accrual rate</div>
+        <div class="chart-sub">Fair value basis. Higher = more borrowers stopping interest payments. Cycle warning threshold per KBRA is 3% sustained.</div>
+      </div>
+      <div class="chart-summary">
+        <div><div class="latest" id="na-latest">-</div><div class="latest-lbl">Latest quarter</div></div>
+        <div><div class="delta" id="na-delta">-</div><div class="delta-lbl">vs 4 quarters ago</div></div>
+      </div>
+      <svg class="chart-svg" id="chart-na" viewBox="0 0 400 160" preserveAspectRatio="none"></svg>
+      <div class="chart-meta">
+        <div class="chart-legend"></div>
+        <div class="chart-source">Source: <b>10-Q / 10-K filings</b> · <span id="na-n">N=...</span></div>
+      </div>
+    </div>
+
+    <!-- 2. Leverage (Debt/Equity) -->
+    <div class="chart-card attention" id="card-leverage">
+      <div class="chart-head">
+        <div class="chart-tagline amber"><span class="ttl-dot"></span>Structure</div>
+        <div class="chart-title">Gross leverage</div>
+        <div class="chart-sub">Debt divided by equity (NAV). BDCs have a 2.0× regulatory cap. Boston Fed flagged sector wide leverage rising from 0.7× to 1.0× since 2017.</div>
+      </div>
+      <div class="chart-summary">
+        <div><div class="latest" id="lev-latest">-</div><div class="latest-lbl">Latest quarter</div></div>
+        <div><div class="delta" id="lev-delta">-</div><div class="delta-lbl">vs 4 quarters ago</div></div>
+      </div>
+      <svg class="chart-svg" id="chart-leverage" viewBox="0 0 400 160" preserveAspectRatio="none"></svg>
+      <div class="chart-meta">
+        <div class="chart-legend"></div>
+        <div class="chart-source">Source: <b>10-Q / 10-K filings</b> · <span id="lev-n">N=...</span></div>
+      </div>
+    </div>
+
+    <!-- 3. Weighted avg yield -->
+    <div class="chart-card" id="card-yield">
+      <div class="chart-head">
+        <div class="chart-tagline"><span class="ttl-dot"></span>Income</div>
+        <div class="chart-title">Weighted average yield</div>
+        <div class="chart-sub">Portfolio yield on debt investments. Tracks SOFR cycle plus credit spread. Cliffwater Direct Lending Index showed 11.0% peak in 2024.</div>
+      </div>
+      <div class="chart-summary">
+        <div><div class="latest" id="yield-latest">-</div><div class="latest-lbl">Latest quarter</div></div>
+        <div><div class="delta" id="yield-delta">-</div><div class="delta-lbl">vs 4 quarters ago</div></div>
+      </div>
+      <svg class="chart-svg" id="chart-yield" viewBox="0 0 400 160" preserveAspectRatio="none"></svg>
+      <div class="chart-meta">
+        <div class="chart-legend"></div>
+        <div class="chart-source">Source: <b>10-Q / 10-K filings</b> · <span id="yield-n">N=...</span></div>
+      </div>
+    </div>
+
+    <!-- 4. First lien % -->
+    <div class="chart-card" id="card-fl">
+      <div class="chart-head">
+        <div class="chart-tagline"><span class="ttl-dot"></span>Quality</div>
+        <div class="chart-title">First lien senior secured %</div>
+        <div class="chart-sub">Share of portfolio in first lien debt, by fair value. Higher = more defensively positioned. KBRA tracks ~70-75% as the universe range.</div>
+      </div>
+      <div class="chart-summary">
+        <div><div class="latest" id="fl-latest">-</div><div class="latest-lbl">Latest quarter</div></div>
+        <div><div class="delta" id="fl-delta">-</div><div class="delta-lbl">vs 4 quarters ago</div></div>
+      </div>
+      <svg class="chart-svg" id="chart-fl" viewBox="0 0 400 160" preserveAspectRatio="none"></svg>
+      <div class="chart-meta">
+        <div class="chart-legend"></div>
+        <div class="chart-source">Source: <b>10-Q / 10-K filings</b> · <span id="fl-n">N=...</span></div>
+      </div>
+    </div>
+
+    <!-- 5. Software exposure (annual Q4) -->
+    <div class="chart-card attention" id="card-sw">
+      <div class="chart-head">
+        <div class="chart-tagline amber"><span class="ttl-dot"></span>Concentration</div>
+        <div class="chart-title">Software exposure</div>
+        <div class="chart-sub">Universe wide share of portfolio FV in software, SaaS, and IT services. Annual snapshots from 10-K SOIs. Morgan Stanley flagged 25% as a red line.</div>
+      </div>
+      <div class="chart-summary">
+        <div><div class="latest" id="sw-latest">-</div><div class="latest-lbl">Latest year</div></div>
+        <div><div class="delta" id="sw-delta">-</div><div class="delta-lbl">vs 4 years ago</div></div>
+      </div>
+      <svg class="chart-svg" id="chart-sw" viewBox="0 0 400 160" preserveAspectRatio="none"></svg>
+      <div class="chart-meta">
+        <div class="chart-legend"></div>
+        <div class="chart-source">Source: <b>10-K SOI extraction</b> · <span id="sw-n">N=...</span></div>
+      </div>
+    </div>
+
+    <!-- 6. PIK income share -->
+    <div class="chart-card attention" id="card-pik">
+      <div class="chart-head">
+        <div class="chart-tagline amber"><span class="ttl-dot"></span>Cash quality</div>
+        <div class="chart-title">PIK income reliance</div>
+        <div class="chart-sub">Paid in kind income as a share of total interest income. Rising PIK = borrowers conserving cash. Cliffwater CDLI reported 7.3% sector wide in 2025.</div>
+      </div>
+      <div class="chart-summary">
+        <div><div class="latest" id="pik-latest">-</div><div class="latest-lbl">Latest quarter</div></div>
+        <div><div class="delta" id="pik-delta">-</div><div class="delta-lbl">vs 4 quarters ago</div></div>
+      </div>
+      <svg class="chart-svg" id="chart-pik" viewBox="0 0 400 160" preserveAspectRatio="none"></svg>
+      <div class="chart-meta">
+        <div class="chart-legend"></div>
+        <div class="chart-source">Source: <b>10-Q / 10-K filings</b> · <span id="pik-n">N=...</span></div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Methodology notes -->
+  <div class="data-note">
+    <div>
+      <h3>How these numbers are calculated</h3>
+      <p>By default the chart shows the <b>median value across all BDCs that report the metric in a given quarter</b>, following KBRA's convention for cross sectional comparisons. Median is robust to outliers in a way that simple averaging is not. A single BDC with a 23% non accrual rate would distort an arithmetic mean, but the median tells you what the typical fund looks like.</p>
+      <p>The <b>asset weighted</b> toggle shows the same metric weighted by fund net assets. This answers a different question: where is investor capital actually exposed. Median and asset weighted often diverge, and that divergence is itself useful · it tells you whether the small funds and the big funds are behaving the same way.</p>
+      <p>Traded and non traded BDCs are reported separately because their portfolios differ structurally. Perpetual non traded BDCs are younger and unseasoned, with lower non accruals on average. Combining them dilutes the credit signal in the traded universe.</p>
+    </div>
+    <div>
+      <h3>Coverage and honesty</h3>
+      <p>Coverage varies by metric. Leverage, NAV per share, and net investment income are disclosed by virtually every BDC every quarter. Non accrual percentage is reported less consistently · many BDCs disclose it only in 10-K annual filings, or in footnotes that vary by fund. PIK income reporting is even sparser. The <code>N=</code> count next to each chart shows how many BDCs contributed to that median in the most recent quarter.</p>
+      <p>Software exposure is computed from Schedule of Investments data, which is only filed in 10-Ks. The full universe SOI coverage starts in Q4 2023 and improves over time. We show Q4 of each year as the cleanest annual series rather than padding intermediate quarters with thin samples.</p>
+      <p>The Q1 2026 reporting cycle is in flight. Most filings will land between mid May and mid June 2026. Today's chart endpoints are Q4 2025 to avoid showing partial coverage.</p>
+    </div>
+  </div>
+
+  <footer>
+    Module 01 of 06 · Universe Time Series. Five more modules in the analysis suite: borrower overlap, manager cohorts, dividend coverage, non traded liquidity, sector concentration heat map.<br>
+    Every number traces back to a primary filing. Methodology follows the conventions used by KBRA, Cliffwater, and the OFR.
+  </footer>
+
+</div>
+
+<script>
+// =========================================================================
+// ANALYSIS · MODULE 1 · UNIVERSE TIME SERIES
+//
+// Computes 6 metrics across all 134 BDCs, by quarter, for the period
+// Q1 2020 through Q4 2025. Median (default) and asset-weighted toggle.
+// Traded vs non-traded split (default) or combined toggle.
+//
+// Source data:
+//   data/universe/fund_directory.json   -> 192 funds with type
+//   data/timeseries/{ticker}.json       -> 134 funds with quarterly history
+//   data/soi/{ticker}.json              -> 159 funds with sector exposure
+// =========================================================================
+
+const DIR_URL = 'data/universe/fund_directory.json';
+const TS_URL  = 'data/timeseries/';
+const SOI_URL = 'data/soi/';
+
+// Configuration
+const TIME_FLOOR = 'Q1 2020';
+const TIME_CEIL  = 'Q4 2025';  // exclude Q1 2026, partial reporting
+const SW_KEYWORDS = ['software', 'saas', 'tech', 'it services', 'information technology'];
+
+// Inflection-point annotations (KBRA + Moody's + market events)
+const ANNOTATIONS = [
+  { q: 'Q3 2024', label: 'Pluralsight / Khoros',  short: 'Plural' },
+  { q: 'Q4 2024', label: 'BSA expanded',          short: 'BSA' },
+  { q: 'Q4 2025', label: 'Redemption tripling',   short: 'Redem.' },
+];
+
+// Per-metric configuration
+const METRICS = {
+  na: {
+    fields: ['na_pct_fv', 'na_pct_cost'],   // prefer FV, fall back to cost
+    isPct: true,
+    decimals: 2,
+    weightField: 'net_assets_mn',
+    chartId: 'chart-na',
+    minSampleSize: 5,
+    threshold: 3,  // KBRA 3% warning line
+    thresholdLabel: '3% warning',
+    higherIsBad: true,
+  },
+  lev: {
+    fields: ['debt_to_equity_ratio'],
+    fieldCompute: (snap) => {
+      // Compute from total_debt_mn / net_assets_mn if direct ratio missing
+      if (snap.debt_to_equity_ratio != null) return +snap.debt_to_equity_ratio;
+      if (snap.total_debt_mn != null && snap.net_assets_mn != null && snap.net_assets_mn > 0) {
+        return +snap.total_debt_mn / +snap.net_assets_mn;
+      }
+      return null;
+    },
+    isPct: false,
+    suffix: '×',
+    decimals: 2,
+    weightField: 'net_assets_mn',
+    chartId: 'chart-leverage',
+    minSampleSize: 5,
+    threshold: 2.0,
+    thresholdLabel: '2.0× cap',
+    higherIsBad: true,
+  },
+  yield: {
+    fields: ['weighted_avg_yield'],
+    isPct: true,
+    decimals: 1,
+    weightField: 'net_assets_mn',
+    chartId: 'chart-yield',
+    minSampleSize: 5,
+    higherIsBad: false,
+  },
+  fl: {
+    fields: ['first_lien_pct'],
+    isPct: true,
+    decimals: 1,
+    weightField: 'net_assets_mn',
+    chartId: 'chart-fl',
+    minSampleSize: 5,
+    higherIsBad: false,
+  },
+  pik: {
+    fields: ['pik_pct'],
+    isPct: true,
+    decimals: 1,
+    weightField: 'net_assets_mn',
+    chartId: 'chart-pik',
+    minSampleSize: 5,
+    threshold: 10,
+    thresholdLabel: '10% threshold',
+    higherIsBad: true,
+  },
+  // Software exposure is computed differently · annual Q4 from SOI
+  // Handled by a separate render path
+};
+
+// Quarter ordering helper
+function qkey(q) {
+  // 'Q1 2020' -> 2020.0, 'Q2 2020' -> 2020.25, etc.
+  const m = q.match(/Q(\d)\s+(\d{4})/);
+  if (!m) return 0;
+  return parseFloat(m[2]) + (parseInt(m[1]) - 1) * 0.25;
+}
+function quartersBetween(start, end) {
+  const result = [];
+  const startK = qkey(start), endK = qkey(end);
+  for (let y = 2019; y <= 2027; y++) {
+    for (let q = 1; q <= 4; q++) {
+      const label = `Q${q} ${y}`;
+      const k = qkey(label);
+      if (k >= startK && k <= endK) result.push(label);
+    }
+  }
+  return result;
+}
+
+// Global state
+let UNIVERSE = [];       // [{ticker, type, snapshots: [...]}]
+let SOI_DATA  = [];      // [{ticker, type, snapshots: [...]}]
+let CURRENT_AGG = 'median';
+let CURRENT_SEG = 'split';
+const ALL_QUARTERS = quartersBetween(TIME_FLOOR, TIME_CEIL);
+
+// ===== formatting helpers =====
+const fmtMetric = (v, cfg) => {
+  if (v == null || !isFinite(v)) return '-';
+  const s = v.toFixed(cfg.decimals);
+  return cfg.isPct ? s + '%' : (cfg.suffix ? s + cfg.suffix : s);
+};
+const fmtDelta = (cur, prev, cfg) => {
+  if (cur == null || prev == null || !isFinite(cur) || !isFinite(prev)) return '-';
+  const d = cur - prev;
+  const s = (d >= 0 ? '+' : '') + d.toFixed(cfg.decimals);
+  return cfg.isPct ? s + ' pp' : (cfg.suffix ? s + cfg.suffix : s);
+};
+
+// ===== aggregation =====
+function getMetricValue(snap, cfg) {
+  if (cfg.fieldCompute) return cfg.fieldCompute(snap);
+  for (const f of cfg.fields) {
+    if (snap[f] != null && isFinite(+snap[f])) return +snap[f];
+  }
+  return null;
+}
+
+function aggregateQuarter(snaps, cfg, mode) {
+  const values = [];
+  let weightedSum = 0, totalWeight = 0;
+  for (const s of snaps) {
+    const v = getMetricValue(s, cfg);
+    if (v == null) continue;
+    values.push(v);
+    if (mode === 'weighted') {
+      const w = +(s[cfg.weightField] || 0);
+      if (w > 0) { weightedSum += v * w; totalWeight += w; }
+    }
+  }
+  if (values.length < cfg.minSampleSize) return { value: null, n: values.length };
+  if (mode === 'weighted') {
+    if (totalWeight <= 0) return { value: null, n: values.length };
+    return { value: weightedSum / totalWeight, n: values.length };
+  }
+  values.sort((a, b) => a - b);
+  const mid = Math.floor(values.length / 2);
+  const median = values.length % 2 === 0
+    ? (values[mid - 1] + values[mid]) / 2
+    : values[mid];
+  return { value: median, n: values.length };
+}
+
+// ===== load data =====
+async function loadAll() {
+  let dir;
+  try { dir = await fetch(DIR_URL).then(r => r.json()); }
+  catch (e) { console.error('Could not load fund directory', e); return; }
+  const funds = dir.funds || [];
+  const typeMap = {};
+  for (const f of funds) typeMap[f.ticker] = f.fund_type;
+
+  // Pull each fund's timeseries in parallel
+  const tsPromises = funds.map(async (f) => {
+    try {
+      const r = await fetch(TS_URL + f.ticker + '.json');
+      if (!r.ok) return null;
+      const data = await r.json();
+      if (!Array.isArray(data) || !data.length) return null;
+      return { ticker: f.ticker, type: f.fund_type, snapshots: data };
+    } catch (e) { return null; }
+  });
+
+  // Pull SOI in parallel for software exposure series
+  const soiPromises = funds.map(async (f) => {
+    try {
+      const r = await fetch(SOI_URL + f.ticker + '.json');
+      if (!r.ok) return null;
+      const data = await r.json();
+      if (!data || !data.snapshots) return null;
+      return { ticker: f.ticker, type: f.fund_type, snapshots: data.snapshots };
+    } catch (e) { return null; }
+  });
+
+  const [tsResults, soiResults] = await Promise.all([
+    Promise.all(tsPromises),
+    Promise.all(soiPromises),
+  ]);
+  UNIVERSE = tsResults.filter(x => x != null);
+  SOI_DATA = soiResults.filter(x => x != null);
+
+  // Update coverage badge in header
+  const trCount = UNIVERSE.filter(u => u.type === 'traded').length;
+  const ntCount = UNIVERSE.filter(u => u.type === 'nontraded').length;
+  document.getElementById('universe-coverage').innerHTML =
+    `Coverage: <b>${UNIVERSE.length}</b> BDCs with quarterly history (${trCount} traded, ${ntCount} non traded) · SOI history for <b>${SOI_DATA.length}</b> funds`;
+
+  renderAll();
+}
+
+// ===== chart rendering =====
+function renderAll() {
+  for (const [key, cfg] of Object.entries(METRICS)) {
+    renderChart(key, cfg);
+  }
+  renderSoftwareChart();
+}
+
+function renderChart(key, cfg) {
+  const svg = document.getElementById(cfg.chartId);
+  if (!svg) return;
+  svg.innerHTML = '';
+
+  // For each quarter, compute aggregated value per segment
+  // Series structure: { traded: [{q, value, n}], nontraded: [...], combined: [...] }
+  const segments = CURRENT_SEG === 'combined'
+    ? { combined: UNIVERSE }
+    : { traded: UNIVERSE.filter(u => u.type === 'traded'),
+        nontraded: UNIVERSE.filter(u => u.type === 'nontraded') };
+
+  const series = {};
+  for (const [segName, funds] of Object.entries(segments)) {
+    series[segName] = ALL_QUARTERS.map(q => {
+      // Gather all snapshots for this quarter from these funds
+      const snaps = [];
+      for (const u of funds) {
+        const found = u.snapshots.find(s => s.quarter === q);
+        if (found) snaps.push(found);
+      }
+      const agg = aggregateQuarter(snaps, cfg, CURRENT_AGG);
+      return { q, ...agg };
+    });
+  }
+
+  drawLineChart(svg, series, cfg, key);
+  updateSummary(key, cfg, series);
+}
+
+function drawLineChart(svg, series, cfg, key) {
+  // SVG viewBox 400 x 160. Margins: 30 left, 8 right, 8 top, 22 bottom.
+  const W = 400, H = 160;
+  const ML = 30, MR = 12, MT = 10, MB = 24;
+  const innerW = W - ML - MR;
+  const innerH = H - MT - MB;
+
+  // Collect all defined values for y-domain
+  let allValues = [];
+  for (const seg of Object.values(series)) {
+    for (const pt of seg) if (pt.value != null) allValues.push(pt.value);
+  }
+  if (cfg.threshold != null) allValues.push(cfg.threshold);
+  if (!allValues.length) {
+    const t = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+    t.setAttribute('x', W / 2); t.setAttribute('y', H / 2);
+    t.setAttribute('text-anchor', 'middle');
+    t.setAttribute('font-family', 'Roboto Mono'); t.setAttribute('font-size', '10');
+    t.setAttribute('fill', '#a1a1aa');
+    t.textContent = 'Insufficient data';
+    svg.appendChild(t);
+    return;
+  }
+
+  // Y domain: padded
+  let yMin = Math.min(...allValues, 0);
+  let yMax = Math.max(...allValues);
+  const yRange = yMax - yMin || 1;
+  yMin = Math.max(0, yMin - yRange * 0.1);  // never below 0 for these metrics
+  yMax = yMax + yRange * 0.15;
+
+  // X positions
+  const xFor = (i) => ML + (i / Math.max(1, ALL_QUARTERS.length - 1)) * innerW;
+  const yFor = (v) => MT + innerH - ((v - yMin) / (yMax - yMin)) * innerH;
+
+  // === gridlines (4 horizontal) ===
+  for (let i = 0; i <= 4; i++) {
+    const yv = yMin + (yMax - yMin) * (i / 4);
+    const y = yFor(yv);
+    const ln = mkSvg('line', { x1: ML, x2: W - MR, y1: y, y2: y, class: 'grid-line' });
+    svg.appendChild(ln);
+    const lbl = mkSvg('text', { x: ML - 4, y: y + 3, 'text-anchor': 'end', class: 'axis-tick' });
+    lbl.textContent = cfg.isPct ? yv.toFixed(cfg.decimals === 2 ? 1 : 0) + '%'
+                                : yv.toFixed(cfg.decimals).replace(/\.?0+$/,'') + (cfg.suffix || '');
+    svg.appendChild(lbl);
+  }
+
+  // === x-axis ticks: show year labels at Q1 of each year ===
+  ALL_QUARTERS.forEach((q, i) => {
+    if (q.startsWith('Q1 ')) {
+      const x = xFor(i);
+      const lbl = mkSvg('text', {
+        x, y: H - 6, 'text-anchor': 'middle', class: 'axis-tick'
+      });
+      lbl.textContent = q.replace('Q1 ', '');
+      svg.appendChild(lbl);
+    }
+  });
+
+  // === threshold line if applicable ===
+  if (cfg.threshold != null && cfg.threshold >= yMin && cfg.threshold <= yMax) {
+    const ty = yFor(cfg.threshold);
+    svg.appendChild(mkSvg('line', { x1: ML, x2: W - MR, y1: ty, y2: ty, class: 'threshold-line' }));
+    const lbl = mkSvg('text', { x: W - MR - 2, y: ty - 3, 'text-anchor': 'end', class: 'annot-label' });
+    lbl.setAttribute('fill', '#b91c1c');
+    lbl.textContent = cfg.thresholdLabel;
+    svg.appendChild(lbl);
+  }
+
+  // === data lines ===
+  for (const [segName, points] of Object.entries(series)) {
+    let pathD = '';
+    let started = false;
+    points.forEach((pt, i) => {
+      if (pt.value == null) { started = false; return; }
+      const x = xFor(i), y = yFor(pt.value);
+      if (!started) { pathD += `M ${x.toFixed(1)} ${y.toFixed(1)}`; started = true; }
+      else { pathD += ` L ${x.toFixed(1)} ${y.toFixed(1)}`; }
+    });
+    const cls = `data-line ${segName}`;
+    svg.appendChild(mkSvg('path', { d: pathD, class: cls }));
+
+    // End-point dot
+    const lastIdx = points.reduce((best, pt, i) => pt.value != null ? i : best, -1);
+    if (lastIdx >= 0) {
+      const pt = points[lastIdx];
+      svg.appendChild(mkSvg('circle', {
+        cx: xFor(lastIdx), cy: yFor(pt.value), r: 3, class: `data-point ${segName}`
+      }));
+    }
+  }
+
+  // === build legend after the chart ===
+  const card = svg.closest('.chart-card');
+  const legend = card.querySelector('.chart-legend');
+  if (legend) {
+    legend.innerHTML = '';
+    if (CURRENT_SEG === 'split') {
+      legend.innerHTML = '<span class="lg"><span class="sw traded"></span>Traded</span><span class="lg"><span class="sw nontraded"></span>Non traded</span>';
+    } else {
+      legend.innerHTML = '<span class="lg"><span class="sw combined"></span>All BDCs</span>';
+    }
+  }
+}
+
+function mkSvg(tag, attrs) {
+  const el = document.createElementNS('http://www.w3.org/2000/svg', tag);
+  for (const [k, v] of Object.entries(attrs)) el.setAttribute(k, v);
+  return el;
+}
+
+function updateSummary(key, cfg, series) {
+  // Latest value: prefer combined if mode is combined; else show whichever segment is more representative
+  // We'll display the last non-null point from the universe-combined or traded-segment view.
+  const refSeries = series.combined || series.traded || series.nontraded;
+  if (!refSeries) return;
+  const lastIdx = refSeries.reduce((best, pt, i) => pt.value != null ? i : best, -1);
+  if (lastIdx < 0) {
+    document.getElementById(`${key}-latest`).textContent = '-';
+    document.getElementById(`${key}-delta`).textContent = '-';
+    document.getElementById(`${key}-n`).textContent = 'N=0';
+    return;
+  }
+  const cur = refSeries[lastIdx];
+  document.getElementById(`${key}-latest`).textContent = fmtMetric(cur.value, cfg);
+  document.getElementById(`${key}-n`).textContent = `N=${cur.n}`;
+
+  // Delta vs 4 quarters ago (or earliest available if less)
+  const prevIdx = Math.max(0, lastIdx - 4);
+  const prev = refSeries[prevIdx];
+  if (prev && prev.value != null) {
+    const deltaStr = fmtDelta(cur.value, prev.value, cfg);
+    const deltaEl = document.getElementById(`${key}-delta`);
+    deltaEl.textContent = deltaStr;
+    const isBetter = cfg.higherIsBad ? cur.value < prev.value : cur.value > prev.value;
+    deltaEl.className = 'delta ' + (cur.value === prev.value ? '' : (isBetter ? 'pos' : 'neg'));
+  } else {
+    document.getElementById(`${key}-delta`).textContent = '-';
+  }
+}
+
+// ===== software-exposure chart (annual Q4) =====
+function renderSoftwareChart() {
+  const svg = document.getElementById('chart-sw');
+  if (!svg || !SOI_DATA.length) return;
+  svg.innerHTML = '';
+
+  // Compute Q4 software exposure for each year · universe-aggregated, asset-weighted by total_fv
+  const q4Years = ['Q4 2022', 'Q4 2023', 'Q4 2024', 'Q4 2025'];
+  const computeYearly = (funds) => q4Years.map(q => {
+    let totalFv = 0, swFv = 0, n = 0;
+    for (const u of funds) {
+      const snap = u.snapshots.find(s => s.quarter === q);
+      if (!snap || !snap.total_fair_value_mn || snap.total_fair_value_mn <= 0) continue;
+      let sw = 0;
+      for (const st of (snap.sector_totals || [])) {
+        const sname = (st.sector || '').toLowerCase();
+        if (SW_KEYWORDS.some(k => sname.includes(k))) {
+          sw += st.fair_value_mn || 0;
+        }
+      }
+      totalFv += snap.total_fair_value_mn;
+      swFv += sw;
+      n += 1;
+    }
+    const pct = totalFv > 0 ? (swFv / totalFv) * 100 : null;
+    return { q, value: pct, n };
+  });
+
+  const segments = CURRENT_SEG === 'combined'
+    ? { combined: SOI_DATA }
+    : { traded: SOI_DATA.filter(u => u.type === 'traded'),
+        nontraded: SOI_DATA.filter(u => u.type === 'nontraded') };
+
+  const series = {};
+  for (const [segName, funds] of Object.entries(segments)) {
+    series[segName] = computeYearly(funds);
+  }
+
+  // Reuse drawLineChart but with q4Years as x-axis labels
+  drawSoftwareLineChart(svg, series, q4Years);
+
+  // Summary update
+  const refSeries = series.combined || series.traded || series.nontraded;
+  const lastIdx = refSeries.reduce((best, pt, i) => pt.value != null ? i : best, -1);
+  if (lastIdx >= 0) {
+    const cur = refSeries[lastIdx];
+    document.getElementById('sw-latest').textContent = cur.value.toFixed(1) + '%';
+    document.getElementById('sw-n').textContent = `N=${cur.n} 10-K SOIs`;
+    // Compute delta from earliest available
+    const firstIdx = refSeries.findIndex(p => p.value != null);
+    if (firstIdx >= 0 && firstIdx < lastIdx) {
+      const d = cur.value - refSeries[firstIdx].value;
+      const ds = (d >= 0 ? '+' : '') + d.toFixed(1) + ' pp';
+      const el = document.getElementById('sw-delta');
+      el.textContent = ds;
+      el.className = 'delta ' + (d > 0 ? 'neg' : 'pos');  // rising software = bad
+    } else {
+      document.getElementById('sw-delta').textContent = '-';
+    }
+  }
+  // Update legend
+  const legend = svg.closest('.chart-card').querySelector('.chart-legend');
+  if (legend) {
+    if (CURRENT_SEG === 'split') {
+      legend.innerHTML = '<span class="lg"><span class="sw traded"></span>Traded</span><span class="lg"><span class="sw nontraded"></span>Non traded</span>';
+    } else {
+      legend.innerHTML = '<span class="lg"><span class="sw combined"></span>All BDCs</span>';
+    }
+  }
+}
+
+function drawSoftwareLineChart(svg, series, xLabels) {
+  const W = 400, H = 160;
+  const ML = 30, MR = 12, MT = 10, MB = 24;
+  const innerW = W - ML - MR;
+  const innerH = H - MT - MB;
+
+  let allValues = [];
+  for (const seg of Object.values(series)) for (const pt of seg) if (pt.value != null) allValues.push(pt.value);
+  allValues.push(25);  // Morgan Stanley red line
+  if (!allValues.length) return;
+  let yMin = 0, yMax = Math.max(...allValues) * 1.15;
+
+  const xFor = (i) => ML + (i / Math.max(1, xLabels.length - 1)) * innerW;
+  const yFor = (v) => MT + innerH - ((v - yMin) / (yMax - yMin)) * innerH;
+
+  for (let i = 0; i <= 4; i++) {
+    const yv = yMin + (yMax - yMin) * (i / 4);
+    const y = yFor(yv);
+    svg.appendChild(mkSvg('line', { x1: ML, x2: W - MR, y1: y, y2: y, class: 'grid-line' }));
+    const lbl = mkSvg('text', { x: ML - 4, y: y + 3, 'text-anchor': 'end', class: 'axis-tick' });
+    lbl.textContent = yv.toFixed(0) + '%';
+    svg.appendChild(lbl);
+  }
+  xLabels.forEach((q, i) => {
+    const x = xFor(i);
+    const lbl = mkSvg('text', { x, y: H - 6, 'text-anchor': 'middle', class: 'axis-tick' });
+    lbl.textContent = q.replace('Q4 ', '');
+    svg.appendChild(lbl);
+  });
+
+  // Morgan Stanley red line at 25%
+  const ty = yFor(25);
+  svg.appendChild(mkSvg('line', { x1: ML, x2: W - MR, y1: ty, y2: ty, class: 'threshold-line' }));
+  const tlbl = mkSvg('text', { x: W - MR - 2, y: ty - 3, 'text-anchor': 'end', class: 'annot-label' });
+  tlbl.setAttribute('fill', '#b91c1c');
+  tlbl.textContent = '25% MS red line';
+  svg.appendChild(tlbl);
+
+  for (const [segName, points] of Object.entries(series)) {
+    let pathD = ''; let started = false;
+    points.forEach((pt, i) => {
+      if (pt.value == null) { started = false; return; }
+      const x = xFor(i), y = yFor(pt.value);
+      if (!started) { pathD += `M ${x.toFixed(1)} ${y.toFixed(1)}`; started = true; }
+      else { pathD += ` L ${x.toFixed(1)} ${y.toFixed(1)}`; }
+    });
+    svg.appendChild(mkSvg('path', { d: pathD, class: `data-line ${segName}` }));
+
+    // Show all data points as dots (4 years = manageable)
+    points.forEach((pt, i) => {
+      if (pt.value == null) return;
+      svg.appendChild(mkSvg('circle', {
+        cx: xFor(i), cy: yFor(pt.value), r: 3, class: `data-point ${segName}`
+      }));
+    });
+  }
+}
+
+// ===== control bar handlers =====
+document.querySelectorAll('#aggregation-tabs .cb-tab').forEach(t => {
+  t.addEventListener('click', () => {
+    document.querySelectorAll('#aggregation-tabs .cb-tab').forEach(x => x.classList.remove('on'));
+    t.classList.add('on');
+    CURRENT_AGG = t.dataset.agg;
+    renderAll();
+  });
+});
+document.querySelectorAll('#segment-tabs .cb-tab').forEach(t => {
+  t.addEventListener('click', () => {
+    document.querySelectorAll('#segment-tabs .cb-tab').forEach(x => x.classList.remove('on'));
+    t.classList.add('on');
+    CURRENT_SEG = t.dataset.seg;
+    renderAll();
+  });
+});
+
+loadAll();
+</script>
+
+</body>
+</html>
