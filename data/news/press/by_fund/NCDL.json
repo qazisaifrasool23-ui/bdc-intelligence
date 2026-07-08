@@ -10,7 +10,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520826006154/xslF345X06/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "EFFECT",
@@ -18,7 +21,10 @@
       "label": "EFFECT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/999999999526002035/xslEFFECTX01/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL registration statement declared effective by SEC",
+      "signal": "clean",
+      "signal_note": "Routine notice of effectiveness"
     },
     {
       "form": "POS AM",
@@ -26,7 +32,10 @@
       "label": "POS AM — POS AM",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000173792426000062/ck0001737924-20260610.htm",
-      "material": false
+      "material": false,
+      "headline": "NCDL files post-effective amendment to shelf registration",
+      "signal": "clean",
+      "signal_note": "Routine registration amendment"
     },
     {
       "form": "8-K",
@@ -34,7 +43,10 @@
       "label": "Current report (8-K)",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000173792426000052/ncdlc-20260521.htm",
-      "material": false
+      "material": false,
+      "headline": "NCDL files Form 8-K current report",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "4",
@@ -42,7 +54,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520826005326/xslF345X06/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -50,7 +65,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520826005218/xslF345X06/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "8-K",
@@ -58,7 +76,10 @@
       "label": "Current report: reported quarterly results; issued a Regulation FD disclosure",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000173792426000048/ncdlc-20260507.htm",
-      "material": true
+      "material": true,
+      "headline": "NCDL files Form 8-K current report",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "10-Q",
@@ -66,7 +87,10 @@
       "label": "Quarterly report (10-Q) for period ending 2026-03-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000173792426000045/ncdlc-20260331.htm",
-      "material": true
+      "material": true,
+      "headline": "NCDL files quarterly report on Form 10-Q",
+      "signal": "clean",
+      "signal_note": "Routine quarterly report"
     },
     {
       "form": "DEFA14A",
@@ -74,7 +98,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000173792426000041/ncdl-defa14axfullpackageco.htm",
-      "material": false
+      "material": false,
+      "headline": "NCDL files additional proxy solicitation materials",
+      "signal": "clean",
+      "signal_note": "Routine proxy materials"
     },
     {
       "form": "DEFA14A",
@@ -82,7 +109,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000173792426000039/ncdl-defa14ax2026definitiva.htm",
-      "material": false
+      "material": false,
+      "headline": "NCDL files additional proxy solicitation materials",
+      "signal": "clean",
+      "signal_note": "Routine proxy materials"
     },
     {
       "form": "DEFA14A",
@@ -90,7 +120,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000173792426000038/ncdl-defa14axnoticemlingco.htm",
-      "material": false
+      "material": false,
+      "headline": "NCDL files additional proxy solicitation materials",
+      "signal": "clean",
+      "signal_note": "Routine proxy materials"
     },
     {
       "form": "DEFA14A",
@@ -98,7 +131,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000173792426000036/ncdl-defa14axnacombined.htm",
-      "material": false
+      "material": false,
+      "headline": "NCDL files additional proxy solicitation materials",
+      "signal": "clean",
+      "signal_note": "Routine proxy materials"
     },
     {
       "form": "DEF 14A",
@@ -106,7 +142,10 @@
       "label": "Proxy statement — DEF 14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000173792426000034/ncdlc-20260406.htm",
-      "material": false
+      "material": false,
+      "headline": "NCDL files definitive proxy statement",
+      "signal": "clean",
+      "signal_note": "Routine annual proxy statement"
     },
     {
       "form": "8-K",
@@ -114,7 +153,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000173792426000023/ncdlc-20260317.htm",
-      "material": true
+      "material": true,
+      "headline": "NCDL files Form 8-K current report",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "4",
@@ -122,7 +164,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520826003590/xslF345X05/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -130,7 +175,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520826003540/xslF345X05/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -138,7 +186,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520826003393/xslF345X05/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -146,7 +197,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520826003392/xslF345X05/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -154,7 +208,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520826003391/xslF345X05/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "POS AM",
@@ -162,7 +219,10 @@
       "label": "POS AM — POS AM",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000173792426000018/ncdl-formnx2postxeffective.htm",
-      "material": false
+      "material": false,
+      "headline": "NCDL files post-effective amendment to shelf registration",
+      "signal": "clean",
+      "signal_note": "Routine registration amendment"
     },
     {
       "form": "4",
@@ -170,7 +230,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520826003228/xslF345X05/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -178,7 +241,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520826003227/xslF345X05/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -186,7 +252,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520826003226/xslF345X05/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "8-K",
@@ -194,7 +263,10 @@
       "label": "Current report: reported quarterly results; issued a Regulation FD disclosure",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000173792426000016/ncdlc-20260226.htm",
-      "material": true
+      "material": true,
+      "headline": "NCDL files Form 8-K current report",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "10-K",
@@ -202,7 +274,10 @@
       "label": "Annual report (10-K) for period ending 2025-12-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000173792426000014/ncdlc-20251231.htm",
-      "material": true
+      "material": true,
+      "headline": "NCDL files annual report on Form 10-K",
+      "signal": "clean",
+      "signal_note": "Routine annual report"
     },
     {
       "form": "N-2 POSASR",
@@ -210,7 +285,10 @@
       "label": "N-2 POSASR — N-2 POSASR",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000173792426000009/ncdl-formnx2postxeffective.htm",
-      "material": false
+      "material": false,
+      "headline": "NCDL files post-effective shelf registration amendment",
+      "signal": "clean",
+      "signal_note": "Routine shelf registration"
     },
     {
       "form": "SCHEDULE 13G/A",
@@ -218,7 +296,10 @@
       "label": "SCHEDULE 13G/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000114036126005011/xslSCHEDULE_13G_X01/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "Institutional investor amends passive stake in NCDL",
+      "signal": "clean",
+      "signal_note": "Routine passive ownership filing"
     },
     {
       "form": "8-K",
@@ -226,7 +307,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000173792426000003/ncdlc-20260129.htm",
-      "material": true
+      "material": true,
+      "headline": "NCDL files Form 8-K current report",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "SCHEDULE 13G",
@@ -234,7 +318,10 @@
       "label": "SCHEDULE 13G",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000195175725001460/xslSCHEDULE_13G_X01/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "Institutional investor reports passive stake in NCDL",
+      "signal": "clean",
+      "signal_note": "Routine passive ownership filing"
     },
     {
       "form": "4",
@@ -242,7 +329,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520825009316/xslF345X05/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -250,7 +340,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520825009259/xslF345X05/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "SCHEDULE 13G/A",
@@ -258,7 +351,10 @@
       "label": "SCHEDULE 13G/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000114036125042299/xslSCHEDULE_13G_X01/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "Institutional investor amends passive stake in NCDL",
+      "signal": "clean",
+      "signal_note": "Routine passive ownership filing"
     },
     {
       "form": "4",
@@ -266,7 +362,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520825009047/xslF345X05/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "8-K",
@@ -274,7 +373,10 @@
       "label": "Current report: reported quarterly results; issued a Regulation FD disclosure",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000173792425000017/ncdlc-20251104.htm",
-      "material": true
+      "material": true,
+      "headline": "NCDL files Form 8-K current report",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "10-Q",
@@ -282,7 +384,10 @@
       "label": "Quarterly report (10-Q) for period ending 2025-09-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000173792425000013/ncdlc-20250930.htm",
-      "material": true
+      "material": true,
+      "headline": "NCDL files quarterly report on Form 10-Q",
+      "signal": "clean",
+      "signal_note": "Routine quarterly report"
     },
     {
       "form": "40-17G",
@@ -290,7 +395,10 @@
       "label": "40-17G — 40-17G",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000173792425000010/ncfl-fidelitybondfiling.htm",
-      "material": false
+      "material": false,
+      "headline": "NCDL files annual fidelity bond under Rule 17g-1",
+      "signal": "clean",
+      "signal_note": "Routine fidelity bond filing"
     },
     {
       "form": "4",
@@ -298,7 +406,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520825008014/xslF345X05/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "APP ORDR",
@@ -306,7 +417,10 @@
       "label": "APP ORDR",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/999999999725003289/filename1.pdf",
-      "material": false
+      "material": false,
+      "headline": "NCDL receives SEC exemptive relief order",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "8-K",
@@ -314,7 +428,10 @@
       "label": "Current report: reported quarterly results; issued a Regulation FD disclosure",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828025038084/ncdlc-20250806.htm",
-      "material": true
+      "material": true,
+      "headline": "NCDL files Form 8-K current report",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "10-Q",
@@ -322,7 +439,10 @@
       "label": "Quarterly report (10-Q) for period ending 2025-06-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828025038050/ncdlc-20250630.htm",
-      "material": true
+      "material": true,
+      "headline": "NCDL files quarterly report on Form 10-Q",
+      "signal": "clean",
+      "signal_note": "Routine quarterly report"
     },
     {
       "form": "APP NTC",
@@ -330,7 +450,10 @@
       "label": "APP NTC",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/999999999725002987/filename1.pdf",
-      "material": false
+      "material": false,
+      "headline": "NCDL files notice of SEC exemptive application",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "40-APP/A",
@@ -338,7 +461,10 @@
       "label": "40-APP/A — 40-APP/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000173792425000006/churchill-40xappaxamendmen.htm",
-      "material": false
+      "material": false,
+      "headline": "NCDL amends SEC exemptive relief application",
+      "signal": "clean",
+      "signal_note": "Routine exemptive-order amendment"
     },
     {
       "form": "40-APP/A",
@@ -346,7 +472,10 @@
       "label": "40-APP/A — 40-APP/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828025033457/churchill-40xappaxamendmen.htm",
-      "material": false
+      "material": false,
+      "headline": "NCDL amends SEC exemptive relief application",
+      "signal": "clean",
+      "signal_note": "Routine exemptive-order amendment"
     },
     {
       "form": "4",
@@ -354,7 +483,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520825005980/xslF345X05/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -362,7 +494,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520825005768/xslF345X05/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -370,7 +505,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520825005724/xslF345X05/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "8-K",
@@ -378,7 +516,10 @@
       "label": "Current report (8-K)",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828025029308/ncdlc-20250529.htm",
-      "material": false
+      "material": false,
+      "headline": "NCDL files Form 8-K current report",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "4",
@@ -386,7 +527,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520825005476/xslF345X05/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "DEFA14A",
@@ -394,7 +538,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828025025467/defa14a-mlingreminderxshar.htm",
-      "material": false
+      "material": false,
+      "headline": "NCDL files additional proxy solicitation materials",
+      "signal": "clean",
+      "signal_note": "Routine proxy materials"
     },
     {
       "form": "DEFA14A",
@@ -402,7 +549,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828025025465/ncdl-defa14axremindermling.htm",
-      "material": false
+      "material": false,
+      "headline": "NCDL files additional proxy solicitation materials",
+      "signal": "clean",
+      "signal_note": "Routine proxy materials"
     },
     {
       "form": "4",
@@ -410,7 +560,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520825005004/xslF345X05/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "8-K",
@@ -418,7 +571,10 @@
       "label": "Current report: reported quarterly results; issued a Regulation FD disclosure",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828025023453/ncdlc-20250508.htm",
-      "material": true
+      "material": true,
+      "headline": "NCDL files Form 8-K current report",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "10-Q",
@@ -426,7 +582,10 @@
       "label": "Quarterly report (10-Q) for period ending 2025-03-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828025023397/ncdlc-20250331.htm",
-      "material": true
+      "material": true,
+      "headline": "NCDL files quarterly report on Form 10-Q",
+      "signal": "clean",
+      "signal_note": "Routine quarterly report"
     },
     {
       "form": "40-APP",
@@ -434,7 +593,10 @@
       "label": "40-APP — 40-APP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828025023284/churchill-40xappxcoxinvest.htm",
-      "material": false
+      "material": false,
+      "headline": "NCDL files SEC exemptive relief application",
+      "signal": "clean",
+      "signal_note": "Routine exemptive application"
     },
     {
       "form": "DEFA14A",
@@ -442,7 +604,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828025017561/ncdl-defa14ax2025sharehold.htm",
-      "material": false
+      "material": false,
+      "headline": "NCDL files additional proxy solicitation materials",
+      "signal": "clean",
+      "signal_note": "Routine proxy materials"
     },
     {
       "form": "DEFA14A",
@@ -450,7 +615,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828025017560/ncdl-defa14ax2025fullpacka.htm",
-      "material": false
+      "material": false,
+      "headline": "NCDL files additional proxy solicitation materials",
+      "signal": "clean",
+      "signal_note": "Routine proxy materials"
     },
     {
       "form": "DEFA14A",
@@ -458,7 +626,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828025017558/ncdl-defa14ax2025noticeofi.htm",
-      "material": false
+      "material": false,
+      "headline": "NCDL files additional proxy solicitation materials",
+      "signal": "clean",
+      "signal_note": "Routine proxy materials"
     },
     {
       "form": "DEF 14A",
@@ -466,7 +637,10 @@
       "label": "Proxy statement — DEF 14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828025017557/ncdl-def14ax2025annualmeet.htm",
-      "material": false
+      "material": false,
+      "headline": "NCDL files definitive proxy statement",
+      "signal": "clean",
+      "signal_note": "Routine annual proxy statement"
     },
     {
       "form": "PRE 14A",
@@ -474,7 +648,10 @@
       "label": "PRE 14A — PRE 14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828025015454/ncdl-pre14ax2025annualmeet.htm",
-      "material": false
+      "material": false,
+      "headline": "NCDL files preliminary proxy statement",
+      "signal": "clean",
+      "signal_note": "Routine annual proxy statement"
     },
     {
       "form": "8-K",
@@ -482,7 +659,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828025015443/ncdlc-20250328.htm",
-      "material": true
+      "material": true,
+      "headline": "NCDL files Form 8-K current report",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "8-K",
@@ -490,7 +670,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828025014963/ncdlc-20250320.htm",
-      "material": true
+      "material": true,
+      "headline": "NCDL completes 458 million dollar CLO debt securitization refinancing",
+      "signal": "clean",
+      "signal_note": "Routine debt securitization refinancing"
     },
     {
       "form": "4/A",
@@ -498,7 +681,10 @@
       "label": "4/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520825003626/xslF345X05/doc4a.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider files amended Form 4 transaction report",
+      "signal": "clean",
+      "signal_note": "Amended insider transaction"
     },
     {
       "form": "424B2",
@@ -506,7 +692,10 @@
       "label": "Prospectus supplement (offering) — 424B2",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828025011691/ck0001737924-20250310.htm",
-      "material": true
+      "material": true,
+      "headline": "NCDL files prospectus supplement for securities offering",
+      "signal": "clean",
+      "signal_note": "Routine securities offering"
     },
     {
       "form": "8-K",
@@ -514,7 +703,10 @@
       "label": "Current report: entered a material agreement",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828025011689/ncdlc-20250310.htm",
-      "material": true
+      "material": true,
+      "headline": "NCDL files Form 8-K current report",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "8-K",
@@ -522,7 +714,10 @@
       "label": "Current report: reported quarterly results; issued a Regulation FD disclosure",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828025008425/ncdlc-20250227.htm",
-      "material": true
+      "material": true,
+      "headline": "NCDL files Form 8-K current report",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "10-K",
@@ -530,7 +725,10 @@
       "label": "Annual report (10-K) for period ending 2024-12-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828025008382/ncdlc-20241231.htm",
-      "material": true
+      "material": true,
+      "headline": "NCDL files annual report on Form 10-K",
+      "signal": "clean",
+      "signal_note": "Routine annual report"
     },
     {
       "form": "8-K",
@@ -538,7 +736,10 @@
       "label": "Current report: changed a director or senior officer",
       "category": "Personnel",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828025005793/ncdlc-20250210.htm",
-      "material": true
+      "material": true,
+      "headline": "NCDL director Michael Perry resigns; board reduced to six",
+      "signal": "clean",
+      "signal_note": "Director resignation, no disagreement"
     },
     {
       "form": "8-K",
@@ -546,7 +747,10 @@
       "label": "Current report: terminated a material agreement",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828025002998/ncdlc-20250123.htm",
-      "material": true
+      "material": true,
+      "headline": "NCDL files Form 8-K current report",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "497AD",
@@ -554,7 +758,10 @@
       "label": "497AD — 497AD",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828025002220/ncdl-497adxclosingpressrel.htm",
-      "material": false
+      "material": false,
+      "headline": "NCDL files advertising material under Rule 497",
+      "signal": "clean",
+      "signal_note": "Routine prospectus filing"
     },
     {
       "form": "8-K",
@@ -562,7 +769,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828025002219/ncdlc-20250122.htm",
-      "material": true
+      "material": true,
+      "headline": "NCDL issues 300 million dollars 6.650% notes due 2030",
+      "signal": "clean",
+      "signal_note": "Routine notes issuance"
     },
     {
       "form": "424B2",
@@ -570,7 +780,10 @@
       "label": "Prospectus supplement (offering) — 424B2",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828025001629/ncdl-20250115.htm",
-      "material": true
+      "material": true,
+      "headline": "NCDL files prospectus supplement for securities offering",
+      "signal": "clean",
+      "signal_note": "Routine securities offering"
     },
     {
       "form": "8-K",
@@ -578,7 +791,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828025001630/ncdlc-20250114.htm",
-      "material": true
+      "material": true,
+      "headline": "NCDL enters underwriting agreement for 300 million dollar notes",
+      "signal": "clean",
+      "signal_note": "Routine notes offering"
     },
     {
       "form": "497AD",
@@ -586,7 +802,10 @@
       "label": "497AD — 497AD",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828025001529/ncdl-form497ad.htm",
-      "material": false
+      "material": false,
+      "headline": "NCDL files advertising material under Rule 497",
+      "signal": "clean",
+      "signal_note": "Routine prospectus filing"
     },
     {
       "form": "497AD",
@@ -594,7 +813,10 @@
       "label": "497AD — 497AD",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828025001528/ncdl-497ad1142025.htm",
-      "material": false
+      "material": false,
+      "headline": "NCDL files advertising material under Rule 497",
+      "signal": "clean",
+      "signal_note": "Routine prospectus filing"
     },
     {
       "form": "FWP",
@@ -602,7 +824,10 @@
       "label": "FWP — FWP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828025001499/ncdl-fwp1142025.htm",
-      "material": false
+      "material": false,
+      "headline": "NCDL files free writing prospectus",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "424B2",
@@ -610,7 +835,10 @@
       "label": "Prospectus supplement (offering) — 424B2",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828025001444/ncdl-20250114.htm",
-      "material": true
+      "material": true,
+      "headline": "NCDL files prospectus supplement for securities offering",
+      "signal": "clean",
+      "signal_note": "Routine securities offering"
     },
     {
       "form": "N-2ASR",
@@ -618,7 +846,10 @@
       "label": "N-2ASR — N-2ASR",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828024052131/ck0001737924-20241219.htm",
-      "material": false
+      "material": false,
+      "headline": "NCDL files automatic shelf registration statement",
+      "signal": "clean",
+      "signal_note": "Routine shelf registration"
     },
     {
       "form": "4",
@@ -626,7 +857,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520824010466/xslF345X05/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -634,7 +868,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520824010352/xslF345X05/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -642,7 +879,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520824010278/xslF345X05/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "40-17G",
@@ -650,7 +890,10 @@
       "label": "40-17G — 40-17G",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828024048502/ncdl-fidelitybondfiling40xa.htm",
-      "material": false
+      "material": false,
+      "headline": "NCDL files annual fidelity bond under Rule 17g-1",
+      "signal": "clean",
+      "signal_note": "Routine fidelity bond filing"
     },
     {
       "form": "SC 13G",
@@ -658,7 +901,10 @@
       "label": "SC 13G — SC 13G",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000114036124046971/ef20038677_sc13g.htm",
-      "material": false
+      "material": false,
+      "headline": "Institutional investor reports passive stake in NCDL",
+      "signal": "clean",
+      "signal_note": "Routine passive ownership filing"
     },
     {
       "form": "8-K",
@@ -666,7 +912,10 @@
       "label": "Current report: reported quarterly results; issued a Regulation FD disclosure",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828024045985/ncdlc-20241107.htm",
-      "material": true
+      "material": true,
+      "headline": "NCDL files Form 8-K current report",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "10-Q",
@@ -674,7 +923,10 @@
       "label": "Quarterly report (10-Q) for period ending 2024-09-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828024045921/ncdlc-20240930.htm",
-      "material": true
+      "material": true,
+      "headline": "NCDL files quarterly report on Form 10-Q",
+      "signal": "clean",
+      "signal_note": "Routine quarterly report"
     },
     {
       "form": "8-K",
@@ -682,7 +934,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828024042559/ncdlc-20241004.htm",
-      "material": true
+      "material": true,
+      "headline": "NCDL files Form 8-K current report",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "8-K",
@@ -690,7 +945,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828024039122/ncdlc-20240827.htm",
-      "material": true
+      "material": true,
+      "headline": "NCDL files Form 8-K current report",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "8-K",
@@ -698,7 +956,10 @@
       "label": "Current report: completed an acquisition or disposition; issued a Regulation FD disclosure",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828024035377/ncdlc-20240807.htm",
-      "material": true
+      "material": true,
+      "headline": "NCDL files Form 8-K current report",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "10-Q",
@@ -706,7 +967,10 @@
       "label": "Quarterly report (10-Q) for period ending 2024-06-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828024035331/ncdlc-20240630.htm",
-      "material": true
+      "material": true,
+      "headline": "NCDL files quarterly report on Form 10-Q",
+      "signal": "clean",
+      "signal_note": "Routine quarterly report"
     },
     {
       "form": "8-K",
@@ -714,7 +978,10 @@
       "label": "Current report (8-K)",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828024026347/ncdlc-20240528.htm",
-      "material": false
+      "material": false,
+      "headline": "NCDL files Form 8-K current report",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "DEFA14A",
@@ -722,7 +989,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828024024685/ncdl-defa14axemlsolicitati.htm",
-      "material": false
+      "material": false,
+      "headline": "NCDL files additional proxy solicitation materials",
+      "signal": "clean",
+      "signal_note": "Routine proxy materials"
     },
     {
       "form": "8-K",
@@ -730,7 +1000,10 @@
       "label": "Current report: reported quarterly results; issued a Regulation FD disclosure",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828024021957/ncdlc-20240509.htm",
-      "material": true
+      "material": true,
+      "headline": "NCDL files Form 8-K current report",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "10-Q",
@@ -738,7 +1011,10 @@
       "label": "Quarterly report (10-Q) for period ending 2024-03-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828024021951/ncdlc-20240331.htm",
-      "material": true
+      "material": true,
+      "headline": "NCDL files quarterly report on Form 10-Q",
+      "signal": "clean",
+      "signal_note": "Routine quarterly report"
     },
     {
       "form": "DEFA14A",
@@ -746,7 +1022,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828024016249/ncdl-defa14ax2024noticeofia.htm",
-      "material": false
+      "material": false,
+      "headline": "NCDL files additional proxy solicitation materials",
+      "signal": "clean",
+      "signal_note": "Routine proxy materials"
     },
     {
       "form": "DEF 14A",
@@ -754,7 +1033,10 @@
       "label": "Proxy statement — DEF 14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828024016248/ncdl-def14ax2024annualmeeta.htm",
-      "material": false
+      "material": false,
+      "headline": "NCDL files definitive proxy statement",
+      "signal": "clean",
+      "signal_note": "Routine annual proxy statement"
     },
     {
       "form": "8-K",
@@ -762,7 +1044,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828024016233/ncdlc-20240409.htm",
-      "material": true
+      "material": true,
+      "headline": "NCDL files Form 8-K current report",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "8-K",
@@ -770,7 +1055,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828024012245/ncdlc-20240314.htm",
-      "material": true
+      "material": true,
+      "headline": "NCDL files Form 8-K current report",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "8-K",
@@ -778,7 +1066,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828024010264/ncdlc-20240305.htm",
-      "material": true
+      "material": true,
+      "headline": "NCDL files Form 8-K current report",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "3",
@@ -786,7 +1077,10 @@
       "label": "3",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520824003788/xslF345X02/doc3.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider files initial Form 3 ownership statement",
+      "signal": "clean",
+      "signal_note": "Routine initial ownership"
     },
     {
       "form": "CORRESP",
@@ -794,7 +1088,10 @@
       "label": "CORRESP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828024007325/filename1.htm",
-      "material": false
+      "material": false,
+      "headline": "NCDL responds to SEC staff comments on filings",
+      "signal": "clean",
+      "signal_note": "Routine SEC comment response"
     },
     {
       "form": "8-K",
@@ -802,7 +1099,10 @@
       "label": "Current report: issued a Regulation FD disclosure",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828024007043/ncdlc-20240227.htm",
-      "material": true
+      "material": true,
+      "headline": "NCDL files Form 8-K current report",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "8-K",
@@ -810,7 +1110,10 @@
       "label": "Current report: reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828024007040/ncdlc-20240227.htm",
-      "material": true
+      "material": true,
+      "headline": "NCDL files Form 8-K current report",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "10-K",
@@ -818,7 +1121,10 @@
       "label": "Annual report (10-K) for period ending 2023-12-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828024007039/ncdlc-20231231.htm",
-      "material": true
+      "material": true,
+      "headline": "NCDL files annual report on Form 10-K",
+      "signal": "clean",
+      "signal_note": "Routine annual report"
     },
     {
       "form": "8-K",
@@ -826,7 +1132,10 @@
       "label": "Current report: changed a director or senior officer",
       "category": "Personnel",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828024006685/ncdlc-20240220.htm",
-      "material": true
+      "material": true,
+      "headline": "NCDL names new Chief Compliance Officer as McCally shifts role",
+      "signal": "clean",
+      "signal_note": "Officer transition, replacement named"
     },
     {
       "form": "SC 13G/A",
@@ -834,7 +1143,10 @@
       "label": "SC 13G/A — SC 13G/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828024005056/ncdl-sc13ga.htm",
-      "material": false
+      "material": false,
+      "headline": "Institutional investor amends passive stake in NCDL",
+      "signal": "clean",
+      "signal_note": "Routine passive ownership filing"
     },
     {
       "form": "8-K",
@@ -842,7 +1154,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828024005053/ncdlc-20240209.htm",
-      "material": true
+      "material": true,
+      "headline": "NCDL prices 2024 CLO term debt securitization",
+      "signal": "clean",
+      "signal_note": "Routine debt securitization"
     },
     {
       "form": "SC 13G/A",
@@ -850,7 +1165,10 @@
       "label": "SC 13G/A — SCHEDULE 13G/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000089843224000137/sc13g-a.htm",
-      "material": false
+      "material": false,
+      "headline": "Institutional investor amends passive stake in NCDL",
+      "signal": "clean",
+      "signal_note": "Routine passive ownership filing"
     },
     {
       "form": "8-K",
@@ -858,7 +1176,10 @@
       "label": "Current report: entered a material agreement",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828024002584/ncdlc-20240129.htm",
-      "material": true
+      "material": true,
+      "headline": "NCDL files Form 8-K current report",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "4",
@@ -866,7 +1187,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520824001230/xslF345X05/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "424B1",
@@ -874,7 +1198,10 @@
       "label": "424B1 — 424B1",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828024002305/ncdl-424b1.htm",
-      "material": false
+      "material": false,
+      "headline": "NCDL files IPO prospectus for 5.5 million shares",
+      "signal": "clean",
+      "signal_note": "Routine IPO prospectus"
     },
     {
       "form": "497AD",
@@ -882,7 +1209,10 @@
       "label": "497AD — 497AD",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828024002126/ncdl-497adxpricingpressrel.htm",
-      "material": false
+      "material": false,
+      "headline": "NCDL prices its initial public offering",
+      "signal": "clean",
+      "signal_note": "Routine IPO pricing"
     },
     {
       "form": "EFFECT",
@@ -890,7 +1220,10 @@
       "label": "EFFECT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/999999999524000195/xslEFFECTX01/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL registration statement declared effective by SEC",
+      "signal": "clean",
+      "signal_note": "Routine notice of effectiveness"
     },
     {
       "form": "CERT",
@@ -898,7 +1231,10 @@
       "label": "CERT — NYSE CERTIFICATION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000087666124000062/NCDL012424.pdf",
-      "material": false
+      "material": false,
+      "headline": "NCDL files exchange certification",
+      "signal": "clean",
+      "signal_note": "Routine listing certification"
     },
     {
       "form": "8-A12B",
@@ -906,7 +1242,10 @@
       "label": "8-A12B — 8-A12B",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828024002012/ncdl-form8xa12b.htm",
-      "material": false
+      "material": false,
+      "headline": "NCDL registers securities under Section 12(b)",
+      "signal": "clean",
+      "signal_note": "Routine securities registration"
     },
     {
       "form": "CORRESP",
@@ -914,7 +1253,10 @@
       "label": "CORRESP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828024001933/filename1.htm",
-      "material": false
+      "material": false,
+      "headline": "NCDL responds to SEC staff comments on filings",
+      "signal": "clean",
+      "signal_note": "Routine SEC comment response"
     },
     {
       "form": "497AD",
@@ -922,7 +1264,10 @@
       "label": "497AD — 497AD",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828024001301/ncdl-497adxnx2a2pressrelea.htm",
-      "material": false
+      "material": false,
+      "headline": "NCDL announces proposed initial public offering",
+      "signal": "clean",
+      "signal_note": "Routine IPO announcement"
     },
     {
       "form": "N-2/A",
@@ -930,7 +1275,10 @@
       "label": "N-2/A — N-2/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828024001287/ck0001737924-20240116.htm",
-      "material": false
+      "material": false,
+      "headline": "NCDL files amended Form N-2 registration statement",
+      "signal": "clean",
+      "signal_note": "Routine registration amendment"
     },
     {
       "form": "8-K",
@@ -938,7 +1286,10 @@
       "label": "Current report (8-K)",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828024001187/ncdlc-20240105.htm",
-      "material": false
+      "material": false,
+      "headline": "NCDL files Form 8-K current report",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "N-2/A",
@@ -946,7 +1297,10 @@
       "label": "N-2/A — N-2/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828024000938/ck0001737924-20240109.htm",
-      "material": false
+      "material": false,
+      "headline": "NCDL files amended Form N-2 registration statement",
+      "signal": "clean",
+      "signal_note": "Routine registration amendment"
     },
     {
       "form": "4",
@@ -954,7 +1308,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520824000542/xslF345X05/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -962,7 +1319,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520824000541/xslF345X05/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -970,7 +1330,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520824000539/xslF345X05/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -978,7 +1341,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520824000537/xslF345X05/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -986,7 +1352,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520824000535/xslF345X05/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -994,7 +1363,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520824000533/xslF345X05/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -1002,7 +1374,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520824000531/xslF345X05/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -1010,7 +1385,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520824000529/xslF345X05/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -1018,7 +1396,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520824000527/xslF345X05/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -1026,7 +1407,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520824000525/xslF345X05/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -1034,7 +1418,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520824000523/xslF345X05/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -1042,7 +1429,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520824000521/xslF345X05/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -1050,7 +1440,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520824000519/xslF345X05/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -1058,7 +1451,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520824000517/xslF345X05/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "40-17G",
@@ -1066,7 +1462,10 @@
       "label": "40-17G — 40-17G",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828023042175/ncdl-fidelitybondfiling40xa.htm",
-      "material": false
+      "material": false,
+      "headline": "NCDL files annual fidelity bond under Rule 17g-1",
+      "signal": "clean",
+      "signal_note": "Routine fidelity bond filing"
     },
     {
       "form": "497AD",
@@ -1074,7 +1473,10 @@
       "label": "497AD — 497AD",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828023042047/ncdl-497adxnx2pressrelease.htm",
-      "material": false
+      "material": false,
+      "headline": "NCDL files registration statement for initial public offering",
+      "signal": "clean",
+      "signal_note": "Routine IPO registration"
     },
     {
       "form": "N-2",
@@ -1082,7 +1484,10 @@
       "label": "Registration statement (N-2) — N-2",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828023042015/ck0001737924-20231219.htm",
-      "material": true
+      "material": true,
+      "headline": "NCDL files Form N-2 registration statement",
+      "signal": "clean",
+      "signal_note": "Routine shelf registration"
     },
     {
       "form": "8-K",
@@ -1090,7 +1495,10 @@
       "label": "Current report (8-K)",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828023041759/ncdlc-20231215.htm",
-      "material": false
+      "material": false,
+      "headline": "NCDL files Form 8-K current report",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "8-K",
@@ -1098,7 +1506,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828023041606/ncdlc-20231214.htm",
-      "material": true
+      "material": true,
+      "headline": "NCDL files Form 8-K current report",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "DEFA14A",
@@ -1106,7 +1517,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828023041412/ncdl-defa14aa.htm",
-      "material": false
+      "material": false,
+      "headline": "NCDL files additional proxy solicitation materials",
+      "signal": "clean",
+      "signal_note": "Routine proxy materials"
     },
     {
       "form": "8-K",
@@ -1114,7 +1528,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828023041321/ncdlc-20231207.htm",
-      "material": true
+      "material": true,
+      "headline": "NCDL files Form 8-K current report",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "DEF 14A",
@@ -1122,7 +1539,10 @@
       "label": "Proxy statement — DEF 14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828023040040/ncdl-specialmeetingdefinita.htm",
-      "material": false
+      "material": false,
+      "headline": "NCDL files definitive proxy statement",
+      "signal": "clean",
+      "signal_note": "Routine annual proxy statement"
     },
     {
       "form": "8-K",
@@ -1130,7 +1550,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828023040035/ncdlc-20231121.htm",
-      "material": true
+      "material": true,
+      "headline": "NCDL files Form 8-K current report",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "DRS/A",
@@ -1138,7 +1561,10 @@
       "label": "DRS/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162827923000528/filename1.htm",
-      "material": false
+      "material": false,
+      "headline": "NCDL amends confidential draft IPO registration statement",
+      "signal": "clean",
+      "signal_note": "Routine draft registration"
     },
     {
       "form": "PRE 14A",
@@ -1146,7 +1572,10 @@
       "label": "PRE 14A — PRE 14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828023039338/ncdl-specialmeetingprelimia.htm",
-      "material": false
+      "material": false,
+      "headline": "NCDL files preliminary proxy statement",
+      "signal": "clean",
+      "signal_note": "Routine annual proxy statement"
     },
     {
       "form": "8-K",
@@ -1154,7 +1583,10 @@
       "label": "Current report: entered a material agreement; reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828023037234/ncdlc-20231102.htm",
-      "material": true
+      "material": true,
+      "headline": "NCDL files Form 8-K current report",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "4",
@@ -1162,7 +1594,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520823010017/xslF345X05/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -1170,7 +1605,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520823010015/xslF345X05/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -1178,7 +1616,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520823010013/xslF345X05/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -1186,7 +1627,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520823010011/xslF345X05/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -1194,7 +1638,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520823010009/xslF345X05/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -1202,7 +1649,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520823010007/xslF345X05/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -1210,7 +1660,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520823010005/xslF345X05/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -1218,7 +1671,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520823010002/xslF345X05/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -1226,7 +1682,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520823010000/xslF345X05/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -1234,7 +1693,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520823009998/xslF345X05/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -1242,7 +1704,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520823009996/xslF345X05/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -1250,7 +1715,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520823009994/xslF345X05/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -1258,7 +1726,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520823009990/xslF345X05/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -1266,7 +1737,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520823009989/xslF345X05/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "10-Q",
@@ -1274,7 +1748,10 @@
       "label": "Quarterly report (10-Q) for period ending 2023-09-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828023035545/ncdlc-20230930.htm",
-      "material": true
+      "material": true,
+      "headline": "NCDL files quarterly report on Form 10-Q",
+      "signal": "clean",
+      "signal_note": "Routine quarterly report"
     },
     {
       "form": "DRS/A",
@@ -1282,7 +1759,10 @@
       "label": "DRS/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162827923000400/filename1.htm",
-      "material": false
+      "material": false,
+      "headline": "NCDL amends confidential draft IPO registration statement",
+      "signal": "clean",
+      "signal_note": "Routine draft registration"
     },
     {
       "form": "8-K",
@@ -1290,7 +1770,10 @@
       "label": "Current report: reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828023028775/ncdlc-20230810.htm",
-      "material": true
+      "material": true,
+      "headline": "NCDL files Form 8-K current report",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "10-Q",
@@ -1298,7 +1781,10 @@
       "label": "Quarterly report (10-Q) for period ending 2023-06-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828023027497/ncdlc-20230630.htm",
-      "material": true
+      "material": true,
+      "headline": "NCDL files quarterly report on Form 10-Q",
+      "signal": "clean",
+      "signal_note": "Routine quarterly report"
     },
     {
       "form": "3",
@@ -1306,7 +1792,10 @@
       "label": "3",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520823007860/xslF345X02/doc3.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider files initial Form 3 ownership statement",
+      "signal": "clean",
+      "signal_note": "Routine initial ownership"
     },
     {
       "form": "8-K",
@@ -1314,7 +1803,10 @@
       "label": "Current report (8-K)",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828023025256/ncdlc-20230717.htm",
-      "material": false
+      "material": false,
+      "headline": "NCDL files Form 8-K current report",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "4",
@@ -1322,7 +1814,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520823007547/xslF345X05/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -1330,7 +1825,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520823007545/xslF345X05/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -1338,7 +1836,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520823007543/xslF345X05/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -1346,7 +1847,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520823007541/xslF345X05/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -1354,7 +1858,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520823007540/xslF345X05/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "DRS",
@@ -1362,7 +1869,10 @@
       "label": "DRS",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828023023837/filename1.htm",
-      "material": false
+      "material": false,
+      "headline": "NCDL confidentially submits draft IPO registration statement",
+      "signal": "clean",
+      "signal_note": "Routine draft registration"
     },
     {
       "form": "8-K",
@@ -1370,7 +1880,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828023023726/ncdlc-20230623.htm",
-      "material": true
+      "material": true,
+      "headline": "NCDL files Form 8-K current report",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "8-K",
@@ -1378,7 +1891,10 @@
       "label": "Current report (8-K)",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828023019212/ncdlc-20230518.htm",
-      "material": false
+      "material": false,
+      "headline": "NCDL files Form 8-K current report",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "D",
@@ -1386,7 +1902,10 @@
       "label": "D",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000156761923006026/xslFormDX08/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL files Form D notice of exempt offering",
+      "signal": "clean",
+      "signal_note": "Routine private offering notice"
     },
     {
       "form": "8-K",
@@ -1394,7 +1913,10 @@
       "label": "Current report: reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828023017304/ncdlc-20230510.htm",
-      "material": true
+      "material": true,
+      "headline": "NCDL files Form 8-K current report",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "10-Q",
@@ -1402,7 +1924,10 @@
       "label": "Quarterly report (10-Q) for period ending 2023-03-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828023016092/ncdlc-20230331.htm",
-      "material": true
+      "material": true,
+      "headline": "NCDL files quarterly report on Form 10-Q",
+      "signal": "clean",
+      "signal_note": "Routine quarterly report"
     },
     {
       "form": "8-K",
@@ -1410,7 +1935,10 @@
       "label": "Current report (8-K)",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828023013233/ncdlc-20230420.htm",
-      "material": false
+      "material": false,
+      "headline": "NCDL files Form 8-K current report",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "4",
@@ -1418,7 +1946,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520823004925/xslF345X04/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "DEFA14A",
@@ -1426,7 +1957,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828023010632/ncdl-defa14ax2023noticeofia.htm",
-      "material": false
+      "material": false,
+      "headline": "NCDL files additional proxy solicitation materials",
+      "signal": "clean",
+      "signal_note": "Routine proxy materials"
     },
     {
       "form": "DEF 14A",
@@ -1434,7 +1968,10 @@
       "label": "Proxy statement — DEF 14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828023010630/ncdl-def14ax2023annualmeeta.htm",
-      "material": false
+      "material": false,
+      "headline": "NCDL files definitive proxy statement",
+      "signal": "clean",
+      "signal_note": "Routine annual proxy statement"
     },
     {
       "form": "8-K",
@@ -1442,7 +1979,10 @@
       "label": "Current report: reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828023007829/ncdlc-20230314.htm",
-      "material": true
+      "material": true,
+      "headline": "NCDL files Form 8-K current report",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "10-K",
@@ -1450,7 +1990,10 @@
       "label": "Annual report (10-K) for period ending 2022-12-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828023007320/ncdlc-20221231.htm",
-      "material": true
+      "material": true,
+      "headline": "NCDL files annual report on Form 10-K",
+      "signal": "clean",
+      "signal_note": "Routine annual report"
     },
     {
       "form": "SC 13G/A",
@@ -1458,7 +2001,10 @@
       "label": "SC 13G/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000089843223000103/sc13g-a.htm",
-      "material": false
+      "material": false,
+      "headline": "Institutional investor amends passive stake in NCDL",
+      "signal": "clean",
+      "signal_note": "Routine passive ownership filing"
     },
     {
       "form": "SC 13G/A",
@@ -1466,7 +2012,10 @@
       "label": "SC 13G/A — AMENDMENT NO. 1 TO SCHEDULE 13G",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000121390023010718/ea173233-13ga1teachers_nuve.htm",
-      "material": false
+      "material": false,
+      "headline": "Institutional investor amends passive stake in NCDL",
+      "signal": "clean",
+      "signal_note": "Routine passive ownership filing"
     },
     {
       "form": "40-17G",
@@ -1474,7 +2023,10 @@
       "label": "40-17G — 40-17G",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828023001522/ncdl-40x17g2023.htm",
-      "material": false
+      "material": false,
+      "headline": "NCDL files annual fidelity bond under Rule 17g-1",
+      "signal": "clean",
+      "signal_note": "Routine fidelity bond filing"
     },
     {
       "form": "8-K",
@@ -1482,7 +2034,10 @@
       "label": "Current report (8-K)",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828022032582/nuveenchurchilldirectlendi.htm",
-      "material": false
+      "material": false,
+      "headline": "NCDL files Form 8-K current report",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "4",
@@ -1490,7 +2045,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520822012948/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "8-K",
@@ -1498,7 +2056,10 @@
       "label": "Current report: reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828022030131/form2022q3investorpresenta.htm",
-      "material": true
+      "material": true,
+      "headline": "NCDL files Form 8-K current report",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "10-Q",
@@ -1506,7 +2067,10 @@
       "label": "Quarterly report (10-Q) for period ending 2022-09-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828022029505/churchillseptember302022.htm",
-      "material": true
+      "material": true,
+      "headline": "NCDL files quarterly report on Form 10-Q",
+      "signal": "clean",
+      "signal_note": "Routine quarterly report"
     },
     {
       "form": "APP ORDR",
@@ -1514,7 +2078,10 @@
       "label": "APP ORDR",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/999999999722004514/filename1.pdf",
-      "material": false
+      "material": false,
+      "headline": "NCDL receives SEC exemptive relief order",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "APP NTC",
@@ -1522,7 +2089,10 @@
       "label": "APP NTC",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/999999999722004179/filename1.pdf",
-      "material": false
+      "material": false,
+      "headline": "NCDL files notice of SEC exemptive application",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "8-K",
@@ -1530,7 +2100,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828022024455/ncdl-form8xkxsubscriptionf.htm",
-      "material": true
+      "material": true,
+      "headline": "NCDL files Form 8-K current report",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "40-APP/A",
@@ -1538,7 +2111,10 @@
       "label": "40-APP/A — 40-APP/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828022023173/churchill-40xapp_axcoxinve.htm",
-      "material": false
+      "material": false,
+      "headline": "NCDL amends SEC exemptive relief application",
+      "signal": "clean",
+      "signal_note": "Routine exemptive-order amendment"
     },
     {
       "form": "8-K",
@@ -1546,7 +2122,10 @@
       "label": "Current report: reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828022023009/form2022q2investorpresenta.htm",
-      "material": true
+      "material": true,
+      "headline": "NCDL files Form 8-K current report",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "10-Q",
@@ -1554,7 +2133,10 @@
       "label": "Quarterly report (10-Q) for period ending 2022-06-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828022021637/churchill10-qjune302022.htm",
-      "material": true
+      "material": true,
+      "headline": "NCDL files quarterly report on Form 10-Q",
+      "signal": "clean",
+      "signal_note": "Routine quarterly report"
     },
     {
       "form": "8-K",
@@ -1562,7 +2144,10 @@
       "label": "Current report (8-K)",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828022021374/nuveenchurchilldirectlendi.htm",
-      "material": false
+      "material": false,
+      "headline": "NCDL files Form 8-K current report",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "4",
@@ -1570,7 +2155,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520822009109/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "40-APP/A",
@@ -1578,7 +2166,10 @@
       "label": "40-APP/A — 40-APP/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828022018815/churchill-40xappaxcoxinves.htm",
-      "material": false
+      "material": false,
+      "headline": "NCDL amends SEC exemptive relief application",
+      "signal": "clean",
+      "signal_note": "Routine exemptive-order amendment"
     },
     {
       "form": "8-K",
@@ -1586,7 +2177,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828022018476/ncdl-form8xkxspviifacility.htm",
-      "material": true
+      "material": true,
+      "headline": "NCDL files Form 8-K current report",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "8-K",
@@ -1594,7 +2188,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828022015373/nuveenchurchilldirectlendi.htm",
-      "material": true
+      "material": true,
+      "headline": "NCDL files Form 8-K current report",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "8-K",
@@ -1602,7 +2199,10 @@
       "label": "Current report (8-K)",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828022014864/nuveenchurchilldirectlendi.htm",
-      "material": false
+      "material": false,
+      "headline": "NCDL files Form 8-K current report",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "8-K",
@@ -1610,7 +2210,10 @@
       "label": "Current report: reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828022013887/form2022q1investorpresenta.htm",
-      "material": true
+      "material": true,
+      "headline": "NCDL files Form 8-K current report",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "10-Q",
@@ -1618,7 +2221,10 @@
       "label": "Quarterly report (10-Q) for period ending 2022-03-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828022013675/churchill10-qmarch312022.htm",
-      "material": true
+      "material": true,
+      "headline": "NCDL files quarterly report on Form 10-Q",
+      "signal": "clean",
+      "signal_note": "Routine quarterly report"
     },
     {
       "form": "D",
@@ -1626,7 +2232,10 @@
       "label": "D",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000156761922009264/xslFormDX08/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL files Form D notice of exempt offering",
+      "signal": "clean",
+      "signal_note": "Routine private offering notice"
     },
     {
       "form": "8-K",
@@ -1634,7 +2243,10 @@
       "label": "Current report (8-K)",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828022010955/nuveenchurchilldirectlendi.htm",
-      "material": false
+      "material": false,
+      "headline": "NCDL files Form 8-K current report",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "8-K",
@@ -1642,7 +2254,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828022010035/nuveenchurchilldirectlendi.htm",
-      "material": true
+      "material": true,
+      "headline": "NCDL files Form 8-K current report",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "D/A",
@@ -1650,7 +2265,10 @@
       "label": "D/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000156761922008825/xslFormDX08/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL amends Form D notice of exempt offering",
+      "signal": "clean",
+      "signal_note": "Routine private offering notice"
     },
     {
       "form": "40-APP",
@@ -1658,7 +2276,10 @@
       "label": "40-APP — 40-APP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828022009302/churchill-40xappxcoxinvest.htm",
-      "material": false
+      "material": false,
+      "headline": "NCDL files SEC exemptive relief application",
+      "signal": "clean",
+      "signal_note": "Routine exemptive application"
     },
     {
       "form": "DEFA14A",
@@ -1666,7 +2287,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828022008731/ncdl-defa14ax2022noticeofi.htm",
-      "material": false
+      "material": false,
+      "headline": "NCDL files additional proxy solicitation materials",
+      "signal": "clean",
+      "signal_note": "Routine proxy materials"
     },
     {
       "form": "DEF 14A",
@@ -1674,7 +2298,10 @@
       "label": "Proxy statement — DEF 14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828022008729/ncdl-def14ax2022annualmeet.htm",
-      "material": false
+      "material": false,
+      "headline": "NCDL files definitive proxy statement",
+      "signal": "clean",
+      "signal_note": "Routine annual proxy statement"
     },
     {
       "form": "8-K",
@@ -1682,7 +2309,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828022008426/nuveenchurchilldirectlendi.htm",
-      "material": true
+      "material": true,
+      "headline": "NCDL files Form 8-K current report",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "8-K",
@@ -1690,7 +2320,10 @@
       "label": "Current report: reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828022006205/form2021q3investorpresenta.htm",
-      "material": true
+      "material": true,
+      "headline": "NCDL files Form 8-K current report",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "10-K",
@@ -1698,7 +2331,10 @@
       "label": "Annual report (10-K) for period ending 2021-12-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828022005765/churchill10-kdecember312021.htm",
-      "material": true
+      "material": true,
+      "headline": "NCDL files annual report on Form 10-K",
+      "signal": "clean",
+      "signal_note": "Routine annual report"
     },
     {
       "form": "SC 13G/A",
@@ -1706,7 +2342,10 @@
       "label": "SC 13G/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000089843222000109/sc13g-a.htm",
-      "material": false
+      "material": false,
+      "headline": "Institutional investor amends passive stake in NCDL",
+      "signal": "clean",
+      "signal_note": "Routine passive ownership filing"
     },
     {
       "form": "8-K",
@@ -1714,7 +2353,10 @@
       "label": "Current report (8-K)",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828022001222/nuveenchurchilldirectlendi.htm",
-      "material": false
+      "material": false,
+      "headline": "NCDL files Form 8-K current report",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "4",
@@ -1722,7 +2364,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520822000956/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -1730,7 +2375,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520822000955/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -1738,7 +2386,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520822000954/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -1746,7 +2397,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520822000953/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -1754,7 +2408,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520822000952/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -1762,7 +2419,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520822000951/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -1770,7 +2430,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520822000950/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -1778,7 +2441,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520822000949/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -1786,7 +2452,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520822000948/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -1794,7 +2463,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520822000947/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -1802,7 +2474,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520822000946/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -1810,7 +2485,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520822000945/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -1818,7 +2496,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520822000944/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "40-17G",
@@ -1826,7 +2507,10 @@
       "label": "40-17G — 40-17G",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828022000706/nuveenchurchilldirectlendi.htm",
-      "material": false
+      "material": false,
+      "headline": "NCDL files annual fidelity bond under Rule 17g-1",
+      "signal": "clean",
+      "signal_note": "Routine fidelity bond filing"
     },
     {
       "form": "8-K",
@@ -1834,7 +2518,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828021025621/nuveenchurchilldirectlendi.htm",
-      "material": true
+      "material": true,
+      "headline": "NCDL files Form 8-K current report",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "8-K",
@@ -1842,7 +2529,10 @@
       "label": "Current report (8-K)",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828021025042/nuveenchurchilldirectlendi.htm",
-      "material": false
+      "material": false,
+      "headline": "NCDL files Form 8-K current report",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "4",
@@ -1850,7 +2540,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520821014824/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -1858,7 +2551,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520821014823/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -1866,7 +2562,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520821014822/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -1874,7 +2573,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520821014821/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -1882,7 +2584,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520821014820/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -1890,7 +2595,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520821014819/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -1898,7 +2606,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520821014818/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -1906,7 +2617,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520821014817/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -1914,7 +2628,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520821014816/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -1922,7 +2639,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520821014815/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -1930,7 +2650,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520821014814/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -1938,7 +2661,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520821014813/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -1946,7 +2672,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520821014812/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "8-K",
@@ -1954,7 +2683,10 @@
       "label": "Current report: reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828021023517/form2021q3investorpresenta.htm",
-      "material": true
+      "material": true,
+      "headline": "NCDL files Form 8-K current report",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "10-Q",
@@ -1962,7 +2694,10 @@
       "label": "Quarterly report (10-Q) for period ending 2021-09-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828021022867/churchillseptember302021.htm",
-      "material": true
+      "material": true,
+      "headline": "NCDL files quarterly report on Form 10-Q",
+      "signal": "clean",
+      "signal_note": "Routine quarterly report"
     },
     {
       "form": "8-K",
@@ -1970,7 +2705,10 @@
       "label": "Current report (8-K)",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828021021342/nuveenchurchilldirectlendi.htm",
-      "material": false
+      "material": false,
+      "headline": "NCDL files Form 8-K current report",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "4",
@@ -1978,7 +2716,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520821013415/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -1986,7 +2727,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520821013412/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -1994,7 +2738,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520821013410/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -2002,7 +2749,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520821013408/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -2010,7 +2760,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520821013406/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -2018,7 +2771,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520821013404/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -2026,7 +2782,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520821013402/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -2034,7 +2793,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520821013400/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -2042,7 +2804,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520821013398/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -2050,7 +2815,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520821013396/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -2058,7 +2826,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520821013394/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -2066,7 +2837,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520821013392/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -2074,7 +2848,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520821013390/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "8-K",
@@ -2082,7 +2859,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828021019884/nuveenchurchilldirectlendi.htm",
-      "material": true
+      "material": true,
+      "headline": "NCDL files Form 8-K current report",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "8-K",
@@ -2090,7 +2870,10 @@
       "label": "Current report: took on a material financial obligation; disclosed a material event",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828021018564/nuveenchurchilldirectlendi.htm",
-      "material": true
+      "material": true,
+      "headline": "NCDL files Form 8-K current report",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "4",
@@ -2098,7 +2881,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520821011756/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -2106,7 +2892,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520821011697/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -2114,7 +2903,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520821011696/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -2122,7 +2914,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520821011693/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -2130,7 +2925,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520821011692/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -2138,7 +2936,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520821011691/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -2146,7 +2947,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520821011683/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -2154,7 +2958,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520821011682/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -2162,7 +2969,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520821011681/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -2170,7 +2980,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520821011680/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -2178,7 +2991,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520821011671/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -2186,7 +3002,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520821011670/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "8-K",
@@ -2194,7 +3013,10 @@
       "label": "Current report (8-K)",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828021017523/nuveenchurchilldirectlendi.htm",
-      "material": false
+      "material": false,
+      "headline": "NCDL files Form 8-K current report",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "8-K",
@@ -2202,7 +3024,10 @@
       "label": "Current report: reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828021016557/form2021q2investorpresenta.htm",
-      "material": true
+      "material": true,
+      "headline": "NCDL files Form 8-K current report",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "10-Q",
@@ -2210,7 +3035,10 @@
       "label": "Quarterly report (10-Q) for period ending 2021-06-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828021015871/churchill10-qjune302021.htm",
-      "material": true
+      "material": true,
+      "headline": "NCDL files quarterly report on Form 10-Q",
+      "signal": "clean",
+      "signal_note": "Routine quarterly report"
     },
     {
       "form": "4",
@@ -2218,7 +3046,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520821011041/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "8-K",
@@ -2226,7 +3057,10 @@
       "label": "Current report (8-K)",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828021014843/nuveenchurchilldirectlendi.htm",
-      "material": false
+      "material": false,
+      "headline": "NCDL files Form 8-K current report",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "8-K",
@@ -2234,7 +3068,10 @@
       "label": "Current report (8-K)",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828021013025/nuveenchurchilldirectlendi.htm",
-      "material": false
+      "material": false,
+      "headline": "NCDL files Form 8-K current report",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "4",
@@ -2242,7 +3079,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520821009549/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "8-K",
@@ -2250,7 +3090,10 @@
       "label": "Current report (8-K)",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828021010575/nuveenchurchilldirectlendi.htm",
-      "material": false
+      "material": false,
+      "headline": "NCDL files Form 8-K current report",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "8-K",
@@ -2258,7 +3101,10 @@
       "label": "Current report: reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828021009498/form2021q1investorpresenta.htm",
-      "material": true
+      "material": true,
+      "headline": "NCDL files Form 8-K current report",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "10-Q",
@@ -2266,7 +3112,10 @@
       "label": "Quarterly report (10-Q) for period ending 2021-03-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828021009254/churchill10-qmarch312021.htm",
-      "material": true
+      "material": true,
+      "headline": "NCDL files quarterly report on Form 10-Q",
+      "signal": "clean",
+      "signal_note": "Routine quarterly report"
     },
     {
       "form": "8-K",
@@ -2274,7 +3123,10 @@
       "label": "Current report (8-K)",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828021007896/nuveenchurchilldirectlendi.htm",
-      "material": false
+      "material": false,
+      "headline": "NCDL files Form 8-K current report",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "DEFA14A",
@@ -2282,7 +3134,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828021006533/ncdlc-proxynotice.htm",
-      "material": false
+      "material": false,
+      "headline": "NCDL files additional proxy solicitation materials",
+      "signal": "clean",
+      "signal_note": "Routine proxy materials"
     },
     {
       "form": "DEF 14A",
@@ -2290,7 +3145,10 @@
       "label": "Proxy statement — DEF 14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828021006531/ncdlc-2021def14a.htm",
-      "material": false
+      "material": false,
+      "headline": "NCDL files definitive proxy statement",
+      "signal": "clean",
+      "signal_note": "Routine annual proxy statement"
     },
     {
       "form": "D/A",
@@ -2298,7 +3156,10 @@
       "label": "D/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000156761921006608/xslFormDX08/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL amends Form D notice of exempt offering",
+      "signal": "clean",
+      "signal_note": "Routine private offering notice"
     },
     {
       "form": "8-K",
@@ -2306,7 +3167,10 @@
       "label": "Current report: reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828021004716/form2020q4investorpresenta.htm",
-      "material": true
+      "material": true,
+      "headline": "NCDL files Form 8-K current report",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "10-K",
@@ -2314,7 +3178,10 @@
       "label": "Annual report (10-K) for period ending 2020-12-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828021004638/churchill10-kdecember312020.htm",
-      "material": true
+      "material": true,
+      "headline": "NCDL files annual report on Form 10-K",
+      "signal": "clean",
+      "signal_note": "Routine annual report"
     },
     {
       "form": "SC 13G/A",
@@ -2322,7 +3189,10 @@
       "label": "SC 13G/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000089843221000125/sc_13ga.htm",
-      "material": false
+      "material": false,
+      "headline": "Institutional investor amends passive stake in NCDL",
+      "signal": "clean",
+      "signal_note": "Routine passive ownership filing"
     },
     {
       "form": "SC 13G",
@@ -2330,7 +3200,10 @@
       "label": "SC 13G",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000089843221000124/sc-13g.htm",
-      "material": false
+      "material": false,
+      "headline": "Institutional investor reports passive stake in NCDL",
+      "signal": "clean",
+      "signal_note": "Routine passive ownership filing"
     },
     {
       "form": "40-17G",
@@ -2338,7 +3211,10 @@
       "label": "40-17G — 40-17G",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828021000389/churchill40-17g.htm",
-      "material": false
+      "material": false,
+      "headline": "NCDL files annual fidelity bond under Rule 17g-1",
+      "signal": "clean",
+      "signal_note": "Routine fidelity bond filing"
     },
     {
       "form": "8-K",
@@ -2346,7 +3222,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828020017520/nuveenchurchilldirectl.htm",
-      "material": true
+      "material": true,
+      "headline": "NCDL files Form 8-K current report",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "8-K",
@@ -2354,7 +3233,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828020016904/nuveenchurchilldirectl.htm",
-      "material": true
+      "material": true,
+      "headline": "NCDL files Form 8-K current report",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "8-K",
@@ -2362,7 +3244,10 @@
       "label": "Current report: reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828020016206/form2020q3investorpres.htm",
-      "material": true
+      "material": true,
+      "headline": "NCDL files Form 8-K current report",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "4",
@@ -2370,7 +3255,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520820013268/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -2378,7 +3266,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520820013267/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -2386,7 +3277,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520820013266/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -2394,7 +3288,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520820013265/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -2402,7 +3299,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520820013264/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -2410,7 +3310,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520820013263/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -2418,7 +3321,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520820013262/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -2426,7 +3332,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520820013261/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -2434,7 +3343,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520820013260/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -2442,7 +3354,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520820013259/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -2450,7 +3365,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520820013258/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -2458,7 +3376,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000122520820013257/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "NCDL insider reports Form 4 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "10-Q",
@@ -2466,7 +3387,10 @@
       "label": "Quarterly report (10-Q) for period ending 2020-09-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828020015970/churchillseptember3020.htm",
-      "material": true
+      "material": true,
+      "headline": "NCDL files quarterly report on Form 10-Q",
+      "signal": "clean",
+      "signal_note": "Routine quarterly report"
     },
     {
       "form": "8-K",
@@ -2474,7 +3398,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828020015178/nuveenchurchilldirectl.htm",
-      "material": true
+      "material": true,
+      "headline": "NCDL files Form 8-K current report",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "8-K",
@@ -2482,7 +3409,10 @@
       "label": "Current report (8-K)",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828020014779/nuveenchurchilldirectl.htm",
-      "material": false
+      "material": false,
+      "headline": "NCDL files Form 8-K current report",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "8-K",
@@ -2490,7 +3420,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828020013586/nuveenchurchilldirectl.htm",
-      "material": true
+      "material": true,
+      "headline": "NCDL files Form 8-K current report",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "8-K",
@@ -2498,7 +3431,10 @@
       "label": "Current report: reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828020012539/nuveenchurchillbdc-for.htm",
-      "material": true
+      "material": true,
+      "headline": "NCDL files Form 8-K current report",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "10-Q",
@@ -2506,7 +3442,10 @@
       "label": "Quarterly report (10-Q) for period ending 2020-06-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1737924/000162828020012024/churchill10-qjune302020.htm",
-      "material": true
+      "material": true,
+      "headline": "NCDL files quarterly report on Form 10-Q",
+      "signal": "clean",
+      "signal_note": "Routine quarterly report"
     }
   ]
 }

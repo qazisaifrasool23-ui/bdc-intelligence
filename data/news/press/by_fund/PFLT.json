@@ -122,7 +122,10 @@
       "label": "Current report: reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1504619/000117184326003158/f8k_050726.htm",
-      "material": true
+      "material": true,
+      "headline": "Announced fiscal Q2 results for quarter ended March 31",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results"
     },
     {
       "form": "8-K",
@@ -250,7 +253,10 @@
       "label": "Current report: reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1504619/000117184326000703/f8k_020926.htm",
-      "material": true
+      "material": true,
+      "headline": "PennantPark Floating Rate reported first fiscal quarter 2025 results",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results announcement"
     },
     {
       "form": "8-K",
@@ -338,7 +344,10 @@
       "label": "Current report: reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1504619/000117184325007542/f8k_112425.htm",
-      "material": true
+      "material": true,
+      "headline": "PennantPark Floating Rate reports Q4 and fiscal 2025 results",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results"
     },
     {
       "form": "8-K",
@@ -418,7 +427,10 @@
       "label": "Current report: reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1504619/000117184325005284/f8k_081125.htm",
-      "material": true
+      "material": true,
+      "headline": "PennantPark Floating Rate reported fiscal third-quarter results ended June 30",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results"
     },
     {
       "form": "8-K",
@@ -482,7 +494,10 @@
       "label": "Current report: reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1504619/000117184325003083/f8k_051225.htm",
-      "material": true
+      "material": true,
+      "headline": "Reported fiscal Q2 2025 results for quarter ended March 31",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results"
     },
     {
       "form": "8-K",
@@ -554,7 +569,10 @@
       "label": "Current report: reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1504619/000117184325000718/f8k_021025.htm",
-      "material": true
+      "material": true,
+      "headline": "PennantPark Floating Rate reported fiscal Q1 results ended December 31",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results"
     },
     {
       "form": "8-K",
@@ -578,7 +596,10 @@
       "label": "Current report: reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1504619/000095017025006197/pflt-20250116.htm",
-      "material": true
+      "material": true,
+      "headline": "PennantPark Floating Rate filed Form 8-K, January 16, 2025",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "8-K",
@@ -1602,7 +1623,10 @@
       "label": "Current report: faces delisting or a listing-standard issue; issued a Regulation FD disclosure",
       "category": "Credit event",
       "url": "https://www.sec.gov/Archives/edgar/data/1504619/000117184322002185/f8k_033022.htm",
-      "material": true
+      "material": true,
+      "headline": "PennantPark Floating Rate moving listing from Nasdaq to NYSE, symbol unchanged",
+      "signal": "clean",
+      "signal_note": "Voluntary listing transfer to NYSE"
     },
     {
       "form": "8-K",

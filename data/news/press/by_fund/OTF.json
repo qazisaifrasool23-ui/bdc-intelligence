@@ -10,7 +10,10 @@
       "label": "Current report: reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000119312526291626/d161560d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OTF to report Q2 2026 results August 5",
+      "signal": "clean",
+      "signal_note": "Routine earnings scheduling"
     },
     {
       "form": "8-K",
@@ -18,7 +21,10 @@
       "label": "Current report (8-K)",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000119312526285596/d103105d8k.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF shareholders vote on two matters at annual meeting",
+      "signal": "clean",
+      "signal_note": "Routine annual meeting"
     },
     {
       "form": "40-33",
@@ -26,7 +32,10 @@
       "label": "40-33 — 40-33",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000119312526285516/d166099d4033.htm",
-      "material": false
+      "material": false,
+      "headline": "Stockholders sue OTF adviser in federal court",
+      "signal": "watch",
+      "signal_note": "Shareholder litigation against adviser"
     },
     {
       "form": "8-K",
@@ -34,7 +43,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000119312526277589/d140860d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OTF amends senior secured revolving credit agreement",
+      "signal": "clean",
+      "signal_note": "Routine amend-and-extend"
     },
     {
       "form": "40-33",
@@ -42,7 +54,10 @@
       "label": "40-33 — 40-33",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000119312526269568/d345395d4033.htm",
-      "material": false
+      "material": false,
+      "headline": "Derivative suit filed against OTF adviser",
+      "signal": "watch",
+      "signal_note": "Derivative litigation against adviser"
     },
     {
       "form": "8-K",
@@ -50,7 +65,10 @@
       "label": "Current report: entered a material agreement; disclosed a material event",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000162828026041189/otic-20260602.htm",
-      "material": true
+      "material": true,
+      "headline": "OTF issues $500M 6.500% notes due 2029",
+      "signal": "clean",
+      "signal_note": "Routine note issuance"
     },
     {
       "form": "424B2",
@@ -58,7 +76,10 @@
       "label": "Prospectus supplement (offering) — 424B2",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000162828026040372/otf-424b2june2026.htm",
-      "material": true
+      "material": true,
+      "headline": "OTF offers $500M 6.500% notes due 2029",
+      "signal": "clean",
+      "signal_note": "Routine note offering"
     },
     {
       "form": "497AD",
@@ -66,7 +87,10 @@
       "label": "497AD — 497AD",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000162828026040015/otf-pricing497adjune2026.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF prices $500M 6.500% notes at 6.743% yield",
+      "signal": "clean",
+      "signal_note": "Routine note pricing"
     },
     {
       "form": "497AD",
@@ -74,7 +98,10 @@
       "label": "497AD — 497AD",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000162828026040014/otf-launch497adjune2026.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF launches $500M 6.500% notes offering",
+      "signal": "clean",
+      "signal_note": "Routine note offering"
     },
     {
       "form": "497AD",
@@ -82,7 +109,10 @@
       "label": "497AD — 497AD",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000162828026040013/otf-guidance497adjune2026.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF expects to price $500M notes offering",
+      "signal": "clean",
+      "signal_note": "Routine note offering"
     },
     {
       "form": "FWP",
@@ -90,7 +120,10 @@
       "label": "FWP — FWP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000162828026039873/otf-fwpjune2026.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF sets final terms on $500M 6.500% notes",
+      "signal": "clean",
+      "signal_note": "Routine note pricing"
     },
     {
       "form": "497AD",
@@ -98,7 +131,10 @@
       "label": "497AD — 497AD",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000162828026039682/otf497adjune2026.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF notes offering to settle June 5",
+      "signal": "clean",
+      "signal_note": "Routine note offering"
     },
     {
       "form": "424B2",
@@ -106,7 +142,10 @@
       "label": "Prospectus supplement (offering) — 424B2",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000162828026039681/otf-424b2june2026.htm",
-      "material": true
+      "material": true,
+      "headline": "OTF files preliminary note offering prospectus",
+      "signal": "clean",
+      "signal_note": "Routine note offering"
     },
     {
       "form": "8-K",
@@ -114,7 +153,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000119312526245299/d154722d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OTF subsidiary enters loan financing and servicing agreement",
+      "signal": "clean",
+      "signal_note": "Routine financing"
     },
     {
       "form": "4",
@@ -122,7 +164,10 @@
       "label": "4 — 4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000119312526241986/xslF345X06/ownership.xml",
-      "material": false
+      "material": false,
+      "headline": "OTF insider reports share transaction on Form 4",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "40-17G",
@@ -130,7 +175,10 @@
       "label": "40-17G — 40-17G",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000119312526241967/d131982d4017g.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF files fidelity bond under Rule 17g-1",
+      "signal": "clean",
+      "signal_note": "Routine fidelity bond"
     },
     {
       "form": "4",
@@ -138,7 +186,10 @@
       "label": "4 — 4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000119312526224166/xslF345X06/ownership.xml",
-      "material": false
+      "material": false,
+      "headline": "OTF insider reports share transaction on Form 4",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "4",
@@ -146,7 +197,10 @@
       "label": "4 — 4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000119312526219492/xslF345X06/ownership.xml",
-      "material": false
+      "material": false,
+      "headline": "OTF insider reports share transaction on Form 4",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "8-K",
@@ -154,7 +208,10 @@
       "label": "Current report: reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000174777726000020/ortf-20260506.htm",
-      "material": true
+      "material": true,
+      "headline": "OTF releases first quarter 2026 financial results",
+      "signal": "clean",
+      "signal_note": "Routine earnings release"
     },
     {
       "form": "10-Q",
@@ -162,7 +219,10 @@
       "label": "Quarterly report (10-Q) for period ending 2026-03-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000174777726000019/ortf-20260331.htm",
-      "material": true
+      "material": true,
+      "headline": "OTF files Q1 2026 quarterly report",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "4",
@@ -170,7 +230,10 @@
       "label": "4 — 4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000119312526182123/xslF345X06/ownership.xml",
-      "material": false
+      "material": false,
+      "headline": "OTF insider reports share transaction on Form 4",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "DEFA14A",
@@ -178,7 +241,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000119312526151361/d136202ddefa14a.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF solicits shareholder votes for 2026 annual meeting",
+      "signal": "clean",
+      "signal_note": "Routine proxy"
     },
     {
       "form": "DEFA14A",
@@ -186,7 +252,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000119312526138199/d14257ddefa14a.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF sends 2026 annual meeting proxy notice",
+      "signal": "clean",
+      "signal_note": "Routine proxy"
     },
     {
       "form": "DEF 14A",
@@ -194,7 +263,10 @@
       "label": "Proxy statement — DEF 14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000119312526138180/d48405ddef14a.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF files definitive 2026 annual meeting proxy statement",
+      "signal": "clean",
+      "signal_note": "Routine proxy"
     },
     {
       "form": "8-K",
@@ -202,7 +274,10 @@
       "label": "Current report: reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000119312526137928/d132418d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OTF furnishes financial results press release",
+      "signal": "clean",
+      "signal_note": "Routine earnings release"
     },
     {
       "form": "4",
@@ -210,7 +285,10 @@
       "label": "4 — 4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000119312526076899/xslF345X05/ownership.xml",
-      "material": false
+      "material": false,
+      "headline": "OTF insider reports share transaction on Form 4",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "8-K",
@@ -218,7 +296,10 @@
       "label": "Current report: reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000174777726000013/ortf-20260218.htm",
-      "material": true
+      "material": true,
+      "headline": "OTF releases fourth quarter and full-year 2025 results",
+      "signal": "clean",
+      "signal_note": "Routine earnings release"
     },
     {
       "form": "10-K",
@@ -226,7 +307,10 @@
       "label": "Annual report (10-K) for period ending 2025-12-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000174777726000012/ortf-20251231.htm",
-      "material": true
+      "material": true,
+      "headline": "OTF files fiscal 2025 annual report on Form 10-K",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "SCHEDULE 13G/A",
@@ -234,7 +318,10 @@
       "label": "SCHEDULE 13G/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000101143826000059/xslSCHEDULE_13G_X01/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "Institutional holder amends OTF passive ownership stake",
+      "signal": "clean",
+      "signal_note": "Routine ownership filing"
     },
     {
       "form": "4",
@@ -242,7 +329,10 @@
       "label": "4 — 4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000119312526031879/xslF345X05/ownership.xml",
-      "material": false
+      "material": false,
+      "headline": "OTF insider reports share transaction on Form 4",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "8-K",
@@ -250,7 +340,10 @@
       "label": "Current report: entered a material agreement; disclosed a material event",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000162828026003277/otic-20260120.htm",
-      "material": true
+      "material": true,
+      "headline": "OTF issues $400M 6.125% notes due 2031",
+      "signal": "clean",
+      "signal_note": "Routine note issuance"
     },
     {
       "form": "424B2",
@@ -258,7 +351,10 @@
       "label": "Prospectus supplement (offering) — 424B2",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000162828026002902/ck0001747777-20260121.htm",
-      "material": true
+      "material": true,
+      "headline": "OTF files note offering prospectus supplement",
+      "signal": "clean",
+      "signal_note": "Routine note offering"
     },
     {
       "form": "FWP",
@@ -266,7 +362,10 @@
       "label": "FWP — FWP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000162828026002670/otf-pricingtermsheetfwp.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF sets final terms on $400M 6.125% notes",
+      "signal": "clean",
+      "signal_note": "Routine note pricing"
     },
     {
       "form": "497AD",
@@ -274,7 +373,10 @@
       "label": "497AD — 497AD",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000162828026002669/otf-priced497ad.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF prices $400M 6.125% notes at 6.401% yield",
+      "signal": "clean",
+      "signal_note": "Routine note pricing"
     },
     {
       "form": "497AD",
@@ -282,7 +384,10 @@
       "label": "497AD — 497AD",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000162828026002668/otf-launch497ad.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF launches $400M 6.125% notes offering",
+      "signal": "clean",
+      "signal_note": "Routine note offering"
     },
     {
       "form": "497AD",
@@ -290,7 +395,10 @@
       "label": "497AD — 497AD",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000162828026002667/otf-497ad.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF notes offering to settle January 23",
+      "signal": "clean",
+      "signal_note": "Routine note offering"
     },
     {
       "form": "424B2",
@@ -298,7 +406,10 @@
       "label": "Prospectus supplement (offering) — 424B2",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000162828026002500/ck0001747777-20260120.htm",
-      "material": true
+      "material": true,
+      "headline": "OTF files note offering prospectus supplement",
+      "signal": "clean",
+      "signal_note": "Routine note offering"
     },
     {
       "form": "8-K",
@@ -306,7 +417,10 @@
       "label": "Current report: reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000119312526005488/d74383d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OTF furnishes financial results press release",
+      "signal": "clean",
+      "signal_note": "Routine earnings release"
     },
     {
       "form": "8-K",
@@ -314,7 +428,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000119312525328828/d54358d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OTF reports direct financial obligation",
+      "signal": "clean",
+      "signal_note": "Routine financing"
     },
     {
       "form": "8-K",
@@ -322,7 +439,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000119312525328823/d39392d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OTF reports direct financial obligation",
+      "signal": "clean",
+      "signal_note": "Routine financing"
     },
     {
       "form": "8-K",
@@ -330,7 +450,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000119312525320976/d64289d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OTF reports direct financial obligation",
+      "signal": "clean",
+      "signal_note": "Routine financing"
     },
     {
       "form": "EFFECT",
@@ -338,7 +461,10 @@
       "label": "EFFECT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/999999999525003600/xslEFFECTX01/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "OTF registration statement declared effective",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "424B3",
@@ -346,7 +472,10 @@
       "label": "Prospectus supplement (offering) — 424B3",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000162828025056057/otf-form424b3.htm",
-      "material": true
+      "material": true,
+      "headline": "OTF offers to exchange $650M 6.100% notes due 2028",
+      "signal": "clean",
+      "signal_note": "Routine note exchange"
     },
     {
       "form": "8-K",
@@ -354,7 +483,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000119312525305466/d24282d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OTF executives buy over $15M shares in open market",
+      "signal": "clean",
+      "signal_note": "Insider open-market buying"
     },
     {
       "form": "N-14 8C/A",
@@ -362,7 +494,10 @@
       "label": "N-14 8C/A — N-14 8C/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000162828025054003/otf-formnx14a1.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF amends N-14 merger registration statement",
+      "signal": "clean",
+      "signal_note": "Routine merger registration"
     },
     {
       "form": "4",
@@ -370,7 +505,10 @@
       "label": "4 — 4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000119312525291374/xslF345X05/ownership.xml",
-      "material": false
+      "material": false,
+      "headline": "OTF insider reports share transaction on Form 4",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "SCHEDULE 13G/A",
@@ -378,7 +516,10 @@
       "label": "SCHEDULE 13G/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000101143825000507/xslSCHEDULE_13G_X01/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "Institutional holder amends OTF passive ownership stake",
+      "signal": "clean",
+      "signal_note": "Routine ownership filing"
     },
     {
       "form": "8-K",
@@ -386,7 +527,10 @@
       "label": "Current report: reported quarterly results; disclosed a material event",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000119312525267287/d82518d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OTF releases third quarter 2025 financial results",
+      "signal": "clean",
+      "signal_note": "Routine earnings release"
     },
     {
       "form": "10-Q",
@@ -394,7 +538,10 @@
       "label": "Quarterly report (10-Q) for period ending 2025-09-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000174777725000048/ortf-20250930.htm",
-      "material": true
+      "material": true,
+      "headline": "OTF files Q3 2025 quarterly report",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "8-K",
@@ -402,7 +549,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000119312525262653/d38473d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OTF reports direct financial obligation",
+      "signal": "clean",
+      "signal_note": "Routine financing"
     },
     {
       "form": "N-23C-2",
@@ -410,7 +560,10 @@
       "label": "N-23C-2 — N-23C-2",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000119312525240348/d13421dn23c2.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF to redeem 4.75% notes due 2025",
+      "signal": "clean",
+      "signal_note": "Routine note redemption"
     },
     {
       "form": "8-K",
@@ -418,7 +571,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000119312525239084/d43407d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OTF closes $501M CLO term debt securitization",
+      "signal": "clean",
+      "signal_note": "Routine financing"
     },
     {
       "form": "POS EX",
@@ -426,7 +582,10 @@
       "label": "POS EX — POS EX",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000162828025044337/otf-posexoctober2025.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF files post-effective registration amendment",
+      "signal": "clean",
+      "signal_note": "Routine registration"
     },
     {
       "form": "8-K",
@@ -434,7 +593,10 @@
       "label": "Current report: reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000119312525225924/d38706d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OTF furnishes financial results press release",
+      "signal": "clean",
+      "signal_note": "Routine earnings release"
     },
     {
       "form": "8-K",
@@ -442,7 +604,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000119312525194549/d62747d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OTF board waives share transfer restrictions",
+      "signal": "clean",
+      "signal_note": "Routine lock-up waiver"
     },
     {
       "form": "N-2ASR",
@@ -450,7 +615,10 @@
       "label": "N-2ASR — N-2ASR",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000174777725000040/ck0001747777-20250822.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF files automatic shelf registration statement",
+      "signal": "clean",
+      "signal_note": "Routine registration"
     },
     {
       "form": "N-14 8C",
@@ -458,7 +626,10 @@
       "label": "N-14 8C — N-14 8C",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000174777725000034/otf-formnx14august2025.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF files N-14 merger registration statement",
+      "signal": "clean",
+      "signal_note": "Routine merger registration"
     },
     {
       "form": "SCHEDULE 13G/A",
@@ -466,7 +637,10 @@
       "label": "SCHEDULE 13G/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000101143825000445/xslSCHEDULE_13G_X01/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "Institutional holder amends OTF passive ownership stake",
+      "signal": "clean",
+      "signal_note": "Routine ownership filing"
     },
     {
       "form": "8-K",
@@ -474,7 +648,10 @@
       "label": "Current report: entered a material agreement",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000119312525177981/d194234d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OTF appoints Deutsche Bank as successor indenture trustee",
+      "signal": "clean",
+      "signal_note": "Routine trustee change"
     },
     {
       "form": "8-K",
@@ -482,7 +659,10 @@
       "label": "Current report: reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000119312525174527/d13717d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OTF releases second quarter 2025 financial results",
+      "signal": "clean",
+      "signal_note": "Routine earnings release"
     },
     {
       "form": "10-Q",
@@ -490,7 +670,10 @@
       "label": "Quarterly report (10-Q) for period ending 2025-06-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000174777725000024/ortf-20250630.htm",
-      "material": true
+      "material": true,
+      "headline": "OTF files Q2 2025 quarterly report",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "8-K",
@@ -498,7 +681,10 @@
       "label": "Current report: reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000119312525153463/d923985d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OTF to report Q2 2025 results August 6",
+      "signal": "clean",
+      "signal_note": "Routine earnings scheduling"
     },
     {
       "form": "8-K",
@@ -506,7 +692,10 @@
       "label": "Current report (8-K)",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000119312525151349/d922011d8k.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF shareholders vote on two matters at annual meeting",
+      "signal": "clean",
+      "signal_note": "Routine annual meeting"
     },
     {
       "form": "CERT",
@@ -514,7 +703,10 @@
       "label": "CERT — NYSE CERTIFICATION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000087666125000441/OTF061125.pdf",
-      "material": false
+      "material": false,
+      "headline": "NYSE certifies OTF common stock for listing",
+      "signal": "clean",
+      "signal_note": "Routine exchange certification"
     },
     {
       "form": "8-A12B",
@@ -522,7 +714,10 @@
       "label": "8-A12B — 8-A12B",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000119312525138811/d30965d8a12b.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF registers common stock for NYSE listing",
+      "signal": "clean",
+      "signal_note": "Routine securities registration"
     },
     {
       "form": "8-K",
@@ -530,7 +725,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000119312525138807/d30919d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OTF receives NYSE approval, to begin trading June 12",
+      "signal": "clean",
+      "signal_note": "Routine exchange listing"
     },
     {
       "form": "8-K",
@@ -538,7 +736,10 @@
       "label": "Current report: entered a material agreement; disclosed a material event",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000119312525134115/d935741d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OTF adopts amended dividend reinvestment plan for listing",
+      "signal": "clean",
+      "signal_note": "Routine dividend reinvestment plan"
     },
     {
       "form": "40-17G",
@@ -546,7 +747,10 @@
       "label": "40-17G — 40-17G",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000119312525125109/d945021d4017g.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF files fidelity bond under Rule 17g-1",
+      "signal": "clean",
+      "signal_note": "Routine fidelity bond"
     },
     {
       "form": "10-Q",
@@ -554,7 +758,10 @@
       "label": "Quarterly report (10-Q) for period ending 2025-03-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000174777725000015/ortf-20250331.htm",
-      "material": true
+      "material": true,
+      "headline": "OTF files Q1 2025 quarterly report",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "SCHEDULE 13G/A",
@@ -562,7 +769,10 @@
       "label": "SCHEDULE 13G/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000114036125018326/xslSCHEDULE_13G_X01/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "Institutional holder amends OTF ownership stake to 9.4%",
+      "signal": "clean",
+      "signal_note": "Routine ownership filing"
     },
     {
       "form": "N-23C-2",
@@ -570,7 +780,10 @@
       "label": "N-23C-2 — N-23C-2",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000119312525105571/d947832dn23c2.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF to redeem 6.75% notes due 2025",
+      "signal": "clean",
+      "signal_note": "Routine note redemption"
     },
     {
       "form": "DEFA14A",
@@ -578,7 +791,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000119312525076898/d920847ddefa14a.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF sends 2025 annual meeting proxy reminder",
+      "signal": "clean",
+      "signal_note": "Routine proxy"
     },
     {
       "form": "40-APP/A",
@@ -586,7 +802,10 @@
       "label": "40-APP/A — 40-APP/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000119312525076183/d937394d40appa.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF files amended exemptive relief application",
+      "signal": "clean",
+      "signal_note": "Routine exemptive application"
     },
     {
       "form": "40-APP/A",
@@ -594,7 +813,10 @@
       "label": "40-APP/A — 40-APP/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000119312525072483/d937394d40appa.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF files amended exemptive relief application",
+      "signal": "clean",
+      "signal_note": "Routine exemptive application"
     },
     {
       "form": "DEFA14A",
@@ -602,7 +824,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000119312525072456/d920424ddefa14a.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF sends 2025 annual meeting proxy notice",
+      "signal": "clean",
+      "signal_note": "Routine proxy"
     },
     {
       "form": "DEF 14A",
@@ -610,7 +835,10 @@
       "label": "Proxy statement — DEF 14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000119312525072422/d834986ddef14a.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF files definitive 2025 annual meeting proxy statement",
+      "signal": "clean",
+      "signal_note": "Routine proxy"
     },
     {
       "form": "40-APP/A",
@@ -618,7 +846,10 @@
       "label": "40-APP/A — 40-APP/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000119312525067082/d937394d40appa.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF files amended exemptive relief application",
+      "signal": "clean",
+      "signal_note": "Routine exemptive application"
     },
     {
       "form": "SCHEDULE 13G",
@@ -626,7 +857,10 @@
       "label": "SCHEDULE 13G",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000199937125003300/xslSCHEDULE_13G_X01/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "Institutional holder discloses OTF passive ownership stake",
+      "signal": "clean",
+      "signal_note": "Routine ownership filing"
     },
     {
       "form": "4",
@@ -634,7 +868,10 @@
       "label": "4 — 4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000095017025043986/xslF345X05/ownership.xml",
-      "material": false
+      "material": false,
+      "headline": "OTF insider reports share transaction on Form 4",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "4",
@@ -642,7 +879,10 @@
       "label": "4 — 4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000095017025043978/xslF345X05/ownership.xml",
-      "material": false
+      "material": false,
+      "headline": "OTF insider reports share transaction on Form 4",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "POS EX",
@@ -650,7 +890,10 @@
       "label": "POS EX — POS EX",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000162828025014509/otf-nx14posex.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF files post-effective registration amendment",
+      "signal": "clean",
+      "signal_note": "Routine registration"
     },
     {
       "form": "8-K",
@@ -658,7 +901,10 @@
       "label": "Current report: entered a material agreement; completed an acquisition or disposition",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000162828025014413/otic-20250324.htm",
-      "material": true
+      "material": true,
+      "headline": "OTF completes acquisition of OTF II",
+      "signal": "clean",
+      "signal_note": "Routine merger completion"
     },
     {
       "form": "8-K",
@@ -666,7 +912,10 @@
       "label": "Current report: issued a Regulation FD disclosure",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000162828025014117/otic-20250320.htm",
-      "material": true
+      "material": true,
+      "headline": "OTF shareholders approve amended charter at special meeting",
+      "signal": "clean",
+      "signal_note": "Routine special meeting"
     },
     {
       "form": "4",
@@ -674,7 +923,10 @@
       "label": "4 — 4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000095017025039508/xslF345X05/ownership.xml",
-      "material": false
+      "material": false,
+      "headline": "OTF insider reports share transaction on Form 4",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "8-K",
@@ -682,7 +934,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000162828025012805/otic-20250314.htm",
-      "material": true
+      "material": true,
+      "headline": "OTF declares $0.34 quarterly dividend",
+      "signal": "clean",
+      "signal_note": "Routine dividend"
     },
     {
       "form": "40-APP",
@@ -690,7 +945,10 @@
       "label": "40-APP — 40-APP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000119312525048700/d814922d40app.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF files exemptive relief application",
+      "signal": "clean",
+      "signal_note": "Routine exemptive application"
     },
     {
       "form": "10-K",
@@ -698,7 +956,10 @@
       "label": "Annual report (10-K) for period ending 2024-12-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000174777725000008/ortfc-20241231.htm",
-      "material": true
+      "material": true,
+      "headline": "OTF files fiscal 2024 annual report on Form 10-K",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "425",
@@ -706,7 +967,10 @@
       "label": "425 — 425",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000162828025006377/otf-form425.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF sends merger special-meeting proxy reminder",
+      "signal": "clean",
+      "signal_note": "Routine merger communication"
     },
     {
       "form": "SCHEDULE 13G/A",
@@ -714,7 +978,10 @@
       "label": "SCHEDULE 13G/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000114036125002764/xslSCHEDULE_13G_X01/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "Institutional holder amends OTF ownership stake to 12%",
+      "signal": "clean",
+      "signal_note": "Routine ownership filing"
     },
     {
       "form": "8-K",
@@ -722,7 +989,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000162828025002040/otic-20250121.htm",
-      "material": true
+      "material": true,
+      "headline": "OTF completes $650M 6.100% notes due 2028 offering",
+      "signal": "clean",
+      "signal_note": "Routine note issuance"
     },
     {
       "form": "425",
@@ -730,7 +1000,10 @@
       "label": "425 — 425",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000162828025002022/otf-425xremindermler.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF files merger proxy voting materials",
+      "signal": "clean",
+      "signal_note": "Routine merger communication"
     },
     {
       "form": "EFFECT",
@@ -738,7 +1011,10 @@
       "label": "EFFECT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/999999999525000139/xslEFFECTX01/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "OTF registration statement declared effective",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "425",
@@ -746,7 +1022,10 @@
       "label": "425 — 425",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000162828025001847/otf-425xinitialmler.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF files merger proxy voting materials",
+      "signal": "clean",
+      "signal_note": "Routine merger communication"
     },
     {
       "form": "424B3",
@@ -754,7 +1033,10 @@
       "label": "Prospectus supplement (offering) — 424B3",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000162828025001841/otf-424b3.htm",
-      "material": true
+      "material": true,
+      "headline": "OTF files joint proxy prospectus for OTF II merger",
+      "signal": "clean",
+      "signal_note": "Routine merger registration"
     },
     {
       "form": "425",
@@ -762,7 +1044,10 @@
       "label": "425 — 425",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000119312525007723/d857003d425.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF files merger overview investor materials",
+      "signal": "clean",
+      "signal_note": "Routine merger communication"
     },
     {
       "form": "8-K",
@@ -770,7 +1055,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000162828025001442/otic-20250113.htm",
-      "material": true
+      "material": true,
+      "headline": "OTF prices $650M 6.100% notes private placement",
+      "signal": "clean",
+      "signal_note": "Routine note issuance"
     },
     {
       "form": "CORRESP",
@@ -778,7 +1066,10 @@
       "label": "CORRESP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000162828025001383/filename1.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF responds to SEC staff comments on N-14",
+      "signal": "clean",
+      "signal_note": "Routine SEC correspondence"
     },
     {
       "form": "CORRESP",
@@ -786,7 +1077,10 @@
       "label": "CORRESP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000162828025000650/filename1.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF responds to SEC staff comments on N-14",
+      "signal": "clean",
+      "signal_note": "Routine SEC correspondence"
     },
     {
       "form": "N-14 8C/A",
@@ -794,7 +1088,10 @@
       "label": "N-14 8C/A — N-14 8C/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000162828025000647/otf-formnx14a1.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF amends N-14 merger registration statement",
+      "signal": "clean",
+      "signal_note": "Routine merger registration"
     },
     {
       "form": "8-K",
@@ -802,7 +1099,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000119312524284211/d894459d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OTF reports direct financial obligation",
+      "signal": "clean",
+      "signal_note": "Routine financing"
     },
     {
       "form": "CORRESP",
@@ -810,7 +1110,10 @@
       "label": "CORRESP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000162828024050840/filename1.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF responds to SEC staff comments on N-14",
+      "signal": "clean",
+      "signal_note": "Routine SEC correspondence"
     },
     {
       "form": "N-14 8C",
@@ -818,7 +1121,10 @@
       "label": "N-14 8C — N-14 8C",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000162828024048969/otf-formnx14.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF files N-14 merger registration statement",
+      "signal": "clean",
+      "signal_note": "Routine merger registration"
     },
     {
       "form": "425",
@@ -826,7 +1132,10 @@
       "label": "425 — 425",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000162828024048911/otf-form425112224.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF files merger conference call excerpts",
+      "signal": "clean",
+      "signal_note": "Routine merger communication"
     },
     {
       "form": "425",
@@ -834,7 +1143,10 @@
       "label": "425 — 425",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000162828024048871/otf-form425112124.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF files merger conference call transcript",
+      "signal": "clean",
+      "signal_note": "Routine merger communication"
     },
     {
       "form": "425",
@@ -842,7 +1154,10 @@
       "label": "425 — 425",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000119312524258794/d835027d425.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF files merger webcast transcript",
+      "signal": "clean",
+      "signal_note": "Routine merger communication"
     },
     {
       "form": "425",
@@ -850,7 +1165,10 @@
       "label": "425 — 425",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000119312524257242/d879488d425.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF files merger investor FAQ and materials",
+      "signal": "clean",
+      "signal_note": "Routine merger communication"
     },
     {
       "form": "425",
@@ -858,7 +1176,10 @@
       "label": "425 — 425",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000119312524257231/d853467d425.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF details OTF II merger, combined under 0.1% non-accruals",
+      "signal": "clean",
+      "signal_note": "Low non-accruals disclosed in merger materials"
     },
     {
       "form": "425",
@@ -866,7 +1187,10 @@
       "label": "425 — 425",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000119312524257210/d860936d425.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF enters merger agreement to acquire OTF II",
+      "signal": "clean",
+      "signal_note": "Routine merger agreement"
     },
     {
       "form": "8-K",
@@ -874,7 +1198,10 @@
       "label": "Current report: entered a material agreement; issued a Regulation FD disclosure",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000119312524257192/d860936d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OTF enters agreement to acquire OTF II",
+      "signal": "clean",
+      "signal_note": "Routine merger agreement"
     },
     {
       "form": "4",
@@ -882,7 +1209,10 @@
       "label": "4 — 4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000095017024125514/xslF345X05/ownership.xml",
-      "material": false
+      "material": false,
+      "headline": "OTF insider reports share transaction on Form 4",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "10-Q",
@@ -890,7 +1220,10 @@
       "label": "Quarterly report (10-Q) for period ending 2024-09-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000174777724000021/ortfc-20240930.htm",
-      "material": true
+      "material": true,
+      "headline": "OTF files Q3 2024 quarterly report",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "8-K",
@@ -898,7 +1231,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000119312524250655/d876032d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OTF reports direct financial obligation",
+      "signal": "clean",
+      "signal_note": "Routine financing"
     },
     {
       "form": "8-K",
@@ -906,7 +1242,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000119312524249891/d800162d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OTF reports direct financial obligation",
+      "signal": "clean",
+      "signal_note": "Routine financing"
     },
     {
       "form": "3",
@@ -914,7 +1253,10 @@
       "label": "3 — 3",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000095017024098087/xslF345X02/ownership.xml",
-      "material": false
+      "material": false,
+      "headline": "OTF insider files initial Form 3 ownership statement",
+      "signal": "clean",
+      "signal_note": "Routine ownership filing"
     },
     {
       "form": "10-Q",
@@ -922,7 +1264,10 @@
       "label": "Quarterly report (10-Q) for period ending 2024-06-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000174777724000013/ortfc-20240630.htm",
-      "material": true
+      "material": true,
+      "headline": "OTF files Q2 2024 quarterly report",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "8-K",
@@ -930,7 +1275,10 @@
       "label": "Current report (8-K)",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000119312524166985/d839984d8k.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF shareholders vote on two matters at annual meeting",
+      "signal": "clean",
+      "signal_note": "Routine annual meeting"
     },
     {
       "form": "8-K",
@@ -938,7 +1286,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000119312524164571/d830869d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OTF amends senior secured credit agreement benchmark",
+      "signal": "clean",
+      "signal_note": "Routine amend-and-extend"
     },
     {
       "form": "40-17G",
@@ -946,7 +1297,10 @@
       "label": "40-17G — 40-17G",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000119312524146043/d814842d4017g.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF files fidelity bond under Rule 17g-1",
+      "signal": "clean",
+      "signal_note": "Routine fidelity bond"
     },
     {
       "form": "10-Q",
@@ -954,7 +1308,10 @@
       "label": "Quarterly report (10-Q) for period ending 2024-03-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000174777724000009/ortfc-20240331.htm",
-      "material": true
+      "material": true,
+      "headline": "OTF files Q1 2024 quarterly report",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "DEFA14A",
@@ -962,7 +1319,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000119312524091912/d813488ddefa14a.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF files annual meeting solicitation script",
+      "signal": "clean",
+      "signal_note": "Routine proxy"
     },
     {
       "form": "DEFA14A",
@@ -970,7 +1330,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000119312524083496/d662243ddefa14a.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF sends 2024 annual meeting proxy notice",
+      "signal": "clean",
+      "signal_note": "Routine proxy"
     },
     {
       "form": "DEFA14A",
@@ -978,7 +1341,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000119312524080735/d811815ddefa14a.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF sends 2024 annual meeting proxy reminder",
+      "signal": "clean",
+      "signal_note": "Routine proxy"
     },
     {
       "form": "DEF 14A",
@@ -986,7 +1352,10 @@
       "label": "Proxy statement — DEF 14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000119312524080707/d744310ddef14a.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF files definitive 2024 annual meeting proxy statement",
+      "signal": "clean",
+      "signal_note": "Routine proxy"
     },
     {
       "form": "10-K",
@@ -994,7 +1363,10 @@
       "label": "Annual report (10-K) for period ending 2023-12-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000174777724000004/ortfc-20231231.htm",
-      "material": true
+      "material": true,
+      "headline": "OTF files fiscal 2023 annual report on Form 10-K",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "SC 13G/A",
@@ -1002,7 +1374,10 @@
       "label": "SC 13G/A — SC 13G/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000114036124003621/ef20019622_sc13ga.htm",
-      "material": false
+      "material": false,
+      "headline": "Institutional holder amends OTF passive ownership stake",
+      "signal": "clean",
+      "signal_note": "Routine ownership filing"
     },
     {
       "form": "CORRESP",
@@ -1010,7 +1385,10 @@
       "label": "CORRESP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000119312523292645/filename1.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF responds to SEC staff comments on 10-K",
+      "signal": "clean",
+      "signal_note": "Routine SEC correspondence"
     },
     {
       "form": "10-Q",
@@ -1018,7 +1396,10 @@
       "label": "Quarterly report (10-Q) for period ending 2023-09-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000174777723000022/ortfc-20230930.htm",
-      "material": true
+      "material": true,
+      "headline": "OTF files Q3 2023 quarterly report",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "8-K",
@@ -1026,7 +1407,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000119312523249100/d540993d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OTF reports direct financial obligation",
+      "signal": "clean",
+      "signal_note": "Routine financing"
     },
     {
       "form": "8-K",
@@ -1034,7 +1418,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000119312523222630/d531991d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OTF reports direct financial obligation",
+      "signal": "clean",
+      "signal_note": "Routine financing"
     },
     {
       "form": "10-Q",
@@ -1042,7 +1429,10 @@
       "label": "Quarterly report (10-Q) for period ending 2023-06-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000174777723000019/ortfc-20230630.htm",
-      "material": true
+      "material": true,
+      "headline": "OTF files Q2 2023 quarterly report",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "8-K",
@@ -1050,7 +1440,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000119312523189648/d450628d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OTF reports direct financial obligation",
+      "signal": "clean",
+      "signal_note": "Routine financing"
     },
     {
       "form": "8-K",
@@ -1058,7 +1451,10 @@
       "label": "Current report: entered a material agreement; disclosed a material event",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000119312523182379/d528237d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OTF enters license to use Blue Owl name",
+      "signal": "clean",
+      "signal_note": "Routine trademark license"
     },
     {
       "form": "8-K",
@@ -1066,7 +1462,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000119312523176185/d502462d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OTF subsidiary amends secured credit facility",
+      "signal": "clean",
+      "signal_note": "Routine amend-and-extend"
     },
     {
       "form": "8-K",
@@ -1074,7 +1473,10 @@
       "label": "Current report: amended its charter or bylaws; disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000119312523172630/d487140d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OTF adopts Blue Owl Technology Finance Corp name",
+      "signal": "clean",
+      "signal_note": "Routine corporate name change"
     },
     {
       "form": "8-K",
@@ -1082,7 +1484,10 @@
       "label": "Current report (8-K)",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000119312523171275/d476589d8k.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF shareholders elect directors, ratify auditor",
+      "signal": "clean",
+      "signal_note": "Routine annual meeting"
     },
     {
       "form": "40-17G",
@@ -1090,7 +1495,10 @@
       "label": "40-17G — FORM 40-17G",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000119312523165371/d663156d4017g.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF files fidelity bond under Rule 17g-1",
+      "signal": "clean",
+      "signal_note": "Routine fidelity bond"
     },
     {
       "form": "8-K",
@@ -1098,7 +1506,10 @@
       "label": "Current report: issued a Regulation FD disclosure; disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000119312523152361/d451253d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OTF furnishes investor press release",
+      "signal": "clean",
+      "signal_note": "Routine investor release"
     },
     {
       "form": "8-K",
@@ -1106,7 +1517,10 @@
       "label": "Current report: issued a Regulation FD disclosure; disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000119312523143555/d384216d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OTF furnishes investor press release",
+      "signal": "clean",
+      "signal_note": "Routine investor release"
     },
     {
       "form": "10-Q",
@@ -1114,7 +1528,10 @@
       "label": "Quarterly report (10-Q) for period ending 2023-03-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000174777723000014/ortfc-20230331.htm",
-      "material": true
+      "material": true,
+      "headline": "OTF files Q1 2023 quarterly report",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "DEFA14A",
@@ -1122,7 +1539,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000119312523088241/d460350ddefa14a.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF sends 2023 annual meeting proxy notice",
+      "signal": "clean",
+      "signal_note": "Routine proxy"
     },
     {
       "form": "8-K",
@@ -1130,7 +1550,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000119312523088215/d400435d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OTF reports direct financial obligation",
+      "signal": "clean",
+      "signal_note": "Routine financing"
     },
     {
       "form": "DEFA14A",
@@ -1138,7 +1561,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000119312523083751/d460350ddefa14a.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF sends 2023 annual meeting proxy reminder",
+      "signal": "clean",
+      "signal_note": "Routine proxy"
     },
     {
       "form": "DEF 14A",
@@ -1146,7 +1572,10 @@
       "label": "Proxy statement — DEF 14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000119312523083746/d460350ddef14a.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF files definitive 2023 annual meeting proxy statement",
+      "signal": "clean",
+      "signal_note": "Routine proxy"
     },
     {
       "form": "10-K",
@@ -1154,7 +1583,10 @@
       "label": "Annual report (10-K) for period ending 2022-12-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000174777723000005/ortfc-20221231.htm",
-      "material": true
+      "material": true,
+      "headline": "OTF files fiscal 2022 annual report on Form 10-K",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "SC 13G/A",
@@ -1162,7 +1594,10 @@
       "label": "SC 13G/A — SC 13G/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000114036123004114/brhc10047440_sc13ga.htm",
-      "material": false
+      "material": false,
+      "headline": "Institutional holder amends OTF passive ownership stake",
+      "signal": "clean",
+      "signal_note": "Routine ownership filing"
     },
     {
       "form": "8-K",
@@ -1170,7 +1605,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000119312522311809/d419943d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OTF reports direct financial obligation",
+      "signal": "clean",
+      "signal_note": "Routine financing"
     },
     {
       "form": "8-K",
@@ -1178,7 +1616,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000119312522289036/d424029d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OTF enters amended and restated revolving credit agreement",
+      "signal": "clean",
+      "signal_note": "Routine amend-and-extend"
     },
     {
       "form": "10-Q",
@@ -1186,7 +1627,10 @@
       "label": "Quarterly report (10-Q) for period ending 2022-09-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000174777722000013/ortf-20220930x10q_word.htm",
-      "material": true
+      "material": true,
+      "headline": "OTF files Q3 2022 quarterly report",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "SC 13G",
@@ -1194,7 +1638,10 @@
       "label": "SC 13G — SC 13G",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000114036122038787/brhc10043388_sc13g.htm",
-      "material": false
+      "material": false,
+      "headline": "Institutional holder discloses OTF passive ownership stake",
+      "signal": "clean",
+      "signal_note": "Routine ownership filing"
     },
     {
       "form": "10-Q",
@@ -1202,7 +1649,10 @@
       "label": "Quarterly report (10-Q) for period ending 2022-06-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000174777722000008/a01ortf-2022630x10q.htm",
-      "material": true
+      "material": true,
+      "headline": "OTF files Q2 2022 quarterly report",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "40-APP/A",
@@ -1210,7 +1660,10 @@
       "label": "40-APP/A — 40-APP/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000110465922081222/tm2221385d1_40appa.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF files amended exemptive relief application",
+      "signal": "clean",
+      "signal_note": "Routine exemptive application"
     },
     {
       "form": "8-K",
@@ -1218,7 +1671,10 @@
       "label": "Current report (8-K)",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000119312522186234/d363011d8k.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF shareholders elect directors, ratify auditor",
+      "signal": "clean",
+      "signal_note": "Routine annual meeting"
     },
     {
       "form": "40-APP",
@@ -1226,7 +1682,10 @@
       "label": "40-APP — 40-APP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000110465922064255/tm2216639d1_40app.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF files exemptive relief application",
+      "signal": "clean",
+      "signal_note": "Routine exemptive application"
     },
     {
       "form": "DEFA14A",
@@ -1234,7 +1693,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000119312522153147/d357012ddefa14a.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF sends 2022 annual meeting proxy notice",
+      "signal": "clean",
+      "signal_note": "Routine proxy"
     },
     {
       "form": "DEFA14A",
@@ -1242,7 +1704,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000119312522148839/d373124ddefa14a.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF sends 2022 annual meeting proxy reminder",
+      "signal": "clean",
+      "signal_note": "Routine proxy"
     },
     {
       "form": "10-Q",
@@ -1250,7 +1715,10 @@
       "label": "Quarterly report (10-Q) for period ending 2022-03-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000095017022009068/ortfc_10q_2022-0331.htm",
-      "material": true
+      "material": true,
+      "headline": "OTF files Q1 2022 quarterly report",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "3",
@@ -1258,7 +1726,10 @@
       "label": "3 — FORM 3 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000089924322016660/xslF345X02/doc3.xml",
-      "material": false
+      "material": false,
+      "headline": "OTF insider files initial Form 3 ownership statement",
+      "signal": "clean",
+      "signal_note": "Routine ownership filing"
     },
     {
       "form": "DEFA14A",
@@ -1266,7 +1737,10 @@
       "label": "DEFA14A — ORTF DEFA14A FILING",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000119312522137665/d267925ddefa14a.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF sends 2022 annual meeting proxy materials",
+      "signal": "clean",
+      "signal_note": "Routine proxy"
     },
     {
       "form": "8-K",
@@ -1274,7 +1748,10 @@
       "label": "Current report: reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000119312522133962/d321107d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OTF estimates Q1 2022 NAV near $17.24, no non-accruals",
+      "signal": "clean",
+      "signal_note": "No non-accruals disclosed"
     },
     {
       "form": "DEFA14A",
@@ -1282,7 +1759,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000119312522120367/d330224ddefa14a.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF sends 2022 annual meeting proxy notice",
+      "signal": "clean",
+      "signal_note": "Routine proxy"
     },
     {
       "form": "DEFA14A",
@@ -1290,7 +1770,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000119312522111221/d352766ddefa14a.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF sends 2022 annual meeting proxy reminder",
+      "signal": "clean",
+      "signal_note": "Routine proxy"
     },
     {
       "form": "DEFA14A",
@@ -1298,7 +1781,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000119312522101822/d332471ddefa14a.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF sends 2022 annual meeting proxy notice",
+      "signal": "clean",
+      "signal_note": "Routine proxy"
     },
     {
       "form": "DEF 14A",
@@ -1306,7 +1792,10 @@
       "label": "Proxy statement — DEF 14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000119312522101784/d332471ddef14a.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF files definitive 2022 annual meeting proxy statement",
+      "signal": "clean",
+      "signal_note": "Routine proxy"
     },
     {
       "form": "8-K",
@@ -1314,7 +1803,10 @@
       "label": "Current report (8-K)",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000119312522086750/d302533d8k.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF schedules 2022 annual meeting, sets nomination deadline",
+      "signal": "clean",
+      "signal_note": "Routine annual meeting"
     },
     {
       "form": "10-K",
@@ -1322,7 +1814,10 @@
       "label": "Annual report (10-K) for period ending 2021-12-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000095017022003407/ortfc_10k_1231_2021.htm",
-      "material": true
+      "material": true,
+      "headline": "OTF files fiscal 2021 annual report on Form 10-K",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "8-K",
@@ -1330,7 +1825,10 @@
       "label": "Current report: reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000119312522071293/d294551d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OTF furnishes fourth quarter results press release",
+      "signal": "clean",
+      "signal_note": "Routine earnings release"
     },
     {
       "form": "40-17G",
@@ -1338,7 +1836,10 @@
       "label": "40-17G — FORM 40-17G",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000119312522064479/d297790d4017g.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF files fidelity bond under Rule 17g-1",
+      "signal": "clean",
+      "signal_note": "Routine fidelity bond"
     },
     {
       "form": "8-K",
@@ -1346,7 +1847,10 @@
       "label": "Current report: changed a director or senior officer",
       "category": "Personnel",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000119312522017634/d270803d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OTF director Brian Finn to resign, cites other opportunities",
+      "signal": "clean",
+      "signal_note": "Director resignation, no disagreement"
     },
     {
       "form": "3",
@@ -1354,7 +1858,10 @@
       "label": "3 — FORM 3 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000089924321046055/xslF345X02/doc3.xml",
-      "material": false
+      "material": false,
+      "headline": "OTF insider files initial Form 3 ownership statement",
+      "signal": "clean",
+      "signal_note": "Routine ownership filing"
     },
     {
       "form": "8-K",
@@ -1362,7 +1869,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000119312521338521/d439393d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OTF completes additional $250M 4.75% notes offering",
+      "signal": "clean",
+      "signal_note": "Routine note issuance"
     },
     {
       "form": "8-K",
@@ -1370,7 +1880,10 @@
       "label": "Current report: changed a director or senior officer",
       "category": "Personnel",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000119312521336796/d260915d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OTF appoints Victor Woolridge to board of directors",
+      "signal": "clean",
+      "signal_note": "Routine director appointment"
     },
     {
       "form": "8-K",
@@ -1378,7 +1891,10 @@
       "label": "Current report: entered a material agreement; reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000119312521332529/d262825d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OTF prices additional $250M 4.75% notes",
+      "signal": "clean",
+      "signal_note": "Routine note issuance"
     },
     {
       "form": "10-Q",
@@ -1386,7 +1902,10 @@
       "label": "Quarterly report (10-Q) for period ending 2021-09-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000095017021003846/ortfc_10q_2021-0930.htm",
-      "material": true
+      "material": true,
+      "headline": "OTF files Q3 2021 quarterly report",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "4",
@@ -1394,7 +1913,10 @@
       "label": "4 — FORM 4 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000089924321043500/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "OTF insider reports share transaction on Form 4",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "4",
@@ -1402,7 +1924,10 @@
       "label": "4 — FORM 4 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000089924321043501/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "OTF insider reports share transaction on Form 4",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "4",
@@ -1410,7 +1935,10 @@
       "label": "4 — FORM 4 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000089924321043502/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "OTF insider reports share transaction on Form 4",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "4",
@@ -1418,7 +1946,10 @@
       "label": "4 — FORM 4 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000089924321043499/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "OTF insider reports share transaction on Form 4",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "8-K",
@@ -1426,7 +1957,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000119312521313327/d316754d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OTF reports direct financial obligation",
+      "signal": "clean",
+      "signal_note": "Routine financing"
     },
     {
       "form": "8-K",
@@ -1434,7 +1968,10 @@
       "label": "Current report (8-K)",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000119312521306660/d208566d8k.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF issues capital drawdown notice for $529M share sale",
+      "signal": "clean",
+      "signal_note": "Routine capital call"
     },
     {
       "form": "4",
@@ -1442,7 +1979,10 @@
       "label": "4 — FORM 4 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000089924321038182/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "OTF insider reports share transaction on Form 4",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "4",
@@ -1450,7 +1990,10 @@
       "label": "4 — FORM 4 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000089924321038180/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "OTF insider reports share transaction on Form 4",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "4",
@@ -1458,7 +2001,10 @@
       "label": "4 — FORM 4 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000089924321038179/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "OTF insider reports share transaction on Form 4",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "4",
@@ -1466,7 +2012,10 @@
       "label": "4 — FORM 4 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000089924321038178/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "OTF insider reports share transaction on Form 4",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "8-K",
@@ -1474,7 +2023,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000119312521282211/d234337d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OTF reports direct financial obligation",
+      "signal": "clean",
+      "signal_note": "Routine financing"
     },
     {
       "form": "8-K",
@@ -1482,7 +2034,10 @@
       "label": "Current report (8-K)",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000119312521275109/d226245d8k.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF issues capital drawdown notice for $500M share sale",
+      "signal": "clean",
+      "signal_note": "Routine capital call"
     },
     {
       "form": "3",
@@ -1490,7 +2045,10 @@
       "label": "3 — FORM 3 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000089924321034764/xslF345X02/doc3.xml",
-      "material": false
+      "material": false,
+      "headline": "OTF insider files initial Form 3 ownership statement",
+      "signal": "clean",
+      "signal_note": "Routine ownership filing"
     },
     {
       "form": "3",
@@ -1498,7 +2056,10 @@
       "label": "3 — FORM 3 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000089924321034761/xslF345X02/doc3.xml",
-      "material": false
+      "material": false,
+      "headline": "OTF insider files initial Form 3 ownership statement",
+      "signal": "clean",
+      "signal_note": "Routine ownership filing"
     },
     {
       "form": "3",
@@ -1506,7 +2067,10 @@
       "label": "3 — FORM 3 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000089924321034758/xslF345X02/doc3.xml",
-      "material": false
+      "material": false,
+      "headline": "OTF insider files initial Form 3 ownership statement",
+      "signal": "clean",
+      "signal_note": "Routine ownership filing"
     },
     {
       "form": "8-K",
@@ -1514,7 +2078,10 @@
       "label": "Current report (8-K)",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000119312521257688/d214569d8k.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF shareholders elect directors, ratify auditor",
+      "signal": "clean",
+      "signal_note": "Routine annual meeting"
     },
     {
       "form": "DEFA14A",
@@ -1522,7 +2089,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000110465921104681/tm2124605d2_defa14a.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF sends annual meeting proxy reminder",
+      "signal": "clean",
+      "signal_note": "Routine proxy"
     },
     {
       "form": "10-Q",
@@ -1530,7 +2100,10 @@
       "label": "Quarterly report (10-Q) for period ending 2021-06-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000156459021044052/orctf-10q_20210630.htm",
-      "material": true
+      "material": true,
+      "headline": "OTF files Q2 2021 quarterly report",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "D/A",
@@ -1538,7 +2111,10 @@
       "label": "D/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000156761921014911/xslFormDX08/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "OTF amends Form D private offering notice",
+      "signal": "clean",
+      "signal_note": "Routine offering notice"
     },
     {
       "form": "DEFA14A",
@@ -1546,7 +2122,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000110465921102477/tm2124605d1_defa14a.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF sends annual meeting proxy reminder",
+      "signal": "clean",
+      "signal_note": "Routine proxy"
     },
     {
       "form": "8-K",
@@ -1554,7 +2133,10 @@
       "label": "Current report: reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000110465921095398/tm2123096d1_8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OTF estimates Q2 2021 NAV near $16.33, no non-accruals",
+      "signal": "clean",
+      "signal_note": "No non-accruals disclosed"
     },
     {
       "form": "DEFA14A",
@@ -1562,7 +2144,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000110465921091698/tm2121338d3_defa14a.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF sends annual meeting proxy notice",
+      "signal": "clean",
+      "signal_note": "Routine proxy"
     },
     {
       "form": "DEFA14A",
@@ -1570,7 +2155,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000110465921090455/tm2121338d2_defa14a.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF files additional proxy soliciting materials",
+      "signal": "clean",
+      "signal_note": "Routine proxy"
     },
     {
       "form": "DEF 14A",
@@ -1578,7 +2166,10 @@
       "label": "Proxy statement — DEF 14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000110465921090446/tm2121338-1_def14a.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF files definitive annual meeting proxy statement",
+      "signal": "clean",
+      "signal_note": "Routine proxy"
     },
     {
       "form": "4",
@@ -1586,7 +2177,10 @@
       "label": "4 — OWNERSHIP DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000110465921085787/xslF345X03/tm2120761-3_4seq1.xml",
-      "material": false
+      "material": false,
+      "headline": "OTF insider reports share transaction on Form 4",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "4",
@@ -1594,7 +2188,10 @@
       "label": "4 — OWNERSHIP DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000110465921085784/xslF345X03/tm2120761-2_4seq1.xml",
-      "material": false
+      "material": false,
+      "headline": "OTF insider reports share transaction on Form 4",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "4",
@@ -1602,7 +2199,10 @@
       "label": "4 — OWNERSHIP DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000110465921085777/xslF345X03/tm2120761-1_4seq1.xml",
-      "material": false
+      "material": false,
+      "headline": "OTF insider reports share transaction on Form 4",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "8-K",
@@ -1610,7 +2210,10 @@
       "label": "Current report: changed its accounting firm",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000110465921085761/tm2120441d2_8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OTF dismisses PwC as independent auditor, no disagreements",
+      "signal": "clean",
+      "signal_note": "Auditor change, no disagreements"
     },
     {
       "form": "8-K",
@@ -1618,7 +2221,10 @@
       "label": "Current report (8-K)",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000110465921084700/tm2120441d1_8k.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF schedules 2021 annual meeting, sets nomination deadline",
+      "signal": "clean",
+      "signal_note": "Routine annual meeting"
     },
     {
       "form": "8-K",
@@ -1626,7 +2232,10 @@
       "label": "Current report (8-K)",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000110465921080801/tm2119534d1_8k.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF issues capital drawdown notice for $425M share sale",
+      "signal": "clean",
+      "signal_note": "Routine capital call"
     },
     {
       "form": "424B1",
@@ -1634,7 +2243,10 @@
       "label": "424B1 — 424B1",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000110465921078318/tm2036196-17_424b1.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF offers $300M 2.500% notes due 2027",
+      "signal": "clean",
+      "signal_note": "Routine note offering"
     },
     {
       "form": "497AD",
@@ -1642,7 +2254,10 @@
       "label": "497AD — 497AD",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000110465921077806/tm2036196d20_497ad.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF prices $300M 2.500% notes due 2027",
+      "signal": "clean",
+      "signal_note": "Routine note pricing"
     },
     {
       "form": "EFFECT",
@@ -1650,7 +2265,10 @@
       "label": "EFFECT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/999999999521002232/xslEFFECTX01/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "OTF registration statement declared effective",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "FWP",
@@ -1658,7 +2276,10 @@
       "label": "FWP — FWP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000110465921077782/tm2119058d1_fwp.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF sets final terms on $300M 2.500% notes",
+      "signal": "clean",
+      "signal_note": "Routine note pricing"
     },
     {
       "form": "497AD",
@@ -1666,7 +2287,10 @@
       "label": "497AD — 497AD",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000110465921077781/tm2036196d19_497ad.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF markets 2.500% notes offering",
+      "signal": "clean",
+      "signal_note": "Routine note offering"
     },
     {
       "form": "497AD",
@@ -1674,7 +2298,10 @@
       "label": "497AD — 497AD",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000110465921077780/tm2036196d18_497ad.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF markets 2.500% notes offering",
+      "signal": "clean",
+      "signal_note": "Routine note offering"
     },
     {
       "form": "497AD",
@@ -1682,7 +2309,10 @@
       "label": "497AD — 497AD",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000110465921077428/tm2036196d16_497ad.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF markets 2.500% notes offering",
+      "signal": "clean",
+      "signal_note": "Routine note offering"
     },
     {
       "form": "N-2/A",
@@ -1690,7 +2320,10 @@
       "label": "N-2/A — N-2/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000110465921077414/tm2036196-12_n2a.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF files pre-effective registration amendment",
+      "signal": "clean",
+      "signal_note": "Routine registration"
     },
     {
       "form": "D/A",
@@ -1698,7 +2331,10 @@
       "label": "D/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000156761921011718/xslFormDX08/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "OTF amends Form D private offering notice",
+      "signal": "clean",
+      "signal_note": "Routine offering notice"
     },
     {
       "form": "N-2/A",
@@ -1706,7 +2342,10 @@
       "label": "N-2/A — N-2/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000110465921076800/tm2036196-9_n2a.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF files pre-effective registration amendment",
+      "signal": "clean",
+      "signal_note": "Routine registration"
     },
     {
       "form": "497AD",
@@ -1714,7 +2353,10 @@
       "label": "497AD — 497AD",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000110465921076402/tm2036196d11_497ad.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF arranges fixed income investor calls ahead of offering",
+      "signal": "clean",
+      "signal_note": "Routine note offering"
     },
     {
       "form": "8-K",
@@ -1722,7 +2364,10 @@
       "label": "Current report: entered a material agreement; changed a director or senior officer",
       "category": "Personnel",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000110465921069450/tm2116204d1_8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OTF enters restated advisory agreement after Blue Owl merger",
+      "signal": "clean",
+      "signal_note": "Routine advisory agreement, adviser change of control"
     },
     {
       "form": "N-2/A",
@@ -1730,7 +2375,10 @@
       "label": "N-2/A — N-2/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000110465921065376/tm2036196-6_n2a.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF files pre-effective registration amendment",
+      "signal": "clean",
+      "signal_note": "Routine registration"
     },
     {
       "form": "10-Q",
@@ -1738,7 +2386,10 @@
       "label": "Quarterly report (10-Q) for period ending 2021-03-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000156459021026611/orctf-10q_20210331.htm",
-      "material": true
+      "material": true,
+      "headline": "OTF files Q1 2021 quarterly report",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "40-17G",
@@ -1746,7 +2397,10 @@
       "label": "40-17G — 40-17G",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000110465921038403/tm219658d1_4017g.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF files fidelity bond under Rule 17g-1",
+      "signal": "clean",
+      "signal_note": "Routine fidelity bond"
     },
     {
       "form": "8-K",
@@ -1754,7 +2408,10 @@
       "label": "Current report (8-K)",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000110465921037812/tm219983d1_8k.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF files merger-related communication",
+      "signal": "clean",
+      "signal_note": "Routine merger communication"
     },
     {
       "form": "4",
@@ -1762,7 +2419,10 @@
       "label": "4 — OWNERSHIP DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000110465921037255/xslF345X03/tm219941-4_4seq1.xml",
-      "material": false
+      "material": false,
+      "headline": "OTF insider reports share transaction on Form 4",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "4",
@@ -1770,7 +2430,10 @@
       "label": "4 — OWNERSHIP DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000110465921037254/xslF345X03/tm219941d3_4seq1.xml",
-      "material": false
+      "material": false,
+      "headline": "OTF insider reports share transaction on Form 4",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "4",
@@ -1778,7 +2441,10 @@
       "label": "4 — OWNERSHIP DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000110465921037253/xslF345X03/tm219941-2_4seq1.xml",
-      "material": false
+      "material": false,
+      "headline": "OTF insider reports share transaction on Form 4",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "4",
@@ -1786,7 +2452,10 @@
       "label": "4 — OWNERSHIP DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000110465921037252/xslF345X03/tm219941-1_4seq1.xml",
-      "material": false
+      "material": false,
+      "headline": "OTF insider reports share transaction on Form 4",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "N-2",
@@ -1794,7 +2463,10 @@
       "label": "Registration statement (N-2) — N-2",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000110465921036495/tm2036196-3_n2.htm",
-      "material": true
+      "material": true,
+      "headline": "OTF files Form N-2 registration statement",
+      "signal": "clean",
+      "signal_note": "Routine registration"
     },
     {
       "form": "10-K",
@@ -1802,7 +2474,10 @@
       "label": "Annual report (10-K) for period ending 2020-12-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000156459021011092/orctf-10k_20201231.htm",
-      "material": true
+      "material": true,
+      "headline": "OTF files fiscal 2020 annual report on Form 10-K",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "8-K",
@@ -1810,7 +2485,10 @@
       "label": "Current report (8-K)",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000110465921031446/tm218502d1_8k.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF issues capital drawdown notice for $250M share sale",
+      "signal": "clean",
+      "signal_note": "Routine capital call"
     },
     {
       "form": "3",
@@ -1818,7 +2496,10 @@
       "label": "3 — OWNERSHIP DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000110465921026837/xslF345X02/tm217145-1_3seq1.xml",
-      "material": false
+      "material": false,
+      "headline": "OTF insider files initial Form 3 ownership statement",
+      "signal": "clean",
+      "signal_note": "Routine ownership filing"
     },
     {
       "form": "8-K",
@@ -1826,7 +2507,10 @@
       "label": "Current report: changed a director or senior officer",
       "category": "Personnel",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000110465921026831/tm217149d1_8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OTF files merger-related communication",
+      "signal": "clean",
+      "signal_note": "Routine merger communication"
     },
     {
       "form": "DEFA14A",
@@ -1834,7 +2518,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000110465921024960/tm214553d5_defa14a.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF sends special meeting proxy reminder",
+      "signal": "clean",
+      "signal_note": "Routine proxy"
     },
     {
       "form": "DEFA14A",
@@ -1842,7 +2529,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000110465921013054/tm214553d4_defa14a.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF sends special meeting proxy reminder",
+      "signal": "clean",
+      "signal_note": "Routine proxy"
     },
     {
       "form": "DEFA14A",
@@ -1850,7 +2540,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000110465921011534/tm214553d3_defa14a.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF sends special meeting proxy reminder",
+      "signal": "clean",
+      "signal_note": "Routine proxy"
     },
     {
       "form": "DEFA14A",
@@ -1858,7 +2551,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000110465921010962/tm214553-2_defa14a.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF sends special meeting proxy reminder",
+      "signal": "clean",
+      "signal_note": "Routine proxy"
     },
     {
       "form": "DEFA14A",
@@ -1866,7 +2562,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000110465921009068/tm214553d1_defa14a.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF sends special meeting proxy reminder",
+      "signal": "clean",
+      "signal_note": "Routine proxy"
     },
     {
       "form": "CORRESP",
@@ -1874,7 +2573,10 @@
       "label": "CORRESP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000110465921007974/filename1.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF responds to SEC staff comments on proxy",
+      "signal": "clean",
+      "signal_note": "Routine SEC correspondence"
     },
     {
       "form": "DEFA14A",
@@ -1882,7 +2584,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000110465921007963/tm213025d4_defa14a.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF files additional proxy soliciting materials",
+      "signal": "clean",
+      "signal_note": "Routine proxy"
     },
     {
       "form": "DEF 14A",
@@ -1890,7 +2595,10 @@
       "label": "Proxy statement — DEF 14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000110465921007951/tm213025-3_def14a.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF files definitive special meeting proxy statement",
+      "signal": "clean",
+      "signal_note": "Routine proxy"
     },
     {
       "form": "PRE 14A",
@@ -1898,7 +2606,10 @@
       "label": "PRE 14A — PRE 14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000110465921004448/tm213025-1_pre14a.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF files preliminary proxy statement",
+      "signal": "clean",
+      "signal_note": "Routine proxy"
     },
     {
       "form": "8-K",
@@ -1906,7 +2617,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000110465920138899/a20-39137_18k.htm",
-      "material": true
+      "material": true,
+      "headline": "OTF adviser parent to merge with Dyal, form Blue Owl",
+      "signal": "clean",
+      "signal_note": "Routine adviser parent merger"
     },
     {
       "form": "DEFA14A",
@@ -1914,7 +2628,10 @@
       "label": "DEFA14A — 8-K",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000110465920138900/a20-39137_18k.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF discloses adviser parent Blue Owl merger",
+      "signal": "clean",
+      "signal_note": "Routine adviser parent merger"
     },
     {
       "form": "8-K",
@@ -1922,7 +2639,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000110465920136883/tm2038765d1_8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OTF closes $333.5M CLO term debt securitization",
+      "signal": "clean",
+      "signal_note": "Routine financing"
     },
     {
       "form": "8-K",
@@ -1930,7 +2650,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000110465920136877/tm2038765d2_8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OTF completes $375M 3.75% notes due 2026 offering",
+      "signal": "clean",
+      "signal_note": "Routine note issuance"
     },
     {
       "form": "8-K",
@@ -1938,7 +2661,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000110465920134791/tm2037832-3_8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OTF prices $375M 3.75% notes due 2026",
+      "signal": "clean",
+      "signal_note": "Routine note issuance"
     },
     {
       "form": "8-K",
@@ -1946,7 +2672,10 @@
       "label": "Current report (8-K)",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000110465920132013/tm2037598d1_8k.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF issues capital drawdown notice for $10M share sale",
+      "signal": "clean",
+      "signal_note": "Routine capital call"
     },
     {
       "form": "DRS",
@@ -1954,7 +2683,10 @@
       "label": "DRS",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000110465920128056/filename1.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF files confidential draft N-2 registration statement",
+      "signal": "clean",
+      "signal_note": "Routine registration"
     },
     {
       "form": "ABS-15G",
@@ -1962,7 +2694,10 @@
       "label": "ABS-15G — ABS-15G",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000110465920124468/tm2035818d1_abs15g.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF furnishes ABS-15G securitizer due-diligence report",
+      "signal": "clean",
+      "signal_note": "Routine securitization disclosure"
     },
     {
       "form": "10-Q",
@@ -1970,7 +2705,10 @@
       "label": "Quarterly report (10-Q) for period ending 2020-09-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000156459020053153/orctf-10q_20200930.htm",
-      "material": true
+      "material": true,
+      "headline": "OTF files Q3 2020 quarterly report",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "40-17G/A",
@@ -1978,7 +2716,10 @@
       "label": "40-17G/A — 40-17G/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000110465920119536/tm2034504d1_4017ga.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF amends fidelity bond filing under Rule 17g-1",
+      "signal": "clean",
+      "signal_note": "Routine fidelity bond"
     },
     {
       "form": "8-K",
@@ -1986,7 +2727,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000110465920107801/tm2031451d1_8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OTF completes $400M 4.75% notes due 2025 offering",
+      "signal": "clean",
+      "signal_note": "Routine note issuance"
     },
     {
       "form": "8-K",
@@ -1994,7 +2738,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000110465920105689/tm2030655d3_8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OTF prices $400M 4.75% notes due 2025",
+      "signal": "clean",
+      "signal_note": "Routine note issuance"
     },
     {
       "form": "8-K",
@@ -2002,7 +2749,10 @@
       "label": "Current report (8-K)",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000110465920104433/tm2030588d1_8k.htm",
-      "material": false
+      "material": false,
+      "headline": "OTF issues capital drawdown notice for $10M share sale",
+      "signal": "clean",
+      "signal_note": "Routine capital call"
     },
     {
       "form": "8-K",
@@ -2010,7 +2760,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000110465920102640/tm2030285d1_8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OTF upsizes revolving credit facility to $540M",
+      "signal": "clean",
+      "signal_note": "Routine facility upsize"
     },
     {
       "form": "8-K",
@@ -2018,7 +2771,10 @@
       "label": "Current report: issued a Regulation FD disclosure",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000156459020040167/orctf-8k_20200814.htm",
-      "material": true
+      "material": true,
+      "headline": "OTF furnishes letter to shareholders",
+      "signal": "clean",
+      "signal_note": "Routine investor letter"
     },
     {
       "form": "10-Q",
@@ -2026,7 +2782,10 @@
       "label": "Quarterly report (10-Q) for period ending 2020-06-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000156459020039290/orctf-10q_20200630.htm",
-      "material": true
+      "material": true,
+      "headline": "OTF files Q2 2020 quarterly report",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "D/A",
@@ -2034,7 +2793,10 @@
       "label": "D/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747777/000156761920014630/xslFormDX08/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "OTF amends Form D private offering notice",
+      "signal": "clean",
+      "signal_note": "Routine offering notice"
     }
   ]
 }

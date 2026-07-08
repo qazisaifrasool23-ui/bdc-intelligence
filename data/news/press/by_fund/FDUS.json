@@ -58,7 +58,10 @@
       "label": "Current report: reported quarterly results; issued a Regulation FD disclosure",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1513363/000119312526211909/fdus-20260507.htm",
-      "material": true
+      "material": true,
+      "headline": "Q1 results; declared $0.43 base plus $0.19 supplemental dividend",
+      "signal": "clean",
+      "signal_note": "Routine results and dividend"
     },
     {
       "form": "DEF 14A",
@@ -114,7 +117,10 @@
       "label": "Current report: reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1513363/000119312526076554/fdus-20250306.htm",
-      "material": true
+      "material": true,
+      "headline": "Fidus announced Q4 and full-year 2025 financial results",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results"
     },
     {
       "form": "8-K",
@@ -146,7 +152,10 @@
       "label": "Current report: reported quarterly results; issued a Regulation FD disclosure",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1513363/000119312525269480/fdus-20251106.htm",
-      "material": true
+      "material": true,
+      "headline": "Fidus declared $0.43 base plus $0.07 supplemental dividend with Q3 results",
+      "signal": "clean",
+      "signal_note": "Dividend declared as normal"
     },
     {
       "form": "8-K",
@@ -242,7 +251,10 @@
       "label": "Current report: reported quarterly results; issued a Regulation FD disclosure",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1513363/000095017025105007/fdus-20250807.htm",
-      "material": true
+      "material": true,
+      "headline": "Fidus Investment declared $0.43 base plus $0.14 supplemental dividend",
+      "signal": "clean",
+      "signal_note": "Routine results and dividend declaration"
     },
     {
       "form": "8-K",
@@ -274,7 +286,10 @@
       "label": "Current report: reported quarterly results; issued a Regulation FD disclosure",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1513363/000095017025066922/fdus-20250508.htm",
-      "material": true
+      "material": true,
+      "headline": "Reported Q1 2025 results and declared $0.43 base plus $0.11 supplemental dividend",
+      "signal": "clean",
+      "signal_note": "Dividend declared as normal"
     },
     {
       "form": "N-23C-2",
@@ -370,7 +385,10 @@
       "label": "Current report: reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1513363/000095017025034606/fdus-20250306.htm",
-      "material": true
+      "material": true,
+      "headline": "Fidus released Q4 and full-year 2024 financial results",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results"
     },
     {
       "form": "424B3",

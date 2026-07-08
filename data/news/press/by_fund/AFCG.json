@@ -922,7 +922,10 @@
       "label": "Current report: entered a material agreement; completed an acquisition or disposition",
       "category": "Personnel",
       "url": "https://www.sec.gov/Archives/edgar/data/1822523/000162828024031518/afcg-20240708.htm",
-      "material": true
+      "material": true,
+      "headline": "Completed spin-off of CRE portfolio into Sunrise Realty Trust (SUNS)",
+      "signal": "clean",
+      "signal_note": "Routine spin-off completion"
     },
     {
       "form": "8-K",
@@ -1362,7 +1365,10 @@
       "label": "Current report: reported quarterly results; changed a director or senior officer",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1822523/000182252323000007/afcg-20230307.htm",
-      "material": true
+      "material": true,
+      "headline": "AFC Gamma reported full-year results and named Robyn Tannenbaum President",
+      "signal": "clean",
+      "signal_note": "Results and officer appointment"
     },
     {
       "form": "10-K",

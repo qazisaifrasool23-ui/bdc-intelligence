@@ -10,7 +10,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000122520826005818/xslF345X06/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "Barings BDC insider reported Form 4 transaction dated June 3, 2026",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "8-K",
@@ -18,7 +21,10 @@
       "label": "Current report: entered a material agreement; terminated a material agreement",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000137978526000024/bbdc-20260529.htm",
-      "material": true
+      "material": true,
+      "headline": "Adviser to pay $67M covering Sierra legacy losses; new credit support agreement",
+      "signal": "watch",
+      "signal_note": "Unrealized losses on legacy portfolio"
     },
     {
       "form": "10-Q",
@@ -26,7 +32,10 @@
       "label": "Quarterly report (10-Q) for period ending 2026-03-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000137978526000022/bbdc-20260331.htm",
-      "material": true
+      "material": true,
+      "headline": "Barings BDC filed Q1 2026 quarterly report on Form 10-Q",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results"
     },
     {
       "form": "8-K",
@@ -34,7 +43,10 @@
       "label": "Current report: reported quarterly results; issued a Regulation FD disclosure",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000137978526000021/bbdc-20260507.htm",
-      "material": true
+      "material": true,
+      "headline": "Q1 results reported; three Class II directors elected",
+      "signal": "clean",
+      "signal_note": "Routine results and governance"
     },
     {
       "form": "DEFA14A",
@@ -42,7 +54,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000114036126009501/ef20067948_defa14a.htm",
-      "material": false
+      "material": false,
+      "headline": "Barings BDC solicits votes for May 7 annual stockholder meeting",
+      "signal": "clean",
+      "signal_note": "Routine proxy solicitation"
     },
     {
       "form": "DEF 14A",
@@ -50,7 +65,10 @@
       "label": "Proxy statement — DEF 14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000137978526000012/bbdc-20260309.htm",
-      "material": false
+      "material": false,
+      "headline": "Barings BDC proxy sets May 7 annual meeting to elect three directors",
+      "signal": "clean",
+      "signal_note": "Routine annual meeting proxy"
     },
     {
       "form": "10-K",
@@ -58,7 +76,10 @@
       "label": "Annual report (10-K) for period ending 2025-12-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000137978526000009/bbdc-20251231.htm",
-      "material": true
+      "material": true,
+      "headline": "Barings BDC files fiscal 2025 annual report on Form 10-K",
+      "signal": "clean",
+      "signal_note": "Routine annual report disclosures"
     },
     {
       "form": "8-K",
@@ -66,7 +87,10 @@
       "label": "Current report: reported quarterly results; issued a Regulation FD disclosure",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000137978526000008/bbdc-20260219.htm",
-      "material": true
+      "material": true,
+      "headline": "Barings BDC announced Q4 and full-year 2025 financial results",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results"
     },
     {
       "form": "3",
@@ -74,7 +98,10 @@
       "label": "3",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000122520826000284/xslF345X02/doc3.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider files initial Form 3 statement of beneficial ownership",
+      "signal": "clean",
+      "signal_note": "Routine insider ownership filing"
     },
     {
       "form": "40-APP/A",
@@ -82,7 +109,10 @@
       "label": "40-APP/A — 40-APP/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000114036125045515/ef20061188_40-appa.htm",
-      "material": false
+      "material": false,
+      "headline": "Barings amends co-investment exemptive relief application with SEC",
+      "signal": "clean",
+      "signal_note": "Routine co-investment relief application"
     },
     {
       "form": "4",
@@ -90,7 +120,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000122520825009822/xslF345X05/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider reports securities transaction on Form 4",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction filing"
     },
     {
       "form": "144",
@@ -98,7 +131,10 @@
       "label": "144",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000195004725010018/xsl144X01/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider files Form 144 notice of proposed securities sale",
+      "signal": "clean",
+      "signal_note": "Routine proposed sale notice"
     },
     {
       "form": "40-APP/A",
@@ -106,7 +142,10 @@
       "label": "40-APP/A — 40-APP/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000114036125044150/ef20060329_40-appa.htm",
-      "material": false
+      "material": false,
+      "headline": "Barings amends co-investment exemptive relief application with SEC",
+      "signal": "clean",
+      "signal_note": "Routine co-investment relief application"
     },
     {
       "form": "8-K",
@@ -114,7 +153,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000137978525000055/bbdc-20251113.htm",
-      "material": true
+      "material": true,
+      "headline": "BBDC extends ING credit facility maturity to 2030, adds $85M term loan",
+      "signal": "clean",
+      "signal_note": "Credit facility extended and upsized"
     },
     {
       "form": "3",
@@ -122,7 +164,10 @@
       "label": "3",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000122520825009090/xslF345X02/doc3.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider files initial Form 3 statement of beneficial ownership",
+      "signal": "clean",
+      "signal_note": "Routine insider ownership filing"
     },
     {
       "form": "10-Q",
@@ -130,7 +175,10 @@
       "label": "Quarterly report (10-Q) for period ending 2025-09-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000137978525000050/bbdc-20250930.htm",
-      "material": true
+      "material": true,
+      "headline": "Barings BDC files third-quarter 2025 report on Form 10-Q",
+      "signal": "clean",
+      "signal_note": "Routine quarterly report disclosures"
     },
     {
       "form": "8-K",
@@ -138,7 +186,10 @@
       "label": "Current report: changed a director or senior officer; issued a Regulation FD disclosure",
       "category": "Personnel",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000137978525000052/bbdc-20251106.htm",
-      "material": true
+      "material": true,
+      "headline": "CEO Eric Lloyd to resign year-end; Thomas McDonnell named successor",
+      "signal": "clean",
+      "signal_note": "Orderly CEO succession, no disagreement"
     },
     {
       "form": "8-K",
@@ -146,7 +197,10 @@
       "label": "Current report: reported quarterly results; issued a Regulation FD disclosure",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000137978525000051/bbdc-20251106.htm",
-      "material": true
+      "material": true,
+      "headline": "Barings BDC reported Q3 2025 results with supplemental presentation",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results"
     },
     {
       "form": "8-K",
@@ -154,7 +208,10 @@
       "label": "Current report: issued a Regulation FD disclosure; disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000137978525000043/bbdc-20251007.htm",
-      "material": true
+      "material": true,
+      "headline": "Barings BDC declared $0.26 per share Q4 2025 cash dividend",
+      "signal": "clean",
+      "signal_note": "Routine quarterly dividend declared"
     },
     {
       "form": "8-K",
@@ -162,7 +219,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000137978525000041/bbdc-20250915.htm",
-      "material": true
+      "material": true,
+      "headline": "Closed $300M of 5.200% unsecured notes due 2028",
+      "signal": "clean",
+      "signal_note": "Routine note issuance, repays credit facility"
     },
     {
       "form": "8-K",
@@ -170,7 +230,10 @@
       "label": "Current report: entered a material agreement",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000137978525000037/bbdc-20250908.htm",
-      "material": true
+      "material": true,
+      "headline": "Signed underwriting agreement for $300M 5.200% notes due 2028",
+      "signal": "clean",
+      "signal_note": "Routine debt offering agreement"
     },
     {
       "form": "424B2",
@@ -178,7 +241,10 @@
       "label": "Prospectus supplement (offering) — BARINGS BDC, INC - 424B2",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000113322825009730/bbdc-efp17611_424b2.htm",
-      "material": true
+      "material": true,
+      "headline": "Prospectus supplement for $300M 5.200% notes due 2028",
+      "signal": "clean",
+      "signal_note": "Routine notes prospectus supplement"
     },
     {
       "form": "497AD",
@@ -186,7 +252,10 @@
       "label": "497AD — BARINGS BDC, INC. - 497AD",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000113322825009650/bbdc-efp17667_497ad.htm",
-      "material": false
+      "material": false,
+      "headline": "Priced $300M public offering of 5.200% notes due 2028",
+      "signal": "clean",
+      "signal_note": "Routine note offering pricing"
     },
     {
       "form": "FWP",
@@ -194,7 +263,10 @@
       "label": "FWP — BARINGS BDC, INC. - FWP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000113322825009639/bbi-efp17657_fwp.htm",
-      "material": false
+      "material": false,
+      "headline": "Pricing term sheet for $300M 5.200% notes due 2028",
+      "signal": "clean",
+      "signal_note": "Routine offering term sheet"
     },
     {
       "form": "497AD",
@@ -202,7 +274,10 @@
       "label": "497AD — BARINGS BDC, INC. - 497AD",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000113322825009624/bbdc-efp17656_497ad.htm",
-      "material": false
+      "material": false,
+      "headline": "Launched $300M three-year notes offering at T+200bps",
+      "signal": "clean",
+      "signal_note": "Routine offering launch announcement"
     },
     {
       "form": "497AD",
@@ -210,7 +285,10 @@
       "label": "497AD — BARINGS BDC, INC. - 497AD",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000113322825009622/bbi-efp17646_497ad.htm",
-      "material": false
+      "material": false,
+      "headline": "Rule 497AD offering communication dated September 8, 2025",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "424B2",
@@ -218,7 +296,10 @@
       "label": "Prospectus supplement (offering) — 424B2",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000114036125034245/ny20055164x1_424b2.htm",
-      "material": true
+      "material": true,
+      "headline": "Preliminary prospectus supplement for unsecured notes offering",
+      "signal": "clean",
+      "signal_note": "Routine preliminary notes prospectus"
     },
     {
       "form": "497AD",
@@ -226,7 +307,10 @@
       "label": "497AD — BARINGS BDC, INC. - 497AD",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000113322825009541/efp17620-bbi_497ad.htm",
-      "material": false
+      "material": false,
+      "headline": "Arranged fixed income investor calls; rated Baa3/BBB- stable",
+      "signal": "clean",
+      "signal_note": "Routine investor calls, stable ratings"
     },
     {
       "form": "40-APP/A",
@@ -234,7 +318,10 @@
       "label": "40-APP/A — 40-APP/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000114036125034185/ef20055161_40appa.htm",
-      "material": false
+      "material": false,
+      "headline": "Amended SEC application to update Barings co-investment exemptive relief order",
+      "signal": "clean",
+      "signal_note": "Routine co-investment relief amendment"
     },
     {
       "form": "40-17G",
@@ -242,7 +329,10 @@
       "label": "40-17G — BARINGS BDC, INC.",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000107261325000631/baringsbdc.htm",
-      "material": false
+      "material": false,
+      "headline": "Filed annual fidelity bond of $2.5M under Rule 17g-1",
+      "signal": "clean",
+      "signal_note": "Routine fidelity bond filing"
     },
     {
       "form": "10-Q",
@@ -250,7 +340,10 @@
       "label": "Quarterly report (10-Q) for period ending 2025-06-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000137978525000035/bbdc-20250630.htm",
-      "material": true
+      "material": true,
+      "headline": "Barings BDC filed Q2 2025 10-Q for period ended June 30",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results"
     },
     {
       "form": "8-K",
@@ -258,7 +351,10 @@
       "label": "Current report: reported quarterly results; issued a Regulation FD disclosure",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000137978525000034/bbdc-20250807.htm",
-      "material": true
+      "material": true,
+      "headline": "Barings BDC reported second-quarter results ended June 30",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results"
     },
     {
       "form": "4",
@@ -266,7 +362,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000122520825005801/xslF345X05/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider reported June 6 equity transaction on Form 4",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -274,7 +373,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000122520825005775/xslF345X05/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider reported June 6 equity transaction on Form 4",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4/A",
@@ -282,7 +384,10 @@
       "label": "4/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000122520825005386/xslF345X05/doc4a.xml",
-      "material": false
+      "material": false,
+      "headline": "Amended Form 4 for May 19 insider transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction amendment"
     },
     {
       "form": "4",
@@ -290,7 +395,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000122520825005320/xslF345X05/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider reported May 19 equity transaction on Form 4",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -298,7 +406,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000122520825005316/xslF345X05/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider reported May 19 equity transaction on Form 4",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "3",
@@ -306,7 +417,10 @@
       "label": "3",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000122520825005211/xslF345X02/doc3.xml",
-      "material": false
+      "material": false,
+      "headline": "New insider filed initial Form 3 ownership statement",
+      "signal": "clean",
+      "signal_note": "Routine initial ownership filing"
     },
     {
       "form": "40-APP",
@@ -314,7 +428,10 @@
       "label": "40-APP — 40-APP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000114036125019321/ef20049069_40app.htm",
-      "material": false
+      "material": false,
+      "headline": "Filed SEC application for new Barings co-investment exemptive relief order",
+      "signal": "clean",
+      "signal_note": "Routine co-investment relief application"
     },
     {
       "form": "10-Q",
@@ -322,7 +439,10 @@
       "label": "Quarterly report (10-Q) for period ending 2025-03-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000137978525000027/bbdc-20250331.htm",
-      "material": true
+      "material": true,
+      "headline": "Barings BDC filed Q1 2025 10-Q with routine MD&A and disclosures",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results"
     },
     {
       "form": "8-K",
@@ -330,7 +450,10 @@
       "label": "Current report: reported quarterly results; issued a Regulation FD disclosure",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000137978525000026/bbdc-20250508.htm",
-      "material": true
+      "material": true,
+      "headline": "Reported Q1 2025 results; stockholders rejected below-NAV share issuance proposal",
+      "signal": "clean",
+      "signal_note": "Routine results and voting outcome"
     },
     {
       "form": "DEFA14A",
@@ -338,7 +461,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000114036125012900/ef20047152_defa14a.htm",
-      "material": false
+      "material": false,
+      "headline": "Barings BDC urged stockholders to vote ahead of May 8 annual meeting",
+      "signal": "clean",
+      "signal_note": "Routine proxy solicitation"
     },
     {
       "form": "DEF 14A",
@@ -346,7 +472,10 @@
       "label": "Proxy statement — DEF 14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000137978525000020/bbdc-20250311.htm",
-      "material": false
+      "material": false,
+      "headline": "Barings BDC set May 8 annual meeting; seeks below-NAV issuance authority",
+      "signal": "clean",
+      "signal_note": "Routine annual meeting proxy"
     },
     {
       "form": "CORRESP",
@@ -354,7 +483,10 @@
       "label": "CORRESP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000137978525000018/filename1.htm",
-      "material": false
+      "material": false,
+      "headline": "Barings BDC responded to SEC staff comments on proxy statement",
+      "signal": "clean",
+      "signal_note": "Routine SEC correspondence"
     },
     {
       "form": "PRE 14A",
@@ -362,7 +494,10 @@
       "label": "PRE 14A — PRE 14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000137978525000013/bbdc-20250227.htm",
-      "material": false
+      "material": false,
+      "headline": "Barings BDC filed preliminary proxy for May 8 annual meeting",
+      "signal": "clean",
+      "signal_note": "Routine preliminary proxy"
     },
     {
       "form": "10-K",
@@ -370,7 +505,10 @@
       "label": "Annual report (10-K) for period ending 2024-12-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000137978525000010/bbdc-20241231.htm",
-      "material": true
+      "material": true,
+      "headline": "Barings BDC filed 2024 annual report with routine valuation and dividend disclosures",
+      "signal": "clean",
+      "signal_note": "Routine annual results"
     },
     {
       "form": "8-K",
@@ -378,7 +516,10 @@
       "label": "Current report: reported quarterly results; issued a Regulation FD disclosure",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000137978525000009/bbdc-20250220.htm",
-      "material": true
+      "material": true,
+      "headline": "Barings BDC reported Q4 and full-year 2024 financial results",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results"
     },
     {
       "form": "3",
@@ -386,7 +527,10 @@
       "label": "3",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000122520825000731/xslF345X02/doc3.xml",
-      "material": false
+      "material": false,
+      "headline": "Barings BDC insider filed initial Form 3 ownership statement",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "3",
@@ -394,7 +538,10 @@
       "label": "3",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000122520825000583/xslF345X02/doc3.xml",
-      "material": false
+      "material": false,
+      "headline": "Barings BDC insider filed initial Form 3 ownership statement",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "4",
@@ -402,7 +549,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000122520824010776/xslF345X05/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "Barings BDC insider reported December 11 transaction on Form 4",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -410,7 +560,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000122520824010772/xslF345X05/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "Barings BDC insider reported December 12 transaction on Form 4",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -418,7 +571,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000122520824010757/xslF345X05/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "Barings BDC insider reported a Section 16 transaction dated December 11",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 4"
     },
     {
       "form": "4",
@@ -426,7 +582,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000122520824010734/xslF345X05/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "Barings BDC insider reported a Section 16 transaction dated December 11",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 4"
     },
     {
       "form": "4",
@@ -434,7 +593,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000122520824010004/xslF345X05/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "Barings BDC insider reported a Section 16 transaction dated November 8",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 4"
     },
     {
       "form": "8-K",
@@ -442,7 +604,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000162828024046283/bbdc-20241105.htm",
-      "material": true
+      "material": true,
+      "headline": "Amended ING credit facility, extending revolver to 2028 and cutting spread",
+      "signal": "clean",
+      "signal_note": "Facility extended, spread reduced"
     },
     {
       "form": "10-Q",
@@ -450,7 +615,10 @@
       "label": "Quarterly report (10-Q) for period ending 2024-09-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000137978524000065/bbdc-20240930.htm",
-      "material": true
+      "material": true,
+      "headline": "Filed third-quarter 2024 Form 10-Q for period ended September 30",
+      "signal": "clean",
+      "signal_note": "Routine quarterly report"
     },
     {
       "form": "8-K",
@@ -458,7 +626,10 @@
       "label": "Current report: reported quarterly results; issued a Regulation FD disclosure",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000137978524000064/bbdc-20241106.htm",
-      "material": true
+      "material": true,
+      "headline": "Reported third-quarter 2024 financial results via press release",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results"
     },
     {
       "form": "N-2ASR",
@@ -466,7 +637,10 @@
       "label": "N-2ASR — BARINGS BDC, INC. - N-2ASR",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000113322824009111/bbdc-efp10115_n2asr.htm",
-      "material": false
+      "material": false,
+      "headline": "Filed automatic shelf registration; NAV $11.36 versus $9.88 stock price",
+      "signal": "clean",
+      "signal_note": "Routine shelf registration"
     },
     {
       "form": "8-K/A",
@@ -474,7 +648,10 @@
       "label": "8-K/A — 8-K/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000137978524000057/bbdc-20240629.htm",
-      "material": false
+      "material": false,
+      "headline": "Board canceled meeting; below-NAV share issuance authority not obtained",
+      "signal": "clean",
+      "signal_note": "Routine governance amendment"
     },
     {
       "form": "40-17G",
@@ -482,7 +659,10 @@
       "label": "40-17G — BARINGS BDC, INC.",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000107261324000711/baringsbdc.htm",
-      "material": false
+      "material": false,
+      "headline": "Filed annual fidelity bond under Rule 17g-1",
+      "signal": "clean",
+      "signal_note": "Routine bond filing"
     },
     {
       "form": "3",
@@ -490,7 +670,10 @@
       "label": "3",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000122520824008484/xslF345X02/doc3.xml",
-      "material": false
+      "material": false,
+      "headline": "New insider filed initial statement of beneficial ownership",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 3"
     },
     {
       "form": "10-Q",
@@ -498,7 +681,10 @@
       "label": "Quarterly report (10-Q) for period ending 2024-06-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000137978524000055/bbdc-20240630.htm",
-      "material": true
+      "material": true,
+      "headline": "Barings BDC filed Q2 2024 10-Q covering senior secured middle-market portfolio",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results"
     },
     {
       "form": "8-K",
@@ -506,7 +692,10 @@
       "label": "Current report: reported quarterly results; issued a Regulation FD disclosure",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000137978524000054/bbdc-20240807.htm",
-      "material": true
+      "material": true,
+      "headline": "Barings BDC announced second-quarter 2024 financial results via press release",
+      "signal": "clean",
+      "signal_note": "Routine earnings release"
     },
     {
       "form": "8-K",
@@ -514,7 +703,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000137978524000047/finaproxyresults8-k.htm",
-      "material": true
+      "material": true,
+      "headline": "Board cancelled reconvened meeting; no below-NAV share issuance authority granted",
+      "signal": "clean",
+      "signal_note": "Routine governance outcome"
     },
     {
       "form": "DEFA14A",
@@ -522,7 +714,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000114036124026691/ny20029090x1_defa14a.htm",
-      "material": false
+      "material": false,
+      "headline": "Barings BDC adjourned 2024 annual meeting to July 2 for below-NAV vote",
+      "signal": "clean",
+      "signal_note": "Routine proxy adjournment"
     },
     {
       "form": "4",
@@ -530,7 +725,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000122520824005918/xslF345X05/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "Barings BDC insider reported Form 4 equity transaction dated May 9",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "10-Q",
@@ -538,7 +736,10 @@
       "label": "Quarterly report (10-Q) for period ending 2024-03-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000137978524000043/bbdc-20240331.htm",
-      "material": true
+      "material": true,
+      "headline": "Barings BDC filed Q1 2024 10-Q covering senior secured middle-market portfolio",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results"
     },
     {
       "form": "8-K",
@@ -546,7 +747,10 @@
       "label": "Current report: reported quarterly results; issued a Regulation FD disclosure",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000137978524000042/bbdc-20240507.htm",
-      "material": true
+      "material": true,
+      "headline": "Barings BDC reported Q1 results; directors elected, below-NAV vote adjourned",
+      "signal": "clean",
+      "signal_note": "Routine results and governance"
     },
     {
       "form": "424B2",
@@ -554,7 +758,10 @@
       "label": "Prospectus supplement (offering) — BARINGS BDC INC - 424B2",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000113322824005279/bbi-html7788_424b2.htm",
-      "material": true
+      "material": true,
+      "headline": "XBRL-tagged prospectus for $300M 7.000% notes due 2029",
+      "signal": "clean",
+      "signal_note": "Ordinary notes offering"
     },
     {
       "form": "DEFA14A",
@@ -562,7 +769,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000114036124019854/ef20026906_defa14a.htm",
-      "material": false
+      "material": false,
+      "headline": "Barings BDC urged stockholders to vote ahead of May 7 annual meeting",
+      "signal": "clean",
+      "signal_note": "Routine proxy solicitation"
     },
     {
       "form": "8-K",
@@ -570,7 +780,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000137978524000033/bbdc-20240408.htm",
-      "material": true
+      "material": true,
+      "headline": "Barings updated Global Private Finance investment committee membership",
+      "signal": "clean",
+      "signal_note": "Routine governance update"
     },
     {
       "form": "DEFR14A",
@@ -578,7 +791,10 @@
       "label": "DEFR14A — DEFR14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000137978524000031/ck0001379785-20240319.htm",
-      "material": false
+      "material": false,
+      "headline": "Barings BDC amends 2024 proxy to remove inadvertent 2023 meeting references",
+      "signal": "clean",
+      "signal_note": "Routine proxy correction"
     },
     {
       "form": "CORRESP",
@@ -586,7 +802,10 @@
       "label": "CORRESP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000137978524000028/filename1.htm",
-      "material": false
+      "material": false,
+      "headline": "Barings BDC responds to SEC staff comments on proxy statement",
+      "signal": "clean",
+      "signal_note": "Routine SEC correspondence"
     },
     {
       "form": "DEF 14A",
@@ -594,7 +813,10 @@
       "label": "Proxy statement — DEF 14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000137978524000027/ck0001379785-20240319.htm",
-      "material": false
+      "material": false,
+      "headline": "Barings BDC sets May 7 annual meeting, seeks below-NAV issuance authority",
+      "signal": "clean",
+      "signal_note": "Routine annual meeting proxy"
     },
     {
       "form": "8-K",
@@ -602,7 +824,10 @@
       "label": "Current report: changed a director or senior officer",
       "category": "Personnel",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000137978524000026/bbdc-20240314.htm",
-      "material": true
+      "material": true,
+      "headline": "Chief Accounting Officer DeSieno resigned; CFO Murray to serve as principal accounting officer",
+      "signal": "clean",
+      "signal_note": "Routine officer transition"
     },
     {
       "form": "3",
@@ -610,7 +835,10 @@
       "label": "3",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000122520824004226/xslF345X02/doc3.xml",
-      "material": false
+      "material": false,
+      "headline": "Form 3 initial ownership statement filed for Barings BDC insider",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "8-K",
@@ -618,7 +846,10 @@
       "label": "Current report: changed a director or senior officer; disclosed a material event",
       "category": "Personnel",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000114036124012507/ef20023842_8k.htm",
-      "material": true
+      "material": true,
+      "headline": "President Ian Fowler resigned immediately; investment committees now interim after multiple departures",
+      "signal": "watch",
+      "signal_note": "Senior management and IC turnover"
     },
     {
       "form": "4",
@@ -626,7 +857,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000122520824003532/xslF345X05/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "Form 4 insider transaction reported for Barings BDC",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "PRE 14A",
@@ -634,7 +868,10 @@
       "label": "PRE 14A — PRE 14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000137978524000018/bbdc-20240223.htm",
-      "material": false
+      "material": false,
+      "headline": "Barings BDC files preliminary proxy for 2024 annual meeting",
+      "signal": "clean",
+      "signal_note": "Routine preliminary proxy"
     },
     {
       "form": "10-K",
@@ -642,7 +879,10 @@
       "label": "Annual report (10-K) for period ending 2023-12-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000137978524000015/bbdc-20231231.htm",
-      "material": true
+      "material": true,
+      "headline": "Barings BDC files 2023 Form 10-K detailing valuation and dividend policies",
+      "signal": "clean",
+      "signal_note": "Routine annual report"
     },
     {
       "form": "8-K",
@@ -650,7 +890,10 @@
       "label": "Current report: reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000137978524000014/bbdc-20240222.htm",
-      "material": true
+      "material": true,
+      "headline": "Barings BDC announces fourth-quarter and full-year 2023 results",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results"
     },
     {
       "form": "8-K",
@@ -658,7 +901,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000114036124007069/ef20021433_8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Closed $300M of 7.000% unsecured notes due 2029 to repay credit facility",
+      "signal": "clean",
+      "signal_note": "Routine unsecured notes offering"
     },
     {
       "form": "424B2",
@@ -666,7 +912,10 @@
       "label": "Prospectus supplement (offering) — 424B2",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000114036124006720/ny20020484x5_424b2.htm",
-      "material": true
+      "material": true,
+      "headline": "Prospectus supplement for $300M 7.000% notes due 2029",
+      "signal": "clean",
+      "signal_note": "Routine notes offering"
     },
     {
       "form": "FWP",
@@ -674,7 +923,10 @@
       "label": "FWP — FWP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000114036124006148/ny20020484x4_fwp.htm",
-      "material": false
+      "material": false,
+      "headline": "Pricing term sheet sets $300M 7.000% notes due 2029",
+      "signal": "clean",
+      "signal_note": "Routine notes pricing"
     },
     {
       "form": "497AD",
@@ -682,7 +934,10 @@
       "label": "497AD — 497AD",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000114036124006146/ny20020484x3_497ad.htm",
-      "material": false
+      "material": false,
+      "headline": "Priced $300M of 7.000% notes due 2029",
+      "signal": "clean",
+      "signal_note": "Routine notes offering"
     },
     {
       "form": "497AD",
@@ -690,7 +945,10 @@
       "label": "497AD — 497AD",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000114036124006016/ny20020484x2_497ad.htm",
-      "material": false
+      "material": false,
+      "headline": "Marketing communication for pending unsecured notes offering",
+      "signal": "clean",
+      "signal_note": "Routine offering communication"
     },
     {
       "form": "424B2",
@@ -698,7 +956,10 @@
       "label": "Prospectus supplement (offering) — 424B2",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000114036124005984/ny20020484x1_424b2.htm",
-      "material": true
+      "material": true,
+      "headline": "Preliminary prospectus supplement for notes due 2029 offering",
+      "signal": "clean",
+      "signal_note": "Routine notes offering"
     },
     {
       "form": "8-K",
@@ -706,7 +967,10 @@
       "label": "Current report: reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000137978524000003/bbdc-20240125.htm",
-      "material": true
+      "material": true,
+      "headline": "Announced preliminary Q4 2023 financial estimates via press release",
+      "signal": "clean",
+      "signal_note": "Routine preliminary results"
     },
     {
       "form": "40-APP/A",
@@ -714,7 +978,10 @@
       "label": "40-APP/A — 40-APP/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000114036123056159/ef20012643_40-appa.htm",
-      "material": false
+      "material": false,
+      "headline": "Amended application to update SEC co-investment exemptive relief order",
+      "signal": "clean",
+      "signal_note": "Routine regulatory application"
     },
     {
       "form": "3",
@@ -722,7 +989,10 @@
       "label": "3",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000122520823010143/xslF345X02/doc3.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider filed Form 3 initial statement of beneficial ownership",
+      "signal": "clean",
+      "signal_note": "Routine insider ownership filing"
     },
     {
       "form": "10-Q",
@@ -730,7 +1000,10 @@
       "label": "Quarterly report (10-Q) for period ending 2023-09-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000137978523000052/bbdc-20230930.htm",
-      "material": true
+      "material": true,
+      "headline": "Filed Q3 2023 10-Q covering quarter ended September 30, 2023",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results"
     },
     {
       "form": "8-K",
@@ -738,7 +1011,10 @@
       "label": "Current report: reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000137978523000051/bbdc-20231109.htm",
-      "material": true
+      "material": true,
+      "headline": "Barings BDC furnished Q3 2023 earnings press release",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results 8-K"
     },
     {
       "form": "40-APP/A",
@@ -746,7 +1022,10 @@
       "label": "40-APP/A — 40-APP/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000114036123049491/ef20012643_40-appa.htm",
-      "material": false
+      "material": false,
+      "headline": "Filed amended co-investment exemptive relief application",
+      "signal": "clean",
+      "signal_note": "Routine exemptive application"
     },
     {
       "form": "CORRESP",
@@ -754,7 +1033,10 @@
       "label": "CORRESP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000114036123048517/filename1.htm",
-      "material": false
+      "material": false,
+      "headline": "Responded to SEC staff comments on 10-Q and 10-K disclosures",
+      "signal": "clean",
+      "signal_note": "Disclosure clarifications, no restatement"
     },
     {
       "form": "8-K",
@@ -762,7 +1044,10 @@
       "label": "Current report: issued a Regulation FD disclosure",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000137978523000044/bbdc-20231004.htm",
-      "material": true
+      "material": true,
+      "headline": "Furnished 2023 Investor Day presentation under Regulation FD",
+      "signal": "clean",
+      "signal_note": "Routine investor presentation"
     },
     {
       "form": "40-17G",
@@ -770,7 +1055,10 @@
       "label": "40-17G — BARINGS BDC, INC.",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000107261323000498/baringsbdc.htm",
-      "material": false
+      "material": false,
+      "headline": "Filed annual fidelity bond under Rule 17g-1",
+      "signal": "clean",
+      "signal_note": "Routine compliance filing"
     },
     {
       "form": "10-Q",
@@ -778,7 +1066,10 @@
       "label": "Quarterly report (10-Q) for period ending 2023-06-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000137978523000040/bbdc-20230630.htm",
-      "material": true
+      "material": true,
+      "headline": "Filed Q2 2023 10-Q for quarter ended June 30",
+      "signal": "clean",
+      "signal_note": "Routine quarterly report"
     },
     {
       "form": "8-K",
@@ -786,7 +1077,10 @@
       "label": "Current report: reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000137978523000039/bbdc-20230809.htm",
-      "material": true
+      "material": true,
+      "headline": "Barings BDC furnished Q2 2023 earnings press release",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results 8-K"
     },
     {
       "form": "40-APP",
@@ -794,7 +1088,10 @@
       "label": "40-APP — 40-APP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000114036123035434/brhc20054582_40-app.htm",
-      "material": false
+      "material": false,
+      "headline": "Filed co-investment exemptive relief application with SEC",
+      "signal": "clean",
+      "signal_note": "Routine exemptive application"
     },
     {
       "form": "4",
@@ -802,7 +1099,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000122520823007587/xslF345X05/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider reported equity transaction on Form 4",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "N-2ASR",
@@ -810,7 +1110,10 @@
       "label": "N-2ASR — BARINGS BDC INC - N-2ASR",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000113322823004401/bbi-html6619_n2asr.htm",
-      "material": false
+      "material": false,
+      "headline": "Filed automatic shelf registration; NAV $11.17 versus $7.87 share price",
+      "signal": "clean",
+      "signal_note": "Routine shelf registration"
     },
     {
       "form": "3",
@@ -818,7 +1121,10 @@
       "label": "3",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000122520823006130/xslF345X02/doc3.xml",
-      "material": false
+      "material": false,
+      "headline": "BBDC insider filed initial Form 3 statement of beneficial ownership",
+      "signal": "clean",
+      "signal_note": "Routine insider ownership filing"
     },
     {
       "form": "4",
@@ -826,7 +1132,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000122520823005933/xslF345X04/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "BBDC insider reported Section 16 transaction on Form 4",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "8-K",
@@ -834,7 +1143,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000114036123024708/brhc20052834_8k.htm",
-      "material": true
+      "material": true,
+      "headline": "BBDC extended ING revolving credit facility maturity to February 2026",
+      "signal": "clean",
+      "signal_note": "Routine credit facility maturity extension"
     },
     {
       "form": "4/A",
@@ -842,7 +1154,10 @@
       "label": "4/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000122520823005809/xslF345X04/doc4a.xml",
-      "material": false
+      "material": false,
+      "headline": "BBDC insider filed amended Form 4 for May 9 transaction",
+      "signal": "clean",
+      "signal_note": "Routine amended insider transaction"
     },
     {
       "form": "4",
@@ -850,7 +1165,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000122520823005747/xslF345X04/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "BBDC insider reported Section 16 transaction on Form 4",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4/A",
@@ -858,7 +1176,10 @@
       "label": "4/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000122520823005743/xslF345X04/doc4a.xml",
-      "material": false
+      "material": false,
+      "headline": "BBDC insider filed amended Form 4 for May 8 transaction",
+      "signal": "clean",
+      "signal_note": "Routine amended insider transaction"
     },
     {
       "form": "4/A",
@@ -866,7 +1187,10 @@
       "label": "4/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000122520823005742/xslF345X04/doc4a.xml",
-      "material": false
+      "material": false,
+      "headline": "BBDC insider filed amended Form 4 for May 11 transaction",
+      "signal": "clean",
+      "signal_note": "Routine amended insider transaction"
     },
     {
       "form": "4",
@@ -874,7 +1198,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000122520823005740/xslF345X04/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "BBDC insider reported Section 16 transaction on Form 4",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -882,7 +1209,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000122520823005664/xslF345X04/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "BBDC insider reported Section 16 transaction on Form 4",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -890,7 +1220,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000122520823005658/xslF345X04/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "BBDC insider reported Section 16 transaction on Form 4",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -898,7 +1231,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000122520823005586/xslF345X04/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider reported a Barings BDC share transaction on Form 4",
+      "signal": "clean",
+      "signal_note": "Routine Section 16 filing"
     },
     {
       "form": "10-Q",
@@ -906,7 +1242,10 @@
       "label": "Quarterly report (10-Q) for period ending 2023-03-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000137978523000028/bbdc-20230331.htm",
-      "material": true
+      "material": true,
+      "headline": "Barings BDC filed Q1 2023 quarterly report on Form 10-Q",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results"
     },
     {
       "form": "8-K",
@@ -914,7 +1253,10 @@
       "label": "Current report: reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000137978523000029/bbdc-20230504.htm",
-      "material": true
+      "material": true,
+      "headline": "Barings BDC reported Q1 results; stockholders approved below-NAV share issuance",
+      "signal": "clean",
+      "signal_note": "Routine results and annual meeting"
     },
     {
       "form": "4",
@@ -922,7 +1264,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000122520823004781/xslF345X04/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider reported a Barings BDC share transaction on Form 4",
+      "signal": "clean",
+      "signal_note": "Routine Section 16 filing"
     },
     {
       "form": "DEFA14A",
@@ -930,7 +1275,10 @@
       "label": "DEFA14A — FORM DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000114036123017030/ny20008549x1_defa14a.htm",
-      "material": false
+      "material": false,
+      "headline": "Barings BDC filed additional proxy solicitation materials",
+      "signal": "clean",
+      "signal_note": "Routine proxy materials"
     },
     {
       "form": "8-K",
@@ -938,7 +1286,10 @@
       "label": "Current report: changed a director or senior officer",
       "category": "Personnel",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000137978523000020/bbdc-20230330.htm",
-      "material": true
+      "material": true,
+      "headline": "CFO Jonathan Landsberg stepped down; Elizabeth Murray named CFO",
+      "signal": "clean",
+      "signal_note": "Departure not due to disagreement"
     },
     {
       "form": "CORRESP",
@@ -946,7 +1297,10 @@
       "label": "CORRESP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000137978523000017/filename1.htm",
-      "material": false
+      "material": false,
+      "headline": "Barings BDC responded to SEC staff comments on proxy statement",
+      "signal": "clean",
+      "signal_note": "Routine SEC correspondence"
     },
     {
       "form": "DEF 14A",
@@ -954,7 +1308,10 @@
       "label": "Proxy statement — DEF 14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000137978523000016/ck0001379785-20230310.htm",
-      "material": false
+      "material": false,
+      "headline": "Barings BDC set May 4 annual meeting; seeks below-NAV issuance authority",
+      "signal": "clean",
+      "signal_note": "Routine annual proxy statement"
     },
     {
       "form": "4",
@@ -962,7 +1319,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000122520823003703/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider reported a Barings BDC share transaction on Form 4",
+      "signal": "clean",
+      "signal_note": "Routine Section 16 filing"
     },
     {
       "form": "PRE 14A",
@@ -970,7 +1330,10 @@
       "label": "PRE 14A — PRE 14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000137978523000013/a2023preproxy.htm",
-      "material": false
+      "material": false,
+      "headline": "Barings BDC filed preliminary proxy for 2023 annual meeting",
+      "signal": "clean",
+      "signal_note": "Routine preliminary proxy statement"
     },
     {
       "form": "10-K",
@@ -978,7 +1341,10 @@
       "label": "Annual report (10-K) for period ending 2022-12-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000137978523000012/bbdc-20221231.htm",
-      "material": true
+      "material": true,
+      "headline": "Barings BDC filed fiscal 2022 annual report on Form 10-K",
+      "signal": "clean",
+      "signal_note": "Routine annual report"
     },
     {
       "form": "8-K",
@@ -986,7 +1352,10 @@
       "label": "Current report: reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000137978523000010/bbdc-20230223.htm",
-      "material": true
+      "material": true,
+      "headline": "Barings BDC reported fourth-quarter and full-year 2022 financial results",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results"
     },
     {
       "form": "3",
@@ -994,7 +1363,10 @@
       "label": "3",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000122520823002653/xslF345X02/doc3.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider filed initial Form 3 statement of ownership in Barings BDC",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "3",
@@ -1002,7 +1374,10 @@
       "label": "3",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000122520823002652/xslF345X02/doc3.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider filed initial Form 3 statement of ownership in Barings BDC",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "4",
@@ -1010,7 +1385,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000122520823000961/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider reported Barings BDC transaction on Form 4",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "8-K",
@@ -1018,7 +1396,10 @@
       "label": "Current report: changed a director or senior officer",
       "category": "Personnel",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000137978522000046/bbdc-20221209.htm",
-      "material": true
+      "material": true,
+      "headline": "CEO Jonathan Bock stepping down; board named Eric Lloyd successor",
+      "signal": "clean",
+      "signal_note": "Orderly CEO succession, no disagreement"
     },
     {
       "form": "8-K",
@@ -1026,7 +1407,10 @@
       "label": "Current report: changed a director or senior officer",
       "category": "Personnel",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000137978522000044/bbdc-20221128.htm",
-      "material": true
+      "material": true,
+      "headline": "Chief Compliance Officer resigned; Christopher DeFrancis named interim replacement",
+      "signal": "clean",
+      "signal_note": "Routine governance, no disagreement"
     },
     {
       "form": "40-17G",
@@ -1034,7 +1418,10 @@
       "label": "40-17G — BARINGS BDC, INC.",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000107261322000640/baringsbdc.htm",
-      "material": false
+      "material": false,
+      "headline": "Barings BDC filed annual fidelity bond notice under Rule 17g-1",
+      "signal": "clean",
+      "signal_note": "Routine compliance filing"
     },
     {
       "form": "10-Q",
@@ -1042,7 +1429,10 @@
       "label": "Quarterly report (10-Q) for period ending 2022-09-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000137978522000042/bbdc-20220930.htm",
-      "material": true
+      "material": true,
+      "headline": "Barings BDC filed third-quarter 2022 report on Form 10-Q",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results"
     },
     {
       "form": "8-K",
@@ -1050,7 +1440,10 @@
       "label": "Current report: reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000137978522000041/bbdc-20221110.htm",
-      "material": true
+      "material": true,
+      "headline": "Barings BDC reported third-quarter 2022 financial results",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results"
     },
     {
       "form": "EFFECT",
@@ -1058,7 +1451,10 @@
       "label": "EFFECT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/999999999522003107/xslEFFECTX01/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "SEC declared Barings BDC registration statement effective",
+      "signal": "clean",
+      "signal_note": "Routine notice of effectiveness"
     },
     {
       "form": "424B2",
@@ -1066,7 +1462,10 @@
       "label": "Prospectus supplement (offering) — 424B2",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000114036122038018/ny20005253x5_424b2.htm",
-      "material": true
+      "material": true,
+      "headline": "Launched exchange offer for $350M of 3.300% notes due 2026",
+      "signal": "clean",
+      "signal_note": "Routine registered notes exchange offer"
     },
     {
       "form": "CORRESP",
@@ -1074,7 +1473,10 @@
       "label": "CORRESP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000114036122037834/filename1.htm",
-      "material": false
+      "material": false,
+      "headline": "Responded to SEC staff comments on Form N-14 registration statement",
+      "signal": "clean",
+      "signal_note": "Routine SEC comment response"
     },
     {
       "form": "N-14 8C/A",
@@ -1082,7 +1484,10 @@
       "label": "N-14 8C/A — N-14 8C/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000114036122037827/ny20005253x2_n148ca.htm",
-      "material": false
+      "material": false,
+      "headline": "Filed pre-effective amendment to N-14 for $350M notes exchange offer",
+      "signal": "clean",
+      "signal_note": "Routine registration amendment"
     },
     {
       "form": "3",
@@ -1090,7 +1495,10 @@
       "label": "3",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000122520822010374/xslF345X02/doc3.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider filed initial Form 3 statement of beneficial ownership",
+      "signal": "clean",
+      "signal_note": "Routine insider ownership filing"
     },
     {
       "form": "N-14 8C",
@@ -1098,7 +1506,10 @@
       "label": "N-14 8C — N-14 8C",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000114036122033524/ny20005253x1_n148c.htm",
-      "material": false
+      "material": false,
+      "headline": "Filed N-14 registration for $350M of 3.300% notes exchange offer",
+      "signal": "clean",
+      "signal_note": "Routine registration statement"
     },
     {
       "form": "8-K",
@@ -1106,7 +1517,10 @@
       "label": "Current report: changed a director or senior officer",
       "category": "Personnel",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000137978522000035/bbdc-20220831.htm",
-      "material": true
+      "material": true,
+      "headline": "Chief Compliance Officer resigned; board named Benjamin Tecmire successor",
+      "signal": "clean",
+      "signal_note": "Resignation not due to disagreement"
     },
     {
       "form": "8-K",
@@ -1114,7 +1528,10 @@
       "label": "Current report: reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000137978522000033/bbdc-20220809.htm",
-      "material": true
+      "material": true,
+      "headline": "Furnished Q2 2022 earnings press release for quarter ended June 30",
+      "signal": "clean",
+      "signal_note": "Routine results announcement"
     },
     {
       "form": "10-Q",
@@ -1122,7 +1539,10 @@
       "label": "Quarterly report (10-Q) for period ending 2022-06-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000137978522000032/bbdc-20220630.htm",
-      "material": true
+      "material": true,
+      "headline": "Filed Q2 2022 10-Q for quarter ended June 30",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "8-K",
@@ -1130,7 +1550,10 @@
       "label": "Current report (8-K)",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000137978522000026/belownav8k.htm",
-      "material": false
+      "material": false,
+      "headline": "Stockholders approved authority to issue shares below net asset value",
+      "signal": "clean",
+      "signal_note": "Routine below-NAV issuance authorization"
     },
     {
       "form": "4",
@@ -1138,7 +1561,10 @@
       "label": "4 — PRIMARY DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000122320322000001/xslF345X03/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "Barings BDC insider reported Section 16 transaction dated June 17, 2022",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 4"
     },
     {
       "form": "4",
@@ -1146,7 +1572,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000122520822007752/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "Barings BDC insider reported Section 16 transaction dated June 3, 2022",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 4"
     },
     {
       "form": "4",
@@ -1154,7 +1583,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000122520822006732/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "Barings BDC insider reported Section 16 transaction dated May 9, 2022",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 4"
     },
     {
       "form": "DEFA14A",
@@ -1162,7 +1594,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000114036122018304/edge20004089x1_defa14a.htm",
-      "material": false
+      "material": false,
+      "headline": "Barings BDC adjourned annual meeting to June 30 to solicit below-NAV votes",
+      "signal": "clean",
+      "signal_note": "Routine proxy adjournment"
     },
     {
       "form": "8-K",
@@ -1170,7 +1605,10 @@
       "label": "Current report: reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000137978522000024/earnings8-k20220505.htm",
-      "material": true
+      "material": true,
+      "headline": "Barings BDC reported Q1 2022 results; directors elected, below-NAV vote adjourned",
+      "signal": "clean",
+      "signal_note": "Routine results and governance"
     },
     {
       "form": "10-Q",
@@ -1178,7 +1616,10 @@
       "label": "Quarterly report (10-Q) for period ending 2022-03-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000137978522000023/a2022033110qbbdc.htm",
-      "material": true
+      "material": true,
+      "headline": "Barings BDC filed Q1 2022 10-Q covering quarter ended March 31",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results"
     },
     {
       "form": "SC 13G",
@@ -1186,7 +1627,10 @@
       "label": "SC 13G — SC 13G",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000110465922045995/tm2212600d2_sc13g.htm",
-      "material": false
+      "material": false,
+      "headline": "Ares entities ceased to beneficially own more than 5% of Barings BDC",
+      "signal": "clean",
+      "signal_note": "Routine ownership filing"
     },
     {
       "form": "8-K/A",
@@ -1194,7 +1638,10 @@
       "label": "8-K/A — FORM 8-K/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000114036122014385/ny20002465x9_8ka.htm",
-      "material": false
+      "material": false,
+      "headline": "Barings BDC increased revolver to $965M and extended maturity to 2025",
+      "signal": "clean",
+      "signal_note": "Credit facility upsized and extended"
     },
     {
       "form": "4",
@@ -1202,7 +1649,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000122520822004753/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "Barings BDC insider reported Section 16 transaction dated March 15, 2022",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 4"
     },
     {
       "form": "CORRESP",
@@ -1210,7 +1660,10 @@
       "label": "CORRESP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000137978522000018/filename1.htm",
-      "material": false
+      "material": false,
+      "headline": "Barings BDC responded to SEC comment on proxy director disclosure",
+      "signal": "clean",
+      "signal_note": "Routine SEC correspondence"
     },
     {
       "form": "DEF 14A",
@@ -1218,7 +1671,10 @@
       "label": "Proxy statement — DEF 14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000137978522000017/a2022defproxy.htm",
-      "material": false
+      "material": false,
+      "headline": "Barings BDC sets May 2022 annual meeting; seeks below-NAV issuance authority",
+      "signal": "clean",
+      "signal_note": "Routine annual meeting proxy"
     },
     {
       "form": "8-K",
@@ -1226,7 +1682,10 @@
       "label": "Current report: entered bankruptcy or receivership; took on a material financial obligation",
       "category": "Credit event",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000114036122007671/ny20002465x4_8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Amended revolving credit facility; commitments raised to $965M, maturity extended to 2025",
+      "signal": "clean",
+      "signal_note": "Routine facility upsizing and extension"
     },
     {
       "form": "8-K",
@@ -1234,7 +1693,10 @@
       "label": "Current report: entered a material agreement; completed an acquisition or disposition",
       "category": "Personnel",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000114036122007670/ny20002465x3_8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Completed Sierra Income merger; adviser gave $100M credit support on acquired portfolio",
+      "signal": "clean",
+      "signal_note": "Merger closed with adviser credit support"
     },
     {
       "form": "8-K",
@@ -1242,7 +1704,10 @@
       "label": "Current report (8-K)",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000114036122006820/brhc10034530_8k.htm",
-      "material": false
+      "material": false,
+      "headline": "Stockholders approve share issuance for Sierra Income merger",
+      "signal": "clean",
+      "signal_note": "Merger proposals approved"
     },
     {
       "form": "3",
@@ -1250,7 +1715,10 @@
       "label": "3",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000122520822003419/xslF345X02/doc3.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider files initial Form 3 ownership statement for Barings BDC",
+      "signal": "clean",
+      "signal_note": "Routine insider ownership filing"
     },
     {
       "form": "3",
@@ -1258,7 +1726,10 @@
       "label": "3",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000122520822003420/xslF345X02/doc3.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider files initial Form 3 ownership statement for Barings BDC",
+      "signal": "clean",
+      "signal_note": "Routine insider ownership filing"
     },
     {
       "form": "PRE 14A",
@@ -1266,7 +1737,10 @@
       "label": "PRE 14A — PRE 14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000137978522000012/a2022preproxy11.htm",
-      "material": false
+      "material": false,
+      "headline": "Preliminary proxy sets May 2022 annual meeting and below-NAV issuance vote",
+      "signal": "clean",
+      "signal_note": "Routine preliminary proxy"
     },
     {
       "form": "424B3",
@@ -1274,7 +1748,10 @@
       "label": "Prospectus supplement (offering) — 424B3",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000114036122006424/ny20002465x2_424b3.htm",
-      "material": true
+      "material": true,
+      "headline": "Supplement No. 2 updates Barings BDC-Sierra merger proxy/prospectus",
+      "signal": "clean",
+      "signal_note": "Routine merger prospectus supplement"
     },
     {
       "form": "10-K",
@@ -1282,7 +1759,10 @@
       "label": "Annual report (10-K) for period ending 2021-12-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000137978522000008/a202110-k.htm",
-      "material": true
+      "material": true,
+      "headline": "Barings BDC files fiscal 2021 annual report on Form 10-K",
+      "signal": "clean",
+      "signal_note": "Routine annual report"
     },
     {
       "form": "8-K",
@@ -1290,7 +1770,10 @@
       "label": "Current report: reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000137978522000007/earnings8-k20220223.htm",
-      "material": true
+      "material": true,
+      "headline": "Barings BDC reports Q4 and full-year 2021 financial results",
+      "signal": "clean",
+      "signal_note": "Routine quarterly earnings release"
     },
     {
       "form": "425",
@@ -1298,7 +1781,10 @@
       "label": "425 — 425",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000114036122005292/ny20002748x1_425.htm",
-      "material": false
+      "material": false,
+      "headline": "Barings BDC files merger communication on proposed Sierra Income combination",
+      "signal": "clean",
+      "signal_note": "Routine merger communication"
     },
     {
       "form": "424B3",
@@ -1306,7 +1792,10 @@
       "label": "Prospectus supplement (offering) — 424B3",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000114036122003762/ny20002465x1_424b3.htm",
-      "material": true
+      "material": true,
+      "headline": "Supplement No. 1 updates Barings BDC-Sierra merger proxy/prospectus",
+      "signal": "clean",
+      "signal_note": "Routine merger prospectus supplement"
     },
     {
       "form": "8-K",
@@ -1314,7 +1803,10 @@
       "label": "Current report: issued a Regulation FD disclosure; disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000137978522000002/earnings8-k20220201.htm",
-      "material": true
+      "material": true,
+      "headline": "Barings BDC declared $0.23 per share Q1 2022 quarterly cash dividend",
+      "signal": "clean",
+      "signal_note": "Routine dividend declaration"
     },
     {
       "form": "EFFECT",
@@ -1322,7 +1814,10 @@
       "label": "EFFECT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/999999999521004860/xslEFFECTX01/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "SEC notice of effectiveness for Barings BDC registration statement",
+      "signal": "clean",
+      "signal_note": "Routine effectiveness notice"
     },
     {
       "form": "425",
@@ -1330,7 +1825,10 @@
       "label": "425 — FORM 425",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000114036121043263/ny20000760x12_425.htm",
-      "material": false
+      "material": false,
+      "headline": "Barings BDC-Sierra merger proxy declared effective; mailing to stockholders begins",
+      "signal": "clean",
+      "signal_note": "Routine merger communication"
     },
     {
       "form": "424B3",
@@ -1338,7 +1836,10 @@
       "label": "Prospectus supplement (offering) — 424B3",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000114036121043227/ny20000760x11_424b3.htm",
-      "material": true
+      "material": true,
+      "headline": "Barings BDC sets February 24 vote on Sierra merger and below-NAV issuance",
+      "signal": "watch",
+      "signal_note": "Below-NAV issuance proposal for merger"
     },
     {
       "form": "CORRESP",
@@ -1346,7 +1847,10 @@
       "label": "CORRESP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000114036121042935/filename1.htm",
-      "material": false
+      "material": false,
+      "headline": "Barings BDC responds to SEC staff comments on Sierra merger registration",
+      "signal": "clean",
+      "signal_note": "Routine SEC comment response"
     },
     {
       "form": "N-14 8C/A",
@@ -1354,7 +1858,10 @@
       "label": "N-14 8C/A — N-14 8C/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000114036121042931/ny20000760x8_n148ca.htm",
-      "material": false
+      "material": false,
+      "headline": "Barings BDC files pre-effective amendment to Sierra merger registration statement",
+      "signal": "clean",
+      "signal_note": "Routine registration amendment"
     },
     {
       "form": "40-17G",
@@ -1362,7 +1869,10 @@
       "label": "40-17G — BARINGS BDC, INC.",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000107261321000683/baringsbdc.htm",
-      "material": false
+      "material": false,
+      "headline": "Barings BDC files annual fidelity bond under Rule 17g-1",
+      "signal": "clean",
+      "signal_note": "Routine fidelity bond filing"
     },
     {
       "form": "CORRESP",
@@ -1370,7 +1880,10 @@
       "label": "CORRESP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000114036121041371/filename1.htm",
-      "material": false
+      "material": false,
+      "headline": "Barings BDC addresses SEC staff comments on Sierra merger structure",
+      "signal": "clean",
+      "signal_note": "Routine SEC comment response"
     },
     {
       "form": "N-14 8C/A",
@@ -1378,7 +1891,10 @@
       "label": "N-14 8C/A — N-14 8C/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000114036121041369/ny20000760x6_n148ca.htm",
-      "material": false
+      "material": false,
+      "headline": "Barings BDC files pre-effective amendment No. 1 to Sierra merger registration",
+      "signal": "clean",
+      "signal_note": "Routine registration amendment"
     },
     {
       "form": "4",
@@ -1386,7 +1902,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000122520821014312/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "Barings BDC insider reported December 1 transaction on Form 4",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -1394,7 +1913,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000122520821014198/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider reported a Barings BDC share transaction dated November 29, 2021",
+      "signal": "clean",
+      "signal_note": "Routine Section 16 filing"
     },
     {
       "form": "8-K",
@@ -1402,7 +1924,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000114036121039371/brhc10031170_8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Closed $350M of 3.300% unsecured notes due 2026, netting $343.6M",
+      "signal": "clean",
+      "signal_note": "Ordinary unsecured notes issuance"
     },
     {
       "form": "3",
@@ -1410,7 +1935,10 @@
       "label": "3",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000122520821013979/xslF345X02/doc3.xml",
-      "material": false
+      "material": false,
+      "headline": "New insider filed initial ownership statement for Barings BDC",
+      "signal": "clean",
+      "signal_note": "Routine Section 16 filing"
     },
     {
       "form": "8-K",
@@ -1418,7 +1946,10 @@
       "label": "Current report: issued a Regulation FD disclosure; disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000137978521000049/a8-knotesissuance20211118.htm",
-      "material": true
+      "material": true,
+      "headline": "Priced $350M of 3.300% unsecured notes due 2026",
+      "signal": "clean",
+      "signal_note": "Ordinary unsecured notes offering"
     },
     {
       "form": "425",
@@ -1426,7 +1957,10 @@
       "label": "425 — 425",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000114036121038438/brhc10030968_425.htm",
-      "material": false
+      "material": false,
+      "headline": "Disclosed pro forma capitalization for proposed Sierra Income acquisition",
+      "signal": "clean",
+      "signal_note": "Routine merger disclosure"
     },
     {
       "form": "8-K",
@@ -1434,7 +1968,10 @@
       "label": "Current report: issued a Regulation FD disclosure",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000114036121038437/brhc10030968_8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Disclosed pro forma capitalization for proposed Sierra Income acquisition",
+      "signal": "clean",
+      "signal_note": "Routine merger disclosure"
     },
     {
       "form": "10-Q",
@@ -1442,7 +1979,10 @@
       "label": "Quarterly report (10-Q) for period ending 2021-09-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000137978521000046/a2021093010qbbdc.htm",
-      "material": true
+      "material": true,
+      "headline": "Filed Q3 2021 quarterly report amid pending Sierra Income acquisition",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results"
     },
     {
       "form": "8-K",
@@ -1450,7 +1990,10 @@
       "label": "Current report: reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000137978521000045/earnings8-k20211110.htm",
-      "material": true
+      "material": true,
+      "headline": "Reported third-quarter 2021 financial results via press release",
+      "signal": "clean",
+      "signal_note": "Routine quarterly earnings"
     },
     {
       "form": "3",
@@ -1458,7 +2001,10 @@
       "label": "3",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000122520821013708/xslF345X02/doc3.xml",
-      "material": false
+      "material": false,
+      "headline": "New insider filed initial ownership statement for Barings BDC",
+      "signal": "clean",
+      "signal_note": "Routine Section 16 filing"
     },
     {
       "form": "N-14 8C",
@@ -1466,7 +2012,10 @@
       "label": "N-14 8C — N-14 8C",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000114036121035928/ny20000760x5_n148c.htm",
-      "material": false
+      "material": false,
+      "headline": "Filed N-14 proxy for proposed merger with Sierra Income Corporation",
+      "signal": "clean",
+      "signal_note": "Routine merger registration statement"
     },
     {
       "form": "4",
@@ -1474,7 +2023,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000122520821012575/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "Barings BDC insider reports Section 16 transaction on Form 4",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 4"
     },
     {
       "form": "425",
@@ -1482,7 +2034,10 @@
       "label": "425 — 425",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000137978521000040/transcriptforsecfilingunde.htm",
-      "material": false
+      "material": false,
+      "headline": "Barings BDC call details Sierra Income merger creating top-10 BDC",
+      "signal": "clean",
+      "signal_note": "Strategic merger conference call"
     },
     {
       "form": "425",
@@ -1490,7 +2045,10 @@
       "label": "425 — 425",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000114036121032019/ny20000760x1_8k.htm",
-      "material": false
+      "material": false,
+      "headline": "BBDC signs merger agreement to acquire Sierra Income Corporation",
+      "signal": "clean",
+      "signal_note": "Definitive merger agreement"
     },
     {
       "form": "8-K",
@@ -1498,7 +2056,10 @@
       "label": "Current report: entered a material agreement; issued a Regulation FD disclosure",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000114036121032018/ny20000760x1_8k.htm",
-      "material": true
+      "material": true,
+      "headline": "BBDC signs merger agreement to acquire Sierra Income Corporation",
+      "signal": "clean",
+      "signal_note": "Definitive merger agreement"
     },
     {
       "form": "425",
@@ -1506,7 +2067,10 @@
       "label": "425 — 425",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000114036121031967/ny20000760x3_425.htm",
-      "material": false
+      "material": false,
+      "headline": "Barings BDC files Rule 425 communication on Sierra Income merger",
+      "signal": "clean",
+      "signal_note": "Merger-related cover filing"
     },
     {
       "form": "425",
@@ -1514,7 +2078,10 @@
       "label": "425 — FORM 425",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000114036121031958/ny20000760x2_425.htm",
-      "material": false
+      "material": false,
+      "headline": "Sierra to merge into Barings BDC for $623.7M in cash and stock",
+      "signal": "clean",
+      "signal_note": "Merger announcement, credit support attached"
     },
     {
       "form": "4",
@@ -1522,7 +2089,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000122520821011381/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "Barings BDC insider reports Section 16 transaction on Form 4",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 4"
     },
     {
       "form": "8-K",
@@ -1530,7 +2100,10 @@
       "label": "Current report: reported quarterly results; changed a director or senior officer",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000137978521000037/earnings8-k20210805.htm",
-      "material": true
+      "material": true,
+      "headline": "Barings BDC posts Q2 results; Chairman Freno resigns, Eric Lloyd named Chairman",
+      "signal": "clean",
+      "signal_note": "Board change not from disagreement"
     },
     {
       "form": "10-Q",
@@ -1538,7 +2111,10 @@
       "label": "Quarterly report (10-Q) for period ending 2021-06-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000137978521000035/a2021063010qbbdc.htm",
-      "material": true
+      "material": true,
+      "headline": "Barings BDC files Q2 2021 10-Q covering three and six months",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results"
     },
     {
       "form": "3",
@@ -1546,7 +2122,10 @@
       "label": "3",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000122520821011224/xslF345X02/doc3.xml",
-      "material": false
+      "material": false,
+      "headline": "New Barings BDC insider files initial Form 3 ownership statement",
+      "signal": "clean",
+      "signal_note": "Routine initial ownership filing"
     },
     {
       "form": "40-17G",
@@ -1554,7 +2133,10 @@
       "label": "40-17G — BARINGS BDC, INC.",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000107261321000493/baringsbdc.htm",
-      "material": false
+      "material": false,
+      "headline": "Barings BDC files $1.25M fidelity bond under Rule 17g-1",
+      "signal": "clean",
+      "signal_note": "Routine fidelity bond filing"
     },
     {
       "form": "4",
@@ -1562,7 +2144,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000122520821009162/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "Barings BDC insider reported a Section 16 transaction dated June 9, 2021",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 4"
     },
     {
       "form": "8-K",
@@ -1570,7 +2155,10 @@
       "label": "Current report (8-K)",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000137978521000031/shareholdermeeting20210520.htm",
-      "material": false
+      "material": false,
+      "headline": "Stockholders elected directors and approved below-NAV share issuance authority",
+      "signal": "clean",
+      "signal_note": "Routine annual meeting results"
     },
     {
       "form": "4",
@@ -1578,7 +2166,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000122520821007999/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "Barings BDC insider reported a Section 16 transaction dated May 11, 2021",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 4"
     },
     {
       "form": "8-K",
@@ -1586,7 +2177,10 @@
       "label": "Current report: reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000137978521000029/earnings8-k20210506.htm",
-      "material": true
+      "material": true,
+      "headline": "Barings BDC furnished Q1 2021 results press release via 8-K",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results furnished"
     },
     {
       "form": "10-Q",
@@ -1594,7 +2188,10 @@
       "label": "Quarterly report (10-Q) for period ending 2021-03-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000137978521000028/a2021033110qbbdc.htm",
-      "material": true
+      "material": true,
+      "headline": "Barings BDC filed Q1 2021 10-Q with senior secured middle-market portfolio",
+      "signal": "clean",
+      "signal_note": "Routine quarterly filing"
     },
     {
       "form": "4",
@@ -1602,7 +2199,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000122520821006115/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "Barings BDC insider reported a Section 16 transaction dated March 30, 2021",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 4"
     },
     {
       "form": "4",
@@ -1610,7 +2210,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000122520821006063/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "Barings BDC insider reported a Section 16 transaction dated March 26, 2021",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 4"
     },
     {
       "form": "CORRESP",
@@ -1618,7 +2221,10 @@
       "label": "CORRESP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000137978521000024/filename1.htm",
-      "material": false
+      "material": false,
+      "headline": "Barings BDC responded to SEC staff comments on preliminary proxy statement",
+      "signal": "clean",
+      "signal_note": "Routine SEC correspondence"
     },
     {
       "form": "DEF 14A",
@@ -1626,7 +2232,10 @@
       "label": "Proxy statement — DEF 14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000137978521000023/a2020defproxy1.htm",
-      "material": false
+      "material": false,
+      "headline": "Barings BDC set May 20 annual meeting to elect directors, approve below-NAV sales",
+      "signal": "clean",
+      "signal_note": "Routine proxy statement"
     },
     {
       "form": "8-K",
@@ -1634,7 +2243,10 @@
       "label": "Current report: reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000137978521000017/earnings8-k20210323.htm",
-      "material": true
+      "material": true,
+      "headline": "Barings BDC furnished Q4 and full-year 2020 results press release",
+      "signal": "clean",
+      "signal_note": "Routine annual results furnished"
     },
     {
       "form": "10-K",
@@ -1642,7 +2254,10 @@
       "label": "Annual report (10-K) for period ending 2020-12-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000137978521000016/a202010-k.htm",
-      "material": true
+      "material": true,
+      "headline": "Barings BDC 2020 annual report details valuation methods and dividend reinvestment plan",
+      "signal": "clean",
+      "signal_note": "Routine annual report disclosures"
     },
     {
       "form": "PRE 14A",
@@ -1650,7 +2265,10 @@
       "label": "PRE 14A — PRE 14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000137978521000012/a2020pre14aproxy.htm",
-      "material": false
+      "material": false,
+      "headline": "Proxy seeks director elections and authority to sell stock below NAV",
+      "signal": "clean",
+      "signal_note": "Routine annual meeting proposals"
     },
     {
       "form": "8-K",
@@ -1658,7 +2276,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000137978521000008/notespayable8-k20210224.htm",
-      "material": true
+      "material": true,
+      "headline": "Priced $150M unsecured notes: $80M at 3.41% due 2026, $70M at 4.06% due 2028",
+      "signal": "clean",
+      "signal_note": "Ordinary private note placement"
     },
     {
       "form": "SC 13G/A",
@@ -1666,7 +2287,10 @@
       "label": "SC 13G/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000139834421003495/fp0062203_sc13ga.htm",
-      "material": false
+      "material": false,
+      "headline": "RiverNorth Capital ceased to hold more than 5% of Barings BDC",
+      "signal": "clean",
+      "signal_note": "Routine ownership amendment"
     },
     {
       "form": "8-K",
@@ -1674,7 +2298,10 @@
       "label": "Current report: reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000137978521000006/earnings8-k20201231.htm",
-      "material": true
+      "material": true,
+      "headline": "Barings BDC released preliminary Q4 2020 results via press release",
+      "signal": "clean",
+      "signal_note": "Routine earnings announcement"
     },
     {
       "form": "3",
@@ -1682,7 +2309,10 @@
       "label": "3",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000122520820015056/xslF345X02/doc3.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider filed initial Form 3 statement of beneficial ownership",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "8-K",
@@ -1690,7 +2320,10 @@
       "label": "Current report: entered a material agreement; completed an acquisition or disposition",
       "category": "Personnel",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000114036120029416/nt10018228x2_8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Barings closed MVC merger; cut management fee to 1.25%, added loss backstop",
+      "signal": "clean",
+      "signal_note": "Merger completed with fee reduction"
     },
     {
       "form": "N-14MEF",
@@ -1698,7 +2331,10 @@
       "label": "N-14MEF — FORM N-14MEF",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000114036120029178/nt10018228x1_n14mef.htm",
-      "material": false
+      "material": false,
+      "headline": "Registered additional 200,000 shares for MVC Capital merger consideration",
+      "signal": "clean",
+      "signal_note": "Routine merger registration"
     },
     {
       "form": "4",
@@ -1706,7 +2342,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000122520820014963/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider reported securities transaction on Form 4",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "425",
@@ -1714,7 +2353,10 @@
       "label": "425 — 425",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000114036120028872/nc10017931x4_425.htm",
-      "material": false
+      "material": false,
+      "headline": "MVC issued supplemental merger disclosures to settle shareholder litigation claims",
+      "signal": "clean",
+      "signal_note": "Routine merger litigation supplement"
     },
     {
       "form": "425",
@@ -1722,7 +2364,10 @@
       "label": "425 — 425",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000114036120028300/nc10017949x1.htm",
-      "material": false
+      "material": false,
+      "headline": "Barings to redeem and delist MVC's $95M 6.25% notes at merger closing",
+      "signal": "clean",
+      "signal_note": "Routine merger-related note redemption"
     },
     {
       "form": "4",
@@ -1730,7 +2375,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000122520820014286/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "Barings BDC insider reported Section 16 transaction dated December 4, 2020",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 4"
     },
     {
       "form": "4",
@@ -1738,7 +2386,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000122520820014285/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "Barings BDC insider reported Section 16 transaction dated December 7, 2020",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 4"
     },
     {
       "form": "3",
@@ -1746,7 +2397,10 @@
       "label": "3",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000122520820014189/xslF345X02/doc3.xml",
-      "material": false
+      "material": false,
+      "headline": "Barings BDC insider filed initial Form 3 ownership statement",
+      "signal": "clean",
+      "signal_note": "Routine initial ownership filing"
     },
     {
       "form": "425",
@@ -1754,7 +2408,10 @@
       "label": "425 — 425",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000114036120026843/nt10014584x11_425.htm",
-      "material": false
+      "material": false,
+      "headline": "Barings BDC files merger communication regarding acquisition of MVC Capital",
+      "signal": "clean",
+      "signal_note": "Routine merger communication"
     },
     {
       "form": "EFFECT",
@@ -1762,7 +2419,10 @@
       "label": "EFFECT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/999999999520003295/xslEFFECTX01/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "SEC notice of effectiveness for Barings BDC registration statement",
+      "signal": "clean",
+      "signal_note": "Routine effectiveness notice"
     },
     {
       "form": "424B3",
@@ -1770,7 +2430,10 @@
       "label": "Prospectus supplement (offering) — 424B3",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000114036120026435/nt10014584x9_424b3.htm",
-      "material": true
+      "material": true,
+      "headline": "Barings BDC sets December 23 special meeting to vote on MVC merger",
+      "signal": "clean",
+      "signal_note": "Routine merger proxy prospectus"
     },
     {
       "form": "N-14 8C/A",
@@ -1778,7 +2441,10 @@
       "label": "N-14 8C/A — N-14 8C/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000114036120026275/nt10014584x8_n148ca.htm",
-      "material": false
+      "material": false,
+      "headline": "Barings BDC amends N-14 registration for proposed MVC Capital merger",
+      "signal": "clean",
+      "signal_note": "Routine merger registration amendment"
     },
     {
       "form": "N-14 8C/A",
@@ -1786,7 +2452,10 @@
       "label": "N-14 8C/A — N-14 8C/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000114036120025705/nt10014584x4_n148ca.htm",
-      "material": false
+      "material": false,
+      "headline": "Barings BDC amends N-14 registration for proposed MVC Capital merger",
+      "signal": "clean",
+      "signal_note": "Routine merger registration amendment"
     },
     {
       "form": "3",
@@ -1794,7 +2463,10 @@
       "label": "3",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000122520820013499/xslF345X02/doc3.xml",
-      "material": false
+      "material": false,
+      "headline": "Barings BDC insider filed initial Form 3 ownership statement",
+      "signal": "clean",
+      "signal_note": "Routine initial ownership filing"
     },
     {
       "form": "8-K",
@@ -1802,7 +2474,10 @@
       "label": "Current report: changed a director or senior officer",
       "category": "Personnel",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000137978520000054/directordeparture20201109.htm",
-      "material": true
+      "material": true,
+      "headline": "Director Thomas Finke resigns to retire; David Mihalick appointed to board",
+      "signal": "clean",
+      "signal_note": "Routine board change, no disagreement"
     },
     {
       "form": "8-K",
@@ -1810,7 +2485,10 @@
       "label": "Current report: completed an acquisition or disposition; issued a Regulation FD disclosure",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000137978520000052/earnings8-k20200930.htm",
-      "material": true
+      "material": true,
+      "headline": "Barings BDC furnished Q3 2020 earnings press release",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results 8-K"
     },
     {
       "form": "10-Q",
@@ -1818,7 +2496,10 @@
       "label": "Quarterly report (10-Q) for period ending 2020-09-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000137978520000051/a2020093010qbbdc.htm",
-      "material": true
+      "material": true,
+      "headline": "Barings BDC Q3 2020 10-Q; weighted-average investment yield eased to 5.0%",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results"
     },
     {
       "form": "8-K",
@@ -1826,7 +2507,10 @@
       "label": "Current report: entered a material agreement",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000137978520000047/notespayable8-k20201104.htm",
-      "material": true
+      "material": true,
+      "headline": "Issued $175M unsecured notes at 4.25% and 4.75% via private placement",
+      "signal": "clean",
+      "signal_note": "Ordinary note offering"
     },
     {
       "form": "N-14 8C/A",
@@ -1834,7 +2518,10 @@
       "label": "N-14 8C/A — N-14 8C/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000114036120024030/nt10014584x2_n148ca.htm",
-      "material": false
+      "material": false,
+      "headline": "Amended N-14 proxy for MVC Capital merger and below-NAV stock issuance vote",
+      "signal": "clean",
+      "signal_note": "Merger registration amendment"
     },
     {
       "form": "CORRESP",
@@ -1842,7 +2529,10 @@
       "label": "CORRESP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000110465920112668/filename1.htm",
-      "material": false
+      "material": false,
+      "headline": "Responded to SEC staff comments on 2019 Form 10-K disclosures",
+      "signal": "clean",
+      "signal_note": "Routine SEC comment response"
     },
     {
       "form": "N-14 8C",
@@ -1850,7 +2540,10 @@
       "label": "N-14 8C — N-14 8C",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000114036120020506/nt10014584x1_n14.htm",
-      "material": false
+      "material": false,
+      "headline": "Filed N-14 registration for proposed MVC Capital merger",
+      "signal": "clean",
+      "signal_note": "Merger registration statement"
     },
     {
       "form": "425",
@@ -1858,7 +2551,10 @@
       "label": "425 — 425",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000137978520000045/a13708135_trx.htm",
-      "material": false
+      "material": false,
+      "headline": "Merger call: MVC deal seen accretive at $0.18-$0.20 NII per share",
+      "signal": "clean",
+      "signal_note": "Merger conference call transcript"
     },
     {
       "form": "425",
@@ -1866,7 +2562,10 @@
       "label": "425 — 425",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000137978520000043/projectmustang8-k20200810.htm",
-      "material": false
+      "material": false,
+      "headline": "Entered agreement to acquire MVC Capital in cash-and-stock merger",
+      "signal": "clean",
+      "signal_note": "Merger agreement announced"
     },
     {
       "form": "8-K",
@@ -1874,7 +2573,10 @@
       "label": "Current report: entered a material agreement; issued a Regulation FD disclosure",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000137978520000041/projectmustang8-k20200.htm",
-      "material": true
+      "material": true,
+      "headline": "Signed merger agreement to acquire MVC Capital",
+      "signal": "clean",
+      "signal_note": "Merger agreement announced"
     },
     {
       "form": "425",
@@ -1882,7 +2584,10 @@
       "label": "425 — 425",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000137978520000039/bbdcstrategicacquisition.htm",
-      "material": false
+      "material": false,
+      "headline": "Investor presentation details strategic acquisition of MVC Capital",
+      "signal": "clean",
+      "signal_note": "Merger investor presentation"
     },
     {
       "form": "425",
@@ -1890,7 +2595,10 @@
       "label": "425 — 425",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000137978520000037/exhibit991projectmustangre.htm",
-      "material": false
+      "material": false,
+      "headline": "MVC Capital to merge into Barings BDC in $177.5M cash-and-stock deal",
+      "signal": "clean",
+      "signal_note": "Merger agreement announced"
     },
     {
       "form": "8-K",
@@ -1898,7 +2606,10 @@
       "label": "Current report: reported quarterly results; issued a Regulation FD disclosure",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000137978520000027/earnings8-k20200630.htm",
-      "material": true
+      "material": true,
+      "headline": "Barings BDC furnished Q2 2020 earnings press release",
+      "signal": "clean",
+      "signal_note": "Routine quarterly earnings 8-K"
     },
     {
       "form": "10-Q",
@@ -1906,7 +2617,10 @@
       "label": "Quarterly report (10-Q) for period ending 2020-06-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1379785/000137978520000024/a2020063010qbbdc.htm",
-      "material": true
+      "material": true,
+      "headline": "Q2 2020 10-Q: weighted-average portfolio yield about 5.5% amid COVID risks",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results"
     }
   ]
 }

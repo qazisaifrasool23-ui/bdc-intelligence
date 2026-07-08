@@ -426,7 +426,10 @@
       "label": "Current report: reported quarterly results; changed a director or senior officer",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1843162/000095010325003523/dp226342_8k.htm",
-      "material": true
+      "material": true,
+      "headline": "CEO and two directors resigned; board named Peter Sack CEO",
+      "signal": "watch",
+      "signal_note": "CEO and two directors departed simultaneously"
     },
     {
       "form": "40-17G",
@@ -602,7 +605,10 @@
       "label": "Current report: entered a material agreement; terminated a material agreement",
       "category": "Personnel",
       "url": "https://www.sec.gov/Archives/edgar/data/1843162/000095010324014651/dp219097_8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Adviser joint venture closed; acquired $220M CALP loan portfolio, named new CEO",
+      "signal": "clean",
+      "signal_note": "Adviser transition and portfolio acquisition, no adverse fact"
     },
     {
       "form": "8-K",

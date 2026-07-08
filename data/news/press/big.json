@@ -4,2749 +4,3249 @@
     "name": "OBDE",
     "form": "8-K",
     "date": "2025-01-13",
-    "headline": "Current report: completed an acquisition or disposition; faces delisting or a listing-standard issue",
+    "headline": "Merged into Blue Owl OBDC at 0.9779x exchange ratio; shares delisted",
     "category": "Personnel",
     "url": "https://www.sec.gov/Archives/edgar/data/1807427/000162828025001248/obde-20250113.htm",
     "score": 41.16,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine merger completion, not credit event"
   },
   {
     "ticker": "MRCC",
     "name": "MRCC",
     "form": "8-K",
     "date": "2026-04-14",
-    "headline": "Current report: terminated a material agreement; completed an acquisition or disposition",
+    "headline": "Sold assets to MCIP for $335M and merged into Horizon; delisted",
     "category": "Personnel",
     "url": "https://www.sec.gov/Archives/edgar/data/1512931/000114036126014615/ef20070437_8k.htm",
     "score": 40.3,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine asset sale and merger completion"
   },
   {
     "ticker": "LRFIN",
     "name": "LRFIN",
     "form": "8-K",
     "date": "2025-07-16",
-    "headline": "Current report: terminated a material agreement; completed an acquisition or disposition",
+    "headline": "Merged into Portman Ridge at 1.5x ratio; $0.38 special distribution declared",
     "category": "Personnel",
     "url": "https://www.sec.gov/Archives/edgar/data/1571329/000162828025035073/lrfc-20250715.htm",
     "score": 39.62,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine merger completion"
   },
   {
     "ticker": "CSLI",
     "name": "CSLI",
     "form": "8-K",
     "date": "2025-03-28",
-    "headline": "Current report: completed an acquisition or disposition; modified security holders' rights",
+    "headline": "Merged into Carlyle Secured Lending at 1.2137x exchange ratio",
     "category": "Personnel",
     "url": "https://www.sec.gov/Archives/edgar/data/1851277/000119312525065939/d928473d8k.htm",
     "score": 31.35,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine merger completion"
   },
   {
     "ticker": "BOTFI",
     "name": "BOTFI",
     "form": "8-K",
     "date": "2025-03-24",
-    "headline": "Current report: completed an acquisition or disposition; modified security holders' rights",
+    "headline": "Merged into Blue Owl Technology Finance at 0.9113x exchange ratio",
     "category": "Personnel",
     "url": "https://www.sec.gov/Archives/edgar/data/1889668/000162828025014414/otf-20250324.htm",
     "score": 31.34,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine merger completion"
   },
   {
     "ticker": "LIEN",
     "name": "LIEN",
     "form": "8-K",
     "date": "2024-10-07",
-    "headline": "Current report: entered a material agreement; terminated a material agreement",
+    "headline": "Adviser joint venture closed; acquired $220M CALP loan portfolio, named new CEO",
     "category": "Personnel",
     "url": "https://www.sec.gov/Archives/edgar/data/1843162/000095010324014651/dp219097_8k.htm",
     "score": 30.92,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Adviser transition and portfolio acquisition, no adverse fact"
   },
   {
     "ticker": "GECC",
     "name": "GECC",
     "form": "8-K",
     "date": "2022-03-04",
-    "headline": "Current report: reported quarterly results; faces delisting or a listing-standard issue",
+    "headline": "CEO resigned; distribution cut to $0.45 and board fell out of Nasdaq compliance",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1675033/000114036122007874/ny20003136x2_8k.htm",
     "score": 28.55,
-    "llm": false
+    "llm": false,
+    "signal": "negative",
+    "signal_note": "Distribution cut; Nasdaq board-independence non-compliance"
   },
   {
     "ticker": "NMFC",
     "name": "NMFC",
     "form": "8-K",
     "date": "2026-05-04",
-    "headline": "Current report: reported quarterly results; changed a director or senior officer",
+    "headline": "Named interim CFO; declared $0.25 dividend with Q1 results",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1496099/000149609926000014/nmfc-20260504.htm",
     "score": 26.35,
-    "llm": false
+    "llm": false,
+    "signal": "watch",
+    "signal_note": "Interim CFO named pending permanent search"
   },
   {
     "ticker": "KBDC",
     "name": "KBDC",
     "form": "8-K",
     "date": "2025-11-10",
-    "headline": "Current report: reported quarterly results; changed a director or senior officer",
+    "headline": "Q3 results reported; named new President and declared $0.40 dividend",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390025108256/ea0264523-8k_kayne.htm",
     "score": 25.91,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine results and governance"
   },
   {
     "ticker": "TSLX",
     "name": "TSLX",
     "form": "8-K",
     "date": "2025-11-04",
-    "headline": "Current report: reported quarterly results; changed a director or senior officer",
+    "headline": "CEO Easterly to step down; Bo Stanley named Co-CEO; $0.46 dividend declared",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1508655/000119312525264683/tslx-20251104.htm",
     "score": 25.9,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Orderly CEO succession, routine results"
   },
   {
     "ticker": "TCPC",
     "name": "TCPC",
     "form": "8-K",
     "date": "2024-03-18",
-    "headline": "Current report: entered a material agreement; completed an acquisition or disposition",
+    "headline": "Completed BlackRock Capital (BCIC) merger; assumed $265M credit facility and notes",
     "category": "Personnel",
     "url": "https://www.sec.gov/Archives/edgar/data/1370755/000114036124013943/ef20024232_8k.htm",
     "score": 25.41,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine merger completion"
   },
   {
     "ticker": "HRZN",
     "name": "HRZN",
     "form": "8-K",
     "date": "2026-04-14",
-    "headline": "Current report: entered a material agreement; completed an acquisition or disposition",
+    "headline": "Completed Monroe Capital (MRCC) acquisition; adviser waives $4M in fees",
     "category": "Personnel",
     "url": "https://www.sec.gov/Archives/edgar/data/1487428/000114036126014610/ef20070439_8k.htm",
     "score": 25.3,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Merger completion, fee waiver"
   },
   {
     "ticker": "TSLX",
     "name": "TSLX",
     "form": "8-K",
     "date": "2025-02-13",
-    "headline": "Current report: reported quarterly results; changed a director or senior officer",
+    "headline": "Q4 2024 results; declared $0.46 base plus $0.07 supplemental dividend",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1508655/000095017025019865/tslx-20250213.htm",
     "score": 25.24,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine results and dividend"
   },
   {
     "ticker": "CIK0001999538",
     "name": "CIK0001999538",
     "form": "8-K",
     "date": "2024-11-04",
-    "headline": "Current report: underwent a change in control; changed a director or senior officer",
+    "headline": "Change in control; Growth Lending acquired 100% of shares",
     "category": "Personnel",
     "url": "https://www.sec.gov/Archives/edgar/data/1999538/000199953824000005/form8k110124.htm",
     "score": 24.99,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Ownership change, no credit disclosure"
   },
   {
     "ticker": "GECC",
     "name": "GECC",
     "form": "8-K",
     "date": "2026-05-04",
-    "headline": "Current report: reported quarterly results; changed a director or senior officer",
+    "headline": "Jason Reese named CEO, succeeding Matt Kaplan",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1675033/000119312526204241/gecc-20260501.htm",
     "score": 24.35,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine CEO transition"
   },
   {
     "ticker": "CCAP",
     "name": "CCAP",
     "form": "8-K",
     "date": "2024-02-21",
-    "headline": "Current report: reported quarterly results; changed a director or senior officer",
+    "headline": "Q4 2023 results; Henry Chung appointed President",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1633336/000095017024017941/ccap-20240215.htm",
     "score": 24.34,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine results and governance"
   },
   {
     "ticker": "GECC",
     "name": "GECC",
     "form": "8-K",
     "date": "2026-03-02",
-    "headline": "Current report: reported quarterly results; changed a director or senior officer",
+    "headline": "Chairman Drapkin resigned; Jason Reese named Executive Chairman",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1675033/000119312526085720/gecc-20260302.htm",
     "score": 24.2,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine chairman transition"
   },
   {
     "ticker": "PIAC",
     "name": "PIAC",
     "form": "8-K",
     "date": "2025-01-14",
-    "headline": "Current report: flagged prior financials as unreliable (restatement)",
+    "headline": "2023 financials no longer reliable; restating Advantis subsidiary disclosures",
     "category": "Credit event",
     "url": "https://www.sec.gov/Archives/edgar/data/845385/000121390025003402/ea0227524-8k_princeton.htm",
     "score": 24.16,
-    "llm": false
+    "llm": false,
+    "signal": "negative",
+    "signal_note": "Prior 2023 financials restated"
   },
   {
     "ticker": "AFCG",
     "name": "AFCG",
     "form": "8-K",
     "date": "2024-07-09",
-    "headline": "Current report: entered a material agreement; completed an acquisition or disposition",
+    "headline": "Completed spin-off of CRE portfolio into Sunrise Realty Trust (SUNS)",
     "category": "Personnel",
     "url": "https://www.sec.gov/Archives/edgar/data/1822523/000162828024031518/afcg-20240708.htm",
     "score": 23.69,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine spin-off completion"
   },
   {
     "ticker": "LRFIN",
     "name": "LRFIN",
     "form": "8-K",
     "date": "2024-06-14",
-    "headline": "Current report: flagged prior financials as unreliable (restatement)",
+    "headline": "2022 and 2021 financials restated after loss of RIC status",
     "category": "Credit event",
     "url": "https://www.sec.gov/Archives/edgar/data/1571329/000119312524161596/d841428d8k.htm",
     "score": 23.63,
-    "llm": false
+    "llm": false,
+    "signal": "negative",
+    "signal_note": "Restatement; RIC status lost, material weakness"
   },
   {
     "ticker": "BBDC",
     "name": "BBDC",
     "form": "8-K",
     "date": "2022-03-03",
-    "headline": "Current report: entered bankruptcy or receivership; took on a material financial obligation",
+    "headline": "Amended revolving credit facility; commitments raised to $965M, maturity extended to 2025",
     "category": "Credit event",
     "url": "https://www.sec.gov/Archives/edgar/data/1379785/000114036122007671/ny20002465x4_8k.htm",
     "score": 23.55,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine facility upsizing and extension"
   },
   {
     "ticker": "BBDC",
     "name": "BBDC",
     "form": "8-K",
     "date": "2022-03-03",
-    "headline": "Current report: entered a material agreement; completed an acquisition or disposition",
+    "headline": "Completed Sierra Income merger; adviser gave $100M credit support on acquired portfolio",
     "category": "Personnel",
     "url": "https://www.sec.gov/Archives/edgar/data/1379785/000114036122007670/ny20002465x3_8k.htm",
     "score": 23.55,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Merger closed with adviser credit support"
   },
   {
     "ticker": "NMFC",
     "name": "NMFC",
     "form": "8-K",
     "date": "2023-02-27",
-    "headline": "Current report: reported quarterly results; changed a director or senior officer",
+    "headline": "Q4 results reported; CFO Kajee to resign, COO Holson named interim CFO",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1496099/000110465923026074/tm237902d1_8k.htm",
     "score": 23.45,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Orderly CFO transition, dividend declared"
   },
   {
     "ticker": "LIEN",
     "name": "LIEN",
     "form": "8-K",
     "date": "2025-03-18",
-    "headline": "Current report: reported quarterly results; changed a director or senior officer",
+    "headline": "CEO and two directors resigned; board named Peter Sack CEO",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1843162/000095010325003523/dp226342_8k.htm",
     "score": 23.32,
-    "llm": false
+    "llm": false,
+    "signal": "watch",
+    "signal_note": "CEO and two directors departed simultaneously"
   },
   {
     "ticker": "NMFC",
     "name": "NMFC",
     "form": "8-K",
     "date": "2026-03-13",
-    "headline": "Current report: entered a material agreement; completed an acquisition or disposition",
+    "headline": "Sold $468M of assets at 94% of fair value; extended credit facility",
     "category": "M&A",
     "url": "https://www.sec.gov/Archives/edgar/data/1496099/000158064226001812/newmountainfinance_8k.htm",
     "score": 23.22,
-    "llm": false
+    "llm": false,
+    "signal": "watch",
+    "signal_note": "Assets sold at 6% below fair value"
   },
   {
     "ticker": "CCAP",
     "name": "CCAP",
     "form": "8-K",
     "date": "2022-11-09",
-    "headline": "Current report: reported quarterly results; changed a director or senior officer",
+    "headline": "Q3 results reported; Chief Compliance Officer resigned, successor appointed",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1633336/000095017022023864/ccap-20221109.htm",
     "score": 23.17,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine results and officer change"
   },
   {
     "ticker": "NMFC",
     "name": "NMFC",
     "form": "8-K",
     "date": "2022-11-08",
-    "headline": "Current report: reported quarterly results; changed a director or senior officer",
+    "headline": "Q3 results reported; Kline named CEO as Hamwee becomes Vice Chairman; $0.32 dividend",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1496099/000149609922000012/nmfc-20221108.htm",
     "score": 23.17,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Planned CEO succession, dividend declared"
   },
   {
     "ticker": "ARCC",
     "name": "ARCC",
     "form": "8-K",
     "date": "2022-10-25",
-    "headline": "Current report: reported quarterly results; changed a director or senior officer",
+    "headline": "Q3 results reported; Schnabel named Co-President; declared $0.48 fourth-quarter dividend",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1287750/000128775022000050/arcc-20221025.htm",
     "score": 23.13,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine quarterly results and dividend"
   },
   {
     "ticker": "LPCL",
     "name": "LPCL",
     "form": "8-K",
     "date": "2025-08-27",
-    "headline": "Current report: faces delisting or a listing-standard issue; issued a Regulation FD disclosure",
+    "headline": "Sold $8M of shares at $25.10 NAV; declared $0.21 distribution",
     "category": "Credit event",
     "url": "https://www.sec.gov/Archives/edgar/data/2041841/000093041325002758/c113894_8k-ixbrl.htm",
     "score": 22.73,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine offering and distribution"
   },
   {
     "ticker": "SPSL",
     "name": "SPSL",
     "form": "8-K",
     "date": "2025-07-22",
-    "headline": "Current report: triggered an acceleration of an obligation",
+    "headline": "Exercised $50M facility increase, raising borrowing capacity to $150M",
     "category": "Credit event",
     "url": "https://www.sec.gov/Archives/edgar/data/1646614/000119312525162635/d931222d8k.htm",
     "score": 22.64,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine facility increase"
   },
   {
     "ticker": "NMFC",
     "name": "NMFC",
     "form": "8-K",
     "date": "2023-05-15",
-    "headline": "Current report: faces delisting or a listing-standard issue",
+    "headline": "Nasdaq flags board-independence shortfall after director resignation; cure period granted",
     "category": "Credit event",
     "url": "https://www.sec.gov/Archives/edgar/data/1496099/000110465923060866/tm2315821d1_8k.htm",
     "score": 22.64,
-    "llm": false
+    "llm": false,
+    "signal": "watch",
+    "signal_note": "Nasdaq board-independence noncompliance notice"
   },
   {
     "ticker": "OBDC",
     "name": "OBDC",
     "form": "8-K",
     "date": "2026-07-01",
-    "headline": "Current report: reported quarterly results",
+    "headline": "Blue Owl to report Q2 2026 results August 5",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1655888/000119312526291625/d152263d8k.htm",
     "score": 22.5,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine earnings date announcement"
   },
   {
     "ticker": "EQS",
     "name": "EQS",
     "form": "8-K",
     "date": "2025-05-20",
-    "headline": "Current report: faces delisting or a listing-standard issue; issued a Regulation FD disclosure",
+    "headline": "NYSE flags sub-$1 share price; reverse split under consideration",
     "category": "Credit event",
     "url": "https://www.sec.gov/Archives/edgar/data/878932/000171254325000039/f8k_equus05202025.htm",
     "score": 22.48,
-    "llm": false
+    "llm": false,
+    "signal": "watch",
+    "signal_note": "NYSE minimum-price deficiency notice"
   },
   {
     "ticker": "BBDC",
     "name": "BBDC",
     "form": "8-K",
     "date": "2020-12-23",
-    "headline": "Current report: entered a material agreement; completed an acquisition or disposition",
+    "headline": "Barings closed MVC merger; cut management fee to 1.25%, added loss backstop",
     "category": "Personnel",
     "url": "https://www.sec.gov/Archives/edgar/data/1379785/000114036120029416/nt10018228x2_8k.htm",
     "score": 22.46,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Merger completed with fee reduction"
   },
   {
     "ticker": "CION",
     "name": "CION",
     "form": "8-K",
     "date": "2024-03-14",
-    "headline": "Current report: reported quarterly results; changed a director or senior officer",
+    "headline": "CION declared $0.34 quarterly distribution; reported Q4/FY2023 results",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1534254/000110465924034275/tm248658d1_8k.htm",
     "score": 22.4,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine dividend and results"
   },
   {
     "ticker": "CCAP",
     "name": "CCAP",
     "form": "8-K",
     "date": "2026-05-13",
-    "headline": "Current report: reported quarterly results",
+    "headline": "Crescent Capital reported Q1 2026 financial results",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1633336/000119312526221986/ccap-20260513.htm",
     "score": 22.38,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine quarterly results"
   },
   {
     "ticker": "CSWC",
     "name": "CSWC",
     "form": "8-K",
     "date": "2026-05-13",
-    "headline": "Current report: reported quarterly results; issued a Regulation FD disclosure",
+    "headline": "Capital Southwest reported quarterly results and investor presentation",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/17313/000001731326000030/cswc-20260513.htm",
     "score": 22.38,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine quarterly results"
   },
   {
     "ticker": "CIK0001999538",
     "name": "CIK0001999538",
     "form": "8-K",
     "date": "2026-05-12",
-    "headline": "Current report: underwent a change in control",
+    "headline": "X1 Capital added director McMurry; Hatfield stepped down; expanded strategy",
     "category": "Other",
     "url": "https://www.sec.gov/Archives/edgar/data/1999538/000199953826000002/form8k051026v1.htm",
     "score": 22.37,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine governance and strategy changes"
   },
   {
     "ticker": "CGBD",
     "name": "CGBD",
     "form": "8-K",
     "date": "2026-05-11",
-    "headline": "Current report: reported quarterly results; issued a Regulation FD disclosure",
+    "headline": "Carlyle Secured Lending reported Q1 results; declared $0.35 dividend",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420626000032/csl-20260511.htm",
     "score": 22.37,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine dividend and results"
   },
   {
     "ticker": "FSK",
     "name": "FSK",
     "form": "8-K",
     "date": "2026-05-11",
-    "headline": "Current report: entered a material agreement; reported quarterly results",
+    "headline": "FSK to sell $150M convertible preferred to KKR affiliate alongside tender offer",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1422183/000110465926058250/tm2614112d1_8k.htm",
     "score": 22.37,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Ordinary preferred issuance to affiliate"
   },
   {
     "ticker": "KBDC",
     "name": "KBDC",
     "form": "8-K",
     "date": "2026-05-11",
-    "headline": "Current report: reported quarterly results; issued a Regulation FD disclosure",
+    "headline": "Q1 results reported; declared $0.40 Q2 2026 dividend",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390026054511/ea0290016-8k_kayne.htm",
     "score": 22.37,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine quarterly results and dividend"
   },
   {
     "ticker": "GSBD",
     "name": "GSBD",
     "form": "8-K",
     "date": "2026-05-08",
-    "headline": "Current report: reported quarterly results; issued a Regulation FD disclosure",
+    "headline": "Q1 results reported; declared $0.32 base Q2 dividend",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1572694/000119312526212714/d117157d8k.htm",
     "score": 22.36,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine quarterly results and dividend"
   },
   {
     "ticker": "BBDC",
     "name": "BBDC",
     "form": "8-K",
     "date": "2026-05-07",
-    "headline": "Current report: reported quarterly results; issued a Regulation FD disclosure",
+    "headline": "Q1 results reported; three Class II directors elected",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1379785/000137978526000021/bbdc-20260507.htm",
     "score": 22.36,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine results and governance"
   },
   {
     "ticker": "BXSL",
     "name": "BXSL",
     "form": "8-K",
     "date": "2026-05-07",
-    "headline": "Current report: reported quarterly results",
+    "headline": "Announced first quarter 2026 financial results",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1736035/000121390026053022/ea0289403-8k_blackstone.htm",
     "score": 22.36,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine quarterly results"
   },
   {
     "ticker": "FDUS",
     "name": "FDUS",
     "form": "8-K",
     "date": "2026-05-07",
-    "headline": "Current report: reported quarterly results; issued a Regulation FD disclosure",
+    "headline": "Q1 results; declared $0.43 base plus $0.19 supplemental dividend",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1513363/000119312526211909/fdus-20260507.htm",
     "score": 22.36,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine results and dividend"
   },
   {
     "ticker": "MAIN",
     "name": "MAIN",
     "form": "8-K",
     "date": "2026-05-07",
-    "headline": "Current report: reported quarterly results",
+    "headline": "Issued press release announcing quarterly financial results",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1396440/000139644026000068/main-20260507.htm",
     "score": 22.36,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine quarterly results"
   },
   {
     "ticker": "PFLT",
     "name": "PFLT",
     "form": "8-K",
     "date": "2026-05-07",
-    "headline": "Current report: reported quarterly results",
+    "headline": "Announced fiscal Q2 results for quarter ended March 31",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1504619/000117184326003158/f8k_050726.htm",
     "score": 22.36,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine quarterly results"
   },
   {
     "ticker": "PNNT",
     "name": "PNNT",
     "form": "8-K",
     "date": "2026-05-07",
-    "headline": "Current report: reported quarterly results",
+    "headline": "Announced fiscal Q2 results for quarter ended March 31",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1383414/000117184326003159/f8k_050726.htm",
     "score": 22.36,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine quarterly results"
   },
   {
     "ticker": "PSEC",
     "name": "PSEC",
     "form": "8-K",
     "date": "2026-05-07",
-    "headline": "Current report: reported quarterly results; issued a Regulation FD disclosure",
+    "headline": "Q1 results; declared monthly common and preferred distributions",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1287032/000128703226000165/psec-20260507.htm",
     "score": 22.36,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine results and distributions"
   },
   {
     "ticker": "TCPC",
     "name": "TCPC",
     "form": "8-K",
     "date": "2026-05-07",
-    "headline": "Current report: reported quarterly results; issued a Regulation FD disclosure",
+    "headline": "Q1 results reported; declared $0.17 Q2 dividend",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1370755/000119312526210643/tcpc-20260507.htm",
     "score": 22.36,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine quarterly results and dividend"
   },
   {
     "ticker": "OBDC",
     "name": "OBDC",
     "form": "8-K",
     "date": "2026-05-06",
-    "headline": "Current report: reported quarterly results",
+    "headline": "Blue Owl Capital reported Q1 2026 financial results",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1655888/000165588826000034/obdc-20260506.htm",
     "score": 22.36,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine quarterly earnings release"
   },
   {
     "ticker": "TRIN",
     "name": "TRIN",
     "form": "8-K",
     "date": "2026-05-06",
-    "headline": "Current report: reported quarterly results; issued a Regulation FD disclosure",
+    "headline": "Trinity Capital reported Q1 2026 results and earnings presentation",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1786108/000119312526207619/trin-20260506.htm",
     "score": 22.36,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine quarterly earnings release"
   },
   {
     "ticker": "HTGC",
     "name": "HTGC",
     "form": "8-K",
     "date": "2026-05-05",
-    "headline": "Current report: reported quarterly results; disclosed a material event",
+    "headline": "Hercules reported Q1 results; declared $0.47 quarterly distribution",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1280784/000128078426000028/htgc-20260430.htm",
     "score": 22.36,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine earnings and distribution"
   },
   {
     "ticker": "OCSL",
     "name": "OCSL",
     "form": "8-K",
     "date": "2026-05-05",
-    "headline": "Current report: reported quarterly results",
+    "headline": "Oaktree Specialty Lending reported fiscal Q2 2026 results",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1414932/000119312526204937/d80092d8k.htm",
     "score": 22.36,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine quarterly earnings release"
   },
   {
     "ticker": "SLRC",
     "name": "SLRC",
     "form": "8-K",
     "date": "2026-05-05",
-    "headline": "Current report: reported quarterly results",
+    "headline": "SLR Investment Corp reported Q1 2026 financial results",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1418076/000117184326003038/f8k_050526.htm",
     "score": 22.36,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine quarterly earnings release"
   },
   {
     "ticker": "TSLX",
     "name": "TSLX",
     "form": "8-K",
     "date": "2026-05-05",
-    "headline": "Current report: reported quarterly results; issued a Regulation FD disclosure",
+    "headline": "Sixth Street declared $0.42 base dividend; Fishman named board chairman",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1508655/000119312526206354/tslx-20260505.htm",
     "score": 22.36,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine earnings, dividend, governance"
   },
   {
     "ticker": "GBDC",
     "name": "GBDC",
     "form": "8-K",
     "date": "2026-05-04",
-    "headline": "Current report: reported quarterly results",
+    "headline": "Golub Capital BDC posted fiscal Q2 2026 earnings presentation",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1476765/000147676526000032/gbdc-20260504.htm",
     "score": 22.35,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine quarterly earnings materials"
   },
   {
     "ticker": "GBDC",
     "name": "GBDC",
     "form": "8-K",
     "date": "2026-05-04",
-    "headline": "Current report: reported quarterly results",
+    "headline": "Golub Capital BDC reported fiscal Q2 2026 results",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1476765/000147676526000029/gbdc-20260504.htm",
     "score": 22.35,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine quarterly earnings release"
   },
   {
     "ticker": "CGBD",
     "name": "CGBD",
     "form": "8-K",
     "date": "2025-03-28",
-    "headline": "Current report: entered a material agreement; completed an acquisition or disposition",
+    "headline": "CGBD completed acquisition of Carlyle Secured Lending III via merger",
     "category": "M&A",
     "url": "https://www.sec.gov/Archives/edgar/data/1544206/000119312525065938/d906363d8k.htm",
     "score": 22.35,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine merger completion and financing"
   },
   {
     "ticker": "ARCC",
     "name": "ARCC",
     "form": "8-K",
     "date": "2026-04-28",
-    "headline": "Current report: reported quarterly results; disclosed a material event",
+    "headline": "Ares Capital reported Q1 results; declared $0.48 dividend",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1287750/000162828026027685/arcc-20260428.htm",
     "score": 22.34,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine earnings and dividend"
   },
   {
     "ticker": "CSWC",
     "name": "CSWC",
     "form": "8-K",
     "date": "2026-04-16",
-    "headline": "Current report: reported quarterly results",
+    "headline": "Capital Southwest issued preliminary estimates for quarter ended March 31, 2026",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/17313/000001731326000023/cswc-20260416.htm",
     "score": 22.31,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine preliminary quarterly estimates"
   },
   {
     "ticker": "MAIN",
     "name": "MAIN",
     "form": "8-K",
     "date": "2026-04-16",
-    "headline": "Current report: reported quarterly results",
+    "headline": "Main Street issued preliminary estimates for quarter ended March 31, 2026",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1396440/000139644026000058/main-20260416.htm",
     "score": 22.31,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine preliminary quarterly estimates"
   },
   {
     "ticker": "FSK",
     "name": "FSK",
     "form": "8-K",
     "date": "2026-04-09",
-    "headline": "Current report: reported quarterly results",
+    "headline": "FS KKR set May 7 conference call for first quarter 2026 results",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1422183/000110465926041534/tm2611324d1_8k.htm",
     "score": 22.29,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine earnings call announcement"
   },
   {
     "ticker": "MAIN",
     "name": "MAIN",
     "form": "8-K",
     "date": "2026-04-09",
-    "headline": "Current report: reported quarterly results",
+    "headline": "Main Street issued press release on April 9, 2026",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1396440/000139644026000051/main-20260409.htm",
     "score": 22.29,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "No adverse disclosure found"
   },
   {
     "ticker": "GBDC",
     "name": "GBDC",
     "form": "8-K",
     "date": "2026-04-06",
-    "headline": "Current report: reported quarterly results",
+    "headline": "Golub Capital BDC to report March quarter results on May 4",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1476765/000147676526000016/gbdc-20260406.htm",
     "score": 22.28,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine earnings date announcement"
   },
   {
     "ticker": "GSBD",
     "name": "GSBD",
     "form": "8-K",
     "date": "2020-10-13",
-    "headline": "Current report: completed an acquisition or disposition; modified security holders' rights",
+    "headline": "Goldman Sachs BDC completed MMLC merger, issued 61 million shares, added three directors",
     "category": "Personnel",
     "url": "https://www.sec.gov/Archives/edgar/data/1572694/000119312520267861/d24773d8k.htm",
     "score": 22.28,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Merger completed at NAV-for-NAV exchange"
   },
   {
     "ticker": "OBDC",
     "name": "OBDC",
     "form": "8-K",
     "date": "2026-04-01",
-    "headline": "Current report: reported quarterly results",
+    "headline": "Blue Owl Capital to report first quarter 2026 results on May 6",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1655888/000119312526137925/d144038d8k.htm",
     "score": 22.27,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine earnings date announcement"
   },
   {
     "ticker": "KBDC",
     "name": "KBDC",
     "form": "8-K",
     "date": "2026-03-02",
-    "headline": "Current report: reported quarterly results; issued a Regulation FD disclosure",
+    "headline": "Kayne Anderson BDC posted Q4 results and declared $0.40 dividend",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390026022429/ea0279239-8k_kayne.htm",
     "score": 22.2,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine results, dividend declared"
   },
   {
     "ticker": "GSBD",
     "name": "GSBD",
     "form": "8-K",
     "date": "2026-02-27",
-    "headline": "Current report: reported quarterly results; issued a Regulation FD disclosure",
+    "headline": "Goldman Sachs BDC declared $0.32 base plus $0.03 supplemental dividend; PIK 9% of income",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1572694/000119312526078362/d117783d8k.htm",
     "score": 22.19,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine results, dividends declared"
   },
   {
     "ticker": "TCPC",
     "name": "TCPC",
     "form": "8-K",
     "date": "2026-02-27",
-    "headline": "Current report: reported quarterly results; issued a Regulation FD disclosure",
+    "headline": "BlackRock TCP Capital posted Q4 results and declared $0.17 dividend",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1370755/000119312526079341/tcpc-20260227.htm",
     "score": 22.19,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine results, dividend declared"
   },
   {
     "ticker": "FDUS",
     "name": "FDUS",
     "form": "8-K",
     "date": "2026-02-26",
-    "headline": "Current report: reported quarterly results",
+    "headline": "Fidus announced Q4 and full-year 2025 financial results",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1513363/000119312526076554/fdus-20250306.htm",
     "score": 22.19,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine quarterly results"
   },
   {
     "ticker": "MAIN",
     "name": "MAIN",
     "form": "8-K",
     "date": "2026-02-26",
-    "headline": "Current report: reported quarterly results",
+    "headline": "Main Street Capital issued press release on financial results",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1396440/000139644026000012/main-20260226.htm",
     "score": 22.19,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine results press release"
   },
   {
     "ticker": "BXSL",
     "name": "BXSL",
     "form": "8-K",
     "date": "2026-02-25",
-    "headline": "Current report: reported quarterly results",
+    "headline": "Blackstone Secured Lending announced Q4 2025 financial results",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1736035/000121390026020083/ea0277994-8k_blackstone.htm",
     "score": 22.18,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine quarterly results"
   },
   {
     "ticker": "CCAP",
     "name": "CCAP",
     "form": "8-K",
     "date": "2026-02-25",
-    "headline": "Current report: reported quarterly results",
+    "headline": "Crescent Capital BDC announced Q4 and full-year 2025 results",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1633336/000119312526070903/ccap-20260225.htm",
     "score": 22.18,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine quarterly results"
   },
   {
     "ticker": "FSK",
     "name": "FSK",
     "form": "8-K",
     "date": "2026-02-25",
-    "headline": "Current report: reported quarterly results; issued a Regulation FD disclosure",
+    "headline": "FS KKR declared $0.48 per share distribution alongside FY2025 results",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1422183/000110465926019719/tm267104d1_8k.htm",
     "score": 22.18,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Distribution declared as normal"
   },
   {
     "ticker": "TRIN",
     "name": "TRIN",
     "form": "8-K",
     "date": "2026-02-25",
-    "headline": "Current report: reported quarterly results; issued a Regulation FD disclosure",
+    "headline": "Trinity Capital announced Q4 and full-year 2025 financial results",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1786108/000119312526068599/trin-20260225.htm",
     "score": 22.18,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine quarterly results"
   },
   {
     "ticker": "CGBD",
     "name": "CGBD",
     "form": "8-K",
     "date": "2026-02-24",
-    "headline": "Current report: reported quarterly results; issued a Regulation FD disclosure",
+    "headline": "Carlyle Secured Lending declared $0.40 Q1 dividend with FY2025 results",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420626000012/csl-20260224.htm",
     "score": 22.18,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Dividend declared as normal"
   },
   {
     "ticker": "NMFC",
     "name": "NMFC",
     "form": "8-K",
     "date": "2026-02-24",
-    "headline": "Current report: reported quarterly results; issued a Regulation FD disclosure",
+    "headline": "New Mountain Finance declared $0.32 Q1 distribution with FY2025 results",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1496099/000149609926000007/nmfc-20260224.htm",
     "score": 22.18,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Distribution declared as normal"
   },
   {
     "ticker": "SLRC",
     "name": "SLRC",
     "form": "8-K",
     "date": "2026-02-24",
-    "headline": "Current report: reported quarterly results",
+    "headline": "SLR Investment announced Q4 2025 financial results",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1418076/000117184326001058/f8k_022426.htm",
     "score": 22.18,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine quarterly results"
   },
   {
     "ticker": "BBDC",
     "name": "BBDC",
     "form": "8-K",
     "date": "2026-02-19",
-    "headline": "Current report: reported quarterly results; issued a Regulation FD disclosure",
+    "headline": "Barings BDC announced Q4 and full-year 2025 financial results",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1379785/000137978526000008/bbdc-20260219.htm",
     "score": 22.17,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine quarterly results"
   },
   {
     "ticker": "OBDC",
     "name": "OBDC",
     "form": "8-K",
     "date": "2026-02-18",
-    "headline": "Current report: reported quarterly results",
+    "headline": "Blue Owl Capital reported fourth quarter and full-year 2025 results",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1655888/000165588826000009/obdc-20260218.htm",
     "score": 22.16,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine quarterly results announcement"
   },
   {
     "ticker": "OBDC",
     "name": "OBDC",
     "form": "8-K",
     "date": "2025-01-13",
-    "headline": "Current report: entered a material agreement; completed an acquisition or disposition",
+    "headline": "OBDC completed OBDE merger, issuing 120.6M shares and assuming notes",
     "category": "M&A",
     "url": "https://www.sec.gov/Archives/edgar/data/1655888/000162828025001250/obdc-20250113.htm",
     "score": 22.16,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine merger completion"
   },
   {
     "ticker": "HTGC",
     "name": "HTGC",
     "form": "8-K",
     "date": "2026-02-12",
-    "headline": "Current report: reported quarterly results; disclosed a material event",
+    "headline": "Hercules declared Q4 total distribution of $0.47 including supplemental",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1280784/000128078426000010/htgc-20260210.htm",
     "score": 22.15,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Distribution declared with supplemental"
   },
   {
     "ticker": "TSLX",
     "name": "TSLX",
     "form": "8-K",
     "date": "2026-02-12",
-    "headline": "Current report: reported quarterly results; issued a Regulation FD disclosure",
+    "headline": "Sixth Street declared Q1 base dividend $0.46 plus $0.01 supplemental",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1508655/000119312526048683/tslx-20260212.htm",
     "score": 22.15,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Dividend declared as normal"
   },
   {
     "ticker": "PFLT",
     "name": "PFLT",
     "form": "8-K",
     "date": "2026-02-09",
-    "headline": "Current report: reported quarterly results",
+    "headline": "PennantPark Floating Rate reported first fiscal quarter 2025 results",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1504619/000117184326000703/f8k_020926.htm",
     "score": 22.14,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine quarterly results announcement"
   },
   {
     "ticker": "PNNT",
     "name": "PNNT",
     "form": "8-K",
     "date": "2026-02-09",
-    "headline": "Current report: reported quarterly results",
+    "headline": "PennantPark Investment reported first fiscal quarter 2025 results",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1383414/000117184326000704/f8k_020926.htm",
     "score": 22.14,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine quarterly results announcement"
   },
   {
     "ticker": "PSEC",
     "name": "PSEC",
     "form": "8-K",
     "date": "2026-02-09",
-    "headline": "Current report: reported quarterly results; issued a Regulation FD disclosure",
+    "headline": "Prospect Capital reported quarterly results and declared monthly distributions",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1287032/000128703226000047/psec-20260209.htm",
     "score": 22.14,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Dividend declared as normal"
   },
   {
     "ticker": "ARCC",
     "name": "ARCC",
     "form": "8-K",
     "date": "2026-02-04",
-    "headline": "Current report: reported quarterly results; disclosed a material event",
+    "headline": "Ares Capital declared first quarter 2026 dividend of $0.48 per share",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1287750/000128775026000004/arcc-20260204.htm",
     "score": 22.13,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Dividend declared as normal"
   },
   {
     "ticker": "GBDC",
     "name": "GBDC",
     "form": "8-K",
     "date": "2026-02-04",
-    "headline": "Current report: reported quarterly results",
+    "headline": "Golub Capital BDC posted first fiscal quarter earnings presentation",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1476765/000147676526000011/gbdc-20260204.htm",
     "score": 22.13,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine earnings presentation"
   },
   {
     "ticker": "GBDC",
     "name": "GBDC",
     "form": "8-K",
     "date": "2026-02-04",
-    "headline": "Current report: reported quarterly results",
+    "headline": "Golub Capital BDC reported first fiscal quarter 2025 results",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1476765/000147676526000010/gbdc-20260204.htm",
     "score": 22.13,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine quarterly results announcement"
   },
   {
     "ticker": "OCSL",
     "name": "OCSL",
     "form": "8-K",
     "date": "2026-02-04",
-    "headline": "Current report: reported quarterly results",
+    "headline": "Oaktree Specialty Lending furnished fiscal Q1 results for quarter ended December 31, 2025",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1414932/000119312526036643/d12028d8k.htm",
     "score": 22.13,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine quarterly results furnished"
   },
   {
     "ticker": "HTGC",
     "name": "HTGC",
     "form": "8-K",
     "date": "2026-02-03",
-    "headline": "Current report: reported quarterly results; disclosed a material event",
+    "headline": "Hercules Capital furnished preliminary unaudited estimates for quarter ended December 31, 2025",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1280784/000119312526034539/d31638d8k.htm",
     "score": 22.13,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Preliminary estimates, no figures disclosed"
   },
   {
     "ticker": "TRIN",
     "name": "TRIN",
     "form": "8-K",
     "date": "2026-02-03",
-    "headline": "Current report: reported quarterly results",
+    "headline": "Trinity Capital furnished preliminary Q4 and full-year 2025 estimates",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1786108/000119312526034463/trin-20260203.htm",
     "score": 22.13,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Preliminary estimates, no figures disclosed"
   },
   {
     "ticker": "CSWC",
     "name": "CSWC",
     "form": "8-K",
     "date": "2026-02-02",
-    "headline": "Current report: reported quarterly results; issued a Regulation FD disclosure",
+    "headline": "Capital Southwest furnished press release and investor presentation ahead of call",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/17313/000001731326000010/cswc-20260202.htm",
     "score": 22.12,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine results and presentation furnished"
   },
   {
     "ticker": "FSK",
     "name": "FSK",
     "form": "8-K",
     "date": "2026-01-21",
-    "headline": "Current report: reported quarterly results",
+    "headline": "FS KKR set February 26 conference call for Q4 and full-year 2025 results",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1422183/000110465926005404/tm263668d1_8k.htm",
     "score": 22.09,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Earnings call date announced"
   },
   {
     "ticker": "PNNT",
     "name": "PNNT",
     "form": "8-K",
     "date": "2026-01-16",
-    "headline": "Current report: reported quarterly results",
+    "headline": "PennantPark filed Form 8-K dated January 15, 2026",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1383414/000119312526015518/pnnt-20260115.htm",
     "score": 22.08,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "No adverse disclosure found"
   },
   {
     "ticker": "CSWC",
     "name": "CSWC",
     "form": "8-K",
     "date": "2026-01-15",
-    "headline": "Current report: reported quarterly results",
+    "headline": "Capital Southwest furnished preliminary estimates for quarter ended December 31, 2025",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/17313/000001731326000002/cswc-20260115.htm",
     "score": 22.08,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Preliminary estimates, no figures disclosed"
   },
   {
     "ticker": "MAIN",
     "name": "MAIN",
     "form": "8-K",
     "date": "2026-01-15",
-    "headline": "Current report: reported quarterly results",
+    "headline": "Main Street Capital furnished preliminary estimates for fiscal year ended December 31, 2025",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1396440/000139644026000005/main-20260115.htm",
     "score": 22.08,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Preliminary estimates, no figures disclosed"
   },
   {
     "ticker": "GBDC",
     "name": "GBDC",
     "form": "8-K",
     "date": "2026-01-08",
-    "headline": "Current report: reported quarterly results",
+    "headline": "Golub Capital BDC to release December quarter results on February 4",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1476765/000147676526000003/gbdc-20260108.htm",
     "score": 22.06,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Earnings date announced"
   },
   {
     "ticker": "MAIN",
     "name": "MAIN",
     "form": "8-K",
     "date": "2026-01-08",
-    "headline": "Current report: reported quarterly results",
+    "headline": "Main Street Capital furnished press release dated January 8, 2026",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1396440/000139644026000003/main-20260108.htm",
     "score": 22.06,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine press release furnished"
   },
   {
     "ticker": "OBDC",
     "name": "OBDC",
     "form": "8-K",
     "date": "2026-01-07",
-    "headline": "Current report: reported quarterly results",
+    "headline": "OBDC to report Q4 and fiscal 2025 results on February 18, 2026",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1655888/000119312526005489/d874753d8k.htm",
     "score": 22.06,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Earnings date announcement"
   },
   {
     "ticker": "BBDC",
     "name": "BBDC",
     "form": "8-K",
     "date": "2021-08-05",
-    "headline": "Current report: reported quarterly results; changed a director or senior officer",
+    "headline": "Barings BDC posts Q2 results; Chairman Freno resigns, Eric Lloyd named Chairman",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1379785/000137978521000037/earnings8-k20210805.htm",
     "score": 22.02,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Board change not from disagreement"
   },
   {
     "ticker": "TCPC",
     "name": "TCPC",
     "form": "8-K",
     "date": "2021-08-02",
-    "headline": "Current report: reported quarterly results; changed a director or senior officer",
+    "headline": "TCPC reports Q2 results and declares $0.30 third-quarter dividend",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1370755/000156459021039639/tcpc-8k_20210802.htm",
     "score": 22.01,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine results and dividend"
   },
   {
     "ticker": "EQS",
     "name": "EQS",
     "form": "8-K",
     "date": "2024-11-07",
-    "headline": "Current report: faces delisting or a listing-standard issue",
+    "headline": "Equus receives NYSE non-compliance notice after Chairman Knauss dies",
     "category": "Credit event",
     "url": "https://www.sec.gov/Archives/edgar/data/878932/000171254324000065/f8k_equus1112024.htm",
     "score": 21.99,
-    "llm": false
+    "llm": false,
+    "signal": "watch",
+    "signal_note": "NYSE listing-standard deficiency notice"
   },
   {
     "ticker": "ICMB",
     "name": "ICMB",
     "form": "8-K",
     "date": "2023-09-20",
-    "headline": "Current report: reported quarterly results; changed a director or senior officer",
+    "headline": "Investcorp Credit BDC posts preliminary FY2023 results, appoints Suhail Shaikh director",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1578348/000119312523238617/d519420d8k.htm",
     "score": 21.96,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Results and director appointment"
   },
   {
     "ticker": "PFLT",
     "name": "PFLT",
     "form": "8-K",
     "date": "2025-11-24",
-    "headline": "Current report: reported quarterly results",
+    "headline": "PennantPark Floating Rate reports Q4 and fiscal 2025 results",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1504619/000117184325007542/f8k_112425.htm",
     "score": 21.95,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine quarterly results"
   },
   {
     "ticker": "PNNT",
     "name": "PNNT",
     "form": "8-K",
     "date": "2025-11-24",
-    "headline": "Current report: reported quarterly results",
+    "headline": "PennantPark Investment reports Q4 and fiscal 2025 results",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1383414/000117184325007541/f8k_112425.htm",
     "score": 21.95,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine quarterly results"
   },
   {
     "ticker": "GBDC",
     "name": "GBDC",
     "form": "8-K",
     "date": "2025-11-18",
-    "headline": "Current report: reported quarterly results",
+    "headline": "Golub Capital BDC posts earnings presentation for Q4 fiscal 2025",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1476765/000147676525000095/gbdc-20251118.htm",
     "score": 21.94,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Earnings presentation furnished"
   },
   {
     "ticker": "GBDC",
     "name": "GBDC",
     "form": "8-K",
     "date": "2025-11-18",
-    "headline": "Current report: reported quarterly results",
+    "headline": "Golub Capital BDC reports fourth fiscal quarter 2025 results",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1476765/000147676525000094/gbdc-20251118.htm",
     "score": 21.94,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine quarterly results"
   },
   {
     "ticker": "OCSL",
     "name": "OCSL",
     "form": "8-K",
     "date": "2025-11-18",
-    "headline": "Current report: reported quarterly results",
+    "headline": "Oaktree Specialty Lending reports fiscal Q4 and full-year 2025 results",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1414932/000119312525285254/d24971d8k.htm",
     "score": 21.94,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine quarterly results"
   },
   {
     "ticker": "CCAP",
     "name": "CCAP",
     "form": "8-K",
     "date": "2025-11-12",
-    "headline": "Current report: reported quarterly results",
+    "headline": "Crescent Capital BDC reported Q3 2025 results ended September 30",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1633336/000119312525277614/ccap-20251112.htm",
     "score": 21.92,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine quarterly results"
   },
   {
     "ticker": "BXSL",
     "name": "BXSL",
     "form": "8-K",
     "date": "2025-11-10",
-    "headline": "Current report: reported quarterly results",
+    "headline": "Blackstone Secured Lending reported Q3 2025 results with detailed presentation",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1736035/000121390025107817/ea0264431-01_8k.htm",
     "score": 21.91,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine quarterly results"
   },
   {
     "ticker": "MAIN",
     "name": "MAIN",
     "form": "8-K",
     "date": "2025-11-07",
-    "headline": "Current report: reported quarterly results",
+    "headline": "Main Street Capital issued Q3 2025 earnings press release",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1396440/000139644025000179/main-20251106.htm",
     "score": 21.91,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine quarterly results"
   },
   {
     "ticker": "BBDC",
     "name": "BBDC",
     "form": "8-K",
     "date": "2025-11-06",
-    "headline": "Current report: reported quarterly results; issued a Regulation FD disclosure",
+    "headline": "Barings BDC reported Q3 2025 results with supplemental presentation",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1379785/000137978525000051/bbdc-20251106.htm",
     "score": 21.91,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine quarterly results"
   },
   {
     "ticker": "FDUS",
     "name": "FDUS",
     "form": "8-K",
     "date": "2025-11-06",
-    "headline": "Current report: reported quarterly results; issued a Regulation FD disclosure",
+    "headline": "Fidus declared $0.43 base plus $0.07 supplemental dividend with Q3 results",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1513363/000119312525269480/fdus-20251106.htm",
     "score": 21.91,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Dividend declared as normal"
   },
   {
     "ticker": "GSBD",
     "name": "GSBD",
     "form": "8-K",
     "date": "2025-11-06",
-    "headline": "Current report: reported quarterly results; issued a Regulation FD disclosure",
+    "headline": "Goldman Sachs BDC declared $0.32 base plus $0.04 supplemental dividend",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1572694/000119312525270134/d79700d8k.htm",
     "score": 21.91,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Dividend declared as normal"
   },
   {
     "ticker": "PSEC",
     "name": "PSEC",
     "form": "8-K",
     "date": "2025-11-06",
-    "headline": "Current report: reported quarterly results; issued a Regulation FD disclosure",
+    "headline": "Prospect Capital declared monthly common and preferred distributions with Q3 results",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1287032/000128703225000342/psec-20251106.htm",
     "score": 21.91,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Dividend declared as normal"
   },
   {
     "ticker": "TCPC",
     "name": "TCPC",
     "form": "8-K",
     "date": "2025-11-06",
-    "headline": "Current report: reported quarterly results; issued a Regulation FD disclosure",
+    "headline": "BlackRock TCP Capital declared $0.25 fourth-quarter dividend with Q3 results",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1370755/000119312525268140/tcpc-20251106.htm",
     "score": 21.91,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Dividend declared as normal"
   },
   {
     "ticker": "FSK",
     "name": "FSK",
     "form": "8-K",
     "date": "2025-11-05",
-    "headline": "Current report: reported quarterly results; issued a Regulation FD disclosure",
+    "headline": "FS KKR Capital reported Q3 2025 results; $0.70 distribution previously declared",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1422183/000110465925107029/tm2530215d1_8k.htm",
     "score": 21.9,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine quarterly results"
   },
   {
     "ticker": "OBDC",
     "name": "OBDC",
     "form": "8-K",
     "date": "2025-11-05",
-    "headline": "Current report: reported quarterly results",
+    "headline": "Blue Owl Capital reported Q3 2025 results ended September 30",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1655888/000119312525267192/d83755d8k.htm",
     "score": 21.9,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine quarterly results"
   },
   {
     "ticker": "TRIN",
     "name": "TRIN",
     "form": "8-K",
     "date": "2025-11-05",
-    "headline": "Current report: reported quarterly results; issued a Regulation FD disclosure",
+    "headline": "Trinity Capital reported third quarter 2025 financial results",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1786108/000119312525265801/trin-20251105.htm",
     "score": 21.9,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine quarterly results"
   },
   {
     "ticker": "CGBD",
     "name": "CGBD",
     "form": "8-K",
     "date": "2025-11-04",
-    "headline": "Current report: reported quarterly results; issued a Regulation FD disclosure",
+    "headline": "Carlyle Secured Lending posted Q3 results, declared $0.40 Q4 dividend",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420625000078/csl-20251104.htm",
     "score": 21.9,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine results and dividend"
   },
   {
     "ticker": "SLRC",
     "name": "SLRC",
     "form": "8-K",
     "date": "2025-11-04",
-    "headline": "Current report: reported quarterly results",
+    "headline": "SLR Investment Corp reported third quarter 2025 financial results",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1418076/000117184325006978/f8k_110425.htm",
     "score": 21.9,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine quarterly results"
   },
   {
     "ticker": "CSWC",
     "name": "CSWC",
     "form": "8-K",
     "date": "2025-11-03",
-    "headline": "Current report: reported quarterly results; issued a Regulation FD disclosure",
+    "headline": "Capital Southwest issued third quarter 2025 earnings release",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/17313/000001731325000145/cswc-20251103.htm",
     "score": 21.9,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine quarterly results"
   },
   {
     "ticker": "NMFC",
     "name": "NMFC",
     "form": "8-K",
     "date": "2025-11-03",
-    "headline": "Current report: reported quarterly results; issued a Regulation FD disclosure",
+    "headline": "New Mountain Finance posted Q3 results, declared $0.32 distribution",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1496099/000149609925000034/nmfc-20251103.htm",
     "score": 21.9,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine results and distribution"
   },
   {
     "ticker": "HTGC",
     "name": "HTGC",
     "form": "8-K",
     "date": "2025-10-30",
-    "headline": "Current report: reported quarterly results; disclosed a material event",
+    "headline": "Hercules Capital reported Q3 earnings, declared $0.47 total distribution",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1280784/000128078425000042/htgc-20251028.htm",
     "score": 21.89,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine results and distribution"
   },
   {
     "ticker": "ARCC",
     "name": "ARCC",
     "form": "8-K",
     "date": "2025-10-28",
-    "headline": "Current report: reported quarterly results; disclosed a material event",
+    "headline": "Ares Capital posted Q3 results, declared $0.48 Q4 dividend",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1287750/000128775025000044/arcc-20251028.htm",
     "score": 21.88,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine results and dividend"
   },
   {
     "ticker": "CSWC",
     "name": "CSWC",
     "form": "8-K",
     "date": "2025-10-15",
-    "headline": "Current report: reported quarterly results",
+    "headline": "Capital Southwest released preliminary Q3 fiscal quarter estimates",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/17313/000001731325000138/cswc-20251015.htm",
     "score": 21.85,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine preliminary estimates"
   },
   {
     "ticker": "MAIN",
     "name": "MAIN",
     "form": "8-K",
     "date": "2025-10-14",
-    "headline": "Current report: reported quarterly results",
+    "headline": "Main Street Capital released preliminary Q3 fiscal quarter estimates",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1396440/000139644025000167/main-20251014.htm",
     "score": 21.85,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine preliminary estimates"
   },
   {
     "ticker": "MAIN",
     "name": "MAIN",
     "form": "8-K",
     "date": "2025-10-09",
-    "headline": "Current report: reported quarterly results",
+    "headline": "Main Street Capital issued press release for third quarter",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1396440/000139644025000165/main-20251009.htm",
     "score": 21.84,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine quarterly results"
   },
   {
     "ticker": "FSK",
     "name": "FSK",
     "form": "8-K",
     "date": "2025-10-08",
-    "headline": "Current report: reported quarterly results; issued a Regulation FD disclosure",
+    "headline": "FSK declared $0.70 distribution and set November 6 Q3 earnings call",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1422183/000110465925097997/tm2528248d1_8k.htm",
     "score": 21.83,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine distribution and call schedule"
   },
   {
     "ticker": "GBDC",
     "name": "GBDC",
     "form": "8-K",
     "date": "2025-10-07",
-    "headline": "Current report: reported quarterly results",
+    "headline": "GBDC to report fiscal fourth-quarter and full-year results November 18",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1476765/000147676525000080/gbdc-20251007.htm",
     "score": 21.83,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine earnings date announcement"
   },
   {
     "ticker": "OBDC",
     "name": "OBDC",
     "form": "8-K",
     "date": "2025-10-01",
-    "headline": "Current report: reported quarterly results",
+    "headline": "Blue Owl Capital to release third-quarter results November 5",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1655888/000119312525225925/d29031d8k.htm",
     "score": 21.81,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine earnings date announcement"
   },
   {
     "ticker": "PSEC",
     "name": "PSEC",
     "form": "8-K",
     "date": "2025-08-27",
-    "headline": "Current report: reported quarterly results; issued a Regulation FD disclosure",
+    "headline": "Prospect Capital reported fiscal-year results and declared monthly distributions",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1287032/000128703225000235/psec-20250827.htm",
     "score": 21.73,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine results and dividend declarations"
   },
   {
     "ticker": "CCAP",
     "name": "CCAP",
     "form": "8-K",
     "date": "2025-08-13",
-    "headline": "Current report: reported quarterly results",
+    "headline": "Crescent Capital BDC reported second-quarter results ended June 30",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1633336/000095017025108046/ccap-20250813.htm",
     "score": 21.69,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine quarterly results"
   },
   {
     "ticker": "KBDC",
     "name": "KBDC",
     "form": "8-K",
     "date": "2025-08-11",
-    "headline": "Current report: reported quarterly results; issued a Regulation FD disclosure",
+    "headline": "Kayne Anderson BDC reported Q2 results and declared $0.40 dividend",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390025074348/ea0252384-8k_kayne.htm",
     "score": 21.69,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine results and dividend declaration"
   },
   {
     "ticker": "PFLT",
     "name": "PFLT",
     "form": "8-K",
     "date": "2025-08-11",
-    "headline": "Current report: reported quarterly results",
+    "headline": "PennantPark Floating Rate reported fiscal third-quarter results ended June 30",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1504619/000117184325005284/f8k_081125.htm",
     "score": 21.69,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine quarterly results"
   },
   {
     "ticker": "PNNT",
     "name": "PNNT",
     "form": "8-K",
     "date": "2025-08-11",
-    "headline": "Current report: reported quarterly results",
+    "headline": "PennantPark Investment reported third-quarter results ended June 30",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1383414/000117184325005285/f8k_081125.htm",
     "score": 21.69,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine quarterly results"
   },
   {
     "ticker": "BBDC",
     "name": "BBDC",
     "form": "8-K",
     "date": "2025-08-07",
-    "headline": "Current report: reported quarterly results; issued a Regulation FD disclosure",
+    "headline": "Barings BDC reported second-quarter results ended June 30",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1379785/000137978525000034/bbdc-20250807.htm",
     "score": 21.68,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine quarterly results"
   },
   {
     "ticker": "FDUS",
     "name": "FDUS",
     "form": "8-K",
     "date": "2025-08-07",
-    "headline": "Current report: reported quarterly results; issued a Regulation FD disclosure",
+    "headline": "Fidus Investment declared $0.43 base plus $0.14 supplemental dividend",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1513363/000095017025105007/fdus-20250807.htm",
     "score": 21.68,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine results and dividend declaration"
   },
   {
     "ticker": "GSBD",
     "name": "GSBD",
     "form": "8-K",
     "date": "2025-08-07",
-    "headline": "Current report: reported quarterly results; issued a Regulation FD disclosure",
+    "headline": "GSBD posted Q2 results and declared $0.32 base plus $0.16 special dividend",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1572694/000119312525175572/d34499d8k.htm",
     "score": 21.68,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine quarterly results and dividend"
   },
   {
     "ticker": "MAIN",
     "name": "MAIN",
     "form": "8-K",
     "date": "2025-08-07",
-    "headline": "Current report: reported quarterly results",
+    "headline": "Main Street Capital released second quarter 2025 financial results",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1396440/000139644025000096/main-20250807.htm",
     "score": 21.68,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine quarterly results"
   },
   {
     "ticker": "TCPC",
     "name": "TCPC",
     "form": "8-K",
     "date": "2025-08-07",
-    "headline": "Current report: reported quarterly results; issued a Regulation FD disclosure",
+    "headline": "TCPC posted Q2 results and declared $0.25 regular plus $0.04 special dividend",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1370755/000095017025104595/tcpc-20250807.htm",
     "score": 21.68,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine quarterly results and dividend"
   },
   {
     "ticker": "BXSL",
     "name": "BXSL",
     "form": "8-K",
     "date": "2025-08-06",
-    "headline": "Current report: reported quarterly results",
+    "headline": "Blackstone Secured Lending released second quarter 2025 financial results",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1736035/000121390025072290/ea0251760-01_8k.htm",
     "score": 21.68,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine quarterly results"
   },
   {
     "ticker": "CSWC",
     "name": "CSWC",
     "form": "8-K",
     "date": "2025-08-06",
-    "headline": "Current report: reported quarterly results; issued a Regulation FD disclosure",
+    "headline": "Capital Southwest issued earnings press release ahead of August 7 call",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/17313/000001731325000070/cswc-20250806.htm",
     "score": 21.68,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine quarterly results"
   },
   {
     "ticker": "FSK",
     "name": "FSK",
     "form": "8-K",
     "date": "2025-08-06",
-    "headline": "Current report: reported quarterly results; issued a Regulation FD disclosure",
+    "headline": "FS KKR posted Q2 results and declared $0.70 per share distribution",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1422183/000110465925074744/tm2522661d1_8k.htm",
     "score": 21.68,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine quarterly results and distribution"
   },
   {
     "ticker": "OBDC",
     "name": "OBDC",
     "form": "8-K",
     "date": "2025-08-06",
-    "headline": "Current report: reported quarterly results",
+    "headline": "Blue Owl Capital released second quarter 2025 financial results",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1655888/000119312525174536/d64457d8k.htm",
     "score": 21.68,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine quarterly results"
   },
   {
     "ticker": "TRIN",
     "name": "TRIN",
     "form": "8-K",
     "date": "2025-08-06",
-    "headline": "Current report: reported quarterly results; issued a Regulation FD disclosure",
+    "headline": "Trinity Capital released second quarter 2025 financial results",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1786108/000095017025103546/trin-20250806.htm",
     "score": 21.68,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine quarterly results"
   },
   {
     "ticker": "CGBD",
     "name": "CGBD",
     "form": "8-K",
     "date": "2025-08-05",
-    "headline": "Current report: reported quarterly results; issued a Regulation FD disclosure",
+    "headline": "Carlyle Secured Lending posted Q2 results and declared $0.40 quarterly dividend",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420625000065/csl-20250805.htm",
     "score": 21.67,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine quarterly results and dividend"
   },
   {
     "ticker": "OCSL",
     "name": "OCSL",
     "form": "8-K",
     "date": "2025-08-05",
-    "headline": "Current report: reported quarterly results",
+    "headline": "Oaktree Specialty Lending released fiscal third quarter 2025 results",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1414932/000119312525172986/d50423d8k.htm",
     "score": 21.67,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine quarterly results"
   },
   {
     "ticker": "SLRC",
     "name": "SLRC",
     "form": "8-K",
     "date": "2025-08-05",
-    "headline": "Current report: reported quarterly results",
+    "headline": "SLR Investment reported second quarter results for June 30, 2025",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1418076/000117184325005052/f8k_080525.htm",
     "score": 21.67,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine quarterly results"
   },
   {
     "ticker": "GBDC",
     "name": "GBDC",
     "form": "8-K",
     "date": "2025-08-04",
-    "headline": "Current report: reported quarterly results",
+    "headline": "Golub Capital BDC posted fiscal third quarter earnings presentation",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1476765/000147676525000075/gbdc-20250804.htm",
     "score": 21.67,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine earnings presentation"
   },
   {
     "ticker": "GBDC",
     "name": "GBDC",
     "form": "8-K",
     "date": "2025-08-04",
-    "headline": "Current report: reported quarterly results",
+    "headline": "Golub Capital BDC reported fiscal third quarter results for June 30, 2025",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1476765/000147676525000074/gbdc-20250804.htm",
     "score": 21.67,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine quarterly results"
   },
   {
     "ticker": "NMFC",
     "name": "NMFC",
     "form": "8-K",
     "date": "2025-08-04",
-    "headline": "Current report: reported quarterly results; issued a Regulation FD disclosure",
+    "headline": "New Mountain Finance declared $0.32 third quarter distribution with Q2 results",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1496099/000149609925000025/nmfc-20250804.htm",
     "score": 21.67,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Distribution declared as normal"
   },
   {
     "ticker": "HTGC",
     "name": "HTGC",
     "form": "8-K",
     "date": "2025-07-31",
-    "headline": "Current report: reported quarterly results; disclosed a material event",
+    "headline": "Hercules Capital declared $0.47 quarterly distribution alongside Q2 earnings",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1280784/000128078425000033/htgc-20250729.htm",
     "score": 21.66,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Distribution declared as normal"
   },
   {
     "ticker": "TSLX",
     "name": "TSLX",
     "form": "8-K",
     "date": "2025-07-30",
-    "headline": "Current report: reported quarterly results; issued a Regulation FD disclosure",
+    "headline": "Sixth Street Specialty Lending declared $0.46 base plus $0.05 supplemental dividend",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1508655/000095017025100212/tslx-20250730.htm",
     "score": 21.66,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Dividend declared as normal"
   },
   {
     "ticker": "ARCC",
     "name": "ARCC",
     "form": "8-K",
     "date": "2025-07-29",
-    "headline": "Current report: reported quarterly results; disclosed a material event",
+    "headline": "Ares Capital declared $0.48 third quarter dividend with Q2 results",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1287750/000128775025000036/arcc-20250729.htm",
     "score": 21.66,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Dividend declared as normal"
   },
   {
     "ticker": "MAIN",
     "name": "MAIN",
     "form": "8-K",
     "date": "2025-07-17",
-    "headline": "Current report: reported quarterly results",
+    "headline": "Main Street Capital released preliminary second quarter 2025 estimates",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1396440/000139644025000092/main-20250717.htm",
     "score": 21.62,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine preliminary results"
   },
   {
     "ticker": "CSWC",
     "name": "CSWC",
     "form": "8-K",
     "date": "2025-07-15",
-    "headline": "Current report: reported quarterly results",
+    "headline": "Capital Southwest released preliminary second quarter 2025 estimates",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/17313/000001731325000063/cswc-20250715.htm",
     "score": 21.62,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine preliminary results"
   },
   {
     "ticker": "FSK",
     "name": "FSK",
     "form": "8-K",
     "date": "2025-07-10",
-    "headline": "Current report: reported quarterly results",
+    "headline": "FS KKR Capital set August 7 call for second quarter results",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1422183/000110465925067008/tm2520266d1_8k.htm",
     "score": 21.61,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine conference call notice"
   },
   {
     "ticker": "MAIN",
     "name": "MAIN",
     "form": "8-K",
     "date": "2025-07-10",
-    "headline": "Current report: reported quarterly results",
+    "headline": "Main Street issued press release on results of operations and financial condition",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1396440/000139644025000090/main-20250710.htm",
     "score": 21.61,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine earnings press release"
   },
   {
     "ticker": "PFLT",
     "name": "PFLT",
     "form": "8-K",
     "date": "2022-03-30",
-    "headline": "Current report: faces delisting or a listing-standard issue; issued a Regulation FD disclosure",
+    "headline": "PennantPark Floating Rate moving listing from Nasdaq to NYSE, symbol unchanged",
     "category": "Credit event",
     "url": "https://www.sec.gov/Archives/edgar/data/1504619/000117184322002185/f8k_033022.htm",
     "score": 21.61,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Voluntary listing transfer to NYSE"
   },
   {
     "ticker": "PNNT",
     "name": "PNNT",
     "form": "8-K",
     "date": "2022-03-30",
-    "headline": "Current report: faces delisting or a listing-standard issue; issued a Regulation FD disclosure",
+    "headline": "PennantPark Investment moving listing from Nasdaq to NYSE, symbol unchanged",
     "category": "Credit event",
     "url": "https://www.sec.gov/Archives/edgar/data/1383414/000117184322002184/f8k_033022.htm",
     "score": 21.61,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Voluntary listing transfer to NYSE"
   },
   {
     "ticker": "GBDC",
     "name": "GBDC",
     "form": "8-K",
     "date": "2025-07-07",
-    "headline": "Current report: reported quarterly results",
+    "headline": "Golub Capital BDC to report June-quarter results on August 4",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1476765/000147676525000066/gbdc-20250707.htm",
     "score": 21.6,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Earnings date announcement"
   },
   {
     "ticker": "GBDC",
     "name": "GBDC",
     "form": "8-K",
     "date": "2024-06-03",
-    "headline": "Current report: entered a material agreement; terminated a material agreement",
+    "headline": "Golub Capital BDC closed GBDC 3 merger, cut incentive fee to 15%",
     "category": "M&A",
     "url": "https://www.sec.gov/Archives/edgar/data/1476765/000110465924067549/tm2416178d1_8k.htm",
     "score": 21.6,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Merger completed, lower incentive fee"
   },
   {
     "ticker": "OBDC",
     "name": "OBDC",
     "form": "8-K",
     "date": "2025-07-01",
-    "headline": "Current report: reported quarterly results",
+    "headline": "Blue Owl Capital to report second-quarter results on August 6",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1655888/000119312525153464/d493672d8k.htm",
     "score": 21.59,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Earnings date announcement"
   },
   {
     "ticker": "GBDC",
     "name": "GBDC",
     "form": "8-K",
     "date": "2021-02-08",
-    "headline": "Current report: reported quarterly results; changed a director or senior officer",
+    "headline": "Golub Capital BDC reported fiscal Q1 results, elected Lofton Holder to board",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1476765/000147676521000021/gbdc123120earningspr-8k.htm",
     "score": 21.57,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine results and board election"
   },
   {
     "ticker": "KBDC",
     "name": "KBDC",
     "form": "8-K",
     "date": "2026-06-29",
-    "headline": "Current report: changed a director or senior officer",
+    "headline": "Interested director Albert Rabil III resigned from Kayne Anderson BDC board",
     "category": "Personnel",
     "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390026073166/ea0296326-8k_kayne.htm",
     "score": 21.49,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Director resignation, no disagreement"
   },
   {
     "ticker": "AFCG",
     "name": "AFCG",
     "form": "8-K",
     "date": "2023-03-07",
-    "headline": "Current report: reported quarterly results; changed a director or senior officer",
+    "headline": "AFC Gamma reported full-year results and named Robyn Tannenbaum President",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1822523/000182252323000007/afcg-20230307.htm",
     "score": 21.47,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Results and officer appointment"
   },
   {
     "ticker": "BXSL",
     "name": "BXSL",
     "form": "8-K",
     "date": "2026-06-18",
-    "headline": "Current report: changed a director or senior officer",
+    "headline": "Blackstone Secured Lending COO Katherine Rubenstein departed her role",
     "category": "Personnel",
     "url": "https://www.sec.gov/Archives/edgar/data/1736035/000121390026070092/ea029494501-8k_blackstone.htm",
     "score": 21.46,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Officer departure, no disagreement"
   },
   {
     "ticker": "BCRED",
     "name": "BCRED",
     "form": "8-K",
     "date": "2026-06-18",
-    "headline": "Current report: changed a director or senior officer",
+    "headline": "COO Katherine Rubenstein departed to pursue other opportunities",
     "category": "Personnel",
     "url": "https://www.sec.gov/Archives/edgar/data/1803498/000121390026070098/ea029494301-8k_blackstone.htm",
     "score": 21.46,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine officer departure, no disagreement"
   },
   {
     "ticker": "CCAP",
     "name": "CCAP",
     "form": "8-K",
     "date": "2025-05-14",
-    "headline": "Current report: reported quarterly results",
+    "headline": "Reported Q1 2025 financial results for quarter ended March 31",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1633336/000095017025071388/ccap-20250514.htm",
     "score": 21.46,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine quarterly results"
   },
   {
     "ticker": "CSWC",
     "name": "CSWC",
     "form": "8-K",
     "date": "2025-05-14",
-    "headline": "Current report: reported quarterly results; issued a Regulation FD disclosure",
+    "headline": "Issued Q1 2025 earnings press release and investor presentation",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/17313/000001731325000036/cswc-20250514.htm",
     "score": 21.46,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine quarterly results"
   },
   {
     "ticker": "KBDC",
     "name": "KBDC",
     "form": "8-K",
     "date": "2025-05-12",
-    "headline": "Current report: reported quarterly results; issued a Regulation FD disclosure",
+    "headline": "Reported Q1 2025 results and declared $0.40 quarterly dividend",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390025042074/ea0241749-8k_kayne.htm",
     "score": 21.46,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Dividend declared as normal"
   },
   {
     "ticker": "PFLT",
     "name": "PFLT",
     "form": "8-K",
     "date": "2025-05-12",
-    "headline": "Current report: reported quarterly results",
+    "headline": "Reported fiscal Q2 2025 results for quarter ended March 31",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1504619/000117184325003083/f8k_051225.htm",
     "score": 21.46,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine quarterly results"
   },
   {
     "ticker": "PNNT",
     "name": "PNNT",
     "form": "8-K",
     "date": "2025-05-12",
-    "headline": "Current report: reported quarterly results",
+    "headline": "Reported fiscal Q2 2025 results for quarter ended March 31",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1383414/000117184325003085/f8k_051225.htm",
     "score": 21.46,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine quarterly results"
   },
   {
     "ticker": "TRIN",
     "name": "TRIN",
     "form": "8-K",
     "date": "2026-06-12",
-    "headline": "Current report: changed a director or senior officer",
+    "headline": "Annual meeting re-elected directors and expanded director stock plan",
     "category": "Personnel",
     "url": "https://www.sec.gov/Archives/edgar/data/1786108/000119312526269551/trin-20260610.htm",
     "score": 21.45,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine governance and voting results"
   },
   {
     "ticker": "PSEC",
     "name": "PSEC",
     "form": "8-K",
     "date": "2025-05-09",
-    "headline": "Current report: reported quarterly results; issued a Regulation FD disclosure",
+    "headline": "Reported fiscal Q3 results and declared monthly common and preferred distributions",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1287032/000128703225000117/psec-20250509.htm",
     "score": 21.45,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Distributions declared as normal"
   },
   {
     "ticker": "BBDC",
     "name": "BBDC",
     "form": "8-K",
     "date": "2025-05-08",
-    "headline": "Current report: reported quarterly results; issued a Regulation FD disclosure",
+    "headline": "Reported Q1 2025 results; stockholders rejected below-NAV share issuance proposal",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1379785/000137978525000026/bbdc-20250508.htm",
     "score": 21.45,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine results and voting outcome"
   },
   {
     "ticker": "FDUS",
     "name": "FDUS",
     "form": "8-K",
     "date": "2025-05-08",
-    "headline": "Current report: reported quarterly results; issued a Regulation FD disclosure",
+    "headline": "Reported Q1 2025 results and declared $0.43 base plus $0.11 supplemental dividend",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1513363/000095017025066922/fdus-20250508.htm",
     "score": 21.45,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Dividend declared as normal"
   },
   {
     "ticker": "GSBD",
     "name": "GSBD",
     "form": "8-K",
     "date": "2025-05-08",
-    "headline": "Current report: reported quarterly results; issued a Regulation FD disclosure",
+    "headline": "GSBD declared $0.32 Q2 distribution plus $0.16 special and $0.05 supplemental",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1572694/000119312525116056/d795862d8k.htm",
     "score": 21.45,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine Q1 results and distributions"
   },
   {
     "ticker": "MAIN",
     "name": "MAIN",
     "form": "8-K",
     "date": "2025-05-08",
-    "headline": "Current report: reported quarterly results",
+    "headline": "Main Street Capital reported first quarter 2025 financial results",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1396440/000139644025000064/main-20250508.htm",
     "score": 21.45,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine quarterly results"
   },
   {
     "ticker": "TCPC",
     "name": "TCPC",
     "form": "8-K",
     "date": "2025-05-08",
-    "headline": "Current report: reported quarterly results; issued a Regulation FD disclosure",
+    "headline": "BlackRock TCP Capital declared $0.25 Q2 dividend plus $0.04 special",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1370755/000095017025066428/tcpc-20250508.htm",
     "score": 21.45,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine Q1 results and dividends"
   },
   {
     "ticker": "BXSL",
     "name": "BXSL",
     "form": "8-K",
     "date": "2025-05-07",
-    "headline": "Current report: reported quarterly results",
+    "headline": "Blackstone Secured Lending reported first quarter 2025 financial results",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1736035/000121390025040378/ea0240963-01.htm",
     "score": 21.45,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine quarterly results"
   },
   {
     "ticker": "FSK",
     "name": "FSK",
     "form": "8-K",
     "date": "2025-05-07",
-    "headline": "Current report: reported quarterly results; issued a Regulation FD disclosure",
+    "headline": "FS KKR Capital declared $0.70 per share distribution with Q1 results",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1422183/000110465925045589/tm2514170d1_8k.htm",
     "score": 21.45,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine Q1 results and distribution"
   },
   {
     "ticker": "OBDC",
     "name": "OBDC",
     "form": "8-K",
     "date": "2025-05-07",
-    "headline": "Current report: reported quarterly results",
+    "headline": "Blue Owl Capital reported first quarter 2025 financial results",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1655888/000119312525114945/d945226d8k.htm",
     "score": 21.45,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine quarterly results"
   },
   {
     "ticker": "SLRC",
     "name": "SLRC",
     "form": "8-K",
     "date": "2025-05-07",
-    "headline": "Current report: reported quarterly results",
+    "headline": "SLR Investment Corp reported first quarter 2025 financial results",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1418076/000117184325002905/f8k_050725.htm",
     "score": 21.45,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine quarterly results"
   },
   {
     "ticker": "TRIN",
     "name": "TRIN",
     "form": "8-K",
     "date": "2025-05-07",
-    "headline": "Current report: reported quarterly results; issued a Regulation FD disclosure",
+    "headline": "Trinity Capital reported first quarter 2025 financial results",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1786108/000095017025065026/trin-20250507.htm",
     "score": 21.45,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine quarterly results"
   },
   {
     "ticker": "CGBD",
     "name": "CGBD",
     "form": "8-K",
     "date": "2025-05-06",
-    "headline": "Current report: reported quarterly results; issued a Regulation FD disclosure",
+    "headline": "Carlyle Secured Lending declared $0.40 Q2 base dividend with Q1 results",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420625000046/csl-20250506.htm",
     "score": 21.45,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine Q1 results and dividend"
   },
   {
     "ticker": "GBDC",
     "name": "GBDC",
     "form": "8-K",
     "date": "2025-05-05",
-    "headline": "Current report: reported quarterly results",
+    "headline": "Golub Capital BDC posted earnings presentation for fiscal Q2 ended March 31",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1476765/000147676525000038/gbdc-20250505.htm",
     "score": 21.44,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine quarterly earnings presentation"
   },
   {
     "ticker": "GBDC",
     "name": "GBDC",
     "form": "8-K",
     "date": "2025-05-05",
-    "headline": "Current report: reported quarterly results",
+    "headline": "Golub Capital BDC reported fiscal Q2 results for quarter ended March 31, 2025",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1476765/000147676525000037/gbdc-20250505.htm",
     "score": 21.44,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine quarterly earnings release"
   },
   {
     "ticker": "NMFC",
     "name": "NMFC",
     "form": "8-K",
     "date": "2025-05-05",
-    "headline": "Current report: reported quarterly results; issued a Regulation FD disclosure",
+    "headline": "New Mountain Finance posted Q1 results and declared $0.32 second-quarter distribution",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1496099/000149609925000017/nmfc-20250505.htm",
     "score": 21.44,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Quarterly results, dividend declared normally"
   },
   {
     "ticker": "HTGC",
     "name": "HTGC",
     "form": "8-K",
     "date": "2025-05-01",
-    "headline": "Current report: reported quarterly results; disclosed a material event",
+    "headline": "Hercules Capital reported Q1 earnings and declared $0.47 per share distribution",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1280784/000128078425000023/htgc-20250429.htm",
     "score": 21.43,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Quarterly results, dividend declared normally"
   },
   {
     "ticker": "OCSL",
     "name": "OCSL",
     "form": "8-K",
     "date": "2025-05-01",
-    "headline": "Current report: reported quarterly results",
+    "headline": "Oaktree Specialty Lending reported fiscal Q2 results for quarter ended March 31, 2025",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1414932/000119312525108562/d921018d8k.htm",
     "score": 21.43,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine quarterly earnings release"
   },
   {
     "ticker": "TSLX",
     "name": "TSLX",
     "form": "8-K",
     "date": "2025-04-30",
-    "headline": "Current report: reported quarterly results; issued a Regulation FD disclosure",
+    "headline": "Sixth Street Specialty Lending declared $0.46 base plus $0.06 supplemental dividend with Q1 results",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1508655/000095017025061026/tslx-20250430.htm",
     "score": 21.43,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Quarterly results, dividends declared normally"
   },
   {
     "ticker": "ARCC",
     "name": "ARCC",
     "form": "8-K",
     "date": "2025-04-29",
-    "headline": "Current report: reported quarterly results; disclosed a material event",
+    "headline": "Ares Capital reported Q1 results and declared $0.48 second-quarter dividend",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1287750/000128775025000018/arcc-20250429.htm",
     "score": 21.43,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Quarterly results, dividend declared normally"
   },
   {
     "ticker": "PSEC",
     "name": "PSEC",
     "form": "8-K",
     "date": "2023-02-13",
-    "headline": "Current report: entered a material agreement; modified security holders' rights",
+    "headline": "Prospect Capital raised preferred stock offering size to $1.8 billion",
     "category": "M&A",
     "url": "https://www.sec.gov/Archives/edgar/data/1287032/000128703223000058/psec-20230210.htm",
     "score": 21.41,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine preferred offering expansion"
   },
   {
     "ticker": "MAIN",
     "name": "MAIN",
     "form": "8-K",
     "date": "2025-04-16",
-    "headline": "Current report: reported quarterly results",
+    "headline": "Main Street Capital issued preliminary estimates for quarter ended March 31, 2025",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1396440/000139644025000045/main-20250416.htm",
     "score": 21.39,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Preliminary quarterly estimates released"
   },
   {
     "ticker": "CSWC",
     "name": "CSWC",
     "form": "8-K",
     "date": "2025-04-14",
-    "headline": "Current report: reported quarterly results",
+    "headline": "Capital Southwest issued preliminary estimates for quarter ended March 31, 2025",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/17313/000001731325000029/cswc-20250414.htm",
     "score": 21.39,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Preliminary quarterly estimates released"
   },
   {
     "ticker": "FSK",
     "name": "FSK",
     "form": "8-K",
     "date": "2025-04-10",
-    "headline": "Current report: reported quarterly results",
+    "headline": "FS KKR Capital set May 8 conference call for first quarter 2025 results",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1422183/000110465925033778/tm2511993d1_8k.htm",
     "score": 21.38,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Earnings call date announcement"
   },
   {
     "ticker": "MAIN",
     "name": "MAIN",
     "form": "8-K",
     "date": "2025-04-10",
-    "headline": "Current report: reported quarterly results",
+    "headline": "Main Street issued press release on quarterly results of operations",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1396440/000139644025000042/main-20250410.htm",
     "score": 21.38,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine earnings press release"
   },
   {
     "ticker": "GBDC",
     "name": "GBDC",
     "form": "8-K",
     "date": "2025-04-04",
-    "headline": "Current report: reported quarterly results",
+    "headline": "Golub Capital to report Q1 results after market close May 5",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1476765/000147676525000026/gbdc-20250404.htm",
     "score": 21.37,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Earnings date announcement"
   },
   {
     "ticker": "CCAP",
     "name": "CCAP",
     "form": "8-K",
     "date": "2026-05-08",
-    "headline": "Current report: changed a director or senior officer",
+    "headline": "Director Elizabeth Ko resigned; Breaux named Chairman and Chung elected director",
     "category": "Personnel",
     "url": "https://www.sec.gov/Archives/edgar/data/1633336/000119312526214602/d123482d8k.htm",
     "score": 21.36,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine board changes, no disagreement"
   },
   {
     "ticker": "NCPCIF",
     "name": "NCPCIF",
     "form": "8-K",
     "date": "2026-05-06",
-    "headline": "Current report: completed an acquisition or disposition",
+    "headline": "Nuveen Churchill PCIF completed $347M acquisition of affiliated BDC V assets",
     "category": "M&A",
     "url": "https://www.sec.gov/Archives/edgar/data/1911066/000191106626000062/ncpif-20260501.htm",
     "score": 21.36,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Affiliated fund acquisition completed"
   },
   {
     "ticker": "NCBV",
     "name": "NCBV",
     "form": "8-K",
     "date": "2026-05-06",
-    "headline": "Current report: completed an acquisition or disposition",
+    "headline": "BDC V sold assets to PCAP for $347M; shareholders approved BDC withdrawal",
     "category": "M&A",
     "url": "https://www.sec.gov/Archives/edgar/data/2071136/000207113626000021/ncbdcv-20260430.htm",
     "score": 21.36,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Shareholder-approved merger and BDC withdrawal"
   },
   {
     "ticker": "OBDC",
     "name": "OBDC",
     "form": "8-K",
     "date": "2025-04-03",
-    "headline": "Current report: reported quarterly results",
+    "headline": "Blue Owl to report Q1 results May 7 with call May 8",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1655888/000119312525072406/d916880d8k.htm",
     "score": 21.36,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Earnings date announcement"
   },
   {
     "ticker": "HTGC",
     "name": "HTGC",
     "form": "8-K",
     "date": "2026-05-04",
-    "headline": "Current report: changed a director or senior officer",
+    "headline": "CFO Seth Meyer named President; Andrew Olson appointed new CFO",
     "category": "Personnel",
     "url": "https://www.sec.gov/Archives/edgar/data/1280784/000128078426000022/htgc-20260429.htm",
     "score": 21.35,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Executive leadership transition"
   },
   {
     "ticker": "TPPCP",
     "name": "TPPCP",
     "form": "8-K",
     "date": "2026-04-13",
-    "headline": "Current report: entered a material agreement; completed an acquisition or disposition",
+    "headline": "Third Point secured $150M Goldman ABL facility and acquired warehouse loans",
     "category": "M&A",
     "url": "https://www.sec.gov/Archives/edgar/data/2025369/000110465926042705/tm2611163d1_8k.htm",
     "score": 21.3,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "New credit facilities and portfolio funding"
   },
   {
     "ticker": "RWAY",
     "name": "RWAY",
     "form": "8-K",
     "date": "2026-04-07",
-    "headline": "Current report: completed an acquisition or disposition; took on a material financial obligation",
+    "headline": "Runway Growth completed SWK acquisition, assumed $30M of 9% 2027 notes",
     "category": "M&A",
     "url": "https://www.sec.gov/Archives/edgar/data/1653384/000119312526144599/rway-20260407.htm",
     "score": 21.29,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Merger completed as announced"
   },
   {
     "ticker": "CIK0001825265",
     "name": "CIK0001825265",
     "form": "8-K",
     "date": "2026-04-07",
-    "headline": "Current report: entered a material agreement; completed an acquisition or disposition",
+    "headline": "TCW Direct Lending VIII completed exchange offer; 50.5% of units tendered",
     "category": "M&A",
     "url": "https://www.sec.gov/Archives/edgar/data/1825265/000119312526145527/d123753d8k.htm",
     "score": 21.29,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Exchange offer completed"
   },
   {
     "ticker": "CIK0002066811",
     "name": "CIK0002066811",
     "form": "8-K",
     "date": "2026-04-07",
-    "headline": "Current report: entered a material agreement; completed an acquisition or disposition",
+    "headline": "Completed exchange offer for 50.5% of Fund VIII units; opened $625M PNC facility",
     "category": "M&A",
     "url": "https://www.sec.gov/Archives/edgar/data/2066811/000119312526145523/d25555d8k.htm",
     "score": 21.29,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine reorganization and financing"
   },
   {
     "ticker": "FDUS",
     "name": "FDUS",
     "form": "8-K",
     "date": "2025-03-06",
-    "headline": "Current report: reported quarterly results",
+    "headline": "Fidus released Q4 and full-year 2024 financial results",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1513363/000095017025034606/fdus-20250306.htm",
     "score": 21.29,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine quarterly results"
   },
   {
     "ticker": "KBDC",
     "name": "KBDC",
     "form": "8-K",
     "date": "2025-03-03",
-    "headline": "Current report: reported quarterly results; issued a Regulation FD disclosure",
+    "headline": "Kayne Anderson posted Q4 2024 results; declared $0.40 quarterly dividend",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390025019492/ea0232726-8k_kayne.htm",
     "score": 21.29,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine results and dividend"
   },
   {
     "ticker": "WHF",
     "name": "WHF",
     "form": "8-K",
     "date": "2024-01-25",
-    "headline": "Current report: faces delisting or a listing-standard issue",
+    "headline": "Nasdaq flagged loss of majority-independent board after director's death",
     "category": "Credit event",
     "url": "https://www.sec.gov/Archives/edgar/data/1552198/000155837024000543/whf-20240124x8k.htm",
     "score": 21.28,
-    "llm": false
+    "llm": false,
+    "signal": "watch",
+    "signal_note": "Listing rule deficiency, cure period granted"
   },
   {
     "ticker": "GSBD",
     "name": "GSBD",
     "form": "8-K",
     "date": "2025-02-27",
-    "headline": "Current report: reported quarterly results; issued a Regulation FD disclosure",
+    "headline": "Goldman Sachs BDC declared $0.32 base plus $0.16 special distribution with Q4 results",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1572694/000119312525039442/d904519d8k.htm",
     "score": 21.27,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine results and distributions"
   },
   {
     "ticker": "MAIN",
     "name": "MAIN",
     "form": "8-K",
     "date": "2025-02-27",
-    "headline": "Current report: reported quarterly results",
+    "headline": "Main Street Capital issued a results press release",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1396440/000139644025000011/main-20250227.htm",
     "score": 21.27,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine quarterly results"
   },
   {
     "ticker": "TCPC",
     "name": "TCPC",
     "form": "8-K",
     "date": "2025-02-27",
-    "headline": "Current report: reported quarterly results; issued a Regulation FD disclosure",
+    "headline": "TCPC corrected release to show Q4 net unrealized losses of $72.3M",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1370755/000113322825001616/brtc-efp14829_8k.htm",
     "score": 21.27,
-    "llm": false
+    "llm": false,
+    "signal": "watch",
+    "signal_note": "Net unrealized losses; adviser waiving management fee"
   },
   {
     "ticker": "TCPC",
     "name": "TCPC",
     "form": "8-K",
     "date": "2025-02-27",
-    "headline": "Current report: reported quarterly results; issued a Regulation FD disclosure",
+    "headline": "TCPC posted Q4 results as adviser waived one-third of base management fee",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1370755/000095017025028392/tcpc-20250227.htm",
     "score": 21.27,
-    "llm": false
+    "llm": false,
+    "signal": "watch",
+    "signal_note": "Adviser waiving management fee signals pressure"
   },
   {
     "ticker": "BXSL",
     "name": "BXSL",
     "form": "8-K",
     "date": "2025-02-26",
-    "headline": "Current report: reported quarterly results",
+    "headline": "Blackstone Secured Lending released Q4 2024 financial results",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1736035/000121390025017220/ea0232005-01_8k.htm",
     "score": 21.27,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine quarterly results"
   },
   {
     "ticker": "FSK",
     "name": "FSK",
     "form": "8-K",
     "date": "2025-02-26",
-    "headline": "Current report: reported quarterly results; issued a Regulation FD disclosure",
+    "headline": "FS KKR reported 2024 results; declared $0.70 per share distribution",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1422183/000110465925017452/tm257589d1_8k.htm",
     "score": 21.27,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine results and distribution"
   },
   {
     "ticker": "NMFC",
     "name": "NMFC",
     "form": "8-K",
     "date": "2025-02-26",
-    "headline": "Current report: reported quarterly results; issued a Regulation FD disclosure",
+    "headline": "NMFC posted Q4 and full-year 2024 results, declared $0.32 quarterly distribution",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1496099/000149609925000008/nmfc-20250226.htm",
     "score": 21.27,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine quarterly results and distribution"
   },
   {
     "ticker": "TRIN",
     "name": "TRIN",
     "form": "8-K",
     "date": "2025-02-26",
-    "headline": "Current report: reported quarterly results; issued a Regulation FD disclosure",
+    "headline": "Trinity Capital reported full-year 2024 financial results",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1786108/000095017025027340/trin-20250226.htm",
     "score": 21.27,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine annual results"
   },
   {
     "ticker": "CGBD",
     "name": "CGBD",
     "form": "8-K",
     "date": "2025-02-25",
-    "headline": "Current report: reported quarterly results; issued a Regulation FD disclosure",
+    "headline": "Carlyle Secured Lending posted Q4 2024 results, declared $0.40 base plus $0.05 supplemental dividend",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420625000010/csl-20250225.htm",
     "score": 21.27,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine results and dividend"
   },
   {
     "ticker": "SLRC",
     "name": "SLRC",
     "form": "8-K",
     "date": "2025-02-25",
-    "headline": "Current report: reported quarterly results",
+    "headline": "SLR Investment reported financial results for quarter ended December 31, 2024",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1418076/000117184325001062/f8k_022525.htm",
     "score": 21.27,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine quarterly results"
   },
   {
     "ticker": "BBDC",
     "name": "BBDC",
     "form": "8-K",
     "date": "2025-02-20",
-    "headline": "Current report: reported quarterly results; issued a Regulation FD disclosure",
+    "headline": "Barings BDC reported Q4 and full-year 2024 financial results",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1379785/000137978525000009/bbdc-20250220.htm",
     "score": 21.26,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine quarterly results"
   },
   {
     "ticker": "CCAP",
     "name": "CCAP",
     "form": "8-K",
     "date": "2025-02-19",
-    "headline": "Current report: reported quarterly results",
+    "headline": "Crescent Capital BDC reported results for quarter ended December 31, 2024",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1633336/000095017025023183/ccap-20250219.htm",
     "score": 21.26,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine quarterly results"
   },
   {
     "ticker": "OBDC",
     "name": "OBDC",
     "form": "8-K",
     "date": "2025-02-19",
-    "headline": "Current report: reported quarterly results",
+    "headline": "Blue Owl Capital reported full-year and Q4 2024 financial results",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1655888/000119312525029661/d870083d8k.htm",
     "score": 21.26,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine quarterly results"
   },
   {
     "ticker": "WHF",
     "name": "WHF",
     "form": "8-K",
     "date": "2024-01-18",
-    "headline": "Current report: faces delisting or a listing-standard issue",
+    "headline": "WhiteHorse Finance independent director Kevin Burke died January 13, 2024",
     "category": "Credit event",
     "url": "https://www.sec.gov/Archives/edgar/data/1552198/000155837024000345/whf-20240113x8k.htm",
     "score": 21.26,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Director death, governance only"
   },
   {
     "ticker": "NMFC",
     "name": "NMFC",
     "form": "8-K",
     "date": "2026-03-24",
-    "headline": "Current report: changed a director or senior officer",
+    "headline": "NMFC CFO Kris Corbett resigned; transition expected by May 2026, no disagreement",
     "category": "Personnel",
     "url": "https://www.sec.gov/Archives/edgar/data/1496099/000158064226001977/nmfc_8k.htm",
     "score": 21.25,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "CFO departure, no disagreement"
   },
   {
     "ticker": "HTGC",
     "name": "HTGC",
     "form": "8-K",
     "date": "2025-02-13",
-    "headline": "Current report: reported quarterly results; disclosed a material event",
+    "headline": "Hercules Capital reported Q4 2024 earnings, declared $0.47 total distribution",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1280784/000128078425000008/htgc-20250211.htm",
     "score": 21.24,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine results and distribution"
   },
   {
     "ticker": "GSBD",
     "name": "GSBD",
     "form": "8-K",
     "date": "2026-03-17",
-    "headline": "Current report: changed a director or senior officer",
+    "headline": "Director Susan McGee to resign from board effective March 31",
     "category": "Personnel",
     "url": "https://www.sec.gov/Archives/edgar/data/1572694/000119312526110886/d104770d8k.htm",
     "score": 21.23,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine board departure"
   },
   {
     "ticker": "PFLT",
     "name": "PFLT",
     "form": "8-K",
     "date": "2025-02-10",
-    "headline": "Current report: reported quarterly results",
+    "headline": "PennantPark Floating Rate reported fiscal Q1 results ended December 31",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1504619/000117184325000718/f8k_021025.htm",
     "score": 21.23,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine quarterly results"
   },
   {
     "ticker": "PNNT",
     "name": "PNNT",
     "form": "8-K",
     "date": "2025-02-10",
-    "headline": "Current report: reported quarterly results",
+    "headline": "PennantPark Investment reported fiscal Q1 results ended December 31",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1383414/000117184325000719/f8k_021025.htm",
     "score": 21.23,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine quarterly results"
   },
   {
     "ticker": "PSEC",
     "name": "PSEC",
     "form": "8-K",
     "date": "2025-02-10",
-    "headline": "Current report: reported quarterly results; issued a Regulation FD disclosure",
+    "headline": "Prospect Capital declared monthly common and preferred distributions with Q1 results",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1287032/000128703225000015/psec-20250210.htm",
     "score": 21.23,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Distributions declared as normal"
   },
   {
     "ticker": "ARCC",
     "name": "ARCC",
     "form": "8-K",
     "date": "2025-02-05",
-    "headline": "Current report: reported quarterly results; disclosed a material event",
+    "headline": "Ares Capital declared $0.48 Q1 dividend alongside full-year results",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1287750/000128775025000004/arcc-20250205.htm",
     "score": 21.22,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Dividend declared as normal"
   },
   {
     "ticker": "GBDC",
     "name": "GBDC",
     "form": "8-K",
     "date": "2025-02-04",
-    "headline": "Current report: reported quarterly results",
+    "headline": "Golub Capital BDC posted earnings presentation for fiscal Q1",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1476765/000147676525000015/gbdc-20250204.htm",
     "score": 21.22,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine earnings presentation"
   },
   {
     "ticker": "GBDC",
     "name": "GBDC",
     "form": "8-K",
     "date": "2025-02-04",
-    "headline": "Current report: reported quarterly results",
+    "headline": "Golub Capital BDC reported fiscal Q1 results ended December 31",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1476765/000147676525000014/gbdc-20250204.htm",
     "score": 21.22,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine quarterly results"
   },
   {
     "ticker": "OCSL",
     "name": "OCSL",
     "form": "8-K",
     "date": "2025-02-04",
-    "headline": "Current report: reported quarterly results",
+    "headline": "Oaktree Specialty Lending reported fiscal Q1 results ended December 31",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1414932/000119312525019601/d894458d8k.htm",
     "score": 21.22,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine quarterly results"
   },
   {
     "ticker": "TRIN",
     "name": "TRIN",
     "form": "8-K",
     "date": "2025-02-04",
-    "headline": "Current report: reported quarterly results",
+    "headline": "Trinity Capital released preliminary Q4 and full-year 2024 estimates",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1786108/000095017025013397/trin-20250204.htm",
     "score": 21.22,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Preliminary quarterly results"
   },
   {
     "ticker": "CSWC",
     "name": "CSWC",
     "form": "8-K",
     "date": "2025-02-03",
-    "headline": "Current report: reported quarterly results; issued a Regulation FD disclosure",
+    "headline": "Capital Southwest issued quarterly results press release and investor slides",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/17313/000001731325000009/cswc-20250203.htm",
     "score": 21.21,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine quarterly results"
   },
   {
     "ticker": "GSBD",
     "name": "GSBD",
     "form": "8-K",
     "date": "2026-03-02",
-    "headline": "Current report: changed a director or senior officer",
+    "headline": "Board cut to six directors after retirement; Leach and Uniacke reclassified",
     "category": "Personnel",
     "url": "https://www.sec.gov/Archives/edgar/data/1572694/000119312526085495/d71234d8k.htm",
     "score": 21.2,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Routine board reclassification"
   },
   {
     "ticker": "FSK",
     "name": "FSK",
     "form": "8-K",
     "date": "2025-01-23",
-    "headline": "Current report: reported quarterly results",
+    "headline": "FS KKR set February 27 call for fourth-quarter and full-year 2024 results",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1422183/000110465925005628/tm254151d1_8k.htm",
     "score": 21.19,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Earnings call scheduling"
   },
   {
     "ticker": "OBDC",
     "name": "OBDC",
     "form": "8-K",
     "date": "2025-01-22",
-    "headline": "Current report: reported quarterly results",
+    "headline": "Blue Owl to report fourth-quarter and full-year 2024 results February 19",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1655888/000119312525009982/d890408d8k.htm",
     "score": 21.19,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Earnings date announcement"
   },
   {
     "ticker": "CGBD",
     "name": "CGBD",
     "form": "8-K",
     "date": "2026-02-23",
-    "headline": "Current report: changed a director or senior officer; disclosed a material event",
+    "headline": "CEO Justin Plouffe resigned; board named Alex Chi chief executive",
     "category": "Personnel",
     "url": "https://www.sec.gov/Archives/edgar/data/1544206/000119312526061726/d949109d8k.htm",
     "score": 21.18,
-    "llm": false
+    "llm": false,
+    "signal": "watch",
+    "signal_note": "Immediate CEO change, successor named"
   },
   {
     "ticker": "TSLX",
     "name": "TSLX",
     "form": "8-K",
     "date": "2026-02-23",
-    "headline": "Current report: changed a director or senior officer; issued a Regulation FD disclosure",
+    "headline": "Chairman Josh Easterly will not seek re-election, retiring from Sixth Street",
     "category": "Personnel",
     "url": "https://www.sec.gov/Archives/edgar/data/1508655/000119312526063983/d53156d8k.htm",
     "score": 21.18,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Orderly chairman transition, no disagreement"
   },
   {
     "ticker": "MAIN",
     "name": "MAIN",
     "form": "8-K",
     "date": "2025-01-16",
-    "headline": "Current report: reported quarterly results",
+    "headline": "Main Street released preliminary 2024 financial condition and results estimates",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1396440/000139644025000007/main-20250116.htm",
     "score": 21.17,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Preliminary results release"
   },
   {
     "ticker": "OBDC",
     "name": "OBDC",
     "form": "8-K",
     "date": "2025-01-16",
-    "headline": "Current report: reported quarterly results",
+    "headline": "Blue Owl issued preliminary fourth-quarter 2024 financial results",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1655888/000119312525007423/d917816d8k.htm",
     "score": 21.17,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Preliminary results release"
   },
   {
     "ticker": "PFLT",
     "name": "PFLT",
     "form": "8-K",
     "date": "2025-01-16",
-    "headline": "Current report: reported quarterly results",
+    "headline": "PennantPark Floating Rate filed Form 8-K, January 16, 2025",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1504619/000095017025006197/pflt-20250116.htm",
     "score": 21.17,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "No adverse disclosure found"
   },
   {
     "ticker": "PNNT",
     "name": "PNNT",
     "form": "8-K",
     "date": "2025-01-16",
-    "headline": "Current report: reported quarterly results",
+    "headline": "PennantPark Investment filed Form 8-K, January 16, 2025",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/1383414/000095017025006192/pnnt-20250116.htm",
     "score": 21.17,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "No adverse disclosure found"
   },
   {
     "ticker": "CSWC",
     "name": "CSWC",
     "form": "8-K",
     "date": "2025-01-15",
-    "headline": "Current report: reported quarterly results",
+    "headline": "Capital Southwest released preliminary December-quarter estimates and results",
     "category": "Earnings",
     "url": "https://www.sec.gov/Archives/edgar/data/17313/000001731325000002/cswc-20250115.htm",
     "score": 21.17,
-    "llm": false
+    "llm": false,
+    "signal": "clean",
+    "signal_note": "Preliminary results release"
   }
 ]

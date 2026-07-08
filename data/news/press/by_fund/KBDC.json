@@ -10,7 +10,10 @@
       "label": "Current report: changed a director or senior officer",
       "category": "Personnel",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390026073166/ea0296326-8k_kayne.htm",
-      "material": true
+      "material": true,
+      "headline": "Interested director Albert Rabil III resigned from Kayne Anderson BDC board",
+      "signal": "clean",
+      "signal_note": "Director resignation, no disagreement"
     },
     {
       "form": "8-K",
@@ -18,7 +21,10 @@
       "label": "Current report (8-K)",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390026069270/ea0294992-8k_kayne.htm",
-      "material": false
+      "material": false,
+      "headline": "Reports 2026 annual meeting voting results",
+      "signal": "clean",
+      "signal_note": "Routine annual meeting results"
     },
     {
       "form": "8-K",
@@ -26,7 +32,10 @@
       "label": "Current report: reported quarterly results; issued a Regulation FD disclosure",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390026054511/ea0290016-8k_kayne.htm",
-      "material": true
+      "material": true,
+      "headline": "Q1 results reported; declared $0.40 Q2 2026 dividend",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results and dividend"
     },
     {
       "form": "10-Q",
@@ -34,7 +43,10 @@
       "label": "Quarterly report (10-Q) for period ending 2026-03-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000119312526216773/kbdc-20260331.htm",
-      "material": true
+      "material": true,
+      "headline": "Files first-quarter Form 10-Q",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure in excerpt"
     },
     {
       "form": "DEF 14A",
@@ -42,7 +54,10 @@
       "label": "Proxy statement — PROXY STATEMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390026047627/ea0286907-01.htm",
-      "material": false
+      "material": false,
+      "headline": "Files definitive proxy for annual meeting",
+      "signal": "clean",
+      "signal_note": "Routine definitive proxy"
     },
     {
       "form": "8-K",
@@ -50,7 +65,10 @@
       "label": "Current report: issued a Regulation FD disclosure",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390026042069/ea0285703-8k_kayne.htm",
-      "material": true
+      "material": true,
+      "headline": "Schedules first-quarter 2026 earnings release",
+      "signal": "clean",
+      "signal_note": "Routine earnings scheduling"
     },
     {
       "form": "8-K",
@@ -58,7 +76,10 @@
       "label": "Current report: entered a material agreement",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390026037681/ea0283168-03_8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Establishes at-the-market equity offering program",
+      "signal": "clean",
+      "signal_note": "Ordinary equity offering"
     },
     {
       "form": "424B2",
@@ -66,7 +87,10 @@
       "label": "Prospectus supplement (offering) — 424B2",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390026037654/ea0283168-02_424b2.htm",
-      "material": true
+      "material": true,
+      "headline": "Files prospectus supplement for equity offering",
+      "signal": "clean",
+      "signal_note": "Ordinary equity offering"
     },
     {
       "form": "N-2ASR",
@@ -74,7 +98,10 @@
       "label": "N-2ASR — N-2ASR",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390026037538/ea0283168-01_n2asr.htm",
-      "material": false
+      "material": false,
+      "headline": "Files automatic shelf registration statement",
+      "signal": "clean",
+      "signal_note": "Routine shelf registration"
     },
     {
       "form": "4/A",
@@ -82,7 +109,10 @@
       "label": "4/A — PRIMARY DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000189223626000001/xslF345X06/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider files amended ownership report",
+      "signal": "clean",
+      "signal_note": "Routine Section 16 amendment"
     },
     {
       "form": "4/A",
@@ -90,7 +120,10 @@
       "label": "4/A — PRIMARY DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000118325426000001/xslF345X06/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider files amended ownership report",
+      "signal": "clean",
+      "signal_note": "Routine Section 16 amendment"
     },
     {
       "form": "4",
@@ -98,7 +131,10 @@
       "label": "4 — PRIMARY DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000183274026000002/xslF345X05/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider reports change in beneficial ownership",
+      "signal": "clean",
+      "signal_note": "Routine Section 16 ownership filing"
     },
     {
       "form": "4",
@@ -106,7 +142,10 @@
       "label": "4 — PRIMARY DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000183274026000001/xslF345X05/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider reports change in beneficial ownership",
+      "signal": "clean",
+      "signal_note": "Routine Section 16 ownership filing"
     },
     {
       "form": "8-K",
@@ -114,7 +153,10 @@
       "label": "Current report: reported quarterly results; issued a Regulation FD disclosure",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390026022429/ea0279239-8k_kayne.htm",
-      "material": true
+      "material": true,
+      "headline": "Kayne Anderson BDC posted Q4 results and declared $0.40 dividend",
+      "signal": "clean",
+      "signal_note": "Routine results, dividend declared"
     },
     {
       "form": "10-K",
@@ -122,7 +164,10 @@
       "label": "Annual report (10-K) for period ending 2025-12-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390026022392/ea0274005-10k_kayne.htm",
-      "material": true
+      "material": true,
+      "headline": "Files fiscal 2025 annual report on Form 10-K",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure in excerpt"
     },
     {
       "form": "SCHEDULE 13G/A",
@@ -130,7 +175,10 @@
       "label": "SCHEDULE 13G/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000007085826000080/xslSCHEDULE_13G_X01/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "Reports amended passive ownership on Schedule 13G",
+      "signal": "clean",
+      "signal_note": "Routine passive ownership filing"
     },
     {
       "form": "SCHEDULE 13G",
@@ -138,7 +186,10 @@
       "label": "SCHEDULE 13G",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000076215226000006/xslSCHEDULE_13G_X01/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "Reports passive beneficial ownership on Schedule 13G",
+      "signal": "clean",
+      "signal_note": "Routine passive ownership filing"
     },
     {
       "form": "8-K",
@@ -146,7 +197,10 @@
       "label": "Current report: issued a Regulation FD disclosure",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390026004504/ea0272970-8k_kayne.htm",
-      "material": true
+      "material": true,
+      "headline": "Schedules fourth-quarter 2025 earnings release",
+      "signal": "clean",
+      "signal_note": "Routine earnings scheduling"
     },
     {
       "form": "40-APP/A",
@@ -154,7 +208,10 @@
       "label": "40-APP/A — 40-APP/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000119312525321253/d15429d40appa.htm",
-      "material": false
+      "material": false,
+      "headline": "Files amended exemptive application",
+      "signal": "clean",
+      "signal_note": "Routine exemptive application"
     },
     {
       "form": "40-17G",
@@ -162,7 +219,10 @@
       "label": "40-17G — 40-17G",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000158064225007527/kbdc-bond_policy.htm",
-      "material": false
+      "material": false,
+      "headline": "Files annual fidelity bond documentation",
+      "signal": "clean",
+      "signal_note": "Routine compliance filing"
     },
     {
       "form": "3",
@@ -170,7 +230,10 @@
       "label": "3 — PRIMARY DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000209643925000001/xslF345X02/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider files initial statement of beneficial ownership",
+      "signal": "clean",
+      "signal_note": "Routine Section 16 ownership filing"
     },
     {
       "form": "8-K",
@@ -178,7 +241,10 @@
       "label": "Current report: reported quarterly results; changed a director or senior officer",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390025108256/ea0264523-8k_kayne.htm",
-      "material": true
+      "material": true,
+      "headline": "Q3 results reported; named new President and declared $0.40 dividend",
+      "signal": "clean",
+      "signal_note": "Routine results and governance"
     },
     {
       "form": "10-Q",
@@ -186,7 +252,10 @@
       "label": "Quarterly report (10-Q) for period ending 2025-09-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390025108212/ea0261574-10q_kayne.htm",
-      "material": true
+      "material": true,
+      "headline": "Files third-quarter Form 10-Q",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure in excerpt"
     },
     {
       "form": "8-K",
@@ -194,7 +263,10 @@
       "label": "Current report: issued a Regulation FD disclosure",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390025097951/ea0260890-8k_kayne.htm",
-      "material": true
+      "material": true,
+      "headline": "Schedules third-quarter 2025 earnings release",
+      "signal": "clean",
+      "signal_note": "Routine earnings scheduling"
     },
     {
       "form": "40-APP/A",
@@ -202,7 +274,10 @@
       "label": "40-APP/A — 40-APP/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000119312525225757/d69188d40appa.htm",
-      "material": false
+      "material": false,
+      "headline": "Files amended exemptive application",
+      "signal": "clean",
+      "signal_note": "Routine exemptive application"
     },
     {
       "form": "4",
@@ -210,7 +285,10 @@
       "label": "4 — PRIMARY DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000194975925000002/xslF345X05/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider reports change in beneficial ownership",
+      "signal": "clean",
+      "signal_note": "Routine Section 16 ownership filing"
     },
     {
       "form": "8-K",
@@ -218,7 +296,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390025086598/ea0256713-8k_kayne.htm",
-      "material": true
+      "material": true,
+      "headline": "Closes $200 million private notes placement",
+      "signal": "clean",
+      "signal_note": "Ordinary notes issuance"
     },
     {
       "form": "8-K",
@@ -226,7 +307,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390025080795/ea0254573-8k_kayne.htm",
-      "material": true
+      "material": true,
+      "headline": "Reaches conditional agreement for $200 million private notes",
+      "signal": "clean",
+      "signal_note": "Ordinary notes financing"
     },
     {
       "form": "SCHEDULE 13G",
@@ -234,7 +318,10 @@
       "label": "SCHEDULE 13G",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000007085825000304/xslSCHEDULE_13G_X01/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "Reports passive beneficial ownership on Schedule 13G",
+      "signal": "clean",
+      "signal_note": "Routine passive ownership filing"
     },
     {
       "form": "8-K",
@@ -242,7 +329,10 @@
       "label": "Current report: reported quarterly results; issued a Regulation FD disclosure",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390025074348/ea0252384-8k_kayne.htm",
-      "material": true
+      "material": true,
+      "headline": "Kayne Anderson BDC reported Q2 results and declared $0.40 dividend",
+      "signal": "clean",
+      "signal_note": "Routine results and dividend declaration"
     },
     {
       "form": "10-Q",
@@ -250,7 +340,10 @@
       "label": "Quarterly report (10-Q) for period ending 2025-06-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390025074300/ea0249372-10q_kayne.htm",
-      "material": true
+      "material": true,
+      "headline": "Files second-quarter Form 10-Q",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure in excerpt"
     },
     {
       "form": "8-K",
@@ -258,7 +351,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390025064437/ea0249158-8k_kayne.htm",
-      "material": true
+      "material": true,
+      "headline": "Announces investment in SG Credit Partners",
+      "signal": "clean",
+      "signal_note": "Ordinary portfolio investment"
     },
     {
       "form": "8-K",
@@ -266,7 +362,10 @@
       "label": "Current report: issued a Regulation FD disclosure",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390025062900/ea0248639-8k_kayne.htm",
-      "material": true
+      "material": true,
+      "headline": "Schedules second-quarter 2025 earnings release",
+      "signal": "clean",
+      "signal_note": "Routine earnings scheduling"
     },
     {
       "form": "40-APP",
@@ -274,7 +373,10 @@
       "label": "40-APP — 40-APP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000119312525152610/d31543d40app.htm",
-      "material": false
+      "material": false,
+      "headline": "Files application for exemptive relief",
+      "signal": "clean",
+      "signal_note": "Routine exemptive application"
     },
     {
       "form": "8-K",
@@ -282,7 +384,10 @@
       "label": "Current report (8-K)",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390025054921/ea0245929-8k_kayne.htm",
-      "material": false
+      "material": false,
+      "headline": "Reports 2025 annual meeting voting results",
+      "signal": "clean",
+      "signal_note": "Routine annual meeting results"
     },
     {
       "form": "4",
@@ -290,7 +395,10 @@
       "label": "4 — PRIMARY DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000163839725000016/xslF345X05/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider reports change in beneficial ownership",
+      "signal": "clean",
+      "signal_note": "Routine Section 16 ownership filing"
     },
     {
       "form": "4",
@@ -298,7 +406,10 @@
       "label": "4 — PRIMARY DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000163839725000015/xslF345X05/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider reports change in beneficial ownership",
+      "signal": "clean",
+      "signal_note": "Routine Section 16 ownership filing"
     },
     {
       "form": "4",
@@ -306,7 +417,10 @@
       "label": "4 — PRIMARY DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000163839725000012/xslF345X05/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider reports change in beneficial ownership",
+      "signal": "clean",
+      "signal_note": "Routine Section 16 ownership filing"
     },
     {
       "form": "8-K",
@@ -314,7 +428,10 @@
       "label": "Current report: reported quarterly results; issued a Regulation FD disclosure",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390025042074/ea0241749-8k_kayne.htm",
-      "material": true
+      "material": true,
+      "headline": "Reported Q1 2025 results and declared $0.40 quarterly dividend",
+      "signal": "clean",
+      "signal_note": "Dividend declared as normal"
     },
     {
       "form": "10-Q",
@@ -322,7 +439,10 @@
       "label": "Quarterly report (10-Q) for period ending 2025-03-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390025042033/ea0238650-10q_kayne.htm",
-      "material": true
+      "material": true,
+      "headline": "Files first-quarter Form 10-Q",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure in excerpt"
     },
     {
       "form": "DEF 14A",
@@ -330,7 +450,10 @@
       "label": "Proxy statement — DEFINITIVE PROXY STATEMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000117494725000623/ea0237663-01.htm",
-      "material": false
+      "material": false,
+      "headline": "Files definitive proxy for annual meeting",
+      "signal": "clean",
+      "signal_note": "Routine definitive proxy"
     },
     {
       "form": "8-K",
@@ -338,7 +461,10 @@
       "label": "Current report: issued a Regulation FD disclosure",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390025031202/ea0238065-8k_kayne.htm",
-      "material": true
+      "material": true,
+      "headline": "Schedules first-quarter 2025 earnings release",
+      "signal": "clean",
+      "signal_note": "Routine earnings scheduling"
     },
     {
       "form": "4",
@@ -346,7 +472,10 @@
       "label": "4 — PRIMARY DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000163839725000004/xslF345X05/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider reports change in beneficial ownership",
+      "signal": "clean",
+      "signal_note": "Routine Section 16 ownership filing"
     },
     {
       "form": "8-K",
@@ -354,7 +483,10 @@
       "label": "Current report: reported quarterly results; issued a Regulation FD disclosure",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390025019492/ea0232726-8k_kayne.htm",
-      "material": true
+      "material": true,
+      "headline": "Kayne Anderson posted Q4 2024 results; declared $0.40 quarterly dividend",
+      "signal": "clean",
+      "signal_note": "Routine results and dividend"
     },
     {
       "form": "10-K",
@@ -362,7 +494,10 @@
       "label": "Annual report (10-K) for period ending 2024-12-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390025019408/ea0229205-10k_kayneanderson.htm",
-      "material": true
+      "material": true,
+      "headline": "Files fiscal 2024 annual report on Form 10-K",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure in excerpt"
     },
     {
       "form": "EFFECT",
@@ -370,7 +505,10 @@
       "label": "EFFECT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/999999999525000543/xslEFFECTX01/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "Registration statement declared effective by SEC",
+      "signal": "clean",
+      "signal_note": "Routine notice of effectiveness"
     },
     {
       "form": "8-K",
@@ -378,7 +516,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390025014912/ea0231391-8k_kayne.htm",
-      "material": true
+      "material": true,
+      "headline": "Amends financing subsidiary credit facility",
+      "signal": "clean",
+      "signal_note": "Ordinary financing activity"
     },
     {
       "form": "CORRESP",
@@ -386,7 +527,10 @@
       "label": "CORRESP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390025014424/filename1.htm",
-      "material": false
+      "material": false,
+      "headline": "Responds to SEC staff comments",
+      "signal": "clean",
+      "signal_note": "Routine SEC comment response"
     },
     {
       "form": "N-2/A",
@@ -394,7 +538,10 @@
       "label": "N-2/A — N-2/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390025014418/ea0231164-01_n2a.htm",
-      "material": false
+      "material": false,
+      "headline": "Files amended N-2 registration statement",
+      "signal": "clean",
+      "signal_note": "Routine registration amendment"
     },
     {
       "form": "8-K",
@@ -402,7 +549,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390025011427/ea0230389-8k_kayne.htm",
-      "material": true
+      "material": true,
+      "headline": "Amends financing subsidiary credit facility",
+      "signal": "clean",
+      "signal_note": "Ordinary financing activity"
     },
     {
       "form": "8-K",
@@ -410,7 +560,10 @@
       "label": "Current report: issued a Regulation FD disclosure",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390025008788/ea0229425-8k_kayne.htm",
-      "material": true
+      "material": true,
+      "headline": "Schedules fourth-quarter 2024 earnings release",
+      "signal": "clean",
+      "signal_note": "Routine earnings scheduling"
     },
     {
       "form": "N-2/A",
@@ -418,7 +571,10 @@
       "label": "N-2/A — N-2/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390025008010/ea0229076-01_n2a.htm",
-      "material": false
+      "material": false,
+      "headline": "Files amended N-2 registration statement",
+      "signal": "clean",
+      "signal_note": "Routine registration amendment"
     },
     {
       "form": "CORRESP",
@@ -426,7 +582,10 @@
       "label": "CORRESP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390025000636/filename1.htm",
-      "material": false
+      "material": false,
+      "headline": "Responds to SEC staff comments",
+      "signal": "clean",
+      "signal_note": "Routine SEC comment response"
     },
     {
       "form": "N-2/A",
@@ -434,7 +593,10 @@
       "label": "N-2/A — N-2/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390025000635/ea0226623-01_n2a.htm",
-      "material": false
+      "material": false,
+      "headline": "Files amended N-2 registration statement",
+      "signal": "clean",
+      "signal_note": "Routine registration amendment"
     },
     {
       "form": "4",
@@ -442,7 +604,10 @@
       "label": "4 — PRIMARY DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000163839724000022/xslF345X05/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider reports change in beneficial ownership",
+      "signal": "clean",
+      "signal_note": "Routine Section 16 ownership filing"
     },
     {
       "form": "8-K",
@@ -450,7 +615,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390024102455/ea0222605-8k_kayne.htm",
-      "material": true
+      "material": true,
+      "headline": "Amends senior secured revolving credit facility",
+      "signal": "clean",
+      "signal_note": "Ordinary financing activity"
     },
     {
       "form": "40-17G",
@@ -458,7 +626,10 @@
       "label": "40-17G — 40-17G",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000158064224007055/kabdc-bond_policy.htm",
-      "material": false
+      "material": false,
+      "headline": "Files annual fidelity bond documentation",
+      "signal": "clean",
+      "signal_note": "Routine compliance filing"
     },
     {
       "form": "N-2",
@@ -466,7 +637,10 @@
       "label": "Registration statement (N-2) — N-2",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390024099784/ea0221002-01_n2.htm",
-      "material": true
+      "material": true,
+      "headline": "Files N-2 registration statement",
+      "signal": "clean",
+      "signal_note": "Routine registration filing"
     },
     {
       "form": "8-K",
@@ -474,7 +648,10 @@
       "label": "Current report: reported quarterly results; issued a Regulation FD disclosure",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390024097598/ea0221007-8k_kayne.htm",
-      "material": true
+      "material": true,
+      "headline": "Reports third-quarter 2024 earnings",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure in excerpt"
     },
     {
       "form": "10-Q",
@@ -482,7 +659,10 @@
       "label": "Quarterly report (10-Q) for period ending 2024-09-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390024097564/ea0218487-10q_kayne.htm",
-      "material": true
+      "material": true,
+      "headline": "Files third-quarter Form 10-Q",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure in excerpt"
     },
     {
       "form": "8-K",
@@ -490,7 +670,10 @@
       "label": "Current report: issued a Regulation FD disclosure",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390024089230/ea0218097-8k_kayne.htm",
-      "material": true
+      "material": true,
+      "headline": "Schedules third-quarter 2024 earnings release",
+      "signal": "clean",
+      "signal_note": "Routine earnings scheduling"
     },
     {
       "form": "4",
@@ -498,7 +681,10 @@
       "label": "4 — PRIMARY DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000163839724000018/xslF345X05/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider reports change in beneficial ownership",
+      "signal": "clean",
+      "signal_note": "Routine Section 16 ownership filing"
     },
     {
       "form": "4",
@@ -506,7 +692,10 @@
       "label": "4 — PRIMARY DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000163839724000017/xslF345X05/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider reports change in beneficial ownership",
+      "signal": "clean",
+      "signal_note": "Routine Section 16 ownership filing"
     },
     {
       "form": "SC 13G/A",
@@ -514,7 +703,10 @@
       "label": "SC 13G/A — SC 13G/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000119312524199890/d876839dsc13ga.htm",
-      "material": false
+      "material": false,
+      "headline": "Reports amended passive ownership on Schedule 13G",
+      "signal": "clean",
+      "signal_note": "Routine passive ownership filing"
     },
     {
       "form": "8-K",
@@ -522,7 +714,10 @@
       "label": "Current report: reported quarterly results; issued a Regulation FD disclosure",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390024068393/ea0211287-8k_kayne.htm",
-      "material": true
+      "material": true,
+      "headline": "Reports second-quarter 2024 earnings",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure in excerpt"
     },
     {
       "form": "10-Q",
@@ -530,7 +725,10 @@
       "label": "Quarterly report (10-Q) for period ending 2024-06-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390024068355/ea0210000-10q_kayne.htm",
-      "material": true
+      "material": true,
+      "headline": "Non-accruals rise to two positions, near 1% of debt",
+      "signal": "watch",
+      "signal_note": "Non-accruals modestly higher QoQ"
     },
     {
       "form": "4",
@@ -538,7 +736,10 @@
       "label": "4 — PRIMARY DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000163839724000015/xslF345X05/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider reports change in beneficial ownership",
+      "signal": "clean",
+      "signal_note": "Routine Section 16 ownership filing"
     },
     {
       "form": "8-K",
@@ -546,7 +747,10 @@
       "label": "Current report: issued a Regulation FD disclosure",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390024062003/ea0209553-8k_kayne.htm",
-      "material": true
+      "material": true,
+      "headline": "Schedules second-quarter 2024 earnings release",
+      "signal": "clean",
+      "signal_note": "Routine earnings scheduling"
     },
     {
       "form": "8-K",
@@ -554,7 +758,10 @@
       "label": "Current report (8-K)",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390024054827/ea0208061-8k_kayne.htm",
-      "material": false
+      "material": false,
+      "headline": "Reports 2024 annual meeting voting results",
+      "signal": "clean",
+      "signal_note": "Routine annual meeting results"
     },
     {
       "form": "4",
@@ -562,7 +769,10 @@
       "label": "4 — PRIMARY DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000163839724000014/xslF345X05/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider reports change in beneficial ownership",
+      "signal": "clean",
+      "signal_note": "Routine Section 16 ownership filing"
     },
     {
       "form": "4",
@@ -570,7 +780,10 @@
       "label": "4 — PRIMARY DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000163839724000013/xslF345X05/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider reports change in beneficial ownership",
+      "signal": "clean",
+      "signal_note": "Routine Section 16 ownership filing"
     },
     {
       "form": "4",
@@ -578,7 +791,10 @@
       "label": "4 — PRIMARY DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000163839724000012/xslF345X05/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider reports change in beneficial ownership",
+      "signal": "clean",
+      "signal_note": "Routine Section 16 ownership filing"
     },
     {
       "form": "424B1",
@@ -586,7 +802,10 @@
       "label": "424B1 — 424B1",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390024046057/ea0202689-11_424b1.htm",
-      "material": false
+      "material": false,
+      "headline": "Files IPO prospectus for 6 million share offering",
+      "signal": "clean",
+      "signal_note": "Ordinary equity offering"
     },
     {
       "form": "497AD",
@@ -594,7 +813,10 @@
       "label": "497AD — 497AD",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390024045691/ea0206573-02_497ad.htm",
-      "material": false
+      "material": false,
+      "headline": "Prices initial public offering",
+      "signal": "clean",
+      "signal_note": "Ordinary equity offering"
     },
     {
       "form": "EFFECT",
@@ -602,7 +824,10 @@
       "label": "EFFECT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/999999999524001598/xslEFFECTX01/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "Registration statement declared effective by SEC",
+      "signal": "clean",
+      "signal_note": "Routine notice of effectiveness"
     },
     {
       "form": "CERT",
@@ -610,7 +835,10 @@
       "label": "CERT — NYSE CERTIFICATION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000087666124000373/KBDC052124.pdf",
-      "material": false
+      "material": false,
+      "headline": "Files NYSE listing certification",
+      "signal": "clean",
+      "signal_note": "Routine listing compliance"
     },
     {
       "form": "8-A12B",
@@ -618,7 +846,10 @@
       "label": "8-A12B — 8-A12B",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390024045398/ea0206573-01_8a12b.htm",
-      "material": false
+      "material": false,
+      "headline": "Registers common stock for NYSE listing",
+      "signal": "clean",
+      "signal_note": "Routine securities registration"
     },
     {
       "form": "N-2/A",
@@ -626,7 +857,10 @@
       "label": "N-2/A — N-2/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390024041890/ea0202689-06_n2a.htm",
-      "material": false
+      "material": false,
+      "headline": "Files amended N-2 registration statement",
+      "signal": "clean",
+      "signal_note": "Routine registration amendment"
     },
     {
       "form": "8-K",
@@ -634,7 +868,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390024041786/ea0205826-8k_kayne.htm",
-      "material": true
+      "material": true,
+      "headline": "Declares $0.40 quarterly dividend",
+      "signal": "clean",
+      "signal_note": "Distribution declared as normal"
     },
     {
       "form": "CORRESP",
@@ -642,7 +879,10 @@
       "label": "CORRESP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390024041700/filename1.htm",
-      "material": false
+      "material": false,
+      "headline": "Responds to SEC staff comments",
+      "signal": "clean",
+      "signal_note": "Routine SEC comment response"
     },
     {
       "form": "CORRESP",
@@ -650,7 +890,10 @@
       "label": "CORRESP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390024041441/filename1.htm",
-      "material": false
+      "material": false,
+      "headline": "Responds to SEC staff comments",
+      "signal": "clean",
+      "signal_note": "Routine SEC comment response"
     },
     {
       "form": "CORRESP",
@@ -658,7 +901,10 @@
       "label": "CORRESP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390024041011/filename1.htm",
-      "material": false
+      "material": false,
+      "headline": "Responds to SEC staff comments",
+      "signal": "clean",
+      "signal_note": "Routine SEC comment response"
     },
     {
       "form": "N-2/A",
@@ -666,7 +912,10 @@
       "label": "N-2/A — N-2/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390024041008/ea0202689-07_n2a.htm",
-      "material": false
+      "material": false,
+      "headline": "Files amended N-2 registration statement",
+      "signal": "clean",
+      "signal_note": "Routine registration amendment"
     },
     {
       "form": "10-Q",
@@ -674,7 +923,10 @@
       "label": "Quarterly report (10-Q) for period ending 2024-03-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390024040973/ea0204433-10q_kayne.htm",
-      "material": true
+      "material": true,
+      "headline": "Files first-quarter Form 10-Q",
+      "signal": "clean",
+      "signal_note": "Single 0.4% non-accrual, baseline"
     },
     {
       "form": "DEF 14A",
@@ -682,7 +934,10 @@
       "label": "Proxy statement — PROXY STATEMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390024036770/ea0204347-01.htm",
-      "material": false
+      "material": false,
+      "headline": "Files definitive proxy for annual meeting",
+      "signal": "clean",
+      "signal_note": "Routine definitive proxy"
     },
     {
       "form": "8-K",
@@ -690,7 +945,10 @@
       "label": "Current report (8-K)",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390024036219/ea0204706-8k_kayne.htm",
-      "material": false
+      "material": false,
+      "headline": "Issues 16.2 million shares in capital raise",
+      "signal": "clean",
+      "signal_note": "Ordinary equity issuance"
     },
     {
       "form": "N-2/A",
@@ -698,7 +956,10 @@
       "label": "N-2/A — N-2/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390024035924/ea0202689-04_n2a.htm",
-      "material": false
+      "material": false,
+      "headline": "Files amended N-2 registration statement",
+      "signal": "clean",
+      "signal_note": "Routine registration amendment"
     },
     {
       "form": "CORRESP",
@@ -706,7 +967,10 @@
       "label": "CORRESP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390024035927/filename1.htm",
-      "material": false
+      "material": false,
+      "headline": "Responds to SEC staff comments",
+      "signal": "clean",
+      "signal_note": "Routine SEC comment response"
     },
     {
       "form": "UPLOAD",
@@ -714,7 +978,10 @@
       "label": "UPLOAD",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000000000024004187/filename1.pdf",
-      "material": false
+      "material": false,
+      "headline": "SEC staff comment letter received",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "4",
@@ -722,7 +989,10 @@
       "label": "4 — PRIMARY DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000163839724000011/xslF345X05/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider reports change in beneficial ownership",
+      "signal": "clean",
+      "signal_note": "Routine Section 16 ownership filing"
     },
     {
       "form": "4",
@@ -730,7 +1000,10 @@
       "label": "4 — PRIMARY DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000163839724000010/xslF345X05/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider reports change in beneficial ownership",
+      "signal": "clean",
+      "signal_note": "Routine Section 16 ownership filing"
     },
     {
       "form": "4",
@@ -738,7 +1011,10 @@
       "label": "4 — PRIMARY DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000163839724000009/xslF345X05/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider reports change in beneficial ownership",
+      "signal": "clean",
+      "signal_note": "Routine Section 16 ownership filing"
     },
     {
       "form": "4",
@@ -746,7 +1022,10 @@
       "label": "4 — PRIMARY DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000163839724000008/xslF345X05/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider reports change in beneficial ownership",
+      "signal": "clean",
+      "signal_note": "Routine Section 16 ownership filing"
     },
     {
       "form": "4",
@@ -754,7 +1033,10 @@
       "label": "4 — PRIMARY DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000163839724000007/xslF345X05/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider reports change in beneficial ownership",
+      "signal": "clean",
+      "signal_note": "Routine Section 16 ownership filing"
     },
     {
       "form": "4",
@@ -762,7 +1044,10 @@
       "label": "4 — PRIMARY DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000163839724000006/xslF345X05/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider reports change in beneficial ownership",
+      "signal": "clean",
+      "signal_note": "Routine Section 16 ownership filing"
     },
     {
       "form": "4",
@@ -770,7 +1055,10 @@
       "label": "4 — PRIMARY DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000163839724000005/xslF345X05/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider reports change in beneficial ownership",
+      "signal": "clean",
+      "signal_note": "Routine Section 16 ownership filing"
     },
     {
       "form": "4",
@@ -778,7 +1066,10 @@
       "label": "4 — PRIMARY DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000163839724000004/xslF345X05/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider reports change in beneficial ownership",
+      "signal": "clean",
+      "signal_note": "Routine Section 16 ownership filing"
     },
     {
       "form": "4",
@@ -786,7 +1077,10 @@
       "label": "4 — PRIMARY DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000163839724000003/xslF345X05/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider reports change in beneficial ownership",
+      "signal": "clean",
+      "signal_note": "Routine Section 16 ownership filing"
     },
     {
       "form": "8-K",
@@ -794,7 +1088,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390024030899/ea0203422-8k_kayne.htm",
-      "material": true
+      "material": true,
+      "headline": "Sells $269.9 million of common stock",
+      "signal": "clean",
+      "signal_note": "Ordinary equity issuance"
     },
     {
       "form": "CORRESP",
@@ -802,7 +1099,10 @@
       "label": "CORRESP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390024028266/filename1.htm",
-      "material": false
+      "material": false,
+      "headline": "Responds to SEC staff comments",
+      "signal": "clean",
+      "signal_note": "Routine SEC comment response"
     },
     {
       "form": "N-2",
@@ -810,7 +1110,10 @@
       "label": "Registration statement (N-2) — N-2",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390024028261/ea0202689-01_n2.htm",
-      "material": true
+      "material": true,
+      "headline": "Files N-2 registration statement",
+      "signal": "clean",
+      "signal_note": "Routine registration filing"
     },
     {
       "form": "DRS/A",
@@ -818,7 +1121,10 @@
       "label": "DRS/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390024019677/filename1.htm",
-      "material": false
+      "material": false,
+      "headline": "Amends confidential draft registration statement",
+      "signal": "clean",
+      "signal_note": "Routine confidential registration"
     },
     {
       "form": "10-K",
@@ -826,7 +1132,10 @@
       "label": "Annual report (10-K) for period ending 2023-12-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390024018465/f10k2023_kayneanderson.htm",
-      "material": true
+      "material": true,
+      "headline": "Files fiscal 2023 annual report on Form 10-K",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure in excerpt"
     },
     {
       "form": "8-K",
@@ -834,7 +1143,10 @@
       "label": "Current report (8-K)",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390024015852/ea0200442-8k_kayneand.htm",
-      "material": false
+      "material": false,
+      "headline": "Sells $118 million of common stock",
+      "signal": "clean",
+      "signal_note": "Ordinary equity issuance"
     },
     {
       "form": "SC 13G/A",
@@ -842,7 +1154,10 @@
       "label": "SC 13G/A — SC 13G/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000119312524030253/d772372dsc13ga.htm",
-      "material": false
+      "material": false,
+      "headline": "Reports amended passive ownership on Schedule 13G",
+      "signal": "clean",
+      "signal_note": "Routine passive ownership filing"
     },
     {
       "form": "DRS/A",
@@ -850,7 +1165,10 @@
       "label": "DRS/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390024009747/filename1.htm",
-      "material": false
+      "material": false,
+      "headline": "Amends confidential draft registration statement",
+      "signal": "clean",
+      "signal_note": "Routine confidential registration"
     },
     {
       "form": "8-K",
@@ -858,7 +1176,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390024001581/ea191260-8k_kayne.htm",
-      "material": true
+      "material": true,
+      "headline": "Amends subscription credit facility",
+      "signal": "clean",
+      "signal_note": "Ordinary financing activity"
     },
     {
       "form": "8-K",
@@ -866,7 +1187,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390023099821/ea190890-8k_kayne.htm",
-      "material": true
+      "material": true,
+      "headline": "Establishes financing subsidiary credit facility",
+      "signal": "clean",
+      "signal_note": "Ordinary financing activity"
     },
     {
       "form": "DRS/A",
@@ -874,7 +1198,10 @@
       "label": "DRS/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390023096172/filename1.htm",
-      "material": false
+      "material": false,
+      "headline": "Amends confidential draft registration statement",
+      "signal": "clean",
+      "signal_note": "Routine confidential registration"
     },
     {
       "form": "40-17G",
@@ -882,7 +1209,10 @@
       "label": "40-17G — 40-17G",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000158064223006391/kabdc-bond_4017g.htm",
-      "material": false
+      "material": false,
+      "headline": "Files annual fidelity bond documentation",
+      "signal": "clean",
+      "signal_note": "Routine compliance filing"
     },
     {
       "form": "10-Q",
@@ -890,7 +1220,10 @@
       "label": "Quarterly report (10-Q) for period ending 2023-09-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390023086801/f10q0923_kayneand.htm",
-      "material": true
+      "material": true,
+      "headline": "Files third-quarter Form 10-Q",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure in excerpt"
     },
     {
       "form": "3",
@@ -898,7 +1231,10 @@
       "label": "3 — PRIMARY DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000163839723000019/xslF345X02/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider files initial statement of beneficial ownership",
+      "signal": "clean",
+      "signal_note": "Routine Section 16 ownership filing"
     },
     {
       "form": "DRS",
@@ -906,7 +1242,10 @@
       "label": "DRS",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000101376223002551/filename1.htm",
-      "material": false
+      "material": false,
+      "headline": "Submits confidential draft registration statement",
+      "signal": "clean",
+      "signal_note": "Routine confidential registration"
     },
     {
       "form": "4",
@@ -914,7 +1253,10 @@
       "label": "4 — PRIMARY DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000163839723000018/xslF345X05/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider reports change in beneficial ownership",
+      "signal": "clean",
+      "signal_note": "Routine Section 16 ownership filing"
     },
     {
       "form": "4",
@@ -922,7 +1264,10 @@
       "label": "4 — PRIMARY DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000163839723000017/xslF345X05/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "KBDC insider reports share transaction dated September 30, 2023",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "D/A",
@@ -930,7 +1275,10 @@
       "label": "D/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000174717223000001/xslFormDX08/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "KBDC Form D/A reports $907.3 million common stock sold",
+      "signal": "clean",
+      "signal_note": "Routine private offering"
     },
     {
       "form": "10-Q",
@@ -938,7 +1286,10 @@
       "label": "Quarterly report (10-Q) for period ending 2023-06-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390023067086/f10q0623_kayneand.htm",
-      "material": true
+      "material": true,
+      "headline": "KBDC Q2 investment income $40.7M, no non-accruals; CEO Baker resigns",
+      "signal": "watch",
+      "signal_note": "CEO resigned; leadership transition"
     },
     {
       "form": "40-APP/A",
@@ -946,7 +1297,10 @@
       "label": "40-APP/A — 40-APP/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000119312523208285/d550231d40appa.htm",
-      "material": false
+      "material": false,
+      "headline": "KBDC amends SEC co-investment exemptive relief application",
+      "signal": "clean",
+      "signal_note": "Routine exemptive application"
     },
     {
       "form": "8-K",
@@ -954,7 +1308,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390023054283/ea181304-8k_kayneand.htm",
-      "material": true
+      "material": true,
+      "headline": "KBDC increases revolving funding facility commitment to $455 million",
+      "signal": "clean",
+      "signal_note": "Expanded credit facility capacity"
     },
     {
       "form": "8-K",
@@ -962,7 +1319,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390023054281/ea181307-8k_kayneand.htm",
-      "material": true
+      "material": true,
+      "headline": "KBDC completes $75 million senior unsecured notes private placement",
+      "signal": "clean",
+      "signal_note": "Routine debt financing"
     },
     {
       "form": "8-K",
@@ -970,7 +1330,10 @@
       "label": "Current report (8-K)",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390023051341/ea180880-8k_kayneand.htm",
-      "material": false
+      "material": false,
+      "headline": "KBDC stockholders approve all proposals at 2023 annual meeting",
+      "signal": "clean",
+      "signal_note": "Routine annual meeting vote"
     },
     {
       "form": "8-K",
@@ -978,7 +1341,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390023051339/ea180881-8k_kayneander.htm",
-      "material": true
+      "material": true,
+      "headline": "KBDC reaches conditional agreement for $75 million notes placement",
+      "signal": "clean",
+      "signal_note": "Routine debt financing"
     },
     {
       "form": "40-APP/A",
@@ -986,7 +1352,10 @@
       "label": "40-APP/A — 40-APP/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000119312523164274/d493227d40appa.htm",
-      "material": false
+      "material": false,
+      "headline": "KBDC amends SEC co-investment exemptive relief application",
+      "signal": "clean",
+      "signal_note": "Routine exemptive application"
     },
     {
       "form": "10-Q",
@@ -994,7 +1363,10 @@
       "label": "Quarterly report (10-Q) for period ending 2023-03-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390023039591/f10q0323_kayneand.htm",
-      "material": true
+      "material": true,
+      "headline": "KBDC Q1 investment income $36.4M, no loans on non-accrual",
+      "signal": "clean",
+      "signal_note": "No adverse credit disclosure"
     },
     {
       "form": "DEF 14A",
@@ -1002,7 +1374,10 @@
       "label": "Proxy statement — PROXY STATEMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390023032897/def14a0423_kayneander.htm",
-      "material": false
+      "material": false,
+      "headline": "KBDC files 2023 annual meeting proxy statement",
+      "signal": "clean",
+      "signal_note": "Routine proxy statement"
     },
     {
       "form": "8-K",
@@ -1010,7 +1385,10 @@
       "label": "Current report (8-K)",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390023031926/ea177358-8k_kayneander.htm",
-      "material": false
+      "material": false,
+      "headline": "KBDC sells common stock in unregistered offering",
+      "signal": "clean",
+      "signal_note": "Routine equity issuance"
     },
     {
       "form": "8-K",
@@ -1018,7 +1396,10 @@
       "label": "Current report (8-K)",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390023028561/ea176751-8k_kayne.htm",
-      "material": false
+      "material": false,
+      "headline": "KBDC sells common stock in unregistered offering",
+      "signal": "clean",
+      "signal_note": "Routine equity issuance"
     },
     {
       "form": "4",
@@ -1026,7 +1407,10 @@
       "label": "4 — PRIMARY DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000163839723000013/xslF345X04/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "KBDC insider reports share transaction dated April 4, 2023",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "4",
@@ -1034,7 +1418,10 @@
       "label": "4 — PRIMARY DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000163839723000012/xslF345X04/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "KBDC insider reports share transaction dated April 4, 2023",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "4",
@@ -1042,7 +1429,10 @@
       "label": "4 — PRIMARY DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000163839723000011/xslF345X04/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "KBDC insider reports share transaction dated April 4, 2023",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "4",
@@ -1050,7 +1440,10 @@
       "label": "4 — PRIMARY DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000163839723000010/xslF345X04/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "KBDC insider reports share transaction dated April 4, 2023",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "4",
@@ -1058,7 +1451,10 @@
       "label": "4 — PRIMARY DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000163839723000009/xslF345X04/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "KBDC insider reports share transaction dated April 4, 2023",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "4",
@@ -1066,7 +1462,10 @@
       "label": "4 — PRIMARY DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000163839723000008/xslF345X04/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "KBDC insider reports share transaction dated April 4, 2023",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "4",
@@ -1074,7 +1473,10 @@
       "label": "4 — PRIMARY DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000163839723000007/xslF345X04/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "KBDC insider reports share transaction dated April 4, 2023",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "4",
@@ -1082,7 +1484,10 @@
       "label": "4 — PRIMARY DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000163839723000006/xslF345X04/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "KBDC insider reports share transaction dated April 4, 2023",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "10-K",
@@ -1090,7 +1495,10 @@
       "label": "Annual report (10-K) for period ending 2022-12-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390023019300/f10k2022_kayneand.htm",
-      "material": true
+      "material": true,
+      "headline": "KBDC files fiscal 2022 annual report on Form 10-K",
+      "signal": "clean",
+      "signal_note": "No adverse credit disclosure"
     },
     {
       "form": "8-K",
@@ -1098,7 +1506,10 @@
       "label": "Current report: changed a director or senior officer",
       "category": "Personnel",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390023005696/ea172332-8k_kayne.htm",
-      "material": true
+      "material": true,
+      "headline": "KBDC appoints James Robo to board of directors",
+      "signal": "clean",
+      "signal_note": "Routine director appointment"
     },
     {
       "form": "3",
@@ -1106,7 +1517,10 @@
       "label": "3 — PRIMARY DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000163839723000002/xslF345X02/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "KBDC insider files initial ownership statement",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "8-K",
@@ -1114,7 +1528,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390023004597/ea172090-8k_kayne.htm",
-      "material": true
+      "material": true,
+      "headline": "KBDC pays $0.43 per share distribution",
+      "signal": "clean",
+      "signal_note": "Routine distribution"
     },
     {
       "form": "8-K",
@@ -1122,7 +1539,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390023001252/ea171245-8k_kayne.htm",
-      "material": true
+      "material": true,
+      "headline": "KBDC reduces subscription credit facility to $125 million",
+      "signal": "clean",
+      "signal_note": "Routine subscription facility resize"
     },
     {
       "form": "4",
@@ -1130,7 +1550,10 @@
       "label": "4 — PRIMARY DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000163839723000001/xslF345X03/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "KBDC insider reports share transaction dated December 31, 2022",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "8-K",
@@ -1138,7 +1561,10 @@
       "label": "Current report (8-K)",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390022079981/ea170118-8k_kayne.htm",
-      "material": false
+      "material": false,
+      "headline": "KBDC sells common stock in unregistered offering",
+      "signal": "clean",
+      "signal_note": "Routine equity issuance"
     },
     {
       "form": "4",
@@ -1146,7 +1572,10 @@
       "label": "4 — PRIMARY DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000163839722000034/xslF345X03/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "KBDC insider reports share transaction dated December 9, 2022",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "4",
@@ -1154,7 +1583,10 @@
       "label": "4 — PRIMARY DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000163839722000033/xslF345X03/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "KBDC insider reports share transaction dated December 9, 2022",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "4",
@@ -1162,7 +1594,10 @@
       "label": "4 — PRIMARY DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000163839722000031/xslF345X03/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "KBDC insider reports share transaction dated December 9, 2022",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "4",
@@ -1170,7 +1605,10 @@
       "label": "4 — PRIMARY DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000163839722000030/xslF345X03/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "KBDC insider reports share transaction dated December 9, 2022",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "4",
@@ -1178,7 +1616,10 @@
       "label": "4 — PRIMARY DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000163839722000029/xslF345X03/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "KBDC insider reports share transaction dated December 9, 2022",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "4",
@@ -1186,7 +1627,10 @@
       "label": "4 — PRIMARY DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000163839722000028/xslF345X03/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "KBDC insider reports share transaction dated December 9, 2022",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "4",
@@ -1194,7 +1638,10 @@
       "label": "4 — PRIMARY DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000163839722000027/xslF345X03/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "KBDC insider reports share transaction dated December 9, 2022",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "8-K",
@@ -1202,7 +1649,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390022074495/ea169130-8k_kayne.htm",
-      "material": true
+      "material": true,
+      "headline": "KBDC upsizes revolving facility to $350M, spread rises to SOFR+2.75%",
+      "signal": "clean",
+      "signal_note": "Facility upsized, pricing increased"
     },
     {
       "form": "40-17G",
@@ -1210,7 +1660,10 @@
       "label": "40-17G — FIDELITY BOND",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000089418922008460/ka-bdc3_4017g.pdf",
-      "material": false
+      "material": false,
+      "headline": "KBDC files fidelity bond filing (Form 40-17G)",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "10-Q",
@@ -1218,7 +1671,10 @@
       "label": "Quarterly report (10-Q) for period ending 2022-09-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390022071987/f10q0922_kayneand.htm",
-      "material": true
+      "material": true,
+      "headline": "KBDC Q3 2022 report: no loans on non-accrual status",
+      "signal": "clean",
+      "signal_note": "No adverse credit disclosure"
     },
     {
       "form": "8-K",
@@ -1226,7 +1682,10 @@
       "label": "Current report: changed a director or senior officer",
       "category": "Personnel",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390022071796/ea168578-8k_kayne.htm",
-      "material": true
+      "material": true,
+      "headline": "KBDC appoints new officer to management team",
+      "signal": "clean",
+      "signal_note": "Routine officer appointment"
     },
     {
       "form": "3",
@@ -1234,7 +1693,10 @@
       "label": "3 — PRIMARY DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000163839722000026/xslF345X02/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "KBDC insider files initial ownership statement",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "8-K",
@@ -1242,7 +1704,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390022069408/ea168105-8k_kayne.htm",
-      "material": true
+      "material": true,
+      "headline": "KBDC reports unregistered stock sale and paid distribution",
+      "signal": "clean",
+      "signal_note": "Routine equity and distribution"
     },
     {
       "form": "4",
@@ -1250,7 +1715,10 @@
       "label": "4 — PRIMARY DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000163839722000024/xslF345X03/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "KBDC insider reports share transaction dated October 31, 2022",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "40-APP",
@@ -1258,7 +1726,10 @@
       "label": "40-APP — 40-APP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000095012322010017/d379179d40app.htm",
-      "material": false
+      "material": false,
+      "headline": "KBDC files SEC co-investment exemptive relief application",
+      "signal": "clean",
+      "signal_note": "Routine exemptive application"
     },
     {
       "form": "10-Q",
@@ -1266,7 +1737,10 @@
       "label": "Quarterly report (10-Q) for period ending 2022-06-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390022047906/f10q0622_kayneand.htm",
-      "material": true
+      "material": true,
+      "headline": "KBDC Q2 2022: no non-accruals; credit facilities resized",
+      "signal": "clean",
+      "signal_note": "No adverse credit disclosure"
     },
     {
       "form": "8-K",
@@ -1274,7 +1748,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390022042416/ea163526-8k_kayne.htm",
-      "material": true
+      "material": true,
+      "headline": "KBDC reports unregistered stock sale and distribution payment",
+      "signal": "clean",
+      "signal_note": "Routine equity and distribution"
     },
     {
       "form": "4",
@@ -1282,7 +1759,10 @@
       "label": "4 — PRIMARY DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000163839722000022/xslF345X03/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "KBDC insider reports share transaction dated July 22, 2022",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "4",
@@ -1290,7 +1770,10 @@
       "label": "4 — PRIMARY DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000163839722000021/xslF345X03/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "KBDC insider reports share transaction dated July 22, 2022",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "4",
@@ -1298,7 +1781,10 @@
       "label": "4 — PRIMARY DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000163839722000020/xslF345X03/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "KBDC insider reports share transaction dated July 22, 2022",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "4",
@@ -1306,7 +1792,10 @@
       "label": "4 — PRIMARY DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000163839722000019/xslF345X03/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "KBDC insider reports share transaction dated July 22, 2022",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "4",
@@ -1314,7 +1803,10 @@
       "label": "4 — PRIMARY DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000163839722000018/xslF345X03/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "KBDC insider reports share transaction dated July 22, 2022",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "4",
@@ -1322,7 +1814,10 @@
       "label": "4 — PRIMARY DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000163839722000017/xslF345X03/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "KBDC insider reports share transaction dated July 22, 2022",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "4",
@@ -1330,7 +1825,10 @@
       "label": "4 — PRIMARY DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000163839722000016/xslF345X03/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "KBDC insider reports share transaction dated July 22, 2022",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "8-K",
@@ -1338,7 +1836,10 @@
       "label": "Current report (8-K)",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390022033896/ea161821-8k_kayneander.htm",
-      "material": false
+      "material": false,
+      "headline": "KBDC stockholders approve proposals at 2022 annual meeting",
+      "signal": "clean",
+      "signal_note": "Routine annual meeting vote"
     },
     {
       "form": "10-Q",
@@ -1346,7 +1847,10 @@
       "label": "Quarterly report (10-Q) for period ending 2022-03-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390022027196/f10q0322_kayneanderson.htm",
-      "material": true
+      "material": true,
+      "headline": "KBDC files first quarter 2022 report on Form 10-Q",
+      "signal": "clean",
+      "signal_note": "No adverse credit disclosure"
     },
     {
       "form": "DEF 14A",
@@ -1354,7 +1858,10 @@
       "label": "Proxy statement — DEFINITIVE PROXY STATEMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390022022621/def14a0422_kayneander.htm",
-      "material": false
+      "material": false,
+      "headline": "KBDC files 2022 annual meeting proxy statement",
+      "signal": "clean",
+      "signal_note": "Routine proxy statement"
     },
     {
       "form": "10-K",
@@ -1362,7 +1869,10 @@
       "label": "Annual report (10-K) for period ending 2021-12-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390022011623/f10k2021_kayneanderson.htm",
-      "material": true
+      "material": true,
+      "headline": "KBDC files fiscal 2021 annual report on Form 10-K",
+      "signal": "clean",
+      "signal_note": "No adverse credit disclosure"
     },
     {
       "form": "D/A",
@@ -1370,7 +1880,10 @@
       "label": "D/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000110465922027447/xslFormDX08/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "KBDC files Form D/A private offering notice",
+      "signal": "clean",
+      "signal_note": "Routine private offering"
     },
     {
       "form": "8-K",
@@ -1378,7 +1891,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390022009497/ea156212-8k_kayneanderson.htm",
-      "material": true
+      "material": true,
+      "headline": "KBDC amends revolving funding facility",
+      "signal": "clean",
+      "signal_note": "Routine facility amendment"
     },
     {
       "form": "8-K",
@@ -1386,7 +1902,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390022004201/ea154599-8k_kayneanderson.htm",
-      "material": true
+      "material": true,
+      "headline": "KBDC sells 4,191,292 common shares in unregistered offering",
+      "signal": "clean",
+      "signal_note": "Routine equity issuance"
     },
     {
       "form": "4",
@@ -1394,7 +1913,10 @@
       "label": "4 — PRIMARY DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000163839722000005/xslF345X03/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "KBDC insider reports share transaction dated January 24, 2022",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "4",
@@ -1402,7 +1924,10 @@
       "label": "4 — PRIMARY DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000163839722000004/xslF345X03/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "KBDC insider reports share transaction dated January 24, 2022",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "4",
@@ -1410,7 +1935,10 @@
       "label": "4 — PRIMARY DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000163839722000003/xslF345X03/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "KBDC insider reports share transaction dated January 24, 2022",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "SC 13G",
@@ -1418,7 +1946,10 @@
       "label": "SC 13G — SC 13G",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000119312522004433/d249216dsc13g.htm",
-      "material": false
+      "material": false,
+      "headline": "Investor files Schedule 13G on KBDC common stock",
+      "signal": "clean",
+      "signal_note": "Routine ownership disclosure"
     },
     {
       "form": "40-17G",
@@ -1426,7 +1957,10 @@
       "label": "40-17G — FIDELITY BOND",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000089418921008740/ka-bdc_4017g.pdf",
-      "material": false
+      "material": false,
+      "headline": "KBDC files fidelity bond (Form 40-17G)",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "8-K",
@@ -1434,7 +1968,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390021064142/ea151965-8k_kayneanderson.htm",
-      "material": true
+      "material": true,
+      "headline": "KBDC increases subscription credit facility to $150 million",
+      "signal": "clean",
+      "signal_note": "Routine facility upsize"
     },
     {
       "form": "4",
@@ -1442,7 +1979,10 @@
       "label": "4 — PRIMARY DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000163839721000038/xslF345X03/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "KBDC insider reports share transaction dated December 2, 2021",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "3",
@@ -1450,7 +1990,10 @@
       "label": "3 — PRIMARY DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000163839721000036/xslF345X02/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "KBDC insider files initial ownership statement",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "8-K",
@@ -1458,7 +2001,10 @@
       "label": "Current report: changed a director or senior officer",
       "category": "Personnel",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390021059240/ea150618-8k_kayneanderson.htm",
-      "material": true
+      "material": true,
+      "headline": "KBDC reports director or officer appointment",
+      "signal": "clean",
+      "signal_note": "Routine appointment"
     },
     {
       "form": "10-Q",
@@ -1466,7 +2012,10 @@
       "label": "Quarterly report (10-Q) for period ending 2021-09-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390021059234/f10q0921_kayneanderson.htm",
-      "material": true
+      "material": true,
+      "headline": "KBDC Q3 2021: no non-accruals; credit facility upsized to $100M",
+      "signal": "clean",
+      "signal_note": "No adverse credit disclosure"
     },
     {
       "form": "8-K",
@@ -1474,7 +2023,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390021056492/ea149911-8k_kayneanderson.htm",
-      "material": true
+      "material": true,
+      "headline": "KBDC reports unregistered stock sale and distribution payment",
+      "signal": "clean",
+      "signal_note": "Routine equity and distribution"
     },
     {
       "form": "4",
@@ -1482,7 +2034,10 @@
       "label": "4 — PRIMARY DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000163839721000035/xslF345X03/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "KBDC insider reports share transaction dated October 28, 2021",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "4",
@@ -1490,7 +2045,10 @@
       "label": "4 — PRIMARY DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000163839721000034/xslF345X03/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "KBDC insider reports share transaction dated October 28, 2021",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "8-K",
@@ -1498,7 +2056,10 @@
       "label": "Current report: changed a director or senior officer",
       "category": "Personnel",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390021052415/ea148678-8k_kayneanderson.htm",
-      "material": true
+      "material": true,
+      "headline": "KBDC reports resignation of CEO and interested director",
+      "signal": "watch",
+      "signal_note": "Leadership resignation"
     },
     {
       "form": "4",
@@ -1506,7 +2067,10 @@
       "label": "4 — PRIMARY DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000163839721000033/xslF345X03/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "KBDC insider reports share transaction dated October 1, 2021",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "4",
@@ -1514,7 +2078,10 @@
       "label": "4 — PRIMARY DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000163839721000031/xslF345X03/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "KBDC insider reports share transaction dated June 1, 2021",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "10-Q",
@@ -1522,7 +2089,10 @@
       "label": "Quarterly report (10-Q) for period ending 2021-06-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390021043026/f10q0621_kayneanderson.htm",
-      "material": true
+      "material": true,
+      "headline": "KBDC Q2 2021: no non-accruals; CEO Levitt resigns, Baker appointed",
+      "signal": "watch",
+      "signal_note": "CEO transition disclosed"
     },
     {
       "form": "8-K",
@@ -1530,7 +2100,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390021039016/ea144875-8k_kayneanderson.htm",
-      "material": true
+      "material": true,
+      "headline": "KBDC reports unregistered stock sale and distribution payment",
+      "signal": "clean",
+      "signal_note": "Routine equity and distribution"
     },
     {
       "form": "4",
@@ -1538,7 +2111,10 @@
       "label": "4 — PRIMARY DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000163839721000030/xslF345X03/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "KBDC insider reports share transaction dated July 23, 2021",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "8-K",
@@ -1546,7 +2122,10 @@
       "label": "Current report: changed a director or senior officer",
       "category": "Personnel",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000119312521192103/d180652d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "KBDC CEO Levitt resigns; Baker appointed chief executive",
+      "signal": "watch",
+      "signal_note": "CEO resignation and appointment"
     },
     {
       "form": "10-Q",
@@ -1554,7 +2133,10 @@
       "label": "Quarterly report (10-Q) for period ending 2021-03-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390021026940/f10q0321_kayneanderson.htm",
-      "material": true
+      "material": true,
+      "headline": "KBDC Q1 2021: no loans in default or non-accrual status",
+      "signal": "clean",
+      "signal_note": "No adverse credit disclosure"
     },
     {
       "form": "DEF 14A",
@@ -1562,7 +2144,10 @@
       "label": "Proxy statement — DEFINITIVE PROXY STATEMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390021023926/def14a0421_kayne.htm",
-      "material": false
+      "material": false,
+      "headline": "KBDC files 2021 annual meeting proxy statement",
+      "signal": "clean",
+      "signal_note": "Routine proxy statement"
     },
     {
       "form": "8-K",
@@ -1570,7 +2155,10 @@
       "label": "Current report (8-K)",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000121390021023048/ea139962-8k_kayneander.htm",
-      "material": false
+      "material": false,
+      "headline": "KBDC sells common stock in unregistered offering",
+      "signal": "clean",
+      "signal_note": "Routine equity issuance"
     },
     {
       "form": "10-12G/A",
@@ -1578,7 +2166,10 @@
       "label": "10-12G/A — 10-12G/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000119312521076449/d152631d1012ga.htm",
-      "material": false
+      "material": false,
+      "headline": "KBDC files Form 10 registration statement amendment",
+      "signal": "clean",
+      "signal_note": "Routine registration amendment"
     },
     {
       "form": "3",
@@ -1586,7 +2177,10 @@
       "label": "3 — PRIMARY DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000163839721000010/xslF345X02/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "KBDC insider files initial ownership statement",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "10-K",
@@ -1594,7 +2188,10 @@
       "label": "Annual report (10-K) for period ending 2020-12-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000119312521059867/d122096d10k.htm",
-      "material": true
+      "material": true,
+      "headline": "KBDC files fiscal 2020 annual report on Form 10-K",
+      "signal": "clean",
+      "signal_note": "No adverse credit disclosure"
     },
     {
       "form": "CORRESP",
@@ -1602,7 +2199,10 @@
       "label": "CORRESP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000119312521056930/filename1.htm",
-      "material": false
+      "material": false,
+      "headline": "KBDC responds to SEC; initial portfolio has no non-accruals",
+      "signal": "clean",
+      "signal_note": "No non-accruals disclosed"
     },
     {
       "form": "D",
@@ -1610,7 +2210,10 @@
       "label": "D",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000163839721000009/xslFormDX08/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "KBDC files Form D private offering notice",
+      "signal": "clean",
+      "signal_note": "Routine private offering"
     },
     {
       "form": "4",
@@ -1618,7 +2221,10 @@
       "label": "4 — PRIMARY DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000163839721000008/xslF345X03/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "KBDC insider reports share transaction dated February 5, 2021",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "4",
@@ -1626,7 +2232,10 @@
       "label": "4 — PRIMARY DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000163839721000007/xslF345X03/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "KBDC insider reports share transaction dated February 5, 2021",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "4",
@@ -1634,7 +2243,10 @@
       "label": "4 — PRIMARY DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000163839721000006/xslF345X03/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "KBDC insider reports share transaction dated February 5, 2021",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "4",
@@ -1642,7 +2254,10 @@
       "label": "4 — PRIMARY DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000163839721000005/xslF345X03/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "KBDC insider reports share transaction dated February 5, 2021",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "4",
@@ -1650,7 +2265,10 @@
       "label": "4 — PRIMARY DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000163839721000004/xslF345X03/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "KBDC insider reports share transaction dated February 5, 2021",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "8-K12G3",
@@ -1658,7 +2276,10 @@
       "label": "8-K12G3 — 8-K12G3",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000119312521032702/d36497d8k12g3.htm",
-      "material": false
+      "material": false,
+      "headline": "KBDC files successor issuer registration and enters credit agreement",
+      "signal": "clean",
+      "signal_note": "Routine registration and financing"
     },
     {
       "form": "N-54A",
@@ -1666,7 +2287,10 @@
       "label": "N-54A — N-54A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000119312521030922/d32675dn54a.htm",
-      "material": false
+      "material": false,
+      "headline": "KBDC files notification of election to be regulated as BDC",
+      "signal": "clean",
+      "signal_note": "Routine BDC election"
     },
     {
       "form": "40-17G",
@@ -1674,7 +2298,10 @@
       "label": "40-17G — FIDELITY BOND",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000089418920009643/kayne_bond.pdf",
-      "material": false
+      "material": false,
+      "headline": "KBDC files fidelity bond (Form 40-17G)",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "N-6F/A",
@@ -1682,7 +2309,10 @@
       "label": "N-6F/A — N-6F/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000119312520308464/d78602dn6fa.htm",
-      "material": false
+      "material": false,
+      "headline": "KBDC amends notice of intent to elect BDC status",
+      "signal": "clean",
+      "signal_note": "Routine BDC election notice"
     },
     {
       "form": "3",
@@ -1690,7 +2320,10 @@
       "label": "3 — PRIMARY DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000163839720000020/xslF345X02/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "KBDC insider files initial ownership statement",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "3",
@@ -1698,7 +2331,10 @@
       "label": "3 — PRIMARY DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000163839720000019/xslF345X02/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "KBDC insider files initial ownership statement",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "3",
@@ -1706,7 +2342,10 @@
       "label": "3 — PRIMARY DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000163839720000018/xslF345X02/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "KBDC insider files initial ownership statement",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "3",
@@ -1714,7 +2353,10 @@
       "label": "3 — PRIMARY DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000163839720000017/xslF345X02/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "KBDC insider files initial ownership statement",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "3",
@@ -1722,7 +2364,10 @@
       "label": "3 — PRIMARY DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000163839720000016/xslF345X02/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "KBDC insider files initial ownership statement",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "3",
@@ -1730,7 +2375,10 @@
       "label": "3 — PRIMARY DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000163839720000015/xslF345X02/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "KBDC insider files initial ownership statement",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "3",
@@ -1738,7 +2386,10 @@
       "label": "3 — PRIMARY DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000163839720000014/xslF345X02/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "KBDC insider files initial ownership statement",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "3",
@@ -1746,7 +2397,10 @@
       "label": "3 — PRIMARY DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000163839720000013/xslF345X02/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "KBDC insider files initial ownership statement",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "3",
@@ -1754,7 +2408,10 @@
       "label": "3 — PRIMARY DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000163839720000012/xslF345X02/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "KBDC insider files initial ownership statement",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "3",
@@ -1762,7 +2419,10 @@
       "label": "3 — PRIMARY DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000163839720000011/xslF345X02/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "KBDC insider files initial ownership statement",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "10-12G/A",
@@ -1770,7 +2430,10 @@
       "label": "10-12G/A — 10-12G/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000119312520289195/d78594d1012ga.htm",
-      "material": false
+      "material": false,
+      "headline": "KBDC files Form 10 registration statement amendment",
+      "signal": "clean",
+      "signal_note": "Routine registration amendment"
     },
     {
       "form": "CORRESP",
@@ -1778,7 +2441,10 @@
       "label": "CORRESP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000119312520287840/filename1.htm",
-      "material": false
+      "material": false,
+      "headline": "KBDC responds to SEC comments on Form 10 registration",
+      "signal": "clean",
+      "signal_note": "Routine SEC comment response"
     },
     {
       "form": "10-12G/A",
@@ -1786,7 +2452,10 @@
       "label": "10-12G/A — 10-12G/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000119312520271222/d78594d1012ga.htm",
-      "material": false
+      "material": false,
+      "headline": "KBDC files Form 10 registration statement amendment",
+      "signal": "clean",
+      "signal_note": "Routine registration amendment"
     },
     {
       "form": "UPLOAD",
@@ -1794,7 +2463,10 @@
       "label": "UPLOAD",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000000000020009816/filename1.pdf",
-      "material": false
+      "material": false,
+      "headline": "SEC staff comment letter uploaded for KBDC",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "CORRESP",
@@ -1802,7 +2474,10 @@
       "label": "CORRESP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000119312520269268/filename1.htm",
-      "material": false
+      "material": false,
+      "headline": "KBDC responds to SEC comments on Form 10 registration",
+      "signal": "clean",
+      "signal_note": "Routine SEC comment response"
     },
     {
       "form": "N-6F",
@@ -1810,7 +2485,10 @@
       "label": "N-6F — N-6F",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000119312520254642/d34781dn6f.htm",
-      "material": false
+      "material": false,
+      "headline": "KBDC files notice of intent to elect BDC status",
+      "signal": "clean",
+      "signal_note": "Routine BDC election notice"
     },
     {
       "form": "10-12G",
@@ -1818,7 +2496,10 @@
       "label": "10-12G — 10-12G",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1747172/000119312520244105/d25770d1012g.htm",
-      "material": false
+      "material": false,
+      "headline": "KBDC files initial Form 10 registration statement",
+      "signal": "clean",
+      "signal_note": "Routine registration statement"
     }
   ]
 }

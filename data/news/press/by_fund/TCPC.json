@@ -42,7 +42,10 @@
       "label": "Current report: reported quarterly results; issued a Regulation FD disclosure",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1370755/000119312526210643/tcpc-20260507.htm",
-      "material": true
+      "material": true,
+      "headline": "Q1 results reported; declared $0.17 Q2 dividend",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results and dividend"
     },
     {
       "form": "10-Q",
@@ -122,7 +125,10 @@
       "label": "Current report: reported quarterly results; issued a Regulation FD disclosure",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1370755/000119312526079341/tcpc-20260227.htm",
-      "material": true
+      "material": true,
+      "headline": "BlackRock TCP Capital posted Q4 results and declared $0.17 dividend",
+      "signal": "clean",
+      "signal_note": "Routine results, dividend declared"
     },
     {
       "form": "IRANNOTICE",
@@ -186,7 +192,10 @@
       "label": "Current report: reported quarterly results; issued a Regulation FD disclosure",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1370755/000119312525268140/tcpc-20251106.htm",
-      "material": true
+      "material": true,
+      "headline": "BlackRock TCP Capital declared $0.25 fourth-quarter dividend with Q3 results",
+      "signal": "clean",
+      "signal_note": "Dividend declared as normal"
     },
     {
       "form": "10-Q",
@@ -210,7 +219,10 @@
       "label": "Current report: reported quarterly results; issued a Regulation FD disclosure",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1370755/000095017025104595/tcpc-20250807.htm",
-      "material": true
+      "material": true,
+      "headline": "TCPC posted Q2 results and declared $0.25 regular plus $0.04 special dividend",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results and dividend"
     },
     {
       "form": "10-Q",
@@ -306,7 +318,10 @@
       "label": "Current report: reported quarterly results; issued a Regulation FD disclosure",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1370755/000095017025066428/tcpc-20250508.htm",
-      "material": true
+      "material": true,
+      "headline": "BlackRock TCP Capital declared $0.25 Q2 dividend plus $0.04 special",
+      "signal": "clean",
+      "signal_note": "Routine Q1 results and dividends"
     },
     {
       "form": "10-Q",
@@ -426,7 +441,10 @@
       "label": "Current report: reported quarterly results; issued a Regulation FD disclosure",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1370755/000113322825001616/brtc-efp14829_8k.htm",
-      "material": true
+      "material": true,
+      "headline": "TCPC corrected release to show Q4 net unrealized losses of $72.3M",
+      "signal": "watch",
+      "signal_note": "Net unrealized losses; adviser waiving management fee"
     },
     {
       "form": "8-K",
@@ -434,7 +452,10 @@
       "label": "Current report: reported quarterly results; issued a Regulation FD disclosure",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1370755/000095017025028392/tcpc-20250227.htm",
-      "material": true
+      "material": true,
+      "headline": "TCPC posted Q4 results as adviser waived one-third of base management fee",
+      "signal": "watch",
+      "signal_note": "Adviser waiving management fee signals pressure"
     },
     {
       "form": "10-K",
@@ -922,7 +943,10 @@
       "label": "Current report: entered a material agreement; completed an acquisition or disposition",
       "category": "Personnel",
       "url": "https://www.sec.gov/Archives/edgar/data/1370755/000114036124013943/ef20024232_8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Completed BlackRock Capital (BCIC) merger; assumed $265M credit facility and notes",
+      "signal": "clean",
+      "signal_note": "Routine merger completion"
     },
     {
       "form": "425",
@@ -1722,7 +1746,10 @@
       "label": "Current report: reported quarterly results; changed a director or senior officer",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1370755/000156459021039639/tcpc-8k_20210802.htm",
-      "material": true
+      "material": true,
+      "headline": "TCPC reports Q2 results and declares $0.30 third-quarter dividend",
+      "signal": "clean",
+      "signal_note": "Routine results and dividend"
     },
     {
       "form": "10-Q",

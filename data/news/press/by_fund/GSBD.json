@@ -26,7 +26,10 @@
       "label": "Current report: reported quarterly results; issued a Regulation FD disclosure",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1572694/000119312526212714/d117157d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Q1 results reported; declared $0.32 base Q2 dividend",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results and dividend"
     },
     {
       "form": "10-Q",
@@ -90,7 +93,10 @@
       "label": "Current report: changed a director or senior officer",
       "category": "Personnel",
       "url": "https://www.sec.gov/Archives/edgar/data/1572694/000119312526110886/d104770d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Director Susan McGee to resign from board effective March 31",
+      "signal": "clean",
+      "signal_note": "Routine board departure"
     },
     {
       "form": "8-K",
@@ -98,7 +104,10 @@
       "label": "Current report: changed a director or senior officer",
       "category": "Personnel",
       "url": "https://www.sec.gov/Archives/edgar/data/1572694/000119312526085495/d71234d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Board cut to six directors after retirement; Leach and Uniacke reclassified",
+      "signal": "clean",
+      "signal_note": "Routine board reclassification"
     },
     {
       "form": "8-K",
@@ -106,7 +115,10 @@
       "label": "Current report: reported quarterly results; issued a Regulation FD disclosure",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1572694/000119312526078362/d117783d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Goldman Sachs BDC declared $0.32 base plus $0.03 supplemental dividend; PIK 9% of income",
+      "signal": "clean",
+      "signal_note": "Routine results, dividends declared"
     },
     {
       "form": "10-K",
@@ -258,7 +270,10 @@
       "label": "Current report: reported quarterly results; issued a Regulation FD disclosure",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1572694/000119312525270134/d79700d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Goldman Sachs BDC declared $0.32 base plus $0.04 supplemental dividend",
+      "signal": "clean",
+      "signal_note": "Dividend declared as normal"
     },
     {
       "form": "10-Q",
@@ -362,7 +377,10 @@
       "label": "Current report: reported quarterly results; issued a Regulation FD disclosure",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1572694/000119312525175572/d34499d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "GSBD posted Q2 results and declared $0.32 base plus $0.16 special dividend",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results and dividend"
     },
     {
       "form": "10-Q",
@@ -450,7 +468,10 @@
       "label": "Current report: reported quarterly results; issued a Regulation FD disclosure",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1572694/000119312525116056/d795862d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "GSBD declared $0.32 Q2 distribution plus $0.16 special and $0.05 supplemental",
+      "signal": "clean",
+      "signal_note": "Routine Q1 results and distributions"
     },
     {
       "form": "10-Q",
@@ -546,7 +567,10 @@
       "label": "Current report: reported quarterly results; issued a Regulation FD disclosure",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1572694/000119312525039442/d904519d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Goldman Sachs BDC declared $0.32 base plus $0.16 special distribution with Q4 results",
+      "signal": "clean",
+      "signal_note": "Routine results and distributions"
     },
     {
       "form": "10-K",
@@ -1970,7 +1994,10 @@
       "label": "Current report: completed an acquisition or disposition; modified security holders' rights",
       "category": "Personnel",
       "url": "https://www.sec.gov/Archives/edgar/data/1572694/000119312520267861/d24773d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Goldman Sachs BDC completed MMLC merger, issued 61 million shares, added three directors",
+      "signal": "clean",
+      "signal_note": "Merger completed at NAV-for-NAV exchange"
     },
     {
       "form": "8-K",

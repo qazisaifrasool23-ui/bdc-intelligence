@@ -50,7 +50,10 @@
       "label": "Current report: reported quarterly results; changed a director or senior officer",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1675033/000119312526204241/gecc-20260501.htm",
-      "material": true
+      "material": true,
+      "headline": "Jason Reese named CEO, succeeding Matt Kaplan",
+      "signal": "clean",
+      "signal_note": "Routine CEO transition"
     },
     {
       "form": "10-Q",
@@ -114,7 +117,10 @@
       "label": "Current report: reported quarterly results; changed a director or senior officer",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1675033/000119312526085720/gecc-20260302.htm",
-      "material": true
+      "material": true,
+      "headline": "Chairman Drapkin resigned; Jason Reese named Executive Chairman",
+      "signal": "clean",
+      "signal_note": "Routine chairman transition"
     },
     {
       "form": "10-K",
@@ -2282,7 +2288,10 @@
       "label": "Current report: reported quarterly results; faces delisting or a listing-standard issue",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1675033/000114036122007874/ny20003136x2_8k.htm",
-      "material": true
+      "material": true,
+      "headline": "CEO resigned; distribution cut to $0.45 and board fell out of Nasdaq compliance",
+      "signal": "negative",
+      "signal_note": "Distribution cut; Nasdaq board-independence non-compliance"
     },
     {
       "form": "N-2",

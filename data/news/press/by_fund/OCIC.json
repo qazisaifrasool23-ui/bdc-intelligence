@@ -10,7 +10,10 @@
       "label": "Current report: issued a Regulation FD disclosure",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312526293509/d16628d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files 8-K for July 2 2026 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "8-K",
@@ -18,7 +21,10 @@
       "label": "Current report (8-K)",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312526285602/d113793d8k.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC files 8-K for June 25 2026 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "8-K",
@@ -26,7 +32,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000181255426000041/orcic-20260622.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files 8-K for June 22 2026 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "8-K",
@@ -34,7 +43,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000162828026042497/ocic-20260608.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files 8-K for June 8 2026 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "40-17G",
@@ -42,7 +54,10 @@
       "label": "40-17G — 40-17G",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312526241956/d155449d4017g.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC files annual fidelity bond under Rule 17g-1",
+      "signal": "clean",
+      "signal_note": "Routine fidelity bond filing"
     },
     {
       "form": "SC TO-I",
@@ -50,7 +65,10 @@
       "label": "SC TO-I — SC TO-I",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000162828026038223/blueowlcreditincomecorp-sc.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC launches tender offer to repurchase Class S shares",
+      "signal": "clean",
+      "signal_note": "Routine share repurchase tender"
     },
     {
       "form": "8-K",
@@ -58,7 +76,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000181255426000037/orcic-20260522.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files 8-K for May 22 2026 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "424B3",
@@ -66,7 +87,10 @@
       "label": "Prospectus supplement (offering) — 424B3",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000162828026034184/ocic-10xqx424b3q126a.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files prospectus supplement with Q1 2026 update",
+      "signal": "clean",
+      "signal_note": "Routine prospectus supplement"
     },
     {
       "form": "10-Q",
@@ -74,7 +98,10 @@
       "label": "Quarterly report (10-Q) for period ending 2026-03-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000181255426000027/orcic-20260331.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files Q1 2026 10-Q; MD&A discusses results",
+      "signal": "clean",
+      "signal_note": "Quarterly report, no adverse fact"
     },
     {
       "form": "8-K",
@@ -82,7 +109,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312526216711/d147818d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files 8-K for May 5 2026 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "8-K",
@@ -90,7 +120,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312526201552/d144782d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files 8-K for April 27 2026 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "SC TO-I/A",
@@ -98,7 +131,10 @@
       "label": "SC TO-I/A — SC TO-I/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000162828026027580/ocic-scheduletoa.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC amends share repurchase tender offer",
+      "signal": "clean",
+      "signal_note": "Tender offer amendment"
     },
     {
       "form": "POS EX",
@@ -106,7 +142,10 @@
       "label": "POS EX — POS EX",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000162828026027222/blueowlocicn-2posexapril20.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC files post-effective amendment to N-2 registration",
+      "signal": "clean",
+      "signal_note": "Registration amendment"
     },
     {
       "form": "8-K",
@@ -114,7 +153,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000181255426000017/orcic-20260423.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files 8-K for April 23 2026 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "486BPOS",
@@ -122,7 +164,10 @@
       "label": "486BPOS — 486BPOS",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000162828026026116/ck0001812554-20260421.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC files post-effective amendment for continuous offering",
+      "signal": "clean",
+      "signal_note": "Continuous offering amendment"
     },
     {
       "form": "DEFA14A",
@@ -130,7 +175,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312526151374/d12367ddefa14a.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC files additional annual meeting proxy materials",
+      "signal": "clean",
+      "signal_note": "Proxy solicitation"
     },
     {
       "form": "8-K",
@@ -138,7 +186,10 @@
       "label": "Current report: issued a Regulation FD disclosure",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312526139036/d127449d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files 8-K for April 2 2026 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "DEFA14A",
@@ -146,7 +197,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312526138195/d946414ddefa14a.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC files additional annual meeting proxy materials",
+      "signal": "clean",
+      "signal_note": "Proxy solicitation"
     },
     {
       "form": "DEF 14A",
@@ -154,7 +208,10 @@
       "label": "Proxy statement — DEF 14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312526138175/d73425ddef14a.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC files 2026 annual meeting proxy statement",
+      "signal": "clean",
+      "signal_note": "Annual proxy statement"
     },
     {
       "form": "8-K",
@@ -162,7 +219,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000181255426000015/orcic-20260323.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files 8-K for March 23 2026 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "EFFECT",
@@ -170,7 +230,10 @@
       "label": "EFFECT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/999999999526000883/xslEFFECTX01/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "OCIC registration statement declared effective by SEC",
+      "signal": "clean",
+      "signal_note": "Notice of effectiveness"
     },
     {
       "form": "424B3",
@@ -178,7 +241,10 @@
       "label": "Prospectus supplement (offering) — 424B3",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000162828026020169/ocic-424b3.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC offers to exchange $500M 5.900% notes due 2028",
+      "signal": "clean",
+      "signal_note": "Registered note exchange offer"
     },
     {
       "form": "N-14 8C/A",
@@ -186,7 +252,10 @@
       "label": "N-14 8C/A — N-14 8C/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000162828026016447/ocic-nx14amarch2026.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC amends N-14 registration statement",
+      "signal": "clean",
+      "signal_note": "Registration amendment"
     },
     {
       "form": "8-K",
@@ -194,7 +263,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312526098659/d105848d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files 8-K for March 5 2026 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "424B3",
@@ -202,7 +274,10 @@
       "label": "Prospectus supplement (offering) — 424B3",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000162828026014680/ocic-10xkx424b3q425a.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files prospectus supplement with Q4 2025 update",
+      "signal": "clean",
+      "signal_note": "Routine prospectus supplement"
     },
     {
       "form": "SC TO-I/A",
@@ -210,7 +285,10 @@
       "label": "SC TO-I/A — SC TO-I/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000162828026014671/ocic-scheduletoa1march2026.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC amends share repurchase tender offer",
+      "signal": "clean",
+      "signal_note": "Tender offer amendment"
     },
     {
       "form": "10-K",
@@ -218,7 +296,10 @@
       "label": "Annual report (10-K) for period ending 2025-12-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000181255426000011/orcic-20251231.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files fiscal 2025 10-K; MD&A discusses results",
+      "signal": "clean",
+      "signal_note": "Annual report, no adverse fact"
     },
     {
       "form": "SC TO-I",
@@ -226,7 +307,10 @@
       "label": "SC TO-I — SC TO-I",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000162828026012584/blueowlcreditincomecorp-sc.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC launches tender offer to repurchase Class S shares",
+      "signal": "clean",
+      "signal_note": "Routine share repurchase tender"
     },
     {
       "form": "8-K",
@@ -234,7 +318,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000181255426000006/orcic-20260224.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files 8-K for February 24 2026 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "SC TO-C",
@@ -242,7 +329,10 @@
       "label": "SC TO-C — FORM SC TO-C",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000121390026018916/ea027787803-sctoc_cox.htm",
-      "material": false
+      "material": false,
+      "headline": "Saba and Cox launch third-party tender offer for OCIC shares",
+      "signal": "watch",
+      "signal_note": "Third-party activist tender offer"
     },
     {
       "form": "N-14 8C",
@@ -250,7 +340,10 @@
       "label": "N-14 8C — N-14 8C",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000162828026006494/ocic-nx14february2026.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC files N-14 registration statement",
+      "signal": "clean",
+      "signal_note": "Registration statement"
     },
     {
       "form": "SC TO-I/A",
@@ -258,7 +351,10 @@
       "label": "SC TO-I/A — SC TO-I/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000162828026003929/ocic-scheduletoajanuary2026.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC amends share repurchase tender offer",
+      "signal": "clean",
+      "signal_note": "Tender offer amendment"
     },
     {
       "form": "8-K",
@@ -266,7 +362,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000181255426000003/orcic-20260126.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files 8-K for January 26 2026 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "8-K",
@@ -274,7 +373,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312526004600/d941890d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files 8-K for December 31 2025 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "8-K",
@@ -282,7 +384,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000181255425000087/orcic-20251222.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files 8-K for December 22 2025 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "SC TO-I",
@@ -290,7 +395,10 @@
       "label": "SC TO-I — SC TO-I",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000162828025054161/blueowlcreditincomecorp-sc.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC launches tender offer to repurchase Class S shares",
+      "signal": "clean",
+      "signal_note": "Routine share repurchase tender"
     },
     {
       "form": "8-K",
@@ -298,7 +406,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000181255425000084/orcic-20251125.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files 8-K for November 25 2025 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "424B3",
@@ -306,7 +417,10 @@
       "label": "Prospectus supplement (offering) — 424B3",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000162828025050615/ocic-424b3q325.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files prospectus supplement with Q3 2025 update",
+      "signal": "clean",
+      "signal_note": "Routine prospectus supplement"
     },
     {
       "form": "10-Q",
@@ -314,7 +428,10 @@
       "label": "Quarterly report (10-Q) for period ending 2025-09-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000181255425000081/orcic-20250930.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files Q3 2025 10-Q; MD&A discusses results",
+      "signal": "clean",
+      "signal_note": "Quarterly report, no adverse fact"
     },
     {
       "form": "SC TO-I/A",
@@ -322,7 +439,10 @@
       "label": "SC TO-I/A — SC TO-I/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000162828025046290/ocic-scheduletoaoctober2025.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC amends share repurchase tender offer",
+      "signal": "clean",
+      "signal_note": "Tender offer amendment"
     },
     {
       "form": "8-K",
@@ -330,7 +450,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000181255425000075/orcic-20251023.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files 8-K for October 23 2025 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "8-K",
@@ -338,7 +461,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312525240327/d21897d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files 8-K for October 10 2025 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "8-K",
@@ -346,7 +472,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312525223394/d944208d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files 8-K for September 24 2025 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "8-K",
@@ -354,7 +483,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000181255425000070/orcic-20250924.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files 8-K for September 24 2025 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "8-K",
@@ -362,7 +494,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000181255425000068/ocic-20250909.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files 8-K for September 9 2025 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "SC TO-I",
@@ -370,7 +505,10 @@
       "label": "SC TO-I — SC TO-I",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000181255425000064/blueowlcreditincomecorp-sc.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC launches tender offer to repurchase Class S shares",
+      "signal": "clean",
+      "signal_note": "Routine share repurchase tender"
     },
     {
       "form": "8-K",
@@ -378,7 +516,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000181255425000060/orcic-20250822.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files 8-K for August 22 2025 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "N-2/A",
@@ -386,7 +527,10 @@
       "label": "N-2/A — N-2/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000181255425000057/ck0001812554-20250821.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC files N-2/A registration amendment",
+      "signal": "clean",
+      "signal_note": "Registration amendment"
     },
     {
       "form": "8-K",
@@ -394,7 +538,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312525182712/d74184d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files 8-K for August 12 2025 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "424B3",
@@ -402,7 +549,10 @@
       "label": "Prospectus supplement (offering) — 424B3",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000162828025039273/ocic-424b3xq225.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files prospectus supplement with Q2 2025 update",
+      "signal": "clean",
+      "signal_note": "Routine prospectus supplement"
     },
     {
       "form": "10-Q",
@@ -410,7 +560,10 @@
       "label": "Quarterly report (10-Q) for period ending 2025-06-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000181255425000052/orcic-20250630.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files Q2 2025 10-Q; MD&A discusses results",
+      "signal": "clean",
+      "signal_note": "Quarterly report, no adverse fact"
     },
     {
       "form": "8-K",
@@ -418,7 +571,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312525166540/d20914d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files 8-K for July 24 2025 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "8-K/A",
@@ -426,7 +582,10 @@
       "label": "8-K/A — 8-K/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000181255425000049/orcic-20250723.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC amends July 23 current report",
+      "signal": "clean",
+      "signal_note": "8-K/A amendment"
     },
     {
       "form": "SC TO-I/A",
@@ -434,7 +593,10 @@
       "label": "SC TO-I/A — SC TO-I/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000162828025035964/ocic-scheduletoafinaljuly2.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC amends share repurchase tender offer",
+      "signal": "clean",
+      "signal_note": "Tender offer amendment"
     },
     {
       "form": "8-K",
@@ -442,7 +604,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000181255425000046/orcic-20250723.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files 8-K for July 23 2025 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "8-K",
@@ -450,7 +615,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312525158793/d37887d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files 8-K for July 10 2025 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "8-K",
@@ -458,7 +626,10 @@
       "label": "Current report (8-K)",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312525151358/d949195d8k.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC files 8-K for June 26 2025 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "8-K",
@@ -466,7 +637,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000181255425000039/orcic-20250624.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files 8-K for June 24 2025 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "8-K",
@@ -474,7 +648,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312525127606/d908189d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files 8-K for May 22 2025 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "SC TO-I",
@@ -482,7 +659,10 @@
       "label": "SC TO-I — SC TO-I",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000162828025027647/blueowlcreditincomecorp-sc.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC launches tender offer to repurchase Class S shares",
+      "signal": "clean",
+      "signal_note": "Routine share repurchase tender"
     },
     {
       "form": "8-K",
@@ -490,7 +670,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000181255425000034/orcic-20250522.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files 8-K for May 22 2025 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "8-K",
@@ -498,7 +681,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000162828025027541/ocic-20250523.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files 8-K for May 23 2025 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "40-17G",
@@ -506,7 +692,10 @@
       "label": "40-17G — 40-17G",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312525125104/d927927d4017g.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC files annual fidelity bond under Rule 17g-1",
+      "signal": "clean",
+      "signal_note": "Routine fidelity bond filing"
     },
     {
       "form": "8-K",
@@ -514,7 +703,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312525122863/d939859d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files 8-K for May 15 2025 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "8-K",
@@ -522,7 +714,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312525122861/d696365d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files 8-K for May 15 2025 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "424B3",
@@ -530,7 +725,10 @@
       "label": "Prospectus supplement (offering) — 424B3",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000162828025024236/ocic-424b3stickerq125.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files prospectus supplement with Q1 2025 update",
+      "signal": "clean",
+      "signal_note": "Routine prospectus supplement"
     },
     {
       "form": "10-Q",
@@ -538,7 +736,10 @@
       "label": "Quarterly report (10-Q) for period ending 2025-03-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000181255425000030/orcic-20250331.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files Q1 2025 10-Q; MD&A discusses results",
+      "signal": "clean",
+      "signal_note": "Quarterly report, no adverse fact"
     },
     {
       "form": "8-K",
@@ -546,7 +747,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312525111660/d939115d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files 8-K for April 29 2025 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "8-K",
@@ -554,7 +758,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312525103902/d932898d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files 8-K for April 24 2025 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "SC TO-I/A",
@@ -562,7 +769,10 @@
       "label": "SC TO-I/A — SC TO-I/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000162828025019741/ocic-scheduletoafinalapril.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC amends share repurchase tender offer",
+      "signal": "clean",
+      "signal_note": "Tender offer amendment"
     },
     {
       "form": "8-K",
@@ -570,7 +780,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312525093579/d934288d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files 8-K for April 18 2025 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "8-K",
@@ -578,7 +791,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000181255425000024/orcic-20250423.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files 8-K for April 23 2025 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "N-2",
@@ -586,7 +802,10 @@
       "label": "Registration statement (N-2) — N-2",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000162828025017887/ck0001812554-20250415.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files N-2 shelf registration statement",
+      "signal": "clean",
+      "signal_note": "Shelf registration"
     },
     {
       "form": "DEFA14A",
@@ -594,7 +813,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312525076893/d920849ddefa14a.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC files additional annual meeting proxy materials",
+      "signal": "clean",
+      "signal_note": "Proxy solicitation"
     },
     {
       "form": "40-APP/A",
@@ -602,7 +824,10 @@
       "label": "40-APP/A — 40-APP/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312525076183/d937394d40appa.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC files amended exemptive relief application",
+      "signal": "clean",
+      "signal_note": "Exemptive application amendment"
     },
     {
       "form": "8-K",
@@ -610,7 +835,10 @@
       "label": "Current report: issued a Regulation FD disclosure",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312525074698/d939166d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files 8-K for April 4 2025 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "40-APP/A",
@@ -618,7 +846,10 @@
       "label": "40-APP/A — 40-APP/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312525072483/d937394d40appa.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC files amended exemptive relief application",
+      "signal": "clean",
+      "signal_note": "Exemptive application amendment"
     },
     {
       "form": "DEFA14A",
@@ -626,7 +857,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312525072444/d942828ddefa14a.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC files additional annual meeting proxy materials",
+      "signal": "clean",
+      "signal_note": "Proxy solicitation"
     },
     {
       "form": "DEF 14A",
@@ -634,7 +868,10 @@
       "label": "Proxy statement — DEF 14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312525072419/d923895ddef14a.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC files 2025 annual meeting proxy statement",
+      "signal": "clean",
+      "signal_note": "Annual proxy statement"
     },
     {
       "form": "EFFECT",
@@ -642,7 +879,10 @@
       "label": "EFFECT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/999999999525000917/xslEFFECTX01/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "OCIC registration statement declared effective by SEC",
+      "signal": "clean",
+      "signal_note": "Notice of effectiveness"
     },
     {
       "form": "424B3",
@@ -650,7 +890,10 @@
       "label": "Prospectus supplement (offering) — 424B3",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000162828025015912/ocic-424b3.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC offers to exchange multiple registered note series",
+      "signal": "clean",
+      "signal_note": "Registered note exchange offer"
     },
     {
       "form": "40-APP/A",
@@ -658,7 +901,10 @@
       "label": "40-APP/A — 40-APP/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312525067082/d937394d40appa.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC files amended exemptive relief application",
+      "signal": "clean",
+      "signal_note": "Exemptive application amendment"
     },
     {
       "form": "8-K",
@@ -666,7 +912,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000181255425000016/orcic-20250324.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files 8-K for March 24 2025 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "N-14 8C/A",
@@ -674,7 +923,10 @@
       "label": "N-14 8C/A — N-14 8C/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000162828025014132/ocic-nx14amarch2025.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC amends N-14 registration statement",
+      "signal": "clean",
+      "signal_note": "Registration amendment"
     },
     {
       "form": "N-2/A",
@@ -682,7 +934,10 @@
       "label": "N-2/A — N-2",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000162828025012877/ck0001812554-20250314.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC files N-2/A registration amendment",
+      "signal": "clean",
+      "signal_note": "Registration amendment"
     },
     {
       "form": "4",
@@ -690,7 +945,10 @@
       "label": "4 — 4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000095017025039511/xslF345X05/ownership.xml",
-      "material": false
+      "material": false,
+      "headline": "OCIC insider reports Section 16 transaction dated Mar 14",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 4"
     },
     {
       "form": "40-APP",
@@ -698,7 +956,10 @@
       "label": "40-APP — 40-APP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312525048700/d814922d40app.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC files exemptive application for co-investment relief",
+      "signal": "clean",
+      "signal_note": "Exemptive application"
     },
     {
       "form": "SC TO-I/A",
@@ -706,7 +967,10 @@
       "label": "SC TO-I/A — SC TO-I/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000162828025011003/ocic-scheduletoa1march2025.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC amends share repurchase tender offer",
+      "signal": "clean",
+      "signal_note": "Tender offer amendment"
     },
     {
       "form": "424B3",
@@ -714,7 +978,10 @@
       "label": "Prospectus supplement (offering) — 424B3",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000162828025010504/ocic-424b3x10xk2024.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files prospectus supplement with 2024 annual update",
+      "signal": "clean",
+      "signal_note": "Routine prospectus supplement"
     },
     {
       "form": "10-K",
@@ -722,7 +989,10 @@
       "label": "Annual report (10-K) for period ending 2024-12-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000181255425000009/orcic-20241231.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files fiscal 2024 10-K; MD&A discusses results",
+      "signal": "clean",
+      "signal_note": "Annual report, no adverse fact"
     },
     {
       "form": "8-K",
@@ -730,7 +1000,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312525044157/d845766d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files 8-K for February 28 2025 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "SC TO-I",
@@ -738,7 +1011,10 @@
       "label": "SC TO-I — SC TO-I",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000162828025008239/blueowlcreditincomecorp-sc.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC launches tender offer to repurchase Class S shares",
+      "signal": "clean",
+      "signal_note": "Routine share repurchase tender"
     },
     {
       "form": "8-K",
@@ -746,7 +1022,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000181255425000006/orcic-20250225.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files 8-K for February 25 2025 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "N-14 8C",
@@ -754,7 +1033,10 @@
       "label": "N-14 8C — N-14 8C",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000162828025005137/ocic-n14feb2025.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC files N-14 registration statement",
+      "signal": "clean",
+      "signal_note": "Registration statement"
     },
     {
       "form": "SC TO-I/A",
@@ -762,7 +1044,10 @@
       "label": "SC TO-I/A — SC TO-I/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000162828025002659/ocic-finalscheduletoamendm.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC amends share repurchase tender offer",
+      "signal": "clean",
+      "signal_note": "Tender offer amendment"
     },
     {
       "form": "8-K",
@@ -770,7 +1055,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000181255425000003/orcic-20250124.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files 8-K for January 24 2025 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "8-K",
@@ -778,7 +1066,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000162828025002224/ocic-20250116.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files 8-K for January 16 2025 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "8-K",
@@ -786,7 +1077,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000181255424000069/orcic-20241223.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files 8-K for December 23 2024 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "8-K",
@@ -794,7 +1088,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312524283166/d905458d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files 8-K for December 17 2024 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "486BPOS",
@@ -802,7 +1099,10 @@
       "label": "486BPOS — 486BPOS",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000162828024050232/ck0001812554-20241206.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC files post-effective amendment for continuous offering",
+      "signal": "clean",
+      "signal_note": "Continuous offering amendment"
     },
     {
       "form": "SC TO-I",
@@ -810,7 +1110,10 @@
       "label": "SC TO-I — SC TO-I",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000162828024049305/blueowlcreditincomecorp-sc.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC launches tender offer to repurchase Class S shares",
+      "signal": "clean",
+      "signal_note": "Routine share repurchase tender"
     },
     {
       "form": "8-K",
@@ -818,7 +1121,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000181255424000065/orcic-20241125.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files 8-K for November 25 2024 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "8-K",
@@ -826,7 +1132,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312524259857/d878185d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files 8-K for November 12 2024 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "4",
@@ -834,7 +1143,10 @@
       "label": "4 — 4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000095017024125508/xslF345X05/ownership.xml",
-      "material": false
+      "material": false,
+      "headline": "OCIC insider reports Section 16 transaction dated Nov 12",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 4"
     },
     {
       "form": "424B3",
@@ -842,7 +1154,10 @@
       "label": "Prospectus supplement (offering) — 424B3",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000162828024046651/ocic424b3stickernov2024.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files prospectus supplement with quarterly update",
+      "signal": "clean",
+      "signal_note": "Routine prospectus supplement"
     },
     {
       "form": "10-Q",
@@ -850,7 +1165,10 @@
       "label": "Quarterly report (10-Q) for period ending 2024-09-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000181255424000062/orcic-20240930.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files Q3 2024 10-Q; MD&A discusses results",
+      "signal": "clean",
+      "signal_note": "Quarterly report, no adverse fact"
     },
     {
       "form": "8-K",
@@ -858,7 +1176,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312524248740/d889298d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files 8-K for October 29 2024 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "8-K",
@@ -866,7 +1187,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312524242929/d902806d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files 8-K for October 18 2024 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "SC TO-I/A",
@@ -874,7 +1198,10 @@
       "label": "SC TO-I/A — SC TO-I/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000162828024043638/ocic-finalscheduletoamendm.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC amends share repurchase tender offer",
+      "signal": "clean",
+      "signal_note": "Tender offer amendment"
     },
     {
       "form": "8-K",
@@ -882,7 +1209,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000181255424000055/orcic-20241023.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files 8-K for October 23 2024 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "8-K",
@@ -890,7 +1220,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312524241891/d889747d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files 8-K for October 21 2024 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "8-K",
@@ -898,7 +1231,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312524241147/d888631d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files 8-K for October 16 2024 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "8-K",
@@ -906,7 +1242,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312524240447/d620023d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files 8-K for October 18 2024 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "8-K",
@@ -914,7 +1253,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000181255424000052/orcic-20240924.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files 8-K for September 24 2024 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "8-K",
@@ -922,7 +1264,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312524218915/d879206d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files 8-K for September 10 2024 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "SC TO-I",
@@ -930,7 +1275,10 @@
       "label": "SC TO-I — SC TO-I",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000162828024038444/blueowlcreditincomecorp-sc.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC launches tender offer to repurchase Class S shares",
+      "signal": "clean",
+      "signal_note": "Routine share repurchase tender"
     },
     {
       "form": "8-K",
@@ -938,7 +1286,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000181255424000048/orcic-20240822.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files 8-K for August 22 2024 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "3",
@@ -946,7 +1297,10 @@
       "label": "3 — 3",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000095017024098089/xslF345X02/ownership.xml",
-      "material": false
+      "material": false,
+      "headline": "OCIC insider files initial Form 3 statement",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 3"
     },
     {
       "form": "8-K",
@@ -954,7 +1308,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312524201344/d881788d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files 8-K for August 9 2024 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "424B3",
@@ -962,7 +1319,10 @@
       "label": "Prospectus supplement (offering) — 424B3",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000162828024036475/ocic63024424b3.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files prospectus supplement with quarterly update",
+      "signal": "clean",
+      "signal_note": "Routine prospectus supplement"
     },
     {
       "form": "10-Q",
@@ -970,7 +1330,10 @@
       "label": "Quarterly report (10-Q) for period ending 2024-06-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000181255424000043/orcic-20240630.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files Q2 2024 10-Q; MD&A discusses results",
+      "signal": "clean",
+      "signal_note": "Quarterly report, no adverse fact"
     },
     {
       "form": "8-K",
@@ -978,7 +1341,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312524191557/d878351d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files 8-K for July 30 2024 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "SC TO-I/A",
@@ -986,7 +1352,10 @@
       "label": "SC TO-I/A — SC TO-I/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000162828024032861/ocic-finalscheduletoamendm.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC amends share repurchase tender offer",
+      "signal": "clean",
+      "signal_note": "Tender offer amendment"
     },
     {
       "form": "8-K",
@@ -994,7 +1363,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000181255424000038/orcic-20240723.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files 8-K for July 23 2024 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "8-K",
@@ -1002,7 +1374,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312524182977/d869436d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files 8-K for July 18 2024 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "8-K",
@@ -1010,7 +1385,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312524180438/d112748d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files 8-K for July 12 2024 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "8-K",
@@ -1018,7 +1396,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312524175070/d826406d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files 8-K for June 28 2024 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "POS EX",
@@ -1026,7 +1407,10 @@
       "label": "POS EX — POS EX",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000162828024030649/ocic-20240701.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC files post-effective amendment to N-2 registration",
+      "signal": "clean",
+      "signal_note": "Registration amendment"
     },
     {
       "form": "N-2",
@@ -1034,7 +1418,10 @@
       "label": "Registration statement (N-2) — N-2",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000162828024030200/ck0001812554-20240626.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files N-2 shelf registration statement",
+      "signal": "clean",
+      "signal_note": "Shelf registration"
     },
     {
       "form": "8-K",
@@ -1042,7 +1429,10 @@
       "label": "Current report: amended its charter or bylaws; disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000181255424000033/orcic-20240625.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files 8-K for June 25 2024 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "8-K",
@@ -1050,7 +1440,10 @@
       "label": "Current report (8-K)",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312524166993/d695526d8k.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC files 8-K for June 21 2024 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "SC TO-I",
@@ -1058,7 +1451,10 @@
       "label": "SC TO-I — SC TO-I",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000162828024025012/blueowlcreditincomecorp-sc.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC launches tender offer to repurchase Class S shares",
+      "signal": "clean",
+      "signal_note": "Routine share repurchase tender"
     },
     {
       "form": "40-17G",
@@ -1066,7 +1462,10 @@
       "label": "40-17G — 40-17G",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312524146039/d811174d4017g.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC files annual fidelity bond under Rule 17g-1",
+      "signal": "clean",
+      "signal_note": "Routine fidelity bond filing"
     },
     {
       "form": "8-K",
@@ -1074,7 +1473,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000181255424000030/orcic-20240522.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files 8-K for May 22 2024 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "8-K",
@@ -1082,7 +1484,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312524146022/d793981d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files 8-K for May 21 2024 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "8-K",
@@ -1090,7 +1495,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312524143973/d822047d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files 8-K for May 21 2024 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "8-K",
@@ -1098,7 +1506,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312524139420/d666744d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files 8-K for May 14 2024 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "424B3",
@@ -1106,7 +1517,10 @@
       "label": "Prospectus supplement (offering) — 424B3",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000162828024022610/ocic424b3may2024.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files prospectus supplement with quarterly update",
+      "signal": "clean",
+      "signal_note": "Routine prospectus supplement"
     },
     {
       "form": "10-Q",
@@ -1114,7 +1528,10 @@
       "label": "Quarterly report (10-Q) for period ending 2024-03-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000181255424000027/orcic-20240331.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files Q1 2024 10-Q; MD&A discusses results",
+      "signal": "clean",
+      "signal_note": "Quarterly report, no adverse fact"
     },
     {
       "form": "SC TO-I/A",
@@ -1122,7 +1539,10 @@
       "label": "SC TO-I/A — SC TO-I",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000162828024017439/ocic-finalscheduletoamendm.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC amends share repurchase tender offer",
+      "signal": "clean",
+      "signal_note": "Tender offer amendment"
     },
     {
       "form": "8-K",
@@ -1130,7 +1550,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000181255424000019/orcic-20240422.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files 8-K for April 22 2024 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "424B3",
@@ -1138,7 +1561,10 @@
       "label": "Prospectus supplement (offering) — 424B3",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312524099157/d812525d424b3.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC offers to exchange multiple registered note series",
+      "signal": "clean",
+      "signal_note": "Registered note exchange offer"
     },
     {
       "form": "EFFECT",
@@ -1146,7 +1572,10 @@
       "label": "EFFECT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/999999999524000979/xslEFFECTX01/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "OCIC registration statement declared effective by SEC",
+      "signal": "clean",
+      "signal_note": "Notice of effectiveness"
     },
     {
       "form": "DEFA14A",
@@ -1154,7 +1583,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312524091899/d787466ddefa14a.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC files additional annual meeting proxy materials",
+      "signal": "clean",
+      "signal_note": "Proxy solicitation"
     },
     {
       "form": "N-14 8C/A",
@@ -1162,7 +1594,10 @@
       "label": "N-14 8C/A — N-14 8C/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312524086086/d812525dn148ca.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC amends N-14 registration statement",
+      "signal": "clean",
+      "signal_note": "Registration amendment"
     },
     {
       "form": "N-2",
@@ -1170,7 +1605,10 @@
       "label": "Registration statement (N-2) — N-2",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312524084843/d796548dn2.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files N-2 shelf registration statement",
+      "signal": "clean",
+      "signal_note": "Shelf registration"
     },
     {
       "form": "DEFA14A",
@@ -1178,7 +1616,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312524083478/d662246ddefa14a.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC files additional annual meeting proxy materials",
+      "signal": "clean",
+      "signal_note": "Proxy solicitation"
     },
     {
       "form": "DEFA14A",
@@ -1186,7 +1627,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312524080668/d732791ddefa14a.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC files additional annual meeting proxy materials",
+      "signal": "clean",
+      "signal_note": "Proxy solicitation"
     },
     {
       "form": "DEF 14A",
@@ -1194,7 +1638,10 @@
       "label": "Proxy statement — DEF 14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312524080658/d748119ddef14a.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC files 2024 annual meeting proxy statement",
+      "signal": "clean",
+      "signal_note": "Annual proxy statement"
     },
     {
       "form": "8-K",
@@ -1202,7 +1649,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000181255424000016/orcic-20240322.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files 8-K for March 22 2024 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "PRE 14A",
@@ -1210,7 +1660,10 @@
       "label": "PRE 14A — PRE 14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312524067962/d748119dpre14a.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC files preliminary annual meeting proxy statement",
+      "signal": "clean",
+      "signal_note": "Preliminary proxy statement"
     },
     {
       "form": "8-K",
@@ -1218,7 +1671,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312524064863/d581028d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files 8-K for March 7 2024 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "424B3",
@@ -1226,7 +1682,10 @@
       "label": "Prospectus supplement (offering) — 424B3",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312524063708/d804880d424b3.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files prospectus supplement with quarterly update",
+      "signal": "clean",
+      "signal_note": "Routine prospectus supplement"
     },
     {
       "form": "SC TO-I/A",
@@ -1234,7 +1693,10 @@
       "label": "SC TO-I/A — SC TO-I/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000162828024009656/ocic-scheduletoa1.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC amends share repurchase tender offer",
+      "signal": "clean",
+      "signal_note": "Tender offer amendment"
     },
     {
       "form": "10-K",
@@ -1242,7 +1704,10 @@
       "label": "Annual report (10-K) for period ending 2023-12-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000181255424000014/orcic-20231231.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files fiscal 2023 10-K; MD&A discusses results",
+      "signal": "clean",
+      "signal_note": "Annual report, no adverse fact"
     },
     {
       "form": "8-K",
@@ -1250,7 +1715,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312524059517/d759694d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files 8-K for March 1 2024 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "N-14 8C",
@@ -1258,7 +1726,10 @@
       "label": "N-14 8C — N-14 8C",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312524050786/d786450dn148c.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC files N-14 registration statement",
+      "signal": "clean",
+      "signal_note": "Registration statement"
     },
     {
       "form": "SC TO-I",
@@ -1266,7 +1737,10 @@
       "label": "SC TO-I — SC TO-I",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000162828024006962/blueowlcreditincomecorp-sc.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC launches tender offer to repurchase Class S shares",
+      "signal": "clean",
+      "signal_note": "Routine share repurchase tender"
     },
     {
       "form": "8-K",
@@ -1274,7 +1748,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000181255424000006/orcic-20240221.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files 8-K for February 21 2024 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "8-K",
@@ -1282,7 +1759,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312524021912/d737542d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files 8-K for January 30 2024 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "8-K",
@@ -1290,7 +1770,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312524021890/d649242d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files 8-K for January 29 2024 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "SC TO-I/A",
@@ -1298,7 +1781,10 @@
       "label": "SC TO-I/A — SC TO-I/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000162828024002262/blueowlcreditincomecorp-sc.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC amends share repurchase tender offer",
+      "signal": "clean",
+      "signal_note": "Tender offer amendment"
     },
     {
       "form": "8-K",
@@ -1306,7 +1792,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000181255424000002/orcic-20240125.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files 8-K for January 25 2024 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "8-K",
@@ -1314,7 +1803,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000181255423000037/orcic-20231222.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files 8-K for December 22 2023 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "N-2",
@@ -1322,7 +1814,10 @@
       "label": "Registration statement (N-2) — N-2",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312523294391/d552842dn2.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files N-2 shelf registration statement",
+      "signal": "clean",
+      "signal_note": "Shelf registration"
     },
     {
       "form": "8-K",
@@ -1330,7 +1825,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312523288630/d544137d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files 8-K for December 4 2023 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "8-K",
@@ -1338,7 +1836,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312523284360/d616181d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files 8-K for November 27 2023 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "SC TO-I",
@@ -1346,7 +1847,10 @@
       "label": "SC TO-I — SC TO-I",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000162828023040045/blueowlcreditincomecorp-sc.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC launches tender offer to repurchase Class S shares",
+      "signal": "clean",
+      "signal_note": "Routine share repurchase tender"
     },
     {
       "form": "8-K",
@@ -1354,7 +1858,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000181255423000033/orcic-20231124.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files 8-K for November 24 2023 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "8-K",
@@ -1362,7 +1869,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312523282904/d938536d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files 8-K for November 21 2023 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "424B3",
@@ -1370,7 +1880,10 @@
       "label": "Prospectus supplement (offering) — 424B3",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312523276100/d337296d424b3.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files prospectus supplement with quarterly update",
+      "signal": "clean",
+      "signal_note": "Routine prospectus supplement"
     },
     {
       "form": "10-Q",
@@ -1378,7 +1891,10 @@
       "label": "Quarterly report (10-Q) for period ending 2023-09-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000181255423000030/orcic-20230930.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files Q3 2023 10-Q; MD&A discusses results",
+      "signal": "clean",
+      "signal_note": "Quarterly report, no adverse fact"
     },
     {
       "form": "8-K",
@@ -1386,7 +1902,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312523271406/d574766d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files 8-K for November 2 2023 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "SC TO-I/A",
@@ -1394,7 +1913,10 @@
       "label": "SC TO-I/A — SC TO-I/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312523263180/d560402dsctoia.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC amends share repurchase tender offer",
+      "signal": "clean",
+      "signal_note": "Tender offer amendment"
     },
     {
       "form": "8-K",
@@ -1402,7 +1924,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312523263170/d575296d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files 8-K for October 23 2023 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "8-K",
@@ -1410,7 +1935,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312523243851/d483805d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files 8-K for September 26 2023 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "N-2",
@@ -1418,7 +1946,10 @@
       "label": "Registration statement (N-2) — BLUE OWL CREDIT INCOME CORP.",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312523241434/d522014dn2.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files N-2 shelf registration statement",
+      "signal": "clean",
+      "signal_note": "Shelf registration"
     },
     {
       "form": "8-K",
@@ -1426,7 +1957,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312523226421/d537501d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files 8-K for August 29 2023 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "SC TO-I",
@@ -1434,7 +1968,10 @@
       "label": "SC TO-I — BLUE OWL CREDIT INCOME CORP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312523220165/d854203dsctoi.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC launches tender offer to repurchase Class S shares",
+      "signal": "clean",
+      "signal_note": "Routine share repurchase tender"
     },
     {
       "form": "8-K",
@@ -1442,7 +1979,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312523219218/d462848d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files 8-K for August 21 2023 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "424B3",
@@ -1450,7 +1990,10 @@
       "label": "Prospectus supplement (offering) — OWL ROCK CORE INCOME CORP.",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312523212406/d528468d424b3.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files prospectus supplement with quarterly update",
+      "signal": "clean",
+      "signal_note": "Routine prospectus supplement"
     },
     {
       "form": "10-Q",
@@ -1458,7 +2001,10 @@
       "label": "Quarterly report (10-Q) for period ending 2023-06-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000181255423000022/orcic-20230630.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files Q2 2023 10-Q; MD&A discusses results",
+      "signal": "clean",
+      "signal_note": "Quarterly report, no adverse fact"
     },
     {
       "form": "SC TO-I/A",
@@ -1466,7 +2012,10 @@
       "label": "SC TO-I/A — BLUE OWL CREDIT INCOME CORP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312523196192/d719701dsctoia.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC amends share repurchase tender offer",
+      "signal": "clean",
+      "signal_note": "Tender offer amendment"
     },
     {
       "form": "8-K",
@@ -1474,7 +2023,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312523196188/d473482d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files 8-K for July 24 2023 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "EFFECT",
@@ -1482,7 +2034,10 @@
       "label": "EFFECT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/999999999523002175/xslEFFECTX01/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "OCIC registration statement declared effective by SEC",
+      "signal": "clean",
+      "signal_note": "Notice of effectiveness"
     },
     {
       "form": "424B3",
@@ -1490,7 +2045,10 @@
       "label": "Prospectus supplement (offering) — BLUE OWL CREDIT INCOME CORP.",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312523192281/d530258d424b3.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC offers to exchange $600M 7.750% notes due 2027",
+      "signal": "clean",
+      "signal_note": "Registered note exchange offer"
     },
     {
       "form": "8-K",
@@ -1498,7 +2056,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312523191412/d524146d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files 8-K for July 21 2023 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "8-K",
@@ -1506,7 +2067,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312523189705/d538939d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files 8-K for July 18 2023 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "8-K",
@@ -1514,7 +2078,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312523188882/d474976d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files 8-K for July 14 2023 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "N-14 8C/A",
@@ -1522,7 +2089,10 @@
       "label": "N-14 8C/A — N-14 8C/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312523186019/d530258dn148ca.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC amends N-14 registration statement",
+      "signal": "clean",
+      "signal_note": "Registration amendment"
     },
     {
       "form": "CORRESP",
@@ -1530,7 +2100,10 @@
       "label": "CORRESP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312523186021/filename1.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC responds to SEC comments on N-14 filing",
+      "signal": "clean",
+      "signal_note": "Routine SEC correspondence"
     },
     {
       "form": "486BPOS",
@@ -1538,7 +2111,10 @@
       "label": "486BPOS — OWL ROCK CORE INCOME CORP.",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312523182822/d518941d486bpos.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC files post-effective amendment for continuous offering",
+      "signal": "clean",
+      "signal_note": "Continuous offering amendment"
     },
     {
       "form": "8-K",
@@ -1546,7 +2122,10 @@
       "label": "Current report: entered a material agreement; disclosed a material event",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312523182378/d491561d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files 8-K for July 6 2023 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "8-K",
@@ -1554,7 +2133,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312523175168/d524092d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files 8-K for June 23 2023 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "8-K",
@@ -1562,7 +2144,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312523173862/d456710d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files 8-K for June 20 2023 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "CORRESP",
@@ -1570,7 +2155,10 @@
       "label": "CORRESP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312523173819/filename1.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC responds to SEC staff comments on filing",
+      "signal": "clean",
+      "signal_note": "Routine SEC correspondence"
     },
     {
       "form": "8-K",
@@ -1578,7 +2166,10 @@
       "label": "Current report: amended its charter or bylaws; disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312523172626/d494022d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files 8-K for June 22 2023 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "8-K",
@@ -1586,7 +2177,10 @@
       "label": "Current report (8-K)",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312523171279/d462146d8k.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC files 8-K for June 21 2023 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "8-K",
@@ -1594,7 +2188,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312523166894/d501398d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files 8-K for June 13 2023 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "40-17G",
@@ -1602,7 +2199,10 @@
       "label": "40-17G — FORM 40-17G",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312523165353/d632568d4017g.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC files annual fidelity bond under Rule 17g-1",
+      "signal": "clean",
+      "signal_note": "Routine fidelity bond filing"
     },
     {
       "form": "8-K",
@@ -1610,7 +2210,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312523162584/d395369d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files 8-K for June 6 2023 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "N-14 8C",
@@ -1618,7 +2221,10 @@
       "label": "N-14 8C — N-14 8C",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312523155564/d501039dn148c.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC files N-14 registration statement",
+      "signal": "clean",
+      "signal_note": "Registration statement"
     },
     {
       "form": "8-K",
@@ -1626,7 +2232,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312523155556/d513642d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files 8-K for May 24 2023 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "SC TO-I",
@@ -1634,7 +2243,10 @@
       "label": "SC TO-I — OWL ROCK CORE INCOME CORP.",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312523154303/d513097dsctoi.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC launches tender offer to repurchase Class S shares",
+      "signal": "clean",
+      "signal_note": "Routine share repurchase tender"
     },
     {
       "form": "8-K",
@@ -1642,7 +2254,10 @@
       "label": "Current report: issued a Regulation FD disclosure; disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312523152351/d512257d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files 8-K for May 24 2023 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "8-K",
@@ -1650,7 +2265,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312523152108/d489651d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files 8-K for May 22 2023 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "424B3",
@@ -1658,7 +2276,10 @@
       "label": "Prospectus supplement (offering) — OWL ROCK CORE INCOME CORP.",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312523145207/d496944d424b3.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files prospectus supplement with quarterly update",
+      "signal": "clean",
+      "signal_note": "Routine prospectus supplement"
     },
     {
       "form": "8-K",
@@ -1666,7 +2287,10 @@
       "label": "Current report: issued a Regulation FD disclosure; disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312523143556/d373848d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files 8-K for May 12 2023 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "10-Q",
@@ -1674,7 +2298,10 @@
       "label": "Quarterly report (10-Q) for period ending 2023-03-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000181255423000014/orcic-20230331.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files Q1 2023 10-Q; MD&A discusses results",
+      "signal": "clean",
+      "signal_note": "Quarterly report, no adverse fact"
     },
     {
       "form": "SC TO-I/A",
@@ -1682,7 +2309,10 @@
       "label": "SC TO-I/A — OWL ROCK CORE INCOME CORP.",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312523118715/d473273dsctoia.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC amends share repurchase tender offer",
+      "signal": "clean",
+      "signal_note": "Tender offer amendment"
     },
     {
       "form": "8-K",
@@ -1690,7 +2320,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312523118705/d498890d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files 8-K for April 24 2023 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "DEFA14A",
@@ -1698,7 +2331,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312523088236/d421282ddefa14a.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC files additional annual meeting proxy materials",
+      "signal": "clean",
+      "signal_note": "Proxy solicitation"
     },
     {
       "form": "DEFA14A",
@@ -1706,7 +2342,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312523083741/d421282ddefa14a.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC files additional annual meeting proxy materials",
+      "signal": "clean",
+      "signal_note": "Proxy solicitation"
     },
     {
       "form": "DEF 14A",
@@ -1714,7 +2353,10 @@
       "label": "Proxy statement — DEF 14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312523083735/d421282ddef14a.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC files 2023 annual meeting proxy statement",
+      "signal": "clean",
+      "signal_note": "Annual proxy statement"
     },
     {
       "form": "8-K",
@@ -1722,7 +2364,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312523077977/d240243d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files 8-K for March 21 2023 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "424B3",
@@ -1730,7 +2375,10 @@
       "label": "Prospectus supplement (offering) — 424B3",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312523074832/d485191d424b3.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files prospectus supplement with quarterly update",
+      "signal": "clean",
+      "signal_note": "Routine prospectus supplement"
     },
     {
       "form": "SC TO-I/A",
@@ -1738,7 +2386,10 @@
       "label": "SC TO-I/A — OWL ROCK CORE INCOME CORP.",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312523069109/d481388dsctoia.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC amends share repurchase tender offer",
+      "signal": "clean",
+      "signal_note": "Tender offer amendment"
     },
     {
       "form": "8-K",
@@ -1746,7 +2397,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312523067853/d421187d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files 8-K for March 9 2023 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "10-K",
@@ -1754,7 +2408,10 @@
       "label": "Annual report (10-K) for period ending 2022-12-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000181255423000009/a01orcic-20221231x10k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files fiscal 2022 10-K; MD&A discusses results",
+      "signal": "clean",
+      "signal_note": "Annual report, no adverse fact"
     },
     {
       "form": "8-K",
@@ -1762,7 +2419,10 @@
       "label": "Current report: reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312523064988/d302886d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC reports $0.81 FY2022 NII per share, 8.8% distribution rate",
+      "signal": "clean",
+      "signal_note": "Routine annual results"
     },
     {
       "form": "SC TO-I",
@@ -1770,7 +2430,10 @@
       "label": "SC TO-I — OWL ROCK CORE INCOME CORP.",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312523053961/d473288dsctoi.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC launches quarterly share repurchase tender offer",
+      "signal": "clean",
+      "signal_note": "Routine issuer repurchase"
     },
     {
       "form": "8-K",
@@ -1778,7 +2441,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312523049065/d414337d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC sells Class I shares, monthly leverage 0.97x",
+      "signal": "clean",
+      "signal_note": "Routine offering update"
     },
     {
       "form": "8-K",
@@ -1786,7 +2452,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312523035911/d404563d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC board declares monthly and special distributions",
+      "signal": "clean",
+      "signal_note": "Routine distribution"
     },
     {
       "form": "SC TO-I/A",
@@ -1794,7 +2463,10 @@
       "label": "SC TO-I/A — SC TO-I/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312523016501/d429198dsctoia.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC amends share repurchase tender offer terms",
+      "signal": "clean",
+      "signal_note": "Routine tender amendment"
     },
     {
       "form": "8-K",
@@ -1802,7 +2474,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312523016487/d390909d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC sells Class I shares, monthly leverage 1.00x",
+      "signal": "clean",
+      "signal_note": "Routine offering update"
     },
     {
       "form": "8-K",
@@ -1810,7 +2485,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312522311814/d437849d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC sells Class I shares, monthly leverage 1.03x",
+      "signal": "clean",
+      "signal_note": "Routine offering update"
     },
     {
       "form": "8-K/A",
@@ -1818,7 +2496,10 @@
       "label": "8-K/A — OWL ROCK CORE INCOME CORP.",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312522298476/d414937d8ka.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC declares monthly plus $0.02 special distribution",
+      "signal": "clean",
+      "signal_note": "Routine distribution"
     },
     {
       "form": "8-K",
@@ -1826,7 +2507,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312522297926/d414937d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC declares monthly plus $0.02 special distribution",
+      "signal": "clean",
+      "signal_note": "Routine distribution"
     },
     {
       "form": "8-K",
@@ -1834,7 +2518,10 @@
       "label": "Current report: entered a material agreement",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312522295481/d140630d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC appoints Computershare as successor indenture trustee",
+      "signal": "clean",
+      "signal_note": "Routine trustee change"
     },
     {
       "form": "SC TO-I",
@@ -1842,7 +2529,10 @@
       "label": "SC TO-I — SC TO-I",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312522293509/d373271dsctoi.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC launches quarterly share repurchase tender offer",
+      "signal": "clean",
+      "signal_note": "Routine issuer repurchase"
     },
     {
       "form": "8-K",
@@ -1850,7 +2540,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312522292639/d412315d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC sells $3.8M Class I shares, declares distribution",
+      "signal": "clean",
+      "signal_note": "Routine offering and distribution"
     },
     {
       "form": "SC TO-I/A",
@@ -1858,7 +2551,10 @@
       "label": "SC TO-I/A — OWL ROCK CORE INCOME CORP.",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312522286807/d422360dsctoia.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC amends share repurchase tender offer terms",
+      "signal": "clean",
+      "signal_note": "Routine tender amendment"
     },
     {
       "form": "424B3",
@@ -1866,7 +2562,10 @@
       "label": "Prospectus supplement (offering) — 424B3",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312522284803/d393691d424b3.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files prospectus supplement noting Q3 10-Q filing",
+      "signal": "clean",
+      "signal_note": "Routine prospectus supplement"
     },
     {
       "form": "10-Q",
@@ -1874,7 +2573,10 @@
       "label": "Quarterly report (10-Q) for period ending 2022-09-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000181255422000011/a01orcic-2022930x10q.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files Q3 2022 quarterly report",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "SC 13D/A",
@@ -1882,7 +2584,10 @@
       "label": "Beneficial ownership amendment (13D/A) — FIC ORCIC EQUITY 13D/A",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312522280197/d389262dsc13da.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC insiders amend Schedule 13D joint ownership filing",
+      "signal": "clean",
+      "signal_note": "Routine ownership filing"
     },
     {
       "form": "8-K",
@@ -1890,7 +2595,10 @@
       "label": "Current report: entered a material agreement; completed an acquisition or disposition",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312522276961/d323731d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC and Ohio STRS form senior loan fund JV",
+      "signal": "clean",
+      "signal_note": "Routine joint venture"
     },
     {
       "form": "SC TO-I/A",
@@ -1898,7 +2606,10 @@
       "label": "SC TO-I/A — OWL ROCK CORE INCOME CORP.",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312522269742/d395063dsctoia.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC amends share repurchase tender offer terms",
+      "signal": "clean",
+      "signal_note": "Routine tender amendment"
     },
     {
       "form": "8-K",
@@ -1906,7 +2617,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312522269737/d417769d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC sells $9.8M Class I shares, declares distribution",
+      "signal": "clean",
+      "signal_note": "Routine offering and distribution"
     },
     {
       "form": "8-K",
@@ -1914,7 +2628,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312522268402/d321709d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC closes $391.7M CLO term debt securitization",
+      "signal": "clean",
+      "signal_note": "Routine financing"
     },
     {
       "form": "8-K",
@@ -1922,7 +2639,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312522264470/d329535d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC subsidiary enters $500M revolving loan facility",
+      "signal": "clean",
+      "signal_note": "Routine financing"
     },
     {
       "form": "486BPOS",
@@ -1930,7 +2650,10 @@
       "label": "486BPOS — OWL ROCK CORE INCOME CORP.",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312522259714/d378673d486bpos.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC files post-effective registration amendment",
+      "signal": "clean",
+      "signal_note": "Routine registration"
     },
     {
       "form": "8-K",
@@ -1938,7 +2661,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312522253306/d400748d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC sells Class I shares, monthly leverage 1.11x",
+      "signal": "clean",
+      "signal_note": "Routine offering update"
     },
     {
       "form": "8-K",
@@ -1946,7 +2672,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312522247129/d377264d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC completes $600M 7.750% notes due 2027 offering",
+      "signal": "clean",
+      "signal_note": "Routine note issuance"
     },
     {
       "form": "8-K",
@@ -1954,7 +2683,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312522242917/d275452d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC prices $600M 7.750% notes private placement",
+      "signal": "clean",
+      "signal_note": "Routine note issuance"
     },
     {
       "form": "SC TO-I",
@@ -1962,7 +2694,10 @@
       "label": "SC TO-I — SC TO-I",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312522230098/d386348dsctoi.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC launches quarterly share repurchase tender offer",
+      "signal": "clean",
+      "signal_note": "Routine issuer repurchase"
     },
     {
       "form": "8-K",
@@ -1970,7 +2705,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312522230086/d361280d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC subsidiary enters $400M credit facility",
+      "signal": "clean",
+      "signal_note": "Routine financing"
     },
     {
       "form": "424B3",
@@ -1978,7 +2716,10 @@
       "label": "Prospectus supplement (offering) — 424B3",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312522221321/d366280d424b3.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files Q2 2022 consolidated financial statements",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "10-Q",
@@ -1986,7 +2727,10 @@
       "label": "Quarterly report (10-Q) for period ending 2022-06-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000181255422000006/a01orcic-2022630x10q.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files Q2 2022 quarterly report",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "8-K",
@@ -1994,7 +2738,10 @@
       "label": "Current report: reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312522217893/d354470d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC reports Q2 2022 results, no non-accruals",
+      "signal": "clean",
+      "signal_note": "No non-accruals disclosed"
     },
     {
       "form": "8-K",
@@ -2002,7 +2749,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312522212574/d318728d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC subsidiary amends secured credit facility, adds lenders",
+      "signal": "clean",
+      "signal_note": "Routine amend-and-extend"
     },
     {
       "form": "SC TO-I/A",
@@ -2010,7 +2760,10 @@
       "label": "SC TO-I/A — SC TO-I/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312522202190/d319022dsctoia.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC amends share repurchase tender offer terms",
+      "signal": "clean",
+      "signal_note": "Routine tender amendment"
     },
     {
       "form": "8-K",
@@ -2018,7 +2771,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312522202187/d386767d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC sells $9.7M Class I shares, declares distributions",
+      "signal": "clean",
+      "signal_note": "Routine offering and distribution"
     },
     {
       "form": "EFFECT",
@@ -2026,7 +2782,10 @@
       "label": "EFFECT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/999999999522002153/xslEFFECTX01/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "OCIC registration statement declared effective",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "424B3",
@@ -2034,7 +2793,10 @@
       "label": "Prospectus supplement (offering) — 424B3",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312522200865/d749308d424b3.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files notes exchange offer prospectus",
+      "signal": "clean",
+      "signal_note": "Routine note exchange"
     },
     {
       "form": "CORRESP",
@@ -2042,7 +2804,10 @@
       "label": "CORRESP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312522199202/filename1.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC responds to SEC staff comments on N-14",
+      "signal": "clean",
+      "signal_note": "Routine SEC correspondence"
     },
     {
       "form": "N-14 8C/A",
@@ -2050,7 +2815,10 @@
       "label": "N-14 8C/A — N-14 8C/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312522199199/d276710dn148ca.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC amends N-14 merger registration statement",
+      "signal": "clean",
+      "signal_note": "Routine merger registration"
     },
     {
       "form": "40-APP/A",
@@ -2058,7 +2826,10 @@
       "label": "40-APP/A — 40-APP/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000110465922081222/tm2221385d1_40appa.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC files amended exemptive relief application",
+      "signal": "clean",
+      "signal_note": "Routine exemptive application"
     },
     {
       "form": "8-K",
@@ -2066,7 +2837,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312522193900/d325577d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC declares special distributions to stockholders",
+      "signal": "clean",
+      "signal_note": "Routine distribution"
     },
     {
       "form": "8-K",
@@ -2074,7 +2848,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312522192018/d312615d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC subsidiary amends secured credit facility via joinder",
+      "signal": "clean",
+      "signal_note": "Routine amend-and-extend"
     },
     {
       "form": "8-K",
@@ -2082,7 +2859,10 @@
       "label": "Current report (8-K)",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312522186227/d326699d8k.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC shareholders elect directors, ratify KPMG auditor",
+      "signal": "clean",
+      "signal_note": "Routine annual meeting"
     },
     {
       "form": "8-K",
@@ -2090,7 +2870,10 @@
       "label": "Current report: terminated a material agreement; disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312522180270/d512322d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC terminates affiliate revolving loan agreement",
+      "signal": "clean",
+      "signal_note": "Routine agreement termination"
     },
     {
       "form": "DEFA14A",
@@ -2098,7 +2881,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312522174818/d364762ddefa14a.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC solicits shareholder votes for annual meeting",
+      "signal": "clean",
+      "signal_note": "Routine proxy"
     },
     {
       "form": "SC TO-I",
@@ -2106,7 +2892,10 @@
       "label": "SC TO-I — SC TO-I",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312522159763/d344411dsctoi.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC launches quarterly share repurchase tender offer",
+      "signal": "clean",
+      "signal_note": "Routine issuer repurchase"
     },
     {
       "form": "8-K",
@@ -2114,7 +2903,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312522159747/d236041d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC sells $69M Class I shares, offering update",
+      "signal": "clean",
+      "signal_note": "Routine offering update"
     },
     {
       "form": "40-APP",
@@ -2122,7 +2914,10 @@
       "label": "40-APP — 40-APP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000110465922064255/tm2216639d1_40app.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC files exemptive relief application",
+      "signal": "clean",
+      "signal_note": "Routine exemptive application"
     },
     {
       "form": "DEFA14A",
@@ -2130,7 +2925,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312522153155/d350258ddefa14a.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC solicits shareholder votes for annual meeting",
+      "signal": "clean",
+      "signal_note": "Routine proxy"
     },
     {
       "form": "424B3",
@@ -2138,7 +2936,10 @@
       "label": "Prospectus supplement (offering) — 424B3",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312522153055/d331146d424b3.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files Q1 2022 consolidated financial statements",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "N-14 8C",
@@ -2146,7 +2947,10 @@
       "label": "N-14 8C — N-14 8C",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312522150424/d276710dn148c.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC files N-14 merger registration statement",
+      "signal": "clean",
+      "signal_note": "Routine merger registration"
     },
     {
       "form": "10-Q",
@@ -2154,7 +2958,10 @@
       "label": "Quarterly report (10-Q) for period ending 2022-03-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000095017022009769/orcic_10q_0331-2022.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files Q1 2022 quarterly report",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "8-K",
@@ -2162,7 +2969,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312522142367/d345171d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC subsidiary amends secured credit facility",
+      "signal": "clean",
+      "signal_note": "Routine amend-and-extend"
     },
     {
       "form": "3",
@@ -2170,7 +2980,10 @@
       "label": "3 — FORM 3 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000089924322016639/xslF345X02/doc3.xml",
-      "material": false
+      "material": false,
+      "headline": "OCIC insider files initial Form 3 ownership statement",
+      "signal": "clean",
+      "signal_note": "Routine ownership filing"
     },
     {
       "form": "DEFA14A",
@@ -2178,7 +2991,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312522137667/d350353ddefa14a.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC posts annual meeting proxy materials",
+      "signal": "clean",
+      "signal_note": "Routine proxy"
     },
     {
       "form": "SC TO-I/A",
@@ -2186,7 +3002,10 @@
       "label": "SC TO-I/A — SC TO-I/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312522120347/d163468dsctoia.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC amends share repurchase tender offer terms",
+      "signal": "clean",
+      "signal_note": "Routine tender amendment"
     },
     {
       "form": "8-K",
@@ -2194,7 +3013,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312522120332/d312233d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC sells $53M Class I shares, offering update",
+      "signal": "clean",
+      "signal_note": "Routine offering update"
     },
     {
       "form": "DEFA14A",
@@ -2202,7 +3024,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312522117689/d350005ddefa14a.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC notifies shareholders of annual meeting vote",
+      "signal": "clean",
+      "signal_note": "Routine proxy"
     },
     {
       "form": "DEF 14A",
@@ -2210,7 +3035,10 @@
       "label": "Proxy statement — DEF 14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312522117648/d294771ddef14a.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC files definitive proxy for June 2022 annual meeting",
+      "signal": "clean",
+      "signal_note": "Routine proxy"
     },
     {
       "form": "8-K",
@@ -2218,7 +3046,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312522104453/d326257d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC reports creation of direct financial obligation",
+      "signal": "clean",
+      "signal_note": "Routine financing"
     },
     {
       "form": "8-K",
@@ -2226,7 +3057,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312522088214/d335929d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC completes $500M 5.500% notes due 2025 offering",
+      "signal": "clean",
+      "signal_note": "Routine note issuance"
     },
     {
       "form": "8-K",
@@ -2234,7 +3068,10 @@
       "label": "Current report (8-K)",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312522086763/d302480d8k.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC schedules 2022 annual meeting, sets nomination deadline",
+      "signal": "clean",
+      "signal_note": "Routine annual meeting"
     },
     {
       "form": "8-K",
@@ -2242,7 +3079,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312522086716/d340932d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC incurs direct financial obligation, sells $38M Class I shares",
+      "signal": "clean",
+      "signal_note": "Routine financing and offering"
     },
     {
       "form": "8-K",
@@ -2250,7 +3090,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312522082786/d333385d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC prices notes private placement",
+      "signal": "clean",
+      "signal_note": "Routine note issuance"
     },
     {
       "form": "8-K",
@@ -2258,7 +3101,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312522081151/d305486d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC offering update, $2.8B gross proceeds raised",
+      "signal": "clean",
+      "signal_note": "Routine offering update"
     },
     {
       "form": "8-K",
@@ -2266,7 +3112,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312522080619/d700941d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC reports direct financial obligation from note issuance",
+      "signal": "clean",
+      "signal_note": "Routine financing"
     },
     {
       "form": "SC TO-I/A",
@@ -2274,7 +3123,10 @@
       "label": "SC TO-I/A — SC TO-I/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312522073457/d286267dsctoia.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC amends share repurchase tender offer terms",
+      "signal": "clean",
+      "signal_note": "Routine tender amendment"
     },
     {
       "form": "424B3",
@@ -2282,7 +3134,10 @@
       "label": "Prospectus supplement (offering) — 424B3",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312522073413/d321336d424b3.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files prospectus supplement",
+      "signal": "clean",
+      "signal_note": "Routine prospectus supplement"
     },
     {
       "form": "10-K",
@@ -2290,7 +3145,10 @@
       "label": "Annual report (10-K) for period ending 2021-12-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000095017022003267/orcic_10k_1231_2021.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files fiscal 2021 annual report on Form 10-K",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "40-17G",
@@ -2298,7 +3156,10 @@
       "label": "40-17G — FORM 40-17G",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312522064481/d290305d4017g.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC files $1.5M fidelity bond under Rule 17g-1",
+      "signal": "clean",
+      "signal_note": "Routine fidelity bond"
     },
     {
       "form": "8-K",
@@ -2306,7 +3167,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312522061762/d279968d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC reports direct financial obligation from note issuance",
+      "signal": "clean",
+      "signal_note": "Routine financing"
     },
     {
       "form": "SC TO-I",
@@ -2314,7 +3178,10 @@
       "label": "SC TO-I — SC TO-I",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312522054517/d76186dsctoi.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC launches share repurchase tender offer",
+      "signal": "clean",
+      "signal_note": "Routine issuer repurchase"
     },
     {
       "form": "8-K",
@@ -2322,7 +3189,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312522054505/d284066d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC offering update, $2.3B gross proceeds raised",
+      "signal": "clean",
+      "signal_note": "Routine offering update"
     },
     {
       "form": "8-K",
@@ -2330,7 +3200,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312522054501/d24449d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC subsidiary amends secured credit facility",
+      "signal": "clean",
+      "signal_note": "Routine amend-and-extend"
     },
     {
       "form": "424B3",
@@ -2338,7 +3211,10 @@
       "label": "Prospectus supplement (offering) — 424B3",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312522042099/d313544d424b3.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files prospectus supplement",
+      "signal": "clean",
+      "signal_note": "Routine prospectus supplement"
     },
     {
       "form": "424B3",
@@ -2346,7 +3222,10 @@
       "label": "Prospectus supplement (offering) — 424B3",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312522042063/d224588d424b3.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files common stock prospectus",
+      "signal": "clean",
+      "signal_note": "Routine prospectus"
     },
     {
       "form": "SC 13G/A",
@@ -2354,7 +3233,10 @@
       "label": "SC 13G/A — SC 13G/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000110465922020331/tm226151d4_sc13ga.htm",
-      "material": false
+      "material": false,
+      "headline": "Investor amends OCIC passive ownership stake filing",
+      "signal": "clean",
+      "signal_note": "Routine ownership filing"
     },
     {
       "form": "8-K",
@@ -2362,7 +3244,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312522031072/d184411d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC completes $500M 4.70% notes due 2027 offering",
+      "signal": "clean",
+      "signal_note": "Routine note issuance"
     },
     {
       "form": "8-K",
@@ -2370,7 +3255,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312522025963/d263775d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC prices $500M 4.70% notes private placement",
+      "signal": "clean",
+      "signal_note": "Routine note issuance"
     },
     {
       "form": "SC TO-I/A",
@@ -2378,7 +3266,10 @@
       "label": "SC TO-I/A — SC TO-I/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312522018346/d300871dsctoia.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC amends share repurchase tender offer terms",
+      "signal": "clean",
+      "signal_note": "Routine tender amendment"
     },
     {
       "form": "8-K",
@@ -2386,7 +3277,10 @@
       "label": "Current report: changed a director or senior officer",
       "category": "Personnel",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312522017641/d490448d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC director Brian Finn to resign, cites other opportunities",
+      "signal": "clean",
+      "signal_note": "Director resignation, no disagreement"
     },
     {
       "form": "8-K",
@@ -2394,7 +3288,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312522015433/d302801d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC offering update, $2.0B gross proceeds raised",
+      "signal": "clean",
+      "signal_note": "Routine offering update"
     },
     {
       "form": "EFFECT",
@@ -2402,7 +3299,10 @@
       "label": "EFFECT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/999999999522000128/xslEFFECTX01/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "OCIC registration statement declared effective",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "8-K",
@@ -2410,7 +3310,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312521370581/d175676d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC subsidiary amends secured credit facility",
+      "signal": "clean",
+      "signal_note": "Routine amend-and-extend"
     },
     {
       "form": "8-K",
@@ -2418,7 +3321,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312521367041/d262043d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC offering update, monthly share pricing",
+      "signal": "clean",
+      "signal_note": "Routine offering update"
     },
     {
       "form": "N-2/A",
@@ -2426,7 +3332,10 @@
       "label": "N-2/A — N-2/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312521354185/d224588dn2a.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC files pre-effective registration amendment",
+      "signal": "clean",
+      "signal_note": "Routine registration"
     },
     {
       "form": "CORRESP",
@@ -2434,7 +3343,10 @@
       "label": "CORRESP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312521354186/filename1.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC responds to SEC staff comments on N-2",
+      "signal": "clean",
+      "signal_note": "Routine SEC correspondence"
     },
     {
       "form": "424B3",
@@ -2442,7 +3354,10 @@
       "label": "Prospectus supplement (offering) — 424B3",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312521349050/d278273d424b3.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files common stock prospectus",
+      "signal": "clean",
+      "signal_note": "Routine prospectus"
     },
     {
       "form": "EFFECT",
@@ -2450,7 +3365,10 @@
       "label": "EFFECT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/999999999521004554/xslEFFECTX01/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "OCIC registration statement declared effective",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "SC TO-I",
@@ -2458,7 +3376,10 @@
       "label": "SC TO-I — SC TO-I",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312521341272/d253327dsctoi.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC launches share repurchase tender offer",
+      "signal": "clean",
+      "signal_note": "Routine issuer repurchase"
     },
     {
       "form": "3",
@@ -2466,7 +3387,10 @@
       "label": "3 — FORM 3 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000089924321046058/xslF345X02/doc3.xml",
-      "material": false
+      "material": false,
+      "headline": "OCIC insider files initial Form 3 ownership statement",
+      "signal": "clean",
+      "signal_note": "Routine ownership filing"
     },
     {
       "form": "POS 8C",
@@ -2474,7 +3398,10 @@
       "label": "POS 8C — POS 8C",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312521339225/d217366dpos8c.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC files post-effective registration amendment",
+      "signal": "clean",
+      "signal_note": "Routine registration"
     },
     {
       "form": "CORRESP",
@@ -2482,7 +3409,10 @@
       "label": "CORRESP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312521339121/filename1.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC responds to SEC staff comments on registration",
+      "signal": "clean",
+      "signal_note": "Routine SEC correspondence"
     },
     {
       "form": "8-K",
@@ -2490,7 +3420,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312521339103/d263810d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC offering update, monthly share pricing",
+      "signal": "clean",
+      "signal_note": "Routine offering update"
     },
     {
       "form": "8-K",
@@ -2498,7 +3431,10 @@
       "label": "Current report: changed a director or senior officer",
       "category": "Personnel",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312521336808/d290189d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC appoints new director to board",
+      "signal": "clean",
+      "signal_note": "Routine director appointment"
     },
     {
       "form": "424B3",
@@ -2506,7 +3442,10 @@
       "label": "Prospectus supplement (offering) — 424B3",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312521332565/d222376d424b3.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files Q3 2021 consolidated financial statements",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "10-Q",
@@ -2514,7 +3453,10 @@
       "label": "Quarterly report (10-Q) for period ending 2021-09-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000095017021004407/orcic_10q_0930-2021.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files Q3 2021 quarterly report",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "8-K",
@@ -2522,7 +3464,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312521313319/d338535d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC subsidiary amends secured credit facility",
+      "signal": "clean",
+      "signal_note": "Routine amend-and-extend"
     },
     {
       "form": "SC TO-I/A",
@@ -2530,7 +3475,10 @@
       "label": "SC TO-I/A — SC TO-I/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312521308021/d217505dsctoia.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC amends share repurchase tender offer terms",
+      "signal": "clean",
+      "signal_note": "Routine tender amendment"
     },
     {
       "form": "8-K",
@@ -2538,7 +3486,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312521308013/d131338d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC offering update, share issuance status",
+      "signal": "clean",
+      "signal_note": "Routine offering update"
     },
     {
       "form": "SC 13G",
@@ -2546,7 +3497,10 @@
       "label": "SC 13G",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000132994821000012/OwlRockAmmendmentNo3SC13G.txt",
-      "material": false
+      "material": false,
+      "headline": "Janney Montgomery Scott files OCIC passive ownership stake",
+      "signal": "clean",
+      "signal_note": "Routine ownership filing"
     },
     {
       "form": "N-2",
@@ -2554,7 +3508,10 @@
       "label": "Registration statement (N-2) — N-2",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312521294320/d224588dn2.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files Form N-2 registration statement",
+      "signal": "clean",
+      "signal_note": "Routine registration"
     },
     {
       "form": "8-K",
@@ -2562,7 +3519,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312521294150/d198592d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC subsidiary enters secured credit facility",
+      "signal": "clean",
+      "signal_note": "Routine financing"
     },
     {
       "form": "8-K",
@@ -2570,7 +3530,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312521291124/d211629d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC reports direct financial obligation from credit facility",
+      "signal": "clean",
+      "signal_note": "Routine financing"
     },
     {
       "form": "POS 8C",
@@ -2578,7 +3541,10 @@
       "label": "POS 8C — POS 8C",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312521290034/d217366dpos8c.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC files post-effective registration amendment",
+      "signal": "clean",
+      "signal_note": "Routine registration"
     },
     {
       "form": "8-K",
@@ -2586,7 +3552,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312521282208/d412898d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC prices $350M 3.125% notes private placement",
+      "signal": "clean",
+      "signal_note": "Routine note issuance"
     },
     {
       "form": "8-K",
@@ -2594,7 +3563,10 @@
       "label": "Current report: entered a material agreement; reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312521276795/d32606d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC reports direct financial obligation from note issuance",
+      "signal": "clean",
+      "signal_note": "Routine financing"
     },
     {
       "form": "8-K",
@@ -2602,7 +3574,10 @@
       "label": "Current report: entered a material agreement; reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312521272292/d409658d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC upsizes affiliate loan facility to $250M, extends maturity",
+      "signal": "clean",
+      "signal_note": "Routine facility upsize"
     },
     {
       "form": "SC 13G",
@@ -2610,7 +3585,10 @@
       "label": "SC 13G — OWL ROCK CORE INCOME CORP.",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000110465921114710/tm2127369-1_sc13g.htm",
-      "material": false
+      "material": false,
+      "headline": "Investor files OCIC passive ownership stake",
+      "signal": "clean",
+      "signal_note": "Routine ownership filing"
     },
     {
       "form": "SC 13G",
@@ -2618,7 +3596,10 @@
       "label": "SC 13G",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000132994821000007/OwlRockAmmendmentNo2SC13G.txt",
-      "material": false
+      "material": false,
+      "headline": "Janney Montgomery Scott files OCIC passive ownership stake",
+      "signal": "clean",
+      "signal_note": "Routine ownership filing"
     },
     {
       "form": "3",
@@ -2626,7 +3607,10 @@
       "label": "3 — FORM 3 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000089924321034757/xslF345X02/doc3.xml",
-      "material": false
+      "material": false,
+      "headline": "OCIC insider files initial Form 3 ownership statement",
+      "signal": "clean",
+      "signal_note": "Routine ownership filing"
     },
     {
       "form": "3",
@@ -2634,7 +3618,10 @@
       "label": "3 — FORM 3 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000089924321034751/xslF345X02/doc3.xml",
-      "material": false
+      "material": false,
+      "headline": "OCIC insider files initial Form 3 ownership statement",
+      "signal": "clean",
+      "signal_note": "Routine ownership filing"
     },
     {
       "form": "3",
@@ -2642,7 +3629,10 @@
       "label": "3 — FORM 3 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000089924321034746/xslF345X02/doc3.xml",
-      "material": false
+      "material": false,
+      "headline": "OCIC insider files initial Form 3 ownership statement",
+      "signal": "clean",
+      "signal_note": "Routine ownership filing"
     },
     {
       "form": "8-K",
@@ -2650,7 +3640,10 @@
       "label": "Current report: entered a material agreement",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312521262094/d198305d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC amends affiliate loan agreement",
+      "signal": "clean",
+      "signal_note": "Routine facility amendment"
     },
     {
       "form": "8-K",
@@ -2658,7 +3651,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312521261298/d223076d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC portfolio update, 58 companies, 70.6% first lien",
+      "signal": "clean",
+      "signal_note": "Routine portfolio update"
     },
     {
       "form": "8-K",
@@ -2666,7 +3662,10 @@
       "label": "Current report (8-K)",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312521257692/d182076d8k.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC shareholders elect directors, ratify KPMG auditor",
+      "signal": "clean",
+      "signal_note": "Routine annual meeting"
     },
     {
       "form": "SC TO-I",
@@ -2674,7 +3673,10 @@
       "label": "SC TO-I — SC TO-I",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312521256322/d212077dsctoi.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC launches share repurchase tender offer",
+      "signal": "clean",
+      "signal_note": "Routine issuer repurchase"
     },
     {
       "form": "424B3",
@@ -2682,7 +3684,10 @@
       "label": "Prospectus supplement (offering) — 424B3",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312521247806/d191652d424b3.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files Q2 2021 consolidated financial statements",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "DEFA14A",
@@ -2690,7 +3695,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000110465921104682/tm2124601d2_defa14a.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC sends proxy reminder for annual meeting",
+      "signal": "clean",
+      "signal_note": "Routine proxy"
     },
     {
       "form": "10-Q",
@@ -2698,7 +3706,10 @@
       "label": "Quarterly report (10-Q) for period ending 2021-06-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000156459021044075/orcic-10q_20210630.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files Q2 2021 quarterly report",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "SC 13G",
@@ -2706,7 +3717,10 @@
       "label": "SC 13G",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000132994821000006/OwlRockAmmendmentNo1SC13G.txt",
-      "material": false
+      "material": false,
+      "headline": "Janney Montgomery Scott files OCIC passive ownership stake",
+      "signal": "clean",
+      "signal_note": "Routine ownership filing"
     },
     {
       "form": "DEFA14A",
@@ -2714,7 +3728,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000110465921102475/tm2124601d1_defa14a.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC sends proxy reminder for annual meeting",
+      "signal": "clean",
+      "signal_note": "Routine proxy"
     },
     {
       "form": "DEFA14A",
@@ -2722,7 +3739,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000110465921098900/tm2123792d1_defa14a.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC sends proxy reminder for annual meeting",
+      "signal": "clean",
+      "signal_note": "Routine proxy"
     },
     {
       "form": "424B4",
@@ -2730,7 +3750,10 @@
       "label": "424B4 — 424B4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000110465921096989/tm2123407d1_424b4.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC files prospectus supplement",
+      "signal": "clean",
+      "signal_note": "Routine prospectus supplement"
     },
     {
       "form": "8-K",
@@ -2738,7 +3761,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000110465921096984/tm2123407d2_8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC portfolio update, 50 companies, monthly share pricing",
+      "signal": "clean",
+      "signal_note": "Routine portfolio update"
     },
     {
       "form": "DEFA14A",
@@ -2746,7 +3772,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000110465921091699/tm2121337d3_defa14a.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC sends proxy reminder for annual meeting",
+      "signal": "clean",
+      "signal_note": "Routine proxy"
     },
     {
       "form": "424B3",
@@ -2754,7 +3783,10 @@
       "label": "Prospectus supplement (offering) — 424B3",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000110465921090667/tm2121718d1_424b3.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files prospectus supplement",
+      "signal": "clean",
+      "signal_note": "Routine prospectus supplement"
     },
     {
       "form": "DEFA14A",
@@ -2762,7 +3794,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000110465921090457/tm2121337d2_defa14a.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC files additional proxy soliciting materials",
+      "signal": "clean",
+      "signal_note": "Routine proxy"
     },
     {
       "form": "DEF 14A",
@@ -2770,7 +3805,10 @@
       "label": "Proxy statement — DEF 14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000110465921090447/tm2121337-1_def14a.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC files definitive annual meeting proxy statement",
+      "signal": "clean",
+      "signal_note": "Routine proxy"
     },
     {
       "form": "424B4",
@@ -2778,7 +3816,10 @@
       "label": "424B4 — 424B4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000110465921085129/tm2120596d1_424b4.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC files prospectus supplement",
+      "signal": "clean",
+      "signal_note": "Routine prospectus supplement"
     },
     {
       "form": "8-K",
@@ -2786,7 +3827,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000110465921085125/tm2120596d2_8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC portfolio update, 42 companies, monthly share pricing",
+      "signal": "clean",
+      "signal_note": "Routine portfolio update"
     },
     {
       "form": "SC 13G",
@@ -2794,7 +3838,10 @@
       "label": "SC 13G",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000132994821000004/OWLROCKSC13G.txt",
-      "material": false
+      "material": false,
+      "headline": "Janney Montgomery Scott files OCIC passive ownership stake",
+      "signal": "clean",
+      "signal_note": "Routine ownership filing"
     },
     {
       "form": "424B4",
@@ -2802,7 +3849,10 @@
       "label": "424B4 — 424B4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000110465921071357/tm2117416d2_424b4.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC files prospectus supplement",
+      "signal": "clean",
+      "signal_note": "Routine prospectus supplement"
     },
     {
       "form": "8-K",
@@ -2810,7 +3860,10 @@
       "label": "Current report: reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000110465921071343/tm2117416d1_8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC portfolio update, 35 companies, monthly share pricing",
+      "signal": "clean",
+      "signal_note": "Routine portfolio update"
     },
     {
       "form": "POS EX",
@@ -2818,7 +3871,10 @@
       "label": "POS EX — POS EX",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000110465921070499/tm2116206d4_posex.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC files registration statement exhibits",
+      "signal": "clean",
+      "signal_note": "Routine registration"
     },
     {
       "form": "424B3",
@@ -2826,7 +3882,10 @@
       "label": "Prospectus supplement (offering) — 424B3",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000110465921070494/tm2116206d2_424b3.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files prospectus supplement",
+      "signal": "clean",
+      "signal_note": "Routine prospectus supplement"
     },
     {
       "form": "8-K",
@@ -2834,7 +3893,10 @@
       "label": "Current report: entered a material agreement; changed a director or senior officer",
       "category": "Personnel",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000110465921069451/tm2116206d1_8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC enters restated advisory agreement after Blue Owl merger",
+      "signal": "clean",
+      "signal_note": "Routine advisory agreement, adviser change of control"
     },
     {
       "form": "8-K/A",
@@ -2842,7 +3904,10 @@
       "label": "8-K/A — FORM 8-K/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000110465921068871/tm2116206d3_8ka.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC amends 8-K to file revolving credit facility exhibit",
+      "signal": "clean",
+      "signal_note": "Routine exhibit amendment"
     },
     {
       "form": "10-Q",
@@ -2850,7 +3915,10 @@
       "label": "Quarterly report (10-Q) for period ending 2021-03-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000156459021027725/orcic-10q_20210331.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files Q1 2021 quarterly report",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "424B3",
@@ -2858,7 +3926,10 @@
       "label": "Prospectus supplement (offering) — 424B3",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000110465921051394/tm2113190d1_424b3-seq1.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files prospectus supplement",
+      "signal": "clean",
+      "signal_note": "Routine prospectus supplement"
     },
     {
       "form": "8-K",
@@ -2866,7 +3937,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000110465921051389/tm2113190d2_8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC enters senior secured revolving credit facility",
+      "signal": "clean",
+      "signal_note": "Routine financing"
     },
     {
       "form": "424B3",
@@ -2874,7 +3948,10 @@
       "label": "Prospectus supplement (offering) — 424B3",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000110465921045602/tm2111284d2_424b3.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files prospectus supplement",
+      "signal": "clean",
+      "signal_note": "Routine prospectus supplement"
     },
     {
       "form": "8-K",
@@ -2882,7 +3959,10 @@
       "label": "Current report: entered a material agreement",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000110465921045596/tm2111284d3_8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC upsizes affiliate revolving note to $75M",
+      "signal": "clean",
+      "signal_note": "Routine facility upsize"
     },
     {
       "form": "SC 13D",
@@ -2890,7 +3970,10 @@
       "label": "Beneficial ownership (13D) — SCHEDULE 13D",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000110465921044791/tm2111284d1_sc13d.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC adviser affiliate discloses share ownership",
+      "signal": "clean",
+      "signal_note": "Routine affiliate ownership filing"
     },
     {
       "form": "424B1",
@@ -2898,7 +3981,10 @@
       "label": "424B1 — 424B1",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000110465921040974/tm2110772d1_424b1.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC files prospectus supplement",
+      "signal": "clean",
+      "signal_note": "Routine prospectus supplement"
     },
     {
       "form": "8-K",
@@ -2906,7 +3992,10 @@
       "label": "Current report: reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000110465921040972/tm2110772d2_8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC reports monthly offering price and NAV",
+      "signal": "clean",
+      "signal_note": "Routine offering update"
     },
     {
       "form": "4",
@@ -2914,7 +4003,10 @@
       "label": "4 — OWNERSHIP DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000110465921040372/xslF345X03/tm2110635-5_4seq1.xml",
-      "material": false
+      "material": false,
+      "headline": "OCIC insider reports share transaction on Form 4",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "4",
@@ -2922,7 +4014,10 @@
       "label": "4 — OWNERSHIP DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000110465921040371/xslF345X03/tm2110635-4_4seq1.xml",
-      "material": false
+      "material": false,
+      "headline": "OCIC insider reports share transaction on Form 4",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "4",
@@ -2930,7 +4025,10 @@
       "label": "4 — OWNERSHIP DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000110465921040369/xslF345X03/tm2110635-3_4seq1.xml",
-      "material": false
+      "material": false,
+      "headline": "OCIC insider reports share transaction on Form 4",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "4",
@@ -2938,7 +4036,10 @@
       "label": "4 — OWNERSHIP DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000110465921040366/xslF345X03/tm2110635-2_4seq1.xml",
-      "material": false
+      "material": false,
+      "headline": "OCIC insider reports share transaction on Form 4",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "4",
@@ -2946,7 +4047,10 @@
       "label": "4 — OWNERSHIP DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000110465921040365/xslF345X03/tm2110635-1_4seq1.xml",
-      "material": false
+      "material": false,
+      "headline": "OCIC insider reports share transaction on Form 4",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "40-17G",
@@ -2954,7 +4058,10 @@
       "label": "40-17G — 40-17G",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000110465921038406/tm219659d1_4017g.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC files $300K fidelity bond under Rule 17g-1",
+      "signal": "clean",
+      "signal_note": "Routine fidelity bond"
     },
     {
       "form": "424B3",
@@ -2962,7 +4069,10 @@
       "label": "Prospectus supplement (offering) — 424B3",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000110465921037728/tm219924d1_424b3.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files prospectus describing business",
+      "signal": "clean",
+      "signal_note": "Routine prospectus"
     },
     {
       "form": "10-K",
@@ -2970,7 +4080,10 @@
       "label": "Annual report (10-K) for period ending 2020-12-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000156459021013275/orcic-10k_20201231.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files fiscal 2020 annual report on Form 10-K",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "POS EX",
@@ -2978,7 +4091,10 @@
       "label": "POS EX — POS EX",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000110465921026862/tm217226d1_n2.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC files registration statement exhibits",
+      "signal": "clean",
+      "signal_note": "Routine registration"
     },
     {
       "form": "3",
@@ -2986,7 +4102,10 @@
       "label": "3 — OWNERSHIP DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000110465921026833/xslF345X02/tm217146d1_3seq1.xml",
-      "material": false
+      "material": false,
+      "headline": "OCIC insider files initial Form 3 ownership statement",
+      "signal": "clean",
+      "signal_note": "Routine ownership filing"
     },
     {
       "form": "424B3",
@@ -2994,7 +4113,10 @@
       "label": "Prospectus supplement (offering) — 424B3",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000110465921026827/tm217249d1_424b3.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files prospectus supplement",
+      "signal": "clean",
+      "signal_note": "Routine prospectus supplement"
     },
     {
       "form": "8-K",
@@ -3002,7 +4124,10 @@
       "label": "Current report: entered a material agreement; changed a director or senior officer",
       "category": "Personnel",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000110465921026824/tm217220d1_8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC appoints Melissa Weiler to board of directors",
+      "signal": "clean",
+      "signal_note": "Routine director appointment"
     },
     {
       "form": "424B3",
@@ -3010,7 +4135,10 @@
       "label": "Prospectus supplement (offering) — 424B3",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000110465920140549/tm2022345d18_n2a.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files prospectus supplement",
+      "signal": "clean",
+      "signal_note": "Routine prospectus supplement"
     },
     {
       "form": "EFFECT",
@@ -3018,7 +4146,10 @@
       "label": "EFFECT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/999999999520003670/xslEFFECTX01/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "OCIC registration statement declared effective",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "424B3",
@@ -3026,7 +4157,10 @@
       "label": "Prospectus supplement (offering) — 424B3",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000110465920139818/tm2022345-14_424b3.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files common stock prospectus",
+      "signal": "clean",
+      "signal_note": "Routine prospectus"
     },
     {
       "form": "3",
@@ -3034,7 +4168,10 @@
       "label": "3 — OWNERSHIP DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000110465920139809/xslF345X02/tm2039240-13_3seq1.xml",
-      "material": false
+      "material": false,
+      "headline": "OCIC insider files initial Form 3 ownership statement",
+      "signal": "clean",
+      "signal_note": "Routine ownership filing"
     },
     {
       "form": "3",
@@ -3042,7 +4179,10 @@
       "label": "3 — OWNERSHIP DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000110465920139808/xslF345X02/tm2039240-12_3seq1.xml",
-      "material": false
+      "material": false,
+      "headline": "OCIC insider files initial Form 3 ownership statement",
+      "signal": "clean",
+      "signal_note": "Routine ownership filing"
     },
     {
       "form": "3",
@@ -3050,7 +4190,10 @@
       "label": "3 — OWNERSHIP DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000110465920139807/xslF345X02/tm2039240-11_3seq1.xml",
-      "material": false
+      "material": false,
+      "headline": "OCIC insider files initial Form 3 ownership statement",
+      "signal": "clean",
+      "signal_note": "Routine ownership filing"
     },
     {
       "form": "3",
@@ -3058,7 +4201,10 @@
       "label": "3 — OWNERSHIP DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000110465920139805/xslF345X02/tm2039240-10_3seq1.xml",
-      "material": false
+      "material": false,
+      "headline": "OCIC insider files initial Form 3 ownership statement",
+      "signal": "clean",
+      "signal_note": "Routine ownership filing"
     },
     {
       "form": "3",
@@ -3066,7 +4212,10 @@
       "label": "3 — OWNERSHIP DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000110465920139804/xslF345X02/tm2039240-9_3seq1.xml",
-      "material": false
+      "material": false,
+      "headline": "OCIC insider files initial Form 3 ownership statement",
+      "signal": "clean",
+      "signal_note": "Routine ownership filing"
     },
     {
       "form": "3",
@@ -3074,7 +4223,10 @@
       "label": "3 — OWNERSHIP DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000110465920139803/xslF345X02/tm2039240-8_3seq1.xml",
-      "material": false
+      "material": false,
+      "headline": "OCIC insider files initial Form 3 ownership statement",
+      "signal": "clean",
+      "signal_note": "Routine ownership filing"
     },
     {
       "form": "3",
@@ -3082,7 +4234,10 @@
       "label": "3 — OWNERSHIP DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000110465920139800/xslF345X02/tm2039240-7_3seq1.xml",
-      "material": false
+      "material": false,
+      "headline": "OCIC insider files initial Form 3 ownership statement",
+      "signal": "clean",
+      "signal_note": "Routine ownership filing"
     },
     {
       "form": "3",
@@ -3090,7 +4245,10 @@
       "label": "3 — OWNERSHIP DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000110465920139799/xslF345X02/tm2039240-6_3seq1.xml",
-      "material": false
+      "material": false,
+      "headline": "OCIC insider files initial Form 3 ownership statement",
+      "signal": "clean",
+      "signal_note": "Routine ownership filing"
     },
     {
       "form": "3",
@@ -3098,7 +4256,10 @@
       "label": "3 — OWNERSHIP DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000110465920139798/xslF345X02/tm2039240-5_3seq1.xml",
-      "material": false
+      "material": false,
+      "headline": "OCIC insider files initial Form 3 ownership statement",
+      "signal": "clean",
+      "signal_note": "Routine ownership filing"
     },
     {
       "form": "3",
@@ -3106,7 +4267,10 @@
       "label": "3 — OWNERSHIP DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000110465920139796/xslF345X02/tm2039240-4_3seq1.xml",
-      "material": false
+      "material": false,
+      "headline": "OCIC insider files initial Form 3 ownership statement",
+      "signal": "clean",
+      "signal_note": "Routine ownership filing"
     },
     {
       "form": "3",
@@ -3114,7 +4278,10 @@
       "label": "3 — OWNERSHIP DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000110465920139795/xslF345X02/tm2039240-3_3seq1.xml",
-      "material": false
+      "material": false,
+      "headline": "OCIC insider files initial Form 3 ownership statement",
+      "signal": "clean",
+      "signal_note": "Routine ownership filing"
     },
     {
       "form": "3",
@@ -3122,7 +4289,10 @@
       "label": "3 — OWNERSHIP DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000110465920139793/xslF345X02/tm2039240-2_3seq1.xml",
-      "material": false
+      "material": false,
+      "headline": "OCIC insider files initial Form 3 ownership statement",
+      "signal": "clean",
+      "signal_note": "Routine ownership filing"
     },
     {
       "form": "3",
@@ -3130,7 +4300,10 @@
       "label": "3 — OWNERSHIP DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000110465920139791/xslF345X02/tm2039240-1_3seq1.xml",
-      "material": false
+      "material": false,
+      "headline": "OCIC insider files initial Form 3 ownership statement",
+      "signal": "clean",
+      "signal_note": "Routine ownership filing"
     },
     {
       "form": "N-2/A",
@@ -3138,7 +4311,10 @@
       "label": "N-2/A — N-2/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000110465920135390/tm2022345-10_n2a.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC files pre-effective registration amendment",
+      "signal": "clean",
+      "signal_note": "Routine registration"
     },
     {
       "form": "CORRESP",
@@ -3146,7 +4322,10 @@
       "label": "CORRESP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000110465920135387/filename1.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC responds to SEC staff comments on N-2",
+      "signal": "clean",
+      "signal_note": "Routine SEC correspondence"
     },
     {
       "form": "40-17G",
@@ -3154,7 +4333,10 @@
       "label": "40-17G — 40-17G",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000110465920119538/tm2034510d1_4017g.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC files fidelity bond under Rule 17g-1",
+      "signal": "clean",
+      "signal_note": "Routine fidelity bond"
     },
     {
       "form": "N-54A",
@@ -3162,7 +4344,10 @@
       "label": "N-54A — FORM N-54A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000110465920115698/tm2022345-7_n54a.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC elects to be regulated as business development company",
+      "signal": "clean",
+      "signal_note": "Routine BDC election"
     },
     {
       "form": "8-A12G",
@@ -3170,7 +4355,10 @@
       "label": "8-A12G — FORM 8-A12G",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000110465920115694/tm2032932-1_8a12g.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC registers common stock under Exchange Act",
+      "signal": "clean",
+      "signal_note": "Routine securities registration"
     },
     {
       "form": "N-2",
@@ -3178,7 +4366,10 @@
       "label": "Registration statement (N-2) — N-2",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000110465920115669/tm2022345-5_n2.htm",
-      "material": true
+      "material": true,
+      "headline": "OCIC files Form N-2 registration statement",
+      "signal": "clean",
+      "signal_note": "Routine registration"
     },
     {
       "form": "N-6F",
@@ -3186,7 +4377,10 @@
       "label": "N-6F — FORM N-6F",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000110465920115665/tm2022345d9_n6f.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC notifies intent to elect BDC status",
+      "signal": "clean",
+      "signal_note": "Routine BDC election notice"
     },
     {
       "form": "DRS/A",
@@ -3194,7 +4388,10 @@
       "label": "DRS/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1812554/000110465920093311/filename1.htm",
-      "material": false
+      "material": false,
+      "headline": "OCIC files confidential draft registration amendment",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     }
   ]
 }

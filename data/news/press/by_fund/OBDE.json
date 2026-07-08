@@ -10,7 +10,10 @@
       "label": "SCHEDULE 13G/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000108101925000015/xslSCHEDULE_13G_X01/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "Institutional holder reports 3.2% passive OBDE stake",
+      "signal": "clean",
+      "signal_note": "Passive ownership filing"
     },
     {
       "form": "SCHEDULE 13G/A",
@@ -18,7 +21,10 @@
       "label": "SCHEDULE 13G/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000108101925000006/xslSCHEDULE_13G_X01/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "Institutional holder reports 13.6% passive OBDE stake",
+      "signal": "clean",
+      "signal_note": "Passive ownership filing"
     },
     {
       "form": "SCHEDULE 13G",
@@ -26,7 +32,10 @@
       "label": "SCHEDULE 13G",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000201008125000002/xslSCHEDULE_13G_X01/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "Institutional holder reports 1.5% passive OBDE stake",
+      "signal": "clean",
+      "signal_note": "Passive ownership filing"
     },
     {
       "form": "SCHEDULE 13G",
@@ -34,7 +43,10 @@
       "label": "SCHEDULE 13G",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000201008125000001/xslSCHEDULE_13G_X01/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "Institutional holder reports 6.2% passive OBDE stake",
+      "signal": "clean",
+      "signal_note": "Passive ownership filing"
     },
     {
       "form": "4",
@@ -42,7 +54,10 @@
       "label": "4 — 4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000095017025005922/xslF345X05/ownership.xml",
-      "material": false
+      "material": false,
+      "headline": "OBDE insider reports Section 16 transaction dated Jan 15",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 4"
     },
     {
       "form": "4",
@@ -50,7 +65,10 @@
       "label": "4 — 4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000095017025005915/xslF345X05/ownership.xml",
-      "material": false
+      "material": false,
+      "headline": "OBDE insider reports Section 16 transaction dated Jan 15",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 4"
     },
     {
       "form": "4",
@@ -58,7 +76,10 @@
       "label": "4 — 4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000095017025005912/xslF345X05/ownership.xml",
-      "material": false
+      "material": false,
+      "headline": "OBDE insider reports Section 16 transaction dated Jan 15",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 4"
     },
     {
       "form": "N-54C",
@@ -66,7 +87,10 @@
       "label": "N-54C — N-54C",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000162828025001364/obde-formnx54c.htm",
-      "material": false
+      "material": false,
+      "headline": "OBDE withdraws BDC election after OBDC merger",
+      "signal": "clean",
+      "signal_note": "Merger-driven BDC withdrawal"
     },
     {
       "form": "15-12G",
@@ -74,7 +98,10 @@
       "label": "15-12G — 15-12G",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000162828025001363/obde-form15.htm",
-      "material": false
+      "material": false,
+      "headline": "OBDE terminates SEC registration after OBDC merger",
+      "signal": "clean",
+      "signal_note": "Merger-driven deregistration"
     },
     {
       "form": "25-NSE",
@@ -82,7 +109,10 @@
       "label": "25-NSE",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000087666125000018/xslF25X02/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "OBDE delisted from NYSE after OBDC merger",
+      "signal": "clean",
+      "signal_note": "Merger-driven delisting"
     },
     {
       "form": "8-K",
@@ -90,7 +120,10 @@
       "label": "Current report: completed an acquisition or disposition; faces delisting or a listing-standard issue",
       "category": "Personnel",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000162828025001248/obde-20250113.htm",
-      "material": true
+      "material": true,
+      "headline": "Merged into Blue Owl OBDC at 0.9779x exchange ratio; shares delisted",
+      "signal": "clean",
+      "signal_note": "Routine merger completion, not credit event"
     },
     {
       "form": "8-K",
@@ -98,7 +131,10 @@
       "label": "Current report: issued a Regulation FD disclosure; disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000162828025000948/obde-20250108.htm",
-      "material": true
+      "material": true,
+      "headline": "OBDE files 8-K for January 8 2025 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "425",
@@ -106,7 +142,10 @@
       "label": "425 — 425",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000162828025000138/obde-8xk1325.htm",
-      "material": false
+      "material": false,
+      "headline": "OBDE files merger communication for OBDC deal",
+      "signal": "clean",
+      "signal_note": "Merger communication"
     },
     {
       "form": "8-K",
@@ -114,7 +153,10 @@
       "label": "Current report: issued a Regulation FD disclosure",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000162828025000134/obde-20250103.htm",
-      "material": true
+      "material": true,
+      "headline": "OBDE files 8-K for January 3 2025 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "425",
@@ -122,7 +164,10 @@
       "label": "425 — 425",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000162828025000133/obdc-8xk1225.htm",
-      "material": false
+      "material": false,
+      "headline": "OBDC files merger communication for OBDE deal",
+      "signal": "clean",
+      "signal_note": "Merger communication"
     },
     {
       "form": "425",
@@ -130,7 +175,10 @@
       "label": "425 — 425",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000162828024052588/obdc-8xk123024.htm",
-      "material": false
+      "material": false,
+      "headline": "OBDC files merger communication for OBDE deal",
+      "signal": "clean",
+      "signal_note": "Merger communication"
     },
     {
       "form": "425",
@@ -138,7 +186,10 @@
       "label": "425 — 425",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000162828024052586/obde-8xk123024.htm",
-      "material": false
+      "material": false,
+      "headline": "OBDE files merger communication for OBDC deal",
+      "signal": "clean",
+      "signal_note": "Merger communication"
     },
     {
       "form": "8-K",
@@ -146,7 +197,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000162828024052583/obde-20241230.htm",
-      "material": true
+      "material": true,
+      "headline": "OBDE files 8-K for December 30 2024 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "425",
@@ -154,7 +208,10 @@
       "label": "425 — 425",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000119312524279691/d924032d425.htm",
-      "material": false
+      "material": false,
+      "headline": "OBDE files merger-related 8-K for OBDC deal",
+      "signal": "clean",
+      "signal_note": "Merger 8-K"
     },
     {
       "form": "8-K",
@@ -162,7 +219,10 @@
       "label": "Current report: issued a Regulation FD disclosure",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000119312524279627/d924032d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OBDE files 8-K for December 16 2024 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "8-K",
@@ -170,7 +230,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000119312524273449/d900182d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OBDE files 8-K for December 5 2024 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "425",
@@ -178,7 +241,10 @@
       "label": "425 — 425",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000119312524272492/d431491d425.htm",
-      "material": false
+      "material": false,
+      "headline": "OBDE urges shareholder vote on OBDC merger",
+      "signal": "clean",
+      "signal_note": "Merger proxy solicitation"
     },
     {
       "form": "425",
@@ -186,7 +252,10 @@
       "label": "425 — 425",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000162828024049462/obde-form425112924.htm",
-      "material": false
+      "material": false,
+      "headline": "OBDE sends shareholder letter on OBDC merger vote",
+      "signal": "clean",
+      "signal_note": "Merger proxy solicitation"
     },
     {
       "form": "8-K",
@@ -194,7 +263,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000119312524265210/d899537d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OBDE files 8-K for November 21 2024 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "425",
@@ -202,7 +274,10 @@
       "label": "425 — 425",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000162828024048909/obdc425.htm",
-      "material": false
+      "material": false,
+      "headline": "OBDC discusses OBDE merger on fixed income call",
+      "signal": "clean",
+      "signal_note": "Merger call"
     },
     {
       "form": "425",
@@ -210,7 +285,10 @@
       "label": "425 — 425",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000162828024048870/obdc-form425112124.htm",
-      "material": false
+      "material": false,
+      "headline": "OBDC discusses OBDE merger on fixed income call",
+      "signal": "clean",
+      "signal_note": "Merger call"
     },
     {
       "form": "4",
@@ -218,7 +296,10 @@
       "label": "4 — 4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000095017024125511/xslF345X05/ownership.xml",
-      "material": false
+      "material": false,
+      "headline": "OBDE insider reports Section 16 transaction dated Nov 12",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 4"
     },
     {
       "form": "425",
@@ -226,7 +307,10 @@
       "label": "425 — 425",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000162828024046457/obdc-form425earningscallsc.htm",
-      "material": false
+      "material": false,
+      "headline": "OBDC discusses Q3 results and OBDE merger on call",
+      "signal": "clean",
+      "signal_note": "Merger/earnings call"
     },
     {
       "form": "425",
@@ -234,7 +318,10 @@
       "label": "425 — 425",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000162828024046404/obde-form425.htm",
-      "material": false
+      "material": false,
+      "headline": "OBDE discusses Q3 2024 results and OBDC merger on call",
+      "signal": "clean",
+      "signal_note": "Merger/earnings call"
     },
     {
       "form": "425",
@@ -242,7 +329,10 @@
       "label": "425 — 425",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000162828024046403/obdc-form425.htm",
-      "material": false
+      "material": false,
+      "headline": "OBDC discusses Q3 results and OBDE merger on call",
+      "signal": "clean",
+      "signal_note": "Merger/earnings call"
     },
     {
       "form": "425",
@@ -250,7 +340,10 @@
       "label": "425 — 425",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000162828024045772/obde-earningspresentation.htm",
-      "material": false
+      "material": false,
+      "headline": "OBDE presents post-merger portfolio composition with OBDC",
+      "signal": "clean",
+      "signal_note": "Merger presentation"
     },
     {
       "form": "425",
@@ -258,7 +351,10 @@
       "label": "425 — 425",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000119312524252150/d906196d425.htm",
-      "material": false
+      "material": false,
+      "headline": "OBDE files merger-related 8-K for OBDC deal",
+      "signal": "clean",
+      "signal_note": "Merger 8-K"
     },
     {
       "form": "425",
@@ -266,7 +362,10 @@
       "label": "425 — 425",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000162828024045769/obdc-earningspresentation.htm",
-      "material": false
+      "material": false,
+      "headline": "OBDC presents post-merger portfolio composition with OBDE",
+      "signal": "clean",
+      "signal_note": "Merger presentation"
     },
     {
       "form": "425",
@@ -274,7 +373,10 @@
       "label": "425 — 425",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000119312524252086/d854376d425.htm",
-      "material": false
+      "material": false,
+      "headline": "OBDC files merger-related 8-K for OBDE deal",
+      "signal": "clean",
+      "signal_note": "Merger 8-K"
     },
     {
       "form": "8-K",
@@ -282,7 +384,10 @@
       "label": "Current report: reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000119312524252075/d906196d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OBDE files 8-K for November 6 2024 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "10-Q",
@@ -290,7 +395,10 @@
       "label": "Quarterly report (10-Q) for period ending 2024-09-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000180742724000043/orcc-20240930.htm",
-      "material": true
+      "material": true,
+      "headline": "OBDE files Q3 2024 10-Q; MD&A discusses results",
+      "signal": "clean",
+      "signal_note": "Quarterly report, no adverse fact"
     },
     {
       "form": "425",
@@ -298,7 +406,10 @@
       "label": "425 — 425",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000162828024043318/obde-proxyinvestormaterials.htm",
-      "material": false
+      "material": false,
+      "headline": "OBDE distributes proxy materials for OBDC merger vote",
+      "signal": "clean",
+      "signal_note": "Merger proxy materials"
     },
     {
       "form": "425",
@@ -306,7 +417,10 @@
       "label": "425 — 425",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000162828024043314/obdc-proxyinvestormaterials.htm",
-      "material": false
+      "material": false,
+      "headline": "OBDC distributes proxy materials for OBDE merger vote",
+      "signal": "clean",
+      "signal_note": "Merger proxy materials"
     },
     {
       "form": "425",
@@ -314,7 +428,10 @@
       "label": "425 — 425",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000162828024043216/obdeinvestorletter.htm",
-      "material": false
+      "material": false,
+      "headline": "OBDE sends investor letter on OBDC merger",
+      "signal": "clean",
+      "signal_note": "Merger investor materials"
     },
     {
       "form": "425",
@@ -322,7 +439,10 @@
       "label": "425 — 425",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000162828024043215/obdcinvestorletter.htm",
-      "material": false
+      "material": false,
+      "headline": "OBDC sends investor letter urging OBDE merger vote",
+      "signal": "clean",
+      "signal_note": "Merger proxy solicitation"
     },
     {
       "form": "DEFM14A",
@@ -330,7 +450,10 @@
       "label": "DEFM14A — DEFM14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000162828024043210/blueowlobde-defm14a.htm",
-      "material": false
+      "material": false,
+      "headline": "OBDE files merger proxy statement for OBDC deal",
+      "signal": "clean",
+      "signal_note": "Merger proxy statement"
     },
     {
       "form": "SC 13G",
@@ -338,7 +461,10 @@
       "label": "SC 13G — SCHEDULE 13G - 4Q FILING",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000201008124000007/17cfr-240.13d-102.txt",
-      "material": false
+      "material": false,
+      "headline": "Institutional holder reports passive 13G stake in OBDE",
+      "signal": "clean",
+      "signal_note": "Passive ownership filing"
     },
     {
       "form": "8-K",
@@ -346,7 +472,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000119312524237653/d893130d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OBDE files 8-K for October 10 2024 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "8-K",
@@ -354,7 +483,10 @@
       "label": "Current report: reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000119312524230623/d843424d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OBDE files 8-K for October 2 2024 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "4",
@@ -362,7 +494,10 @@
       "label": "4 — 4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000095017024101032/xslF345X05/ownership.xml",
-      "material": false
+      "material": false,
+      "headline": "OBDE insider reports Section 16 transaction dated Aug 27",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 4"
     },
     {
       "form": "4",
@@ -370,7 +505,10 @@
       "label": "4 — 4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000095017024099867/xslF345X05/ownership.xml",
-      "material": false
+      "material": false,
+      "headline": "OBDE insider reports Section 16 transaction dated Aug 22",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 4"
     },
     {
       "form": "4",
@@ -378,7 +516,10 @@
       "label": "4 — 4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000095017024099512/xslF345X05/ownership.xml",
-      "material": false
+      "material": false,
+      "headline": "OBDE insider reports Section 16 transaction dated Aug 21",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 4"
     },
     {
       "form": "N-14 8C",
@@ -386,7 +527,10 @@
       "label": "N-14 8C — N-14 8C",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000162828024037547/blueowlobdc-nx14.htm",
-      "material": false
+      "material": false,
+      "headline": "OBDC files N-14 registration for OBDE merger",
+      "signal": "clean",
+      "signal_note": "Merger registration"
     },
     {
       "form": "425",
@@ -394,7 +538,10 @@
       "label": "425 — 425",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000119312524200734/d57806d425.htm",
-      "material": false
+      "material": false,
+      "headline": "OBDC discusses OBDE merger on fixed income call",
+      "signal": "clean",
+      "signal_note": "Merger call"
     },
     {
       "form": "425",
@@ -402,7 +549,10 @@
       "label": "425 — 425",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000119312524197106/d868201d425.htm",
-      "material": false
+      "material": false,
+      "headline": "OBDC discusses Q2 results and OBDE merger on call",
+      "signal": "clean",
+      "signal_note": "Merger/earnings call"
     },
     {
       "form": "425",
@@ -410,7 +560,10 @@
       "label": "425 — 425",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000119312524197103/d874577d425.htm",
-      "material": false
+      "material": false,
+      "headline": "OBDE discusses Q2 2024 results and OBDC merger on call",
+      "signal": "clean",
+      "signal_note": "Merger/earnings call"
     },
     {
       "form": "425",
@@ -418,7 +571,10 @@
       "label": "425 — 425",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000119312524195963/d865950d425.htm",
-      "material": false
+      "material": false,
+      "headline": "OBDE announces definitive merger agreement with OBDC",
+      "signal": "clean",
+      "signal_note": "Merger announcement"
     },
     {
       "form": "425",
@@ -426,7 +582,10 @@
       "label": "425 — 425",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000119312524195954/d856486d425.htm",
-      "material": false
+      "material": false,
+      "headline": "OBDC issues investor FAQ and letter on OBDE merger",
+      "signal": "clean",
+      "signal_note": "Merger investor materials"
     },
     {
       "form": "425",
@@ -434,7 +593,10 @@
       "label": "425 — 425",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000119312524195953/d877806d425.htm",
-      "material": false
+      "material": false,
+      "headline": "OBDC outlines proposed merger with OBDE",
+      "signal": "clean",
+      "signal_note": "Merger overview"
     },
     {
       "form": "425",
@@ -442,7 +604,10 @@
       "label": "425 — 425",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000119312524195949/d862295d425.htm",
-      "material": false
+      "material": false,
+      "headline": "OBDE files merger-related 8-K for OBDC deal",
+      "signal": "clean",
+      "signal_note": "Merger 8-K"
     },
     {
       "form": "8-K",
@@ -450,7 +615,10 @@
       "label": "Current report: reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000119312524195943/d862295d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OBDE files 8-K for August 7 2024 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "10-Q",
@@ -458,7 +626,10 @@
       "label": "Quarterly report (10-Q) for period ending 2024-06-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000180742724000030/orcc-20240630.htm",
-      "material": true
+      "material": true,
+      "headline": "OBDE files Q2 2024 10-Q; MD&A discusses results",
+      "signal": "clean",
+      "signal_note": "Quarterly report, no adverse fact"
     },
     {
       "form": "425",
@@ -466,7 +637,10 @@
       "label": "425 — 425",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000119312524195937/d875793d425.htm",
-      "material": false
+      "material": false,
+      "headline": "OBDC files merger-related 8-K for OBDE deal",
+      "signal": "clean",
+      "signal_note": "Merger 8-K"
     },
     {
       "form": "425",
@@ -474,7 +648,10 @@
       "label": "425 — 425",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000119312524195928/d881306d425.htm",
-      "material": false
+      "material": false,
+      "headline": "OBDE files merger-related 8-K for OBDC deal",
+      "signal": "clean",
+      "signal_note": "Merger 8-K"
     },
     {
       "form": "8-K",
@@ -482,7 +659,10 @@
       "label": "Current report: entered a material agreement; issued a Regulation FD disclosure",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000119312524195919/d881306d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OBDE files 8-K for August 7 2024 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "425",
@@ -490,7 +670,10 @@
       "label": "425 — 425",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000119312524195914/d857906d425.htm",
-      "material": false
+      "material": false,
+      "headline": "OBDC files merger-related 8-K for OBDE deal",
+      "signal": "clean",
+      "signal_note": "Merger 8-K"
     },
     {
       "form": "8-K",
@@ -498,7 +681,10 @@
       "label": "Current report: reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000119312524174618/d783852d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OBDE files 8-K for July 3 2024 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "8-K",
@@ -506,7 +692,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000119312524174361/d825517d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OBDE files 8-K for June 28 2024 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "8-K",
@@ -514,7 +703,10 @@
       "label": "Current report (8-K)",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000119312524166982/d805736d8k.htm",
-      "material": false
+      "material": false,
+      "headline": "OBDE files 8-K for June 21 2024 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "8-K",
@@ -522,7 +714,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000119312524149152/d841671d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OBDE files 8-K for May 29 2024 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "40-17G",
@@ -530,7 +725,10 @@
       "label": "40-17G — 40-17G",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000119312524146037/d810994d4017g.htm",
-      "material": false
+      "material": false,
+      "headline": "OBDE files annual fidelity bond under Rule 17g-1",
+      "signal": "clean",
+      "signal_note": "Routine fidelity bond filing"
     },
     {
       "form": "8-K",
@@ -538,7 +736,10 @@
       "label": "Current report: reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000119312524134266/d837790d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OBDE files 8-K for May 8 2024 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "10-Q",
@@ -546,7 +747,10 @@
       "label": "Quarterly report (10-Q) for period ending 2024-03-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000180742724000019/orcc-20240331.htm",
-      "material": true
+      "material": true,
+      "headline": "OBDE files Q1 2024 10-Q; MD&A discusses results",
+      "signal": "clean",
+      "signal_note": "Quarterly report, no adverse fact"
     },
     {
       "form": "SC 13G",
@@ -554,7 +758,10 @@
       "label": "SC 13G",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000201008124000005/17cfr-240.13d-102.txt",
-      "material": false
+      "material": false,
+      "headline": "Institutional holder refiles passive 13G stake in OBDE",
+      "signal": "clean",
+      "signal_note": "Passive ownership filing"
     },
     {
       "form": "SC 13G",
@@ -562,7 +769,10 @@
       "label": "SC 13G",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000201008124000004/17cfr-240.13d-102.txt",
-      "material": false
+      "material": false,
+      "headline": "Institutional holder refiles passive 13G stake in OBDE",
+      "signal": "clean",
+      "signal_note": "Passive ownership filing"
     },
     {
       "form": "DEFA14A",
@@ -570,7 +780,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000119312524099144/d827454ddefa14a.htm",
-      "material": false
+      "material": false,
+      "headline": "OBDE files additional annual meeting proxy materials",
+      "signal": "clean",
+      "signal_note": "Proxy solicitation"
     },
     {
       "form": "DEFA14A",
@@ -578,7 +791,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000119312524091883/d780350ddefa14a.htm",
-      "material": false
+      "material": false,
+      "headline": "OBDE files additional annual meeting proxy materials",
+      "signal": "clean",
+      "signal_note": "Proxy solicitation"
     },
     {
       "form": "8-K",
@@ -586,7 +802,10 @@
       "label": "Current report: reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000119312524089045/d778785d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OBDE files 8-K for April 8 2024 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "DEFA14A",
@@ -594,7 +813,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000119312524083455/d818280ddefa14a.htm",
-      "material": false
+      "material": false,
+      "headline": "OBDE files additional annual meeting proxy materials",
+      "signal": "clean",
+      "signal_note": "Proxy solicitation"
     },
     {
       "form": "DEFA14A",
@@ -602,7 +824,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000119312524080603/d797039ddefa14a.htm",
-      "material": false
+      "material": false,
+      "headline": "OBDE files additional annual meeting proxy materials",
+      "signal": "clean",
+      "signal_note": "Proxy solicitation"
     },
     {
       "form": "DEF 14A",
@@ -610,7 +835,10 @@
       "label": "Proxy statement — DEF 14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000119312524080579/d760857ddef14a.htm",
-      "material": false
+      "material": false,
+      "headline": "OBDE files 2024 annual meeting proxy statement",
+      "signal": "clean",
+      "signal_note": "Annual proxy statement"
     },
     {
       "form": "8-K",
@@ -618,7 +846,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000119312524076545/d742576d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OBDE files 8-K for March 20 2024 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "8-K",
@@ -626,7 +857,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000119312524042403/d754903d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OBDE files 8-K for February 22 2024 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "8-K",
@@ -634,7 +868,10 @@
       "label": "Current report: reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000119312524041553/d744379d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OBDE files 8-K for February 21 2024 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "10-K",
@@ -642,7 +879,10 @@
       "label": "Annual report (10-K) for period ending 2023-12-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000180742724000010/orcc-20231231.htm",
-      "material": true
+      "material": true,
+      "headline": "OBDE files fiscal 2023 10-K; MD&A discusses results",
+      "signal": "clean",
+      "signal_note": "Annual report, no adverse fact"
     },
     {
       "form": "CERT",
@@ -650,7 +890,10 @@
       "label": "CERT — NYSE CERTIFICATION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000087666124000061/OBDE012424.pdf",
-      "material": false
+      "material": false,
+      "headline": "NYSE certifies OBDE common stock for listing",
+      "signal": "clean",
+      "signal_note": "Exchange listing certification"
     },
     {
       "form": "8-A12B",
@@ -658,7 +901,10 @@
       "label": "8-A12B — 8-A12B",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000119312524013552/d742009d8a12b.htm",
-      "material": false
+      "material": false,
+      "headline": "OBDE registers common stock for NYSE listing",
+      "signal": "clean",
+      "signal_note": "Exchange registration"
     },
     {
       "form": "8-K",
@@ -666,7 +912,10 @@
       "label": "Current report: reported quarterly results; disclosed a material event",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000119312524013546/d96369d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OBDE files 8-K for January 24 2024 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "3",
@@ -674,7 +923,10 @@
       "label": "3 — 3",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000095017024005053/xslF345X02/ownership.xml",
-      "material": false
+      "material": false,
+      "headline": "OBDE insider files initial Form 3 ownership statement",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 3"
     },
     {
       "form": "8-K",
@@ -682,7 +934,10 @@
       "label": "Current report: entered a material agreement; changed a director or senior officer",
       "category": "Personnel",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000119312524008555/d625250d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OBDE files 8-K for January 12 2024 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "8-K",
@@ -690,7 +945,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000119312523303055/d518477d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OBDE files 8-K for December 21 2023 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "8-K",
@@ -698,7 +956,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000119312523295525/d623535d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OBDE files 8-K for December 8 2023 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "8-K",
@@ -706,7 +967,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000119312523283379/d795300d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OBDE files 8-K for November 21 2023 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "10-Q",
@@ -714,7 +978,10 @@
       "label": "Quarterly report (10-Q) for period ending 2023-09-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000180742723000018/orcc-20230930.htm",
-      "material": true
+      "material": true,
+      "headline": "OBDE files Q3 2023 10-Q; MD&A discusses results",
+      "signal": "clean",
+      "signal_note": "Quarterly report, no adverse fact"
     },
     {
       "form": "10-Q",
@@ -722,7 +989,10 @@
       "label": "Quarterly report (10-Q) for period ending 2023-06-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000180742723000014/orcc-20230630.htm",
-      "material": true
+      "material": true,
+      "headline": "OBDE files Q2 2023 10-Q; MD&A discusses results",
+      "signal": "clean",
+      "signal_note": "Quarterly report, no adverse fact"
     },
     {
       "form": "8-K",
@@ -730,7 +1000,10 @@
       "label": "Current report: entered a material agreement; disclosed a material event",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000119312523182377/d296364d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "OBDE files 8-K for July 6 2023 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "8-K",
@@ -738,7 +1011,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000119312523180485/d505351d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Owl Rock III files 8-K for June 29 2023 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "8-K",
@@ -746,7 +1022,10 @@
       "label": "Current report: amended its charter or bylaws; disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000119312523172624/d485068d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Owl Rock III files 8-K for June 22 2023 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "8-K",
@@ -754,7 +1033,10 @@
       "label": "Current report (8-K)",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000119312523171272/d467262d8k.htm",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III files 8-K for June 21 2023 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "40-17G",
@@ -762,7 +1044,10 @@
       "label": "40-17G — FORM 40-17G",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000119312523165355/d632557d4017g.htm",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III files annual fidelity bond under Rule 17g-1",
+      "signal": "clean",
+      "signal_note": "Routine fidelity bond filing"
     },
     {
       "form": "D/A",
@@ -770,7 +1055,10 @@
       "label": "D/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000156761923006289/xslFormDX01/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III files Form D/A private placement amendment",
+      "signal": "clean",
+      "signal_note": "Private placement amendment"
     },
     {
       "form": "8-K",
@@ -778,7 +1066,10 @@
       "label": "Current report: issued a Regulation FD disclosure; disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000119312523152353/d381439d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Owl Rock III files 8-K for May 24 2023 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "8-K",
@@ -786,7 +1077,10 @@
       "label": "Current report: issued a Regulation FD disclosure; disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000119312523143554/d376525d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Owl Rock III files 8-K for May 12 2023 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "10-Q",
@@ -794,7 +1088,10 @@
       "label": "Quarterly report (10-Q) for period ending 2023-03-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000180742723000008/orcc-20230331.htm",
-      "material": true
+      "material": true,
+      "headline": "Owl Rock III files Q1 2023 10-Q; MD&A discusses results",
+      "signal": "clean",
+      "signal_note": "Quarterly report, no adverse fact"
     },
     {
       "form": "DEFA14A",
@@ -802,7 +1099,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000119312523088232/d460387ddefa14a.htm",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III files additional annual meeting proxy materials",
+      "signal": "clean",
+      "signal_note": "Proxy solicitation"
     },
     {
       "form": "DEFA14A",
@@ -810,7 +1110,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000119312523083733/d460387ddefa14a.htm",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III files additional annual meeting proxy materials",
+      "signal": "clean",
+      "signal_note": "Proxy solicitation"
     },
     {
       "form": "DEF 14A",
@@ -818,7 +1121,10 @@
       "label": "Proxy statement — DEF 14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000119312523083727/d460387ddef14a.htm",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III files 2023 annual meeting proxy statement",
+      "signal": "clean",
+      "signal_note": "Annual proxy statement"
     },
     {
       "form": "10-K",
@@ -826,7 +1132,10 @@
       "label": "Annual report (10-K) for period ending 2022-12-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000180742723000005/orcc-20221231.htm",
-      "material": true
+      "material": true,
+      "headline": "Owl Rock III files fiscal 2022 10-K; MD&A discusses results",
+      "signal": "clean",
+      "signal_note": "Annual report, no adverse fact"
     },
     {
       "form": "SC 13G",
@@ -834,7 +1143,10 @@
       "label": "SC 13G",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000108101923000005/sc13g-1222_OwlRock_ORCCIII.txt",
-      "material": false
+      "material": false,
+      "headline": "Institutional holder reports passive 13G stake in Owl Rock III",
+      "signal": "clean",
+      "signal_note": "Passive ownership filing"
     },
     {
       "form": "8-K",
@@ -842,7 +1154,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000119312522312737/d395274d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Owl Rock III files 8-K for December 22 2022 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "8-K",
@@ -850,7 +1165,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000119312522308382/d423115d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Owl Rock III files 8-K for December 14 2022 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "10-Q",
@@ -858,7 +1176,10 @@
       "label": "Quarterly report (10-Q) for period ending 2022-09-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000180742722000016/a01orcciii-2022930x10q1.htm",
-      "material": true
+      "material": true,
+      "headline": "Owl Rock III files Q3 2022 10-Q; MD&A discusses results",
+      "signal": "clean",
+      "signal_note": "Quarterly report, no adverse fact"
     },
     {
       "form": "424B3",
@@ -866,7 +1187,10 @@
       "label": "Prospectus supplement (offering) — 424B3",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000119312522232766/d380994d424b3.htm",
-      "material": true
+      "material": true,
+      "headline": "Owl Rock III offers to exchange $325M 3.125% notes due 2027",
+      "signal": "clean",
+      "signal_note": "Registered note exchange offer"
     },
     {
       "form": "EFFECT",
@@ -874,7 +1198,10 @@
       "label": "EFFECT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/999999999522002496/xslEFFECTX01/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III registration statement declared effective",
+      "signal": "clean",
+      "signal_note": "Notice of effectiveness"
     },
     {
       "form": "N-14 8C/A",
@@ -882,7 +1209,10 @@
       "label": "N-14 8C/A — N-14 8C/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000119312522227680/d520112dn148ca.htm",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III amends N-14 registration statement",
+      "signal": "clean",
+      "signal_note": "Registration amendment"
     },
     {
       "form": "CORRESP",
@@ -890,7 +1220,10 @@
       "label": "CORRESP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000119312522227683/filename1.htm",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III requests acceleration of registration effectiveness",
+      "signal": "clean",
+      "signal_note": "Routine SEC correspondence"
     },
     {
       "form": "10-Q",
@@ -898,7 +1231,10 @@
       "label": "Quarterly report (10-Q) for period ending 2022-06-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000180742722000006/a01orcciii-2022630x10q.htm",
-      "material": true
+      "material": true,
+      "headline": "Owl Rock III files Q2 2022 10-Q; MD&A discusses results",
+      "signal": "clean",
+      "signal_note": "Quarterly report, no adverse fact"
     },
     {
       "form": "8-K/A",
@@ -906,7 +1242,10 @@
       "label": "8-K/A — FORM 8-K/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000119312522200391/d387668d8ka.htm",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III amends July 21 current report",
+      "signal": "clean",
+      "signal_note": "8-K/A amendment"
     },
     {
       "form": "8-K",
@@ -914,7 +1253,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000119312522199197/d316674d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Owl Rock III files 8-K for July 21 2022 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "40-APP/A",
@@ -922,7 +1264,10 @@
       "label": "40-APP/A — 40-APP/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000110465922081222/tm2221385d1_40appa.htm",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III files amended exemptive relief application",
+      "signal": "clean",
+      "signal_note": "Exemptive application amendment"
     },
     {
       "form": "8-K",
@@ -930,7 +1275,10 @@
       "label": "Current report (8-K)",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000119312522186221/d339322d8k.htm",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III files 8-K for June 29 2022 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "8-K",
@@ -938,7 +1286,10 @@
       "label": "Current report: terminated a material agreement",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000119312522182962/d366532d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Owl Rock III files 8-K for June 22 2022 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "D/A",
@@ -946,7 +1297,10 @@
       "label": "D/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000156761922012383/xslFormDX01/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III files Form D/A private placement amendment",
+      "signal": "clean",
+      "signal_note": "Private placement amendment"
     },
     {
       "form": "8-K",
@@ -954,7 +1308,10 @@
       "label": "Current report (8-K)",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000119312522167367/d361677d8k.htm",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III files 8-K for June 3 2022 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "40-APP",
@@ -962,7 +1319,10 @@
       "label": "40-APP — 40-APP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000110465922064255/tm2216639d1_40app.htm",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III files exemptive application to amend order",
+      "signal": "clean",
+      "signal_note": "Exemptive application"
     },
     {
       "form": "N-14 8C",
@@ -970,7 +1330,10 @@
       "label": "N-14 8C — N-14 8C",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000119312522156146/d520112dn148c.htm",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III files N-14 registration statement",
+      "signal": "clean",
+      "signal_note": "Registration statement"
     },
     {
       "form": "DEFA14A",
@@ -978,7 +1341,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000119312522153141/d348859ddefa14a.htm",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III files additional annual meeting proxy materials",
+      "signal": "clean",
+      "signal_note": "Proxy solicitation"
     },
     {
       "form": "DEFA14A",
@@ -986,7 +1352,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000119312522148835/d340425ddefa14a.htm",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III files additional annual meeting proxy materials",
+      "signal": "clean",
+      "signal_note": "Proxy solicitation"
     },
     {
       "form": "10-Q",
@@ -994,7 +1363,10 @@
       "label": "Quarterly report (10-Q) for period ending 2022-03-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000095017022008105/orcciii_10q_0331-2022.htm",
-      "material": true
+      "material": true,
+      "headline": "Owl Rock III files Q1 2022 10-Q; MD&A discusses results",
+      "signal": "clean",
+      "signal_note": "Quarterly report, no adverse fact"
     },
     {
       "form": "3",
@@ -1002,7 +1374,10 @@
       "label": "3 — FORM 3 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000089924322016640/xslF345X02/doc3.xml",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III insider files initial Form 3 statement",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 3"
     },
     {
       "form": "DEFA14A",
@@ -1010,7 +1385,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000119312522137676/d351280ddefa14a.htm",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III files additional annual meeting proxy materials",
+      "signal": "clean",
+      "signal_note": "Proxy solicitation"
     },
     {
       "form": "DEFA14A",
@@ -1018,7 +1396,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000119312522111215/d317214ddefa14a.htm",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III files additional annual meeting proxy materials",
+      "signal": "clean",
+      "signal_note": "Proxy solicitation"
     },
     {
       "form": "DEFA14A",
@@ -1026,7 +1407,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000119312522101813/d340657ddefa14a.htm",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III files additional annual meeting proxy materials",
+      "signal": "clean",
+      "signal_note": "Proxy solicitation"
     },
     {
       "form": "DEF 14A",
@@ -1034,7 +1418,10 @@
       "label": "Proxy statement — DEF 14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000119312522101777/d340657ddef14a.htm",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III files 2022 annual meeting proxy statement",
+      "signal": "clean",
+      "signal_note": "Annual proxy statement"
     },
     {
       "form": "8-K",
@@ -1042,7 +1429,10 @@
       "label": "Current report (8-K)",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000119312522086757/d302144d8k.htm",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III files 8-K for March 24 2022 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "8-K",
@@ -1050,7 +1440,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000119312522081664/d337957d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Owl Rock III files 8-K for March 16 2022 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "D/A",
@@ -1058,7 +1451,10 @@
       "label": "D/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000156761922006702/xslFormDX01/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III files Form D/A private placement amendment",
+      "signal": "clean",
+      "signal_note": "Private placement amendment"
     },
     {
       "form": "40-17G",
@@ -1066,7 +1462,10 @@
       "label": "40-17G — FORM 40-17G",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000119312522064476/d290184d4017g.htm",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III files annual fidelity bond under Rule 17g-1",
+      "signal": "clean",
+      "signal_note": "Routine fidelity bond filing"
     },
     {
       "form": "10-K",
@@ -1074,7 +1473,10 @@
       "label": "Annual report (10-K) for period ending 2021-12-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000095017022002113/orcciii_10k_1231_2021.htm",
-      "material": true
+      "material": true,
+      "headline": "Owl Rock III files fiscal 2021 10-K; MD&A discusses results",
+      "signal": "clean",
+      "signal_note": "Annual report, no adverse fact"
     },
     {
       "form": "8-K",
@@ -1082,7 +1484,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000119312522052506/d18798d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Owl Rock III files 8-K for February 18 2022 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "SC 13G",
@@ -1090,7 +1495,10 @@
       "label": "SC 13G",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000108101922000004/sc13g-1221_OwlRock.txt",
-      "material": false
+      "material": false,
+      "headline": "Institutional holder reports passive 13G stake in Owl Rock III",
+      "signal": "clean",
+      "signal_note": "Passive ownership filing"
     },
     {
       "form": "8-K",
@@ -1098,7 +1506,10 @@
       "label": "Current report: changed a director or senior officer",
       "category": "Personnel",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000119312522017635/d300478d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Owl Rock III files 8-K for January 24 2022 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "8-K",
@@ -1106,7 +1517,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000119312521354067/d237834d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Owl Rock III files 8-K for December 8 2021 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "8-K",
@@ -1114,7 +1528,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000119312521350384/d270108d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Owl Rock III files 8-K for December 2 2021 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "3",
@@ -1122,7 +1539,10 @@
       "label": "3 — FORM 3 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000089924321046052/xslF345X02/doc3.xml",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III insider files initial Form 3 statement",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 3"
     },
     {
       "form": "8-K",
@@ -1130,7 +1550,10 @@
       "label": "Current report: changed a director or senior officer",
       "category": "Personnel",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000119312521336785/d264836d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Owl Rock III files 8-K for November 19 2021 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "8-K",
@@ -1138,7 +1561,10 @@
       "label": "Current report: terminated a material agreement",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000119312521332532/d266191d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Owl Rock III files 8-K for November 12 2021 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "4",
@@ -1146,7 +1572,10 @@
       "label": "4 — FORM 4 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000089924321044843/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III insider reports Section 16 transaction dated Nov 12",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 4"
     },
     {
       "form": "SC 13D/A",
@@ -1154,7 +1583,10 @@
       "label": "Beneficial ownership amendment (13D/A) — SC 13D/A",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000119312521331304/d437208dsc13da.htm",
-      "material": true
+      "material": true,
+      "headline": "CH Investment Partners amends 13D stake in Owl Rock III",
+      "signal": "clean",
+      "signal_note": "Affiliate ownership amendment"
     },
     {
       "form": "4",
@@ -1162,7 +1594,10 @@
       "label": "4 — FORM 4 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000089924321044593/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III insider reports Section 16 transaction dated Nov 12",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 4"
     },
     {
       "form": "4",
@@ -1170,7 +1605,10 @@
       "label": "4 — FORM 4 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000089924321044584/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III insider reports Section 16 transaction dated Nov 12",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 4"
     },
     {
       "form": "10-Q",
@@ -1178,7 +1616,10 @@
       "label": "Quarterly report (10-Q) for period ending 2021-09-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000095017021003127/orcciii_10q_0930-2021.htm",
-      "material": true
+      "material": true,
+      "headline": "Owl Rock III files Q3 2021 10-Q; MD&A discusses results",
+      "signal": "clean",
+      "signal_note": "Quarterly report, no adverse fact"
     },
     {
       "form": "8-K/A",
@@ -1186,7 +1627,10 @@
       "label": "8-K/A — 8-K/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000119312521320136/d245133d8ka.htm",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III amends October 5 current report",
+      "signal": "clean",
+      "signal_note": "8-K/A amendment"
     },
     {
       "form": "8-K",
@@ -1194,7 +1638,10 @@
       "label": "Current report (8-K)",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000119312521313429/d198996d8k.htm",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III files 8-K for October 29 2021 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "8-K",
@@ -1202,7 +1649,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000119312521298781/d243733d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Owl Rock III files 8-K for October 13 2021 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "8-K",
@@ -1210,7 +1660,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000119312521295540/d224215d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Owl Rock III files 8-K for October 5 2021 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "8-K",
@@ -1218,7 +1671,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000119312521290402/d185869d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Owl Rock III files 8-K for October 4 2021 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "4",
@@ -1226,7 +1682,10 @@
       "label": "4 — FORM 4 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000089924321038046/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III insider reports Section 16 transaction dated Sep 24",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 4"
     },
     {
       "form": "SC 13D/A",
@@ -1234,7 +1693,10 @@
       "label": "Beneficial ownership amendment (13D/A) — SC 13D/A",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000119312521285274/d225436dsc13da.htm",
-      "material": true
+      "material": true,
+      "headline": "CH Investment Partners amends 13D stake in Owl Rock III",
+      "signal": "clean",
+      "signal_note": "Affiliate ownership amendment"
     },
     {
       "form": "4",
@@ -1242,7 +1704,10 @@
       "label": "4 — FORM 4 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000089924321037607/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III insider reports Section 16 transaction dated Sep 24",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 4"
     },
     {
       "form": "4",
@@ -1250,7 +1715,10 @@
       "label": "4 — FORM 4 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000089924321037606/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III insider reports Section 16 transaction dated Sep 24",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 4"
     },
     {
       "form": "8-K",
@@ -1258,7 +1726,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000119312521273995/d203810d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Owl Rock III files 8-K for September 13 2021 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "8-K",
@@ -1266,7 +1737,10 @@
       "label": "Current report (8-K)",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000119312521271420/d222517d8k.htm",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III files 8-K for September 13 2021 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "3",
@@ -1274,7 +1748,10 @@
       "label": "3 — FORM 3 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000089924321034759/xslF345X02/doc3.xml",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III insider files initial Form 3 statement",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 3"
     },
     {
       "form": "3",
@@ -1282,7 +1759,10 @@
       "label": "3 — FORM 3 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000089924321034755/xslF345X02/doc3.xml",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III insider files initial Form 3 statement",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 3"
     },
     {
       "form": "3",
@@ -1290,7 +1770,10 @@
       "label": "3 — FORM 3 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000089924321034752/xslF345X02/doc3.xml",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III insider files initial Form 3 statement",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 3"
     },
     {
       "form": "8-K",
@@ -1298,7 +1781,10 @@
       "label": "Current report (8-K)",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000119312521257682/d222178d8k.htm",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III files 8-K for August 26 2021 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "SC 13D/A",
@@ -1306,7 +1792,10 @@
       "label": "Beneficial ownership amendment (13D/A) — SC 13D/A",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000119312521257113/d164300dsc13da.htm",
-      "material": true
+      "material": true,
+      "headline": "CH Investment Partners amends 13D stake in Owl Rock III",
+      "signal": "clean",
+      "signal_note": "Affiliate ownership amendment"
     },
     {
       "form": "4",
@@ -1314,7 +1803,10 @@
       "label": "4 — FORM 4 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000089924321034212/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III insider reports Section 16 transaction dated Aug 24",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 4"
     },
     {
       "form": "4",
@@ -1322,7 +1814,10 @@
       "label": "4 — FORM 4 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000089924321034153/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III insider reports Section 16 transaction dated Aug 24",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 4"
     },
     {
       "form": "4",
@@ -1330,7 +1825,10 @@
       "label": "4 — FORM 4 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000089924321034152/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III insider reports Section 16 transaction dated Aug 24",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 4"
     },
     {
       "form": "DEFA14A",
@@ -1338,7 +1836,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000110465921104679/tm2124597d2_defa14a.htm",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III sends proxy reminder for annual meetings",
+      "signal": "clean",
+      "signal_note": "Proxy solicitation"
     },
     {
       "form": "8-K",
@@ -1346,7 +1847,10 @@
       "label": "Current report (8-K)",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000119312521243429/d213265d8k.htm",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III files 8-K for August 11 2021 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "DEFA14A",
@@ -1354,7 +1858,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000110465921102473/tm2124597d1_defa14a.htm",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III sends proxy materials for annual meetings",
+      "signal": "clean",
+      "signal_note": "Proxy solicitation"
     },
     {
       "form": "10-Q",
@@ -1362,7 +1869,10 @@
       "label": "Quarterly report (10-Q) for period ending 2021-06-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000156459021041682/orcciii-10q_20210630.htm",
-      "material": true
+      "material": true,
+      "headline": "Owl Rock III files Q2 2021 10-Q; MD&A discusses results",
+      "signal": "clean",
+      "signal_note": "Quarterly report, no adverse fact"
     },
     {
       "form": "8-K",
@@ -1370,7 +1880,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000110465921098941/tm2123803d1_8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Owl Rock III files 8-K for July 29 2021 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "DEFA14A",
@@ -1378,7 +1891,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000110465921091696/tm2121335d3_defa14a.htm",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III sends vote reminder for annual meeting",
+      "signal": "clean",
+      "signal_note": "Proxy solicitation"
     },
     {
       "form": "4",
@@ -1386,7 +1902,10 @@
       "label": "4 — FORM 4 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000089924321028085/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III insider reports Section 16 transaction dated Jul 8",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 4"
     },
     {
       "form": "SC 13D/A",
@@ -1394,7 +1913,10 @@
       "label": "Beneficial ownership amendment (13D/A) — SC 13D/A",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000119312521212718/d198097dsc13da.htm",
-      "material": true
+      "material": true,
+      "headline": "CH Investment Partners amends 13D stake in Owl Rock III",
+      "signal": "clean",
+      "signal_note": "Affiliate ownership amendment"
     },
     {
       "form": "4/A",
@@ -1402,7 +1924,10 @@
       "label": "4/A — FORM 4/A SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000089924321028020/xslF345X03/doc4a.xml",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III insider files amended Form 4",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 4/A"
     },
     {
       "form": "SC 13D/A",
@@ -1410,7 +1935,10 @@
       "label": "Beneficial ownership amendment (13D/A) — SC 13D/A",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000110465921090678/tm2121881d1_sc13da.htm",
-      "material": true
+      "material": true,
+      "headline": "Owl Rock feeder fund amends 13D stake in Owl Rock III",
+      "signal": "clean",
+      "signal_note": "Affiliate ownership amendment"
     },
     {
       "form": "4",
@@ -1418,7 +1946,10 @@
       "label": "4 — OWNERSHIP DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000110465921090676/xslF345X03/tm2121833-2_4seq1.xml",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III insider reports Section 16 transaction dated Jul 8",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 4"
     },
     {
       "form": "4",
@@ -1426,7 +1957,10 @@
       "label": "4 — OWNERSHIP DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000110465921090673/xslF345X03/tm2121833-1_4seq1.xml",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III insider reports Section 16 transaction dated Jul 8",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 4"
     },
     {
       "form": "DEFA14A",
@@ -1434,7 +1968,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000110465921090453/tm2121335d2_defa14a.htm",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III urges shareholders to vote by August 25",
+      "signal": "clean",
+      "signal_note": "Proxy solicitation"
     },
     {
       "form": "DEF 14A",
@@ -1442,7 +1979,10 @@
       "label": "Proxy statement — DEF 14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000110465921090444/tm2121335-1_def14a.htm",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III files 2021 annual meeting proxy statement",
+      "signal": "clean",
+      "signal_note": "Annual proxy statement"
     },
     {
       "form": "8-K",
@@ -1450,7 +1990,10 @@
       "label": "Current report (8-K)",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000110465921085126/tm2120608d1_8k.htm",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III files 8-K for June 24 2021 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "D/A",
@@ -1458,7 +2001,10 @@
       "label": "D/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000156761921011716/xslFormDX01/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III files Form D/A private placement amendment",
+      "signal": "clean",
+      "signal_note": "Private placement amendment"
     },
     {
       "form": "8-K",
@@ -1466,7 +2012,10 @@
       "label": "Current report: entered a material agreement; changed a director or senior officer",
       "category": "Personnel",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000110465921069449/tm2116193d1_8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Owl Rock III files 8-K for May 18 2021 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "4",
@@ -1474,7 +2023,10 @@
       "label": "4 — FORM 4 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000089924321019609/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III insider reports Section 16 transaction dated May 13",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 4"
     },
     {
       "form": "SC 13D/A",
@@ -1482,7 +2034,10 @@
       "label": "Beneficial ownership amendment (13D/A) — SC 13D/A",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000119312521163667/d170039dsc13da.htm",
-      "material": true
+      "material": true,
+      "headline": "CH Investment Partners amends 13D stake in Owl Rock III",
+      "signal": "clean",
+      "signal_note": "Affiliate ownership amendment"
     },
     {
       "form": "4/A",
@@ -1490,7 +2045,10 @@
       "label": "4/A — FORM 4/A SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000089924321019603/xslF345X03/doc4a.xml",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III insider files amended Form 4",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 4/A"
     },
     {
       "form": "4",
@@ -1498,7 +2056,10 @@
       "label": "4 — OWNERSHIP DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000110465921066980/xslF345X03/tm2116361-3_4seq1.xml",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III insider reports Section 16 transaction dated May 13",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 4"
     },
     {
       "form": "4",
@@ -1506,7 +2067,10 @@
       "label": "4 — OWNERSHIP DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000110465921066973/xslF345X03/tm2116361-2_4seq1.xml",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III insider reports Section 16 transaction dated May 13",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 4"
     },
     {
       "form": "4",
@@ -1514,7 +2078,10 @@
       "label": "4 — OWNERSHIP DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000110465921066971/xslF345X03/tm2116361-1_4seq1.xml",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III insider reports Section 16 transaction dated May 13",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 4"
     },
     {
       "form": "SC 13D/A",
@@ -1522,7 +2089,10 @@
       "label": "Beneficial ownership amendment (13D/A) — SC 13D/A",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000110465921066967/tm2116366d1_sc13da.htm",
-      "material": true
+      "material": true,
+      "headline": "Owl Rock feeder fund amends 13D stake in Owl Rock III",
+      "signal": "clean",
+      "signal_note": "Affiliate ownership amendment"
     },
     {
       "form": "10-Q",
@@ -1530,7 +2100,10 @@
       "label": "Quarterly report (10-Q) for period ending 2021-03-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000156459021025576/orcciii-10q_20210331.htm",
-      "material": true
+      "material": true,
+      "headline": "Owl Rock III files Q1 2021 10-Q; MD&A discusses results",
+      "signal": "clean",
+      "signal_note": "Quarterly report, no adverse fact"
     },
     {
       "form": "8-K",
@@ -1538,7 +2111,10 @@
       "label": "Current report (8-K)",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000110465921059134/tm2114790d1_8k.htm",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III files 8-K for April 30 2021 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "40-17G",
@@ -1546,7 +2122,10 @@
       "label": "40-17G — 40-17G",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000110465921038400/tm219657d1_4017g.htm",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III files annual fidelity bond under Rule 17g-1",
+      "signal": "clean",
+      "signal_note": "Routine fidelity bond filing"
     },
     {
       "form": "8-K",
@@ -1554,7 +2133,10 @@
       "label": "Current report (8-K)",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000110465921037810/tm219984d1_8k.htm",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III files 8-K for March 17 2021 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "10-K",
@@ -1562,7 +2144,10 @@
       "label": "Annual report (10-K) for period ending 2020-12-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000156459021009969/orcciii-10k_20201231.htm",
-      "material": true
+      "material": true,
+      "headline": "Owl Rock III files fiscal 2020 10-K; MD&A discusses results",
+      "signal": "clean",
+      "signal_note": "Annual report, no adverse fact"
     },
     {
       "form": "3",
@@ -1570,7 +2155,10 @@
       "label": "3 — OWNERSHIP DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000110465921026839/xslF345X02/tm217144d1_3seq1.xml",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III insider files initial Form 3 statement",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 3"
     },
     {
       "form": "8-K",
@@ -1578,7 +2166,10 @@
       "label": "Current report: changed a director or senior officer",
       "category": "Personnel",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000110465921026828/tm217148d1_8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Owl Rock III files 8-K for February 23 2021 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "DEFA14A",
@@ -1586,7 +2177,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000110465921024959/tm214550d4_defa14a.htm",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III sends proxy materials for special meetings",
+      "signal": "clean",
+      "signal_note": "Proxy solicitation"
     },
     {
       "form": "DEFA14A",
@@ -1594,7 +2188,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000110465921013043/tm214550d3_defa14a.htm",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III urges shareholders to vote at special meeting",
+      "signal": "clean",
+      "signal_note": "Proxy solicitation"
     },
     {
       "form": "DEFA14A",
@@ -1602,7 +2199,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000110465921011523/tm214550d2_defa14a.htm",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III urges shareholder vote for special meeting",
+      "signal": "clean",
+      "signal_note": "Proxy solicitation"
     },
     {
       "form": "DEFA14A",
@@ -1610,7 +2210,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000110465921009067/tm214550d1_defa14a.htm",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III files additional special meeting proxy materials",
+      "signal": "clean",
+      "signal_note": "Proxy solicitation"
     },
     {
       "form": "CORRESP",
@@ -1618,7 +2221,10 @@
       "label": "CORRESP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000110465921007969/filename1.htm",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III responds to SEC comments on proxy",
+      "signal": "clean",
+      "signal_note": "Routine SEC correspondence"
     },
     {
       "form": "DEFA14A",
@@ -1626,7 +2232,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000110465921007958/tm213028d4_defa14a.htm",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III files additional special meeting proxy materials",
+      "signal": "clean",
+      "signal_note": "Proxy solicitation"
     },
     {
       "form": "DEF 14A",
@@ -1634,7 +2243,10 @@
       "label": "Proxy statement — DEF 14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000110465921007948/tm213028-3_def14a.htm",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III files special meeting proxy statement",
+      "signal": "clean",
+      "signal_note": "Proxy statement"
     },
     {
       "form": "PRE 14A",
@@ -1642,7 +2254,10 @@
       "label": "PRE 14A — PRE 14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000110465921004447/tm213028-1_pre14a.htm",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III files preliminary special meeting proxy statement",
+      "signal": "clean",
+      "signal_note": "Preliminary proxy statement"
     },
     {
       "form": "4",
@@ -1650,7 +2265,10 @@
       "label": "4 — FORM 4 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000089924321000748/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III insider reports Section 16 transaction dated Jan 4",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 4"
     },
     {
       "form": "SC 13D/A",
@@ -1658,7 +2276,10 @@
       "label": "Beneficial ownership amendment (13D/A) — SC 13D/A",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000119312521003335/d833531dsc13da.htm",
-      "material": true
+      "material": true,
+      "headline": "CH Investment Partners amends 13D stake in Owl Rock III",
+      "signal": "clean",
+      "signal_note": "Affiliate ownership amendment"
     },
     {
       "form": "SC 13D/A",
@@ -1666,7 +2287,10 @@
       "label": "Beneficial ownership amendment (13D/A) — SC 13D/A",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000119312521000592/d50284dsc13da.htm",
-      "material": true
+      "material": true,
+      "headline": "CH Investment Partners amends 13D stake in Owl Rock III",
+      "signal": "clean",
+      "signal_note": "Affiliate ownership amendment"
     },
     {
       "form": "4",
@@ -1674,7 +2298,10 @@
       "label": "4 — FORM 4 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000089924321000060/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III insider reports Section 16 transaction dated Dec 30",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 4"
     },
     {
       "form": "4",
@@ -1682,7 +2309,10 @@
       "label": "4 — OWNERSHIP DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000110465920140540/xslF345X03/tm2039600-2_4seq1.xml",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III insider reports Section 16 transaction dated Dec 30",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 4"
     },
     {
       "form": "4",
@@ -1690,7 +2320,10 @@
       "label": "4 — OWNERSHIP DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000110465920140538/xslF345X03/tm2039600-3_4.xml",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III insider reports Section 16 transaction dated Dec 30",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 4"
     },
     {
       "form": "4",
@@ -1698,7 +2331,10 @@
       "label": "4 — OWNERSHIP DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000110465920140535/xslF345X03/tm2039600-1_4seq3.xml",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III insider reports Section 16 transaction dated Dec 30",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 4"
     },
     {
       "form": "8-K",
@@ -1706,7 +2342,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000110465920138896/a20-39136_18k.htm",
-      "material": true
+      "material": true,
+      "headline": "Owl Rock III files 8-K for December 23 2020 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "DEFA14A",
@@ -1714,7 +2353,10 @@
       "label": "DEFA14A — 8-K",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000110465920138897/a20-39136_18k.htm",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III files proxy-related 8-K dated December 23 2020",
+      "signal": "clean",
+      "signal_note": "Proxy-related current report"
     },
     {
       "form": "8-K",
@@ -1722,7 +2364,10 @@
       "label": "Current report (8-K)",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000110465920136868/tm2038760-1_8k.htm",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III files 8-K for December 16 2020 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "4",
@@ -1730,7 +2375,10 @@
       "label": "4 — FORM 4 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000089924320033429/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III insider reports Section 16 transaction dated Dec 8",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 4"
     },
     {
       "form": "4/A",
@@ -1738,7 +2386,10 @@
       "label": "4/A — FORM 4/A SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000089924320033428/xslF345X03/doc4a.xml",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III insider files amended Form 4",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 4/A"
     },
     {
       "form": "SC 13D/A",
@@ -1746,7 +2397,10 @@
       "label": "Beneficial ownership amendment (13D/A) — SC 13D/A",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000119312520314993/d44631dsc13da.htm",
-      "material": true
+      "material": true,
+      "headline": "CH Investment Partners amends 13D stake in Owl Rock III",
+      "signal": "clean",
+      "signal_note": "Affiliate ownership amendment"
     },
     {
       "form": "4",
@@ -1754,7 +2408,10 @@
       "label": "4 — OWNERSHIP DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000110465920133672/xslF345X03/tm2038049-4_4seq1.xml",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III insider reports Section 16 transaction dated Dec 8",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 4"
     },
     {
       "form": "4",
@@ -1762,7 +2419,10 @@
       "label": "4 — OWNERSHIP DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000110465920133671/xslF345X03/tm2038049-3_4seq1.xml",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III insider reports Section 16 transaction dated Dec 8",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 4"
     },
     {
       "form": "4",
@@ -1770,7 +2430,10 @@
       "label": "4 — OWNERSHIP DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000110465920133659/xslF345X03/tm2038049-2_4seq1.xml",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III insider reports Section 16 transaction dated Dec 8",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 4"
     },
     {
       "form": "SC 13D/A",
@@ -1778,7 +2441,10 @@
       "label": "Beneficial ownership amendment (13D/A) — SC 13D/A",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000110465920133658/tm2038049d1_sc13da.htm",
-      "material": true
+      "material": true,
+      "headline": "Owl Rock feeder fund amends 13D stake in Owl Rock III",
+      "signal": "clean",
+      "signal_note": "Affiliate ownership amendment"
     },
     {
       "form": "8-K",
@@ -1786,7 +2452,10 @@
       "label": "Current report (8-K)",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000110465920129015/tm2037008d1_8k.htm",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III files 8-K for November 24 2020 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "10-Q",
@@ -1794,7 +2463,10 @@
       "label": "Quarterly report (10-Q) for period ending 2020-09-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000156459020053125/orcciii-10q_20200930.htm",
-      "material": true
+      "material": true,
+      "headline": "Owl Rock III files Q3 2020 10-Q; MD&A discusses results",
+      "signal": "clean",
+      "signal_note": "Quarterly report, no adverse fact"
     },
     {
       "form": "40-17G/A",
@@ -1802,7 +2474,10 @@
       "label": "40-17G/A — 40-17G/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000110465920119533/tm2034501d1_4017ga.htm",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III amends fidelity bond filing under Rule 17g-1",
+      "signal": "clean",
+      "signal_note": "Routine fidelity bond filing"
     },
     {
       "form": "SC 13D/A",
@@ -1810,7 +2485,10 @@
       "label": "Beneficial ownership amendment (13D/A) — SC 13D/A",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000119312520262704/d57656dsc13da.htm",
-      "material": true
+      "material": true,
+      "headline": "CH Investment Partners amends 13D stake in Owl Rock III",
+      "signal": "clean",
+      "signal_note": "Affiliate ownership amendment"
     },
     {
       "form": "4",
@@ -1818,7 +2496,10 @@
       "label": "4 — FORM 4 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000089924320026922/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III insider reports Section 16 transaction dated Sep 30",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 4"
     },
     {
       "form": "SC 13D/A",
@@ -1826,7 +2507,10 @@
       "label": "Beneficial ownership amendment (13D/A) — SC 13D/A",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000110465920111071/tm2032134-7_sc13da.htm",
-      "material": true
+      "material": true,
+      "headline": "Owl Rock feeder fund amends 13D stake in Owl Rock III",
+      "signal": "clean",
+      "signal_note": "Affiliate ownership amendment"
     },
     {
       "form": "4",
@@ -1834,7 +2518,10 @@
       "label": "4 — 4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000110465920111067/xslF345X03/a4.xml",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III insider reports Section 16 transaction dated Sep 30",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 4"
     },
     {
       "form": "4",
@@ -1842,7 +2529,10 @@
       "label": "4 — 4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000110465920111066/xslF345X03/a4.xml",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III insider reports Section 16 transaction dated Sep 30",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 4"
     },
     {
       "form": "4",
@@ -1850,7 +2540,10 @@
       "label": "4 — 4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000110465920111065/xslF345X03/a4.xml",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III insider reports Section 16 transaction dated Sep 30",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 4"
     },
     {
       "form": "4",
@@ -1858,7 +2551,10 @@
       "label": "4 — 4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000110465920111064/xslF345X03/a4.xml",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III insider reports Section 16 transaction dated Sep 30",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 4"
     },
     {
       "form": "4",
@@ -1866,7 +2562,10 @@
       "label": "4 — 4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000110465920111063/xslF345X03/a4.xml",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III insider reports Section 16 transaction dated Sep 30",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 4"
     },
     {
       "form": "8-K",
@@ -1874,7 +2573,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000110465920110435/tm2032134-1_8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Owl Rock III files 8-K for September 28 2020 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "8-K",
@@ -1882,7 +2584,10 @@
       "label": "Current report (8-K)",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000110465920106178/tm2031001-1_8k.htm",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III files 8-K for September 17 2020 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "SC 13D",
@@ -1890,7 +2595,10 @@
       "label": "Beneficial ownership (13D) — SCHEDULE 13D",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000110465920097611/tm2029095-1_sc13d.htm",
-      "material": true
+      "material": true,
+      "headline": "Owl Rock feeder fund reports 13D stake in Owl Rock III",
+      "signal": "clean",
+      "signal_note": "Affiliate ownership filing"
     },
     {
       "form": "SC 13D",
@@ -1898,7 +2606,10 @@
       "label": "Beneficial ownership (13D) — SC 13D",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000119312520222595/d161309dsc13d.htm",
-      "material": true
+      "material": true,
+      "headline": "CH Investment Partners reports 13D stake in Owl Rock III",
+      "signal": "clean",
+      "signal_note": "Affiliate ownership filing"
     },
     {
       "form": "4",
@@ -1906,7 +2617,10 @@
       "label": "4 — FORM 4 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000089924320022601/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III insider reports Section 16 transaction dated Aug 13",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 4"
     },
     {
       "form": "8-K",
@@ -1914,7 +2628,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000110465920096114/tm2027540d1_8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Owl Rock III files 8-K for August 12 2020 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "4",
@@ -1922,7 +2639,10 @@
       "label": "4 — 4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000110465920094693/xslF345X03/a4.xml",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III insider reports Section 16 transaction dated Aug 13",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 4"
     },
     {
       "form": "4",
@@ -1930,7 +2650,10 @@
       "label": "4 — 4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000110465920094691/xslF345X03/a4.xml",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III insider reports Section 16 transaction dated Aug 13",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 4"
     },
     {
       "form": "4",
@@ -1938,7 +2661,10 @@
       "label": "4 — 4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000110465920094688/xslF345X03/a4.xml",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III insider reports Section 16 transaction dated Aug 13",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 4"
     },
     {
       "form": "4",
@@ -1946,7 +2672,10 @@
       "label": "4 — 4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000110465920094684/xslF345X03/a4.xml",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III insider reports Section 16 transaction dated Aug 13",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 4"
     },
     {
       "form": "4",
@@ -1954,7 +2683,10 @@
       "label": "4 — 4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000110465920094682/xslF345X03/a4.xml",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III insider reports Section 16 transaction dated Aug 13",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 4"
     },
     {
       "form": "3",
@@ -1962,7 +2694,10 @@
       "label": "3 — FORM 3",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000156761920014362/xslF345X02/doc1.xml",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III insider files initial Form 3 statement",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 3"
     },
     {
       "form": "3",
@@ -1970,7 +2705,10 @@
       "label": "3 — FORM 3 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000089924320021215/xslF345X02/doc3.xml",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III insider files initial Form 3 statement",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 3"
     },
     {
       "form": "3",
@@ -1978,7 +2716,10 @@
       "label": "3 — 3",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000110465920090391/xslF345X02/a3.xml",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III insider files initial Form 3 statement",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 3"
     },
     {
       "form": "3",
@@ -1986,7 +2727,10 @@
       "label": "3 — 3",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000110465920090375/xslF345X02/a3.xml",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III insider files initial Form 3 statement",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 3"
     },
     {
       "form": "3",
@@ -1994,7 +2738,10 @@
       "label": "3 — 3",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000110465920090373/xslF345X02/a3.xml",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III insider files initial Form 3 statement",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 3"
     },
     {
       "form": "3",
@@ -2002,7 +2749,10 @@
       "label": "3 — 3",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000110465920090360/xslF345X02/a3.xml",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III insider files initial Form 3 statement",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 3"
     },
     {
       "form": "3",
@@ -2010,7 +2760,10 @@
       "label": "3 — 3",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000110465920090359/xslF345X02/a3.xml",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III insider files initial Form 3 statement",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 3"
     },
     {
       "form": "3",
@@ -2018,7 +2771,10 @@
       "label": "3 — 3",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000110465920090354/xslF345X02/a3.xml",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III insider files initial Form 3 statement",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 3"
     },
     {
       "form": "3",
@@ -2026,7 +2782,10 @@
       "label": "3 — 3",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000110465920090355/xslF345X02/a3.xml",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III insider files initial Form 3 statement",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 3"
     },
     {
       "form": "3",
@@ -2034,7 +2793,10 @@
       "label": "3 — 3",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000110465920090353/xslF345X02/a3.xml",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III insider files initial Form 3 statement",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 3"
     },
     {
       "form": "3",
@@ -2042,7 +2804,10 @@
       "label": "3 — 3",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000110465920090350/xslF345X02/a3.xml",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III insider files initial Form 3 statement",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 3"
     },
     {
       "form": "3",
@@ -2050,7 +2815,10 @@
       "label": "3 — 3",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000110465920090346/xslF345X02/a3.xml",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III insider files initial Form 3 statement",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 3"
     },
     {
       "form": "3",
@@ -2058,7 +2826,10 @@
       "label": "3 — 3",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000110465920090348/xslF345X02/a3.xml",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III insider files initial Form 3 statement",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 3"
     },
     {
       "form": "3",
@@ -2066,7 +2837,10 @@
       "label": "3 — 3",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000110465920090341/xslF345X02/a3.xml",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III insider files initial Form 3 statement",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 3"
     },
     {
       "form": "3",
@@ -2074,7 +2848,10 @@
       "label": "3 — 3",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000110465920090340/xslF345X02/a3.xml",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III insider files initial Form 3 statement",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 3"
     },
     {
       "form": "8-K",
@@ -2082,7 +2859,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000110465920090324/tm2026437-1_8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Owl Rock III files 8-K for July 31 2020 event",
+      "signal": "clean",
+      "signal_note": "Routine current report"
     },
     {
       "form": "10-12G/A",
@@ -2090,7 +2870,10 @@
       "label": "10-12G/A — 10-12G/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000110465920084529/a20-13495_11012ga.htm",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III amends Form 10 registration statement",
+      "signal": "clean",
+      "signal_note": "Registration amendment"
     },
     {
       "form": "CORRESP",
@@ -2098,7 +2881,10 @@
       "label": "CORRESP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1807427/000110465920084535/filename1.htm",
-      "material": false
+      "material": false,
+      "headline": "Owl Rock III responds to SEC staff comments",
+      "signal": "clean",
+      "signal_note": "Routine SEC correspondence"
     }
   ]
 }

@@ -42,7 +42,10 @@
       "label": "Current report: terminated a material agreement; completed an acquisition or disposition",
       "category": "Personnel",
       "url": "https://www.sec.gov/Archives/edgar/data/1571329/000162828025035073/lrfc-20250715.htm",
-      "material": true
+      "material": true,
+      "headline": "Merged into Portman Ridge at 1.5x ratio; $0.38 special distribution declared",
+      "signal": "clean",
+      "signal_note": "Routine merger completion"
     },
     {
       "form": "25-NSE/A",
@@ -490,7 +493,10 @@
       "label": "Current report: flagged prior financials as unreliable (restatement)",
       "category": "Credit event",
       "url": "https://www.sec.gov/Archives/edgar/data/1571329/000119312524161596/d841428d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "2022 and 2021 financials restated after loss of RIC status",
+      "signal": "negative",
+      "signal_note": "Restatement; RIC status lost, material weakness"
     },
     {
       "form": "8-K",

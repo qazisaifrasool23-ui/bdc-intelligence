@@ -10,7 +10,10 @@
       "label": "Current report (8-K)",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000119312526235868/d97685d8k.htm",
-      "material": false
+      "material": false,
+      "headline": "Bain Capital Specialty Finance shareholders re-elect three directors, ratify auditor",
+      "signal": "clean",
+      "signal_note": "Routine annual meeting results"
     },
     {
       "form": "8-K",
@@ -18,7 +21,10 @@
       "label": "Current report: reported quarterly results; disclosed a material event",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000119312526217311/d845735d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "BCSF declares $0.42 second-quarter dividend alongside Q1 2026 results",
+      "signal": "clean",
+      "signal_note": "Dividend declared as normal"
     },
     {
       "form": "10-Q",
@@ -26,7 +32,10 @@
       "label": "Quarterly report (10-Q) for period ending 2026-03-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000119312526217068/bcsf-20260331.htm",
-      "material": true
+      "material": true,
+      "headline": "BCSF files first-quarter 2026 Form 10-Q",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "8-K",
@@ -34,7 +43,10 @@
       "label": "Current report: reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000119312526189075/d76427d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "BCSF to report Q1 2026 results on May 11 with call May 12",
+      "signal": "clean",
+      "signal_note": "Routine earnings date notice"
     },
     {
       "form": "SCHEDULE 13G/A",
@@ -42,7 +54,10 @@
       "label": "SCHEDULE 13G/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000007085826000235/xslSCHEDULE_13G_X02/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "Holder reports 4.3% passive stake in Bain Capital Specialty Finance",
+      "signal": "clean",
+      "signal_note": "Routine ownership filing"
     },
     {
       "form": "DEF 14A",
@@ -50,7 +65,10 @@
       "label": "Proxy statement — DEF 14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000119312526163964/d57446ddef14a.htm",
-      "material": false
+      "material": false,
+      "headline": "2026 annual meeting set for May 21 to elect directors and ratify PwC",
+      "signal": "clean",
+      "signal_note": "Routine annual meeting proxy"
     },
     {
       "form": "40-17G",
@@ -58,7 +76,10 @@
       "label": "40-17G — 40-17G",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000119312526142289/d112332d4017g.htm",
-      "material": false
+      "material": false,
+      "headline": "Filed renewed Chubb fidelity bond effective April 28, 2026",
+      "signal": "clean",
+      "signal_note": "Routine fidelity bond filing"
     },
     {
       "form": "3",
@@ -66,7 +87,10 @@
       "label": "3",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000094562126000400/xslF345X02/form3.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider filed initial Form 3 ownership statement",
+      "signal": "clean",
+      "signal_note": "Routine insider ownership filing"
     },
     {
       "form": "4",
@@ -74,7 +98,10 @@
       "label": "4 — PRIMARY DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000166900626000001/xslF345X05/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider reported Form 4 transaction dated March 3, 2026",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "8-K",
@@ -82,7 +109,10 @@
       "label": "Current report: reported quarterly results; disclosed a material event",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000119312526078696/d328886d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Declared Q1 2026 dividend of $0.42 per share alongside Q4 results",
+      "signal": "clean",
+      "signal_note": "Dividend declared as normal"
     },
     {
       "form": "10-K",
@@ -90,7 +120,10 @@
       "label": "Annual report (10-K) for period ending 2025-12-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000119312526077703/bcsf-20251231.htm",
-      "material": true
+      "material": true,
+      "headline": "2025 10-K reports $2.66B total assets and $1.47B debt outstanding",
+      "signal": "clean",
+      "signal_note": "Routine annual report, no adverse disclosure"
     },
     {
       "form": "8-K",
@@ -98,7 +131,10 @@
       "label": "Current report: reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000119312526048956/d942249d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Set February 26 date for fourth quarter 2025 earnings release",
+      "signal": "clean",
+      "signal_note": "Routine earnings date announcement"
     },
     {
       "form": "8-K",
@@ -106,7 +142,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000119312526029653/d12878d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Issued $350M of 5.950% unsecured notes due 2031",
+      "signal": "clean",
+      "signal_note": "Ordinary notes offering"
     },
     {
       "form": "424B2",
@@ -114,7 +153,10 @@
       "label": "Prospectus supplement (offering) — 424B2",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000119312526022612/d67802d424b2.htm",
-      "material": true
+      "material": true,
+      "headline": "Offering $350M of 5.950% notes due 2031",
+      "signal": "clean",
+      "signal_note": "Ordinary notes offering"
     },
     {
       "form": "8-K",
@@ -122,7 +164,10 @@
       "label": "Current report: entered a material agreement",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000119312526021189/d23735d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Signed underwriting agreement for $350M 5.950% notes due 2031",
+      "signal": "clean",
+      "signal_note": "Ordinary notes offering"
     },
     {
       "form": "497AD",
@@ -130,7 +175,10 @@
       "label": "497AD — 497AD",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000119312526020392/d73685d497ad.htm",
-      "material": false
+      "material": false,
+      "headline": "BCSF priced $350M of 5.950% senior notes due 2031",
+      "signal": "clean",
+      "signal_note": "Routine unsecured notes offering"
     },
     {
       "form": "FWP",
@@ -138,7 +186,10 @@
       "label": "FWP — FWP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000119312526019952/d44867dfwp.htm",
-      "material": false
+      "material": false,
+      "headline": "Pricing term sheet for $350M 5.950% notes due 2031",
+      "signal": "clean",
+      "signal_note": "Routine notes pricing term sheet"
     },
     {
       "form": "497AD",
@@ -146,7 +197,10 @@
       "label": "497AD — 497AD",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000119312526019178/d42213d497ad.htm",
-      "material": false
+      "material": false,
+      "headline": "Bloomberg notice referencing pending notes offering prospectus",
+      "signal": "clean",
+      "signal_note": "Routine offering communication boilerplate"
     },
     {
       "form": "424B2",
@@ -154,7 +208,10 @@
       "label": "Prospectus supplement (offering) — 424B2",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000119312526018772/d67802d424b2.htm",
-      "material": true
+      "material": true,
+      "headline": "Preliminary prospectus supplement for unsecured notes offering",
+      "signal": "clean",
+      "signal_note": "Routine notes offering filing"
     },
     {
       "form": "8-K",
@@ -162,7 +219,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000119312525328944/d89435d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "BCSF declared special dividend of $0.15 per share",
+      "signal": "clean",
+      "signal_note": "Special dividend declared"
     },
     {
       "form": "40-APP/A",
@@ -170,7 +230,10 @@
       "label": "40-APP/A — 40-APP/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000119312525297765/d845064d40appa.htm",
-      "material": false
+      "material": false,
+      "headline": "Amended exemptive application seeking joint-transaction relief",
+      "signal": "clean",
+      "signal_note": "Routine exemptive order application"
     },
     {
       "form": "8-K",
@@ -178,7 +241,10 @@
       "label": "Current report: reported quarterly results; disclosed a material event",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000119312525274618/d61433d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "BCSF reported Q3 2025 results; declared $0.42 plus $0.03 dividend",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results and dividend"
     },
     {
       "form": "10-Q",
@@ -186,7 +252,10 @@
       "label": "Quarterly report (10-Q) for period ending 2025-09-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000119312525274163/bcsf-20250930.htm",
-      "material": true
+      "material": true,
+      "headline": "BCSF filed Form 10-Q for quarter ended September 30, 2025",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "3",
@@ -194,7 +263,10 @@
       "label": "3",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000094562125001036/xslF345X02/form3.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider filed initial Form 3 ownership statement for BCSF",
+      "signal": "clean",
+      "signal_note": "Routine insider ownership filing"
     },
     {
       "form": "8-K",
@@ -202,7 +274,10 @@
       "label": "Current report: changed a director or senior officer",
       "category": "Personnel",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000119312525269586/d176294d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "BCSF appointed Sabrina Rusnak-Carlson as General Counsel",
+      "signal": "clean",
+      "signal_note": "Routine executive appointment"
     },
     {
       "form": "8-K",
@@ -210,7 +285,10 @@
       "label": "Current report: reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000119312525253580/d39860d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "BCSF to report Q3 2025 results on November 10",
+      "signal": "clean",
+      "signal_note": "Routine earnings date announcement"
     },
     {
       "form": "40-APP/A",
@@ -218,7 +296,10 @@
       "label": "40-APP/A — 40-APP/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000119312525209327/d65165d40appa.htm",
-      "material": false
+      "material": false,
+      "headline": "BCSF amends exemptive application for co-investment joint transactions",
+      "signal": "clean",
+      "signal_note": "Routine exemptive relief filing"
     },
     {
       "form": "8-K",
@@ -226,7 +307,10 @@
       "label": "Current report: reported quarterly results; disclosed a material event",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000119312525173633/d925334d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "BCSF declared $0.42 dividend plus $0.03 additional with Q2 results",
+      "signal": "clean",
+      "signal_note": "Dividend declared as normal"
     },
     {
       "form": "10-Q",
@@ -234,7 +318,10 @@
       "label": "Quarterly report (10-Q) for period ending 2025-06-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000095017025103202/bcsf-20250630.htm",
-      "material": true
+      "material": true,
+      "headline": "BCSF filed Form 10-Q for quarter ended June 30, 2025",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "8-K",
@@ -242,7 +329,10 @@
       "label": "Current report: reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000119312525162606/d75069d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "BCSF to report Q2 2025 results on August 5",
+      "signal": "clean",
+      "signal_note": "Routine earnings date announcement"
     },
     {
       "form": "8-K",
@@ -250,7 +340,10 @@
       "label": "Current report (8-K)",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000119312525159636/d74356d8k.htm",
-      "material": false
+      "material": false,
+      "headline": "BCSF stockholders declined to renew below-NAV share sale authorization",
+      "signal": "clean",
+      "signal_note": "Below-NAV authorization not renewed"
     },
     {
       "form": "3",
@@ -258,7 +351,10 @@
       "label": "3",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000094562125000572/xslF345X02/form3.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider filed initial Form 3 ownership statement for BCSF",
+      "signal": "clean",
+      "signal_note": "Routine insider ownership filing"
     },
     {
       "form": "8-K",
@@ -266,7 +362,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000119312525156216/d68327d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "BCSF closed $430M CLO reset with notes due 2036",
+      "signal": "clean",
+      "signal_note": "Routine CLO refinancing"
     },
     {
       "form": "8-K",
@@ -274,7 +373,10 @@
       "label": "Current report: changed a director or senior officer",
       "category": "Personnel",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000119312525156208/d55204d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "BCSF Vice President Jessica Yeager resigned; Rojas Garzon appointed",
+      "signal": "clean",
+      "signal_note": "Resignation not from disagreement"
     },
     {
       "form": "N-2ASR",
@@ -282,7 +384,10 @@
       "label": "N-2ASR — N-2ASR",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000119312525148633/d165433dn2asr.htm",
-      "material": false
+      "material": false,
+      "headline": "BCSF filed automatic shelf registration with tiered management fee",
+      "signal": "clean",
+      "signal_note": "Routine shelf registration"
     },
     {
       "form": "8-K",
@@ -290,7 +395,10 @@
       "label": "Current report (8-K)",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000119312525141214/d39799d8k.htm",
-      "material": false
+      "material": false,
+      "headline": "Reconvened annual meeting again adjourned on below-NAV share issuance vote",
+      "signal": "clean",
+      "signal_note": "Routine shareholder meeting adjournment"
     },
     {
       "form": "40-APP",
@@ -298,7 +406,10 @@
       "label": "40-APP — 40-APP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000119312525129781/d946288d40app.htm",
-      "material": false
+      "material": false,
+      "headline": "Applied for SEC order permitting expanded co-investment transactions",
+      "signal": "clean",
+      "signal_note": "Routine exemptive relief application"
     },
     {
       "form": "8-K",
@@ -306,7 +417,10 @@
       "label": "Current report (8-K)",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000119312525125079/d909379d8k.htm",
-      "material": false
+      "material": false,
+      "headline": "Re-elected two Class III directors; adjourned below-NAV issuance vote",
+      "signal": "clean",
+      "signal_note": "Routine annual meeting results"
     },
     {
       "form": "8-K",
@@ -314,7 +428,10 @@
       "label": "Current report: reported quarterly results; disclosed a material event",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000119312525112902/d912336d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Declared $0.42 second-quarter dividend plus $0.03 additional dividend",
+      "signal": "clean",
+      "signal_note": "Dividend declared as normal"
     },
     {
       "form": "10-Q",
@@ -322,7 +439,10 @@
       "label": "Quarterly report (10-Q) for period ending 2025-03-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000095017025063596/bcsf-20250331.htm",
-      "material": true
+      "material": true,
+      "headline": "Filed Q1 2025 quarterly report for period ended March 31",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "8-K",
@@ -330,7 +450,10 @@
       "label": "Current report: entered a material agreement",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000119312525111703/d771228d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Entered new custody and document custody agreements with U.S. Bank",
+      "signal": "clean",
+      "signal_note": "Routine custodian agreement"
     },
     {
       "form": "8-K",
@@ -338,7 +461,10 @@
       "label": "Current report: changed a director or senior officer",
       "category": "Personnel",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000119312525107558/d944370d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Secretary Thomas Emery resigned; Katherine Schneider appointed Secretary",
+      "signal": "clean",
+      "signal_note": "Routine officer transition"
     },
     {
       "form": "8-K",
@@ -346,7 +472,10 @@
       "label": "Current report: reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000095017025056362/bcsf-20250421.htm",
-      "material": true
+      "material": true,
+      "headline": "Q1 2025 results to be released May 5 with call May 6",
+      "signal": "clean",
+      "signal_note": "Earnings date announcement"
     },
     {
       "form": "DEF 14A",
@@ -354,7 +483,10 @@
       "label": "Proxy statement — DEF 14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000119312525087322/d891501ddef14a.htm",
-      "material": false
+      "material": false,
+      "headline": "Proxy for May 22 annual meeting including below-NAV share issuance vote",
+      "signal": "clean",
+      "signal_note": "Routine annual meeting proxy"
     },
     {
       "form": "40-17G",
@@ -362,7 +494,10 @@
       "label": "40-17G — 40-17G",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000119312525066524/d935605d4017g.htm",
-      "material": false
+      "material": false,
+      "headline": "Filed annual Rule 17g-1 fidelity bond coverage certificate",
+      "signal": "clean",
+      "signal_note": "Routine fidelity bond filing"
     },
     {
       "form": "PRE 14A",
@@ -370,7 +505,10 @@
       "label": "PRE 14A — PRE 14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000119312525058438/d891501dpre14a.htm",
-      "material": false
+      "material": false,
+      "headline": "BCSF sets May 22 annual meeting with below-NAV share issuance vote",
+      "signal": "clean",
+      "signal_note": "Routine annual proxy statement"
     },
     {
       "form": "4",
@@ -378,7 +516,10 @@
       "label": "4 — PRIMARY DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000145108425000001/xslF345X05/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "BCSF insider reports Section 16 transaction dated March 17",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 4"
     },
     {
       "form": "424B3",
@@ -386,7 +527,10 @@
       "label": "Prospectus supplement (offering) — 424B3",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000119312525045154/d935814d424b3.htm",
-      "material": true
+      "material": true,
+      "headline": "BCSF amends prospectus supplement for $250M common stock offering",
+      "signal": "clean",
+      "signal_note": "Ordinary equity offering"
     },
     {
       "form": "8-K",
@@ -394,7 +538,10 @@
       "label": "Current report: entered a material agreement",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000119312525044342/d903343d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "BCSF enters ATM equity distribution agreements for up to $250M",
+      "signal": "clean",
+      "signal_note": "Ordinary ATM program"
     },
     {
       "form": "8-K",
@@ -402,7 +549,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000095017025030078/bcsf-20250227.htm",
-      "material": true
+      "material": true,
+      "headline": "BCSF declares $0.42 Q1 dividend plus $0.12 additional distributions for 2025",
+      "signal": "clean",
+      "signal_note": "Dividend declared as normal"
     },
     {
       "form": "424B2",
@@ -410,7 +560,10 @@
       "label": "Prospectus supplement (offering) — 424B2",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000119312525040043/d841997d424b2.htm",
-      "material": true
+      "material": true,
+      "headline": "BCSF prices $250M ATM common stock offering; NAV $17.65 per share",
+      "signal": "clean",
+      "signal_note": "Ordinary equity offering"
     },
     {
       "form": "10-K",
@@ -418,7 +571,10 @@
       "label": "Annual report (10-K) for period ending 2024-12-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000095017025029152/bcsf-20241231.htm",
-      "material": true
+      "material": true,
+      "headline": "BCSF files 2024 annual report with $1.40B debt against $1.14B net assets",
+      "signal": "clean",
+      "signal_note": "Routine annual report"
     },
     {
       "form": "8-K",
@@ -426,7 +582,10 @@
       "label": "Current report: reported quarterly results; disclosed a material event",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000095017025029157/bcsf-20250227.htm",
-      "material": true
+      "material": true,
+      "headline": "BCSF reports Q4 and full-year 2024 results, declares Q1 dividend",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results"
     },
     {
       "form": "8-K",
@@ -434,7 +593,10 @@
       "label": "Current report: changed a director or senior officer",
       "category": "Personnel",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000119312525029380/d860721d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "BCSF VP Michael Treisman resigns; Jessica Yeager appointed Vice President",
+      "signal": "clean",
+      "signal_note": "Routine officer changes"
     },
     {
       "form": "8-K",
@@ -442,7 +604,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000119312525021819/d892739d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "BCSF issues $350M of 5.950% unsecured notes due 2030",
+      "signal": "clean",
+      "signal_note": "Ordinary note issuance"
     },
     {
       "form": "8-K",
@@ -450,7 +615,10 @@
       "label": "Current report: reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000095017025014628/bcsf-20250205.htm",
-      "material": true
+      "material": true,
+      "headline": "BCSF to report Q4 and full-year 2024 results on February 27",
+      "signal": "clean",
+      "signal_note": "Routine earnings date announcement"
     },
     {
       "form": "8-K",
@@ -458,7 +626,10 @@
       "label": "Current report: entered a material agreement",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000119312525019323/d899954d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "BCSF signed underwriting agreement for $350M 5.950% notes due 2030",
+      "signal": "clean",
+      "signal_note": "Routine unsecured notes offering"
     },
     {
       "form": "424B2",
@@ -466,7 +637,10 @@
       "label": "Prospectus supplement (offering) — 424B2",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000119312525019315/d759998d424b2.htm",
-      "material": true
+      "material": true,
+      "headline": "BCSF offering $350M of 5.950% unsecured notes due 2030",
+      "signal": "clean",
+      "signal_note": "Routine notes prospectus supplement"
     },
     {
       "form": "FWP",
@@ -474,7 +648,10 @@
       "label": "FWP — FWP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000119312525017355/d907293dfwp.htm",
-      "material": false
+      "material": false,
+      "headline": "BCSF priced $350M 5.950% notes due 2030 in term sheet",
+      "signal": "clean",
+      "signal_note": "Routine notes pricing term sheet"
     },
     {
       "form": "497AD",
@@ -482,7 +659,10 @@
       "label": "497AD — 497AD",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000119312525017281/d865025d497ad.htm",
-      "material": false
+      "material": false,
+      "headline": "BCSF priced $350M of 5.950% senior notes due 2030",
+      "signal": "clean",
+      "signal_note": "Proceeds to repay secured debt"
     },
     {
       "form": "497AD",
@@ -490,7 +670,10 @@
       "label": "497AD — 497AD",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000119312525016666/d872630d497ad.htm",
-      "material": false
+      "material": false,
+      "headline": "BCSF Bloomberg notice for pending notes offering",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "424B2",
@@ -498,7 +681,10 @@
       "label": "Prospectus supplement (offering) — 424B2",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000119312525016471/d759998d424b2.htm",
-      "material": true
+      "material": true,
+      "headline": "BCSF filed preliminary prospectus supplement for unsecured notes offering",
+      "signal": "clean",
+      "signal_note": "Routine preliminary notes filing"
     },
     {
       "form": "8-K",
@@ -506,7 +692,10 @@
       "label": "Current report: reported quarterly results; disclosed a material event",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000095017024121619/bcsf-20241105.htm",
-      "material": true
+      "material": true,
+      "headline": "BCSF reported Q3 2024 results and declared $0.42 dividend plus $0.03 extra",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results and dividend"
     },
     {
       "form": "10-Q",
@@ -514,7 +703,10 @@
       "label": "Quarterly report (10-Q) for period ending 2024-09-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000095017024121464/bcsf-20240930.htm",
-      "material": true
+      "material": true,
+      "headline": "BCSF filed Q3 2024 Form 10-Q for period ended September 30",
+      "signal": "clean",
+      "signal_note": "Routine quarterly report"
     },
     {
       "form": "8-K",
@@ -522,7 +714,10 @@
       "label": "Current report: reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000095017024115764/bcsf-20241021.htm",
-      "material": true
+      "material": true,
+      "headline": "BCSF to report Q3 2024 results on November 5",
+      "signal": "clean",
+      "signal_note": "Routine earnings date announcement"
     },
     {
       "form": "8-K",
@@ -530,7 +725,10 @@
       "label": "Current report: reported quarterly results; disclosed a material event",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000095017024091997/bcsf-20240806.htm",
-      "material": true
+      "material": true,
+      "headline": "Reported Q2 2024 results and declared $0.42 dividend plus $0.03 additional",
+      "signal": "clean",
+      "signal_note": "Routine dividend declaration"
     },
     {
       "form": "10-Q",
@@ -538,7 +736,10 @@
       "label": "Quarterly report (10-Q) for period ending 2024-06-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000095017024091840/bcsf-20240630.htm",
-      "material": true
+      "material": true,
+      "headline": "Filed Q2 2024 10-Q with quarterly financial statements and schedule of investments",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results"
     },
     {
       "form": "8-K",
@@ -546,7 +747,10 @@
       "label": "Current report: reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000095017024083024/bcsf-20240423.htm",
-      "material": true
+      "material": true,
+      "headline": "Set August 6 date for second-quarter 2024 results release",
+      "signal": "clean",
+      "signal_note": "Earnings date announcement"
     },
     {
       "form": "8-K",
@@ -554,7 +758,10 @@
       "label": "Current report (8-K)",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000119312524160683/d794189d8k.htm",
-      "material": false
+      "material": false,
+      "headline": "Stockholders elected three directors and approved below-NAV share issuance authority",
+      "signal": "clean",
+      "signal_note": "Routine annual meeting results"
     },
     {
       "form": "8-K",
@@ -562,7 +769,10 @@
       "label": "Current report: entered a material agreement; disclosed a material event",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000119312524144994/d808002d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Upsized credit facility to $855M and extended maturity to 2029",
+      "signal": "clean",
+      "signal_note": "Favorable credit facility amendment"
     },
     {
       "form": "DEFR14A",
@@ -570,7 +780,10 @@
       "label": "DEFR14A — DEFR14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000119312524134278/d765879ddefr14a.htm",
-      "material": false
+      "material": false,
+      "headline": "Amended 2024 proxy to clarify broker non-vote treatment",
+      "signal": "clean",
+      "signal_note": "Routine proxy amendment"
     },
     {
       "form": "8-K",
@@ -578,7 +791,10 @@
       "label": "Current report: reported quarterly results; disclosed a material event",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000095017024053664/bcsf-20240506.htm",
-      "material": true
+      "material": true,
+      "headline": "Reported Q1 2024 results and declared $0.42 dividend plus $0.03 additional",
+      "signal": "clean",
+      "signal_note": "Routine dividend declaration"
     },
     {
       "form": "10-Q",
@@ -586,7 +802,10 @@
       "label": "Quarterly report (10-Q) for period ending 2024-03-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000095017024053555/bcsf-20240331.htm",
-      "material": true
+      "material": true,
+      "headline": "Filed Q1 2024 10-Q with quarterly financial statements and schedule of investments",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results"
     },
     {
       "form": "8-K",
@@ -594,7 +813,10 @@
       "label": "Current report: reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000095017024046943/bcsf-20240423.htm",
-      "material": true
+      "material": true,
+      "headline": "Set May 6 date for first-quarter 2024 results release",
+      "signal": "clean",
+      "signal_note": "Earnings date announcement"
     },
     {
       "form": "DEF 14A",
@@ -602,7 +824,10 @@
       "label": "Proxy statement — DEF 14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000095017024046408/bcsf_-_2024_final_proxy.htm",
-      "material": false
+      "material": false,
+      "headline": "2024 proxy sets May 23 annual meeting with below-NAV issuance vote",
+      "signal": "clean",
+      "signal_note": "Routine annual meeting proxy"
     },
     {
       "form": "40-17G",
@@ -610,7 +835,10 @@
       "label": "40-17G — 40-17G",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000119312524091606/d819242d4017g.htm",
-      "material": false
+      "material": false,
+      "headline": "BCSF filed Rule 17g-1 fidelity bond renewal with AIG unit",
+      "signal": "clean",
+      "signal_note": "Routine fidelity bond filing"
     },
     {
       "form": "PRE 14A",
@@ -618,7 +846,10 @@
       "label": "PRE 14A — PRE 14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000095017024034253/bcsf_-_2024_proxy_pre14a.htm",
-      "material": false
+      "material": false,
+      "headline": "Proxy sets May 2024 annual meeting; seeks below-NAV issuance authority",
+      "signal": "clean",
+      "signal_note": "Routine annual meeting proxy"
     },
     {
       "form": "10-K",
@@ -626,7 +857,10 @@
       "label": "Annual report (10-K) for period ending 2023-12-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000095017024021337/bcsf-20231231.htm",
-      "material": true
+      "material": true,
+      "headline": "BCSF filed fiscal 2023 annual report on Form 10-K",
+      "signal": "clean",
+      "signal_note": "Routine annual report"
     },
     {
       "form": "8-K",
@@ -634,7 +868,10 @@
       "label": "Current report: reported quarterly results; disclosed a material event",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000095017024021332/bcsf-20240227.htm",
-      "material": true
+      "material": true,
+      "headline": "Declared Q1 2024 dividend of $0.42 plus $0.12 additional distributions",
+      "signal": "clean",
+      "signal_note": "Dividend declared as normal"
     },
     {
       "form": "SC 13G/A",
@@ -642,7 +879,10 @@
       "label": "SC 13G/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000007085824000100/doc1.htm",
-      "material": false
+      "material": false,
+      "headline": "Bank of America reported passive stake via Schedule 13G/A",
+      "signal": "clean",
+      "signal_note": "Routine beneficial ownership filing"
     },
     {
       "form": "8-K",
@@ -650,7 +890,10 @@
       "label": "Current report: reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000095017024008938/bcsf-20240130.htm",
-      "material": true
+      "material": true,
+      "headline": "BCSF set February 27 date for Q4 and full-year 2023 results",
+      "signal": "clean",
+      "signal_note": "Earnings date announcement"
     },
     {
       "form": "3",
@@ -658,7 +901,10 @@
       "label": "3",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000094562124000004/xslF345X02/form3.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider filed initial Form 3 ownership statement effective January 2024",
+      "signal": "clean",
+      "signal_note": "Routine insider ownership filing"
     },
     {
       "form": "8-K",
@@ -666,7 +912,10 @@
       "label": "Current report: changed a director or senior officer",
       "category": "Personnel",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000119312524001531/d700892d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Amit Joshi appointed Chief Financial Officer effective January 1, 2024",
+      "signal": "clean",
+      "signal_note": "Routine CFO appointment"
     },
     {
       "form": "8-K",
@@ -674,7 +923,10 @@
       "label": "Current report: reported quarterly results; disclosed a material event",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000095017023059543/bcsf-20231106.htm",
-      "material": true
+      "material": true,
+      "headline": "Declared fourth-quarter 2023 dividend of $0.42 per share",
+      "signal": "clean",
+      "signal_note": "Dividend declared as normal"
     },
     {
       "form": "10-Q",
@@ -682,7 +934,10 @@
       "label": "Quarterly report (10-Q) for period ending 2023-09-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000095017023059452/bcsf-20230930.htm",
-      "material": true
+      "material": true,
+      "headline": "BCSF filed third-quarter 2023 results on Form 10-Q",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results"
     },
     {
       "form": "8-K",
@@ -690,7 +945,10 @@
       "label": "Current report: reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000095017023053798/bcsf-20231017.htm",
-      "material": true
+      "material": true,
+      "headline": "BCSF to report Q3 2023 results on November 6",
+      "signal": "clean",
+      "signal_note": "Routine earnings date announcement"
     },
     {
       "form": "8-K",
@@ -698,7 +956,10 @@
       "label": "Current report: changed a director or senior officer",
       "category": "Personnel",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000110465923106326/tm2327459d1_8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Board appointed Amit Joshi as Treasurer effective September 28",
+      "signal": "clean",
+      "signal_note": "Routine officer appointment"
     },
     {
       "form": "8-K",
@@ -706,7 +967,10 @@
       "label": "Current report: reported quarterly results; disclosed a material event",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000095017023039938/bcsf-20230808.htm",
-      "material": true
+      "material": true,
+      "headline": "BCSF reported Q2 2023 results and declared $0.42 dividend",
+      "signal": "clean",
+      "signal_note": "Quarterly results and dividend declared"
     },
     {
       "form": "10-Q",
@@ -714,7 +978,10 @@
       "label": "Quarterly report (10-Q) for period ending 2023-06-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000095017023039862/bcsf-20230630.htm",
-      "material": true
+      "material": true,
+      "headline": "BCSF filed Q2 2023 10-Q with portfolio schedule detail",
+      "signal": "clean",
+      "signal_note": "Routine quarterly report"
     },
     {
       "form": "8-K",
@@ -722,7 +989,10 @@
       "label": "Current report: reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000095017023032687/bcsf-20230712.htm",
-      "material": true
+      "material": true,
+      "headline": "BCSF to report Q2 2023 results on August 8",
+      "signal": "clean",
+      "signal_note": "Routine earnings date announcement"
     },
     {
       "form": "8-K",
@@ -730,7 +1000,10 @@
       "label": "Current report (8-K)",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000110465923065888/tm2317130d1_8k.htm",
-      "material": false
+      "material": false,
+      "headline": "Stockholders elected directors and renewed below-NAV issuance authority",
+      "signal": "clean",
+      "signal_note": "Routine annual meeting results"
     },
     {
       "form": "8-K",
@@ -738,7 +1011,10 @@
       "label": "Current report: reported quarterly results; disclosed a material event",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000110465923057822/tm2315176d1_8k.htm",
-      "material": true
+      "material": true,
+      "headline": "BCSF reported Q1 2023 results and declared $0.38 dividend",
+      "signal": "clean",
+      "signal_note": "Quarterly results and dividend declared"
     },
     {
       "form": "10-Q",
@@ -746,7 +1022,10 @@
       "label": "Quarterly report (10-Q) for period ending 2023-03-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000155837023008867/bcsf-20230331x10q.htm",
-      "material": true
+      "material": true,
+      "headline": "BCSF Q1 2023 10-Q; 94.3% of debt at floating rates",
+      "signal": "clean",
+      "signal_note": "Routine quarterly report"
     },
     {
       "form": "DEF 14A",
@@ -754,7 +1033,10 @@
       "label": "Proxy statement — DEF 14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000110465923048186/tm231868-4_pre14a.htm",
-      "material": false
+      "material": false,
+      "headline": "BCSF proxy sets May 25 annual meeting; below-NAV issuance proposal",
+      "signal": "clean",
+      "signal_note": "Routine proxy statement"
     },
     {
       "form": "8-K",
@@ -762,7 +1044,10 @@
       "label": "Current report: reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000110465923046803/tm2313058d1_8k.htm",
-      "material": true
+      "material": true,
+      "headline": "BCSF to report Q1 2023 results on May 9",
+      "signal": "clean",
+      "signal_note": "Routine earnings date announcement"
     },
     {
       "form": "40-17G",
@@ -770,7 +1055,10 @@
       "label": "40-17G — 40-17G",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000110465923044388/tm2312404d1_4017g.htm",
-      "material": false
+      "material": false,
+      "headline": "BCSF filed routine Rule 17g-1 joint fidelity bond approval",
+      "signal": "clean",
+      "signal_note": "Routine fidelity bond filing"
     },
     {
       "form": "PRE 14A",
@@ -778,7 +1066,10 @@
       "label": "PRE 14A — PRE 14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000110465923035267/tm231868-3_pre14a.htm",
-      "material": false
+      "material": false,
+      "headline": "Proxy sets May 25 annual meeting with below-NAV share issuance vote",
+      "signal": "clean",
+      "signal_note": "Routine proxy and governance items"
     },
     {
       "form": "8-K",
@@ -786,7 +1077,10 @@
       "label": "Current report: issued a Regulation FD disclosure",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000110465923032883/tm239663d1_8k.htm",
-      "material": true
+      "material": true,
+      "headline": "BCSF issued stockholder update on SVB and Signature Bank failures",
+      "signal": "clean",
+      "signal_note": "Business-update letter, no adverse disclosure"
     },
     {
       "form": "8-K",
@@ -794,7 +1088,10 @@
       "label": "Current report: reported quarterly results; disclosed a material event",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000110465923026827/tm238073d1_8k.htm",
-      "material": true
+      "material": true,
+      "headline": "BCSF reported Q4 2022 results and declared $0.38 quarterly dividend",
+      "signal": "clean",
+      "signal_note": "Results and dividend declared normally"
     },
     {
       "form": "10-K",
@@ -802,7 +1099,10 @@
       "label": "Annual report (10-K) for period ending 2022-12-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000155837023002409/bcsf-20221231x10k.htm",
-      "material": true
+      "material": true,
+      "headline": "BCSF filed fiscal 2022 annual report on Form 10-K",
+      "signal": "clean",
+      "signal_note": "Routine annual results, no adverse disclosure"
     },
     {
       "form": "8-K",
@@ -810,7 +1110,10 @@
       "label": "Current report: issued a Regulation FD disclosure",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000110465923024330/tm237507d1_8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Kroll assigned BCSF investment-grade BBB rating with stable outlook",
+      "signal": "clean",
+      "signal_note": "Investment-grade rating assigned"
     },
     {
       "form": "SC 13G",
@@ -818,7 +1121,10 @@
       "label": "SC 13G",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000007085823000061/doc1.htm",
-      "material": false
+      "material": false,
+      "headline": "Bank of America filed Schedule 13G on BCSF common stock",
+      "signal": "clean",
+      "signal_note": "Routine beneficial-ownership filing"
     },
     {
       "form": "8-K",
@@ -826,7 +1132,10 @@
       "label": "Current report: reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000110465923011258/tm235624d1_8k.htm",
-      "material": true
+      "material": true,
+      "headline": "BCSF set February 28 date for Q4 2022 earnings release",
+      "signal": "clean",
+      "signal_note": "Earnings date announcement"
     },
     {
       "form": "8-K",
@@ -834,7 +1143,10 @@
       "label": "Current report: entered a material agreement",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000110465922127359/tm2232825d1_8k.htm",
-      "material": true
+      "material": true,
+      "headline": "BCSF upsized revolving credit commitments from $635M to $665M",
+      "signal": "clean",
+      "signal_note": "Routine credit facility upsize"
     },
     {
       "form": "8-K",
@@ -842,7 +1154,10 @@
       "label": "Current report: reported quarterly results; disclosed a material event",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000110465922116548/tm2230176d1_8k.htm",
-      "material": true
+      "material": true,
+      "headline": "BCSF reported Q3 2022 results and declared $0.36 quarterly dividend",
+      "signal": "clean",
+      "signal_note": "Results and dividend declared normally"
     },
     {
       "form": "10-Q",
@@ -850,7 +1165,10 @@
       "label": "Quarterly report (10-Q) for period ending 2022-09-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000155837022017168/bcsf-20220930x10q.htm",
-      "material": true
+      "material": true,
+      "headline": "BCSF Q3 2022 10-Q details middle-market lending portfolio and operations",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results"
     },
     {
       "form": "8-K",
@@ -858,7 +1176,10 @@
       "label": "Current report: reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000110465922108514/tm2228204d1_8k.htm",
-      "material": true
+      "material": true,
+      "headline": "BCSF to report Q3 2022 results on November 9, 2022",
+      "signal": "clean",
+      "signal_note": "Earnings date announcement"
     },
     {
       "form": "8-K",
@@ -866,7 +1187,10 @@
       "label": "Current report: entered a material agreement; disclosed a material event",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000110465922095303/tm2224620d1_8k.htm",
-      "material": true
+      "material": true,
+      "headline": "BCSF upsized revolver to $635M and prepaid $112.5M of 2023 notes",
+      "signal": "clean",
+      "signal_note": "Routine financing activity"
     },
     {
       "form": "3",
@@ -874,7 +1198,10 @@
       "label": "3",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000141588922008467/xslF345X02/form3-08102022_010836.xml",
-      "material": false
+      "material": false,
+      "headline": "BCSF insider filed initial Form 3 ownership statement",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "4",
@@ -882,7 +1209,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000141588922008462/xslF345X03/form4-08102022_010855.xml",
-      "material": false
+      "material": false,
+      "headline": "BCSF insider reported transaction on Form 4",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "8-K",
@@ -890,7 +1220,10 @@
       "label": "Current report: reported quarterly results; disclosed a material event",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000110465922085716/tm2222156d1_8k.htm",
-      "material": true
+      "material": true,
+      "headline": "BCSF declared $0.34 Q3 dividend alongside Q2 2022 results",
+      "signal": "clean",
+      "signal_note": "Dividend declared as normal"
     },
     {
       "form": "10-Q",
@@ -898,7 +1231,10 @@
       "label": "Quarterly report (10-Q) for period ending 2022-06-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000110465922085687/bcsf-20220729x10q.htm",
-      "material": true
+      "material": true,
+      "headline": "BCSF Q2 2022 10-Q details middle-market lending portfolio and operations",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results"
     },
     {
       "form": "8-K",
@@ -906,7 +1242,10 @@
       "label": "Current report: changed a director or senior officer",
       "category": "Personnel",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000110465922084717/tm2222156d2_8k.htm",
-      "material": true
+      "material": true,
+      "headline": "BCSF board appointed Michael J. Boyle as interested director",
+      "signal": "clean",
+      "signal_note": "Routine governance change"
     },
     {
       "form": "8-K",
@@ -914,7 +1253,10 @@
       "label": "Current report: entered a material agreement",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000110465922082451/tm2221703d1_8k.htm",
-      "material": true
+      "material": true,
+      "headline": "BCSF upsized revolving credit facility from $385M to $485M",
+      "signal": "clean",
+      "signal_note": "Routine financing activity"
     },
     {
       "form": "8-K",
@@ -922,7 +1264,10 @@
       "label": "Current report: entered a material agreement",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000110465922078236/tm2220629d2_8k.htm",
-      "material": true
+      "material": true,
+      "headline": "BCSF upsized revolver to $385M and shifted LIBOR to SOFR",
+      "signal": "clean",
+      "signal_note": "Routine financing activity"
     },
     {
       "form": "8-K",
@@ -930,7 +1275,10 @@
       "label": "Current report: reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000110465922078075/tm2220629d1_8k.htm",
-      "material": true
+      "material": true,
+      "headline": "BCSF to report Q2 2022 results August 3 after market close",
+      "signal": "clean",
+      "signal_note": "Routine earnings date announcement"
     },
     {
       "form": "N-2ASR",
@@ -938,7 +1286,10 @@
       "label": "N-2ASR — N-2ASR",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000110465922076399/tm2219558-1_n2asr.htm",
-      "material": false
+      "material": false,
+      "headline": "Filed automatic shelf registration for common stock, notes and other securities",
+      "signal": "clean",
+      "signal_note": "Routine shelf registration"
     },
     {
       "form": "8-K",
@@ -946,7 +1297,10 @@
       "label": "Current report (8-K)",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000110465922065545/tm2217059d1_8k.htm",
-      "material": false
+      "material": false,
+      "headline": "Stockholders elected two directors and renewed below-NAV issuance authority",
+      "signal": "clean",
+      "signal_note": "Routine annual meeting results"
     },
     {
       "form": "10-Q",
@@ -954,7 +1308,10 @@
       "label": "Quarterly report (10-Q) for period ending 2022-03-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000110465922056502/tm2213676d1_10q.htm",
-      "material": true
+      "material": true,
+      "headline": "Q1 2022 10-Q filed; 96.3% of debt investments floating rate",
+      "signal": "clean",
+      "signal_note": "Routine quarterly report"
     },
     {
       "form": "8-K",
@@ -962,7 +1319,10 @@
       "label": "Current report: reported quarterly results; disclosed a material event",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000110465922056480/tm2214357d1_8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Declared $0.34 second-quarter 2022 dividend alongside Q1 results",
+      "signal": "clean",
+      "signal_note": "Dividend declared as normal"
     },
     {
       "form": "8-K",
@@ -970,7 +1330,10 @@
       "label": "Current report: issued a Regulation FD disclosure",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000110465922046707/tm2212862d2_8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Fitch assigned BBB- investment grade rating with stable outlook",
+      "signal": "clean",
+      "signal_note": "Investment grade rating assigned"
     },
     {
       "form": "DEF 14A",
@@ -978,7 +1341,10 @@
       "label": "Proxy statement — DEF 14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000110465922046416/tm223450-3_def14a.htm",
-      "material": false
+      "material": false,
+      "headline": "Proxy sets May 26 annual meeting for director elections and below-NAV vote",
+      "signal": "clean",
+      "signal_note": "Routine annual meeting proxy"
     },
     {
       "form": "40-17G",
@@ -986,7 +1352,10 @@
       "label": "40-17G — 40-17G",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000110465922045096/tm2212552d1_4017g.htm",
-      "material": false
+      "material": false,
+      "headline": "Filed annual Rule 17g-1 joint fidelity bond documentation",
+      "signal": "clean",
+      "signal_note": "Routine fidelity bond filing"
     },
     {
       "form": "8-K",
@@ -994,7 +1363,10 @@
       "label": "Current report: reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000110465922043869/tm2211623d1_8k.htm",
-      "material": true
+      "material": true,
+      "headline": "BCSF to report Q1 2022 results May 5 after market close",
+      "signal": "clean",
+      "signal_note": "Routine earnings date announcement"
     },
     {
       "form": "4",
@@ -1002,7 +1374,10 @@
       "label": "4 — FORM 4 -",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000117911022002414/xslF345X03/edgar.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider filed Form 4 reporting a March 25 transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction report"
     },
     {
       "form": "PRE 14A",
@@ -1010,7 +1385,10 @@
       "label": "PRE 14A — PRE 14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000110465922037126/tm223450-1_pre14a.htm",
-      "material": false
+      "material": false,
+      "headline": "Proxy sets May 26 annual meeting with below-NAV share issuance vote",
+      "signal": "clean",
+      "signal_note": "Routine annual meeting proxy"
     },
     {
       "form": "4",
@@ -1018,7 +1396,10 @@
       "label": "4 — OWNERSHIP DOCUMENT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000110465922030504/xslF345X03/tm228457-1_4seq1.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider reported Form 4 transaction dated March 3, 2022",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "4",
@@ -1026,7 +1407,10 @@
       "label": "4 — FORM 4 -",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000117911022001659/xslF345X03/edgar.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider reported Form 4 transaction dated February 25, 2022",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "10-K",
@@ -1034,7 +1418,10 @@
       "label": "Annual report (10-K) for period ending 2021-12-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000110465922026185/tm221030-1_10k.htm",
-      "material": true
+      "material": true,
+      "headline": "Annual report details standard credit, interest-rate and market risk factors",
+      "signal": "clean",
+      "signal_note": "Boilerplate risk factors only"
     },
     {
       "form": "8-K",
@@ -1042,7 +1429,10 @@
       "label": "Current report: reported quarterly results; disclosed a material event",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000110465922026184/tm227478d1_8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Reported Q4 and FY2021 results; declared $0.34 quarterly dividend",
+      "signal": "clean",
+      "signal_note": "Dividend declared as normal"
     },
     {
       "form": "8-K",
@@ -1050,7 +1440,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000110465922023225/tm226732d1_8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Formed 50/50 joint venture with Amberstone, $358M initial commitments",
+      "signal": "clean",
+      "signal_note": "New senior loan joint venture"
     },
     {
       "form": "SC 13G/A",
@@ -1058,7 +1451,10 @@
       "label": "SC 13G/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000117266122000683/dimension-bcsf123121.htm",
-      "material": false
+      "material": false,
+      "headline": "Dimension Capital amended 13G passive ownership disclosure",
+      "signal": "clean",
+      "signal_note": "Routine ownership filing"
     },
     {
       "form": "SC 13G/A",
@@ -1066,7 +1462,10 @@
       "label": "SC 13G/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000117266122000646/dimension-bcsf123121.htm",
-      "material": false
+      "material": false,
+      "headline": "Dimension Capital amended 13G passive ownership disclosure",
+      "signal": "clean",
+      "signal_note": "Routine ownership filing"
     },
     {
       "form": "8-K",
@@ -1074,7 +1473,10 @@
       "label": "Current report: reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000110465922006254/tm224058d1_8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Set February 23 date for Q4 and FY2021 earnings release",
+      "signal": "clean",
+      "signal_note": "Earnings date announcement"
     },
     {
       "form": "8-K",
@@ -1082,7 +1484,10 @@
       "label": "Current report: entered a material agreement; terminated a material agreement",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000110465921154698/tm2136606d1_8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Entered $300M SMBC revolving credit facility; repaid prior JPMorgan facility",
+      "signal": "clean",
+      "signal_note": "Routine new credit facility"
     },
     {
       "form": "APP ORDR",
@@ -1090,7 +1495,10 @@
       "label": "APP ORDR",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/999999999721006013/filename1.pdf",
-      "material": false
+      "material": false,
+      "headline": "SEC exemptive application order filed December 22, 2021",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "APP NTC",
@@ -1098,7 +1506,10 @@
       "label": "APP NTC",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/999999999721005782/filename1.pdf",
-      "material": false
+      "material": false,
+      "headline": "SEC exemptive application notice filed November 23, 2021",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "40-APP/A",
@@ -1106,7 +1517,10 @@
       "label": "40-APP/A — 40-APP/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000110465921136080/tm2132263d1_40appa.htm",
-      "material": false
+      "material": false,
+      "headline": "Amended co-investment exemptive application covering Bain Capital Credit affiliates",
+      "signal": "clean",
+      "signal_note": "Routine exemptive relief application"
     },
     {
       "form": "8-K",
@@ -1114,7 +1528,10 @@
       "label": "Current report: reported quarterly results; disclosed a material event",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000110465921133747/tm2131822d1_8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Announced third-quarter 2021 financial results via press release",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results"
     },
     {
       "form": "10-Q",
@@ -1122,7 +1539,10 @@
       "label": "Quarterly report (10-Q) for period ending 2021-09-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000110465921133636/tm2126210d1_10q.htm",
-      "material": true
+      "material": true,
+      "headline": "Filed Form 10-Q for quarter ended September 30, 2021",
+      "signal": "clean",
+      "signal_note": "Routine quarterly report"
     },
     {
       "form": "8-K",
@@ -1130,7 +1550,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000110465921125824/tm2129823d1_8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Executed supplemental indenture for $300M 2.550% notes due 2026",
+      "signal": "clean",
+      "signal_note": "Ordinary notes issuance"
     },
     {
       "form": "8-K",
@@ -1138,7 +1561,10 @@
       "label": "Current report: reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000110465921124391/tm2129270d3_8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Set November 3 date for third-quarter 2021 earnings release",
+      "signal": "clean",
+      "signal_note": "Routine earnings-date announcement"
     },
     {
       "form": "8-K",
@@ -1146,7 +1572,10 @@
       "label": "Current report: entered a material agreement",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000110465921123667/tm2129270d2_8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Signed underwriting agreement for $300M 2.550% notes due 2026",
+      "signal": "clean",
+      "signal_note": "Ordinary notes offering"
     },
     {
       "form": "424B2",
@@ -1154,7 +1583,10 @@
       "label": "Prospectus supplement (offering) — 424B2",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000110465921123662/tm2129110-2_424b2.htm",
-      "material": true
+      "material": true,
+      "headline": "Offered $300M of 2.550% unsecured notes due 2026",
+      "signal": "clean",
+      "signal_note": "Ordinary notes offering"
     },
     {
       "form": "FWP",
@@ -1162,7 +1594,10 @@
       "label": "FWP — FWP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000110465921123213/tm2129110d3_fwp.htm",
-      "material": false
+      "material": false,
+      "headline": "Priced $300M of 2.550% notes due 2026",
+      "signal": "clean",
+      "signal_note": "Ordinary notes pricing"
     },
     {
       "form": "8-K",
@@ -1170,7 +1605,10 @@
       "label": "Current report: issued a Regulation FD disclosure",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000110465921123211/tm2129270d1_8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Priced $300M of 2.550% senior unsecured notes due 2026",
+      "signal": "clean",
+      "signal_note": "Routine notes offering"
     },
     {
       "form": "424B2",
@@ -1178,7 +1616,10 @@
       "label": "Prospectus supplement (offering) — 424B2",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000110465921122828/tm2129110-1_424b2.htm",
-      "material": true
+      "material": true,
+      "headline": "Filed preliminary prospectus supplement for unsecured notes offering",
+      "signal": "clean",
+      "signal_note": "Routine debt offering filing"
     },
     {
       "form": "497AD",
@@ -1186,7 +1627,10 @@
       "label": "497AD — 497AD",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000110465921122338/tm2129113d1_497ad.htm",
-      "material": false
+      "material": false,
+      "headline": "Scheduled fixed income investor calls ahead of Baa3-rated notes offering",
+      "signal": "clean",
+      "signal_note": "Routine pre-offering marketing"
     },
     {
       "form": "8-K",
@@ -1194,7 +1638,10 @@
       "label": "Current report: reported quarterly results; disclosed a material event",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000110465921100174/tm2124120d1_8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Declared $0.34 third-quarter dividend alongside Q2 2021 results",
+      "signal": "clean",
+      "signal_note": "Dividend declared as normal"
     },
     {
       "form": "10-Q",
@@ -1202,7 +1649,10 @@
       "label": "Quarterly report (10-Q) for period ending 2021-06-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000110465921100069/tm2118758d1_10q.htm",
-      "material": true
+      "material": true,
+      "headline": "Filed Q2 2021 10-Q with floating-rate portfolio, routine operations",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results"
     },
     {
       "form": "40-APP/A",
@@ -1210,7 +1660,10 @@
       "label": "40-APP/A — 40-APP/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000110465921098365/tm2123667d1_40appa.htm",
-      "material": false
+      "material": false,
+      "headline": "Filed amended exemptive application for co-investment relief",
+      "signal": "clean",
+      "signal_note": "Routine regulatory application"
     },
     {
       "form": "8-K",
@@ -1218,7 +1671,10 @@
       "label": "Current report: reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000110465921090223/tm2121727d1_8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Set Q2 2021 earnings release for August 4",
+      "signal": "clean",
+      "signal_note": "Routine earnings date announcement"
     },
     {
       "form": "APP WDG",
@@ -1226,7 +1682,10 @@
       "label": "APP WDG",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/999999999721003289/filename1.pdf",
-      "material": false
+      "material": false,
+      "headline": "APP WDG filed June 4, 2021",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "8-K",
@@ -1234,7 +1693,10 @@
       "label": "Current report (8-K)",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000110465921073681/tm2117888d1_8k.htm",
-      "material": false
+      "material": false,
+      "headline": "Annual meeting elected two directors; renewed below-NAV sale authority",
+      "signal": "clean",
+      "signal_note": "Routine governance vote"
     },
     {
       "form": "4",
@@ -1242,7 +1704,10 @@
       "label": "4 — FORM 4 -",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000117911021005166/xslF345X03/edgar.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider filed Form 4 for May 11, 2021 transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "APP WD/A",
@@ -1250,7 +1715,10 @@
       "label": "APP WD/A — APP WD",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000110465921063246/tm2113850d3_appwd.htm",
-      "material": false
+      "material": false,
+      "headline": "BCSF withdrew amended co-investment exemptive application to refile as initial",
+      "signal": "clean",
+      "signal_note": "Routine exemptive-application withdrawal"
     },
     {
       "form": "8-K",
@@ -1258,7 +1726,10 @@
       "label": "Current report: reported quarterly results; disclosed a material event",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000110465921061814/tm2114414d2_8k.htm",
-      "material": true
+      "material": true,
+      "headline": "BCSF reported Q1 2021 results and declared $0.34 quarterly dividend",
+      "signal": "clean",
+      "signal_note": "Routine results and dividend declared"
     },
     {
       "form": "10-Q",
@@ -1266,7 +1737,10 @@
       "label": "Quarterly report (10-Q) for period ending 2021-03-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000110465921061714/tm2114414d1_10q.htm",
-      "material": true
+      "material": true,
+      "headline": "BCSF filed Q1 2021 10-Q; floating-rate senior direct lending portfolio",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results"
     },
     {
       "form": "APP WD",
@@ -1274,7 +1748,10 @@
       "label": "APP WD — APP WD",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000110465921054437/tm2113850d2_appwd.htm",
-      "material": false
+      "material": false,
+      "headline": "BCSF withdrew 2017 co-investment exemptive application to refile as initial",
+      "signal": "clean",
+      "signal_note": "Routine exemptive-application withdrawal"
     },
     {
       "form": "40-APP",
@@ -1282,7 +1759,10 @@
       "label": "40-APP — 40-APP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000110465921054436/tm2113850d1_40app.htm",
-      "material": false
+      "material": false,
+      "headline": "BCSF filed co-investment exemptive application to supersede prior 2018 order",
+      "signal": "clean",
+      "signal_note": "Routine co-investment relief application"
     },
     {
       "form": "DEF 14A",
@@ -1290,7 +1770,10 @@
       "label": "Proxy statement — DEF 14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000110465921051468/tm212430-4_def14a.htm",
-      "material": false
+      "material": false,
+      "headline": "BCSF proxy: director elections and below-NAV share issuance authorization",
+      "signal": "clean",
+      "signal_note": "Routine annual meeting proxy"
     },
     {
       "form": "CORRESP",
@@ -1298,7 +1781,10 @@
       "label": "CORRESP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000110465921051469/filename1.htm",
-      "material": false
+      "material": false,
+      "headline": "BCSF responded to SEC comments on preliminary proxy statement",
+      "signal": "clean",
+      "signal_note": "Routine SEC comment response"
     },
     {
       "form": "40-APP/A",
@@ -1306,7 +1792,10 @@
       "label": "40-APP/A — 40-APP/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000110465921049829/tm2111972d1_40appa.htm",
-      "material": false
+      "material": false,
+      "headline": "BCSF filed third amended co-investment exemptive application to supersede prior order",
+      "signal": "clean",
+      "signal_note": "Routine co-investment relief application"
     },
     {
       "form": "40-17G",
@@ -1314,7 +1803,10 @@
       "label": "40-17G — 40-17G",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000110465921049351/a21-12637_14017g.htm",
-      "material": false
+      "material": false,
+      "headline": "BCSF filed fidelity bond under Rule 17g-1 for 2021-2022",
+      "signal": "clean",
+      "signal_note": "Routine fidelity bond filing"
     },
     {
       "form": "8-K",
@@ -1322,7 +1814,10 @@
       "label": "Current report: reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000110465921047121/tm2112283d1_8k.htm",
-      "material": true
+      "material": true,
+      "headline": "BCSF set May 5, 2021 date for Q1 earnings release",
+      "signal": "clean",
+      "signal_note": "Routine earnings date announcement"
     },
     {
       "form": "CORRESP",
@@ -1330,7 +1825,10 @@
       "label": "CORRESP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000110465921040989/filename1.htm",
-      "material": false
+      "material": false,
+      "headline": "BCSF filed preliminary proxy for May 27 annual meeting",
+      "signal": "clean",
+      "signal_note": "Routine proxy filing correspondence"
     },
     {
       "form": "PRE 14A",
@@ -1338,7 +1836,10 @@
       "label": "PRE 14A — PRE 14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000110465921040983/tm212430-1_pre14a.htm",
-      "material": false
+      "material": false,
+      "headline": "Proxy seeks director elections and below-NAV share issuance authorization",
+      "signal": "clean",
+      "signal_note": "Routine annual meeting proposals"
     },
     {
       "form": "8-K",
@@ -1346,7 +1847,10 @@
       "label": "Current report: terminated a material agreement",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000110465921035598/tm219255d2_8k.htm",
-      "material": true
+      "material": true,
+      "headline": "BCSF repaid and terminated Goldman credit facility using $300M notes proceeds",
+      "signal": "clean",
+      "signal_note": "Routine debt refinancing"
     },
     {
       "form": "8-K",
@@ -1354,7 +1858,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000110465921034484/tm219255d1_8k.htm",
-      "material": true
+      "material": true,
+      "headline": "BCSF issued $300M of 2.950% unsecured notes due 2026",
+      "signal": "clean",
+      "signal_note": "Ordinary notes issuance"
     },
     {
       "form": "8-K",
@@ -1362,7 +1869,10 @@
       "label": "Current report: entered a material agreement",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000110465921032447/tm218644d2_8k.htm",
-      "material": true
+      "material": true,
+      "headline": "BCSF signed underwriting agreement for $300M 2.950% notes due 2026",
+      "signal": "clean",
+      "signal_note": "Routine underwriting agreement"
     },
     {
       "form": "424B2",
@@ -1370,7 +1880,10 @@
       "label": "Prospectus supplement (offering) — 424B2",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000110465921032208/tm215670-9_n2.htm",
-      "material": true
+      "material": true,
+      "headline": "Prospectus supplement for $300M of 2.950% notes due 2026",
+      "signal": "clean",
+      "signal_note": "Ordinary debt offering prospectus"
     },
     {
       "form": "FWP",
@@ -1378,7 +1891,10 @@
       "label": "FWP — FWP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000110465921031645/tm218656d1_fwp.htm",
-      "material": false
+      "material": false,
+      "headline": "Pricing term sheet for $300M 2.950% notes due 2026",
+      "signal": "clean",
+      "signal_note": "Routine pricing term sheet"
     },
     {
       "form": "8-K",
@@ -1386,7 +1902,10 @@
       "label": "Current report: issued a Regulation FD disclosure",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000110465921031574/tm218644d1_8k.htm",
-      "material": true
+      "material": true,
+      "headline": "BCSF priced $300M of 2.950% senior unsecured notes due 2026",
+      "signal": "clean",
+      "signal_note": "Ordinary notes pricing"
     },
     {
       "form": "424B2",
@@ -1394,7 +1913,10 @@
       "label": "Prospectus supplement (offering) — 424B2",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000110465921031170/tm215670-5_424b2.htm",
-      "material": true
+      "material": true,
+      "headline": "Preliminary prospectus supplement for BCSF unsecured notes offering",
+      "signal": "clean",
+      "signal_note": "Ordinary debt offering prospectus"
     },
     {
       "form": "497AD",
@@ -1402,7 +1924,10 @@
       "label": "497AD — 497AD",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000110465921028032/tm215670d6_497ad.htm",
-      "material": false
+      "material": false,
+      "headline": "BCSF, rated Baa3 stable, set fixed-income investor calls ahead of offering",
+      "signal": "clean",
+      "signal_note": "Routine investor marketing announcement"
     },
     {
       "form": "8-K",
@@ -1410,7 +1935,10 @@
       "label": "Current report: issued a Regulation FD disclosure",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000110465921027865/tm217819d2_8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Moody's assigned Baa3 investment-grade rating with stable outlook",
+      "signal": "clean",
+      "signal_note": "Investment-grade rating assigned"
     },
     {
       "form": "8-K",
@@ -1418,7 +1946,10 @@
       "label": "Current report: reported quarterly results; disclosed a material event",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000110465921027588/tm217819d1_8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Reported Q4 and FY2020 results; declared $0.34 quarterly dividend",
+      "signal": "clean",
+      "signal_note": "Routine results and dividend declared"
     },
     {
       "form": "10-K",
@@ -1426,7 +1957,10 @@
       "label": "Annual report (10-K) for period ending 2020-12-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000110465921027508/tm211051-1_10k.htm",
-      "material": true
+      "material": true,
+      "headline": "Filed fiscal 2020 annual report with standard credit and rate risk factors",
+      "signal": "clean",
+      "signal_note": "Routine annual report risk factors"
     },
     {
       "form": "EFFECT",
@@ -1434,7 +1968,10 @@
       "label": "EFFECT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/999999999521000590/xslEFFECTX01/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "SEC notice of effectiveness for registration statement",
+      "signal": "clean",
+      "signal_note": "Routine registration effectiveness"
     },
     {
       "form": "8-K",
@@ -1442,7 +1979,10 @@
       "label": "Current report: entered a material agreement; reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000110465921020223/tm216204d1_8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Launched International Senior Loan Program JV with Pantheon; issued preliminary Q4 estimates",
+      "signal": "clean",
+      "signal_note": "New joint venture and preliminary results"
     },
     {
       "form": "CORRESP",
@@ -1450,7 +1990,10 @@
       "label": "CORRESP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000110465921016764/filename1.htm",
-      "material": false
+      "material": false,
+      "headline": "Responded to SEC staff comments on Form N-2 registration statement",
+      "signal": "clean",
+      "signal_note": "Routine SEC comment response"
     },
     {
       "form": "N-2/A",
@@ -1458,7 +2001,10 @@
       "label": "N-2/A — N-2/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000110465921016757/tm215670-1_n2a.htm",
-      "material": false
+      "material": false,
+      "headline": "Filed $750M shelf registration amendment; NAV $16.27 per share at Sept 30",
+      "signal": "clean",
+      "signal_note": "Routine shelf registration"
     },
     {
       "form": "CORRESP",
@@ -1466,7 +2012,10 @@
       "label": "CORRESP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000110465921014053/filename1.htm",
-      "material": false
+      "material": false,
+      "headline": "Requested acceleration of N-2 registration statement effectiveness",
+      "signal": "clean",
+      "signal_note": "Routine acceleration request"
     },
     {
       "form": "8-K",
@@ -1474,7 +2023,10 @@
       "label": "Current report: changed a director or senior officer",
       "category": "Personnel",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000110465921007676/tm214168d1_8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Board appointed Michael Boyle President; Ewald remains CEO",
+      "signal": "clean",
+      "signal_note": "Routine officer appointment"
     },
     {
       "form": "8-K",
@@ -1482,7 +2034,10 @@
       "label": "Current report: reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000110465921006315/tm213720d1_8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Set February 24 date for Q4 and FY2020 earnings release",
+      "signal": "clean",
+      "signal_note": "Earnings date announcement"
     },
     {
       "form": "4",
@@ -1490,7 +2045,10 @@
       "label": "4 — FORM 4 -",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000117911020011610/xslF345X03/edgar.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider filed Form 4 reporting BCSF transaction on December 3, 2020",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction report"
     },
     {
       "form": "4",
@@ -1498,7 +2056,10 @@
       "label": "4 — FORM 4 -",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000117911020011586/xslF345X03/edgar.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider filed Form 4 reporting BCSF transaction on December 3, 2020",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction report"
     },
     {
       "form": "DEL AM",
@@ -1506,7 +2067,10 @@
       "label": "DEL AM — DEL AM",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000110465920130506/tm2037231d1_delam.htm",
-      "material": false
+      "material": false,
+      "headline": "BCSF filed delaying amendment to its Form N-2 shelf registration",
+      "signal": "clean",
+      "signal_note": "Routine registration housekeeping"
     },
     {
       "form": "N-2",
@@ -1514,7 +2078,10 @@
       "label": "Registration statement (N-2) — N-2",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000110465920129522/tm2036184-1_n2.htm",
-      "material": true
+      "material": true,
+      "headline": "BCSF filed shelf N-2 to register common, preferred, debt and rights",
+      "signal": "clean",
+      "signal_note": "Routine shelf registration"
     },
     {
       "form": "8-K",
@@ -1522,7 +2089,10 @@
       "label": "Current report: reported quarterly results; disclosed a material event",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000110465920121870/tm2029635-2_8k.htm",
-      "material": true
+      "material": true,
+      "headline": "BCSF declared $0.34 fourth-quarter dividend and reported Q3 2020 results",
+      "signal": "clean",
+      "signal_note": "Dividend declared as normal"
     },
     {
       "form": "10-Q",
@@ -1530,7 +2100,10 @@
       "label": "Quarterly report (10-Q) for period ending 2020-09-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000110465920121782/tm2029635-1_10q.htm",
-      "material": true
+      "material": true,
+      "headline": "BCSF Q3 2020 10-Q; 99.2% of debt floating rate amid COVID uncertainty",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results"
     },
     {
       "form": "8-K",
@@ -1538,7 +2111,10 @@
       "label": "Current report: reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000110465920112664/tm2032584d1_8k.htm",
-      "material": true
+      "material": true,
+      "headline": "BCSF set November 5 date for Q3 2020 earnings release and call",
+      "signal": "clean",
+      "signal_note": "Earnings date announcement"
     },
     {
       "form": "4",
@@ -1546,7 +2122,10 @@
       "label": "4 — FORM 4 -",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000117911020009173/xslF345X03/edgar.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider filed Form 4 reporting BCSF transaction on August 19, 2020",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction report"
     },
     {
       "form": "8-K",
@@ -1554,7 +2133,10 @@
       "label": "Current report: entered a material agreement",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000110465920096086/tm2027723-1_8k.htm",
-      "material": true
+      "material": true,
+      "headline": "BCSF cut credit facility limit to $425M from $500M, rate to 3.00%",
+      "signal": "watch",
+      "signal_note": "Amend-and-restate reduced facility capacity"
     },
     {
       "form": "8-K",
@@ -1562,7 +2144,10 @@
       "label": "Current report: reported quarterly results; disclosed a material event",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000110465920090859/tm2026452-1_8k.htm",
-      "material": true
+      "material": true,
+      "headline": "BCSF declared $0.34 third-quarter dividend and reported Q2 2020 results",
+      "signal": "clean",
+      "signal_note": "Dividend declared as normal"
     },
     {
       "form": "10-Q",
@@ -1570,7 +2155,10 @@
       "label": "Quarterly report (10-Q) for period ending 2020-06-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000110465920090826/tm2020580-1_10q.htm",
-      "material": true
+      "material": true,
+      "headline": "Q2 10-Q: 99% of debt investments floating-rate amid COVID-19 uncertainty",
+      "signal": "clean",
+      "signal_note": "Routine quarterly MD&A disclosure"
     },
     {
       "form": "8-K",
@@ -1578,7 +2166,10 @@
       "label": "Current report: reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1655050/000110465920082385/tm2024369d1_8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Q2 2020 results to be released August 5 with call August 6",
+      "signal": "clean",
+      "signal_note": "Earnings date announcement"
     }
   ]
 }

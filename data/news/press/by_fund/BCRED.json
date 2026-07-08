@@ -10,7 +10,10 @@
       "label": "ARS — ARS",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312526285486/d22553dars.pdf",
-      "material": false
+      "material": false,
+      "headline": "Annual report to shareholders filed June 26, 2026",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "DEFA14A",
@@ -18,7 +21,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312526285474/d102728ddefa14a.htm",
-      "material": false
+      "material": false,
+      "headline": "Annual meeting proxy: elect two trustees, ratify Deloitte auditor",
+      "signal": "clean",
+      "signal_note": "Routine annual meeting proxy"
     },
     {
       "form": "DEF 14A",
@@ -26,7 +32,10 @@
       "label": "Proxy statement — DEF 14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312526285460/d132726ddef14a.htm",
-      "material": false
+      "material": false,
+      "headline": "2026 annual meeting proxy: trustee elections and auditor ratification",
+      "signal": "clean",
+      "signal_note": "Routine annual meeting proxy"
     },
     {
       "form": "N-2/A",
@@ -34,7 +43,10 @@
       "label": "N-2/A — N-2/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000121390026072039/ea0295361-01_n2a.htm",
-      "material": false
+      "material": false,
+      "headline": "Filed N-2 amendment to delay registration effectiveness to July 25",
+      "signal": "clean",
+      "signal_note": "Routine registration amendment"
     },
     {
       "form": "8-K",
@@ -42,7 +54,10 @@
       "label": "Current report: issued a Regulation FD disclosure; disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000180349826000036/bcred-20260622.htm",
-      "material": true
+      "material": true,
+      "headline": "Declared July distribution of $0.1800 per share; NAV $45.3B, leverage 0.80x",
+      "signal": "clean",
+      "signal_note": "Regular monthly distribution declared"
     },
     {
       "form": "8-K",
@@ -50,7 +65,10 @@
       "label": "Current report: changed a director or senior officer",
       "category": "Personnel",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000121390026070098/ea029494301-8k_blackstone.htm",
-      "material": true
+      "material": true,
+      "headline": "COO Katherine Rubenstein departed to pursue other opportunities",
+      "signal": "clean",
+      "signal_note": "Routine officer departure, no disagreement"
     },
     {
       "form": "SC TO-I/A",
@@ -58,7 +76,10 @@
       "label": "SC TO-I/A — SC TO-I/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000121390026065024/ea0292864-01_sctoia.htm",
-      "material": false
+      "material": false,
+      "headline": "Amended tender offer to repurchase up to 93.1M shares at NAV",
+      "signal": "clean",
+      "signal_note": "Routine share repurchase tender"
     },
     {
       "form": "N-2/A",
@@ -66,7 +87,10 @@
       "label": "N-2/A — N-2/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000121390026061517/ea0291812-01_n2a.htm",
-      "material": false
+      "material": false,
+      "headline": "Filed N-2 amendment to delay registration effectiveness to June 26",
+      "signal": "clean",
+      "signal_note": "Routine registration amendment"
     },
     {
       "form": "424B3",
@@ -74,7 +98,10 @@
       "label": "Prospectus supplement (offering) — 424B3",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312526234403/d111128d424b3.htm",
-      "material": true
+      "material": true,
+      "headline": "Prospectus supplement attaches Q1 2026 10-Q and updates track-record disclosure",
+      "signal": "clean",
+      "signal_note": "Routine prospectus supplement"
     },
     {
       "form": "8-K",
@@ -82,7 +109,10 @@
       "label": "Current report: issued a Regulation FD disclosure; disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000180349826000033/bcred-20260520.htm",
-      "material": true
+      "material": true,
+      "headline": "Declared May distributions; aggregate NAV $45.2B at 0.77x leverage",
+      "signal": "clean",
+      "signal_note": "Routine distribution and NAV update"
     },
     {
       "form": "10-Q",
@@ -90,7 +120,10 @@
       "label": "Quarterly report (10-Q) for period ending 2026-03-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000180349826000031/bcred-20260331.htm",
-      "material": true
+      "material": true,
+      "headline": "Q1 2026 10-Q filed; non-recurring interest income fell to $17.8M",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results"
     },
     {
       "form": "SC TO-I",
@@ -98,7 +131,10 @@
       "label": "SC TO-I — SC TO-I",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312526199360/d133377dsctoi.htm",
-      "material": false
+      "material": false,
+      "headline": "Launched quarterly share repurchase tender offer at March 31 NAV",
+      "signal": "clean",
+      "signal_note": "Routine repurchase tender offer"
     },
     {
       "form": "SC TO-I/A",
@@ -106,7 +142,10 @@
       "label": "SC TO-I/A — SC TO-I/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000121390026050688/ea0288145-01_sctoia.htm",
-      "material": false
+      "material": false,
+      "headline": "Tender oversubscribed; 133.7M shares tendered above 96M cap, all accepted",
+      "signal": "watch",
+      "signal_note": "Repurchase demand exceeded offer cap"
     },
     {
       "form": "N-2",
@@ -114,7 +153,10 @@
       "label": "Registration statement (N-2) — N-2",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312526198119/d71858dn2.htm",
-      "material": true
+      "material": true,
+      "headline": "Filed N-2 for continuous offering of up to $45B in shares",
+      "signal": "clean",
+      "signal_note": "Routine registration statement"
     },
     {
       "form": "486BPOS",
@@ -122,7 +164,10 @@
       "label": "486BPOS — 486BPOS",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312526198102/d120436d486bpos.htm",
-      "material": false
+      "material": false,
+      "headline": "Post-effective amendment updates fee table and share repurchase terms",
+      "signal": "clean",
+      "signal_note": "Routine post-effective amendment"
     },
     {
       "form": "8-K",
@@ -130,7 +175,10 @@
       "label": "Current report: issued a Regulation FD disclosure",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000180349826000026/bcred-20260429.htm",
-      "material": true
+      "material": true,
+      "headline": "Non-accruals jumped to 2.4% at cost on Medallia and Affordable Care",
+      "signal": "negative",
+      "signal_note": "Non-accruals rose to 2.4% at cost"
     },
     {
       "form": "8-K",
@@ -138,7 +186,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312526182132/d151396d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Issued $850M of 5.950% unsecured notes due 2031",
+      "signal": "clean",
+      "signal_note": "Ordinary note issuance"
     },
     {
       "form": "424B2",
@@ -146,7 +197,10 @@
       "label": "Prospectus supplement (offering) — 424B2",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312526177172/d148653d424b2.htm",
-      "material": true
+      "material": true,
+      "headline": "Priced $850M of 5.950% notes due 2031",
+      "signal": "clean",
+      "signal_note": "Ordinary note offering"
     },
     {
       "form": "FWP",
@@ -154,7 +208,10 @@
       "label": "FWP — FWP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312526170710/d112765dfwp.htm",
-      "material": false
+      "material": false,
+      "headline": "Priced $850M of 5.950% unsecured notes due 2031",
+      "signal": "clean",
+      "signal_note": "Routine unsecured notes pricing"
     },
     {
       "form": "424B2",
@@ -162,7 +219,10 @@
       "label": "Prospectus supplement (offering) — 424B2",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312526168716/d148653d424b2.htm",
-      "material": true
+      "material": true,
+      "headline": "Filed preliminary prospectus supplement for unsecured notes offering",
+      "signal": "clean",
+      "signal_note": "Ordinary debt offering"
     },
     {
       "form": "8-K",
@@ -170,7 +230,10 @@
       "label": "Current report: issued a Regulation FD disclosure; disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000180349826000021/bcred-20260420.htm",
-      "material": true
+      "material": true,
+      "headline": "Non-accruals rose to 2.4% at cost on Medallia, Affordable Care",
+      "signal": "negative",
+      "signal_note": "Non-accruals rose 0.6% to 2.4% at cost"
     },
     {
       "form": "4",
@@ -178,7 +241,10 @@
       "label": "4 — 4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312526147656/xslF345X06/ownership.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider filed Form 4 reporting share transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -186,7 +252,10 @@
       "label": "4 — 4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312526147655/xslF345X06/ownership.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider filed Form 4 reporting share transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -194,7 +263,10 @@
       "label": "4 — 4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312526147654/xslF345X06/ownership.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider filed Form 4 reporting share transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -202,7 +274,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000121390026032966/xslF345X06/ownership.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider filed Form 4 reporting share transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "8-K",
@@ -210,7 +285,10 @@
       "label": "Current report: issued a Regulation FD disclosure; disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000180349826000017/bcred-20260319.htm",
-      "material": true
+      "material": true,
+      "headline": "Declared March distributions; NAV and 0.74x leverage disclosed",
+      "signal": "clean",
+      "signal_note": "Routine monthly NAV and distributions"
     },
     {
       "form": "POS EX",
@@ -218,7 +296,10 @@
       "label": "POS EX — POS EX",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312526116010/d87418dposex.htm",
-      "material": false
+      "material": false,
+      "headline": "Filed post-effective amendment to add exhibits to N-2",
+      "signal": "clean",
+      "signal_note": "Routine registration amendment"
     },
     {
       "form": "424B3",
@@ -226,7 +307,10 @@
       "label": "Prospectus supplement (offering) — 424B3",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312526116002/d38905d424b3.htm",
-      "material": true
+      "material": true,
+      "headline": "Prospectus supplement updates suitability standards, attaches 2025 Form 10-K",
+      "signal": "clean",
+      "signal_note": "Routine prospectus supplement"
     },
     {
       "form": "10-K",
@@ -234,7 +318,10 @@
       "label": "Annual report (10-K) for period ending 2025-12-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000180349826000014/bcred-20251231.htm",
-      "material": true
+      "material": true,
+      "headline": "Annual 10-K details $82B portfolio and continuous $45 billion share offering",
+      "signal": "clean",
+      "signal_note": "Routine annual report"
     },
     {
       "form": "SC TO-I/A",
@@ -242,7 +329,10 @@
       "label": "SC TO-I/A — SC TO-I/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312526085706/d16188dsctoia.htm",
-      "material": false
+      "material": false,
+      "headline": "Repurchase requests topped 5%; board upsized tender to 7% with sponsor support",
+      "signal": "watch",
+      "signal_note": "Redemptions exceeded normal 5% cap"
     },
     {
       "form": "4",
@@ -250,7 +340,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000121390026020012/xslF345X05/ownership.xml",
-      "material": false
+      "material": false,
+      "headline": "Form 4 insider ownership filing dated February 2026",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "8-K",
@@ -258,7 +351,10 @@
       "label": "Current report: issued a Regulation FD disclosure; disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000180349826000010/bcred-20260219.htm",
-      "material": true
+      "material": true,
+      "headline": "NAV reached $48.2B at January 31; leverage 0.73x, distributions declared",
+      "signal": "clean",
+      "signal_note": "Routine NAV and distribution update"
     },
     {
       "form": "8-K",
@@ -266,7 +362,10 @@
       "label": "Current report: issued a Regulation FD disclosure",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000121390026015011/ea027652301-8k_blackstone.htm",
-      "material": true
+      "material": true,
+      "headline": "Posted investor presentation to BCRED website",
+      "signal": "clean",
+      "signal_note": "Routine Regulation FD disclosure"
     },
     {
       "form": "8-K",
@@ -274,7 +373,10 @@
       "label": "Current report: issued a Regulation FD disclosure",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000180349826000007/bcred-20260206.htm",
-      "material": true
+      "material": true,
+      "headline": "Non-accruals at 0.6% of cost; 1.7% Q4 net return on fifth anniversary",
+      "signal": "clean",
+      "signal_note": "Non-accruals low at 0.6%"
     },
     {
       "form": "SC TO-I",
@@ -282,7 +384,10 @@
       "label": "SC TO-I — SC TO-I",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312526032795/d78833dsctoi.htm",
-      "material": false
+      "material": false,
+      "headline": "Commenced quarterly share repurchase tender offer at NAV",
+      "signal": "clean",
+      "signal_note": "Routine repurchase offer"
     },
     {
       "form": "SC TO-I/A",
@@ -290,7 +395,10 @@
       "label": "SC TO-I/A — SC TO-I/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000121390026010557/ea0274281-01_sctoia.htm",
-      "material": false
+      "material": false,
+      "headline": "Repurchased 85M shares at $24.79 via promissory notes; 100% of tenders accepted",
+      "signal": "clean",
+      "signal_note": "Routine tender completed at NAV"
     },
     {
       "form": "40-17G",
@@ -298,7 +406,10 @@
       "label": "40-17G — 40-17G",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000121390026010186/ea0273918-01_4017g.htm",
-      "material": false
+      "material": false,
+      "headline": "Filed annual fidelity bond covering December 2025 through December 2026",
+      "signal": "clean",
+      "signal_note": "Routine fidelity bond filing"
     },
     {
       "form": "8-K",
@@ -306,7 +417,10 @@
       "label": "Current report: issued a Regulation FD disclosure; disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000180349826000003/bcred-20260122.htm",
-      "material": true
+      "material": true,
+      "headline": "NAV was $47.6B at December 31; leverage 0.68x, distributions declared",
+      "signal": "clean",
+      "signal_note": "Routine NAV and distribution update"
     },
     {
       "form": "8-K",
@@ -314,7 +428,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000121390026003393/ea027247001-8k_blackstone.htm",
-      "material": true
+      "material": true,
+      "headline": "Issued $700M of 5.350% unsecured notes due 2031",
+      "signal": "clean",
+      "signal_note": "Routine unsecured note issuance"
     },
     {
       "form": "8-K",
@@ -322,7 +439,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000121390026002556/ea0272220-01_8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Privately placed $210M of 5.94% Series 2026A notes due 2032",
+      "signal": "clean",
+      "signal_note": "Routine private note placement"
     },
     {
       "form": "424B2",
@@ -330,7 +450,10 @@
       "label": "Prospectus supplement (offering) — 424B2",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000121390026002166/ea0267326-05_424b2.htm",
-      "material": true
+      "material": true,
+      "headline": "Offering $700M of 5.350% unsecured notes due 2031",
+      "signal": "clean",
+      "signal_note": "Routine note offering prospectus"
     },
     {
       "form": "FWP",
@@ -338,7 +461,10 @@
       "label": "FWP — FWP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000121390026001258/ea0267326-06_fwp.htm",
-      "material": false
+      "material": false,
+      "headline": "Priced $700M of 5.350% notes due 2031",
+      "signal": "clean",
+      "signal_note": "Routine note pricing term sheet"
     },
     {
       "form": "424B2",
@@ -346,7 +472,10 @@
       "label": "Prospectus supplement (offering) — 424B2",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000121390026000782/ea0267326-01_424b2.htm",
-      "material": true
+      "material": true,
+      "headline": "Preliminary prospectus supplement for unsecured notes due 2031",
+      "signal": "clean",
+      "signal_note": "Routine preliminary note offering"
     },
     {
       "form": "8-K",
@@ -354,7 +483,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000121390025125354/ea027077801-8k_blackstone.htm",
-      "material": true
+      "material": true,
+      "headline": "Issued $100M add-on to 6.250% notes due 2031, now $600M outstanding",
+      "signal": "clean",
+      "signal_note": "Routine add-on note issuance"
     },
     {
       "form": "4",
@@ -362,7 +494,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000121390025124619/xslF345X05/ownership.xml",
-      "material": false
+      "material": false,
+      "headline": "Form 4 insider transaction filed December 22, 2025",
+      "signal": "clean",
+      "signal_note": "Routine insider ownership filing"
     },
     {
       "form": "424B2",
@@ -370,7 +505,10 @@
       "label": "Prospectus supplement (offering) — 424B2",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000121390025123848/ea0270018-03_424b2.htm",
-      "material": true
+      "material": true,
+      "headline": "Offering $100M add-on to 6.250% notes due 2031",
+      "signal": "clean",
+      "signal_note": "Routine add-on note offering"
     },
     {
       "form": "8-K",
@@ -378,7 +516,10 @@
       "label": "Current report: issued a Regulation FD disclosure; disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000180349825000086/bcred-20251218.htm",
-      "material": true
+      "material": true,
+      "headline": "Declared December distributions; aggregate NAV $49.1B, leverage 0.67x",
+      "signal": "clean",
+      "signal_note": "Routine distribution and NAV update"
     },
     {
       "form": "FWP",
@@ -386,7 +527,10 @@
       "label": "FWP — FWP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000121390025123295/ea0270018-02_fwp.htm",
-      "material": false
+      "material": false,
+      "headline": "Priced $100M add-on to 6.250% notes due 2031",
+      "signal": "clean",
+      "signal_note": "Routine add-on note pricing"
     },
     {
       "form": "424B2",
@@ -394,7 +538,10 @@
       "label": "Prospectus supplement (offering) — 424B2",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000121390025123283/ea0270018-01_424b2.htm",
-      "material": true
+      "material": true,
+      "headline": "BCRED marketing add-on issuance of 6.250% unsecured notes due 2031",
+      "signal": "clean",
+      "signal_note": "Routine unsecured notes offering"
     },
     {
       "form": "8-K",
@@ -402,7 +549,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000121390025122322/ea026982301-8k_blackstone.htm",
-      "material": true
+      "material": true,
+      "headline": "BCRED issued $400M of 5.950% notes due 2029, raising series to $900M",
+      "signal": "clean",
+      "signal_note": "Routine notes issuance closed"
     },
     {
       "form": "424B2",
@@ -410,7 +560,10 @@
       "label": "Prospectus supplement (offering) — 424B2",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000121390025121191/ea0267326-04_424b2.htm",
-      "material": true
+      "material": true,
+      "headline": "BCRED priced $400M of 5.950% unsecured notes due 2029",
+      "signal": "clean",
+      "signal_note": "Routine unsecured notes offering"
     },
     {
       "form": "FWP",
@@ -418,7 +571,10 @@
       "label": "FWP — FWP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000121390025120678/ea0267326-03_fwp.htm",
-      "material": false
+      "material": false,
+      "headline": "BCRED pricing term sheet for $400M 5.950% notes due 2029",
+      "signal": "clean",
+      "signal_note": "Routine notes pricing"
     },
     {
       "form": "424B2",
@@ -426,7 +582,10 @@
       "label": "Prospectus supplement (offering) — 424B2",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000121390025120675/ea0267326-02_424b2.htm",
-      "material": true
+      "material": true,
+      "headline": "BCRED preliminary prospectus for 5.950% notes due 2029 add-on",
+      "signal": "clean",
+      "signal_note": "Routine unsecured notes offering"
     },
     {
       "form": "SC TO-I/A",
@@ -434,7 +593,10 @@
       "label": "SC TO-I/A — SC TO-I/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000121390025119870/ea0268701-01_sctoia.htm",
-      "material": false
+      "material": false,
+      "headline": "BCRED amends tender offer to repurchase up to 93.6M shares at NAV",
+      "signal": "clean",
+      "signal_note": "Routine quarterly repurchase offer"
     },
     {
       "form": "4",
@@ -442,7 +604,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000121390025114193/xslF345X05/ownership.xml",
-      "material": false
+      "material": false,
+      "headline": "Form 4 insider ownership filing dated November 24, 2025",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "8-K",
@@ -450,7 +615,10 @@
       "label": "Current report: issued a Regulation FD disclosure; disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000180349825000084/bcred-20251119.htm",
-      "material": true
+      "material": true,
+      "headline": "BCRED declared November distributions; aggregate NAV $47.8B, leverage 0.66x",
+      "signal": "clean",
+      "signal_note": "Routine distributions and NAV update"
     },
     {
       "form": "424B3",
@@ -458,7 +626,10 @@
       "label": "Prospectus supplement (offering) — 424B3",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312525286148/d37494d424b3.htm",
-      "material": true
+      "material": true,
+      "headline": "BCRED prospectus supplement updates suitability standards; attaches Q3 10-Q",
+      "signal": "clean",
+      "signal_note": "Routine prospectus supplement"
     },
     {
       "form": "10-Q",
@@ -466,7 +637,10 @@
       "label": "Quarterly report (10-Q) for period ending 2025-09-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000180349825000081/bcred-20250930.htm",
-      "material": true
+      "material": true,
+      "headline": "BCRED filed Q3 2025 Form 10-Q with routine accounting disclosures",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results"
     },
     {
       "form": "SC TO-I",
@@ -474,7 +648,10 @@
       "label": "SC TO-I — SC TO-I",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312525261746/d35224dsctoi.htm",
-      "material": false
+      "material": false,
+      "headline": "Filed issuer tender offer to repurchase Class I, S and D shares at NAV",
+      "signal": "clean",
+      "signal_note": "Routine share repurchase tender offer"
     },
     {
       "form": "SC TO-I/A",
@@ -482,7 +659,10 @@
       "label": "SC TO-I/A — SC TO-I/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000121390025104924/ea0263181-01_sctoia.htm",
-      "material": false
+      "material": false,
+      "headline": "Repurchased 31.8 million shares at $24.97 in completed tender offer",
+      "signal": "clean",
+      "signal_note": "Routine tender offer results"
     },
     {
       "form": "8-K",
@@ -490,7 +670,10 @@
       "label": "Current report: issued a Regulation FD disclosure",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000180349825000076/bcred-20251031.htm",
-      "material": true
+      "material": true,
+      "headline": "Monthly distribution reduced to 9.6% annualized on Fed cuts; non-accruals 0.4%",
+      "signal": "watch",
+      "signal_note": "Distribution lowered tracking rate cuts"
     },
     {
       "form": "4",
@@ -498,7 +681,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000121390025100920/xslF345X05/ownership.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider Form 4 reports beneficial ownership change dated October 21, 2025",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "8-K",
@@ -506,7 +692,10 @@
       "label": "Current report: issued a Regulation FD disclosure; disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000180349825000073/bcred-20251020.htm",
-      "material": true
+      "material": true,
+      "headline": "Aggregate NAV reached $46.7 billion with 0.65x leverage at September 30",
+      "signal": "clean",
+      "signal_note": "Routine NAV and distribution update"
     },
     {
       "form": "8-K",
@@ -514,7 +703,10 @@
       "label": "Current report (8-K)",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000121390025092338/ea0258322-01_8k.htm",
-      "material": false
+      "material": false,
+      "headline": "Shareholders elected three trustees and ratified Deloitte as auditor",
+      "signal": "clean",
+      "signal_note": "Routine annual meeting results"
     },
     {
       "form": "4",
@@ -522,7 +714,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000121390025090222/xslF345X05/ownership.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider Form 4 reports beneficial ownership change dated September 22, 2025",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "8-K",
@@ -530,7 +725,10 @@
       "label": "Current report: issued a Regulation FD disclosure; disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000180349825000069/bcred-20250918.htm",
-      "material": true
+      "material": true,
+      "headline": "Declared monthly distributions; aggregate NAV $46.4 billion at August 31",
+      "signal": "clean",
+      "signal_note": "Routine NAV and distribution update"
     },
     {
       "form": "8-K",
@@ -538,7 +736,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000121390025086542/ea0256788-8k_blackstone.htm",
-      "material": true
+      "material": true,
+      "headline": "Issued $500 million of 5.050% unsecured notes due 2030",
+      "signal": "clean",
+      "signal_note": "Ordinary unsecured notes offering"
     },
     {
       "form": "SC TO-I/A",
@@ -546,7 +747,10 @@
       "label": "SC TO-I/A — SC TO-I/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000121390025085627/ea0256216-01_sctoia.htm",
-      "material": false
+      "material": false,
+      "headline": "Amended tender offer statement to add Q3 distribution update communication",
+      "signal": "clean",
+      "signal_note": "Routine tender offer amendment"
     },
     {
       "form": "424B2",
@@ -554,7 +758,10 @@
       "label": "Prospectus supplement (offering) — 424B2",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000121390025085025/ea0254419-02_424b2.htm",
-      "material": true
+      "material": true,
+      "headline": "Priced $500M of 5.050% unsecured notes due 2030",
+      "signal": "clean",
+      "signal_note": "Ordinary note offering"
     },
     {
       "form": "FWP",
@@ -562,7 +769,10 @@
       "label": "FWP — FWP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000121390025084116/ea0254419-03_fwp.htm",
-      "material": false
+      "material": false,
+      "headline": "Pricing term sheet sets $500M 5.050% notes due 2030",
+      "signal": "clean",
+      "signal_note": "Ordinary note offering"
     },
     {
       "form": "424B2",
@@ -570,7 +780,10 @@
       "label": "Prospectus supplement (offering) — 424B2",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000121390025083722/ea0254419-01_424b2.htm",
-      "material": true
+      "material": true,
+      "headline": "Launched offering of unsecured notes due 2030",
+      "signal": "clean",
+      "signal_note": "Ordinary note offering"
     },
     {
       "form": "APP NTC",
@@ -578,7 +791,10 @@
       "label": "APP NTC",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/999999999725003412/filename1.pdf",
-      "material": false
+      "material": false,
+      "headline": "Application or notice filed with SEC on August 28, 2025",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "4",
@@ -586,7 +802,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000121390025079909/xslF345X05/ownership.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider filed Form 4 ownership report",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "8-K",
@@ -594,7 +813,10 @@
       "label": "Current report: issued a Regulation FD disclosure; disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000180349825000065/bcred-20250820.htm",
-      "material": true
+      "material": true,
+      "headline": "Declared August distributions and reported July 31 NAV",
+      "signal": "clean",
+      "signal_note": "Distribution declared as normal"
     },
     {
       "form": "424B3",
@@ -602,7 +824,10 @@
       "label": "Prospectus supplement (offering) — 424B3",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312525182680/d32323d424b3.htm",
-      "material": true
+      "material": true,
+      "headline": "Prospectus supplement updated state suitability standards",
+      "signal": "clean",
+      "signal_note": "Routine prospectus update"
     },
     {
       "form": "10-Q",
@@ -610,7 +835,10 @@
       "label": "Quarterly report (10-Q) for period ending 2025-06-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000180349825000062/bcred-20250630.htm",
-      "material": true
+      "material": true,
+      "headline": "Filed second-quarter 10-Q with routine accounting disclosures",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results"
     },
     {
       "form": "8-K",
@@ -618,7 +846,10 @@
       "label": "Current report: changed a director or senior officer",
       "category": "Personnel",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000121390025072322/ea0251309-01_8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Appointed Lucie Enns as Chief Legal Officer and Secretary",
+      "signal": "clean",
+      "signal_note": "Routine officer appointment"
     },
     {
       "form": "SC TO-I",
@@ -626,7 +857,10 @@
       "label": "SC TO-I — SC TO-I",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312525172221/d99074dsctoi.htm",
-      "material": false
+      "material": false,
+      "headline": "Launched tender offer to repurchase Class I, S and D shares",
+      "signal": "clean",
+      "signal_note": "Routine share repurchase offer"
     },
     {
       "form": "SC TO-I/A",
@@ -634,7 +868,10 @@
       "label": "SC TO-I/A — ISSUER TENDER OFFER",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000121390025070890/sctoi0825_blackstone.htm",
-      "material": false
+      "material": false,
+      "headline": "Repurchased 43.6M shares at $25.17 in tender offer totaling $1.1B",
+      "signal": "clean",
+      "signal_note": "Routine periodic tender offer"
     },
     {
       "form": "8-K",
@@ -642,7 +879,10 @@
       "label": "Current report: issued a Regulation FD disclosure",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000180349825000057/bcred-20250801.htm",
-      "material": true
+      "material": true,
+      "headline": "BCRED returned 2.3% for quarter with non-accruals at 0.4% and 0.68x leverage",
+      "signal": "clean",
+      "signal_note": "Low non-accruals, routine update"
     },
     {
       "form": "8-K",
@@ -650,7 +890,10 @@
       "label": "Current report: issued a Regulation FD disclosure; disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000180349825000054/bcred-20250718.htm",
-      "material": true
+      "material": true,
+      "headline": "Declared July distributions; aggregate NAV $44.3B at 0.65x leverage",
+      "signal": "clean",
+      "signal_note": "Routine distribution and NAV update"
     },
     {
       "form": "4",
@@ -658,7 +901,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000121390025065793/xslF345X05/ownership.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider Form 4 filed for Blackstone Private Real Estate Credit Income Fund",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "APP ORDR",
@@ -666,7 +912,10 @@
       "label": "APP ORDR",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/999999999725002748/filename1.pdf",
-      "material": false
+      "material": false,
+      "headline": "Exemptive relief application order filed July 18, 2025",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "ARS",
@@ -674,7 +923,10 @@
       "label": "ARS — ARS",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312525152926/d949128dars.pdf",
-      "material": false
+      "material": false,
+      "headline": "Annual report to shareholders filed June 30, 2025",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "DEF 14A",
@@ -682,7 +934,10 @@
       "label": "Proxy statement — DEF 14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312525152921/d941566ddef14a.htm",
-      "material": false
+      "material": false,
+      "headline": "Proxy sets September 25 annual meeting for trustee elections and auditor ratification",
+      "signal": "clean",
+      "signal_note": "Routine annual meeting proxy"
     },
     {
       "form": "4",
@@ -690,7 +945,10 @@
       "label": "4 — 4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000095017025091218/xslF345X05/ownership.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider Form 4 reports April 16 transaction in BCRED shares",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "3",
@@ -698,7 +956,10 @@
       "label": "3 — 3",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000095017025090886/xslF345X02/ownership.xml",
-      "material": false
+      "material": false,
+      "headline": "Initial ownership Form 3 filed for Blackstone Private Real Estate Credit Income Fund",
+      "signal": "clean",
+      "signal_note": "Routine initial ownership filing"
     },
     {
       "form": "4",
@@ -706,7 +967,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000121390025056689/xslF345X05/ownership.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider Form 4 reports June 19 transaction in BCRED shares",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "8-K",
@@ -714,7 +978,10 @@
       "label": "Current report: issued a Regulation FD disclosure; disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000180349825000049/bcred-20250619.htm",
-      "material": true
+      "material": true,
+      "headline": "May NAV reached $44.4B; June distributions declared, leverage 0.68x",
+      "signal": "clean",
+      "signal_note": "Routine monthly NAV and distribution"
     },
     {
       "form": "4",
@@ -722,7 +989,10 @@
       "label": "4 — 4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000095017025084862/xslF345X05/ownership.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider Form 4 reports Loar Holdings share transaction dated June 9",
+      "signal": "clean",
+      "signal_note": "Routine insider ownership filing"
     },
     {
       "form": "144",
@@ -730,7 +1000,10 @@
       "label": "144",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000095017025084035/xsl144X01/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "Form 144 notice of proposed securities sale filed June 9",
+      "signal": "clean",
+      "signal_note": "Routine proposed-sale notice"
     },
     {
       "form": "SC TO-I/A",
@@ -738,7 +1011,10 @@
       "label": "SC TO-I/A — ISSUER TENDER OFFER",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000121390025052686/sctoi0625_blackstone.htm",
-      "material": false
+      "material": false,
+      "headline": "Amended tender offer to repurchase up to 82.8M shares at NAV",
+      "signal": "clean",
+      "signal_note": "Routine share repurchase offer"
     },
     {
       "form": "4",
@@ -746,7 +1022,10 @@
       "label": "4 — 4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000095017025075237/xslF345X05/ownership.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider Form 4 reports Loar Holdings share transaction dated May 16",
+      "signal": "clean",
+      "signal_note": "Routine insider ownership filing"
     },
     {
       "form": "8-K",
@@ -754,7 +1033,10 @@
       "label": "Current report: issued a Regulation FD disclosure; disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000180349825000042/bcred-20250519.htm",
-      "material": true
+      "material": true,
+      "headline": "April NAV reached $43.3B; May distributions declared, leverage 0.69x",
+      "signal": "clean",
+      "signal_note": "Routine monthly NAV and distribution"
     },
     {
       "form": "424B3",
@@ -762,7 +1044,10 @@
       "label": "Prospectus supplement (offering) — 424B3",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312525121674/d920913d424b3.htm",
-      "material": true
+      "material": true,
+      "headline": "Prospectus supplement updates adviser track record; Q1 10-Q attached",
+      "signal": "clean",
+      "signal_note": "Routine prospectus supplement"
     },
     {
       "form": "10-Q",
@@ -770,7 +1055,10 @@
       "label": "Quarterly report (10-Q) for period ending 2025-03-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000180349825000038/bcred-20250331.htm",
-      "material": true
+      "material": true,
+      "headline": "Q1 2025 10-Q filed with $45.8M non-recurring interest income",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results"
     },
     {
       "form": "APP NTC",
@@ -778,7 +1066,10 @@
       "label": "APP NTC",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/999999999725002209/filename1.pdf",
-      "material": false
+      "material": false,
+      "headline": "Application notice filed May 5, 2025",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "SC TO-I",
@@ -786,7 +1077,10 @@
       "label": "SC TO-I — ISSUER TENDER OFFER",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000121390025038700/sctoi0525_blackstone.htm",
-      "material": false
+      "material": false,
+      "headline": "Tender offer to repurchase Class I, S and D shares at NAV",
+      "signal": "clean",
+      "signal_note": "Routine share repurchase offer"
     },
     {
       "form": "SC TO-I/A",
@@ -794,7 +1088,10 @@
       "label": "SC TO-I/A — ISSUER TENDER OFFER",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000121390025038699/sctoi0525_blackstone.htm",
-      "material": false
+      "material": false,
+      "headline": "Completed quarterly tender, repurchasing 23M shares for $581M at $25.25",
+      "signal": "clean",
+      "signal_note": "Routine share repurchase completion"
     },
     {
       "form": "8-K",
@@ -802,7 +1099,10 @@
       "label": "Current report: issued a Regulation FD disclosure",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000180349825000032/bcred-20250425.htm",
-      "material": true
+      "material": true,
+      "headline": "Portfolio 97% senior secured with non-accruals of 0.3% at cost",
+      "signal": "clean",
+      "signal_note": "Low non-accruals, routine update"
     },
     {
       "form": "40-APP/A",
@@ -810,7 +1110,10 @@
       "label": "40-APP/A — 40-APP/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312525093651/d934153d40appa.htm",
-      "material": false
+      "material": false,
+      "headline": "Amended multi-fund exemptive application filed with SEC",
+      "signal": "clean",
+      "signal_note": "Routine exemptive application"
     },
     {
       "form": "486BPOS",
@@ -818,7 +1121,10 @@
       "label": "486BPOS — 486BPOS",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312525091502/d944656d486bpos.htm",
-      "material": false
+      "material": false,
+      "headline": "Post-effective prospectus amendment updates fees and share repurchase terms",
+      "signal": "clean",
+      "signal_note": "Routine prospectus amendment"
     },
     {
       "form": "424B3",
@@ -826,7 +1132,10 @@
       "label": "Prospectus supplement (offering) — 424B3",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312525086444/d931946d424b3.htm",
-      "material": true
+      "material": true,
+      "headline": "Registered exchange offer for $2B of outstanding notes across four series",
+      "signal": "clean",
+      "signal_note": "Routine notes registration exchange"
     },
     {
       "form": "EFFECT",
@@ -834,7 +1143,10 @@
       "label": "EFFECT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/999999999525001150/xslEFFECTX01/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "SEC notice of effectiveness of registration statement",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "8-K",
@@ -842,7 +1154,10 @@
       "label": "Current report: issued a Regulation FD disclosure; disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000180349825000028/bcred-20250416.htm",
-      "material": true
+      "material": true,
+      "headline": "Declared April distributions; NAV $41.8B and leverage 0.72x at March 31",
+      "signal": "clean",
+      "signal_note": "Routine distribution and NAV update"
     },
     {
       "form": "40-APP/A",
@@ -850,7 +1165,10 @@
       "label": "40-APP/A — 40-APP/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312525079181/d942918d40appa.htm",
-      "material": false
+      "material": false,
+      "headline": "Amended multi-fund exemptive application filed with SEC",
+      "signal": "clean",
+      "signal_note": "Routine exemptive application"
     },
     {
       "form": "POS EX",
@@ -858,7 +1176,10 @@
       "label": "POS EX — POS EX",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000101376225002715/ea0235531-01_posex.htm",
-      "material": false
+      "material": false,
+      "headline": "Post-effective amendment adds exhibits to Form N-2 registration",
+      "signal": "clean",
+      "signal_note": "Routine exhibit filing"
     },
     {
       "form": "8-K",
@@ -866,7 +1187,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000101376225002714/ea0235531-02_8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Issued $1B of 5.54% and 5.79% senior unsecured notes in private placement",
+      "signal": "clean",
+      "signal_note": "Routine unsecured notes issuance"
     },
     {
       "form": "CORRESP",
@@ -874,7 +1198,10 @@
       "label": "CORRESP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312525061485/filename1.htm",
-      "material": false
+      "material": false,
+      "headline": "BCRED submits no-action reliance letter for notes exchange offer",
+      "signal": "clean",
+      "signal_note": "Routine SEC correspondence"
     },
     {
       "form": "CORRESP",
@@ -882,7 +1209,10 @@
       "label": "CORRESP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312525061483/filename1.htm",
-      "material": false
+      "material": false,
+      "headline": "BCRED responds to SEC staff comments on N-14 registration",
+      "signal": "clean",
+      "signal_note": "Routine SEC correspondence"
     },
     {
       "form": "N-14 8C/A",
@@ -890,7 +1220,10 @@
       "label": "N-14 8C/A — N-14 8C/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312525061475/d931946dn148ca.htm",
-      "material": false
+      "material": false,
+      "headline": "BCRED offers to exchange $2B of notes for registered notes",
+      "signal": "clean",
+      "signal_note": "Routine registered notes exchange offer"
     },
     {
       "form": "8-K",
@@ -898,7 +1231,10 @@
       "label": "Current report: issued a Regulation FD disclosure; disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000180349825000025/bcred-20250319.htm",
-      "material": true
+      "material": true,
+      "headline": "BCRED declared March distributions; aggregate NAV about $41.3B, leverage 0.75x",
+      "signal": "clean",
+      "signal_note": "Routine distribution and NAV update"
     },
     {
       "form": "424B3",
@@ -906,7 +1242,10 @@
       "label": "Prospectus supplement (offering) — 424B3",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312525058344/d815506d424b3.htm",
-      "material": true
+      "material": true,
+      "headline": "BCRED prospectus supplement attaches fiscal 2024 Form 10-K",
+      "signal": "clean",
+      "signal_note": "Routine prospectus supplement"
     },
     {
       "form": "40-APP",
@@ -914,7 +1253,10 @@
       "label": "40-APP — 40-APP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312525054849/d940322d40app.htm",
-      "material": false
+      "material": false,
+      "headline": "Blackstone funds seek SEC order permitting certain joint transactions",
+      "signal": "clean",
+      "signal_note": "Routine co-investment exemptive application"
     },
     {
       "form": "IRANNOTICE",
@@ -922,7 +1264,10 @@
       "label": "IRANNOTICE — IRANNOTICE",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000180349825000022/bcredirannotice-q42024.htm",
-      "material": false
+      "material": false,
+      "headline": "BCRED files Iran Threat Reduction Act disclosure notice for 2024",
+      "signal": "clean",
+      "signal_note": "Routine affiliate-based Section 13(r) notice"
     },
     {
       "form": "10-K",
@@ -930,7 +1275,10 @@
       "label": "Annual report (10-K) for period ending 2024-12-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000180349825000021/bcred-20241231.htm",
-      "material": true
+      "material": true,
+      "headline": "BCRED filed fiscal 2024 Form 10-K describing direct-lending strategy",
+      "signal": "clean",
+      "signal_note": "Routine annual report"
     },
     {
       "form": "SC TO-I/A",
@@ -938,7 +1286,10 @@
       "label": "SC TO-I/A — SC TO-I/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000121390025022224/ea0233437-01_sctoia.htm",
-      "material": false
+      "material": false,
+      "headline": "BCRED amends tender offer to repurchase up to 76.4M shares at NAV",
+      "signal": "clean",
+      "signal_note": "Routine share repurchase tender offer"
     },
     {
       "form": "8-K",
@@ -946,7 +1297,10 @@
       "label": "Current report: issued a Regulation FD disclosure; disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000180349825000013/bcred-20250220.htm",
-      "material": true
+      "material": true,
+      "headline": "BCRED declared February distributions; aggregate NAV about $40.0B, leverage 0.77x",
+      "signal": "clean",
+      "signal_note": "Routine distribution and NAV update"
     },
     {
       "form": "40-17G",
@@ -954,7 +1308,10 @@
       "label": "40-17G — 40-17G",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000121390025015689/ea0230950-01_4017g.pdf",
-      "material": false
+      "material": false,
+      "headline": "Filed Form 40-17G fidelity bond on February 20, 2025",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "N-14 8C",
@@ -962,7 +1319,10 @@
       "label": "N-14 8C — N-14 8C",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312525025129/d931946dn148c.htm",
-      "material": false
+      "material": false,
+      "headline": "Registered exchange offer for $1.8B of unsecured notes across four series",
+      "signal": "clean",
+      "signal_note": "Routine notes exchange registration"
     },
     {
       "form": "8-K",
@@ -970,7 +1330,10 @@
       "label": "Current report: issued a Regulation FD disclosure",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000180349825000010/bcred-20250207.htm",
-      "material": true
+      "material": true,
+      "headline": "2024 total net return 11.0% with non-accruals of just 0.5% at cost",
+      "signal": "clean",
+      "signal_note": "Low non-accruals, strong returns"
     },
     {
       "form": "8-K",
@@ -978,7 +1341,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312525021762/d923082d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Issued $150M add-on to 7.300% notes due 2028",
+      "signal": "clean",
+      "signal_note": "Routine unsecured notes issuance"
     },
     {
       "form": "8-K",
@@ -986,7 +1352,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312525019258/d661863d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Priced $150M add-on of 7.300% notes due 2028",
+      "signal": "clean",
+      "signal_note": "Routine notes pricing"
     },
     {
       "form": "424B2",
@@ -994,7 +1363,10 @@
       "label": "Prospectus supplement (offering) — 424B2",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312525019255/d873994d424b2.htm",
-      "material": true
+      "material": true,
+      "headline": "Offered $150M of 7.300% notes due 2028",
+      "signal": "clean",
+      "signal_note": "Routine notes offering"
     },
     {
       "form": "SC TO-I",
@@ -1002,7 +1374,10 @@
       "label": "SC TO-I — SC TO-I",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312525018912/d877097dsctoi.htm",
-      "material": false
+      "material": false,
+      "headline": "Launched quarterly share repurchase tender offer at NAV",
+      "signal": "clean",
+      "signal_note": "Routine share repurchase offer"
     },
     {
       "form": "SC TO-I/A",
@@ -1010,7 +1385,10 @@
       "label": "SC TO-I/A — SC TO-I/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312525018909/d405435dsctoia.htm",
-      "material": false
+      "material": false,
+      "headline": "Reported results of tender offer for up to 71.5M shares at NAV",
+      "signal": "clean",
+      "signal_note": "Routine repurchase results"
     },
     {
       "form": "FWP",
@@ -1018,7 +1396,10 @@
       "label": "FWP — FWP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312525017348/d923795dfwp.htm",
-      "material": false
+      "material": false,
+      "headline": "Pricing term sheet for $150M of 7.300% notes due 2028",
+      "signal": "clean",
+      "signal_note": "Routine notes pricing term sheet"
     },
     {
       "form": "424B2",
@@ -1026,7 +1407,10 @@
       "label": "Prospectus supplement (offering) — 424B2",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312525016893/d873994d424b2.htm",
-      "material": true
+      "material": true,
+      "headline": "Filed preliminary supplement for 7.300% notes due 2028",
+      "signal": "clean",
+      "signal_note": "Routine notes offering"
     },
     {
       "form": "N-2ASR",
@@ -1034,7 +1418,10 @@
       "label": "N-2ASR — N-2ASR",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312525016793/d153529dn2asr.htm",
-      "material": false
+      "material": false,
+      "headline": "Filed automatic shelf registration for debt securities offerings",
+      "signal": "clean",
+      "signal_note": "Routine shelf registration"
     },
     {
       "form": "8-K",
@@ -1042,7 +1429,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312525015836/d804183d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Closed $1B of 6.000% unsecured notes due 2032",
+      "signal": "clean",
+      "signal_note": "Routine note issuance"
     },
     {
       "form": "424B1",
@@ -1050,7 +1440,10 @@
       "label": "424B1 — 424B1",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312525012271/d860834d424b1.htm",
-      "material": false
+      "material": false,
+      "headline": "Prospectus shows $64.7B assets, $26.7B debt at September 30",
+      "signal": "clean",
+      "signal_note": "Routine offering prospectus"
     },
     {
       "form": "8-K",
@@ -1058,7 +1451,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312525011464/d877647d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Priced $1B of 6.000% notes due 2032",
+      "signal": "clean",
+      "signal_note": "Routine note pricing"
     },
     {
       "form": "8-K",
@@ -1066,7 +1462,10 @@
       "label": "Current report: issued a Regulation FD disclosure; disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000180349825000006/bcred-20250122.htm",
-      "material": true
+      "material": true,
+      "headline": "December NAV about $38.9B; leverage 0.77x, distributions declared",
+      "signal": "clean",
+      "signal_note": "Routine NAV and distribution update"
     },
     {
       "form": "FWP",
@@ -1074,7 +1473,10 @@
       "label": "FWP — FWP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312525010450/d877368dfwp.htm",
-      "material": false
+      "material": false,
+      "headline": "Pricing term sheet for $1B 6.000% notes due 2032",
+      "signal": "clean",
+      "signal_note": "Routine pricing term sheet"
     },
     {
       "form": "EFFECT",
@@ -1082,7 +1484,10 @@
       "label": "EFFECT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/999999999525000145/xslEFFECTX01/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "SEC declared registration statement effective January 21",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "CORRESP",
@@ -1090,7 +1495,10 @@
       "label": "CORRESP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312525005857/filename1.htm",
-      "material": false
+      "material": false,
+      "headline": "Responded to SEC staff comments on N-2 registration statement",
+      "signal": "clean",
+      "signal_note": "Routine SEC correspondence"
     },
     {
       "form": "N-2/A",
@@ -1098,7 +1506,10 @@
       "label": "N-2/A — N-2/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312525005852/d860834dn2a.htm",
-      "material": false
+      "material": false,
+      "headline": "Amended N-2 shows $64.7B assets, $26.7B debt at September 30",
+      "signal": "clean",
+      "signal_note": "Routine registration amendment"
     },
     {
       "form": "8-K",
@@ -1106,7 +1517,10 @@
       "label": "Current report: issued a Regulation FD disclosure; disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000180349824000069/bcred-20241219.htm",
-      "material": true
+      "material": true,
+      "headline": "November NAV about $38.4B; leverage 0.75x, distributions declared",
+      "signal": "clean",
+      "signal_note": "Routine NAV and distribution update"
     },
     {
       "form": "4",
@@ -1114,7 +1528,10 @@
       "label": "4 — 4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000095017024136675/xslF345X05/ownership.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider filed Form 4 reporting a December 12 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider ownership filing"
     },
     {
       "form": "SC TO-I/A",
@@ -1122,7 +1539,10 @@
       "label": "SC TO-I/A — SC TO-I/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312524273544/d864442dsctoia.htm",
-      "material": false
+      "material": false,
+      "headline": "Amended tender offer to repurchase up to 71.5M shares at NAV",
+      "signal": "clean",
+      "signal_note": "Routine quarterly repurchase offer"
     },
     {
       "form": "N-2/A",
@@ -1130,7 +1550,10 @@
       "label": "N-2/A — N-2/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312524266217/d852093dn2a.htm",
-      "material": false
+      "material": false,
+      "headline": "N-2/A shows $64.7B assets and $26.7B debt at September 30",
+      "signal": "clean",
+      "signal_note": "Routine shelf registration amendment"
     },
     {
       "form": "8-K",
@@ -1138,7 +1561,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312524264308/d798010d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Priced $400M 5.60% notes due 2029 and $600M 6.00% notes due 2034",
+      "signal": "clean",
+      "signal_note": "Ordinary unsecured notes offering"
     },
     {
       "form": "8-K",
@@ -1146,7 +1572,10 @@
       "label": "Current report: issued a Regulation FD disclosure; disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000180349824000066/bcred-20241119.htm",
-      "material": true
+      "material": true,
+      "headline": "Declared November distributions; aggregate NAV about $37.4B at October 31",
+      "signal": "clean",
+      "signal_note": "Distribution declared as normal"
     },
     {
       "form": "POS EX",
@@ -1154,7 +1583,10 @@
       "label": "POS EX — POS EX",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312524261377/d828465dposex.htm",
-      "material": false
+      "material": false,
+      "headline": "Post-effective amendment filed solely to add previously omitted exhibits",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "424B3",
@@ -1162,7 +1594,10 @@
       "label": "Prospectus supplement (offering) — 424B3",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312524261375/d861889d424b3.htm",
-      "material": true
+      "material": true,
+      "headline": "Investment adviser reassigned to Blackstone Private Credit Strategies effective January 2025",
+      "signal": "clean",
+      "signal_note": "Reorganization with no fee change"
     },
     {
       "form": "IRANNOTICE",
@@ -1170,7 +1605,10 @@
       "label": "IRANNOTICE — IRANNOTICE",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000180349824000063/bcredirannotice-q32024.htm",
-      "material": false
+      "material": false,
+      "headline": "Filed Iran Threat Reduction Act disclosure notice tied to Q3 10-Q",
+      "signal": "clean",
+      "signal_note": "Routine affiliate-related disclosure"
     },
     {
       "form": "10-Q",
@@ -1178,7 +1616,10 @@
       "label": "Quarterly report (10-Q) for period ending 2024-09-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000180349824000062/bcred-20240930.htm",
-      "material": true
+      "material": true,
+      "headline": "Filed Q3 2024 10-Q with routine accounting-policy disclosures",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results"
     },
     {
       "form": "SC TO-I",
@@ -1186,7 +1627,10 @@
       "label": "SC TO-I — SC TO-I",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312524249285/d905332dsctoi.htm",
-      "material": false
+      "material": false,
+      "headline": "Launched tender offer to repurchase Class I, D and S shares at NAV",
+      "signal": "clean",
+      "signal_note": "Routine quarterly repurchase offer"
     },
     {
       "form": "SC TO-I/A",
@@ -1194,7 +1638,10 @@
       "label": "SC TO-I/A — SC TO-I/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312524249275/d905363dsctoia.htm",
-      "material": false
+      "material": false,
+      "headline": "Final amendment reports results of tender offer for up to 66.6M shares at NAV",
+      "signal": "clean",
+      "signal_note": "Routine tender offer results"
     },
     {
       "form": "8-K",
@@ -1202,7 +1649,10 @@
       "label": "Current report: issued a Regulation FD disclosure",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000180349824000057/bcred-20241025.htm",
-      "material": true
+      "material": true,
+      "headline": "Q3 non-accruals low at 0.4% as Moody's upgrades BCRED to Baa2",
+      "signal": "clean",
+      "signal_note": "Low non-accruals, ratings upgrade"
     },
     {
       "form": "8-K",
@@ -1210,7 +1660,10 @@
       "label": "Current report: issued a Regulation FD disclosure; disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000180349824000054/bcred-20241016.htm",
-      "material": true
+      "material": true,
+      "headline": "October distributions declared; aggregate NAV about $36.4 billion at leverage 0.69x",
+      "signal": "clean",
+      "signal_note": "Routine distribution and NAV update"
     },
     {
       "form": "424B3",
@@ -1218,7 +1671,10 @@
       "label": "Prospectus supplement (offering) — 424B3",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312524235638/d747648d424b3.htm",
-      "material": true
+      "material": true,
+      "headline": "Offer to exchange $1.5 billion of registered notes for restricted notes",
+      "signal": "clean",
+      "signal_note": "Routine registered exchange offer"
     },
     {
       "form": "EFFECT",
@@ -1226,7 +1682,10 @@
       "label": "EFFECT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/999999999524003137/xslEFFECTX01/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "SEC notice of effectiveness for registration statement",
+      "signal": "clean",
+      "signal_note": "Routine effectiveness notice"
     },
     {
       "form": "CORRESP",
@@ -1234,7 +1693,10 @@
       "label": "CORRESP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312524231233/filename1.htm",
-      "material": false
+      "material": false,
+      "headline": "Counsel responds to SEC staff comments on N-14 registration statement",
+      "signal": "clean",
+      "signal_note": "Routine SEC comment response"
     },
     {
       "form": "N-14 8C/A",
@@ -1242,7 +1704,10 @@
       "label": "N-14 8C/A — N-14 8C/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312524231228/d747648dn148ca.htm",
-      "material": false
+      "material": false,
+      "headline": "Amended N-14 registration for $1.5 billion notes exchange offer",
+      "signal": "clean",
+      "signal_note": "Routine registration amendment"
     },
     {
       "form": "CORRESP",
@@ -1250,7 +1715,10 @@
       "label": "CORRESP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312524231223/filename1.htm",
-      "material": false
+      "material": false,
+      "headline": "Counsel confirms compliance with co-investment order in SEC comment response",
+      "signal": "clean",
+      "signal_note": "Routine SEC comment response"
     },
     {
       "form": "8-K",
@@ -1258,7 +1726,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312524226988/d781229d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Priced $800M of unsecured notes: 4.95% due 2027 and 5.25% due 2030",
+      "signal": "clean",
+      "signal_note": "Routine unsecured notes offering"
     },
     {
       "form": "8-K",
@@ -1266,7 +1737,10 @@
       "label": "Current report: issued a Regulation FD disclosure; disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000180349824000051/bcred-20240919.htm",
-      "material": true
+      "material": true,
+      "headline": "September distributions declared; aggregate NAV about $36.0 billion at leverage 0.68x",
+      "signal": "clean",
+      "signal_note": "Routine distribution and NAV update"
     },
     {
       "form": "SC TO-I/A",
@@ -1274,7 +1748,10 @@
       "label": "SC TO-I/A — SC TO-I/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312524215960/d891094dsctoia.htm",
-      "material": false
+      "material": false,
+      "headline": "Amended tender offer to repurchase up to 66.6M shares at Sept 30 NAV",
+      "signal": "clean",
+      "signal_note": "Routine tender offer update"
     },
     {
       "form": "8-K",
@@ -1282,7 +1759,10 @@
       "label": "Current report: issued a Regulation FD disclosure; disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000180349824000048/bcred-20240820.htm",
-      "material": true
+      "material": true,
+      "headline": "Declared August distributions; NAV $35.0B, leverage 0.66x at July 31",
+      "signal": "clean",
+      "signal_note": "Routine distribution and NAV update"
     },
     {
       "form": "424B3",
@@ -1290,7 +1770,10 @@
       "label": "Prospectus supplement (offering) — 424B3",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312524203663/d878542d424b3.htm",
-      "material": true
+      "material": true,
+      "headline": "Prospectus supplement attaches Q2 10-Q; 0.07% direct-lending loss rate",
+      "signal": "clean",
+      "signal_note": "Routine prospectus supplement"
     },
     {
       "form": "IRANNOTICE",
@@ -1298,7 +1781,10 @@
       "label": "IRANNOTICE — IRANNOTICE",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000180349824000045/bcredirannotice-q22024.htm",
-      "material": false
+      "material": false,
+      "headline": "Iran Threat Reduction Act notice tied to common-control affiliates, not BCRED",
+      "signal": "clean",
+      "signal_note": "Routine Section 13(r) notice"
     },
     {
       "form": "10-Q",
@@ -1306,7 +1792,10 @@
       "label": "Quarterly report (10-Q) for period ending 2024-06-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000180349824000044/bcred-20240630.htm",
-      "material": true
+      "material": true,
+      "headline": "Q2 10-Q reports $26.9M non-recurring interest income; routine accounting disclosures",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results"
     },
     {
       "form": "SC TO-I",
@@ -1314,7 +1803,10 @@
       "label": "SC TO-I — SC TO-I",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312524192182/d871188dsctoi.htm",
-      "material": false
+      "material": false,
+      "headline": "Launched tender offer to repurchase shares at June 30 NAV",
+      "signal": "clean",
+      "signal_note": "Routine tender offer"
     },
     {
       "form": "SC TO-I/A",
@@ -1322,7 +1814,10 @@
       "label": "SC TO-I/A — SC TO-I/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312524192177/d874461dsctoia.htm",
-      "material": false
+      "material": false,
+      "headline": "Final amendment reports results of prior tender offer for up to 60.8M shares",
+      "signal": "clean",
+      "signal_note": "Routine tender offer results"
     },
     {
       "form": "8-K",
@@ -1330,7 +1825,10 @@
       "label": "Current report: issued a Regulation FD disclosure",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000180349824000036/bcred-20240726.htm",
-      "material": true
+      "material": true,
+      "headline": "Q2 Class I net return 2.9%; non-accruals just 0.4% at cost",
+      "signal": "clean",
+      "signal_note": "Routine strong quarterly commentary"
     },
     {
       "form": "8-K",
@@ -1338,7 +1836,10 @@
       "label": "Current report: issued a Regulation FD disclosure; disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000180349824000033/bcred-20240717.htm",
-      "material": true
+      "material": true,
+      "headline": "Declared July distributions; NAV $34.1B, leverage 0.67x at June 30",
+      "signal": "clean",
+      "signal_note": "Routine distribution and NAV update"
     },
     {
       "form": "CORRESP",
@@ -1346,7 +1847,10 @@
       "label": "CORRESP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312524167947/filename1.htm",
-      "material": false
+      "material": false,
+      "headline": "Counsel responds to SEC staff comments on Form N-14 registration statement",
+      "signal": "clean",
+      "signal_note": "Routine SEC comment response"
     },
     {
       "form": "N-14 8C/A",
@@ -1354,7 +1858,10 @@
       "label": "N-14 8C/A — N-14 8C/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312524167935/d747648dn148ca.htm",
-      "material": false
+      "material": false,
+      "headline": "Registered exchange offer for $1.5B of 7.30%, 6.25% and 5.95% notes",
+      "signal": "clean",
+      "signal_note": "Routine registered notes exchange offer"
     },
     {
       "form": "CORRESP",
@@ -1362,7 +1869,10 @@
       "label": "CORRESP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312524167929/filename1.htm",
-      "material": false
+      "material": false,
+      "headline": "Filed responses to SEC staff comments on notes registration statement",
+      "signal": "clean",
+      "signal_note": "Routine SEC comment response letter"
     },
     {
       "form": "8-K",
@@ -1370,7 +1880,10 @@
       "label": "Current report: issued a Regulation FD disclosure; disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000180349824000030/bcred-20240620.htm",
-      "material": true
+      "material": true,
+      "headline": "June distributions declared; aggregate NAV $33.5B, leverage 0.71x at May 31",
+      "signal": "clean",
+      "signal_note": "Routine distributions and NAV update"
     },
     {
       "form": "SC TO-I/A",
@@ -1378,7 +1891,10 @@
       "label": "SC TO-I/A — SC TO-I/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312524157463/d730601dsctoia.htm",
-      "material": false
+      "material": false,
+      "headline": "Amended tender offer to repurchase up to 60.8M shares at June 30 NAV",
+      "signal": "clean",
+      "signal_note": "Routine share repurchase tender update"
     },
     {
       "form": "8-K",
@@ -1386,7 +1902,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312524149140/d769772d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Closed $500M of 5.950% notes due 2029; net proceeds $488.3M",
+      "signal": "clean",
+      "signal_note": "Ordinary unsecured notes offering"
     },
     {
       "form": "8-K",
@@ -1394,7 +1913,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312524144487/d814344d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Priced $500M of 5.950% notes due 2029 in private placement",
+      "signal": "clean",
+      "signal_note": "Ordinary unsecured notes pricing"
     },
     {
       "form": "8-K",
@@ -1402,7 +1924,10 @@
       "label": "Current report: issued a Regulation FD disclosure; disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000180349824000026/bcred-20240520.htm",
-      "material": true
+      "material": true,
+      "headline": "May distributions declared; aggregate NAV $32.2B, leverage 0.75x at April 30",
+      "signal": "clean",
+      "signal_note": "Routine distributions and NAV update"
     },
     {
       "form": "424B3",
@@ -1410,7 +1935,10 @@
       "label": "Prospectus supplement (offering) — 424B3",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312524141931/d829649d424b3.htm",
-      "material": true
+      "material": true,
+      "headline": "Prospectus supplement adds Chief Securities Counsel and attaches Q1 10-Q",
+      "signal": "clean",
+      "signal_note": "Routine prospectus supplement update"
     },
     {
       "form": "IRANNOTICE",
@@ -1418,7 +1946,10 @@
       "label": "IRANNOTICE — IRANNOTICE",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000180349824000023/bcredirannotice-q12024.htm",
-      "material": false
+      "material": false,
+      "headline": "Filed Iran Threat Reduction Act disclosure notice for Q1 10-Q",
+      "signal": "clean",
+      "signal_note": "Routine Section 13(r) disclosure notice"
     },
     {
       "form": "10-Q",
@@ -1426,7 +1957,10 @@
       "label": "Quarterly report (10-Q) for period ending 2024-03-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000180349824000022/bcred-20240331.htm",
-      "material": true
+      "material": true,
+      "headline": "Q1 2024 10-Q details accounting policies for derivatives, interest and PIK income",
+      "signal": "clean",
+      "signal_note": "Routine quarterly report accounting disclosures"
     },
     {
       "form": "SC TO-I",
@@ -1434,7 +1968,10 @@
       "label": "SC TO-I — SC TO-I",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312524130033/d826159dsctoi.htm",
-      "material": false
+      "material": false,
+      "headline": "Launched issuer tender offer to repurchase shares at quarterly NAV",
+      "signal": "clean",
+      "signal_note": "Routine share repurchase tender offer"
     },
     {
       "form": "SC TO-I/A",
@@ -1442,7 +1979,10 @@
       "label": "SC TO-I/A — SC TO-I/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312524130026/d813649dsctoia.htm",
-      "material": false
+      "material": false,
+      "headline": "Final amendment reports results of tender offer for up to 56.2M shares",
+      "signal": "clean",
+      "signal_note": "Routine repurchase tender results"
     },
     {
       "form": "3",
@@ -1450,7 +1990,10 @@
       "label": "3 — 3",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000095017024051556/xslF345X02/ownership.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider filed Form 3 initial ownership statement dated May 2024",
+      "signal": "clean",
+      "signal_note": "Routine insider ownership filing"
     },
     {
       "form": "8-K",
@@ -1458,7 +2001,10 @@
       "label": "Current report: changed a director or senior officer",
       "category": "Personnel",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312524128096/d815388d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Board appointed Lucie Enns as Chief Securities Counsel",
+      "signal": "clean",
+      "signal_note": "Routine officer appointment"
     },
     {
       "form": "8-K",
@@ -1466,7 +2012,10 @@
       "label": "Current report: issued a Regulation FD disclosure",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312524118496/d824852d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Q1 delivered 3.1% total net return with 10.4% annualized distribution rate",
+      "signal": "clean",
+      "signal_note": "Routine quarterly portfolio commentary"
     },
     {
       "form": "N-2",
@@ -1474,7 +2023,10 @@
       "label": "Registration statement (N-2) — N-2",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312524118333/d823678dn2.htm",
-      "material": true
+      "material": true,
+      "headline": "Filed N-2 registration detailing share classes, fees and repurchase terms",
+      "signal": "clean",
+      "signal_note": "Routine continuous offering registration"
     },
     {
       "form": "3",
@@ -1482,7 +2034,10 @@
       "label": "3 — 3",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000095017024047854/xslF345X02/ownership.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider filed Form 3 initial ownership statement dated April 2024",
+      "signal": "clean",
+      "signal_note": "Routine insider ownership filing"
     },
     {
       "form": "UPLOAD",
@@ -1490,7 +2045,10 @@
       "label": "UPLOAD",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000000000024004269/filename1.pdf",
-      "material": false
+      "material": false,
+      "headline": "UPLOAD document filed with SEC dated April 18, 2024",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "8-K",
@@ -1498,7 +2056,10 @@
       "label": "Current report: issued a Regulation FD disclosure; disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000180349824000017/bcred-20240417.htm",
-      "material": true
+      "material": true,
+      "headline": "Declared April distributions and sold unregistered Class I shares to feeder vehicles",
+      "signal": "clean",
+      "signal_note": "Routine distribution declaration"
     },
     {
       "form": "4",
@@ -1506,7 +2067,10 @@
       "label": "4 — 4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000095017024036030/xslF345X05/ownership.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider reported Form 4 transaction dated March 2024",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction filing"
     },
     {
       "form": "8-K",
@@ -1514,7 +2078,10 @@
       "label": "Current report: issued a Regulation FD disclosure; disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000180349824000013/bcred-20240321.htm",
-      "material": true
+      "material": true,
+      "headline": "BCRED declared March distributions; February NAV about $30.5 billion at 0.79x leverage",
+      "signal": "clean",
+      "signal_note": "Routine distribution and NAV update"
     },
     {
       "form": "424B3",
@@ -1522,7 +2089,10 @@
       "label": "Prospectus supplement (offering) — 424B3",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312524071729/d771556d424b3.htm",
-      "material": true
+      "material": true,
+      "headline": "BCRED prospectus supplement attaches 2023 Form 10-K; 0.09% direct-lending loss rate cited",
+      "signal": "clean",
+      "signal_note": "Routine prospectus supplement"
     },
     {
       "form": "IRANNOTICE",
@@ -1530,7 +2100,10 @@
       "label": "IRANNOTICE — IRANNOTICE",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312524069247/d778920dirannotice.htm",
-      "material": false
+      "material": false,
+      "headline": "BCRED files Iran-related Section 13(r) disclosure notice tied to affiliates",
+      "signal": "clean",
+      "signal_note": "Routine affiliate sanctions disclosure"
     },
     {
       "form": "10-K",
@@ -1538,7 +2111,10 @@
       "label": "Annual report (10-K) for period ending 2023-12-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000180349824000007/bcred-20231231.htm",
-      "material": true
+      "material": true,
+      "headline": "BCRED files 2023 annual report detailing advisory management and incentive fee terms",
+      "signal": "clean",
+      "signal_note": "Routine annual report disclosure"
     },
     {
       "form": "SC TO-I/A",
@@ -1546,7 +2122,10 @@
       "label": "SC TO-I/A — SC TO-I/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312524061508/d738713dsctoia.htm",
-      "material": false
+      "material": false,
+      "headline": "BCRED amends tender offer with Q1 distribution and tender offer update",
+      "signal": "clean",
+      "signal_note": "Routine tender offer amendment"
     },
     {
       "form": "8-K",
@@ -1554,7 +2133,10 @@
       "label": "Current report: amended its charter or bylaws; issued a Regulation FD disclosure",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312524043597/d780966d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "BCRED declared February distributions; January NAV about $29.6 billion, amended governance documents",
+      "signal": "clean",
+      "signal_note": "Routine distributions and governance update"
     },
     {
       "form": "N-14 8C",
@@ -1562,7 +2144,10 @@
       "label": "N-14 8C — N-14 8C",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312524035195/d747648dn148c.htm",
-      "material": false
+      "material": false,
+      "headline": "BCRED registers exchange offer for $1 billion of 7.300% and 6.250% notes",
+      "signal": "clean",
+      "signal_note": "Routine notes registration exchange"
     },
     {
       "form": "SC TO-I",
@@ -1570,7 +2155,10 @@
       "label": "SC TO-I — SC TO-I",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312524021849/d699419dsctoi.htm",
-      "material": false
+      "material": false,
+      "headline": "BCRED launches tender offer to repurchase up to 56.2 million shares at NAV",
+      "signal": "clean",
+      "signal_note": "Routine share repurchase tender"
     },
     {
       "form": "SC TO-I/A",
@@ -1578,7 +2166,10 @@
       "label": "SC TO-I/A — SC TO-I/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312524021841/d753494dsctoia.htm",
-      "material": false
+      "material": false,
+      "headline": "BCRED final amendment reports results of prior share tender offer",
+      "signal": "clean",
+      "signal_note": "Routine tender offer results"
     },
     {
       "form": "40-17G",
@@ -1586,7 +2177,10 @@
       "label": "40-17G — 40-17G",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312524021616/d747245d4017g.htm",
-      "material": false
+      "material": false,
+      "headline": "BCRED files annual fidelity bond coverage under Rule 17g-1",
+      "signal": "clean",
+      "signal_note": "Routine fidelity bond filing"
     },
     {
       "form": "8-K",
@@ -1594,7 +2188,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312524017380/d746019d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Closed $500M of 6.250% unsecured notes due 2031, netting $486.4M",
+      "signal": "clean",
+      "signal_note": "Routine unsecured notes offering"
     },
     {
       "form": "8-K",
@@ -1602,7 +2199,10 @@
       "label": "Current report: issued a Regulation FD disclosure",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312524017369/d741953d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Third anniversary update touts 14.4% 2023 Class I total return, 10.5% yield",
+      "signal": "clean",
+      "signal_note": "Routine portfolio commentary"
     },
     {
       "form": "8-K",
@@ -1610,7 +2210,10 @@
       "label": "Current report: issued a Regulation FD disclosure",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312524014869/d673452d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "December NAV $28.5B, distributions declared, leverage 0.81x",
+      "signal": "clean",
+      "signal_note": "Routine NAV and distribution update"
     },
     {
       "form": "8-K",
@@ -1618,7 +2221,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312524012169/d640497d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Priced $500M of 6.250% notes due 2031 in private placement",
+      "signal": "clean",
+      "signal_note": "Routine notes pricing"
     },
     {
       "form": "8-K",
@@ -1626,7 +2232,10 @@
       "label": "Current report: issued a Regulation FD disclosure; disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312523299403/d539720d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "November NAV $27.9B, distributions declared, leverage 0.83x",
+      "signal": "clean",
+      "signal_note": "Routine NAV and distribution update"
     },
     {
       "form": "SC TO-I/A",
@@ -1634,7 +2243,10 @@
       "label": "SC TO-I/A — SC TO-I/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312523289603/d579814dsctoia.htm",
-      "material": false
+      "material": false,
+      "headline": "Amended tender offer to repurchase up to 51.8M shares at NAV",
+      "signal": "clean",
+      "signal_note": "Routine share repurchase tender"
     },
     {
       "form": "8-K",
@@ -1642,7 +2254,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312523284316/d907081d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Closed $500M of 7.300% unsecured notes due 2028, netting $489.1M",
+      "signal": "clean",
+      "signal_note": "Routine unsecured notes offering"
     },
     {
       "form": "8-K",
@@ -1650,7 +2265,10 @@
       "label": "Current report: issued a Regulation FD disclosure; disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312523281082/d819252d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "October NAV $27.0B, distributions declared, leverage 0.85x",
+      "signal": "clean",
+      "signal_note": "Routine NAV and distribution update"
     },
     {
       "form": "8-K",
@@ -1658,7 +2276,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312523279822/d533900d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Priced $500M of 7.300% notes due 2028 in private placement",
+      "signal": "clean",
+      "signal_note": "Routine notes pricing"
     },
     {
       "form": "424B3",
@@ -1666,7 +2287,10 @@
       "label": "Prospectus supplement (offering) — 424B3",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312523277946/d361929d424b3.htm",
-      "material": true
+      "material": true,
+      "headline": "Prospectus supplement adds Q3 10-Q, BXCI consolidation and treasurer change",
+      "signal": "clean",
+      "signal_note": "Routine prospectus and governance updates"
     },
     {
       "form": "IRANNOTICE",
@@ -1674,7 +2298,10 @@
       "label": "IRANNOTICE — IRANNOTICE",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312523276226/d587951dirannotice.htm",
-      "material": false
+      "material": false,
+      "headline": "BCRED files routine Iran Threat Reduction Act disclosure tied to common-control affiliates",
+      "signal": "clean",
+      "signal_note": "Routine Section 13(r) affiliate disclosure"
     },
     {
       "form": "10-Q",
@@ -1682,7 +2309,10 @@
       "label": "Quarterly report (10-Q) for period ending 2023-09-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000180349823000021/bcred-20230930.htm",
-      "material": true
+      "material": true,
+      "headline": "BCRED files Q3 2023 10-Q with routine accounting-policy disclosures",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results"
     },
     {
       "form": "SC TO-I",
@@ -1690,7 +2320,10 @@
       "label": "SC TO-I — SC TO-I",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312523268929/d543143dsctoi.htm",
-      "material": false
+      "material": false,
+      "headline": "BCRED launches issuer tender offer to repurchase shares at NAV",
+      "signal": "clean",
+      "signal_note": "Routine quarterly share repurchase offer"
     },
     {
       "form": "SC TO-I/A",
@@ -1698,7 +2331,10 @@
       "label": "SC TO-I/A — SC TO-I/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312523268859/d549376dsctoia.htm",
-      "material": false
+      "material": false,
+      "headline": "BCRED files final amendment reporting results of share tender offer",
+      "signal": "clean",
+      "signal_note": "Routine tender offer results"
     },
     {
       "form": "8-K",
@@ -1706,7 +2342,10 @@
       "label": "Current report: issued a Regulation FD disclosure",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312523260934/d399784d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "BCRED posts 4.1% Q3 total return with non-accruals at 0.2% of cost",
+      "signal": "clean",
+      "signal_note": "Strong quarter, Moody's outlook upgraded"
     },
     {
       "form": "8-K",
@@ -1714,7 +2353,10 @@
       "label": "Current report: issued a Regulation FD disclosure; disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312523258936/d440855d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "BCRED declares October distributions; NAV $26.2B, leverage 0.88x",
+      "signal": "clean",
+      "signal_note": "Routine distribution and NAV update"
     },
     {
       "form": "8-K",
@@ -1722,7 +2364,10 @@
       "label": "Current report: issued a Regulation FD disclosure; disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312523239146/d521842d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "BCRED declares September distributions; NAV $25.5B, leverage 0.93x",
+      "signal": "clean",
+      "signal_note": "Routine distribution and NAV update"
     },
     {
       "form": "SC TO-I/A",
@@ -1730,7 +2375,10 @@
       "label": "SC TO-I/A — SC TO-I/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312523229184/d458427dsctoia.htm",
-      "material": false
+      "material": false,
+      "headline": "BCRED amends tender offer to add Q3 distribution and tender update communication",
+      "signal": "clean",
+      "signal_note": "Routine tender offer amendment"
     },
     {
       "form": "CORRESP",
@@ -1738,7 +2386,10 @@
       "label": "CORRESP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312523221581/filename1.htm",
-      "material": false
+      "material": false,
+      "headline": "BCRED responds to SEC staff comments on N-2 notes registration statement",
+      "signal": "clean",
+      "signal_note": "Routine SEC comment-letter response"
     },
     {
       "form": "N-2/A",
@@ -1746,7 +2397,10 @@
       "label": "N-2/A — N-2/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312523221577/d351867dn2a.htm",
-      "material": false
+      "material": false,
+      "headline": "BCRED files N-2 amendment for offering of unsecured notes",
+      "signal": "clean",
+      "signal_note": "Routine unsecured notes registration"
     },
     {
       "form": "8-K",
@@ -1754,7 +2408,10 @@
       "label": "Current report: issued a Regulation FD disclosure; disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312523215469/d522237d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "BCRED raised monthly distribution to $0.22; July NAV $24.8B, leverage 0.98x",
+      "signal": "clean",
+      "signal_note": "Distribution increased, routine NAV update"
     },
     {
       "form": "424B3",
@@ -1762,7 +2419,10 @@
       "label": "Prospectus supplement (offering) — 424B3",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312523215114/d470145d424b3.htm",
-      "material": true
+      "material": true,
+      "headline": "Prospectus supplement updates suitability standards and names new Chief Legal Officer",
+      "signal": "clean",
+      "signal_note": "Routine prospectus supplement"
     },
     {
       "form": "IRANNOTICE",
@@ -1770,7 +2430,10 @@
       "label": "IRANNOTICE — IRANNOTICE",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312523210874/d467695dirannotice.htm",
-      "material": false
+      "material": false,
+      "headline": "Iran Threat Reduction Act disclosure filed, based on affiliate not BCRED conduct",
+      "signal": "clean",
+      "signal_note": "Routine affiliate disclosure notice"
     },
     {
       "form": "10-Q",
@@ -1778,7 +2441,10 @@
       "label": "Quarterly report (10-Q) for period ending 2023-06-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000180349823000017/bcred-20230630.htm",
-      "material": true
+      "material": true,
+      "headline": "BCRED files Q2 2023 10-Q with routine accounting-policy disclosures",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results"
     },
     {
       "form": "SC TO-I",
@@ -1786,7 +2452,10 @@
       "label": "SC TO-I — SC TO-I",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312523203479/d844973dsctoi.htm",
-      "material": false
+      "material": false,
+      "headline": "BCRED launches quarterly tender offer to repurchase shares at NAV",
+      "signal": "clean",
+      "signal_note": "Routine share repurchase offer"
     },
     {
       "form": "SC TO-I/A",
@@ -1794,7 +2463,10 @@
       "label": "SC TO-I/A — SC TO-I/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312523203417/d425611dsctoia.htm",
-      "material": false
+      "material": false,
+      "headline": "Final amendment reports results of BCRED tender offer for 46.6M shares",
+      "signal": "clean",
+      "signal_note": "Routine tender offer results"
     },
     {
       "form": "3",
@@ -1802,7 +2474,10 @@
       "label": "3 — FORM 3 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000089924323017751/xslF345X02/doc3.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider files Form 3 initial ownership statement for BCRED",
+      "signal": "clean",
+      "signal_note": "Routine insider ownership filing"
     },
     {
       "form": "8-K",
@@ -1810,7 +2485,10 @@
       "label": "Current report: changed a director or senior officer; amended its charter or bylaws",
       "category": "Personnel",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312523202283/d520871d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "BCRED named Oran Ebel Chief Legal Officer; raised distribution to $0.22",
+      "signal": "clean",
+      "signal_note": "Officer change, distribution increased"
     },
     {
       "form": "8-K",
@@ -1818,7 +2496,10 @@
       "label": "Current report: reported quarterly results; issued a Regulation FD disclosure",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312523191860/d490357d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "BCRED reported 2.9% Q2 total return and 10.2% annualized distribution yield",
+      "signal": "clean",
+      "signal_note": "Routine portfolio commentary"
     },
     {
       "form": "8-K",
@@ -1826,7 +2507,10 @@
       "label": "Current report: issued a Regulation FD disclosure; disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312523190097/d353866d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "BCRED declared July distributions; June NAV $23.8B, leverage 0.99x",
+      "signal": "clean",
+      "signal_note": "Routine distribution and NAV update"
     },
     {
       "form": "4",
@@ -1834,7 +2518,10 @@
       "label": "4 — FORM 4 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000089924323016236/xslF345X04/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider reported a Form 4 transaction in Blackstone Private Credit Fund",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 4"
     },
     {
       "form": "8-K",
@@ -1842,7 +2529,10 @@
       "label": "Current report: issued a Regulation FD disclosure; disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312523170675/d508136d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "BCRED declared June distributions; aggregate NAV $24.0B, leverage 1.05x",
+      "signal": "clean",
+      "signal_note": "Routine monthly distribution and NAV update"
     },
     {
       "form": "8-K",
@@ -1850,7 +2540,10 @@
       "label": "Current report: entered a material agreement",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312523165683/d588140d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "BCRED amended credit agreement, extending revolver and term loan maturities to 2028",
+      "signal": "watch",
+      "signal_note": "Amend-and-extend of credit facility"
     },
     {
       "form": "SC TO-I/A",
@@ -1858,7 +2551,10 @@
       "label": "SC TO-I/A — SC TO-I/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312523161283/d468363dsctoia.htm",
-      "material": false
+      "material": false,
+      "headline": "BCRED filed tender offer amendment on Q2 distribution and repurchase update",
+      "signal": "clean",
+      "signal_note": "Routine share repurchase tender update"
     },
     {
       "form": "3",
@@ -1866,7 +2562,10 @@
       "label": "3 — FORM 3 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000089924323013264/xslF345X02/doc3.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider filed initial Form 3 ownership statement for Blackstone Private Credit Fund",
+      "signal": "clean",
+      "signal_note": "Routine initial ownership filing"
     },
     {
       "form": "3",
@@ -1874,7 +2573,10 @@
       "label": "3 — FORM 3 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000089924323013260/xslF345X02/doc3.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider filed initial Form 3 ownership statement for Blackstone Private Credit Fund",
+      "signal": "clean",
+      "signal_note": "Routine initial ownership filing"
     },
     {
       "form": "3",
@@ -1882,7 +2584,10 @@
       "label": "3 — FORM 3 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000089924323013258/xslF345X02/doc3.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider filed initial Form 3 ownership statement for Blackstone Private Credit Fund",
+      "signal": "clean",
+      "signal_note": "Routine initial ownership filing"
     },
     {
       "form": "3",
@@ -1890,7 +2595,10 @@
       "label": "3 — FORM 3 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000089924323013252/xslF345X02/doc3.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider filed initial Form 3 ownership statement for Blackstone Private Credit Fund",
+      "signal": "clean",
+      "signal_note": "Routine initial ownership filing"
     },
     {
       "form": "8-K",
@@ -1898,7 +2606,10 @@
       "label": "Current report: issued a Regulation FD disclosure; disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312523147664/d489719d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "BCRED declared May distributions; aggregate NAV $23.7B, leverage 1.07x",
+      "signal": "clean",
+      "signal_note": "Routine monthly distribution and NAV update"
     },
     {
       "form": "424B3",
@@ -1906,7 +2617,10 @@
       "label": "Prospectus supplement (offering) — 424B3",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312523147147/d504074d424b3.htm",
-      "material": true
+      "material": true,
+      "headline": "BCRED appointed Teddy Desloge CFO as interim officers resigned",
+      "signal": "clean",
+      "signal_note": "Routine executive officer transitions"
     },
     {
       "form": "IRANNOTICE",
@@ -1914,7 +2628,10 @@
       "label": "IRANNOTICE — IRANNOTICE",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312523140040/d505270dirannotice.htm",
-      "material": false
+      "material": false,
+      "headline": "Filed Iran Threat Reduction Act disclosure tied to affiliate activity",
+      "signal": "clean",
+      "signal_note": "Routine Section 13(r) affiliate disclosure"
     },
     {
       "form": "10-Q",
@@ -1922,7 +2639,10 @@
       "label": "Quarterly report (10-Q) for period ending 2023-03-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000180349823000012/bcred-20230331.htm",
-      "material": true
+      "material": true,
+      "headline": "Q1 2023 10-Q details accounting policies for PIK, non-accruals, derivatives",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results"
     },
     {
       "form": "CORRESP",
@@ -1930,7 +2650,10 @@
       "label": "CORRESP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312523139682/filename1.htm",
-      "material": false
+      "material": false,
+      "headline": "Responded to SEC staff comments on 2022 annual report disclosures",
+      "signal": "clean",
+      "signal_note": "Routine SEC comment-letter response"
     },
     {
       "form": "SC TO-I",
@@ -1938,7 +2661,10 @@
       "label": "SC TO-I — SC TO-I",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312523133254/d504354dsctoi.htm",
-      "material": false
+      "material": false,
+      "headline": "Launched issuer tender offer to repurchase Class I, D and S shares",
+      "signal": "clean",
+      "signal_note": "Routine share repurchase offer"
     },
     {
       "form": "SC TO-I/A",
@@ -1946,7 +2672,10 @@
       "label": "SC TO-I/A — SC TO-I/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312523133101/d844823dsctoia.htm",
-      "material": false
+      "material": false,
+      "headline": "Final amendment reports results of tender offer for up to 46.1M shares",
+      "signal": "clean",
+      "signal_note": "Routine tender offer results"
     },
     {
       "form": "EFFECT",
@@ -1954,7 +2683,10 @@
       "label": "EFFECT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/999999999523001008/xslEFFECTX01/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "SEC notice of effectiveness for BCRED registration",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "424B3",
@@ -1962,7 +2694,10 @@
       "label": "Prospectus supplement (offering) — 424B3",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312523109740/d413503d424b3.htm",
-      "material": true
+      "material": true,
+      "headline": "Offered to exchange $800M of 7.050% notes due 2025 for registered notes",
+      "signal": "clean",
+      "signal_note": "Routine registered exchange offer"
     },
     {
       "form": "8-K",
@@ -1970,7 +2705,10 @@
       "label": "Current report: issued a Regulation FD disclosure; disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312523107392/d499740d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Declared April distributions; aggregate NAV $23.1B at 1.16x leverage",
+      "signal": "clean",
+      "signal_note": "Distribution declared as normal"
     },
     {
       "form": "486BPOS",
@@ -1978,7 +2716,10 @@
       "label": "486BPOS — 486BPOS",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312523105112/d476264d486bpos.htm",
-      "material": false
+      "material": false,
+      "headline": "Post-effective amendment updates N-2 prospectus for $36.5B offering",
+      "signal": "clean",
+      "signal_note": "Routine offering registration update"
     },
     {
       "form": "CORRESP",
@@ -1986,7 +2727,10 @@
       "label": "CORRESP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312523104899/filename1.htm",
-      "material": false
+      "material": false,
+      "headline": "Responded to SEC staff comment on Twin Peaks acquisition accounting",
+      "signal": "clean",
+      "signal_note": "Routine SEC comment-letter response"
     },
     {
       "form": "CORRESP",
@@ -1994,7 +2738,10 @@
       "label": "CORRESP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312523079237/filename1.htm",
-      "material": false
+      "material": false,
+      "headline": "BCRED confirms no-action reliance for 7.050% notes exchange offer",
+      "signal": "clean",
+      "signal_note": "Routine SEC correspondence"
     },
     {
       "form": "CORRESP",
@@ -2002,7 +2749,10 @@
       "label": "CORRESP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312523079229/filename1.htm",
-      "material": false
+      "material": false,
+      "headline": "BCRED responds to SEC staff comments on N-14 registration",
+      "signal": "clean",
+      "signal_note": "Routine SEC comment response"
     },
     {
       "form": "N-14 8C/A",
@@ -2010,7 +2760,10 @@
       "label": "N-14 8C/A — N-14 8C/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312523079224/d413503dn148ca.htm",
-      "material": false
+      "material": false,
+      "headline": "BCRED registers exchange of $800M 7.050% notes due 2025",
+      "signal": "clean",
+      "signal_note": "Routine registered notes exchange"
     },
     {
       "form": "8-K",
@@ -2018,7 +2771,10 @@
       "label": "Current report: issued a Regulation FD disclosure; disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312523077323/d488835d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "BCRED aggregate NAV $23.6B, leverage 1.17x; March distributions declared",
+      "signal": "clean",
+      "signal_note": "Routine NAV and distribution update"
     },
     {
       "form": "POS EX",
@@ -2026,7 +2782,10 @@
       "label": "POS EX — POS EX",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312523075656/d458618dposex.htm",
-      "material": false
+      "material": false,
+      "headline": "BCRED files post-effective amendment adding exhibits to N-2",
+      "signal": "clean",
+      "signal_note": "Routine exhibit-only amendment"
     },
     {
       "form": "424B3",
@@ -2034,7 +2793,10 @@
       "label": "Prospectus supplement (offering) — 424B3",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312523075655/d426416d424b3.htm",
-      "material": true
+      "material": true,
+      "headline": "BCRED prospectus supplement cites 0.14% direct-lending loss rate",
+      "signal": "clean",
+      "signal_note": "Routine prospectus supplement"
     },
     {
       "form": "IRANNOTICE",
@@ -2042,7 +2804,10 @@
       "label": "IRANNOTICE — IRANNOTICE",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312523074043/d483176dirannotice.htm",
-      "material": false
+      "material": false,
+      "headline": "BCRED files Iran Threat Reduction Act disclosure notice",
+      "signal": "clean",
+      "signal_note": "Routine affiliate Iran disclosure"
     },
     {
       "form": "10-K",
@@ -2050,7 +2815,10 @@
       "label": "Annual report (10-K) for period ending 2022-12-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000180349823000008/bcred-20221231.htm",
-      "material": true
+      "material": true,
+      "headline": "BCRED files fiscal 2022 annual report on Form 10-K",
+      "signal": "clean",
+      "signal_note": "Routine annual report risk factors"
     },
     {
       "form": "SC TO-I/A",
@@ -2058,7 +2826,10 @@
       "label": "SC TO-I/A — SC TO-I/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312523062255/d451446dsctoia.htm",
-      "material": false
+      "material": false,
+      "headline": "BCRED amends tender offer to repurchase up to 46.1M shares at NAV",
+      "signal": "clean",
+      "signal_note": "Routine share repurchase tender offer"
     },
     {
       "form": "8-K",
@@ -2066,7 +2837,10 @@
       "label": "Current report: amended its charter or bylaws; issued a Regulation FD disclosure",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312523047583/d394979d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "BCRED aggregate NAV $23.3B, leverage 1.16x; February distributions declared",
+      "signal": "clean",
+      "signal_note": "Routine NAV and distribution update"
     },
     {
       "form": "N-14 8C",
@@ -2074,7 +2848,10 @@
       "label": "N-14 8C — N-14 8C",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312523032241/d447236dn148c.htm",
-      "material": false
+      "material": false,
+      "headline": "Registered exchange offer for $800M of 7.050% notes due 2025",
+      "signal": "clean",
+      "signal_note": "Routine notes exchange registration"
     },
     {
       "form": "40-17G",
@@ -2082,7 +2859,10 @@
       "label": "40-17G — 40-17G",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312523028130/d433847d4017g.htm",
-      "material": false
+      "material": false,
+      "headline": "Filed annual fidelity bond coverage under Rule 17g-1",
+      "signal": "clean",
+      "signal_note": "Routine fidelity bond filing"
     },
     {
       "form": "SC TO-I",
@@ -2090,7 +2870,10 @@
       "label": "SC TO-I — SC TO-I",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312523019778/d447136dsctoi.htm",
-      "material": false
+      "material": false,
+      "headline": "Launched quarterly share repurchase tender offer at NAV",
+      "signal": "clean",
+      "signal_note": "Routine semi-liquid repurchase offer"
     },
     {
       "form": "SC TO-I/A",
@@ -2098,7 +2881,10 @@
       "label": "SC TO-I/A — SC TO-I/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312523019717/d456067dsctoia.htm",
-      "material": false
+      "material": false,
+      "headline": "Final amendment reports results of NAV share repurchase offer",
+      "signal": "clean",
+      "signal_note": "Routine tender offer results"
     },
     {
       "form": "8-K",
@@ -2106,7 +2892,10 @@
       "label": "Current report: issued a Regulation FD disclosure; disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312523016236/d393921d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Declared monthly distributions; 10.2% Class I yield, portfolio marked at 96.3",
+      "signal": "clean",
+      "signal_note": "Distributions declared, marks stable"
     },
     {
       "form": "3",
@@ -2114,7 +2903,10 @@
       "label": "3 — FORM 3 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000089924323002009/xslF345X02/doc3.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider filed initial Form 3 statement of beneficial ownership",
+      "signal": "clean",
+      "signal_note": "Routine insider ownership filing"
     },
     {
       "form": "CORRESP",
@@ -2122,7 +2914,10 @@
       "label": "CORRESP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312523008382/filename1.htm",
-      "material": false
+      "material": false,
+      "headline": "Responded to SEC comments on notes registration; confirmed covenant compliance",
+      "signal": "clean",
+      "signal_note": "Routine SEC comment responses"
     },
     {
       "form": "N-2/A",
@@ -2130,7 +2925,10 @@
       "label": "N-2/A — N-2/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312523008376/d351867dn2a.htm",
-      "material": false
+      "material": false,
+      "headline": "Amended registration for unsecured notes offering",
+      "signal": "clean",
+      "signal_note": "Routine notes registration amendment"
     },
     {
       "form": "424B3",
@@ -2138,7 +2936,10 @@
       "label": "Prospectus supplement (offering) — 424B3",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312523007313/d430091d424b3.htm",
-      "material": true
+      "material": true,
+      "headline": "Appointed Jonathan Bock Co-CEO; added software industry concentration risk",
+      "signal": "clean",
+      "signal_note": "Executive appointment, risk factor update"
     },
     {
       "form": "8-K",
@@ -2146,7 +2947,10 @@
       "label": "Current report: changed a director or senior officer",
       "category": "Personnel",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312523005200/d442715d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Board appointed Jonathan Bock Co-Chief Executive Officer effective January 10",
+      "signal": "clean",
+      "signal_note": "Routine executive appointment"
     },
     {
       "form": "8-K",
@@ -2154,7 +2958,10 @@
       "label": "Current report: issued a Regulation FD disclosure; disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312522310605/d398185d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Aggregate NAV $23.6B; sold Class I shares to feeder vehicles at 1.28x leverage",
+      "signal": "clean",
+      "signal_note": "Routine share sale and NAV update"
     },
     {
       "form": "N-2/A",
@@ -2162,7 +2969,10 @@
       "label": "N-2/A — N-2/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312522307468/d351867dn2a.htm",
-      "material": false
+      "material": false,
+      "headline": "Filed preliminary prospectus to register two tranches of unsecured notes",
+      "signal": "clean",
+      "signal_note": "Routine notes registration"
     },
     {
       "form": "SC TO-I/A",
@@ -2170,7 +2980,10 @@
       "label": "SC TO-I/A — SC TO-I/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312522298547/d420455dsctoia.htm",
-      "material": false
+      "material": false,
+      "headline": "Amended tender offer to add Q4 distribution and tender update exhibit",
+      "signal": "clean",
+      "signal_note": "Routine tender offer amendment"
     },
     {
       "form": "8-K",
@@ -2178,7 +2991,10 @@
       "label": "Current report: issued a Regulation FD disclosure",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312522298013/d426819d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Raised monthly distribution from $0.19 to $0.21, 10.2% annualized yield",
+      "signal": "clean",
+      "signal_note": "Distribution increased"
     },
     {
       "form": "8-K",
@@ -2186,7 +3002,10 @@
       "label": "Current report: issued a Regulation FD disclosure; disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312522291641/d414092d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Aggregate NAV $23.0B; declared distributions and sold Class I shares at 1.24x leverage",
+      "signal": "clean",
+      "signal_note": "Routine distribution and NAV update"
     },
     {
       "form": "424B3",
@@ -2194,7 +3013,10 @@
       "label": "Prospectus supplement (offering) — 424B3",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312522287636/d411285d424b3.htm",
-      "material": true
+      "material": true,
+      "headline": "Prospectus supplement updates track record and attaches Q3 10-Q",
+      "signal": "clean",
+      "signal_note": "Routine prospectus supplement"
     },
     {
       "form": "10-Q",
@@ -2202,7 +3024,10 @@
       "label": "Quarterly report (10-Q) for period ending 2022-09-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000180349822000021/bcred-20220930.htm",
-      "material": true
+      "material": true,
+      "headline": "Q3 acquired $9.6B of investments, mostly first-lien debt",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results"
     },
     {
       "form": "SC TO-I",
@@ -2210,7 +3035,10 @@
       "label": "SC TO-I — SC TO-I",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312522275332/d410523dsctoi.htm",
-      "material": false
+      "material": false,
+      "headline": "Launched tender offer to repurchase up to 45.5M shares at NAV",
+      "signal": "clean",
+      "signal_note": "Routine share repurchase offer"
     },
     {
       "form": "SC TO-I/A",
@@ -2218,7 +3046,10 @@
       "label": "SC TO-I/A — SC TO-I/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312522274412/d410188dsctoia.htm",
-      "material": false
+      "material": false,
+      "headline": "Final amendment reporting results of September share repurchase offer",
+      "signal": "clean",
+      "signal_note": "Routine tender offer results"
     },
     {
       "form": "8-K",
@@ -2226,7 +3057,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312522268366/d365070d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Formed joint venture to hold $667M of broadly-syndicated loans",
+      "signal": "clean",
+      "signal_note": "Routine joint venture formation"
     },
     {
       "form": "8-K",
@@ -2234,7 +3068,10 @@
       "label": "Current report: issued a Regulation FD disclosure; disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312522265634/d363873d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "BCRED raised monthly distribution to $0.19; Q3 NAV $22.4B, leverage 1.28x",
+      "signal": "clean",
+      "signal_note": "Dividend raised; positive Q3 results"
     },
     {
       "form": "CORRESP",
@@ -2242,7 +3079,10 @@
       "label": "CORRESP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312522262533/filename1.htm",
-      "material": false
+      "material": false,
+      "headline": "BCRED responded to SEC staff comments on N-2 notes registration statement",
+      "signal": "clean",
+      "signal_note": "Routine SEC comment response"
     },
     {
       "form": "N-2/A",
@@ -2250,7 +3090,10 @@
       "label": "N-2/A — N-2/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312522262392/d351867dn2a.htm",
-      "material": false
+      "material": false,
+      "headline": "BCRED filed N-2 amendment for unsecured notes offering",
+      "signal": "clean",
+      "signal_note": "Routine registration amendment"
     },
     {
       "form": "8-K",
@@ -2258,7 +3101,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312522261491/d385909d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "BCRED issued $350M of 7.49% Series D senior unsecured notes due 2027",
+      "signal": "clean",
+      "signal_note": "Ordinary note issuance"
     },
     {
       "form": "8-K",
@@ -2266,7 +3112,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312522252183/d373921d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "BCRED priced $600M of 7.050% notes due 2025 in 144A offering",
+      "signal": "clean",
+      "signal_note": "Ordinary note offering"
     },
     {
       "form": "8-K/A",
@@ -2274,7 +3123,10 @@
       "label": "8-K/A — 8-K/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312522251470/d400669d8ka.htm",
-      "material": false
+      "material": false,
+      "headline": "BCRED August NAV $22.8B; leverage 1.21x; monthly distributions declared",
+      "signal": "clean",
+      "signal_note": "Routine NAV and distribution update"
     },
     {
       "form": "8-K",
@@ -2282,7 +3134,10 @@
       "label": "Current report: issued a Regulation FD disclosure; disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312522249282/d381238d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "BCRED August NAV $22.9B; leverage 1.21x; monthly distributions declared",
+      "signal": "clean",
+      "signal_note": "Routine NAV and distribution update"
     },
     {
       "form": "424B3",
@@ -2290,7 +3145,10 @@
       "label": "Prospectus supplement (offering) — 424B3",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312522246930/d365807d424b3.htm",
-      "material": true
+      "material": true,
+      "headline": "BCRED CFO Kuppenheimer resigned; Kevin Kresge named interim CFO",
+      "signal": "clean",
+      "signal_note": "Routine CFO transition"
     },
     {
       "form": "3",
@@ -2298,7 +3156,10 @@
       "label": "3 — FORM 3 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000089924322031296/xslF345X02/doc3.xml",
-      "material": false
+      "material": false,
+      "headline": "BCRED insider filed initial Form 3 ownership statement dated September 2022",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "8-K",
@@ -2306,7 +3167,10 @@
       "label": "Current report: issued a Regulation FD disclosure",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312522239577/d385890d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "BCRED raised regular monthly distribution from $0.1740 to $0.1900 per share",
+      "signal": "clean",
+      "signal_note": "Distribution increased on strong earnings"
     },
     {
       "form": "8-K",
@@ -2314,7 +3178,10 @@
       "label": "Current report: changed a director or senior officer",
       "category": "Personnel",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312522234084/d347488d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "CFO Stephan Kuppenheimer to resign; Kevin Kresge named interim CFO",
+      "signal": "clean",
+      "signal_note": "Routine CFO transition, no disagreement"
     },
     {
       "form": "8-K",
@@ -2322,7 +3189,10 @@
       "label": "Current report: issued a Regulation FD disclosure; disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312522228359/d370825d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Aggregate NAV reached $22.1B with 1.17x debt-to-equity leverage in July",
+      "signal": "clean",
+      "signal_note": "Routine NAV and distribution update"
     },
     {
       "form": "424B3",
@@ -2330,7 +3200,10 @@
       "label": "Prospectus supplement (offering) — 424B3",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312522225361/d351414d424b3.htm",
-      "material": true
+      "material": true,
+      "headline": "Prospectus supplement updates suitability standards and reinvestment plan terms",
+      "signal": "clean",
+      "signal_note": "Routine prospectus supplement"
     },
     {
       "form": "10-Q",
@@ -2338,7 +3211,10 @@
       "label": "Quarterly report (10-Q) for period ending 2022-06-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000180349822000017/bcred-20220630.htm",
-      "material": true
+      "material": true,
+      "headline": "Q2 acquired $12.2B of investments, mostly first lien debt",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results"
     },
     {
       "form": "SC TO-I",
@@ -2346,7 +3222,10 @@
       "label": "SC TO-I — SC TO-I",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312522211736/d364201dsctoi.htm",
-      "material": false
+      "material": false,
+      "headline": "Launched tender offer to repurchase Class I, D and S shares",
+      "signal": "clean",
+      "signal_note": "Routine share repurchase tender offer"
     },
     {
       "form": "3",
@@ -2354,7 +3233,10 @@
       "label": "3 — FORM 3 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000089924322027513/xslF345X02/doc3.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider filed initial Form 3 statement of beneficial ownership",
+      "signal": "clean",
+      "signal_note": "Routine insider ownership filing"
     },
     {
       "form": "8-K",
@@ -2362,7 +3244,10 @@
       "label": "Current report: entered a material agreement; changed a director or senior officer",
       "category": "Personnel",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312522210673/d385214d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Amended advisory agreement; William Renahan named Chief Compliance Officer",
+      "signal": "clean",
+      "signal_note": "Routine governance and advisory update"
     },
     {
       "form": "POS EX",
@@ -2370,7 +3255,10 @@
       "label": "POS EX — POS EX",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312522210243/d308803dposex.htm",
-      "material": false
+      "material": false,
+      "headline": "Post-effective amendment to Form N-2 adds previously unfiled exhibits",
+      "signal": "clean",
+      "signal_note": "Routine registration exhibit filing"
     },
     {
       "form": "SC TO-I/A",
@@ -2378,7 +3266,10 @@
       "label": "SC TO-I/A — SC TO-I/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312522208805/d362728dsctoia.htm",
-      "material": false
+      "material": false,
+      "headline": "Final amendment reports results of June 30 share tender offer",
+      "signal": "clean",
+      "signal_note": "Routine tender offer results"
     },
     {
       "form": "8-K",
@@ -2386,7 +3277,10 @@
       "label": "Current report: changed a director or senior officer",
       "category": "Personnel",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312522202748/d376410d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "David Goldberg named interim Chief Accounting Officer as Abby Miller takes leave",
+      "signal": "clean",
+      "signal_note": "Routine interim officer appointment"
     },
     {
       "form": "N-2/A",
@@ -2394,7 +3288,10 @@
       "label": "N-2/A — N-2/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312522200711/d351867dn2a.htm",
-      "material": false
+      "material": false,
+      "headline": "Filed N-2/A registration to offer two series of unsecured notes",
+      "signal": "clean",
+      "signal_note": "Routine notes registration statement"
     },
     {
       "form": "424B3",
@@ -2402,7 +3299,10 @@
       "label": "Prospectus supplement (offering) — 424B3",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312522200688/d778310d424b3.htm",
-      "material": true
+      "material": true,
+      "headline": "Raised 2.625% Notes due 2026 exchange offer to $1.25 billion",
+      "signal": "clean",
+      "signal_note": "Routine exchange offer increase"
     },
     {
       "form": "N-14MEF",
@@ -2410,7 +3310,10 @@
       "label": "N-14MEF — N-14MEF",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312522200674/d790959dn14mef.htm",
-      "material": false
+      "material": false,
+      "headline": "Registered additional $350M of 2.625% exchange notes due 2026",
+      "signal": "clean",
+      "signal_note": "Routine notes registration"
     },
     {
       "form": "8-K",
@@ -2418,7 +3321,10 @@
       "label": "Current report: issued a Regulation FD disclosure; disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312522198248/d276092d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Raised special distribution to $0.07 per share on strong earnings",
+      "signal": "clean",
+      "signal_note": "Special distribution increased; positive results"
     },
     {
       "form": "424B3",
@@ -2426,7 +3332,10 @@
       "label": "Prospectus supplement (offering) — 424B3",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312522190291/d60193d424b3.htm",
-      "material": true
+      "material": true,
+      "headline": "Launched exchange offer for seven series of registered notes",
+      "signal": "clean",
+      "signal_note": "Routine registered exchange offer"
     },
     {
       "form": "EFFECT",
@@ -2434,7 +3343,10 @@
       "label": "EFFECT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/999999999522001973/xslEFFECTX01/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "SEC declared registration statement effective on July 6, 2022",
+      "signal": "clean",
+      "signal_note": "Routine notice of effectiveness"
     },
     {
       "form": "N-14 8C/A",
@@ -2442,7 +3354,10 @@
       "label": "N-14 8C/A — N-14 8C/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312522185869/d60193dn148ca.htm",
-      "material": false
+      "material": false,
+      "headline": "Filed N-14 amendment for seven-series notes exchange offer",
+      "signal": "clean",
+      "signal_note": "Routine registration amendment"
     },
     {
       "form": "8-K",
@@ -2450,7 +3365,10 @@
       "label": "Current report: issued a Regulation FD disclosure; disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312522182553/d317546d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Declared special distribution; aggregate NAV reached $20.7 billion at May 31",
+      "signal": "clean",
+      "signal_note": "Distribution declared; routine leverage update"
     },
     {
       "form": "3",
@@ -2458,7 +3376,10 @@
       "label": "3 — FORM 3 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000089924322019657/xslF345X02/doc3.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider filed Form 3 initial statement of beneficial ownership",
+      "signal": "clean",
+      "signal_note": "Routine initial ownership filing"
     },
     {
       "form": "8-K",
@@ -2466,7 +3387,10 @@
       "label": "Current report: changed a director or senior officer; issued a Regulation FD disclosure",
       "category": "Personnel",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312522158051/d358533d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Named Abby Miller Chief Accounting Officer as interim term ends",
+      "signal": "clean",
+      "signal_note": "Routine officer appointment"
     },
     {
       "form": "N-14 8C",
@@ -2474,7 +3398,10 @@
       "label": "N-14 8C — N-14 8C",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312522155977/d60193dn148c.htm",
-      "material": false
+      "material": false,
+      "headline": "Launched registered exchange offer for seven series of outstanding notes",
+      "signal": "clean",
+      "signal_note": "Routine notes exchange offer"
     },
     {
       "form": "424B3",
@@ -2482,7 +3409,10 @@
       "label": "Prospectus supplement (offering) — 424B3",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312522153337/d299308d424b3.htm",
-      "material": true
+      "material": true,
+      "headline": "Prospectus supplement adds Q1 2022 10-Q for quarter ended March 31",
+      "signal": "clean",
+      "signal_note": "Routine prospectus supplement"
     },
     {
       "form": "10-Q",
@@ -2490,7 +3420,10 @@
       "label": "Quarterly report (10-Q) for period ending 2022-03-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000180349822000013/bcred-03312022x10q.htm",
-      "material": true
+      "material": true,
+      "headline": "Acquired $8.6B of investments in Q1, mostly first-lien debt",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results"
     },
     {
       "form": "8-K",
@@ -2498,7 +3431,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312522148244/d358947d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Upsized revolving credit facility to $5.15B, extended maturity to 2027",
+      "signal": "clean",
+      "signal_note": "Facility upsize and extension"
     },
     {
       "form": "40-APP/A",
@@ -2506,7 +3442,10 @@
       "label": "40-APP/A — 40-APP/A APPLICATION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312522145949/d357514d40appa.htm",
-      "material": false
+      "material": false,
+      "headline": "Amended co-investment exemptive application on follow-on investment terms",
+      "signal": "clean",
+      "signal_note": "Routine exemptive application"
     },
     {
       "form": "3",
@@ -2514,7 +3453,10 @@
       "label": "3 — FORM 3 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000089924322017242/xslF345X02/doc3.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider filed initial Form 3 ownership statement dated May 2",
+      "signal": "clean",
+      "signal_note": "Routine initial ownership filing"
     },
     {
       "form": "8-K",
@@ -2522,7 +3464,10 @@
       "label": "Current report: changed a director or senior officer; disclosed a material event",
       "category": "Personnel",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312522139081/d193120d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Issued $625M of 5.61% Series A senior notes; board changes",
+      "signal": "clean",
+      "signal_note": "Note issuance and routine governance"
     },
     {
       "form": "SC TO-I",
@@ -2530,7 +3475,10 @@
       "label": "SC TO-I — SC TO-I",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312522138507/d766397dsctoi.htm",
-      "material": false
+      "material": false,
+      "headline": "Launched quarterly tender offer to repurchase shares at NAV",
+      "signal": "clean",
+      "signal_note": "Routine share repurchase offer"
     },
     {
       "form": "40-APP/A",
@@ -2538,7 +3486,10 @@
       "label": "40-APP/A — 40-APP/A APPLICATION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312522134795/d357514d40appa.htm",
-      "material": false
+      "material": false,
+      "headline": "Amended co-investment exemptive application on follow-on investment terms",
+      "signal": "clean",
+      "signal_note": "Routine exemptive application"
     },
     {
       "form": "SC TO-I/A",
@@ -2546,7 +3497,10 @@
       "label": "SC TO-I/A — SC TO-I/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312522133920/d766363dsctoia.htm",
-      "material": false
+      "material": false,
+      "headline": "Final amendment reports results of March 31 NAV tender offer",
+      "signal": "clean",
+      "signal_note": "Routine tender offer results"
     },
     {
       "form": "N-2",
@@ -2554,7 +3508,10 @@
       "label": "Registration statement (N-2) — N-2",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312522117898/d356740dn2.htm",
-      "material": true
+      "material": true,
+      "headline": "Registered additional $24B of common shares, lifting total to $36.5B",
+      "signal": "clean",
+      "signal_note": "Routine shelf registration"
     },
     {
       "form": "N-2",
@@ -2562,7 +3519,10 @@
       "label": "Registration statement (N-2) — N-2",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312522113205/d351867dn2.htm",
-      "material": true
+      "material": true,
+      "headline": "Filed preliminary prospectus for unsecured notes offering",
+      "signal": "clean",
+      "signal_note": "Routine notes registration"
     },
     {
       "form": "8-K",
@@ -2570,7 +3530,10 @@
       "label": "Current report: issued a Regulation FD disclosure; disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312522111741/d332545d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Declared April distributions; portfolio has zero defaults and zero non-accruals",
+      "signal": "clean",
+      "signal_note": "Distribution declared, no non-accruals"
     },
     {
       "form": "8-K",
@@ -2578,7 +3541,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312522101497/d288941d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Priced $250M of 4.875% notes due 2026 in private placement",
+      "signal": "clean",
+      "signal_note": "Routine notes offering"
     },
     {
       "form": "40-APP",
@@ -2586,7 +3552,10 @@
       "label": "40-APP — 40-APP APPLICATION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312522097841/d312039d40app.htm",
-      "material": false
+      "material": false,
+      "headline": "Sought amended SEC order for affiliated co-investment relief",
+      "signal": "clean",
+      "signal_note": "Routine exemptive application"
     },
     {
       "form": "8-K",
@@ -2594,7 +3563,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312522086602/d297451d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Closed $900M of 4.700% notes due 2025 for $891.9M net",
+      "signal": "clean",
+      "signal_note": "Routine notes offering"
     },
     {
       "form": "8-K",
@@ -2602,7 +3574,10 @@
       "label": "Current report: issued a Regulation FD disclosure; disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312522082661/d340192d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Priced $900M notes; NAV $16.1B, leverage 1.11x at February end",
+      "signal": "clean",
+      "signal_note": "Routine offering and NAV update"
     },
     {
       "form": "DRS",
@@ -2610,7 +3585,10 @@
       "label": "DRS",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000095012322003578/filename1.htm",
-      "material": false
+      "material": false,
+      "headline": "Confidentially submitted draft N-2 registration for future notes offering",
+      "signal": "clean",
+      "signal_note": "Routine draft registration"
     },
     {
       "form": "424B3",
@@ -2618,7 +3596,10 @@
       "label": "Prospectus supplement (offering) — 424B3",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312522080323/d287843d424b3.htm",
-      "material": true
+      "material": true,
+      "headline": "Prospectus supplement attaches 2021 Form 10-K; 0.43% direct-lending default rate",
+      "signal": "clean",
+      "signal_note": "Routine prospectus supplement"
     },
     {
       "form": "3",
@@ -2626,7 +3607,10 @@
       "label": "3 — FORM 3 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000089924322011091/xslF345X02/doc3.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider filed initial Form 3 statement of beneficial ownership",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 3"
     },
     {
       "form": "10-K",
@@ -2634,7 +3618,10 @@
       "label": "Annual report (10-K) for period ending 2021-12-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000180349822000009/bcred-20211231x10k.htm",
-      "material": true
+      "material": true,
+      "headline": "Fiscal 2021 10-K details credit-facility, refinancing and leverage risk factors",
+      "signal": "clean",
+      "signal_note": "Routine risk-factor disclosure"
     },
     {
       "form": "40-17G",
@@ -2642,7 +3629,10 @@
       "label": "40-17G — 40-17G",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312522062664/d312606d4017g.htm",
-      "material": false
+      "material": false,
+      "headline": "Filed annual fidelity bond report under Rule 17g-1",
+      "signal": "clean",
+      "signal_note": "Routine fidelity bond filing"
     },
     {
       "form": "8-K",
@@ -2650,7 +3640,10 @@
       "label": "Current report: amended its charter or bylaws; issued a Regulation FD disclosure",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312522049844/d191385d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Declared February distributions; aggregate NAV $14.4B, leverage 1.24x",
+      "signal": "clean",
+      "signal_note": "Routine distribution and NAV update"
     },
     {
       "form": "SC TO-I/A",
@@ -2658,7 +3651,10 @@
       "label": "SC TO-I/A — SC TO-I/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312522033009/d264395dsctoia.htm",
-      "material": false
+      "material": false,
+      "headline": "Final amendment reports results of December 2021 share tender offer",
+      "signal": "clean",
+      "signal_note": "Routine tender offer results"
     },
     {
       "form": "SC TO-I/A",
@@ -2666,7 +3662,10 @@
       "label": "SC TO-I/A — SC TO-I/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312522033006/d315911dsctoia.htm",
-      "material": false
+      "material": false,
+      "headline": "Final amendment reports results of September 2021 share tender offer",
+      "signal": "clean",
+      "signal_note": "Routine tender offer results"
     },
     {
       "form": "SC TO-I/A",
@@ -2674,7 +3673,10 @@
       "label": "SC TO-I/A — SC TO-I/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312522032995/d296026dsctoia.htm",
-      "material": false
+      "material": false,
+      "headline": "Final amendment reports results of June 2021 share tender offer",
+      "signal": "clean",
+      "signal_note": "Routine tender offer results"
     },
     {
       "form": "8-K",
@@ -2682,7 +3684,10 @@
       "label": "Current report: changed a director or senior officer",
       "category": "Personnel",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312522028371/d240195d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Chief Accounting Officer Busch resigning; Goldberg named interim replacement",
+      "signal": "clean",
+      "signal_note": "Routine officer transition, no disagreement"
     },
     {
       "form": "SC TO-I",
@@ -2690,7 +3695,10 @@
       "label": "SC TO-I — SC TO-I",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312522021062/d295015dsctoi.htm",
-      "material": false
+      "material": false,
+      "headline": "Commenced issuer tender offer to repurchase shares at NAV",
+      "signal": "clean",
+      "signal_note": "Routine share repurchase offer"
     },
     {
       "form": "8-K",
@@ -2698,7 +3706,10 @@
       "label": "Current report: issued a Regulation FD disclosure; disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312522018554/d276331d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Declared distributions; NAV $12.9B, no non-accruals, formed pension JV",
+      "signal": "clean",
+      "signal_note": "No defaults or non-accruals"
     },
     {
       "form": "8-K",
@@ -2706,7 +3717,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312522012990/d295998d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Issued $500M 2.70% notes due 2025 and $650M 4.00% notes due 2029",
+      "signal": "clean",
+      "signal_note": "Routine unsecured notes offering"
     },
     {
       "form": "8-K",
@@ -2714,7 +3728,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312522008464/d296006d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Priced $500M 2.700% notes due 2025 and $650M 4.000% notes due 2029",
+      "signal": "clean",
+      "signal_note": "Routine unsecured notes offering"
     },
     {
       "form": "8-K",
@@ -2722,7 +3739,10 @@
       "label": "Current report: issued a Regulation FD disclosure; disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312521363745/d230791d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "November NAV set; regular and $0.07 special distributions declared, leverage 1.27x",
+      "signal": "clean",
+      "signal_note": "Routine distributions and NAV update"
     },
     {
       "form": "8-K",
@@ -2730,7 +3750,10 @@
       "label": "Current report: issued a Regulation FD disclosure; disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312521338554/d253073d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "October NAV set, distributions declared; closed $1.5B of unsecured notes",
+      "signal": "clean",
+      "signal_note": "Routine NAV, distributions, notes offering"
     },
     {
       "form": "424B3",
@@ -2738,7 +3761,10 @@
       "label": "Prospectus supplement (offering) — 424B3",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312521335620/d129551d424b3.htm",
-      "material": true
+      "material": true,
+      "headline": "Prospectus supplement updates suitability standards and strategy disclosures",
+      "signal": "clean",
+      "signal_note": "Routine prospectus supplement"
     },
     {
       "form": "8-K",
@@ -2746,7 +3772,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312521330397/d261747d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Priced $500M 2.350% notes due 2024 and $1B 3.250% notes due 2027",
+      "signal": "clean",
+      "signal_note": "Routine unsecured notes offering"
     },
     {
       "form": "8-K",
@@ -2754,7 +3783,10 @@
       "label": "Current report: issued a Regulation FD disclosure",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312521328917/d232702d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Declared special distribution equal to estimated undistributed net investment income",
+      "signal": "clean",
+      "signal_note": "Routine special distribution declared"
     },
     {
       "form": "10-Q",
@@ -2762,7 +3794,10 @@
       "label": "Quarterly report (10-Q) for period ending 2021-09-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000180349821000012/bcred-09302021x10q.htm",
-      "material": true
+      "material": true,
+      "headline": "Q3 10-Q: acquired $9.1B of investments, mostly first lien senior secured",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results"
     },
     {
       "form": "8-K",
@@ -2770,7 +3805,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312521317067/d207809d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Priced EUR 500M 1.750% notes due 2026, listed on International Stock Exchange",
+      "signal": "clean",
+      "signal_note": "Routine unsecured notes offering"
     },
     {
       "form": "SC TO-I",
@@ -2778,7 +3816,10 @@
       "label": "SC TO-I — SC TO-I",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312521316378/d169735dsctoi.htm",
-      "material": false
+      "material": false,
+      "headline": "Launched tender offer to repurchase Class I, D and S shares",
+      "signal": "clean",
+      "signal_note": "Routine share repurchase offer"
     },
     {
       "form": "4",
@@ -2786,7 +3827,10 @@
       "label": "4 — FORM 4 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000089924321041714/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "Form 4 reports insider share transaction dated October 25, 2021",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "8-K",
@@ -2794,7 +3838,10 @@
       "label": "Current report: issued a Regulation FD disclosure; disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312521306736/d233715d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "NAV per share rose to $25.90; portfolio hit $17.7B at 1.04x leverage",
+      "signal": "clean",
+      "signal_note": "NAV up, monthly distribution declared"
     },
     {
       "form": "3",
@@ -2802,7 +3849,10 @@
       "label": "3 — FORM 3 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000089924321040981/xslF345X02/doc3.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider filed initial Form 3 statement of beneficial ownership",
+      "signal": "clean",
+      "signal_note": "Routine ownership filing"
     },
     {
       "form": "8-K",
@@ -2810,7 +3860,10 @@
       "label": "Current report: changed a director or senior officer; disclosed a material event",
       "category": "Personnel",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312521302099/d537092d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Vikrant Sawhney appointed to board; specialty consumer-credit JV formed",
+      "signal": "clean",
+      "signal_note": "Routine governance and JV"
     },
     {
       "form": "8-K",
@@ -2818,7 +3871,10 @@
       "label": "Current report: issued a Regulation FD disclosure; disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312521283937/d233126d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Declared August distributions; aggregate NAV $7.1B at 1.15x leverage",
+      "signal": "clean",
+      "signal_note": "Routine distribution and NAV"
     },
     {
       "form": "8-K",
@@ -2826,7 +3882,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312521273946/d219705d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Priced $365M 1.75% notes due 2024 and $900M 2.625% notes due 2026",
+      "signal": "clean",
+      "signal_note": "Ordinary unsecured notes offering"
     },
     {
       "form": "3",
@@ -2834,7 +3893,10 @@
       "label": "3 — FORM 3 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000089924321035391/xslF345X02/doc3.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider filed initial Form 3 statement of beneficial ownership",
+      "signal": "clean",
+      "signal_note": "Routine ownership filing"
     },
     {
       "form": "8-K",
@@ -2842,7 +3904,10 @@
       "label": "Current report: changed a director or senior officer",
       "category": "Personnel",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312521268518/d195381d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Carlos Whitaker appointed President of Blackstone Private Credit Fund",
+      "signal": "clean",
+      "signal_note": "Routine executive appointment"
     },
     {
       "form": "N-2",
@@ -2850,7 +3915,10 @@
       "label": "Registration statement (N-2) — N-2",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312521264695/d175597dn2.htm",
-      "material": true
+      "material": true,
+      "headline": "Registered additional $7.5B shares, raising total offering to $12.5B",
+      "signal": "clean",
+      "signal_note": "Ordinary shelf registration"
     },
     {
       "form": "8-K",
@@ -2858,7 +3926,10 @@
       "label": "Current report: issued a Regulation FD disclosure; disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312521256441/d209576d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Declared July distributions; aggregate NAV $6.1B at 1.09x leverage",
+      "signal": "clean",
+      "signal_note": "Routine distribution and NAV"
     },
     {
       "form": "424B3",
@@ -2866,7 +3937,10 @@
       "label": "Prospectus supplement (offering) — 424B3",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312521252520/d289761d424b3.htm",
-      "material": true
+      "material": true,
+      "headline": "Prospectus supplement attaching Q2 2021 Form 10-Q",
+      "signal": "clean",
+      "signal_note": "Routine quarterly report supplement"
     },
     {
       "form": "10-Q",
@@ -2874,7 +3948,10 @@
       "label": "Quarterly report (10-Q) for period ending 2021-06-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000180349821000009/bcred-06302021x10q.htm",
-      "material": true
+      "material": true,
+      "headline": "First 10-Q shows BCRED acquired $7.2B of investments, mostly first-lien",
+      "signal": "clean",
+      "signal_note": "Routine ramp, senior secured focus"
     },
     {
       "form": "3",
@@ -2882,7 +3959,10 @@
       "label": "3 — FORM 3 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000089924321031769/xslF345X02/doc3.xml",
-      "material": false
+      "material": false,
+      "headline": "Form 3 initial insider ownership filing dated August 2021",
+      "signal": "clean",
+      "signal_note": "Routine insider ownership form"
     },
     {
       "form": "8-K",
@@ -2890,7 +3970,10 @@
       "label": "Current report: changed a director or senior officer",
       "category": "Personnel",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312521236518/d212929d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Board appointed Katherine Rubenstein as Chief Operating Officer",
+      "signal": "clean",
+      "signal_note": "Routine governance appointment"
     },
     {
       "form": "SC TO-I",
@@ -2898,7 +3981,10 @@
       "label": "SC TO-I — SC TO-I",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312521236018/d170758dsctoi.htm",
-      "material": false
+      "material": false,
+      "headline": "Launched tender offer to repurchase Class I, D and S shares",
+      "signal": "clean",
+      "signal_note": "Routine share repurchase offer"
     },
     {
       "form": "8-K",
@@ -2906,7 +3992,10 @@
       "label": "Current report: issued a Regulation FD disclosure; disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312521220710/d153145d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "NAV per share rose to $25.81; declared July distributions",
+      "signal": "clean",
+      "signal_note": "NAV up, distribution declared"
     },
     {
       "form": "40-APP/A",
@@ -2914,7 +4003,10 @@
       "label": "40-APP/A — 40-APP/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312521216739/d170565d40appa.htm",
-      "material": false
+      "material": false,
+      "headline": "Amended exemptive application seeking co-investment relief with Blackstone funds",
+      "signal": "clean",
+      "signal_note": "Routine co-investment application"
     },
     {
       "form": "8-K",
@@ -2922,7 +4014,10 @@
       "label": "Current report: amended its charter or bylaws; issued a Regulation FD disclosure",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312521203233/d189882d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Declared regular and $0.1233 special distribution; amended bylaws",
+      "signal": "clean",
+      "signal_note": "Distribution declared, bylaw amendment"
     },
     {
       "form": "486BPOS",
@@ -2930,7 +4025,10 @@
       "label": "486BPOS — 486BPOS",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312521196287/d175597d486bpos.htm",
-      "material": false
+      "material": false,
+      "headline": "Post-effective prospectus amendment for $5B continuous share offering",
+      "signal": "clean",
+      "signal_note": "Routine registration update"
     },
     {
       "form": "40-APP",
@@ -2938,7 +4036,10 @@
       "label": "40-APP — 40-APP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312521187636/d98961d40app.htm",
-      "material": false
+      "material": false,
+      "headline": "Sought exemptive order to pay advisory fees in shares",
+      "signal": "clean",
+      "signal_note": "Routine exemptive application"
     },
     {
       "form": "8-K",
@@ -2946,7 +4047,10 @@
       "label": "Current report: issued a Regulation FD disclosure; disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312521173746/d136865d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "NAV per share rose to $25.59; declared May distributions",
+      "signal": "clean",
+      "signal_note": "NAV up, distribution declared"
     },
     {
       "form": "8-K",
@@ -2954,7 +4058,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312521171152/d167319d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Entered $1.425B Citibank credit facility, accordion to $2.5B, plus $325M Bushnell revolver",
+      "signal": "clean",
+      "signal_note": "Routine credit facility financing"
     },
     {
       "form": "424B3",
@@ -2962,7 +4069,10 @@
       "label": "Prospectus supplement (offering) — 424B3",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312521165591/d145602d424b3.htm",
-      "material": true
+      "material": true,
+      "headline": "Prospectus supplement attaches Q1 2021 Form 10-Q",
+      "signal": "clean",
+      "signal_note": "Routine prospectus supplement"
     },
     {
       "form": "8-K/A",
@@ -2970,7 +4080,10 @@
       "label": "8-K/A — 8-K/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312521163886/d441675d8ka.htm",
-      "material": false
+      "material": false,
+      "headline": "Amended 8-K adds audited financials for $721M Twin Peaks portfolio acquisition",
+      "signal": "clean",
+      "signal_note": "Routine acquisition financial statements"
     },
     {
       "form": "10-Q",
@@ -2978,7 +4091,10 @@
       "label": "Quarterly report (10-Q) for period ending 2021-03-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000180349821000003/bcred-03312021x10q.htm",
-      "material": true
+      "material": true,
+      "headline": "First quarterly 10-Q covering commencement of operations through March 2021",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results"
     },
     {
       "form": "SC TO-I",
@@ -2986,7 +4102,10 @@
       "label": "SC TO-I — SC TO-I",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312521147334/d131180dsctoi.htm",
-      "material": false
+      "material": false,
+      "headline": "Launched quarterly share repurchase tender offer for Class I and S shares",
+      "signal": "clean",
+      "signal_note": "Routine share repurchase offer"
     },
     {
       "form": "8-K",
@@ -2994,7 +4113,10 @@
       "label": "Current report: issued a Regulation FD disclosure; disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312521128681/d116518d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Declared April distributions; NAV $2.1B, leverage 0.91x at March 31",
+      "signal": "clean",
+      "signal_note": "Routine distribution and NAV update"
     },
     {
       "form": "8-K",
@@ -3002,7 +4124,10 @@
       "label": "Current report: issued a Regulation FD disclosure",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312521101609/d168919d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Declared March distributions and sold unregistered Class I shares to feeders",
+      "signal": "clean",
+      "signal_note": "Routine distribution declaration"
     },
     {
       "form": "4",
@@ -3010,7 +4135,10 @@
       "label": "4 — FORM 4 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000089924321013089/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "Form 4 insider transaction reported March 19, 2021",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "424B3",
@@ -3018,7 +4146,10 @@
       "label": "Prospectus supplement (offering) — 424B3",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312521087615/d159567d424b3.htm",
-      "material": true
+      "material": true,
+      "headline": "Supplement details $721M Twin Peaks acquisition and offering status update",
+      "signal": "clean",
+      "signal_note": "Routine offering supplement"
     },
     {
       "form": "POS EX",
@@ -3026,7 +4157,10 @@
       "label": "POS EX — POS EX",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312521087583/d163591dposex.htm",
-      "material": false
+      "material": false,
+      "headline": "Post-effective amendment adds exhibits to N-2 registration statement",
+      "signal": "clean",
+      "signal_note": "Routine registration exhibits"
     },
     {
       "form": "8-K",
@@ -3034,7 +4168,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312521085632/d345370d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Entered $600M BNP Paribas revolving credit facility; upsized Citi facility to $800M",
+      "signal": "clean",
+      "signal_note": "Routine new credit facilities"
     },
     {
       "form": "8-K",
@@ -3042,7 +4179,10 @@
       "label": "Current report: entered a material agreement; completed an acquisition or disposition",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312521077914/d153606d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Acquired portfolio of loans to 41 borrowers for $721M purchase price",
+      "signal": "clean",
+      "signal_note": "Routine portfolio acquisition"
     },
     {
       "form": "8-K",
@@ -3050,7 +4190,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312521074558/d152685d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Entered $500M Societe Generale revolving credit facility via Summit Peak",
+      "signal": "clean",
+      "signal_note": "Routine new credit facility"
     },
     {
       "form": "10-K",
@@ -3058,7 +4201,10 @@
       "label": "Annual report (10-K) for period ending 2020-12-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312521069991/d145785d10k.htm",
-      "material": true
+      "material": true,
+      "headline": "First 10-K: fund had not commenced investing at year-end, launched January 2021",
+      "signal": "clean",
+      "signal_note": "Routine annual report"
     },
     {
       "form": "8-K",
@@ -3066,7 +4212,10 @@
       "label": "Current report: issued a Regulation FD disclosure",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312521057292/d144249d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Declared February 2021 distributions across all share classes",
+      "signal": "clean",
+      "signal_note": "Routine distribution declared"
     },
     {
       "form": "40-APP/A",
@@ -3074,7 +4223,10 @@
       "label": "40-APP/A — 40-APP/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312521050790/d139164d40appa.htm",
-      "material": false
+      "material": false,
+      "headline": "Amended co-investment exemptive application under 1940 Act filed",
+      "signal": "clean",
+      "signal_note": "Routine regulatory application"
     },
     {
       "form": "40-17G",
@@ -3082,7 +4234,10 @@
       "label": "40-17G — 40-17G",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312521034271/d86204d4017g.htm",
-      "material": false
+      "material": false,
+      "headline": "Filed annual fidelity bond disclosure under Rule 17g-1",
+      "signal": "clean",
+      "signal_note": "Routine regulatory filing"
     },
     {
       "form": "8-K",
@@ -3090,7 +4245,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312521025596/d19182d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Entered $500M Morgan Stanley revolving credit facility; declared January distributions",
+      "signal": "clean",
+      "signal_note": "Routine facility and distribution"
     },
     {
       "form": "8-K",
@@ -3098,7 +4256,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312521006843/d112349d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Broke escrow with $814M raised; entered $200M Citi facility",
+      "signal": "clean",
+      "signal_note": "Routine launch and financing"
     },
     {
       "form": "424B3",
@@ -3106,7 +4267,10 @@
       "label": "Prospectus supplement (offering) — 424B3",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312521006837/d56106d424b3.htm",
-      "material": true
+      "material": true,
+      "headline": "Prospectus supplement details $950M initial portfolio, 95% first-lien senior secured",
+      "signal": "clean",
+      "signal_note": "Routine offering update"
     },
     {
       "form": "4",
@@ -3114,7 +4278,10 @@
       "label": "4 — FORM 4 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000089924321001413/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "Blackstone Private Credit Fund insider filed Form 4 on Jan 7 transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider ownership filing"
     },
     {
       "form": "4",
@@ -3122,7 +4289,10 @@
       "label": "4 — FORM 4 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000089924321001410/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "Blackstone Private Credit Fund insider filed Form 4 on Jan 7 transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider ownership filing"
     },
     {
       "form": "4",
@@ -3130,7 +4300,10 @@
       "label": "4 — FORM 4 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000089924321001409/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "Blackstone Private Credit Fund insider filed Form 4 on Jan 7 transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider ownership filing"
     },
     {
       "form": "4",
@@ -3138,7 +4311,10 @@
       "label": "4 — FORM 4 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000089924321001407/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "Blackstone Private Credit Fund insider filed Form 4 on Jan 7 transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider ownership filing"
     },
     {
       "form": "4",
@@ -3146,7 +4322,10 @@
       "label": "4 — FORM 4 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000089924321001406/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "Blackstone Private Credit Fund insider filed Form 4 on Jan 7 transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider ownership filing"
     },
     {
       "form": "4",
@@ -3154,7 +4333,10 @@
       "label": "4 — FORM 4 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000089924321001403/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "Blackstone Private Credit Fund insider filed Form 4 on Jan 7 transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider ownership filing"
     },
     {
       "form": "SC 13D/A",
@@ -3162,7 +4344,10 @@
       "label": "Beneficial ownership amendment (13D/A) — SC 13D/A",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312521006405/d114707dsc13da.htm",
-      "material": true
+      "material": true,
+      "headline": "Blackstone BDC Holdings bought 997,940 Class I shares at $25, dropping below 5%",
+      "signal": "clean",
+      "signal_note": "Routine ownership amendment"
     },
     {
       "form": "POS EX",
@@ -3170,7 +4355,10 @@
       "label": "POS EX — POS EX",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312520314592/d54413dposex.htm",
-      "material": false
+      "material": false,
+      "headline": "Post-effective amendment adds exhibits to N-2 registration statement",
+      "signal": "clean",
+      "signal_note": "Routine registration exhibit filing"
     },
     {
       "form": "8-K",
@@ -3178,7 +4366,10 @@
       "label": "Current report: amended its charter or bylaws",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312520314563/d90799d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Bylaws amended to modify shareholder meeting notice requirements",
+      "signal": "clean",
+      "signal_note": "Routine governance bylaw amendment"
     },
     {
       "form": "SC 13D/A",
@@ -3186,7 +4377,10 @@
       "label": "Beneficial ownership amendment (13D/A) — SC 13D/A",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312520311993/d92214dsc13da.htm",
-      "material": true
+      "material": true,
+      "headline": "Blackstone BDC Holdings plans to invest up to $25 million in Class I shares",
+      "signal": "clean",
+      "signal_note": "Routine ownership amendment"
     },
     {
       "form": "424B3",
@@ -3194,7 +4388,10 @@
       "label": "Prospectus supplement (offering) — 424B3",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312520311446/d77741d424b3.htm",
-      "material": true
+      "material": true,
+      "headline": "Blackstone Private Credit Fund prospectus offers up to $5B in shares",
+      "signal": "clean",
+      "signal_note": "Routine continuous offering prospectus"
     },
     {
       "form": "8-K",
@@ -3202,7 +4399,10 @@
       "label": "Current report: issued a Regulation FD disclosure",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312520300741/d16580d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Goldman Sachs committed investments under BCRED facility at LIBOR + 5.78%",
+      "signal": "clean",
+      "signal_note": "Routine facility investment update"
     },
     {
       "form": "3",
@@ -3210,7 +4410,10 @@
       "label": "3 — FORM 3 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000089924320031140/xslF345X02/doc3.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider filed initial Form 3 ownership statement for BCRED",
+      "signal": "clean",
+      "signal_note": "Routine insider ownership filing"
     },
     {
       "form": "10-Q",
@@ -3218,7 +4421,10 @@
       "label": "Quarterly report (10-Q) for period ending 2020-09-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312520294937/d50632d10q.htm",
-      "material": true
+      "material": true,
+      "headline": "BCRED reports no operations commenced as of September 30, 2020",
+      "signal": "clean",
+      "signal_note": "Newly organized, no investments yet"
     },
     {
       "form": "8-K",
@@ -3226,7 +4432,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "Personnel",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312520287771/d30176d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "BCRED entered Goldman Sachs facility agreement and appointed trustee James Clark",
+      "signal": "clean",
+      "signal_note": "Routine financing and governance"
     },
     {
       "form": "SC 13D",
@@ -3234,7 +4443,10 @@
       "label": "Beneficial ownership (13D) — SC 13D",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312520283552/d87375dsc13d.htm",
-      "material": true
+      "material": true,
+      "headline": "Blackstone affiliates report ownership stake in BCRED Class I shares",
+      "signal": "clean",
+      "signal_note": "Routine affiliate ownership disclosure"
     },
     {
       "form": "4",
@@ -3242,7 +4454,10 @@
       "label": "4 — FORM 4 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000089924320029157/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider filed Form 4 for October 21 BCRED transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction filing"
     },
     {
       "form": "424B3",
@@ -3250,7 +4465,10 @@
       "label": "Prospectus supplement (offering) — 424B3",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312520265660/d909527d424b3.htm",
-      "material": true
+      "material": true,
+      "headline": "Blackstone Private Credit Fund prospectus offers up to $5B in shares",
+      "signal": "clean",
+      "signal_note": "Routine continuous offering prospectus"
     },
     {
       "form": "EFFECT",
@@ -3258,7 +4476,10 @@
       "label": "EFFECT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/999999999520002745/xslEFFECTX01/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "SEC notice of effectiveness for BCRED registration",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "3",
@@ -3266,7 +4487,10 @@
       "label": "3 — FORM 3 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000089924320027462/xslF345X02/doc3.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider filed initial Form 3 ownership statement for BCRED",
+      "signal": "clean",
+      "signal_note": "Routine insider ownership filing"
     },
     {
       "form": "3",
@@ -3274,7 +4498,10 @@
       "label": "3 — FORM 3 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000089924320027412/xslF345X02/doc3.xml",
-      "material": false
+      "material": false,
+      "headline": "Blackstone Private Credit Fund insider filed initial Form 3 ownership statement",
+      "signal": "clean",
+      "signal_note": "Routine insider ownership filing"
     },
     {
       "form": "3",
@@ -3282,7 +4509,10 @@
       "label": "3 — FORM 3 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000089924320027407/xslF345X02/doc3.xml",
-      "material": false
+      "material": false,
+      "headline": "Blackstone Private Credit Fund insider filed initial Form 3 ownership statement",
+      "signal": "clean",
+      "signal_note": "Routine insider ownership filing"
     },
     {
       "form": "3",
@@ -3290,7 +4520,10 @@
       "label": "3 — FORM 3 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000089924320027404/xslF345X02/doc3.xml",
-      "material": false
+      "material": false,
+      "headline": "Blackstone Private Credit Fund insider filed initial Form 3 ownership statement",
+      "signal": "clean",
+      "signal_note": "Routine insider ownership filing"
     },
     {
       "form": "3",
@@ -3298,7 +4531,10 @@
       "label": "3 — FORM 3 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000089924320027403/xslF345X02/doc3.xml",
-      "material": false
+      "material": false,
+      "headline": "Blackstone Private Credit Fund insider filed initial Form 3 ownership statement",
+      "signal": "clean",
+      "signal_note": "Routine insider ownership filing"
     },
     {
       "form": "3",
@@ -3306,7 +4542,10 @@
       "label": "3 — FORM 3 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000089924320027398/xslF345X02/doc3.xml",
-      "material": false
+      "material": false,
+      "headline": "Blackstone Private Credit Fund insider filed initial Form 3 ownership statement",
+      "signal": "clean",
+      "signal_note": "Routine insider ownership filing"
     },
     {
       "form": "3",
@@ -3314,7 +4553,10 @@
       "label": "3 — FORM 3 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000089924320027396/xslF345X02/doc3.xml",
-      "material": false
+      "material": false,
+      "headline": "Blackstone Private Credit Fund insider filed initial Form 3 ownership statement",
+      "signal": "clean",
+      "signal_note": "Routine insider ownership filing"
     },
     {
       "form": "3",
@@ -3322,7 +4564,10 @@
       "label": "3 — FORM 3 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000089924320027392/xslF345X02/doc3.xml",
-      "material": false
+      "material": false,
+      "headline": "Blackstone Private Credit Fund insider filed initial Form 3 ownership statement",
+      "signal": "clean",
+      "signal_note": "Routine insider ownership filing"
     },
     {
       "form": "3",
@@ -3330,7 +4575,10 @@
       "label": "3 — FORM 3 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000089924320027393/xslF345X02/doc3.xml",
-      "material": false
+      "material": false,
+      "headline": "Blackstone Private Credit Fund insider filed initial Form 3 ownership statement",
+      "signal": "clean",
+      "signal_note": "Routine insider ownership filing"
     },
     {
       "form": "N-54A",
@@ -3338,7 +4586,10 @@
       "label": "N-54A — N-54A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312520263845/d70549dn54a.htm",
-      "material": false
+      "material": false,
+      "headline": "Blackstone Private Credit Fund elected BDC status under Investment Company Act",
+      "signal": "clean",
+      "signal_note": "Routine BDC election notification"
     },
     {
       "form": "8-A12G",
@@ -3346,7 +4597,10 @@
       "label": "8-A12G — 8-A12G",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312520263829/d11874d8a12g.htm",
-      "material": false
+      "material": false,
+      "headline": "BCRED registered Class S, D and I common shares under Exchange Act",
+      "signal": "clean",
+      "signal_note": "Routine securities registration"
     },
     {
       "form": "N-2/A",
@@ -3354,7 +4608,10 @@
       "label": "N-2/A — N-2/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312520259941/d909527dn2a.htm",
-      "material": false
+      "material": false,
+      "headline": "Blackstone Private Credit Fund amends N-2 registration for $5B continuous share offering",
+      "signal": "clean",
+      "signal_note": "Routine registration amendment"
     },
     {
       "form": "N-2",
@@ -3362,7 +4619,10 @@
       "label": "Registration statement (N-2) — N-2",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312520231653/d909527dn2.htm",
-      "material": true
+      "material": true,
+      "headline": "Blackstone Private Credit Fund files N-2 to register $5B share offering",
+      "signal": "clean",
+      "signal_note": "Routine initial registration"
     },
     {
       "form": "N-6F",
@@ -3370,7 +4630,10 @@
       "label": "N-6F — N-6F",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312520231476/d833426dn6f.htm",
-      "material": false
+      "material": false,
+      "headline": "BCRED files notice of intent to elect BDC status",
+      "signal": "clean",
+      "signal_note": "Routine BDC election notice"
     },
     {
       "form": "CORRESP",
@@ -3378,7 +4641,10 @@
       "label": "CORRESP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312520231658/filename1.htm",
-      "material": false
+      "material": false,
+      "headline": "BCRED counsel responds to SEC staff comments on N-2 registration",
+      "signal": "clean",
+      "signal_note": "Routine SEC comment response"
     },
     {
       "form": "40-APP/A",
@@ -3386,7 +4652,10 @@
       "label": "40-APP/A — 40-APP/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1803498/000119312520201352/d62768d40appa.htm",
-      "material": false
+      "material": false,
+      "headline": "BCRED amends exemptive application to offer multiple share classes",
+      "signal": "clean",
+      "signal_note": "Routine exemptive application"
     }
   ]
 }

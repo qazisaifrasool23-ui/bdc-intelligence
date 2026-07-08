@@ -10,7 +10,10 @@
       "label": "Current report (8-K)",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420626000042/csl-20260609.htm",
-      "material": false
+      "material": false,
+      "headline": "Stockholders approved below-NAV share issuance authorization for 12 months",
+      "signal": "clean",
+      "signal_note": "Routine below-NAV authorization approved"
     },
     {
       "form": "8-K",
@@ -18,7 +21,10 @@
       "label": "Current report (8-K)",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420626000040/csl-20260609.htm",
-      "material": false
+      "material": false,
+      "headline": "Annual meeting elected two directors and ratified EY auditor",
+      "signal": "clean",
+      "signal_note": "Routine annual meeting results"
     },
     {
       "form": "4",
@@ -26,7 +32,10 @@
       "label": "4 — FORM 4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000147188126000008/xslF345X06/wk-form4_1780430674.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider Form 4 filed for June 1, 2026 transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "40-17G",
@@ -34,7 +43,10 @@
       "label": "40-17G — 40-17G",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420626000035/cgbd_20260602xform40-17g.htm",
-      "material": false
+      "material": false,
+      "headline": "Filed annual fidelity bond disclosure under Rule 17g-1",
+      "signal": "clean",
+      "signal_note": "Routine fidelity bond filing"
     },
     {
       "form": "4",
@@ -42,7 +54,10 @@
       "label": "4 — FORM 4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000147188126000006/xslF345X06/wk-form4_1779307486.xml",
-      "material": false
+      "material": false,
+      "headline": "CGBD insider reported a Section 16 transaction dated May 15, 2026",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 4"
     },
     {
       "form": "10-Q",
@@ -50,7 +65,10 @@
       "label": "Quarterly report (10-Q) for period ending 2026-03-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420626000033/csl-20260331.htm",
-      "material": true
+      "material": true,
+      "headline": "CGBD filed Q1 2026 10-Q as CSL III merger integration proceeds",
+      "signal": "clean",
+      "signal_note": "Routine quarterly report"
     },
     {
       "form": "8-K",
@@ -58,7 +76,10 @@
       "label": "Current report: reported quarterly results; issued a Regulation FD disclosure",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420626000032/csl-20260511.htm",
-      "material": true
+      "material": true,
+      "headline": "Carlyle Secured Lending reported Q1 results; declared $0.35 dividend",
+      "signal": "clean",
+      "signal_note": "Routine dividend and results"
     },
     {
       "form": "DEF 14A",
@@ -66,7 +87,10 @@
       "label": "Proxy statement — DEF 14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420626000025/cgbd_2026xannualmeetingxde.htm",
-      "material": false
+      "material": false,
+      "headline": "CGBD to elect two directors and ratify Ernst & Young at June 9 meeting",
+      "signal": "clean",
+      "signal_note": "Routine annual meeting proxy"
     },
     {
       "form": "DEFA14A",
@@ -74,7 +98,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420626000026/cgbdi_2026xannualproxyxdef.htm",
-      "material": false
+      "material": false,
+      "headline": "CGBD filed additional annual meeting proxy materials",
+      "signal": "clean",
+      "signal_note": "Routine proxy soliciting material"
     },
     {
       "form": "DEFA14A",
@@ -82,7 +109,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420626000024/cgbd_202604xspecialmeeting.htm",
-      "material": false
+      "material": false,
+      "headline": "CGBD seeks stockholder approval to issue shares below NAV",
+      "signal": "clean",
+      "signal_note": "Routine below-NAV authorization proposal"
     },
     {
       "form": "DEF 14A",
@@ -90,7 +120,10 @@
       "label": "Proxy statement — DEF 14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420626000023/cgbd_202604xspecialmeeting.htm",
-      "material": false
+      "material": false,
+      "headline": "CGBD special meeting to authorize share issuance below net asset value",
+      "signal": "clean",
+      "signal_note": "Routine below-NAV authorization proposal"
     },
     {
       "form": "PRE 14A",
@@ -98,7 +131,10 @@
       "label": "PRE 14A — PRE 14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420626000018/cgbd_202604xspecialmeeting.htm",
-      "material": false
+      "material": false,
+      "headline": "CGBD preliminary proxy proposes authorizing below-NAV share issuance",
+      "signal": "clean",
+      "signal_note": "Routine below-NAV authorization proposal"
     },
     {
       "form": "8-K",
@@ -106,7 +142,10 @@
       "label": "Current report: issued a Regulation FD disclosure",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420626000017/csl-20260415.htm",
-      "material": true
+      "material": true,
+      "headline": "CGBD to report Q1 2026 results on May 11 conference call",
+      "signal": "clean",
+      "signal_note": "Routine earnings date announcement"
     },
     {
       "form": "4",
@@ -114,7 +153,10 @@
       "label": "4 — FORM 4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000212161226000006/xslF345X06/wk-form4_1774296401.xml",
-      "material": false
+      "material": false,
+      "headline": "CGBD insider reported a Section 16 transaction dated March 20, 2026",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 4"
     },
     {
       "form": "3",
@@ -122,7 +164,10 @@
       "label": "3 — FORM 3",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000212161226000004/xslF345X06/wk-form3_1773865854.xml",
-      "material": false
+      "material": false,
+      "headline": "New CGBD insider filed initial Form 3 ownership statement",
+      "signal": "clean",
+      "signal_note": "Routine initial ownership filing"
     },
     {
       "form": "4",
@@ -130,7 +175,10 @@
       "label": "4 — FORM 4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000191492126000008/xslF345X05/wk-form4_1773173195.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider filed Form 4 reporting March 9 transaction under 10b5-1 plan",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -138,7 +186,10 @@
       "label": "4 — FORM 4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000147188126000004/xslF345X05/wk-form4_1773093666.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider filed Form 4 reporting March 6 transaction under 10b5-1 plan",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -146,7 +197,10 @@
       "label": "4 — FORM 4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000173474126000004/xslF345X05/wk-form4_1772744723.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider filed Form 4 reporting March 4 transaction under 10b5-1 plan",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "3",
@@ -154,7 +208,10 @@
       "label": "3 — FORM 3",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000191492126000005/xslF345X02/wk-form3_1772140301.xml",
-      "material": false
+      "material": false,
+      "headline": "New insider filed Form 3 initial statement of beneficial ownership",
+      "signal": "clean",
+      "signal_note": "Routine ownership filing"
     },
     {
       "form": "10-K",
@@ -162,7 +219,10 @@
       "label": "Annual report (10-K) for period ending 2025-12-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420626000013/csl-20251231.htm",
-      "material": true
+      "material": true,
+      "headline": "Filed annual 10-K for fiscal year ended December 31, 2025",
+      "signal": "clean",
+      "signal_note": "Routine annual report risk factors"
     },
     {
       "form": "8-K",
@@ -170,7 +230,10 @@
       "label": "Current report: reported quarterly results; issued a Regulation FD disclosure",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420626000012/csl-20260224.htm",
-      "material": true
+      "material": true,
+      "headline": "Carlyle Secured Lending declared $0.40 Q1 dividend with FY2025 results",
+      "signal": "clean",
+      "signal_note": "Dividend declared as normal"
     },
     {
       "form": "8-K",
@@ -178,7 +241,10 @@
       "label": "Current report: changed a director or senior officer; disclosed a material event",
       "category": "Personnel",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000119312526061726/d949109d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "CEO Justin Plouffe resigned; board named Alex Chi chief executive",
+      "signal": "watch",
+      "signal_note": "Immediate CEO change, successor named"
     },
     {
       "form": "APP ORDR",
@@ -186,7 +252,10 @@
       "label": "APP ORDR",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/999999999726000264/filename1.pdf",
-      "material": false
+      "material": false,
+      "headline": "Filed SEC exemptive application order dated February 18",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "5",
@@ -194,7 +263,10 @@
       "label": "5 — FORM 5",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000120701826000002/xslF345X05/wk-form5_1771016620.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider filed annual Form 5 for fiscal year ended December 31, 2025",
+      "signal": "clean",
+      "signal_note": "Routine insider ownership filing"
     },
     {
       "form": "5",
@@ -202,7 +274,10 @@
       "label": "5 — FORM 5",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000147188126000002/xslF345X05/wk-form5_1771016584.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider filed annual Form 5 for fiscal year ended December 31, 2025",
+      "signal": "clean",
+      "signal_note": "Routine insider ownership filing"
     },
     {
       "form": "8-K",
@@ -210,7 +285,10 @@
       "label": "Current report: issued a Regulation FD disclosure",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420626000006/csl-20260212.htm",
-      "material": true
+      "material": true,
+      "headline": "Formed $600M Structured Credit Partners JV with Sixth Street",
+      "signal": "clean",
+      "signal_note": "Strategic joint venture formed"
     },
     {
       "form": "8-K",
@@ -218,7 +296,10 @@
       "label": "Current report: issued a Regulation FD disclosure",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420626000002/csl-20260127.htm",
-      "material": true
+      "material": true,
+      "headline": "Set February 25 conference call for Q4 and full-year 2025 results",
+      "signal": "clean",
+      "signal_note": "Routine earnings call notice"
     },
     {
       "form": "APP NTC",
@@ -226,7 +307,10 @@
       "label": "APP NTC",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/999999999726000152/filename1.pdf",
-      "material": false
+      "material": false,
+      "headline": "Filed exemptive-relief application notice (APP NTC) on 2026-01-23",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "40-APP/A",
@@ -234,7 +318,10 @@
       "label": "40-APP/A — 40-APP/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000119312525308135/d35293d40appa.htm",
-      "material": false
+      "material": false,
+      "headline": "Carlyle affiliates filed amended co-investment exemptive relief application",
+      "signal": "clean",
+      "signal_note": "Routine exemptive relief application"
     },
     {
       "form": "4",
@@ -242,7 +329,10 @@
       "label": "4 — FORM 4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000147188125000009/xslF345X05/wk-form4_1764711379.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider filed Form 4 for equity transaction dated 11/14/2025",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 4"
     },
     {
       "form": "25-NSE",
@@ -250,7 +340,10 @@
       "label": "25-NSE",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000135445725001191/xslF25X02/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "Nasdaq filed Form 25 to delist 8.20% Notes due 2028 ahead of redemption",
+      "signal": "clean",
+      "signal_note": "Routine delisting of redeemed notes"
     },
     {
       "form": "4",
@@ -258,7 +351,10 @@
       "label": "4 — FORM 4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000173474125000008/xslF345X05/wk-form4_1763413826.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider filed Form 4 for equity transaction dated 11/13/2025",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 4"
     },
     {
       "form": "4",
@@ -266,7 +362,10 @@
       "label": "4 — FORM 4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000197102825000003/xslF345X05/wk-form4_1762981508.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider filed Form 4 for equity transaction dated 11/10/2025",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 4"
     },
     {
       "form": "8-K",
@@ -274,7 +373,10 @@
       "label": "Current report: reported quarterly results; issued a Regulation FD disclosure",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420625000078/csl-20251104.htm",
-      "material": true
+      "material": true,
+      "headline": "Carlyle Secured Lending posted Q3 results, declared $0.40 Q4 dividend",
+      "signal": "clean",
+      "signal_note": "Routine results and dividend"
     },
     {
       "form": "10-Q",
@@ -282,7 +384,10 @@
       "label": "Quarterly report (10-Q) for period ending 2025-09-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420625000077/csl-20250930.htm",
-      "material": true
+      "material": true,
+      "headline": "Carlyle Secured Lending filed third-quarter 2025 Form 10-Q",
+      "signal": "clean",
+      "signal_note": "Routine quarterly filing"
     },
     {
       "form": "N-23C-2",
@@ -290,7 +395,10 @@
       "label": "N-23C-2 — N-23C-2",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000119312525260868/d68901dn23c2.htm",
-      "material": false
+      "material": false,
+      "headline": "Will redeem all $85M of 8.20% Notes due 2028 on December 1",
+      "signal": "clean",
+      "signal_note": "Routine full notes redemption"
     },
     {
       "form": "8-K",
@@ -298,7 +406,10 @@
       "label": "Current report: issued a Regulation FD disclosure; disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000119312525260819/d37209d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Announced redemption of $85M 8.20% Notes due 2028",
+      "signal": "clean",
+      "signal_note": "Routine notes redemption announcement"
     },
     {
       "form": "8-K",
@@ -306,7 +417,10 @@
       "label": "Current report: issued a Regulation FD disclosure",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420625000072/csl-20251015.htm",
-      "material": true
+      "material": true,
+      "headline": "Scheduled November 5 call for third-quarter 2025 results",
+      "signal": "clean",
+      "signal_note": "Routine earnings call notice"
     },
     {
       "form": "8-K",
@@ -314,7 +428,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000119312525236007/d847607d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Closed $300M of 5.750% unsecured notes due 2031 to repay revolver",
+      "signal": "clean",
+      "signal_note": "Routine notes issuance"
     },
     {
       "form": "8-K",
@@ -322,7 +439,10 @@
       "label": "Current report: terminated a material agreement",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420625000069/csl-20251002.htm",
-      "material": true
+      "material": true,
+      "headline": "Repaid and terminated CSL III SPV revolver with no early termination penalties",
+      "signal": "clean",
+      "signal_note": "Routine facility repayment"
     },
     {
       "form": "8-K",
@@ -330,7 +450,10 @@
       "label": "Current report: entered a material agreement",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000119312525230203/d73180d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Signed underwriting agreement for $300M 5.750% notes due 2031",
+      "signal": "clean",
+      "signal_note": "Routine notes offering"
     },
     {
       "form": "424B2",
@@ -338,7 +461,10 @@
       "label": "Prospectus supplement (offering) — 424B2",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000119312525228301/d942184d424b2.htm",
-      "material": true
+      "material": true,
+      "headline": "Prospectus supplement for $300M 5.750% unsecured notes due 2031",
+      "signal": "clean",
+      "signal_note": "Routine notes offering"
     },
     {
       "form": "40-APP/A",
@@ -346,7 +472,10 @@
       "label": "40-APP/A — 40-APP/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000119312525227296/d167970d40appa.htm",
-      "material": false
+      "material": false,
+      "headline": "Amended SEC exemptive relief application for co-investment among Carlyle affiliates",
+      "signal": "clean",
+      "signal_note": "Routine exemptive relief filing"
     },
     {
       "form": "497AD",
@@ -354,7 +483,10 @@
       "label": "497AD — 497AD",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000119312525225251/d948916d497ad.htm",
-      "material": false
+      "material": false,
+      "headline": "Priced $300M of 5.750% unsecured notes due 2031",
+      "signal": "clean",
+      "signal_note": "Routine notes pricing"
     },
     {
       "form": "FWP",
@@ -362,7 +494,10 @@
       "label": "FWP — FWP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000119312525225074/d942196dfwp.htm",
-      "material": false
+      "material": false,
+      "headline": "Pricing term sheet for $300M 5.750% notes due 2031",
+      "signal": "clean",
+      "signal_note": "Routine notes pricing"
     },
     {
       "form": "497AD",
@@ -370,7 +505,10 @@
       "label": "497AD — 497AD",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000119312525225012/d942215d497ad.htm",
-      "material": false
+      "material": false,
+      "headline": "Bloomberg offering announcement for public notes offering",
+      "signal": "clean",
+      "signal_note": "Routine offering communication"
     },
     {
       "form": "424B2",
@@ -378,7 +516,10 @@
       "label": "Prospectus supplement (offering) — 424B2",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000119312525224171/d942184d424b2.htm",
-      "material": true
+      "material": true,
+      "headline": "Preliminary prospectus supplement for unsecured notes offering due 2031",
+      "signal": "clean",
+      "signal_note": "Routine notes offering"
     },
     {
       "form": "40-APP/A",
@@ -386,7 +527,10 @@
       "label": "40-APP/A — 40-APP/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000119312525197375/d167970d40appa.htm",
-      "material": false
+      "material": false,
+      "headline": "Amended SEC exemptive relief application for Carlyle affiliate co-investment",
+      "signal": "clean",
+      "signal_note": "Routine exemptive relief filing"
     },
     {
       "form": "4",
@@ -394,7 +538,10 @@
       "label": "4 — FORM 4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000147188125000006/xslF345X05/wk-form4_1755807386.xml",
-      "material": false
+      "material": false,
+      "headline": "CGBD insider reported an equity transaction dated August 18, 2025",
+      "signal": "clean",
+      "signal_note": "Routine Section 16 insider filing"
     },
     {
       "form": "4",
@@ -402,7 +549,10 @@
       "label": "4 — FORM 4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000173474125000006/xslF345X05/wk-form4_1755807262.xml",
-      "material": false
+      "material": false,
+      "headline": "CGBD insider reported an equity transaction dated August 20, 2025",
+      "signal": "clean",
+      "signal_note": "Routine Section 16 insider filing"
     },
     {
       "form": "10-Q",
@@ -410,7 +560,10 @@
       "label": "Quarterly report (10-Q) for period ending 2025-06-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420625000066/csl-20250630.htm",
-      "material": true
+      "material": true,
+      "headline": "CGBD filed second-quarter 10-Q covering the period ended June 30, 2025",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results"
     },
     {
       "form": "8-K",
@@ -418,7 +571,10 @@
       "label": "Current report: reported quarterly results; issued a Regulation FD disclosure",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420625000065/csl-20250805.htm",
-      "material": true
+      "material": true,
+      "headline": "Carlyle Secured Lending posted Q2 results and declared $0.40 quarterly dividend",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results and dividend"
     },
     {
       "form": "4",
@@ -426,7 +582,10 @@
       "label": "4 — FORM 4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000162828025035570/xslF345X05/wk-form4_1753217235.xml",
-      "material": false
+      "material": false,
+      "headline": "CGBD insider reported an equity transaction dated May 20, 2025",
+      "signal": "clean",
+      "signal_note": "Routine Section 16 insider filing"
     },
     {
       "form": "8-K",
@@ -434,7 +593,10 @@
       "label": "Current report: issued a Regulation FD disclosure",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420625000059/csl-20250715.htm",
-      "material": true
+      "material": true,
+      "headline": "CGBD set August 6 conference call to report second-quarter results",
+      "signal": "clean",
+      "signal_note": "Routine earnings call announcement"
     },
     {
       "form": "40-APP",
@@ -442,7 +604,10 @@
       "label": "40-APP — 40-APP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000119312525142896/d944393d40app.htm",
-      "material": false
+      "material": false,
+      "headline": "CGBD filed exemptive relief application covering Carlyle affiliated entities",
+      "signal": "clean",
+      "signal_note": "Routine exemptive application"
     },
     {
       "form": "8-K",
@@ -450,7 +615,10 @@
       "label": "Current report (8-K)",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420625000055/csl-20250609.htm",
-      "material": false
+      "material": false,
+      "headline": "Stockholders approved issuing CGBD shares below net asset value",
+      "signal": "clean",
+      "signal_note": "Routine below-NAV issuance authorization"
     },
     {
       "form": "8-K",
@@ -458,7 +626,10 @@
       "label": "Current report (8-K)",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420625000054/csl-20250609.htm",
-      "material": false
+      "material": false,
+      "headline": "CGBD shareholders elected two directors and ratified EY as auditor",
+      "signal": "clean",
+      "signal_note": "Routine annual meeting results"
     },
     {
       "form": "40-17G",
@@ -466,7 +637,10 @@
       "label": "40-17G — 40-17G",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420625000049/cgbd_20250519xform40-17g.htm",
-      "material": false
+      "material": false,
+      "headline": "CGBD filed fidelity bond information under Rule 17g-1",
+      "signal": "clean",
+      "signal_note": "Routine fidelity bond filing"
     },
     {
       "form": "10-Q",
@@ -474,7 +648,10 @@
       "label": "Quarterly report (10-Q) for period ending 2025-03-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420625000047/csl-20250331.htm",
-      "material": true
+      "material": true,
+      "headline": "CGBD filed first-quarter 10-Q covering the period ended March 31, 2025",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results"
     },
     {
       "form": "8-K",
@@ -482,7 +659,10 @@
       "label": "Current report: reported quarterly results; issued a Regulation FD disclosure",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420625000046/csl-20250506.htm",
-      "material": true
+      "material": true,
+      "headline": "Carlyle Secured Lending declared $0.40 Q2 base dividend with Q1 results",
+      "signal": "clean",
+      "signal_note": "Routine Q1 results and dividend"
     },
     {
       "form": "8-K",
@@ -490,7 +670,10 @@
       "label": "Current report: changed a director or senior officer",
       "category": "Personnel",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420625000038/csl-20250429.htm",
-      "material": true
+      "material": true,
+      "headline": "Director Mark Jenkins resigned; board appointed CFO Thomas Hennigan to fill seat",
+      "signal": "clean",
+      "signal_note": "Routine board change, immediate replacement"
     },
     {
       "form": "DEFA14A",
@@ -498,7 +681,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420625000035/cgbd_202504xspecialmeeting.htm",
-      "material": false
+      "material": false,
+      "headline": "Additional proxy materials for June 9 special stockholder meeting",
+      "signal": "clean",
+      "signal_note": "Routine proxy solicitation"
     },
     {
       "form": "DEF 14A",
@@ -506,7 +692,10 @@
       "label": "Proxy statement — DEF 14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420625000034/cgbd_2025xspecialmeetingxd.htm",
-      "material": false
+      "material": false,
+      "headline": "Special meeting to authorize share issuance below net asset value",
+      "signal": "clean",
+      "signal_note": "Routine below-NAV issuance proposal"
     },
     {
       "form": "DEFA14A",
@@ -514,7 +703,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420625000033/cgbdi_2025xannualproxyxdef.htm",
-      "material": false
+      "material": false,
+      "headline": "Additional proxy materials for 2025 annual stockholder meeting",
+      "signal": "clean",
+      "signal_note": "Routine proxy solicitation"
     },
     {
       "form": "DEF 14A",
@@ -522,7 +714,10 @@
       "label": "Proxy statement — DEF 14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420625000032/cgbdi_2025xannualproxy.htm",
-      "material": false
+      "material": false,
+      "headline": "Annual meeting to elect two directors and ratify Ernst & Young",
+      "signal": "clean",
+      "signal_note": "Routine annual meeting proposals"
     },
     {
       "form": "8-K",
@@ -530,7 +725,10 @@
       "label": "Current report: issued a Regulation FD disclosure",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420625000022/csl-20250415.htm",
-      "material": true
+      "material": true,
+      "headline": "Scheduled May 7 conference call for first-quarter 2025 results",
+      "signal": "clean",
+      "signal_note": "Routine earnings call announcement"
     },
     {
       "form": "PRE 14A",
@@ -538,7 +736,10 @@
       "label": "PRE 14A — PRE 14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420625000020/cgbd_202504xspecialmeeting.htm",
-      "material": false
+      "material": false,
+      "headline": "Preliminary proxy for special meeting on below-NAV share issuance",
+      "signal": "clean",
+      "signal_note": "Routine below-NAV issuance proposal"
     },
     {
       "form": "4",
@@ -546,7 +747,10 @@
       "label": "4 — FORM 4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000162828025015859/xslF345X05/wk-form4_1743534295.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider Form 4 reports March 27 CGBD equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -554,7 +758,10 @@
       "label": "4 — FORM 4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000162828025015804/xslF345X05/wk-form4_1743522219.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider Form 4 reports March 27 CGBD equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -562,7 +769,10 @@
       "label": "4 — FORM 4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000162828025015802/xslF345X05/wk-form4_1743522149.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider Form 4 reports March 27 CGBD equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -570,7 +780,10 @@
       "label": "4 — FORM 4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000162828025015800/xslF345X05/wk-form4_1743522064.xml",
-      "material": false
+      "material": false,
+      "headline": "CGBD insider reported an equity transaction dated March 27, 2025",
+      "signal": "clean",
+      "signal_note": "Routine Section 16 filing"
     },
     {
       "form": "4",
@@ -578,7 +791,10 @@
       "label": "4 — FORM 4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000162828025015798/xslF345X05/wk-form4_1743521995.xml",
-      "material": false
+      "material": false,
+      "headline": "CGBD insider reported an equity transaction dated March 27, 2025",
+      "signal": "clean",
+      "signal_note": "Routine Section 16 filing"
     },
     {
       "form": "4",
@@ -586,7 +802,10 @@
       "label": "4 — FORM 4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000162828025015795/xslF345X05/wk-form4_1743521919.xml",
-      "material": false
+      "material": false,
+      "headline": "CGBD insider reported an equity transaction dated March 27, 2025",
+      "signal": "clean",
+      "signal_note": "Routine Section 16 filing"
     },
     {
       "form": "8-K",
@@ -594,7 +813,10 @@
       "label": "Current report: issued a Regulation FD disclosure",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000119312525068793/d848876d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "CGBD furnished CSL III Q4 earnings presentation after completing merger",
+      "signal": "clean",
+      "signal_note": "Routine Reg FD disclosure"
     },
     {
       "form": "8-K",
@@ -602,7 +824,10 @@
       "label": "Current report: entered a material agreement",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000119312525067075/d944023d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "CGBD entered $150M at-the-market equity distribution agreement",
+      "signal": "clean",
+      "signal_note": "Routine ATM offering"
     },
     {
       "form": "424B3",
@@ -610,7 +835,10 @@
       "label": "Prospectus supplement (offering) — 424B3",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000119312525066446/d904787d424b3.htm",
-      "material": true
+      "material": true,
+      "headline": "CGBD prospectus supplement for $150M common stock ATM offering",
+      "signal": "clean",
+      "signal_note": "Routine offering; NAV $855M disclosed"
     },
     {
       "form": "8-K",
@@ -618,7 +846,10 @@
       "label": "Current report: entered a material agreement; completed an acquisition or disposition",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000119312525065938/d906363d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "CGBD completed acquisition of Carlyle Secured Lending III via merger",
+      "signal": "clean",
+      "signal_note": "Routine merger completion and financing"
     },
     {
       "form": "8-K",
@@ -626,7 +857,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420625000017/csl-20250312.htm",
-      "material": true
+      "material": true,
+      "headline": "CGBD amended credit facility, raising commitments to $935M, extending maturity to 2030",
+      "signal": "clean",
+      "signal_note": "Amend-and-extend; increased capacity"
     },
     {
       "form": "424B3",
@@ -634,7 +868,10 @@
       "label": "Prospectus supplement (offering) — 424B3",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420625000014/cgbd_20250317x424b3.htm",
-      "material": true
+      "material": true,
+      "headline": "CGBD supplemented proxy prospectus with 2024 Form 10-K",
+      "signal": "clean",
+      "signal_note": "Routine incorporation of annual report"
     },
     {
       "form": "425",
@@ -642,7 +879,10 @@
       "label": "425 — 425",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000119312525053054/d936992d425.htm",
-      "material": false
+      "material": false,
+      "headline": "CGBD solicited stockholder votes ahead of CSL III merger special meeting",
+      "signal": "clean",
+      "signal_note": "Routine merger proxy solicitation"
     },
     {
       "form": "10-K",
@@ -650,7 +890,10 @@
       "label": "Annual report (10-K) for period ending 2024-12-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420625000011/csl-20241231.htm",
-      "material": true
+      "material": true,
+      "headline": "CGBD filed 2024 annual report covering leverage and interest-rate risks",
+      "signal": "clean",
+      "signal_note": "Routine annual report risk factors"
     },
     {
       "form": "8-K",
@@ -658,7 +901,10 @@
       "label": "Current report: reported quarterly results; issued a Regulation FD disclosure",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420625000010/csl-20250225.htm",
-      "material": true
+      "material": true,
+      "headline": "Carlyle Secured Lending posted Q4 2024 results, declared $0.40 base plus $0.05 supplemental dividend",
+      "signal": "clean",
+      "signal_note": "Routine results and dividend"
     },
     {
       "form": "5",
@@ -666,7 +912,10 @@
       "label": "5 — FORM 5",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000162828025005717/xslF345X05/wk-form5_1739567635.xml",
-      "material": false
+      "material": false,
+      "headline": "CGBD insider filed annual Form 5 for fiscal year ended 12/31/2024",
+      "signal": "clean",
+      "signal_note": "Routine insider ownership statement"
     },
     {
       "form": "5",
@@ -674,7 +923,10 @@
       "label": "5 — FORM 5",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000162828025005714/xslF345X05/wk-form5_1739567526.xml",
-      "material": false
+      "material": false,
+      "headline": "CGBD insider filed annual Form 5 for fiscal year ended 12/31/2024",
+      "signal": "clean",
+      "signal_note": "Routine insider ownership statement"
     },
     {
       "form": "5",
@@ -682,7 +934,10 @@
       "label": "5 — FORM 5",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000162828025005711/xslF345X05/wk-form5_1739567445.xml",
-      "material": false
+      "material": false,
+      "headline": "CGBD insider filed annual Form 5 for fiscal year ended 12/31/2024",
+      "signal": "clean",
+      "signal_note": "Routine insider ownership statement"
     },
     {
       "form": "5",
@@ -690,7 +945,10 @@
       "label": "5 — FORM 5",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000162828025005694/xslF345X05/wk-form5_1739567233.xml",
-      "material": false
+      "material": false,
+      "headline": "CGBD insider filed annual Form 5 for fiscal year ended 12/31/2024",
+      "signal": "clean",
+      "signal_note": "Routine insider ownership statement"
     },
     {
       "form": "8-K",
@@ -698,7 +956,10 @@
       "label": "Current report: issued a Regulation FD disclosure",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420625000003/csl-20250114.htm",
-      "material": true
+      "material": true,
+      "headline": "CGBD to report Q4 and full-year 2024 results on February 26, 2025",
+      "signal": "clean",
+      "signal_note": "Routine earnings call announcement"
     },
     {
       "form": "EFFECT",
@@ -706,7 +967,10 @@
       "label": "EFFECT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/999999999525000045/xslEFFECTX01/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "SEC declared CGBD registration statement effective",
+      "signal": "clean",
+      "signal_note": "Routine notice of effectiveness"
     },
     {
       "form": "424B3",
@@ -714,7 +978,10 @@
       "label": "Prospectus supplement (offering) — 424B3",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000119312525002927/d812169d424b3.htm",
-      "material": true
+      "material": true,
+      "headline": "CGBD sets March 26 special meeting to approve CSL III merger stock issuance",
+      "signal": "clean",
+      "signal_note": "Routine merger proxy/prospectus"
     },
     {
       "form": "425",
@@ -722,7 +989,10 @@
       "label": "425 — 425",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000119312525001567/d877204d425.htm",
-      "material": false
+      "material": false,
+      "headline": "CGBD amended its August 2024 merger agreement with CSL III",
+      "signal": "clean",
+      "signal_note": "Routine merger agreement amendment"
     },
     {
       "form": "8-K",
@@ -730,7 +1000,10 @@
       "label": "Current report: entered a material agreement",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000119312525001561/d877204d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "CGBD amended its August 2024 merger agreement with CSL III",
+      "signal": "clean",
+      "signal_note": "Routine merger agreement amendment"
     },
     {
       "form": "CORRESP",
@@ -738,7 +1011,10 @@
       "label": "CORRESP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000119312525001555/filename1.htm",
-      "material": false
+      "material": false,
+      "headline": "CGBD responded to SEC staff comments on N-14 merger registration statement",
+      "signal": "clean",
+      "signal_note": "Routine SEC comment response"
     },
     {
       "form": "N-14 8C/A",
@@ -746,7 +1022,10 @@
       "label": "N-14 8C/A — N-14 8C/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000119312525001551/d812169dn148ca.htm",
-      "material": false
+      "material": false,
+      "headline": "CGBD sets March 26 vote on merger with Carlyle Secured Lending III",
+      "signal": "clean",
+      "signal_note": "Routine merger proxy statement"
     },
     {
       "form": "4",
@@ -754,7 +1033,10 @@
       "label": "4 — FORM 4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000162828024050237/xslF345X05/wk-form4_1733520922.xml",
-      "material": false
+      "material": false,
+      "headline": "CGBD insider reported Section 16 transaction dated December 4, 2024",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 4"
     },
     {
       "form": "CORRESP",
@@ -762,7 +1044,10 @@
       "label": "CORRESP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000119312524272506/filename1.htm",
-      "material": false
+      "material": false,
+      "headline": "CGBD responds to SEC staff comments on merger N-14 registration",
+      "signal": "clean",
+      "signal_note": "Routine SEC correspondence"
     },
     {
       "form": "N-14 8C/A",
@@ -770,7 +1055,10 @@
       "label": "N-14 8C/A — N-14 8C/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000119312524272494/d812169dn148ca.htm",
-      "material": false
+      "material": false,
+      "headline": "CGBD files amended N-14 proxy for CSL III merger",
+      "signal": "clean",
+      "signal_note": "Routine merger proxy statement"
     },
     {
       "form": "4",
@@ -778,7 +1066,10 @@
       "label": "4 — FORM 4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000162828024049135/xslF345X05/wk-form4_1732569263.xml",
-      "material": false
+      "material": false,
+      "headline": "CGBD insider reported Section 16 transaction dated November 22, 2024",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 4"
     },
     {
       "form": "4",
@@ -786,7 +1077,10 @@
       "label": "4 — FORM 4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000162828024048671/xslF345X05/wk-form4_1732138223.xml",
-      "material": false
+      "material": false,
+      "headline": "CGBD insider reported Section 16 transaction dated November 18, 2024",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 4"
     },
     {
       "form": "4",
@@ -794,7 +1088,10 @@
       "label": "4 — FORM 4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000162828024048442/xslF345X05/wk-form4_1732051191.xml",
-      "material": false
+      "material": false,
+      "headline": "CGBD insider reported Section 16 transaction dated November 11, 2024",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 4"
     },
     {
       "form": "10-Q",
@@ -802,7 +1099,10 @@
       "label": "Quarterly report (10-Q) for period ending 2024-09-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420624000067/csl-20240930.htm",
-      "material": true
+      "material": true,
+      "headline": "CGBD files Q3 2024 10-Q for quarter ended September 30",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results"
     },
     {
       "form": "8-K",
@@ -810,7 +1110,10 @@
       "label": "Current report: reported quarterly results; issued a Regulation FD disclosure",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420624000066/csl-20241105.htm",
-      "material": true
+      "material": true,
+      "headline": "CGBD declared Q4 base dividend of $0.40 plus $0.05 supplemental",
+      "signal": "clean",
+      "signal_note": "Dividend declared as normal"
     },
     {
       "form": "8-K",
@@ -818,7 +1121,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000119312524239669/d814451d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "CGBD priced $300M of 6.750% unsecured notes due 2030",
+      "signal": "clean",
+      "signal_note": "Ordinary notes offering"
     },
     {
       "form": "8-K",
@@ -826,7 +1132,10 @@
       "label": "Current report: entered a material agreement",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000119312524238953/d889312d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Entered underwriting agreement for $300M 6.750% notes due 2030",
+      "signal": "clean",
+      "signal_note": "Routine notes offering"
     },
     {
       "form": "8-K",
@@ -834,7 +1143,10 @@
       "label": "Current report: issued a Regulation FD disclosure",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420624000060/csl-20241016.htm",
-      "material": true
+      "material": true,
+      "headline": "Set November 6 call for third-quarter 2024 results",
+      "signal": "clean",
+      "signal_note": "Routine earnings call notice"
     },
     {
       "form": "424B2",
@@ -842,7 +1154,10 @@
       "label": "Prospectus supplement (offering) — 424B2",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000119312524237541/d796521d424b2.htm",
-      "material": true
+      "material": true,
+      "headline": "Prospectus supplement for $300M 6.750% unsecured notes due 2030",
+      "signal": "clean",
+      "signal_note": "Routine notes offering"
     },
     {
       "form": "497AD",
@@ -850,7 +1165,10 @@
       "label": "497AD — 497AD",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000119312524235999/d839390d497ad.htm",
-      "material": false
+      "material": false,
+      "headline": "Priced $300M 6.750% notes due 2030 to repay 2024 debt",
+      "signal": "clean",
+      "signal_note": "Routine notes offering, refinancing"
     },
     {
       "form": "FWP",
@@ -858,7 +1176,10 @@
       "label": "FWP — FWP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000119312524235989/d840505dfwp.htm",
-      "material": false
+      "material": false,
+      "headline": "Pricing term sheet for $300M 6.750% notes due 2030",
+      "signal": "clean",
+      "signal_note": "Routine notes offering"
     },
     {
       "form": "497AD",
@@ -866,7 +1187,10 @@
       "label": "497AD — 497AD",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000119312524235875/d831605d497ad.htm",
-      "material": false
+      "material": false,
+      "headline": "Announced new issue of notes via Bloomberg communication",
+      "signal": "clean",
+      "signal_note": "Routine notes offering"
     },
     {
       "form": "424B2",
@@ -874,7 +1198,10 @@
       "label": "Prospectus supplement (offering) — 424B2",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000119312524235651/d796521d424b2.htm",
-      "material": true
+      "material": true,
+      "headline": "Preliminary prospectus supplement for new unsecured notes offering",
+      "signal": "clean",
+      "signal_note": "Routine notes offering"
     },
     {
       "form": "N-14 8C",
@@ -882,7 +1209,10 @@
       "label": "N-14 8C — N-14 8C",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000119312524233868/d812169dn148c.htm",
-      "material": false
+      "material": false,
+      "headline": "Filed N-14 for proposed merger with Carlyle Secured Lending III",
+      "signal": "clean",
+      "signal_note": "Routine merger registration"
     },
     {
       "form": "4",
@@ -890,7 +1220,10 @@
       "label": "4 — FORM 4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000162828024038964/xslF345X05/wk-form4_1725049336.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider reported August 28 equity transaction on Form 4",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -898,7 +1231,10 @@
       "label": "4 — FORM 4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000173474124000011/xslF345X05/wk-form4_1723493170.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider reported July 25 equity transaction on Form 4",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "425",
@@ -906,7 +1242,10 @@
       "label": "425 — 425",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000119312524195004/d854829d425.htm",
-      "material": false
+      "material": false,
+      "headline": "Q2 NII $0.51, NAV $16.95 down 0.7%; agreed to acquire CSL III",
+      "signal": "clean",
+      "signal_note": "Modest NAV dip; merger announced"
     },
     {
       "form": "10-Q",
@@ -914,7 +1253,10 @@
       "label": "Quarterly report (10-Q) for period ending 2024-06-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420624000054/csl-20240630.htm",
-      "material": true
+      "material": true,
+      "headline": "Filed Q2 2024 Form 10-Q for quarter ended June 30",
+      "signal": "clean",
+      "signal_note": "Routine quarterly report"
     },
     {
       "form": "425",
@@ -922,7 +1264,10 @@
       "label": "425 — 425",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000119312524193307/d878745d425.htm",
-      "material": false
+      "material": false,
+      "headline": "Entered merger agreement to acquire Carlyle Secured Lending III",
+      "signal": "clean",
+      "signal_note": "Routine merger disclosure"
     },
     {
       "form": "8-K",
@@ -930,7 +1275,10 @@
       "label": "Current report: entered a material agreement; reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000119312524193292/d878745d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Entered merger agreement to acquire Carlyle Secured Lending III",
+      "signal": "clean",
+      "signal_note": "Routine merger disclosure"
     },
     {
       "form": "8-K",
@@ -938,7 +1286,10 @@
       "label": "Current report: issued a Regulation FD disclosure",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420624000051/csl-20240718.htm",
-      "material": true
+      "material": true,
+      "headline": "Scheduled August 5 conference call for Q2 2024 results",
+      "signal": "clean",
+      "signal_note": "Routine earnings date announcement"
     },
     {
       "form": "8-K",
@@ -946,7 +1297,10 @@
       "label": "Current report: entered a material agreement",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420624000048/csl-20240702.htm",
-      "material": true
+      "material": true,
+      "headline": "Completed $410M CLO refinancing extending maturity to July 2036",
+      "signal": "clean",
+      "signal_note": "Routine secured financing"
     },
     {
       "form": "8-K",
@@ -954,7 +1308,10 @@
       "label": "Current report (8-K)",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420624000046/csl-20240606.htm",
-      "material": false
+      "material": false,
+      "headline": "Stockholders approved issuing common stock below NAV for 12 months",
+      "signal": "clean",
+      "signal_note": "Routine below-NAV issuance authorization"
     },
     {
       "form": "8-K",
@@ -962,7 +1319,10 @@
       "label": "Current report (8-K)",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420624000043/csl-20240606.htm",
-      "material": false
+      "material": false,
+      "headline": "Annual meeting elected directors and ratified EY as auditor",
+      "signal": "clean",
+      "signal_note": "Routine governance results"
     },
     {
       "form": "40-APP/A",
@@ -970,7 +1330,10 @@
       "label": "40-APP/A — 40-APP/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000119312524156101/d847743d40appa.htm",
-      "material": false
+      "material": false,
+      "headline": "Filed amended exemptive relief application with SEC",
+      "signal": "clean",
+      "signal_note": "Routine co-investment exemptive application"
     },
     {
       "form": "40-APP/A",
@@ -978,7 +1341,10 @@
       "label": "40-APP/A — 40-APP/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000119312524138047/d819666d40appa.htm",
-      "material": false
+      "material": false,
+      "headline": "Filed amended exemptive relief application with SEC",
+      "signal": "clean",
+      "signal_note": "Routine co-investment exemptive application"
     },
     {
       "form": "40-17G",
@@ -986,7 +1352,10 @@
       "label": "40-17G — 40-17G",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420624000039/csli_2024x0513xform40-17g.htm",
-      "material": false
+      "material": false,
+      "headline": "Carlyle Secured Lending filed routine Rule 17g-1 fidelity bond disclosure",
+      "signal": "clean",
+      "signal_note": "Routine fidelity bond filing"
     },
     {
       "form": "8-K",
@@ -994,7 +1363,10 @@
       "label": "Current report: reported quarterly results; issued a Regulation FD disclosure",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420624000037/csl-20240507.htm",
-      "material": true
+      "material": true,
+      "headline": "Q1 2024 results reported; declared $0.40 base plus $0.07 supplemental dividend",
+      "signal": "clean",
+      "signal_note": "Routine results and dividend"
     },
     {
       "form": "10-Q",
@@ -1002,7 +1374,10 @@
       "label": "Quarterly report (10-Q) for period ending 2024-03-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420624000036/csl-20240331.htm",
-      "material": true
+      "material": true,
+      "headline": "Filed Q1 2024 Form 10-Q for period ended March 31, 2024",
+      "signal": "clean",
+      "signal_note": "Routine quarterly report"
     },
     {
       "form": "N-2ASR",
@@ -1010,7 +1385,10 @@
       "label": "N-2ASR — N-2ASR",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000119312524122820/d629608dn2asr.htm",
-      "material": false
+      "material": false,
+      "headline": "Filed automatic shelf registration on Form N-2ASR for securities offerings",
+      "signal": "clean",
+      "signal_note": "Routine shelf registration"
     },
     {
       "form": "DEFA14A",
@@ -1018,7 +1396,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420624000031/csli_202404xspecialmeeting.htm",
-      "material": false
+      "material": false,
+      "headline": "Filed additional proxy materials for June 6 special meeting",
+      "signal": "clean",
+      "signal_note": "Routine proxy solicitation materials"
     },
     {
       "form": "DEF 14A",
@@ -1026,7 +1407,10 @@
       "label": "Proxy statement — DEF 14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420624000030/csli_202404xspecialmeeting.htm",
-      "material": false
+      "material": false,
+      "headline": "Special meeting to seek authority to issue shares below NAV",
+      "signal": "clean",
+      "signal_note": "Routine below-NAV issuance proposal"
     },
     {
       "form": "DEFA14A",
@@ -1034,7 +1418,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420624000027/csli_2024xannualproxyxdefa.htm",
-      "material": false
+      "material": false,
+      "headline": "Filed additional proxy materials for 2024 annual meeting",
+      "signal": "clean",
+      "signal_note": "Routine proxy solicitation materials"
     },
     {
       "form": "DEF 14A",
@@ -1042,7 +1429,10 @@
       "label": "Proxy statement — DEF 14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420624000026/csli_2024xannualproxy.htm",
-      "material": false
+      "material": false,
+      "headline": "Annual meeting to elect directors and ratify Ernst & Young as auditor",
+      "signal": "clean",
+      "signal_note": "Routine annual meeting proxy"
     },
     {
       "form": "CORRESP",
@@ -1050,7 +1440,10 @@
       "label": "CORRESP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420624000023/filename1.htm",
-      "material": false
+      "material": false,
+      "headline": "Responded to SEC staff comments on preliminary proxy statement",
+      "signal": "clean",
+      "signal_note": "Routine SEC comment response"
     },
     {
       "form": "PRE 14A",
@@ -1058,7 +1451,10 @@
       "label": "PRE 14A — PRE 14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420624000020/csli_202404xspecialmeeting.htm",
-      "material": false
+      "material": false,
+      "headline": "Preliminary proxy for special meeting on below-NAV share issuance",
+      "signal": "clean",
+      "signal_note": "Routine below-NAV issuance proposal"
     },
     {
       "form": "8-K",
@@ -1066,7 +1462,10 @@
       "label": "Current report: issued a Regulation FD disclosure",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420624000018/csl-20240411.htm",
-      "material": true
+      "material": true,
+      "headline": "Carlyle Secured Lending to report Q1 2024 results on May 8",
+      "signal": "clean",
+      "signal_note": "Routine earnings call announcement"
     },
     {
       "form": "40-APP/A",
@@ -1074,7 +1473,10 @@
       "label": "40-APP/A — 40-APP/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000119312524071441/d678177d40appa.htm",
-      "material": false
+      "material": false,
+      "headline": "Amended exemptive application filed for Carlyle co-investment relief",
+      "signal": "clean",
+      "signal_note": "Routine exemptive application amendment"
     },
     {
       "form": "3",
@@ -1082,7 +1484,10 @@
       "label": "3 — FORM 3",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000179204124000002/xslF345X02/wk-form3_1709759357.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider filed initial statement of beneficial ownership",
+      "signal": "clean",
+      "signal_note": "Routine Form 3 ownership filing"
     },
     {
       "form": "8-K",
@@ -1090,7 +1495,10 @@
       "label": "Current report: changed a director or senior officer",
       "category": "Personnel",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420624000016/csl-20240301.htm",
-      "material": true
+      "material": true,
+      "headline": "CEO and President Aren LeeKong resigned; Justin Plouffe appointed",
+      "signal": "watch",
+      "signal_note": "CEO and President departure"
     },
     {
       "form": "10-K",
@@ -1098,7 +1506,10 @@
       "label": "Annual report (10-K) for period ending 2023-12-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420624000012/csl-20231231.htm",
-      "material": true
+      "material": true,
+      "headline": "Carlyle Secured Lending filed 2023 annual report with standard risk factors",
+      "signal": "clean",
+      "signal_note": "Routine annual report"
     },
     {
       "form": "8-K",
@@ -1106,7 +1517,10 @@
       "label": "Current report: reported quarterly results; issued a Regulation FD disclosure",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420624000013/csl-20240226.htm",
-      "material": true
+      "material": true,
+      "headline": "Q4/FY2023 results with $0.40 base plus $0.08 supplemental dividend",
+      "signal": "clean",
+      "signal_note": "Dividend declared as normal"
     },
     {
       "form": "5",
@@ -1114,7 +1528,10 @@
       "label": "5 — FORM 5",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000162828024004233/xslF345X05/wk-form5_1707774294.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider filed annual statement of beneficial ownership",
+      "signal": "clean",
+      "signal_note": "Routine Form 5 ownership filing"
     },
     {
       "form": "5",
@@ -1122,7 +1539,10 @@
       "label": "5 — FORM 5",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000162828024004203/xslF345X05/wk-form5_1707773483.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider filed annual statement of beneficial ownership",
+      "signal": "clean",
+      "signal_note": "Routine Form 5 ownership filing"
     },
     {
       "form": "5",
@@ -1130,7 +1550,10 @@
       "label": "5 — FORM 5",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000162828024004195/xslF345X05/wk-form5_1707773330.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider filed annual statement of beneficial ownership",
+      "signal": "clean",
+      "signal_note": "Routine Form 5 ownership filing"
     },
     {
       "form": "5",
@@ -1138,7 +1561,10 @@
       "label": "5 — FORM 5",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000180793824000004/xslF345X05/wk-form5_1707772484.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider filed annual statement of beneficial ownership",
+      "signal": "clean",
+      "signal_note": "Routine Form 5 ownership filing"
     },
     {
       "form": "8-K/A",
@@ -1146,7 +1572,10 @@
       "label": "8-K/A — 8-K/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420624000006/csl-20240117.htm",
-      "material": false
+      "material": false,
+      "headline": "Updated Q4/FY2023 earnings call to 11:00 a.m. EST on February 27",
+      "signal": "clean",
+      "signal_note": "Routine call-time update"
     },
     {
       "form": "8-K",
@@ -1154,7 +1583,10 @@
       "label": "Current report: issued a Regulation FD disclosure",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420624000002/csl-20240117.htm",
-      "material": true
+      "material": true,
+      "headline": "Scheduled Q4 and full-year 2023 earnings call for February 27",
+      "signal": "clean",
+      "signal_note": "Routine earnings call announcement"
     },
     {
       "form": "CERT",
@@ -1162,7 +1594,10 @@
       "label": "CERT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000135445723000885/CGBDL_8-A_Cert.pdf",
-      "material": false
+      "material": false,
+      "headline": "CERT filed November 21, 2023",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "8-A12B",
@@ -1170,7 +1605,10 @@
       "label": "8-A12B — 8-A12B",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000119312523280773/d601064d8a12b.htm",
-      "material": false
+      "material": false,
+      "headline": "Registered 8.20% Notes due 2028 to list on Nasdaq as CGBDL",
+      "signal": "clean",
+      "signal_note": "Routine securities registration"
     },
     {
       "form": "8-K",
@@ -1178,7 +1616,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000119312523280685/d600260d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Entered indenture for $75M of 8.20% unsecured notes due 2028",
+      "signal": "clean",
+      "signal_note": "Routine notes issuance"
     },
     {
       "form": "8-K",
@@ -1186,7 +1627,10 @@
       "label": "Current report: entered a material agreement",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000119312523278301/d578946d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Signed underwriting agreement for $75M 8.20% notes due 2028",
+      "signal": "clean",
+      "signal_note": "Routine notes offering"
     },
     {
       "form": "424B5",
@@ -1194,7 +1638,10 @@
       "label": "Prospectus supplement (offering) — 424B5",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000119312523277984/d295348d424b5.htm",
-      "material": true
+      "material": true,
+      "headline": "Prospectus supplement for $75M of 8.20% notes due 2028",
+      "signal": "clean",
+      "signal_note": "Routine offering documentation"
     },
     {
       "form": "305B2",
@@ -1202,7 +1649,10 @@
       "label": "305B2 — 305B2",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000119312523277953/d357725d305b2.htm",
-      "material": false
+      "material": false,
+      "headline": "Filed trustee eligibility statement for debt securities offering",
+      "signal": "clean",
+      "signal_note": "Routine trustee eligibility filing"
     },
     {
       "form": "497AD",
@@ -1210,7 +1660,10 @@
       "label": "497AD — 497AD",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000119312523276055/d348060d497ad.htm",
-      "material": false
+      "material": false,
+      "headline": "Priced $75M public offering of 8.20% notes due 2028",
+      "signal": "clean",
+      "signal_note": "Routine notes pricing"
     },
     {
       "form": "FWP",
@@ -1218,7 +1671,10 @@
       "label": "FWP — FWP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000119312523275905/d284421dfwp.htm",
-      "material": false
+      "material": false,
+      "headline": "Pricing term sheet for $75M of 8.20% notes due 2028",
+      "signal": "clean",
+      "signal_note": "Routine pricing term sheet"
     },
     {
       "form": "497AD",
@@ -1226,7 +1682,10 @@
       "label": "497AD — 497AD",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000119312523275661/d56226d497ad.htm",
-      "material": false
+      "material": false,
+      "headline": "Carlyle Secured Lending launches public offering of unsecured notes due 2028",
+      "signal": "clean",
+      "signal_note": "Routine notes offering"
     },
     {
       "form": "497AD",
@@ -1234,7 +1693,10 @@
       "label": "497AD — 497AD",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000119312523275454/d56226d497ad.htm",
-      "material": false
+      "material": false,
+      "headline": "CGBD markets $25 senior notes offering via Bloomberg communication",
+      "signal": "clean",
+      "signal_note": "Routine notes offering"
     },
     {
       "form": "424B5",
@@ -1242,7 +1704,10 @@
       "label": "Prospectus supplement (offering) — 424B5",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000119312523275444/d295348d424b5.htm",
-      "material": true
+      "material": true,
+      "headline": "CGBD files preliminary prospectus for unsecured notes due December 2028",
+      "signal": "clean",
+      "signal_note": "Ordinary shelf offering"
     },
     {
       "form": "40-APP/A",
@@ -1250,7 +1715,10 @@
       "label": "40-APP/A — 40-APP/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000119312523274224/d580169d40appa.htm",
-      "material": false
+      "material": false,
+      "headline": "Carlyle files amended exemptive-relief application for co-investment among affiliates",
+      "signal": "clean",
+      "signal_note": "Routine exemptive-relief filing"
     },
     {
       "form": "10-Q",
@@ -1258,7 +1726,10 @@
       "label": "Quarterly report (10-Q) for period ending 2023-09-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420623000077/csl-20230930.htm",
-      "material": true
+      "material": true,
+      "headline": "CGBD files third quarter 2023 Form 10-Q",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results"
     },
     {
       "form": "8-K",
@@ -1266,7 +1737,10 @@
       "label": "Current report: reported quarterly results; issued a Regulation FD disclosure",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420623000078/csl-20231107.htm",
-      "material": true
+      "material": true,
+      "headline": "CGBD declares $0.37 base plus $0.07 supplemental fourth-quarter dividend with Q3 results",
+      "signal": "clean",
+      "signal_note": "Dividend declared as normal"
     },
     {
       "form": "8-K",
@@ -1274,7 +1748,10 @@
       "label": "Current report: issued a Regulation FD disclosure",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420623000073/csl-20231011.htm",
-      "material": true
+      "material": true,
+      "headline": "CGBD to report third quarter 2023 results on November 8",
+      "signal": "clean",
+      "signal_note": "Routine earnings call notice"
     },
     {
       "form": "40-APP/A",
@@ -1282,7 +1759,10 @@
       "label": "40-APP/A — 40-APP/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000119312523236047/d449061d40appa.htm",
-      "material": false
+      "material": false,
+      "headline": "Carlyle files amended exemptive-relief application for affiliate co-investment",
+      "signal": "clean",
+      "signal_note": "Routine exemptive-relief filing"
     },
     {
       "form": "4",
@@ -1290,7 +1770,10 @@
       "label": "4 — FORM 4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000162828023031709/xslF345X05/wk-form4_1694117331.xml",
-      "material": false
+      "material": false,
+      "headline": "CGBD insider reports Form 4 transaction dated September 5, 2023",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -1298,7 +1781,10 @@
       "label": "4 — FORM 4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000191363723000004/xslF345X05/wk-form4_1693513618.xml",
-      "material": false
+      "material": false,
+      "headline": "CGBD insider reports Form 4 transaction dated April 2022",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "10-K/A",
@@ -1306,7 +1792,10 @@
       "label": "10-K/A — 10-K/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420623000071/csl-20221231.htm",
-      "material": false
+      "material": false,
+      "headline": "10-K/A amends 2022 annual report solely to add auditor consent exhibit",
+      "signal": "clean",
+      "signal_note": "Consent added, no financial restatement"
     },
     {
       "form": "10-Q",
@@ -1314,7 +1803,10 @@
       "label": "Quarterly report (10-Q) for period ending 2023-06-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420623000062/csl-20230630.htm",
-      "material": true
+      "material": true,
+      "headline": "Carlyle Secured Lending files Q2 2023 quarterly report",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results"
     },
     {
       "form": "8-K",
@@ -1322,7 +1814,10 @@
       "label": "Current report: reported quarterly results; issued a Regulation FD disclosure",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420623000061/csl-20230808.htm",
-      "material": true
+      "material": true,
+      "headline": "Declared Q3 base dividend $0.37 plus $0.07 supplemental with Q2 results",
+      "signal": "clean",
+      "signal_note": "Dividend declared, supplemental added"
     },
     {
       "form": "8-K",
@@ -1330,7 +1825,10 @@
       "label": "Current report (8-K)",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420623000057/csl-20230726.htm",
-      "material": false
+      "material": false,
+      "headline": "Stockholders approve authority to issue shares below NAV",
+      "signal": "clean",
+      "signal_note": "Routine below-NAV issuance authorization"
     },
     {
       "form": "8-K",
@@ -1338,7 +1836,10 @@
       "label": "Current report: issued a Regulation FD disclosure",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420623000054/csl-20230713.htm",
-      "material": true
+      "material": true,
+      "headline": "Set August 9 conference call for Q2 2023 results",
+      "signal": "clean",
+      "signal_note": "Earnings call scheduling"
     },
     {
       "form": "DEFA14A",
@@ -1346,7 +1847,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420623000052/csli_20230628xspecialmeeti.htm",
-      "material": false
+      "material": false,
+      "headline": "Filed additional proxy materials for special meeting",
+      "signal": "clean",
+      "signal_note": "Routine proxy filing"
     },
     {
       "form": "DEFA14A",
@@ -1354,7 +1858,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420623000050/csli_202306xspecialmeeting.htm",
-      "material": false
+      "material": false,
+      "headline": "Filed additional proxy materials for special meeting",
+      "signal": "clean",
+      "signal_note": "Routine proxy filing"
     },
     {
       "form": "4",
@@ -1362,7 +1869,10 @@
       "label": "4 — FORM 4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000186750323000013/xslF345X04/wk-form4_1686688731.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider reported June 9 transaction in CGBD shares",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 4"
     },
     {
       "form": "8-K",
@@ -1370,7 +1880,10 @@
       "label": "Current report (8-K)",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420623000047/csl-20230607.htm",
-      "material": false
+      "material": false,
+      "headline": "Annual meeting elects directors and ratifies Ernst & Young as auditor",
+      "signal": "clean",
+      "signal_note": "Routine governance results"
     },
     {
       "form": "4",
@@ -1378,7 +1891,10 @@
       "label": "4 — FORM 4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000186750323000009/xslF345X04/wk-form4_1686081618.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider reported June 5 transaction in CGBD shares",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 4"
     },
     {
       "form": "4",
@@ -1386,7 +1902,10 @@
       "label": "4 — FORM 4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000186750323000007/xslF345X04/wk-form4_1685736393.xml",
-      "material": false
+      "material": false,
+      "headline": "CGBD insider reported a Form 4 transaction dated June 1, 2023",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 4"
     },
     {
       "form": "4",
@@ -1394,7 +1913,10 @@
       "label": "4 — FORM 4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000186750323000005/xslF345X04/wk-form4_1685650574.xml",
-      "material": false
+      "material": false,
+      "headline": "CGBD insider reported a Form 4 transaction dated May 31, 2023",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 4"
     },
     {
       "form": "4",
@@ -1402,7 +1924,10 @@
       "label": "4 — FORM 4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000186750323000002/xslF345X04/wk-form4_1685477591.xml",
-      "material": false
+      "material": false,
+      "headline": "CGBD insider reported a Form 4 transaction dated May 25, 2023",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 4"
     },
     {
       "form": "4",
@@ -1410,7 +1935,10 @@
       "label": "4 — FORM 4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000173474123000006/xslF345X04/wk-form4_1684875956.xml",
-      "material": false
+      "material": false,
+      "headline": "CGBD insider reported a Form 4 transaction dated May 18, 2023",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 4"
     },
     {
       "form": "10-Q",
@@ -1418,7 +1946,10 @@
       "label": "Quarterly report (10-Q) for period ending 2023-03-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420623000043/csl-20230331.htm",
-      "material": true
+      "material": true,
+      "headline": "Carlyle Secured Lending filed its Q1 2023 quarterly report",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results"
     },
     {
       "form": "8-K",
@@ -1426,7 +1957,10 @@
       "label": "Current report: reported quarterly results; issued a Regulation FD disclosure",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420623000042/csl-20230509.htm",
-      "material": true
+      "material": true,
+      "headline": "CGBD declared Q2 base dividend of $0.37 plus $0.07 supplemental",
+      "signal": "clean",
+      "signal_note": "Q1 results, dividend declared"
     },
     {
       "form": "DEF 14A",
@@ -1434,7 +1968,10 @@
       "label": "Proxy statement — DEF 14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420623000034/csli_202304xspecialmeeting.htm",
-      "material": false
+      "material": false,
+      "headline": "CGBD special meeting to authorize share issuance below NAV",
+      "signal": "clean",
+      "signal_note": "Routine below-NAV issuance authorization"
     },
     {
       "form": "DEFA14A",
@@ -1442,7 +1979,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420623000035/csli_202304xspecialmeeting.htm",
-      "material": false
+      "material": false,
+      "headline": "CGBD filed additional proxy materials for special meeting",
+      "signal": "clean",
+      "signal_note": "Routine proxy soliciting material"
     },
     {
       "form": "DEFA14A",
@@ -1450,7 +1990,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420623000033/csli_2023xannualproxyxdefa.htm",
-      "material": false
+      "material": false,
+      "headline": "CGBD filed additional proxy materials for annual meeting",
+      "signal": "clean",
+      "signal_note": "Routine proxy soliciting material"
     },
     {
       "form": "DEF 14A",
@@ -1458,7 +2001,10 @@
       "label": "Proxy statement — DEF 14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420623000032/csli_2023xannualproxy.htm",
-      "material": false
+      "material": false,
+      "headline": "CGBD annual meeting to elect directors and ratify Ernst Young",
+      "signal": "clean",
+      "signal_note": "Routine governance proxy"
     },
     {
       "form": "40-17G",
@@ -1466,7 +2012,10 @@
       "label": "40-17G — 40-17G",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420623000027/csli_2023x0424xform40-17g.htm",
-      "material": false
+      "material": false,
+      "headline": "Carlyle filed routine fidelity bond information under Rule 17g-1",
+      "signal": "clean",
+      "signal_note": "Routine 17g-1 fidelity bond filing"
     },
     {
       "form": "CORRESP",
@@ -1474,7 +2023,10 @@
       "label": "CORRESP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420623000024/filename1.htm",
-      "material": false
+      "material": false,
+      "headline": "Carlyle Secured Lending responded to SEC staff proxy statement comments",
+      "signal": "clean",
+      "signal_note": "Routine SEC comment response"
     },
     {
       "form": "PRE 14A",
@@ -1482,7 +2034,10 @@
       "label": "PRE 14A — PRE 14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420623000021/csli_202304xspecialmeeting.htm",
-      "material": false
+      "material": false,
+      "headline": "Proxy seeks authority to issue shares below net asset value",
+      "signal": "clean",
+      "signal_note": "Routine below-NAV issuance proposal"
     },
     {
       "form": "8-K",
@@ -1490,7 +2045,10 @@
       "label": "Current report: issued a Regulation FD disclosure",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420623000018/csl-20230413.htm",
-      "material": true
+      "material": true,
+      "headline": "Carlyle Secured Lending set May 10 call for Q1 2023 results",
+      "signal": "clean",
+      "signal_note": "Routine earnings call announcement"
     },
     {
       "form": "3",
@@ -1498,7 +2056,10 @@
       "label": "3 — FORM 3",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000197102823000006/xslF345X02/wf-form3_168012204849602.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider filed initial Form 3 ownership statement for CGBD",
+      "signal": "clean",
+      "signal_note": "Routine insider ownership filing"
     },
     {
       "form": "8-K",
@@ -1506,7 +2067,10 @@
       "label": "Current report: changed a director or senior officer",
       "category": "Personnel",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420623000013/csl-20230322.htm",
-      "material": true
+      "material": true,
+      "headline": "Nelson Joseph named principal accounting officer as Annunziato resigns role",
+      "signal": "clean",
+      "signal_note": "Routine accounting officer change"
     },
     {
       "form": "10-K",
@@ -1514,7 +2078,10 @@
       "label": "Annual report (10-K) for period ending 2022-12-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420623000010/csl-20221231.htm",
-      "material": true
+      "material": true,
+      "headline": "Carlyle Secured Lending filed 2022 annual report with standard risk factors",
+      "signal": "clean",
+      "signal_note": "Routine annual report, boilerplate risks"
     },
     {
       "form": "8-K",
@@ -1522,7 +2089,10 @@
       "label": "Current report: reported quarterly results; issued a Regulation FD disclosure",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420623000009/csl-20230227.htm",
-      "material": true
+      "material": true,
+      "headline": "Q4 2022 results declared with $0.37 base plus $0.07 supplemental dividend",
+      "signal": "clean",
+      "signal_note": "Dividend declared as normal"
     },
     {
       "form": "5",
@@ -1530,7 +2100,10 @@
       "label": "5 — FORM 5",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000162828023002606/xslF345X03/wf-form5_167580696249533.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider filed annual Form 5 for fiscal year 2022",
+      "signal": "clean",
+      "signal_note": "Routine insider annual filing"
     },
     {
       "form": "5",
@@ -1538,7 +2111,10 @@
       "label": "5 — FORM 5",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000162828023002598/xslF345X03/wf-form5_167580662748863.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider filed annual Form 5 for fiscal year 2022",
+      "signal": "clean",
+      "signal_note": "Routine insider annual filing"
     },
     {
       "form": "8-K",
@@ -1546,7 +2122,10 @@
       "label": "Current report: issued a Regulation FD disclosure",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420623000002/csl-20230119.htm",
-      "material": true
+      "material": true,
+      "headline": "CGBD sets Feb 28 call for Q4 and full-year 2022 results",
+      "signal": "clean",
+      "signal_note": "Routine earnings call scheduling"
     },
     {
       "form": "40-APP/A",
@@ -1554,7 +2133,10 @@
       "label": "40-APP/A — 40-APP/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000119312522311847/d382981d40appa.htm",
-      "material": false
+      "material": false,
+      "headline": "Carlyle files amended co-investment exemptive relief application",
+      "signal": "clean",
+      "signal_note": "Routine exemptive application amendment"
     },
     {
       "form": "8-K",
@@ -1562,7 +2144,10 @@
       "label": "Current report: changed a director or senior officer",
       "category": "Personnel",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420622000076/csl-20221216.htm",
-      "material": true
+      "material": true,
+      "headline": "Aren LeeKong named CEO; Boswell and Pace step down Jan 1",
+      "signal": "clean",
+      "signal_note": "Planned CEO succession"
     },
     {
       "form": "4",
@@ -1570,7 +2155,10 @@
       "label": "4 — FORM 4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000186750322000004/xslF345X03/wf-form4_167113877447940.xml",
-      "material": false
+      "material": false,
+      "headline": "CGBD insider reports Form 4 transaction dated December 14",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -1578,7 +2166,10 @@
       "label": "4 — FORM 4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000186750322000002/xslF345X03/wf-form4_166863334819529.xml",
-      "material": false
+      "material": false,
+      "headline": "CGBD insider reports Form 4 transaction dated November 15",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -1586,7 +2177,10 @@
       "label": "4 — FORM 4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000173474122000014/xslF345X03/wf-form4_166863291206312.xml",
-      "material": false
+      "material": false,
+      "headline": "CGBD insider reports Form 4 transaction dated November 14",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -1594,7 +2188,10 @@
       "label": "4 — FORM 4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000191364322000012/xslF345X03/wf-form4_166863263461828.xml",
-      "material": false
+      "material": false,
+      "headline": "CGBD insider reports Form 4 transaction dated November 16",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "10-Q",
@@ -1602,7 +2199,10 @@
       "label": "Quarterly report (10-Q) for period ending 2022-09-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420622000074/csl-20220930.htm",
-      "material": true
+      "material": true,
+      "headline": "CGBD files third quarter 2022 Form 10-Q",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "8-K",
@@ -1610,7 +2210,10 @@
       "label": "Current report: reported quarterly results; issued a Regulation FD disclosure",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420622000073/csl-20221108.htm",
-      "material": true
+      "material": true,
+      "headline": "CGBD declares $0.36 base plus $0.08 supplemental dividend with Q3 results",
+      "signal": "clean",
+      "signal_note": "Dividend declared as normal"
     },
     {
       "form": "8-K",
@@ -1618,7 +2221,10 @@
       "label": "Current report: issued a Regulation FD disclosure",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420622000068/cgbd_3q22xxearningscallann.htm",
-      "material": true
+      "material": true,
+      "headline": "CGBD sets Nov 9 conference call for Q3 2022 results",
+      "signal": "clean",
+      "signal_note": "Routine earnings call scheduling"
     },
     {
       "form": "3",
@@ -1626,7 +2232,10 @@
       "label": "3 — FORM 3",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000194752522000004/xslF345X02/wf-form3_166387724113501.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider filed initial Form 3 statement of beneficial ownership in CGBD",
+      "signal": "clean",
+      "signal_note": "Routine Section 16 filing"
     },
     {
       "form": "8-K",
@@ -1634,7 +2243,10 @@
       "label": "Current report: changed a director or senior officer",
       "category": "Personnel",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420622000066/csli_20220921x8-k.htm",
-      "material": true
+      "material": true,
+      "headline": "CEO Linda Pace to step down Dec 31; Aren LeeKong named successor, CIO Boswell resigns",
+      "signal": "clean",
+      "signal_note": "Leadership transition, not credit-negative"
     },
     {
       "form": "8-K",
@@ -1642,7 +2254,10 @@
       "label": "Current report: changed a director or senior officer",
       "category": "Personnel",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420622000061/csli_20220914xdaappointment.htm",
-      "material": true
+      "material": true,
+      "headline": "Board appointed Desiree Annunziato as Treasurer and principal accounting officer",
+      "signal": "clean",
+      "signal_note": "Routine officer appointment"
     },
     {
       "form": "4",
@@ -1650,7 +2265,10 @@
       "label": "4 — FORM 4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000173474122000010/xslF345X03/wf-form4_166091495959996.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider reported CGBD securities transaction on Form 4",
+      "signal": "clean",
+      "signal_note": "Routine Section 16 filing"
     },
     {
       "form": "8-K",
@@ -1658,7 +2276,10 @@
       "label": "Current report: reported quarterly results; issued a Regulation FD disclosure",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420622000059/csli_2q22x8-kxearnings.htm",
-      "material": true
+      "material": true,
+      "headline": "CGBD reported Q2 2022 results; declared $0.34 base plus $0.06 supplemental dividend",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results and dividend"
     },
     {
       "form": "10-Q",
@@ -1666,7 +2287,10 @@
       "label": "Quarterly report (10-Q) for period ending 2022-06-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420622000057/csli_2q22x10-qxdocument.htm",
-      "material": true
+      "material": true,
+      "headline": "CGBD filed Q2 2022 Form 10-Q with standard forward-looking disclosures",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "8-K",
@@ -1674,7 +2298,10 @@
       "label": "Current report (8-K)",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420622000052/csli_20220803xsubmissionof.htm",
-      "material": false
+      "material": false,
+      "headline": "Stockholders approved authority to issue shares below net asset value",
+      "signal": "clean",
+      "signal_note": "Routine below-NAV issuance authorization"
     },
     {
       "form": "40-APP/A",
@@ -1682,7 +2309,10 @@
       "label": "40-APP/A — 40-APP/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000119312522208388/d362567d40appa.htm",
-      "material": false
+      "material": false,
+      "headline": "Carlyle filed amended exemptive application for co-investment relief",
+      "signal": "clean",
+      "signal_note": "Routine regulatory application"
     },
     {
       "form": "8-K",
@@ -1690,7 +2320,10 @@
       "label": "Current report (8-K)",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420622000050/csli_20220726xsubmissionof.htm",
-      "material": false
+      "material": false,
+      "headline": "Stockholders elected two directors and ratified EY as auditor at annual meeting",
+      "signal": "clean",
+      "signal_note": "Routine annual meeting results"
     },
     {
       "form": "8-K",
@@ -1698,7 +2331,10 @@
       "label": "Current report: issued a Regulation FD disclosure",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420622000048/cgbd_2q22xxearningscallann.htm",
-      "material": true
+      "material": true,
+      "headline": "CGBD set August 10 conference call to announce Q2 2022 results",
+      "signal": "clean",
+      "signal_note": "Routine earnings call announcement"
     },
     {
       "form": "DEFA14A",
@@ -1706,7 +2342,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420622000046/csli_202206xspecialmeeting.htm",
-      "material": false
+      "material": false,
+      "headline": "Carlyle Secured Lending files special meeting proxy materials",
+      "signal": "clean",
+      "signal_note": "Routine proxy solicitation"
     },
     {
       "form": "8-K",
@@ -1714,7 +2353,10 @@
       "label": "Current report: changed a director or senior officer",
       "category": "Personnel",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420622000044/csli_20220615xpgresignation.htm",
-      "material": true
+      "material": true,
+      "headline": "Principal accounting officer Peter Gaunt to resign effective September 2022",
+      "signal": "clean",
+      "signal_note": "Resignation not from any disagreement"
     },
     {
       "form": "4",
@@ -1722,7 +2364,10 @@
       "label": "4 — FORM 4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000181076122000004/xslF345X03/wf-form4_165454570067295.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider reports Section 16 transaction dated June 2, 2022",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 4"
     },
     {
       "form": "40-17G",
@@ -1730,7 +2375,10 @@
       "label": "40-17G — 40-17G",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420622000042/csli_2022530xform40-17g.htm",
-      "material": false
+      "material": false,
+      "headline": "Carlyle Secured Lending files fidelity bond filing under Rule 17g-1",
+      "signal": "clean",
+      "signal_note": "Routine fidelity bond filing"
     },
     {
       "form": "8-K",
@@ -1738,7 +2386,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420622000041/csli_20220601xcreditfacili.htm",
-      "material": true
+      "material": true,
+      "headline": "Amended $688M JPMorgan revolver, maturity extended to May 2027",
+      "signal": "clean",
+      "signal_note": "Routine credit facility amendment"
     },
     {
       "form": "40-APP",
@@ -1746,7 +2397,10 @@
       "label": "40-APP — 40-APP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000119312522162300/d361229d40app.htm",
-      "material": false
+      "material": false,
+      "headline": "Filed application to amend prior co-investment exemptive order",
+      "signal": "clean",
+      "signal_note": "Routine exemptive relief application"
     },
     {
       "form": "4",
@@ -1754,7 +2408,10 @@
       "label": "4 — FORM 4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000162828022015363/xslF345X03/wf-form4_165351059970244.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider reports Section 16 transaction dated May 24, 2022",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 4"
     },
     {
       "form": "4",
@@ -1762,7 +2419,10 @@
       "label": "4 — FORM 4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000191364322000010/xslF345X03/wf-form4_165342284833040.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider reports Section 16 transaction dated May 23, 2022",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 4"
     },
     {
       "form": "4",
@@ -1770,7 +2430,10 @@
       "label": "4 — FORM 4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000191363822000008/xslF345X03/wf-form4_165290546963853.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider reports Section 16 transaction dated May 16, 2022",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 4"
     },
     {
       "form": "40-APP/A",
@@ -1778,7 +2441,10 @@
       "label": "40-APP/A — 40-APP/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000119312522153909/d361428d40appa.htm",
-      "material": false
+      "material": false,
+      "headline": "Filed amended application for co-investment exemptive order",
+      "signal": "clean",
+      "signal_note": "Routine exemptive relief application"
     },
     {
       "form": "4",
@@ -1786,7 +2452,10 @@
       "label": "4 — FORM 4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000191364322000008/xslF345X03/wf-form4_165273273393415.xml",
-      "material": false
+      "material": false,
+      "headline": "CGBD insider reported a Section 16 transaction dated May 12, 2022",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 4"
     },
     {
       "form": "4",
@@ -1794,7 +2463,10 @@
       "label": "4 — FORM 4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000182015722000004/xslF345X03/wf-form4_165273231889391.xml",
-      "material": false
+      "material": false,
+      "headline": "CGBD insider reported a Section 16 transaction dated April 16, 2021",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 4"
     },
     {
       "form": "8-K",
@@ -1802,7 +2474,10 @@
       "label": "Current report: reported quarterly results; issued a Regulation FD disclosure",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420622000036/csli_1q22x8-kxearnings.htm",
-      "material": true
+      "material": true,
+      "headline": "CGBD declared $0.32 base plus $0.08 supplemental dividend with Q1 2022 results",
+      "signal": "clean",
+      "signal_note": "Dividend declared, quarterly results"
     },
     {
       "form": "10-Q",
@@ -1810,7 +2485,10 @@
       "label": "Quarterly report (10-Q) for period ending 2022-03-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420622000035/csli_1q22x10-qxdocument.htm",
-      "material": true
+      "material": true,
+      "headline": "CGBD filed Q1 2022 Form 10-Q for quarter ended March 31, 2022",
+      "signal": "clean",
+      "signal_note": "Routine quarterly report"
     },
     {
       "form": "DEF 14A",
@@ -1818,7 +2496,10 @@
       "label": "Proxy statement — DEF 14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420622000028/csli_202204xspecialmeeting.htm",
-      "material": false
+      "material": false,
+      "headline": "CGBD called special meeting to authorize below-NAV share issuance",
+      "signal": "clean",
+      "signal_note": "Routine below-NAV issuance authorization"
     },
     {
       "form": "DEFA14A",
@@ -1826,7 +2507,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420622000029/csli_202204xspecialmeeting.htm",
-      "material": false
+      "material": false,
+      "headline": "CGBD filed additional proxy materials for special stockholder meeting",
+      "signal": "clean",
+      "signal_note": "Routine proxy solicitation material"
     },
     {
       "form": "DEFA14A",
@@ -1834,7 +2518,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420622000027/csli_2022xannualproxyxdefa.htm",
-      "material": false
+      "material": false,
+      "headline": "CGBD filed additional proxy materials for 2022 annual meeting",
+      "signal": "clean",
+      "signal_note": "Routine proxy solicitation material"
     },
     {
       "form": "DEF 14A",
@@ -1842,7 +2529,10 @@
       "label": "Proxy statement — DEF 14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420622000026/csli_2022xannualproxy.htm",
-      "material": false
+      "material": false,
+      "headline": "CGBD 2022 annual meeting to elect two directors and ratify auditor",
+      "signal": "clean",
+      "signal_note": "Routine annual governance proxy"
     },
     {
       "form": "4",
@@ -1850,7 +2540,10 @@
       "label": "4 — FORM 4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000162828022011509/xslF345X03/wf-form4_165126125282960.xml",
-      "material": false
+      "material": false,
+      "headline": "CGBD insider reported a Section 16 transaction dated April 19, 2022",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 4"
     },
     {
       "form": "4/A",
@@ -1858,7 +2551,10 @@
       "label": "4/A — FORM 4/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000178059222000006/xslF345X03/wf-form4a_165117724256167.xml",
-      "material": false
+      "material": false,
+      "headline": "CGBD insider amended Form 4 for a March 8, 2021 transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 4 amendment"
     },
     {
       "form": "CORRESP",
@@ -1866,7 +2562,10 @@
       "label": "CORRESP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420622000020/filename1.htm",
-      "material": false
+      "material": false,
+      "headline": "Carlyle Secured Lending responds to SEC staff comments on preliminary proxy",
+      "signal": "clean",
+      "signal_note": "Routine SEC comment-letter response"
     },
     {
       "form": "8-K",
@@ -1874,7 +2573,10 @@
       "label": "Current report: issued a Regulation FD disclosure",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420622000018/cgbd_1q22xxearningscallann.htm",
-      "material": true
+      "material": true,
+      "headline": "CGBD to report first quarter 2022 results on May 4",
+      "signal": "clean",
+      "signal_note": "Routine earnings call announcement"
     },
     {
       "form": "PRE 14A",
@@ -1882,7 +2584,10 @@
       "label": "PRE 14A — PRE 14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420622000016/csli_202204xspecialmeeting.htm",
-      "material": false
+      "material": false,
+      "headline": "Special meeting to seek authority to issue shares below NAV",
+      "signal": "clean",
+      "signal_note": "Routine below-NAV issuance authorization request"
     },
     {
       "form": "3",
@@ -1890,7 +2595,10 @@
       "label": "3 — FORM 3",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000191363822000006/xslF345X02/wf-form3_164979893017398.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider filed initial Form 3 ownership statement for CGBD",
+      "signal": "clean",
+      "signal_note": "Routine initial ownership filing"
     },
     {
       "form": "3",
@@ -1898,7 +2606,10 @@
       "label": "3 — FORM 3",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000191363722000006/xslF345X02/wf-form3_164979874890984.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider filed initial Form 3 ownership statement for CGBD",
+      "signal": "clean",
+      "signal_note": "Routine initial ownership filing"
     },
     {
       "form": "3",
@@ -1906,7 +2617,10 @@
       "label": "3 — FORM 3",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000191364322000006/xslF345X02/wf-form3_164979855667800.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider filed initial Form 3 ownership statement for CGBD",
+      "signal": "clean",
+      "signal_note": "Routine initial ownership filing"
     },
     {
       "form": "8-K",
@@ -1914,7 +2628,10 @@
       "label": "Current report: changed a director or senior officer; amended its charter or bylaws",
       "category": "Personnel",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420622000013/cgbd_20220411xappointments.htm",
-      "material": true
+      "material": true,
+      "headline": "Taylor Boswell named director and president; company renamed Carlyle Secured Lending",
+      "signal": "clean",
+      "signal_note": "Routine governance appointment and rename"
     },
     {
       "form": "4",
@@ -1922,7 +2639,10 @@
       "label": "4 — FORM 4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000173474122000002/xslF345X03/wf-form4_164616874081507.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider reported Form 4 transaction dated February 25, 2022",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction filing"
     },
     {
       "form": "10-K",
@@ -1930,7 +2650,10 @@
       "label": "Annual report (10-K) for period ending 2021-12-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420622000009/cgbd_20211231x10-kxdocument.htm",
-      "material": true
+      "material": true,
+      "headline": "Annual 10-K details indebtedness, interest rate and LIBOR transition risks",
+      "signal": "clean",
+      "signal_note": "Standard risk-factor disclosure"
     },
     {
       "form": "8-K",
@@ -1938,7 +2661,10 @@
       "label": "Current report: reported quarterly results; issued a Regulation FD disclosure",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420622000007/cgbd_20211231xxdocumentear.htm",
-      "material": true
+      "material": true,
+      "headline": "Q4 2021 results with $0.32 base plus $0.08 supplemental dividend declared",
+      "signal": "clean",
+      "signal_note": "Dividend declared as normal"
     },
     {
       "form": "5",
@@ -1946,7 +2672,10 @@
       "label": "5 — FORM 5",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000162828022001679/xslF345X03/wf-form5_164383820242446.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider filed annual Form 5 ownership statement for fiscal year 2021",
+      "signal": "clean",
+      "signal_note": "Routine insider ownership filing"
     },
     {
       "form": "8-K",
@@ -1954,7 +2683,10 @@
       "label": "Current report: issued a Regulation FD disclosure",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420622000002/cgbd_20211231xxdocumentear.htm",
-      "material": true
+      "material": true,
+      "headline": "CGBD set February 23 conference call for fourth quarter 2021 results",
+      "signal": "clean",
+      "signal_note": "Routine earnings call announcement"
     },
     {
       "form": "40-17G",
@@ -1962,7 +2694,10 @@
       "label": "40-17G — 40-17G",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420621000061/cgbd_20211213xform40-17g.htm",
-      "material": false
+      "material": false,
+      "headline": "Filed joint fidelity bond disclosure for Carlyle BDC entities",
+      "signal": "clean",
+      "signal_note": "Routine 40-17G filing"
     },
     {
       "form": "8-K",
@@ -1970,7 +2705,10 @@
       "label": "Current report: reported quarterly results; issued a Regulation FD disclosure",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420621000059/cgbd_3q21x8-kxearnings.htm",
-      "material": true
+      "material": true,
+      "headline": "Declared $0.32 base plus $0.07 supplemental Q4 dividend alongside Q3 results",
+      "signal": "clean",
+      "signal_note": "Dividend declared as normal"
     },
     {
       "form": "10-Q",
@@ -1978,7 +2716,10 @@
       "label": "Quarterly report (10-Q) for period ending 2021-09-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420621000058/cgbd_3q21x10-qxdocument.htm",
-      "material": true
+      "material": true,
+      "headline": "CGBD filed third quarter 2021 Form 10-Q for middle-market lender",
+      "signal": "clean",
+      "signal_note": "Routine quarterly report"
     },
     {
       "form": "40-APP",
@@ -1986,7 +2727,10 @@
       "label": "40-APP — 40-APP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000119312521303062/d139849d40app.htm",
-      "material": false
+      "material": false,
+      "headline": "Sought SEC exemptive order permitting joint co-investment across Carlyle funds",
+      "signal": "clean",
+      "signal_note": "Routine co-investment exemptive application"
     },
     {
       "form": "DEFA14A",
@@ -1994,7 +2738,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420621000054/cgbd_202110xdefa14a.htm",
-      "material": false
+      "material": false,
+      "headline": "ISS and Glass Lewis back CGBD special meeting proposal ahead of vote",
+      "signal": "clean",
+      "signal_note": "Routine proxy solicitation"
     },
     {
       "form": "8-K",
@@ -2002,7 +2749,10 @@
       "label": "Current report: issued a Regulation FD disclosure",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420621000052/cgbd_3q21xxearningscallann.htm",
-      "material": true
+      "material": true,
+      "headline": "CGBD set November 3 conference call for third quarter 2021 results",
+      "signal": "clean",
+      "signal_note": "Routine earnings call announcement"
     },
     {
       "form": "DEFA14A",
@@ -2010,7 +2760,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420621000049/cgbd_202108xspecialmeeting.htm",
-      "material": false
+      "material": false,
+      "headline": "CGBD filed additional proxy materials for stockholder special meeting",
+      "signal": "clean",
+      "signal_note": "Routine proxy materials"
     },
     {
       "form": "CORRESP",
@@ -2018,7 +2771,10 @@
       "label": "CORRESP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420621000047/filename1.htm",
-      "material": false
+      "material": false,
+      "headline": "SEC staff closed review of CGBD preliminary proxy statement comment",
+      "signal": "clean",
+      "signal_note": "Routine SEC comment correspondence"
     },
     {
       "form": "DEF 14A",
@@ -2026,7 +2782,10 @@
       "label": "Proxy statement — DEF 14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000119312521271681/d194756ddef14a.htm",
-      "material": false
+      "material": false,
+      "headline": "Proxy seeks authority to issue shares below NAV over next 12 months",
+      "signal": "clean",
+      "signal_note": "Routine below-NAV issuance proposal"
     },
     {
       "form": "CORRESP",
@@ -2034,7 +2793,10 @@
       "label": "CORRESP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000119312521269878/filename1.htm",
-      "material": false
+      "material": false,
+      "headline": "Company responds to SEC staff comments on preliminary proxy statement",
+      "signal": "clean",
+      "signal_note": "Routine SEC correspondence"
     },
     {
       "form": "SC 13D",
@@ -2042,7 +2804,10 @@
       "label": "Beneficial ownership (13D) — SC 13D",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000152716621000050/carlyleinvestmentmanagemen.htm",
-      "material": true
+      "material": true,
+      "headline": "Carlyle discloses 2M convertible preferred shares from $50M private placement",
+      "signal": "clean",
+      "signal_note": "Routine ownership disclosure"
     },
     {
       "form": "PRE 14A",
@@ -2050,7 +2815,10 @@
       "label": "PRE 14A — PRE 14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420621000044/cgbd_202108xspecialmeeting.htm",
-      "material": false
+      "material": false,
+      "headline": "Preliminary proxy seeks authority to issue shares below NAV",
+      "signal": "clean",
+      "signal_note": "Routine below-NAV issuance proposal"
     },
     {
       "form": "4",
@@ -2058,7 +2826,10 @@
       "label": "4 — FORM 4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000186750321000007/xslF345X03/wf-form4_162879925278667.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider reports Section 16 transaction dated August 10, 2021",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "4",
@@ -2066,7 +2837,10 @@
       "label": "4 — FORM 4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000173474121000004/xslF345X03/wf-form4_162862589300334.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider reports Section 16 transaction dated August 6, 2021",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "10-Q",
@@ -2074,7 +2848,10 @@
       "label": "Quarterly report (10-Q) for period ending 2021-06-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420621000039/cgbd_2q21x10-qxdocument.htm",
-      "material": true
+      "material": true,
+      "headline": "Carlyle middle-market BDC files second quarter 2021 Form 10-Q",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results"
     },
     {
       "form": "8-K",
@@ -2082,7 +2859,10 @@
       "label": "Current report: reported quarterly results; issued a Regulation FD disclosure",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420621000038/cgbd_2q21x8-kxearnings.htm",
-      "material": true
+      "material": true,
+      "headline": "Declared Q3 base dividend of $0.32 plus $0.06 supplemental",
+      "signal": "clean",
+      "signal_note": "Dividend declared as normal"
     },
     {
       "form": "8-K",
@@ -2090,7 +2870,10 @@
       "label": "Current report: issued a Regulation FD disclosure",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420621000034/cgbd_2q21xxearningscallann.htm",
-      "material": true
+      "material": true,
+      "headline": "Scheduled August 4 conference call for second quarter 2021 results",
+      "signal": "clean",
+      "signal_note": "Routine earnings call announcement"
     },
     {
       "form": "3",
@@ -2098,7 +2881,10 @@
       "label": "3 — FORM 3",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000186750321000003/xslF345X02/wf-form3_162430601535333.xml",
-      "material": false
+      "material": false,
+      "headline": "New insider files initial Form 3 ownership statement",
+      "signal": "clean",
+      "signal_note": "Routine initial ownership filing"
     },
     {
       "form": "8-K",
@@ -2106,7 +2892,10 @@
       "label": "Current report: changed a director or senior officer; issued a Regulation FD disclosure",
       "category": "Personnel",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420621000032/cgbd_20210614xshareholderm.htm",
-      "material": true
+      "material": true,
+      "headline": "Stockholders elected four directors and ratified Ernst & Young at annual meeting",
+      "signal": "clean",
+      "signal_note": "Routine annual meeting results"
     },
     {
       "form": "4",
@@ -2114,7 +2903,10 @@
       "label": "4 — FORM 4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000181076121000003/xslF345X03/wf-form4_162093991191085.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider filed Form 4 reporting May 2021 transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "10-Q",
@@ -2122,7 +2914,10 @@
       "label": "Quarterly report (10-Q) for period ending 2021-03-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420621000029/cgbd_1q21x10-qxdocument.htm",
-      "material": true
+      "material": true,
+      "headline": "TCG BDC filed Q1 2021 quarterly report",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results"
     },
     {
       "form": "8-K",
@@ -2130,7 +2925,10 @@
       "label": "Current report: reported quarterly results; issued a Regulation FD disclosure",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420621000028/cgbd_1q21x8-kxearnings.htm",
-      "material": true
+      "material": true,
+      "headline": "Declared $0.32 regular plus $0.04 supplemental dividend with Q1 results",
+      "signal": "clean",
+      "signal_note": "Dividend declared as normal"
     },
     {
       "form": "N-2",
@@ -2138,7 +2936,10 @@
       "label": "Registration statement (N-2) — N-2",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420621000024/cgbd_04282021xn-2xdocument.htm",
-      "material": true
+      "material": true,
+      "headline": "Filed N-2 shelf registration for common, preferred, and debt securities",
+      "signal": "clean",
+      "signal_note": "Routine shelf registration"
     },
     {
       "form": "DEFA14A",
@@ -2146,7 +2947,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420621000019/defa14a-tcgbdc2021annual.htm",
-      "material": false
+      "material": false,
+      "headline": "Filed additional proxy materials for 2021 annual meeting",
+      "signal": "clean",
+      "signal_note": "Routine proxy materials"
     },
     {
       "form": "DEF 14A",
@@ -2154,7 +2958,10 @@
       "label": "Proxy statement — DEF 14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420621000018/cgbd_2021xannualproxy.htm",
-      "material": false
+      "material": false,
+      "headline": "Filed 2021 proxy statement to elect directors and ratify auditor",
+      "signal": "clean",
+      "signal_note": "Routine proxy statement"
     },
     {
       "form": "8-K",
@@ -2162,7 +2969,10 @@
       "label": "Current report: issued a Regulation FD disclosure",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420621000014/cgbd_1q21xxearningscallann.htm",
-      "material": true
+      "material": true,
+      "headline": "Announced May 5 conference call for Q1 2021 results",
+      "signal": "clean",
+      "signal_note": "Routine earnings call announcement"
     },
     {
       "form": "4",
@@ -2170,7 +2980,10 @@
       "label": "4 — FORM 4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000172071221000003/xslF345X03/wf-form4_161558359465974.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider filed Form 4 reporting March 2021 transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -2178,7 +2991,10 @@
       "label": "4 — FORM 4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000178059221000003/xslF345X03/wf-form4_161532371281156.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider filed Form 4 reporting March 2021 transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "10-K/A",
@@ -2186,7 +3002,10 @@
       "label": "10-K/A — 10-K/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420621000012/cgbd_20201231xaxdocument.htm",
-      "material": false
+      "material": false,
+      "headline": "CGBD amends 10-K to correct 2020 weighted average yield calculations",
+      "signal": "clean",
+      "signal_note": "Yield calc correction, financials unchanged"
     },
     {
       "form": "3",
@@ -2194,7 +3013,10 @@
       "label": "3 — FORM 3",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000162828021003207/xslF345X02/wf-form3_161427050487601.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider filed initial Form 3 ownership statement for CGBD",
+      "signal": "clean",
+      "signal_note": "Routine initial ownership filing"
     },
     {
       "form": "10-K",
@@ -2202,7 +3024,10 @@
       "label": "Annual report (10-K) for period ending 2020-12-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420621000009/cgbd_20201231x10-kxdocument.htm",
-      "material": true
+      "material": true,
+      "headline": "CGBD 2020 portfolio fair value was $1.83B across 117 companies",
+      "signal": "clean",
+      "signal_note": "Routine annual report"
     },
     {
       "form": "8-K",
@@ -2210,7 +3035,10 @@
       "label": "Current report: reported quarterly results; issued a Regulation FD disclosure",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420621000008/cgbd_20201231xxdocumentear.htm",
-      "material": true
+      "material": true,
+      "headline": "CGBD posted Q4 2020 results; declared $0.32 regular plus $0.05 supplemental dividend",
+      "signal": "clean",
+      "signal_note": "Dividend declared as normal"
     },
     {
       "form": "8-K",
@@ -2218,7 +3046,10 @@
       "label": "Current report: changed a director or senior officer; issued a Regulation FD disclosure",
       "category": "Personnel",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420621000004/cgbd_20210219xbodannouncem.htm",
-      "material": true
+      "material": true,
+      "headline": "CGBD appointed William H. Wright II as independent Class I director",
+      "signal": "clean",
+      "signal_note": "Routine board appointment"
     },
     {
       "form": "8-K",
@@ -2226,7 +3057,10 @@
       "label": "Current report: issued a Regulation FD disclosure",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420621000002/cgbd_20201231xxdocumentear.htm",
-      "material": true
+      "material": true,
+      "headline": "CGBD scheduled February 24 conference call for Q4 2020 results",
+      "signal": "clean",
+      "signal_note": "Routine earnings call notice"
     },
     {
       "form": "8-K",
@@ -2234,7 +3068,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420620000095/cgbd202012112020notes.htm",
-      "material": true
+      "material": true,
+      "headline": "CGBD issued $75M of 4.50% senior unsecured notes due 2024",
+      "signal": "clean",
+      "signal_note": "Ordinary note offering"
     },
     {
       "form": "4",
@@ -2242,7 +3079,10 @@
       "label": "4 — FORM 4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420620000091/xslF345X03/wf-form4_160521668888974.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider reported CGBD transaction on Form 4",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction filing"
     },
     {
       "form": "8-K",
@@ -2250,7 +3090,10 @@
       "label": "Current report: entered a material agreement; completed an acquisition or disposition",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420620000089/cgbd202011048-kmmcfii.htm",
-      "material": true
+      "material": true,
+      "headline": "CGBD contributed $250M of loans to new MMCF II joint venture for $170M cash",
+      "signal": "clean",
+      "signal_note": "Routine joint venture formation"
     },
     {
       "form": "8-K",
@@ -2258,7 +3101,10 @@
       "label": "Current report: reported quarterly results; issued a Regulation FD disclosure",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420620000088/cgbd3q208-kearnings.htm",
-      "material": true
+      "material": true,
+      "headline": "CGBD posted Q3 2020 results; declared $0.32 regular plus $0.04 special dividend",
+      "signal": "clean",
+      "signal_note": "Dividend declared as normal"
     },
     {
       "form": "10-Q",
@@ -2266,7 +3112,10 @@
       "label": "Quarterly report (10-Q) for period ending 2020-09-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420620000087/cgbd3q2010-qdocument.htm",
-      "material": true
+      "material": true,
+      "headline": "CGBD files Q3 2020 10-Q amid COVID-19 uncertainty for middle-market portfolio",
+      "signal": "clean",
+      "signal_note": "Routine quarterly MD&A, no adverse facts"
     },
     {
       "form": "8-K",
@@ -2274,7 +3123,10 @@
       "label": "Current report (8-K)",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420620000082/cgbd20201030shareholde.htm",
-      "material": false
+      "material": false,
+      "headline": "Stockholders approve authority to issue shares below net asset value",
+      "signal": "clean",
+      "signal_note": "Routine below-NAV issuance authorization"
     },
     {
       "form": "8-K",
@@ -2282,7 +3134,10 @@
       "label": "Current report: issued a Regulation FD disclosure",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420620000078/cgbd3q208-kearningscal.htm",
-      "material": true
+      "material": true,
+      "headline": "CGBD to report third-quarter 2020 results on November 5",
+      "signal": "clean",
+      "signal_note": "Routine earnings call scheduling"
     },
     {
       "form": "DEFA14A",
@@ -2290,7 +3145,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420620000074/defa14afiling-noticeofad.htm",
-      "material": false
+      "material": false,
+      "headline": "Special meeting adjourned to October 28 for lack of quorum",
+      "signal": "clean",
+      "signal_note": "Routine proxy adjournment notice"
     },
     {
       "form": "DEFA14A",
@@ -2298,7 +3156,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420620000072/tcgbdc-defa14afiling5rem.htm",
-      "material": false
+      "material": false,
+      "headline": "CGBD urges votes as ISS and Glass Lewis back below-NAV proposal",
+      "signal": "clean",
+      "signal_note": "Routine proxy solicitation"
     },
     {
       "form": "4",
@@ -2306,7 +3167,10 @@
       "label": "4 — FORM 4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420620000070/xslF345X03/wf-form4_159925938317165.xml",
-      "material": false
+      "material": false,
+      "headline": "CGBD insider reports Form 4 transaction dated August 26, 2020",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "DEFA14A",
@@ -2314,7 +3178,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420620000068/tcgbdc-defa14afiling4rem.htm",
-      "material": false
+      "material": false,
+      "headline": "CGBD reminds stockholders to vote ahead of September 29 special meeting",
+      "signal": "clean",
+      "signal_note": "Routine proxy solicitation"
     },
     {
       "form": "DEFA14A",
@@ -2322,7 +3189,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000119312520228619/d86630ddefa14a.htm",
-      "material": false
+      "material": false,
+      "headline": "CGBD sends additional proxy materials for September 29 special meeting",
+      "signal": "clean",
+      "signal_note": "Routine proxy solicitation"
     },
     {
       "form": "DEFA14A",
@@ -2330,7 +3200,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420620000066/tcgbdc-defa14afiling2rem.htm",
-      "material": false
+      "material": false,
+      "headline": "CGBD files additional proxy materials for special stockholder meeting",
+      "signal": "clean",
+      "signal_note": "Routine proxy solicitation"
     },
     {
       "form": "4",
@@ -2338,7 +3211,10 @@
       "label": "4 — FORM 4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000182015720000006/xslF345X03/wf-form4_159726291612019.xml",
-      "material": false
+      "material": false,
+      "headline": "CGBD insider reports Form 4 transaction dated August 10, 2020",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "3",
@@ -2346,7 +3222,10 @@
       "label": "3 — FORM 3",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000182015720000002/xslF345X02/wf-form3_159719313962224.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider filed Form 3 initial beneficial ownership statement",
+      "signal": "clean",
+      "signal_note": "Routine ownership filing"
     },
     {
       "form": "DEFA14A",
@@ -2354,7 +3233,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420620000064/tcgbdc2020specialmeeting.htm",
-      "material": false
+      "material": false,
+      "headline": "Special meeting set to approve issuing stock below NAV",
+      "signal": "clean",
+      "signal_note": "Routine proxy solicitation"
     },
     {
       "form": "DEF 14A",
@@ -2362,7 +3244,10 @@
       "label": "Proxy statement — DEF 14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420620000063/cgbd_202008xspecialmeeting.htm",
-      "material": false
+      "material": false,
+      "headline": "Definitive proxy seeks authority to issue shares below NAV",
+      "signal": "clean",
+      "signal_note": "Routine proxy solicitation"
     },
     {
       "form": "10-Q",
@@ -2370,7 +3255,10 @@
       "label": "Quarterly report (10-Q) for period ending 2020-06-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420620000060/cgbd2q2010-qdocument.htm",
-      "material": true
+      "material": true,
+      "headline": "Filed second-quarter 2020 Form 10-Q amid COVID-19 uncertainty",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results"
     },
     {
       "form": "8-K",
@@ -2378,7 +3266,10 @@
       "label": "Current report: reported quarterly results; issued a Regulation FD disclosure",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420620000059/cgbd2q208-kearnings.htm",
-      "material": true
+      "material": true,
+      "headline": "Declared $0.32 regular plus $0.05 special third-quarter dividend",
+      "signal": "clean",
+      "signal_note": "Dividend declared as normal"
     },
     {
       "form": "8-K",
@@ -2386,7 +3277,10 @@
       "label": "Current report: issued a Regulation FD disclosure",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1544206/000154420620000053/cgbd2q208-kearningscal.htm",
-      "material": true
+      "material": true,
+      "headline": "Scheduled August 5 call for second-quarter 2020 results",
+      "signal": "clean",
+      "signal_note": "Routine earnings call announcement"
     }
   ]
 }

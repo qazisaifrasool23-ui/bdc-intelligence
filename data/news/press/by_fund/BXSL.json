@@ -10,7 +10,10 @@
       "label": "ARS — ARS",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312526288435/d66517dars.pdf",
-      "material": false
+      "material": false,
+      "headline": "Annual report to shareholders filed June 29, 2026",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "DEFA14A",
@@ -18,7 +21,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312526288427/d69621ddefa14a.htm",
-      "material": false
+      "material": false,
+      "headline": "Annual meeting proxy materials available; shareholders vote September 24",
+      "signal": "clean",
+      "signal_note": "Routine proxy notice"
     },
     {
       "form": "DEF 14A",
@@ -26,7 +32,10 @@
       "label": "Proxy statement — DEF 14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312526288415/d62686ddef14a.htm",
-      "material": false
+      "material": false,
+      "headline": "2026 annual meeting September 24; trustee elections and Deloitte ratification",
+      "signal": "clean",
+      "signal_note": "Routine proxy statement"
     },
     {
       "form": "8-K",
@@ -34,7 +43,10 @@
       "label": "Current report: changed a director or senior officer",
       "category": "Personnel",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000121390026070092/ea029494501-8k_blackstone.htm",
-      "material": true
+      "material": true,
+      "headline": "Blackstone Secured Lending COO Katherine Rubenstein departed her role",
+      "signal": "clean",
+      "signal_note": "Officer departure, no disagreement"
     },
     {
       "form": "8-K",
@@ -42,7 +54,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000121390026060043/ea0291766-8k_blackstone.htm",
-      "material": true
+      "material": true,
+      "headline": "Closed $650M of 5.900% unsecured notes due 2031",
+      "signal": "clean",
+      "signal_note": "Ordinary notes issuance"
     },
     {
       "form": "424B2",
@@ -50,7 +65,10 @@
       "label": "Prospectus supplement (offering) — 424B2",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000121390026058432/ea0290101-03_424b2.htm",
-      "material": true
+      "material": true,
+      "headline": "Offered $650M of 5.900% notes due 2031",
+      "signal": "clean",
+      "signal_note": "Ordinary notes offering"
     },
     {
       "form": "FWP",
@@ -58,7 +76,10 @@
       "label": "FWP — FWP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000121390026056735/ea0290101-04_fwp.htm",
-      "material": false
+      "material": false,
+      "headline": "Priced $650M of 5.900% notes due 2031",
+      "signal": "clean",
+      "signal_note": "Ordinary notes pricing"
     },
     {
       "form": "424B2",
@@ -66,7 +87,10 @@
       "label": "Prospectus supplement (offering) — 424B2",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000121390026056272/ea0290101-02_424b2.htm",
-      "material": true
+      "material": true,
+      "headline": "Launched unsecured notes offering due 2031",
+      "signal": "clean",
+      "signal_note": "Ordinary preliminary offering"
     },
     {
       "form": "4",
@@ -74,7 +98,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000121390026055848/xslF345X06/ownership.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider reported Form 4 transaction dated May 12",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "8-K",
@@ -82,7 +109,10 @@
       "label": "Current report: reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000121390026053022/ea0289403-8k_blackstone.htm",
-      "material": true
+      "material": true,
+      "headline": "Announced first quarter 2026 financial results",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results"
     },
     {
       "form": "10-Q",
@@ -90,7 +120,10 @@
       "label": "Quarterly report (10-Q) for period ending 2026-03-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000173603526000010/bxsl-20260331.htm",
-      "material": true
+      "material": true,
+      "headline": "Q1 2026 10-Q details routine accounting policies for derivatives, interest and PIK income",
+      "signal": "clean",
+      "signal_note": "Routine quarterly accounting disclosures"
     },
     {
       "form": "4",
@@ -98,7 +131,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000121390026028329/xslF345X05/ownership.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider reported a Form 4 equity transaction dated March 13, 2026",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -106,7 +142,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000121390026026991/xslF345X05/ownership.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider reported a Form 4 equity transaction dated March 11, 2026",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -114,7 +153,10 @@
       "label": "4 — 4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312526102265/xslF345X05/ownership.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider reported a Form 4 equity transaction dated March 10, 2026",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "8-K",
@@ -122,7 +164,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000121390026023034/ea0279568-8k_blackstone.htm",
-      "material": true
+      "material": true,
+      "headline": "Closed $400M of 5.250% unsecured notes due 2029 via Tenth Supplemental Indenture",
+      "signal": "clean",
+      "signal_note": "Ordinary notes issuance"
     },
     {
       "form": "424B2",
@@ -130,7 +175,10 @@
       "label": "Prospectus supplement (offering) — 424B2",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000121390026021671/ea0277919-02_424b2.htm",
-      "material": true
+      "material": true,
+      "headline": "Offered $400M of 5.250% unsecured notes due September 2029",
+      "signal": "clean",
+      "signal_note": "Ordinary notes offering"
     },
     {
       "form": "FWP",
@@ -138,7 +186,10 @@
       "label": "FWP — FWP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312526077461/d108916dfwp.htm",
-      "material": false
+      "material": false,
+      "headline": "Priced $400M of 5.250% unsecured notes due 2029",
+      "signal": "clean",
+      "signal_note": "Ordinary notes pricing"
     },
     {
       "form": "424B2",
@@ -146,7 +197,10 @@
       "label": "Prospectus supplement (offering) — 424B2",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000121390026020677/ea0277919-01_424b2.htm",
-      "material": true
+      "material": true,
+      "headline": "Filed preliminary prospectus supplement for unsecured notes offering",
+      "signal": "clean",
+      "signal_note": "Ordinary notes offering"
     },
     {
       "form": "8-K",
@@ -154,7 +208,10 @@
       "label": "Current report: reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000121390026020083/ea0277994-8k_blackstone.htm",
-      "material": true
+      "material": true,
+      "headline": "Blackstone Secured Lending announced Q4 2025 financial results",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results"
     },
     {
       "form": "10-K",
@@ -162,7 +219,10 @@
       "label": "Annual report (10-K) for period ending 2025-12-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000173603526000004/bxsl-20251231.htm",
-      "material": true
+      "material": true,
+      "headline": "FY2025 10-K describes senior secured lending strategy and Blackstone advisory platform",
+      "signal": "clean",
+      "signal_note": "Routine annual report"
     },
     {
       "form": "40-17G",
@@ -170,7 +230,10 @@
       "label": "40-17G — 40-17G",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000121390026010185/ea0273917-01_4017g.htm",
-      "material": false
+      "material": false,
+      "headline": "Filed annual Rule 17g-1 fidelity bond covering December 2025 through December 2026",
+      "signal": "clean",
+      "signal_note": "Routine fidelity bond filing"
     },
     {
       "form": "4",
@@ -178,7 +241,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000121390025110039/xslF345X05/ownership.xml",
-      "material": false
+      "material": false,
+      "headline": "BXSL insider filed Form 4 for November 11 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider ownership filing"
     },
     {
       "form": "8-K",
@@ -186,7 +252,10 @@
       "label": "Current report: reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000121390025107817/ea0264431-01_8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Blackstone Secured Lending reported Q3 2025 results with detailed presentation",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results"
     },
     {
       "form": "10-Q",
@@ -194,7 +263,10 @@
       "label": "Quarterly report (10-Q) for period ending 2025-09-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000173603525000021/bxsl-20250930.htm",
-      "material": true
+      "material": true,
+      "headline": "BXSL Q3 2025 10-Q; non-recurring interest income rose to $6.2M",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results"
     },
     {
       "form": "8-K",
@@ -202,7 +274,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000121390025098724/ea0260726-8k_blackstone.htm",
-      "material": true
+      "material": true,
+      "headline": "Closed $500M of 5.125% unsecured notes due 2031",
+      "signal": "clean",
+      "signal_note": "Ordinary unsecured notes issuance"
     },
     {
       "form": "424B2",
@@ -210,7 +285,10 @@
       "label": "Prospectus supplement (offering) — 424B2",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000121390025097397/ea0259267-02_424b2.htm",
-      "material": true
+      "material": true,
+      "headline": "Offered $500M of 5.125% unsecured notes due 2031",
+      "signal": "clean",
+      "signal_note": "Ordinary notes offering"
     },
     {
       "form": "4",
@@ -218,7 +296,10 @@
       "label": "4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000121390025097057/xslF345X05/ownership.xml",
-      "material": false
+      "material": false,
+      "headline": "BXSL insider filed Form 4 for October 6 equity transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider ownership filing"
     },
     {
       "form": "FWP",
@@ -226,7 +307,10 @@
       "label": "FWP — FWP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000121390025096604/ea0259267-03_fwp.htm",
-      "material": false
+      "material": false,
+      "headline": "Priced $500M of 5.125% unsecured notes due 2031",
+      "signal": "clean",
+      "signal_note": "Ordinary notes pricing term sheet"
     },
     {
       "form": "424B2",
@@ -234,7 +318,10 @@
       "label": "Prospectus supplement (offering) — 424B2",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000121390025096307/ea0259267-01_424b2.htm",
-      "material": true
+      "material": true,
+      "headline": "Launched unsecured notes offering due 2031 via preliminary prospectus",
+      "signal": "clean",
+      "signal_note": "Ordinary notes offering"
     },
     {
       "form": "8-K",
@@ -242,7 +329,10 @@
       "label": "Current report (8-K)",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000121390025092337/ea0258321-01_8k.htm",
-      "material": false
+      "material": false,
+      "headline": "Shareholders elected three trustees and ratified Deloitte at annual meeting",
+      "signal": "clean",
+      "signal_note": "Routine governance vote"
     },
     {
       "form": "8-K",
@@ -250,7 +340,10 @@
       "label": "Current report: reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000121390025072290/ea0251760-01_8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Blackstone Secured Lending released second quarter 2025 financial results",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results"
     },
     {
       "form": "10-Q",
@@ -258,7 +351,10 @@
       "label": "Quarterly report (10-Q) for period ending 2025-06-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000173603525000018/bxsl-20250630.htm",
-      "material": true
+      "material": true,
+      "headline": "BXSL Q2 2025 10-Q; non-recurring interest income $1.7M for quarter",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results"
     },
     {
       "form": "8-K",
@@ -266,7 +362,10 @@
       "label": "Current report: entered a material agreement; terminated a material agreement",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000121390025063327/ea024316403-8k_blackstone.htm",
-      "material": true
+      "material": true,
+      "headline": "Entered $600M at-the-market equity distribution agreements with eight agents",
+      "signal": "clean",
+      "signal_note": "Ordinary ATM equity program"
     },
     {
       "form": "424B2",
@@ -274,7 +373,10 @@
       "label": "Prospectus supplement (offering) — 424B2",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000121390025063323/ea0243164-02_424b2.htm",
-      "material": true
+      "material": true,
+      "headline": "Launched $600M at-the-market common share offering; NAV per share $27.39",
+      "signal": "clean",
+      "signal_note": "Routine ATM equity offering"
     },
     {
       "form": "N-2ASR",
@@ -282,7 +384,10 @@
       "label": "N-2ASR — N-2ASR",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000121390025063269/ea0243164-01_n2asr.htm",
-      "material": false
+      "material": false,
+      "headline": "Filed automatic shelf registration for common, preferred, debt and warrants",
+      "signal": "clean",
+      "signal_note": "Routine shelf registration"
     },
     {
       "form": "ARS",
@@ -290,7 +395,10 @@
       "label": "ARS — ARS",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312525154965/d847726dars.pdf",
-      "material": false
+      "material": false,
+      "headline": "Filed 2024 annual report to shareholders",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "DEFA14A",
@@ -298,7 +406,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312525154958/d917799ddefa14a.htm",
-      "material": false
+      "material": false,
+      "headline": "Additional proxy materials for September 25 annual shareholder meeting",
+      "signal": "clean",
+      "signal_note": "Routine proxy solicitation"
     },
     {
       "form": "DEF 14A",
@@ -306,7 +417,10 @@
       "label": "Proxy statement — DEF 14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312525154956/d917799ddef14a.htm",
-      "material": false
+      "material": false,
+      "headline": "Proxy statement for virtual 2025 annual meeting set September 25",
+      "signal": "clean",
+      "signal_note": "Routine annual proxy"
     },
     {
       "form": "4",
@@ -314,7 +428,10 @@
       "label": "4 — 4",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000095017025070598/xslF345X05/ownership.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider filed Form 4 reporting a May 13 transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "8-K",
@@ -322,7 +439,10 @@
       "label": "Current report: reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000121390025040378/ea0240963-01.htm",
-      "material": true
+      "material": true,
+      "headline": "Blackstone Secured Lending reported first quarter 2025 financial results",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results"
     },
     {
       "form": "10-Q",
@@ -330,7 +450,10 @@
       "label": "Quarterly report (10-Q) for period ending 2025-03-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000173603525000013/bxsl-20250331.htm",
-      "material": true
+      "material": true,
+      "headline": "Filed Q1 2025 10-Q covering the quarter ended March 31",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results"
     },
     {
       "form": "40-APP/A",
@@ -338,7 +461,10 @@
       "label": "40-APP/A — 40-APP/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312525093651/d934153d40appa.htm",
-      "material": false
+      "material": false,
+      "headline": "Amended exemptive application for co-investment relief with Blackstone affiliates",
+      "signal": "clean",
+      "signal_note": "Routine exemptive application"
     },
     {
       "form": "40-APP/A",
@@ -346,7 +472,10 @@
       "label": "40-APP/A — 40-APP/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312525079181/d942918d40appa.htm",
-      "material": false
+      "material": false,
+      "headline": "Amended exemptive application for co-investment relief with Blackstone affiliates",
+      "signal": "clean",
+      "signal_note": "Routine exemptive application"
     },
     {
       "form": "40-APP",
@@ -354,7 +483,10 @@
       "label": "40-APP — 40-APP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312525054849/d940322d40app.htm",
-      "material": false
+      "material": false,
+      "headline": "Filed exemptive application for co-investment relief with Blackstone affiliates",
+      "signal": "clean",
+      "signal_note": "Routine exemptive application"
     },
     {
       "form": "8-K",
@@ -362,7 +494,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312525045594/d933654d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Issued $500M of 5.300% unsecured notes due 2030",
+      "signal": "clean",
+      "signal_note": "Routine debt issuance"
     },
     {
       "form": "424B2",
@@ -370,7 +505,10 @@
       "label": "Prospectus supplement (offering) — 424B2",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312525044128/d878039d424b2.htm",
-      "material": true
+      "material": true,
+      "headline": "Offered $500M of 5.300% unsecured notes due 2030",
+      "signal": "clean",
+      "signal_note": "Ordinary note offering"
     },
     {
       "form": "FWP",
@@ -378,7 +516,10 @@
       "label": "FWP — FWP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312525039363/d909299dfwp.htm",
-      "material": false
+      "material": false,
+      "headline": "Priced $500M of 5.300% notes due 2030",
+      "signal": "clean",
+      "signal_note": "Routine pricing term sheet"
     },
     {
       "form": "424B2",
@@ -386,7 +527,10 @@
       "label": "Prospectus supplement (offering) — 424B2",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312525037837/d878039d424b2.htm",
-      "material": true
+      "material": true,
+      "headline": "Filed preliminary prospectus supplement for unsecured notes offering",
+      "signal": "clean",
+      "signal_note": "Ordinary note offering"
     },
     {
       "form": "IRANNOTICE",
@@ -394,7 +538,10 @@
       "label": "IRANNOTICE — IRANNOTICE",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000173603525000009/irannotice-bxslq42024.htm",
-      "material": false
+      "material": false,
+      "headline": "Filed routine Iran Threat Reduction Act disclosure notice",
+      "signal": "clean",
+      "signal_note": "Common-control disclosure, no BXSL conduct"
     },
     {
       "form": "8-K",
@@ -402,7 +549,10 @@
       "label": "Current report: reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000121390025017220/ea0232005-01_8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Blackstone Secured Lending released Q4 2024 financial results",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results"
     },
     {
       "form": "10-K",
@@ -410,7 +560,10 @@
       "label": "Annual report (10-K) for period ending 2024-12-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000173603525000008/bxsl-20241231.htm",
-      "material": true
+      "material": true,
+      "headline": "Filed fiscal 2024 annual report on Form 10-K",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure in excerpt"
     },
     {
       "form": "40-17G",
@@ -418,7 +571,10 @@
       "label": "40-17G — 40-17G",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000121390025015684/ea0230949-01_4017g.pdf",
-      "material": false
+      "material": false,
+      "headline": "Filed fidelity bond notice on Form 40-17G",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "SCHEDULE 13G/A",
@@ -426,7 +582,10 @@
       "label": "SCHEDULE 13G/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000090445425000144/xslSCHEDULE_13G_X01/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "Investor reported 8.9% beneficial ownership stake",
+      "signal": "clean",
+      "signal_note": "Routine ownership amendment"
     },
     {
       "form": "424B2",
@@ -434,7 +593,10 @@
       "label": "Prospectus supplement (offering) — 424B2",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312525008530/d859398d424b2.htm",
-      "material": true
+      "material": true,
+      "headline": "Launched $600M at-the-market common share offering",
+      "signal": "clean",
+      "signal_note": "Ordinary equity offering"
     },
     {
       "form": "8-K",
@@ -442,7 +604,10 @@
       "label": "Current report: entered a material agreement; terminated a material agreement",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312525008539/d856698d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Entered $600M at-the-market equity distribution agreements",
+      "signal": "clean",
+      "signal_note": "Routine ATM setup"
     },
     {
       "form": "8-K",
@@ -450,7 +615,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312524283713/d904198d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Amended Breckenridge revolver to $1.175B, cut margin to 1.90%, extended to 2029",
+      "signal": "clean",
+      "signal_note": "Routine credit facility amendment"
     },
     {
       "form": "8-K",
@@ -458,7 +626,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312524279577/d893424d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Issued $300M 5.350% notes due 2028, lifting series total to $700M",
+      "signal": "clean",
+      "signal_note": "Ordinary unsecured notes issuance"
     },
     {
       "form": "424B2",
@@ -466,7 +637,10 @@
       "label": "Prospectus supplement (offering) — 424B2",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312524278470/d864485d424b2.htm",
-      "material": true
+      "material": true,
+      "headline": "Offered $300M 5.350% notes due 2028 as further issuance",
+      "signal": "clean",
+      "signal_note": "Routine notes offering supplement"
     },
     {
       "form": "497AD",
@@ -474,7 +648,10 @@
       "label": "497AD — 497AD",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312524275767/d911169d497ad.htm",
-      "material": false
+      "material": false,
+      "headline": "Priced $300M of 5.350% unsecured notes due 2028",
+      "signal": "clean",
+      "signal_note": "Routine notes pricing"
     },
     {
       "form": "FWP",
@@ -482,7 +659,10 @@
       "label": "FWP — FWP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312524275757/d889720dfwp.htm",
-      "material": false
+      "material": false,
+      "headline": "Pricing term sheet for $300M 5.350% notes due 2028",
+      "signal": "clean",
+      "signal_note": "Routine notes term sheet"
     },
     {
       "form": "424B2",
@@ -490,7 +670,10 @@
       "label": "Prospectus supplement (offering) — 424B2",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312524274915/d864485d424b2.htm",
-      "material": true
+      "material": true,
+      "headline": "Preliminary prospectus supplement for further 5.350% notes due 2028",
+      "signal": "clean",
+      "signal_note": "Routine preliminary offering supplement"
     },
     {
       "form": "8-K",
@@ -498,7 +681,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000173603524000040/bxsl-20241120.htm",
-      "material": true
+      "material": true,
+      "headline": "Amended Big Sky revolver with $150M commitment increase, 1.85% margin",
+      "signal": "clean",
+      "signal_note": "Routine credit facility amendment"
     },
     {
       "form": "IRANNOTICE",
@@ -506,7 +692,10 @@
       "label": "IRANNOTICE — IRANNOTICE",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000173603524000036/irannotice-bxslq32024.htm",
-      "material": false
+      "material": false,
+      "headline": "Filed Section 13(r) Iran notice tied to common-control affiliates, not BXSL conduct",
+      "signal": "clean",
+      "signal_note": "Routine affiliate-based disclosure"
     },
     {
       "form": "8-K",
@@ -514,7 +703,10 @@
       "label": "Current report: reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312524255091/d848624d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Furnished third quarter 2024 results press release and presentation",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results"
     },
     {
       "form": "10-Q",
@@ -522,7 +714,10 @@
       "label": "Quarterly report (10-Q) for period ending 2024-09-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000173603524000035/bxsl-20240930.htm",
-      "material": true
+      "material": true,
+      "headline": "Filed Q3 2024 Form 10-Q with accounting policy disclosures",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "8-K",
@@ -530,7 +725,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312524237579/d899020d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "BXSL closed $400M of 5.350% unsecured notes due April 2028",
+      "signal": "clean",
+      "signal_note": "Routine notes issuance closed"
     },
     {
       "form": "424B2",
@@ -538,7 +736,10 @@
       "label": "Prospectus supplement (offering) — 424B2",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312524236471/d833273d424b2.htm",
-      "material": true
+      "material": true,
+      "headline": "BXSL offering $400M of 5.350% unsecured notes due 2028",
+      "signal": "clean",
+      "signal_note": "Routine notes offering"
     },
     {
       "form": "497AD",
@@ -546,7 +747,10 @@
       "label": "497AD — 497AD",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312524235323/d870234d497ad.htm",
-      "material": false
+      "material": false,
+      "headline": "BXSL priced $400M public offering of 5.350% notes due 2028",
+      "signal": "clean",
+      "signal_note": "Routine notes pricing"
     },
     {
       "form": "FWP",
@@ -554,7 +758,10 @@
       "label": "FWP — FWP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312524235287/d859483dfwp.htm",
-      "material": false
+      "material": false,
+      "headline": "BXSL pricing term sheet for $400M 5.350% notes due 2028",
+      "signal": "clean",
+      "signal_note": "Routine pricing term sheet"
     },
     {
       "form": "424B2",
@@ -562,7 +769,10 @@
       "label": "Prospectus supplement (offering) — 424B2",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312524234815/d833273d424b2.htm",
-      "material": true
+      "material": true,
+      "headline": "BXSL preliminary prospectus for unsecured notes offering due 2028",
+      "signal": "clean",
+      "signal_note": "Routine notes offering"
     },
     {
       "form": "8-K",
@@ -570,7 +780,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312524227010/d774171d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "BXSL amended Bank of America credit facility, cut margin, extended to 2027",
+      "signal": "clean",
+      "signal_note": "Facility amend-and-extend, lower margin"
     },
     {
       "form": "8-K",
@@ -578,7 +791,10 @@
       "label": "Current report: entered a material agreement; terminated a material agreement",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312524225279/d896015d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "BXSL entered $500M at-the-market equity distribution agreements",
+      "signal": "clean",
+      "signal_note": "Routine ATM equity program"
     },
     {
       "form": "424B2",
@@ -586,7 +802,10 @@
       "label": "Prospectus supplement (offering) — 424B2",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312524225264/d817885d424b2.htm",
-      "material": true
+      "material": true,
+      "headline": "BXSL $500M ATM offering; NAV per share $27.19 at June 30",
+      "signal": "clean",
+      "signal_note": "Routine ATM offering"
     },
     {
       "form": "8-K",
@@ -594,7 +813,10 @@
       "label": "Current report (8-K)",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000173603524000032/bxsl-20240912.htm",
-      "material": false
+      "material": false,
+      "headline": "BXSL shareholders elected two trustees and ratified Deloitte auditor",
+      "signal": "clean",
+      "signal_note": "Routine annual meeting results"
     },
     {
       "form": "IRANNOTICE",
@@ -602,7 +824,10 @@
       "label": "IRANNOTICE — IRANNOTICE",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000173603524000028/irannotice-bxslq22024.htm",
-      "material": false
+      "material": false,
+      "headline": "BXSL filed routine Iran Threat Reduction Act disclosure notice",
+      "signal": "clean",
+      "signal_note": "Routine Section 13(r) notice"
     },
     {
       "form": "8-K",
@@ -610,7 +835,10 @@
       "label": "Current report: reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312524195369/d834308d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Furnished Q2 2024 results press release and detailed presentation",
+      "signal": "clean",
+      "signal_note": "Routine quarterly earnings 8-K"
     },
     {
       "form": "10-Q",
@@ -618,7 +846,10 @@
       "label": "Quarterly report (10-Q) for period ending 2024-06-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000173603524000026/bxsl-20240630.htm",
-      "material": true
+      "material": true,
+      "headline": "Filed Q2 2024 10-Q for quarter ended June 30, 2024",
+      "signal": "clean",
+      "signal_note": "Routine quarterly report"
     },
     {
       "form": "ARS",
@@ -626,7 +857,10 @@
       "label": "ARS — ARS",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312524177771/d857847dars.pdf",
-      "material": false
+      "material": false,
+      "headline": "Filed annual report to shareholders on July 11, 2024",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "DEFA14A",
@@ -634,7 +868,10 @@
       "label": "DEFA14A — DEFA14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312524177770/d772138ddefa14a.htm",
-      "material": false
+      "material": false,
+      "headline": "2024 annual meeting proxy notice; trustee elections and auditor ratification",
+      "signal": "clean",
+      "signal_note": "Routine proxy materials"
     },
     {
       "form": "DEF 14A",
@@ -642,7 +879,10 @@
       "label": "Proxy statement — DEF 14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312524177769/d706698ddef14a.htm",
-      "material": false
+      "material": false,
+      "headline": "Annual meeting to elect two trustees and ratify Deloitte auditor",
+      "signal": "clean",
+      "signal_note": "Routine annual proxy statement"
     },
     {
       "form": "8-K",
@@ -650,7 +890,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312524143908/d845390d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Closed $400M of 5.875% unsecured notes due 2027",
+      "signal": "clean",
+      "signal_note": "Routine debt issuance"
     },
     {
       "form": "424B2",
@@ -658,7 +901,10 @@
       "label": "Prospectus supplement (offering) — 424B2",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312524139367/d826980d424b2.htm",
-      "material": true
+      "material": true,
+      "headline": "Offered $400M of 5.875% unsecured notes due 2027",
+      "signal": "clean",
+      "signal_note": "Routine notes offering"
     },
     {
       "form": "497AD",
@@ -666,7 +912,10 @@
       "label": "497AD — 497AD",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312524137424/d788154d497ad.htm",
-      "material": false
+      "material": false,
+      "headline": "Priced $400M public offering of 5.875% notes due 2027",
+      "signal": "clean",
+      "signal_note": "Routine debt pricing"
     },
     {
       "form": "FWP",
@@ -674,7 +923,10 @@
       "label": "FWP — FWP",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312524137316/d832752dfwp.htm",
-      "material": false
+      "material": false,
+      "headline": "Pricing term sheet for $400M 5.875% notes due 2027",
+      "signal": "clean",
+      "signal_note": "Routine notes pricing"
     },
     {
       "form": "424B2",
@@ -682,7 +934,10 @@
       "label": "Prospectus supplement (offering) — 424B2",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312524136783/d826980d424b2.htm",
-      "material": true
+      "material": true,
+      "headline": "Preliminary prospectus supplement for unsecured notes offering",
+      "signal": "clean",
+      "signal_note": "Routine notes offering"
     },
     {
       "form": "IRANNOTICE",
@@ -690,7 +945,10 @@
       "label": "IRANNOTICE — IRANNOTICE",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000173603524000019/irannotice-bxslq12024.htm",
-      "material": false
+      "material": false,
+      "headline": "BXSL files routine Iran Threat Reduction Act disclosure with Q1 10-Q",
+      "signal": "clean",
+      "signal_note": "Routine affiliate Iran disclosure notice"
     },
     {
       "form": "8-K",
@@ -698,7 +956,10 @@
       "label": "Current report: reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312524133736/d808064d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "BXSL furnishes Q1 2024 financial results press release and presentation",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results announcement"
     },
     {
       "form": "10-Q",
@@ -706,7 +967,10 @@
       "label": "Quarterly report (10-Q) for period ending 2024-03-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000173603524000017/bxsl-20240331.htm",
-      "material": true
+      "material": true,
+      "headline": "BXSL Q1 2024 10-Q; PIK loans placed on non-accrual if unrealizable",
+      "signal": "clean",
+      "signal_note": "Routine accounting-policy disclosures"
     },
     {
       "form": "3",
@@ -714,7 +978,10 @@
       "label": "3 — 3",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000095017024051555/xslF345X02/ownership.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider files initial Form 3 statement of BXSL beneficial ownership",
+      "signal": "clean",
+      "signal_note": "Routine insider ownership filing"
     },
     {
       "form": "8-K",
@@ -722,7 +989,10 @@
       "label": "Current report: changed a director or senior officer",
       "category": "Personnel",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312524128090/d786884d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "BXSL board appoints Lucie Enns as Chief Securities Counsel",
+      "signal": "clean",
+      "signal_note": "Routine executive appointment"
     },
     {
       "form": "8-K",
@@ -730,7 +1000,10 @@
       "label": "Current report: entered a material agreement; terminated a material agreement",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312524080622/d807107d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "BXSL enters equity distribution agreements for up to $500M ATM offering",
+      "signal": "clean",
+      "signal_note": "Ordinary at-the-market share offering"
     },
     {
       "form": "424B2",
@@ -738,7 +1011,10 @@
       "label": "Prospectus supplement (offering) — 424B2",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312524080607/d802716d424b2.htm",
-      "material": true
+      "material": true,
+      "headline": "BXSL prospectus supplement for $500M at-the-market common share offering",
+      "signal": "clean",
+      "signal_note": "Ordinary at-the-market offering"
     },
     {
       "form": "IRANNOTICE",
@@ -746,7 +1022,10 @@
       "label": "IRANNOTICE — IRANNOTICE",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312524049120/d765298dirannotice.htm",
-      "material": false
+      "material": false,
+      "headline": "BXSL files routine Iran Threat Reduction Act disclosure with 2023 10-K",
+      "signal": "clean",
+      "signal_note": "Routine affiliate Iran disclosure notice"
     },
     {
       "form": "8-K",
@@ -754,7 +1033,10 @@
       "label": "Current report: reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312524049096/d785240d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "BXSL furnishes Q4 2023 financial results press release and presentation",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results announcement"
     },
     {
       "form": "10-K",
@@ -762,7 +1044,10 @@
       "label": "Annual report (10-K) for period ending 2023-12-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000173603524000006/bxsl-20231231.htm",
-      "material": true
+      "material": true,
+      "headline": "BXSL 2023 10-K details senior secured lending strategy and borrowings",
+      "signal": "clean",
+      "signal_note": "Routine annual report disclosures"
     },
     {
       "form": "SC 13G/A",
@@ -770,7 +1055,10 @@
       "label": "SC 13G/A — SCHEDULE 13G/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000090445424000157/s13ga_123123-blackstone.htm",
-      "material": false
+      "material": false,
+      "headline": "Karp-affiliated funds report passive 5%-plus stake in BXSL shares",
+      "signal": "clean",
+      "signal_note": "Routine passive ownership amendment"
     },
     {
       "form": "40-17G",
@@ -778,7 +1066,10 @@
       "label": "40-17G — 40-17G",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312524021622/d728768d4017g.htm",
-      "material": false
+      "material": false,
+      "headline": "BXSL files annual fidelity bond disclosure under Rule 17g-1",
+      "signal": "clean",
+      "signal_note": "Routine insurance bond filing"
     },
     {
       "form": "8-K",
@@ -786,7 +1077,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312523301232/d492484d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "BXSL raised Jackson Hole revolver to $500M, extended maturity to 2027",
+      "signal": "clean",
+      "signal_note": "Routine credit facility upsize and extension"
     },
     {
       "form": "8-K",
@@ -794,7 +1088,10 @@
       "label": "Current report: entered a material agreement",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312523286802/d20053d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "BXSL launched $400M at-the-market equity offering via five sales agents",
+      "signal": "clean",
+      "signal_note": "Ordinary ATM equity offering"
     },
     {
       "form": "424B2",
@@ -802,7 +1099,10 @@
       "label": "Prospectus supplement (offering) — 424B2",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312523286791/d65188d424b2.htm",
-      "material": true
+      "material": true,
+      "headline": "BXSL prospectus supplement for $400M ATM, NAV $26.54 at Sept 30",
+      "signal": "clean",
+      "signal_note": "Ordinary ATM equity offering"
     },
     {
       "form": "8-K",
@@ -810,7 +1110,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312523279276/d601109d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "BXSL extended Jackson Hole revolver borrowing period to December 2023",
+      "signal": "clean",
+      "signal_note": "Routine credit facility extension"
     },
     {
       "form": "IRANNOTICE",
@@ -818,7 +1121,10 @@
       "label": "IRANNOTICE — IRANNOTICE",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312523272905/d580685dirannotice.htm",
-      "material": false
+      "material": false,
+      "headline": "BXSL files routine Iran Threat Reduction Act disclosure notice",
+      "signal": "clean",
+      "signal_note": "Routine affiliate-related Iran disclosure"
     },
     {
       "form": "8-K",
@@ -826,7 +1132,10 @@
       "label": "Current report: reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312523272898/d562753d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "BXSL furnished third-quarter 2023 results press release and presentation",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results furnished"
     },
     {
       "form": "10-Q",
@@ -834,7 +1143,10 @@
       "label": "Quarterly report (10-Q) for period ending 2023-09-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000173603523000023/bxsl-20230930.htm",
-      "material": true
+      "material": true,
+      "headline": "BXSL third-quarter 10-Q outlines accounting policies, no adverse disclosure",
+      "signal": "clean",
+      "signal_note": "Routine quarterly report"
     },
     {
       "form": "8-K",
@@ -842,7 +1154,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312523270438/d551029d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "BXSL upsized Breckenridge revolver from $825M to $1.025B",
+      "signal": "clean",
+      "signal_note": "Routine credit facility upsize"
     },
     {
       "form": "8-K",
@@ -850,7 +1165,10 @@
       "label": "Current report (8-K)",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312523236523/d550365d8k.htm",
-      "material": false
+      "material": false,
+      "headline": "Shareholders elected two trustees and ratified Deloitte at 2023 annual meeting",
+      "signal": "clean",
+      "signal_note": "Routine annual meeting results"
     },
     {
       "form": "8-K",
@@ -858,7 +1176,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312523212398/d456730d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Issued 6.5 million common shares at $26.78 for $173.67M net proceeds",
+      "signal": "clean",
+      "signal_note": "Ordinary equity offering"
     },
     {
       "form": "424B2",
@@ -866,7 +1187,10 @@
       "label": "Prospectus supplement (offering) — 424B2",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312523210747/d500796d424b2.htm",
-      "material": true
+      "material": true,
+      "headline": "Offered 6.5 million common shares; NAV $26.30 at June 30",
+      "signal": "clean",
+      "signal_note": "Ordinary equity offering"
     },
     {
       "form": "424B2",
@@ -874,7 +1198,10 @@
       "label": "Prospectus supplement (offering) — 424B2",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312523207370/d500796d424b2.htm",
-      "material": true
+      "material": true,
+      "headline": "Launched preliminary 6.5 million share common stock offering",
+      "signal": "clean",
+      "signal_note": "Ordinary equity offering"
     },
     {
       "form": "IRANNOTICE",
@@ -882,7 +1209,10 @@
       "label": "IRANNOTICE — IRANNOTICE",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312523206752/d531218dirannotice.htm",
-      "material": false
+      "material": false,
+      "headline": "Filed Iran Threat Reduction Act notice tied to affiliates, not own conduct",
+      "signal": "clean",
+      "signal_note": "Routine affiliate Iran disclosure"
     },
     {
       "form": "8-K",
@@ -890,7 +1220,10 @@
       "label": "Current report: reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312523206750/d534174d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Furnished second quarter 2023 results press release and presentation",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results"
     },
     {
       "form": "10-Q",
@@ -898,7 +1231,10 @@
       "label": "Quarterly report (10-Q) for period ending 2023-06-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000173603523000018/bxsl-20230630.htm",
-      "material": true
+      "material": true,
+      "headline": "Q2 10-Q reports $13.0M non-recurring interest income and routine accounting policies",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results"
     },
     {
       "form": "3",
@@ -906,7 +1242,10 @@
       "label": "3 — FORM 3 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000089924323017752/xslF345X02/doc3.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider filed initial Form 3 statement of beneficial ownership",
+      "signal": "clean",
+      "signal_note": "Routine insider ownership filing"
     },
     {
       "form": "ARS",
@@ -914,7 +1253,10 @@
       "label": "ARS — ARS",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312523202310/d460069dars.pdf",
-      "material": false
+      "material": false,
+      "headline": "Filed 2022 annual report to shareholders",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "DEF 14A",
@@ -922,7 +1264,10 @@
       "label": "Proxy statement — DEF 14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312523202305/d463502ddef14a.htm",
-      "material": false
+      "material": false,
+      "headline": "Filed proxy for September 15 annual meeting of shareholders",
+      "signal": "clean",
+      "signal_note": "Routine proxy statement"
     },
     {
       "form": "8-K",
@@ -930,7 +1275,10 @@
       "label": "Current report: changed a director or senior officer",
       "category": "Personnel",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312523202282/d526771d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Oran Ebel named Chief Legal Officer as Marisa Beeney resigns the role",
+      "signal": "clean",
+      "signal_note": "Routine legal officer transition"
     },
     {
       "form": "SC 13G",
@@ -938,7 +1286,10 @@
       "label": "SC 13G — SC 13G",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312523181334/d523209dsc13g.htm",
-      "material": false
+      "material": false,
+      "headline": "Greenwich Venture Capital group discloses passive 5% stake in BXSL",
+      "signal": "clean",
+      "signal_note": "Routine beneficial ownership filing"
     },
     {
       "form": "8-K",
@@ -946,7 +1297,10 @@
       "label": "Current report: entered a material agreement",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312523179238/d481603d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "BXSL doubles at-the-market program to $400 million via new sales agents",
+      "signal": "clean",
+      "signal_note": "Ordinary equity offering expansion"
     },
     {
       "form": "424B2",
@@ -954,7 +1308,10 @@
       "label": "Prospectus supplement (offering) — 424B2",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312523179234/d453323d424b2.htm",
-      "material": true
+      "material": true,
+      "headline": "Prospectus supplement covers $400 million at-the-market common share offering",
+      "signal": "clean",
+      "signal_note": "Routine offering prospectus"
     },
     {
       "form": "8-K",
@@ -962,7 +1319,10 @@
       "label": "Current report: issued a Regulation FD disclosure",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312523170169/d519784d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "BXSL raises quarterly distribution 10% to $0.77 per share",
+      "signal": "clean",
+      "signal_note": "Distribution increased, not cut"
     },
     {
       "form": "8-K",
@@ -970,7 +1330,10 @@
       "label": "Current report: entered a material agreement",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312523165679/d587743d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "BXSL upsizes term loans to $385M and extends credit facility maturities",
+      "signal": "clean",
+      "signal_note": "Credit facility upsized and extended"
     },
     {
       "form": "4",
@@ -978,7 +1341,10 @@
       "label": "4 — FORM 4 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000089924323014055/xslF345X04/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider reports BXSL share transaction on Form 4",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "3",
@@ -986,7 +1352,10 @@
       "label": "3 — FORM 3 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000089924323013265/xslF345X02/doc3.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider files initial Form 3 ownership statement for BXSL",
+      "signal": "clean",
+      "signal_note": "Routine initial ownership filing"
     },
     {
       "form": "3",
@@ -994,7 +1363,10 @@
       "label": "3 — FORM 3 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000089924323013263/xslF345X02/doc3.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider files initial Form 3 ownership statement for BXSL",
+      "signal": "clean",
+      "signal_note": "Routine initial ownership filing"
     },
     {
       "form": "3",
@@ -1002,7 +1374,10 @@
       "label": "3 — FORM 3 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000089924323013262/xslF345X02/doc3.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider files initial Form 3 ownership statement for BXSL",
+      "signal": "clean",
+      "signal_note": "Routine initial ownership filing"
     },
     {
       "form": "3",
@@ -1010,7 +1385,10 @@
       "label": "3 — FORM 3 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000089924323013253/xslF345X02/doc3.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider filed initial Form 3 ownership statement for BXSL",
+      "signal": "clean",
+      "signal_note": "Routine insider ownership filing"
     },
     {
       "form": "IRANNOTICE",
@@ -1018,7 +1396,10 @@
       "label": "IRANNOTICE — IRANNOTICE",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312523140001/d453321dirannotice.htm",
-      "material": false
+      "material": false,
+      "headline": "BXSL filed Iran Threat Reduction Act disclosure tied to common-control affiliates",
+      "signal": "clean",
+      "signal_note": "Routine affiliate-based Iran disclosure"
     },
     {
       "form": "8-K",
@@ -1026,7 +1407,10 @@
       "label": "Current report: reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312523139972/d452827d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "BXSL furnished first-quarter 2023 results press release and presentation",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results furnished"
     },
     {
       "form": "10-Q",
@@ -1034,7 +1418,10 @@
       "label": "Quarterly report (10-Q) for period ending 2023-03-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000173603523000013/bxsl-20230331.htm",
-      "material": true
+      "material": true,
+      "headline": "BXSL filed Q1 2023 10-Q detailing accounting policies and revenue recognition",
+      "signal": "clean",
+      "signal_note": "Routine quarterly report"
     },
     {
       "form": "8-K",
@@ -1042,7 +1429,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312523092205/d468200d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "BXSL amended Big Sky credit facility, extending maturity to September 2026",
+      "signal": "clean",
+      "signal_note": "Routine credit facility extension"
     },
     {
       "form": "8-K",
@@ -1050,7 +1440,10 @@
       "label": "Current report: entered a material agreement",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312523060123/d477426d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "BXSL launched $200M at-the-market equity distribution program",
+      "signal": "clean",
+      "signal_note": "Routine ATM equity offering"
     },
     {
       "form": "424B2",
@@ -1058,7 +1451,10 @@
       "label": "Prospectus supplement (offering) — 424B2",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312523060114/d398117d424b2.htm",
-      "material": true
+      "material": true,
+      "headline": "BXSL prospectus supplement for $200M ATM offering; NAV $25.93 at year-end",
+      "signal": "clean",
+      "signal_note": "Routine ATM offering prospectus"
     },
     {
       "form": "IRANNOTICE",
@@ -1066,7 +1462,10 @@
       "label": "IRANNOTICE — IRANNOTICE",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312523049660/d289492dirannotice.htm",
-      "material": false
+      "material": false,
+      "headline": "BXSL filed Iran Threat Reduction Act disclosure with its 2022 10-K",
+      "signal": "clean",
+      "signal_note": "Routine affiliate-based Iran disclosure"
     },
     {
       "form": "8-K",
@@ -1074,7 +1473,10 @@
       "label": "Current report: reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312523049569/d488393d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "BXSL furnished fourth-quarter 2022 results press release and presentation",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results furnished"
     },
     {
       "form": "10-K",
@@ -1082,7 +1484,10 @@
       "label": "Annual report (10-K) for period ending 2022-12-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000173603523000008/bxsl-20221231.htm",
-      "material": true
+      "material": true,
+      "headline": "BXSL filed 2022 annual report describing adviser, strategy and borrowings",
+      "signal": "clean",
+      "signal_note": "Routine annual report"
     },
     {
       "form": "SC 13G/A",
@@ -1090,7 +1495,10 @@
       "label": "SC 13G/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000091957423001100/d9940587_13g-a.htm",
-      "material": false
+      "material": false,
+      "headline": "Investor filed Schedule 13G/A Amendment No. 6 on BXSL common stock",
+      "signal": "clean",
+      "signal_note": "Routine passive ownership amendment"
     },
     {
       "form": "40-17G",
@@ -1098,7 +1506,10 @@
       "label": "40-17G — 40-17G",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312523028126/d342823d4017g.htm",
-      "material": false
+      "material": false,
+      "headline": "BXSL filed annual fidelity bond documentation under Rule 17g-1",
+      "signal": "clean",
+      "signal_note": "Routine fidelity bond filing"
     },
     {
       "form": "3",
@@ -1106,7 +1517,10 @@
       "label": "3 — FORM 3 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000089924323002034/xslF345X02/doc3.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider filed Form 3 initial ownership statement for BXSL",
+      "signal": "clean",
+      "signal_note": "Routine initial insider filing"
     },
     {
       "form": "8-K",
@@ -1114,7 +1528,10 @@
       "label": "Current report: changed a director or senior officer",
       "category": "Personnel",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312523005202/d423536d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Board appointed Jonathan Bock as Co-CEO alongside Brad Marshall",
+      "signal": "clean",
+      "signal_note": "Routine executive appointment"
     },
     {
       "form": "4",
@@ -1122,7 +1539,10 @@
       "label": "4 — FORM 4 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000089924322036676/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider reported Form 4 transaction in BXSL shares",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -1130,7 +1550,10 @@
       "label": "4 — FORM 4 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000089924322036648/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider reported Form 4 transaction in BXSL shares",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -1138,7 +1561,10 @@
       "label": "4 — FORM 4 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000089924322036647/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider reported Form 4 transaction in BXSL shares",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -1146,7 +1572,10 @@
       "label": "4 — FORM 4 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000089924322036646/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider reported Form 4 transaction in BXSL shares",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -1154,7 +1583,10 @@
       "label": "4 — FORM 4 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000089924322036645/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider reported Form 4 transaction in BXSL shares",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -1162,7 +1594,10 @@
       "label": "4 — FORM 4 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000089924322036644/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider reported Form 4 transaction in BXSL shares",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "4",
@@ -1170,7 +1605,10 @@
       "label": "4 — FORM 4 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000089924322036642/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "BXSL insider filed Form 4 reporting a November 18 transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "8-K",
@@ -1178,7 +1616,10 @@
       "label": "Current report: reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312522281898/d297971d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "BXSL furnished third-quarter 2022 financial results press release",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results"
     },
     {
       "form": "10-Q",
@@ -1186,7 +1627,10 @@
       "label": "Quarterly report (10-Q) for period ending 2022-09-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000173603522000023/bxsl-20220930.htm",
-      "material": true
+      "material": true,
+      "headline": "BXSL portfolio yield rose to 8.98% at cost in Q3 2022",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results"
     },
     {
       "form": "8-K",
@@ -1194,7 +1638,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312522249288/d374168d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "BXSL amended revolving credit facility to replace LIBOR with SOFR",
+      "signal": "clean",
+      "signal_note": "Routine LIBOR-to-SOFR amendment"
     },
     {
       "form": "8-K",
@@ -1202,7 +1649,10 @@
       "label": "Current report (8-K)",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312522247111/d370902d8k.htm",
-      "material": false
+      "material": false,
+      "headline": "BXSL shareholders elected trustees and ratified Deloitte at annual meeting",
+      "signal": "clean",
+      "signal_note": "Routine governance vote"
     },
     {
       "form": "4",
@@ -1210,7 +1660,10 @@
       "label": "4 — FORM 4 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000089924322031306/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "BXSL insider filed Form 4 reporting a September 15 transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider transaction"
     },
     {
       "form": "3",
@@ -1218,7 +1671,10 @@
       "label": "3 — FORM 3 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000089924322031297/xslF345X02/doc3.xml",
-      "material": false
+      "material": false,
+      "headline": "BXSL insider filed Form 3 initial statement of ownership",
+      "signal": "clean",
+      "signal_note": "Routine initial ownership filing"
     },
     {
       "form": "8-K",
@@ -1226,7 +1682,10 @@
       "label": "Current report: issued a Regulation FD disclosure",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312522239573/d232184d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "BXSL raised quarterly distribution 13% to $0.60 per share",
+      "signal": "clean",
+      "signal_note": "Distribution increased on strong earnings"
     },
     {
       "form": "8-K",
@@ -1234,7 +1693,10 @@
       "label": "Current report: changed a director or senior officer",
       "category": "Personnel",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312522234089/d392993d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "BXSL CFO Kuppenheimer resigned; Kevin Kresge named interim CFO",
+      "signal": "clean",
+      "signal_note": "CFO resignation, no disagreement"
     },
     {
       "form": "8-K",
@@ -1242,7 +1704,10 @@
       "label": "Current report: reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312522217923/d375936d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "BXSL furnished second-quarter 2022 financial results press release",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results"
     },
     {
       "form": "10-Q",
@@ -1250,7 +1715,10 @@
       "label": "Quarterly report (10-Q) for period ending 2022-06-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000173603522000018/bxsl-20220630.htm",
-      "material": true
+      "material": true,
+      "headline": "Q2 investment acquisitions totaled $326M, largely first lien senior secured debt",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results"
     },
     {
       "form": "8-K",
@@ -1258,7 +1726,10 @@
       "label": "Current report: changed a director or senior officer",
       "category": "Personnel",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312522210676/d388339d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "William Renahan named Chief Compliance Officer, replacing Marisa Beeney",
+      "signal": "clean",
+      "signal_note": "Routine governance appointment"
     },
     {
       "form": "3",
@@ -1266,7 +1737,10 @@
       "label": "3 — FORM 3 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000089924322027512/xslF345X02/doc3.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider filed initial Form 3 statement of beneficial ownership",
+      "signal": "clean",
+      "signal_note": "Routine ownership filing"
     },
     {
       "form": "DEF 14A",
@@ -1274,7 +1748,10 @@
       "label": "Proxy statement — DEF 14A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312522204802/d420779ddef14a.htm",
-      "material": false
+      "material": false,
+      "headline": "2022 annual meeting set for September 16; trustee elections and auditor ratification",
+      "signal": "clean",
+      "signal_note": "Routine proxy statement"
     },
     {
       "form": "8-K",
@@ -1282,7 +1759,10 @@
       "label": "Current report: changed a director or senior officer",
       "category": "Personnel",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312522202746/d364401d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "David Goldberg named interim CAO and Treasurer as Abby Miller takes leave",
+      "signal": "clean",
+      "signal_note": "Routine interim officer appointment"
     },
     {
       "form": "N-2ASR",
@@ -1290,7 +1770,10 @@
       "label": "N-2ASR — N-2ASR",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312522201165/d791207dn2asr.htm",
-      "material": false
+      "material": false,
+      "headline": "Filed automatic shelf registration for common, preferred, debt and warrants",
+      "signal": "clean",
+      "signal_note": "Ordinary shelf registration"
     },
     {
       "form": "8-K",
@@ -1298,7 +1781,10 @@
       "label": "Current report: entered a material agreement",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312522185972/d373808d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Upsized revolver to $1.55B and extended credit facility maturity to June 2027",
+      "signal": "clean",
+      "signal_note": "Credit facility upsize and extension"
     },
     {
       "form": "424B3",
@@ -1306,7 +1792,10 @@
       "label": "Prospectus supplement (offering) — 424B3",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312522162406/d320102d424b3.htm",
-      "material": true
+      "material": true,
+      "headline": "Launched exchange offer for $1.3B of 2027 and 2028 notes",
+      "signal": "clean",
+      "signal_note": "Routine registered notes exchange"
     },
     {
       "form": "3",
@@ -1314,7 +1803,10 @@
       "label": "3 — FORM 3 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000089924322019654/xslF345X02/doc3.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider filed initial Form 3 statement of beneficial ownership",
+      "signal": "clean",
+      "signal_note": "Routine ownership filing"
     },
     {
       "form": "EFFECT",
@@ -1322,7 +1814,10 @@
       "label": "EFFECT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/999999999522001587/xslEFFECTX01/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "SEC notice of effectiveness for BXSL registration statement",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "8-K",
@@ -1330,7 +1825,10 @@
       "label": "Current report: changed a director or senior officer",
       "category": "Personnel",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312522158046/d350934d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Abby Miller named Chief Accounting Officer and Treasurer",
+      "signal": "clean",
+      "signal_note": "Routine officer appointment"
     },
     {
       "form": "N-14 8C/A",
@@ -1338,7 +1836,10 @@
       "label": "N-14 8C/A — N-14 8C/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312522155949/d320102dn148ca.htm",
-      "material": false
+      "material": false,
+      "headline": "Registered exchange offer for $1.3B of 2027 and 2028 notes",
+      "signal": "clean",
+      "signal_note": "Routine notes exchange registration"
     },
     {
       "form": "8-K",
@@ -1346,7 +1847,10 @@
       "label": "Current report: reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312522148007/d326013d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Reported first-quarter 2022 financial results via press release",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results"
     },
     {
       "form": "10-Q",
@@ -1354,7 +1858,10 @@
       "label": "Quarterly report (10-Q) for period ending 2022-03-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000173603522000013/bxsl-20220331x10q.htm",
-      "material": true
+      "material": true,
+      "headline": "Q1 2022 10-Q; acquired $334M of investments, mostly first lien",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results"
     },
     {
       "form": "40-APP/A",
@@ -1362,7 +1869,10 @@
       "label": "40-APP/A — 40-APP/A APPLICATION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312522145949/d357514d40appa.htm",
-      "material": false
+      "material": false,
+      "headline": "Amended co-investment exemptive application to broaden follow-on definition",
+      "signal": "clean",
+      "signal_note": "Routine exemptive application amendment"
     },
     {
       "form": "3",
@@ -1370,7 +1880,10 @@
       "label": "3 — FORM 3 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000089924322017239/xslF345X02/doc3.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider filed initial Form 3 statement of ownership",
+      "signal": "clean",
+      "signal_note": "Routine ownership filing"
     },
     {
       "form": "8-K",
@@ -1378,7 +1891,10 @@
       "label": "Current report: changed a director or senior officer",
       "category": "Personnel",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312522139082/d193124d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Michelle Greene appointed to board; trustee Daniel Smith resigned",
+      "signal": "clean",
+      "signal_note": "Routine board changes, no disagreement"
     },
     {
       "form": "40-APP/A",
@@ -1386,7 +1902,10 @@
       "label": "40-APP/A — 40-APP/A APPLICATION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312522134795/d357514d40appa.htm",
-      "material": false
+      "material": false,
+      "headline": "Amended co-investment exemptive application to broaden follow-on definition",
+      "signal": "clean",
+      "signal_note": "Routine exemptive application amendment"
     },
     {
       "form": "40-APP",
@@ -1394,7 +1913,10 @@
       "label": "40-APP — 40-APP APPLICATION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312522097841/d312039d40app.htm",
-      "material": false
+      "material": false,
+      "headline": "Filed co-investment exemptive application to amend prior order",
+      "signal": "clean",
+      "signal_note": "Routine exemptive application"
     },
     {
       "form": "3",
@@ -1402,7 +1924,10 @@
       "label": "3 — FORM 3 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000089924322011095/xslF345X02/doc3.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider filed initial Form 3 statement of ownership",
+      "signal": "clean",
+      "signal_note": "Routine ownership filing"
     },
     {
       "form": "4",
@@ -1410,7 +1935,10 @@
       "label": "4 — FORM 4 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000089924322010166/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider reported a Section 16 transaction dated March 8, 2022",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 4"
     },
     {
       "form": "N-14 8C",
@@ -1418,7 +1946,10 @@
       "label": "N-14 8C — N-14 8C",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312522068092/d320102dn148c.htm",
-      "material": false
+      "material": false,
+      "headline": "Registered exchange offer for $1.3B of 2.125% and 2.850% notes",
+      "signal": "clean",
+      "signal_note": "Routine registered exchange offer"
     },
     {
       "form": "40-17G",
@@ -1426,7 +1957,10 @@
       "label": "40-17G — 40-17G",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312522062669/d366414d4017g.htm",
-      "material": false
+      "material": false,
+      "headline": "Filed annual fidelity bond under Rule 17g-1",
+      "signal": "clean",
+      "signal_note": "Routine fidelity bond filing"
     },
     {
       "form": "8-K",
@@ -1434,7 +1968,10 @@
       "label": "Current report: reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312522055679/d290377d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Announced fourth quarter and full-year 2021 financial results",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results"
     },
     {
       "form": "10-K",
@@ -1442,7 +1979,10 @@
       "label": "Annual report (10-K) for period ending 2021-12-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000173603522000006/bxsl-20211231x10k.htm",
-      "material": true
+      "material": true,
+      "headline": "2021 10-K details October IPO raising $264M in net proceeds",
+      "signal": "clean",
+      "signal_note": "Routine annual report"
     },
     {
       "form": "SC 13G/A",
@@ -1450,7 +1990,10 @@
       "label": "SC 13G/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000091957422001792/d9376656_13g-a.htm",
-      "material": false
+      "material": false,
+      "headline": "Investor filed Amendment No. 5 to Schedule 13G ownership stake",
+      "signal": "clean",
+      "signal_note": "Routine ownership amendment"
     },
     {
       "form": "8-K",
@@ -1458,7 +2001,10 @@
       "label": "Current report: changed a director or senior officer",
       "category": "Personnel",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312522028375/d913089d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Chief Accounting Officer Robert Busch resigned; David Goldberg named interim",
+      "signal": "clean",
+      "signal_note": "Resignation not from any disagreement"
     },
     {
       "form": "SC 13G",
@@ -1466,7 +2012,10 @@
       "label": "SC 13G — SC 13G",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000114036122003703/brhc10033467_sc13g.htm",
-      "material": false
+      "material": false,
+      "headline": "Qatar Investment Authority disclosed 13.7M-share BXSL stake",
+      "signal": "clean",
+      "signal_note": "Routine ownership disclosure"
     },
     {
       "form": "4",
@@ -1474,7 +2023,10 @@
       "label": "4 — FORM 4 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000089924321045397/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider reported a Section 16 transaction dated November 17, 2021",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 4"
     },
     {
       "form": "8-K",
@@ -1482,7 +2034,10 @@
       "label": "Current report: reported quarterly results",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312521327278/d249548d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Announced third quarter 2021 financial results",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results"
     },
     {
       "form": "10-Q",
@@ -1490,7 +2045,10 @@
       "label": "Quarterly report (10-Q) for period ending 2021-09-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000173603521000014/bxsl-20210930x10q.htm",
-      "material": true
+      "material": true,
+      "headline": "Q3 10-Q: IPO closed October 28 raising $230.6M net proceeds",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results"
     },
     {
       "form": "424B1",
@@ -1498,7 +2056,10 @@
       "label": "424B1 — 424B1",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312521313514/d124735d424b1.htm",
-      "material": false
+      "material": false,
+      "headline": "IPO prospectus: 9.18M common shares priced at $26.15",
+      "signal": "clean",
+      "signal_note": "Routine equity offering"
     },
     {
       "form": "4",
@@ -1506,7 +2067,10 @@
       "label": "4 — FORM 4 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000089924321042029/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider Form 4 filed for October 27 transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "EFFECT",
@@ -1514,7 +2078,10 @@
       "label": "EFFECT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/999999999521004057/xslEFFECTX01/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "Registration statement declared effective October 27",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "N-2MEF",
@@ -1522,7 +2089,10 @@
       "label": "N-2MEF — N-2MEF",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312521309956/d124735dn2mef.htm",
-      "material": false
+      "material": false,
+      "headline": "Filed N-2 registration statement for additional shares",
+      "signal": "clean",
+      "signal_note": "Routine registration"
     },
     {
       "form": "CERT",
@@ -1530,7 +2100,10 @@
       "label": "CERT — NYSE CERTIFICATION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000087666121001536/BXSL102621.pdf",
-      "material": false
+      "material": false,
+      "headline": "Exchange certification (CERT) filed October 26, 2021",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "8-A12B",
@@ -1538,7 +2111,10 @@
       "label": "8-A12B — 8-A12B",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312521307501/d229002d8a12b.htm",
-      "material": false
+      "material": false,
+      "headline": "Filed Form 8-A to register common shares on NYSE",
+      "signal": "clean",
+      "signal_note": "Routine listing registration"
     },
     {
       "form": "3",
@@ -1546,7 +2122,10 @@
       "label": "3 — FORM 3 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000089924321040975/xslF345X02/doc3.xml",
-      "material": false
+      "material": false,
+      "headline": "Initial Form 3 beneficial ownership filed for October 18",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "8-K",
@@ -1554,7 +2133,10 @@
       "label": "Current report: entered a material agreement; changed a director or senior officer",
       "category": "Personnel",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312521302133/d537088d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "8-K current report filed for October 18 event",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "N-2/A",
@@ -1562,7 +2144,10 @@
       "label": "N-2/A — N-2/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312521301178/d124735dn2a.htm",
-      "material": false
+      "material": false,
+      "headline": "Filed amended N-2 registration statement October 18",
+      "signal": "clean",
+      "signal_note": "Routine registration amendment"
     },
     {
       "form": "8-K",
@@ -1570,7 +2155,10 @@
       "label": "Current report: issued a Regulation FD disclosure; disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312521289887/d236745d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Priced $650M of 2.850% unsecured notes due 2028",
+      "signal": "clean",
+      "signal_note": "Routine notes offering"
     },
     {
       "form": "N-2",
@@ -1578,7 +2166,10 @@
       "label": "Registration statement (N-2) — N-2",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312521289878/d124735dn2.htm",
-      "material": true
+      "material": true,
+      "headline": "Filed N-2 registration statement for NYSE IPO under symbol BXSL",
+      "signal": "clean",
+      "signal_note": "Routine IPO registration"
     },
     {
       "form": "3",
@@ -1586,7 +2177,10 @@
       "label": "3 — FORM 3 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000089924321035392/xslF345X02/doc3.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider filed Form 3 initial ownership statement dated September 2021",
+      "signal": "clean",
+      "signal_note": "Routine insider ownership filing"
     },
     {
       "form": "8-K",
@@ -1594,7 +2188,10 @@
       "label": "Current report: changed a director or senior officer",
       "category": "Personnel",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312521268519/d226920d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Carlos Whitaker appointed President of Blackstone Secured Lending Fund",
+      "signal": "clean",
+      "signal_note": "Routine executive appointment"
     },
     {
       "form": "8-K",
@@ -1602,7 +2199,10 @@
       "label": "Current report (8-K)",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312521264578/d205059d8k.htm",
-      "material": false
+      "material": false,
+      "headline": "Drew about $356M via capital drawdown for 13.7M shares",
+      "signal": "clean",
+      "signal_note": "Routine capital drawdown"
     },
     {
       "form": "10-Q",
@@ -1610,7 +2210,10 @@
       "label": "Quarterly report (10-Q) for period ending 2021-06-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000173603521000012/bxsl-20210630x10q.htm",
-      "material": true
+      "material": true,
+      "headline": "Filed Q2 2021 10-Q covering results through June 30",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results"
     },
     {
       "form": "3",
@@ -1618,7 +2221,10 @@
       "label": "3 — FORM 3 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000089924321031770/xslF345X02/doc3.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider filed Form 3 initial ownership statement dated August 2021",
+      "signal": "clean",
+      "signal_note": "Routine insider ownership filing"
     },
     {
       "form": "8-K",
@@ -1626,7 +2232,10 @@
       "label": "Current report: changed a director or senior officer",
       "category": "Personnel",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312521236517/d212475d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Katherine Rubenstein appointed Chief Operating Officer",
+      "signal": "clean",
+      "signal_note": "Routine executive appointment"
     },
     {
       "form": "DRS",
@@ -1634,7 +2243,10 @@
       "label": "DRS",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000095012321009346/filename1.htm",
-      "material": false
+      "material": false,
+      "headline": "Confidentially submitted draft N-2 registration statement for IPO",
+      "signal": "clean",
+      "signal_note": "Routine confidential IPO draft"
     },
     {
       "form": "8-K",
@@ -1642,7 +2254,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312521225863/d86203d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Closed $650M of 2.125% unsecured notes due 2027",
+      "signal": "clean",
+      "signal_note": "Routine notes offering"
     },
     {
       "form": "8-K",
@@ -1650,7 +2265,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312521220713/d153564d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Priced $650M of 2.125% notes due 2027; NAV $25.92 at June 30",
+      "signal": "clean",
+      "signal_note": "Routine notes offering, stable NAV"
     },
     {
       "form": "40-APP/A",
@@ -1658,7 +2276,10 @@
       "label": "40-APP/A — 40-APP/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312521216739/d170565d40appa.htm",
-      "material": false
+      "material": false,
+      "headline": "Amended application for co-investment exemptive order under 1940 Act",
+      "signal": "clean",
+      "signal_note": "Routine exemptive relief application"
     },
     {
       "form": "424B3",
@@ -1666,7 +2287,10 @@
       "label": "Prospectus supplement (offering) — 424B3",
       "category": "Capital markets",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312521183871/d156661d424b3.htm",
-      "material": true
+      "material": true,
+      "headline": "Registered exchange offer for $1.9B of outstanding unsecured notes",
+      "signal": "clean",
+      "signal_note": "Routine notes exchange offer"
     },
     {
       "form": "EFFECT",
@@ -1674,7 +2298,10 @@
       "label": "EFFECT",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/999999999521002213/xslEFFECTX01/primary_doc.xml",
-      "material": false
+      "material": false,
+      "headline": "SEC notice of effectiveness for registration statement",
+      "signal": "clean",
+      "signal_note": "No adverse disclosure found"
     },
     {
       "form": "N-14 8C/A",
@@ -1682,7 +2309,10 @@
       "label": "N-14 8C/A — N-14 8C/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312521181591/d156661dn148ca.htm",
-      "material": false
+      "material": false,
+      "headline": "Filed preliminary prospectus for notes exchange offer registration",
+      "signal": "clean",
+      "signal_note": "Routine registration amendment"
     },
     {
       "form": "N-14 8C/A",
@@ -1690,7 +2320,10 @@
       "label": "N-14 8C/A — N-14 8C/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312521179728/d156661dn148ca.htm",
-      "material": false
+      "material": false,
+      "headline": "Filed preliminary prospectus for notes exchange offer registration",
+      "signal": "clean",
+      "signal_note": "Routine registration amendment"
     },
     {
       "form": "8-K",
@@ -1698,7 +2331,10 @@
       "label": "Current report (8-K)",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312521177093/d189777d8k.htm",
-      "material": false
+      "material": false,
+      "headline": "Drew down $357M via sale of 13.9M shares to investors",
+      "signal": "clean",
+      "signal_note": "Routine capital drawdown"
     },
     {
       "form": "N-14 8C/A",
@@ -1706,7 +2342,10 @@
       "label": "N-14 8C/A — N-14 8C/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312521162172/d156661dn148ca.htm",
-      "material": false
+      "material": false,
+      "headline": "Filed preliminary prospectus for notes exchange offer registration",
+      "signal": "clean",
+      "signal_note": "Routine registration amendment"
     },
     {
       "form": "10-Q",
@@ -1714,7 +2353,10 @@
       "label": "Quarterly report (10-Q) for period ending 2021-03-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000173603521000007/bxsl-20210331x10q.htm",
-      "material": true
+      "material": true,
+      "headline": "First-quarter 10-Q details senior-secured loan portfolio and operations",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results"
     },
     {
       "form": "8-K",
@@ -1722,7 +2364,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312521139560/d156273d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Issued $300M of 2.750% notes due 2026 at 2.600% yield",
+      "signal": "clean",
+      "signal_note": "Routine notes offering"
     },
     {
       "form": "8-K",
@@ -1730,7 +2375,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312521130520/d122143d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Priced $300M add-on of 2.750% notes due 2026 at 2.600% yield",
+      "signal": "clean",
+      "signal_note": "Routine unsecured notes offering"
     },
     {
       "form": "8-K",
@@ -1738,7 +2386,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312521124473/d161551d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "NAV per share $25.56 at March 31; quarterly total return 3.4%",
+      "signal": "clean",
+      "signal_note": "Routine quarterly NAV update"
     },
     {
       "form": "8-K",
@@ -1746,7 +2397,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312521085601/d122118d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Issued $400M of 2.750% unsecured notes due 2026",
+      "signal": "clean",
+      "signal_note": "Routine notes issuance and indenture"
     },
     {
       "form": "8-K",
@@ -1754,7 +2408,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312521077230/d155183d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Priced $400M of 2.750% notes due 2026 in private placement",
+      "signal": "clean",
+      "signal_note": "Routine unsecured notes offering"
     },
     {
       "form": "10-K",
@@ -1762,7 +2419,10 @@
       "label": "Annual report (10-K) for period ending 2020-12-31",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000173603521000004/bxsl-20201231x10k.htm",
-      "material": true
+      "material": true,
+      "headline": "Fiscal 2020 annual report; renamed Blackstone Secured Lending Fund",
+      "signal": "clean",
+      "signal_note": "Routine annual report, no adverse disclosure"
     },
     {
       "form": "40-APP/A",
@@ -1770,7 +2430,10 @@
       "label": "40-APP/A — 40-APP/A",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312521050790/d139164d40appa.htm",
-      "material": false
+      "material": false,
+      "headline": "Amended co-investment exemptive application filed with SEC",
+      "signal": "clean",
+      "signal_note": "Routine exemptive relief application"
     },
     {
       "form": "40-17G",
@@ -1778,7 +2441,10 @@
       "label": "40-17G — 40-17G",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312521034270/d116056d4017g.htm",
-      "material": false
+      "material": false,
+      "headline": "Filed annual fidelity bond disclosure under Rule 17g-1",
+      "signal": "clean",
+      "signal_note": "Routine regulatory filing"
     },
     {
       "form": "SC 13G/A",
@@ -1786,7 +2452,10 @@
       "label": "SC 13G/A — AMENDMENT NO. 4 TO SCHEDULE 13G",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000094562121000049/ussblackstone13ga2020.htm",
-      "material": false
+      "material": false,
+      "headline": "Universities Superannuation Scheme reports 8.36% passive stake",
+      "signal": "clean",
+      "signal_note": "Routine ownership disclosure"
     },
     {
       "form": "8-K",
@@ -1794,7 +2463,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312521017525/d104142d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "NAV per share $25.20 at year-end; $0.30 special distribution declared",
+      "signal": "clean",
+      "signal_note": "Routine NAV and distribution update"
     },
     {
       "form": "8-K",
@@ -1802,7 +2474,10 @@
       "label": "Current report: changed a director or senior officer",
       "category": "Personnel",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312520329366/d90578d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Trustee Bennett Goodman resigned; no disagreement with Fund",
+      "signal": "clean",
+      "signal_note": "Routine governance departure"
     },
     {
       "form": "8-K",
@@ -1810,7 +2485,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312520324641/d101499d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Board declared $0.30 special distribution, lifting 2020 distribution yield to 9.2%",
+      "signal": "clean",
+      "signal_note": "Special distribution declared"
     },
     {
       "form": "N-14 8C",
@@ -1818,7 +2496,10 @@
       "label": "N-14 8C — N-14 8C",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312520318980/d34629dn148c.htm",
-      "material": false
+      "material": false,
+      "headline": "Registered exchange offer for $1.2B of 3.650% and 3.625% notes",
+      "signal": "clean",
+      "signal_note": "Routine notes exchange registration"
     },
     {
       "form": "4",
@@ -1826,7 +2507,10 @@
       "label": "4 — FORM 4 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000089924320034046/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider filed Form 4 for December 14 transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 4"
     },
     {
       "form": "4",
@@ -1834,7 +2518,10 @@
       "label": "4 — FORM 4 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000089924320034045/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider filed Form 4 for December 14 transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 4"
     },
     {
       "form": "4",
@@ -1842,7 +2529,10 @@
       "label": "4 — FORM 4 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000089924320034042/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider filed Form 4 for December 14 transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 4"
     },
     {
       "form": "4",
@@ -1850,7 +2540,10 @@
       "label": "4 — FORM 4 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000089924320034040/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider filed Form 4 for December 14 transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 4"
     },
     {
       "form": "4",
@@ -1858,7 +2551,10 @@
       "label": "4 — FORM 4 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000089924320034038/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider filed Form 4 for December 14 transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider Form 4"
     },
     {
       "form": "8-K",
@@ -1866,7 +2562,10 @@
       "label": "Current report: amended its charter or bylaws",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312520314881/d96415d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Fund renamed Blackstone Secured Lending Fund, dropping GSO branding",
+      "signal": "clean",
+      "signal_note": "Routine name change"
     },
     {
       "form": "8-K",
@@ -1874,7 +2573,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312520309242/d60421d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Issued $300M of 3.625% notes due 2026 and drew $571M in capital",
+      "signal": "clean",
+      "signal_note": "Routine notes issuance and drawdown"
     },
     {
       "form": "8-K",
@@ -1882,7 +2584,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312520303396/d68902d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Priced $300M of 3.625% notes due 2026 at 3.286% yield",
+      "signal": "clean",
+      "signal_note": "Routine notes offering"
     },
     {
       "form": "3",
@@ -1890,7 +2595,10 @@
       "label": "3 — FORM 3 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000089924320031134/xslF345X02/doc3.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider filed initial Form 3 ownership statement dated November 2020",
+      "signal": "clean",
+      "signal_note": "Routine ownership filing"
     },
     {
       "form": "10-Q",
@@ -1898,7 +2606,10 @@
       "label": "Quarterly report (10-Q) for period ending 2020-09-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000173603520000017/bgsl-20200930x10q.htm",
-      "material": true
+      "material": true,
+      "headline": "BXSL filed Q3 2020 10-Q covering first-lien senior secured lending portfolio",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results"
     },
     {
       "form": "8-K",
@@ -1906,7 +2617,10 @@
       "label": "Current report: changed a director or senior officer",
       "category": "Personnel",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312520287773/d58488d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Trustee Harteveldt resigned; board appointed James Clark, no disagreement cited",
+      "signal": "clean",
+      "signal_note": "Routine board changes"
     },
     {
       "form": "8-K",
@@ -1914,7 +2628,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312520278063/d178586d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Closed $500M 3.625% notes due 2026; NAV per share $24.91",
+      "signal": "clean",
+      "signal_note": "Ordinary notes offering"
     },
     {
       "form": "8-K",
@@ -1922,7 +2639,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312520272000/d32967d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Priced $500M of 3.625% unsecured notes due 2026",
+      "signal": "clean",
+      "signal_note": "Ordinary notes offering"
     },
     {
       "form": "8-K",
@@ -1930,7 +2650,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312520266873/d184560d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Estimated NAV per share $24.91 at September 30, 2020",
+      "signal": "clean",
+      "signal_note": "Routine NAV disclosure"
     },
     {
       "form": "3",
@@ -1938,7 +2661,10 @@
       "label": "3 — FORM 3 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000089924320023482/xslF345X02/doc3.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider filed initial Form 3 ownership statement dated August 2020",
+      "signal": "clean",
+      "signal_note": "Routine ownership filing"
     },
     {
       "form": "8-K",
@@ -1946,7 +2672,10 @@
       "label": "Current report: changed a director or senior officer",
       "category": "Personnel",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312520232628/d60470d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Board appointed Vicki Fuller as trustee and committee member",
+      "signal": "clean",
+      "signal_note": "Routine board appointment"
     },
     {
       "form": "10-Q",
@@ -1954,7 +2683,10 @@
       "label": "Quarterly report (10-Q) for period ending 2020-06-30",
       "category": "Earnings",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000173603520000014/bgsl-20200630x10q.htm",
-      "material": true
+      "material": true,
+      "headline": "BXSL filed Q2 2020 10-Q covering first-lien senior secured lending portfolio",
+      "signal": "clean",
+      "signal_note": "Routine quarterly results"
     },
     {
       "form": "8-K",
@@ -1962,7 +2694,10 @@
       "label": "Current report (8-K)",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312520196120/d70086d8k.htm",
-      "material": false
+      "material": false,
+      "headline": "Delivered capital drawdown notices for $2.9M of shares to investors",
+      "signal": "clean",
+      "signal_note": "Routine capital drawdown"
     },
     {
       "form": "8-K",
@@ -1970,7 +2705,10 @@
       "label": "Current report: entered a material agreement; took on a material financial obligation",
       "category": "M&A",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312520194677/d34207d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Closed $400M of 3.650% unsecured notes due 2023",
+      "signal": "clean",
+      "signal_note": "Routine notes offering"
     },
     {
       "form": "4",
@@ -1978,7 +2716,10 @@
       "label": "4 — FORM 4 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000089924320019312/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider Form 4 filed for July 14, 2020 transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "4",
@@ -1986,7 +2727,10 @@
       "label": "4 — FORM 4 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000089924320019310/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider Form 4 filed for July 14, 2020 transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "4",
@@ -1994,7 +2738,10 @@
       "label": "4 — FORM 4 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000089924320019309/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider Form 4 filed for July 14, 2020 transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "4",
@@ -2002,7 +2749,10 @@
       "label": "4 — FORM 4 SUBMISSION",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000089924320019308/xslF345X03/doc4.xml",
-      "material": false
+      "material": false,
+      "headline": "Insider Form 4 filed for July 14, 2020 transaction",
+      "signal": "clean",
+      "signal_note": "Routine insider filing"
     },
     {
       "form": "8-K",
@@ -2010,7 +2760,10 @@
       "label": "Current report: disclosed a material event",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1736035/000119312520190439/d945723d8k.htm",
-      "material": true
+      "material": true,
+      "headline": "Priced $400M of 3.650% unsecured notes due 2023",
+      "signal": "clean",
+      "signal_note": "Routine notes offering"
     }
   ]
 }

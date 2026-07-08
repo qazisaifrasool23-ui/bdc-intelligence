@@ -42,7 +42,10 @@
       "label": "Current report: underwent a change in control",
       "category": "Other",
       "url": "https://www.sec.gov/Archives/edgar/data/1999538/000199953826000002/form8k051026v1.htm",
-      "material": true
+      "material": true,
+      "headline": "X1 Capital added director McMurry; Hatfield stepped down; expanded strategy",
+      "signal": "clean",
+      "signal_note": "Routine governance and strategy changes"
     },
     {
       "form": "40-17G",
@@ -178,7 +181,10 @@
       "label": "Current report: underwent a change in control; changed a director or senior officer",
       "category": "Personnel",
       "url": "https://www.sec.gov/Archives/edgar/data/1999538/000199953824000005/form8k110124.htm",
-      "material": true
+      "material": true,
+      "headline": "Change in control; Growth Lending acquired 100% of shares",
+      "signal": "clean",
+      "signal_note": "Ownership change, no credit disclosure"
     },
     {
       "form": "3",
